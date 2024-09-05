@@ -170,7 +170,7 @@
 
 
 /obj/item/reagent_containers/food/drinks/bottle/whiskey
-	name = "Uncle Git's Special Reserve Whiskey"
+	name = "Uncle Git's Special Reserve Amasec"
 	desc = "A premium single-malt whiskey, gently matured inside the tunnels of a nuclear shelter. TUNNEL WHISKEY RULES."
 	icon_state = "whiskeybottle"
 	center_of_mass = "x=16;y=3"
@@ -182,7 +182,7 @@
 
 
 /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey
-	name = "Special Blend Whiskey"
+	name = "Special Blend Amasec"
 	desc = "Just when you thought regular whiskey was good... This silky, amber goodness has to come along and ruin everything."
 	icon_state = "whiskeybottle2"
 	center_of_mass = "x=16;y=3"
@@ -205,7 +205,7 @@
 
 
 /obj/item/reagent_containers/food/drinks/bottle/tequilla
-	name = "Caccavo Guaranteed Quality Tequilla"
+	name = "Caccavo Guaranteed Quality Mordian Firewater"
 	desc = "Made from premium petroleum distillates, pure thalidomide and other fine quality ingredients!"
 	icon_state = "tequillabottle"
 	center_of_mass = "x=16;y=3"
@@ -241,7 +241,7 @@
 
 
 /obj/item/reagent_containers/food/drinks/bottle/rum
-	name = "Captain Pete's Cuban Spiced Rum"
+	name = "Captain Pete's Cuban Spiced Sacra"
 	desc = "This isn't just rum, oh no. It's practically GRIFF in a bottle."
 	icon_state = "rumbottle"
 	center_of_mass = "x=16;y=8"
@@ -313,7 +313,7 @@
 
 
 /obj/item/reagent_containers/food/drinks/bottle/wine
-	name = "Doublebeard Bearded Special Wine"
+	name = "Doublebeard Bearded Special Amasec"
 	desc = "A faint aura of unease and asspainery surrounds the bottle."
 	icon_state = "winebottle"
 	center_of_mass = "x=16;y=4"
@@ -654,8 +654,8 @@
 
 
 /obj/item/reagent_containers/food/drinks/bottle/brandy
-	name = "New Amsterdam Deluxe Brandy"
-	desc = "A bottle of premium Lunar brandy."
+	name = "New Amsterdam Deluxe Amasec"
+	desc = "A bottle of premium Imperial brandy."
 	icon_state = "lunabrandy"
 	center_of_mass = "x=16;y=4"
 
@@ -664,7 +664,7 @@
 	. = ..()
 	reagents.add_reagent(/datum/reagent/ethanol/lunabrandy, 100)
 	var/namepick = pick("Selenian","New Vegas","Yueliang","Gideon","New Amsterdam","Saurian")
-	var/typepick = pick("Deluxe Brandy","Premium Brandy","Luxury Brandy","Expensive Brandy","Special Brandy")
+	var/typepick = pick("Deluxe Amasec","Premium Amasec","Luxury Amasec","Expensive Amasec","Special Amasec")
 	SetName("[namepick] [typepick]")
 
 
@@ -820,7 +820,7 @@
 
 
 /obj/item/reagent_containers/food/drinks/bottle/small/gingerbeer
-	name = "Ginger Beer"
+	name = "Ginger Gothic Ale"
 	desc = "A delicious non-alcoholic beverage enjoyed across Sol space."
 	icon_state = "gingerbeer"
 	center_of_mass = "x=16;y=12"
@@ -844,8 +844,8 @@
 
 
 /obj/item/reagent_containers/food/drinks/bottle/small/alcoholfreebeer
-	name = "Alcohol-Free Beer"
-	desc = "A bottle of alcohol-free beer. Finally, you can drink on duty."
+	name = "Alcohol-Free Gothic Ale"
+	desc = "A bottle of alcohol-free ale. Finally, you can drink on duty."
 	icon_state = "alcoholfreebeer"
 	center_of_mass = "x=16;y=12"
 

@@ -1,7 +1,7 @@
 /datum/map_template/ruin/exoplanet/crashed_shuttle
 	name = "Crushed shuttle"
 	id = "crashed_shuttle"
-	description = "Crushed corporate shuttle."
+	description = "Crushed imperial shuttle."
 	suffixes = list("crashed_shuttle/crashed_shuttle.dmm")
 	spawn_cost = 0.5
 	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/graysontug)

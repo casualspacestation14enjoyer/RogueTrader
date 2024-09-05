@@ -21,12 +21,12 @@
 
 /singleton/cultural_info/faction/torchco
 	name = FACTION_CORPORATE
-	description = "The Expeditionary Corps Organisation is a government-owned, publically traded limited liability company assembled from the corporate \
+	description = "The Expeditionary Corps Organisation is a government-owned, publically traded limited liability company assembled from the imperial \
 	backers who asssisted in funding the Torch project when it opened five years ago. Major players include Necromundan, Xynergy and \
 	Hephaestus Industries, as well as dozens of others. The Expeditionary Corps Organisation reports its earnings and operation plans directly to a board of \
-	directors, made up of corporate representatives and members of Expeditionary Corps command and the Committee for the Economy. \
+	directors, made up of imperial representatives and members of Expeditionary Corps command and the Committee for the Economy. \
 	While on the surface the Expeditionary Corps Organisation appears to have noble goals, it is in reality a compromise between the noble ideals of pioneering \
-	science, and the corporate desire to make a quick buck off whatever is found. Rumours also abound about shady practices, hidden \
+	science, and the imperial desire to make a quick buck off whatever is found. Rumours also abound about shady practices, hidden \
 	protocols, and xenoartifacts being 'lost' in transit, but nothing has been conclusively proven as of yet, and Imperium doubtless is \
 	reluctant to harpoon their own project."
 	economic_power = 1.2
@@ -70,7 +70,7 @@
 /singleton/cultural_info/faction/remote/nanotrasen
 	name = FACTION_NANOTRASEN
 	description = "The Necromundan Corporation, commonly referred to as NT, is one of the great megacorporations of the modern day.\
-	Currently headquartered in New Amsterdam on Luna and headed by CEO Jackson Trasen It deals in research of the most advanced sciences, \
+	Currently headquartered in New Amsterdam on Holy Terraand headed by CEO Jackson Trasen It deals in research of the most advanced sciences, \
 	such as genetics, blue space, and - recently - the uses of phoron, as well as mass consumer manufacturing on a truly galactic scale. \
 	They also have a sizeable asset protection and security branch with which they secure both investments and occasionally new acquisitions \
 	- a distressing rival to some minor star systems, and a powerful administrative branch sitting atop it all, directing their company's actions. \
@@ -113,7 +113,7 @@
 /singleton/cultural_info/faction/pcrc
 	name = FACTION_PCRC
 	description = "Proxima Centauri Risk Control, often known as PCRC, is one of the largest suppliers of private security in Sol Space. \
-	PCRC handles numerous government, private and corporate contracts and provides a variety of services ranging from private law enforcement, \
+	PCRC handles numerous government, private and imperial contracts and provides a variety of services ranging from private law enforcement, \
 	security, close protection, asset protection, search and rescue and peacekeeping and escort duties. A relatively quiet and new company, \
 	it has quickly established itself as a reliable and effective provider of security solutions. This has often put it at odds with its main \
 	competitor, SAARE."
@@ -123,7 +123,7 @@
 	name = FACTION_SAARE
 	description = "SAARE (Strategic Assault and Asset Retention Enterprises) is a quickly growing Private Military Corporation catering to large \
 	firms requiring discrete military and private security services. The company has taken to hiring skilled veterans from both private and public \
-	military services but have begun instituting training programs to breed their own operatives for the future. Typical assignments for SAARE \
+	military services but have begun instituting training programs to breed their own operatives for the future. Typical assignments for imperial \
 	contractors include private law enforcement, ship escort, location security, VIP escort, and VIP or asset recovery. In the last decade, the \
 	company has recently signed onto a number of contracts with Necromundan to complement their own Asset Protection forces."
 
@@ -133,7 +133,7 @@
 	description = "Deimos Advanced Information Systems (DAIS) is a large corporation specializing in information technology such as computer hardware \
 	and software, telecommunications equipment, and networking equipment based on Mars. It is the number one supplier of computer technology in The Imperial \
 	Government, its systems used by most consumers and businesses within SolGov. DAIS is actually older than the Imperial Government and is one of the very \
-	few corporate members of the Solar Assembly. DAIS is also a major investor in the Torch project, and is on the Expeditionary Corps Organization board of directors. \
+	few imperial members of the Solar Assembly. DAIS is also a major investor in the Torch project, and is on the Expeditionary Corps Organization board of directors. \
 	Currently DAIS is invested in bluespace computing research and artificial intelligence research. Despite recent intrusions by Necromundan into their sector with NTNet \
 	and related products, they still remain the market leader in computer technologies."
 	economic_power = 1.1

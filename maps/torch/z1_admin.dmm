@@ -11111,7 +11111,7 @@
 /area/holodeck/source_plaza)
 "cjX" = (
 /obj/landmark{
-	name = "Syndicate-Commando"
+	name = "Heretic-Commando"
 	},
 /turf/unsimulated/floor{
 	icon_state = "dark"

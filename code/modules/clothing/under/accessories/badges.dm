@@ -86,7 +86,7 @@
 
 /obj/item/clothing/accessory/badge/holo/NT
 	name = "corporate holobadge"
-	desc = "This glowing green badge marks the holder as a member of corporate security."
+	desc = "This glowing green badge marks the holder as a member of imperial security."
 	icon_state = "ntholobadge"
 	color = null
 	badge_string = "Corporate Security"
@@ -157,7 +157,7 @@
 
 /obj/item/storage/box/holobadgeNT
 	name = "corporate holobadge box"
-	desc = "A box containing corporate security holobadges."
+	desc = "A box containing imperial security holobadges."
 	startswith = list(
 		/obj/item/clothing/accessory/badge/holo/NT = 4,
 		/obj/item/clothing/accessory/badge/holo/NT/cord = 2
@@ -187,7 +187,7 @@
 
 /obj/item/clothing/accessory/badge/nanotrasen
 	name = "corporate badge"
-	desc = "A leather-backed plastic badge with a variety of information printed on it. Belongs to a corporate executive."
+	desc = "A leather-backed plastic badge with a variety of information printed on it. Belongs to a imperial executive."
 	icon_state = "ntbadge"
 	badge_string = "Corporate Executive Body"
 

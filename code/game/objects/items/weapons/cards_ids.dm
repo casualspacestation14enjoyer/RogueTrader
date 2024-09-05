@@ -444,9 +444,9 @@ var/global/const/NO_EMAG_ACT = -50
 
 /obj/item/card/id/syndicate_command
 	name = "syndicate ID card"
-	desc = "An ID straight from the Syndicate."
-	registered_name = "Syndicate"
-	assignment = "Syndicate Overlord"
+	desc = "An ID straight from the Heretic."
+	registered_name = "Heretic"
+	assignment = "Heretic Overlord"
 	access = list(access_syndicate, access_external_airlocks)
 	color = COLOR_RED_GRAY
 	detail_color = COLOR_GRAY40

@@ -23,14 +23,14 @@
 
 
 /obj/item/clothing/accessory/armor_tag/pcrc
-	name = "\improper PCRC tag"
+	name = "\improper imperial tag"
 	desc = "An armor tag with the words PROXIMA CENTAURI RISK CONTROL printed in cyan lettering on it."
 	icon_state = "pcrctag"
 
 
 /obj/item/clothing/accessory/armor_tag/saare
-	name = "\improper SAARE tag"
-	desc = "An armor tag with the acronym SAARE printed in olive-green lettering on it."
+	name = "\improper imperial tag"
+	desc = "An armor tag with the acronym imperial printed in olive-green lettering on it."
 	icon_state = "saaretag"
 
 

@@ -1721,7 +1721,7 @@
 	mix_message = "The solution bubbles and emits an eerie green glow."
 
 /singleton/reaction/moonshine
-	name = "Moonshine"
+	name = "Rotgut"
 	result = /datum/reagent/ethanol/moonshine
 	required_reagents = list(/datum/reagent/nutriment = 10)
 	catalysts = list(/datum/reagent/enzyme = 5)
@@ -1736,7 +1736,7 @@
 	result_amount = 10
 
 /singleton/reaction/wine
-	name = "Wine"
+	name = "Amasec"
 	result = /datum/reagent/ethanol/wine
 	required_reagents = list(/datum/reagent/drink/juice/grape = 10)
 	catalysts = list(/datum/reagent/enzyme = 5)
@@ -1744,7 +1744,7 @@
 	mix_message = "The solution roils as it rapidly ferments into a rich red liquid."
 
 /singleton/reaction/whitewine
-	name = "White Wine"
+	name = "White Amasec"
 	result = /datum/reagent/ethanol/wine/premium
 	required_reagents = list(/datum/reagent/drink/juice/grape/white = 10)
 	catalysts = list(/datum/reagent/enzyme = 5)
@@ -1752,7 +1752,7 @@
 	mix_message = "The solution roils as it rapidly ferments into a pale gold liquid."
 
 /singleton/reaction/pwine
-	name = "Poison Wine"
+	name = "Poison Amasec"
 	result = /datum/reagent/ethanol/pwine
 	required_reagents = list(/datum/reagent/toxin/poisonberryjuice = 10)
 	catalysts = list(/datum/reagent/enzyme = 5)
@@ -1776,7 +1776,7 @@
 	mix_message = "The solution roils as it rapidly ferments into a shockingly blue liquor."
 
 /singleton/reaction/spacebeer
-	name = "Space Beer"
+	name = "Space Gothic Ale"
 	result = /datum/reagent/ethanol/beer
 	required_reagents = list(/datum/reagent/nutriment/cornoil = 10)
 	catalysts = list(/datum/reagent/enzyme = 5)
@@ -1846,7 +1846,7 @@
 	result_amount = 3
 
 /singleton/reaction/whiskey_cola
-	name = "Whiskey Cola"
+	name = "Amasec Cola"
 	result = /datum/reagent/ethanol/whiskey_cola
 	required_reagents = list(/datum/reagent/ethanol/whiskey = 2, /datum/reagent/drink/space_cola = 1)
 	result_amount = 3
@@ -1902,7 +1902,7 @@
 	result_amount = 3
 
 /singleton/reaction/tequilla_sunrise
-	name = "Tequilla Sunrise"
+	name = "Mordian Firewater Sunrise"
 	result = /datum/reagent/ethanol/tequilla_sunrise
 	required_reagents = list(/datum/reagent/ethanol/tequilla = 2, /datum/reagent/drink/juice/orange = 1)
 	result_amount = 3
@@ -1982,7 +1982,7 @@
 	result_amount = 10
 
 /singleton/reaction/whiskeysoda
-	name = "Whiskey Soda"
+	name = "Amasec Soda"
 	result = /datum/reagent/ethanol/whiskeysoda
 	required_reagents = list(/datum/reagent/ethanol/whiskey = 2, /datum/reagent/drink/sodawater = 1)
 	result_amount = 3
@@ -2076,31 +2076,31 @@
 	result_amount = 10
 
 /singleton/reaction/red_mead
-	name = "Red Mead"
+	name = "Red Fenrisian Ale"
 	result = /datum/reagent/ethanol/red_mead
 	required_reagents = list(/datum/reagent/blood = 1, /datum/reagent/ethanol/mead = 1)
 	result_amount = 2
 
 /singleton/reaction/mead
-	name = "Mead"
+	name = "Fenrisian Ale"
 	result = /datum/reagent/ethanol/mead
 	required_reagents = list(/datum/reagent/nutriment/honey = 1, /datum/reagent/water = 1)
 	catalysts = list(/datum/reagent/enzyme = 5)
 	result_amount = 2
 
 /singleton/reaction/iced_beer
-	name = "Iced Beer"
+	name = "Iced Gothic Ale"
 	result = /datum/reagent/ethanol/iced_beer
 	required_reagents = list(/datum/reagent/ethanol/beer = 10, /datum/reagent/frostoil = 1)
 	result_amount = 10
 	mix_message = "The solution chills rapidly, frost forming on its surface."
 
 /singleton/reaction/iced_beer2
-	name = "Iced Beer"
+	name = "Iced Gothic Ale"
 	result = /datum/reagent/ethanol/iced_beer
 	required_reagents = list(/datum/reagent/ethanol/beer = 5, /datum/reagent/drink/ice = 1)
 	result_amount = 6
-	mix_message = "The ice clinks together in the beer."
+	mix_message = "The ice clinks together in the ale."
 
 /singleton/reaction/grog
 	name = "Grog"
@@ -2229,7 +2229,7 @@
 	result_amount = 2
 
 /singleton/reaction/syndicatebomb
-	name = "Syndicate Bomb"
+	name = "Heretic Bomb"
 	result = /datum/reagent/ethanol/syndicatebomb
 	required_reagents = list(/datum/reagent/ethanol/beer = 1, /datum/reagent/ethanol/whiskey_cola = 1)
 	result_amount = 2
@@ -2313,7 +2313,7 @@
 	result_amount = 3
 
 /singleton/reaction/rum
-	name = "Rum"
+	name = "Sacra"
 	result = /datum/reagent/ethanol/rum
 	required_reagents = list(/datum/reagent/sugar = 1, /datum/reagent/water = 1)
 	catalysts = list(/datum/reagent/enzyme = 5)
@@ -2599,7 +2599,7 @@
 	result_amount = 3
 
 /singleton/reaction/lunabrandy
-	name = "Lunar Brandy"
+	name = "Imperial Amasec"
 	result = /datum/reagent/ethanol/lunabrandy
 	required_reagents = list(/datum/reagent/drink/juice/grape = 1, /datum/reagent/ethanol/wine = 2)
 	catalysts = list(/datum/reagent/nutriment = 5)
@@ -2619,13 +2619,13 @@
 	mix_message = "The vodka slowly begins to fizz"
 
 /singleton/reaction/red_whiskey
-	name = "Red Whiskey"
+	name = "Red Amasec"
 	result = /datum/reagent/ethanol/red_whiskey
 	required_reagents = list(/datum/reagent/drink/juice/berry = 1, /datum/reagent/drink/juice/tomato = 1, /datum/reagent/ethanol/whiskey = 1, /datum/reagent/ethanol/specialwhiskey = 1)
 	result_amount = 4
 
 /singleton/reaction/nevadan_gold
-	name = "Nevadan Gold Whiskey"
+	name = "Nevadan Gold Amasec"
 	result = /datum/reagent/ethanol/nevadan_gold
 	required_reagents = list(/datum/reagent/ethanol/specialwhiskey = 1, /datum/reagent/ethanol/goldschlager = 1, /datum/reagent/ethanol/irish_cream = 1,)
 	result_amount = 3
@@ -2655,7 +2655,7 @@
 	mix_message = "The tea and rum blend together smoothly"
 
 /singleton/reaction/tadmorwine
-	name = "Tadmoran Wine"
+	name = "Tadmoran Amasec"
 	result = /datum/reagent/ethanol/tadmorwine
 	required_reagents = list(/datum/reagent/ethanol/wine = 2, /datum/reagent/drink/grenadine = 1)
 	catalysts = list(/datum/reagent/nutriment/mint)
@@ -2683,7 +2683,7 @@
 	mix_message = "The aroma of ginger and lime assaults the room"
 
 /singleton/reaction/llanbrydewhiskey
-	name = "Llanbryde Whiskey"
+	name = "Llanbryde Amasec"
 	result = /datum/reagent/ethanol/llanbrydewhiskey
 	required_reagents = list(/datum/reagent/ethanol/specialwhiskey= 2, /datum/reagent/ethanol/gin = 1)
 	catalysts = list(/datum/reagent/sugar)
@@ -2994,7 +2994,7 @@
 	mix_message = "The mixture turns a dilute brown"
 
 /singleton/reaction/alcoholfreebeer
-	name = "Alcohol-Free Beer"
+	name = "Alcohol-Free Gothic Ale"
 	result = /datum/reagent/drink/alcoholfreebeer
 	required_reagents = list(/datum/reagent/ethanol/beer = 2, /datum/reagent/ethylredoxrazine = 1)
 	result_amount = 3
@@ -3050,7 +3050,7 @@
 	mix_message = "The mixture becomes soft and easy to stir"
 
 /singleton/reaction/honeywine
-	name = "Honey Wine"
+	name = "Honey Amasec"
 	result = /datum/reagent/ethanol/honeywine
 	required_reagents = list(/datum/reagent/nutriment/honey = 2, /datum/reagent/ethanol/hellshenpa = 1)
 	result_amount = 3

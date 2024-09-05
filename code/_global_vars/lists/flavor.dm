@@ -65,7 +65,7 @@ GLOBAL_LIST_INIT(greek_letters, list("Alpha", "Beta", "Gamma", "Delta",
 GLOBAL_LIST_INIT(phonetic_alphabet, list("Alpha", "Bravo", "Charlie",
 	"Delta", "Echo", "Foxtrot", "Golf", "Hotel", "India", "Juliet",
 	"Kilo", "Lima", "Mike", "November", "Oscar", "Papa", "Quebec",
-	"Romeo", "Sierra", "Tango", "Uniform", "Victor", "Whiskey", "X-ray",
+	"Romeo", "Sierra", "Tango", "Uniform", "Victor", "Amasec", "X-ray",
 	"Yankee", "Zulu"))
 
 GLOBAL_LIST_INIT(numbers_as_words, list("One", "Two", "Three", "Four",

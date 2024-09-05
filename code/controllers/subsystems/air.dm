@@ -131,7 +131,7 @@ SUBSYSTEM_DEF(air)
 
 
 /datum/controller/subsystem/air/Initialize(start_uptime, simulate = TRUE)
-	report_progress("Processing Geometry...")
+	report_progress("Processing Geometric Data...")
 	var/simulated_turf_count = 0
 	for(var/turf/simulated/S)
 		simulated_turf_count++

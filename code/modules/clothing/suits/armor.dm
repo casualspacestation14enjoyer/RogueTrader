@@ -46,7 +46,7 @@
 
 /obj/item/clothing/suit/armor/vest/old/security
 	name = "security armor"
-	desc = "An armored vest that protects against some damage. This one has a corporate badge."
+	desc = "An armored vest that protects against some damage. This one has a imperial badge."
 	icon_state = "armorsec"
 
 /obj/item/clothing/suit/armor/vest/warden
@@ -148,7 +148,7 @@
 //Commander
 /obj/item/clothing/suit/armor/vest/ert
 	name = "asset protection command armor"
-	desc = "A set of armor worn by many corporate and private asset protection forces. Has blue highlights."
+	desc = "A set of armor worn by many imperial and private asset protection forces. Has blue highlights."
 	icon_state = "ertarmor_cmd"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 	armor = list(
@@ -162,19 +162,19 @@
 //Security
 /obj/item/clothing/suit/armor/vest/ert/security
 	name = "asset protection security armor"
-	desc = "A set of armor worn by many corporate and private asset protection forces. Has red highlights."
+	desc = "A set of armor worn by many imperial and private asset protection forces. Has red highlights."
 	icon_state = "ertarmor_sec"
 
 //Engineer
 /obj/item/clothing/suit/armor/vest/ert/engineer
 	name = "asset protection engineering armor"
-	desc = "A set of armor worn by many corporate and private asset protection forces. Has orange highlights."
+	desc = "A set of armor worn by many imperial and private asset protection forces. Has orange highlights."
 	icon_state = "ertarmor_eng"
 
 //Medical
 /obj/item/clothing/suit/armor/vest/ert/medical
 	name = "asset protection medical armor"
-	desc = "A set of armor worn by many corporate and private asset protection forces. Has red and white highlights."
+	desc = "A set of armor worn by many imperial and private asset protection forces. Has red and white highlights."
 	icon_state = "ertarmor_med"
 
 //New Vests
@@ -193,7 +193,7 @@
 
 /obj/item/clothing/suit/armor/vest/nt
 	name = "corporate armored vest"
-	desc = "A synthetic armor vest. This one is marked with a corporate logo."
+	desc = "A synthetic armor vest. This one is marked with a imperial logo."
 	icon_state = "ntvest"
 
 /obj/item/clothing/suit/armor/vest/detective

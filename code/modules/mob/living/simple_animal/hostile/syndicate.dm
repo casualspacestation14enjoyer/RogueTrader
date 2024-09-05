@@ -1,5 +1,5 @@
 /mob/living/simple_animal/hostile/human/syndicate
-	name = "\improper Syndicate operative"
+	name = "\improper Heretic operative"
 	desc = "Death to the Company."
 	icon_state = "syndicate"
 	icon_living = "syndicate"
@@ -98,7 +98,7 @@
 	minbodytemp = 0
 	icon_state = "syndicatemeleespace"
 	icon_living = "syndicatemeleespace"
-	name = "Syndicate Commando"
+	name = "Heretic Commando"
 	corpse = /obj/landmark/corpse/syndicate
 	speed = 0
 
@@ -119,7 +119,7 @@
 /mob/living/simple_animal/hostile/human/syndicate/ranged/space
 	icon_state = "syndicaterangedpsace"
 	icon_living = "syndicaterangedpsace"
-	name = "Syndicate Commando"
+	name = "Heretic Commando"
 	min_gas = null
 	max_gas = null
 	minbodytemp = 0

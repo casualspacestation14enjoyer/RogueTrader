@@ -24,7 +24,7 @@
 
 /obj/item/device/radio/headset/heads/torchcorp
 	name = "corporate headset"
-	desc = "Headset of the servants to the corporate overlords."
+	desc = "Headset of the servants to the imperial overlords."
 	icon_state = "nt_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/headset_torchcorp
@@ -36,7 +36,7 @@
 
 /obj/item/device/radio/headset/heads/torchntcommand
 	name = "corporate command headset"
-	desc = "Headset of the corporate overlords."
+	desc = "Headset of the imperial overlords."
 	icon_state = "nt_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/headset_torchcl

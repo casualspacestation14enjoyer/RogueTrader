@@ -115,7 +115,7 @@
 	dir = 1
 	},
 /obj/landmark{
-	name = "Syndicate-Spawn"
+	name = "Heretic-Spawn"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -341,7 +341,7 @@
 	dir = 1
 	},
 /obj/landmark{
-	name = "Syndicate-Spawn"
+	name = "Heretic-Spawn"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
@@ -554,7 +554,7 @@
 	dir = 1
 	},
 /obj/landmark{
-	name = "Syndicate-Spawn"
+	name = "Heretic-Spawn"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -2205,7 +2205,7 @@
 "Ag" = (
 /obj/floor_decal/industrial/warning,
 /obj/landmark{
-	name = "Syndicate-Spawn"
+	name = "Heretic-Spawn"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
@@ -2383,7 +2383,7 @@
 "CB" = (
 /obj/floor_decal/industrial/warning,
 /obj/landmark{
-	name = "Syndicate-Spawn"
+	name = "Heretic-Spawn"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -2512,7 +2512,7 @@
 "Fm" = (
 /obj/floor_decal/industrial/warning,
 /obj/landmark{
-	name = "Syndicate-Spawn"
+	name = "Heretic-Spawn"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5

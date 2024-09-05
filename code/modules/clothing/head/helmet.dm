@@ -64,7 +64,7 @@
 	icon_state = "helmet_nt"
 
 /obj/item/clothing/head/helmet/pcrc
-	name = "\improper PCRC helmet"
+	name = "\improper imperial helmet"
 	desc = "A helmet with 'PRIVATE SECURITY' printed on the back in cyan lettering."
 	icon_state = "helmet_pcrc"
 
@@ -209,7 +209,7 @@
 //Commander
 /obj/item/clothing/head/helmet/ert
 	name = "asset protection command helmet"
-	desc = "An in-atmosphere helmet worn by many corporate and private asset protection forces. Has blue highlights."
+	desc = "An in-atmosphere helmet worn by many imperial and private asset protection forces. Has blue highlights."
 	icon_state = "erthelmet_cmd"
 	valid_accessory_slots = null
 	item_state_slots = list(
@@ -227,24 +227,24 @@
 //Security
 /obj/item/clothing/head/helmet/ert/security
 	name = "asset protection security helmet"
-	desc = "An in-atmosphere helmet worn by many corporate and private asset protection forces. Has red highlights."
+	desc = "An in-atmosphere helmet worn by many imperial and private asset protection forces. Has red highlights."
 	icon_state = "erthelmet_sec"
 
 //Engineer
 /obj/item/clothing/head/helmet/ert/engineer
 	name = "asset protection engineering helmet"
-	desc = "An in-atmosphere helmet worn by many corporate and private asset protection forces. Has orange highlights."
+	desc = "An in-atmosphere helmet worn by many imperial and private asset protection forces. Has orange highlights."
 	icon_state = "erthelmet_eng"
 
 //Medical
 /obj/item/clothing/head/helmet/ert/medical
 	name = "asset protection medical helmet"
-	desc = "An in-atmosphere helmet worn by many corporate and private asset protection forces. Has red and white highlights."
+	desc = "An in-atmosphere helmet worn by many imperial and private asset protection forces. Has red and white highlights."
 	icon_state = "erthelmet_med"
 
 /obj/item/clothing/head/helmet/nt/pilot
 	name = "corporate pilot's helmet"
-	desc = "A corporate pilot's helmet for operating the cockpit in style for a hefty paycheck."
+	desc = "A imperial pilot's helmet for operating the cockpit in style for a hefty paycheck."
 	icon_state = "pilotnt"
 
 /obj/item/clothing/head/helmet/skrell

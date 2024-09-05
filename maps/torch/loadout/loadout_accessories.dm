@@ -78,9 +78,9 @@
 	)
 
 /datum/gear/accessory/torch_patch
-	display_name = "Torch mission patch"
+	display_name = "Dauntless mission patch"
 	path = /obj/item/clothing/accessory/solgov/torch_patch
-	description = "A shoulder patch representing the SEV Torch and its mission. Given to all the oddjobs pulled from various branches to work on The Dauntless."
+	description = "A shoulder patch representing the SEV Dauntless and its mission. Given to all the oddjobs pulled from various branches to work on The Dauntless."
 	flags = GEAR_HAS_NO_CUSTOMIZATION
 
 /datum/gear/accessory/pilot_pin

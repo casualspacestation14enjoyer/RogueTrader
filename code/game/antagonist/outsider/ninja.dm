@@ -154,7 +154,7 @@ GLOBAL_DATUM_INIT(ninjas, /datum/antagonist/ninja, new)
 	selection_options = list(
 		"Solar Special Operations" = /obj/structure/closet/crate/ninja/sol,
 		"Gilgameshi Commando" = /obj/structure/closet/crate/ninja/gcc,
-		"Syndicate Mercenary" = /obj/structure/closet/crate/ninja/merc,
+		"Heretic Mercenary" = /obj/structure/closet/crate/ninja/merc,
 		"Corporate Operative" = /obj/structure/closet/crate/ninja/corpo,
 		"Spider-Clan Ninja" = /obj/structure/closet/crate/ninja
 	)

@@ -16,7 +16,7 @@
 
 /datum/shield_mode/photonic
 	mode_name = "Photonic Dispersion"
-	mode_desc = "This mode blocks majority of light. This includes beam weaponry and most of the visible light spectrum."
+	mode_desc = "This mode blocks majority of light. This includes beam weaponry and most of the visible light spectsacra."
 	mode_flag = MODEFLAG_PHOTONIC
 	multiplier = 1.3
 

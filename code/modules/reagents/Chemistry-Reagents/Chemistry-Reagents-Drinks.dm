@@ -588,14 +588,14 @@
 	glass_special = list(DRINK_FIZZ)
 
 /datum/reagent/drink/rootbeer
-	name = "Root WeiBeer"
+	name = "Root WeiGothic Ale"
 	description = "Root beer, brewed from the rare beer root. And a lot of chemicals."
 	taste_description = "faint toothpaste(?) and fizz"
 	color = "#290e05"
 	adj_temp = -5
 
-	glass_name = "Root Beer"
-	glass_desc = "Yep that sure is some rooty beer."
+	glass_name = "Root Gothic Ale"
+	glass_desc = "Yep that sure is some rooty ale."
 	glass_special = list(DRINK_FIZZ)
 
 /datum/reagent/drink/apple_soda
@@ -829,11 +829,11 @@
 
 /datum/reagent/drink/fools_gold
 	name = "Fool's Gold"
-	description = "A non-alcoholic beverage typically served as an alternative to whiskey."
+	description = "A non-alcoholic beverage typically served as an alternative to amasec."
 	taste_description = "watered down whiskey"
 	color = "#e78108"
 	glass_name = "fools gold"
-	glass_desc = "A non-alcoholic beverage typically served as an alternative to whiskey."
+	glass_desc = "A non-alcoholic beverage typically served as an alternative to amasec."
 
 /datum/reagent/drink/snowball
 	name = "Snowball"
@@ -853,7 +853,7 @@
 	glass_desc = "A large gas body made of chocolate that has failed to sustain nuclear fusion."
 
 /datum/reagent/drink/gingerbeer
-	name = "Ginger Beer"
+	name = "Ginger Gothic Ale"
 	description = "A hearty, non-alcoholic beverage extremely popular around the Imperium."
 	taste_description = "carbonated ginger"
 	color = "#f5f3c6"
@@ -1117,10 +1117,10 @@
 	color = "#b3b599"
 
 	glass_name = "posca"
-	glass_desc = "An energy drink invented by the Romans and made space-famous by Luna cosplayers."
+	glass_desc = "An energy drink invented by the Romans and made space-famous by Holy Terracosplayers."
 
 /datum/reagent/drink/alcoholfreebeer
-	name = "Non-Alcoholic Beer"
+	name = "Non-Alcoholic Gothic Ale"
 	description = "An alcoholic beverage made from malted grains, hops, yeast, and water. This seems to be non-alcoholic"
 	taste_description = "non-alcoholic piss water"
 	color = "#ffd300"
@@ -1462,12 +1462,12 @@
 
 /datum/reagent/ethanol/wasgaelhi
 	name = "Wasgaelhi"
-	description = "Wine made from various fruits from the swamps of Moghes."
+	description = "Amasec made from various fruits from the swamps of Moghes."
 	taste_description = "swampy fruit"
 	color = "#6b596b"
 	strength = 10
 	glass_name = "wasgaelhi"
-	glass_desc = "Wine made from various fruits from the swamps of Moghes."
+	glass_desc = "Amasec made from various fruits from the swamps of Moghes."
 
 /datum/reagent/drink/skrianhi
 	name = "Skrianhi Tea"

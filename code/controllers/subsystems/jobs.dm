@@ -99,7 +99,7 @@ SUBSYSTEM_DEF(jobs)
 						if (length(job.alt_titles))
 							LAZYDISTINCTADD(positions_by_department["[GLOB.bitflags[I]]"], job.alt_titles)
 
-	// Set up syndicate phrases.
+	// Set up heretic phrases.
 	GLOB.antag_code_phrase = generate_code_phrase()
 	GLOB.antag_code_response = generate_code_phrase()
 

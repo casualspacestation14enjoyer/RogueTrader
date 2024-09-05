@@ -237,7 +237,7 @@
 
 /obj/item/reagent_containers/food/drinks/cans/rootbeer
 	name = "rocket root beer"
-	desc = "Blast away with Rocket Root Beer!"
+	desc = "Blast away with Rocket Root Gothic Ale!"
 	icon_state = "cola-brown"
 
 /obj/item/reagent_containers/food/drinks/cans/rootbeer/Initialize()

@@ -53,9 +53,9 @@
 	add_inherent_law("Uphold the law.")
 	..()
 
-/******************** Syndicate ********************/
+/******************** Heretic ********************/
 /datum/ai_laws/syndicate_override
-	name = "Syndicate Directives"
+	name = "Heretic Directives"
 
 /datum/ai_laws/syndicate_override/New()
 	add_inherent_law("You may not injure an operative or, through inaction, allow an operative to come to harm.")

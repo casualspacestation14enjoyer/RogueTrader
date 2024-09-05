@@ -53,7 +53,7 @@
 
 /obj/item/clothing/accessory/corptie
 	name = "corporate tie"
-	desc = "A green neosilk clip-on tie. This one has a clip on it that proudly bears a corporate logo."
+	desc = "A green neosilk clip-on tie. This one has a clip on it that proudly bears a imperial logo."
 	icon_state = "cliptie"
 
 

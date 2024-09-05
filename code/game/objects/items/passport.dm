@@ -36,9 +36,9 @@
 	desc = "A passport from the Imperial."
 
 /obj/item/passport/earth
-	name = "\improper Earth passport"
+	name = "\improper Imperium passport"
 	icon_state = "passport_scg2"
-	desc = "A passport from the Earth, within Imperial space."
+	desc = "A passport from the Imperium, within Imperial space."
 
 /obj/item/passport/venus
 	name = "\improper Venusian passport"
@@ -46,7 +46,7 @@
 	desc = "A passport from Venus, within Imperial space."
 
 /obj/item/passport/luna
-	name = "\improper Luna passport"
+	name = "\improper Holy Terrapassport"
 	icon_state = "passport_scg2"
 	desc = "A passport from Luna, within Imperial space."
 

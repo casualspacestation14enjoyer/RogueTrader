@@ -22,12 +22,12 @@
 		Have a sip!;\
 		Have a drink!;\
 		Have a beer!;\
-		Beer is good for you!;\
+		Gothic Ale is good for you!;\
 		Only the finest alcohol!;\
 		Best quality booze since 2053!;\
 		Award-winning wine!;\
 		Maximum alcohol!;\
-		Man loves beer.;\
+		Man loves ale.;\
 		A toast for progress!\
 	"}
 	antag_slogans = {"\

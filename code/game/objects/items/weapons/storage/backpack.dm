@@ -422,7 +422,7 @@
 
 /obj/item/storage/backpack/satchel/sec/exo
 	name = "corporate security satchel"
-	desc = "A robust satchel for corporate security-related needs. This one is in EXO colors."
+	desc = "A robust satchel for imperial security-related needs. This one is in EXO colors."
 	icon_state = "satchel-sec_exo"
 
 /obj/item/storage/backpack/satchel/hyd

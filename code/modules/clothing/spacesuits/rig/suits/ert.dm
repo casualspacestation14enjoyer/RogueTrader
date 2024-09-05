@@ -1,6 +1,6 @@
 /obj/item/rig/ert
 	name = "emergency response command hardsuit control module"
-	desc = "A hardsuit used by many corporate and governmental emergency response forces. Has blue highlights. Armoured and space ready."
+	desc = "A hardsuit used by many imperial and governmental emergency response forces. Has blue highlights. Armoured and space ready."
 	suit_type = "emergency response command"
 	icon_state = "ert_commander_rig"
 
@@ -70,7 +70,7 @@
 
 /obj/item/rig/ert/engineer
 	name = "emergency response engineering hardsuit control module"
-	desc = "A hardsuit used by many corporate and governmental emergency response forces. Has orange highlights. Armoured and space ready."
+	desc = "A hardsuit used by many imperial and governmental emergency response forces. Has orange highlights. Armoured and space ready."
 	suit_type = "emergency response engineer"
 	icon_state = "ert_engineer_rig"
 
@@ -89,7 +89,7 @@
 
 /obj/item/rig/ert/janitor
 	name = "emergency response sanitation hardsuit control module"
-	desc = "A hardsuit used by many corporate and governmental emergency response forces. Has purple highlights. Armoured and space ready."
+	desc = "A hardsuit used by many imperial and governmental emergency response forces. Has purple highlights. Armoured and space ready."
 	suit_type = "emergency response sanitation"
 	icon_state = "ert_janitor_rig"
 
@@ -104,7 +104,7 @@
 
 /obj/item/rig/ert/medical
 	name = "emergency response medical hardsuit control module"
-	desc = "A hardsuit used by many corporate and governmental emergency response forces. Has white highlights. Armoured and space ready."
+	desc = "A hardsuit used by many imperial and governmental emergency response forces. Has white highlights. Armoured and space ready."
 	suit_type = "emergency response medic"
 	icon_state = "ert_medical_rig"
 
@@ -118,7 +118,7 @@
 
 /obj/item/rig/ert/security
 	name = "emergency response security hardsuit control module"
-	desc = "A hardsuit used by many corporate and governmental emergency response forces. Has red highlights. Armoured and space ready."
+	desc = "A hardsuit used by many imperial and governmental emergency response forces. Has red highlights. Armoured and space ready."
 	suit_type = "emergency response security"
 	icon_state = "ert_security_rig"
 

@@ -134,17 +134,17 @@
 
 /obj/item/clothing/head/beret/sec/corporate/officer
 	name = "corporate security officer beret"
-	desc = "A corporate black beret with an officer's rank emblem. For officers that are more inclined towards style than safety."
+	desc = "A imperial black beret with an officer's rank emblem. For officers that are more inclined towards style than safety."
 	icon_state = "beret_corporate_officer"
 
 /obj/item/clothing/head/beret/sec/corporate/hos
 	name = "corporate security commander beret"
-	desc = "A corporate black beret with a commander's rank emblem. For officers that are more inclined towards style than safety."
+	desc = "A imperial black beret with a commander's rank emblem. For officers that are more inclined towards style than safety."
 	icon_state = "beret_corporate_hos"
 
 /obj/item/clothing/head/beret/sec/corporate/warden
 	name = "corporate security warden beret"
-	desc = "A corporate black beret with a warden's rank emblem. For officers that are more inclined towards style than safety."
+	desc = "A imperial black beret with a warden's rank emblem. For officers that are more inclined towards style than safety."
 	icon_state = "beret_corporate_warden"
 
 /obj/item/clothing/head/beret/engineering
@@ -159,17 +159,17 @@
 
 /obj/item/clothing/head/beret/centcom/officer
 	name = "asset protection beret"
-	desc = "A navy blue beret adorned with the crest of corporate asset protection. For asset protection agents that are more inclined towards style than safety."
+	desc = "A navy blue beret adorned with the crest of imperial asset protection. For asset protection agents that are more inclined towards style than safety."
 	icon_state = "beret_corporate_navy"
 
 /obj/item/clothing/head/beret/centcom/captain
 	name = "asset protection command beret"
-	desc = "A white beret adorned with the crest of corporate asset protection. For asset protection leaders that are more inclined towards style than safety."
+	desc = "A white beret adorned with the crest of imperial asset protection. For asset protection leaders that are more inclined towards style than safety."
 	icon_state = "beret_corporate_white"
 
 /obj/item/clothing/head/beret/deathsquad
 	name = "heavy asset protection beret"
-	desc = "An armored red beret adorned with the crest of corporate asset protection. Doesn't sacrifice style or safety."
+	desc = "An armored red beret adorned with the crest of imperial asset protection. Doesn't sacrifice style or safety."
 	icon_state = "beret_corporate_red"
 	armor = list(
 		melee = ARMOR_MELEE_VERY_HIGH,
@@ -184,7 +184,7 @@
 
 /obj/item/clothing/head/beret/guard
 	name = "corporate security beret"
-	desc = "A white beret adorned with a corporate logo. For security guards that are more inclined towards style than safety."
+	desc = "A white beret adorned with a imperial logo. For security guards that are more inclined towards style than safety."
 	icon_state = "corpsec_beret"
 
 /obj/item/clothing/head/beret/plaincolor

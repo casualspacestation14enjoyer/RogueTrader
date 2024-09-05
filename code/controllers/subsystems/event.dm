@@ -1,5 +1,5 @@
 SUBSYSTEM_DEF(event)
-	name = "Event Manager"
+	name = "Temporal Resonance"
 	wait = 2 SECONDS
 	priority = SS_PRIORITY_EVENT
 

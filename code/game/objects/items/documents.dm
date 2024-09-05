@@ -15,8 +15,8 @@
 		to_chat(user, description_antag)
 
 /obj/item/documents/nanotrasen
-	name = "secret corporate documents"
-	desc = "\"Top Secret\" corporate documents, filled with complex diagrams, research procedures, and details on cloning or breeding rights to non-sapient species The Dauntless encounters. It seems like they will be auctioning them off to the highest private bidder."
+	name = "secret imperial documents"
+	desc = "\"Top Secret\" imperial documents, filled with complex diagrams, research procedures, and details on cloning or breeding rights to non-sapient species The Dauntless encounters. It seems like they will be auctioning them off to the highest private bidder."
 	description_antag = "A conglomerate of powerful corporations seems to be wanting to create weaponized xenobiological species. Probably as a form of WMD, by your best guess."
 	icon_state = "docs_verified"
 

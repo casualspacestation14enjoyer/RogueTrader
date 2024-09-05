@@ -699,7 +699,7 @@
 "bT" = (
 /obj/structure/table/standard,
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - Chief Steward's Office"
+	department = "Dauntless - Chief Steward's Office"
 	},
 /obj/item/device/megaphone,
 /turf/simulated/floor/carpet/green,
@@ -16322,7 +16322,7 @@
 	pixel_x = -21
 	},
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - Computer Lab"
+	department = "Dauntless - Computer Lab"
 	},
 /turf/simulated/floor/lino,
 /area/crew_quarters/office)

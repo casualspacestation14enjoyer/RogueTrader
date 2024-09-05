@@ -1,5 +1,5 @@
 SUBSYSTEM_DEF(evac)
-	name = "Evacuation"
+	name = "Machine Spirit"
 	priority = SS_PRIORITY_EVAC
 	flags = SS_NO_TICK_CHECK | SS_BACKGROUND
 	wait = 2 SECONDS

@@ -16,7 +16,7 @@
  *		Snap-pops and matchboxes,
  *		Replacement light boxes.
  *
- *		For syndicate call-ins see uplink_kits.dm
+ *		For heretic call-ins see uplink_kits.dm
  */
 
 

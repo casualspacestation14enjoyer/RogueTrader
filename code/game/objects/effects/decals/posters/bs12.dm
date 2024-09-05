@@ -38,7 +38,7 @@
 /singleton/poster/bay_8
 	icon_state="bsposter8"
 	name = "Pinup Girl Cindy"
-	desc = "This particular one is of a historical corporate PR girl, Cindy, in a particularly feminine pose."
+	desc = "This particular one is of a historical imperial PR girl, Cindy, in a particularly feminine pose."
 
 
 /singleton/poster/bay_9
@@ -338,7 +338,7 @@
 /singleton/poster/bay_59
 	icon_state="bsposter59"
 	name = "poster - Miss Science 2299"
-	desc = "A large piece of space-resistant printed paper. This pin-up poster depicts a woman wearing a corporate labcoat, a bikini, and a sheepish grin. She's shyly posing atop some highly specialized research equipment."
+	desc = "A large piece of space-resistant printed paper. This pin-up poster depicts a woman wearing a imperial labcoat, a bikini, and a sheepish grin. She's shyly posing atop some highly specialized research equipment."
 
 
 /singleton/poster/nabber

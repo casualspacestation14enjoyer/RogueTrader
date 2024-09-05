@@ -66,7 +66,7 @@
 /datum/codex_entry/multitool
 	associated_paths = list(/obj/item/device/multitool)
 	mechanics_text = "Multitools are incredibly versatile and can be used on a wide variety of machines. The most common use for this is to trip a device's wires without having to cut them. Simply click on an object with exposed wiring to use it. There might be other uses, as well..."
-	lore_text = "The common, every day multitool is descended from certain electrical tools from Earth's early space age. Though none too cheap, they are incredibly handy, and can be found in any self-respecting technician's toolbox."
+	lore_text = "The common, every day multitool is descended from certain electrical tools from Terra's early space age. Though none too cheap, they are incredibly handy, and can be found in any self-respecting technician's toolbox."
 	antag_text = "This handy little tool can get you through doors, turn off power, and anything else you might need."
 
 /datum/codex_entry/t_scanner
