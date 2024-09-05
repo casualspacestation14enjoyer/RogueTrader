@@ -1,9 +1,9 @@
 
 //// Zombie Defines
 
-#define SPECIES_ZOMBIE "Zombie"
-#define LANGUAGE_ZOMBIE "Zombie"
-#define ANTAG_ZOMBIE "Zombie"
+#define SPECIES_ZOMBIE "Poxwalker"
+#define LANGUAGE_ZOMBIE "Poxwalker"
+#define ANTAG_ZOMBIE "Poxwalker"
 
 //// Zombie Globals
 
@@ -38,7 +38,7 @@ GLOBAL_LIST_INIT(zombie_messages, list(
 
 GLOBAL_LIST_INIT(zombie_species, list(\
 	SPECIES_HUMAN, SPECIES_UNATHI, SPECIES_VOX,\
-	SPECIES_SKRELL, SPECIES_PROMETHEAN, SPECIES_ALIEN, SPECIES_YEOSA, SPECIES_VATGROWN,\
+	SPECIES_TAU, SPECIES_PROMETHEAN, SPECIES_ALIEN, SPECIES_YEOSA, SPECIES_VATGROWN,\
 	SPECIES_SPACER, SPECIES_TRITONIAN, SPECIES_GRAVWORLDER, SPECIES_MULE, SPECIES_MONKEY,\
 	SPECIES_FARWA, SPECIES_NEAERA, SPECIES_STOK
 ))
@@ -47,8 +47,8 @@ GLOBAL_LIST_INIT(zombie_species, list(\
 //// Zombie Types
 
 /datum/species/zombie
-	name = "Zombie"
-	name_plural = "Zombies"
+	name = "Poxwalker"
+	name_plural = "Poxwalkers"
 	blood_color = "#411111"
 	preview_icon = null
 	death_message = "writhes and twitches before falling motionless."
@@ -166,7 +166,7 @@ GLOBAL_LIST_INIT(zombie_species, list(\
 	name = "Shuffle"
 	flags = MOVE_INTENT_DELIBERATE
 	hud_icon_state = "creeping"
-	move_delay = 10
+	move_delay = 5
 
 /datum/say_list/zombie
 	emote_hear = list("wails!","groans!")
@@ -306,8 +306,8 @@ GLOBAL_LIST_INIT(zombie_species, list(\
 	speech_verb = "growls"
 	exclaim_verb = "wails"
 	partial_understanding = list(
-		LANGUAGE_HUMAN_EURO = 20,
-		LANGUAGE_SPACER = 30
+		LANGUAGE_HIGH_GOTHIC = 60,
+		LANGUAGE_LOW_GOTHIC = 60
 	)
 	syllables = list("mhh..", "grr..", "nnh..")
 	shorthand = "ZM"

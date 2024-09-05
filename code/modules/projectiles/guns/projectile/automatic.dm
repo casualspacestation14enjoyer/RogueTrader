@@ -13,8 +13,8 @@
 	ammo_type = /obj/item/ammo_casing/flechette
 	magazine_type = /obj/item/ammo_magazine/proto_smg
 	allowed_magazines = /obj/item/ammo_magazine/proto_smg
-	multi_aim = 1
-	burst_delay = 2
+	multi_aim = 0
+	burst_delay = 1
 	mag_insert_sound = 'sound/weapons/guns/interaction/smg_magin.ogg'
 	mag_remove_sound = 'sound/weapons/guns/interaction/smg_magout.ogg'
 	fire_sound = 'sound/weapons/gunshot/gunshot_4mm.ogg'
@@ -26,40 +26,44 @@
 		list(mode_name="long bursts",   burst=8, fire_delay=null, move_delay=4,    one_hand_penalty=2, burst_accuracy=list(0,0,-1,-1,-1,-1,-2,-2), dispersion=list(0.0, 0.0, 0.5, 0.6, 0.8, 1.0, 1.0, 1.2)),
 		)
 
+/obj/item/gun/projectile/automatic/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.08
+	slowdown_per_slot[slot_belt] = 0.12
+	slowdown_per_slot[slot_r_hand] = 0.12
+	slowdown_per_slot[slot_l_hand] = 0.12
+
 /obj/item/gun/projectile/automatic/machine_pistol
-	name = "machine pistol"
-	desc = "The Hephaestus Industries MP6 Vesper, A fairly common machine pistol based off a mid 20th century design. Sometimes refered to as an 'uzi' by the backwater spacers it is often associated with."
-	icon = 'icons/obj/guns/machine_pistol.dmi'
-	icon_state = "mpistolen"
-	safety_icon = "safety"
-	item_state = "mpistolen"
-	caliber = CALIBER_PISTOL
-	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2, TECH_ESOTERIC = 3)
+	name = "Rugged Autogun"
+	desc = "A mass-produced slum forged autogun with a simple folding stock, this design loosely based on standard patterns of autogun lacks the embroidery or reliability of it's militarum sisters."
+	icon_state = "machinepistol"
+	item_state = "machinepistol"
+	wielded_item_state = "machinepistol-wielded"
+	slot_flags = SLOT_BACK|SLOT_BELT
+	w_class = ITEM_SIZE_NORMAL
+	one_hand_penalty = 0.8
+	accuracy = 0
+	fire_delay = 2.5
+	sales_price = 8
+	caliber = CALIBER_PISTOL // before doing all mattguns, we need to dupe all the calibers first -- but merge calibers that fit. then add variants as in Eipharius.
+
+	fire_sound = 'sound/warhammer/guns/fire/smg_fire.ogg' // reminder sounds are under warhammer/
 	ammo_type = /obj/item/ammo_casing/pistol
 	magazine_type = /obj/item/ammo_magazine/machine_pistol
-	allowed_magazines = /obj/item/ammo_magazine/machine_pistol //more damage compared to the wt550, smaller mag size
-	fire_sound = 'sound/weapons/gunshot/gunshot_pistol.ogg'
-	one_hand_penalty = 2
-
+	allowed_magazines = /obj/item/ammo_magazine/machine_pistol
 	firemodes = list(
-		list(mode_name="semi auto",       burst=1, fire_delay=null,    move_delay=null, one_hand_penalty=0, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=1, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0)),
-		list(mode_name="short bursts",   burst=5, fire_delay=null, move_delay=4,    one_hand_penalty=2, burst_accuracy=list(0,-1,-1,-1,-2), dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2)),
+		list(mode_name="semi-automatic", burst=1, fire_delay=2.5, burst_delay=0.8, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=2.5, burst_delay=0.8, burst_accuracy=list(0,-1,-1), dispersion=null), // try this dispersion if its too straight later; dispersion=list(0.0, 0.6, 1.0)
 		)
 
 /obj/item/gun/projectile/automatic/machine_pistol/on_update_icon()
 	..()
-	icon_state = "mpistolen"
 	if(ammo_magazine)
-		AddOverlays(image(icon, "mag"))
-
-	if(!ammo_magazine || !LAZYLEN(ammo_magazine.stored_ammo))
-		icon_state = "mpistolen-empty"
-		AddOverlays(image(icon, "[initial(icon_state)]-ammo0"))
-	else if(LAZYLEN(ammo_magazine.stored_ammo) <= 0.5 * ammo_magazine.max_ammo)
-		AddOverlays(image(icon, "[initial(icon_state)]-ammo1"))
+		icon_state = "machinepistol"
+		wielded_item_state = "machinepistol-wielded"
 	else
-		AddOverlays(image(icon, "[initial(icon_state)]-ammo2"))
+		icon_state = "machinepistol-e"
+		wielded_item_state = "machinepistol-wielded"
 
 /obj/item/gun/projectile/automatic/merc_smg
 	name = "submachine gun"
@@ -175,7 +179,7 @@
 
 /obj/item/gun/projectile/automatic/bullpup_rifle
 	name = "bullpup assault rifle"
-	desc = "The Hephaestus Industries Z8 is one of the oldest weapons currently in service with the ImperiumDF. Despite its age, it still remains the de-facto rifle of the Imperium Army, due to its ease of handling, cheap production costs, reliability, and plentiful surplus stock."
+	desc = "The Hephaestus Industries Z8 is one of the oldest weapons currently in service with the ImperiumDF. Despite its age, it still remains the de-facto rifle of the Imperium Guard, due to its ease of handling, cheap production costs, reliability, and plentiful surplus stock."
 	icon = 'icons/obj/guns/bullpup_rifle.dmi'
 	icon_state = "carbine"
 	item_state = "z8carbine"

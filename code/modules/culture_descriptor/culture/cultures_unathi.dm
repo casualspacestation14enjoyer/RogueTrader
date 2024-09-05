@@ -9,8 +9,8 @@
 	secondary_langs = list(
 		LANGUAGE_UNATHI_YEOSA,
 		LANGUAGE_SIGN,
-		LANGUAGE_HUMAN_EURO,
-		LANGUAGE_SPACER
+		LANGUAGE_HIGH_GOTHIC,
+		LANGUAGE_LOW_GOTHIC
 	)
 
 /singleton/cultural_info/culture/unathi_polar
@@ -22,8 +22,8 @@
 	secondary_langs = list(
 		LANGUAGE_UNATHI_YEOSA,
 		LANGUAGE_SIGN,
-		LANGUAGE_HUMAN_EURO,
-		LANGUAGE_SPACER
+		LANGUAGE_HIGH_GOTHIC,
+		LANGUAGE_LOW_GOTHIC
 	)
 
 /singleton/cultural_info/culture/unathi_desert
@@ -35,8 +35,8 @@
 	secondary_langs = list(
 		LANGUAGE_UNATHI_YEOSA,
 		LANGUAGE_SIGN,
-		LANGUAGE_HUMAN_EURO,
-		LANGUAGE_SPACER
+		LANGUAGE_HIGH_GOTHIC,
+		LANGUAGE_LOW_GOTHIC
 	)
 
 /singleton/cultural_info/culture/unathi_savannah
@@ -47,8 +47,8 @@
 	secondary_langs = list(
 		LANGUAGE_UNATHI_YEOSA,
 		LANGUAGE_SIGN,
-		LANGUAGE_HUMAN_EURO,
-		LANGUAGE_SPACER
+		LANGUAGE_HIGH_GOTHIC,
+		LANGUAGE_LOW_GOTHIC
 	)
 
 /singleton/cultural_info/culture/unathi_salt_swamp
@@ -60,8 +60,8 @@
 	secondary_langs = list(
 		LANGUAGE_UNATHI_YEOSA,
 		LANGUAGE_SIGN,
-		LANGUAGE_HUMAN_EURO,
-		LANGUAGE_SPACER
+		LANGUAGE_HIGH_GOTHIC,
+		LANGUAGE_LOW_GOTHIC
 	)
 
 /singleton/cultural_info/culture/unathi_space
@@ -74,8 +74,8 @@
 		LANGUAGE_UNATHI_SINTA,
 		LANGUAGE_UNATHI_YEOSA,
 		LANGUAGE_SIGN,
-		LANGUAGE_HUMAN_EURO,
-		LANGUAGE_SPACER
+		LANGUAGE_HIGH_GOTHIC,
+		LANGUAGE_LOW_GOTHIC
 	)
 
 
@@ -95,8 +95,8 @@
 	secondary_langs = list(
 		LANGUAGE_UNATHI_SINTA,
 		LANGUAGE_SIGN,
-		LANGUAGE_HUMAN_EURO,
-		LANGUAGE_SPACER
+		LANGUAGE_HIGH_GOTHIC,
+		LANGUAGE_LOW_GOTHIC
 	)
 
 /singleton/cultural_info/culture/unathi_yeosa_abyss
@@ -110,6 +110,6 @@
 	secondary_langs = list(
 		LANGUAGE_UNATHI_SINTA,
 		LANGUAGE_SIGN,
-		LANGUAGE_HUMAN_EURO,
-		LANGUAGE_SPACER
+		LANGUAGE_HIGH_GOTHIC,
+		LANGUAGE_LOW_GOTHIC
 	)

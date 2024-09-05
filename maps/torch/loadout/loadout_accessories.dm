@@ -150,16 +150,16 @@
 	flags = GEAR_HAS_NO_CUSTOMIZATION
 
 /datum/gear/accessory/armband_nt
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_branches = UNIFORMED_BRANCHES
 
 /datum/gear/accessory/ntaward
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_branches = UNIFORMED_BRANCHES
 
 /datum/gear/accessory/tie
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_branches = UNIFORMED_BRANCHES
 
 /datum/gear/accessory/tie_color
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_branches = UNIFORMED_BRANCHES
 
 /datum/gear/accessory/neckerchief
 
@@ -197,56 +197,56 @@
 
 /datum/gear/clothing/hawaii
 	allowed_roles = SEMIFORMAL_ROLES
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_branches = UNIFORMED_BRANCHES
 
 /datum/gear/clothing/scarf
 
 /datum/gear/clothing/flannel
 	allowed_roles = SEMIFORMAL_ROLES
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_branches = UNIFORMED_BRANCHES
 
 /datum/gear/clothing/vest
 	allowed_roles = FORMAL_ROLES
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_branches = UNIFORMED_BRANCHES
 
 /datum/gear/clothing/suspenders
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_branches = UNIFORMED_BRANCHES
 
 /datum/gear/clothing/suspenders/colorable
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_branches = UNIFORMED_BRANCHES
 
 /datum/gear/clothing/wcoat
 	allowed_roles = FORMAL_ROLES
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_branches = UNIFORMED_BRANCHES
 
 /datum/gear/clothing/zhongshan
 	allowed_roles = FORMAL_ROLES
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_branches = UNIFORMED_BRANCHES
 
 /datum/gear/clothing/dashiki
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_branches = UNIFORMED_BRANCHES
 
 /datum/gear/clothing/thawb
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_branches = UNIFORMED_BRANCHES
 
 /datum/gear/clothing/sherwani
 	allowed_roles = FORMAL_ROLES
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_branches = UNIFORMED_BRANCHES
 
 /datum/gear/clothing/qipao
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_branches = UNIFORMED_BRANCHES
 
 /datum/gear/clothing/sweater
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_branches = UNIFORMED_BRANCHES
 
 /datum/gear/clothing/tangzhuang
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_branches = UNIFORMED_BRANCHES
 
 /datum/gear/accessory/bowtie
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_branches = UNIFORMED_BRANCHES
 
 /datum/gear/accessory/ftu_pin
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_branches = UNIFORMED_BRANCHES
 
 /datum/gear/foundation_civilian
 	allowed_roles = list(/datum/job/psychiatrist)
@@ -275,7 +275,7 @@
 /datum/gear/tactical/ubac/misc
 	display_name = "miscellaneous UBAC shirt selection"
 	path = /obj/item/clothing/accessory/ubac
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_branches = UNIFORMED_BRANCHES
 
 /datum/gear/tactical/ubac/misc/New()
 	..()
@@ -294,15 +294,13 @@
 	display_name = "navy armor pouches"
 	path = /obj/item/clothing/accessory/storage/pouches/navy
 	allowed_branches = list(
-		/datum/mil_branch/fleet,
-		/datum/mil_branch/civilian
+		/datum/mil_branch/fleet
 	)
 	flags = GEAR_HAS_NO_CUSTOMIZATION
 
 /datum/gear/tactical/armor_pouches/misc
 	display_name = "miscellaneous armor pouches selection"
 	path = /obj/item/clothing/accessory/storage/pouches
-	allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/tactical/armor_pouches/misc/New()
 	..()
@@ -321,15 +319,13 @@
 	display_name = "navy large armor pouches"
 	path = /obj/item/clothing/accessory/storage/pouches/large/navy
 	allowed_branches = list(
-		/datum/mil_branch/fleet,
-		/datum/mil_branch/civilian
+		/datum/mil_branch/fleet
 	)
 	flags = GEAR_HAS_NO_CUSTOMIZATION
 
 /datum/gear/tactical/large_pouches/misc
 	display_name = "miscellaneous large armor pouches selection"
 	path = /obj/item/clothing/accessory/storage/pouches/large
-	allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/tactical/large_pouches/misc/New()
 	..()

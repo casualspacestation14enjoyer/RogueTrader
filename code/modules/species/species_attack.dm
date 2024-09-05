@@ -79,7 +79,7 @@
 
 /datum/unarmed_attack/claws/strong
 	attack_verb = list("slashed")
-	damage = 5
+	damage = 12
 	shredding = TRUE
 	attack_name = "strong claws"
 
@@ -88,14 +88,14 @@
 
 /datum/unarmed_attack/bite/strong
 	attack_verb = list("mauled")
-	damage = 8
+	damage = 14
 	shredding = TRUE
 	attack_name = "strong bite"
 
 /datum/unarmed_attack/slime_glomp
 	attack_verb = list("glomped")
 	attack_noun = list("body")
-	damage = 2
+	damage = 4
 	attack_name = "glomp"
 
 /datum/unarmed_attack/slime_glomp/apply_effects(mob/living/carbon/human/user,mob/living/carbon/human/target,armour,attack_damage,zone)
@@ -148,7 +148,7 @@
 
 	var/organ = affecting.name
 	attack_damage = clamp(attack_damage, 1, 6)
-	attack_damage = 3 + attack_damage - rand(1, 5)
+	attack_damage = 6 + attack_damage - rand(1, 5)
 	switch(attack_damage)
 
 		if(1 to 5)	user.visible_message(SPAN_DANGER("\The [user] glanced \the [target] with [user_pronouns.his] [pick(attack_noun)] in the [organ]!"))
@@ -160,7 +160,7 @@
 /datum/unarmed_attack/nabber
 	attack_verb = list("mauled", "slashed", "struck", "pierced")
 	attack_noun = list("forelimb")
-	damage = 8
+	damage = 14
 	shredding = TRUE
 	sharp = TRUE
 	edge = TRUE
@@ -180,7 +180,7 @@
 /datum/unarmed_attack/bite/venom
 	attack_verb = list("bit", "sank their fangs into")
 	attack_sound = 'sound/weapons/bite.ogg'
-	damage = 5
+	damage = 12
 	delay = 120
 	attack_name = "venomous bite"
 

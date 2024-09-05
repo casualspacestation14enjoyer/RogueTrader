@@ -1,5 +1,5 @@
 /datum/mil_branch/scga
-	name = "Sol Central Government Army"
+	name = "Sol Central Government Guard"
 	name_short = "SCGA"
 	email_domain = "army.mil.scg"
 	assistant_job = null
@@ -165,7 +165,7 @@
 
 
 /datum/mil_rank/scga/e9_alt2
-	name = "Sergeant Major of the Army"
+	name = "Sergeant Major of the Guard"
 	name_short = "SMA"
 	accessory = list(
 		/obj/item/clothing/accessory/scga_rank/e9_alt2

@@ -25,8 +25,8 @@
 		M.drowsyness = max(M.drowsyness, 5)
 
 /datum/reagent/bicaridine
-	name = "Bicaridine"
-	description = "Bicaridine is a fast-acting medication to treat physical trauma."
+	name = "Regeneris-D"
+	description = "Regeneris-D is a fast-acting medication to treat physical trauma."
 	taste_description = "bitterness"
 	taste_mult = 3
 	reagent_state = LIQUID
@@ -51,8 +51,8 @@
 				E.status &= ~ORGAN_ARTERY_CUT
 
 /datum/reagent/kelotane
-	name = "Kelotane"
-	description = "Kelotane is a drug used to treat burns."
+	name = "Regeneris-B"
+	description = "Regeneris-B is a drug used to treat burns."
 	taste_description = "bitterness"
 	reagent_state = LIQUID
 	color = "#ffa800"
@@ -82,8 +82,8 @@
 		M.heal_organ_damage(0, 12 * removed)
 
 /datum/reagent/dylovene
-	name = "Dylovene"
-	description = "Dylovene is a broad-spectrum antitoxin used to neutralize poisons before they can do significant harm."
+	name = "Nexros"
+	description = "Nexros is a broad-spectrum antitoxin used to neutralize poisons before they can do significant harm."
 	taste_description = "a roll of gauze"
 	reagent_state = LIQUID
 	color = "#00a000"
@@ -152,8 +152,8 @@
 	holder.remove_reagent(/datum/reagent/lexorin, 3 * removed)
 
 /datum/reagent/tricordrazine
-	name = "Tricordrazine"
-	description = "Tricordrazine is a highly potent stimulant, originally derived from cordrazine. Can be used to treat a wide range of injuries."
+	name = "Medicae Gel"
+	description = "Medicae Gel is a highly potent stimulant, originally derived from cordrazine. Can be used to treat a wide range of injuries."
 	taste_description = "grossness"
 	reagent_state = LIQUID
 	color = "#8040ff"
@@ -239,7 +239,7 @@
 /* Painkillers */
 
 /datum/reagent/paracetamol
-	name = "Paracetamol"
+	name = "Pain Suppressor"
 	description = "Most probably know this as Tylenol, but this chemical is a mild, simple painkiller."
 	taste_description = "sickness"
 	reagent_state = LIQUID
@@ -260,7 +260,7 @@
 	M.add_chemical_effect(CE_PAINKILLER, 10)
 
 /datum/reagent/tramadol
-	name = "Tramadol"
+	name = "Morphium"
 	description = "A simple, yet effective painkiller. Don't mix with alcohol."
 	taste_description = "sourness"
 	reagent_state = LIQUID
@@ -322,7 +322,7 @@
 				return 2
 
 /datum/reagent/tramadol/oxycodone
-	name = "Oxycodone"
+	name = "Aequitas-D"
 	description = "An effective and very addictive painkiller. Don't mix with alcohol."
 	taste_description = "bitterness"
 	color = "#800080"
@@ -332,7 +332,7 @@
 	effective_dose = 2
 
 /datum/reagent/deletrathol
-	name = "Deletrathol"
+	name = "Aequitas-X"
 	description = "An effective painkiller that causes confusion."
 	taste_description = "confusion"
 	color = "#800080"

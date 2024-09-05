@@ -320,8 +320,8 @@
 	body_parts_covered = UPPER_TORSO|ARMS
 
 /obj/item/clothing/suit/storage/leather_jacket/nanotrasen
-	name = "\improper NanoTrasen black leather jacket"
-	desc = "A black leather coat. The NanoTrasen logo is proudly displayed on the back."
+	name = "\improper Necromundan black leather jacket"
+	desc = "A black leather coat. The Necromundan logo is proudly displayed on the back."
 	icon_state = "leather_jacket_nt"
 
 //This one has buttons for some reason
@@ -338,8 +338,8 @@
 	body_parts_covered = UPPER_TORSO|ARMS
 
 /obj/item/clothing/suit/storage/toggle/brown_jacket/nanotrasen
-	name = "\improper NanoTrasen leather jacket"
-	desc = "A brown leather coat. The NanoTrasen logo is proudly displayed on the back."
+	name = "\improper Necromundan leather jacket"
+	desc = "A brown leather coat. The Necromundan logo is proudly displayed on the back."
 	icon_state = "brown_jacket_nt"
 
 /obj/item/clothing/suit/storage/toggle/agent_jacket
@@ -367,8 +367,8 @@
 	icon_state = "mu_hoodie"
 
 /obj/item/clothing/suit/storage/toggle/hoodie/nt
-	name = "\improper NanoTrasen hoodie"
-	desc = "A warm, blue sweatshirt. It proudly bears the NanoTrasen logo on the back. The edges are trimmed with silver."
+	name = "\improper Necromundan hoodie"
+	desc = "A warm, blue sweatshirt. It proudly bears the Necromundan logo on the back. The edges are trimmed with silver."
 	icon_state = "nt_hoodie"
 
 /obj/item/clothing/suit/storage/toggle/hoodie/smw
@@ -407,8 +407,8 @@
 	icon_state = "sciponcho"
 
 /obj/item/clothing/suit/poncho/nanotrasen
-	name = "\improper NanoTrasen poncho"
-	desc = "A simple, comfortable cloak without sleeves. This one is white with a few red stripes, colors of NanoTrasen. Go NanoTrasen!"
+	name = "\improper Necromundan poncho"
+	desc = "A simple, comfortable cloak without sleeves. This one is white with a few red stripes, colors of Necromundan. Go Necromundan!"
 	icon_state = "sciponcho_nt"
 
 /obj/item/clothing/suit/poncho/cargo

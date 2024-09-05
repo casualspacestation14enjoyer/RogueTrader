@@ -14,15 +14,14 @@
 		rad = ARMOR_RAD_SMALL
 		)
 	siemens_coefficient = 0.3
-	species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_IPC, SPECIES_VOX)
+	species_restricted = list(SPECIES_HUMAN,SPECIES_TAU,SPECIES_UNATHI,SPECIES_IPC, SPECIES_VOX)
 	sprite_sheets = list(
-		SPECIES_SKRELL = 'icons/mob/species/skrell/onmob_head_skrell.dmi',
 		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_head_unathi.dmi',
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_head_vox.dmi'
 		)
 	sprite_sheets_obj = list(
 		SPECIES_UNATHI = 'icons/obj/clothing/species/unathi/obj_head_unathi.dmi',
-		SPECIES_SKRELL = 'icons/obj/clothing/species/skrell/obj_head_skrell.dmi',
+		SPECIES_TAU = 'icons/obj/clothing/species/skrell/obj_head_skrell.dmi',
 		SPECIES_VOX = 'icons/obj/clothing/species/vox/obj_head_vox.dmi'
 		)
 	camera = /obj/machinery/camera/network/mercenary
@@ -48,14 +47,14 @@
 		)
 	allowed = list(/obj/item/device/flashlight,/obj/item/tank,/obj/item/device/suit_cooling_unit,/obj/item/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/melee/baton,/obj/item/melee/energy/sword,/obj/item/handcuffs)
 	siemens_coefficient = 0.3
-	species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_IPC, SPECIES_VOX)
+	species_restricted = list(SPECIES_HUMAN,SPECIES_TAU,SPECIES_UNATHI,SPECIES_IPC, SPECIES_VOX)
 	sprite_sheets = list(
 		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_suit_unathi.dmi',
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_suit_vox.dmi'
 		)
 	sprite_sheets_obj = list(
 		SPECIES_UNATHI = 'icons/obj/clothing/species/unathi/obj_suit_unathi.dmi',
-		SPECIES_SKRELL = 'icons/obj/clothing/species/skrell/obj_suit_skrell.dmi',
+		SPECIES_TAU = 'icons/obj/clothing/species/skrell/obj_suit_skrell.dmi',
 		SPECIES_VOX = 'icons/obj/clothing/species/vox/obj_suit_vox.dmi'
 		)
 

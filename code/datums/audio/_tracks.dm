@@ -1,3 +1,11 @@
+/singleton/audio/track/lobby
+	source = 'sound/newmusic/DANGER.ogg'
+	title = "Imperial Tunes"
+	author = "the Lord Trader"
+	collection = "Ravenors Beats"
+	license = null
+	url = "nonyabusiness"
+
 /singleton/audio/track/absconditus
 	source = 'sound/music/traitor.ogg'
 	title = "Absconditus"

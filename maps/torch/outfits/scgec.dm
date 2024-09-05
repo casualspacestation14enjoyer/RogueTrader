@@ -8,35 +8,35 @@
 
 // Utility
 /singleton/hierarchy/outfit/scgec/utility_enlisted
-	name = "SCGEC - Enlisted Utility"
+	name = "IMPEC - Enlisted Utility"
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary
 	shoes = /obj/item/clothing/shoes/dutyboots
 	head = /obj/item/clothing/head/soft/solgov/expedition
 
 
 /singleton/hierarchy/outfit/scgec/utility_command
-	name = "SCGEC - Command Utility"
+	name = "IMPEC - Command Utility"
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer
 	shoes = /obj/item/clothing/shoes/dutyboots
 	head = /obj/item/clothing/head/soft/solgov/expedition
 
 
 /singleton/hierarchy/outfit/scgec/utility_senior_command
-	name = "SCGEC - Senior Command Utility"
+	name = "IMPEC - Senior Command Utility"
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer
 	shoes = /obj/item/clothing/shoes/dutyboots
 	head = /obj/item/clothing/head/soft/solgov/expedition
 
 
 /singleton/hierarchy/outfit/scgec/utility_captain
-	name = "SCGEC - Captain Utility"
+	name = "IMPEC - Captain Utility"
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer
 	shoes = /obj/item/clothing/shoes/dutyboots
 	head = /obj/item/clothing/head/soft/solgov/expedition/co
 
 
 /singleton/hierarchy/outfit/scgec/utility_admiral
-	name = "SCGEC - Admiral Utility"
+	name = "IMPEC - Admiral Utility"
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer
 	shoes = /obj/item/clothing/shoes/dutyboots
 	head = /obj/item/clothing/head/soft/solgov/expedition/co
@@ -44,7 +44,7 @@
 
 // Service
 /singleton/hierarchy/outfit/scgec/service
-	name = "SCGEC - Enlisted Service"
+	name = "IMPEC - Enlisted Service"
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary
 	suit = /obj/item/clothing/suit/storage/solgov/service/expeditionary
 	shoes = /obj/item/clothing/shoes/dutyboots
@@ -52,7 +52,7 @@
 
 
 /singleton/hierarchy/outfit/scgec/service_command
-	name = "SCGEC - Command Service"
+	name = "IMPEC - Command Service"
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer
 	suit = /obj/item/clothing/suit/storage/solgov/service/expeditionary/command
 	shoes = /obj/item/clothing/shoes/dutyboots
@@ -60,7 +60,7 @@
 
 
 /singleton/hierarchy/outfit/scgec/service_senior_command
-	name = "SCGEC - Senior Command Service"
+	name = "IMPEC - Senior Command Service"
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer
 	suit = /obj/item/clothing/suit/storage/solgov/service/expeditionary/command
 	shoes = /obj/item/clothing/shoes/dutyboots
@@ -68,7 +68,7 @@
 
 
 /singleton/hierarchy/outfit/scgec/service_captain
-	name = "SCGEC - Captain Service"
+	name = "IMPEC - Captain Service"
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer
 	suit = /obj/item/clothing/suit/storage/solgov/service/expeditionary/command
 	shoes = /obj/item/clothing/shoes/dutyboots
@@ -76,7 +76,7 @@
 
 
 /singleton/hierarchy/outfit/scgec/service_admiral
-	name = "SCGEC - Admiral Service"
+	name = "IMPEC - Admiral Service"
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer
 	suit = /obj/item/clothing/suit/storage/solgov/service/expeditionary/command
 	shoes = /obj/item/clothing/shoes/dutyboots
@@ -85,7 +85,7 @@
 
 // Dress
 /singleton/hierarchy/outfit/scgec/dress_enlisted
-	name = "SCGEC - Enlisted Dress"
+	name = "IMPEC - Enlisted Dress"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary
 	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition
 	shoes = /obj/item/clothing/shoes/dress
@@ -94,7 +94,7 @@
 
 
 /singleton/hierarchy/outfit/scgec/dress_skirt_enlisted
-	name = "SCGEC - Enlisted Dress (Skirt)"
+	name = "IMPEC - Enlisted Dress (Skirt)"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary/skirt
 	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition
 	shoes = /obj/item/clothing/shoes/dress
@@ -103,7 +103,7 @@
 
 
 /singleton/hierarchy/outfit/scgec/dress_senior_enlisted
-	name = "SCGEC - Senior Enlisted Dress"
+	name = "IMPEC - Senior Enlisted Dress"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary
 	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/senior
 	shoes = /obj/item/clothing/shoes/dress
@@ -112,7 +112,7 @@
 
 
 /singleton/hierarchy/outfit/scgec/dress_skirt_senior_enlisted
-	name = "SCGEC - Senior Enlisted Dress (Skirt)"
+	name = "IMPEC - Senior Enlisted Dress (Skirt)"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary/skirt
 	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/chief
 	shoes = /obj/item/clothing/shoes/dress
@@ -121,7 +121,7 @@
 
 
 /singleton/hierarchy/outfit/scgec/dress_chief_enlisted
-	name = "SCGEC - Chief Enlisted Dress"
+	name = "IMPEC - Chief Enlisted Dress"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary
 	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/chief
 	shoes = /obj/item/clothing/shoes/dress
@@ -130,7 +130,7 @@
 
 
 /singleton/hierarchy/outfit/scgec/dress_skirt_chief_enlisted
-	name = "SCGEC - Chief Enlisted Dress (Skirt)"
+	name = "IMPEC - Chief Enlisted Dress (Skirt)"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary/skirt
 	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/senior
 	shoes = /obj/item/clothing/shoes/dress
@@ -139,7 +139,7 @@
 
 
 /singleton/hierarchy/outfit/scgec/dress_command
-	name = "SCGEC - Command Dress"
+	name = "IMPEC - Command Dress"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary
 	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/command
 	shoes = /obj/item/clothing/shoes/dress
@@ -148,7 +148,7 @@
 
 
 /singleton/hierarchy/outfit/scgec/dress_skirt_command
-	name = "SCGEC - Command Dress (Skirt)"
+	name = "IMPEC - Command Dress (Skirt)"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary/skirt
 	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/command
 	shoes = /obj/item/clothing/shoes/dress
@@ -157,7 +157,7 @@
 
 
 /singleton/hierarchy/outfit/scgec/dress_senior_command
-	name = "SCGEC - Senior Command Dress"
+	name = "IMPEC - Senior Command Dress"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary
 	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/command/cdr
 	shoes = /obj/item/clothing/shoes/dress
@@ -166,7 +166,7 @@
 
 
 /singleton/hierarchy/outfit/scgec/dress_skirt_senior_command
-	name = "SCGEC - Senior Command Dress (Skirt)"
+	name = "IMPEC - Senior Command Dress (Skirt)"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary/skirt
 	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/command/cdr
 	shoes = /obj/item/clothing/shoes/dress
@@ -175,7 +175,7 @@
 
 
 /singleton/hierarchy/outfit/scgec/dress_captain
-	name = "SCGEC - Captain Dress"
+	name = "IMPEC - Captain Dress"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary
 	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/command/capt
 	shoes = /obj/item/clothing/shoes/dress
@@ -184,7 +184,7 @@
 
 
 /singleton/hierarchy/outfit/scgec/dress_skirt_captain
-	name = "SCGEC - Captain Dress (Skirt)"
+	name = "IMPEC - Captain Dress (Skirt)"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary/skirt
 	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/command/capt
 	shoes = /obj/item/clothing/shoes/dress
@@ -193,7 +193,7 @@
 
 
 /singleton/hierarchy/outfit/scgec/dress_admiral
-	name = "SCGEC - Admiral Dress"
+	name = "IMPEC - Admiral Dress"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary
 	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/command/adm
 	shoes = /obj/item/clothing/shoes/dress
@@ -202,7 +202,7 @@
 
 
 /singleton/hierarchy/outfit/scgec/dress_skirt_admiral
-	name = "SCGEC - Admiral Dress (Skirt)"
+	name = "IMPEC - Admiral Dress (Skirt)"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary/skirt
 	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/command/adm
 	shoes = /obj/item/clothing/shoes/dress
@@ -212,14 +212,14 @@
 
 // PT
 /singleton/hierarchy/outfit/scgec/pt
-	name = "SCGEC - PT"
+	name = "IMPEC - PT"
 	uniform = /obj/item/clothing/under/solgov/pt/expeditionary
 	shoes = /obj/item/clothing/shoes/black
 
 
 // Accessory boxes
 /obj/item/storage/backpack/dufflebag/scgec_accessories
-	name = "dressup accessories, SCGEC"
+	name = "dressup accessories, IMPEC"
 	startswith = list(
 		/obj/item/storage/box/large/scgec_ranks,
 		/obj/item/storage/box/scgec_patches,
@@ -234,7 +234,7 @@
 
 
 /obj/item/storage/box/large/scgec_ranks
-	name = "rank box, SCGEC"
+	name = "rank box, IMPEC"
 	startswith = list(
 		/obj/item/clothing/accessory/solgov/rank/ec/enlisted,
 		/obj/item/clothing/accessory/solgov/rank/ec/enlisted,
@@ -258,7 +258,7 @@
 
 
 /obj/item/storage/box/scgec_patches
-	name = "patch box, SCGEC"
+	name = "patch box, IMPEC"
 	startswith = list(
 		/obj/item/clothing/accessory/solgov/torch_patch,
 		/obj/item/clothing/accessory/solgov/torch_patch,
@@ -272,7 +272,7 @@
 
 
 /obj/item/storage/box/scgec_badges
-	name = "badge box, SCGEC"
+	name = "badge box, IMPEC"
 	startswith = list(
 		/obj/item/clothing/accessory/solgov/skillbadge/botany,
 		/obj/item/clothing/accessory/solgov/skillbadge/netgun,
@@ -290,7 +290,7 @@
 
 
 /obj/item/storage/box/scgec_scarves
-	name = "scarf box, SCGEC"
+	name = "scarf box, IMPEC"
 	startswith = list(
 		/obj/item/clothing/accessory/solgov/ec_scarf,
 		/obj/item/clothing/accessory/solgov/ec_scarf/observatory,
@@ -299,7 +299,7 @@
 
 
 /obj/item/storage/box/large/scgec_berets
-	name = "berets box, SCGEC"
+	name = "berets box, IMPEC"
 	startswith = list(
 		/obj/item/clothing/head/beret/solgov/expedition,
 		/obj/item/clothing/head/beret/solgov/expedition/security,
@@ -315,7 +315,7 @@
 
 
 /obj/item/storage/box/large/scgec_gloves
-	name = "gloves box, SCGEC"
+	name = "gloves box, IMPEC"
 	startswith = list(
 		/obj/item/clothing/gloves/thick/duty/solgov/eng,
 		/obj/item/clothing/gloves/thick/duty/solgov/cmd,
@@ -329,7 +329,7 @@
 
 
 /obj/item/storage/box/scgec_department
-	name = "department utility accessories box, SCGEC"
+	name = "department utility accessories box, IMPEC"
 	startswith = list(
 		/obj/item/clothing/accessory/solgov/department/command,
 		/obj/item/clothing/accessory/solgov/department/engineering,
@@ -343,7 +343,7 @@
 
 
 /obj/item/storage/box/scgec_department_service
-	name = "department service accessories box, SCGEC"
+	name = "department service accessories box, IMPEC"
 	startswith = list(
 		/obj/item/clothing/accessory/solgov/department/command/service,
 		/obj/item/clothing/accessory/solgov/department/engineering/service,

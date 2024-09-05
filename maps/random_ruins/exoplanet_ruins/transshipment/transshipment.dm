@@ -74,7 +74,7 @@
 	movable_flags = MOVABLE_FLAG_EFFECTMOVE
 
 /obj/item/paper/transshipment
-	language = LANGUAGE_SPACER
+	language = LANGUAGE_LOW_GOTHIC
 
 /obj/item/paper/transshipment/first
 	name = "To Ted"

@@ -86,25 +86,25 @@
 	result_amount = 3
 
 /singleton/reaction/dylovene
-	name = "Dylovene"
+	name = "Nexros"
 	result = /datum/reagent/dylovene
 	required_reagents = list(/datum/reagent/silicon = 1, /datum/reagent/potassium = 1, /datum/reagent/ammonia = 1)
 	result_amount = 3
 
 /singleton/reaction/tramadol
-	name = "Tramadol"
+	name = "Morphium"
 	result = /datum/reagent/tramadol
 	required_reagents = list(/datum/reagent/inaprovaline = 1, /datum/reagent/ethanol = 1, /datum/reagent/acetone = 1)
 	result_amount = 3
 
 /singleton/reaction/paracetamol
-	name = "Paracetamol"
+	name = "Pain Suppressor"
 	result = /datum/reagent/paracetamol
 	required_reagents = list(/datum/reagent/tramadol = 1, /datum/reagent/sugar = 1, /datum/reagent/water = 1)
 	result_amount = 3
 
 /singleton/reaction/oxycodone
-	name = "Oxycodone"
+	name = "Aequitas-D"
 	result = /datum/reagent/tramadol/oxycodone
 	required_reagents = list(/datum/reagent/ethanol = 1, /datum/reagent/tramadol = 1)
 	catalysts = list(/datum/reagent/toxin/phoron = 5)
@@ -170,7 +170,7 @@
 	result_amount = 2
 
 /singleton/reaction/kelotane
-	name = "Kelotane"
+	name = "Regeneris-B"
 	result = /datum/reagent/kelotane
 	required_reagents = list(/datum/reagent/silicon = 1, /datum/reagent/carbon = 1)
 	result_amount = 2
@@ -198,7 +198,7 @@
 	result_amount = 3
 
 /singleton/reaction/tricordrazine
-	name = "Tricordrazine"
+	name = "Medicae Gel"
 	result = /datum/reagent/tricordrazine
 	required_reagents = list(/datum/reagent/inaprovaline = 1, /datum/reagent/dylovene = 1)
 	result_amount = 2
@@ -231,7 +231,7 @@
 	result_amount = 3
 
 /singleton/reaction/bicaridine
-	name = "Bicaridine"
+	name = "Regeneris-D"
 	result = /datum/reagent/bicaridine
 	required_reagents = list(/datum/reagent/inaprovaline = 1, /datum/reagent/carbon = 1)
 	inhibitors = list(/datum/reagent/sugar = 1) // Messes up with inaprovaline

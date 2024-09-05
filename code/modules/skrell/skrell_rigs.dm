@@ -2,12 +2,9 @@
 
 //Define Rig Clothing
 /obj/item/clothing/suit/space/rig/ert/skrell
-	name = "skrellian recon hardsuit chestpiece"
+	name = "Tau recon hardsuit chestpiece"
 	desc = "A powerful recon hardsuit with integrated power supply and atmosphere. It's impressive design perfectly tailors to the user's body."
-	species_restricted = list(SPECIES_SKRELL)
-	sprite_sheets = list(
-		SPECIES_SKRELL = 'icons/mob/species/skrell/onmob_chest_rig_skrell.dmi'
-	)
+	species_restricted = list(SPECIES_HUMAN, SPECIES_IPC, SPECIES_TAU)
 	allowed = list(
 		/obj/item/gun,
 		/obj/item/ammo_magazine,
@@ -17,36 +14,27 @@
 	)
 
 /obj/item/clothing/head/helmet/space/rig/ert/skrell
-	name = "skrellian recon hardsuit helmet"
+	name = "Tau recon hardsuit helmet"
 	desc = "A powerful recon hardsuit with integrated power supply and atmosphere. It's impressive design perfectly tailors to the user's body."
 	light_overlay = "helmet_light_dual"
-	species_restricted = list(SPECIES_SKRELL)
-	sprite_sheets = list(
-		SPECIES_SKRELL = 'icons/mob/species/skrell/onmob_head_rig_skrell.dmi'
-	)
+	species_restricted = list(SPECIES_HUMAN, SPECIES_IPC, SPECIES_TAU)
+
 
 /obj/item/clothing/shoes/magboots/rig/ert/skrell
-	name = "skrellian recon hardsuit boots"
+	name = "Tau recon hardsuit boots"
 	desc = "A powerful recon hardsuit with integrated power supply and atmosphere. It's impressive design perfectly tailors to the user's body."
-	species_restricted = list(SPECIES_SKRELL)
-	sprite_sheets = list(
-		SPECIES_SKRELL = 'icons/mob/species/skrell/onmob_feet_rig_skrell.dmi'
-	)
+	species_restricted = list(SPECIES_HUMAN, SPECIES_IPC, SPECIES_TAU)
 
 /obj/item/clothing/gloves/rig/ert/skrell
-	name = "skrellian recon hardsuit gloves"
+	name = "Tau recon hardsuit gloves"
 	desc = "A powerful recon hardsuit with integrated power supply and atmosphere. It's impressive design perfectly tailors to the user's body."
 	siemens_coefficient = 0
-	species_restricted = list(SPECIES_SKRELL)
-	sprite_sheets = list(
-		SPECIES_SKRELL = 'icons/mob/species/skrell/onmob_hands_rig_skrell.dmi'
-	)
-
+	species_restricted = list(SPECIES_HUMAN, SPECIES_IPC, SPECIES_TAU)
 
 
 //Skrell Baseline Suit
 /obj/item/rig/skrell
-	name = "skrellian recon hardsuit"
+	name = "Tau recon hardsuit"
 	desc = "A powerful recon hardsuit with integrated power supply and atmosphere. It's impressive design perfectly tailors to the user's body."
 	icon_state = "skrell_standard_rig"
 	item_state = null
@@ -70,9 +58,6 @@
 	boot_type = /obj/item/clothing/shoes/magboots/rig/ert/skrell
 	glove_type = /obj/item/clothing/gloves/rig/ert/skrell
 	update_visible_name = TRUE
-	sprite_sheets = list(
-		SPECIES_SKRELL = 'icons/mob/species/skrell/onmob_back_rig_skrell.dmi'
-	)
 	initial_modules = list(
 		/obj/item/rig_module/vision/nvg,
 		/obj/item/rig_module/chem_dispenser/skrell,
@@ -83,7 +68,7 @@
 
 //Skrell Engineering Suit
 /obj/item/rig/skrell/eng
-	name = "skrellian engineering hardsuit"
+	name = "Tau engineering hardsuit"
 	desc = "A powerful engineering hardsuit with integrated power supply and atmosphere. It's impressive design perfectly tailors to the user's body."
 	icon_state = "skrell_eng_rig"
 	initial_modules = list(
@@ -99,7 +84,7 @@
 
 //Skrell Medical Suit
 /obj/item/rig/skrell/med
-	name = "skrellian medical hardsuit"
+	name = "Tau medical hardsuit"
 	desc = "A powerful medical hardsuit with integrated power supply and atmosphere. It's impressive design perfectly tailors to the user's body."
 	icon_state = "skrell_med_rig"
 	initial_modules = list(
@@ -114,7 +99,7 @@
 
 //Skrell Combat Suit
 /obj/item/rig/skrell/sec
-	name = "skrellian combat hardsuit"
+	name = "Tau combat hardsuit"
 	desc = "A powerful combat hardsuit with integrated power supply and atmosphere. It's impressive design perfectly tailors to the user's body."
 	icon_state = "skrell_standard_rig"
 	armor = list(
@@ -136,7 +121,7 @@
 
 //Skrell Command Suit
 /obj/item/rig/skrell/cmd
-	name = "skrellian command hardsuit"
+	name = "Tau command hardsuit"
 	desc = "A powerful command hardsuit with integrated power supply and atmosphere. It's impressive design perfectly tailors to the user's body."
 	icon_state = "skrell_com_rig"
 	armor = list(
@@ -160,10 +145,10 @@
 
 // Skrell medical dispensers
 /obj/item/rig_module/chem_dispenser/skrell
-	name = "skrellian medical injector"
-	desc = "A sleek medical injector of skrellian design."
-	interface_name = "skrellian medical injector"
-	interface_desc = "A sleek medical injector of skrellian design."
+	name = "Tau medical injector"
+	desc = "A sleek medical injector of Tau design."
+	interface_name = "Tau medical injector"
+	interface_desc = "A sleek medical injector of Tau design."
 	charges = list(
 		list("tramadol",            "tramadol",            /datum/reagent/tramadol,      20),
 		list("dexalinp",            "dexalinp",            /datum/reagent/dexalinp,      20),
@@ -173,10 +158,10 @@
 // Skrell combat dispenser
 
 /obj/item/rig_module/chem_dispenser/skrell/combat
-	name = "skrellian combat injector"
-	desc = "A sleek stimulant injector of skrellian design."
-	interface_name = "skrellian combat injector"
-	interface_desc = "A sleek combat injector of skrellian design."
+	name = "Tau combat injector"
+	desc = "A sleek stimulant injector of Tau design."
+	interface_name = "Tau combat injector"
+	interface_desc = "A sleek combat injector of Tau design."
 	charges = list(
 		list("tramadol",            "tramadol",            /datum/reagent/tramadol,      20),
 		list("dexalinp",            "dexalinp",            /datum/reagent/dexalinp,      20),
@@ -189,8 +174,8 @@
 
 //Skrell Oxygen Generator
 /obj/item/tank/skrell
-	name = "skrellian gas reactor"
-	desc = "A skrellian gas processing plant that continuously synthesises oxygen."
+	name = "Tau gas reactor"
+	desc = "A Tau gas processing plant that continuously synthesises oxygen."
 	distribute_pressure = ONE_ATMOSPHERE*O2STANDARD
 	var/charge_cost = 0.01
 	var/refill_gas_type = GAS_OXYGEN
@@ -210,7 +195,7 @@
 //More Skrell Modules to replace Mantid
 
 /obj/item/rig_module/device/multitool/skrell
-	name = "skrellian integrated multitool"
+	name = "Tau integrated multitool"
 	desc = "A limited-sentience integrated multitool capable of interfacing with any number of systems."
 	interface_name = "multitool"
 	interface_desc = "A limited-sentience integrated multitool capable of interfacing with any number of systems."
@@ -227,10 +212,10 @@
 		return FALSE
 
 /obj/item/rig_module/device/cable_coil/skrell
-	name = "skrellian cable extruder"
-	desc = "A cable nanofabricator of Skrellian design."
+	name = "Tau cable extruder"
+	desc = "A cable nanofabricator of Tau design."
 	interface_name = "cable fabricator"
-	interface_desc = "A cable nanofabricator of Skrellian design."
+	interface_desc = "A cable nanofabricator of Tau design."
 	device = /obj/item/stack/cable_coil/fabricator
 	icon = 'icons/obj/machines/power/power_cond_white.dmi'
 	icon_state = "coil"
@@ -238,10 +223,10 @@
 	selectable = TRUE
 
 /obj/item/rig_module/device/welder/skrell
-	name = "skrellian welding arm"
-	desc = "An electrical cutting torch of Skrellian design."
+	name = "Tau welding arm"
+	desc = "An electrical cutting torch of Tau design."
 	interface_name = "welding arm"
-	interface_desc = "An electrical cutting torch of Skrellian design."
+	interface_desc = "An electrical cutting torch of Tau design."
 	icon = 'icons/obj/tools/welder.dmi'
 	icon_state = "skrell_welder1"
 	engage_string = "Toggle Welder"
@@ -250,7 +235,7 @@
 	selectable = TRUE
 
 /obj/item/rig_module/device/clustertool/skrell
-	name = "skrellian clustertool"
+	name = "Tau clustertool"
 	desc = "A complex assembly of self-guiding, modular heads capable of performing most manual tasks."
 	interface_name = "modular clustertool"
 	interface_desc = "A complex assembly of self-guiding, modular heads capable of performing most manual tasks."
@@ -275,7 +260,7 @@
 
 // Self-charging power cell.
 /obj/item/cell/skrell
-	name = "skrellian microfusion cell"
+	name = "Tau microfusion cell"
 	desc = "An impossibly tiny fusion power engine of Skrell design."
 	maxcharge = 1500
 	w_class = ITEM_SIZE_NORMAL
@@ -335,7 +320,7 @@
 	return tool_mode == "crowbar"
 
 /obj/item/device/multitool/skrell
-	name = "skrellian multitool"
+	name = "Tau multitool"
 	desc = "An extreme sophisticated microcomputer capable of interfacing with practically any system."
 	icon = 'icons/obj/tools/multitool.dmi'
 	icon_state = "skrell_multitool"

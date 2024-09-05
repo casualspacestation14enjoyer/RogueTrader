@@ -98,7 +98,7 @@ GLOBAL_DATUM_INIT(ninjas, /datum/antagonist/ninja, new)
 	vox.equip_to_slot_or_del(new /obj/item/clothing/shoes/magboots/vox(vox), slot_shoes)
 	vox.equip_to_slot_or_del(new /obj/item/clothing/gloves/vox(vox), slot_gloves)
 	vox.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/vox(vox), slot_wear_mask)
-	vox.equip_to_slot_or_del(new /obj/item/tank/nitrogen(vox), slot_back)
+	vox.equip_to_slot_or_del(new /obj/item/tank/oxygen(vox), slot_back)
 	vox.put_in_hands(locate(/obj/item/modular_computer/pda/syndicate) in old.contents)
 	vox.set_internals(locate(/obj/item/tank) in vox.contents)
 
@@ -133,7 +133,7 @@ GLOBAL_DATUM_INIT(ninjas, /datum/antagonist/ninja, new)
 		if (13)
 			directive += "Some disgruntled [GLOB.using_map.company_name] employees have been supportive of our operations. Be wary of any mistreatment by command staff."
 		if (14)
-			var/xenorace = pick(SPECIES_UNATHI, SPECIES_SKRELL)
+			var/xenorace = pick(SPECIES_UNATHI, SPECIES_TAU)
 			directive += "A group of [xenorace] radicals have been loyal supporters of your interest group. Favor [xenorace] crew whenever possible."
 		if (15)
 			directive += "Your interest group has recently been accused of religious insensitivity. Attempt to speak with the Chaplain and prove these accusations false."

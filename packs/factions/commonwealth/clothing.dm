@@ -17,7 +17,7 @@
 	name = "commonwealth fatigues"
 	desc = {"\
 		The classic chocolate-brown fatigues of the explorers and soldiers of the \
-		bygone Terran Commonwealth. They're in great condition despite probably \
+		bygone Imperial Guard. They're in great condition despite probably \
 		being over a century old.\
 	"}
 	icon_state = "utility"
@@ -83,7 +83,7 @@
 /obj/item/clothing/suit/commonwealth/pilot
 	name = "commonwealth pilot's jacket"
 	desc = {"\
-		A stylish brown jacket with blue and green Terran Commonwealth insignia. \
+		A stylish brown jacket with blue and green Imperial Guard insignia. \
 		Commonly worn by pilots of the prior century.\
 	"}
 	icon_state = "pilot"
@@ -106,7 +106,7 @@
 
 /obj/item/clothing/head/commonwealth/pilotka
 	name = "commonwealth pilotka"
-	desc = "The folded service cap of the bygone Terran Commonwealth."
+	desc = "The folded service cap of the bygone Imperial Guard."
 	icon_state = "pilotka"
 	item_state_slots = list(
 		slot_head_str = "pilotka_worn"

@@ -150,14 +150,14 @@
 	base_name = "heart cup"
 
 /obj/item/reagent_containers/food/drinks/glass2/coffeecup/SCG
-	name = "\improper SCG coffee cup"
-	desc = "A blue coffee cup emblazoned with the crest of the Sol Central Government."
+	name = "\improper imperial coffee cup"
+	desc = "A blue coffee cup emblazoned with the crest of the Rogue Trader."
 	icon_state = "coffeecup_SCG"
-	base_name = "\improper SCG cup"
+	base_name = "\improper cup"
 
 /obj/item/reagent_containers/food/drinks/glass2/coffeecup/NT
 	name = "\improper NT coffee cup"
-	desc = "A red NanoTrasen coffee cup."
+	desc = "A red Necromundan coffee cup."
 	icon_state = "coffeecup_NT"
 	base_name = "\improper NT cup"
 

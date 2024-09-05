@@ -12,9 +12,9 @@
 	key = "5"
 	shorthand = "Iber"
 	partial_understanding = list(
-		LANGUAGE_HUMAN_EURO = 30,
+		LANGUAGE_HIGH_GOTHIC = 30,
 		LANGUAGE_HUMAN_SELENIAN = 15,
-		LANGUAGE_SPACER = 20
+		LANGUAGE_LOW_GOTHIC = 20
 	)
 	syllables = list(
 		"ad", "al", "an", "ar", "as", "ci", "co", "de", "do", "el", "en", "er", "es",

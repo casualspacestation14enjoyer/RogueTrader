@@ -3,7 +3,7 @@
 //EXO
 /obj/item/clothing/under/rank/guard
 	name = "green security guard uniform"
-	desc = "A durable uniform worn by Expeditionary Corps Organisation security."
+	desc = "A durable uniform worn by Dauntless security."
 	icon_state = "guard"
 	item_state = "w_suit"
 	worn_state = "guard"
@@ -36,7 +36,7 @@
 
 /obj/item/clothing/under/rank/scientist/executive
 	name = "\improper EXO polo and pants"
-	desc = "A fashionable polo and pair of trousers made from expensive biohazard-resistant fabrics. The colors denote the wearer as a Expeditionary Corps Organisation higher-up."
+	desc = "A fashionable polo and pair of trousers made from expensive biohazard-resistant fabrics. The colors denote the wearer as a Dauntless Organisation higher-up."
 	icon_state = "smockexec"
 	worn_state = "smockexec"
 	accessories = list(/obj/item/clothing/accessory/tunic/exec)
@@ -59,7 +59,7 @@
 
 /obj/item/clothing/under/rank/ntpilot
 	name = "green flight suit"
-	desc = "A sleek green Expeditionary Corps Organisation flight suit. It proudly sports three different patches with corporate logos on them, as well as several unnecessary looking flaps and pockets for effect."
+	desc = "A sleek green Dauntless Organisation flight suit. It proudly sports three different patches with corporate logos on them, as well as several unnecessary looking flaps and pockets for effect."
 	icon_state = "pilot"
 	item_state = "g_suit"
 	worn_state = "pilot"
@@ -71,7 +71,7 @@
 
 /obj/item/clothing/under/suit_jacket/corp
 	name = "\improper EXO executive suit"
-	desc = "A set of Expeditionary Corps Organisation-issued suit pants and shirt that particularly enthusiastic company executives tend to wear."
+	desc = "A set of Dauntless Organisation-issued suit pants and shirt that particularly enthusiastic company executives tend to wear."
 	icon_state = "suit"
 	item_state = "bl_suit"
 	worn_state = "suit"
@@ -82,23 +82,23 @@
 		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_under_corporate_unathi.dmi',
 		)
 
-//NanoTrasen
+//Necromundan
 /obj/item/clothing/under/rank/guard/nanotrasen
 	name = "red security guard uniform"
-	desc = "A durable uniform worn by subcontracted NanoTrasen security."
+	desc = "A durable uniform worn by subcontracted Necromundan security."
 	icon_state = "guard_nt"
 	worn_state = "guard_nt"
 
 /obj/item/clothing/under/rank/scientist/nanotrasen
-	name = "\improper NanoTrasen polo and pants"
-	desc = "A fashionable polo and pair of trousers belonging to NanoTrasen, a megacorporation primarily concerned with the research of new and dangerous technologies."
+	name = "\improper Necromundan polo and pants"
+	desc = "A fashionable polo and pair of trousers belonging to Necromundan, a megacorporation primarily concerned with the research of new and dangerous technologies."
 	icon_state = "smock_nt"
 	worn_state = "smock_nt"
 	accessories = list(/obj/item/clothing/accessory/tunic/nanotrasen)
 
 /obj/item/clothing/under/rank/scientist/executive/nanotrasen
-	name = "\improper NanoTrasen polo and pants"
-	desc = "A fashionable polo and pair of trousers made from expensive biohazard-resistant fabrics. The colors denote the wearer as a NanoTrasen higher-up."
+	name = "\improper Necromundan polo and pants"
+	desc = "A fashionable polo and pair of trousers made from expensive biohazard-resistant fabrics. The colors denote the wearer as a Necromundan higher-up."
 	icon_state = "smockexec_nt"
 	worn_state = "smockexec_nt"
 	accessories = list(/obj/item/clothing/accessory/tunic/exec/nanotrasen)
@@ -110,7 +110,7 @@
 
 /obj/item/clothing/under/rank/ntpilot/nanotrasen
 	name = "red flight suit"
-	desc = "A sleek red NanoTrasen flight suit. It proudly sports three different patches with corporate logos on them, as well as several unnecessary looking flaps and pockets for effect."
+	desc = "A sleek red Necromundan flight suit. It proudly sports three different patches with corporate logos on them, as well as several unnecessary looking flaps and pockets for effect."
 	icon_state = "pilot_nt"
 	item_state = "r_suit"
 	worn_state = "pilot_nt"
@@ -120,8 +120,8 @@
 		)
 
 /obj/item/clothing/under/suit_jacket/corp/nanotrasen
-	name = "\improper NanoTrasen executive suit"
-	desc = "A set of NanoTrasen-issued suit pants and shirt that particularly enthusiastic company executives tend to wear."
+	name = "\improper Necromundan executive suit"
+	desc = "A set of Necromundan-issued suit pants and shirt that particularly enthusiastic company executives tend to wear."
 	icon_state = "suit_nt"
 	worn_state = "suit_nt"
 	accessories = list(/obj/item/clothing/accessory/toggleable/corpjacket/nanotrasen, /obj/item/clothing/accessory/corptie/nanotrasen)

@@ -17,7 +17,7 @@
 		)
 	outfit_type = /singleton/hierarchy/outfit/job/torch/passenger/workplace_liaison
 	allowed_branches = list(/datum/mil_branch/civilian)
-	allowed_ranks = list(/datum/mil_rank/civ/contractor)
+	allowed_ranks = list(/datum/mil_rank/civ/civ)
 	skill_points = 26
 	min_skill = list( // 5 points
 		SKILL_BUREAUCRACY = SKILL_EXPERIENCED, // 4 points

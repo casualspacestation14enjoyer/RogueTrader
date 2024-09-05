@@ -7,34 +7,21 @@
 
 /datum/map/torch
 	branch_types = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet,
-		/datum/mil_branch/civilian,
-		/datum/mil_branch/solgov,
-		/datum/mil_branch/alien,
-		/datum/mil_branch/skrell_fleet,
-		/datum/mil_branch/iccgn,
-		/datum/mil_branch/scga
+		/datum/mil_branch/civilian
 	)
 
 	spawn_branch_types = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet,
 		/datum/mil_branch/civilian,
-		/datum/mil_branch/solgov,
 		/datum/mil_branch/alien,
-		/datum/mil_branch/skrell_fleet,
-		/datum/mil_branch/iccgn,
-		/datum/mil_branch/scga
+		/datum/mil_branch/skrell_fleet
 	)
 
 	species_to_branch_blacklist = list(
-		/datum/species/human   = list(/datum/mil_branch/alien, /datum/mil_branch/skrell_fleet),
+		/datum/species/human   = list(/datum/mil_branch/alien),
 		/datum/species/machine = list(/datum/mil_branch/alien, /datum/mil_branch/skrell_fleet),
 		/datum/species/vox     = list(
 			/datum/mil_branch/expeditionary_corps,
 			/datum/mil_branch/fleet,
-			/datum/mil_branch/civilian,
 			/datum/mil_branch/solgov,
 			/datum/mil_branch/skrell_fleet
 		)
@@ -110,8 +97,8 @@
  */
 
 /datum/mil_branch/expeditionary_corps
-	name = "Expeditionary Corps"
-	name_short = "SCGEC"
+	name = "Explorator Crew"
+	name_short = "Explorator"
 	email_domain = "torch.ec.scg"
 
 	rank_types = list(
@@ -474,7 +461,7 @@
  */
 
 /datum/mil_rank/civ/civ
-	name = "Civilian"
+	name = "Imperial"
 
 /datum/mil_rank/civ/contractor
 	name = "Contractor"

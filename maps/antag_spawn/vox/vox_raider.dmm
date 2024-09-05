@@ -38,10 +38,10 @@
 /area/map_template/vox_raider)
 "af" = (
 /obj/structure/table/rack,
-/obj/item/tank/nitrogen,
-/obj/item/tank/nitrogen,
-/obj/item/tank/nitrogen,
-/obj/item/tank/nitrogen,
+/obj/item/tank/oxygen,
+/obj/item/tank/oxygen,
+/obj/item/tank/oxygen,
+/obj/item/tank/oxygen,
 /turf/simulated/floor/tiled/dark/monotile/vox,
 /area/map_template/vox_raider)
 "ag" = (
@@ -297,7 +297,7 @@
 	},
 /area/map_template/vox_raider)
 "dj" = (
-/obj/machinery/atmospherics/unary/tank/nitrogen{
+/obj/machinery/atmospherics/unary/tank/oxygen{
 	dir = 4
 	},
 /turf/simulated/floor/plating/vox,

@@ -1,53 +1,37 @@
-/singleton/cultural_info/faction/skrell
-	name = FACTION_SKRELL_QERRVOAL
-	description = "A famous name within the Raskinta-Katish community, the Qerr'voal is the SDTF in charge of defending the Qerr'Vallis system,\
-	a task the Qerr'Voal has carried out with distinction for 600 years. Despite the relative safety and stability of the system many young Skrell \
-	of Qerr'balak and the surrounding colonies try to enter the prestigious organisation in order to gain status and influence with their brethren."
+/singleton/cultural_info/faction/tau
+	name = FACTION_TAU_VORLAAN
+	description = "A renowned name within the Shas caste, the Vor'laan is the organization responsible for the defense of the Vor'la system, \
+	a duty they have fulfilled with distinction for over 600 years. Despite the relative stability of the system, many young Tau from the surrounding sectors \
+	aspire to join this prestigious group to gain status and influence among their peers."
 
+/singleton/cultural_info/faction/tau/korlaan
+	name = FACTION_TAU_KORLAAN
+	description = "Formed shortly after the first contact between Tau and humans, this group patrols several worlds along the border between the two species. \
+	As the Kor'laan operates in a region where Tau and human interests converge, it has gradually adopted some human customs and practices. \
+	Currently expanding, it is expected to become the largest Tau organization along the Tau-human border in the coming decades."
 
-/singleton/cultural_info/faction/skrell/qalaoa
-	name = FACTION_SKRELL_QALAOA
-	description = "Relatively recent, this particular group was funded shortly after the first contact between Skrell and humans. Patrolling \
-	several worlds at the border between the two species this SDTF has, like the colonies it protects, started to slowly adopt some human customs \
-	and views, for better and for worse. Still growing today, some expect it to become the largest SDTF along the skrell-human border within the next thirty years."
+/singleton/cultural_info/faction/tau/aelan
+	name = FACTION_TAU_AELAN
+	description = "An organization from the distant reaches of Tau territory, the Ael'an serves the Ri'Qora system in the far Tau frontier. Heavily funded and well-equipped, \
+	the Ael'an has numerous cooperation agreements with frontier Tau groups and acts as an intermediary where Tau presence is limited. The Tau of Ael'an are among the most experienced \
+	in the outer reaches of Tau space."
 
+/singleton/cultural_info/faction/tau/vastar
+	name = FACTION_TAU_VASTAR
+	description = "Vas'tar is a Tau aerospace manufacturing and research corporation based in the city-state of Tibrivuu in the Go'kal system. \
+	Known for its significant contributions to the Tau space program, Vas'tar is focused on the design and construction of advanced technology and space travel equipment. \
+	The corporation's involvement in major Tau projects has led to it being a prominent name in Tau space."
 
-/singleton/cultural_info/faction/skrell/yiitalana
-	name = FACTION_SKRELL_YIITALANA
-	description = "An SDTF from the far side of skrell territory, deep into what is, to humanity, uncharted space. Yii'talana is the SDTF for the \
-	Ri'Qora system. Heavily funded and well equipped, Yii'Talana has a number of mutual assistance and cooperation agreements with a large number of \
-	frontier colony SDTF's, or functions as an intermediary SDTF for systems where a presence has yet to be established. The Skrell of Yii'Talana \
-	are some of the more experienced on the far skrellian frontier."
+/singleton/cultural_info/faction/tau/shovan
+	name = FACTION_TAU_SHOVAN
+	description = "Sho'van is a Tau security services corporation operating in the Harr'Kelm system. Providing private security to a variety of Tau vessels, traders, and organizations, \
+	Sho'van is also known for its professional and reliable services. There are rumors about its involvement in intelligence gathering, but these claims remain unconfirmed. \
+	Sho'van is recognized for its high standards and effective operations."
 
+/singleton/cultural_info/faction/tau/other_tau_factions
+	name = FACTION_TAU_OTHER_FACTIONS
+	description = "Tau space is home to a multitude of factions, from corporations to political groups to independent entities. This category encompasses the diverse and numerous factions that operate within Tau space."
 
-/singleton/cultural_info/faction/skrell/krrigli
-	name = FACTION_SKRELL_KRRIGLI
-	description = "Krri'gli is a Skrell aerospace manufacturing and research corporation from the city-state of Tibrivuu in the Go'kal system,\
-	and one of the more well known Skrell corporations in human space as a result of its contribution to the Dauntless Project.\
-	Krri'gli is mostly concerned with the design and construction of bluespace drives, and is one of the largest providers in the human side \
-	of Skrell space. Their participation in The Dauntless project is their first human venture, and has resulted in their sending science staff \
-	as a part of the Expeditionary Corps Organization to provide expertise and gather mission data firsthand."
-	additional_langs = list(LANGUAGE_HUMAN_EURO)
-	economic_power = 1.5
-
-
-/singleton/cultural_info/faction/skrell/qonprri
-	name = FACTION_SKRELL_QONPRRI
-	description = "Qon'prri is, officially an independent security services corporation that operates in the Harr'Kelm system, providing private \
-	security services to a variety of Skrell vessels, traders and organisations, and, more recently, human corporations. Unofficially, it is rumoured that \
-	Qonn'prri is a for-profit offshoot of Qala'oa tasked with information gathering in human space and along the frontier.So far such claims have been \
-	unfounded, and Qonn'prri is known for offering a professional, reliable and able service to Humans and Skrell alike."
-	additional_langs = list(LANGUAGE_HUMAN_EURO)
-	economic_power = 1.4
-
-/singleton/cultural_info/faction/skrell/otherskrellfac
-	name = FACTION_SKRELL_OTHERSKRELLFAC
-	description = "There are more factions in skrellian space than can be counted, from corporations to crime syndicates to royal courts. This faction is one of those many outliers."
-	additional_langs = list(LANGUAGE_HUMAN_EURO)
-	economic_power = 1.5
-
-/singleton/cultural_info/faction/skrell/othersdtf
-	name = FACTION_SKRELL_OTHERSDTF
-	description = "SDTFs control skrell space from the human frontiers to far, far beyond. There are too many Defense Task Forces to name, and this SDTF is one of them."
-	additional_langs = list(LANGUAGE_HUMAN_EURO)
-	economic_power = 1.5
+/singleton/cultural_info/faction/tau/other_tau_groups
+	name = FACTION_TAU_OTHER_GROUPS
+	description = "There are many groups within Tau space, from minor organizations to local defense units. This category includes the various Tau groups that do not fit into the more prominent categories."

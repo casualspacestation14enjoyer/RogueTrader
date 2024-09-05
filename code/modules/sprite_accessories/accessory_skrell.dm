@@ -1,26 +1,14 @@
-/datum/sprite_accessory/hair/skr
-	name = "Skrell Male Tentacles"
-	icon = 'icons/mob/human_races/species/skrell/hair.dmi'
-	icon_state = "skrell_hair_m"
-	species_allowed = list(SPECIES_SKRELL)
-	gender = MALE
-
-/datum/sprite_accessory/hair/skr/tentacle_f
-	name = "Skrell Female Tentacles"
-	icon_state = "skrell_hair_f"
-	gender = FEMALE
-
 /datum/sprite_accessory/skin/skrell
 	name = "Default skrell skin"
 	icon_state = "default"
 	icon = 'icons/mob/human_races/species/skrell/body.dmi'
-	species_allowed = list(SPECIES_SKRELL)
+	species_allowed = list(SPECIES_TAU)
 
 /datum/sprite_accessory/marking/skrell
 	icon = 'icons/mob/human_races/species/skrell/markings.dmi'
 	draw_order = 50
 	use_organ_tag = FALSE
-	species_allowed = list(SPECIES_SKRELL)
+	species_allowed = list(SPECIES_TAU)
 
 /datum/sprite_accessory/marking/skrell/body
 	name = "Spots (Right, Body, Skrell)"
@@ -43,13 +31,3 @@
 /datum/sprite_accessory/marking/skrell/body/left
 	name = "Spots (Left, Body, Skrell)"
 	icon_state = "spots-left"
-
-/datum/sprite_accessory/marking/skrell/head
-	name = "Spots (Right, Tentacles, Skrell)"
-	draw_target = MARKING_TARGET_HAIR
-	icon_state = "spots-hair-right"
-	body_parts = list(BP_HEAD)
-
-/datum/sprite_accessory/marking/skrell/head/left
-	name = "Spots (Left, Tentacles, Skrell)"
-	icon_state = "spots-hair-left"

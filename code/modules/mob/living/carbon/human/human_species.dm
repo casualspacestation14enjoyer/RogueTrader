@@ -23,7 +23,7 @@
 
 /mob/living/carbon/human/skrell/Initialize(mapload)
 	head_hair_style = "Skrell Male Tentacles"
-	. = ..(mapload, SPECIES_SKRELL)
+	. = ..(mapload, SPECIES_TAU)
 
 /mob/living/carbon/human/unathi/Initialize(mapload)
 	head_hair_style = "Unathi Horns"

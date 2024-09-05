@@ -140,8 +140,8 @@
 
 	//Set species_restricted list
 	switch(target_species)
-		if(SPECIES_HUMAN, SPECIES_SKRELL)	//humanoid bodytypes
-			species_restricted = list(SPECIES_HUMAN, SPECIES_SKRELL, SPECIES_IPC) //skrell/humans/machines can wear each other's suits
+		if(SPECIES_HUMAN, SPECIES_TAU)	//humanoid bodytypes
+			species_restricted = list(SPECIES_HUMAN, SPECIES_TAU, SPECIES_IPC) //skrell/humans/machines can wear each other's suits
 		else
 			species_restricted = list(target_species)
 
@@ -156,10 +156,10 @@
 
 	//Set species_restricted list
 	switch(target_species)
-		if(SPECIES_SKRELL)
-			species_restricted = list(SPECIES_HUMAN, SPECIES_SKRELL, SPECIES_IPC) //skrell helmets fit humans too
+		if(SPECIES_TAU)
+			species_restricted = list(SPECIES_HUMAN, SPECIES_TAU, SPECIES_IPC) //skrell helmets fit humans too
 		if(SPECIES_HUMAN)
-			species_restricted = list(SPECIES_HUMAN, SPECIES_IPC) //human helmets fit IPCs too
+			species_restricted = list(SPECIES_HUMAN, SPECIES_TAU, SPECIES_IPC) //human helmets fit IPCs too
 		else
 			species_restricted = list(target_species)
 

@@ -239,7 +239,7 @@
 
 /datum/reagent/drink/thoom
 	name = "Th'oom Juice"
-	description = "A thick off-white fluid expressed from the juice glands of the Skrellian Th'oom."
+	description = "A thick off-white fluid expressed from the juice glands of the Tau Th'oom."
 	taste_description = "thick, sweet, and savory ... milk?"
 	color = "#baeece"
 	glass_name = "th'oom juice"

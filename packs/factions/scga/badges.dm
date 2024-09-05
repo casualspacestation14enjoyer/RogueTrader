@@ -1,6 +1,6 @@
 /obj/item/clothing/accessory/scga_badge
 	abstract_type = /obj/item/clothing/accessory/scga_badge
-	name = "base badge, SCGA"
+	name = "base badge, ImperialA"
 	desc = "You should not see this."
 	icon = 'packs/factions/scga/badges.dmi'
 	accessory_icons = list(
@@ -20,14 +20,14 @@
 
 
 /obj/item/clothing/accessory/scga_badge/enlisted
-	name = "pin badge, SCGA Enlisted"
-	desc = "A shiny little pin badge denoting qualification as a solar army enlistedman."
+	name = "pin badge, ImperialA Enlisted"
+	desc = "A shiny little pin badge denoting qualification as a imperial guard enlistedman."
 	icon_state = "enlisted"
 	overlay_state = "enlisted_worn"
 
 
 /obj/item/clothing/accessory/scga_badge/officer
-	name = "pin badge, SCGA Officer"
-	desc = "A shiny little pin badge denoting qualification as a solar army officer."
+	name = "pin badge, ImperialA Officer"
+	desc = "A shiny little pin badge denoting qualification as a imperial guard officer."
 	icon_state = "officer"
 	overlay_state = "officer_worn"

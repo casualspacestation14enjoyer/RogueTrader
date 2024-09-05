@@ -260,7 +260,7 @@
 /singleton/poster/bay_46
 	icon_state="bsposter46"
 	name = "Inspirational lawyer"
-	desc = "An inspirational poster depicting a Skrellian lawyer. He seems to be shouting something, while pointing fiercely to the right."
+	desc = "An inspirational poster depicting a Tau lawyer. He seems to be shouting something, while pointing fiercely to the right."
 
 
 /singleton/poster/bay_47

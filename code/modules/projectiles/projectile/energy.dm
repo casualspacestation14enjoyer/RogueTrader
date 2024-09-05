@@ -5,7 +5,7 @@
 	damage = 0
 	damage_type = DAMAGE_BURN
 	damage_flags = 0
-	distance_falloff = 2.5
+	distance_falloff = 2
 
 //releases a burst of light on impact or after travelling a distance
 /obj/item/projectile/energy/flash
@@ -231,67 +231,53 @@
 	name = "ION round"
 	fire_sound='sound/warhammer/gunshot/lasgun3.ogg'
 	icon_state = "pulse1"
-	damage = 100
-	armor_penetration = 41
+	damage = 82
+	armor_penetration = 44
 
 /obj/item/projectile/energy/ion/plasma
-	name = "Plasma round"
+	name = "plasma round"
 	fire_sound='sound/warhammer/gunshot/lasgun3.ogg'
 	icon_state = "pulse1"
-	damage = 100
+	damage = 82
 	armor_penetration = 41
 
 /obj/item/projectile/bullet/heavyplasma
-	name = "heavy plasma pulse"
+	name = "heavy plasma round"
 	icon_state = "pulse1"
 	fire_sound='sound/warhammer/gunshot/lasgun3.ogg'
 	armor_penetration = 41
-	damage = 48
+	damage = 52
 	agony = 20
 	damage_type = DAMAGE_BURN
-
-/obj/item/projectile/bullet/railgun
-	name = "metal slug"
-	icon_state = "dark_pellet"
-	fire_sound='sound/warhammer/gunshot/lasgun3.ogg'
-	armor_penetration = 44
-	damage = 78
-	damage_type = DAMAGE_BRUTE
-	penetrating = 3
-
-/obj/item/projectile/bullet/railgun/on_hit(atom/target)
-	// Trigger the explosion effect
-	explosion(src.loc, 1, EX_ACT_LIGHT)
-	..()
-
-
-/obj/item/projectile/bullet/pellet/plasma
-	name = "heavy plasma pulse"
-	icon_state = "pulse1"
-	fire_sound='sound/warhammer/gunshot/lasgun3.ogg'
-	armor_penetration = 31
-	damage = 9
-	agony = 5
-	damage_type = DAMAGE_BURN
-	range_step = 1
 
 /obj/item/projectile/bullet/heavyplasma/on_hit(atom/target)
 	// Trigger the explosion effect
 	explosion(src.loc, 3, EX_ACT_LIGHT)
 	..()
 
+/obj/item/projectile/bullet/railgun
+	name = "metal slug"
+	icon_state = "dark_pellet"
+	fire_sound='sound/warhammer/gunshot/lasgun3.ogg'
+	armor_penetration = 44
+	damage = 82
+	damage_type = DAMAGE_BRUTE
 
+/obj/item/projectile/bullet/railgun/on_hit(atom/target)
+	// Trigger the explosion effect
+	explosion(src.loc, 1, EX_ACT_LIGHT)
+	..()
 
 /obj/item/projectile/energy/pulsepistol
 	name = "pulse round"
 	fire_sound='sound/warhammer/gunshot/lasgun2.ogg'
 	icon_state = "pulse1"
-	damage = 60
+	damage = 64
 	armor_penetration = 35
 
 /obj/item/projectile/energy/pulserifle
 	name = "pulse round"
 	fire_sound='sound/warhammer/gunshot/lasgun2.ogg'
 	icon_state = "pulse1"
-	damage = 60
+	damage = 64
 	armor_penetration = 35

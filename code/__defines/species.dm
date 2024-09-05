@@ -43,6 +43,6 @@
 
 
 // Darkvision Levels. White is brightest, darker tints affect vision negatively
-#define DARKTINT_GOOD     "#ffffff"
-#define DARKTINT_MODERATE "#f9f9f5"
-#define DARKTINT_NONE     "#ebebe6"
+#define DARKTINT_GOOD     "#ffffffef"
+#define DARKTINT_MODERATE "#f9f9f5e5"
+#define DARKTINT_NONE     "#ebebe6d3"

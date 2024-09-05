@@ -58,7 +58,7 @@
 //misc tobacco nonsense
 /obj/item/storage/cigpaper
 	name = "\improper Gen. Eric cigarette paper"
-	desc = "A ubiquitous brand of cigarette rolling-paper endorsed by Commonwealth Civil War General Eric Osmundsun, of the Terran Commonwealth. Osmundsun, known as 'The Aresian Butcher' for his valorant service, died in a freak white-water kayak accident in 2231."
+	desc = "A ubiquitous brand of cigarette rolling-paper endorsed by Commonwealth Civil War General Eric Osmundsun, of the Imperial Guard. Osmundsun, known as 'The Aresian Butcher' for his valorant service, died in a freak white-water kayak accident in 2231."
 	icon = 'icons/obj/cigarettes.dmi'
 	icon_state = "cigpaperbook"
 	item_state = "cigpacket"

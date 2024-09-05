@@ -248,7 +248,7 @@
 	icon_state = "pilotnt"
 
 /obj/item/clothing/head/helmet/skrell
-	name = "skrellian helmet"
+	name = "Tau helmet"
 	desc = "A helmet built for use by a Skrell. This one appears to be fairly standard and reliable."
 	icon_state = "helmet_skrell"
 	valid_accessory_slots = null
@@ -293,7 +293,7 @@
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_SMALL
 		)
-	species_restricted = list(SPECIES_HUMAN)
+	species_restricted = list(SPECIES_HUMAN, SPECIES_TAU)
 
 /obj/item/clothing/head/helmet/nvgmount
 	name = "model helmet"

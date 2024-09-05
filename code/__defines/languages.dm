@@ -1,5 +1,5 @@
 //Human
-#define LANGUAGE_HUMAN_EURO      "Zurich Accord Common"
+#define LANGUAGE_HIGH_GOTHIC      "High Gothic"
 #define LANGUAGE_HUMAN_CHINESE   "Yangyu"
 #define LANGUAGE_HUMAN_ARABIC    "Prototype Standard Arabic"
 #define LANGUAGE_HUMAN_INDIAN    "New Dehlavi"
@@ -9,13 +9,13 @@
 
 //Human misc
 #define LANGUAGE_GUTTER         "Gutter"
-#define LANGUAGE_SPACER         "Spacer"
+#define LANGUAGE_LOW_GOTHIC         "Low Gothic"
 
 //Alien
 #define LANGUAGE_EAL               "Encoded Audio Language"
 #define LANGUAGE_UNATHI_SINTA      "Sinta'unathi"
 #define LANGUAGE_UNATHI_YEOSA      "Yeosa'unathi"
-#define LANGUAGE_SKRELLIAN         "Skrellian"
+#define LANGUAGE_TAU         "Tau"
 #define LANGUAGE_ROOTLOCAL         "Local Rootspeak"
 #define LANGUAGE_ROOTGLOBAL        "Global Rootspeak"
 #define LANGUAGE_ADHERENT          "Protocol"

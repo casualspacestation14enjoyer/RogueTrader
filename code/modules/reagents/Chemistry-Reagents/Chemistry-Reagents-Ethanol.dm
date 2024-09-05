@@ -1017,7 +1017,7 @@
 
 /datum/reagent/ethanol/battuta
 	name = "Ibn Batutta"
-	description = "One of the Official Cocktails of the Expeditionary Corps, celebrating Muhammad Ibn Battuta."
+	description = "One of the Official Cocktails of the Dauntless, celebrating Muhammad Ibn Battuta."
 	taste_description = "a Moroccan garden"
 	color = "#dfbe00"
 	strength = 18
@@ -1027,7 +1027,7 @@
 
 /datum/reagent/ethanol/magellan
 	name = "Magellan"
-	description = "One of the Official Cocktails of the Expeditionary Corps, celebrating Ferdinand Magellan."
+	description = "One of the Official Cocktails of the Dauntless, celebrating Ferdinand Magellan."
 	taste_description = "an aristrocatic experience"
 	color = "#6b3535"
 	strength = 13
@@ -1047,7 +1047,7 @@
 
 /datum/reagent/ethanol/zhenghe
 	name = "Zheng He"
-	description = "One of the Official Cocktails of the Expeditionary Corps, celebrating Zheng He."
+	description = "One of the Official Cocktails of the Dauntless, celebrating Zheng He."
 	taste_description = "herbal bitterness"
 	color = "#173b06"
 	strength = 20
@@ -1057,7 +1057,7 @@
 
 /datum/reagent/ethanol/armstrong
 	name = "Armstrong"
-	description = "One of the Official Cocktails of the Expeditionary Corps, celebrating Neil Armstrong."
+	description = "One of the Official Cocktails of the Dauntless, celebrating Neil Armstrong."
 	taste_description = "limes and alcoholic beer"
 	color = "#ffd300"
 	strength = 15
@@ -1173,14 +1173,14 @@
 
 /datum/reagent/ethanol/posset
 	name = "Posset"
-	description = "A type of hot milk mixed with lemon and ale. Known mostly as a Terran delicacy."
+	description = "A type of hot milk mixed with lemon and ale. Known mostly as a Imperial delicacy."
 	taste_description = "warm cream and lemon"
 	color = "#e3e5bf"
 	strength = 50
 	protein_amount = 0.5
 
 	glass_name = "posset"
-	glass_desc = "A sweet hot milk mixed with lemon and ale. A Terran delicacy"
+	glass_desc = "A sweet hot milk mixed with lemon and ale. A Imperial delicacy"
 
 /datum/reagent/ethanol/red_mead
 	name = "Red Mead"
@@ -1423,13 +1423,13 @@
 
 /datum/reagent/ethanol/springpunch
 	name = "Gilgamesh Spring Punch"
-	description = "A mix of vodka and lemon, extremely popular with Terrans."
+	description = "A mix of vodka and lemon, extremely popular with Imperials."
 	taste_description = "refreshing clear fizz"
 	color = "#dfdeda"
 	strength = 30
 
 	glass_name = "Gilgamesh spring punch"
-	glass_desc = "A mix of vodka and lemon, extremely popular with Terrans."
+	glass_desc = "A mix of vodka and lemon, extremely popular with Imperials."
 
 /datum/reagent/ethanol/hellshenpa
 	name = "Hellshen Pale Ale"
@@ -1541,14 +1541,14 @@
 
 /datum/reagent/ethanol/qokkhrona
 	name = "Qokk'hrona"
-	description = "Delicious Skrellian wine from refined qokk'loa."
+	description = "Delicious Tau wine from refined qokk'loa."
 	taste_description = "a thick potion of mushroom, slime, and hard alcohol"
 	color = "#c76c4d"
 	strength = 100
 	druggy = 5
 
 	glass_name = "qokk'hrona"
-	glass_desc = "Delicious Skrellian wine from refined qokk'loa."
+	glass_desc = "Delicious Tau wine from refined qokk'loa."
 
 /datum/reagent/ethanol/horchata
 	name = "Horchata"

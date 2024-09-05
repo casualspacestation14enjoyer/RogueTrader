@@ -150,7 +150,7 @@ var/global/list/ai_verbs_default = list(
 	//Languages
 	add_language(LANGUAGE_ROBOT_GLOBAL, TRUE)
 	add_language(LANGUAGE_EAL, TRUE)
-	add_language(LANGUAGE_HUMAN_EURO, TRUE)
+	add_language(LANGUAGE_HIGH_GOTHIC, TRUE)
 	add_language(LANGUAGE_HUMAN_ARABIC, TRUE)
 	add_language(LANGUAGE_HUMAN_CHINESE, TRUE)
 	add_language(LANGUAGE_HUMAN_IBERIAN, TRUE)
@@ -158,8 +158,8 @@ var/global/list/ai_verbs_default = list(
 	add_language(LANGUAGE_HUMAN_RUSSIAN, TRUE)
 	add_language(LANGUAGE_HUMAN_SELENIAN, TRUE)
 	add_language(LANGUAGE_UNATHI_SINTA, TRUE)
-	add_language(LANGUAGE_SKRELLIAN, TRUE)
-	add_language(LANGUAGE_SPACER, TRUE)
+	add_language(LANGUAGE_TAU, TRUE)
+	add_language(LANGUAGE_LOW_GOTHIC, TRUE)
 	add_language(LANGUAGE_SIGN, FALSE)
 
 	if(!safety)//Only used by AIize() to successfully spawn an AI.

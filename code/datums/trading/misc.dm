@@ -1,6 +1,6 @@
 /datum/trader/ship/pet_shop
 	name = "Pet Shop Owner"
-	name_language = LANGUAGE_SKRELLIAN
+	name_language = LANGUAGE_TAU
 	origin = "Pet Shop"
 	trade_flags = TRADER_GOODS|TRADER_MONEY|TRADER_WANTED_ONLY
 	possible_origins = list("Paws-Out", "Pets-R-Smart", "Tentacle Companions", "Xeno-Pets and Assorted Goods", "Barks and Drools")
@@ -67,7 +67,7 @@
 
 /datum/trader/ship/pet_shop/New()
 	..()
-	speech[TRADER_HAIL_START + SPECIES_SKRELL] = "Ah! A fellow Skrell. How wonderful, I may have a few pets imported from back home. Take a look."
+	speech[TRADER_HAIL_START + SPECIES_TAU] = "Ah! A fellow Skrell. How wonderful, I may have a few pets imported from back home. Take a look."
 
 /datum/trader/ship/prank_shop
 	name = "Prank Shop Owner"

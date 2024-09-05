@@ -88,14 +88,14 @@
 
 
 /obj/item/storage/pill_bottle/antitox
-	name = "pill bottle (Dylovene)"
+	name = "pill bottle (Nexros)"
 	desc = "Contains pills used to counter toxins."
 	startswith = list(/obj/item/reagent_containers/pill/antitox = 21)
 	wrapper_color = COLOR_GREEN
 
 
 /obj/item/storage/pill_bottle/bicaridine
-	name = "pill bottle (Bicaridine)"
+	name = "pill bottle (Regeneris-D)"
 	desc = "Contains pills used to stabilize the severely injured."
 	startswith = list(/obj/item/reagent_containers/pill/bicaridine = 21)
 	wrapper_color = COLOR_MAROON
@@ -123,7 +123,7 @@
 
 
 /obj/item/storage/pill_bottle/dylovene
-	name = "pill bottle (Dylovene)"
+	name = "pill bottle (Nexros)"
 	desc = "Contains pills used to treat toxic substances in the blood."
 	startswith = list(/obj/item/reagent_containers/pill/dylovene = 21)
 	wrapper_color = COLOR_GREEN
@@ -137,7 +137,7 @@
 
 
 /obj/item/storage/pill_bottle/kelotane
-	name = "pill bottle (Kelotane)"
+	name = "pill bottle (Regeneris-B)"
 	desc = "Contains pills used to treat burns."
 	startswith = list(/obj/item/reagent_containers/pill/kelotane = 21)
 	wrapper_color = COLOR_YELLOW
@@ -151,7 +151,7 @@
 
 
 /obj/item/storage/pill_bottle/tramadol
-	name = "pill bottle (Tramadol)"
+	name = "pill bottle (Morphium)"
 	desc = "Contains pills used to relieve pain."
 	startswith = list(/obj/item/reagent_containers/pill/tramadol = 14)
 	wrapper_color = COLOR_PURPLE_GRAY
@@ -186,7 +186,7 @@
 
 
 /obj/item/storage/pill_bottle/paracetamol
-	name = "pill bottle (Paracetamol)"
+	name = "pill bottle (Pain Suppressor)"
 	desc = "Mild painkiller, also known as Tylenol. Won't fix the cause of your headache (unlike cyanide), but might make it bearable."
 	startswith = list(/obj/item/reagent_containers/pill/paracetamol = 21)
 	wrapper_color = "#c8a5dc"

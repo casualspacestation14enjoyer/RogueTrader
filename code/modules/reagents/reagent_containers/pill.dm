@@ -77,7 +77,7 @@
 
 //We lied - it's pills all the way down
 /obj/item/reagent_containers/pill/antitox
-	name = "Dylovene (25u)"
+	name = "Nexros (25u)"
 	desc = "Neutralizes many common toxins."
 	icon_state = "pill1"
 /obj/item/reagent_containers/pill/antitox/New()
@@ -127,7 +127,7 @@
 
 
 /obj/item/reagent_containers/pill/kelotane
-	name = "Kelotane (15u)"
+	name = "Regeneris-B (15u)"
 	desc = "Used to treat burns."
 	icon_state = "pill2"
 /obj/item/reagent_containers/pill/kelotane/New()
@@ -137,7 +137,7 @@
 
 
 /obj/item/reagent_containers/pill/paracetamol
-	name = "Paracetamol (15u)"
+	name = "Pain Suppressor (15u)"
 	desc = "A painkiller for the ages. Chewables!"
 	icon_state = "pill3"
 /obj/item/reagent_containers/pill/paracetamol/New()
@@ -147,7 +147,7 @@
 
 
 /obj/item/reagent_containers/pill/tramadol
-	name = "Tramadol (15u)"
+	name = "Morphium (15u)"
 	desc = "A simple painkiller."
 	icon_state = "pill3"
 /obj/item/reagent_containers/pill/tramadol/New()
@@ -197,7 +197,7 @@
 
 
 /obj/item/reagent_containers/pill/dylovene
-	name = "Dylovene (15u)"
+	name = "Nexros (15u)"
 	desc = "A broad-spectrum anti-toxin."
 	icon_state = "pill1"
 /obj/item/reagent_containers/pill/dylovene/New()
@@ -207,7 +207,7 @@
 
 
 /obj/item/reagent_containers/pill/bicaridine
-	name = "Bicaridine (20u)"
+	name = "Regeneris-D (20u)"
 	desc = "Used to treat physical injuries."
 	icon_state = "pill2"
 /obj/item/reagent_containers/pill/bicaridine/New()

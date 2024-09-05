@@ -14,7 +14,7 @@
 		SPECIES_VOX = /spell/targeted/shapeshift/true_form,
 		SPECIES_UNATHI = /spell/moghes_blessing,
 		SPECIES_DIONA = /spell/aoe_turf/conjure/grove/gestalt,
-		SPECIES_SKRELL = /obj/item/contract/apprentice/skrell,
+		SPECIES_TAU = /obj/item/contract/apprentice/skrell,
 		SPECIES_IPC = /spell/camera_connection)
 
 /obj/item/magic_rock/attack_self(mob/user)
@@ -157,7 +157,7 @@
 
 //SKRELL
 /obj/item/contract/apprentice/skrell
-	name = "skrellian apprenticeship contract"
+	name = "Tau apprenticeship contract"
 	var/obj/item/spellbook/linked
 	color = "#3366ff"
 	contract_spells = list(/spell/contract/return_master) //somewhat of a necessity due to how many spells they would have after a while.

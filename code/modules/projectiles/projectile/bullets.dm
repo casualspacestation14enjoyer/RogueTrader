@@ -2,7 +2,8 @@
 	name = "bullet"
 	icon_state = "bullet"
 	fire_sound = null
-	damage = 50
+	damage = 37
+	armor_penetration = 15
 	damage_type = DAMAGE_BRUTE
 	damage_flags = DAMAGE_FLAG_BULLET | DAMAGE_FLAG_SHARP
 	embed = TRUE
@@ -125,36 +126,93 @@
 /* short-casing projectiles, like the kind used in pistols or SMGs */
 
 /obj/item/projectile/bullet/pistol
-	damage = 45
+	damage = 35
+	armor_penetration = 12
 	distance_falloff = 3
 
-/obj/item/projectile/bullet/pistol/holdout
-	damage = 40
+/obj/item/projectile/bullet/pistol/ap
+	armor_penetration = 16 // +4
+
+/obj/item/projectile/bullet/pistol/kp
+	damage = 38 // +3 damage.
+	armor_penetration = 24 // +4 added with AP. So +8 total from standard.
+
+/obj/item/projectile/bullet/pistol/ms
+	damage = 43 // MS rounds are +8 damage -5 AP to all rounds
+	armor_penetration = 7
+
+/obj/item/projectile/bullet/pistol/holdout // Higher quality penetrative slugs
+	damage = 35
+	armor_penetration = 14
 	penetration_modifier = 0.5
 	distance_falloff = 4
 
+/obj/item/projectile/bullet/pistol/holdout/ap
+	armor_penetration = 18
+
+/obj/item/projectile/bullet/pistol/holdout/kp
+	damage = 38
+	armor_penetration = 22
+
+/obj/item/projectile/bullet/pistol/holdout/ms
+	damage = 43
+	armor_penetration = 9
+
 /obj/item/projectile/bullet/pistol/strong
-	damage = 50
+	damage = 40
 	penetration_modifier = 0.5
-	distance_falloff = 2.5
+	distance_falloff = 3
+	armor_penetration = 15
+
+/obj/item/projectile/bullet/pistol/strong/ap
+	armor_penetration = 19
+
+/obj/item/projectile/bullet/pistol/strong/kp
+	damage = 43
+	armor_penetration = 23
+
+/obj/item/projectile/bullet/pistol/strong/ms
+	damage = 48
+	armor_penetration = 10
+
+/obj/item/projectile/bullet/pistol/heavy
+	damage = 45
+	penetration_modifier = 0.5
+	distance_falloff = 3
+	armor_penetration = 20
+
+/obj/item/projectile/bullet/pistol/heavy/ap
+	armor_penetration = 24
+
+/obj/item/projectile/bullet/pistol/heavy/kp
+	damage = 48
+	armor_penetration = 28
+
+/obj/item/projectile/bullet/pistol/heavy/ms
+	damage = 53
 	armor_penetration = 15
 
 /obj/item/projectile/bullet/pistol/rubber //"rubber" bullets
 	name = "rubber bullet"
 	damage_flags = 0
 	damage = 15
-	agony = 15
+	agony = 25
 	embed = FALSE
 
 /obj/item/projectile/bullet/pistol/rubber/holdout
-	agony = 10
+	agony = 30
 	damage = 10
+
+/obj/item/projectile/bullet/pistol/rubber/neuro // neurtox bullets. potentially lethal because grimdark
+	agony = 40
+	damage = 20
+	damage_type = DAMAGE_TOXIN
 
 //4mm. Tiny, very low damage, does not embed, but has very high penetration. Only to be used for the experimental SMG.
 /obj/item/projectile/bullet/flechette
-	damage = 23
+	damage = 35
 	penetrating = 1
-	armor_penetration = 40
+	armor_penetration = 28
 	embed = FALSE
 	distance_falloff = 2
 
@@ -163,65 +221,220 @@
 /obj/item/projectile/bullet/shotgun
 	name = "slug"
 	damage = 65
-	armor_penetration = 10
+	armor_penetration = 20
+	distance_falloff = 4
 
-/obj/item/projectile/bullet/shotgun/beanbag		//because beanbags are not bullets
+/obj/item/projectile/bullet/shotgun/ap
+	armor_penetration = 24
+
+/obj/item/projectile/bullet/shotgun/kp
+	damage = 68
+	armor_penetration = 28
+
+/obj/item/projectile/bullet/shotgun/ms
+	damage = 73
+	armor_penetration = 15
+
+/obj/item/projectile/bullet/shotgun/beanbag
 	name = "beanbag"
-	damage = 20
+	damage = 25
 	damage_flags = 0
-	agony = 30
+	agony = 35
 	embed = FALSE
-	armor_penetration = 0
-	distance_falloff = 3
+	armor_penetration = 15
+	distance_falloff = 4.5
 
 //Should do about 180 damage at 1 tile distance (adjacent), and 120 damage at 3 tiles distance.
 //Overall less damage than slugs in exchange for more damage at very close range and more embedding
 /obj/item/projectile/bullet/pellet/shotgun
 	name = "shrapnel"
 	icon_state = "pellet"
-	damage = 30
+	damage = 35
+	armor_penetration = 14
 	pellets = 6
-	range_step = 1
+	range_step = 2
 	spread_step = 50
+	distance_falloff = 5
 
 /obj/item/projectile/bullet/pellet/shotgun/flechette
 	name = "flechette"
 	icon_state = "flechette"
-	damage = 30
-	armor_penetration = 25
-	pellets = 3
+	damage = 25
+	armor_penetration = 22
+	pellets = 6
 	range_step = 3
 	base_spread = 99
-	spread_step = 2
+	spread_step = 8
 	penetration_modifier = 0.4
-	hitchance_mod = 5
 
 /* "Rifle" rounds */
 
-/obj/item/projectile/bullet/rifle
-	damage = 45
-	armor_penetration = 25
+/obj/item/projectile/bullet/rifle // 5.56 Junk
+	damage = 40
+	armor_penetration = 20
 	distance_falloff = 1
 
-/obj/item/projectile/bullet/rifle/military
-	damage = 40
+/obj/item/projectile/bullet/rifle/ap
+	armor_penetration = 24
+
+/obj/item/projectile/bullet/rifle/kp
+	damage = 43
+	armor_penetration = 28
+
+/obj/item/projectile/bullet/rifle/ms
+	damage = 48
+	armor_penetration = 15
+
+/obj/item/projectile/bullet/rifle/heavy // 7.62 Battle Round
+	damage = 48
+	armor_penetration = 25
+
+/obj/item/projectile/bullet/rifle/heavy/ap
+	armor_penetration = 29
+
+/obj/item/projectile/bullet/rifle/heavy/kp
+	damage = 51
+	armor_penetration = 32
+
+/obj/item/projectile/bullet/rifle/heavy/ms
+	damage = 56
+	armor_penetration = 20
+
+/obj/item/projectile/bullet/rifle/military // 5.56 Militarum
+	damage = 44
+	armor_penetration = 22
+
+/obj/item/projectile/bullet/rifle/military/ap
+	damage = 44
+	armor_penetration = 22
+
+/obj/item/projectile/bullet/rifle/military/kp
+	damage = 44
+	armor_penetration = 22
+
+/obj/item/projectile/bullet/rifle/military/ms
+	damage = 44
+	armor_penetration = 22
+
+/obj/item/projectile/bullet/rifle/sniper // 12.7mm Battle Round
+	damage = 60
 	armor_penetration = 35
 
-/obj/item/projectile/bullet/rifle/shell
-	fire_sound = 'sound/weapons/gunshot/sniper.ogg'
-	damage = 80
-	stun = 3
-	weaken = 3
+/obj/item/projectile/bullet/rifle/sniper/ap
+	armor_penetration = 39
+
+/obj/item/projectile/bullet/rifle/sniper/kp
+	damage = 63
+	armor_penetration = 43
+
+/obj/item/projectile/bullet/rifle/sniper/ms
+	damage = 68
+	armor_penetration = 30
+
+/obj/item/projectile/bullet/rifle/shell // 12.7mm Tech Round
+	damage = 90
+	stun = 1
+	weaken = 2
 	penetrating = 3
-	armor_penetration = 70
+	armor_penetration = 40
 	penetration_modifier = 1
 	distance_falloff = 0.5
 
 /obj/item/projectile/bullet/rifle/shell/apds
-	damage = 70
+	armor_penetration = 48
+
+/obj/item/projectile/bullet/rifle/shell/rend // Special tech shredder round. Loses wall_pen ability for huge damage.
+	damage = 110
+	penetrating = 0
+	armor_penetration = 35
+
+/obj/item/projectile/bullet/rifle/shell/knockout // Round for putting space marines and xenos to sleep for capture or killing.
+	damage = 40
+	penetrating = 0
+	armor_penetration = 40
+	paralyze = 3
+	drowsy = 20
+	stun = 3
+	weaken = 3
+
+/obj/item/projectile/bullet/rifle/shuriken/catapult
+	fire_sound = 'sound/warhammer/gunshot/needler.ogg'
+	icon_state = "ion"
+	damage = 24
+	armor_penetration = 38
 	penetrating = 3
-	armor_penetration = 80
-	penetration_modifier = 1.2
+
+/obj/item/projectile/bullet/rifle/shuriken/pistol
+	fire_sound = 'sound/warhammer/gunshot/needler.ogg'
+	icon_state = "ion"
+	damage = 21
+	armor_penetration = 38
+	penetrating = 3
+
+// XENOS
+/obj/item/projectile/bullet/rifle/pmag // Xenos Super Penetrative Round. The rifle is an automatic railgun that fires small tiny projectiles.
+	fire_sound = 'sound/warhammer/gunshot/needler.ogg'
+	icon_state = "pulse"
+	damage = 45
+	armor_penetration = 38
+	penetrating = 3
+
+//MECHANICUS
+/obj/item/projectile/bullet/rifle/galvanic
+	fire_sound = 'sound/warhammer/guns/misc/laser_searwall.ogg'
+	icon_state = "ion"
+	damage = 55
+	armor_penetration = 36
+
+/obj/item/projectile/bullet/rifle/galvanic/fire // Armor Piercing Incendiary
+	fire_sound = 'sound/warhammer/guns/misc/laser_searwall.ogg'
+	icon_state = "ion"
+	damage = 35
+	armor_penetration = 42
+
+/obj/item/projectile/bullet/rifle/galvanic/fire/on_hit(atom/target, blocked = 0)
+	..()
+	if(isliving(target))
+		var/mob/living/L = target
+		L.adjust_fire_stacks(rand(2,4))
+		if(L.fire_stacks >= 3)
+			L.IgniteMob()
+
+/obj/item/projectile/bullet/rifle/galvanic/emp // Armor Piercing Tech Bullet. Should be rarer then Tzeentch's diary. NOT map spawned.
+	fire_sound = 'sound/warhammer/guns/misc/laser_searwall.ogg'
+	icon_state = "ion"
+	damage = 50
+	armor_penetration = 42
+	on_impact(var/atom/A)
+		empulse(A, 1, 2)
+		return 1
+
+/*
+/obj/item/projectile/bullet/rifle/galvanic/airburst
+	fire_sound = 'sound/warhammer/guns/misc/laser_searwall.ogg'
+	icon_state = "ion"
+	damage = 40
+	armor_penetration = 36
+
+/obj/item/projectile/bullet/rifle/galvanic/airburst/on_hit(var/atom/target)
+	if(ishuman(target))
+		var/mob/living/carbon/human/H = target
+		var/obj/item/organ/external/affecting = H.get_organ(pick("l_leg","l_arm","r_leg","r_arm", "head", "l_hand", "r_hand", "l_foot", "r_foot"))
+		affecting.droplimb(0, DROPLIMB_BLUNT)
+		if(prob(25))
+			affecting = H.get_organ(pick("l_leg","l_arm","r_leg","r_arm", "head", "l_hand", "r_hand", "l_foot", "r_foot"))
+			affecting.droplimb(0, DROPLIMB_BLUNT)
+			if(prob(25))
+				affecting = H.get_organ(pick("l_leg","l_arm","r_leg","r_arm", "head", "l_hand", "r_hand", "l_foot", "r_foot"))
+				affecting.droplimb(0, DROPLIMB_BLUNT)
+				return
+			else
+				return
+		else
+			return
+*/ // Need to fix this -- it's from Rebase.
+
+
 
 /* Miscellaneous */
 /obj/item/projectile/bullet/gyro

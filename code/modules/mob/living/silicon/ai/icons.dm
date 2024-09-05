@@ -118,7 +118,7 @@
 	alive_light = "#585858"
 
 /singleton/ai_icon/nanotrasen
-	name = "NanoTrasen"
+	name = "Necromundan"
 	alive_icon = "ai-nanotrasen"
 	alive_light = "#000029"
 

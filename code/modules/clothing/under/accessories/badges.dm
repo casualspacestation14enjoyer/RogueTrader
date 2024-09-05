@@ -218,8 +218,8 @@
 
 
 /obj/item/clothing/accessory/badge/tags/skrell
-	name = "skrellian holobadge"
-	desc = "A high tech Skrellian holobadge, designed to project information about the owner."
+	name = "Tau holobadge"
+	desc = "A high tech Tau holobadge, designed to project information about the owner."
 	icon_state = "skrell_badge"
 	badge_string = null
 
