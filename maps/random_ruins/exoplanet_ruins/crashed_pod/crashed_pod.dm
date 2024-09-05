@@ -54,7 +54,7 @@ GLOBAL_LIST_INIT(crashed_pod_areas, new)
 		"Mayfly",		"Locust",		"Cicada",
 		"Sanddragon",	"Conehead",		"Whitetail",
 		"Amberwing",	"Swallowtail",	"Hawkmoth",
-		"Katydid",		"Longhorn",		"Luna Moth",
+		"Katydid",		"Longhorn",		"Holy TerraMoth",
 		"Monarch",		"Mydas",		"Paperwasp",
 		"Treehopper",	"Sphinxmoth",	"Leatherwing",
 		"Scarab",		"Ash Borer",	"Admiral",

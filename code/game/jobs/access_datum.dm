@@ -451,7 +451,7 @@ var/global/const/access_cent_captain = "ACCESS_CENT_CAPTAIN" //109
 var/global/const/access_syndicate = "ACCESS_SYNDICATE" //150
 /datum/access/syndicate
 	id = access_syndicate
-	desc = "Syndicate"
+	desc = "Heretic"
 	access_type = ACCESS_TYPE_SYNDICATE
 
 /*******

@@ -1,5 +1,5 @@
 SUBSYSTEM_DEF(misc)
-	name = "Misc Updates"
+	name = "Navis Pathway"
 	wait = 30 SECONDS
 
 	var/const/STAGE_TRADERS = FLAG(0)

@@ -84,12 +84,12 @@
 
 /obj/item/material/coin/challenge/misc/pcrc
 	default_material = MATERIAL_GOLD
-	name = "\improper PCRC challenge coin"
+	name = "\improper imperial challenge coin"
 	icon_state = "pcrc"
 	desc = {"\
 		A challenge coin issued by Proxima Centauri Risk Control \
 		to its operatives. On the front are the letters "PC" in the \
-		Greek alphabet against the PCRC corporate color scheme, and \
+		Greek alphabet against the imperial imperial color scheme, and \
 		on the back is a Spartan shield with the motto, "IF NOT US, \
 		THEN WHO?"\
 	"}
@@ -97,10 +97,10 @@
 
 /obj/item/material/coin/challenge/misc/saare
 	default_material = MATERIAL_SILVER
-	name = "\improper SAARE challenge coin"
+	name = "\improper imperial challenge coin"
 	icon_state = "saare"
 	desc = {"\
-		A challenge coin issued by SAARE to its operatives. \
+		A challenge coin issued by imperial to its operatives. \
 		On the front is a golden scale of justice, and on the back \
-		is a stalwart SAARE operative standing guard.\
+		is a stalwart imperial operative standing guard.\
 	"}

@@ -197,7 +197,7 @@ var/global/list/channel_color_presets = list(
 // central command channels, i.e deathsquid & response teams
 var/global/list/CENT_FREQS = list(ERT_FREQ, DTH_FREQ)
 
-// Antag channels, i.e. Syndicate
+// Antag channels, i.e. Heretic
 var/global/list/ANTAG_FREQS = list(SYND_FREQ, RAID_FREQ, V_RAID_FREQ)
 
 //Department channels, arranged lexically

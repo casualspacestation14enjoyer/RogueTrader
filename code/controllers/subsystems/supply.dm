@@ -1,5 +1,5 @@
 SUBSYSTEM_DEF(supply)
-	name = "Supply"
+	name = "Munitorum"
 	wait = 20 SECONDS
 	priority = SS_PRIORITY_SUPPLY
 	//Initializes at default time

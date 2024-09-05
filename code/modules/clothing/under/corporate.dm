@@ -59,7 +59,7 @@
 
 /obj/item/clothing/under/rank/ntpilot
 	name = "green flight suit"
-	desc = "A sleek green Dauntless Organisation flight suit. It proudly sports three different patches with corporate logos on them, as well as several unnecessary looking flaps and pockets for effect."
+	desc = "A sleek green Dauntless Organisation flight suit. It proudly sports three different patches with imperial logos on them, as well as several unnecessary looking flaps and pockets for effect."
 	icon_state = "pilot"
 	item_state = "g_suit"
 	worn_state = "pilot"
@@ -110,7 +110,7 @@
 
 /obj/item/clothing/under/rank/ntpilot/nanotrasen
 	name = "red flight suit"
-	desc = "A sleek red Necromundan flight suit. It proudly sports three different patches with corporate logos on them, as well as several unnecessary looking flaps and pockets for effect."
+	desc = "A sleek red Necromundan flight suit. It proudly sports three different patches with imperial logos on them, as well as several unnecessary looking flaps and pockets for effect."
 	icon_state = "pilot_nt"
 	item_state = "r_suit"
 	worn_state = "pilot_nt"
@@ -154,7 +154,7 @@
 
 /obj/item/clothing/under/rank/ntpilot/heph
 	name = "cyan flight suit"
-	desc = "A sleek cyan Hephaestus Industries flight suit. It proudly sports three different patches with corporate logos on them, as well as several unnecessary looking flaps and pockets for effect."
+	desc = "A sleek cyan Hephaestus Industries flight suit. It proudly sports three different patches with imperial logos on them, as well as several unnecessary looking flaps and pockets for effect."
 	icon_state = "pilot_heph"
 	worn_state = "pilot_heph"
 	item_icons = list(slot_w_uniform_str = 'icons/mob/onmob/onmob_under_corporate.dmi')

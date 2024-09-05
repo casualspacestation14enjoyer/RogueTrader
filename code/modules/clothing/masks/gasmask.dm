@@ -132,7 +132,7 @@
 
 /obj/item/clothing/mask/gas/death_commando
 	name = "\improper Death Commando mask"
-	desc = "A grim tactical mask worn by the fictional Death Commandos, elites of the also fictional Space Syndicate. Saturdays at 10!"
+	desc = "A grim tactical mask worn by the fictional Death Commandos, elites of the also fictional Space Heretic. Saturdays at 10!"
 	icon_state = "death"
 	item_state = "death"
 	siemens_coefficient = 0.2

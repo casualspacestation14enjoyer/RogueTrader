@@ -184,7 +184,7 @@
 	detail_color = COLOR_PAKISTAN_GREEN
 
 /obj/item/card/id/torch/passenger/research
-	desc = "A card issued to corporate personnel aboard the Dauntless."
+	desc = "A card issued to imperial personnel aboard the Dauntless."
 	job_access_type = /datum/job/scientist_assistant
 	detail_color = COLOR_BOTTLE_GREEN
 

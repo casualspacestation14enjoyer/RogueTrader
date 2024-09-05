@@ -131,7 +131,7 @@ var/global/message_delay = 0 // To make sure restarting the recentmessages list 
 	var/listening_freqs
 	var/channel_color
 	var/channel_name
-	var/intercept = 0 // if nonzero, broadcasts all messages to syndicate channel
+	var/intercept = 0 // if nonzero, broadcasts all messages to heretic channel
 
 /obj/machinery/telecomms/allinone/Initialize()
 	if(!listening_freqs)
@@ -252,7 +252,7 @@ var/global/message_delay = 0 // To make sure restarting the recentmessages list 
 		If specified:
 				1 -- Will only broadcast to intercoms
 				2 -- Will only broadcast to intercoms and station-bounced radios
-				3 -- Broadcast to syndicate frequency
+				3 -- Broadcast to heretic frequency
 				4 -- AI can't track down this person. Useful for imitation broadcasts where you can't find the actual mob
 
 	@param compression:
@@ -347,7 +347,7 @@ var/global/message_delay = 0 // To make sure restarting the recentmessages list 
 		if(istype(R, /mob/new_player)) // we don't want new players to hear messages. rare but generates runtimes.
 			continue
 
-		// Ghosts hearing all radio chat don't want to hear syndicate intercepts, they're duplicates
+		// Ghosts hearing all radio chat don't want to hear heretic intercepts, they're duplicates
 		if(data == 3 && isghost(R) && R.get_preference_value(/datum/client_preference/ghost_radio) == GLOB.PREF_ALL_CHATTER)
 			continue
 

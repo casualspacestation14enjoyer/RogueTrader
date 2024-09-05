@@ -81,7 +81,7 @@
 //Subtypes
 /obj/item/material/knife/folding/wood
 	name = "peasant knife"
-	desc = "A small folding knife with a wooden handle and carbon steel blade. Knives like this have been used on Earth for centuries."
+	desc = "A small folding knife with a wooden handle and carbon steel blade. Knives like this have been used on Terra for centuries."
 	hardware_closed = "peasant_hardware_closed"
 	hardware_open = "peasant_hardware"
 	handle_icon = "peasant_handle"

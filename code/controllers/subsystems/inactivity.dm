@@ -1,5 +1,5 @@
 SUBSYSTEM_DEF(inactivity)
-	name = "Inactivity"
+	name = "Vigilance"
 	wait = 1 MINUTE
 	priority = SS_PRIORITY_INACTIVITY
 	flags = SS_BACKGROUND

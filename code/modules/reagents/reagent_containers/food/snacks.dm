@@ -1560,7 +1560,7 @@
 
 /obj/item/reagent_containers/food/snacks/bigbiteburger
 	name = "big bite burger"
-	desc = "Forget the Luna Burger! THIS is the future!"
+	desc = "Forget the Holy TerraBurger! THIS is the future!"
 	icon_state = "bigbiteburger"
 	filling_color = "#e3d681"
 	center_of_mass = "x=16;y=11"
@@ -3388,7 +3388,7 @@
 /obj/item/reagent_containers/food/snacks/canned/beans
 	name = "baked beans"
 	icon_state = "beans"
-	desc = "Luna Colony beans. Carefully synthethized from soy."
+	desc = "Holy TerraColony beans. Carefully synthethized from soy."
 	trash = /obj/item/trash/beans
 	filling_color = "#ff6633"
 	center_of_mass = "x=15;y=9"

@@ -423,7 +423,7 @@
 
 /obj/item/fluff_items/power_bat
 	name = "deactivated power bat"
-	desc = "Rumors say that there's a group of a chapter called the 'Angry marines', they supposedly use stools, tables, folding chairs and the like to bash to death the enemies of the emperor, how this arrived here is uncertain."
+	desc = "Sacraors say that there's a group of a chapter called the 'Angry marines', they supposedly use stools, tables, folding chairs and the like to bash to death the enemies of the emperor, how this arrived here is uncertain."
 	icon_state = "powerbat"
 	w_class = ITEM_SIZE_SMALL
 	sales_price = 35

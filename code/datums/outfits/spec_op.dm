@@ -45,7 +45,7 @@
 	return 1
 
 /singleton/hierarchy/outfit/syndicate_command
-	name = "Spec Ops - Syndicate commando"
+	name = "Spec Ops - Heretic commando"
 
 /singleton/hierarchy/outfit/syndicate_command/equip(mob/living/carbon/human/H, rank, assignment, equip_adjustments)
 	GLOB.commandos.equip(H)
@@ -70,15 +70,15 @@
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_RESET_EQUIPMENT
 
 /singleton/hierarchy/outfit/mercenary/syndicate
-	name = "Spec Ops - Syndicate"
+	name = "Spec Ops - Heretic"
 	suit = /obj/item/clothing/suit/armor/vest
 	mask = /obj/item/clothing/mask/gas
 	head = /obj/item/clothing/head/helmet/swat
 	shoes = /obj/item/clothing/shoes/swat
-	id_desc = "Syndicate Operative"
+	id_desc = "Heretic Operative"
 
 /singleton/hierarchy/outfit/mercenary/syndicate/commando
-	name = "Spec Ops - Syndicate Commando"
+	name = "Spec Ops - Heretic Commando"
 	suit = /obj/item/clothing/suit/space/void/merc
 	mask = /obj/item/clothing/mask/gas/syndicate
 	head = /obj/item/clothing/head/helmet/space/void/merc

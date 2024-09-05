@@ -55,7 +55,7 @@
 	glass_desc = "A clear glass of baijiu."
 
 /datum/reagent/ethanol/beer
-	name = "Beer"
+	name = "Gothic Ale"
 	description = "An alcoholic beverage made from malted grains, hops, yeast, and water."
 	taste_description = "piss water"
 	color = "#ffd300"
@@ -215,14 +215,14 @@
 	glass_desc = "DAMN, THIS THING LOOKS ROBUST"
 
 /datum/reagent/ethanol/llanbrydewhiskey
-	name = "Llanbryde Whiskey"
-	description = "Welsh Whiskey. So good it should be illegal."
+	name = "Llanbryde Amasec"
+	description = "Welsh Amasec. So good it should be illegal."
 	taste_description = "distilled welsh highlands"
 	color = "#805200"
 	strength = 10
 
 	glass_name = "Llanbryde whiskey"
-	glass_desc = "A premium Welsh whiskey."
+	glass_desc = "A premium Welsh amasec."
 
 /datum/reagent/ethanol/melonliquor
 	name = "Melon Liquor"
@@ -245,8 +245,8 @@
 	glass_desc = "Fruit brandy. Delicious."
 
 /datum/reagent/ethanol/rum
-	name = "Rum"
-	description = "The historic drink of Earth navies. Extremely popular across Sol space."
+	name = "Sacra"
+	description = "The historic drink of Terra navies. Extremely popular across Sol space."
 	taste_description = "spiked butterscotch"
 	taste_mult = 1.1
 	color = "#ecb633"
@@ -257,13 +257,13 @@
 
 /datum/reagent/ethanol/prosecco
 	name = "Prosecco"
-	description = "A delightful blend of glera grapes, native to Earth."
+	description = "A delightful blend of glera grapes, native to Terra."
 	taste_description = "the trials of being a young woman in a rich man's world"
 	color = "#e8dfc1"
 	strength = 30
 
 	glass_name = "prosecco"
-	glass_desc = "A delightful blend of glera grapes, native to Earth."
+	glass_desc = "A delightful blend of glera grapes, native to Terra."
 
 /datum/reagent/ethanol/sake
 	name = "Sake"
@@ -293,7 +293,7 @@
 	strength = 25
 	alpha = 120
 
-	glass_name = "Tequilla"
+	glass_name = "Mordian Firewater"
 	glass_desc = "Now all that's missing is the weird colored shades!"
 
 /datum/reagent/ethanol/thirteenloko
@@ -357,8 +357,8 @@
 	strength = 10
 
 /datum/reagent/ethanol/whiskey
-	name = "Whiskey"
-	description = "A superb and well-aged single-malt whiskey. Damn."
+	name = "Amasec"
+	description = "A superb and well-aged single-malt amasec. Damn."
 	taste_description = "molasses"
 	color = "#4c3100"
 	strength = 25
@@ -367,7 +367,7 @@
 	glass_desc = "The silky, smokey whiskey goodness inside the glass makes the drink look very classy."
 
 /datum/reagent/ethanol/wine
-	name = "Wine"
+	name = "Amasec"
 	description = "An premium alchoholic beverage made from distilled grape juice."
 	taste_description = "bitter sweetness"
 	color = "#7e4043" // rgb: 126, 64, 67
@@ -377,7 +377,7 @@
 	glass_desc = "A very classy looking drink."
 
 /datum/reagent/ethanol/wine/premium
-	name = "White Wine"
+	name = "White Amasec"
 	description = "An exceptionally expensive alchoholic beverage made from distilled white grapes."
 	taste_description = "white velvet"
 	color = "#ffddaa" // rgb: 255, 221, 170 - a light cream
@@ -385,7 +385,7 @@
 
 /datum/reagent/ethanol/herbal
 	name = "Herbal Liquor"
-	description = "A complex blend of herbs, spices and roots mingle in this old Earth classic."
+	description = "A complex blend of herbs, spices and roots mingle in this old Terra classic."
 	taste_description = "a sweet summer garden"
 	color = "#dfff00"
 	strength = 13
@@ -394,7 +394,7 @@
 	glass_desc = "It's definitely green. Or is it yellow?"
 
 /datum/reagent/ethanol/specialwhiskey
-	name = "Special Blend Whiskey"
+	name = "Special Blend Amasec"
 	description = "Just when you thought regular whiskey was good... This silky, amber goodness has to come along and ruin everything."
 	taste_description = "liquid fire"
 	color = "#523600"
@@ -587,7 +587,7 @@
 	protein_amount = 0.5
 
 	glass_name = "bilk"
-	glass_desc = "A brew of milk and beer. For those alcoholics who fear osteoporosis."
+	glass_desc = "A brew of milk and ale. For those alcoholics who fear osteoporosis."
 
 /datum/reagent/ethanol/black_russian
 	name = "Black Russian"
@@ -638,7 +638,7 @@
 	strength = 15
 
 	glass_name = "Brave Bull"
-	glass_desc = "Tequilla and coffee liquor, brought together in a mouthwatering mixture. Drink up."
+	glass_desc = "Mordian Firewater and coffee liquor, brought together in a mouthwatering mixture. Drink up."
 
 /datum/reagent/ethanol/caesar
 	name = "Bloody Caesar"
@@ -682,7 +682,7 @@
 
 /datum/reagent/ethanol/cuba_libre
 	name = "Cuba Libre"
-	description = "Rum, mixed with cola. Viva la revolucion."
+	description = "Sacra, mixed with cola. Viva la revolucion."
 	taste_description = "cola"
 	color = "#3e1b00"
 	strength = 30
@@ -702,13 +702,13 @@
 
 /datum/reagent/ethanol/daiquiri
 	name = "Daiquiri"
-	description = "Rum, mixed with lime juice and syrup."
+	description = "Sacra, mixed with lime juice and syrup."
 	taste_description = "a historically bad decision"
 	color = "#3e1b00"
 	strength = 30
 
 	glass_name = "Daiquiri"
-	glass_desc = "A classic cocktail made with rum."
+	glass_desc = "A classic cocktail made with sacra."
 
 /datum/reagent/ethanol/dawa
 	name = "Dawa"
@@ -869,7 +869,7 @@
 	glass_desc = "A drink enjoyed by people during the 1960's."
 
 /datum/reagent/ethanol/honeywine
-	name = "Honey Wine"
+	name = "Honey Amasec"
 	description = "A mixture of hops and honey. Also known as Tej."
 	taste_description = "sweet and tanic alcohol"
 	color = "#898873"
@@ -890,7 +890,7 @@
 	glass_desc = "You've really hit rock bottom now... your liver packed its bags and left last night."
 
 /datum/reagent/ethanol/iced_beer
-	name = "Iced Beer"
+	name = "Iced Gothic Ale"
 	description = "A beer which is so cold the air around it freezes."
 	taste_description = "refreshingly cold"
 	color = "#ffd300"
@@ -924,14 +924,14 @@
 
 /datum/reagent/ethanol/irish_cream
 	name = "Irish Cream"
-	description = "Whiskey-imbued cream, what else would you expect from the Irish."
+	description = "Amasec-imbued cream, what else would you expect from the Irish."
 	taste_description = "creamy alcohol"
 	color = "#dddd9a"
 	strength = 25
 	protein_amount = 0.5
 
 	glass_name = "Irish cream"
-	glass_desc = "It's cream, mixed with whiskey. What else would you expect from the Irish?"
+	glass_desc = "It's cream, mixed with amasec. What else would you expect from the Irish?"
 
 /datum/reagent/ethanol/kamikaze
 	name = "Kamikaze"
@@ -997,13 +997,13 @@
 
 /datum/reagent/ethanol/manly_dorf
 	name = "The Manly Dorf"
-	description = "Beer and Ale, brought together in a delicious mix. Intended for true men only."
+	description = "Gothic Ale and Ale, brought together in a delicious mix. Intended for true men only."
 	taste_description = "hair on your chest and your chin"
 	color = "#4c3100"
 	strength = 25
 
 	glass_name = "The Manly Dorf"
-	glass_desc = "A manly concotion made from Ale and Beer. Intended for true men only."
+	glass_desc = "A manly concotion made from Ale and Gothic Ale. Intended for true men only."
 
 /datum/reagent/ethanol/margarita
 	name = "Margarita"
@@ -1033,7 +1033,7 @@
 	strength = 13
 
 	glass_name = "Magellan cocktail"
-	glass_desc = "A tasty sweetened blend of wine and fine whiskey. Named for Ferdinand Magellan, who led the first expedition to circumnavigate Earth in the 15th century."
+	glass_desc = "A tasty sweetened blend of wine and fine amasec. Named for Ferdinand Magellan, who led the first expedition to circumnavigate Terra in the 15th century."
 
 /datum/reagent/ethanol/stinger
 	name = "Stinger"
@@ -1063,10 +1063,10 @@
 	strength = 15
 
 	glass_name = "Armstrong cocktail"
-	glass_desc = "Beer, vodka and lime come together in this instant classic. Named for Neil Armstrong, who was the first man to set foot on Luna, in the 20th century."
+	glass_desc = "Gothic Ale, vodka and lime come together in this instant classic. Named for Neil Armstrong, who was the first man to set foot on Luna, in the 20th century."
 
 /datum/reagent/ethanol/mead
-	name = "Mead"
+	name = "Fenrisian Ale"
 	description = "A Viking's drink, though a cheap one."
 	taste_description = "sweet, sweet alcohol"
 	reagent_state = LIQUID
@@ -1078,7 +1078,7 @@
 	glass_desc = "A Viking's beverage, though a cheap one."
 
 /datum/reagent/ethanol/moonshine
-	name = "Moonshine"
+	name = "Rotgut"
 	description = "You've really hit rock bottom now... your liver packed its bags and left last night."
 	taste_description = "bitterness"
 	taste_mult = 2.5
@@ -1117,14 +1117,14 @@
 	M.add_chemical_effect(CE_PULSE, -1)
 
 /datum/reagent/ethanol/nevadan_gold
-	name = "Nevadan Gold Whiskey"
+	name = "Nevadan Gold Amasec"
 	description = "A warm blend of 98 spices. Made on the homeworld."
 	taste_description = "strong, creamy whiskey"
 	color = "#ce1900"
 	strength = 10
 
 	glass_name = "Nevadan gold whiskey"
-	glass_desc = "A warm blend of 98 spices, brewed on Earth. A delicious mix."
+	glass_desc = "A warm blend of 98 spices, brewed on Terra. A delicious mix."
 
 /datum/reagent/ethanol/patron
 	name = "Patron"
@@ -1147,7 +1147,7 @@
 	glass_desc = "A sweet cocktail of rum and pineapple."
 
 /datum/reagent/ethanol/pwine
-	name = "Poison Wine"
+	name = "Poison Amasec"
 	description = "Is this even wine? Toxic! Hallucinogenic! Probably consumed in boatloads by your superiors!"
 	taste_description = "purified alcoholic death"
 	color = "#000000"
@@ -1183,7 +1183,7 @@
 	glass_desc = "A sweet hot milk mixed with lemon and ale. A Imperial delicacy"
 
 /datum/reagent/ethanol/red_mead
-	name = "Red Mead"
+	name = "Red Fenrisian Ale"
 	description = "The true Viking's drink! Even though it has a strange red color."
 	taste_description = "sweet and salty alcohol"
 	color = "#c73c00"
@@ -1193,14 +1193,14 @@
 	glass_desc = "A true Viking's beverage, though its color is strange."
 
 /datum/reagent/ethanol/red_whiskey
-	name = "Red Whiskey"
-	description = "A dark red looking substance that smells like strong whiskey."
+	name = "Red Amasec"
+	description = "A dark red looking substance that smells like strong amasec."
 	taste_description = "an intense throat burning sensation"
 	color = "#ce1900"
 	strength = 10
 
 	glass_name = "red whiskey"
-	glass_desc = "A dark red looking substance that smells like strong whiskey."
+	glass_desc = "A dark red looking substance that smells like strong amasec."
 
 /datum/reagent/ethanol/sangria
 	name = "Sangria"
@@ -1214,7 +1214,7 @@
 
 /datum/reagent/ethanol/sbiten
 	name = "Sbiten"
-	description = "A spicy Mead! Might be a little hot for the little guys!"
+	description = "A spicy Fenrisian Ale! Might be a little hot for the little guys!"
 	taste_description = "hot and spice"
 	color = "#ffa371"
 	strength = 15
@@ -1222,7 +1222,7 @@
 	targ_temp = 360
 
 	glass_name = "Sbiten"
-	glass_desc = "A spicy mix of Mead and Spice. Very hot."
+	glass_desc = "A spicy mix of Fenrisian Ale and Spice. Very hot."
 
 /datum/reagent/ethanol/screwdrivercocktail
 	name = "Screwdriver"
@@ -1236,13 +1236,13 @@
 
 /datum/reagent/ethanol/ships_surgeon
 	name = "Ship's Surgeon"
-	description = "Rum and Dr. Gibb. Served ice cold, like the scalpel."
+	description = "Sacra and Dr. Gibb. Served ice cold, like the scalpel."
 	taste_description = "black comedy"
 	color = "#524d0f"
 	strength = 15
 
 	glass_name = "ship's surgeon"
-	glass_desc = "Rum qualified for surgical practice by Dr. Gibb. Smooth and steady."
+	glass_desc = "Sacra qualified for surgical practice by Dr. Gibb. Smooth and steady."
 
 /datum/reagent/ethanol/sidecar
 	name = "Sidecar"
@@ -1316,13 +1316,13 @@
 	glass_desc = "A froofy, fruity, and sweet mixed drink. Understanding the name only brings shame."
 
 /datum/reagent/ethanol/syndicatebomb
-	name = "Syndicate Bomb"
+	name = "Heretic Bomb"
 	description = "Tastes like terrorism!"
 	taste_description = "purified antagonism"
 	color = "#2e6671"
 	strength = 10
 
-	glass_name = "Syndicate Bomb"
+	glass_name = "Heretic Bomb"
 	glass_desc = "Tastes like terrorism!"
 
 /datum/reagent/ethanol/tequilla_sunrise
@@ -1332,7 +1332,7 @@
 	color = "#ffe48c"
 	strength = 25
 
-	glass_name = "Tequilla Sunrise"
+	glass_name = "Mordian Firewater Sunrise"
 	glass_desc = "Oh great, now you feel nostalgic about sunrises back on Terra..."
 
 /datum/reagent/ethanol/threemileisland
@@ -1393,18 +1393,18 @@
 
 
 /datum/reagent/ethanol/whiskey_cola
-	name = "Whiskey Cola"
-	description = "Whiskey, mixed with cola. Surprisingly refreshing."
+	name = "Amasec Cola"
+	description = "Amasec, mixed with cola. Surprisingly refreshing."
 	taste_description = "cola"
 	color = "#3e1b00"
 	strength = 25
 
 	glass_name = "whiskey cola"
-	glass_desc = "An innocent-looking mixture of cola and Whiskey. Delicious."
+	glass_desc = "An innocent-looking mixture of cola and Amasec. Delicious."
 
 
 /datum/reagent/ethanol/whiskeysoda
-	name = "Whiskey Soda"
+	name = "Amasec Soda"
 	description = "For the more refined griffon."
 	color = "#eab300"
 	strength = 15
@@ -1453,13 +1453,13 @@
 
 /datum/reagent/ethanol/jagermeister
 	name = "Jagermeister"
-	description = "A special blend of alcohol, herbs, and spices. It has remained a popular Earther drink."
+	description = "A special blend of alcohol, herbs, and spices. It has remained a popular Terraer drink."
 	taste_description = "herbs, spices, and alcohol"
 	color = "#596e3e"
 	strength = 20
 
 	glass_name = "jagermeister"
-	glass_desc = "A special blend of alcohol, herbs, and spaces. It has remained a popular Earther drink."
+	glass_desc = "A special blend of alcohol, herbs, and spaces. It has remained a popular Terraer drink."
 
 /datum/reagent/ethanol/jimmygideon
 	name = "Jimmy Gideon"
@@ -1482,7 +1482,7 @@
 	glass_desc = "A blend of whiskey, ginger beer, and lime juice."
 
 /datum/reagent/ethanol/tadmorwine
-	name = "Tadmoran Wine"
+	name = "Tadmoran Amasec"
 	description = "An earthy type of wine distilled from grapes on Tadmor."
 	taste_description = "an acquired taste and holier-than-thou vibes"
 	color = "#362f22"
@@ -1492,13 +1492,13 @@
 	glass_desc = "An earthy type of wine distilled from grapes on Tadmor."
 
 /datum/reagent/ethanol/lunabrandy
-	name = "Lunar Brandy"
+	name = "Imperial Amasec"
 	description = "A strong fermented brandy typically consumed on Luna."
 	taste_description = "distilled wine and snobbery"
 	color = "#bdb6a9"
 	strength = 20
 
-	glass_name = "Lunar Brandy"
+	glass_name = "Imperial Amasec"
 	glass_desc = "A strong brandy largely consumed by the upper classes of Luna."
 
 /datum/reagent/ethanol/moscowmule

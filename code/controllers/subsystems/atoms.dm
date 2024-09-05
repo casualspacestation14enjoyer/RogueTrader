@@ -72,7 +72,7 @@ SUBSYSTEM_DEF(atoms)
 			CHECK_TICK
 		init_queue.Cut(1, init_queue_length + 1)
 	time = max((Uptime() - time) * 0.1, 0.1)
-	report_progress("Initialized [count] atom\s in [time]s ([floor(count/time)]/s)")
+	report_progress("Particle Calibration Protocol: [count] atom\s stabilized in [time]s ([floor(count/time)]/s)")
 	atom_init_stage = INITIALIZATION_INNEW_REGULAR
 	var/late_queue_length = length(late_init_queue)
 	if (late_queue_length)
@@ -88,7 +88,7 @@ SUBSYSTEM_DEF(atoms)
 			CHECK_TICK
 		late_init_queue.Cut(1, late_queue_length + 1)
 		time = max((Uptime() - time) * 0.1, 0.1)
-		report_progress("LateInitialized [count] atom\s in [time]s ([floor(count/time)]/s)")
+		report_progress("Delayed Particle Calibration: [count] atom\s in [time]s ([floor(count/time)]/s)")
 
 
 /datum/controller/subsystem/atoms/proc/InitAtom(atom/atom, list/arguments)

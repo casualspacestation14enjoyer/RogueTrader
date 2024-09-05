@@ -263,9 +263,9 @@
 <p>We are currently aware of the situation surrounding your post. Considering the consequential events that are predicted to unfold, a few precautionary measures have been taken for your safety.</p>
 <p>Primarily, requests for asset protection via a communique to <strong>EXO Head Offices</strong> will be prioritised. However, due to restrictions - corporate-aligned asset protection teams are unavailable.</p>
 <p>Instead, Fleet asset protection units will be provided as necessary for your safety, should on-board security personnel prove to be inadequate.</p>
-<p>In turn, it is expected of you to conduct a thorough review and interview of corporate entities aboard the vessel, and form a proper picture of the on-going incident as necessary.</p>
-<p>For corporate personnel that were not directly involved, this is a good time to review their contractual obligations and offer changes in turn for variance in promised pay-out, due to the uncertain circumstances.</p>
-<p>Contractors more in use for the vessel ensures proper functioning of the craft, and as such, it is upto the corporate liaision to ensure that contractors are loyal and abiding by the vessel's emergency procedures.</p>
+<p>In turn, it is expected of you to conduct a thorough review and interview of imperial entities aboard the vessel, and form a proper picture of the on-going incident as necessary.</p>
+<p>For imperial personnel that were not directly involved, this is a good time to review their contractual obligations and offer changes in turn for variance in promised pay-out, due to the uncertain circumstances.</p>
+<p>Contractors more in use for the vessel ensures proper functioning of the craft, and as such, it is upto the imperial liaision to ensure that contractors are loyal and abiding by the vessel's emergency procedures.</p>
 <p>It is also important to note that EXO support in the form of personnel or equipment is currently slowed down heavily, and as such, your vessel will be relying on the Fleet, primarily.</p>
 <p>Any pending transactions or hold-overs will be processed and reviewed when your vessel reaches E-14b.</p>
 <hr />

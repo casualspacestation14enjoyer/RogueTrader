@@ -2905,7 +2905,7 @@
 	},
 /obj/structure/table/standard,
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - Pathfinder"
+	department = "Dauntless - Pathfinder"
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/command/pathfinder)
@@ -13301,7 +13301,7 @@
 	dir = 4
 	},
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - Deck Chief's Office"
+	department = "Dauntless - Deck Chief's Office"
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/deckchief)

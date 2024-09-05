@@ -267,7 +267,7 @@
 
 /obj/item/clothing/head/philosopher_wig
 	name = "natural philosopher's wig"
-	desc = "A stylish monstrosity unearthed from Earth's Renaissance period. With this most distinguish'd wig, you'll be ready for your next soiree!"
+	desc = "A stylish monstrosity unearthed from Terra's Renaissance period. With this most distinguish'd wig, you'll be ready for your next soiree!"
 	icon_state = "philosopher_wig"
 	item_state_slots = list(
 		slot_l_hand_str = "pwig",
@@ -353,12 +353,12 @@
 	flash_protection = FLASH_PROTECTION_MAJOR
 
 /obj/item/clothing/head/beret/pcrc
-	name = "\improper PCRC beret"
+	name = "\improper imperial beret"
 	desc = "A navy beret with the emblem of Proxima Centauri Risk Control, a private security firm. For agents that are more inclined towards style than safety."
 	icon_state = "beret_corporate_pcrc"
 
 /obj/item/clothing/head/beret/saare
-	name = "\improper SAARE beret"
+	name = "\improper imperial beret"
 	desc = "A gray beret with the emblem of Strategic Assault and Asset Retention Enterprises, a private military corporation. For mercenaries that are more inclined towards style than safety."
 	icon_state = "beret_corporate_saare"
 

@@ -2,10 +2,10 @@ GLOBAL_DATUM_INIT(commandos, /datum/antagonist/deathsquad/mercenary, new)
 
 /datum/antagonist/deathsquad/mercenary
 	id = MODE_COMMANDO
-	landmark_id = "Syndicate-Commando"
-	role_text = "Syndicate Commando"
+	landmark_id = "Heretic-Commando"
+	role_text = "Heretic Commando"
 	role_text_plural = "Commandos"
-	welcome_text = "You are in the employ of a criminal syndicate hostile to corporate interests."
+	welcome_text = "You are in the employ of a chaos cult interests."
 	id_type = /obj/item/card/id/centcom/ERT
 	flags = ANTAG_RANDOM_EXCEPTED
 

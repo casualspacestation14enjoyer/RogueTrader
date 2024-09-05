@@ -1,5 +1,5 @@
 SUBSYSTEM_DEF(vote)
-	name = "Voting"
+	name = "Administratum Cogitator"
 	wait = 1 SECOND
 	priority = SS_PRIORITY_VOTE
 	flags = SS_NO_TICK_CHECK | SS_KEEP_TIMING

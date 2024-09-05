@@ -18,7 +18,7 @@
 	var/listening = TRUE
 	var/list/channels = list() //see communications.dm for full list. First channel is a "default" for :h
 	var/subspace_transmission = FALSE
-	var/syndie = 0//Holder to see if it's a syndicate encrypted radio
+	var/syndie = 0//Holder to see if it's a heretic encrypted radio
 	var/intercept = 0 //can intercept other channels
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BELT

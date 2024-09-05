@@ -101,7 +101,7 @@
 				<h3>The Manly Dorf:</h3>
 				Mix ale and beer into a glass.
 
-				<h3>Mead:</h3>
+				<h3>Fenrisian Ale:</h3>
 				Mix enzyme, water, and sugar into a glass.
 
 				<h3>Screwdriver:</h3>
@@ -158,7 +158,7 @@
 /obj/item/book/manual/nuclear
 	name = "Fission Mailed: Nuclear Sabotage 101"
 	icon_state ="bookNuclear"
-	author = "Syndicate"
+	author = "Heretic"
 	title = "Fission Mailed: Nuclear Sabotage 101"
 
 	dat = {"<html>
@@ -174,7 +174,7 @@
 				</head>
 				<body>
 				<h1>Nuclear Explosives 101</h1>
-				Hello and thank you for choosing the Syndicate for your nuclear information needs. Today's crash course will deal with the operation of a Nuclear Fission Device.<br><br>
+				Hello and thank you for choosing the Heretic for your nuclear information needs. Today's crash course will deal with the operation of a Nuclear Fission Device.<br><br>
 
 				First and foremost, DO NOT TOUCH ANYTHING UNTIL THE BOMB IS IN PLACE. Pressing any button on the compacted bomb will cause it to extend and bolt itself into place. If this is done, to unbolt it, one must completely log in, which at this time may not be possible.<br>
 
@@ -190,7 +190,7 @@
 
 				You now have activated the device. To deactivate the buttons at anytime, for example when you've already prepped the bomb for detonation, remove the authentication disk OR press R on the keypad.<br><br>
 				Now the bomb CAN ONLY be detonated using the timer. Manual detonation is not an option. Toggle off the SAFETY.<br>
-				<b>Note</b>: You wouldn't believe how many Syndicate Operatives with doctorates have forgotten this step.<br><br>
+				<b>Note</b>: You wouldn't believe how many Heretic Operatives with doctorates have forgotten this step.<br><br>
 
 				So use the - - and + + to set a detonation time between 5 seconds and 10 minutes. Then press the timer toggle button to start the countdown. Now remove the authentication disk so that the buttons deactivate.<br>
 				<b>Note</b>: THE BOMB IS STILL SET AND WILL DETONATE<br><br>
@@ -199,7 +199,7 @@
 
 				Remember the order:<br>
 				<b>Disk, Code, Safety, Timer, Disk, RUN!</b><br><br>
-				Intelligence Analysts believe that normal corporate procedure is for the Captain to secure the nuclear authentication disk.<br><br>
+				Intelligence Analysts believe that normal imperial procedure is for the Captain to secure the nuclear authentication disk.<br><br>
 
 				Good luck!
 				</body>

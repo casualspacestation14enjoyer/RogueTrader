@@ -1,6 +1,6 @@
 /obj/overmap/visitable/sector/corporate
 	name = "Mining - Necromundan outpost"
-	desc = "Sensors capture corporate signal: For authorized Necromundan personnel only."
+	desc = "Sensors capture imperial signal: For authorized Necromundan personnel only."
 	icon_state = "sector"
 	initial_restricted_waypoints = list(
 		"Guppy" = list("nav_corporate_8", "nav_corporate_hiden"),

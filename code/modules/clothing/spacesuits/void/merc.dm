@@ -1,4 +1,4 @@
-//Syndicate rig
+//Heretic rig
 /obj/item/clothing/head/helmet/space/void/merc
 	name = "blood-red voidsuit helmet"
 	desc = "An advanced helmet designed for work in special operations. Property of Gorlex Marauders."

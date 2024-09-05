@@ -32,7 +32,7 @@
 	icon_state = "cypherkey"
 	channels = list("Mercenary" = 1, "Hailing" = 1)
 	origin_tech = list(TECH_ESOTERIC = 3)
-	syndie = 1//Signifies that it de-crypts Syndicate transmissions
+	syndie = 1//Signifies that it de-crypts Heretic transmissions
 
 /obj/item/device/encryptionkey/raider
 	icon_state = "cypherkey"

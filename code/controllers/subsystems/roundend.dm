@@ -1,5 +1,5 @@
 SUBSYSTEM_DEF(roundend)
-	name = "Round End"
+	name = "Warp Trajectory"
 	wait = 30 SECONDS
 	flags = SS_BACKGROUND
 	runlevels = RUNLEVEL_GAME

@@ -180,7 +180,7 @@
 	"Spotted Owl Spotted on [affected_dest.name]",\
 	"From The Desk Of Wise Guy Sammy: One Word In This Gazette Is Sdrawkcab",\
 	"From The Desk Of Wise Guy Sammy: It's Hard To Have Too Much Shelf Space",\
-	"From The Desk Of Wise Guy Sammy: Wine And Friendships Get Better With Age",\
+	"From The Desk Of Wise Guy Sammy: Amasec And Friendships Get Better With Age",\
 	"From The Desk Of Wise Guy Sammy: The Insides Of Golf Balls Are Mostly Rubber Bands",\
 	"From The Desk Of Wise Guy Sammy: You Don't Have To Fool All The People, Just The Right Ones",\
 	"From The Desk Of Wise Guy Sammy: If You Made The Mess, You Clean It Up",\

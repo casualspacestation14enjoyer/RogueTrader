@@ -28,7 +28,7 @@
 		if("The Cat Caller")
 			to_chat(user, "An adorable neon kitty to brighten up your day.")
 		if("The Diplomatic Resolution")
-			to_chat(user, "Here's hoping they can talk it out over beer...")
+			to_chat(user, "Here's hoping they can talk it out over ale...")
 		if("Dragons Hoard")
 			to_chat(user, "It says 'DRAGONS HOARD'. What cunning adventurer shall swipe the hoard for themselves?")
 		if("Closed")

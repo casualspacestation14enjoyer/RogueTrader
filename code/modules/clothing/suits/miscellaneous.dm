@@ -102,7 +102,7 @@
 /obj/item/clothing/suit/syndicatefake
 	name = "red space suit replica"
 	icon_state = "syndicate"
-	desc = "A plastic replica of the syndicate space suit, you'll look just like a real murderous syndicate agent in this! This is a toy, it is not made for use in space!"
+	desc = "A plastic replica of the heretic space suit, you'll look just like a real murderous heretic agent in this! This is a toy, it is not made for use in space!"
 	w_class = ITEM_SIZE_NORMAL
 	item_flags = null
 	allowed = list(
@@ -403,7 +403,7 @@
 
 /obj/item/clothing/suit/poncho/science
 	name = "science poncho"
-	desc = "A simple, comfortable cloak without sleeves. This one is white with a few bottle green stripes, corporate colors."
+	desc = "A simple, comfortable cloak without sleeves. This one is white with a few bottle green stripes, imperial colors."
 	icon_state = "sciponcho"
 
 /obj/item/clothing/suit/poncho/nanotrasen

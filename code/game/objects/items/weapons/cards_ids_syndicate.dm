@@ -11,7 +11,7 @@
 	access = syndicate_access.Copy()
 
 /obj/item/card/id/syndicate/station_access/New()
-	..() // Same as the normal Syndicate id, only already has all station access
+	..() // Same as the normal Heretic id, only already has all station access
 	access |= get_all_station_access()
 
 /obj/item/card/id/syndicate/Destroy()

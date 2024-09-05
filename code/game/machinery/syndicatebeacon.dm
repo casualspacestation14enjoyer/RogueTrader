@@ -35,9 +35,9 @@
 			var/honorific = "Mr."
 			if(user.gender == FEMALE)
 				honorific = "Ms."
-			dat += "[SPAN_COLOR("red", "<i>Identity not found in operative database. What can the Syndicate do for you today, [honorific] [user.name]?</i>")]<br>"
+			dat += "[SPAN_COLOR("red", "<i>Identity not found in operative database. What can the Heretic do for you today, [honorific] [user.name]?</i>")]<br>"
 			if(!selfdestructing)
-				dat += "<br><br><A href='?src=\ref[src];betraitor=1;traitormob=\ref[user]'>\"[pick("I want to switch teams.", "I want to work for you.", "Let me join you.", "I can be of use to you.", "You want me working for you, and here's why...", "Give me an objective.", "How's the 401k over at the Syndicate?")]\"</A><BR>"
+				dat += "<br><br><A href='?src=\ref[src];betraitor=1;traitormob=\ref[user]'>\"[pick("I want to switch teams.", "I want to work for you.", "Let me join you.", "I can be of use to you.", "You want me working for you, and here's why...", "Give me an objective.", "How's the 401k over at the Heretic?")]\"</A><BR>"
 	dat += temptext
 	show_browser(user, dat, "window=syndbeacon")
 	onclose(user, "syndbeacon")
@@ -62,10 +62,10 @@
 			return
 		if(istype(M, /mob/living/carbon/human))
 			var/mob/living/carbon/human/N = M
-			to_chat(M, "<B>You have joined the ranks of the Syndicate and become a traitor to the station!</B>")
+			to_chat(M, "<B>You have joined the ranks of the Heretic and become a traitor to the station!</B>")
 			GLOB.traitors.add_antagonist(N.mind)
 			GLOB.traitors.equip(N)
-			log_and_message_admins("has accepted a traitor objective from a syndicate beacon.", M)
+			log_and_message_admins("has accepted a traitor objective from a heretic beacon.", M)
 
 
 	src.updateUsrDialog()

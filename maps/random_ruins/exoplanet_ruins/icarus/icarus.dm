@@ -1,9 +1,9 @@
 #include "../../../torch/items/weapons.dm"
 
 /datum/map_template/ruin/exoplanet/icarus
-	name = "SEV Icarus"
+	name = "Icarus"
 	id = "icarus"
-	description = "The crash of the infamous SEV Icarus."
+	description = "The crash of the infamous Icarus."
 	suffixes = list("icarus/icarus.dmm")
 	spawn_cost = 1
 	ruin_tags = RUIN_HUMAN|RUIN_WRECK
@@ -15,7 +15,7 @@
 //Radiation death spawner thing from old Icarus
 
 /obj/icarus_irradiate
-	name = "SEV Icarus Radiation Spawner"
+	name = "Icarus Radiation Spawner"
 	icon = 'icons/effects/landmarks.dmi'
 	icon_state = "x2"
 	var/radiation_power = 20 //Dangerous but survivable for 10-15 minutes if crew is too lazy to read away map description
@@ -47,39 +47,39 @@
 //Areas
 
 /area/map_template/icarus
-	name = "SEV Icarus"
+	name = "Icarus"
 	icon = 'maps/random_ruins/exoplanet_ruins/icarus/icarus.dmi'
 	icon_state = "icarus"
 	turfs_airless = TRUE
 
 /area/map_template/icarus/bridge
-	name = "SEV Icarus Bridge"
+	name = "Icarus Bridge"
 	icon_state = "bridge"
 
 /area/map_template/icarus/eng
-	name = "SEV Icarus Engineering Bay"
+	name = "Icarus Engineering Bay"
 	icon_state = "engine"
 
 /area/map_template/icarus/sec
-	name = "SEV Icarus Brig"
+	name = "Icarus Brig"
 	icon_state = "brig"
 
 /area/map_template/icarus/armory
-	name = "SEV Icarus Tactical Armory"
+	name = "Icarus Tactical Armory"
 	icon_state = "armory"
 
 /area/map_template/icarus/sci
-	name = "SEV Icarus Research Division"
+	name = "Icarus Research Division"
 	icon_state = "research"
 
 /area/map_template/icarus/driver
 	icon_state = "driver"
 
 /area/map_template/icarus/driver/west
-	name = "SEV Icarus Port Mass Driver"
+	name = "Icarus Port Mass Driver"
 
 /area/map_template/icarus/driver/east
-	name = "SEV Icarus Starboard Mass Driver"
+	name = "Icarus Starboard Mass Driver"
 
 
 //Objects
@@ -93,8 +93,8 @@
 	w_class = ITEM_SIZE_TINY
 
 /obj/item/toy/icarus_model
-	name = "table-top SEV Icarus model"
-	desc = "A small model of a spaceship mounted on a wooden stand. On the stand is engraved: \"SEV Icarus 1:278th scale\". The small lights on the hull and the engine exhaust still light up and blink."
+	name = "table-top Icarus model"
+	desc = "A small model of a spaceship mounted on a wooden stand. On the stand is engraved: \"Icarus 1:278th scale\". The small lights on the hull and the engine exhaust still light up and blink."
 	icon = 'maps/random_ruins/exoplanet_ruins/icarus/icarus.dmi'
 	icon_state = "model"
 
@@ -105,7 +105,7 @@
 //Imperium deco
 
 /obj/structure/sign/icarus_dedicationplaque
-	name = "\improper SEV Icarus dedication plaque"
+	name = "\improper Icarus dedication plaque"
 	icon_state = "lightplaque"
 	desc = "S.E.V. Icarus - Lexington Class - Sol Expeditionary Corps Registry 95498 - Tennessee Fleet Yards, Mars - First Vessel To Bear The Name - Launched 2302 - Imperial Government - 'Never was anything great achieved without danger.'"
 
@@ -143,7 +143,7 @@
 	name = "Printed log"
 	info = "\[LOG\]: Orbit stabilized. Next correction burst, est.: 2 hrs 12 m<br>\
 			\[LOG\]: Orbit stabiliztion. Announcing...<br>\
-			\[ANN\]: Attention all hands, SEV Icarus is stabilizing orbit in 30 seconds. Prepare for possible gravitational spikes.<br>\
+			\[ANN\]: Attention all hands, Icarus is stabilizing orbit in 30 seconds. Prepare for possible gravitational spikes.<br>\
 			\[LOG\]: Announcing complete.<br>\
 			\[LOG\]: Preparing for burst: heating up impulse mass.<br>\
 			\[WARN\]: Minor pressure alert, Reactor Cooling Loop 3.<br>\
@@ -173,7 +173,7 @@
 /obj/item/paper/icarus_roster
 	name = "Printed crew manifest"
 	info = "<center>\[solcrest]<BR>\
-			<b>SEV Icarus</b><br>\
+			<b>Icarus</b><br>\
 			Crew roster</center><br>\
 			<b>Command</b><br>\
 			\[list]\
@@ -206,6 +206,6 @@
 			\[*]Ch. Expl. Alex Warda\
 			\[*]S. Expl. William Lions\
 			\[*]Expl. Hope Bafflow\
-			\[*]Expl. Yuri Meadows\
+			\[*]Expl. Yuri Fenrisian Aleows\
 			\[*]Dr. Tetha-12-Beta\
 			\[list]"

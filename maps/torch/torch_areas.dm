@@ -384,7 +384,7 @@
 //Aquila
 
 /area/aquila
-	name = "\improper SEV Aquila"
+	name = "\improper Aquila"
 	icon_state = "shuttlered"
 	base_turf = /turf/simulated/floor/reinforced
 	requires_power = 1
@@ -393,33 +393,33 @@
 	base_turf_special_handling = TRUE
 
 /area/aquila/cockpit
-	name = "\improper SEV Aquila - Cockpit"
+	name = "\improper Aquila - Cockpit"
 	req_access = list(access_aquila)
 
 /area/aquila/power
-	name = "\improper SEV Aquila - Engineering Compartment"
+	name = "\improper Aquila - Engineering Compartment"
 	req_access = list(access_solgov_crew)
 
 /area/aquila/storage
-	name = "\improper SEV Aquila - Storage Bay"
+	name = "\improper Aquila - Storage Bay"
 	req_access = list(access_solgov_crew)
 
 /area/aquila/suits
-	name = "\improper SEV Aquila - Suit Storage Compartment"
+	name = "\improper Aquila - Suit Storage Compartment"
 	req_access = list(access_aquila)
 
 /area/aquila/air
-	name = "\improper SEV Aquila - Life Support Compartment"
+	name = "\improper Aquila - Life Support Compartment"
 
 /area/aquila/crew
-	name = "\improper SEV Aquila - Crew Compartment"
+	name = "\improper Aquila - Crew Compartment"
 
 /area/aquila/medical
-	name = "\improper SEV Aquila - Medical Compartment"
+	name = "\improper Aquila - Medical Compartment"
 	lighting_tone = AREA_LIGHTING_COOL
 
 /area/aquila/airlock
-	name = "\improper SEV Aquila - Airlock Compartment"
+	name = "\improper Aquila - Airlock Compartment"
 	req_access = list(access_solgov_crew)
 
 //Guppy

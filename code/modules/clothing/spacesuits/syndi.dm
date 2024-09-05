@@ -1,4 +1,4 @@
-//Regular syndicate space suit
+//Regular heretic space suit
 /obj/item/clothing/head/helmet/space/syndicate
 	name = "red space helmet"
 	icon_state = "syndicate"
@@ -47,7 +47,7 @@
 	siemens_coefficient = 0.3
 
 
-//Black syndicate space suit
+//Black heretic space suit
 /obj/item/clothing/head/helmet/space/syndicate/black
 	name = "black space helmet"
 	desc = "A black helmet sporting clean lines and durable plating."

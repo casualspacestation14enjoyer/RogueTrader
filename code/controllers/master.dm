@@ -179,7 +179,7 @@ var/global/datum/controller/master/Master = new
 	if(init_sss)
 		init_subtypes(/datum/controller/subsystem, subsystems)
 
-	report_progress("Initializing subsystems...")
+	report_progress("System Initialization Log: Dauntless Starship Activation Sequence")
 
 	initializing = TRUE
 

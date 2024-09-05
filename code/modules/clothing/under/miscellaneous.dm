@@ -549,7 +549,7 @@
 	body_parts_covered = 0
 
 /obj/item/clothing/under/pcrc
-	name = "\improper PCRC uniform"
+	name = "\improper imperial uniform"
 	desc = "A uniform belonging to Proxima Centauri Risk Control, a private security firm."
 	icon_state = "pcrc"
 	item_state = "jensensuit"
@@ -557,7 +557,7 @@
 	gender_icons = 1
 
 /obj/item/clothing/under/pcrcsuit
-	name = "\improper PCRC suit"
+	name = "\improper imperial suit"
 	desc = "A suit belonging to Proxima Centauri Risk Control, a private security firm. This one looks more formal than its utility counterpart."
 	icon_state = "pcrcsuit"
 	item_state = "jensensuit"
@@ -610,7 +610,7 @@
 	worn_state = "confed"
 
 /obj/item/clothing/under/saare
-	name = "\improper SAARE uniform"
+	name = "\improper imperial uniform"
 	desc = "A uniform belonging to Strategic Assault and Asset Retention Enterprises, a minor private military corporation."
 	icon_state = "saare"
 	worn_state = "saare"

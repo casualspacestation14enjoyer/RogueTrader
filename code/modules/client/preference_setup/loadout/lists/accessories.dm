@@ -62,7 +62,7 @@
 
 /datum/gear/accessory/ntaward
 	display_name = "corporate award selection"
-	description = "A medal or ribbon awarded to corporate personnel for significant accomplishments."
+	description = "A medal or ribbon awarded to imperial personnel for significant accomplishments."
 	path = /obj/item/storage/medalbox
 	cost = 6
 	flags = GEAR_HAS_NO_CUSTOMIZATION

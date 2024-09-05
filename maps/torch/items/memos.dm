@@ -71,7 +71,7 @@
 	return subtypesof(/obj/item/paper/memo/research) + subtypesof(/obj/item/paper/memo/generic)
 
 /obj/random/memo_corporate
-	name = "random corporate memo"
+	name = "random imperial memo"
 	desc = "This may spawn one of the Corporate Memos."
 	icon = 'icons/obj/bureaucracy.dmi'
 	icon_state = "docs_generic"
@@ -193,7 +193,7 @@
 	info = {"A "confidential" notice issued to Imperium Representatives, informing them of an office fire caused by improper cigarette ash management."}
 
 /obj/item/paper/memo/scgr/boringreports
-	name = "\improper Torch project status update #132"
+	name = "\improper Dauntless project status update #132"
 	info = {"A "confidential" report containing nothing you'd like to read, featuring updates that you knew about three weeks ago."}
 
 /obj/item/paper/memo/scgr/documentdamage
@@ -345,7 +345,7 @@
 
 /obj/item/paper/memo/supply/personaldrinks
 	name = "off-menu drinks"
-	info = {"An "internal use only" memo, discussing various off-menu drinks and how to market them. It lists various amusing names, such as "Gaia Slammer", "Spicy Water", "Prison Wine", and "Sheep Shaver", but it doesn't tell you how to make them, for some reason."}
+	info = {"An "internal use only" memo, discussing various off-menu drinks and how to market them. It lists various amusing names, such as "Gaia Slammer", "Spicy Water", "Prison Amasec", and "Sheep Shaver", but it doesn't tell you how to make them, for some reason."}
 
 
 
@@ -531,11 +531,11 @@
 
 
 
-// corporate memos
+// imperial memos
 
 /obj/item/paper/memo/corporate/stipendcut
 	name = "corporate spending records"
-	info = {"A "confidential" memo on the current usage of funds provided to Dauntless corporate liaisons; apparently there's threats of a strike over a cut to the cost-of-living stipends by the head office."}
+	info = {"A "confidential" memo on the current usage of funds provided to Dauntless imperial liaisons; apparently there's threats of a strike over a cut to the cost-of-living stipends by the head office."}
 
 /obj/item/paper/memo/corporate/uniondues
 	name = "union dues reminder"
@@ -543,11 +543,11 @@
 
 /obj/item/paper/memo/corporate/glueandtape
 	name = "proper document disposal"
-	info = {"Some "internal use only" corporate documents detailing the proper ways to dispose of top secret and classified documents. It highlights that burning is most applicable, and shows pictures of shredded documents reconstructed with glue and sticky tape with a red "Fail" written below."}
+	info = {"Some "internal use only" imperial documents detailing the proper ways to dispose of top secret and classified documents. It highlights that burning is most applicable, and shows pictures of shredded documents reconstructed with glue and sticky tape with a red "Fail" written below."}
 
 /obj/item/paper/memo/corporate/exointerest
 	name = "\improper EXO and you"
-	info = {"Some "confidential" corporate documents directed to the corporate liasion, informing them that their job is to represent EXO and its immediate interests, which are to ensure the Dauntless is able to maintain the currently defined direction that is within the interests of EXO as a whole."}
+	info = {"Some "confidential" imperial documents directed to the imperial liasion, informing them that their job is to represent EXO and its immediate interests, which are to ensure the Dauntless is able to maintain the currently defined direction that is within the interests of EXO as a whole."}
 
 /obj/item/paper/memo/corporate/thequarterly
 	name = "quarterly budget report"
@@ -555,15 +555,15 @@
 
 /obj/item/paper/memo/corporate/kiareport
 	name = "deceased and missing staff reports"
-	info = {"A "confidential" memo reminding corporate liaisons to report the details pertaining to the death, or missing status, of on-shift employees. It explains that doing this ensures formal procedures are followed, and the situation pertaining to the deceased/missing status will be referenced for ongoing and future employee training programs and payrolls."}
+	info = {"A "confidential" memo reminding imperial liaisons to report the details pertaining to the death, or missing status, of on-shift employees. It explains that doing this ensures formal procedures are followed, and the situation pertaining to the deceased/missing status will be referenced for ongoing and future employee training programs and payrolls."}
 
 /obj/item/paper/memo/corporate/spellchecker
 	name = "spellchecking and you"
-	info = {"Some "internal use only" corporate memos reminding corporate liaisons to proofread reports. It details various reasons behind why correct spelling and punctuation help in making EXO and Expeditionary Command take your report seriously."}
+	info = {"Some "internal use only" imperial memos reminding imperial liaisons to proofread reports. It details various reasons behind why correct spelling and punctuation help in making EXO and Expeditionary Command take your report seriously."}
 
 /obj/item/paper/memo/corporate/safetyfirst
 	name = "contractor safety and you"
-	info = {"An "internal use only" corporate document reminding corporate liaisons to report any unsafe behavior from contractors that they either see directly or is reported to them. It goes on to explain that ensuring the health and safety compliance of those under contract not only helps to keep up an image of security but ensures that the reputation of EXO as a whole is not tarnished due to a workplace accident."}
+	info = {"An "internal use only" imperial document reminding imperial liaisons to report any unsafe behavior from contractors that they either see directly or is reported to them. It goes on to explain that ensuring the health and safety compliance of those under contract not only helps to keep up an image of security but ensures that the reputation of EXO as a whole is not tarnished due to a workplace accident."}
 
 
 

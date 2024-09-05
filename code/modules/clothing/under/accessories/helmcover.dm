@@ -47,13 +47,13 @@
 
 
 /obj/item/clothing/accessory/helmet_cover/pcrc
-	name = "\improper PCRC helmet cover"
+	name = "\improper imperial helmet cover"
 	desc = "A fabric cover for armored helmets. This one is colored navy blue and has a tag in the back with the words PROXIMA CENTAURI RISK CONTROL printed in cyan lettering on it."
 	icon_state = "helmcover_pcrc"
 
 
 /obj/item/clothing/accessory/helmet_cover/saare
-	name = "\improper SAARE helmet cover"
+	name = "\improper imperial helmet cover"
 	desc = "A fabric cover for armored helmets. This one has SAARE's colors."
 	icon_state = "helmcover_saare"
 

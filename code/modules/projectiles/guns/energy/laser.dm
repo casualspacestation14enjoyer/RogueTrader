@@ -72,7 +72,7 @@
 	icon = 'icons/obj/guns/caplaser.dmi'
 	icon_state = "caplaser"
 	item_state = "caplaser"
-	desc = "A rare weapon, handcrafted by a now defunct specialty manufacturer on Luna for a small fortune. It's certainly aged well."
+	desc = "A rare weapon, handcrafted by a now defunct specialty manufacturer on Holy Terrafor a small fortune. It's certainly aged well."
 	force = 5
 	slot_flags = SLOT_BELT //too unusually shaped to fit in a holster
 	w_class = ITEM_SIZE_NORMAL

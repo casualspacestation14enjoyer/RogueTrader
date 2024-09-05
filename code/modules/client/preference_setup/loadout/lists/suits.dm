@@ -104,7 +104,7 @@
 	path = /obj/item/clothing/suit/storage/toggle/labcoat/blue
 
 /datum/gear/suit/labcoat_corp
-	display_name = "labcoat, corporate colors"
+	display_name = "labcoat, imperial colors"
 	path = /obj/item/clothing/suit/storage/toggle/labcoat/science
 	flags = GEAR_HAS_TYPE_SELECTION
 

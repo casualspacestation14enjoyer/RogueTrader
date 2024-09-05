@@ -2,10 +2,10 @@ NanoBaseHelpers = function () {
   var _baseHelpers = {
     syndicateMode: function () {
       $('body').css("background-color","#8f1414")
-      $('body').css("background-image","url('uiBackground-Syndicate.png')")
+      $('body').css("background-image","url('uiBackground-Heretic.png')")
       $('body').css("background-position","50% 0")
       $('body').css("background-repeat","repeat-x")
-      $('#uiTitleFluff').css("background-image","url('uiTitleFluff-Syndicate.png')")
+      $('#uiTitleFluff').css("background-image","url('uiTitleFluff-Heretic.png')")
       $('#uiTitleFluff').css("background-position","50% 50%")
       $('#uiTitleFluff').css("background-repeat", "no-repeat")
       return ''
