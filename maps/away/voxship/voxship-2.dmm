@@ -700,7 +700,7 @@
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/engineering)
 "bQ" = (
-/obj/machinery/atmospherics/unary/tank/nitrogen,
+/obj/machinery/atmospherics/unary/tank/oxygen,
 /obj/floor_decal/borderfloorblack{
 	dir = 4
 	},
@@ -1715,7 +1715,7 @@
 /area/voxship/fore)
 "dR" = (
 /obj/floor_decal/corner_steel_grid/diagonal,
-/obj/item/tank/nitrogen,
+/obj/item/tank/oxygen,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/fore)
 "dS" = (
@@ -1814,7 +1814,7 @@
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/scavship)
 "ec" = (
-/obj/item/tank/nitrogen,
+/obj/item/tank/oxygen,
 /obj/item/pickaxe,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/scavship)
@@ -1986,7 +1986,7 @@
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/scavship)
 "ex" = (
-/obj/item/tank/nitrogen_emergency,
+/obj/item/tank/oxygen,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable{
 	d1 = 1;
@@ -2137,7 +2137,7 @@
 "eO" = (
 /obj/item/pizzabox/meat,
 /obj/floor_decal/corner_steel_grid/diagonal,
-/obj/item/tank/nitrogen,
+/obj/item/tank/oxygen,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},

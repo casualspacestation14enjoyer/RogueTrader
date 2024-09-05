@@ -1,6 +1,6 @@
 /obj/overmap/visitable/ship/torch
 	name = "Dauntless"
-	desc = "A frankensteined HNS Mako-class corvette, broadcasting SCGEC codes and the designation \"Dauntless, HSC-4-13-X\"."
+	desc = "A frankensteined HNS Mako-class corvette, broadcasting ImperialEC codes and the designation \"Dauntless, HSC-4-13-X\"."
 	fore_dir = WEST
 	vessel_mass = 100000
 	burn_delay = 2 SECONDS
@@ -15,8 +15,8 @@
 		"Charon" = list("nav_hangar_charon"), 	//can't have random shuttles popping inside the ship
 		"Guppy" = list("nav_hangar_guppy"),
 		"Aquila" = list("nav_hangar_aquila"),
-		"Skrellian Scout" = list("nav_skrellscout_dock"), //restricts Skrell Scoutship specific docking waypoint on deck 4 portside
-		"Skrellian Shuttle" = list("nav_skrellscoutsh_altdock"),
+		"Tau Scout" = list("nav_skrellscout_dock"), //restricts Skrell Scoutship specific docking waypoint on deck 4 portside
+		"Tau Shuttle" = list("nav_skrellscoutsh_altdock"),
 		"Rescue" = list("nav_ert_dock"), //restricts ERT Shuttle specific docking waypoint on deck 4 portside
 		"ITV The Reclaimer" = list("nav_hangar_gantry_torch"), //gantry shuttles
 		"ITV Vulcan" = list("nav_hangar_gantry_torch_two"),
@@ -83,7 +83,7 @@
 
 /obj/overmap/visitable/ship/landable/exploration_shuttle
 	name = "Charon"
-	desc = "An SSE-U11 long range shuttle, broadcasting SCGEC codes and the callsign \"Torch-2 Charon\"."
+	desc = "An SSE-U11 long range shuttle, broadcasting ImperialEC codes and the callsign \"Torch-2 Charon\"."
 	shuttle = "Charon"
 	max_speed = 1/(2 SECONDS)
 	burn_delay = 1 SECONDS
@@ -99,7 +99,7 @@
 
 /obj/overmap/visitable/ship/landable/aquila
 	name = "Aquila"
-	desc = "A PM-24 modular transport, broadcasting SCGEC codes and the callsign \"Torch-1 Aquila\"."
+	desc = "A PM-24 modular transport, broadcasting ImperialEC codes and the callsign \"Torch-1 Aquila\"."
 	shuttle = "Aquila"
 	vessel_mass = 10000
 	max_speed = 1/(1 SECONDS)
@@ -114,7 +114,7 @@
 
 /obj/overmap/visitable/ship/landable/guppy
 	name = "Guppy"
-	desc = "An SSE-U3 utility pod, broadcasting SCGEC codes and the callsign \"Torch-3 Guppy\"."
+	desc = "An SSE-U3 utility pod, broadcasting ImperialEC codes and the callsign \"Torch-3 Guppy\"."
 	shuttle = "Guppy"
 	max_speed = 1/(3 SECONDS)
 	burn_delay = 2 SECONDS

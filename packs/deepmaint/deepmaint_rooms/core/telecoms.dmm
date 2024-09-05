@@ -125,7 +125,7 @@
 /obj/machinery/telecomms/relay,
 /obj/random/traps/wire_splicing,
 /obj/item/contraband/poster/placed/advertisement/pda{
-	desc = "A poster advertising the older PDA stock from Nanotrasen suppliers.";
+	desc = "A poster advertising the older PDA stock from Necromundan suppliers.";
 	name = "Out Dated PDA Ad";
 	pixel_y = 32
 	},

@@ -40,7 +40,7 @@
 	description = "A shoulder patch representing the Expeditionary Corps."
 	allowed_branches = list(/datum/mil_branch/expeditionary_corps)
 	whitelisted = list(
-		SPECIES_SKRELL,
+		SPECIES_TAU,
 		SPECIES_UNATHI,
 		SPECIES_YEOSA,
 		SPECIES_IPC

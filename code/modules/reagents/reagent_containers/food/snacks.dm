@@ -3399,7 +3399,7 @@
 /obj/item/reagent_containers/food/snacks/canned/tomato
 	name = "tomato soup"
 	icon_state = "tomato"
-	desc = "Plain old unseasoned tomato soup. This can predates the formation of the SCG."
+	desc = "Plain old unseasoned tomato soup. This can looks centuries old..."
 	trash = /obj/item/trash/tomato
 	filling_color = "#ae0000"
 	center_of_mass = "x=15;y=9"
@@ -3457,7 +3457,7 @@
 /obj/item/reagent_containers/food/snacks/canned/caviar
 	name = "caviar"
 	icon_state = "fisheggs"
-	desc = "Terran caviar, or space carp eggs. Carefully faked using alginate, artificial flavoring and salt. Skrell approved!"
+	desc = "Imperial caviar, or space carp eggs. Carefully faked using alginate, artificial flavoring and salt. Skrell approved!"
 	trash = /obj/item/trash/fishegg
 	filling_color = "#000000"
 	center_of_mass = "x=15;y=9"
@@ -3468,7 +3468,7 @@
 /obj/item/reagent_containers/food/snacks/canned/caviar/true
 	name = "caviar"
 	icon_state = "carpeggs"
-	desc = "Terran caviar, or space carp eggs. Banned by the Sol Food Health Administration for exceeding the legally set amount of carpotoxins in foodstuffs."
+	desc = "Imperial caviar, or space carp eggs. Banned by the Sol Food Health Administration for exceeding the legally set amount of carpotoxins in foodstuffs."
 	trash = /obj/item/trash/carpegg
 	filling_color = "#330066"
 	center_of_mass = "x=15;y=9"
@@ -3581,7 +3581,7 @@
 /obj/item/reagent_containers/food/snacks/croutons
 	name = "suhariki"
 	icon_state = "croutons"
-	desc = "Fried bread cubes. Popular in Terran territories."
+	desc = "Fried bread cubes. Popular in Imperial territories."
 	trash = /obj/item/trash/croutons
 	filling_color = "#c6b17f"
 	center_of_mass = "x=15;y=9"

@@ -56,7 +56,7 @@
 		"Cyan" =           COLOR_CYAN,
 		"Green" =          COLOR_GREEN,
 		"Bottle green" =   COLOR_PALE_BTL_GREEN,
-		"Nanotrasen red" = COLOR_NT_RED,
+		"Necromundan red" = COLOR_NT_RED,
 		"Orange" =         COLOR_ORANGE,
 		"Pale orange" =    COLOR_PALE_ORANGE,
 		"Red" =            COLOR_RED,

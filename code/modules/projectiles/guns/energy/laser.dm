@@ -14,6 +14,13 @@
 	projectile_type = /obj/item/projectile/beam/midlaser
 	wielded_item_state = "laser-wielded"
 
+/obj/item/gun/energy/laser/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.1
+	slowdown_per_slot[slot_belt] = 0.15
+	slowdown_per_slot[slot_r_hand] = 0.15
+	slowdown_per_slot[slot_l_hand] = 0.15
+
 /obj/item/gun/energy/laser/mounted
 	self_recharge = 1
 	use_external_power = 1
@@ -588,10 +595,14 @@
 	cell_type = /obj/item/cell/device/high/xenos // consider messing around with power_supply code later to set specific cell requirements.
 	wielded_item_state = "ionriflet-wielded"
 	sales_price = 100
-	fire_delay = 13
-	charge_cost = 70
+	fire_delay = 17
+	charge_cost = 90
 	self_recharge = 1
-	recharge_time = 20
+	recharge_time = 17
+	firemodes = list(
+		list(mode_name="light", projectile_type=/obj/item/projectile/energy/ion/plasma, charge_cost=50, burst=1, burst_delay=2.4, fire_delay=9),
+		list(mode_name="heavy", projectile_type=/obj/item/projectile/bullet/heavyplasma, charge_cost=90, burst=1, burst_delay=2.2, fire_delay=17)
+		)
 
 /obj/item/gun/energy/tau/ionrifle/New()
 	..()
@@ -624,13 +635,13 @@
 
 /obj/item/gun/energy/tau/railgun/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = 0.25
-	slowdown_per_slot[slot_belt] = 0.25
-	slowdown_per_slot[slot_r_hand] = 0.3
-	slowdown_per_slot[slot_l_hand] = 0.3
+	slowdown_per_slot[slot_wear_suit] = 0.21
+	slowdown_per_slot[slot_belt] = 0.21
+	slowdown_per_slot[slot_r_hand] = 0.27
+	slowdown_per_slot[slot_l_hand] = 0.27
 
 /obj/item/gun/energy/tau/pulsepistol
-	name = "pulse pistol" // Higher damage then hellpistol but slower firing and higher charge cost. Low accuracy as well.
+	name = "Pulse Pistol" // Higher damage then hellpistol but slower firing and higher charge cost. Low accuracy as well.
 	desc = "The trusty sidearm of the T'au Empire."
 	icon_state = "pulsep"
 	item_state = "pulsep"
@@ -649,6 +660,7 @@
 	wielded_item_state = "pulsep"
 	self_recharge = 1
 	recharge_time = 8
+	one_hand_penalty = 2
 
 /obj/item/gun/energy/tau/pulsepistol/New()
 	..()
@@ -658,7 +670,7 @@
 	slowdown_per_slot[slot_l_hand] = 0.1
 
 /obj/item/gun/energy/tau/pulserifle
-	name = "pulse rifle" // Fires the same round as pulse pistol but better stats. 4-round burst with slightly better burst rate then lasguns.
+	name = "Pulse Rifle" // Fires the same round as pulse pistol but better stats. 4-round burst with slightly better burst rate then lasguns.
 	desc = "The standard-issue pulse rifle of the Fire Warrior Caste"
 	icon_state = "pulseb"
 	item_state = "pulseb"
@@ -667,6 +679,7 @@
 	charge_meter = FALSE
 	force = 14
 	accuracy = 0
+	one_hand_penalty = 2
 	origin_tech = list(TECH_COMBAT = 5, TECH_MAGNET = 5)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulserifle
@@ -689,25 +702,128 @@
 	slowdown_per_slot[slot_r_hand] = 0.2
 	slowdown_per_slot[slot_l_hand] = 0.2
 
-/obj/item/gun/energy/plasma // to-do. make astartes variant with ext_heavy
-	name = "plasma"
+/obj/item/gun/energy/plasma
+	name = "Plasma Rifle" // add alt-fire for CQB combat, low charge, low damage.
 	desc = "If you see this complain that staff used the wrong object"
 	icon_state = "prifle"
 	item_state = "plasmarifle"
 	slot_flags = SLOT_BACK
 	w_class = ITEM_SIZE_HUGE
-	force = 10
+	force = 12
 	one_hand_penalty = 3 //heavy af fam
-	accuracy = -0.5
+	accuracy = 0.5
 	self_recharge = 1
-	// recharge_time = 19
-	fire_delay = 15
+	recharge_time = 19
+	fire_delay = 18
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/bullet/heavyplasma
 	cell_type = /obj/item/cell/device/high/mechanicus
-	charge_cost = 80
+	charge_cost = 100
 	wielded_item_state = "plasmarifle-wielded"
+	sales_price = 75
+	firemodes = list(
+		list(mode_name="light", projectile_type=/obj/item/projectile/energy/ion/plasma, charge_cost=60, burst=1, burst_delay=2.4, fire_delay=12),
+		list(mode_name="heavy", projectile_type=/obj/item/projectile/bullet/heavyplasma, charge_cost=100, burst=1, burst_delay=2.2, fire_delay=18)
+		)
+
+
+/obj/item/gun/energy/plasma/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.23
+	slowdown_per_slot[slot_belt] = 0.23
+	slowdown_per_slot[slot_r_hand] = 0.27
+	slowdown_per_slot[slot_l_hand] = 0.27
+
+/obj/item/gun/energy/plasma/pistol // Better stats as plasma pistols are more often rare DAOT tech and not Forge-World manufactured.
+	name = "plasma pistol" // Need archeotech, astartes and xenos variant. Including miniatirised.
+	desc = "A plasma pistol. Great for dealing with threats swiftly. It has an overheat scale and on the end of it is written 'Boom!'."
+	icon_state = "ppistol"
+	item_state = "plasmapistol"
+	slot_flags = SLOT_BACK|SLOT_BELT
+	w_class = ITEM_SIZE_LARGE
+	force = 10
+	one_hand_penalty = 1
+	fire_delay = 18
+	recharge_time = 19
+	accuracy = -0.5 //it a pistol, but giga cool plasma
+	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/bullet/heavyplasma
+	cell_type = /obj/item/cell/device/high/mechanicus
+	charge_cost = 90
+	wielded_item_state = "plasmapistol"
+	sales_price = 85 // Plasma Pistols are basically DAOT tech.
+	firemodes = list(
+		list(mode_name="light", projectile_type=/obj/item/projectile/energy/ion/plasma, charge_cost=50, burst=1, burst_delay=2.4, fire_delay=12),
+		list(mode_name="heavy", projectile_type=/obj/item/projectile/bullet/heavyplasma, charge_cost=90, burst=1, burst_delay=2.2, fire_delay=18)
+		)
+
+/obj/item/gun/energy/plasma/pistol/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.1
+	slowdown_per_slot[slot_belt] = 0.1
+	slowdown_per_slot[slot_r_hand] = 0.15
+	slowdown_per_slot[slot_l_hand] = 0.15
+
+/obj/item/gun/energy/plasma/pistol/chaos
+	name = "Chaotic plasma pistol"
+	desc = "A plasma pistol blessed by the ruinous powers. You can feel the warp energy going trough it. It has an overheat scale and on the end of it is written 'Boom!'."
+	icon_state = "chaosppistol"
+	charge_cost = 80 // magek
+	accuracy = 0.5
+	firemodes = list(
+		list(mode_name="light", projectile_type=/obj/item/projectile/energy/ion/plasma, charge_cost=40, burst=1, burst_delay=2.4, fire_delay=12),
+		list(mode_name="heavy", projectile_type=/obj/item/projectile/bullet/heavyplasma, charge_cost=80, burst=1, burst_delay=2.2, fire_delay=18)
+		)
+
+/obj/item/gun/energy/plasma/pistol/mechanicus
+	name = "Ryza Pattern Plasma Pistol"
+	desc = "A plasma pistol from the forge world of Ryza with an in-built targeting cogitator. It's adamantium receiver is detailed with the inscriptions of Ryza Secundus' factorium. It has an overheat scale and on the end of it is written 'Boom!'."
+	icon_state = "toasterppistol" // Benefits over regular pistol is purely just firing speed and accuracy only.
+	item_state = "pulse_pistol"
+	wielded_item_state = "pulse_pistol"
+	accuracy = 1 // targeting system
+	fire_delay = 17
+	firemodes = list(
+		list(mode_name="light", projectile_type=/obj/item/projectile/energy/ion/plasma, charge_cost=50, burst=1, burst_delay=2.4, fire_delay=11),
+		list(mode_name="heavy", projectile_type=/obj/item/projectile/bullet/heavyplasma, charge_cost=90, burst=1, burst_delay=2.2, fire_delay=17)
+		)
+
+/obj/item/gun/energy/plasma/pistol/xenos
+	name = "xenos plasma pistol"
+	desc = "An ancient plasma pistol forged by xenos gun smiths, despite it's incredible age it shows no signs of decay. Looks small enough to fit into a compact holster."
+	icon_state = "xenolpistol" // Benefits are small size and low charge cost.
+	item_state = "pulse_pistol"
+	w_class = ITEM_SIZE_NORMAL
+	slot_flags = SLOT_BACK|SLOT_BELT|SLOT_HOLSTER
+	wielded_item_state = "pulse_pistol"
+	accuracy = 0.5
+	charge_cost = 70
+	firemodes = list(
+		list(mode_name="light", projectile_type=/obj/item/projectile/energy/ion/plasma, charge_cost=30, burst=1, burst_delay=2.4, fire_delay=12),
+		list(mode_name="heavy", projectile_type=/obj/item/projectile/bullet/heavyplasma, charge_cost=70, burst=1, burst_delay=2.2, fire_delay=18)
+		)
+/obj/item/gun/energy/plasma/pistol/xenos/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0
+	slowdown_per_slot[slot_belt] = 0
+	slowdown_per_slot[slot_r_hand] = 0.1
+	slowdown_per_slot[slot_l_hand] = 0.1
+
+/obj/item/gun/energy/plasma/pistol/archeotech
+	name = "archeotech plasma pistol"
+	desc = "An archeotech plasma pistol, despite it's incredible age it shows no signs of decay. It's design seems outright heretical by mechanicus standards."
+	icon_state = "glockl100"
+	item_state = "pulse_pistol"
+	wielded_item_state = "pulse_pistol"
+	accuracy = 0
+	fire_delay = 17
+	firemodes = list(
+		list(mode_name="light", projectile_type=/obj/item/projectile/energy/ion/plasma, charge_cost=50, burst=1, burst_delay=2.4, fire_delay=11),
+		list(mode_name="burst", projectile_type=/obj/item/projectile/bullet/heavyplasma, charge_cost=50, burst=3, burst_delay=5.2, fire_delay=11),
+		list(mode_name="heavy", projectile_type=/obj/item/projectile/bullet/heavyplasma, charge_cost=90, burst=1, burst_delay=2.2, fire_delay=17)
+		)
 
 /* // this shit doesnt work for now
 	var/plasma_overheat = 1 // Keeping track on how overheated the gun is

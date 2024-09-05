@@ -5,7 +5,7 @@
 	species_allowed = list(
 		SPECIES_HUMAN,
 		SPECIES_IPC,
-		SPECIES_SKRELL
+		SPECIES_TAU
 	)
 
 

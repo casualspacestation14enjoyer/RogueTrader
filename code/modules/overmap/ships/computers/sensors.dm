@@ -14,7 +14,7 @@
 	var/list/last_scan
 	var/muted = FALSE
 	var/sound_off = FALSE
-	var/print_language = LANGUAGE_HUMAN_EURO
+	var/print_language = LANGUAGE_HIGH_GOTHIC
 	var/working_sound = 'sound/machines/sensors/sensorloop.ogg'
 	var/datum/sound_token/sound_token
 	var/sound_id
@@ -30,7 +30,7 @@
 /obj/machinery/computer/ship/sensors/spacer
 	construct_state = /singleton/machine_construction/default/panel_closed/computer/no_deconstruct
 	base_type = /obj/machinery/computer/ship/sensors
-	print_language = LANGUAGE_SPACER
+	print_language = LANGUAGE_LOW_GOTHIC
 
 
 /obj/machinery/computer/ship/sensors/attempt_hook_up(obj/overmap/visitable/ship/sector)

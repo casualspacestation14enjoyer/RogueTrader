@@ -2,6 +2,9 @@
 	sort_category = "Tactical Equipment"
 	category = /datum/gear/tactical
 	slot = slot_tie
+	allowed_branches = list(
+		/datum/mil_branch/fleet
+	)
 
 /datum/gear/tactical/helm_covers
 	display_name = "helmet covers"

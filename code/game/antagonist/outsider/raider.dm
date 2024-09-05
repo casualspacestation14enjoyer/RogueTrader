@@ -241,7 +241,7 @@ GLOBAL_DATUM_INIT(raiders, /datum/antagonist/raider, new)
 	vox.equip_to_slot_or_del(new /obj/item/clothing/shoes/magboots/vox(vox), slot_shoes) // REPLACE THESE WITH CODED VOX ALTERNATIVES.
 	vox.equip_to_slot_or_del(new /obj/item/clothing/gloves/vox(vox), slot_gloves) // AS ABOVE.
 	vox.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/swat/vox(vox), slot_wear_mask)
-	vox.equip_to_slot_or_del(new /obj/item/tank/nitrogen(vox), slot_back)
+	vox.equip_to_slot_or_del(new /obj/item/tank/oxygen(vox), slot_back)
 	vox.equip_to_slot_or_del(new /obj/item/device/flashlight(vox), slot_r_store)
 
 	var/obj/item/clothing/accessory/storage/holster/holster = new new_holster

@@ -37,7 +37,7 @@
 /datum/gear/ears/skrell
 	sort_category = "Xenowear"
 	category = /datum/gear/ears/skrell
-	whitelisted = list(SPECIES_SKRELL)
+	whitelisted = list(SPECIES_TAU)
 
 /datum/gear/ears/skrell/chains
 	display_name = "headtail chain selection (Skrell)"
@@ -73,16 +73,16 @@
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/head/skrell_helmet
-	display_name = "Skrellian helmet"
+	display_name = "Tau helmet"
 	path = /obj/item/clothing/head/helmet/skrell
-	whitelisted = list(SPECIES_SKRELL)
+	whitelisted = list(SPECIES_TAU)
 	sort_category = "Xenowear"
 	allowed_roles = list(/datum/job/hos, /datum/job/warden, /datum/job/officer, /datum/job/detective)
 
 /datum/gear/accessory/skrell_badge
-	display_name = "skrellian SDTF badge"
+	display_name = "Tau SDTF badge"
 	path = /obj/item/clothing/accessory/badge/tags/skrell
-	whitelisted = list(SPECIES_SKRELL)
+	whitelisted = list(SPECIES_TAU)
 	sort_category = "Xenowear"
 
 // IPC clothing

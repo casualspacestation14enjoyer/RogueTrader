@@ -1,5 +1,5 @@
 /datum/map_template/ruin/exoplanet/skrell_biodome
-	name = "Skrellian Biodome"
+	name = "Tau Biodome"
 	id = "skrell_biodome"
 	description = "Strange round structure."
 	suffixes = list("skrell_biodome/skrell_biodome.dmm")

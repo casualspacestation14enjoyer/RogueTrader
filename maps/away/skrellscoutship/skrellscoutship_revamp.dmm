@@ -1432,12 +1432,12 @@
 /area/ship/skrellscoutship/command/armory)
 "eQ" = (
 /obj/structure/table/rack,
-/obj/item/gun/energy/gun/skrell,
-/obj/item/gun/energy/gun/skrell,
-/obj/item/gun/energy/gun/skrell,
-/obj/item/gun/energy/gun/skrell,
-/obj/item/gun/energy/gun/skrell,
-/obj/item/gun/energy/gun/skrell,
+/obj/item/gun/energy/tau/pulsepistol,
+/obj/item/gun/energy/tau/pulsepistol,
+/obj/item/gun/energy/tau/pulsepistol,
+/obj/item/gun/energy/tau/pulsepistol,
+/obj/item/gun/energy/tau/pulsepistol,
+/obj/item/gun/energy/tau/pulsepistol,
 /obj/structure/window/boron_reinforced{
 	dir = 8
 	},
@@ -1457,17 +1457,17 @@
 /area/ship/skrellscoutship/command/armory)
 "eT" = (
 /obj/structure/table/rack,
-/obj/item/gun/energy/pulse_rifle/skrell,
-/obj/item/gun/energy/pulse_rifle/skrell,
-/obj/item/gun/energy/pulse_rifle/skrell,
+/obj/item/gun/energy/tau/pulserifle,
+/obj/item/gun/energy/tau/pulserifle,
+/obj/item/gun/energy/tau/pulserifle,
 /obj/floor_decal/industrial/outline/red,
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/command/armory)
 "eU" = (
 /obj/structure/table/rack,
-/obj/item/gun/magnetic/railgun/flechette/skrell,
-/obj/item/gun/magnetic/railgun/flechette/skrell,
-/obj/item/gun/magnetic/railgun/flechette/skrell,
+/obj/item/gun/energy/tau/railgun,
+/obj/item/gun/energy/tau/railgun,
+/obj/item/gun/energy/tau/railgun,
 /obj/floor_decal/industrial/outline/red,
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/command/armory)
@@ -3278,9 +3278,9 @@
 /area/ship/skrellscoutship/crew/medbay)
 "kd" = (
 /obj/structure/table/rack,
-/obj/item/gun/magnetic/railgun/flechette/skrell,
-/obj/item/gun/magnetic/railgun/flechette/skrell,
-/obj/item/gun/magnetic/railgun/flechette/skrell,
+/obj/item/gun/energy/tau/railgun,
+/obj/item/gun/energy/tau/railgun,
+/obj/item/gun/energy/tau/railgun,
 /obj/floor_decal/industrial/outline/red,
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/robotics)
@@ -4434,19 +4434,19 @@
 /obj/structure/window/boron_reinforced{
 	dir = 4
 	},
-/obj/item/gun/energy/gun/skrell,
-/obj/item/gun/energy/gun/skrell,
-/obj/item/gun/energy/gun/skrell,
-/obj/item/gun/energy/gun/skrell,
-/obj/item/gun/energy/gun/skrell,
+/obj/item/gun/energy/tau/pulsepistol,
+/obj/item/gun/energy/tau/pulsepistol,
+/obj/item/gun/energy/tau/pulsepistol,
+/obj/item/gun/energy/tau/pulsepistol,
+/obj/item/gun/energy/tau/pulsepistol,
 /obj/floor_decal/industrial/outline/red,
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/robotics)
 "yN" = (
 /obj/structure/table/rack,
-/obj/item/gun/energy/pulse_rifle/skrell,
-/obj/item/gun/energy/pulse_rifle/skrell,
-/obj/item/gun/energy/pulse_rifle/skrell,
+/obj/item/gun/energy/tau/pulserifle,
+/obj/item/gun/energy/tau/pulserifle,
+/obj/item/gun/energy/tau/pulserifle,
 /obj/structure/window/boron_reinforced{
 	dir = 4
 	},
@@ -4480,7 +4480,7 @@
 "zO" = (
 /obj/structure/closet/cabinet,
 /obj/item/clothing/accessory/storage/black_vest,
-/obj/item/gun/energy/gun/skrell,
+/obj/item/gun/energy/tau/pulsepistol,
 /obj/item/rig/skrell/cmd,
 /obj/item/device/radio/headset/map_preset/skrellscoutship,
 /obj/item/device/radio/hailing,

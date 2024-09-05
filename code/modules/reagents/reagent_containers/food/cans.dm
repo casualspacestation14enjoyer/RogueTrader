@@ -161,7 +161,7 @@
 
 /obj/item/reagent_containers/food/drinks/cans/syndicola
 	name = "terra-cola"
-	desc = "A can of the only soft drink state approved for the benefit of the people. Served at room temperature regardless of ambient temperatures thanks to innovative Terran insulation technology."
+	desc = "A can of the only soft drink state approved for the benefit of the people. Served at room temperature regardless of ambient temperatures thanks to innovative Imperial insulation technology."
 	icon_state = "syndi_cola"
 	center_of_mass = "x=16;y=10"
 

@@ -9,9 +9,9 @@
 	name = "fleet challenge coin"
 	icon_state = "fleet"
 	desc = {"\
-		A challenge coin distributed by the SCG Fleet. On \
+		A challenge coin distributed by the Imperial Fleet. On \
 		the front is the insignia of the Fleet, and on the back \
-		is the emblem of the SCG inscribed with various dates.\
+		is the emblem of the Imperial inscribed with various dates.\
 	"}
 
 
@@ -20,7 +20,7 @@
 	name = "armsmen challenge coin"
 	icon_state = "armsmen"
 	desc = {"\
-		A challenge coin distributed by the SCGF Naval \
+		A challenge coin distributed by the ImperialF Naval \
 		Armsmen. On the front is an austere emblem of the Naval Armsmen, \
 		and on the back is a saluting naval armsman with the text, \
 		"WE GO WHERE WE'RE NEEDED.\
@@ -32,7 +32,7 @@
 	name = "gaia conflict challenge coin"
 	icon_state = "gaia"
 	desc = {"\
-		A challenge coin distributed by the SCG Defense Forces \
+		A challenge coin distributed by the Imperial Defense Forces \
 		to commemorate the Gaia Conflict. On the front is the roman \
 		numeral IV in front of a roundel of Gaian national colors, \
 		and on the back is a dove with an olive branch.\
@@ -45,7 +45,7 @@
 	name = "observatory challenge coin"
 	icon_state = "observatory"
 	desc = {"
-		A challenge coin distributed by the Expeditionary Corps \
+		A challenge coin distributed by the Dauntless \
 		for members of the Observatory Branch. On the front is a field \
 		of stars, and on the back is the insignia of the Expeditionary \
 		Corps on a large starship.\
@@ -57,10 +57,10 @@
 	name = "field operations challenge coin"
 	icon_state = "field-ops"
 	desc = {"\
-		A challenge coin distributed by the Expeditionary Corps \
+		A challenge coin distributed by the Dauntless \
 		for members of the Field Operations Branch. On the front is a \
 		compass above an alien planet, and on the back is the insignia \
-		of the Expeditionary Corps on a large starship.\
+		of the Dauntless on a large starship.\
 	"}
 
 
@@ -69,7 +69,7 @@
 	name = "torch mission challenge coin"
 	icon_state = "torch"
 	desc = {"\
-		A challenge coin distributed by the Expeditionary Corps for those \
+		A challenge coin distributed by the Dauntless for those \
 		partaking in The Dauntless mission. On the front is the insignia of the \
 		Dauntless, and on the back is a folksy frontiersman with the text, \
 		"PUSHING THE BOUNDARIES."\

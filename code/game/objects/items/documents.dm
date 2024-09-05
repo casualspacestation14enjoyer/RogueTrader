@@ -34,13 +34,13 @@
 
 /obj/item/documents/scg/red
 	name = "red secret documents"
-	desc = "\"Top Secret\" protocols on what to do if the ship passes into TCC sectors. The writing mostly goes over the diplomatic process, while constantly shaming the Terrans for their idiocy and needless aggression."
+	desc = "\"Top Secret\" protocols on what to do if the ship passes into TCC sectors. The writing mostly goes over the diplomatic process, while constantly shaming the Imperials for their idiocy and needless aggression."
 	description_antag = "You notice that these protocols contain small, almost intentional snubbing efforts. Whoever wrote these may have been rooting for a war to start..."
 	icon_state = "docs_red"
 
 /obj/item/documents/scg/blue
 	name = "blue secret documents"
-	desc = "\"Top Secret\" documents detailing the Skrellian company Krri'gli, and their insistent requests upon specific priority sectors for The Dauntless to investigate."
+	desc = "\"Top Secret\" documents detailing the Tau company Krri'gli, and their insistent requests upon specific priority sectors for The Dauntless to investigate."
 	description_antag = "Krri'gli seem to be guiding The Dauntless, subtly, to a specific unmapped sector of the galaxy. It's almost like they're too afraid to investigate it personally."
 	icon_state = "docs_blue"
 

@@ -20,7 +20,7 @@
 	name = "commonwealth navy patch"
 	desc = {"\
 		A shield shaped blue and green patch with a red star, signifying service in \
-		the now-defunct Terran Commonwealth Navy.\
+		the now-defunct Imperial Guard Navy.\
 	"}
 	icon_state = "navy"
 	overlay_state = "navy_worn"
@@ -30,7 +30,7 @@
 	name = "commonwealth army patch"
 	desc = {"\
 		A shield shaped blue and green patch with a golden sun, signifying service in \
-		the now-defunct Terran Commonwealth Army.\
+		the now-defunct Imperial Guard.\
 	"}
 	icon_state = "army"
 	overlay_state = "army_worn"
@@ -40,7 +40,7 @@
 	name = "ancient Expeditionary Corps patch"
 	desc = {"\
 		A shield shaped blue and green patch with a purple chevron, signifying service \
-		in the bygone Expeditionary Corps from before the foundation of the SCG.\
+		in the bygone Expeditionary Corps from before the foundation of the Imperial.\
 	"}
 	icon_state = "explorer"
 	overlay_state = "explorer_worn"
@@ -49,7 +49,7 @@
 /obj/item/clothing/accessory/commonwealth_badge/shield
 	name = "commonwealth shield"
 	desc = {"\
-		The pin worn by all agents of the Terran Commonwealth to symbolize their \
+		The pin worn by all agents of the Imperial Guard to symbolize their \
 		service to the blue marble.\
 	"}
 	icon_state = "shield"
@@ -60,7 +60,7 @@
 /obj/item/clothing/accessory/commonwealth_badge/earhart
 	name = "mission patch, COL Earhart"
 	desc = {"\
-		A reproduction of the symbology for the Terran Commonwealth colony ship COL \
+		A reproduction of the symbology for the Imperial Guard colony ship COL \
 		Earhart, a sea-blue airplane over a red cross. This one has a three digit \
 		number on it.\
 	"}

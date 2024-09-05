@@ -4,7 +4,7 @@ var/global/list/sparring_attack_cache = list()
 /datum/unarmed_attack
 	var/attack_verb = list("attack")	// Empty hand hurt intent verb.
 	var/attack_noun = list("fist")
-	var/damage = 0						// Extra empty hand attack damage.
+	var/damage = 6						// Extra empty hand attack damage.
 	var/attack_sound = "punch"
 	var/miss_sound = 'sound/weapons/punchmiss.ogg'
 	var/shredding = FALSE // Calls the old attack_alien() behavior on objects/mobs when on harm intent.
@@ -127,7 +127,7 @@ var/global/list/sparring_attack_cache = list()
 /datum/unarmed_attack/bite
 	attack_verb = list("bit")
 	attack_sound = 'sound/weapons/bite.ogg'
-	damage = 0
+	damage = 12
 	attack_name = "bite"
 
 /datum/unarmed_attack/bite/sharp
@@ -151,7 +151,7 @@ var/global/list/sparring_attack_cache = list()
 	attack_noun = list("fist")
 	eye_attack_text = "fingers"
 	eye_attack_text_victim = "digits"
-	damage = 0
+	damage = 10
 	attack_name = "punch"
 
 /datum/unarmed_attack/punch/show_attack(mob/living/carbon/human/user, mob/living/carbon/human/target, zone, attack_damage)
@@ -201,7 +201,7 @@ var/global/list/sparring_attack_cache = list()
 	attack_verb = list("kicked", "kicked", "kicked", "kneed")
 	attack_noun = list("kick", "kick", "kick", "knee strike")
 	attack_sound = "swing_hit"
-	damage = 0
+	damage = 11
 	attack_name = "kick"
 
 /datum/unarmed_attack/kick/is_usable(mob/living/carbon/human/user, mob/living/carbon/human/target, zone)

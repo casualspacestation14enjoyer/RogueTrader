@@ -1,5 +1,5 @@
 /obj/item/storage/box/large/scga_ranks
-	name = "enlisted rank box, SCGA"
+	name = "enlisted rank box, ImperialA"
 	startswith = list(
 		/obj/item/clothing/accessory/scga_rank/e1,
 		/obj/item/clothing/accessory/scga_rank/e3,
@@ -16,7 +16,7 @@
 
 
 /obj/item/storage/box/large/scga_ranks_officer
-	name = "officer rank box, SCGA"
+	name = "officer rank box, ImperialA"
 	startswith = list(
 		/obj/item/clothing/accessory/scga_rank/o1,
 		/obj/item/clothing/accessory/scga_rank/o2,
@@ -33,7 +33,7 @@
 
 
 /obj/item/storage/box/scga_badges
-	name = "badge box, SCGA"
+	name = "badge box, ImperialA"
 	startswith = list(
 		/obj/item/clothing/accessory/scga_badge/enlisted,
 		/obj/item/clothing/accessory/scga_badge/officer

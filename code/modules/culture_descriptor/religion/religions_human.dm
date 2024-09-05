@@ -2,9 +2,9 @@
 	name = RELIGION_OTHER
 	description = "One of the many, many niche or relatively unknown religions of the galaxy."
 
-/singleton/cultural_info/religion/unstated
-	name = RELIGION_UNSTATED
-	description = "Unwilling or unable to elaborate on their beliefs and practices for reasons only beknownst to themselves."
+/singleton/cultural_info/religion/imperium
+	name = RELIGION_IMPERIUM
+	description = "The worship of the God-Emperor of Mankind, the divine ruler of the Imperium. Devotees believe the Emperor is both a god and the ultimate protector of humanity. The religion is deeply ingrained in every aspect of life within the Imperium, with rituals, prayers, and doctrines dedicated to honoring the Emperor’s omnipotence and ensuring the survival of mankind."
 
 /singleton/cultural_info/religion/jewish
 	name = RELIGION_JUDAISM

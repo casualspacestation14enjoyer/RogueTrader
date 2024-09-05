@@ -6,7 +6,7 @@
 *///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /datum/language/human/euro
-	name = LANGUAGE_HUMAN_EURO
+	name = LANGUAGE_HIGH_GOTHIC
 	desc = "A constructed language established by a conference of European and African research universities convening in Zurich, Switzerland starting in 2119, \
 			later adopted with little controversy as the lingua franca of the entirety of Sol space following the establishment of the Imperium."
 	speech_verb = "says"
@@ -22,7 +22,7 @@
 		LANGUAGE_HUMAN_IBERIAN = 30,
 		LANGUAGE_HUMAN_RUSSIAN = 5,
 		LANGUAGE_HUMAN_SELENIAN = 85,
-		LANGUAGE_SPACER = 20
+		LANGUAGE_LOW_GOTHIC = 20
 	)
 	syllables = list(
 		"al", "an", "ar", "as", "at", "ea", "ed", "en", "er", "es", "ha", "he", "hi", "in", "is", "it",

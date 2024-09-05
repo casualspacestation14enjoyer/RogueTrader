@@ -6,7 +6,7 @@
 
 
 /singleton/hierarchy/outfit/scga/utility
-	name = "SCGA - Utility"
+	name = "IMPA - Utility"
 	head = /obj/item/clothing/head/scga/utility
 	uniform = /obj/item/clothing/under/scga/utility
 	shoes = /obj/item/clothing/shoes/scga/utility
@@ -16,7 +16,7 @@
 
 
 /singleton/hierarchy/outfit/scga/utility/tan
-	name = "SCGA - Utility, Tan"
+	name = "IMPA - Utility, Tan"
 	head = /obj/item/clothing/head/scga/utility/tan
 	uniform = /obj/item/clothing/under/scga/utility/tan
 	shoes = /obj/item/clothing/shoes/scga/utility/tan
@@ -26,7 +26,7 @@
 
 
 /singleton/hierarchy/outfit/scga/utility/urban
-	name = "SCGA - Utility, Urban"
+	name = "IMPA - Utility, Urban"
 	head = /obj/item/clothing/head/scga/utility/urban
 	uniform = /obj/item/clothing/under/scga/utility/urban
 	shoes = /obj/item/clothing/shoes/scga/utility
@@ -36,7 +36,7 @@
 
 
 /singleton/hierarchy/outfit/scga/enlisted_service
-	name = "SCGA - Enlisted Service"
+	name = "IMPA - Enlisted Service"
 	head = /obj/item/clothing/head/scga/service/garrison
 	uniform = /obj/item/clothing/under/scga/service
 	suit = /obj/item/clothing/suit/scga/service
@@ -45,7 +45,7 @@
 
 
 /singleton/hierarchy/outfit/scga/enlisted_service_skirt
-	name = "SCGA - Enlisted Service (Skirt)"
+	name = "IMPA - Enlisted Service (Skirt)"
 	head = /obj/item/clothing/head/scga/service/garrison
 	uniform = /obj/item/clothing/under/scga/service/skirt
 	suit = /obj/item/clothing/suit/scga/service
@@ -54,7 +54,7 @@
 
 
 /singleton/hierarchy/outfit/scga/enlisted_dress
-	name = "SCGA - Enlisted Dress"
+	name = "IMPA - Enlisted Dress"
 	head = /obj/item/clothing/head/scga/dress/garrison
 	uniform = /obj/item/clothing/under/scga/dress
 	suit = /obj/item/clothing/suit/scga/dress
@@ -62,7 +62,7 @@
 
 
 /singleton/hierarchy/outfit/scga/enlisted_dress_skirt
-	name = "SCGA - Enlisted Dress (Skirt)"
+	name = "IMPA - Enlisted Dress (Skirt)"
 	head = /obj/item/clothing/head/scga/dress/garrison
 	uniform = /obj/item/clothing/under/scga/dress/skirt
 	suit = /obj/item/clothing/suit/scga/dress
@@ -70,7 +70,7 @@
 
 
 /singleton/hierarchy/outfit/scga/officer_service
-	name = "SCGA - Officer Service"
+	name = "IMPA - Officer Service"
 	head = /obj/item/clothing/head/scga/service/garrison_officer
 	uniform = /obj/item/clothing/under/scga/service
 	suit = /obj/item/clothing/suit/scga/service_officer
@@ -79,7 +79,7 @@
 
 
 /singleton/hierarchy/outfit/scga/officer_service_skirt
-	name = "SCGA - Officer Service (Skirt)"
+	name = "IMPA - Officer Service (Skirt)"
 	head = /obj/item/clothing/head/scga/service/garrison_officer
 	uniform = /obj/item/clothing/under/scga/service/skirt
 	suit = /obj/item/clothing/suit/scga/service_officer
@@ -88,7 +88,7 @@
 
 
 /singleton/hierarchy/outfit/scga/officer_dress
-	name = "SCGA - Officer Dress"
+	name = "IMPA - Officer Dress"
 	head = /obj/item/clothing/head/scga/dress/wheel
 	uniform = /obj/item/clothing/under/scga/dress
 	suit = /obj/item/clothing/suit/scga/dress
@@ -96,7 +96,7 @@
 
 
 /singleton/hierarchy/outfit/scga/officer_dress_skirt
-	name = "SCGA - Officer Dress (Skirt)"
+	name = "IMPA - Officer Dress (Skirt)"
 	head = /obj/item/clothing/head/scga/dress/wheel
 	uniform = /obj/item/clothing/under/scga/dress/skirt
 	suit = /obj/item/clothing/suit/scga/dress
@@ -104,7 +104,7 @@
 
 
 /singleton/hierarchy/outfit/scga/command_service
-	name = "SCGA - Command Service"
+	name = "IMPA - Command Service"
 	head = /obj/item/clothing/head/scga/service/wheel_command
 	uniform = /obj/item/clothing/under/scga/service_command
 	suit = /obj/item/clothing/suit/scga/service_officer
@@ -113,7 +113,7 @@
 
 
 /singleton/hierarchy/outfit/scga/command_service_skirt
-	name = "SCGA - Command Service (Skirt)"
+	name = "IMPA - Command Service (Skirt)"
 	head = /obj/item/clothing/head/scga/service/wheel_command
 	uniform = /obj/item/clothing/under/scga/service_command/skirt
 	suit = /obj/item/clothing/suit/scga/service_officer
@@ -122,7 +122,7 @@
 
 
 /singleton/hierarchy/outfit/scga/command_dress
-	name ="SCGA - Command Dress"
+	name ="IMPA - Command Dress"
 	head = /obj/item/clothing/head/scga/dress/wheel_command
 	uniform = /obj/item/clothing/under/scga/dress_command
 	suit = /obj/item/clothing/suit/scga/dress_command
@@ -130,7 +130,7 @@
 
 
 /singleton/hierarchy/outfit/scga/command_dress_skirt
-	name ="SCGA - Command Dress (Skirt)"
+	name ="IMPA - Command Dress (Skirt)"
 	head = /obj/item/clothing/head/scga/dress/wheel_command
 	uniform = /obj/item/clothing/under/scga/dress_command/skirt
 	suit = /obj/item/clothing/suit/scga/dress_command

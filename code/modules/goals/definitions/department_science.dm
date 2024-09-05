@@ -1,7 +1,7 @@
 
 
 /datum/department/science
-	name = "Science"
+	name = "Mechanicus"
 	flag = SCI
 	goals = list(/datum/goal/department/extract_slime_cores)
 

@@ -24,7 +24,7 @@ var/global/datum/robolimb/basic_robolimb
 	var/list/species_cannot_use = list()
 	var/list/restricted_to = list()
 	var/list/applies_to_part = list() //TODO.
-	var/list/allowed_bodytypes = list(SPECIES_HUMAN, SPECIES_IPC, SPECIES_SKRELL, SPECIES_UNATHI)
+	var/list/allowed_bodytypes = list(SPECIES_HUMAN, SPECIES_IPC, SPECIES_TAU, SPECIES_UNATHI)
 	var/has_screen = FALSE
 	var/display_text
 
@@ -121,7 +121,7 @@ var/global/datum/robolimb/basic_robolimb
 	has_screen = TRUE
 
 /datum/robolimb/nanotrasen
-	company = "NanoTrasen"
+	company = "Necromundan"
 	desc = "This limb is made from a cheap polymer."
 	icon = 'icons/mob/human_races/cyberlimbs/nanotrasen/nanotrasen_main.dmi'
 

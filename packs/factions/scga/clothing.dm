@@ -2,7 +2,7 @@
 //Main Clothing
 /obj/item/clothing/under/scga
 	abstract_type = /obj/item/clothing/under/scga
-	name = "base uniform, SCGA"
+	name = "base uniform, IMPA"
 	desc = "You should not see this."
 	icon = 'packs/factions/scga/clothing.dmi'
 	item_icons = list(
@@ -18,8 +18,8 @@
 
 
 /obj/item/clothing/under/scga/pt
-	name = "physical training uniform, SCGA"
-	desc = "A flexible set of black shirt and pants. Part of the solar army physical training uniform."
+	name = "physical training uniform, IMPA"
+	desc = "A flexible set of black shirt and pants. Part of the imperial guard physical training uniform."
 	icon_state = "under_pt"
 	item_state_slots = list(
 		slot_l_hand_str = "under_pt_held_l",
@@ -29,8 +29,8 @@
 
 
 /obj/item/clothing/under/scga/fatigues
-	name = "standard fatigues, SCGA"
-	desc = "A loose set of green tank-top and brown short-pants. Part of the solar army general off-duty uniform."
+	name = "standard fatigues, IMPA"
+	desc = "A loose set of green tank-top and brown short-pants. Part of the imperial guard general off-duty uniform."
 	icon_state = "under_fatigues"
 	item_state_slots = list(
 		slot_l_hand_str = "under_fatigues_held_l",
@@ -41,8 +41,8 @@
 
 
 /obj/item/clothing/under/scga/utility
-	name = "utility uniform, SCGA"
-	desc = "A green, durable utility jumpsuit. Belonging to the solar army uniform."
+	name = "utility uniform, IMPA"
+	desc = "A green, durable utility jumpsuit. Belonging to the imperial guard uniform."
 	icon_state = "under_utility"
 	item_state_slots = list(
 		slot_l_hand_str = "under_utility_held_l",
@@ -52,8 +52,8 @@
 
 
 /obj/item/clothing/under/scga/utility/tan
-	name = "tan utility uniform, SCGA"
-	desc = "A tan, durable utility jumpsuit. Belonging to the solar army uniform."
+	name = "tan utility uniform, IMPA"
+	desc = "A tan, durable utility jumpsuit. Belonging to the imperial guard uniform."
 	icon_state = "under_utility_tan"
 	item_state_slots = list(
 		slot_l_hand_str = "under_utility_tan_held_l",
@@ -63,8 +63,8 @@
 
 
 /obj/item/clothing/under/scga/utility/urban
-	name = "urban utility uniform, SCGA"
-	desc = "A grey, durable utility jumpsuit. Belonging to the solar army utility uniform."
+	name = "urban utility uniform, IMPA"
+	desc = "A grey, durable utility jumpsuit. Belonging to the imperial guard utility uniform."
 	icon_state = "under_utility_urban"
 	item_state_slots = list(
 		slot_l_hand_str = "under_utility_urban_held_l",
@@ -74,8 +74,8 @@
 
 
 /obj/item/clothing/under/scga/service
-	name = "service uniform, SCGA"
-	desc = "A slimming brown service shirt and green pants. Belonging to the solar army service uniform."
+	name = "service uniform, IMPA"
+	desc = "A slimming brown service shirt and green pants. Belonging to the imperial guard service uniform."
 	icon_state = "under_service"
 	item_state_slots = list(
 		slot_l_hand_str = "under_service_held_l",
@@ -85,8 +85,8 @@
 
 
 /obj/item/clothing/under/scga/service/skirt
-	name = "service skirt uniform, SCGA"
-	desc = "A slimming brown service shirt and green skirt. Belonging to the solar army service uniform."
+	name = "service skirt uniform, IMPA"
+	desc = "A slimming brown service shirt and green skirt. Belonging to the imperial guard service uniform."
 	icon_state = "under_service_skirt"
 	item_state_slots = list(
 		slot_l_hand_str = "under_service_skirt_held_l",
@@ -96,8 +96,8 @@
 
 
 /obj/item/clothing/under/scga/service_command
-	name = "service uniform, SCGA"
-	desc = "A slimming brown service shirt and green pants with beige streaks, for senior officers. Belonging to the solar army command service uniform."
+	name = "service uniform, IMPA"
+	desc = "A slimming brown service shirt and green pants with beige streaks, for senior officers. Belonging to the imperial guard command service uniform."
 	icon_state = "under_command"
 	item_state_slots = list(
 		slot_l_hand_str = "under_command_held_l",
@@ -107,8 +107,8 @@
 
 
 /obj/item/clothing/under/scga/service_command/skirt
-	name = "service skirt uniform, SCGA"
-	desc = "A slimming brown service shirt and green skirt with beige streaks, for senior officers. Belonging to the solar army command service uniform."
+	name = "service skirt uniform, IMPA"
+	desc = "A slimming brown service shirt and green skirt with beige streaks, for senior officers. Belonging to the imperial guard command service uniform."
 	icon_state = "under_command_skirt"
 	item_state_slots = list(
 		slot_l_hand_str = "under_command_skirt_held_l",
@@ -118,8 +118,8 @@
 
 
 /obj/item/clothing/under/scga/dress
-	name = "dress uniform, SCGA"
-	desc = "A classy brown shirt and black dress pants. Part of the solar army dress uniform."
+	name = "dress uniform, IMPA"
+	desc = "A classy brown shirt and black dress pants. Part of the imperial guard dress uniform."
 	icon_state = "under_dress"
 	item_state_slots = list(
 		slot_l_hand_str = "under_dress_held_l",
@@ -129,8 +129,8 @@
 
 
 /obj/item/clothing/under/scga/dress/skirt
-	name = "dress skirt uniform, SCGA"
-	desc = "A classy brown shirt and black dress skirt. Part of the solar army dress uniform."
+	name = "dress skirt uniform, IMPA"
+	desc = "A classy brown shirt and black dress skirt. Part of the imperial guard dress uniform."
 	icon_state = "under_dress_skirt"
 	item_state_slots = list(
 		slot_l_hand_str = "under_dress_skirt_held_l",
@@ -139,8 +139,8 @@
 	)
 
 /obj/item/clothing/under/scga/dress_command
-	name = "dress uniform, SCGA"
-	desc = "A classy brown shirt and black dress pants with gold streaks, for senior officers. Part of the solar army command dress uniform."
+	name = "dress uniform, IMPA"
+	desc = "A classy brown shirt and black dress pants with gold streaks, for senior officers. Part of the imperial guard command dress uniform."
 	icon_state = "under_dress_command"
 	item_state_slots = list(
 		slot_l_hand_str = "under_dress_command_held_l",
@@ -149,8 +149,8 @@
 	)
 
 /obj/item/clothing/under/scga/dress_command/skirt
-	name = "dress skirt uniform, SCGA"
-	desc = "A classy brown shirt and black dress skirt with gold streaks, for senior officers. Part of the solar army command dress uniform."
+	name = "dress skirt uniform, IMPA"
+	desc = "A classy brown shirt and black dress skirt with gold streaks, for senior officers. Part of the imperial guard command dress uniform."
 	icon_state = "under_dress_command_skirt"
 	item_state_slots = list(
 		slot_l_hand_str = "under_dress_command_skirt_held_l",
@@ -162,7 +162,7 @@
 //Over Clothing
 /obj/item/clothing/suit/scga
 	abstract_type = /obj/item/clothing/suit/scga
-	name = "base jacket, SCGA"
+	name = "base jacket, IMPA"
 	desc = "You should not see this."
 	icon = 'packs/factions/scga/clothing.dmi'
 	item_icons = list(
@@ -177,8 +177,8 @@
 
 
 /obj/item/clothing/suit/scga/hooded/wintercoat
-	name = "utility wintercoat, SCGA"
-	desc = "A comfortable winter-coat in green. Part of the solar army utility uniform."
+	name = "utility wintercoat, IMPA"
+	desc = "A comfortable winter-coat in green. Part of the imperial guard utility uniform."
 	icon_state = "suit_wintercoat"
 	item_state_slots = list(
 		slot_l_hand_str = "suit_wintercoat_held_l",
@@ -192,8 +192,8 @@
 
 
 /obj/item/clothing/suit/scga/service
-	name = "service jacket, SCGA"
-	desc = "A rugged green service over-jacket. Part of the solar army service uniform for enlisted."
+	name = "service jacket, IMPA"
+	desc = "A rugged green service over-jacket. Part of the imperial guard service uniform for enlisted."
 	icon_state = "suit_service"
 	item_state_slots = list(
 		slot_l_hand_str = "suit_service_held_l",
@@ -207,8 +207,8 @@
 
 
 /obj/item/clothing/suit/scga/service_officer
-	name = "service jacket, SCGA"
-	desc = "A rugged green service over-jacket. Part of the solar army service uniform for officers."
+	name = "service jacket, IMPA"
+	desc = "A rugged green service over-jacket. Part of the imperial guard service uniform for officers."
 	icon_state = "suit_service_officer"
 	item_state_slots = list(
 		slot_l_hand_str = "suit_service_officer_held_l",
@@ -222,8 +222,8 @@
 
 
 /obj/item/clothing/suit/scga/dress
-	name = "dress jacket, SCGA"
-	desc = "A strapping dress jacket. Part of the solar army dress uniform."
+	name = "dress jacket, IMPA"
+	desc = "A strapping dress jacket. Part of the imperial guard dress uniform."
 	icon_state = "suit_dress"
 	item_state_slots = list(
 		slot_l_hand_str = "suit_dress_held_l",
@@ -233,8 +233,8 @@
 
 
 /obj/item/clothing/suit/scga/dress_command
-	name = "dress jacket, SCGA"
-	desc = "A strapping dress jacket. Part of the solar army dress uniform for senior officers."
+	name = "dress jacket, IMPA"
+	desc = "A strapping dress jacket. Part of the imperial guard dress uniform for senior officers."
 	icon_state = "suit_dress_command"
 	item_state_slots = list(
 		slot_l_hand_str = "suit_dress_command_held_l",
@@ -246,7 +246,7 @@
 //Gloves
 /obj/item/clothing/gloves/scga
 	abstract_type = /obj/item/clothing/gloves/scga
-	name = "base gloves, SCGA"
+	name = "base gloves, IMPA"
 	desc = "You should not see this."
 	icon = 'packs/factions/scga/clothing.dmi'
 	item_icons = list(
@@ -256,8 +256,8 @@
 
 
 /obj/item/clothing/gloves/scga/duty
-	name = "duty gloves, SCGA"
-	desc = "Tough, brown duty gloves for the solar army personnel. Complete with reinforced knuckle-guards."
+	name = "duty gloves, IMPA"
+	desc = "Tough, brown duty gloves for the imperial guard personnel. Complete with reinforced knuckle-guards."
 	icon_state = "gloves_utility"
 	item_state_slots = list(
 		slot_l_hand_str = "gloves_utility_held_l",
@@ -269,7 +269,7 @@
 //Shoes
 /obj/item/clothing/shoes/scga
 	abstract_type = /obj/item/clothing/shoes/scga
-	name = "base shoes, SCGA"
+	name = "base shoes, IMPA"
 	desc = "You should not see this."
 	icon = 'packs/factions/scga/clothing.dmi'
 	item_icons = list(
@@ -279,8 +279,8 @@
 
 
 /obj/item/clothing/shoes/scga/utility
-	name = "duty boots, SCGA"
-	desc = "Hardy, strong soled boots in jungle-beige camouflage configuration. Part of the solar army uniform."
+	name = "duty boots, IMPA"
+	desc = "Hardy, strong soled boots in jungle-beige camouflage configuration. Part of the imperial guard uniform."
 	icon_state = "boots_utility"
 	item_state_slots = list(
 		slot_l_hand_str = "boots_utility_held_l",
@@ -299,8 +299,8 @@
 
 
 /obj/item/clothing/shoes/scga/utility/tan
-	name = "tan duty boots, SCGA"
-	desc = "Hardy, strong soled boots in dusty-tan camouflage configuration. Part of the solar army uniform."
+	name = "tan duty boots, IMPA"
+	desc = "Hardy, strong soled boots in dusty-tan camouflage configuration. Part of the imperial guard uniform."
 	icon_state = "boots_utility_tan"
 	item_state_slots = list(
 		slot_l_hand_str = "boots_utility_tan_held_l",
@@ -310,8 +310,8 @@
 
 
 /obj/item/clothing/shoes/scga/dress
-	name = "dress shoes, SCGA"
-	desc = "Flat, shiny dress shoes belonging to the solar army service and dress uniforms."
+	name = "dress shoes, IMPA"
+	desc = "Flat, shiny dress shoes belonging to the imperial guard service and dress uniforms."
 	icon_state = "shoes_dress"
 	item_state_slots = list(
 		slot_l_hand_str = "shoes_dress_held_l",
@@ -323,7 +323,7 @@
 //Hats
 /obj/item/clothing/head/scga
 	abstract_type = /obj/item/clothing/head/scga
-	name = "base hat, SCGA"
+	name = "base hat, IMPA"
 	desc = "You should not see this."
 	icon = 'packs/factions/scga/clothing.dmi'
 	item_icons = list(
@@ -333,8 +333,8 @@
 
 
 /obj/item/clothing/head/scga/beret
-	name = "tan beret, SCGA"
-	desc = "A tan beret denoting service in the SCG Army Diplomatic Security Group. Part of the solar army utility and service uniform."
+	name = "tan beret, IMPA"
+	desc = "A tan beret denoting service in the IMP Guard Diplomatic Security Group. Part of the imperial guard utility and service uniform."
 	icon_state = "hat_beret"
 	item_state_slots = list(
 		slot_l_hand_str = "hat_beret_held_l",
@@ -344,8 +344,8 @@
 
 
 /obj/item/clothing/head/scga/utility
-	name = "utility cover, SCGA"
-	desc = "A stern, green utility cover. Part of the solar army utility uniform."
+	name = "utility cover, IMPA"
+	desc = "A stern, green utility cover. Part of the imperial guard utility uniform."
 	icon_state = "hat_utility"
 	item_state_slots = list(
 		slot_l_hand_str = "hat_utility_held_l",
@@ -355,8 +355,8 @@
 
 
 /obj/item/clothing/head/scga/utility/tan
-	name = "tan utility cover, SCGA"
-	desc = "A stern, tan utility cover. Part of the solar army utility uniform."
+	name = "tan utility cover, IMPA"
+	desc = "A stern, tan utility cover. Part of the imperial guard utility uniform."
 	icon_state = "hat_utility_tan"
 	item_state_slots = list(
 		slot_l_hand_str = "hat_utility_tan_held_l",
@@ -366,8 +366,8 @@
 
 
 /obj/item/clothing/head/scga/utility/urban
-	name = "urban utility cover, SCGA"
-	desc = "A stern, urban utility cover. Part of the solar army utility uniform."
+	name = "urban utility cover, IMPA"
+	desc = "A stern, urban utility cover. Part of the imperial guard utility uniform."
 	icon_state = "hat_utility_urban"
 	item_state_slots = list(
 		slot_l_hand_str = "hat_utility_urban_held_l",
@@ -377,8 +377,8 @@
 
 
 /obj/item/clothing/head/scga/utility/ushanka
-	name = "ushanka hat, SCGA"
-	desc = "A comfy, padded ushanka hat. Part of the solar army utility uniform."
+	name = "ushanka hat, IMPA"
+	desc = "A comfy, padded ushanka hat. Part of the imperial guard utility uniform."
 	icon_state = "hat_ushanka"
 	item_state_slots = list(
 		slot_l_hand_str = "hat_ushanka_held_l",
@@ -388,8 +388,8 @@
 
 
 /obj/item/clothing/head/scga/utility/ushanka/green
-	name = "ushanka hat, SCGA"
-	desc = "A comfy, padded ushanka hat in green. Part of the solar army utility uniform."
+	name = "ushanka hat, IMPA"
+	desc = "A comfy, padded ushanka hat in green. Part of the imperial guard utility uniform."
 	icon_state = "hat_ushanka_green"
 	item_state_slots = list(
 		slot_l_hand_str = "hat_ushanka_green_held_l",
@@ -399,8 +399,8 @@
 
 
 /obj/item/clothing/head/scga/utility/drill
-	name = "drill hat, SCGA"
-	desc = "A firm, green drill hat for non-commissioned officers. Part of the solar army utility and service uniform."
+	name = "drill hat, IMPA"
+	desc = "A firm, green drill hat for non-commissioned officers. Part of the imperial guard utility and service uniform."
 	icon_state = "hat_drill"
 	item_state_slots = list(
 		slot_l_hand_str = "hat_drill_held_l",
@@ -410,8 +410,8 @@
 
 
 /obj/item/clothing/head/scga/service/garrison
-	name = "garrison cap, SCGA"
-	desc = "A peaked garrison cap for enlisted. Part of the solar army service uniform."
+	name = "garrison cap, IMPA"
+	desc = "A peaked garrison cap for enlisted. Part of the imperial guard service uniform."
 	icon_state = "hat_garrison"
 	item_state_slots = list(
 		slot_l_hand_str = "hat_garrison_held_l",
@@ -421,8 +421,8 @@
 
 
 /obj/item/clothing/head/scga/service/garrison_officer
-	name = "garrison cap, SCGA"
-	desc = "A peaked garrison cap for officers. Part of the solar army service uniform."
+	name = "garrison cap, IMPA"
+	desc = "A peaked garrison cap for officers. Part of the imperial guard service uniform."
 	icon_state = "hat_garrison_officer"
 	item_state_slots = list(
 		slot_l_hand_str = "hat_garrison_officer_held_l",
@@ -432,8 +432,8 @@
 
 
 /obj/item/clothing/head/scga/service/wheel
-	name = "service wheel cover, SCGA"
-	desc = "A rounded wheel cover for officers. Part of the solar army service uniform."
+	name = "service wheel cover, IMPA"
+	desc = "A rounded wheel cover for officers. Part of the imperial guard service uniform."
 	icon_state = "hat_wheel"
 	item_state_slots = list(
 		slot_l_hand_str = "hat_wheel_held_l",
@@ -443,8 +443,8 @@
 
 
 /obj/item/clothing/head/scga/service/wheel_command
-	name = "service wheel cover, SCGA"
-	desc = "A rounded wheel cover for senior officers. Part of the solar army service uniform."
+	name = "service wheel cover, IMPA"
+	desc = "A rounded wheel cover for senior officers. Part of the imperial guard service uniform."
 	icon_state = "hat_wheel_command"
 	item_state_slots = list(
 		slot_l_hand_str = "hat_wheel_command_held_l",
@@ -454,8 +454,8 @@
 
 
 /obj/item/clothing/head/scga/dress/garrison
-	name = "dress garrison cap, SCGA"
-	desc = "A white, peaked garrison cap for enlisted. Part of the solar army dress uniform."
+	name = "dress garrison cap, IMPA"
+	desc = "A white, peaked garrison cap for enlisted. Part of the imperial guard dress uniform."
 	icon_state = "hat_dress_garrison"
 	item_state_slots = list(
 		slot_l_hand_str = "hat_dress_garrison_held_l",
@@ -465,8 +465,8 @@
 
 
 /obj/item/clothing/head/scga/dress/wheel
-	name = "dress wheel cover, SCGA"
-	desc = "A white, rounded wheel cover for officers. Part of the solar army dress uniform."
+	name = "dress wheel cover, IMPA"
+	desc = "A white, rounded wheel cover for officers. Part of the imperial guard dress uniform."
 	icon_state = "hat_dress_wheel"
 	item_state_slots = list(
 		slot_l_hand_str = "hat_dress_wheel_held_l",
@@ -476,8 +476,8 @@
 
 
 /obj/item/clothing/head/scga/dress/wheel_command
-	name = "dress wheel cover, SCGA"
-	desc = "A white, rounded wheel cover for senior officers. Part of the solar army dress uniform."
+	name = "dress wheel cover, IMPA"
+	desc = "A white, rounded wheel cover for senior officers. Part of the imperial guard dress uniform."
 	icon_state = "hat_dress_wheel_command"
 	item_state_slots = list(
 		slot_l_hand_str = "hat_dress_wheel_command_held_l",

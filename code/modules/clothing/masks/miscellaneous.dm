@@ -176,7 +176,7 @@
 
 /obj/item/clothing/mask/rubber/trasen
 	name = "\improper Jack Trasen mask"
-	desc = "CEO of NanoTrasen corporation. Perfect for scaring the unionizing children."
+	desc = "CEO of Necromundan corporation. Perfect for scaring the unionizing children."
 	icon_state = "trasen"
 	visible_name = "Jack Trasen"
 
@@ -228,7 +228,7 @@
 	name = "skrell mask"
 	desc = "A rubber skrell mask."
 	icon_state = "skrellmet"
-	species = SPECIES_SKRELL
+	species = SPECIES_TAU
 
 /obj/item/clothing/mask/spirit
 	name = "spirit mask"

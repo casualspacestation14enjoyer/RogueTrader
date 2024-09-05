@@ -6,9 +6,9 @@
 #include "skrellscoutship_machines.dm"
 
 /datum/map_template/ruin/away_site/skrellscoutship
-	name = "Skrellian Scout Ship"
+	name = "Tau Scout Ship"
 	id = "awaysite_skrell_scout"
-	description = "A Skrellian SDTF scouting vessel."
+	description = "A Tau scouting vessel."
 	suffixes = list("skrellscoutship/skrellscoutship_revamp.dmm")
 	spawn_cost = 0.3
 	player_cost = 0
@@ -27,22 +27,22 @@
 	sensor_visibility = 10
 
 /obj/submap_landmark/joinable_submap/skrellscoutship
-	name = "Xilvuxix"
+	name = "Tau Space"
 	archetype = /singleton/submap_archetype/skrellscoutship
 
 /obj/submap_landmark/spawnpoint/skrellscoutship
-	name = "Qrri-Zuumqix"
+	name = "Shas'La"
 	movable_flags = MOVABLE_FLAG_EFFECTMOVE
 
 /obj/submap_landmark/spawnpoint/skrellscoutship/leader
-	name = "Qrri-Vuxix"
+	name = "Shas'Ui"
 
 /singleton/webhook/submap_loaded/skrell
 	id = WEBHOOK_SUBMAP_LOADED_SKRELL
 
 /singleton/submap_archetype/skrellscoutship
-	descriptor = "Skrellian Scout Ship"
-	map = "Xilvuxix"
+	descriptor = "Tau Scout Ship"
+	map = "Tau Space"
 	crew_jobs = list(
 		/datum/job/submap/skrellscoutship_crew,
 		/datum/job/submap/skrellscoutship_crew/leader
@@ -55,7 +55,7 @@ var/global/const/access_skrellscoutship = "ACCESS_SKRELLSCOUT"
 
 /datum/access/skrellscoutship
 	id = access_skrellscoutship
-	desc = "SSV Crewman"
+	desc = "Tau Crewman"
 	region = ACCESS_REGION_NONE
 
 /obj/item/card/id/skrellscoutship
@@ -64,7 +64,7 @@ var/global/const/access_skrellscoutship = "ACCESS_SKRELLSCOUT"
 	access = list(access_skrellscoutship)
 
 /datum/job/submap/skrellscoutship_crew/leader
-	title = "Qrri-Vuxix"
+	title = "Shas'Ui"
 	supervisors = "your SDTF"
 	total_positions = 1
 	outfit_type = /singleton/hierarchy/outfit/job/skrellscoutship
@@ -80,10 +80,10 @@ var/global/const/access_skrellscoutship = "ACCESS_SKRELLSCOUT"
 	)
 
 /datum/job/submap/skrellscoutship_crew
-	title = "Qrri-Zuumqix"
-	supervisors = "your Qrri-Vuxix"
+	title = "Shas'La"
+	supervisors = "your Shas'Ui"
 	total_positions = 5
-	whitelisted_species = list("Skrell")
+	whitelisted_species = list("Tau")
 	outfit_type = /singleton/hierarchy/outfit/job/skrellscoutship
 	info = "Your vessel is scouting through unknown space, working to map out any potential dangers, as well as potential allies."
 	branch = /datum/mil_branch/skrell_fleet
@@ -104,22 +104,23 @@ var/global/const/access_skrellscoutship = "ACCESS_SKRELLSCOUT"
 	. = ..(H, alt_title, branch, grade)	//passing through arguments
 	//Limited to subcastes that make sense on the vessel. No need for ground-forces on such a ship.
 	var/skrellscoutcastes = list(
-		"Malish-Katish" = list(
-			"Mero'ta-Ketish",
-			"Toglo'i-Ketish",
-			"Keloa-Ketish"
+		"Fio" = list(
+			"Fio'ta-Kais",
+			"Fio'la-Kais",
+			"Fio'ro-Kais"
 		),
-		"Kanin-Katish" = list(
-			"Xiqarr-Ketish",
-			"Mero'tol-Ketish",
-			"Goxo'i-Ketish"
+		"Por" = list(
+			"Por'tal-Kais",
+			"Por'ui-Kais",
+			"Por'vre-Kais"
 		),
-		"Raskinta-Katish" = list(
-			"Me'kerr-Ketish",
-			"Qi'kerr-Ketish",
-			"Me'xoal-Ketish"
+		"Shas" = list(
+			"Shas'vre-Kais",
+			"Shas'La-Kais",
+			"Shas'o-Kais"
 		)
-	)
+		)
+
 
 	var/skrellcaste = input(H, "What is your Skrell's Caste?", "SDTF Rank") as null|anything in skrellscoutcastes
 	if(skrellcaste)
@@ -130,17 +131,17 @@ var/global/const/access_skrellscoutship = "ACCESS_SKRELLSCOUT"
 
 /obj/item/clothing/gloves/thick/swat/skrell
 	name = "black gloves"
-	desc = "A pair of black, reinforced gloves. The tag on the inner stitching appears to be written in some form of Skrellian."
+	desc = "A pair of black, reinforced gloves. The tag on the inner stitching appears to be written in some form of Tau."
 
 /obj/item/clothing/under/skrelljumpsuit
 	name = "black bodysuit"
-	desc = "A sleek, skin-tight bodysuit designed to not wick moisture away from the body. The inner stitching appears to contain something written in Skrellian."
+	desc = "A sleek, skin-tight bodysuit designed to not wick moisture away from the body. The inner stitching appears to contain something written in Tau."
 	icon_state = "skrell_suit"
 	item_state = "skrell_suit"
 	worn_state = "skrell_suit"
 
 /singleton/hierarchy/outfit/job/skrellscoutship
-	name = "Xilvuxix Crew"
+	name = "Scout Crew"
 	uniform = /obj/item/clothing/under/skrelljumpsuit
 	shoes = /obj/item/clothing/shoes/dutyboots
 	gloves = /obj/item/clothing/gloves/thick/swat/skrell
@@ -164,8 +165,8 @@ var/global/const/access_skrellscoutship = "ACCESS_SKRELLSCOUT"
 
 
 /datum/mil_branch/skrell_fleet
-	name = "Skrellian Defense Task Force"
-	name_short = "SDTF"
+	name = "Tau Empire"
+	name_short = "TAU"
 	email_domain = "sdtf.qb"
 
 	rank_types = list(/datum/mil_rank/skrell_fleet)
@@ -214,7 +215,7 @@ var/global/const/access_skrellscoutship = "ACCESS_SKRELLSCOUT"
 
 //Skrell Security Belt
 /obj/item/storage/belt/holster/skrell
-	name = "skrellian holster belt"
+	name = "Tau holster belt"
 	desc = "Can hold security gear like handcuffs and flashes. This one has a convenient holster."
 	icon_state = "securitybelt"
 	item_state = "security"
@@ -250,20 +251,20 @@ var/global/const/access_skrellscoutship = "ACCESS_SKRELLSCOUT"
 //Skell Lights
 
 /obj/machinery/light/skrell
-	name = "skrellian light"
+	name = "Tau light"
 	light_type = /obj/item/light/tube/skrell
 	desc = "Some kind of strange alien lighting technology."
 
 
 /obj/item/light/tube/skrell
-	name = "skrellian light filament"
+	name = "Tau light filament"
 	color = LIGHT_COLOUR_SKRELL
 	b_colour = LIGHT_COLOUR_SKRELL
 	desc = "Some kind of strange alien lightbulb technology."
 	random_tone = FALSE
 
 /obj/item/light/tube/large/skrell
-	name = "skrellian light filament"
+	name = "Tau light filament"
 	color = LIGHT_COLOUR_SKRELL
 	b_colour = LIGHT_COLOUR_SKRELL
 	desc = "Some kind of strange alien lightbulb technology."

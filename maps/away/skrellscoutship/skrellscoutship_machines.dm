@@ -1,12 +1,12 @@
 /obj/machinery/computer/ship/sensors/skrell
 	construct_state = /singleton/machine_construction/default/panel_closed/computer/no_deconstruct
 	base_type = /obj/machinery/computer/ship/sensors
-	print_language = LANGUAGE_SKRELLIAN
+	print_language = LANGUAGE_TAU
 
 // This is an absolutely stupid machine. Basically the same as the debug one with some alterations.
 // It is a placeholder for a proper reactor setup (probably a RUST descendant)
 /obj/machinery/power/skrell_reactor
-	name = "\improper Skrellian fusion stack"
+	name = "\improper Tau fusion stack"
 	desc = "A tall, gleaming assemblage of advanced alien machinery. It hums and crackles with restrained power."
 	icon = 'icons/obj/machines/power/fusion_core.dmi'
 	icon_state = "core1"
@@ -20,7 +20,7 @@
 
 	if(ishuman(user))
 		var/mob/living/carbon/human/H = user
-		if(H.species.name != SPECIES_SKRELL)
+		if(H.species.name != SPECIES_TAU)
 			to_chat(H, SPAN_WARNING("You have no idea how to use \the [src]."))
 			return
 

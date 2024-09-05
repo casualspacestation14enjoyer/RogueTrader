@@ -8,7 +8,7 @@ Synthetic
 	supervisors = "your laws"
 	minimal_player_age = 3
 	allowed_ranks = list(
-		/datum/mil_rank/civ/synthetic
+		/datum/mil_rank/civ/civ
 	)
 
 /datum/job/ai
@@ -16,7 +16,7 @@ Synthetic
 	total_positions = 0
 	spawn_positions = 0
 	allowed_ranks = list(
-		/datum/mil_rank/civ/synthetic
+		/datum/mil_rank/civ/civ
 	)
 
 /*******
@@ -44,8 +44,7 @@ Civilian
 	outfit_type = /singleton/hierarchy/outfit/job/torch/passenger/passenger
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(
-		/datum/mil_rank/civ/civ,
-		/datum/mil_rank/civ/contractor
+		/datum/mil_rank/civ/civ
 	)
 	min_goals = 2
 	max_goals = 7
@@ -56,7 +55,7 @@ Civilian
 	department_flag = CIV
 	total_positions = 2
 	spawn_positions = 2
-	availablity_chance = 30
+	availablity_chance = 50
 	supervisors = "the invisible hand of the market"
 	ideal_character_age = 30
 	minimal_player_age = 0

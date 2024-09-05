@@ -1,17 +1,10 @@
-/singleton/cultural_info/faction/scg
-	name = FACTION_SOL_CENTRAL
-	description = "The Sol Central Government, commonly referred to as SolGov or the Imperium, is a federal republic \
-	composed of numerous human member states spanning many systems.\
-	Based in the Sol System and with most seats of Government on Olympus, Mars,\
-	the Imperium governs the majority of human space. Currently engaged in a cold war with the Confederation of Gilgamesh \
-	Its primary governing bodies are the Assemblies which are led by an Assembly-elected secretary general. \
-	Member states have a great degree of freedom in their actions, though the Imperium manages sapient rights, \
-	domestic security, economic policy, and diplomacy for humanity as a whole. The Imperium's population is diverse \
-	including many non-humans (though they are not citizens) and encompassing a wide range of systems, territories \
-	habitats, and celestial bodies. However, it is large, cumbersome, divided and slow to respond to issues due to \
-	its massive bureaucracy and the distance between worlds. Through its member states, the Imperium governs as one of the \
-	most advanced and powerful civilisations in the known galaxy."
-
+/singleton/cultural_info/faction/imperium
+    name = FACTION_IMPERIUM
+    description = "The Imperium of Man, also known simply as the Imperium, is a colossal and enduring empire that sprawls across the galaxy. Centered on the Sol System, with its heart in the ancient and venerable city of Terra, the Imperium stands as a monument to humanity's power and ambition. \
+    Its governance is a complex web of bureaucratic assemblies and military might, overseen by the Emperor's representatives. \
+    The Imperium comprises countless worlds, from the hive-sprawled urban centers of worlds like Necromunda to the rural, feudal planets of the Segmentum. Though its member worlds are granted a degree of autonomy, they are bound by the Imperium's ironclad decrees on human rights, security, economic regulation, and diplomacy. \
+    The Imperium's domain is vast, encompassing a diverse array of systems, habitats, and celestial bodies. Yet, it is a behemoth plagued by its own enormity—a slow-moving leviathan hampered by its vast bureaucracy and the vast distances that separate its worlds. \
+    Despite its flaws, the Imperium remains one of the most formidable and technologically advanced civilizations in the galaxy, its power and influence reaching far beyond the borders of known space."
 
 /singleton/cultural_info/faction/scg/fleet
 	name = FACTION_FLEET
@@ -29,7 +22,7 @@
 /singleton/cultural_info/faction/torchco
 	name = FACTION_CORPORATE
 	description = "The Expeditionary Corps Organisation is a government-owned, publically traded limited liability company assembled from the corporate \
-	backers who asssisted in funding the Torch project when it opened five years ago. Major players include NanoTrasen, Xynergy and \
+	backers who asssisted in funding the Torch project when it opened five years ago. Major players include Necromundan, Xynergy and \
 	Hephaestus Industries, as well as dozens of others. The Expeditionary Corps Organisation reports its earnings and operation plans directly to a board of \
 	directors, made up of corporate representatives and members of Expeditionary Corps command and the Committee for the Economy. \
 	While on the surface the Expeditionary Corps Organisation appears to have noble goals, it is in reality a compromise between the noble ideals of pioneering \
@@ -42,10 +35,10 @@
 /singleton/cultural_info/faction/gcc
 	name = FACTION_INDIE_CONFED
 	description = "The Independent Colonial Confederation of Gilgamesh, commonly referred to as the Gilgamesh Colonial Confederation (GCC), is a regional power in human space,\
-	bordered by the Sol Central Government towards the galactic centre. The capital of the Confederation is the city of Ameranth on the planet of Terra \
+	bordered by the Imperial Government towards the galactic centre. The capital of the Confederation is the city of Ameranth on the planet of Terra \
 	in the Gilgamesh system. Externally heavily militant and isolationist, the GCC, internally, is heavily libertarian, with \
 	a strong focus on independent planetary government with the GCC itself only handling defence, foreign relations and some intergalactic trade. \
-	Increasingly anti non-human, the GCC is in a cold war with the Sol Central Government following  the Gaia Conflict, a large \
+	Increasingly anti non-human, the GCC is in a cold war with the Imperial Government following  the Gaia Conflict, a large \
 	scale conflict between the Imperium and GCC that saw a great deal of death and destruction. In Sol space \"Indies\" as they are known are \
 	heavily mistrusted and in some instances, met with downright hostility. Today the GCC continues to be an economic powerhouse following \
 	a period of steady economic recovery, with most of its exports being manufactured goods, primarily armaments."
@@ -66,7 +59,7 @@
 
 /singleton/cultural_info/faction/police
 	name = FACTION_SPACECOPS
-	description = "The Sol Federal (SFP) is a government law enforcement agency tasked with enforcing Sol Central Government law, \
+	description = "The Sol Federal (SFP) is a government law enforcement agency tasked with enforcing Imperial Government law, \
 	investigating breaches of law, fugitive recovery and transport, and securing ports of entry. \
 	Some Agents embedded with other organizations (e.g. an <l>Expeditionary Corps</l> ship) and are expected to answer to their superiours from those organizations. \
 	Notable units are Organized Crime & Vice (self-explanatory), Territory Support (ports of entry and helping local law enforcement), \
@@ -76,12 +69,12 @@
 
 /singleton/cultural_info/faction/remote/nanotrasen
 	name = FACTION_NANOTRASEN
-	description = "The NanoTrasen Corporation, commonly referred to as NT, is one of the great megacorporations of the modern day.\
+	description = "The Necromundan Corporation, commonly referred to as NT, is one of the great megacorporations of the modern day.\
 	Currently headquartered in New Amsterdam on Luna and headed by CEO Jackson Trasen It deals in research of the most advanced sciences, \
 	such as genetics, blue space, and - recently - the uses of phoron, as well as mass consumer manufacturing on a truly galactic scale. \
 	They also have a sizeable asset protection and security branch with which they secure both investments and occasionally new acquisitions \
 	- a distressing rival to some minor star systems, and a powerful administrative branch sitting atop it all, directing their company's actions. \
-	NanoTrasen is characterized by its aggression and questionable ethics, which, combined with the high emphasis they put on new, untested and dangerous \
+	Necromundan is characterized by its aggression and questionable ethics, which, combined with the high emphasis they put on new, untested and dangerous \
 	technology, means their installations are often considered unsafe and hazardous."
 	economic_power = 1.2
 
@@ -132,16 +125,16 @@
 	firms requiring discrete military and private security services. The company has taken to hiring skilled veterans from both private and public \
 	military services but have begun instituting training programs to breed their own operatives for the future. Typical assignments for SAARE \
 	contractors include private law enforcement, ship escort, location security, VIP escort, and VIP or asset recovery. In the last decade, the \
-	company has recently signed onto a number of contracts with NanoTrasen to complement their own Asset Protection forces."
+	company has recently signed onto a number of contracts with Necromundan to complement their own Asset Protection forces."
 
 
 /singleton/cultural_info/faction/dais
 	name = FACTION_DAIS
 	description = "Deimos Advanced Information Systems (DAIS) is a large corporation specializing in information technology such as computer hardware \
-	and software, telecommunications equipment, and networking equipment based on Mars. It is the number one supplier of computer technology in The Sol Central \
-	 Government, its systems used by most consumers and businesses within SolGov. DAIS is actually older than the Sol Central Government and is one of the very \
+	and software, telecommunications equipment, and networking equipment based on Mars. It is the number one supplier of computer technology in The Imperial \
+	Government, its systems used by most consumers and businesses within SolGov. DAIS is actually older than the Imperial Government and is one of the very \
 	few corporate members of the Solar Assembly. DAIS is also a major investor in the Torch project, and is on the Expeditionary Corps Organization board of directors. \
-	Currently DAIS is invested in bluespace computing research and artificial intelligence research. Despite recent intrusions by NanoTrasen into their sector with NTNet \
+	Currently DAIS is invested in bluespace computing research and artificial intelligence research. Despite recent intrusions by Necromundan into their sector with NTNet \
 	and related products, they still remain the market leader in computer technologies."
 	economic_power = 1.1
 

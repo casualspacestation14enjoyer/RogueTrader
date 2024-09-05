@@ -91,7 +91,7 @@
 	var/toxins_mod =     1                    // Toxloss modifier
 	var/radiation_mod =  1                    // Radiation modifier
 
-	var/oxy_mod =        1                    // Oxyloss modifier
+	var/oxy_mod =        0.5                    // Oxyloss modifier
 	var/flash_mod =      1                    // Stun from blindness modifier.
 	var/metabolism_mod = 1                    // Reagent metabolism modifier
 	var/stun_mod =       1                    // Stun period modifier.
@@ -124,7 +124,7 @@
 	var/breath_type = GAS_OXYGEN                                  // Non-oxygen gas breathed, if any.
 	var/poison_types = list(GAS_PHORON = TRUE, GAS_CHLORINE = TRUE) // Noticeably poisonous air - ie. updates the toxins indicator on the HUD.
 	var/exhale_type = GAS_CO2                          // Exhaled gas type.
-	var/max_pressure_diff = 60                                  // Maximum pressure difference that is safe for lungs
+	var/max_pressure_diff = 80                                  // Maximum pressure difference that is safe for lungs
 	var/cold_level_1 = 243                                      // Cold damage level 1 below this point. -30 Celsium degrees
 	var/cold_level_2 = 200                                      // Cold damage level 2 below this point.
 	var/cold_level_3 = 120                                      // Cold damage level 3 below this point.
@@ -241,7 +241,7 @@
 		/datum/mob_descriptor/build = 0
 	)
 
-	var/standing_jump_range = 2
+	var/standing_jump_range = 3
 	var/list/maneuvers = list(
 		/singleton/maneuver/leap,
 		/singleton/maneuver/leap/quick
@@ -251,7 +251,7 @@
 		TAG_CULTURE =   list(CULTURE_OTHER),
 		TAG_HOMEWORLD = list(HOME_SYSTEM_STATELESS),
 		TAG_FACTION =   list(FACTION_OTHER),
-		TAG_RELIGION =  list(RELIGION_OTHER, RELIGION_ATHEISM, RELIGION_AGNOSTICISM, RELIGION_UNSTATED)
+		TAG_RELIGION =  list(RELIGION_OTHER, RELIGION_IMPERIUM)
 	)
 	var/list/force_cultural_info =                list()
 	var/list/default_cultural_info =              list()

@@ -56,10 +56,10 @@
 
 
 /obj/item/storage/lunchbox/nt
-	name = "\improper NanoTrasen brand lunchbox"
+	name = "\improper Necromundan brand lunchbox"
 	icon_state = "lunchbox_nanotrasen"
 	item_state = "toolbox_blue"
-	desc = "A little lunchbox. This one is branded with the NanoTrasen logo!"
+	desc = "A little lunchbox. This one is branded with the Necromundan logo!"
 
 
 /obj/item/storage/lunchbox/dais

@@ -1,5 +1,5 @@
 /area/ship/skrellscoutship
-	name = "\improper Skrellian Ship"
+	name = "\improper Tau Ship"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
 	base_turf = /turf/space
 	req_access = list(access_skrellscoutship)
@@ -39,7 +39,7 @@
 	ambience = list('sound/ambience/ambigen3.ogg','sound/ambience/ambigen4.ogg','sound/ambience/ambigen5.ogg','sound/ambience/ambigen6.ogg','sound/ambience/ambigen7.ogg','sound/ambience/ambigen8.ogg','sound/ambience/ambigen9.ogg','sound/ambience/ambigen10.ogg','sound/ambience/ambigen11.ogg','sound/ambience/ambieng1.ogg')
 
 /area/ship/skrellscoutship/command/bridge
-	name = "\improper SSV Helm"
+	name = "\improper Tau Helm"
 	icon_state = "bridge"
 
 /area/ship/skrellscoutship/command/armory
@@ -47,7 +47,7 @@
 	icon_state = "shuttlered"
 
 /area/ship/skrellscoutshuttle
-	name = "\improper SSV Shuttle"
+	name = "\improper Tau Shuttle"
 	icon_state = "bridge"
 	base_turf = /turf/simulated/floor/plating
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED

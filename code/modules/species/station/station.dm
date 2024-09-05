@@ -24,35 +24,7 @@
 
 	available_cultural_info = list(
 		TAG_CULTURE = list(
-			CULTURE_HUMAN_MARTIAN,
-			CULTURE_HUMAN_MARSTUN,
-			CULTURE_HUMAN_LUNAPOOR,
-			CULTURE_HUMAN_LUNARICH,
-			CULTURE_HUMAN_VENUSIAN,
-			CULTURE_HUMAN_VENUSLOW,
-			CULTURE_HUMAN_BELTER,
-			CULTURE_HUMAN_KUIPERI,
-			CULTURE_HUMAN_KUIPERO,
-			CULTURE_HUMAN_MAGNITKA,
-			CULTURE_HUMAN_EARTH,
-			CULTURE_HUMAN_CETIN,
-			CULTURE_HUMAN_CETIS,
-			CULTURE_HUMAN_CETII,
-			CULTURE_HUMAN_SPACER,
-			CULTURE_HUMAN_OFFWORLD,
-			CULTURE_HUMAN_CONFEDC,
-			CULTURE_HUMAN_CONFEDO,
-			CULTURE_HUMAN_FOSTER,
-			CULTURE_HUMAN_PIRXL,
-			CULTURE_HUMAN_PIRXB,
-			CULTURE_HUMAN_PIRXF,
-			CULTURE_HUMAN_TADMOR,
-			CULTURE_HUMAN_IOLAUS,
-			CULTURE_HUMAN_BRAHE,
-			CULTURE_HUMAN_EOS,
-			CULTURE_HUMAN_CONFEDC,
-			CULTURE_HUMAN_CONFEDO,
-			CULTURE_HUMAN_GAIAN,
+			CULTURE_HUMAN_IMPERIAL,
 			CULTURE_HUMAN_OTHER
 		)
 	)
@@ -84,8 +56,8 @@
 	return ..()
 
 /datum/species/skrell
-	name = SPECIES_SKRELL
-	name_plural = SPECIES_SKRELL
+	name = SPECIES_TAU
+	name_plural = SPECIES_TAU
 	icobase = 'icons/mob/human_races/species/skrell/body.dmi'
 	deform = 'icons/mob/human_races/species/skrell/deformed_body.dmi'
 	preview_icon = 'icons/mob/human_races/species/skrell/preview.dmi'
@@ -108,17 +80,15 @@
 	max_age = 90
 
 	burn_mod = 0.9
-	oxy_mod = 1.3
-	flash_mod = 1.2
-	toxins_mod = 0.8
+	oxy_mod = 0.4
+	flash_mod = 1.1
+	toxins_mod = 1.1
 	siemens_coefficient = 1.3
-	warning_low_pressure = WARNING_LOW_PRESSURE * 1.4
-	hazard_low_pressure = HAZARD_LOW_PRESSURE * 2
-	warning_high_pressure = WARNING_HIGH_PRESSURE / 0.8125
-	hazard_high_pressure = HAZARD_HIGH_PRESSURE / 0.84615
+	warning_low_pressure = WARNING_LOW_PRESSURE
+	hazard_low_pressure = HAZARD_LOW_PRESSURE
+	warning_high_pressure = WARNING_HIGH_PRESSURE
+	hazard_high_pressure = HAZARD_HIGH_PRESSURE
 	water_soothe_amount = 5
-
-	body_temperature = null // cold-blooded, implemented the same way nabbers do it
 
 	darksight_range = 4
 	darksight_tint = DARKTINT_MODERATE
@@ -148,51 +118,37 @@
 		/datum/mob_descriptor/headtail_length = 0
 	)
 
-	speech_sounds = list(
-		'sound/skrell/warble1.ogg',
-		'sound/skrell/warble2.ogg',
-		'sound/skrell/warble3.ogg'
-	)
-	speech_chance = 10
-
 	available_cultural_info = list(
 		TAG_CULTURE = list(
-			CULTURE_SKRELL_QERR,
-			CULTURE_SKRELL_MALISH,
-			CULTURE_SKRELL_KANIN,
-			CULTURE_SKRELL_TALUM,
-			CULTURE_SKRELL_RASKINTA
+			CULTURE_TAU,
+			CULTURE_TAU_FIO,
+			CULTURE_TAU_POR,
+			CULTURE_TAU_KOR,
+			CULTURE_TAU_SHAS
 		),
 		TAG_HOMEWORLD = list(
-			HOME_SYSTEM_QERRBALAK,
-			HOME_SYSTEM_TALAMIRA,
-			HOME_SYSTEM_ROASORA,
+			HOME_SYSTEM_VORLAAN,
+			HOME_SYSTEM_TALAMIR,
+			HOME_SYSTEM_ROASARA,
 			HOME_SYSTEM_MITORQI,
-			HOME_SYSTEM_SKRELLSPACE,
-			HOME_SYSTEM_OTHERSKRELL
+			HOME_SYSTEM_TAUSPACE,
+			HOME_SYSTEM_OTHER_TAU
 		),
 		TAG_FACTION = list(
-			FACTION_EXPEDITIONARY,
-			FACTION_CORPORATE,
-			FACTION_NANOTRASEN,
-			FACTION_PCRC,
-			FACTION_HEPHAESTUS,
-			FACTION_DAIS,
-			FACTION_SKRELL_QERRVOAL,
-			FACTION_SKRELL_QALAOA,
-			FACTION_SKRELL_YIITALANA,
-			FACTION_SKRELL_KRRIGLI,
-			FACTION_SKRELL_QONPRRI,
-			FACTION_SKRELL_OTHERSKRELLFAC,
-			FACTION_SKRELL_OTHERSDTF,
+			FACTION_IMPERIUM,
+			FACTION_TAU_VORLAAN,
+			FACTION_TAU_KORLAAN,
+			FACTION_TAU_AELAN,
+			FACTION_TAU_VASTAR,
+			FACTION_TAU_SHOVAN,
+			FACTION_TAU_OTHER_FACTIONS,
+			FACTION_TAU_OTHER_GROUPS,
 			FACTION_OTHER
 		),
 		TAG_RELIGION = list(
 			RELIGION_OTHER,
-			RELIGION_ATHEISM,
-			RELIGION_DEISM,
-			RELIGION_AGNOSTICISM,
-			RELIGION_SKRELL
+			RELIGION_IMPERIUM,
+			RELIGION_TAU
 		)
 	)
 

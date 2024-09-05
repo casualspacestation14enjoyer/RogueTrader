@@ -83,7 +83,7 @@
 /obj/item/projectile/beam/lasgun
 	icon_state = "laser"
 	fire_sound = 'sound/warhammer/gunshot/lasgun2.ogg'
-	damage = 44
+	damage = 50
 	armor_penetration = 22
 	distance_falloff = 1
 	damage_falloff_list = list(
@@ -94,7 +94,7 @@
 /obj/item/projectile/beam/lasgun/weak
 	icon_state = "laser"
 	fire_sound = 'sound/warhammer/gunshot/lasgun1.ogg'
-	damage = 35
+	damage = 41
 	armor_penetration = 22
 	distance_falloff = 1
 	damage_falloff_list = list(
@@ -105,7 +105,7 @@
 /obj/item/projectile/beam/lasgun/overcharge // Overcharge rule is you add +10/20(Kantrael/Longlas) to charge cost in exchange for standard overcharge increase.
 	icon_state = "heavylaser"
 	fire_sound = 'sound/warhammer/gunshot/lasgun3.ogg'
-	damage = 54
+	damage = 60
 	armor_penetration = 35
 	penetration_modifier = 0.5
 	distance_falloff = 1
@@ -117,7 +117,7 @@
 /obj/item/projectile/beam/lasgun/lucius
 	icon_state = "laser"
 	fire_sound = 'sound/warhammer/gunshot/lasgun2.ogg'
-	damage = 48
+	damage = 54
 	armor_penetration = 30
 	distance_falloff = 1
 	damage_falloff_list = list(
@@ -128,7 +128,7 @@
 /obj/item/projectile/beam/lasgun/lucius/overcharge
 	icon_state = "laser"
 	fire_sound = 'sound/warhammer/gunshot/lasgun2.ogg'
-	damage = 60
+	damage = 66
 	armor_penetration = 33
 	distance_falloff = 1
 	damage_falloff_list = list(
@@ -139,7 +139,7 @@
 /obj/item/projectile/beam/lasgun/hotshot
 	icon_state = "heavylaser"
 	fire_sound = 'sound/warhammer/gunshot/lasgun3.ogg'
-	damage = 55
+	damage = 61
 	armor_penetration = 33
 	penetration_modifier = 0.5
 	distance_falloff = 1
@@ -151,7 +151,7 @@
 /obj/item/projectile/beam/lasgun/hotshot/overcharge
 	icon_state = "heavylaser"
 	fire_sound = 'sound/warhammer/gunshot/lasgun3.ogg'
-	damage = 65
+	damage = 71
 	armor_penetration = 35
 	penetration_modifier = 0.5
 	distance_falloff = 1
@@ -163,7 +163,7 @@
 /obj/item/projectile/beam/lasgun/longlas
 	icon_state = "heavylaser"
 	fire_sound = 'sound/warhammer/gunshot/lasgun3.ogg'
-	damage = 75
+	damage = 81
 	armor_penetration = 35
 	penetration_modifier = 0.5
 	distance_falloff = 1
@@ -174,7 +174,7 @@
 /obj/item/projectile/beam/lasgun/longlas/overcharge
 	icon_state = "heavylaser"
 	fire_sound = 'sound/warhammer/gunshot/lasgun3.ogg'
-	damage = 90
+	damage = 96
 	armor_penetration = 40
 	penetration_modifier = 0.5
 	distance_falloff = 1
@@ -183,11 +183,64 @@
 		list(8, 0.92),
 	)
 
+/obj/item/projectile/beam/incendiary_laser
+	name = "volkite laser blast"
+	icon_state = "beam_incen"
+	fire_sound= 'sound/warhammer/gunshot/lasgun3.ogg'
+	damage = 66
+	agony = 8
+	eyeblur = 8
+	sharp = FALSE
+	damage_flags = 0
+	life_span = 5
+	armor_penetration = 40
+	damage_falloff_list = list(
+		list(3, 0.90), // Distance, Damage Multiplier. E.G. Distance of 3 or more means 0.90 damage mult.
+		list(5, 0.80),
+		list(7, 0.70),
+	)
+
+	muzzle_type = /obj/projectile/incen/muzzle
+	tracer_type = /obj/projectile/incen/tracer
+	impact_type = /obj/projectile/incen/impact
+
+/obj/item/projectile/beam/incendiary_laser/on_hit(atom/target, blocked = 0)
+	..()
+	if(isliving(target))
+		var/mob/living/L = target
+		L.adjust_fire_stacks(rand(4,6))
+		if(L.fire_stacks >= 3)
+			L.IgniteMob()
+
+/obj/item/projectile/beam/meltagun
+	name = "Meltagun beam"
+	icon_state = "melta"
+	damage = 135
+	agony = 35
+	// check_armour = "energy"
+	fire_sound = list('sound/effects/gore/sear.ogg')
+	damage_falloff_list = list(
+		list(2, 0.90),
+		list(3, 0.80),
+		list(5, 0.50),
+		list(7, 0.10),
+	)
+	stun = 3
+	armor_penetration = 42
+
+/obj/item/projectile/beam/meltagun/on_hit(atom/target, blocked = 0)
+	playsound(src, 'sound/effects/snap.ogg', 50, 1)
+	src.visible_message("<span class='warning'>\The [src] explodes in a bright flash!</span>")
+
+	/* var/datum/effect/effect/system/spark_spread/sparks = new /datum/effect/effect/system/spark_spread()
+	sparks.set_up(2, 1, T)
+	sparks.start() */
+
 /obj/item/projectile/beam/heavylaser
 	name = "heavy laser"
 	icon_state = "heavylaser"
 	fire_sound = 'sound/weapons/lasercannonfire.ogg'
-	damage = 60
+	damage = 66
 	armor_penetration = 30
 	distance_falloff = 0.5
 	penetration_modifier = 0.5
@@ -205,7 +258,7 @@
 	name = "x-ray beam"
 	icon_state = "xray"
 	fire_sound = 'sound/weapons/laser3.ogg'
-	damage = 30
+	damage = 37
 	armor_penetration = 30
 	distance_falloff = 1.5
 	damage_falloff_list = list(
@@ -219,7 +272,7 @@
 	impact_type = /obj/projectile/laser/xray/impact
 
 /obj/item/projectile/beam/xray/midlaser
-	damage = 30
+	damage = 35
 	armor_penetration = 50
 	distance_falloff = 1
 	damage_falloff_list = list(
@@ -232,7 +285,7 @@
 	name = "pulse"
 	icon_state = "u_laser"
 	fire_sound='sound/weapons/pulse.ogg'
-	damage = 15 //lower damage, but fires in bursts
+	damage = 25 //lower damage, but fires in bursts
 	armor_penetration = 25
 	distance_falloff = 1.5
 	damage_falloff_list = list(
@@ -246,7 +299,7 @@
 	impact_type = /obj/projectile/laser/pulse/impact
 
 /obj/item/projectile/beam/pulse/mid
-	damage = 20
+	damage = 35
 	armor_penetration = 30
 	distance_falloff = 1
 	damage_falloff_list = list(
@@ -256,7 +309,7 @@
 	)
 
 /obj/item/projectile/beam/pulse/heavy
-	damage = 25
+	damage = 35
 	armor_penetration = 35
 	distance_falloff = 0.5
 	damage_falloff_list = list(
@@ -267,31 +320,26 @@
 
 /obj/item/projectile/beam/pulse/destroy
 	name = "destroyer pulse"
-	damage = 100 //badmins be badmins I don't give a fuck
-	armor_penetration = 100
+	damage = 70 //badmins be badmins I don't give a fuck
+	armor_penetration = 40
 	damage_falloff_list = list(
 		list(6, 0.99),
 		list(9, 0.98),
 		list(11, 0.97),
 	)
 
-/obj/item/projectile/beam/pulse/destroy/on_hit(atom/target, blocked = 0)
-	if(isturf(target))
-		target.ex_act(EX_ACT_HEAVY)
-	..()
-
 /obj/item/projectile/beam/pulse/skrell
 	icon_state = "pu_laser"
-	damage = 20
+	damage = 30
 	muzzle_type = /obj/projectile/laser/pulse/skrell/muzzle
 	tracer_type = /obj/projectile/laser/pulse/skrell/tracer
 	impact_type = /obj/projectile/laser/pulse/skrell/impact
 
 /obj/item/projectile/beam/pulse/skrell/heavy
-	damage = 30
+	damage = 40
 
 /obj/item/projectile/beam/pulse/skrell/single
-	damage = 50
+	damage = 60
 
 /obj/item/projectile/beam/emitter
 	name = "emitter beam"
@@ -359,9 +407,9 @@
 	name = "sniper beam"
 	icon_state = "xray"
 	fire_sound = 'sound/weapons/marauder.ogg'
-	damage = 35
+	damage = 55
 	penetration_modifier = 0.5
-	armor_penetration = 10
+	armor_penetration = 20
 	damage_falloff_list = null
 
 	muzzle_type = /obj/projectile/laser/xray/muzzle
@@ -400,7 +448,7 @@
 /obj/item/projectile/beam/stun/heavy
 	name = "heavy stun beam"
 	damage = 2
-	agony = 60
+	agony = 70
 	distance_falloff = 1
 	damage_falloff_list = list(
 		list(5, 0.97),
@@ -431,7 +479,7 @@
 
 /obj/item/projectile/beam/stun/shock/heavy
 	name = "heavy shock beam"
-	damage = 30
+	damage = 40
 	distance_falloff = 1
 	damage_falloff_list = list(
 		list(5, 0.97),
@@ -443,7 +491,7 @@
 	name = "plasma arc"
 	icon_state = "omnilaser"
 	fire_sound = 'sound/weapons/plasma_cutter.ogg'
-	damage = 20
+	damage = 30
 	armor_penetration = 30
 	edge = TRUE
 	damage_type = DAMAGE_BURN
@@ -501,7 +549,7 @@
 /obj/item/projectile/beam/particle
 	name = "particle lance"
 	icon_state = "particle"
-	damage = 35
+	damage = 45
 	armor_penetration = 50
 	muzzle_type = /obj/projectile/laser_particle/muzzle
 	tracer_type = /obj/projectile/laser_particle/tracer
@@ -510,14 +558,14 @@
 
 /obj/item/projectile/beam/particle/small
 	name = "particle beam"
-	damage = 20
+	damage = 40
 	armor_penetration = 20
 	penetration_modifier = 0.6
 
 /obj/item/projectile/beam/darkmatter
 	name = "dark matter bolt"
 	icon_state = "darkb"
-	damage = 40
+	damage = 50
 	armor_penetration = 35
 	damage_type = DAMAGE_BRUTE
 	muzzle_type = /obj/projectile/darkmatter/muzzle
@@ -529,7 +577,7 @@
 	icon_state = "darkt"
 	damage_flags = 0
 	sharp = FALSE
-	agony = 40
+	agony = 50
 	damage_type = DAMAGE_STUN
 	muzzle_type = /obj/projectile/stun/darkmatter/muzzle
 	tracer_type = /obj/projectile/stun/darkmatter/tracer
@@ -539,40 +587,12 @@
 	name = "point defense salvo"
 	icon_state = "laser"
 	damage = 15
-	damage_type = DAMAGE_SHOCK //You should be safe inside a voidsuit
+	armor_penetration = 10
+	damage_type = DAMAGE_BURN //You should be safe inside a voidsuit
 	sharp = FALSE //"Wide" spectrum beam
 	muzzle_type = /obj/projectile/pointdefense/muzzle
 	tracer_type = /obj/projectile/pointdefense/tracer
 	impact_type = /obj/projectile/pointdefense/impact
-
-/obj/item/projectile/beam/incendiary_laser
-	name = "volkite laser blast"
-	icon_state = "beam_incen"
-	fire_sound= 'sound/warhammer/gunshot/lasgun3.ogg'
-	damage = 60
-	agony = 8
-	eyeblur = 8
-	sharp = FALSE
-	damage_flags = 0
-	life_span = 5
-	armor_penetration = 40
-	damage_falloff_list = list(
-		list(3, 0.95),
-		list(5, 0.90),
-		list(7, 0.80),
-	)
-
-	muzzle_type = /obj/projectile/incen/muzzle
-	tracer_type = /obj/projectile/incen/tracer
-	impact_type = /obj/projectile/incen/impact
-
-/obj/item/projectile/beam/incendiary_laser/on_hit(atom/target, blocked = 0)
-	..()
-	if(isliving(target))
-		var/mob/living/L = target
-		L.adjust_fire_stacks(rand(2,4))
-		if(L.fire_stacks >= 3)
-			L.IgniteMob()
 
 /obj/item/projectile/beam/blue
 	damage = 30

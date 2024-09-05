@@ -99,7 +99,7 @@
 	icobase = 'icons/mob/human_races/species/monkey/neaera_body.dmi'
 	deform = 'icons/mob/human_races/species/monkey/neaera_body.dmi'
 
-	greater_form = SPECIES_SKRELL
+	greater_form = SPECIES_TAU
 	flesh_color = "#8cd7a3"
 	blood_color = "#1d2cbf"
 	tail = null

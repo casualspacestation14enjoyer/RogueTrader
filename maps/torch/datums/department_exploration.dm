@@ -1,5 +1,5 @@
 /datum/department/exploration
-	name = "Exploration Team"
+	name = "Explorator Team"
 	flag = EXP
 	goals = list(
 		/datum/goal/department/planet_claim,
@@ -9,7 +9,7 @@
 	max_goals = 3
 
 /datum/goal/department/planet_claim
-	description = "Plant the SCG banner on the surface of an exoplanet."
+	description = "Plant the Imperial banner on the surface of an exoplanet."
 
 /datum/goal/department/planet_claim/check_success()
 	return GLOB.stat_flags_planted > 0

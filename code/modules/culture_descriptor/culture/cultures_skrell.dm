@@ -1,71 +1,86 @@
-/singleton/cultural_info/culture/skrell
-	name = CULTURE_SKRELL_QERR
-	description = "Considered as the leaders of Skrellkind, the Qerr-Katish are the face and soul of skrellian society. \
-		Managers, diplomats, lawyers, they are notably the only caste allowed to fulfil the role of Qerr-Skria,\
-		and the only one forbidden from being appointed to the Xaq Moglar. As the representatives of the Skrell, \
-		the Qerr-Katish are highly social beings, sophisticated, cultured and very organised. As defenders of their society's \
+/singleton/cultural_info/culture/tau
+	name = "Tau"
+	description = "Considered the leaders of the Tau Empire, the Tau caste are the face and soul of their society. \
+		Managers, diplomats, and strategists, they are notably the only caste allowed to fulfill the role of Ethereal, \
+		and the only one forbidden from being appointed to the rank of Shas'o. As the representatives of the Tau, \
+		they are highly social beings—sophisticated, cultured, and very organized. As defenders of their society's \
 		values, they tend to be rather conservative, although progressive ideas regularly grow within the caste, as a stagnant \
-		society is a dying society. Considering their role, they are generally the richest people of a City-State, although their \
-		money is generally invested in various endeavours both in and out of skrellian society. Qerr-Katish families tend to be rather \
-		small, being generally limited to one, sometimes two bondings. They often dress in clothing made from softer, shinier materials \
-		that are long and flowing and have often been compared to the clothing of ancient Chinese nobles by human scholars. Their skin is generally bright green."
+		society is a dying society. Given their role, they are generally the wealthiest members of the Empire, although their \
+		resources are often invested in various endeavors both within and outside of Tau society. Tau families tend to be small, \
+		usually limited to one, sometimes two bondings. They often dress in clothing made from soft, high-quality materials \
+		that are long and flowing, often compared by human scholars to the attire of ancient Earth nobility. Their skin is generally light blue."
 	economic_power = 1.4
-	language = LANGUAGE_SKRELLIAN
+	language = LANGUAGE_TAU
 	secondary_langs = list(
 		LANGUAGE_SIGN,
-		LANGUAGE_HUMAN_EURO,
-		LANGUAGE_SPACER
+		LANGUAGE_HIGH_GOTHIC,
+		LANGUAGE_LOW_GOTHIC
 	)
 
-/singleton/cultural_info/culture/skrell/caste_malish
-	name = CULTURE_SKRELL_MALISH
-	description = "If the Qerr-Katish are the face of Skrellkind, the Malish-Katish are its brain. Scientists of all sorts, \
-		researchers, scholars, they are the ones who allow skrellian society to grow, be it technologically or ideologically. \
-		Highly inquisitive, they are among the more progressive and individualistic Skrell. They are, however, not very social, \
-		and their emphasis on methodical, rational thinking make them less capable of being under pressure and handling their feelings \
-		in public. Although they are less wealthy than the Qerr-Katish, their usefulness allows them much comfort and status in skrellian society. \
-		Their families are generally made up of two or three bondings, frequently from different partners. Skrell of this caste often wear clothing made \
-		from the same materials as the Qerr-katish yet simplified, white shirts and black pants with possible jewellery for decoration. \
-		Their skin is generally pale green, sky blue or pale yellow."
+/singleton/cultural_info/culture/tau/caste_fio
+	name = "Fio"
+	description = "If the Tau caste is the face of the Empire, the Fio caste is its mind. Scientists, researchers, and scholars, \
+		they are the ones who allow Tau society to grow, whether technologically or ideologically. \
+		Highly inquisitive, they are among the more progressive and individualistic members of Tau society. However, they are not very social, \
+		and their emphasis on methodical, rational thinking makes them less capable of handling pressure and expressing emotions in public. \
+		Though less wealthy than the Tau caste, their contributions grant them a comfortable status within the Empire. \
+		Their families generally consist of two or three bondings, often with different partners. Members of this caste often wear clothing made \
+		from the same refined materials as the Tau, though simplified—white tunics and black trousers, with minimalistic jewelry for decoration. \
+		Their skin is generally a pale blue or gray."
 	economic_power = 1.3
+	secondary_langs = list(
+		LANGUAGE_SIGN,
+		LANGUAGE_HIGH_GOTHIC,
+		LANGUAGE_LOW_GOTHIC
+	)
 
-/singleton/cultural_info/culture/skrell/caste_kanin
-	name = CULTURE_SKRELL_KANIN
-	description = "The main workforce of the Skrell. While their population growth has decreased over the millennia of technological \
-		progress they are still one of the most populous castes. With activities ranging from goods production and services \
-		to engineering and construction they occupy the largest and most diversified sector of skrellian activity. The Kanin-Katish \
-		are a very tightly knit community, both within their families and with their coworkers. They possess a strong mental and physical \
-		resilience. Very traditional, they hold rather conservative views on the world, and their focus on the whole rather than self dampens \
-		much of their individualism. Their families are frequently large, three or four bondings, generally with a couple of partners, which does \
-		not leave them much in terms of money. The Kanin-Katish are among the less wealthy people of skrellkind, but they do not seem to mind, as \
-		their work is the life and blood of skrellian civilisation. Their clothing is made to last, the personality of the Skrell often being shown \
-		through arm bands or headtail decorations of any kind. Their skin is generally red, orange, pale yellow, dark orange or black."
+/singleton/cultural_info/culture/tau/caste_por
+	name = "Por"
+	description = "The main workforce of the Tau Empire. Although their population growth has decreased with technological advancement, \
+		they remain one of the most populous castes. With responsibilities ranging from production and services \
+		to engineering and construction, they occupy the largest and most diversified sector of Tau activity. The Por caste \
+		is a very tightly knit community, both within their families and among their coworkers. They possess strong mental and physical \
+		resilience. Traditional in their outlook, they hold conservative views, with a focus on the collective rather than the individual, which dampens \
+		their sense of individualism. Their families are frequently large, with three or four bondings, often with multiple partners, leaving them with limited financial resources. \
+		The Por caste is among the less wealthy members of the Empire, but they find satisfaction in their crucial role as the lifeblood of Tau civilization. \
+		Their clothing is made to last, with personality often expressed through subtle adornments or functional accessories. Their skin is generally a darker shade of blue."
 	economic_power = 1.2
+	secondary_langs = list(
+		LANGUAGE_SIGN,
+		LANGUAGE_HIGH_GOTHIC,
+		LANGUAGE_LOW_GOTHIC
+	)
 
-
-/singleton/cultural_info/culture/skrell/caste_talum
-	name = CULTURE_SKRELL_TALUM
-	description = " Considering the Skrells' emphasis on functionality and practicality, one would be mistaken to think they do not consider arts much. \
-		This very important sector of skrellian society is handled by the Talum-Katish, artists, aesthetes, entertainers, chefs, actors, writers, singers. \
-		They somewhat compete with the Qerr-Katish's role as representatives of skrellkind, although in a different way. As such, they are often mistaken for \
-		Qerr-Katish themselves, which might explain why this caste is generally seen as rarer and less celebrated than the others, while they are in fact \
-		frequently on the public scene. The Talum-Katish are the most individualistic members of skrellkind, although once again, they share the Qerr-Katish's \
-		taste for a busy social life. Highly cultured, they are the free-thinkers of skrellian society, often at odds with more traditionalist and conservative castes. \
-		A heterogeneous lot, it is hard to estimate their global financial capacities, they however tend to reproduce a lot, multiplying their encounters \
-		with various partners, which might put a strain on their savings. Their clothing is often an odd mix of Qerr-Katish and Kanin-Katish, as they often wear \
-		clothing that is colourful , adorned with embroidery and their headtails sparkling with various brilliant metals. Their skin is generally purple, blue, pink, orange, red or white."
+/singleton/cultural_info/culture/tau/caste_kor
+	name = "Kor"
+	description = "Despite the Tau's emphasis on practicality and functionality, they hold the arts in high regard. \
+		This important sector of Tau society is managed by the Kor caste—artists, aesthetes, entertainers, and visionaries. \
+		They somewhat compete with the Tau caste's role as the face of the Empire, though in a different manner. As such, they are sometimes mistaken for \
+		members of the Tau caste themselves, which might explain why this caste is generally seen as rarer and less celebrated, even though they are often \
+		in the public eye. The Kor caste is the most individualistic of the Tau, though they share the Tau caste's love of a vibrant social life. \
+		Highly cultured, they are the free-thinkers of Tau society, often at odds with more traditionalist castes. \
+		A heterogeneous group, it is difficult to assess their overall financial status, though they tend to form multiple bondings, \
+		often with various partners, which can strain their finances. Their attire is an eclectic mix of styles, incorporating both elaborate and practical elements, \
+		with bright colors and artistic embellishments. Their skin tones range from light blue to white, often with unique patterns."
 	economic_power = 1.3
+	secondary_langs = list(
+		LANGUAGE_SIGN,
+		LANGUAGE_HIGH_GOTHIC,
+		LANGUAGE_LOW_GOTHIC
+	)
 
-/singleton/cultural_info/culture/skrell/caste_raskinta
-	name = CULTURE_SKRELL_RASKINTA
-	description = "Rarely seen outside the skrellian society, the Raskinta-Katish are however recognised and respected by their entire species, for \
-		they are the ones who ensure the safety and stability of skrellian civilisation, both against internal and external threats. \
-		The military caste of the Skrell, most end up working for the various city-states, either in the police or as a career soldier,\
-		although some of them end up working for private security or as entertainment fighters. They are very conservative, almost reactionary, \
-		and deeply committed to their community, caring very little for self-development and personal satisfaction. Their martial training \
-		leaves very little time for most intellectual pursuits, although they are trained to be expert tacticians and are only beaten by the \
-		Qerr-Katish in terms of organisational skills. While they are wealthier than the Kanin-Katish overall, they are still among the poorer \
-		castes of skrellkind and their large families of three or four bondings put a heavy strain on their earnings, only compensated by their \
-		strong social cohesion. These are often the hardest to spot among a crowd because they intentionally wear clothing other castes are known \
-		for while not working, however they tend to stick to clothing that is easy to move in and are often dark blue. Their skin is generally green, blue, black, brown or yellow."
+/singleton/cultural_info/culture/tau/caste_shas
+	name = "Shas"
+	description = "Rarely seen outside of military or security roles, the Shas caste is nonetheless recognized and respected throughout the Tau Empire, \
+		as they are the ones who ensure the safety and stability of the Empire, both from internal and external threats. \
+		The military caste of the Tau, most serve in the military or law enforcement, though some work in private security or as combat instructors. \
+		They are highly conservative, deeply committed to their community, and place little emphasis on personal development or satisfaction. \
+		Their rigorous martial training leaves little time for intellectual pursuits, though they are trained to be expert tacticians, only surpassed by the Tau caste in organizational skills. \
+		While generally wealthier than the Por caste, they are still among the less affluent castes, and their large families, often consisting of three or four bondings, can strain their resources. \
+		When off-duty, they tend to blend in with civilians, wearing simple, utilitarian clothing in muted colors. Their skin is usually a deep blue, gray, or black."
 	economic_power = 1.2
+	secondary_langs = list(
+		LANGUAGE_SIGN,
+		LANGUAGE_HIGH_GOTHIC,
+		LANGUAGE_LOW_GOTHIC
+	)

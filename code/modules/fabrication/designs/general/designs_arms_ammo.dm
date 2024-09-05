@@ -112,11 +112,11 @@
 	path = /obj/item/magnetic_ammo
 
 /datum/fabricator_recipe/arms_ammo/hidden/skrellian_rifle_flechette
-	name = "ammunition (skrellian rifle, flechette)"
+	name = "ammunition (Tau rifle, flechette)"
 	path = /obj/item/magnetic_ammo/skrell
 
 /datum/fabricator_recipe/arms_ammo/hidden/skrellian_rifle_slug
-	name = "ammunition (skrellian rifle, slug)"
+	name = "ammunition (Tau rifle, slug)"
 	path = /obj/item/magnetic_ammo/skrell/slug
 
 /datum/fabricator_recipe/arms_ammo/hidden/stripperclip

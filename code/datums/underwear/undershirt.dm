@@ -36,7 +36,7 @@
 	icon_state = "tank_fleet"
 
 /datum/category_item/underwear/undershirt/tank_top_expedition
-	name = "Tank top, Expeditionary Corps"
+	name = "Tank top, Dauntless Crew"
 	underwear_name = "tank top"
 	icon_state = "tank_expedition"
 
@@ -66,7 +66,7 @@
 	has_color = TRUE
 
 /datum/category_item/underwear/undershirt/shirt_expedition
-	name = "Shirt, Expeditionary Corps"
+	name = "Shirt, Dauntless Crew"
 	icon_state = "expedition"
 
 /datum/category_item/underwear/undershirt/shirt_heart
@@ -82,7 +82,7 @@
 	icon_state = "fleet"
 
 /datum/category_item/underwear/undershirt/shirt_army
-	name = "Shirt, Army"
+	name = "Shirt, Guard"
 	icon_state = "army"
 
 /datum/category_item/underwear/undershirt/shirt_nt
@@ -188,15 +188,15 @@
 	icon_state = "fleet_female"
 
 /datum/category_item/underwear/undershirt/army_female
-	name = "Shirt, Army, Female"
+	name = "Shirt, Guard, Female"
 	icon_state = "army_female"
 
 /datum/category_item/underwear/undershirt/expedition_female
-	name = "Shirt, Expeditionary Corps, Female"
+	name = "Shirt, Dauntless Crew, Female"
 	icon_state = "expedition_female"
 
 /datum/category_item/underwear/undershirt/tank_top_expedition_female
-	name = "Tank top, Expeditionary Corps, Female"
+	name = "Tank top, Dauntless Crew, Female"
 	underwear_name = "tank top"
 	icon_state = "tank_expedition_female"
 
@@ -205,7 +205,7 @@
 	icon_state = "corp_polo"
 
 /datum/category_item/underwear/undershirt/polo_nt
-	name = "Polo, NanoTrasen"
+	name = "Polo, Necromundan"
 	icon_state = "ntpolo"
 
 /datum/category_item/underwear/undershirt/polo_dais

@@ -334,7 +334,7 @@
 /obj/item/melee/energy/machete
 	icon = 'icons/obj/weapons/melee_energy.dmi'
 	name = "energy machete"
-	desc = "A machete handle that extends out into a long, purple machete blade. It appears to be Skrellian in origin."
+	desc = "A machete handle that extends out into a long, purple machete blade. It appears to be Tau in origin."
 	icon_state = "machete_skrell_x"
 	active_icon = "machete_skrell"
 	active_force = 25

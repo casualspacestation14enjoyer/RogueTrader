@@ -274,7 +274,7 @@ var/global/list/additional_antag_types = list()
 		"killer bugs that lay eggs in the husks of the living",
 		"a deserted transport carrying xenofauna specimens",
 		"an emissary for the gestalt requesting a security detail",
-		"radical Skrellian transevolutionaries",
+		"radical Tau transevolutionaries",
 		"classified security operations",
 		"a gargantuan glowing goat"
 		)

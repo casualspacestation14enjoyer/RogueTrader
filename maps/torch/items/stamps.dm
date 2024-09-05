@@ -19,7 +19,7 @@
 	icon_state = "stamp-brig"
 
 /obj/item/stamp/solgov
-	name = "\improper Sol Central Government rubber stamp"
+	name = "\improper Imperial Government rubber stamp"
 	icon_state = "stamp-solgov"
 
 /obj/item/stamp/nt

@@ -344,7 +344,7 @@
 
 
 /obj/item/reagent_containers/ivbag/blood/skrell/Initialize(mapload, blood_type)
-	return ..(mapload, blood_type, SPECIES_SKRELL)
+	return ..(mapload, blood_type, SPECIES_TAU)
 
 
 /obj/item/reagent_containers/ivbag/blood/skrell/oneg/Initialize(mapload)
@@ -419,7 +419,7 @@
 
 
 /obj/item/storage/box/freezer/blood/skrell
-	name = "portable freezer (skrellian blood)"
+	name = "portable freezer (Tau blood)"
 	startswith = list(
 		/obj/item/reagent_containers/ivbag/blood/skrell/oneg = 4
 	)

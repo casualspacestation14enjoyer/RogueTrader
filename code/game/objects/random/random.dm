@@ -1432,7 +1432,7 @@ GLOBAL_LIST_INIT(random_backpacks, list(
 				/obj/item/spacecash/bundle/c50 = 2,
 				/obj/item/spacecash/bundle/c100 = 2)
 
-/obj/random/documents // top secret documents for SCG eyes only
+/obj/random/documents // top secret documents for Imperial eyes only
 	name = "random secret documents"
 	icon = 'icons/obj/bureaucracy.dmi'
 	icon_state = "docs_generic"

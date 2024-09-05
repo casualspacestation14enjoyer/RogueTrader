@@ -5,7 +5,7 @@
 <strong>PRECEDENCE: FLASH</strong>
 <h3>MARSCOM - HIGH COMMAND OFFICES</h3>
 <img src="fleetlogo.png"/></center>
-<p><tt><tt><strong>FROM:</strong> Rear Admiral Korubei Richter, Fifth Fleet<br /><strong>TO:</strong> Expeditionary Corps Vessel #3, Dauntless<br /><strong>CC:</strong> Admiral William Henry Lau, Helios Project, Expeditionary Corps<br /></tt></tt></p>
+<p><tt><tt><strong>FROM:</strong> Rear Admiral Korubei Richter, Fifth Fleet<br /><strong>TO:</strong> Imperial Vessel #3, Dauntless<br /><strong>CC:</strong> Admiral William Henry Lau, Helios Project, Imperial<br /></tt></tt></p>
 <hr />
 <p>Per incident and consequential orders, the Dauntless has been ordered to return to sector <strong>S5</strong>, system <strong>E-14b</strong>, effective immediately.</p>
 <p>Fifth Fleet Quick Reaction Forces are currently mobilising and conducting hot jumps to secure the route as necessary, however, mass factor dilations and general distance will delay reinforcements.</p>
@@ -20,7 +20,7 @@
 
 
 /obj/item/folder/envelope/ndaorder
-	desc = "A thick envelope. The Expeditionary Corps crest is stamped in the corner, along with 'DO NOT DISSEMINATE. FOR BRIDGE EYES ONLY.'"
+	desc = "A thick envelope. The Imperial crest is stamped in the corner, along with 'DO NOT DISSEMINATE. FOR BRIDGE EYES ONLY.'"
 
 
 /obj/item/folder/envelope/ndaorder/Initialize()
@@ -33,7 +33,7 @@
 	info = {"\
 <center><h3>EXPEDITIONARY COMMAND - OBSERVATORY</h3>
 <img src="eclogo.png" /></center>
-<p><tt><tt><strong>FROM:</strong> Admiral William Henry Lau, Observatory<br /><strong>TO:</strong> Expeditionary Corps Vessel #3, Dauntless<br /><strong>CC:</strong> Director Nazur Khalid, Solar Bureau of Public Information <br /><strong>SUBJECT:</strong> Non-Disclosure and Operational Security Notice<br /></tt></tt></p>
+<p><tt><tt><strong>FROM:</strong> Admiral William Henry Lau, Observatory<br /><strong>TO:</strong> Imperial Vessel #3, Dauntless<br /><strong>CC:</strong> Director Nazur Khalid, Solar Bureau of Public Information <br /><strong>SUBJECT:</strong> Non-Disclosure and Operational Security Notice<br /></tt></tt></p>
 <hr />
 <p>Good day, Torch.</p>
 <p>This is an important advisory for members of the command staff aboard the vessel. With the discovery of a new, potentially hostile body - it is of the utmost importance that information be disseminated in a controlled, and calculated manner.</p>
@@ -54,7 +54,7 @@
 
 
 /obj/item/folder/envelope/cmoorder
-	desc = "A thick envelope. The Expeditionary Corps crest is stamped in the corner, along with 'DISSEMINATE AS NECESSARY. FOR CMO EYES.'"
+	desc = "A thick envelope. The Imperial crest is stamped in the corner, along with 'DISSEMINATE AS NECESSARY. FOR CMO EYES.'"
 
 
 /obj/item/folder/envelope/cmoorder/Initialize()
@@ -67,7 +67,7 @@
 	info = {"\
 <center><h3>EXPEDITIONARY COMMAND - OBSERVATORY</h3>
 <img src="eclogo.png" /></center>
-<p><tt><tt><strong>FROM:</strong> Commander Carom Andella, SCGEC Observatory<br /><strong>TO:</strong> Expeditionary Corps Vessel #3, Dauntless<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> Notice of Care - Psychiatrics and Synthetics<br /></tt></tt></p>
+<p><tt><tt><strong>FROM:</strong> Commander Carom Andella, IMPEC Observatory<br /><strong>TO:</strong> Imperial Vessel #3, Dauntless<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> Notice of Care - Psychiatrics and Synthetics<br /></tt></tt></p>
 <hr />
 <p>Good day.</p>
 <p>This notice is for you to be aware of the repercussions of the situation that you, and your vessel has gone through.</p>
@@ -82,13 +82,13 @@
 <p>Evaluations are to be forwarded to the Observatory for processing and review whenever possible.</p>
 <p>In case of any queries or issues. Long range FTL communication bandwidth has been expanded for use by The Dauntless. Ensure no illness remains untreated.</p>
 <hr />
-<p>&nbsp;<em>This paper has been stamped with the insignia of the SCGEC Observatory.</em></p>
+<p>&nbsp;<em>This paper has been stamped with the insignia of the IMPEC Observatory.</em></p>
 <hr /><center><img src="eclogo.png" /></center>
 "}
 
 
 /obj/item/folder/envelope/cosorder
-	desc = "A thick envelope. The Expeditionary Corps crest is stamped in the corner, along with 'DISSEMINATE AS NECESSARY. FOR COS EYES.'"
+	desc = "A thick envelope. The Imperial crest is stamped in the corner, along with 'DISSEMINATE AS NECESSARY. FOR COS EYES.'"
 
 
 /obj/item/folder/envelope/cosorder/Initialize()
@@ -101,7 +101,7 @@
 	info = {"\
 <center><h3>EXPEDITIONARY COMMAND - OBSERVATORY</h3>
 <img src="eclogo.png" /></center>
-<p><tt><tt><strong>FROM:</strong> Commander Liam Henshell, SCGEC Observatory<br /><strong>TO:</strong> Expeditionary Corps Vessel #3, Dauntless<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> General Reminder - Security Guidelines<br /></tt></tt></p>
+<p><tt><tt><strong>FROM:</strong> Commander Liam Henshell, IMPEC Observatory<br /><strong>TO:</strong> Imperial Vessel #3, Dauntless<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> General Reminder - Security Guidelines<br /></tt></tt></p>
 <hr />
 <p>Good day.</p>
 <p>With your retreat from the affected sectors, and subsequent incidents that required to be handled. A few pointers are henceforth embolded in order to help you maintain authority aboard the Dauntless.</p>
@@ -114,13 +114,13 @@
 <p>It is important for you to assume an emergent state of distress if the need arises, until you reach your intended destination. Further guidelines and orders to follow beyond that point.</p>
 <p>Crucially, your senior enlisted will be essential in these trying times. Try to keep them close.</p>
 <hr />
-<p>&nbsp;<em>This paper has been stamped with the insignia of the SCGEC Observatory.</em></p>
+<p>&nbsp;<em>This paper has been stamped with the insignia of the IMPEC Observatory.</em></p>
 <hr /><center><img src="eclogo.png" /></center>
 "}
 
 
 /obj/item/folder/envelope/ceorder
-	desc = "A thick envelope. The Expeditionary Corps crest is stamped in the corner, along with 'DISSEMINATE AS NECESSARY. FOR CE EYES.'"
+	desc = "A thick envelope. The Imperial crest is stamped in the corner, along with 'DISSEMINATE AS NECESSARY. FOR CE EYES.'"
 
 
 /obj/item/folder/envelope/ceorder/Initialize()
@@ -133,7 +133,7 @@
 	info = {"\
 <center><h3>EXPEDITIONARY COMMAND - OBSERVATORY</h3>
 <img src="eclogo.png" /></center>
-<p><tt><tt><strong>FROM:</strong> Commander Minnie Rosulia, SCGEC Observatory<br /><strong>TO:</strong> Expeditionary Corps Vessel #3, Dauntless<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> Emergency Orders - Electronic Warfare<br /></tt></tt></p>
+<p><tt><tt><strong>FROM:</strong> Commander Minnie Rosulia, IMPEC Observatory<br /><strong>TO:</strong> Imperial Vessel #3, Dauntless<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> Emergency Orders - Electronic Warfare<br /></tt></tt></p>
 <hr />
 <p>Good day.</p>
 <p>After scrutiny of available information, it has been determined that there is a major security risk of on-board ship systems. Reported compromises of electronic suites, and IT infrastructure is a serious matter.</p>
@@ -146,13 +146,13 @@
 <p>In case of danger to the vessel, units affected by electronic warfare from unknown sources may be terminated per consideration from you, and the <strong>Chief of Security</strong>, or above.</p>
 <p><strong>Release information only as needed. Leak of information without good reason is grounds for remediation. Contact EXCOM for any details.</strong></p>
 <hr />
-<p>&nbsp;<em>This paper has been stamped with the insignia of the SCGEC Observatory.</em></p>
+<p>&nbsp;<em>This paper has been stamped with the insignia of the IMPEC Observatory.</em></p>
 <hr /><center><img src="eclogo.png" /></center>
 "}
 
 
 /obj/item/folder/envelope/exploorder
-	desc = "A thick envelope. The Expeditionary Corps crest is stamped in the corner, along with 'DISSEMINATE AS NECESSARY. FOR CSO/PATHFINDER EYES.'"
+	desc = "A thick envelope. The Imperial crest is stamped in the corner, along with 'DISSEMINATE AS NECESSARY. FOR CSO/PATHFINDER EYES.'"
 
 
 /obj/item/folder/envelope/exploorder/Initialize()
@@ -165,7 +165,7 @@
 	info = {"\
 <center><h3>EXPEDITIONARY COMMAND - OBSERVATORY</h3>
 <img src="eclogo.png" /></center>
-<p><tt><tt><strong>FROM:</strong> Lieutenant Vasco Espueza, SCGEC Observatory<br /><strong>TO:</strong> Expeditionary Corps Vessel #3, Dauntless<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> First Contact and Anomalies<br /></tt></tt></p>
+<p><tt><tt><strong>FROM:</strong> Lieutenant Vasco Espueza, IMPEC Observatory<br /><strong>TO:</strong> Imperial Vessel #3, Dauntless<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> First Contact and Anomalies<br /></tt></tt></p>
 <hr />
 <p>Good day.</p>
 <p>With the emergent need for a stronger solution to synthetic threats. It is <strong>authorised</strong> and <strong>highly encouraged</strong> to retain, study and utilise any anomalies exhibiting ionic properties.</p>
@@ -173,18 +173,18 @@
 <p>Ensure that your research and exploration personnel are kept in top mental integrities at all times, as first contact procedures - especially hostile - are strongly draining on the psyche.</p>
 <p>Regular evaluation of personnel is recommended, in co-operation with the <strong>Chief Medical Officer</strong>.
 <p>Encounter with synthetic hostiles must now be treated with extreme precaution for the possibility of their presence being a matter of hostile actions beyond our scope of perception.</p><br />
-<p>Security personnel attached to expeditions can be <strong>encouraged</strong>, however, the three directives of the Expeditionary Corps are still in effect.</p>
+<p>Security personnel attached to expeditions can be <strong>encouraged</strong>, however, the three directives of the Imperial are still in effect.</p>
 <p>As such, unneeded dispatching of non-exploration personnel will still be scrutinised heavily. Especially so with their needed presence on-board.</p>
 <p>Any further first contact scenarios are to be taken with extreme caution while you are still in this region of space. Ensure no sentient alien presence breaches the vessel's integrity.</p>
 <p>It is <strong>highly recommended</strong> to co-operate with the <strong>Chief Engineer</strong> to bolster integrity and security of electronic systems aboard the vessel. Any captured synthetic alien lifeform is <strong>recommended</strong> to be preserved, studied, and shipped off.</p>
 <hr />
-<p>&nbsp;<em>This paper has been stamped with the insignia of the SCGEC Observatory.</em></p>
+<p>&nbsp;<em>This paper has been stamped with the insignia of the IMPEC Observatory.</em></p>
 <hr /><center><img src="eclogo.png" /></center>
 "}
 
 
 /obj/item/folder/envelope/dcorder
-	desc = "A thick envelope. The Expeditionary Corps crest is stamped in the corner, along with 'DISSEMINATE AS NECESSARY. FOR DC/XO EYES.'"
+	desc = "A thick envelope. The Imperial crest is stamped in the corner, along with 'DISSEMINATE AS NECESSARY. FOR DC/XO EYES.'"
 
 
 /obj/item/folder/envelope/dcorder/Initialize()
@@ -197,7 +197,7 @@
 	info = {"\
 <center><h3>EXPEDITIONARY COMMAND - OBSERVATORY</h3>
 <img src="eclogo.png" /></center>
-<p><tt><tt><strong>FROM:</strong> Commander Vera Soo-Hyun, SCGEC Observatory<br /><strong>TO:</strong> Expeditionary Corps Vessel #3, Dauntless<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> General guidelines on Emergency Logistics<br /></tt></tt></p>
+<p><tt><tt><strong>FROM:</strong> Commander Vera Soo-Hyun, IMPEC Observatory<br /><strong>TO:</strong> Imperial Vessel #3, Dauntless<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> General guidelines on Emergency Logistics<br /></tt></tt></p>
 <hr />
 <p>Good day.</p>
 <p>This is with strong recommendation to follow appropriate validity and verification procedures when receiving and sending equipment and cargo.</p>
@@ -209,13 +209,13 @@
 <p>Prospecting and exploration operations are to be maintained. However, any away-team operations must be stringently timed, and return of such must be kept in mind. <strong>Retrieval of lost personnel will be impossible due to current circumstances.</strong></p>
 <p>As such, while Standard Operating Procedures remain unchanged, and must still be followed - it is on the shoulders of the deck crew, or bridge crew to co-ordinate with away teams on their return times, whether verbally or via lodged flight plans.</p>
 <hr />
-<p>&nbsp;<em>This paper has been stamped with the insignia of the SCGEC Observatory.</em></p>
+<p>&nbsp;<em>This paper has been stamped with the insignia of the IMPEC Observatory.</em></p>
 <hr /><center><img src="eclogo.png" /></center>
 "}
 
 
 /obj/item/folder/envelope/csorder
-	desc = "A thick envelope. The Expeditionary Corps crest is stamped in the corner, along with 'DISSEMINATE AS NECESSARY. FOR CS/XO EYES.'"
+	desc = "A thick envelope. The Imperial crest is stamped in the corner, along with 'DISSEMINATE AS NECESSARY. FOR CS/XO EYES.'"
 
 
 /obj/item/folder/envelope/csorder/Initialize()
@@ -228,7 +228,7 @@
 	info = {"\
 <center><h3>EXPEDITIONARY COMMAND - OBSERVATORY</h3>
 <img src="eclogo.png" /></center>
-<p><tt><tt><strong>FROM:</strong> Lieutenant Sam Nerehel, SCGEC Observatory<br /><strong>TO:</strong> Expeditionary Corps Vessel #3, Dauntless<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> Notice - Crisis and Serenity<br /></tt></tt></p>
+<p><tt><tt><strong>FROM:</strong> Lieutenant Sam Nerehel, IMPEC Observatory<br /><strong>TO:</strong> Imperial Vessel #3, Dauntless<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> Notice - Crisis and Serenity<br /></tt></tt></p>
 <hr />
 <p>Good day.</p>
 <p>We are gravely disconcerted with your current situation. Operating a vessel's service crew under times of duress such as these can be challenging.</p>
@@ -238,13 +238,13 @@
 <p>It is suggested that you replenish lost food supplies with cheaper, and more ubiquitous insect protein for the duration of this retreat. While Fleet cargo vessels carry most basic necessities, emergency rationing must be considered.</p>
 <p>The service department is crucial in the adequate maintenance and operation of the craft. Ensure that the standard is well maintained.</p>
 <hr />
-<p>&nbsp;<em>This paper has been stamped with the insignia of the SCGEC Observatory.</em></p>
+<p>&nbsp;<em>This paper has been stamped with the insignia of the IMPEC Observatory.</em></p>
 <hr /><center><img src="eclogo.png" /></center>
 "}
 
 
 /obj/item/folder/envelope/clorder
-	desc = "A thick envelope. The Expeditionary Corps Organisation crest is stamped in the corner, along with 'DO NOT DISSEMINATE. FOR CL EYES ONLY.'"
+	desc = "A thick envelope. The Imperial Organisation crest is stamped in the corner, along with 'DO NOT DISSEMINATE. FOR CL EYES ONLY.'"
 
 
 /obj/item/folder/envelope/clorder/Initialize()
@@ -257,7 +257,7 @@
 	info = {"\
 <center><h3>EXPEDITIONARY CORPS ORGANISATION</h3>
 <img src="exologo.png" /></center>
-<p><tt><tt><strong>FROM:</strong> Executive Dima Gorzarev, EXO Head Office<br /><strong>TO:</strong> Expeditionary Corps Vessel #3, Dauntless<br /><strong>SUBJECT:</strong> Notice of Corporate Assets<br /></tt></tt></p>
+<p><tt><tt><strong>FROM:</strong> Executive Dima Gorzarev, EXO Head Office<br /><strong>TO:</strong> Imperial Vessel #3, Dauntless<br /><strong>SUBJECT:</strong> Notice of Corporate Assets<br /></tt></tt></p>
 <hr />
 <p>Good day.</p>
 <p>We are currently aware of the situation surrounding your post. Considering the consequential events that are predicted to unfold, a few precautionary measures have been taken for your safety.</p>
@@ -275,7 +275,7 @@
 
 
 /obj/item/folder/envelope/cmdorder
-	desc = "A thick envelope. The Sol Central Government crest is stamped in the corner, along with 'DO NOT DISSEMINATE. FOR SCGR/CO EYES ONLY.'"
+	desc = "A thick envelope. The Imperial Government crest is stamped in the corner, along with 'DO NOT DISSEMINATE. FOR IMPR/CO EYES ONLY.'"
 
 
 /obj/item/folder/envelope/cmdorder/Initialize()
@@ -288,20 +288,20 @@
 	info = {"\
 <center><h3>SOL CENTRAL GOVERNMENT</h3>
 <img src="sollogo.png" /></center>
-<p><tt><tt><strong>FROM:</strong> Director Francesca Del Rey, Bureau of Emergency Operations<br /><strong>TO:</strong> Expeditionary Corps Vessel #3, Dauntless<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory<br /><strong>SUBJECT:</strong> Guidelines of Emergency Reponsibilities<br /></tt></tt></p>
+<p><tt><tt><strong>FROM:</strong> Director Francesca Del Rey, Bureau of Emergency Operations<br /><strong>TO:</strong> Imperial Vessel #3, Dauntless<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory<br /><strong>SUBJECT:</strong> Guidelines of Emergency Reponsibilities<br /></tt></tt></p>
 <hr />
 <p>Good day.</p>
 <p>Regarding the latest incident surrounding the Dauntless. It is prudent that we tread extremely carefully.</p>
 <p>With the potential of yet another hostile first contact, especially with synthetic assimilators capable of electronic warfare puts a majority of our services and systems at risk.</p>
-<p>It also puts forth the dreadful question of hostilities outside of our scope of perception, including those that affected the Terran Commonwealth that came before us.</p>
+<p>It also puts forth the dreadful question of hostilities outside of our scope of perception, including those that affected the Imperial Guard that came before us.</p>
 <p>It is immensely prudent for your vessels to stay tightly run. While we are at a heightened alert, we do not wish to create distrust, and unrest in the greater part of the state. Considering current circumstances politically.</p>
 <p>UMBRA protocols remain unchanged, and can be called as necessary. However a return to Sol is currently impossible due to distance, projected jump capabilities, and potential for further hostilities. As such, E-14b has been designated as your safe port.</p>
-<p>Solar personnel aboard the joint GCC-SCG station will be informed to keep dissemination of information to non-Solar actors to a minimum.</p>
+<p>Solar personnel aboard the joint GCC-IMP station will be informed to keep dissemination of information to non-Solar actors to a minimum.</p>
 <p>Standard operation and cooperation of your crew is of the utmost importance. Fleet support is being provided as necessary. However, as detailed in various communiques - information security is to be maintained.</p>
 <p>This further jeopardises expansion and colonisation efforts, as we try begin to go beyond the boundary of those that came before us.<p>
 <p>Ensure regular interviews and personnel reviews to keep loyalty and performance consistent across the board. Once your vessel reaches E-14b, further instructions will be given, and regular expeditionary journeys will continue.</p>
 <p>Funerary and aid services will be properly provided at that time.</p>
 <hr />
-<p>&nbsp;<em>This paper has been stamped with the insignia of the Sol Central Government.</em></p>
+<p>&nbsp;<em>This paper has been stamped with the insignia of the Imperial Government.</em></p>
 <hr /><center><img src="sollogo.png" /></center>
 "}

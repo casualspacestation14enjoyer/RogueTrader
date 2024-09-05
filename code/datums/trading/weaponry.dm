@@ -43,7 +43,7 @@
 	name = "Energy Gun Shop Employee"
 	name_language = TRADER_DEFAULT_NAME
 	origin = "EGun Shop"
-	possible_origins = list("The Emperor's Lasgun Shop", "Future Guns", "Solar Army", "Kiefer's Dependable Electric Arms", "Olympus Kingsport")
+	possible_origins = list("The Emperor's Lasgun Shop", "Future Guns", "Solar Guard", "Kiefer's Dependable Electric Arms", "Olympus Kingsport")
 	speech = list(TRADER_HAIL_GENERIC    = "Welcome to the future of warfare! ORIGIN, your one-stop shop for energy weaponry!",
 				TRADER_HAIL_DENY         = "I'm sorry, your communication channel has been blacklisted.",
 

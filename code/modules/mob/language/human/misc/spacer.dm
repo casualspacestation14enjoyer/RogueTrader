@@ -1,11 +1,11 @@
 /datum/language/spacer
-	name = LANGUAGE_SPACER
+	name = LANGUAGE_LOW_GOTHIC
 	desc = "A rough, informal language used infrequently by humans as a last resort when attempts to establish dialogue in more proper languages fail and no autotranslators are available."
 	warning = "Automatically given if spawning with no languages."
 	key = "j"
 	shorthand = "Spc"
 	partial_understanding = list(
-		LANGUAGE_HUMAN_EURO = 25,
+		LANGUAGE_HIGH_GOTHIC = 25,
 		LANGUAGE_HUMAN_CHINESE = 25,
 		LANGUAGE_HUMAN_ARABIC = 25,
 		LANGUAGE_HUMAN_INDIAN = 25,

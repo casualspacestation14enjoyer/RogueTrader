@@ -5,8 +5,8 @@
 
 
 /obj/item/clothing/accessory/tunic/nanotrasen
-	name = "\improper NanoTrasen tunic"
-	desc = "A fashionable tunic that NanoTrasen provides to their lab workers."
+	name = "\improper Necromundan tunic"
+	desc = "A fashionable tunic that Necromundan provides to their lab workers."
 	icon_state = "tunic_nt"
 
 
@@ -28,8 +28,8 @@
 
 
 /obj/item/clothing/accessory/tunic/exec/nanotrasen
-	name = "\improper NanoTrasen executive tunic"
-	desc = "A fashionable tunic that NanoTrasen provides to their lab workers."
+	name = "\improper Necromundan executive tunic"
+	desc = "A fashionable tunic that Necromundan provides to their lab workers."
 	icon_state = "tunicblack_nt"
 
 

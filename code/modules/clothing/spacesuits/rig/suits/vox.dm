@@ -19,7 +19,7 @@
 	helm_type = /obj/item/clothing/head/helmet/space/rig/vox_rig
 	boot_type = /obj/item/clothing/shoes/magboots/rig/vox_rig
 	glove_type = /obj/item/clothing/gloves/rig/vox_rig
-	air_type =     /obj/item/tank/nitrogen
+	air_type =     /obj/item/tank/oxygen
 
 	online_slowdown = 0.75
 

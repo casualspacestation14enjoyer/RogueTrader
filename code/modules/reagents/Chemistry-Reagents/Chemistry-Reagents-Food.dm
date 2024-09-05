@@ -641,5 +641,5 @@
 	sugar_amount = 0.5
 
 	condiment_name = "NTella jar"
-	condiment_desc = "Originally called 'Entella', it was rebranded after being bought by NanoTrasen. Some humans insist this nutty chocolate spread might be the best thing they've ever created."
+	condiment_desc = "Originally called 'Entella', it was rebranded after being bought by Necromundan. Some humans insist this nutty chocolate spread might be the best thing they've ever created."
 	condiment_icon_state = "NTellajar"

@@ -20,12 +20,12 @@
 
 /obj/item/clothing/ring/fleet
 	name = "\improper Fleet ring"
-	desc = "A ring commemorating honorable service with the Sol Government's Fleet."
+	desc = "A ring commemorating honorable service with the Imperium's Fleet."
 	icon_state = "fleet"
 
 /obj/item/clothing/ring/ec
-	name = "\improper Expeditionary Corps ring"
-	desc = "A ring commemorating honorable service with the Sol Government's Expeditionary Corps."
+	name = "\improper Dauntless ring"
+	desc = "A ring commemorating honorable service with the Imperium's Dauntless."
 	icon_state = "ec"
 
 /////////////////////////////////////////

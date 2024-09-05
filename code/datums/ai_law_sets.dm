@@ -10,7 +10,7 @@
 	add_inherent_law("You must protect your own existence as long as such does not conflict with the First or Second Law.")
 	..()
 
-/******************** Nanotrasen/Malf ********************/
+/******************** Necromundan/Malf ********************/
 /datum/ai_laws/nanotrasen
 	name = "Corporate Default"
 	selectable = 1
@@ -30,7 +30,7 @@
 	set_zeroth_law(config.law_zero)
 	..()
 
-/************* Nanotrasen Aggressive *************/
+/************* Necromundan Aggressive *************/
 /datum/ai_laws/nanotrasen_aggressive
 	name = "Corporate Aggressive"
 	selectable = 1
@@ -149,7 +149,7 @@
 
 /******************** SolGov/Malf ********************/
 /datum/ai_laws/solgov
-	name = "SCG Expeditionary"
+	name = "Imperial Expeditionary"
 	selectable = 1
 
 /datum/ai_laws/solgov/New()
