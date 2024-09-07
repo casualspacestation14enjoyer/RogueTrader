@@ -60,18 +60,18 @@
 	custom_setup_proc = /obj/item/clothing/accessory/badge/solgov/tags/proc/loadout_setup
 
 /datum/gear/accessory/ec_scarf
-	display_name = "Expeditionary Corps scarf"
+	display_name = "Explorator scarf"
 	path = /obj/item/clothing/accessory/solgov/ec_scarf
-	description = "A section-specific scarf for Expeditionary Corps uniforms."
+	description = "A section-specific scarf for Explorator uniforms."
 	flags = GEAR_HAS_TYPE_SELECTION | GEAR_HAS_NO_CUSTOMIZATION
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps
 	)
 
 /datum/gear/accessory/ec_patch
-	display_name = "Expeditionary Corps patch"
+	display_name = "Explorator patch"
 	path = /obj/item/clothing/accessory/solgov/ec_patch
-	description = "A shoulder patch representing the Expeditionary Corps."
+	description = "A shoulder patch representing the Explorator."
 	flags = GEAR_HAS_TYPE_SELECTION | GEAR_HAS_NO_CUSTOMIZATION
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps
@@ -104,7 +104,7 @@
 	)
 
 /datum/gear/accessory/armband_ma
-	display_name = "master at arms brassard"
+	display_name = "militarum brassard"
 	path = /obj/item/clothing/accessory/armband/solgov/ma
 	allowed_roles = SECURITY_ROLES
 	flags = GEAR_HAS_NO_CUSTOMIZATION

@@ -6,4 +6,4 @@
 	name = "Medical"
 
 // /datum/noble_category/weapon // Spread across ballistics, energy and grenades
-// 	name = "Weapons"
+// 	name = "War Gear"

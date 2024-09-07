@@ -36,7 +36,7 @@
 	slot_flags = SLOT_BELT | SLOT_BACK
 
 /obj/item/material/sword/katana
-	name = "katana"
+	name = "grim blade"
 	desc = "Woefully underpowered in D20. This one looks pretty sharp."
 	icon = 'icons/obj/weapons/melee_physical.dmi'
 	icon_state = "katana"

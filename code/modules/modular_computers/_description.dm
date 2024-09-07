@@ -3,7 +3,7 @@ Program-based computers, designed to replace computer3 project and eventually mo
 
 
 1. Basic information
-Program based computers will allow you to do multiple things from single computer. Each computer will have programs, with more being downloadable from NTNet (stationwide network with wireless coverage)
+Program based cogitators will allow you to do multiple things from single computer. Each computer will have programs, with more being downloadable from NTNet (stationwide network with wireless coverage)
 if user has apropriate ID card access. It will be possible to hack the computer by using an emag on it - the emag will have to be completely new and will be consumed on use, but it will
 lift ALL locks on ALL installed programs, and allow download of programs even if your ID doesn't have access to them. Computers will have hard drives that can store files.
 Files can be programs (datum/computer_file/program/ subtype) or data files (datum/computer_file/data/ subtypes). Program for sending files will be available that will allow transfer via NTNet.
@@ -38,7 +38,7 @@ Disk Drive: Allows usage of portable data disks.
 Nano Printer: Allows the computer to scan paper contents and save them to file, as well as recycle papers and print stuff on it.
 
 4. NTNet
-NTNet is stationwide network that allows users to download programs needed for their work. It will be possible to send any files to other active computers using relevant program (NTN Transfer).
+NTNet is stationwide network that allows users to download programs needed for their work. It will be possible to send any files to other active cogitators using relevant program (NTN Transfer).
 NTNet is under jurisdiction of both Engineering and Research. Engineering is responsible for any repairs if necessary and research is responsible for monitoring. It is similar to PDA messaging.
 Operation requires functional "NTNet Relay" which is by default placed on tcommsat. If the relay is damaged NTNet will be offline until it is replaced. Multiple relays bring extra redundancy,
 if one is destroyed the second will take over. If all relays are gone it stops working, simple as that. NTNet may be altered via administration console available to Chief Science Officer. It is
@@ -52,7 +52,7 @@ What i plan to add:
 Note: XXXXDB programs will use ingame_manuals to display basic help for players, similar to how books, etc. do
 
 Basic - Software in this bundle is automagically preinstalled in every new computer
-	NTN Transfer - Allows P2P transfer of files to other computers that run this.
+	NTN Transfer - Allows P2P transfer of files to other cogitators that run this.
 	Configurator - Allows configuration of computer's hardware, basically status screen.
 	File Browser - Allows you to browse all files stored on the computer. Allows renaming/deleting of files.
 	TXT Editor - Allows you editing data files in text editor mode.
@@ -85,7 +85,7 @@ Security - Requires "Security" access on ID card (ie. HOS, Security officer, Det
 	Camera Uplink - Allows viewing cameras around the station.
 
 Command - Requires "Bridge" access on ID card (all heads)
-	Alertcon Access - Allows changing of alert levels. Red requires activation from two computers with two IDs similar to how those wall mounted devices do.
+	Alertcon Access - Allows changing of alert levels. Red requires activation from two cogitators with two IDs similar to how those wall mounted devices do.
 	Employment Records Access - Allows reading of employment records. Printing requires NanoPrinter hardware.
 	Communication Console - Allows sending emergency messages to Central.
 	Emergency Shuttle Control Console - Allows calling/recalling the emergency shuttle.

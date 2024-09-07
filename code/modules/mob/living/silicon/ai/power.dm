@@ -171,9 +171,9 @@
 		self_shutdown = 0
 		return
 
-	var/confirm = alert("Are you sure that you want to shut yourself down? You can reboot yourself later by using the \"Shutdown\" command again. This will put you into reduced power usage mode, at the cost of losing most functions.", "Confirm Shutdown", "Yes", "No")
+	var/confirm = alert("Are you sure that you want to shut yourself down? You can reboot yourself later by using the \"Shutdown\" command again. This will put you into reduced power usage mode, at the cost of losing most functions.", "Confirm Shutdown", "Compliance", "No")
 
-	if(confirm == "Yes")
+	if(confirm == "Compliance")
 		to_chat(src, SPAN_NOTICE("Shutting down. Minimal power mode: Enabled. You may reboot yourself by using the \"Shutdown\" command again."))
 		self_shutdown = 1
 		return

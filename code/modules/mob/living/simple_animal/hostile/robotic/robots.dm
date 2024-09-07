@@ -1,8 +1,8 @@
 // Laser version of defense robots: Kiting mobs that pack a moderate punch.
 
 /mob/living/simple_animal/hostile/hivebot/ranged_damage/fleet_robot
-	name = "\improper security robot"
-	desc = "A relatively recent model of a 'tracker' security subaltern, armed with a laser carbine."
+	name = "\improper militarum robot"
+	desc = "A relatively recent model of a 'tracker' militarum subaltern, armed with a laser carbine."
 	icon = 'icons/mob/hostile_robot.dmi'
 	icon_state = "fleetlaser"
 	icon_dead = "fleetlaser"
@@ -73,7 +73,7 @@
 // Ion version of the defending robots. Watch the friendly fire!
 
 /mob/living/simple_animal/hostile/hivebot/ranged_damage/fleet_robot/ion
-	desc = "A relatively recent model of a 'tracker' security subaltern, armed with an ion rifle."
+	desc = "A relatively recent model of a 'tracker' militarum subaltern, armed with an ion rifle."
 	projectiletype = /obj/item/projectile/ion
 	projectilesound = 'sound/weapons/Laser.ogg'
 	icon_state = "fleetmagnetic"
@@ -86,7 +86,7 @@
 // Ballistic version of the defending robots. Deals way more damage than your regular bot.
 
 /mob/living/simple_animal/hostile/hivebot/ranged_damage/fleet_robot/ballistic
-	desc = "A relatively recent model of a 'tracker' security subaltern, armed with a sub-machine gun."
+	desc = "A relatively recent model of a 'tracker' militarum subaltern, armed with a sub-machine gun."
 	projectiletype = /obj/item/projectile/bullet/pistol/holdout
 	casingtype = /obj/item/ammo_casing/pistol/small
 	projectilesound = 'sound/weapons/gunshot/gunshot_smg.ogg'

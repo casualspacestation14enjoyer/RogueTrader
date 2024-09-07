@@ -37,7 +37,7 @@ The answer was five and a half years -ZeroBits
 		var/list/all_entries[0]
 		establish_old_db_connection()
 		if(!dbcon_old.IsConnected())
-			error_message = "Unable to contact External Archive. Please contact your system administrator for assistance."
+			error_message = "Unable to contact External Archive. Please contact your local mechanicum for assistance."
 		else
 			var/DBQuery/query = dbcon_old.NewQuery("SELECT id, author, title, category FROM library ORDER BY "+sanitizeSQL(sort_by))
 			query.Execute()
@@ -106,8 +106,8 @@ The answer was five and a half years -ZeroBits
 		if(!B.title)
 			B.title = "Untitled"
 
-		var/choice = input(usr, "Upload [B.name] by [B.author] to the External Archive?") in list("Yes", "No")
-		if(choice == "Yes")
+		var/choice = input(usr, "Upload [B.name] by [B.author] to the External Archive?") in list("Compliance", "No")
+		if(choice == "Compliance")
 			establish_old_db_connection()
 			if(!dbcon_old.IsConnected())
 				error_message = "Network Error: Connection to the Archive has been severed."

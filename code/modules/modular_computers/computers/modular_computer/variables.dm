@@ -15,7 +15,7 @@
 	var/bsod = FALSE										// Error screen displayed
 	var/ambience_last_played								// Last time sound was played
 
-	// Modular computers can run on various devices. Each DEVICE (Laptop, Console, Tablet,..)
+	// Modular cogitators can run on various devices. Each DEVICE (Laptop, Console, Tablet,..)
 	// must have it's own DMI file. Icon states must be called exactly the same in all files, but may look differently
 	// If you create a program which is limited to Laptops and Consoles you don't have to add it's icon_state overlay for Tablets too, for example.
 

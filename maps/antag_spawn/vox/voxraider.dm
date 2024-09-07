@@ -1,5 +1,5 @@
 /datum/map_template/ruin/antag_spawn/vox_raider
-	name = "Vox Raider"
+	name = "Xenos Raider"
 	suffixes = list("vox/vox_raider.dmm")
 	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/vox_raider)
 
@@ -21,7 +21,7 @@
 	shuttle = "Alien Interceptor"
 	fore_dir = WEST
 	vessel_size = SHIP_SIZE_SMALL
-	vessel_mass = 2500 //Vox alloys are lightweight or smthn. Idk.
+	vessel_mass = 2500 //Xenos alloys are lightweight or smthn. Idk.
 
 /datum/shuttle/autodock/overmap/vox_raider
 	name = "Alien Interceptor"

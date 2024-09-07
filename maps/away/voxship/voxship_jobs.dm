@@ -155,7 +155,7 @@
 var/global/const/access_voxship = "ACCESS_VOXSHIP"
 /datum/access/vox
 	id = access_voxship
-	desc = "Vox Ship"
+	desc = "Xenos Ship"
 	region = ACCESS_REGION_NONE
 
 /obj/item/card/id/voxship
@@ -171,7 +171,7 @@ var/global/const/access_voxship = "ACCESS_VOXSHIP"
 
 /singleton/hierarchy/outfit/job/voxship/crew
 	id_types = list(/obj/item/card/id/voxship)
-	name = ("Vox - Job - Shoal Scavenger")
+	name = ("Xenos - Job - Shoal Scavenger")
 	uniform = /obj/item/clothing/under/vox/vox_robes
 	r_pocket = /obj/item/device/radio
 	shoes = /obj/item/clothing/shoes/magboots/vox

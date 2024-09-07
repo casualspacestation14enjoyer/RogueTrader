@@ -102,7 +102,7 @@
 		)
 
 /obj/item/clothing/suit/storage/hooded/wintercoat/security
-	name = "security winter coat"
+	name = "militarum winter coat"
 	icon_state = "coatsecurity"
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES,

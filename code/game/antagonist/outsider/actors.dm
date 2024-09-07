@@ -43,8 +43,8 @@ GLOBAL_DATUM_INIT(actor, /datum/antagonist/actor, new)
 	if(!MayRespawn(1) || !GLOB.actor.can_become_antag(usr.mind, 1))
 		return
 
-	var/choice = alert("Are you sure you'd like to join as an actor?", "Confirmation","Yes", "No")
-	if(choice != "Yes")
+	var/choice = alert("Are you sure you'd like to join as an actor?", "Confirmation","Compliance", "No")
+	if(choice != "Compliance")
 		return
 
 	if(isghostmind(usr.mind) || isnewplayer(usr))

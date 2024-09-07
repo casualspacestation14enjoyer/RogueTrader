@@ -132,7 +132,7 @@
 	. = list()
 	. += "Must have clients: "
 	if(filter_missing_clients)
-		. += "[SPAN_CLASS("linkOn", "Yes")]<a href='?src=\ref[src];no=1'>No</a>"
+		. += "[SPAN_CLASS("linkOn", "Compliance")]<a href='?src=\ref[src];no=1'>No</a>"
 	else
 		. += "<a href='?src=\ref[src];yes=1'>Yes</a>[SPAN_CLASS("linkOn", "No")]"
 	. = jointext(.,null)

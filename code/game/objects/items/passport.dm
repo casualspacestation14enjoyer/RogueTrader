@@ -43,17 +43,17 @@
 /obj/item/passport/venus
 	name = "\improper Venusian passport"
 	icon_state = "passport_scg2"
-	desc = "A passport from Venus, within Imperial space."
+	desc = "A passport from Vostroya, within Imperial space."
 
 /obj/item/passport/luna
-	name = "\improper Holy Terrapassport"
+	name = "\improper Holy Terra passport"
 	icon_state = "passport_scg2"
-	desc = "A passport from Luna, within Imperial space."
+	desc = "A passport from Vostroya, within Imperial space."
 
 /obj/item/passport/mars
-	name = "\improper Mars passport"
+	name = "\improper Sancor passport"
 	icon_state = "passport_scg2"
-	desc = "A passport from Mars, within Imperial space."
+	desc = "A passport from Sancor, within Imperial space."
 
 /obj/item/passport/phobos
 	name = "\improper Phobos passport"
@@ -116,9 +116,9 @@
 	desc = "A passport from the southern part of Gaia, under military occupation of the Imperial."
 
 /obj/item/passport/iccg
-	name = "\improper ICCG passport"
+	name = "\improper Tau passport"
 	icon_state = "passport_iccg"
-	desc = "A passport from the Independent Colonial Confederation of Gilgamesh."
+	desc = "A passport from the Tau Empire."
 
 /obj/item/passport/north_gaia
 	name = "\improper Protectorate of Gaia passport"
@@ -133,12 +133,12 @@
 /obj/item/passport/terra
 	name = "\improper Terra passport"
 	icon_state = "passport_iccg2"
-	desc = "A passport from Terra, within ICCG space."
+	desc = "A passport from Terra, within Tau space."
 
 /obj/item/passport/novayazemlya
 	name = "\improper Novaya Zemlya passport"
 	icon_state = "passport_iccg2"
-	desc = "A passport from Novaya Zemlya, within ICCG space."
+	desc = "A passport from Novaya Zemlya, within Tau space."
 
 /obj/item/passport/saveel
 	name = "\improper Saveel passport"

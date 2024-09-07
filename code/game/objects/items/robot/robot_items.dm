@@ -57,7 +57,7 @@
 
 
 /obj/item/borg/sight/hud/sec
-	name = "security hud"
+	name = "militarum hud"
 	icon_state = "securityhud"
 	icon = 'icons/obj/clothing/obj_eyes.dmi'
 	hud_type = HUD_SECURITY

@@ -164,7 +164,7 @@ Middle-Click / Ctrl-Click - Jump a placeholder to a point and deselect it
 
 /obj/overmap/visitable/placeholder/gcn_a298
 	name = "A298-Class Patrol Vessel"
-	desc = "A small, agile military and policing starship built by the Confederation Navy."
+	desc = "A small, agile military and policing starship built by the Tau Navy."
 	icon = 'gcn-64.dmi'
 	icon_state = "pv-a298"
 	pixel_x = -16
@@ -174,7 +174,7 @@ Middle-Click / Ctrl-Click - Jump a placeholder to a point and deselect it
 
 /obj/overmap/visitable/placeholder/gcn_centurion
 	name = "Centurion-Class Frigate"
-	desc = "A medium sized military light carrier built by the Confederation Navy."
+	desc = "A medium sized military light carrier built by the Tau Navy."
 	icon = 'gcn-64.dmi'
 	icon_state = "fr-centurion"
 	pixel_x = -16
@@ -183,7 +183,7 @@ Middle-Click / Ctrl-Click - Jump a placeholder to a point and deselect it
 
 /obj/overmap/visitable/placeholder/gcn_chevalier
 	name = "Chevalier-Class Frigate"
-	desc = "A medium sized line warship built by the Confederation Navy."
+	desc = "A medium sized line warship built by the Tau Navy."
 	icon = 'gcn-64.dmi'
 	icon_state = "fr-chevalier"
 	pixel_x = -16
@@ -193,7 +193,7 @@ Middle-Click / Ctrl-Click - Jump a placeholder to a point and deselect it
 
 /obj/overmap/visitable/placeholder/gcn_lucerne
 	name = "Lucerne-Class Destroyer"
-	desc = "A large mixed-role capital warship built by the Confederation Navy."
+	desc = "A large mixed-role capital warship built by the Tau Navy."
 	icon = 'gcn-64.dmi'
 	icon_state = "ds-lucerne"
 	pixel_x = -16
@@ -204,7 +204,7 @@ Middle-Click / Ctrl-Click - Jump a placeholder to a point and deselect it
 
 /obj/overmap/visitable/placeholder/gcn_wombat
 	name = "Wombat-Model Heavy Interceptor"
-	desc = "A medium-sized interceptor platform, built by the Confederation Navy"
+	desc = "A medium-sized interceptor platform, built by the Tau Navy"
 	icon = 'gcn-32.dmi'
 	icon_state = "sf-wombat"
 	speed = 0.3

@@ -162,7 +162,7 @@
 	containername = "\improper Vending Machine"
 
 /singleton/hierarchy/supply_pack/supply/solvendor
-	name = "Vendor - Mars Mart SCC"
+	name = "Vendor - Sancor Mart SCC"
 	contains = list(/obj/machinery/vending/sol{anchored = FALSE})
 	cost = 150
 	containertype = /obj/structure/largecrate

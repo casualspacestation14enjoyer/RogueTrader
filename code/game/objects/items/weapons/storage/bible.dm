@@ -134,8 +134,8 @@
 				if(icon_picked != "don't change" && icon_picked)
 					icon_state = icon_picked
 				if(i != 0)
-					var/confirm = alert(M, "Is this what you want? Chances remaining: [i]", "Confirmation", "Yes", "No")
-					if(confirm == "Yes")
+					var/confirm = alert(M, "Is this what you want? Chances remaining: [i]", "Confirmation", "Compliance", "No")
+					if(confirm == "Compliance")
 						icon_changed = 1
 						break
 				if(i == 0)

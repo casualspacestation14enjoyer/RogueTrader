@@ -134,7 +134,7 @@
 			to_chat(src, SPAN_WARNING("Please wait for server initialization to complete..."))
 			return
 
-		if(!config.respawn_delay || client.holder || alert(src,"Are you sure you wish to observe? You will have to wait [config.respawn_delay] minute\s before being able to respawn!","Player Setup","Yes","No") == "Yes")
+		if(!config.respawn_delay || client.holder || alert(src,"Are you sure you wish to observe? You will have to wait [config.respawn_delay] minute\s before being able to respawn!","Player Setup","Compliance","No") == "Compliance")
 			if(!client)	return 1
 			var/mob/observer/ghost/observer = new()
 
@@ -241,8 +241,8 @@
 		return 0
 
 	if (!check_occupation_set(job))
-		var/choice = alert("You do not have [job.title] set as your occupation, are you sure you want to join as this role?", "Occupation Mismatch", "Yes", "No")
-		if (choice != "Yes")
+		var/choice = alert("You do not have [job.title] set as your occupation, are you sure you want to join as this role?", "Occupation Mismatch", "Compliance", "No")
+		if (choice != "Compliance")
 			return FALSE
 
 	SSjobs.assign_role(src, job.title, 1)

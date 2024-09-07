@@ -183,10 +183,10 @@
 		if(action_type == "Cancel" || !action_type)
 			return
 
-		if(alert("Are you really sure you want to delete all objects of type [O.type]?",,"Yes","No") != "Yes")
+		if(alert("Are you really sure you want to delete all objects of type [O.type]?",,"Compliance","No") != "Compliance")
 			return
 
-		if(alert("Second confirmation required. Delete?",,"Yes","No") != "Yes")
+		if(alert("Second confirmation required. Delete?",,"Compliance","No") != "Compliance")
 			return
 
 		var/O_type = O.type

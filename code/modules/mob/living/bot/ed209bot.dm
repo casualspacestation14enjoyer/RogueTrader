@@ -1,6 +1,6 @@
 /mob/living/bot/secbot/ed209
 	name = "ED-209 Security Robot"
-	desc = "A security robot.  He looks less than thrilled."
+	desc = "A militarum robot.  He looks less than thrilled."
 	icon = 'icons/mob/bot/ED209.dmi'
 	icon_state = "ed2090"
 	attack_state = "ed209-c"

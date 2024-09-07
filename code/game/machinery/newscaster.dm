@@ -239,7 +239,7 @@ var/global/list/obj/machinery/newscaster/allCasters = list() //Global list that 
 		switch(screen)
 			if(0)
 				dat += "Welcome to Newscasting Unit #[src.unit_no].<BR> Interface & News networks Operational."
-				dat += "<BR>[FONT_SMALL("Property of Ward-Takahashi GMB")]"
+				dat += "<BR>[FONT_SMALL("Property of Vostroya GMB")]"
 				if(connected_group.wanted_issue)
 					dat+= "<HR><A href='?src=\ref[src];view_wanted=1'>Read Wanted Issue</A>"
 				dat+= "<HR><BR><A href='?src=\ref[src];create_channel=1'>Create Feed Channel</A>"

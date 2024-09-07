@@ -14,7 +14,7 @@
 	berets["customs and trade beret"] = /obj/item/clothing/head/beret/solgov/customs
 	berets["government research beret"] = /obj/item/clothing/head/beret/solgov/research
 	berets["health service beret"] = /obj/item/clothing/head/beret/solgov/health
-	berets["border security beret"] = /obj/item/clothing/head/beret/solgov/borderguard
+	berets["border militarum beret"] = /obj/item/clothing/head/beret/solgov/borderguard
 	gear_tweaks += new/datum/gear_tweak/path(berets)
 
 /datum/gear/head/veteranhat
@@ -95,7 +95,7 @@
 	allowed_roles = SECURITY_ROLES
 
 /datum/gear/head/fleetberet
-	display_name = "Fleet branch beret selection"
+	display_name = "Imperial Navy branch beret selection"
 	description = "A beret denoting service in one of the fleets within the Imperial Fleet."
 	path = /obj/item/clothing/head/beret/solgov/fleet/branch
 	allowed_branches = list(
@@ -106,11 +106,11 @@
 /datum/gear/head/fleetberet/New()
 	..()
 	var/berets = list()
-	berets["first fleet beret"] = /obj/item/clothing/head/beret/solgov/fleet/branch
-	berets["second fleet beret"] = /obj/item/clothing/head/beret/solgov/fleet/branch/second
-	berets["third fleet beret"] = /obj/item/clothing/head/beret/solgov/fleet/branch/third
-	berets["fourth fleet beret"] = /obj/item/clothing/head/beret/solgov/fleet/branch/fourth
-	berets["fifth fleet beret"] = /obj/item/clothing/head/beret/solgov/fleet/branch/fifth
+	berets["first militarum beret"] = /obj/item/clothing/head/beret/solgov/fleet/branch
+	berets["second militarum beret"] = /obj/item/clothing/head/beret/solgov/fleet/branch/second
+	berets["third militarum beret"] = /obj/item/clothing/head/beret/solgov/fleet/branch/third
+	berets["fourth militarum beret"] = /obj/item/clothing/head/beret/solgov/fleet/branch/fourth
+	berets["fifth militarum beret"] = /obj/item/clothing/head/beret/solgov/fleet/branch/fifth
 	gear_tweaks += new/datum/gear_tweak/path(berets)
 
 /datum/gear/head/ECberet
@@ -147,7 +147,7 @@
 	var/list/options = list()
 	options["Imperial flag"] = /obj/item/clothing/accessory/armor_tag/solgov
 	options["EC flag"] = /obj/item/clothing/accessory/armor_tag/solgov/ec
-	options["Fleet flag"] =  /obj/item/clothing/accessory/armor_tag/solgov/fleet
+	options["Imperial Navy flag"] =  /obj/item/clothing/accessory/armor_tag/solgov/fleet
 	gear_tweaks += new /datum/gear_tweak/path (options)
 
 

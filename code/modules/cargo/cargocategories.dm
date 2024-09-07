@@ -9,4 +9,4 @@
 	name = "Armours"
 
 //datum/cargo_category/weapon // separated into ballistics, energy, grenades
-//	name = "Weapons"
+//	name = "War Gear"

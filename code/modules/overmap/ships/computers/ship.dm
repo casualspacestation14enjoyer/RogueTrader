@@ -1,5 +1,5 @@
 /*
-While these computers can be placed anywhere, they will only function if placed on either a non-space, non-shuttle turf
+While these cogitators can be placed anywhere, they will only function if placed on either a non-space, non-shuttle turf
 with an /obj/overmap/visitable/ship present elsewhere on that z level, or else placed in a shuttle area with an /obj/overmap/visitable/ship
 somewhere on that shuttle. Subtypes of these can be then used to perform ship overmap movement functions.
 */

@@ -6,7 +6,7 @@
 		to_chat(src, "Only administrators may use this command.")
 		return
 
-	if(alert("WARNING: This command should not be run on a live server. Do you want to continue?", "Check Piping", "No", "Yes") == "No")
+	if(alert("WARNING: This command should not be run on a live server. Do you want to continue?", "Check Piping", "No", "Compliance") == "No")
 		return
 
 	to_chat(usr, "Checking for disconnected pipes...")

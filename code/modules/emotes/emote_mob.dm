@@ -30,7 +30,7 @@
 			if(!message)
 				return
 			if (!m_type)
-				if(alert(src, "Is this an audible emote?", "Emote", "Yes", "No") == "No")
+				if(alert(src, "Is this an audible emote?", "Emote", "Compliance", "No") == "No")
 					m_type = VISIBLE_MESSAGE
 				else
 					m_type = AUDIBLE_MESSAGE

@@ -489,7 +489,7 @@
 
 /datum/reagent/capsaicin/condensed
 	name = "Condensed Capsaicin"
-	description = "A chemical agent used for self-defense and in police work."
+	description = "A chemical agent used for self-defense and in enforcer work."
 	taste_description = "scorching agony"
 	taste_mult = 10
 	reagent_state = LIQUID

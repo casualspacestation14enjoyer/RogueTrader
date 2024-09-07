@@ -268,7 +268,7 @@ won't update every console in existence) but it's more of a hassle to do. Also, 
 		if(linked_destroy.busy)
 			to_chat(usr, SPAN_NOTICE("The destructive analyzer is busy at the moment."))
 			return TOPIC_HANDLED
-		if(alert("Proceeding will destroy loaded item. Continue?", "Destructive analyzer confirmation", "Yes", "No") == "No")
+		if(alert("Proceeding will destroy loaded item. Continue?", "Destructive analyzer confirmation", "Compliance", "No") == "No")
 			return TOPIC_HANDLED
 		CHECK_DESTROY
 		deconstruct(weakref(usr))

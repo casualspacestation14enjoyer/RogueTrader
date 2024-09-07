@@ -40,45 +40,45 @@
 
 	var/chosen_loot_type
 	var/list/chosen_loot_types
-	var/choice = alert("Do you wish to supply a custom loot list?",,"No","Yes")
-	if(choice == "Yes")
+	var/choice = alert("Do you wish to supply a custom loot list?",,"No","Compliance")
+	if(choice == "Compliance")
 		chosen_loot_types = list()
 
-		choice = alert("Do you wish to add mobs?",,"No","Yes")
-		if(choice == "Yes")
+		choice = alert("Do you wish to add mobs?",,"No","Compliance")
+		if(choice == "Compliance")
 			while(1)
 				var/adding_loot_type = input("Select a new loot path. Cancel to finish.", "Loot Selection", null) as null|anything in typesof(/mob/living)
 				if(!adding_loot_type)
 					break
 				chosen_loot_types |= adding_loot_type
-		choice = alert("Do you wish to add structures or machines?",,"No","Yes")
-		if(choice == "Yes")
+		choice = alert("Do you wish to add structures or machines?",,"No","Compliance")
+		if(choice == "Compliance")
 			while(1)
 				var/adding_loot_type = input("Select a new loot path. Cancel to finish.", "Loot Selection", null) as null|anything in typesof(/obj/structure) + typesof(/obj/machinery)
 				if(!adding_loot_type)
 					break
 				chosen_loot_types |= adding_loot_type
-		choice = alert("Do you wish to add any items?",,"No","Yes")
-		if(choice == "Yes")
+		choice = alert("Do you wish to add any items?",,"No","Compliance")
+		if(choice == "Compliance")
 			while(1)
 				var/adding_loot_type = input("Select a new loot path. Cancel to finish.", "Loot Selection", null) as null|anything in typesof(/obj/item)
 				if(!adding_loot_type)
 					break
 				chosen_loot_types |= adding_loot_type
 
-		choice = alert("Do you wish to add ABSOLUTELY ANYTHING ELSE? (you really shouldn't need to)",,"No","Yes")
-		if(choice == "Yes")
+		choice = alert("Do you wish to add ABSOLUTELY ANYTHING ELSE? (you really shouldn't need to)",,"No","Compliance")
+		if(choice == "Compliance")
 			while(1)
 				var/adding_loot_type = input("Select a new loot path. Cancel to finish.", "Loot Selection", null) as null|anything in typesof(/atom/movable)
 				if(!adding_loot_type)
 					break
 				chosen_loot_types |= adding_loot_type
 	else
-		choice = alert("Do you wish to specify a loot type?",,"No","Yes")
-		if(choice == "Yes")
+		choice = alert("Do you wish to specify a loot type?",,"No","Compliance")
+		if(choice == "Compliance")
 			chosen_loot_type = input("Select a loot type.", "Loot Selection", null) as null|anything in supply_drop_random_loot_types()
 
-	choice = alert("Are you SURE you wish to deploy this supply drop? It will cause a sizable explosion and gib anyone underneath it.",,"No","Yes")
+	choice = alert("Are you SURE you wish to deploy this supply drop? It will cause a sizable explosion and gib anyone underneath it.",,"No","Compliance")
 	if(choice == "No")
 		return
 	log_admin("[key_name(usr)] dropped supplies at ([usr.x],[usr.y],[usr.z])")

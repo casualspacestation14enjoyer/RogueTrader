@@ -20,7 +20,7 @@
 	for(var/S in template.get_affected_turfs(T,centered = TRUE))
 		preview += image('icons/turf/overlays.dmi',S,"greenOverlay")
 	usr.client.images += preview
-	if(alert(usr,"Confirm location.","Template Confirm","Yes","No") == "Yes")
+	if(alert(usr,"Confirm location.","Template Confirm","Compliance","No") == "Compliance")
 		log_and_message_admins("is attempting to place a map template [log_name].")
 		to_chat(usr, "Attempting to place map template [log_name].")
 		if(template.load(T, centered = TRUE))

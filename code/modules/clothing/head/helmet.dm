@@ -59,7 +59,7 @@
 
 
 /obj/item/clothing/head/helmet/nt
-	name = "corporate security helmet"
+	name = "corporate militarum helmet"
 	desc = "A helmet with 'CORPORATE SECURITY' printed on the back in red lettering."
 	icon_state = "helmet_nt"
 
@@ -226,7 +226,7 @@
 
 //Security
 /obj/item/clothing/head/helmet/ert/security
-	name = "asset protection security helmet"
+	name = "asset protection militarum helmet"
 	desc = "An in-atmosphere helmet worn by many imperial and private asset protection forces. Has red highlights."
 	icon_state = "erthelmet_sec"
 

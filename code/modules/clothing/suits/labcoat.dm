@@ -82,8 +82,8 @@
 	icon_state = "labcoat_nt"
 
 /obj/item/clothing/suit/storage/toggle/labcoat/science/heph
-	name = "\improper Hephaestus Industries labcoat"
-	desc = "A suit that protects against minor chemical spills. It has a cyan stripe on the shoulder and cyan trim on the sleeves, denoting it as a Hephaestus Industries labcoat."
+	name = "\improper Vostroyan labcoat"
+	desc = "A suit that protects against minor chemical spills. It has a cyan stripe on the shoulder and cyan trim on the sleeves, denoting it as a Vostroyan labcoat."
 	icon_state = "labcoat_heph"
 
 /obj/item/clothing/suit/storage/toggle/labcoat/science/zeng
@@ -130,7 +130,7 @@
 
 /obj/item/clothing/suit/storage/toggle/labcoat/rd/heph
 	name = "\improper HI research director's labcoat"
-	desc = "A full-body labcoat covered in cyan and black designs, denoting it as a Hephaestus Industries management coat. Judging by the amount of designs on it, it is only to be worn by the most enthusiastic of employees."
+	desc = "A full-body labcoat covered in cyan and black designs, denoting it as a Vostroyan management coat. Judging by the amount of designs on it, it is only to be worn by the most enthusiastic of employees."
 	icon_state = "labcoat_rd_heph"
 
 /obj/item/clothing/suit/storage/toggle/labcoat/rd/zeng

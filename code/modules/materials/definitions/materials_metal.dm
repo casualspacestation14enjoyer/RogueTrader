@@ -327,7 +327,7 @@
 
 /material/iron
 	name = MATERIAL_IRON
-	lore_text = "A ubiquitous, very common metal. The epitaph of stars and the primary ingredient in Earth's core."
+	lore_text = "A ubiquitous, very common metal. The epitaph of stars and the primary ingredient in Terra's core."
 	wall_name = "bulkhead"
 	stack_type = /obj/item/stack/material/iron
 	icon_colour = "#5c5454"

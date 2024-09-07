@@ -192,7 +192,7 @@
 	item_state = "owl"
 	body_parts_covered = HEAD|FACE|EYES
 
-//Vox Unique Masks
+//Xenos Unique Masks
 
 /obj/item/clothing/mask/gas/vox
 	name = "vox breathing mask"

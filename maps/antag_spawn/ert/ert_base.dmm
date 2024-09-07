@@ -919,8 +919,8 @@
 	pixel_x = 4;
 	pixel_y = 32
 	},
-/obj/item/taperoll/police,
-/obj/item/taperoll/police,
+/obj/item/taperoll/enforcer,
+/obj/item/taperoll/enforcer,
 /turf/unsimulated/floor{
 	dir = 1;
 	icon_state = "vault"

@@ -169,7 +169,7 @@
 	if(!CanInteract(user, DefaultTopicState()))
 		return FALSE
 	if(locked)
-		to_chat(user, "The machine is locked, you are unable to use it.")
+		to_chat(user, "Rites of access insufficient, further tampering may result in immediate termination.")
 		return TRUE
 	if(is_open)
 		to_chat(user, "The panel must be closed before operating this machine.")

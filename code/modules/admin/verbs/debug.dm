@@ -67,8 +67,8 @@
 	if(!choice)
 		return 0
 	if(!isghost(choice))
-		var/confirm = input("[choice.key] isn't ghosting right now. Are you sure you want to yank them out of them out of their body and place them in this pAI?", "Spawn pAI Confirmation", "No") in list("Yes", "No")
-		if(confirm != "Yes")
+		var/confirm = input("[choice.key] isn't ghosting right now. Are you sure you want to yank them out of them out of their body and place them in this pAI?", "Spawn pAI Confirmation", "No") in list("Compliance", "No")
+		if(confirm != "Compliance")
 			return 0
 	var/obj/item/device/paicard/card = new(T)
 	var/mob/living/silicon/pai/pai = new(card, card)
@@ -150,7 +150,7 @@
 
 	if(!check_rights(R_DEBUG|R_ADMIN))	return
 	if(M.ckey)
-		if(alert("This mob is being controlled by [M.ckey]. Are you sure you wish to assume control of it? [M.ckey] will be made a ghost.",,"Yes","No") != "Yes")
+		if(alert("This mob is being controlled by [M.ckey]. Are you sure you wish to assume control of it? [M.ckey] will be made a ghost.",,"Compliance","No") != "Compliance")
 			return
 		else
 			var/mob/observer/ghost/ghost = new/mob/observer/ghost(M,1)
@@ -273,7 +273,7 @@
 
 	var/reset_equipment = (outfit.flags&OUTFIT_RESET_EQUIPMENT)
 	if(!reset_equipment)
-		reset_equipment = alert("Do you wish to delete all current equipment first?", "Delete Equipment?","Yes", "No") == "Yes"
+		reset_equipment = alert("Do you wish to delete all current equipment first?", "Delete Equipment?","Compliance", "No") == "Compliance"
 	dressup_human(H, outfit, reset_equipment)
 
 /proc/dressup_human(mob/living/carbon/human/H, singleton/hierarchy/outfit/outfit, undress = TRUE)
@@ -289,7 +289,7 @@
 	set name = "Start Singularity"
 	set desc = "Sets up the singularity and all machines to get power flowing"
 
-	if(alert("Are you sure? This will start up the engine. Should only be used during debug!",,"Yes","No") != "Yes")
+	if(alert("Are you sure? This will start up the engine. Should only be used during debug!",,"Compliance","No") != "Compliance")
 		return
 
 	for(var/obj/machinery/power/emitter/E in world)
@@ -467,14 +467,14 @@
 	if (!theme)
 		theme = /datum/exoplanet_theme
 
-	var/daycycle = alert("Should the planet have a day-night cycle?","Day Night Cycle", "Yes", "No")
+	var/daycycle = alert("Should the planet have a day-night cycle?","Day Night Cycle", "Compliance", "No")
 
-	if (daycycle == "Yes")
+	if (daycycle == "Compliance")
 		daycycle = TRUE
 	else
 		daycycle = FALSE
 
-	var/last_chance = alert("Spawn exoplanet?", "Final Confirmation", "Yes", "Cancel")
+	var/last_chance = alert("Spawn exoplanet?", "Final Confirmation", "Compliance", "Cancel")
 
 	if (last_chance == "Cancel")
 		return

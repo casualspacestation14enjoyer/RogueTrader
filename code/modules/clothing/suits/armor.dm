@@ -45,7 +45,7 @@
 		)
 
 /obj/item/clothing/suit/armor/vest/old/security
-	name = "security armor"
+	name = "militarum armor"
 	desc = "An armored vest that protects against some damage. This one has a imperial badge."
 	icon_state = "armorsec"
 
@@ -161,7 +161,7 @@
 
 //Security
 /obj/item/clothing/suit/armor/vest/ert/security
-	name = "asset protection security armor"
+	name = "asset protection militarum armor"
 	desc = "A set of armor worn by many imperial and private asset protection forces. Has red highlights."
 	icon_state = "ertarmor_sec"
 
@@ -203,7 +203,7 @@
 
 /obj/item/clothing/suit/armor/vest/pcrc
 	name = "contractor armored vest"
-	desc = "A synthetic armor vest. This one is marked with the crest of Proxima Centauri Risk Control, a private security firm."
+	desc = "A synthetic armor vest. This one is marked with the crest of Proxima Centauri Risk Control, a private militarum firm."
 	icon_state = "pcrcvest"
 
 /obj/item/clothing/suit/armor/vest/press
@@ -233,7 +233,7 @@
 	siemens_coefficient = 0.6
 
 /obj/item/clothing/suit/storage/vest/nt
-	name = "corporate security heavy armored vest"
+	name = "corporate militarum heavy armored vest"
 	desc = "A synthetic armor vest with CORPORATE SECURITY printed in red lettering on the chest. This one has added webbing and ballistic plates."
 	icon_state = "ntwebvest"
 

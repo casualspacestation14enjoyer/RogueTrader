@@ -10,7 +10,7 @@
 /singleton/poster/torch/event1
 	icon_state="bsposter_event1"
 	name = "Justice for Joe"
-	desc = "A hand-written poster demanding the release of one SCPO Joseph Tornakov from Fleet Intelligence custody. It's somewhat faded."
+	desc = "A hand-written poster demanding the release of one SCPO Joseph Tornakov from Imperial Navy Intelligence custody. It's somewhat faded."
 
 /singleton/poster/torch/event2
 	icon_state="bsposter_event2"
@@ -20,9 +20,9 @@
 /singleton/poster/torch/event3
 	icon_state="bsposter_event3"
 	name = "Visit E-14b Outpost"
-	desc = "This poster invites personnel to visit the the E-14b research outpost, built through joint Imperial and Expeditionary Corps efforts. According to the poster, it's still under construction."
+	desc = "This poster invites personnel to visit the the E-14b research outpost, built through joint Imperial and Explorator efforts. According to the poster, it's still under construction."
 
 /singleton/poster/torch/event4
 	icon_state="bsposter_event4"
 	name = "Scientific Cooperation"
-	desc = "This poster depicts a Sol Expeditionary Corps captain shaking hands with a Imperial Pioneer Corps officer. It appears to espouse greater scientific cooperation between the two organisations."
+	desc = "This poster depicts a Sol Explorator captain shaking hands with a Imperial Pioneer Corps officer. It appears to espouse greater scientific cooperation between the two organisations."

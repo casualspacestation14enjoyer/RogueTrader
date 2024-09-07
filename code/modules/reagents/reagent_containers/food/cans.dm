@@ -89,7 +89,7 @@
 
 /obj/item/reagent_containers/food/drinks/cans/iced_tea
 	name = "vrisk serket iced tea"
-	desc = "That sweet, refreshing southern earthy flavor. That's where it's from, right? South Earth?"
+	desc = "That sweet, refreshing southern earthy flavor. That's where it's from, right? South Terra?"
 	icon_state = "ice_tea_can"
 	center_of_mass = "x=16;y=10"
 
@@ -222,7 +222,7 @@
 	reagents.add_reagent(/datum/reagent/ethanol/ale, 30)
 
 
-//Fox's Sodas from Legacy Bay: NSV Luna
+//Fox's Sodas from Legacy Bay: NSV Vostroya
 
 
 

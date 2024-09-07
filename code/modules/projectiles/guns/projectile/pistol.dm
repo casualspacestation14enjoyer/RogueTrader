@@ -43,7 +43,7 @@
 
 /obj/item/gun/projectile/pistol/magnum_pistol
 	name = "magnum pistol"
-	desc = "The HelTek Magnus, a robust handgun that uses high-caliber ammo. Issued to Confederation Pioneers for holster sized defence."
+	desc = "The HelTek Magnus, a robust handgun that uses high-caliber ammo. Issued to Tau Pioneers for holster sized defence."
 	icon = 'icons/obj/guns/magnum_pistol.dmi'
 	icon_state = "magnum"
 	item_state = "magnum"
@@ -64,7 +64,7 @@
 
 /obj/item/gun/projectile/pistol/throwback
 	name = "pistol"
-	desc = "A product of one of thousands of illegal workshops from around the galaxy. This one appears to be a clone of a 20th century design."
+	desc = "A product of one of thousands of illegal workshops from around the galaxy. This one appears to be a clone of a Pre-Heresy design."
 	icon = 'icons/obj/guns/pistol_throwback.dmi'
 	icon_state = "pistol1"
 	magazine_type = /obj/item/ammo_magazine/pistol/throwback
@@ -114,7 +114,7 @@
 
 /obj/item/gun/projectile/pistol/holdout
 	name = "holdout pistol"
-	desc = "The Lumoco Arms P3 Whisper. A small, easily concealable gun."
+	desc = "The Imperial P3 Whisper. A small, easily concealable gun."
 	icon = 'icons/obj/guns/holdout_pistol.dmi'
 	icon_state = "pistol"
 	item_state = null

@@ -29,7 +29,7 @@
 	head = /obj/item/clothing/head/helmet/solgov/pilot
 
 /singleton/hierarchy/outfit/job/torch/crew/exploration/pilot
-	name = OUTFIT_JOB_NAME("Shuttle Pilot - Expeditionary Corps")
+	name = OUTFIT_JOB_NAME("Shuttle Pilot - Explorator")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/exploration
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_types = list(/obj/item/card/id/torch/crew/pilot)

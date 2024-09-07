@@ -67,7 +67,7 @@
 
 /obj/item/gun/projectile/automatic/merc_smg
 	name = "submachine gun"
-	desc = "The Novaya Zemlya Arms C-20r is a lightweight and rapid firing SMG. In production since the 2280s, the C-20r has proliferated across human space, in some part due to it being issued to smaller ICCGN vessels."
+	desc = "The Valhalla Raptor Pattern is a lightweight and rapid firing SMG. In production since the 2280s, the Raptor Pattern has proliferated across human space, in some part due to it being issued to smaller Tau vessels."
 	icon = 'icons/obj/guns/merc_smg.dmi'
 	icon_state = "c20r"
 	item_state = "c20r"
@@ -102,7 +102,7 @@
 
 /obj/item/gun/projectile/automatic/assault_rifle
 	name = "assault rifle"
-	desc = "The rugged STS-35 is a durable automatic weapon of a make popular on the frontier worlds. Originally designed in the mid 20th century, today variants are made by most firearm producers. This one appears to be HI made, with the serial number conveniently absent."
+	desc = "The rugged Revenant Pattern is a durable automatic weapon of a make popular on the frontier worlds. Originally designed in the mid Pre-Heresy, today variants are made by most firearm producers. This one appears to be HI made, with the serial number conveniently absent."
 	icon = 'icons/obj/guns/assault_rifle.dmi'
 	icon_state = "arifle"
 	item_state = null
@@ -141,7 +141,7 @@
 
 /obj/item/gun/projectile/automatic/sec_smg
 	name = "submachine gun"
-	desc = "The WT-550 Saber is a cheap self-defense weapon, mass-produced by Ward-Takahashi for paramilitary and private use."
+	desc = "The Goliath Pattern is a cheap self-defense weapon, mass-produced by Vostroya for paramilitary and private use."
 	icon = 'icons/obj/guns/sec_smg.dmi'
 	icon_state = "smg"
 	item_state = "wt550"
@@ -179,7 +179,7 @@
 
 /obj/item/gun/projectile/automatic/bullpup_rifle
 	name = "bullpup assault rifle"
-	desc = "The Hephaestus Industries Z8 is one of the oldest weapons currently in service with the ImperiumDF. Despite its age, it still remains the de-facto rifle of the Imperium Guard, due to its ease of handling, cheap production costs, reliability, and plentiful surplus stock."
+	desc = "The Vostroyan Z8 is one of the oldest weapons currently in service with the ImperiumDF. Despite its age, it still remains the de-facto rifle of the Imperium Guard, due to its ease of handling, cheap production costs, reliability, and plentiful surplus stock."
 	icon = 'icons/obj/guns/bullpup_rifle.dmi'
 	icon_state = "carbine"
 	item_state = "z8carbine"
@@ -268,7 +268,7 @@
 
 /obj/item/gun/projectile/automatic/bullpup_rifle/light
 	name = "light bullpup assault rifle"
-	desc = "The standard-issue rifle of the ImperiumDF. The Z9 Pitbull is the modern answer to violence's question. It has been given a blued finish with a Sol yellow stripe for easy identification of its owner. It's slightly more accurate than its larger cousin, the Z8."
+	desc = "The Z9 Pitbull is the modern answer to violence's question. It has been given a blued finish with a Sol yellow stripe for easy identification of its owner. It's slightly more accurate than its larger cousin, the Z8."
 	icon = 'icons/obj/guns/bullpup_rifle_light.dmi'
 	item_state = "z9carbine"
 	magazine_type = /obj/item/ammo_magazine/mil_rifle/light
@@ -381,7 +381,7 @@
 
 /obj/item/gun/projectile/automatic/battlerifle
 	name = "battle rifle"
-	desc = "The battle rifle hasn't changed much since its inception in the mid 20th century. Built to last in the toughest conditions, the select fire rifle is well reguarded as a dependable weapon."
+	desc = "The battle rifle hasn't changed much since its inception in the mid Pre-Heresy. Built to last in the toughest conditions, the select fire rifle is well reguarded as a dependable weapon."
 	icon = 'icons/obj/guns/battlerifle.dmi'
 	icon_state = "battlerifle"
 	item_state = null

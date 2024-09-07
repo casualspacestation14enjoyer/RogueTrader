@@ -406,14 +406,14 @@
 /obj/structure/table/steel_reinforced,
 /obj/machinery/button/blast_door{
 	id_tag = "merc_bsa";
-	name = "OFD Firing Blast Doors";
+	name = "Macrocannon Firing Blast Doors";
 	pixel_x = -5;
 	pixel_y = 6;
 	req_access = list("ACCESS_SYNDICATE")
 	},
 /obj/machinery/button/blast_door{
 	id_tag = "merc_bsa_shutters";
-	name = "OFD Viewing Shutters";
+	name = "Macrocannon Viewing Shutters";
 	pixel_x = -5;
 	pixel_y = -3;
 	req_access = list("ACCESS_SYNDICATE")

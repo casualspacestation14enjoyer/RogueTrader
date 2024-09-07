@@ -1332,7 +1332,7 @@
 /area/synth/borg_upload)
 "cu" = (
 /obj/machinery/door/window/brigdoor/northleft{
-	name = "Weapons locker"
+	name = "War Gear locker"
 	},
 /obj/structure/window/reinforced{
 	dir = 8
@@ -1404,7 +1404,7 @@
 	dir = 8
 	},
 /obj/machinery/door/window/brigdoor/northleft{
-	name = "Weapons locker"
+	name = "War Gear locker"
 	},
 /obj/structure/window/reinforced,
 /turf/simulated/floor/plating,
@@ -1447,7 +1447,7 @@
 /obj/structure/window/reinforced,
 /obj/random/maintenance/solgov,
 /obj/machinery/door/window/brigdoor/northleft{
-	name = "Weapons locker"
+	name = "War Gear locker"
 	},
 /turf/simulated/floor/plating,
 /area/vacant/armory)
@@ -1470,7 +1470,7 @@
 	dir = 8
 	},
 /obj/machinery/door/window/brigdoor/northleft{
-	name = "Weapons locker"
+	name = "War Gear locker"
 	},
 /obj/structure/window/reinforced{
 	dir = 4

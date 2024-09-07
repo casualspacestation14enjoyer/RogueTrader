@@ -213,7 +213,7 @@
 	url = "https://pulseemitter.bandcamp.com/track/nebula"
 
 /singleton/audio/track/one_loop
-	display = "Fleet Party Theme"
+	display = "Imperial Navy Party Theme"
 	source = 'sound/misc/TestLoop1.ogg'
 	title = "One (abridged loop)"
 	author = "Swedish House Mafia"

@@ -34,7 +34,7 @@
 
 /singleton/cultural_info/faction/unathi/kharza
 	name = FACTION_UNATHI_KHARZA
-	description = "The Kharza fleet pride themselves on their mastery of the sea, their prowess seemingly unmatched. Hailing from some of the earliest \
+	description = "The Kharza militarum pride themselves on their mastery of the sea, their prowess seemingly unmatched. Hailing from some of the earliest \
 	seafaring explorers, the Kharza put themselves at the forefront of Yeosa sea exploration. Today, they run a massive trade route spanning the entire \
 	Moghes continent. Many coastal Yeosa and even some Sinta clans rely on the Kharza for their efficient and prominent trade routes."
 

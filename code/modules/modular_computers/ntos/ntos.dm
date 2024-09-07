@@ -28,7 +28,7 @@
 	var/last_world_time
 	var/list/last_header_icons
 
-	/// Pain and suffering. Sometimes computers are made to update, and you just have to sit through or risk damage by rebooting it
+	/// Pain and suffering. Sometimes cogitators are made to update, and you just have to sit through or risk damage by rebooting it
 	var/receives_updates = TRUE
 	var/updating = FALSE
 	var/updates = 0
@@ -149,7 +149,7 @@
 		loud && show_error(user, "Hardware Error - Incompatible software")
 		return
 	if (P.requires_ntnet && !get_ntnet_status(P.requires_ntnet_feature))
-		loud && show_error(user, "Unable to establish a working network connection. Please try again later. If problem persists, please contact your system administrator.")
+		loud && show_error(user, "Unable to establish a working network connection. Please try again later. If problem persists, please contact your local mechanicum.")
 		return
 
 	if (P in running_programs)

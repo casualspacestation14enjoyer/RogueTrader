@@ -1,5 +1,5 @@
 /datum/shuttle/autodock/overmap/icgnv_hound
-	name = "ICGNV Hound"
+	name = "Tau Hound"
 	warmup_time = 5
 	shuttle_area = list(/area/map_template/icgnv_hound)
 	current_location = "nav_icgnv_hound_start"
@@ -45,36 +45,36 @@
 
 //Machinery
 /obj/machinery/computer/shuttle_control/explore/icgnv_hound_shuttle
-	name = "ICGNV Hound Control Console"
+	name = "Tau Hound Control Console"
 	req_access = list(access_syndicate)
-	shuttle_tag = "ICGNV Hound"
+	shuttle_tag = "Tau Hound"
 
 /obj/machinery/power/apc/debug/iccgn
 	cell_type = /obj/item/cell/infinite
 	req_access = list(access_syndicate)
 
 /obj/machinery/telecomms/allinone/iccgn
-	listening_freqs = list(ICCGN_FREQ)
+	listening_freqs = list(ORDOS_FREQ)
 	channel_color = COMMS_COLOR_ICCG
-	channel_name = "ICGNV Hound"
+	channel_name = "Tau Hound"
 	circuitboard = /obj/item/stock_parts/circuitboard/telecomms/allinone/iccgn
 
 
 //Items
 /obj/item/device/radio/headset/iccgn
 	name = "iccgn headset"
-	desc = "Headset belonging to an ICCGN operative."
+	desc = "Headset belonging to an Tau operative."
 	icon_state = "syndie_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/iccgn
 
 /obj/item/device/radio/headset/iccgn/Initialize()
 	. = ..()
-	set_frequency(ICCGN_FREQ)
+	set_frequency(ORDOS_FREQ)
 
 /obj/item/device/encryptionkey/iccgn
-	name = "\improper ICCGN radio encryption key"
-	channels = list("ICGNV Hound" = 1)
+	name = "\improper Tau radio encryption key"
+	channels = list("Tau Hound" = 1)
 
 /obj/item/stock_parts/circuitboard/telecomms/allinone/iccgn
 	build_path = /obj/machinery/telecomms/allinone/iccgn

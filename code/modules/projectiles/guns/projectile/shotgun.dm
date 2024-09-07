@@ -6,7 +6,7 @@
 
 /obj/item/gun/projectile/shotgun/pump
 	name = "shotgun"
-	desc = "A mass-produced shotgun by Mars Security Industries. The rugged ZX-870 'Bulldog' is common throughout most frontier worlds. Useful for sweeping alleys or ship corridors."
+	desc = "A mass-produced shotgun by Sancor. The rugged ZX-870 'Bulldog' is common throughout most frontier worlds. Useful for sweeping alleys or ship corridors."
 	icon = 'icons/obj/guns/shotguns.dmi'
 	icon_state = "shotgun"
 	item_state = "shotgun"
@@ -158,7 +158,7 @@
 
 /obj/item/gun/projectile/shotgun/pump/sawn
 	name = "riot shotgun"
-	desc = "A mass-produced shotgun by Mars Security Industries. The rugged ZX-870 'Bulldog' is common throughout most frontier worlds. This one has had its stock cut off..."
+	desc = "A mass-produced shotgun by Sancor. The rugged ZX-870 'Bulldog' is common throughout most frontier worlds. This one has had its stock cut off..."
 	icon = 'icons/obj/guns/shotguns.dmi'
 	icon_state = "rshotgun"
 	item_state = "rshotgun"
@@ -180,7 +180,7 @@
 
 /obj/item/gun/projectile/shotgun/pump/combat
 	name = "combat shotgun"
-	desc = "Built for close quarters combat, the Hephaestus Industries KS-40 is widely regarded as a weapon of choice for repelling boarders."
+	desc = "Built for close quarters combat, the Vostroyan KS-40 is widely regarded as a weapon of choice for repelling boarders."
 	icon_state = "cshotgun"
 	item_state = "cshotgun"
 	wielded_item_state = "cshotgun-wielded"
@@ -202,7 +202,7 @@
 
 /obj/item/gun/projectile/shotgun/doublebarrel
 	name = "double-barreled shotgun"
-	desc = "A classic double-barreled shotgun. In production for centuries, it has proliferated across human space, earning a sizable reputation for being simple and effective. Produced by Novaya Zemlya Arms."
+	desc = "A classic double-barreled shotgun. In production for centuries, it has proliferated across human space, earning a sizable reputation for being simple and effective. Produced by Valhalla."
 	icon = 'icons/obj/guns/shotguns.dmi'
 	icon_state = "dshotgun"
 	item_state = "dshotgun"
@@ -298,7 +298,7 @@
 
 /obj/item/gun/projectile/shotgun/doublebarrel/sawn
 	name = "sawn-off shotgun"
-	desc = "A ubiquitous weapon, commonplace in almost every settlement and slum. It is one of many basic firearms for those who want to be able to defend themselves with as little fuss as possible. Produced by Novaya Zemlya Arms."
+	desc = "A ubiquitous weapon, commonplace in almost every settlement and slum. It is one of many basic firearms for those who want to be able to defend themselves with as little fuss as possible. Produced by Valhalla."
 	icon_state = "sawnshotgun"
 	item_state = "sawnshotgun"
 	wielded_item_state = "sawnshotgun-wielded"

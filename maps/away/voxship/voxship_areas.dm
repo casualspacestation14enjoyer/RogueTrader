@@ -3,7 +3,7 @@
 	icon = 'maps/away/voxship/voxship.dmi'
 
 /area/voxship/scavship
-	name = "Vox Scavenger Ship"
+	name = "Xenos Scavenger Ship"
 	icon_state = "scavship"
 	req_access = list(access_voxship)
 
@@ -13,16 +13,16 @@
 	req_access = list(access_voxship)
 
 /area/voxship/engineering
-	name = "Vox Engineering"
+	name = "Xenos Engineering"
 	icon_state = "eng"
 	req_access = list(access_voxship)
 
 /area/voxship/thrusters
-	name = "Vox Thrusters"
+	name = "Xenos Thrusters"
 	icon_state = "thrust"
 	req_access = list(access_voxship)
 
 /area/voxship/shuttle
-	name = "Vox Shuttle"
+	name = "Xenos Shuttle"
 	icon_state = "shuttle"
 	req_access = list(access_voxship)

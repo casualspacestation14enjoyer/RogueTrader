@@ -210,7 +210,7 @@
 
 				. += "<td>"
 				if(title == GLOB.using_map.default_assistant_title)//Assistant is special
-					var/yes_link = "Yes"
+					var/yes_link = "Compliance"
 					var/no_link = "No"
 					if(title in pref.job_low)
 						yes_link = SPAN_COLOR("#55cc55", yes_link)

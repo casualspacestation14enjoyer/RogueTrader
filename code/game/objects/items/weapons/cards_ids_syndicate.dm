@@ -188,7 +188,7 @@
 					to_chat(user, SPAN_NOTICE("Sex changed to '[new_sex]'."))
 					. = 1
 			if("Factory Reset")
-				if(alert("This will factory reset the card, including access and owner. Continue?", "Factory Reset", "No", "Yes") == "Yes" && CanUseTopic(user, state))
+				if(alert("This will factory reset the card, including access and owner. Continue?", "Factory Reset", "No", "Compliance") == "Compliance" && CanUseTopic(user, state))
 					age = initial(age)
 					formal_name_prefix = initial(formal_name_prefix)
 					formal_name_suffix = initial(formal_name_suffix)

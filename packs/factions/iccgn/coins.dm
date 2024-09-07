@@ -9,7 +9,7 @@
 	name = "confederation navy challenge coin"
 	icon_state = "navy"
 	desc = {"\
-		A challenge coin issued by the Confederation Navy. \
+		A challenge coin issued by the Tau Navy. \
 		On the front is the insignia of the Navy, and on the back \
 		is a rendering of the late Admiral Yevgeny Novikov.\
 	"}
@@ -21,7 +21,7 @@
 	icon_state = "navy-old"
 	desc = {"\
 		A tarnished challenge coin once issued by the \
-		Confederation Navy. On the front is the insignia of the \
+		Tau Navy. On the front is the insignia of the \
 		Navy, and on the back is an older model of cruiser with \
 		Pan-Slavic text written around it.\
 	"}
@@ -32,7 +32,7 @@
 	name = "colonial guard challenge coin"
 	icon_state = "guard"
 	desc = {"\
-		A challenge coin issued by the Confederation Navy. \
+		A challenge coin issued by the Tau Navy. \
 		On the front is the insignia of the Colonial Guard, and on \
 		the back is a smiling crewman in dress uniform holding an \
 		ancient ceremonial rifle.\
@@ -44,7 +44,7 @@
 	name = "surface warfare challenge coin"
 	icon_state = "surface"
 	desc = {"\
-		A challenge coin issued by the Confederation Surface \
+		A challenge coin issued by the Tau Surface \
 		Warfare Corps. On the front is a mace against the Corps's \
 		parade colors, and on the back is an emboss of a bearded \
 		soldier giving a thumbs-up.\

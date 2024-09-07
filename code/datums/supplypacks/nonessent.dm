@@ -160,7 +160,7 @@
 					/obj/item/clothing/head/collectable/thunderdome,
 					/obj/item/clothing/head/collectable/swat,
 					/obj/item/clothing/head/collectable/slime,
-					/obj/item/clothing/head/collectable/police,
+					/obj/item/clothing/head/collectable/enforcer,
 					/obj/item/clothing/head/collectable/slime,
 					/obj/item/clothing/head/collectable/xenom,
 					/obj/item/clothing/head/collectable/petehat)

@@ -36,7 +36,7 @@
 
 /datum/uplink_item/item/ammo/rifle
 	name = "Rifle Magazine"
-	desc = "A 5mmR magazine for assault rifles like the STS-35. Contains 20 rounds."
+	desc = "A 5mmR magazine for assault rifles like the Revenant Pattern. Contains 20 rounds."
 	item_cost = 8
 	path = /obj/item/ammo_magazine/rifle
 
@@ -93,7 +93,7 @@
 
 /datum/uplink_item/item/ammo/smg
 	name = "Standard Box Magazine"
-	desc = "A 10mm magazine for standard SMGs like the C-20r. Contains 20 rounds."
+	desc = "A 10mm magazine for standard SMGs like the Raptor Pattern. Contains 20 rounds."
 	item_cost = 8
 	path = /obj/item/ammo_magazine/smg
 	antag_roles = list(MODE_MERCENARY)

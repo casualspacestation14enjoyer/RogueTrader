@@ -19,7 +19,7 @@
 	if(printer)
 		return printer.print_text(content, title)
 
-/// Returns the network tag that other computers trying to reach it would see.
+/// Returns the network tag that other cogitators trying to reach it would see.
 /datum/extension/interactive/ntos/proc/get_network_tag_incoming()
 	var/obj/item/stock_parts/computer/network_card/network_card = get_component(PART_NETWORK)
 	if(network_card)

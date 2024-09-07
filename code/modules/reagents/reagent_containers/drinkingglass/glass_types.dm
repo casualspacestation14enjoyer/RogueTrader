@@ -163,7 +163,7 @@
 
 /obj/item/reagent_containers/food/drinks/glass2/coffeecup/corp
 	name = "\improper EXO coffee cup"
-	desc = "A tasteful coffee cup in Expeditionary Corps Organisation imperial colours."
+	desc = "A tasteful coffee cup in Explorator Organisation imperial colours."
 	icon_state = "coffeecup_corp"
 	base_name = "\improper EXO cup"
 
@@ -199,10 +199,10 @@
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 
 /obj/item/reagent_containers/food/drinks/glass2/coffeecup/STC
-	name = "\improper ICCG coffee cup"
-	desc = "A coffee cup adorned with the flag of the Gilgamesh Colonial Confederation, for when you need some espionage charges to go with your morning coffee."
+	name = "\improper Tau coffee cup"
+	desc = "A coffee cup adorned with the flag of the Tau Empire, for when you need some espionage charges to go with your morning coffee."
 	icon_state = "coffeecup_STC"
-	base_name = "\improper ICCG cup"
+	base_name = "\improper Tau cup"
 
 /obj/item/reagent_containers/food/drinks/glass2/coffeecup/pawn
 	name = "pawn coffee cup"

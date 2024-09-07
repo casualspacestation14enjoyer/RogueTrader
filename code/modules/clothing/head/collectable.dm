@@ -53,8 +53,8 @@
 		)
 	body_parts_covered = 0
 
-/obj/item/clothing/head/collectable/police
-	name = "collectable police officer's hat"
+/obj/item/clothing/head/collectable/enforcer
+	name = "collectable enforcer officer's hat"
 	desc = "A Collectable Police Officer's Hat. This hat emphasizes that you are THE LAW."
 	icon_state = "policehelm"
 	body_parts_covered = 0

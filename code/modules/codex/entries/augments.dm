@@ -42,7 +42,7 @@
 /datum/codex_entry/powerfist_tank
 	associated_paths = list(/obj/item/organ/internal/augment/active/item/powerfist)
 	display_name = "Pneumatic Powerfist"
-	lore_text = "<p>The AG-23 Pneumatic Powerfist was first devised as a portable door-cracking/obstacle clearing tool to be used by emergency rescue teams. Eventually, it found its way into more public hands through one way or another, and is now mostly used by private security teams, special police breacher squads, wealthy mob enforcers, and is sometimes even seen in the hands of SolGov Defense Forces.</p>\
+	lore_text = "<p>The AG-23 Pneumatic Powerfist was first devised as a portable door-cracking/obstacle clearing tool to be used by emergency rescue teams. Eventually, it found its way into more public hands through one way or another, and is now mostly used by private security teams, special enforcer breacher squads, wealthy mob enforcers, and is sometimes even seen in the hands of SolGov Defense Forces.</p>\
 	\
 	<p>While it is recommended to use the power-fist at it's lower settings for doors and airlocks, a higher setting is provided in some models for tougher obstacles.</p>"
 	mechanics_text = "<p>The powerfist deals a base 5 points of damage without a tank, or when the tank has an air pressure of below 210 kPa. Activate the powerfist in hand to change the pressure setting; which changes the amount of damage the powerfist does.</p> \

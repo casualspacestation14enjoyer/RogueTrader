@@ -9,14 +9,14 @@
 
 /obj/structure/sign/ecplaque
 	name = "\improper Expeditionary Directives"
-	desc = "A plaque with Expeditionary Corps logo etched in it."
+	desc = "A plaque with Explorator logo etched in it."
 	icon = 'maps/torch/icons/obj/solgov-decals.dmi'
 	icon_state = "ecplaque"
 	var/directives = {"<hr><center>\
 		<p>1. <b>Exploring the unknown is your Primary Mission</b>\
 			<p>You are to look for land and resources that can be used by Humanity to advance and prosper. Explore. Document. Explain. Knowledge is the most valuable resource.</p>\
 		</p>\
-		<p>2. <b>Every member of the Expeditionary Corps is an explorer</b>\
+		<p>2. <b>Every member of the Explorator is an explorer</b>\
 			<p>Some are Explorers by rank or position, but everyone has to be one when duty calls. You should always expect being assigned to an expedition if needed. You have already volunteered when you signed up.</p>\
 		</p>\
 		<p>3. <b>Danger is a part of the mission - avoid, not run away</b>\

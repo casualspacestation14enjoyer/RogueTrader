@@ -170,7 +170,7 @@
 
 /************* SolGov Aggressive *************/
 /datum/ai_laws/solgov_aggressive
-	name = "Military"
+	name = "Militarum"
 	selectable = 1
 
 /datum/ai_laws/solgov_aggressive/New()

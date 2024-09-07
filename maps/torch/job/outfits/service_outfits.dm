@@ -23,7 +23,7 @@
 	pda_type = /obj/item/modular_computer/pda
 
 /singleton/hierarchy/outfit/job/torch/crew/service/janitor/ec
-	name = OUTFIT_JOB_NAME("Sanitation Technician - Expeditionary Corps")
+	name = OUTFIT_JOB_NAME("Sanitation Technician - Explorator")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/service
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_types = list(/obj/item/card/id/torch/crew/service/janitor)
@@ -42,7 +42,7 @@
 	pda_type = /obj/item/modular_computer/pda
 
 /singleton/hierarchy/outfit/job/torch/crew/service/cook/ec
-	name = OUTFIT_JOB_NAME("Cook - Expeditionary Corps")
+	name = OUTFIT_JOB_NAME("Cook - Explorator")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/service
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_types = list(/obj/item/card/id/torch/crew/service/chef)
@@ -75,7 +75,7 @@
 	id_types = list(/obj/item/card/id/torch/crew/service/chaplain)
 
 /singleton/hierarchy/outfit/job/torch/crew/service/chaplain/ec
-	name = OUTFIT_JOB_NAME("Chaplain - Expeditionary Corps")
+	name = OUTFIT_JOB_NAME("Chaplain - Explorator")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/service
 	shoes = /obj/item/clothing/shoes/dutyboots
 

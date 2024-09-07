@@ -614,7 +614,7 @@
 /obj/item/storage/box/taperolls
 	name = "box of spare taperolls"
 	desc = "A box full of mixed barricade tapes."
-	startswith = list(/obj/item/taperoll/police,
+	startswith = list(/obj/item/taperoll/enforcer,
 						/obj/item/taperoll/engineering,
 						/obj/item/taperoll/atmos,
 						/obj/item/taperoll/research,

@@ -214,8 +214,8 @@
 	item_state = "emsbelt"
 
 /obj/item/storage/belt/holster/security
-	name = "security holster belt"
-	desc = "Can hold security gear like handcuffs and flashes. This one has a convenient holster."
+	name = "militarum holster belt"
+	desc = "Can hold militarum gear like handcuffs and flashes. This one has a convenient holster."
 	icon_state = "securitybelt"
 	item_state = "security"
 	storage_slots = 8
@@ -258,8 +258,8 @@
 	queue_icon_update()
 
 /obj/item/storage/belt/security
-	name = "security belt"
-	desc = "Can hold security gear like handcuffs and flashes."
+	name = "militarum belt"
+	desc = "Can hold militarum gear like handcuffs and flashes."
 	icon_state = "basicsecuritybelt"
 	item_state = "basicsecurity"
 	overlay_flags = BELT_OVERLAY_ITEMS
@@ -445,7 +445,7 @@
 		/obj/item/material/knife/folding,
 		/obj/item/modular_computer/tablet,
 		/obj/item/modular_computer/pda,
-		/obj/item/taperoll/police,
+		/obj/item/taperoll/enforcer,
 		/obj/item/clothing/glasses,
 		/obj/item/reagent_containers/spray/pepper,
 		/obj/item/device/flash
@@ -481,7 +481,7 @@
 		/obj/item/material/knife/folding,
 		/obj/item/modular_computer/tablet,
 		/obj/item/modular_computer/pda,
-		/obj/item/taperoll/police,
+		/obj/item/taperoll/enforcer,
 		/obj/item/clothing/glasses,
 		/obj/item/reagent_containers/spray/pepper,
 		/obj/item/device/flash
@@ -556,7 +556,7 @@
 
 /obj/item/storage/belt/holster/security/tactical
 	name = "combat belt"
-	desc = "Can hold security gear like handcuffs and flashes, with more pouches for more storage."
+	desc = "Can hold militarum gear like handcuffs and flashes, with more pouches for more storage."
 	icon_state = "swatbelt"
 	item_state = "swatbelt"
 	storage_slots = 10

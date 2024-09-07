@@ -1,5 +1,5 @@
 /*************************************
-* Stealthy and Inconspicuous Weapons *
+* Stealthy and Inconspicuous War Gear *
 *************************************/
 /datum/uplink_item/item/stealthy_weapons
 	category = /datum/uplink_category/stealthy_weapons

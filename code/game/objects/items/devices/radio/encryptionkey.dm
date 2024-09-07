@@ -42,7 +42,7 @@
 
 /obj/item/device/encryptionkey/vox_raider
 	icon_state = "cypherkey"
-	channels = list("Vox Raider" = TRUE, "Hailing" = TRUE)
+	channels = list("Xenos Raider" = TRUE, "Hailing" = TRUE)
 	origin_tech = list(TECH_ESOTERIC = 2)
 	syndie = TRUE
 
@@ -52,7 +52,7 @@
 	origin_tech = list(TECH_ESOTERIC = 3)
 
 /obj/item/device/encryptionkey/headset_sec
-	name = "security radio encryption key"
+	name = "militarum radio encryption key"
 	icon_state = "sec_cypherkey"
 	channels = list("Security" = 1)
 

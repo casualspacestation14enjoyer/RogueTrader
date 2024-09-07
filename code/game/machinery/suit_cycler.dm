@@ -207,7 +207,7 @@
 		dat+= "<br>[SPAN_COLOR("red", "<b>The [model_text ? "[model_text] " : ""]suit cycler is currently in use. Please wait...</b>")]"
 
 	else if(locked)
-		dat += "<br>[SPAN_COLOR("red", "<b>The [model_text ? "[model_text] " : ""]suit cycler is currently locked. Please contact your system administrator.</b>")]"
+		dat += "<br>[SPAN_COLOR("red", "<b>The [model_text ? "[model_text] " : ""]suit cycler is currently locked. Please contact your local mechanicum.</b>")]"
 		if(allowed(user))
 			dat += "<br><a href='?src=\ref[src];toggle_lock=1'>\[unlock unit\]</a>"
 	else

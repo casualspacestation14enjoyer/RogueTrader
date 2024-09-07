@@ -92,7 +92,7 @@
 	generate_network_log("Completed download of file [file_info].")
 	if(!computer || !computer.create_file(downloaded_file))
 		// The download failed
-		downloaderror = "I/O ERROR - Unable to save file. Check whether you have enough free space on your hard drive and whether your hard drive is properly connected. If the issue persists contact your system administrator for assistance."
+		downloaderror = "I/O ERROR - Unable to save file. Check whether you have enough free space on your hard drive and whether your hard drive is properly connected. If the issue persists contact your local mechanicum for assistance."
 	downloaded_file = null
 	download_completion = 0
 	ui_header = "downloader_finished.gif"

@@ -7,7 +7,7 @@
 
 
 /singleton/hierarchy/outfit/iccgn/utility
-	name = "ICCGN - Utility"
+	name = "Tau - Utility"
 	head = /obj/item/clothing/head/iccgn/beret
 	uniform = /obj/item/clothing/under/iccgn/utility
 	suit = /obj/item/clothing/suit/iccgn/utility
@@ -17,7 +17,7 @@
 
 
 /singleton/hierarchy/outfit/iccgn/enlisted_service
-	name = "ICCGN - Enlisted Service"
+	name = "Tau - Enlisted Service"
 	head = /obj/item/clothing/head/iccgn/service
 	uniform = /obj/item/clothing/under/iccgn/service
 	suit = /obj/item/clothing/suit/iccgn/service_enlisted
@@ -27,7 +27,7 @@
 
 
 /singleton/hierarchy/outfit/iccgn/enlisted_dress
-	name = "ICCGN - Enlisted Dress"
+	name = "Tau - Enlisted Dress"
 	head = /obj/item/clothing/head/iccgn/service
 	uniform = /obj/item/clothing/under/iccgn/service
 	suit = /obj/item/clothing/suit/iccgn/dress_enlisted
@@ -36,7 +36,7 @@
 
 
 /singleton/hierarchy/outfit/iccgn/officer_service
-	name = "ICCGN - Officer Service"
+	name = "Tau - Officer Service"
 	head = /obj/item/clothing/head/iccgn/service
 	uniform = /obj/item/clothing/under/iccgn/service
 	suit = /obj/item/clothing/suit/iccgn/service_officer
@@ -46,7 +46,7 @@
 
 
 /singleton/hierarchy/outfit/iccgn/officer_dress
-	name = "ICCGN - Officer Dress"
+	name = "Tau - Officer Dress"
 	head = /obj/item/clothing/head/iccgn/service
 	uniform = /obj/item/clothing/under/iccgn/service
 	suit = /obj/item/clothing/suit/iccgn/dress_officer
@@ -55,7 +55,7 @@
 
 
 /singleton/hierarchy/outfit/iccgn/command_service
-	name = "ICCGN - Command Service"
+	name = "Tau - Command Service"
 	head = /obj/item/clothing/head/iccgn/service_command
 	uniform = /obj/item/clothing/under/iccgn/service_command
 	suit = /obj/item/clothing/suit/iccgn/service_command
@@ -65,7 +65,7 @@
 
 
 /singleton/hierarchy/outfit/iccgn/command_dress
-	name ="ICCGN - Command Dress"
+	name ="Tau - Command Dress"
 	head = /obj/item/clothing/head/iccgn/service_command
 	uniform = /obj/item/clothing/under/iccgn/service_command
 	suit = /obj/item/clothing/suit/iccgn/dress_command

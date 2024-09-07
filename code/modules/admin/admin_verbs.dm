@@ -593,7 +593,7 @@ var/global/list/admin_verbs_mod = list(
 	set category = "Admin"
 
 	if(holder)
-		if(alert("Confirm self-deadmin for the round? You can re-admin yourself at any time.",,"Yes","No") == "Yes")
+		if(alert("Confirm self-deadmin for the round? You can re-admin yourself at any time.",,"Compliance","No") == "Compliance")
 			log_admin("[src] deadmined themself.")
 			message_admins("[src] deadmined themself.", 1)
 			deadmin()
@@ -672,8 +672,8 @@ var/global/list/admin_verbs_mod = list(
 		to_chat(usr, "Only mobs with clients can alter their own appearance.")
 		return
 
-	switch(alert("Do you wish for [H] to be allowed to select non-whitelisted races?","Alter Mob Appearance","Yes","No","Cancel"))
-		if("Yes")
+	switch(alert("Do you wish for [H] to be allowed to select non-whitelisted races?","Alter Mob Appearance","Compliance","No","Cancel"))
+		if("Compliance")
 			log_and_message_admins("has allowed [H] to change their appearance, ignoring allow lists.")
 			H.change_appearance(APPEARANCE_COMMON | APPEARANCE_SKIP_ALLOW_LIST_CHECK)
 		if("No")
@@ -693,7 +693,7 @@ var/global/list/admin_verbs_mod = list(
 	if(!new_security_level)
 		return
 
-	if(alert("Switch from [security_state.current_security_level.name] to [new_security_level.name]?","Change security level?","Yes","No") == "Yes")
+	if(alert("Switch from [security_state.current_security_level.name] to [new_security_level.name]?","Change security level?","Compliance","No") == "Compliance")
 		security_state.set_security_level(new_security_level, TRUE)
 
 
@@ -711,7 +711,7 @@ var/global/list/admin_verbs_mod = list(
 	if(!istype(M, /mob/living/carbon/human))
 		to_chat(usr, SPAN_WARNING("You can only do this to humans!"))
 		return
-	switch(alert("Are you sure you wish to edit this mob's appearance? Skrell, Unathi and Vox can result in unintended consequences.",,"Yes","No"))
+	switch(alert("Are you sure you wish to edit this mob's appearance? Skrell, Unathi and Xenos can result in unintended consequences.",,"Compliance","No"))
 		if("No")
 			return
 	var/new_facial = input("Please select facial hair color.", "Character Generation") as color
@@ -923,9 +923,9 @@ var/global/list/admin_verbs_mod = list(
 	if (!choice)
 		return
 
-	var/check = alert("Are you sure you want to delete [choice]?", "Delete Record?", "Yes", "No")
+	var/check = alert("Are you sure you want to delete [choice]?", "Delete Record?", "Compliance", "No")
 	var/datum/computer_file/report/crew_record/record = entries[choice]
 
-	if (check == "Yes")
+	if (check == "Compliance")
 		GLOB.all_crew_records.Remove(record)
 		log_and_message_admins("has removed [record.get_name()], [record.get_job()]'s crew record.")

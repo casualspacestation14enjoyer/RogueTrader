@@ -46,7 +46,7 @@
 	icon = initial(icon)
 	icon_state = initial(icon_state)
 
-	// Connecting multiple computers in a row
+	// Connecting multiple cogitators in a row
 	if(initial(icon_state) == "computer")
 		var/append_string = ""
 		var/left = turn(dir, 90)

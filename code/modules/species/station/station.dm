@@ -5,7 +5,7 @@
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/punch, /datum/unarmed_attack/bite)
 	description = "Humanity originated in the Sol system, and over the last three centuries has spread \
 	colonies across a wide swathe of space. They hold a wide range of forms and creeds.<br/><br/> \
-	The two largest human governments are the Sol Central Government and the Gilgamesh Colonial Confederation, \
+	The two largest human governments are the Sol Central Government and the Tau Empire, \
 	which are currently locked in a cold war. Many other human states exist, however - these include the Frontier \
 	Alliance, a loose collection of planets which has recently seceded from the Sol Central Government; \
 	Magnitka, an independent authoritarian planet; and many other minor colonies."

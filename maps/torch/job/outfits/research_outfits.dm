@@ -1,5 +1,5 @@
 /singleton/hierarchy/outfit/job/torch/crew/research
-	name = OUTFIT_JOB_NAME("Research Assistant - Expeditionary Corps")
+	name = OUTFIT_JOB_NAME("Research Assistant - Explorator")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/research
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_types = list(/obj/item/card/id/torch/crew/research)
@@ -11,19 +11,19 @@
 	BACKPACK_OVERRIDE_RESEARCH
 
 /singleton/hierarchy/outfit/job/torch/crew/research/cso
-	name = OUTFIT_JOB_NAME("Chief Science Officer - Expeditionary Corps")
+	name = OUTFIT_JOB_NAME("Chief Science Officer - Explorator")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/research
 	l_ear = /obj/item/device/radio/headset/heads/torchntdirector
 	id_types = list(/obj/item/card/id/torch/silver/research)
 	pda_type = /obj/item/modular_computer/pda/heads/rd
 
 /singleton/hierarchy/outfit/job/torch/crew/research/senior_scientist
-	name = OUTFIT_JOB_NAME("Senior Scientist - Expeditionary Corps")
+	name = OUTFIT_JOB_NAME("Senior Scientist - Explorator")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/research
 	id_types = list(/obj/item/card/id/torch/crew/research/senior_scientist)
 
 /singleton/hierarchy/outfit/job/torch/crew/research/scientist
-	name = OUTFIT_JOB_NAME("Scientist - Expeditionary Corps")
+	name = OUTFIT_JOB_NAME("Scientist - Explorator")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/research
 	id_types = list(/obj/item/card/id/torch/crew/research/scientist)
 

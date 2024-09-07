@@ -200,10 +200,10 @@
 
 /obj/machinery/computer/teleporter/interface_interact(mob/user)
 	if (!projector || !pad)
-		var/data_search = alert(user, "Projector or Pad missing. Search?", "Teleporter", "Yes", "No")
+		var/data_search = alert(user, "Projector or Pad missing. Search?", "Teleporter", "Compliance", "No")
 		if (isnull(data_search) || !CanDefaultInteract(user))
 			return TRUE
-		if (data_search == "Yes")
+		if (data_search == "Compliance")
 			update_refs()
 		return TRUE
 	var/message = "Teleporter [!target ? "Idle" : !active ? "Locked" : "Engaged"]\n[!target ? "" : "\[[get_area(target)]\]"]"

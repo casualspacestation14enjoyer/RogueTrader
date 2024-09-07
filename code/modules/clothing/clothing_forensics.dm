@@ -36,11 +36,11 @@
 
 // Setting fiber_name for common uniform bits to make them less stand-outish. Probably not exhaustive.
 
-/obj/item/clothing/under/solgov/utility/expeditionary/fiber_name = "expeditionary uniform"
-/obj/item/clothing/under/solgov/utility/expeditionary_skirt/fiber_name = "expeditionary uniform"
-/obj/item/clothing/under/solgov/dress/expeditionary/fiber_name = "expeditionary dress uniform"
-/obj/item/clothing/suit/storage/solgov/service/expeditionary/fiber_name = "expeditionary jacket"
-/obj/item/clothing/suit/storage/solgov/dress/expedition/fiber_name = "expeditionary dress coat"
+/obj/item/clothing/under/solgov/utility/expeditionary/fiber_name = "militarum uniform"
+/obj/item/clothing/under/solgov/utility/expeditionary_skirt/fiber_name = "militarum uniform"
+/obj/item/clothing/under/solgov/dress/expeditionary/fiber_name = "militarum dress uniform"
+/obj/item/clothing/suit/storage/solgov/service/expeditionary/fiber_name = "militarum jacket"
+/obj/item/clothing/suit/storage/solgov/dress/expedition/fiber_name = "militarum dress coat"
 
 /obj/item/clothing/under/solgov/utility/fleet/fiber_name = "fleet coveralls"
 /obj/item/clothing/under/solgov/utility/fleet/polopants/fiber_name = "fleet polo and pants"

@@ -133,12 +133,12 @@
 /singleton/item_modifier/space_suit/security/Initialize()
 	. = ..()
 	var/helmet_setup = type_setups[/obj/item/clothing/head/helmet/space]
-	helmet_setup[SETUP_NAME] = "security voidsuit helmet"
+	helmet_setup[SETUP_NAME] = "militarum voidsuit helmet"
 	helmet_setup[SETUP_ICON_STATE] = "rig0-sec"
 	helmet_setup[SETUP_ITEM_STATE] = "sec_helm"
 
 	var/suit_setup = type_setups[/obj/item/clothing/suit/space/void]
-	suit_setup[SETUP_NAME] = "security voidsuit"
+	suit_setup[SETUP_NAME] = "militarum voidsuit"
 	suit_setup[SETUP_ICON_STATE] = "rig-sec"
 	suit_setup[SETUP_ITEM_STATE_SLOTS] = list(
 			slot_l_hand_str = "sec_voidsuit",
@@ -152,12 +152,12 @@
 /singleton/item_modifier/space_suit/security/alt/Initialize()
 	. = ..()
 	var/helmet_setup = type_setups[/obj/item/clothing/head/helmet/space]
-	helmet_setup[SETUP_NAME] = "security voidsuit helmet"
+	helmet_setup[SETUP_NAME] = "militarum voidsuit helmet"
 	helmet_setup[SETUP_ICON_STATE] = "rig0-secalt"
 	helmet_setup[SETUP_ITEM_STATE] = "secalt_helm"
 
 	var/suit_setup = type_setups[/obj/item/clothing/suit/space/void]
-	suit_setup[SETUP_NAME] = "security voidsuit"
+	suit_setup[SETUP_NAME] = "militarum voidsuit"
 	suit_setup[SETUP_ICON_STATE] = "rig-secalt"
 
 

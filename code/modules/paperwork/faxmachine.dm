@@ -222,7 +222,7 @@ GLOBAL_LIST_EMPTY(admin_departments)
 	var/success = send_fax_loop(copyitem, destination, department)
 
 	if (success)
-		visible_message("[src] beeps, \"Message transmitted successfully.\"")
+		visible_message("[src] beeps, \"Compliance. Message transmitted. successfully.\"")
 	else
 		visible_message("[src] beeps, \"Error transmitting message.\"")
 
@@ -294,7 +294,7 @@ GLOBAL_LIST_EMPTY(admin_departments)
 
 	message_admins(sender, "[uppertext(destination)] FAX[intercepted ? "(Intercepted by [intercepted])" : null]", rcvdcopy, destination ? destination : "UNKNOWN")
 	send_fax_loop(copyitem, destination, department) // Forward to any listening fax machines
-	visible_message("[src] beeps, \"Message transmitted successfully.\"")
+	visible_message("[src] beeps, \"Compliance. Message transmitted. successfully.\"")
 
 
 /obj/machinery/photocopier/faxmachine/proc/message_admins(mob/sender, faxname, obj/item/sent, reply_type)

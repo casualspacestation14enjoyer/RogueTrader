@@ -4,7 +4,7 @@
 
 /obj/structure/sign/dedicationplaque/Initialize()
 	. = ..()
-	desc = "S.E.V. Torch - Mako Class - Sol Expeditionary Corps Registry 95519 - Shiva Fleet Yards, Mars - First Vessel To Bear The Name - Launched [GLOB.using_map.game_year - 5] - Imperial Government - 'Never was anything great achieved without danger.'"
+	desc = "Dauntless - Mako Class - Sol Explorator Registry 95519 - Shiva Imperial Navy Yards, Sancor - First Vessel To Bear The Name - Launched [GLOB.using_map.game_year - 5] - Imperial Government - 'Never was anything great achieved without danger.'"
 
 
 /obj/floor_decal/scglogo
@@ -41,7 +41,7 @@
 	unacidable = TRUE
 	var/list/fallen = list()
 	var/list/accepted_branches = list(
-		"Expeditionary Corps",
+		"Explorator",
 		"Fleet"
 	)
 

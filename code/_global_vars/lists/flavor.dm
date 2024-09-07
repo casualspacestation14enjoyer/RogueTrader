@@ -41,7 +41,7 @@ GLOBAL_LIST_INIT(station_names, list("", "Stanford", "Dorf", "Alium",
 	"Pete", "Control", "Nettle", "Aspie", "Class", "Crab", "Fist",
 	"Corrogated","Skeleton","Race", "Fatguy", "Gentleman", "Capitalist",
 	"Communist", "Bear", "Beard", "Derp", "Space", "Spess", "Star", "Moon",
-	"System", "Mining", "Neckbeard", "Research", "Supply", "Military",
+	"System", "Mining", "Neckbeard", "Research", "Supply", "Militarum",
 	"Orbital", "Battle", "Science", "Asteroid", "Home", "Production",
 	"Transport", "Delivery", "Extraplanetary", "Orbital", "Correctional",
 	"Robot", "Hats", "Pizza"))

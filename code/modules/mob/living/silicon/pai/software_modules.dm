@@ -66,8 +66,8 @@
 				return FALSE
 			M = M.loc
 			count++
-		var/answer = input(M, "\The [P] is requesting a DNA sample from you. Will you allow it to confirm your identity?", "[P] Check DNA", "No") in list("Yes", "No")
-		if (answer == "Yes")
+		var/answer = input(M, "\The [P] is requesting a DNA sample from you. Will you allow it to confirm your identity?", "[P] Check DNA", "No") in list("Compliance", "No")
+		if (answer == "Compliance")
 			var/turf/T = get_turf_or_move(P.loc)
 			var/datum/pronouns/pronouns = M.choose_from_pronouns()
 			for (var/mob/v in viewers(T))

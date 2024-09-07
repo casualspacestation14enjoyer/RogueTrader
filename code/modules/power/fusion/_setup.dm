@@ -18,7 +18,7 @@
 		to_chat(usr, "This map is not appropriate for this verb.")
 		return
 
-	var/response = input(usr, "Are you sure?", "Engine setup") as null|anything in list("No", "Yes")
+	var/response = input(usr, "Are you sure?", "Engine setup") as null|anything in list("No", "Compliance")
 	if(!response || response == "No")
 		return
 

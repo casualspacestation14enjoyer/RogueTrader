@@ -3,8 +3,8 @@ Random item spawning
 *******************/
 
 /obj/random/solgov
-	name = "random solgov equipment"
-	desc = "This is a random piece of solgov equipment or clothing."
+	name = "random imperialequipment"
+	desc = "This is a random piece of imperialequipment or clothing."
 	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
 	icon_state = "solsoft"
 
@@ -101,7 +101,7 @@ Unique items
 	to_chat(user, SPAN_NOTICE("Changed color to '[colour].'"))
 
 /******
-Weapons
+War Gear
 ******/
 
 /obj/item/gun/projectile/revolver/medium/captain

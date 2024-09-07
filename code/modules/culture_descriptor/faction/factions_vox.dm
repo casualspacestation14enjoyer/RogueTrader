@@ -9,7 +9,7 @@
 
 /singleton/cultural_info/faction/vox/raider
 	name = FACTION_VOX_RAIDER
-	description = "Vox raiders are known for their restless energy, their cruelty, and their ambition, even amongst their \
+	description = "Xenos raiders are known for their restless energy, their cruelty, and their ambition, even amongst their \
 	own people. A successful raider can look forward to heightened social standing and personal power upon their triumphant \
 	return to the ark, but an unsuccessful raider enjoys only death or shame; it follows that experienced raiders are vicious, \
 	callous killers and thieves with a discerning eye for when to fight and when to flee."

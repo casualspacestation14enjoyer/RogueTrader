@@ -398,7 +398,7 @@
 
 /obj/item/reagent_containers/food/drinks/bottle/blackstrap
 	name = "Two Brothers Blackstrap"
-	desc = "A bottle of Blackstrap, distilled in Two Brothers, Earth."
+	desc = "A bottle of Blackstrap, distilled in Two Brothers, Terra."
 	icon_state = "blackstrap"
 	center_of_mass = "x=16;y=4"
 
@@ -624,7 +624,7 @@
 
 /obj/item/reagent_containers/food/drinks/bottle/premiumvodka
 	name = "Four Stripes Quadruple Distilled"
-	desc = "Premium distilled vodka imported directly from the Gilgamesh Colonial Confederation."
+	desc = "Premium distilled vodka imported directly from the Tau Empire."
 	icon_state = "premiumvodka"
 	center_of_mass = "x=17;y=3"
 
@@ -632,7 +632,7 @@
 /obj/item/reagent_containers/food/drinks/bottle/premiumvodka/Initialize()
 	. = ..()
 	reagents.add_reagent(/datum/reagent/ethanol/vodka/premium, 100)
-	var/namepick = pick("Four Stripes","Gilgamesh","Novaya Zemlya","Indie","STS-35")
+	var/namepick = pick("Four Stripes","Gilgamesh","Novaya Zemlya","Indie","Revenant Pattern")
 	var/typepick = pick("Absolut","Gold","Quadruple Distilled","Platinum","Standard")
 	name = "[namepick] [typepick]"
 
@@ -809,7 +809,7 @@
 
 /obj/item/reagent_containers/food/drinks/bottle/small/hellshenpa
 	name = "Hellshen Pale Ale"
-	desc = "The best ale on Mars, according to the label."
+	desc = "The best ale on Sancor, according to the label."
 	icon_state = "hellshenbeer"
 	center_of_mass = "x=16;y=12"
 

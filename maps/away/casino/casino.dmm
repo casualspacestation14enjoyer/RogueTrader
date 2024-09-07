@@ -296,7 +296,7 @@
 	},
 /obj/machinery/button/blast_door{
 	id_tag = "casino_weaponry";
-	name = "Weaponry Blast Door contol";
+	name = "War Gear Blast Door contol";
 	pixel_y = -25
 	},
 /obj/structure/flora/pottedplant/unusual,

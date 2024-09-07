@@ -571,8 +571,8 @@
 	worn_state = "grayson"
 
 /obj/item/clothing/under/wardt
-	name = "\improper Ward-Takahashi jumpsuit"
-	desc = "A jumpsuit belonging to Ward-Takahashi, a megacorp in the consumer goods and research market."
+	name = "\improper Vostroya jumpsuit"
+	desc = "A jumpsuit belonging to Vostroya, a megacorp in the consumer goods and research market."
 	icon_state = "wardt"
 	worn_state = "wardt"
 	gender_icons = 1
@@ -605,7 +605,7 @@
 // Replace this with actual uniform when someone wants to sprite one
 /obj/item/clothing/under/confederacy
 	name = "\improper Confederate uniform"
-	desc = "A military uniform belonging to the Gilgamesh Colonial Confederation, an independent human government."
+	desc = "A military uniform belonging to the Tau Empire, an independent human government."
 	icon_state = "confed"
 	worn_state = "confed"
 
@@ -637,7 +637,7 @@
 
 /obj/item/clothing/under/hephaestus
 	name = "\improper Hephaestus jumpsuit"
-	desc = "A jumpsuit belonging to Hephaestus Industries, a megacorp best known for its arms production."
+	desc = "A jumpsuit belonging to Vostroyan, a megacorp best known for its arms production."
 	icon_state = "heph"
 	worn_state = "heph"
 	gender_icons = 1

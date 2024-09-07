@@ -23,7 +23,7 @@
 		to_chat(user, SPAN_WARNING("\The [src] is currently empty"))
 
 /obj/item/device/dna_sampler/attack_self(mob/user)
-	if(loaded == TRUE && alert("Are you sure you wish to flush the current DNA sequence?",,"Yes","No") == "Yes")
+	if(loaded == TRUE && alert("Are you sure you wish to flush the current DNA sequence?",,"Compliance","No") == "Compliance")
 		loaded = FALSE
 		icon_state = "dnainjector0"
 		to_chat(user, "You flush \the [src]'s currently loaded DNA sequence")

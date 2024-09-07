@@ -86,7 +86,7 @@
 
 /obj/item/icarus_disk
 	name = "disk"
-	desc = "A dusty disk. Its label says: \"Deliver to Imperium Expeditionary Corps Command!\". Its content is encrypted with quantum cryptography methods."
+	desc = "A dusty disk. Its label says: \"Deliver to Imperium Explorator Command!\". Its content is encrypted with quantum cryptography methods."
 	icon = 'icons/obj/datadisks.dmi'
 	icon_state = "nucleardisk"
 	item_state = "card-id"
@@ -100,18 +100,18 @@
 
 /obj/item/gun/projectile/pistol/m22f/icarus
 	name = "rusty military pistol"
-	desc = "A Hephaestus Industries M22F. A large pistol issued as an ImperiumDF service weapon. This one has seen better days, and has the name \"Alex\" engraved into it."
+	desc = "A Vostroyan M22F. A large pistol issued as an ImperiumDF service weapon. This one has seen better days, and has the name \"Alex\" engraved into it."
 
 //Imperium deco
 
 /obj/structure/sign/icarus_dedicationplaque
 	name = "\improper Icarus dedication plaque"
 	icon_state = "lightplaque"
-	desc = "S.E.V. Icarus - Lexington Class - Sol Expeditionary Corps Registry 95498 - Tennessee Fleet Yards, Mars - First Vessel To Bear The Name - Launched 2302 - Imperial Government - 'Never was anything great achieved without danger.'"
+	desc = " Icarus - Lexington Class - Sol Explorator Registry 95498 - Tennessee Imperial Navy Yards, Sancor - First Vessel To Bear The Name - Launched 2302 - Imperial Government - 'Never was anything great achieved without danger.'"
 
 /obj/structure/sign/icarus_ecplaque
 	name = "\improper Expeditionary Directives"
-	desc = "A plaque with Expeditionary Corps logo etched in it. It looks faded and is illegible."
+	desc = "A plaque with Explorator logo etched in it. It looks faded and is illegible."
 	icon = 'maps/random_ruins/exoplanet_ruins/icarus/icarus.dmi'
 	icon_state = "ecplaque"
 

@@ -339,12 +339,12 @@ var/global/list/ai_verbs_default = list(
 	if(check_unable(AI_CHECK_WIRELESS))
 		return
 
-	var/confirm = alert("Are you sure you want to evacuate?", "Confirm Evacuation", "Yes", "No")
+	var/confirm = alert("Are you sure you want to evacuate?", "Confirm Evacuation", "Compliance", "No")
 
 	if(check_unable(AI_CHECK_WIRELESS))
 		return
 
-	if(confirm == "Yes")
+	if(confirm == "Compliance")
 		call_shuttle_proc(src)
 
 	post_status("shuttle")
@@ -356,11 +356,11 @@ var/global/list/ai_verbs_default = list(
 	if(check_unable(AI_CHECK_WIRELESS))
 		return
 
-	var/confirm = alert("Are you sure you want to cancel the evacuation?", "Confirm Cancel", "Yes", "No")
+	var/confirm = alert("Are you sure you want to cancel the evacuation?", "Confirm Cancel", "Compliance", "No")
 	if(check_unable(AI_CHECK_WIRELESS))
 		return
 
-	if(confirm == "Yes")
+	if(confirm == "Compliance")
 		cancel_call_proc(src)
 
 /mob/living/silicon/ai/var/emergency_message_cooldown = 0
@@ -380,7 +380,7 @@ var/global/list/ai_verbs_default = list(
 	if(!input)
 		return
 	Centcomm_announce(input, usr)
-	to_chat(usr, SPAN_NOTICE("Message transmitted."))
+	to_chat(usr, SPAN_NOTICE("Compliance. Message transmitted.."))
 	log_say("[key_name(usr)] has made an IA [GLOB.using_map.boss_short] announcement: [input]")
 	emergency_message_cooldown = 1
 	spawn(300)

@@ -78,8 +78,8 @@ GLOBAL_LIST_EMPTY(skills)
 // Category: Organizational
 
 /singleton/hierarchy/skill/organizational/bureaucracy
-	ID = "bureaucracy"
-	name = "Bureaucracy"
+	ID = "bureaucracy" // do not change ID's or it will fuckup refs like SKILL_BUREAUCRACY
+	name = "Statecraft"
 	desc = "Your ability to write and complete paperwork, navigate complex organiztions, and understand laws and regulations."
 	levels = list( "Unskilled"			= "You can usually fill out basic paperwork, if with a few errors. You have a vague understanding of the law, gleaned mostly from the news and personal experience.",
 						"Basic"				= "You are familiar with the paperwork needed to do your job, and can navigate it well. You have some understanding of the law as it applies to you and those around you.",
@@ -89,7 +89,7 @@ GLOBAL_LIST_EMPTY(skills)
 
 /singleton/hierarchy/skill/organizational/finance
 	ID = "finance"
-	name = "Finance"
+	name = "Stewardship"
 	desc = "Your ability to manage money and investments."
 	levels = list( "Unskilled"			= "Your understanding of money starts and ends with personal finance. While you are able to perform basic transactions, you get lost in the details, and can find yourself ripped off on occasion.<br>- You get some starting money. Its amount increases with level.<br>- You can use the verb \"Appraise\" to see the value of different objects.",
 						"Basic"				= "You have some limited understanding of financial transactions, and will generally be able to keep accurate records. You have little experience with investment, and managing large sums of money will likely go poorly for you.",
@@ -101,17 +101,17 @@ GLOBAL_LIST_EMPTY(skills)
 
 /singleton/hierarchy/skill/general/EVA
 	ID = "EVA"
-	name = "Extra-vehicular activity"
+	name = "Void Maneuvering"
 	desc = "This skill describes your skill and knowledge of space-suits and working in vacuum."
 	levels = list( "Unskilled"			= "You have basic safety training common to people who work in space: You know how to put on and seal your internals, and you can probably struggle into a space suit if you really need to, though you'll be clumsy at it. You're still prone to mistakes that may leave you trying to breathe vacuum.<br>- You can remove hardsuits. Its speed increases with level.<br>- You will always get floored when you enter gravity area from space. This chance decreases with level.<br>- You are likely to slip. This chance decreases with level.",
-						"Basic"				= "You have had thorough basic training in EVA operations, and are unlikely to make novice mistakes. However, you have little experience working in vacuum.",
+						"Basic"				= "You have had thorough basic training in voidborn operations, and are unlikely to make novice mistakes. However, you have little experience working in vacuum.",
 						"Trained"			= "You can comfortably use a space suit and do so regularly in the course of your work. Checking your internals is second nature to you, and you don't panic in an emergency.<br>- You can fully operate jetpacks.",
-						"Experienced"		= "You can use all kinds of space suits, including specialized versions. Your years of experience in EVA keep you from being disoriented in space, and you have experience using a jetpack to move around. <br>- You cannot slip anymore.",
-						"Master"		= "You are just as much at home in a vacuum as in atmosphere. You probably do your job almost entirely EVA.<br>- You cannot get floored anymore.<br>- You get bonus speed in zero-G.")
+						"Experienced"		= "You can use all kinds of space suits, including specialized versions. Your years of experience in voidborn keep you from being disoriented in space, and you have experience using a jetpack to move around. <br>- You cannot slip anymore.",
+						"Master"		= "You are just as much at home in a vacuum as in atmosphere. You probably do your job almost entirely voidborn.<br>- You cannot get floored anymore.<br>- You get bonus speed in zero-G.")
 
 /singleton/hierarchy/skill/general/EVA/mech
 	ID = "exosuit"
-	name = "Exosuit Operation"
+	name = "Augmetic Armour Proficiency"
 	desc = "Allows you to operate exosuits well."
 	levels = list("Untrained" = "You are unfamiliar with exosuit controls, and if you attempt to use them you are liable to make mistakes.",
 		"Trained" = "You are proficient in exosuit operation and safety, and can use them without penalties.")
@@ -121,7 +121,7 @@ GLOBAL_LIST_EMPTY(skills)
 
 /singleton/hierarchy/skill/general/pilot
 	ID = "pilot"
-	name = "Piloting"
+	name = "Helmsmanship"
 	desc = "Describes your experience and understanding of piloting spacecraft, from small and short-range pods to corvette sized vessels."
 	levels = list( "Unskilled"			= "You know what a spacecraft is, and you might have an abstract understanding of the differences between various ships. If your department is involved in the use of spacecraft, you know roughly what their capabilities are. You might be able to fly a spacecraft in a videogame. If you were to take the Helm of a smaller vessel, you might be able to move it with proper guidance.<br>- Travel time between tranisition decreases with level.<br>- You can fly ships but their movement might be randomized.<br>- The speed of your ship hitting carps will increase with level.",
 						"Basic"				= "You can pilot a small, short-range craft safely, but larger ships are out of your area of expertise. You are by no means an expert, and probably don't have much training. Skills of this level are typical for deck crew.<br>- You can operate small shuttlecraft without error.<br>- You can completely avoid meteors on slow speed while using tiny shuttlecrafts such as the GUP.",
@@ -133,7 +133,7 @@ GLOBAL_LIST_EMPTY(skills)
 
 /singleton/hierarchy/skill/general/hauling
 	ID = "hauling"
-	name = "Athletics"
+	name = "Vigor"
 	desc = "Your ability to perform tasks requiring great strength, dexterity, or endurance."
 	levels = list( "Unskilled"			= "You are not used to manual labor, tire easily, and are likely not in great shape. Extended heavy labor may be dangerous for you.<br>- You can pull objects but start to generate Lactate after tiring out. Your strength increases with level.<br>- You can throw objects. Their speed, thrown distance, and force increases with level.<br>- You can sprint, the stamina consumption rate is lowered with each level.<br>- You can leap by clicking on a distant target with grab intent, leap range is increased and chances of falling over are decreased with each level.",
 						"Basic"				= "You have some familiarity with manual labor, and are in reasonable physical shape. Tasks requiring great dexterity or strength may still elude you.<br>- You can throw \"huge\" items or normal-sized mobs without getting weakened.",
@@ -143,12 +143,12 @@ GLOBAL_LIST_EMPTY(skills)
 
 /singleton/hierarchy/skill/general/computer
 	ID = "computer"
-	name = "Information Technology"
-	desc = "Describes your understanding of computers, software and communication. Not a requirement for using computers, but definitely helps. Used in telecommunications and programming of computers and AIs."
-	levels = list( "Unskilled"			= "You know how to use the computers and communication devices that you grew up with. You can use a computer console, a handheld or wall-mounted radio, and your headset, as well as your PDA. You know what an AI is, but you may see them as either \"people made of silicon\" or \"only machines\"; you know they have to obey their laws, but you don't know much about how or why they work.",
+	name = "Machine Lore"
+	desc = "Describes your understanding of computers, software and communication. Not a requirement for using computers, but definitely helps. Used in telecommunications and programming of cogitators and AIs."
+	levels = list( "Unskilled"			= "You know how to use the cogitators and communication devices that you grew up with. You can use a computer console, a handheld or wall-mounted radio, and your headset, as well as your PDA. You know what an AI is, but you may see them as either \"people made of silicon\" or \"only machines\"; you know they have to obey their laws, but you don't know much about how or why they work.",
 						"Basic"				= "You know the basics of programming, but you're not very good at it and couldn't do it professionally. You have a pretty good idea of what makes AIs tick. You understand how information is stored in a computer, and you can fix simple computer problems. You're computer-literate, but you still make mistakes. If you tried to subvert the AI, you might make mistakes in wording your new laws.<br>- The antagonist access decryption program has a chance to avoid tripping alarms and working more effectively. This increases with level.",
-						"Trained"			= "At this level, you're probably working with computers on a daily basis. You understand and can repair the telecommunications network. Your understanding of AI programming and psychology lets you fix problems with the AIs or cyborgs--or create problems, if you so desire. You can program computers and AIs and change their laws effectively.<br>- You can fully operate the Network Monitor, E-mail Administration, and AI Management Programs.",
-						"Experienced"		= "You have years of experience with computer networks, AI systems, telecommunications, and sysadmin tasks. You know the systems used on a daily basis intimately, and can diagnose complex problems.<br>- The antagonist dos program gives extra fake attacking nodes to the system log.<br>- You can use the command line on modular computers (type \"man\" for a list).",
+						"Trained"			= "At this level, you're probably working with cogitators on a daily basis. You understand and can repair the telecommunications network. Your understanding of AI programming and psychology lets you fix problems with the AIs or cyborgs--or create problems, if you so desire. You can program cogitators and AIs and change their laws effectively.<br>- You can fully operate the Network Monitor, E-mail Administration, and AI Management Programs.",
+						"Experienced"		= "You have years of experience with computer networks, AI systems, telecommunications, and sysadmin tasks. You know the systems used on a daily basis intimately, and can diagnose complex problems.<br>- The antagonist dos program gives extra fake attacking nodes to the system log.<br>- You can use the command line on modular cogitators (type \"man\" for a list).",
 						"Master"		= "People are probably starting to wonder whether you might be a computer yourself. Computer code is your first language; you relate to AIs as easily as (probably more easily than) organics. You could build a telecommunications network from the ground up.")
 
 // Category: Service
@@ -177,12 +177,12 @@ GLOBAL_LIST_EMPTY(skills)
 
 /singleton/hierarchy/skill/security/combat
 	ID = "combat"
-	name = "Close Combat"
+	name = "Blade Lore"
 	desc = "This skill describes your training in hand-to-hand combat or melee weapon usage. While expertise in this area is rare in the era of firearms, experts still exist among athletes."
 	levels = list( "Unskilled"			= "You can throw a punch or a kick, but it'll knock you off-balance. You're inexperienced and have probably never been in a serious hand-to-hand fight. In a fight, you might panic and run, grab whatever's nearby and blindly strike out with it, or (if the other guy is just as much of a beginner as you are) make a fool out of yourself.<br>- You can disarm, grab, and hit. Their success chance depends on the fighters' skill difference.<br>- The chance of falling over when tackled is reduced with level.",
 						"Basic"				= "You either have some experience with fistfights, or you have some training in a martial art. You can handle yourself if you really have to, and if you're a security officer, can handle a stun baton at least well enough to get the handcuffs onto a criminal.",
 						"Trained"			= "You have had close-combat training, and can easily defeat unskilled opponents. Close combat may not be your specialty, and you don't engage in it more than needed, but you know how to handle yourself in a fight.<br>- You can parry with weapons. This increases with level.<br>- You can do grab maneuvers (pinning, dislocating).<br>- You can grab targets when leaping at them and not fall over, if your species is able to do so.",
-						"Experienced"		= "You're good at hand-to-hand combat. You've trained explicitly in a martial art or as a close combatant as part of a military or police unit. You can use weaponry competently and you can think strategically and quickly in a melee. You're in good shape and you spend time training.",
+						"Experienced"		= "You're good at hand-to-hand combat. You've trained explicitly in a martial art or as a close combatant as part of a military or enforcer unit. You can use weaponry competently and you can think strategically and quickly in a melee. You're in good shape and you spend time training.",
 						"Master"		= "You specialize in hand-to-hand combat. You're well-trained in a practical martial art, and in good shape. You spend a lot of time practicing. You can take on just about anyone, use just about any weapon, and usually come out on top. You may be a professional athlete or special forces member.")
 
 /singleton/hierarchy/skill/security/combat/get_cost(level)
@@ -198,11 +198,11 @@ GLOBAL_LIST_EMPTY(skills)
 
 /singleton/hierarchy/skill/security/weapons
 	ID = "weapons"
-	name = "Weapons Expertise"
+	name = "Gun Lore"
 	desc = "This skill describes your expertise with and knowledge of weapons. A low level in this skill implies knowledge of simple weapons, for example flashes. A high level in this skill implies knowledge of complex weapons, such as unconfigured grenades, riot shields, pulse rifles or bombs. A low-medium level in this skill is typical for security officers, a high level of this skill is typical for special agents and soldiers."
 	levels = list( "Unskilled"			= "You know how to recognize a weapon when you see one. You can point a gun and shoot it, though results vary wildly. You might forget the safety, you can't control burst recoil well, and you don't have trained reflexes for gun fighting.<br>- You might fire your weapon randomly.",
 						"Basic"				= "You know how to handle weapons safely, and you're comfortable using simple weapons. Your aim is decent and you can usually be trusted not to do anything stupid with a weapon you are familiar with, but your training isn't automatic yet and your performance will degrade in high-stress situations.<br>- You can use firearms. Their accuracy and spread depend on your skill level.",
-						"Trained"			= "You have had extensive weapons training, or have used weapons in combat. Your aim is better now. You are familiar with most types of weapons and can use them in a pinch. You have an understanding of tactics, and can be trusted to stay calm under fire. You may have military or police experience and you probably carry a weapon on the job.<br>-You have a chance to automatically unsafety a gun when firing on harm intent.",
+						"Trained"			= "You have had extensive weapons training, or have used weapons in combat. Your aim is better now. You are familiar with most types of weapons and can use them in a pinch. You have an understanding of tactics, and can be trusted to stay calm under fire. You may have military or enforcer experience and you probably carry a weapon on the job.<br>-You have a chance to automatically unsafety a gun when firing on harm intent.",
 						"Experienced"		= "You've used firearms and other ranged weapons in high-stress situations, and your skills have become automatic. Your aim is good.<br>-You will automatically unsafety a gun when firing it on harm intent.<br>-You can perform tactical and speed reloads. The time taken decreases with level.",
 						"Master"		= "You are an exceptional shot with a variety of weapons, from simple to exotic. You use a weapon as naturally as though it were a part of your own body. You may be a sniper or special forces operator of some kind.<br>- You get extra accuracy for sniper rifles.<br>- You automatically eject shells from bolt-action firearms.")
 

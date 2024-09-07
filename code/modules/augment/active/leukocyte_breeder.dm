@@ -39,7 +39,7 @@
 		return
 	if (active && ticks_active >= ticks_to_acclimate)
 		// Give an alert if trying to deactivate while acclimated, so roundstart takers don't accidentally turn it off by learning the buttons
-		if (alert(owner, "Deactivate \the [src]?", name, "Yes", "No") != "Yes" || !can_activate())
+		if (alert(owner, "Deactivate \the [src]?", name, "Compliance", "No") != "Compliance" || !can_activate())
 			return
 	active = !active
 	owner.playsound_local(null, 'sound/effects/fastbeep.ogg', 20, is_global = TRUE)

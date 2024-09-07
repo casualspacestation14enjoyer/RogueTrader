@@ -609,8 +609,8 @@ GLOBAL_LIST_INIT(zombie_species, list(\
 
 	for (var/mob/living/carbon/human/candidate)
 		if (candidate.is_zombie() && !candidate.ckey && candidate.stat == CONSCIOUS)
-			var/response = alert(src, "Are you sure you want to become a zombie?","Confirm","Yes","No")
-			if(response != "Yes")
+			var/response = alert(src, "Are you sure you want to become a zombie?","Confirm","Compliance","No")
+			if(response != "Compliance")
 				return
 			candidate.do_possession(src)
 

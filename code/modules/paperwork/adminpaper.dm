@@ -119,8 +119,8 @@
 		return
 
 	if(href_list["confirm"])
-		switch(alert("Are you sure you want to send the fax as is?",, "Yes", "No"))
-			if("Yes")
+		switch(alert("Are you sure you want to send the fax as is?",, "Compliance", "No"))
+			if("Compliance")
 				if(headerOn)
 					info = header + info
 				if(footerOn)

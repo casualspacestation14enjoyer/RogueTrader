@@ -312,7 +312,7 @@
 	sort_order = 9
 
 /datum/mil_rank/fleet/e9_alt2
-	name = "Fleet Master Chief Petty Officer"
+	name = "Imperial Navy Master Chief Petty Officer"
 	name_short = "FLTCM"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e9_alt2, /obj/item/clothing/accessory/solgov/specialty/enlisted)
 	sort_order = 9
@@ -390,7 +390,7 @@
 	sort_order = 20
 
 /datum/mil_rank/fleet/o10_alt
-	name = "Fleet Admiral"
+	name = "Imperial Navy Admiral"
 	name_short = "FADM"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/flag/o10_alt, /obj/item/clothing/accessory/solgov/specialty/officer)
 	sort_order = 20

@@ -74,10 +74,10 @@
 
 
 /obj/item/storage/lunchbox/mars
-	name = "\improper Mariner University lunchbox"
+	name = "\improper Schola Progenium lunchbox"
 	icon_state = "lunchbox_marsuniversity"
 	item_state = "toolbox_red"
-	desc = "A little lunchbox. This one is branded with the Mariner university logo!"
+	desc = "A little lunchbox. This one is branded with the Schola university logo!"
 
 
 /obj/item/storage/lunchbox/mars/filled
@@ -121,7 +121,7 @@
 	name = "\improper GCC lunchbox"
 	icon_state = "lunchbox_tcc"
 	item_state = "toolbox_syndi"
-	desc = "A little lunchbox. This one is branded with the flag of the Gilgamesh Colonial Confederation!"
+	desc = "A little lunchbox. This one is branded with the flag of the Tau Empire!"
 
 
 /obj/item/storage/lunchbox/gcc/filled

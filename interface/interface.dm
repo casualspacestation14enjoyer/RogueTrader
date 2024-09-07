@@ -3,7 +3,7 @@
 		to_chat(src, SPAN_WARNING("The server configuration does not include \a [name] URL."))
 		return
 	if (!skip_confirmation)
-		var/cancel = alert("You will open [url]. Are you sure?", "Visit [name]", "Yes", "No") != "Yes"
+		var/cancel = alert("You will open [url]. Are you sure?", "Visit [name]", "Compliance", "No") != "Compliance"
 		if (cancel)
 			return
 	send_link(src, url)

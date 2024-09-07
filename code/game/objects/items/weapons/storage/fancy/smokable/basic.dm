@@ -107,7 +107,7 @@
 
 /obj/item/storage/fancy/smokable/trident
 	name = "pack of Trident Original cigars"
-	desc = "The Trident brand's wood tipped little cigar, favored by the Sol corps diplomatique for their pleasant aroma. Machine made on Mars for over 100 years."
+	desc = "The Trident brand's wood tipped little cigar, favored by the Sol corps diplomatique for their pleasant aroma. Machine made on Sancor for over 100 years."
 	icon_state = "CRpacket"
 	item_state = "Dpacket"
 	max_storage_space = 5
@@ -118,7 +118,7 @@
 
 /obj/item/storage/fancy/smokable/trident_fruit
 	name = "pack of Trident Fruit cigars"
-	desc = "The Trident brand's wood tipped little cigar, favored by the Sol corps diplomatique for their pleasant aroma. Machine made on Mars for over 100 years. This is a fruit variety pack."
+	desc = "The Trident brand's wood tipped little cigar, favored by the Sol corps diplomatique for their pleasant aroma. Machine made on Sancor for over 100 years. This is a fruit variety pack."
 	icon_state = "CRFpacket"
 	item_state = "Dpacket"
 	max_storage_space = 5
@@ -133,7 +133,7 @@
 
 /obj/item/storage/fancy/smokable/trident_mint
 	name = "pack of Trident Menthol cigars"
-	desc = "The Trident brand's wood tipped little cigar, favored by the Sol corps diplomatique for their pleasant aroma. Machine made on Mars for over 100 years. These are the menthol variety."
+	desc = "The Trident brand's wood tipped little cigar, favored by the Sol corps diplomatique for their pleasant aroma. Machine made on Sancor for over 100 years. These are the menthol variety."
 	icon_state = "CRMpacket"
 	item_state = "Dpacket"
 	max_storage_space = 5

@@ -6,7 +6,7 @@
 /datum/language/human/indian
 	name = LANGUAGE_HUMAN_INDIAN
 	desc = "Billed as a reunification of the Hindustani languages of Hindi and Urdu in the Latin script, New Dehlavi enjoyed very rapid adoption rates among the common populace, \
-			compared to the other great Earth commons."
+			compared to the other great Terra commons."
 	colour = "indian"
 	key = "3"
 	shorthand = "Dehv"

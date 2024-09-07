@@ -118,7 +118,7 @@
 
 /obj/item/gun/projectile/sniper/panther //semi-automatic only
 	name = "marksman rifle"
-	desc = "An SD-Panther. It is a simple and durable rifle made of stamped steel manufactured by Novaya Zemlya Arms for the Confederation Navy. \
+	desc = "An SD-Panther. It is a simple and durable rifle made of stamped steel manufactured by Valhalla for the Tau Navy. \
 	While it lacks the burst fire of other military rifles, it's exceptionally accurate and has a powerful optic."
 	icon = 'icons/obj/guns/terran_rifle.dmi'
 	icon_state = "dmr"

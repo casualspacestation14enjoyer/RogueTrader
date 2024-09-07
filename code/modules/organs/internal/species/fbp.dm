@@ -186,8 +186,8 @@
 		if(persistantMind)
 			persistantMind.transfer_to(stored_mmi.brainmob)
 		else
-			var/response = input(find_dead_player(ownerckey, 1), "Your [initial(stored_mmi.name)] has been removed from your body. Do you wish to return to life?", "Robotic Rebirth") as anything in list("Yes", "No")
-			if(response == "Yes")
+			var/response = input(find_dead_player(ownerckey, 1), "Your [initial(stored_mmi.name)] has been removed from your body. Do you wish to return to life?", "Robotic Rebirth") as anything in list("Compliance", "No")
+			if(response == "Compliance")
 				persistantMind.transfer_to(stored_mmi.brainmob)
 	qdel(src)
 

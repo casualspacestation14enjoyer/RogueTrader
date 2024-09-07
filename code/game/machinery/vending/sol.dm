@@ -1,5 +1,5 @@
 /obj/machinery/vending/sol
-	name = "\improper Mars-Mart"
+	name = "\improper Sancor-Mart"
 	desc = "A SolCentric vending machine dispensing treats from home."
 	icon_state = "solsnack"
 	icon_vend = "solsnack-vend"

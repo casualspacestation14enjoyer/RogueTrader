@@ -178,7 +178,7 @@
 		O.comment = "#[O.ordernum]"
 		SSsupply.requestlist += O
 
-		if(can_print() && alert(user, "Would you like to print a confirmation receipt?", "Print receipt?", "Yes", "No") == "Yes")
+		if(can_print() && alert(user, "Would you like to print a confirmation receipt?", "Print receipt?", "Compliance", "No") == "Compliance")
 			print_order(O, user)
 		return 1
 

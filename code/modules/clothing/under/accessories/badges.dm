@@ -127,7 +127,7 @@
 		to_chat(user, SPAN_DANGER("\The [src] is already cracked."))
 		return NO_EMAG_ACT
 	emagged = TRUE
-	to_chat(user, SPAN_DANGER("You crack the security checks on \the [src]."))
+	to_chat(user, SPAN_DANGER("You crack the militarum checks on \the [src]."))
 	return 1
 
 
@@ -148,7 +148,7 @@
 
 /obj/item/storage/box/holobadge
 	name = "holobadge box"
-	desc = "A box containing security holobadges."
+	desc = "A box containing militarum holobadges."
 	startswith = list(
 		/obj/item/clothing/accessory/badge/holo = 4,
 		/obj/item/clothing/accessory/badge/holo/cord = 2
@@ -157,7 +157,7 @@
 
 /obj/item/storage/box/holobadgeNT
 	name = "corporate holobadge box"
-	desc = "A box containing imperial security holobadges."
+	desc = "A box containing imperial militarum holobadges."
 	startswith = list(
 		/obj/item/clothing/accessory/badge/holo/NT = 4,
 		/obj/item/clothing/accessory/badge/holo/NT/cord = 2

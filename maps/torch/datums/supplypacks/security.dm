@@ -29,7 +29,7 @@
 	access = access_heads
 
 /singleton/hierarchy/supply_pack/security/pistol
-	name = "Weapons - Ballistic sidearms"
+	name = "War Gear - Ballistic sidearms"
 	contains = list(
 		/obj/item/gun/projectile/pistol/m22f/empty = 2,
 		/obj/item/gun/projectile/pistol/m19/empty = 2,
@@ -43,7 +43,7 @@
 	security_level = SUPPLY_SECURITY_ELEVATED
 
 /singleton/hierarchy/supply_pack/security/laser
-	name = "Weapons - Laser carbines"
+	name = "War Gear - Laser carbines"
 	contains = list(/obj/item/gun/energy/laser/secure = 4)
 	cost = 60
 	containertype = /obj/structure/closet/crate/secure/weapon
@@ -52,25 +52,25 @@
 	security_level = SUPPLY_SECURITY_ELEVATED
 
 /singleton/hierarchy/supply_pack/security/laser/shady
-	name = "Weapons - Laser carbines (For disposal)"
+	name = "War Gear - Laser carbines (For disposal)"
 	contains = list(/obj/item/gun/energy/laser = 4)
 	cost = 80
 	contraband = 1
 	security_level = null
 
 /singleton/hierarchy/supply_pack/security/advancedlaser
-	name = "Weapons - Advanced Laser Weapons"
+	name = "War Gear - Advanced Laser War Gear"
 	contains = list(/obj/item/gun/energy/xray = 2,
 					/obj/item/gun/energy/xray/pistol = 2,
 					/obj/item/shield/energy = 2)
 	cost = 100
 	containertype = /obj/structure/closet/crate/secure/weapon
-	containername = "advanced Laser Weapons crate"
+	containername = "advanced Laser War Gear crate"
 	access = access_emergency_armory
 	security_level = SUPPLY_SECURITY_HIGH
 
 /singleton/hierarchy/supply_pack/security/sniperlaser
-	name = "Weapons - Energy marksman"
+	name = "War Gear - Energy marksman"
 	contains = list(/obj/item/gun/energy/sniperrifle = 2)
 	cost = 70
 	containertype = /obj/structure/closet/crate/secure/weapon
@@ -79,7 +79,7 @@
 	security_level = SUPPLY_SECURITY_HIGH
 
 /singleton/hierarchy/supply_pack/security/pdw
-	name = "Weapons - Ballistic PDWs"
+	name = "War Gear - Ballistic PDWs"
 	contains = list(/obj/item/gun/projectile/automatic/sec_smg/empty = 2)
 	cost = 40
 	containertype = /obj/structure/closet/crate/secure/weapon
@@ -88,7 +88,7 @@
 	security_level = SUPPLY_SECURITY_ELEVATED
 
 /singleton/hierarchy/supply_pack/security/bullpup
-	name = "Weapons - Heavy ballistic rifles"
+	name = "War Gear - Heavy ballistic rifles"
 	contains = list(/obj/item/gun/projectile/automatic/bullpup_rifle = 2)
 	cost = 100 //A little more expensive than the 5mmR variant. Hits harder!
 	containertype = /obj/structure/closet/crate/secure/weapon
@@ -97,7 +97,7 @@
 	security_level = SUPPLY_SECURITY_HIGH
 
 /singleton/hierarchy/supply_pack/security/light_bullpup
-	name = "Weapons - Light ballistic rifles"
+	name = "War Gear - Light ballistic rifles"
 	contains = list(/obj/item/gun/projectile/automatic/bullpup_rifle/light = 2)
 	cost = 80
 	containertype = /obj/structure/closet/crate/secure/weapon
@@ -154,7 +154,7 @@
 					/obj/item/grenade/chem_grenade/teargas,
 					/obj/item/melee/baton/loaded,
 					/obj/item/clothing/glasses/hud/security/prot,
-					/obj/item/taperoll/police,
+					/obj/item/taperoll/enforcer,
 					/obj/item/device/hailer,
 					/obj/item/clothing/accessory/storage/black_vest,
 					/obj/item/device/megaphone,
@@ -172,7 +172,7 @@
 	name = "Gear - Chief of Security equipment"
 	contains = list(/obj/item/device/radio/headset/heads/cos,
 					/obj/item/clothing/glasses/hud/security/prot,
-					/obj/item/taperoll/police,
+					/obj/item/taperoll/enforcer,
 					/obj/item/storage/belt/holster/security,
 					/obj/item/device/hailer,
 					/obj/item/device/holowarrant,

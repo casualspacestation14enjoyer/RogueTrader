@@ -59,7 +59,7 @@
 	backpack_overrides[/singleton/backpack_outfit/backpack] = /obj/item/storage/backpack/clown
 
 /singleton/hierarchy/outfit/vox_raider
-	name = "Vox Raider"
+	name = "Xenos Raider"
 	uniform = /obj/item/clothing/under/vox/vox_casual
 	shoes = /obj/item/clothing/shoes/magboots/vox
 	l_ear = /obj/item/device/radio/headset/vox_raider

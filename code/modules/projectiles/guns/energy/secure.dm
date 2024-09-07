@@ -1,6 +1,6 @@
 /obj/item/gun/energy/gun/small/secure
 	name = "compact smartgun"
-	desc = "Combining the two LAEP90 variants, the secure and compact LAEP90-CS is the next best thing to keeping your security forces on a literal leash."
+	desc = "Combining the two LAEP90 variants, the secure and compact LAEP90-CS is the next best thing to keeping your militarum forces on a literal leash."
 	icon = 'icons/obj/guns/small_egun_secure.dmi'
 	item_icons = list(
 		slot_l_hand_str = 'icons/mob/onmob/items/lefthand_guns_secure.dmi',
@@ -79,6 +79,6 @@
 
 /obj/item/gun/energy/laser/secure
 	name = "laser carbine"
-	desc = "A Hephaestus Industries G40E carbine, designed to kill with concentrated energy blasts. Fitted with an NT1019 chip to make sure killcount is tracked appropriately."
+	desc = "A Vostroyan G40E carbine, designed to kill with concentrated energy blasts. Fitted with an NT1019 chip to make sure killcount is tracked appropriately."
 	icon_state = "lasersec"
 	req_access = list(list(access_brig, access_bridge))

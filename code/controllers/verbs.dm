@@ -14,7 +14,7 @@
 		usr.client.debug_variables(antag)
 		message_admins("Admin [key_name_admin(usr)] is debugging the [antag.role_text] template.")
 
-/client/proc/debug_controller(controller as null|anything in list("Jobs","Sun","Radio","Evacuation","Configuration","pAI", "Cameras", "Transfer Controller", "Gas Data","Plants","Wireless","Observation","Alt Appearance Manager","Datacore","Military Branches"))
+/client/proc/debug_controller(controller as null|anything in list("Jobs","Sun","Radio","Evacuation","Configuration","pAI", "Cameras", "Transfer Controller", "Gas Data","Plants","Wireless","Observation","Alt Appearance Manager","Datacore","Militarum Branches"))
 	set category = "Debug"
 	set name = "Debug Controller"
 	set desc = "Debug the various periodic loop controllers for the game (be careful!)"
@@ -37,7 +37,7 @@
 			debug_variables(gas_data)
 		if("Alt Appearance Manager")
 			debug_variables(appearance_manager)
-		if("Military Branches")
+		if("Militarum Branches")
 			debug_variables(GLOB.mil_branches)
 	message_admins("Admin [key_name_admin(usr)] is debugging the [controller] controller.")
 	return

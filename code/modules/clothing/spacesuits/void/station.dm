@@ -132,7 +132,7 @@
 
 //Security
 /obj/item/clothing/head/helmet/space/void/security
-	name = "security voidsuit helmet"
+	name = "militarum voidsuit helmet"
 	desc = "A comfortable voidsuit helmet with cranial armor and eight-channel surround sound."
 	icon_state = "rig0-sec"
 	item_state = "sec_helm"
@@ -153,7 +153,7 @@
 
 /obj/item/clothing/suit/space/void/security
 	icon_state = "rig-sec"
-	name = "security voidsuit"
+	name = "militarum voidsuit"
 	desc = "A somewhat clumsy voidsuit layered with impact and laser-resistant armor plating. Specially designed to dissipate minor electrical charges."
 	item_state_slots = list(
 		slot_l_hand_str = "sec_voidsuit",
@@ -317,7 +317,7 @@
 
 //Security
 /obj/item/clothing/head/helmet/space/void/security/alt
-	name = "riot security voidsuit helmet"
+	name = "riot militarum voidsuit helmet"
 	desc = "A somewhat tacky voidsuit helmet, a fact mitigated by heavy armor plating."
 	icon_state = "rig0-secalt"
 	item_state = "secalt_helm"
@@ -331,7 +331,7 @@
 		rad = ARMOR_RAD_MINOR)
 
 /obj/item/clothing/suit/space/void/security/alt
-	name = "riot security voidsuit"
+	name = "riot militarum voidsuit"
 	icon_state = "rig-secalt"
 	desc = "A heavily armored voidsuit, designed to intimidate people who find black intimidating. Surprisingly slimming."
 	armor = list(

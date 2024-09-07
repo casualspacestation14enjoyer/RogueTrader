@@ -1,6 +1,6 @@
 /obj/item/clothing/accessory/iccgn_rank
 	abstract_type = /obj/item/clothing/accessory/iccgn_rank
-	name = "base rank insignia, ICCGN"
+	name = "base rank insignia, Tau"
 	desc = "You should not see this."
 	icon = 'packs/factions/iccgn/ranks.dmi'
 	accessory_icons = list(
@@ -77,8 +77,8 @@
 
 
 /obj/item/clothing/accessory/iccgn_rank/or9_alt
-	name = "rank insignia, OR9 Major of the Confederation Navy"
-	desc = "Collar tabs denoting the GCN OR-9 rank of Major of the Confederation Navy."
+	name = "rank insignia, OR9 Major of the Tau Navy"
+	desc = "Collar tabs denoting the GCN OR-9 rank of Major of the Tau Navy."
 	icon_state = "or9_alt"
 	overlay_state = "or_worn"
 
@@ -147,7 +147,7 @@
 
 
 /obj/item/clothing/accessory/iccgn_rank/of9_alt
-	name = "rank insignia, OF9 Marshal of the Confederation Navy"
-	desc = "Collar tabs denoting the GCN OF-9 rank of Marshal of the Confederation Navy."
+	name = "rank insignia, OF9 Marshal of the Tau Navy"
+	desc = "Collar tabs denoting the GCN OF-9 rank of Marshal of the Tau Navy."
 	icon_state = "of9_alt"
 	overlay_state = "of_worn"

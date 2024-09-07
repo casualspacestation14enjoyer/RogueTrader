@@ -106,8 +106,8 @@
 					if(direct != "LEAVE IT")
 						C.dir = text2dir(direct)
 					if(i != 0)
-						var/confirm = alert(user, "Is this what you want? Chances Remaining: [i]", "Confirmation", "Yes", "No")
-						if(confirm == "Yes")
+						var/confirm = alert(user, "Is this what you want? Chances Remaining: [i]", "Confirmation", "Compliance", "No")
+						if(confirm == "Compliance")
 							C.update_icon()
 							break
 				return TRUE

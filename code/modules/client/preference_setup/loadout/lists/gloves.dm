@@ -39,7 +39,7 @@
 	..()
 	var/ringtype = list()
 	ringtype["CTI ring"] = /obj/item/clothing/ring/cti
-	ringtype["Mariner University ring"] = /obj/item/clothing/ring/mariner
+	ringtype["Schola Progenium ring"] = /obj/item/clothing/ring/mariner
 	ringtype["engagement ring"] = /obj/item/clothing/ring/engagement
 	ringtype["signet ring"] = /obj/item/clothing/ring/seal/signet
 	ringtype["masonic ring"] = /obj/item/clothing/ring/seal/mason

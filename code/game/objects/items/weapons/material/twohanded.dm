@@ -1,4 +1,4 @@
-/* Two-handed Weapons
+/* Two-handed War Gear
  * Contains:
  * 		Twohanded
  *		Fireaxe

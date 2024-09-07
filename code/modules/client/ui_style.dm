@@ -60,7 +60,7 @@ var/global/all_tooltip_styles = list(
 		I.alpha = UI_style_alpha_new
 
 
-	if(alert("Like it? Save changes?",,"Yes", "No") == "Yes")
+	if(alert("Like it? Save changes?",,"Compliance", "No") == "Compliance")
 		prefs.UI_style = UI_style_new
 		prefs.UI_style_alpha = UI_style_alpha_new
 		prefs.UI_style_color = UI_style_color_new

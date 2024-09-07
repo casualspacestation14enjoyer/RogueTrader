@@ -11,11 +11,11 @@
 				TRADER_HAIL_DENY         = "Trade closed, GO AWAY!",
 
 				TRADER_TRADE_COMPLETE    = "Yes, kikikikikiki! You will not regret this trade!",
-				TRADER_NO_MONEY    = "Money? Vox no need money. GOODS! Give it GOODS!",
+				TRADER_NO_MONEY    = "Money? Xenos no need money. GOODS! Give it GOODS!",
 				TRADER_NOT_ENOUGH  = "It wants MORE for that. Give it more.",
 
 				TRADER_HOW_MUCH          = "You give it something worth VALUE, yes?",
-				TRADER_WHAT_WANT         = "Vox wants",
+				TRADER_WHAT_WANT         = "Xenos wants",
 
 				TRADER_COMPLEMENT_FAILURE   = "No.",
 				TRADER_COMPLEMENT_SUCCESS = "Kikikikiki! Trade is better than talk, yes?",
@@ -61,7 +61,7 @@
 	speech[TRADER_HAIL_START + SPECIES_HUMAN] = "Hello hueman! Kiikikikiki! MOB trade with us, yes? Good!"
 
 	visited_vox_speech[TRADER_HAIL_START + "silicon"] = "YOU KNOW VOX? Yes is good, yes yes, MOB. Trade GOOD!"
-	visited_vox_speech[TRADER_HAIL_START + SPECIES_HUMAN] = "Friend of Vox is friend of all Vox! MOB you trade now!"
+	visited_vox_speech[TRADER_HAIL_START + SPECIES_HUMAN] = "Friend of Xenos is friend of all Vox! MOB you trade now!"
 	visited_vox_speech[TRADER_HAIL_START + SPECIES_VOX] = "SKREEEE! May the Shoal make this trade good, MOB!"
 
 /datum/trader/ship/vox/hail(mob/user)

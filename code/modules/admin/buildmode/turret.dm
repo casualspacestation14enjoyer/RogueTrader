@@ -62,7 +62,7 @@
 		. = TOPIC_HANDLED
 
 	if (href_list["repair"])
-		var/repair = alert("Should the turret repair itself over time?", "Auto Repair", "Yes", "No") == "Yes"
+		var/repair = alert("Should the turret repair itself over time?", "Auto Repair", "Compliance", "No") == "Compliance"
 
 		if (repair)
 			settings["repair"] = TRUE
@@ -78,21 +78,21 @@
 		. = TOPIC_HANDLED
 
 	if (href_list["check_weapons"])
-		var/check_weapons = alert("Shoot at people with weapons out?", "Shoot Baddies", "Yes", "No") == "Yes"
+		var/check_weapons = alert("Shoot at people with weapons out?", "Shoot Baddies", "Compliance", "No") == "Compliance"
 
 		settings["check_weapons"] = check_weapons
 
 		. = TOPIC_HANDLED
 
 	if (href_list["check_access"])
-		var/check_access = alert("Shoot at those without access? ", "Shoot No Access", "Yes", "No") == "Yes"
+		var/check_access = alert("Shoot at those without access? ", "Shoot No Access", "Compliance", "No") == "Compliance"
 
 		settings["check_access"] = check_access
 
 		. = TOPIC_HANDLED
 
 	if (href_list["check_synth"])
-		var/check_synth = alert("Shoot at only non-synths?", "Shoot Organics", "Yes", "No") == "Yes"
+		var/check_synth = alert("Shoot at only non-synths?", "Shoot Organics", "Compliance", "No") == "Compliance"
 
 		settings["check_synth"] = check_synth
 

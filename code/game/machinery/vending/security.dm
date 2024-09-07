@@ -1,6 +1,6 @@
 /obj/machinery/vending/security
 	name = "\improper SecTech"
-	desc = "A security equipment vendor."
+	desc = "A militarum equipment vendor."
 	icon_state = "sec"
 	icon_deny = "sec-deny"
 	icon_vend = "sec-vend"
@@ -22,7 +22,7 @@
 		Guilty until proven innocent!;\
 		Feeling down? We'll help you make someone else feel worse.;\
 		Civilian tested, Sol approved!;\
-		Did you know stun batons can also be used for non-lethal takedowns? Your security team doesn't!;\
+		Did you know stun batons can also be used for non-lethal takedowns? Your militarum team doesn't!;\
 		Our flashbangs only work on non-Solars. It's true, look it up!;\
 		Civilians only have rights if you let them.\
 	"}

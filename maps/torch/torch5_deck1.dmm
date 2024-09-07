@@ -2463,7 +2463,7 @@
 	},
 /obj/machinery/requests_console{
 	announcementConsole = 1;
-	department = "Security";
+	department = "Militarum";
 	departmentType = 5;
 	pixel_x = 32
 	},
@@ -9188,7 +9188,7 @@
 "aEL" = (
 /obj/machinery/requests_console{
 	announcementConsole = 1;
-	department = "Security";
+	department = "Militarum";
 	departmentType = 5;
 	pixel_x = 32;
 	pixel_y = 32
@@ -21593,7 +21593,7 @@
 /obj/item/pen,
 /obj/machinery/requests_console{
 	announcementConsole = 1;
-	department = "Security";
+	department = "Militarum";
 	departmentType = 5;
 	pixel_y = -32
 	},

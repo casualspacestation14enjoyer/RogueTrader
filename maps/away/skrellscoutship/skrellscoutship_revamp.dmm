@@ -1365,7 +1365,7 @@
 /area/ship/skrellscoutship/command/armory)
 "eE" = (
 /obj/machinery/door/window/brigdoor/northleft{
-	name = "Weapons locker"
+	name = "War Gear locker"
 	},
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/command/armory)

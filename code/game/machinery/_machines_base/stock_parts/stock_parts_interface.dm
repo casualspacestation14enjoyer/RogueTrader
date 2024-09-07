@@ -1,6 +1,6 @@
 /obj/item/stock_parts/console_screen
 	name = "console screen"
-	desc = "Used in the construction of computers and other devices with an interactive screen."
+	desc = "Used in the construction of cogitators and other devices with an interactive screen."
 	icon_state = "output"
 	origin_tech = list(TECH_MATERIAL = 1)
 	matter = list(MATERIAL_GLASS = 200)

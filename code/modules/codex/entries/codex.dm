@@ -5,7 +5,7 @@
 	<br><br> \
 	Access to the Codex is afforded instantly by a variety of unobtrusive devices, including PDA attachments, retinal implants, neuro-memetic indoctrination and hover-drone. All our access devices are affordable, stylish and guaranteed not to expose you to encephalo-malware. \
 	<br><br> \
-	The Codex editorial offices are located in Venus orbit and will offer cash payments for stories, anecdotes and evidence of the strange and undocumented miscellany cluttering up our observable universe. Remember our motto: <i>\"Knowledge is power, sell your excess.\"</i>"
+	The Codex editorial offices are located in Vostroya orbit and will offer cash payments for stories, anecdotes and evidence of the strange and undocumented miscellany cluttering up our observable universe. Remember our motto: <i>\"Knowledge is power, sell your excess.\"</i>"
 
 /datum/codex_entry/codex/New()
 	mechanics_text = "The Codex is both an IC and OOC resource. ICly, it is as described; a space encyclopedia. You can use <b>Search-Codex <i>topic</i></b> to look something up, or you can click the links provided when examining some objects. \
