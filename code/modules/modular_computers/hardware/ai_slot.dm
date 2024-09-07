@@ -1,4 +1,4 @@
-/// A wrapper that allows the computer to contain an inteliCard.
+/// A wrapper that allows the cogitator to contain an inteliCard.
 /obj/item/stock_parts/computer/ai_slot
 	name = "inteliCard slot"
 	desc = "An IIS interlink with connection uplinks that allow the device to interface with most common inteliCard models. Too large to fit into tablets. Uses a lot of power when active."

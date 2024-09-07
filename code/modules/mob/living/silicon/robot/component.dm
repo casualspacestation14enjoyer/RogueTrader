@@ -246,7 +246,7 @@
 
 /obj/item/robot_parts/robot_component/diagnosis_unit
 	name = "diagnosis unit"
-	desc = "An internal computer and sensors used by robots and exosuits to accurately diagnose any system discrepancies on their components."
+	desc = "An internal cogitator and sensors used by robots and exosuits to accurately diagnose any system discrepancies on their components."
 	icon_state = "analyser"
 	icon_state_broken = "analyser_broken"
 

@@ -491,7 +491,7 @@
 		current_account.notification_mute = !current_account.notification_mute
 		return TOPIC_HANDLED
 
-	// The following entries are Modular Computer framework only, and therefore won't do anything in other cases (like AI View)
+	// The following entries are Modular Cogitator framework only, and therefore won't do anything in other cases (like AI View)
 
 	if(href_list["save"])
 		// Fully dependant on modular cogitators here.

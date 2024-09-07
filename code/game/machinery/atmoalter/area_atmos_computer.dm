@@ -1,6 +1,6 @@
 /obj/machinery/computer/area_atmos
 	name = "area air control"
-	desc = "A computer used to control the stationary scrubbers and pumps in the area."
+	desc = "A cogitator used to control the stationary scrubbers and pumps in the area."
 	icon_keyboard = "atmos_key"
 	icon_screen = "area_atmos"
 	light_color = "#e6ffff"
@@ -10,7 +10,7 @@
 	var/list/connectedscrubbers = list()
 	var/status = ""
 	var/range = 25
-	var/zone = "This computer is working on a wireless range, the range is currently limited to 25 meters."
+	var/zone = "This cogitator is working on a wireless range, the range is currently limited to 25 meters."
 
 
 /obj/machinery/computer/area_atmos/Destroy()
@@ -110,7 +110,7 @@
 
 
 /obj/machinery/computer/area_atmos/area
-	zone = "This computer is working in a wired network limited to this area."
+	zone = "This cogitator is working in a wired network limited to this area."
 
 
 /obj/machinery/computer/area_atmos/area/validscrubber(obj/machinery/portable_atmospherics/powered/scrubber/huge/scrubber)

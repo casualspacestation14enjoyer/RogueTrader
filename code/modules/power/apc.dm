@@ -146,7 +146,7 @@
 
 /obj/machinery/power/apc/connect_to_network()
 	//Override because the APC does not directly connect to the network; it goes through a terminal.
-	//The terminal is what the power computer looks for anyway.
+	//The terminal is what the power cogitator looks for anyway.
 	var/obj/machinery/power/terminal/terminal = terminal()
 	if(terminal)
 		terminal.connect_to_network()

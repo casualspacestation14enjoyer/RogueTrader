@@ -35,7 +35,7 @@
 /datum/computer_file/data/bodyscan/generate_file_data(mob/user)
 	return display_medical_data(metadata, user.get_skill_value(SKILL_MEDICAL), TRUE)
 
-/// Mapping tool - creates a named modular computer file in a computer's storage on late initialize.
+/// Mapping tool - creates a named modular cogitator file in a computer's storage on late initialize.
 /// Use this to do things like automatic records and blackboxes. Alternative for paper records.
 /// Values can be in the editor for each map or as a subtype.
 /// This is an obj because raw atoms can't be placed in DM or third-party mapping tools.

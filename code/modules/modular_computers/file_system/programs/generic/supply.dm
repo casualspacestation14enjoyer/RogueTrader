@@ -39,7 +39,7 @@
 	var/list/category_contents = list()
 	var/showing_contents_of_ref = null
 	var/list/contents_of_order = list()
-	var/emagged = FALSE	// TODO: Implement synchronization with modular computer framework.
+	var/emagged = FALSE	// TODO: Implement synchronization with modular cogitator framework.
 	var/emagged_memory = FALSE // Keeps track if the program has to regenerate the catagories after an emag.
 	var/current_security_level
 	var/notifications_enabled = FALSE

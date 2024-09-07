@@ -74,7 +74,7 @@
 	return TRUE
 
 /obj/machinery/computer/message_monitor/interact(mob/living/user)
-	//If the computer is being hacked or is emagged, display the reboot message.
+	//If the cogitator is being hacked or is emagged, display the reboot message.
 	if(hacking || emag)
 		message = rebootmsg
 	var/list/dat = list()

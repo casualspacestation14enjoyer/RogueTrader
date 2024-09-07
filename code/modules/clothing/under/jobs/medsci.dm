@@ -82,7 +82,7 @@
 
 /obj/item/clothing/under/rank/nursesuit
 	desc = "It's a jumpsuit commonly worn by nursing staff in the medical department."
-	name = "nurse's suit"
+	name = "medicae suit"
 	icon_state = "nursesuit"
 	item_state = "nursesuit"
 	worn_state = "nursesuit"
@@ -94,7 +94,7 @@
 
 /obj/item/clothing/under/rank/nurse
 	desc = "A dress commonly worn by the nursing staff in the medical department."
-	name = "nurse's dress"
+	name = "medicae dress"
 	icon_state = "nurse"
 	item_state = "nursesuit"
 	worn_state = "nurse"

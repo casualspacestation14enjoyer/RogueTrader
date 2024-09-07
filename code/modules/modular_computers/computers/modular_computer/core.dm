@@ -1,5 +1,5 @@
 /obj/item/modular_computer/Process()
-	if(!enabled) // The computer is turned off
+	if(!enabled) // The cogitator is turned off
 		last_power_usage = 0
 		return
 
@@ -100,7 +100,7 @@
 		if(issynth)
 			to_chat(user, "You send an activation signal to \the [src], but it responds with an error code. It must be damaged.")
 		else
-			to_chat(user, "You press the power button, but the computer fails to boot up, displaying variety of errors before shutting down again.")
+			to_chat(user, "You press the power button, but the cogitator fails to boot up, displaying variety of errors before shutting down again.")
 		return
 	if(processor_unit && (apc_power(0) || battery_power(0))) // Battery-run and charged or non-battery but powered by APC.
 		if(issynth)

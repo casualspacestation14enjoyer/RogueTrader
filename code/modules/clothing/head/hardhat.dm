@@ -49,7 +49,7 @@
 
 /obj/item/clothing/head/hardhat/light/medic
 	name = "\improper EMS helmet"
-	desc = "A polymer helmet worn by EMTs throughout human space to protect their head. This one comes with an attached flashlight and has 'Medic' written on its back in blue lettering."
+	desc = "A polymer helmet worn by Medicaes throughout human space to protect their head. This one comes with an attached flashlight and has 'Medic' written on its back in blue lettering."
 	icon_state = "EMS_helmet"
 
 /obj/item/clothing/head/hardhat/firefighter

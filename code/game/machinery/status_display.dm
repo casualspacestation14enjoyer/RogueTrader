@@ -34,7 +34,7 @@
 
 	var/frequency = 1435		// radio frequency
 
-	var/friendc = 0      // track if Friend Computer mode
+	var/friendc = 0      // track if Friend Cogitator mode
 	var/ignore_friendc = 0
 
 	maptext_height = 26

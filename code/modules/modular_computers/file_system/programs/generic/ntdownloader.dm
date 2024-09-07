@@ -175,7 +175,7 @@
 			all_entries.Add(list(list("category"=category, "programs"=category_list)))
 
 	data["hackedavailable"] = FALSE
-	if(prog.computer.emagged()) // If we are running on emagged computer we have access to some "bonus" software
+	if(prog.computer.emagged()) // If we are running on emagged cogitator we have access to some "bonus" software
 		var/list/hacked_programs[0]
 		for(var/datum/computer_file/program/P in ntnet_global.available_antag_software)
 			data["hackedavailable"] = TRUE

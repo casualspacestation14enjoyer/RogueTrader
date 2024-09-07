@@ -222,7 +222,7 @@
 		</table>
 		<hr />
 
-		<h2>Associated Ckeys, IP Addresses, and Computer IDs</h2>
+		<h2>Associated Ckeys, IP Addresses, and Cogitator IDs</h2>
 		<p><small>NOTE: Rows in this table are not necessarily associated with eachother. This is simply a list of each category's entries for ease of information.<br />
 			Entries matching the current query are <span class='highlight'>highlighted</span>.</small></p>
 		<table class="data"> <!-- Intentionally not set to hover. Nested tables hover instead. -->

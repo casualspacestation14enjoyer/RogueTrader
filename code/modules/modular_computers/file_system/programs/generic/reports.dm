@@ -21,7 +21,7 @@
 	var/can_view_only = FALSE
 	/// A report being viewed/edited. This is a temporary copy.
 	var/datum/computer_file/report/selected_report
-	/// The computer file currently open.
+	/// The cogitator file currently open.
 	var/datum/computer_file/report/saved_report
 	var/prog_state = REPORTS_VIEW
 

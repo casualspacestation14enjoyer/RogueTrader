@@ -4,14 +4,14 @@
 	name = "Modular Computer"
 	desc = "A modular computer. You shouldn't see this."
 
-	var/enabled = 0											// Whether the computer is turned on.
-	var/screen_on = 1										// Whether the computer is active/opened/it's screen is on.
+	var/enabled = 0											// Whether the cogitator is turned on.
+	var/screen_on = 1										// Whether the cogitator is active/opened/it's screen is on.
 	var/hardware_flag = 0									// A flag that describes this device type
 	var/last_power_usage = 0								// Last tick power usage of this computer
-	var/computer_emagged = FALSE							// Whether the computer is emagged.
-	var/apc_powered = FALSE									// Set automatically. Whether the computer used APC power last tick.
-	var/base_active_power_usage = 50						// Power usage when the computer is open (screen is active) and can be interacted with. Remember hardware can use power too.
-	var/base_idle_power_usage = 5							// Power usage when the computer is idle and screen is off (currently only applies to laptops)
+	var/computer_emagged = FALSE							// Whether the cogitator is emagged.
+	var/apc_powered = FALSE									// Set automatically. Whether the cogitator used APC power last tick.
+	var/base_active_power_usage = 50						// Power usage when the cogitator is open (screen is active) and can be interacted with. Remember hardware can use power too.
+	var/base_idle_power_usage = 5							// Power usage when the cogitator is idle and screen is off (currently only applies to laptops)
 	var/bsod = FALSE										// Error screen displayed
 	var/ambience_last_played								// Last time sound was played
 
@@ -23,22 +23,22 @@
 	icon_state = null
 	center_of_mass = null									// No pixelshifting by placing on tables, etc.
 	randpixel = 0											// And no random pixelshifting on-creation either.
-	var/icon_state_unpowered = null							// Icon state when the computer is turned off
+	var/icon_state_unpowered = null							// Icon state when the cogitator is turned off
 	var/max_hardware_size = 0								// Maximal hardware size. Currently, tablets have 1, laptops 2 and consoles 3. Limits what hardware types can be installed.
 	var/steel_sheet_cost = 5								// Amount of steel sheets refunded when disassembling an empty frame of this computer.
-	var/light_strength = 0									// Intensity of light this computer emits. Comparable to numbers light fixtures use.
+	var/light_strength = 0									// Intensity of light this cogitator emits. Comparable to numbers light fixtures use.
 
 	health_max = 100
-	/// Integer. Damage level at which the computer ceased to operate.
+	/// Integer. Damage level at which the cogitator ceased to operate.
 	var/broken_damage = 50
 	var/list/terminals          // List of open terminal datums.
 
-	// Important hardware (must be installed for computer to work)
-	var/obj/item/stock_parts/computer/processor_unit/processor_unit				// CPU. Without it the computer won't run. Better CPUs can run more programs at once.
+	// Important hardware (must be installed for cogitator to work)
+	var/obj/item/stock_parts/computer/processor_unit/processor_unit				// CPU. Without it the cogitator won't run. Better CPUs can run more programs at once.
 	var/obj/item/stock_parts/computer/network_card/network_card					// Network Card component of this computer. Allows connection to NTNet
 	var/obj/item/stock_parts/computer/hard_drive/hard_drive						// Hard Drive component of this computer. Stores programs and files.
 
-	// Optional hardware (improves functionality, but is not critical for computer to work in most cases)
+	// Optional hardware (improves functionality, but is not critical for cogitator to work in most cases)
 	var/obj/item/stock_parts/computer/battery_module/battery_module				// An internal power source for this computer. Can be recharged.
 	var/obj/item/stock_parts/computer/card_slot/card_slot						// ID Card slot component of this computer. Mostly for HoP modification console that needs ID slot for modification.
 	var/obj/item/stock_parts/computer/nano_printer/nano_printer					// Nano Printer component of this computer, for your everyday paperwork needs.

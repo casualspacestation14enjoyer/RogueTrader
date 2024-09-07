@@ -1,4 +1,4 @@
-/// Sets this computer up to use another as a proxy. If the proxy device also has a proxy itself set up, the last device in the chain is used.
+/// Sets this cogitator up to use another as a proxy. If the proxy device also has a proxy itself set up, the last device in the chain is used.
 /datum/terminal_command/proxy
 	name = "proxy"
 	man_entry = list(

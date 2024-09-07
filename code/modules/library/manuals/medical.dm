@@ -48,7 +48,7 @@
 				Grab the body and then put it inside the DNA modifier. If you cannot do this, then you messed up at Step 2. Go back and check you took EVERYTHING off - a commonly missed item is their headset.
 
 				<a name='4'><h3>Step 4: Scan body</h3>
-				Go onto the computer and scan the body by pressing 'Scan - &lt;Subject Name Here&gt;.' If you're successful, they will be added to the records (note that this can be done at any time, even with living people,
+				Go onto the cogitator and scan the body by pressing 'Scan - &lt;Subject Name Here&gt;.' If you're successful, they will be added to the records (note that this can be done at any time, even with living people,
 				so that they can be cloned without a body in the event that they are lying dead on port solars and didn't turn on their suit sensors)!
 				If not, and it says "Error: Mental interface failure.", then they have left their bodily confines and are one with the spirits. If this happens, just shout at them to get back in their body,
 				click 'Refresh' and try scanning them again. If there's no success, threaten them with gibbing.

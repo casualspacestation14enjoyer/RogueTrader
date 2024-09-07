@@ -103,7 +103,7 @@
 	return text
 
 /**
- * Makes the computer emit light if the screen is on.
+ * Makes the cogitator emit light if the screen is on.
  * Returns TRUE if the screen is on, otherwise FALSE.
  */
 /obj/machinery/computer/proc/update_glow()

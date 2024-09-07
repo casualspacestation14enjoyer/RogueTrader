@@ -3,8 +3,8 @@ Program-based computers, designed to replace computer3 project and eventually mo
 
 
 1. Basic information
-Program based cogitators will allow you to do multiple things from single computer. Each computer will have programs, with more being downloadable from NTNet (stationwide network with wireless coverage)
-if user has apropriate ID card access. It will be possible to hack the computer by using an emag on it - the emag will have to be completely new and will be consumed on use, but it will
+Program based cogitators will allow you to do multiple things from single computer. Each cogitator will have programs, with more being downloadable from NTNet (stationwide network with wireless coverage)
+if user has apropriate ID card access. It will be possible to hack the cogitator by using an emag on it - the emag will have to be completely new and will be consumed on use, but it will
 lift ALL locks on ALL installed programs, and allow download of programs even if your ID doesn't have access to them. Computers will have hard drives that can store files.
 Files can be programs (datum/computer_file/program/ subtype) or data files (datum/computer_file/data/ subtypes). Program for sending files will be available that will allow transfer via NTNet.
 NTNet coverage will be limited to station's Z level, but better network card (=more expensive and higher power use) will allow usage everywhere. Hard drives will have limited capacity for files
@@ -18,7 +18,7 @@ will have working coverage on higher speed (Ethernet is faster than Wi-Fi) and w
 LAPTOPS
 Laptops are middle ground between actual portable devices and full consoles. They offer certain level of mobility, as they can be closed, moved somewhere else and then opened again.
 Laptops will by default have internal battery to power them, and may be recharged with rechargers. However, laptops rely on wireless NTNet coverage. Laptop HDDs are also designed with power efficiency
-in mind, which means they sacrifice some storage space for higher battery life. Laptops may be dispensed from computer vendor machine, and may be customised before vending. For people which don't
+in mind, which means they sacrifice some storage space for higher battery life. Laptops may be dispensed from cogitator vendor machine, and may be customised before vending. For people which don't
 want to rely on internal battery, tesla link exists that connects to APC, if one exists.
 TABLETS
 Tablets are smallest available devices, designed with full mobility in mind. Tablets have only weak CPU which means the software they can run is somewhat limited. They are also designed with high
@@ -26,16 +26,16 @@ battery life in mind, which means the hardware focuses on power efficiency rathe
 Tablets can't be equipped with tesla link, which means they have to be recharged manually.
 
 
-3. Computer Hardware
+3. Cogitator Hardware
 Computers will come with basic hardware installed, with upgrades being selectable when purchasing the device.
-Hard Drive: Stores data, mandatory for the computer to work
+Hard Drive: Stores data, mandatory for the cogitator to work
 Network Card: Connects to NTNet
-Battery: Internal power source that ensures the computer operates when not connected to APC.
+Battery: Internal power source that ensures the cogitator operates when not connected to APC.
 Extras (those won't be installed by default, but can be bought)
 ID Card Slot: Required for HoP-style programs to work. Access for security record-style programs is read from ID of user [RFID?] without requiring this
 APC Tesla Relay: Wirelessly powers the device from APC. Consoles have it by default. Laptops can buy it.
 Disk Drive: Allows usage of portable data disks.
-Nano Printer: Allows the computer to scan paper contents and save them to file, as well as recycle papers and print stuff on it.
+Nano Printer: Allows the cogitator to scan paper contents and save them to file, as well as recycle papers and print stuff on it.
 
 4. NTNet
 NTNet is stationwide network that allows users to download programs needed for their work. It will be possible to send any files to other active cogitators using relevant program (NTN Transfer).
@@ -107,7 +107,7 @@ If decrypted the password is cleared, so you can keep using your favorite passwo
 Emagged laptops will have option to enable "Safe Encryption". If safely encrypted laptop is decrypted it loses it's emag status and 50% of files is deleted (randomly selected).
 
 7. System Administrator
-System Administrator will be new job under Research. It's main specifics will be maintaining of computer systems on station, espicially from software side.
+System Administrator will be new job under Research. It's main specifics will be maintaining of cogitator systems on station, espicially from software side.
 From IC perspective they'd probably know how to build a console or something given they work with computers, but they are mostly programmers/network experts.
 They will have office in research, which will probably replace (and contain) the server room and part of the toxins storage which is currently oversized.
 They will have access to DOWNLOAD (not run) all programs that exist on NTNet. They'll have fairly good amount of available programs, most of them being

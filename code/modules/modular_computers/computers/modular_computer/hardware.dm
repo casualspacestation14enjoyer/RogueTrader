@@ -1,7 +1,7 @@
 // Attempts to install the hardware into apropriate slot.
 /obj/item/modular_computer/proc/try_install_component(mob/living/user, obj/item/stock_parts/computer/H, found = 0)
 	if(!(H.usage_flags & hardware_flag))
-		to_chat(user, "This computer isn't compatible with [H].")
+		to_chat(user, "This cogitator isn't compatible with [H].")
 		return
 
 	// "USB" flash drive.

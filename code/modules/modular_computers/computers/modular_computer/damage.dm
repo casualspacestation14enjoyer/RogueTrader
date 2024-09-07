@@ -13,7 +13,7 @@
 	qdel(src)
 
 /obj/item/modular_computer/damage_health(damage, damage_type, damage_flags, severity, skip_can_damage_check)
-	// Damage components first, so that they're still caught if the computer dies and ejects them all.
+	// Damage components first, so that they're still caught if the cogitator dies and ejects them all.
 	for (var/obj/item/stock_parts/computer/H in get_all_components())
 		if (prob(50))
 			var/component_damage = damage * (rand(75, 125) / 100)

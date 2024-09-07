@@ -17,7 +17,7 @@
 
 /obj/item/material/coin/challenge/gcc/navy_old
 	default_material = MATERIAL_IRON
-	name = "old confederation navy challenge coin"
+	name = "old tau navy challenge coin"
 	icon_state = "navy-old"
 	desc = {"\
 		A tarnished challenge coin once issued by the \
@@ -54,7 +54,7 @@
 /datum/gear/trinket/gcc_challenge_coin
 	display_name = "confederation challenge coin selection"
 	description = {"\
-		A selection of challenge coins used by confederation military \
+		A selection of challenge coins used by tau military \
 		forces for identification, collection, or bragging rights.\
 	"}
 	path = /obj/item/material/coin/challenge/gcc

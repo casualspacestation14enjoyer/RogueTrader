@@ -358,7 +358,7 @@
 
 /obj/item/reagent_containers/food/drinks/flask/detflask
 	name = "\improper Detective's flask"
-	desc = "A metal flask with a leather band and golden badge belonging to the detective."
+	desc = "A metal flask with a leather band and golden badge belonging to the investigator."
 	icon_state = "detflask"
 	volume = 60
 	center_of_mass = "x=17;y=8"

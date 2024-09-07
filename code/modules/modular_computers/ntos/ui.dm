@@ -151,7 +151,7 @@
 		update_uis()
 
 /datum/extension/interactive/ntos/proc/update_uis()
-	if(active_program) //Should we update program ui or computer ui?
+	if(active_program) //Should we update program ui or cogitator ui?
 		SSnano.update_uis(active_program)
 		if(active_program.NM)
 			SSnano.update_uis(active_program.NM)

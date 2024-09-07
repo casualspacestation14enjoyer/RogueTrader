@@ -63,7 +63,7 @@
 
 /obj/item/sample/fibers
 	name = "fiber bag"
-	desc = "Used to hold fiber evidence for the detective."
+	desc = "Used to hold fiber evidence for the investigator."
 	icon_state = "fiberbag"
 
 /obj/item/sample/print

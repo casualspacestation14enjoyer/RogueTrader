@@ -217,7 +217,7 @@
 
 	if(isghost(src))
 		if(speaker) //speaker is null when the arrivals annoucement plays
-			if(speaker_name != speaker.real_name && !isAI(speaker)) //Announce computer and various stuff that broadcasts doesn't use it's real name but AI's can't pretend to be other mobs.
+			if(speaker_name != speaker.real_name && !isAI(speaker)) //Announce cogitator and various stuff that broadcasts doesn't use it's real name but AI's can't pretend to be other mobs.
 				speaker_name = "[speaker.real_name] ([speaker_name])"
 			track = "([ghost_follow_link(speaker, src)]) [speaker_name]"
 		else

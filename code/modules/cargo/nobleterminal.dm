@@ -87,7 +87,7 @@
 		return
 
 	if(get_dist(src, usr) > 2)
-		to_chat(usr, "You need to be at the computer to push that button!")
+		to_chat(usr, "You need to be at the cogitator to push that button!")
 		return
 
 	if (usr.stat || usr.restrained())

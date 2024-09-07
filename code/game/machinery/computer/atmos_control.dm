@@ -1,5 +1,5 @@
 /obj/item/stock_parts/circuitboard/atmoscontrol
-	name = "\improper Central Atmospherics Computer Circuitboard"
+	name = "\improper Central Atmospherics Cogitator Circuitboard"
 	build_path = /obj/machinery/computer/atmoscontrol
 
 /obj/machinery/computer/atmoscontrol

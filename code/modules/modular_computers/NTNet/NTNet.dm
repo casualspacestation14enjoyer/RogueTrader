@@ -228,7 +228,7 @@ var/global/datum/ntnet/ntnet_global = new()
 		if(A.login == login)
 			return A
 
-/// Used when a mob or robot is renamed. Not intended to be used by any ingame computer systems
+/// Used when a mob or robot is renamed. Not intended to be used by any ingame cogitator systems
 /datum/ntnet/proc/rename_email(mob/user, old_login, desired_name, domain)
 	var/datum/computer_file/data/email_account/account = find_email_by_name(old_login)
 	var/new_login = sanitize_for_email(desired_name)
@@ -250,7 +250,7 @@ var/global/datum/ntnet/ntnet_global = new()
 		if(my_client)
 			my_client.stored_login = new_login
 
-/// Used for initial email generation. Not intended to be used by any ingame computer systems
+/// Used for initial email generation. Not intended to be used by any ingame cogitator systems
 /datum/ntnet/proc/create_email(mob/user, desired_name, domain, assignment, desired_password)
 	desired_name = sanitize_for_email(desired_name)
 	var/login = "[desired_name]@[domain]"

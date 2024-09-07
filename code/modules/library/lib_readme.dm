@@ -49,8 +49,8 @@
 
 // Ideas for the future
 // ---------------------
-// 	- Visitor's computer should be able to search the current in-round library inventory (that the Librarian has stocked and checked in)
-//  -- Give computer other features like an Instant Messenger application, or the ability to edit, save, and print documents.
+// 	- Visitor's cogitator should be able to search the current in-round library inventory (that the Librarian has stocked and checked in)
+//  -- Give cogitator other features like an Instant Messenger application, or the ability to edit, save, and print documents.
 //	- Admin interface directly tied to the Archive DB. Right now there's no way to delete uploaded books in-game.
 //  -- If this gets implemented, allow Librarians to "tag" or "suggest" books to be deleted. The DB ID of the tagged books gets saved to a text file (or another table in the DB maybe?).
 //	   The admin interface would automatically take these IDs and SELECT them all from the DB to be displayed along with a Delete link to drop the row from the table.

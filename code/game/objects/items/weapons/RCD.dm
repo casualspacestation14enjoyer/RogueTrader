@@ -320,7 +320,7 @@
 
 
 /*
-	Machine and Computer frame construction
+	Machine and Cogitator frame construction
 */
 
 /singleton/hierarchy/rcd_mode/machine_frame

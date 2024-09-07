@@ -20,7 +20,7 @@
 	category = PROG_UTIL
 
 /datum/nano_module/program/computer_configurator
-	name = "NTOS Computer Configuration Tool"
+	name = "NTOS Cogitator Configuration Tool"
 
 /datum/nano_module/program/computer_configurator/ui_interact(mob/user, ui_key = "main", datum/nanoui/ui = null, force_open = 1, datum/topic_state/state = GLOB.default_state)
 	var/list/data = list()

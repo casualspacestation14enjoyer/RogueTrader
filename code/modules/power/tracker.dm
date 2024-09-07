@@ -24,14 +24,14 @@
 	unset_control() //remove from control computer
 	..()
 
-//set the control of the tracker to a given computer if closer than SOLAR_MAX_DIST
+//set the control of the tracker to a given cogitator if closer than SOLAR_MAX_DIST
 /obj/machinery/power/tracker/proc/set_control(obj/machinery/power/solar_control/SC)
 	if(SC && (get_dist(src, SC) > SOLAR_MAX_DIST))
 		return 0
 	control = SC
 	return 1
 
-//set the control of the tracker to null and removes it from the previous control computer if needed
+//set the control of the tracker to null and removes it from the previous control cogitator if needed
 /obj/machinery/power/tracker/proc/unset_control()
 	if(control)
 		control.connected_tracker = null

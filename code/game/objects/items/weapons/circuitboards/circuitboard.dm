@@ -59,7 +59,7 @@
 		return 1
 	return 0
 
-//Called when a computer is deconstructed to produce a circuitboard.
+//Called when a cogitator is deconstructed to produce a circuitboard.
 //Only used by computers, as other machines store their circuitboard instance.
 /obj/item/stock_parts/circuitboard/proc/deconstruct(obj/machinery/M)
 	if (istype(M, build_path))

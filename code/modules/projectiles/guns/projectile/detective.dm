@@ -23,7 +23,7 @@
 /obj/item/gun/projectile/pistol/sec/detective/verb/rename_gun()
 	set name = "Name Gun"
 	set category = "Object"
-	set desc = "Rename your gun. If you're the detective."
+	set desc = "Rename your gun. If you're the investigator."
 
 	var/mob/M = usr
 	if(!M.mind)	return 0

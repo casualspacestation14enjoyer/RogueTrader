@@ -153,7 +153,7 @@ GLOBAL_DATUM_INIT(ninjas, /datum/antagonist/ninja, new)
 	desc = "A secure box containing standard operation kit for special forces operatives."
 	selection_options = list(
 		"Solar Special Operations" = /obj/structure/closet/crate/ninja/sol,
-		"Gilgameshi Commando" = /obj/structure/closet/crate/ninja/gcc,
+		"Tau Commando" = /obj/structure/closet/crate/ninja/gcc,
 		"Heretic Mercenary" = /obj/structure/closet/crate/ninja/merc,
 		"Corporate Operative" = /obj/structure/closet/crate/ninja/corpo,
 		"Spider-Clan Ninja" = /obj/structure/closet/crate/ninja

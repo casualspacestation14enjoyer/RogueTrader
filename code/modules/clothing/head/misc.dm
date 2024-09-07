@@ -77,7 +77,7 @@
 	body_parts_covered = HEAD|FACE|EYES
 
 /obj/item/clothing/head/nursehat
-	name = "nurse's hat"
+	name = "medicae hat"
 	desc = "It allows quick identification of trained medical personnel."
 	icon_state = "nursehat"
 	siemens_coefficient = 0.9

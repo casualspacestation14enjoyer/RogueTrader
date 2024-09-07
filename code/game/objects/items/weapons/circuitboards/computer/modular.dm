@@ -1,5 +1,5 @@
 /obj/item/stock_parts/circuitboard/modular_computer
-	name = "general-purpose computer motherboard"
+	name = "general-purpose cogitator motherboard"
 	build_path = /obj/machinery/computer/modular
 	req_components = list(
 		/obj/item/stock_parts/computer/processor_unit = 1

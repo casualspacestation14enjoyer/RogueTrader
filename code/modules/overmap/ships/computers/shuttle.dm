@@ -1,4 +1,4 @@
-//Shuttle controller computer for shuttles going between sectors
+//Shuttle controller cogitator for shuttles going between sectors
 /obj/machinery/computer/shuttle_control/explore
 	name = "general shuttle control console"
 	ui_template = "shuttle_control_console_exploration.tmpl"

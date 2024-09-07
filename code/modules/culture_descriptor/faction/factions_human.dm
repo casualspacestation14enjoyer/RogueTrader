@@ -36,7 +36,7 @@
 	name = FACTION_INDIE_CONFED
 	description = "The Tau Empire, commonly referred to as the Tau Empire (GCC), is a regional power in human space,\
 	bordered by the Imperial Government towards the galactic centre. The capital of the Tau is the city of Ameranth on the planet of Terra \
-	in the Gilgamesh system. Externally heavily militant and isolationist, the GCC, internally, is heavily libertarian, with \
+	in the Tau system. Externally heavily militant and isolationist, the GCC, internally, is heavily libertarian, with \
 	a strong focus on independent planetary government with the GCC itself only handling defence, foreign relations and some intergalactic trade. \
 	Increasingly anti non-human, the GCC is in a cold war with the Imperial Government following  the Gaia Conflict, a large \
 	scale conflict between the Imperium and GCC that saw a great deal of death and destruction. In Sol space \"Indies\" as they are known are \
@@ -130,12 +130,12 @@
 
 /singleton/cultural_info/faction/dais
 	name = FACTION_DAIS
-	description = "Deimos Advanced Information Systems (DAIS) is a large corporation specializing in information technology such as computer hardware \
-	and software, telecommunications equipment, and networking equipment based on Sancor. It is the number one supplier of computer technology in The Imperial \
+	description = "Deimos Advanced Information Systems (DAIS) is a large corporation specializing in information technology such as cogitator hardware \
+	and software, telecommunications equipment, and networking equipment based on Sancor. It is the number one supplier of cogitator technology in The Imperial \
 	Government, its systems used by most consumers and businesses within SolGov. DAIS is actually older than the Imperial Government and is one of the very \
 	few imperial members of the Solar Assembly. DAIS is also a major investor in the Torch project, and is on the Explorator Organization board of directors. \
 	Currently DAIS is invested in bluespace computing research and artificial intelligence research. Despite recent intrusions by Necromundan into their sector with NTNet \
-	and related products, they still remain the market leader in computer technologies."
+	and related products, they still remain the market leader in cogitator technologies."
 	economic_power = 1.1
 
 

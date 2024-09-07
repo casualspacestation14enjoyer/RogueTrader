@@ -1,4 +1,4 @@
-/// Causes computer to play a sound and show a message to everyone around it
+/// Causes cogitator to play a sound and show a message to everyone around it
 /datum/terminal_command/sysnotify
 	name = "sysnotify"
 	man_entry = list(

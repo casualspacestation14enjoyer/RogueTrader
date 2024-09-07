@@ -2720,7 +2720,7 @@
 	mix_message = "The aroma of ginger and juice rises from the mixture"
 
 /singleton/reaction/springpunch
-	name = "Gilgamesh Spring Punch"
+	name = "Tau Spring Punch"
 	result = /datum/reagent/ethanol/springpunch
 	required_reagents = list(/datum/reagent/ethanol/vodka = 2, /datum/reagent/drink/juice/lemon = 1,  /datum/reagent/sugar = 1)
 	result_amount = 4

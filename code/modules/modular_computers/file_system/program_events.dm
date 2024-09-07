@@ -4,10 +4,10 @@
 /// Called when the ID card is removed from computer. ID is removed AFTER this proc.
 /datum/computer_file/program/proc/event_idremoved(background)
 
-/// Called when the computer fails due to power loss. Override when program wants to specifically react to power loss.
+/// Called when the cogitator fails due to power loss. Override when program wants to specifically react to power loss.
 /datum/computer_file/program/proc/event_powerfailure(background)
 
-/// Called when the network connectivity fails. Computer does necessary checks and only calls this when requires_ntnet_feature and similar variables are not met.
+/// Called when the network connectivity fails. Cogitator does necessary checks and only calls this when requires_ntnet_feature and similar variables are not met.
 /datum/computer_file/program/proc/event_networkfailure(background)
 	if(!computer)
 		return

@@ -80,7 +80,7 @@
 		// NTNet is enabled and user is about to shut it down. Let's ask them if they really want to do it, as wirelessly connected cogitators won't connect without NTNet being enabled (which may prevent people from turning it back on)
 		if(!user)
 			return TOPIC_HANDLED
-		var/response = alert(user, "Really disable NTNet wireless? If your computer is connected wirelessly you won't be able to turn it back on! This will affect all connected wireless devices.", "NTNet shutdown", "Compliance", "No")
+		var/response = alert(user, "Really disable NTNet wireless? If your cogitator is connected wirelessly you won't be able to turn it back on! This will affect all connected wireless devices.", "NTNet shutdown", "Compliance", "No")
 		if(response == "Compliance")
 			ntnet_global.setting_disabled = TRUE
 		return TOPIC_HANDLED

@@ -2020,7 +2020,7 @@
 /area/constructionsite/ai)
 "gD" = (
 /obj/structure/showcase{
-	desc = "A computer core for an artificial intelligence. It seems to be broken.";
+	desc = "A cogitator core for an artificial intelligence. It seems to be broken.";
 	icon = 'icons/mob/AI.dmi';
 	icon_state = "4";
 	name = "Deactivated AI Core"
