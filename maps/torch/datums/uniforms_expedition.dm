@@ -116,19 +116,19 @@
 	dress_skirt = /obj/item/clothing/under/solgov/dress/expeditionary/skirt/security
 
 /singleton/hierarchy/mil_uniform/ec/sec/senior
-	name = "EC security senior"
+	name = "EC militarum senior"
 	min_rank = 5
 
 	dress_over = /obj/item/clothing/suit/storage/solgov/dress/expedition/senior
 
 /singleton/hierarchy/mil_uniform/ec/sec/chief
-	name = "EC security chief"
+	name = "EC militarum chief"
 	min_rank = 7
 
 	dress_over = /obj/item/clothing/suit/storage/solgov/dress/expedition/chief
 
 /singleton/hierarchy/mil_uniform/ec/sec/officer
-	name = "EC security CO"
+	name = "EC militarum CO"
 	min_rank = 11
 
 	utility_under = /obj/item/clothing/under/solgov/utility/expeditionary/officer/security
@@ -148,7 +148,7 @@
 	dress_hat = /obj/item/clothing/head/solgov/service/expedition/command
 
 /singleton/hierarchy/mil_uniform/ec/sec/officer/com //Can only be officers
-	name = "EC security command"
+	name = "EC militarum command"
 	departments = SEC|COM
 
 /singleton/hierarchy/mil_uniform/ec/med

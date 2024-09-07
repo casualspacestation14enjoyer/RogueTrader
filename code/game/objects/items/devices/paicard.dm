@@ -251,8 +251,8 @@
 		src.looking_for_personality = 1
 		paiController.findPAI(src, usr)
 	if(href_list["wipe"])
-		var/confirm = input("Are you CERTAIN you wish to delete the current personality? This action cannot be undone.", "Personality Wipe") in list("Yes", "No")
-		if(confirm == "Yes")
+		var/confirm = input("Are you CERTAIN you wish to delete the current personality? This action cannot be undone.", "Personality Wipe") in list("Compliance", "No")
+		if(confirm == "Compliance")
 			for(var/mob/M in src)
 				to_chat(M, "<h2 style='font-color: #ff0000'>You feel yourself slipping away from reality.</h2>")
 				to_chat(M, "<h3 style='font-color: #ff4d4d'>Byte by byte you lose your sense of self.</h3>")

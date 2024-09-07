@@ -115,7 +115,7 @@
 		var/datum/admins/D = admin_datums[adm_ckey]
 
 		if(task == "remove")
-			if(alert("Are you sure you want to remove [adm_ckey]?","Message","Yes","Cancel") == "Yes")
+			if(alert("Are you sure you want to remove [adm_ckey]?","Message","Compliance","Cancel") == "Compliance")
 				if(!D)	return
 				admin_datums -= adm_ckey
 				D.disassociate()
@@ -224,9 +224,9 @@
 			return
 
 		var/delmob = 0
-		switch(alert("Delete old mob?","Message","Yes","No","Cancel"))
+		switch(alert("Delete old mob?","Message","Compliance","No","Cancel"))
 			if("Cancel")	return
-			if("Yes")		delmob = 1
+			if("Compliance")		delmob = 1
 
 		log_and_message_admins("has used rudimentary transformation on [key_name_admin(M)]. Transforming to [href_list["simplemake"]]; deletemob=[delmob]")
 
@@ -258,7 +258,7 @@
 		var/banfolder = href_list["unbanf"]
 		Banlist.cd = "/base/[banfolder]"
 		var/key = Banlist["key"]
-		if(alert(usr, "Are you sure you want to unban [key]?", "Confirmation", "Yes", "No") == "Yes")
+		if(alert(usr, "Are you sure you want to unban [key]?", "Confirmation", "Compliance", "No") == "Compliance")
 			if(RemoveBan(banfolder))
 				unbanpanel()
 			else
@@ -286,8 +286,8 @@
 
 		var/duration
 
-		switch(alert("Temporary Ban?",,"Yes","No"))
-			if("Yes")
+		switch(alert("Temporary Ban?",,"Compliance","No"))
+			if("Compliance")
 				temp = 1
 				var/mins = 0
 				if(minutes > CMinutes)
@@ -740,8 +740,8 @@
 
 		//Banning comes first
 		if(length(notbannedlist)) //at least 1 unbanned job exists in job_list so we have stuff to ban.
-			switch(alert("Temporary Ban?",,"Yes","No", "Cancel"))
-				if("Yes")
+			switch(alert("Temporary Ban?",,"Compliance","No", "Cancel"))
+				if("Compliance")
 					if(!check_rights(R_BAN, 0))
 						to_chat(usr, SPAN_WARNING(" You cannot issue temporary job-bans!"))
 						return
@@ -806,8 +806,8 @@
 			for(var/job in SSjobs.titles_to_datums)
 				var/reason = jobban_isbanned(M, job)
 				if(!reason) continue //skip if it isn't jobbanned anyway
-				switch(alert("Job: '[job]' Reason: '[reason]' Un-jobban?","Please Confirm","Yes","No"))
-					if("Yes")
+				switch(alert("Job: '[job]' Reason: '[reason]' Un-jobban?","Please Confirm","Compliance","No"))
+					if("Compliance")
 						ban_unban_log_save("[key_name(usr)] unjobbanned [key_name(M)] from [job]")
 						log_admin("[key_name(usr)] unbanned [key_name(M)] from [job]")
 						DB_ban_unban(M.ckey, BANTYPE_JOB_PERMA, job)
@@ -845,7 +845,7 @@
 
 		var/t = href_list["removejobban"]
 		if(t)
-			if((alert("Do you want to unjobban [t]?","Unjobban confirmation", "Yes", "No") == "Yes") && t) //No more misclicks! Unless you do it twice.
+			if((alert("Do you want to unjobban [t]?","Unjobban confirmation", "Compliance", "No") == "Compliance") && t) //No more misclicks! Unless you do it twice.
 				log_and_message_admins("[key_name_admin(usr)] removed [t]")
 				jobban_remove(t)
 				href_list["ban"] = 1 // lets it fall through and refresh
@@ -869,8 +869,8 @@
 			to_chat(usr, SPAN_DANGER("This mob has no known last occupant and cannot be banned."))
 			return
 
-		switch(alert("Temporary Ban?",,"Yes","No", "Cancel"))
-			if("Yes")
+		switch(alert("Temporary Ban?",,"Compliance","No", "Cancel"))
+			if("Compliance")
 				var/mins = input(usr,"How long (in minutes)?","Ban time",1440) as num|null
 				if(!mins)
 					return
@@ -914,9 +914,9 @@
 					to_chat(usr, SPAN_DANGER("This mob's occupant has changed from [given_key] to [mob_key]. Please try again."))
 					show_player_panel(M)
 					return
-				switch(alert(usr,"IP ban?",,"Yes","No","Cancel"))
+				switch(alert(usr,"IP ban?",,"Compliance","No","Cancel"))
 					if("Cancel")	return
-					if("Yes")
+					if("Compliance")
 						AddBan(mob_key, M.computer_id, reason, usr.ckey, 0, 0, M.lastKnownIP)
 					if("No")
 						AddBan(mob_key, M.computer_id, reason, usr.ckey, 0, 0)
@@ -1106,7 +1106,7 @@
 	else if(href_list["sendtoprison"])
 		if(!check_rights(R_ADMIN))	return
 
-		if(alert(usr, "Send to admin prison for the round?", "Message", "Yes", "No") != "Yes")
+		if(alert(usr, "Send to admin prison for the round?", "Message", "Compliance", "No") != "Compliance")
 			return
 
 		var/mob/M = locate(href_list["sendtoprison"])
@@ -1146,7 +1146,7 @@
 	else if(href_list["tdome1"])
 		if(!check_rights(R_FUN))	return
 
-		if(alert(usr, "Confirm?", "Message", "Yes", "No") != "Yes")
+		if(alert(usr, "Confirm?", "Message", "Compliance", "No") != "Compliance")
 			return
 
 		var/mob/M = locate(href_list["tdome1"])
@@ -1171,7 +1171,7 @@
 	else if(href_list["tdome2"])
 		if(!check_rights(R_FUN))	return
 
-		if(alert(usr, "Confirm?", "Message", "Yes", "No") != "Yes")
+		if(alert(usr, "Confirm?", "Message", "Compliance", "No") != "Compliance")
 			return
 
 		var/mob/M = locate(href_list["tdome2"])
@@ -1196,7 +1196,7 @@
 	else if(href_list["tdomeadmin"])
 		if(!check_rights(R_FUN))	return
 
-		if(alert(usr, "Confirm?", "Message", "Yes", "No") != "Yes")
+		if(alert(usr, "Confirm?", "Message", "Compliance", "No") != "Compliance")
 			return
 
 		var/mob/M = locate(href_list["tdomeadmin"])
@@ -1218,7 +1218,7 @@
 	else if(href_list["tdomeobserve"])
 		if(!check_rights(R_FUN))	return
 
-		if(alert(usr, "Confirm?", "Message", "Yes", "No") != "Yes")
+		if(alert(usr, "Confirm?", "Message", "Compliance", "No") != "Compliance")
 			return
 
 		var/mob/M = locate(href_list["tdomeobserve"])
@@ -1415,7 +1415,7 @@
 
 		//Job + antagonist
 		if(M.mind)
-			special_role_description = "Role: <b>[M.mind.assigned_role]</b>; Antagonist: [SPAN_COLOR("red", "<b>[M.mind.special_role]</b>")]; Has been rev: [(M.mind.has_been_rev)?"Yes":"No"]"
+			special_role_description = "Role: <b>[M.mind.assigned_role]</b>; Antagonist: [SPAN_COLOR("red", "<b>[M.mind.special_role]</b>")]; Has been rev: [(M.mind.has_been_rev)?"Compliance":"No"]"
 		else
 			special_role_description = "Role: <i>Mind datum missing</i> Antagonist: <i>Mind datum missing</i>; Has been rev: <i>Mind datum missing</i>;"
 
@@ -1471,7 +1471,7 @@
 			to_chat(usr, "This can only be used on instances of type /mob/living")
 			return
 
-		if(alert(src.owner, "Are you sure you wish to hit [key_name(M)] with Blue Space Artillery?",  "Confirm Firing?" , "Yes" , "No") != "Yes")
+		if(alert(src.owner, "Are you sure you wish to hit [key_name(M)] with Blue Space Artillery?",  "Confirm Firing?" , "Compliance" , "No") != "Compliance")
 			return
 
 		if(BSACooldown)
@@ -1606,7 +1606,7 @@
 	else if(href_list["getmob"])
 		if(!check_rights(R_ADMIN))	return
 
-		if(alert(usr, "Confirm?", "Message", "Yes", "No") != "Yes")	return
+		if(alert(usr, "Confirm?", "Message", "Compliance", "No") != "Compliance")	return
 		var/mob/M = locate(href_list["getmob"])
 		usr.client.Getmob(M)
 
@@ -2047,8 +2047,8 @@
 
 		if(M.client && M.client.holder) return // admins don't get staffnotify'd about
 
-		switch(alert("Really set staff warn?",,"Yes","No"))
-			if("Yes")
+		switch(alert("Really set staff warn?",,"Compliance","No"))
+			if("Compliance")
 				var/last_ckey = LAST_CKEY(M)
 				var/reason = sanitize(input(usr,"Staff warn message","Staff Warn","Problem Player") as text|null)
 				if (!reason || reason == "")
@@ -2066,8 +2066,8 @@
 		var/mob/M = locate(href_list["removestaffwarn"])
 		if(!ismob(M)) return
 
-		switch(alert("Really remove staff warn?",,"Yes","No"))
-			if("Yes")
+		switch(alert("Really remove staff warn?",,"Compliance","No"))
+			if("Compliance")
 				var/last_ckey = LAST_CKEY(M)
 				if(!DB_staffwarn_remove(last_ckey))
 					return
@@ -2090,10 +2090,10 @@
 		if (!isliving(M))
 			return
 
-		var/response = alert("This will put [M] into a cryopod and despawn them. Are you sure?",,"Yes","No") == "Yes"
+		var/response = alert("This will put [M] into a cryopod and despawn them. Are you sure?",,"Compliance","No") == "Compliance"
 		if (response)
 			if (M.client)
-				var/sanity_check = alert("This player is currently online. Do you really want to cryo them?",,"Yes","No") == "Yes"
+				var/sanity_check = alert("This player is currently online. Do you really want to cryo them?",,"Compliance","No") == "Compliance"
 
 				if (!sanity_check)
 					return
@@ -2140,7 +2140,7 @@
 		if (!ishuman(M))
 			return
 
-		var/response = alert("This will delete the player's current gear and spawn their loadout instead, are you sure?",,"Yes","No") == "Yes"
+		var/response = alert("This will delete the player's current gear and spawn their loadout instead, are you sure?",,"Compliance","No") == "Compliance"
 
 		if (response)
 			var/datum/job/job = SSjobs.get_by_title(M.job)

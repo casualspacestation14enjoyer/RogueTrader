@@ -26,7 +26,7 @@
 	body_parts_covered = 0
 
 /obj/item/clothing/under/rank/security
-	name = "security officer's jumpsuit"
+	name = "militarum officer's jumpsuit"
 	desc = "It's made of a slightly sturdier material than standard jumpsuits, to allow for robust protection."
 	icon_state = "security"
 	item_state = "r_suit"
@@ -38,7 +38,7 @@
 
 /obj/item/clothing/under/rank/dispatch
 	name = "dispatcher's uniform"
-	desc = "A dress shirt and khakis with a security patch sewn on."
+	desc = "A dress shirt and khakis with a militarum patch sewn on."
 	icon_state = "dispatch"
 	worn_state = "dispatch"
 	armor = list(
@@ -48,7 +48,7 @@
 	siemens_coefficient = 0.9
 
 /obj/item/clothing/under/rank/security2
-	name = "security officer's uniform"
+	name = "militarum officer's uniform"
 	desc = "It's made of a slightly sturdier material, to allow for robust protection."
 	icon_state = "redshirt2"
 	item_state = "r_suit"
@@ -208,8 +208,8 @@
  */
 
 /obj/item/clothing/under/rank/security/navyblue
-	name = "security officer's uniform"
-	desc = "The latest in fashionable security outfits."
+	name = "militarum officer's uniform"
+	desc = "The latest in fashionable militarum outfits."
 	icon_state = "officerblueclothes"
 	item_state = "ba_suit"
 	worn_state = "officerblueclothes"

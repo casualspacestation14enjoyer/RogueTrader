@@ -84,7 +84,7 @@
 	islocked = 1
 
 /obj/machinery/suit_storage_unit/security
-	name = "security voidsuit storage unit"
+	name = "militarum voidsuit storage unit"
 	suit= /obj/item/clothing/suit/space/void/security
 	helmet = /obj/item/clothing/head/helmet/space/void/security
 	boots = /obj/item/clothing/shoes/magboots

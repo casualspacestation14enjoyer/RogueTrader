@@ -4656,7 +4656,7 @@
 	frequency = 1379;
 	id_tag = "bsa_ex";
 	locked = 1;
-	name = "Obstruction Field Disperser Maintenance External Airlock"
+	name = "Macrocannon Maintenance External Airlock"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/disperser)
@@ -5922,7 +5922,7 @@
 /obj/structure/table/steel,
 /obj/machinery/requests_console{
 	announcementConsole = 1;
-	department = "Security";
+	department = "Militarum";
 	departmentType = 5;
 	pixel_y = -32
 	},
@@ -13762,7 +13762,7 @@
 /obj/machinery/door/blast/regular{
 	dir = 4;
 	id_tag = "bsa-core";
-	name = "OFD Blast Door"
+	name = "Macrocannon Blast Door"
 	},
 /turf/simulated/floor,
 /area/command/disperser)
@@ -13805,7 +13805,7 @@
 /area/command/disperser)
 "It" = (
 /obj/machinery/door/airlock/command{
-	name = "Obstruction Field Disperser Magazine";
+	name = "Macrocannon Magazine";
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,
@@ -15767,7 +15767,7 @@
 	frequency = 1379;
 	id_tag = "bsa_in";
 	locked = 1;
-	name = "Obstruction Field Disperser Maintenance Internal Airlock"
+	name = "Macrocannon Maintenance Internal Airlock"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4

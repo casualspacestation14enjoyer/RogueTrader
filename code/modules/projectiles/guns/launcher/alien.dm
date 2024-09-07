@@ -36,7 +36,7 @@
 	. = ..()
 	set_extension(src, /datum/extension/voxform)
 
-//Vox pinning weapon.
+//Xenos pinning weapon.
 /obj/item/gun/launcher/alien/spikethrower
 
 	name = "spike thrower"

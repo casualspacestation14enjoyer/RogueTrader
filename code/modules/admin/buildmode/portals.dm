@@ -20,9 +20,9 @@ Right Click + Ctrl  - Delete all portals
 				qdel(A)
 				to_chat(user, SPAN_NOTICE("Portal deleted."))
 		else if (parameters["right"])
-			var/choice = alert("Delete all active portals?", "Delete All", "Yes", "No")
+			var/choice = alert("Delete all active portals?", "Delete All", "Compliance", "No")
 
-			if (choice == "Yes")
+			if (choice == "Compliance")
 				for (var/obj/portal/P in portals)
 					qdel(P)
 				portals.Cut()
@@ -34,7 +34,7 @@ Right Click + Ctrl  - Delete all portals
 		else if (!exit)
 			exit = get_turf(A)
 			to_chat(user, SPAN_NOTICE("Exit turf selected: [exit]"))
-			var/choice = alert("Portal turfs selected. Create the portal now?", "Create Portal?", "Yes", "No")
+			var/choice = alert("Portal turfs selected. Create the portal now?", "Create Portal?", "Compliance", "No")
 			if (choice == "No")
 				entrance = null
 				exit = null

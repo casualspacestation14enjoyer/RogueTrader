@@ -86,7 +86,7 @@
 	id_types = list(/obj/item/card/id/torch/contractor/medical/counselor)
 
 /singleton/hierarchy/outfit/job/torch/crew/medical/counselor/ec
-	name = OUTFIT_JOB_NAME("Counselor - Expeditionary Corps")
+	name = OUTFIT_JOB_NAME("Counselor - Explorator")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/medical
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_types = list(/obj/item/card/id/torch/crew/medical/counselor)

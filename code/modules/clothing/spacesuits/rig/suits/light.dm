@@ -200,7 +200,7 @@
 
 /obj/item/rig/light/ninja/gcc
 	name = "gilgamesh heavy suit control module"
-	desc = "A ridiculously bulky military hardsuit with no model number or identifying logos besides a small ICCG crest on its control module. This suit is built like a tank and weighs as much as one."
+	desc = "A ridiculously bulky military hardsuit with no model number or identifying logos besides a small Tau crest on its control module. This suit is built like a tank and weighs as much as one."
 	suit_type = "heavy"
 	icon_state = "gcc_rig"
 	online_slowdown = 2 ///chunky

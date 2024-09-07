@@ -1,6 +1,6 @@
 /datum/language/human/russian
 	name = LANGUAGE_HUMAN_RUSSIAN
-	desc = "The official language of the Independent Colonial Confederation of Gilgamesh, originally established in 2122 by the short-lived United Slavic Confederation on Earth."
+	desc = "The official language of the Tau Empire, originally established in 2122 by the short-lived United Slavic Tau on Terra."
 	colour = "russian"
 	key = "r"
 	shorthand = "Slav"

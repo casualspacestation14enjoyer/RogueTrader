@@ -22,11 +22,11 @@
 
 
 /obj/item/book/manual/military_law
-	name = "The Sol Code of Military Justice"
+	name = "The Sol Code of Militarum Justice"
 	desc = "A brief overview of military law."
 	icon_state = "bookSolGovLaw"
 	author = "The Imperial Government"
-	title = "The Sol Code of Military Justice"
+	title = "The Sol Code of Militarum Justice"
 
 /obj/item/book/manual/military_law/Initialize()
 	. = ..()

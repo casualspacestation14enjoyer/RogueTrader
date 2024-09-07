@@ -11,7 +11,7 @@
  * Main proc to fire shells.
  * Returns FALSE if power isn't present, charge isn't present, or fired under cooldown.
  * Blows up if there's an obstruction.
- * Also handles stumbling during firing of the OFD on the firing vessel.
+ * Also handles stumbling during firing of the Macrocannon on the firing vessel.
  * Finally checks type of target to fire the specific proc (event, ship, empty).
  */
 /obj/machinery/computer/ship/disperser/proc/fire(mob/user)

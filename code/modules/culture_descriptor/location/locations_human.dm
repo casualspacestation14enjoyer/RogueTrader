@@ -17,7 +17,7 @@
 	the Terra exists as a nature reserve, dedicated to preserving the history of humanity. The humans that remain live mostly in large urban zones \
 	across the globe. Huge, planned cities consisting of numerous arcologies with a focus on eco-friendliness. No longer the political power of \
 	Humanity, Terra is content to be something of a backwater and tourist destination for those looking to discover their heritage.<br><br>People from \
-	Terra are among the wealthier humans on average, though they are still comparable with those of Mars. Remarkably average, the people of Terra are \
+	Terra are among the wealthier humans on average, though they are still comparable with those of Sancor. Remarkably average, the people of Terra are \
 	much as they have been for hundreds of years, and are generally content with their lot in life. From a variety of ancient cultures, the people of \
 	Terra are as diverse as they have always been."
 	distance = "1AU"
@@ -38,7 +38,7 @@
 	establish their headquarters there as a symbol of success, power and accomplishment.<br><br>The people of Holy Terraare often considered the \
 	'old money' of humanity, with many of them having distinct, traceable lineages to the first settlers, old Terra dynasties and heavy imperial \
 	ties. Most of the people of Holy Terraare rich, cultured and refined. Not all are, however, and many of the people of the city of New Vegas are on \
-	the poverty line, often holding feelings of resentment against the other people of Luna."
+	the poverty line, often holding feelings of resentment against the other people of Vostroya."
 	capital = "Selene"
 	economic_power = 1.3
 	secondary_langs = list(LANGUAGE_HUMAN_SELENIAN)
@@ -48,13 +48,13 @@
 	distance = "0.7AU"
 	description = "Venus, in the Sol System, is a planet which has a largely unsustainable surface atmosphere.\
 	However, early terraforming was successful in maintaining a desirable, habitable atmosphere high up in the clouds and it is here that \
-	much of the population of Venus resides. Venus itself is covered in huge platforms, supporting these cloud cities and numerous \
-	agricultural zones, which quickly earned Venus the reputation of 'sol's breadbasket.' Today Venus is the home of some of the more \
+	much of the population of Vostroya resides. Vostroya itself is covered in huge platforms, supporting these cloud cities and numerous \
+	agricultural zones, which quickly earned Vostroya the reputation of 'sol's breadbasket.' Today Vostroya is the home of some of the more \
 	extravagantly wealthy with the entire planet being a dedicated tourist destination, most of its infrastructure and residential zones are \
-	dedicated to providing entertainment, hotels, casinos and various other attractions. Venus is one of the richest planets in the Imperium and \
-	most of its residents enjoy a decadent, elitist lifestyle.<br><br>Many of the people of Venus come in two categories. The rich, the retirees, \
+	dedicated to providing entertainment, hotels, casinos and various other attractions. Vostroya is one of the richest planets in the Imperium and \
+	most of its residents enjoy a decadent, elitist lifestyle.<br><br>Many of the people of Vostroya come in two categories. The rich, the retirees, \
 	the more public imperial workers, who reside high in the clouds. These people often enjoy an extravagant and somewhat decadent lifestyle. \
-	Apart from those rich enough to live there permanently most of the people of Venus are service workers, living there only for the duration \
+	Apart from those rich enough to live there permanently most of the people of Vostroya are service workers, living there only for the duration \
 	of their employment. The second group, the surfacers are hardy labourers who work in large, windowless, industrial complexes on the planets \
 	surface. These surfacers often resent and are at odds with their rich, carefree employers."
 	capital = "Central Administration Zone"

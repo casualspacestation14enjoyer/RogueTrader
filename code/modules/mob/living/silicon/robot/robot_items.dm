@@ -23,8 +23,8 @@
 							"What would you like to do?", "Analyze", "Sync", "Eject")
 	if(response == "Analyze")
 		if(loaded_item)
-			var/confirm = alert(user, "This will destroy the item inside forever.  Are you sure?","Confirm Analyze","Yes","No")
-			if(confirm == "Yes" && !QDELETED(loaded_item)) //This is pretty copypasta-y
+			var/confirm = alert(user, "This will destroy the item inside forever.  Are you sure?","Confirm Analyze","Compliance","No")
+			if(confirm == "Compliance" && !QDELETED(loaded_item)) //This is pretty copypasta-y
 				to_chat(user, "You activate the analyzer's microlaser, analyzing \the [loaded_item] and breaking it down.")
 				flick("portable_analyzer_scan", src)
 				playsound(src.loc, 'sound/items/Welder2.ogg', 50, 1)
@@ -64,7 +64,7 @@
 			to_chat(user, "You connect to the research server, push your data upstream to it, then pull the resulting merged data from the master branch.")
 			playsound(src.loc, 'sound/machines/twobeep.ogg', 50, 1)
 		else
-			to_chat(user, "Reserch server ping response timed out.  Unable to connect.  Please contact the system administrator.")
+			to_chat(user, "Reserch server ping response timed out.  Unable to connect.  Please contact the local mechanicum.")
 			playsound(src.loc, 'sound/machines/buzz-two.ogg', 50, 1)
 	if(response == "Eject")
 		if(loaded_item)

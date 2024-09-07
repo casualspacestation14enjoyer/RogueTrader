@@ -9658,7 +9658,7 @@
 /area/crew_quarters/safe_room/bridge)
 "yM" = (
 /obj/structure/sign/dedicationplaque{
-	desc = "S.E.V. Dauntless - Mako Class - Sol Expeditionary Corps Registry 95519 - Shiva Fleet Yards, Mars - First Vessel To Bear The Name - Launched 2302 - Sol Central Government - 'Never was anything great achieved without danger.'"
+	desc = " Dauntless - Mako Class - Sol Explorator Registry 95519 - Shiva Imperial Navy Yards, Sancor - First Vessel To Bear The Name - Launched 2302 - Sol Central Government - 'Never was anything great achieved without danger.'"
 	},
 /turf/simulated/wall/r_wall/prepainted,
 /area/bridge/storage)
@@ -10930,7 +10930,7 @@
 /obj/machinery/light,
 /obj/machinery/requests_console{
 	announcementConsole = 1;
-	department = "Security";
+	department = "Militarum";
 	departmentType = 5;
 	pixel_y = -32
 	},

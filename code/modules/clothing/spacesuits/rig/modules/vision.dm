@@ -30,7 +30,7 @@
 	glasses = /obj/item/clothing/glasses/meson
 
 /datum/rig_vision/sechud
-	mode = "security HUD"
+	mode = "militarum HUD"
 	glasses = /obj/item/clothing/glasses/hud/security
 
 /datum/rig_vision/medhud
@@ -126,14 +126,14 @@
 
 /obj/item/rig_module/vision/sechud
 
-	name = "hardsuit security hud"
+	name = "hardsuit militarum hud"
 	desc = "A simple tactical information system for a hardsuit."
 	icon_state = "securityhud"
 	origin_tech = list(TECH_MAGNET = 3, TECH_BIO = 2, TECH_ENGINEERING = 5)
 	usable = 0
 
-	interface_name = "security HUD"
-	interface_desc = "An integrated security heads up display."
+	interface_name = "militarum HUD"
+	interface_desc = "An integrated militarum heads up display."
 
 	vision_modes = list(/datum/rig_vision/sechud)
 

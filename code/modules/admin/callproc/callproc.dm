@@ -11,8 +11,8 @@
 	var/target = null
 	var/targetselected = 0
 
-	switch(alert("Proc owned by something?",, "Yes", "No", "Cancel"))
-		if("Yes")
+	switch(alert("Proc owned by something?",, "Compliance", "No", "Cancel"))
+		if("Compliance")
 			targetselected=1
 			switch(input("Proc owned by...", "Owner", null) as null|anything in list("Obj", "Mob", "Area or Turf", "Client"))
 				if("Obj")
@@ -168,8 +168,8 @@
 				if(!M) return
 				current = get_area(M)
 				if(!current)
-					switch(alert("\The [M] appears to not have an area; do you want to pass null instead?",, "Yes", "Cancel"))
-						if("Yes")
+					switch(alert("\The [M] appears to not have an area; do you want to pass null instead?",, "Compliance", "Cancel"))
+						if("Compliance")
 							; // do nothing
 						if("Cancel")
 							return CANCEL
@@ -177,8 +177,8 @@
 			if("marked datum")
 				current = C.holder.marked_datum()
 				if(!current)
-					switch(alert("You do not currently have a marked datum; do you want to pass null instead?",, "Yes", "Cancel"))
-						if("Yes")
+					switch(alert("You do not currently have a marked datum; do you want to pass null instead?",, "Compliance", "Cancel"))
+						if("Compliance")
 							; // do nothing
 						if("Cancel")
 							return CANCEL
@@ -207,7 +207,7 @@
 	if(!user_acted(src))
 		return
 	if(holder && holder.callproc && holder.callproc.waiting_for_click)
-		if(alert("Do you want to select \the [A] as the [length(holder.callproc.arguments)+1]\th argument?",, "Yes", "No") == "Yes")
+		if(alert("Do you want to select \the [A] as the [length(holder.callproc.arguments)+1]\th argument?",, "Compliance", "No") == "Compliance")
 			holder.callproc.arguments += A
 
 		holder.callproc.waiting_for_click = 0

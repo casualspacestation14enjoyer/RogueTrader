@@ -729,10 +729,10 @@ var/global/floorIsLava = 0
 	set desc="Restarts the world"
 	if (!usr.client.holder)
 		return
-	var/confirm = alert("Restart the game world?", "Restart", "Yes", "Cancel")
+	var/confirm = alert("Restart the game world?", "Restart", "Compliance", "Cancel")
 	if(confirm == "Cancel")
 		return
-	if(confirm == "Yes")
+	if(confirm == "Compliance")
 		to_world("[SPAN_DANGER("Restarting world!")] [SPAN_NOTICE("Initiated by [usr.key]!")]")
 		log_admin("[key_name(usr)] initiated a reboot.")
 
@@ -890,7 +890,7 @@ GLOBAL_VAR_INIT(skip_allow_lists, FALSE)
 	set desc = "End the round immediately."
 	set name = "End Round"
 
-	var/check = alert("This will immediately end the current round. Are you sure?", "End Game", "Yes", "No") == "Yes"
+	var/check = alert("This will immediately end the current round. Are you sure?", "End Game", "Compliance", "No") == "Compliance"
 
 	if (!check)
 		return
@@ -969,7 +969,7 @@ GLOBAL_VAR_INIT(skip_allow_lists, FALSE)
 	set desc="Reboots the server post haste"
 	set name="Immediate Reboot"
 	if(!usr.client.holder)	return
-	if( alert("Reboot server?",,"Yes","No") == "No")
+	if( alert("Reboot server?",,"Compliance","No") == "No")
 		return
 	to_world("[SPAN_DANGER("Rebooting world!")] [SPAN_NOTICE("Initiated by [usr.key]!")]")
 	log_admin("[key_name(usr)] initiated an immediate reboot.")
@@ -1025,7 +1025,7 @@ GLOBAL_VAR_INIT(skip_allow_lists, FALSE)
 	if(!check_rights(R_SPAWN))
 		return
 
-	if((input(usr, "Are you sure you want to spawn all these closets?", "So Many Closets") as null|anything in list("No", "Yes")) == "Yes")
+	if((input(usr, "Are you sure you want to spawn all these closets?", "So Many Closets") as null|anything in list("No", "Compliance")) == "Compliance")
 		log_admin("[key_name(usr)] mass-spawned closets (icon debug), if this is a live server you should yell at them.")
 		var/x = 0
 		var/y = 0
@@ -1159,7 +1159,7 @@ GLOBAL_VAR_INIT(skip_allow_lists, FALSE)
 		if (!ispath(primary_trigger))
 			return
 
-		var/choice = alert(usr, "Secondary effect?", "Secondary effect", "Yes", "No") == "Yes"
+		var/choice = alert(usr, "Secondary effect?", "Secondary effect", "Compliance", "No") == "Compliance"
 
 		if (choice)
 			secondary_effect = input(usr, "Choose an effect", "Choose effect") as null | anything in subtypesof(/datum/artifact_effect)
@@ -1415,8 +1415,8 @@ GLOBAL_VAR_INIT(skip_allow_lists, FALSE)
 	if (tomob.ckey)
 		question = "This mob already has a user ([tomob.key]) in control of it! "
 	question += "Are you sure you want to place [frommob.name]([frommob.key]) in control of [tomob.name]?"
-	var/ask = alert(question, "Place ghost in control of mob?", "Yes", "No")
-	if (ask != "Yes")
+	var/ask = alert(question, "Place ghost in control of mob?", "Compliance", "No")
+	if (ask != "Compliance")
 		return 1
 	if (!frommob || !tomob) //make sure the mobs don't go away while we waited for a response
 		return 1
@@ -1559,7 +1559,7 @@ GLOBAL_VAR_INIT(skip_allow_lists, FALSE)
 
 	var/shouldStamp = 1
 	if(!P.sender) // admin initiated
-		switch(alert("Would you like the fax stamped?",, "Yes", "No"))
+		switch(alert("Would you like the fax stamped?",, "Compliance", "No"))
 			if("No")
 				shouldStamp = 0
 

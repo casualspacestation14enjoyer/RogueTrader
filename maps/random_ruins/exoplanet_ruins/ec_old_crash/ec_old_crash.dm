@@ -59,7 +59,7 @@
 
 /obj/item/ecletters/Initialize()
 	. = ..()
-	desc = "A bunch of letters from Expeditionary Corps explorers to their family and loved ones, dated [GLOB.using_map.game_year - 142]. They're not hopeful."
+	desc = "A bunch of letters from Explorator explorers to their family and loved ones, dated [GLOB.using_map.game_year - 142]. They're not hopeful."
 
 /obj/item/paper/ecrashlog
 	name = "handwritten note"
@@ -69,7 +69,7 @@
 	var/shipname = "TEV [pick("Magellan", "Gagarin", "Drake", "Horizon", "Aurora")]"
 	var/singleton/cultural_info/S = SSculture.get_culture(CULTURE_HUMAN_IMPERIAL)
 	var/new_info = {"
-	I am Lieutenant Hao Ru, captain of [shipname], of the Imperial Guard Expeditionary Corps.<br>
+	I am Lieutenant Hao Ru, captain of [shipname], of the Imperial Guard Explorator.<br>
 	We are dying. The Ran Mission has failed.<br>
 	Our ship has suffered a catastrophic chain of failures whist crew was in cryotransit. It started with thruster controls going inoperable, and our auto-pilot was unable to adjust course away from an asteroid cluster. <br>
 	We've lost the navigational suite from impacts, and are flying blind. We have tried every option, and our engineers have ascertained that there is no way to repair it in the field.<br>
@@ -83,7 +83,7 @@
 	Senior Explorer [S.get_random_name(pick(MALE,FEMALE))]<br>
 	Senior Explorer [S.get_random_name(pick(MALE,FEMALE))]<br>
 	Explorer [S.get_random_name(pick(MALE,FEMALE))]<br>
-	I am Lieutenant Hao Ru, captain of [shipname] of the Imperial Guard Expeditionary Corps. I will be joining my crew in cryo now.<br>
+	I am Lieutenant Hao Ru, captain of [shipname] of the Imperial Guard Explorator. I will be joining my crew in cryo now.<br>
 	<i>3rd December [GLOB.using_map.game_year - 142]</i></tt>
 	"}
 	set_content(new_info)

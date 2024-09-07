@@ -3375,7 +3375,7 @@
 /obj/item/reagent_containers/food/snacks/canned/beef
 	name = "quadrangled beefium"
 	icon_state = "beef"
-	desc = "Proteins carefully cloned from extinct stock of holstein in the meat foundries of Mars."
+	desc = "Proteins carefully cloned from extinct stock of holstein in the meat foundries of Sancor."
 	trash = /obj/item/trash/beef
 	filling_color = "#663300"
 	center_of_mass = "x=15;y=9"

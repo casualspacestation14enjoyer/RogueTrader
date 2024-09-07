@@ -209,7 +209,7 @@
 #define BP_PHORON   "phoron filter"
 #define BP_ACETONE  "acetone reactor"
 
-// Vox bits.
+// Xenos bits.
 #define BP_HINDTONGUE "hindtongue"
 
 // Robo Organs.

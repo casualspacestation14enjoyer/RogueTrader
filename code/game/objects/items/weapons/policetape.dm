@@ -66,15 +66,15 @@ var/global/list/tape_roll_applications = list()
 		I.color = detail_color
 		AddOverlays(I)
 
-/obj/item/taperoll/police
-	name = "police tape"
-	desc = "A roll of police tape used to block off crime scenes from the public."
-	tape_type = /obj/item/tape/police
+/obj/item/taperoll/enforcer
+	name = "enforcer tape"
+	desc = "A roll of enforcer tape used to block off crime scenes from the public."
+	tape_type = /obj/item/tape/enforcer
 	color = COLOR_RED
 
-/obj/item/tape/police
-	name = "police tape"
-	desc = "A length of police tape.  Do not cross."
+/obj/item/tape/enforcer
+	name = "enforcer tape"
+	desc = "A length of enforcer tape.  Do not cross."
 	req_access = list(access_security)
 	color = COLOR_RED
 

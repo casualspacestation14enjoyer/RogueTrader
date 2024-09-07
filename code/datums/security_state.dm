@@ -152,7 +152,7 @@
 
 	var/up_description
 	var/down_description
-	var/psionic_control_level = PSI_IMPLANT_WARN
+	var/psionic_control_level = PSI_IMPLANT_DISABLED
 
 // Called when we're switching from a lower security level to this one.
 /singleton/security_level/proc/switching_up_to()
@@ -184,12 +184,12 @@
 
 /singleton/security_level/default/switching_up_to()
 	if(up_description)
-		security_announcement_up.Announce(up_description, "Attention! Alert level elevated to [name]!")
+		security_announcement_up.Announce(up_description, "Attention! Security level elevated to [name]!")
 	notify_station()
 
 /singleton/security_level/default/switching_down_to()
 	if(down_description)
-		security_announcement_down.Announce(down_description, "Attention! Alert level changed to [name]!")
+		security_announcement_down.Announce(down_description, "Attention! Security level changed to [name]!")
 	notify_station()
 
 /singleton/security_level/default/proc/notify_station()
@@ -214,10 +214,10 @@
 	overlay_status_display = "status_display_green"
 	alert_border = "alert_border_green"
 
-	down_description = "All threats to the station have passed. Security may not have weapons visible, privacy laws are once again fully enforced."
+	down_description = "All major threats to the Dauntless have passed. Non militarum personnel of Theta clearance or lower may no longer be armed with exception to weapons permits."
 
 /singleton/security_level/default/code_blue
-	name = "code blue"
+	name = "code magenta"
 	alarm_level = "on"
 
 	light_range = 2
@@ -225,17 +225,15 @@
 	light_color_alarm = COLOR_BLUE
 	light_color_status_display = COLOR_BLUE
 
-	psionic_control_level = PSI_IMPLANT_LOG
-
 	overlay_alarm = "alarm_blue"
 	overlay_status_display = "status_display_blue"
 	alert_border = "alert_border_blue"
 
-	up_description = "The station has received reliable information about possible hostile activity on the station. Security staff may have weapons visible, random searches are permitted."
-	down_description = "The immediate threat has passed. Security may no longer have weapons drawn at all times, but may continue to have them visible. Random searches are still allowed."
+	up_description = "Augery sensorum reports possible hostile presence within proximity to the Dauntless. Non militarum personnel below clearance Omega may be given arms and wargear, capital judgment may be delivered in special cases."
+	down_description = "The immediate threat has passed. Theta clearance personnel may continue security and protection details if necessary."
 
 /singleton/security_level/default/code_red
-	name = "code red"
+	name = "code vermillion"
 	alarm_level = "on"
 
 	light_range = 4
@@ -249,11 +247,11 @@
 
 	psionic_control_level = PSI_IMPLANT_DISABLED
 
-	up_description = "There is an immediate serious threat to the station. Security may have weapons unholstered at all times. Random searches are allowed and advised."
-	down_description = "The self-destruct mechanism has been deactivated, there is still however an immediate serious threat to the station. Security may have weapons unholstered at all times, random searches are allowed and advised."
+	up_description = "Augery sensorum reports major hostile presence within proximity to the Dauntless. Non militarum personnel below clearance Omega may be given arms and wargear, capital judgment may be delivered without hesitation."
+	down_description = "The immediate threat is being contained. Theta clearance personnel may continue security and protection details until relieved of duty."
 
 /singleton/security_level/default/code_delta
-	name = "code delta"
+	name = "code lambda"
 	alarm_level = "on"
 
 	light_range = 4
@@ -270,5 +268,5 @@
 	var/static/datum/announcement/priority/security/security_announcement_delta = new(do_log = 0, do_newscast = 1, new_sound = sound('sound/effects/siren.ogg', volume = 50))
 
 /singleton/security_level/default/code_delta/switching_up_to()
-	security_announcement_delta.Announce("The self-destruct mechanism has been engaged. All crew are instructed to obey all instructions given by heads of staff. Any violations of these orders can be punished by death. This is not a drill.", "Attention! Delta security level reached!")
+	security_announcement_delta.Announce("The self-destruct mechanism has been engaged. All crew are instructed to obey all instructions given by commanding officers. Any violations of these orders will be immediately punished by death.", "Attention! Lambda security level reached!")
 	notify_station()

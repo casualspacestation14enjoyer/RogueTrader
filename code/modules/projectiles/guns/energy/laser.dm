@@ -1,12 +1,13 @@
 /obj/item/gun/energy/laser
 	name = "laser carbine"
-	desc = "A Hephaestus Industries G40E carbine, designed to kill with concentrated energy blasts."
+	desc = "A Vostroyan G40E carbine, designed to kill with concentrated energy blasts."
 	icon = 'icons/obj/guns/laser_carbine.dmi'
 	icon_state = "laser"
 	item_state = "laser"
 	slot_flags = SLOT_BELT|SLOT_BACK
 	w_class = ITEM_SIZE_LARGE
 	force = 10
+	fire_delay = 5
 	one_hand_penalty = 2
 	bulk = GUN_BULK_RIFLE
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
@@ -65,7 +66,7 @@
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	w_class = ITEM_SIZE_NORMAL
 	projectile_type = /obj/item/projectile/beam
-	fire_delay = 10 //old technology, and a pistol
+	fire_delay = 4 //old technology, and a pistol
 
 /obj/item/gun/energy/captain
 	name = "antique laser gun"
@@ -96,7 +97,7 @@
 	charge_cost = 40
 	max_shots = 6
 	accuracy = 2
-	fire_delay = 15
+	fire_delay = 8
 	wielded_item_state = "gun_wielded"
 
 /obj/item/gun/energy/lasercannon/mounted
@@ -123,6 +124,7 @@
 	max_shots = 10
 	wielded_item_state = "gun_wielded"
 	combustion = 0
+	fire_delay = 5
 
 /obj/item/gun/energy/xray/pistol
 	name = "x-ray laser gun"
@@ -134,11 +136,11 @@
 	projectile_type = /obj/item/projectile/beam/xray
 	one_hand_penalty = 1
 	w_class = ITEM_SIZE_NORMAL
-	fire_delay = 5
+	fire_delay = 4
 
 /obj/item/gun/energy/sniperrifle
 	name = "marksman energy rifle"
-	desc = "The HI DMR 9E is an older design of Hephaestus Industries. A designated marksman rifle capable of shooting powerful ionized beams, this is a weapon to kill from a distance."
+	desc = "The HI DMR 9E is an older design of Vostroyan. A designated marksman rifle capable of shooting powerful ionized beams, this is a weapon to kill from a distance."
 	icon = 'icons/obj/guns/laser_sniper.dmi'
 	icon_state = "sniper"
 	item_state = "laser"
@@ -148,7 +150,7 @@
 	slot_flags = SLOT_BACK
 	charge_cost = 60
 	max_shots = 8
-	fire_delay = 12
+	fire_delay = 8
 	force = 10
 	w_class = ITEM_SIZE_HUGE
 	accuracy = -1 //shooting at the hip
@@ -520,7 +522,7 @@
 
 /obj/item/gun/energy/lasgun/hotshot/masterwork
 	name = "Masterwork Hot-Shot Lasgun"
-	desc = "A masterwork hotshot Ryza Pattern crafted by a holy Tech Priest of Mars."
+	desc = "A masterwork hotshot Ryza Pattern crafted by a holy Tech Priest of Sancor."
 	icon_state = "hellgun_plugalt"
 	force = 15
 	one_hand_penalty = 1.5
@@ -551,7 +553,7 @@
 
 /obj/item/gun/energy/lasgun/hotshot/volkite
 	name = "Mars-Omega Pattern Volkite Caliver"
-	desc = "The Mars-Omega Pattern Volkite Caliver is a revered weapon of ancient design, rarely seen outside the most elite units of the Adeptus Astartes. It utilizes a Volkite emitter to unleash intense beams of particle energy that incinerate targets with terrifying precision."
+	desc = "The Sancor-Omega Pattern Volkite Caliver is a revered weapon of ancient design, rarely seen outside the most elite units of the Adeptus Astartes. It utilizes a Volkite emitter to unleash intense beams of particle energy that incinerate targets with terrifying precision."
 	icon_state = "volkite"
 	item_state = "hevluscius"
 	charge_meter = TRUE

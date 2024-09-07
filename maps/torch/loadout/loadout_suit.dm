@@ -116,7 +116,7 @@
 	..()
 
 /datum/gear/suit/labcoat_ec
-	display_name = "labcoat, Expeditionary Corps"
+	display_name = "labcoat, Explorator"
 	path = /obj/item/clothing/suit/storage/toggle/labcoat/science/ec
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps
@@ -143,7 +143,7 @@
 	gear_tweaks += new/datum/gear_tweak/path(options)
 
 /datum/gear/suit/labcoat_ec_cso
-	display_name = "labcoat, chief science officer, Expeditionary Corps"
+	display_name = "labcoat, chief science officer, Explorator"
 	path = /obj/item/clothing/suit/storage/toggle/labcoat/rd/ec
 	allowed_roles = list(
 		/datum/job/rd

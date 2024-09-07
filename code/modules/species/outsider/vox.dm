@@ -161,7 +161,7 @@
 		return
 	if (user.species.name == SPECIES_VOX || !is_alien_whitelisted(user, all_species[SPECIES_VOX]))
 		return
-	var/data = input(user, "Become Vox?", "Become Vox") as null | anything in list("No", "Yes")
+	var/data = input(user, "Become Vox?", "Become Vox") as null | anything in list("No", "Compliance")
 	if (isnull(data) || data == "No")
 		return
 	var/mob/living/carbon/human/vox/vox = new(get_turf(src), SPECIES_VOX)

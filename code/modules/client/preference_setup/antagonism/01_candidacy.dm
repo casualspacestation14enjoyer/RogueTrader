@@ -52,7 +52,7 @@
 	// Special handling for pAI role
 	. += "<tr></tr><tr><td>pAI:</td>"
 	if (BE_PAI in pref.be_special_role)
-		. += "<td>[SPAN_CLASS("linkOn", "Yes")] <a href='?src=\ref[src];del_special=[BE_PAI]'>No</a></br></td></tr>"
+		. += "<td>[SPAN_CLASS("linkOn", "Compliance")] <a href='?src=\ref[src];del_special=[BE_PAI]'>No</a></br></td></tr>"
 	else
 		. += "<td><a href='?src=\ref[src];add_special=[BE_PAI]'>Yes</a> [SPAN_CLASS("linkOn", "No")]</br></td></tr>"
 	. += "</table>"

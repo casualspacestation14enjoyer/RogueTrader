@@ -29,13 +29,13 @@
 	return ..()
 
 /obj/machinery/disperser/front
-	name = "obstruction field disperser beam generator"
+	name = "macrocannon beam generator"
 	desc = "A complex machine which shoots concentrated material beams.\
 		<br>A sign on it reads: <i>STAY CLEAR! DO NOT BLOCK!</i>"
 	icon_state = "front"
 
 /obj/machinery/disperser/middle
-	name = "obstruction field disperser fusor"
+	name = "macrocannon fusor"
 	desc = "A complex machine which transmits immense amount of data \
 		from the material deconstructor to the particle beam generator.\
 		<br>A sign on it reads: <i>EXPLOSIVE! DO NOT OVERHEAT!</i>"
@@ -43,7 +43,7 @@
 	maximum_component_parts = list(/obj/item/stock_parts = 15)
 
 /obj/machinery/disperser/back
-	name = "obstruction field disperser material deconstructor"
+	name = "macrocannon material deconstructor"
 	desc = "A prototype machine which can deconstruct materials atom by atom.\
 		<br>A sign on it reads: <i>KEEP AWAY FROM LIVING MATERIAL!</i>"
 	icon_state = "back"

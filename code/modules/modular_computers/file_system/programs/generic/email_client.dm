@@ -125,7 +125,7 @@
 		return FALSE
 
 	if(target.suspended)
-		error = "This account has been suspended. Please contact the system administrator for assistance."
+		error = "This account has been suspended. Please contact the local mechanicum for assistance."
 		return FALSE
 
 	var/use_pass
@@ -182,7 +182,7 @@
 		// Banned.
 		else if(current_account.suspended)
 			log_out()
-			error = "This account has been suspended. Please contact the system administrator for assistance."
+			error = "This account has been suspended. Please contact the local mechanicum for assistance."
 
 	if(error)
 		data["error"] = error
@@ -494,7 +494,7 @@
 	// The following entries are Modular Computer framework only, and therefore won't do anything in other cases (like AI View)
 
 	if(href_list["save"])
-		// Fully dependant on modular computers here.
+		// Fully dependant on modular cogitators here.
 		var/datum/extension/interactive/ntos/os = get_ntos()
 		if(!os)
 			return TOPIC_HANDLED

@@ -88,7 +88,7 @@
 			meteor_severity++
 			escalated = TRUE
 		if(send_admin_broadcasts)
-			log_and_message_admins("Meteor: Wave fired. Escalation: [escalated ? "Yes" : "No"]. Severity: [meteor_severity]/[maximal_severity]",  null)
+			log_and_message_admins("Meteor: Wave fired. Escalation: [escalated ? "Compliance" : "No"]. Severity: [meteor_severity]/[maximal_severity]",  null)
 
 /datum/game_mode/meteor/proc/get_meteor_types()
 	switch(meteor_severity)

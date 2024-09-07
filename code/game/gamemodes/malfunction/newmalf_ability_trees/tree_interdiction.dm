@@ -47,7 +47,7 @@
 	if(!ability_prechecks(user, price))
 		return
 
-	if (alert(user, "Really recall the shuttle?", "Recall Shuttle: ", "Yes", "No") != "Yes")
+	if (alert(user, "Really recall the shuttle?", "Recall Shuttle: ", "Compliance", "No") != "Compliance")
 		return
 
 	if(!ability_pay(user, price))
@@ -103,7 +103,7 @@
 				break
 
 	if(target)
-		if(alert(user, "Really try to unlock cyborg [target.name]?", "Unlock Cyborg", "Yes", "No") != "Yes")
+		if(alert(user, "Really try to unlock cyborg [target.name]?", "Unlock Cyborg", "Compliance", "No") != "Compliance")
 			return
 		if(!ability_pay(user, price))
 			return
@@ -154,7 +154,7 @@
 		return
 
 	if(target)
-		if(alert(user, "Really try to hack cyborg [target.name]?", "Hack Cyborg", "Yes", "No") != "Yes")
+		if(alert(user, "Really try to hack cyborg [target.name]?", "Hack Cyborg", "Compliance", "No") != "Compliance")
 			return
 		if(!ability_pay(user, price))
 			return
@@ -214,7 +214,7 @@
 		return
 
 	if(target)
-		if(alert(user, "Really try to hack AI [target.name]?", "Hack AI", "Yes", "No") != "Yes")
+		if(alert(user, "Really try to hack AI [target.name]?", "Hack AI", "Compliance", "No") != "Compliance")
 			return
 		if(!ability_pay(user, price))
 			return

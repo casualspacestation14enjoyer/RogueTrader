@@ -54,8 +54,8 @@ GLOBAL_LIST_INIT(possible_switch_offsets, list(
 		S.pixel_x = position_data[1]
 		S.pixel_y = position_data[2]
 
-		var/confirm = alert(user, "Is this what you want? Chances Remaining: [i]", "Confirmation", "Yes", "No")
-		if(confirm == "Yes")
+		var/confirm = alert(user, "Is this what you want? Chances Remaining: [i]", "Confirmation", "Compliance", "No")
+		if(confirm == "Compliance")
 			break
 	return 1
 

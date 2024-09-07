@@ -5,8 +5,8 @@
 		to_chat(src, "Only administrators may use this command.")
 		return
 
-	var/confirm = alert(src, "Make [M] drop everything?", "Message", "Yes", "No")
-	if(confirm != "Yes")
+	var/confirm = alert(src, "Make [M] drop everything?", "Message", "Compliance", "No")
+	if(confirm != "Compliance")
 		return
 
 	for(var/obj/item/W in M)
@@ -361,13 +361,13 @@
 	if(!holder)
 		to_chat(src, "Only administrators may use this command.")
 		return
-	var/confirm = alert(src, "You sure?", "Confirm", "Yes", "No")
-	if(confirm != "Yes") return
+	var/confirm = alert(src, "You sure?", "Confirm", "Compliance", "No")
+	if(confirm != "Compliance") return
 	log_admin("[key_name(src)] has added a random AI law.")
 	message_admins("[key_name_admin(src)] has added a random AI law.", 1)
 
-	var/show_log = alert(src, "Show ion message?", "Message", "Yes", "No")
-	if(show_log == "Yes")
+	var/show_log = alert(src, "Show ion message?", "Message", "Compliance", "No")
+	if(show_log == "Compliance")
 		command_announcement.Announce("Ion storm detected near the [station_name()]. Please check all AI-controlled equipment for errors.", "Anomaly Alert", new_sound = 'sound/AI/ionstorm.ogg')
 
 	IonStorm(0)
@@ -422,10 +422,10 @@ Ccomp's first proc.
 		return
 
 	if(G.has_enabled_antagHUD == 1 && config.antag_hud_restricted)
-		var/response = alert(src, "[selection] has enabled antagHUD. Are you sure you wish to allow them to respawn?","Ghost has used AntagHUD","No","Yes")
+		var/response = alert(src, "[selection] has enabled antagHUD. Are you sure you wish to allow them to respawn?","Ghost has used AntagHUD","No","Compliance")
 		if(response == "No") return
 	else
-		var/response = alert(src, "Are you sure you wish to allow [selection] to respawn?","Allow respawn","No","Yes")
+		var/response = alert(src, "Are you sure you wish to allow [selection] to respawn?","Allow respawn","No","Compliance")
 		if(response == "No") return
 
 	G.timeofdeath=-19999						/* time of death is checked in /mob/verb/abandon_mob() which is the Respawn verb.
@@ -477,8 +477,8 @@ Ccomp's first proc.
 		if (selected.mob.type == /mob/observer/ghost)
 			var/mob/observer/ghost/subject = selected.mob
 			if (subject.has_enabled_antagHUD == 1 && config.antag_hud_restricted)
-				var/confirm = alert(src, "[subject.ckey] has enabled antag HUD. Are you sure?", "Confirm Respawn", "Yes", "No")
-				if (confirm != "Yes")
+				var/confirm = alert(src, "[subject.ckey] has enabled antag HUD. Are you sure?", "Confirm Respawn", "Compliance", "No")
+				if (confirm != "Compliance")
 					return
 				if (selected.mob.type != /mob/observer/ghost)
 					if (selected.mob.type == /mob/new_player)
@@ -588,8 +588,8 @@ Ccomp's first proc.
 	log_admin("Admin [key_name(usr)] has added a new AI law - [input]")
 	message_admins("Admin [key_name_admin(usr)] has added a new AI law - [input]", 1)
 
-	var/show_log = alert(src, "Show ion message?", "Message", "Yes", "No")
-	if(show_log == "Yes")
+	var/show_log = alert(src, "Show ion message?", "Message", "Compliance", "No")
+	if(show_log == "Compliance")
 		command_announcement.Announce("Ion storm detected near the [station_name()]. Please check all AI-controlled equipment for errors.", "Anomaly Alert", new_sound = 'sound/AI/ionstorm.ogg')
 
 /client/proc/cmd_admin_rejuvenate(mob/living/M as mob in SSmobs.mob_list)
@@ -626,8 +626,8 @@ Ccomp's first proc.
 	//New message handling
 	post_comm_message(customname, replacetext(input, "\n", "<br/>"))
 
-	switch(alert("Should this be announced to the general population?",,"Yes","No"))
-		if("Yes")
+	switch(alert("Should this be announced to the general population?",,"Compliance","No"))
+		if("Compliance")
 			command_announcement.Announce(input, customname, new_sound = GLOB.using_map.command_report_sound, msg_sanitized = 1);
 		if("No")
 			minor_announcement.Announce(message = "New Update available at all communication consoles.")
@@ -643,7 +643,7 @@ Ccomp's first proc.
 		to_chat(src, "Only administrators may use this command.")
 		return
 
-	if (alert(src, "Are you sure you want to delete:\n[O]\nat ([O.x], [O.y], [O.z])?", "Confirmation", "Yes", "No") == "Yes")
+	if (alert(src, "Are you sure you want to delete:\n[O]\nat ([O.x], [O.y], [O.z])?", "Confirmation", "Compliance", "No") == "Compliance")
 		log_admin("[key_name(usr)] deleted [O] at ([O.x],[O.y],[O.z])")
 		message_admins("[key_name_admin(usr)] deleted [O] at ([O.x],[O.y],[O.z])", 1)
 
@@ -685,11 +685,11 @@ Ccomp's first proc.
 		if ("Light")
 			max_power = EX_ACT_LIGHT
 	var/shaped = 0
-	if(alert(src, "Shaped explosion?", "Shape", "Yes", "No") == "Yes")
+	if(alert(src, "Shaped explosion?", "Shape", "Compliance", "No") == "Compliance")
 		shaped = input("Shaped where to?", "Input")  as anything in list("NORTH","SOUTH","EAST","WEST")
 		shaped = text2dir(shaped)
 	if (range > 20)
-		if (alert(src, "Are you sure you want to do this? It may lag.", "Confirmation", "Yes", "No") == "No")
+		if (alert(src, "Are you sure you want to do this? It may lag.", "Confirmation", "Compliance", "No") == "No")
 			return
 
 	explosion(O, range, max_power, shaped=shaped)
@@ -723,8 +723,8 @@ Ccomp's first proc.
 
 	if(!check_rights(R_ADMIN|R_FUN))	return
 
-	var/confirm = alert(src, "You sure?", "Confirm", "Yes", "No")
-	if(confirm != "Yes") return
+	var/confirm = alert(src, "You sure?", "Confirm", "Compliance", "No")
+	if(confirm != "Compliance") return
 	//Due to the delay here its easy for something to have happened to the mob
 	if(!M)	return
 
@@ -741,8 +741,8 @@ Ccomp's first proc.
 	set name = "Gibself"
 	set category = "Fun"
 
-	var/confirm = alert(src, "You sure?", "Confirm", "Yes", "No")
-	if(confirm == "Yes")
+	var/confirm = alert(src, "You sure?", "Confirm", "Compliance", "No")
+	if(confirm == "Compliance")
 		if (isobserver(mob)) // so they don't spam gibs everywhere
 			return
 		else
@@ -815,7 +815,7 @@ Ccomp's first proc.
 
 	if(!check_rights(R_ADMIN))	return
 
-	if(alert(src, "Are you sure?", "Confirm", "Yes", "No") != "Yes") return
+	if(alert(src, "Are you sure?", "Confirm", "Compliance", "No") != "Compliance") return
 
 	if(SSticker.mode.auto_recall_shuttle)
 		if(input("The evacuation will just be cancelled if you call it. Call anyway?") in list("Confirm", "Cancel") != "Confirm")
@@ -832,7 +832,7 @@ Ccomp's first proc.
 
 	if(!check_rights(R_ADMIN))	return
 
-	if(alert(src, "You sure?", "Confirm", "Yes", "No") != "Yes") return
+	if(alert(src, "You sure?", "Confirm", "Compliance", "No") != "Compliance") return
 
 	if(!evacuation_controller)
 		return
@@ -901,10 +901,10 @@ Ccomp's first proc.
 		return
 	levels = sortList(levels)
 	var/mode
-	var/response = alert(user, "Players on levels [levels.Join(", ")] will be affected.\nShould they be knocked over?", "Simulate Distant Explosion", "Yes", "No", "Cancel")
+	var/response = alert(user, "Players on levels [levels.Join(", ")] will be affected.\nShould they be knocked over?", "Simulate Distant Explosion", "Compliance", "No", "Cancel")
 	if (!response || response == "Cancel")
 		return
-	if (response == "Yes")
+	if (response == "Compliance")
 		response = alert(user, "Should all players be knocked down, or only unstable ones?", "Simulate Distant Explosion", "Unstable", "All", "Cancel")
 		if (!response || response == "Cancel")
 			return
@@ -954,7 +954,7 @@ Ccomp's first proc.
 	if (!isnum(zlevel))
 		return
 
-	var/connected = alert("Bomb connected z-levels?", "Connected Zs", "Yes", "No", "Cancel")
+	var/connected = alert("Bomb connected z-levels?", "Connected Zs", "Compliance", "No", "Cancel")
 	if (connected == "Cancel")
 		return
 
@@ -966,11 +966,11 @@ Ccomp's first proc.
 	if (!booms)
 		return
 
-	var/break_turfs = alert("Turf breaker explosions?", "Break Turfs?", "Yes", "No", "Cancel")
+	var/break_turfs = alert("Turf breaker explosions?", "Break Turfs?", "Compliance", "No", "Cancel")
 	if (break_turfs == "Cancel")
 		return
 
-	if (break_turfs == "Yes")
+	if (break_turfs == "Compliance")
 		break_turfs = TRUE
 	else
 		break_turfs = FALSE
@@ -981,7 +981,7 @@ Ccomp's first proc.
 		max_power = prob(45) ? EX_ACT_DEVASTATING : EX_ACT_HEAVY
 		range = rand(8, 13)
 		var/turf/T
-		if (connected == "Yes")
+		if (connected == "Compliance")
 			T = pick_area_turf_in_connected_z_levels(list(/proc/is_not_space_area), z_level = zlevel)
 		else
 			T = pick_area_turf_in_single_z_level(list(/proc/is_not_space_area), z_level = zlevel)

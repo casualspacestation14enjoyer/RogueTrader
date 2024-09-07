@@ -889,7 +889,7 @@ GLOBAL_LIST_INIT(duplicate_object_disallowed_vars, list(
 /**
  * For items that can puncture e.g. thick plastic but aren't necessarily sharp.
  *
- * Returns TRUE if the given item is capable of popping things like balloons, inflatable barriers, or cutting police tape. Also used to determine what items can eyestab.
+ * Returns TRUE if the given item is capable of popping things like balloons, inflatable barriers, or cutting enforcer tape. Also used to determine what items can eyestab.
  */
 /obj/item/proc/can_puncture()
 	if(sharp || puncture) return TRUE

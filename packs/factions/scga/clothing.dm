@@ -334,7 +334,7 @@
 
 /obj/item/clothing/head/scga/beret
 	name = "tan beret, IMPA"
-	desc = "A tan beret denoting service in the IMP Guard Diplomatic Security Group. Part of the imperial guard utility and service uniform."
+	desc = "A tan beret denoting service in the Imperial Guard Diplomatic Security Group. Part of the imperial guard utility and service uniform."
 	icon_state = "hat_beret"
 	item_state_slots = list(
 		slot_l_hand_str = "hat_beret_held_l",

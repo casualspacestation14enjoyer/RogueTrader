@@ -85,7 +85,7 @@
 			return
 		last_search = world.time
 		if (brainmob && brainmob.key)
-			var/murder = alert(user, "\The [src] already has a mind! Are you sure? This is probably murder.", "Commit Robocide?", "Yes", "No")
+			var/murder = alert(user, "\The [src] already has a mind! Are you sure? This is probably murder.", "Commit Robocide?", "Compliance", "No")
 			if (murder == "No")
 				return
 		visible_message("\The [user] flicks the activation switch on \the [src].", range = 3)
@@ -129,8 +129,8 @@
 	var/datum/ghosttrap/T = get_ghost_trap("positronic brain")
 	if (!T.assess_candidate(user))
 		return
-	var/possess = alert(user, "Do you wish to become \the [src]?", "Become [src]?", "Yes", "No")
-	if (possess != "Yes")
+	var/possess = alert(user, "Do you wish to become \the [src]?", "Become [src]?", "Compliance", "No")
+	if (possess != "Compliance")
 		return
 	if (brainmob.key)
 		to_chat(brainmob, SPAN_DANGER("Your thoughts shatter into nothingness, quickly subsumed by a new identity. \"You\" have died."))

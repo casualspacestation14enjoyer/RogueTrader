@@ -15,7 +15,7 @@
 
 /obj/item/gun/energy/taser/disposable
 	name = "disposable electrolaser"
-	desc = "The NT Mk30 NL is a small, disposable gun used for non-lethal takedowns. This is a cheaper model commonly issued to police forces to supplement their service weapons. It can switch between high and low intensity stun shots."
+	desc = "The NT Mk30 NL is a small, disposable gun used for non-lethal takedowns. This is a cheaper model commonly issued to enforcer forces to supplement their service weapons. It can switch between high and low intensity stun shots."
 	max_shots = 10
 	disposable = TRUE
 
@@ -116,7 +116,7 @@
 
 /obj/item/gun/energy/plasmastun
 	name = "plasma pulse projector"
-	desc = "The Mars Military Industries MA21 Selkie is a weapon that uses a laser pulse to ionise the local atmosphere, creating a disorienting pulse of plasma and deafening shockwave as the wave expands."
+	desc = "The Sancor Militarum Industries MA21 Selkie is a weapon that uses a laser pulse to ionise the local atmosphere, creating a disorienting pulse of plasma and deafening shockwave as the wave expands."
 	icon = 'icons/obj/guns/plasma_stun.dmi'
 	icon_state = "plasma_stun"
 	item_state = "plasma_stun"

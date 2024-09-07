@@ -64,8 +64,8 @@
 
 
 /obj/item/clothing/accessory/corptie/heph
-	name = "\improper Hephaestus Industries tie"
-	desc = "A cyan neosilk clip-on tie. This one has a clip on it that proudly bears the Hephaestus Industries logo."
+	name = "\improper Vostroyan tie"
+	desc = "A cyan neosilk clip-on tie. This one has a clip on it that proudly bears the Vostroyan logo."
 	icon_state = "cliptie_heph"
 
 

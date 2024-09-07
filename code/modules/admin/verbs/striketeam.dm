@@ -35,7 +35,7 @@ var/global/const/commandos_possible = 6 //if more Commandos are needed in the fu
 		to_chat(usr, SPAN_COLOR("red", "Someone is already sending a team."))
 		return
 
-	if(alert("Do you want to send in a strike team? Once enabled, this is irreversible.",,"Yes","No")!="Yes")
+	if(alert("Do you want to send in a strike team? Once enabled, this is irreversible.",,"Compliance","No")!="Compliance")
 		return
 
 	alert("This 'mode' will go on until everyone is dead or the installation is destroyed. You may also admin-call the evac shuttle when appropriate. Spawned commandos have internals cameras which are viewable through a monitor inside the Spec. Ops. Office. Assigning the team's detailed task is recommended from there. While you will be able to manually pick the candidates from active ghosts, their assignment in the squad will be random.")
@@ -44,7 +44,7 @@ var/global/const/commandos_possible = 6 //if more Commandos are needed in the fu
 	while(!choice)
 		choice = sanitize(input(src, "Please specify which mission the strike team shall undertake.", "Specify Mission", ""))
 		if(!choice)
-			if(alert("Error, no mission set. Do you want to exit the setup process?",,"Yes","No")=="Yes")
+			if(alert("Error, no mission set. Do you want to exit the setup process?",,"Compliance","No")=="Compliance")
 				return
 
 	if(team.deployed)

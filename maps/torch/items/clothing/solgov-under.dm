@@ -1,5 +1,5 @@
 /obj/item/clothing/under/solgov
-	name = "master solgov uniform"
+	name = "master imperialuniform"
 	desc = "You shouldn't be seeing this."
 	icon = 'maps/torch/icons/obj/obj_under_solgov.dmi'
 	item_icons = list(slot_w_uniform_str = 'maps/torch/icons/mob/onmob_under_solgov.dmi')
@@ -18,8 +18,8 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 
 /obj/item/clothing/under/solgov/pt/expeditionary
-	name = "expeditionary pt uniform"
-	desc = "A baggy shirt bearing the seal of the IMP Imperial and some dorky looking blue shorts."
+	name = "militarum pt uniform"
+	desc = "A baggy shirt bearing the seal of the Imperial and some dorky looking blue shorts."
 	icon_state = "expeditionpt"
 	worn_state = "expeditionpt"
 
@@ -44,8 +44,8 @@
 		)
 
 /obj/item/clothing/under/solgov/utility/expeditionary
-	name = "expeditionary uniform"
-	desc = "The utility uniform of the IMP Imperial, made from biohazard resistant material. This one has silver trim."
+	name = "militarum uniform"
+	desc = "The utility uniform of the Imperial, made from biohazard resistant material. This one has silver trim."
 	icon_state = "blackutility_crew"
 	worn_state = "blackutility_crew"
 
@@ -82,8 +82,8 @@
 	item_flags = ITEM_FLAG_WASHER_ALLOWED | ITEM_FLAG_INVALID_FOR_CHAMELEON
 
 /obj/item/clothing/under/solgov/utility/expeditionary/officer
-	name = "expeditionary officer's uniform"
-	desc = "The utility uniform of the IMP Imperial, made from biohazard resistant material. This one has gold trim."
+	name = "militarum officer's uniform"
+	desc = "The utility uniform of the Imperial, made from biohazard resistant material. This one has gold trim."
 	icon_state = "blackutility_com"
 	worn_state = "blackutility_com"
 
@@ -121,7 +121,7 @@
 
 /obj/item/clothing/under/solgov/utility/fleet
 	name = "fleet coveralls"
-	desc = "The utility uniform of the IMP Fleet, made from an insulated material."
+	desc = "The utility uniform of the Imperial Fleet, made from an insulated material."
 	icon_state = "navyutility"
 	item_state = "jensensuit"
 	worn_state = "navyutility"
@@ -160,43 +160,43 @@
 
 /obj/item/clothing/under/solgov/utility/fleet/polopants
 	name = "fleet polo"
-	desc = "An alternative utility uniform of the IMP Fleet, specially designed for engineering staff. The pants sports some yellow reflective stripes, and have knee pads."
+	desc = "An alternative utility uniform of the Imperial Fleet, specially designed for engineering staff. The pants sports some yellow reflective stripes, and have knee pads."
 	icon_state = "navypolopants"
 	worn_state = "navypolopants"
 
 /obj/item/clothing/under/solgov/utility/fleet/polopants/command
 	name = "fleet command polo"
-	desc = "An alternative utility uniform of the IMP Fleet. The pants have knee pads."
+	desc = "An alternative utility uniform of the Imperial Fleet. The pants have knee pads."
 	icon_state = "navypolopantsnostripe"
 	worn_state = "navypolopantscom"
 
 /obj/item/clothing/under/solgov/utility/fleet/polopants/security
-	name = "fleet security polo"
-	desc = "An alternative utility uniform of the IMP Fleet. The pants have knee pads."
+	name = "fleet militarum polo"
+	desc = "An alternative utility uniform of the Imperial Fleet. The pants have knee pads."
 	icon_state = "navypolopantsnostripe"
 	worn_state = "navypolopantssec"
 
 /obj/item/clothing/under/solgov/utility/fleet/polopants/medical
 	name = "fleet medical polo"
-	desc = "An alternative utility uniform of the IMP Fleet, specially designed for medics and doctors. The pants have knee pads."
+	desc = "An alternative utility uniform of the Imperial Fleet, specially designed for medics and doctors. The pants have knee pads."
 	icon_state = "navypolopantsnostripe"
 	worn_state = "navypolopantsmed"
 
 /obj/item/clothing/under/solgov/utility/fleet/polopants/supply
 	name = "fleet supply polo"
-	desc = "An alternative utility uniform of the IMP Fleet. The pants have knee pads."
+	desc = "An alternative utility uniform of the Imperial Fleet. The pants have knee pads."
 	icon_state = "navypolopantsnostripe"
 	worn_state = "navypolopantssup"
 
 /obj/item/clothing/under/solgov/utility/fleet/polopants/service
 	name = "fleet service polo"
-	desc = "An alternative utility uniform of the IMP Fleet. The pants have knee pads."
+	desc = "An alternative utility uniform of the Imperial Fleet. The pants have knee pads."
 	icon_state = "navypolopantsnostripe"
 	worn_state = "navypolopantssrv"
 
 /obj/item/clothing/under/solgov/utility/fleet/combat
 	name = "fleet fatigues"
-	desc = "Alternative utility uniform of the IMP Fleet, for when coveralls are impractical."
+	desc = "Alternative utility uniform of the Imperial Fleet, for when coveralls are impractical."
 	icon_state = "navycombat"
 	worn_state = "navycombat"
 
@@ -240,7 +240,7 @@
 
 /obj/item/clothing/under/solgov/service/fleet
 	name = "fleet service uniform"
-	desc = "The service uniform of the IMP Fleet, made from immaculate white fabric."
+	desc = "The service uniform of the Imperial Fleet, made from immaculate white fabric."
 	icon_state = "whiteservice"
 	item_state = "nursesuit"
 	worn_state = "whiteservice"
@@ -248,7 +248,7 @@
 
 /obj/item/clothing/under/solgov/service/fleet/skirt
 	name = "fleet service skirt"
-	desc = "The service uniform skirt of the IMP Fleet, made from immaculate white fabric."
+	desc = "The service uniform skirt of the Imperial Fleet, made from immaculate white fabric."
 	icon_state = "whiteservicefem"
 	worn_state = "whiteservicefem"
 
@@ -265,8 +265,8 @@
 //dress
 
 /obj/item/clothing/under/solgov/dress/expeditionary
-	name = "expeditionary dress uniform"
-	desc = "The dress uniform of the IMP Imperial in silver trim."
+	name = "militarum dress uniform"
+	desc = "The dress uniform of the Imperial in silver trim."
 	icon_state = "greydress"
 	worn_state = "greydress"
 
@@ -292,8 +292,8 @@
 	item_flags = ITEM_FLAG_WASHER_ALLOWED | ITEM_FLAG_INVALID_FOR_CHAMELEON
 
 /obj/item/clothing/under/solgov/dress/expeditionary/skirt
-	name = "expeditionary dress skirt"
-	desc = "A feminine version of the IMP Imperial dress uniform in silver trim."
+	name = "militarum dress skirt"
+	desc = "A feminine version of the Imperial dress uniform in silver trim."
 	icon_state = "greydressfem"
 	worn_state = "greydressfem"
 
@@ -319,8 +319,8 @@
 	item_flags = ITEM_FLAG_WASHER_ALLOWED | ITEM_FLAG_INVALID_FOR_CHAMELEON
 
 /obj/item/clothing/under/solgov/dress/expeditionary/command
-	name = "expeditionary officer's dress uniform"
-	desc = "The dress uniform of the IMP Imperial in gold trim."
+	name = "militarum officer's dress uniform"
+	desc = "The dress uniform of the Imperial in gold trim."
 	icon_state = "greydress_com"
 	worn_state = "greydress_com"
 
@@ -346,8 +346,8 @@
 	item_flags = ITEM_FLAG_WASHER_ALLOWED | ITEM_FLAG_INVALID_FOR_CHAMELEON
 
 /obj/item/clothing/under/solgov/dress/expeditionary/command/skirt
-	name = "expeditionary officer's dress skirt"
-	desc = "A feminine version of the IMP Imperial dress uniform in gold trim."
+	name = "militarum officer's dress skirt"
+	desc = "A feminine version of the Imperial dress uniform in gold trim."
 	icon_state = "greydressfem_com"
 	worn_state = "greydressfem_com"
 
@@ -381,7 +381,7 @@
 
 /obj/item/clothing/under/solgov/utility/expeditionary/monkey
 	name = "adjusted expeditionary uniform"
-	desc = "The utility uniform of the IMP Imperial, made from biohazard resistant material. This one has silver trim. It was also mangled to fit a monkey. This better be worth the NJP you'll get for making it."
+	desc = "The utility uniform of the Imperial, made from biohazard resistant material. This one has silver trim. It was also mangled to fit a monkey. This better be worth the NJP you'll get for making it."
 	species_restricted = list(SPECIES_MONKEY)
 	sprite_sheets = list("Monkey" = 'icons/mob/species/monkey/onmob_under_monkey.dmi')
 	accessories = list(/obj/item/clothing/accessory/solgov/rank/fleet/officer/wo1_monkey)

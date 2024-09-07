@@ -1918,7 +1918,7 @@
 
 GLOBAL_LIST_INIT(dream_tokens, list(
 	"an ID card", "a bottle", "a familiar face", "a crewmember",
-	"a toolbox", "a security officer", "the captain", "voices from all around",
+	"a toolbox", "a militarum officer", "the captain", "voices from all around",
 	"deep space", "a doctor", "the engine", "a traitor",
 	"an ally", "darkness", "light", "a scientist",
 	"a monkey", "a catastrophe", "a loved one", "a gun",
@@ -1941,9 +1941,9 @@ GLOBAL_LIST_INIT(dream_tokens, list(
 	"an IPC", "a Dionaea", "a being made of light", "the commanding officer",
 	"the executive officer", "the chief of security", "the imperial liason", "the representative",
 	"the senior advisor", "the bridge officer", "the senior engineer", "the physician",
-	"the corpsman", "the counselor", "the medical contractor", "the security contractor",
+	"the corpsman", "the counselor", "the medical contractor", "the militarum contractor",
 	"a stowaway", "an old friend", "the prospector", "the pilot",
-	"the passenger", "the chief of security", "the master at arms", "the forensic technician",
+	"the passenger", "the chief of security", "the militarum", "the forensic technician",
 	"the brig chief", "the tower", "the man with no face", "a field of flowers",
 	"an old home", "the merc", "a surgery table", "a needle",
 	"a blade", "an ocean", "right behind you", "standing above you",

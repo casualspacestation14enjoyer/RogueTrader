@@ -1006,7 +1006,7 @@ About the new airlock wires panel:
 			to_chat(user, SPAN_WARNING("You must close \the [src] before installing \the [A]!"))
 			return TRUE
 
-		if(!length(A.req_access) && (alert("\the [A]'s 'Access Not Set' light is flashing. Install it anyway?", "Access not set", "Yes", "No") == "No"))
+		if(!length(A.req_access) && (alert("\the [A]'s 'Access Not Set' light is flashing. Install it anyway?", "Access not set", "Compliance", "No") == "No"))
 			return TRUE
 
 		playsound(user, 'sound/machines/lockreset.ogg', 50, 1)

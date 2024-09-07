@@ -162,7 +162,7 @@
 						if(!input || !can_still_topic())
 							return
 						Syndicate_announce(input, usr)
-						to_chat(usr, SPAN_NOTICE("Message transmitted."))
+						to_chat(usr, SPAN_NOTICE("Compliance. Message transmitted.."))
 						log_say("[key_name(usr)] has made an illegal announcement: [input]")
 						centcomm_message_cooldown = 1
 						spawn(300)//30 second cooldown
@@ -180,7 +180,7 @@
 					if(!input || !can_still_topic())
 						return
 					Centcomm_announce(input, usr)
-					to_chat(usr, SPAN_NOTICE("Message transmitted."))
+					to_chat(usr, SPAN_NOTICE("Compliance. Message transmitted.."))
 					log_say("[key_name(usr)] has made an IA [GLOB.using_map.boss_short] announcement: [input]")
 					centcomm_message_cooldown = 1
 					spawn(300) //30 second cooldown
@@ -195,8 +195,8 @@
 					return
 				if (selected_evac_option.needs_syscontrol && !ntn_cont)
 					return
-				var/confirm = alert("Are you sure you want to [selected_evac_option.option_desc]?", name, "No", "Yes")
-				if (confirm == "Yes" && can_still_topic())
+				var/confirm = alert("Are you sure you want to [selected_evac_option.option_desc]?", name, "No", "Compliance")
+				if (confirm == "Compliance" && can_still_topic())
 					evacuation_controller.handle_evac_option(selected_evac_option.option_target, user)
 		if("setstatus")
 			. = TOPIC_HANDLED
@@ -222,8 +222,8 @@
 				var/singleton/security_state/security_state = GET_SINGLETON(GLOB.using_map.security_state)
 				var/singleton/security_level/target_level = locate(href_list["target"]) in security_state.comm_console_security_levels
 				if(target_level && security_state.can_switch_to(target_level))
-					var/confirm = alert("Are you sure you want to change the alert level to [target_level.name]?", name, "No", "Yes")
-					if(confirm == "Yes" && can_still_topic())
+					var/confirm = alert("Are you sure you want to change the alert level to [target_level.name]?", name, "No", "Compliance")
+					if(confirm == "Compliance" && can_still_topic())
 						security_state.set_security_level(target_level)
 			else
 				to_chat(usr, "You press the button, but a red light flashes and nothing happens.") //This should never happen
@@ -249,10 +249,10 @@
 					to_chat(usr, SPAN_NOTICE("Hardware Error: Printer was unable to print the selected file."))
 		if("unbolt_doors")
 			GLOB.using_map.unbolt_saferooms()
-			to_chat(usr, SPAN_NOTICE("The console beeps, confirming the signal was sent to have the saferooms unbolted."))
+			to_chat(usr, SPAN_NOTICE("The console beeps in compliance, confirming the signal was sent to have the saferooms unbolted."))
 		if("bolt_doors")
 			GLOB.using_map.bolt_saferooms()
-			to_chat(usr, SPAN_NOTICE("The console beeps, confirming the signal was sent to have the saferooms bolted."))
+			to_chat(usr, SPAN_NOTICE("The console beeps in compliance, confirming the signal was sent to have the saferooms bolted."))
 		if("toggle_alert_border")
 			. = TOPIC_HANDLED
 			if(is_authenticated(user) && ntn_comm)

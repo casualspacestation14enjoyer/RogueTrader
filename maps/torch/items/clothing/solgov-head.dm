@@ -1,5 +1,5 @@
 /obj/item/clothing/head/solgov
-	name = "master solgov hat"
+	name = "master imperialhat"
 	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
 	siemens_coefficient = 0.9
@@ -10,7 +10,7 @@
 //Utility
 /obj/item/clothing/head/soft/solgov
 	name = "\improper Imperial Government cap"
-	desc = "It's a ballcap in IMP colors."
+	desc = "It's a ballcap in Imperial colors."
 	icon_state = "solsoft"
 	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
@@ -36,7 +36,7 @@
 
 /obj/item/clothing/head/soft/solgov/fleet
 	name = "fleet cap"
-	desc = "It's a navy blue field cap with the IMP Fleet crest in a silver colour."
+	desc = "It's a navy blue field cap with the Imperial Navy crest in a silver colour."
 	icon_state = "fleetsoft"
 
 /obj/item/clothing/head/solgov/utility
@@ -51,7 +51,7 @@
 
 /obj/item/clothing/head/solgov/utility/fleet
 	name = "fleet utility cover"
-	desc = "A navy blue utility cover bearing the crest of the IMP Fleet."
+	desc = "A navy blue utility cover bearing the crest of the Imperial Fleet."
 	icon_state = "navyutility"
 
 
@@ -67,23 +67,23 @@
 	body_parts_covered = 0
 
 /obj/item/clothing/head/solgov/service/expedition
-	name = "expeditionary peaked cap"
-	desc = "A peaked black uniform cap belonging to the IMP Imperial."
+	name = "militarum peaked cap"
+	desc = "A peaked black uniform cap belonging to the Imperial."
 	icon_state = "ecdresscap"
 
 /obj/item/clothing/head/solgov/service/expedition/command
-	name = "expeditionary officer's peaked cap"
-	desc = "A peaked black uniform cap belonging to the IMP Imperial. This one is trimmed in gold."
+	name = "militarum officer's peaked cap"
+	desc = "A peaked black uniform cap belonging to the Imperial. This one is trimmed in gold."
 	icon_state = "ecdresscap_ofcr"
 
 /obj/item/clothing/head/solgov/service/expedition/captain
-	name = "expeditionary captain's peaked cap"
-	desc = "A gold-trimmed peaked black uniform cap belonging to a Captain of the IMP Imperial."
+	name = "militarum captain's peaked cap"
+	desc = "A gold-trimmed peaked black uniform cap belonging to a Captain of the Imperial."
 	icon_state = "ecdresscap_capt"
 
 /obj/item/clothing/head/solgov/service/expedition/senior_command
 	name = "senior expedition officer's peaked cap"
-	desc = "A peaked grey uniform cap belonging to the IMP Imperial. This one is trimmed in gold and blue."
+	desc = "A peaked grey uniform cap belonging to the Imperial. This one is trimmed in gold and blue."
 	icon_state = "greydresscap_senior"
 
 
@@ -105,12 +105,12 @@
 
 /obj/item/clothing/head/solgov/dress/fleet
 	name = "fleet dress wheel cover"
-	desc = "A white dress uniform cover. This one has an IMP Fleet crest."
+	desc = "A white dress uniform cover. This one has an Imperial Navy crest."
 	icon_state = "whitepeakcap"
 
 /obj/item/clothing/head/solgov/dress/fleet/command
 	name = "fleet officer's dress wheel cover"
-	desc = "A white dress uniform cover. This one has a gold stripe and an IMP Fleet crest."
+	desc = "A white dress uniform cover. This one has a gold stripe and an Imperial Navy crest."
 	icon_state = "whitepeakcap_com"
 
 
@@ -171,7 +171,7 @@
 
 /obj/item/clothing/head/beret/solgov/marcom
 	name = "\improper MARSCOM beret"
-	desc = "A red beret with a gold insignia, denoting service in the IMPDF Mars Central Command. For brass who are more inclined towards style than safety."
+	desc = "A red beret with a gold insignia, denoting service in the IMPDF Sancor Central Command. For brass who are more inclined towards style than safety."
 	icon_state = "beret_redgold"
 
 /obj/item/clothing/head/beret/solgov/stratcom
@@ -180,140 +180,140 @@
 	icon_state = "beret_graysilver"
 
 /obj/item/clothing/head/beret/solgov/borderguard
-	name = "border security beret"
+	name = "border militarum beret"
 	desc = "A green beret with a silver emblem, denoting service in the Bureau of Border Security. For border guards who are more inclined towards style than safety."
 	icon_state = "beret_greensilver"
 
 /obj/item/clothing/head/beret/solgov/expedition
-	name = "expeditionary beret"
-	desc = "A black beret belonging to the IMP Imperial. For personnel that are more inclined towards style than safety."
+	name = "militarum beret"
+	desc = "A black beret belonging to the Imperial. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black"
 
 /obj/item/clothing/head/beret/solgov/expedition/security
-	name = "expeditionary security beret"
-	desc = "An IMP Imperial beret with a security crest. For personnel that are more inclined towards style than safety."
+	name = "militarum militarum beret"
+	desc = "An Imperial beret with a militarum crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_security"
 
 /obj/item/clothing/head/beret/solgov/expedition/medical
-	name = "expeditionary medical beret"
-	desc = "An IMP Imperial beret with a medical crest. For personnel that are more inclined towards style than safety."
+	name = "militarum medical beret"
+	desc = "An Imperial beret with a medical crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_medical"
 
 /obj/item/clothing/head/beret/solgov/expedition/engineering
-	name = "expeditionary engineering beret"
-	desc = "An IMP Imperial beret with an engineering crest. For personnel that are more inclined towards style than safety."
+	name = "militarum engineering beret"
+	desc = "An Imperial beret with an engineering crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_engineering"
 
 /obj/item/clothing/head/beret/solgov/expedition/supply
-	name = "expeditionary supply beret"
-	desc = "An IMP Imperial beret with a supply crest. For personnel that are more inclined towards style than safety."
+	name = "militarum supply beret"
+	desc = "An Imperial beret with a supply crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_supply"
 
 /obj/item/clothing/head/beret/solgov/expedition/service
-	name = "expeditionary service beret"
-	desc = "An IMP Imperial beret with a service crest. For personnel that are more inclined towards style than safety."
+	name = "militarum service beret"
+	desc = "An Imperial beret with a service crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_service"
 
 /obj/item/clothing/head/beret/solgov/expedition/exploration
-	name = "expeditionary exploration beret"
-	desc = "An IMP Imperial beret with an exploration crest. For personnel that are more inclined towards style than safety."
+	name = "militarum exploration beret"
+	desc = "An Imperial beret with an exploration crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_exploration"
 
 /obj/item/clothing/head/beret/solgov/expedition/command
-	name = "expeditionary officer's beret"
-	desc = "An IMP Imperial beret with a golden crest. For personnel that are more inclined towards style than safety."
+	name = "militarum officer's beret"
+	desc = "An Imperial beret with a golden crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_command"
 
 /obj/item/clothing/head/beret/solgov/expedition/branch
 	name = "\improper Field Operations beret"
-	desc = "An IMP Imperial beret carrying the insignia of the Field Operations section. For personnel that are more inclined towards style than safety."
+	desc = "An Imperial beret carrying the insignia of the Field Operations section. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_fieldOps"
 
 /obj/item/clothing/head/beret/solgov/expedition/branch/observatory
 	name = "\improper Observatory beret"
-	desc = "An IMP Imperial beret carrying the insignia of the Observatory section. For personnel that are more inclined towards style than safety."
+	desc = "An Imperial beret carrying the insignia of the Observatory section. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_observatory"
 
 /obj/item/clothing/head/beret/solgov/fleet
 	name = "fleet beret"
-	desc = "A navy blue beret belonging to the IMP Fleet. For personnel that are more inclined towards style than safety."
+	desc = "A navy blue beret belonging to the Imperial Fleet. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy"
 
 /obj/item/clothing/head/beret/solgov/fleet/security
-	name = "fleet security beret"
-	desc = "An IMP Fleet beret with a security crest. For personnel that are more inclined towards style than safety."
+	name = "fleet militarum beret"
+	desc = "An Imperial Navy beret with a militarum crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_security"
 
 /obj/item/clothing/head/beret/solgov/fleet/medical
 	name = "fleet medical beret"
-	desc = "An IMP Fleet beret with a medical crest. For personnel that are more inclined towards style than safety."
+	desc = "An Imperial Navy beret with a medical crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_medical"
 
 /obj/item/clothing/head/beret/solgov/fleet/engineering
 	name = "fleet engineering beret"
-	desc = "An IMP Fleet with an engineering crest. For personnel that are more inclined towards style than safety."
+	desc = "An Imperial Navy with an engineering crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_engineering"
 
 /obj/item/clothing/head/beret/solgov/fleet/supply
 	name = "fleet supply beret"
-	desc = "An IMP Fleet beret with a supply crest. For personnel that are more inclined towards style than safety."
+	desc = "An Imperial Navy beret with a supply crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_supply"
 
 /obj/item/clothing/head/beret/solgov/fleet/service
 	name = "fleet service beret"
-	desc = "An IMP Fleet beret with a service crest. For personnel that are more inclined towards style than safety."
+	desc = "An Imperial Navy beret with a service crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_service"
 
 /obj/item/clothing/head/beret/solgov/fleet/exploration
 	name = "fleet exploration beret"
-	desc = "An IMP Fleet beret with an exploration crest. For personnel that are more inclined towards style than safety."
+	desc = "An Imperial Navy beret with an exploration crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_exploration"
 
 /obj/item/clothing/head/beret/solgov/fleet/command
 	name = "fleet officer's beret"
-	desc = "An IMP Fleet beret with a golden crest. For personnel that are more inclined towards style than safety."
+	desc = "An Imperial Navy beret with a golden crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_command"
 
 /obj/item/clothing/head/beret/solgov/fleet/dress
 	name = "fleet dress beret"
-	desc = "A white IMP Fleet beret. For personnel that are more inclined towards style than safety."
+	desc = "A white Imperial Navy beret. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_whiterim"
 
 /obj/item/clothing/head/beret/solgov/fleet/dress/command
 	name = "fleet officer's dress beret"
-	desc = "A white IMP Fleet beret with a golden crest. For personnel that are more inclined towards style than safety."
+	desc = "A white Imperial Navy beret with a golden crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_whiterim_com"
 
 /obj/item/clothing/head/beret/solgov/fleet/branch
-	name = "first fleet beret"
-	desc = "An IMP Fleet beret carrying the insignia of the First Fleet, the Sol Guard, stationed in Sol. For personnel that are more inclined towards style than safety."
+	name = "first militarum beret"
+	desc = "An Imperial Navy beret carrying the insignia of the First Fleet, the Sol Guard, stationed in Sol. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_first"
 
 /obj/item/clothing/head/beret/solgov/fleet/branch/second
-	name = "second fleet beret"
-	desc = "An IMP Fleet beret carrying the insignia of the Second Fleet, the Home Defense Group, tasked with defense of Sol territories. For personnel that are more inclined towards style than safety."
+	name = "second militarum beret"
+	desc = "An Imperial Navy beret carrying the insignia of the Second Fleet, the Home Defense Group, tasked with defense of Sol territories. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_second"
 
 /obj/item/clothing/head/beret/solgov/fleet/branch/third
-	name = "third fleet beret"
-	desc = "An IMP Fleet beret carrying the insignia of the Third Fleet, the Border Guard, guarding borders of Sol territory against Vox and pirates. For personnel that are more inclined towards style than safety."
+	name = "third militarum beret"
+	desc = "An Imperial Navy beret carrying the insignia of the Third Fleet, the Border Guard, guarding borders of Sol territory against Xenos and pirates. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_third"
 
 /obj/item/clothing/head/beret/solgov/fleet/branch/fourth
-	name = "fourth fleet beret"
-	desc = "An IMP Fleet beret carrying the insignia of the Fourth Fleet, stationed on Skrell border. For personnel that are more inclined towards style than safety."
+	name = "fourth militarum beret"
+	desc = "An Imperial Navy beret carrying the insignia of the Fourth Fleet, stationed on Skrell border. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_fourth"
 
 /obj/item/clothing/head/beret/solgov/fleet/branch/fifth
-	name = "fifth fleet beret"
-	desc = "An IMP Fleet beret carrying the insignia of the Fifth Fleet, the Quick Reaction Force, recently formed and outfitted with the latest tech. For personnel that are more inclined towards style than safety."
+	name = "fifth militarum beret"
+	desc = "An Imperial Navy beret carrying the insignia of the Fifth Fleet, the Quick Reaction Force, recently formed and outfitted with the latest tech. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_fifth"
 
 //ushanka
 
 /obj/item/clothing/head/ushanka/solgov
-	name = "expeditionary fur hat"
-	desc = "An IMP Imperial synthfur-lined hat for operating in cold environments."
+	name = "militarum fur hat"
+	desc = "An Imperial synthfur-lined hat for operating in cold environments."
 	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
 	icon_state = "ecushankadown"
@@ -324,7 +324,7 @@
 
 /obj/item/clothing/head/ushanka/solgov/fleet
 	name = "fleet fur hat"
-	desc = "An IMP Fleet synthfur-lined hat for operating in cold environments."
+	desc = "An Imperial Navy synthfur-lined hat for operating in cold environments."
 	icon_state = "flushankadown"
 	icon_state_up = "flushankaup"
 
@@ -337,7 +337,7 @@
 		)
 
 /obj/item/clothing/head/helmet/solgov/security
-	name = "security helmet"
+	name = "militarum helmet"
 	desc = "A helmet with 'POLICE' printed on the back in silver lettering."
 	icon_state = "helmet_security"
 	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
@@ -360,7 +360,7 @@
 
 /obj/item/clothing/head/helmet/solgov/pilot/fleet
 	name = "fleet pilot's helmet"
-	desc = "A pilot's helmet for operating the cockpit in style. This one is worn by members of the IMP Fleet."
+	desc = "A pilot's helmet for operating the cockpit in style. This one is worn by members of the Imperial Fleet."
 	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
 	icon_state = "pilotfleet"
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
@@ -425,7 +425,7 @@
 
 /obj/item/clothing/head/helmet/space/void/command
 	name = "command voidsuit helmet"
-	desc = "A light, radiation resistant voidsuit helmet commonly used among IMP uniformed services."
+	desc = "A light, radiation resistant voidsuit helmet commonly used among Imperial uniformed services."
 	icon_state = "rig0_command"
 	item_state = "command_helm"
 	light_overlay = "helmet_light_green_alt"

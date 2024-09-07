@@ -129,8 +129,8 @@
 	to_chat(user, "The seal is [sealed ? "intact" : "broken"].")
 
 /obj/item/folder/envelope/proc/sealcheck(user)
-	var/ripperoni = alert("Are you sure you want to break the seal on \the [src]?", "Confirmation","Yes", "No")
-	if(ripperoni == "Yes")
+	var/ripperoni = alert("Are you sure you want to break the seal on \the [src]?", "Confirmation","Compliance", "No")
+	if(ripperoni == "Compliance")
 		visible_message("[user] breaks the seal on \the [src], and opens it.")
 		sealed = 0
 		update_icon()

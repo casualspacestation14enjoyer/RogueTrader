@@ -19,10 +19,10 @@
 			if(owner.pulling_punches)
 				to_chat(owner, SPAN_WARNING("You must be in your hunting stance to do a threat display."))
 			else
-				var/message = alert(owner, "Would you like to show a scary message?",,"Cancel","Yes", "No")
+				var/message = alert(owner, "Would you like to show a scary message?",,"Cancel","Compliance", "No")
 				if(message == "Cancel")
 					return
-				else if(message == "Yes")
+				else if(message == "Compliance")
 					var/datum/pronouns/pronouns = owner.choose_from_pronouns()
 					owner.visible_message(SPAN_WARNING("\The [owner]'s skin shifts to a deep red colour with dark chevrons running down in an almost hypnotic \
 						pattern. Standing tall, [pronouns.he] strikes, sharp spikes aimed at those threatening [pronouns.him], claws whooshing through the air past them."))

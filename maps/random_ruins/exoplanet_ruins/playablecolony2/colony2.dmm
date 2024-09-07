@@ -1592,7 +1592,7 @@
 "DR" = (
 /obj/structure/closet/crate,
 /obj/item/gun/projectile/shotgun/pump{
-	desc = "The mass-produced W-T Remmington 29x shotgun is a favourite of police and security forces on many worlds. Useful for sweeping alleys. Someone has marked it as property of 'Vel-Rana', with one kill mark next to it."
+	desc = "The mass-produced W-T Remmington 29x shotgun is a favourite of enforcer and security forces on many worlds. Useful for sweeping alleys. Someone has marked it as property of 'Vel-Rana', with one kill mark next to it."
 	},
 /obj/item/storage/box/ammo/shotgunammo,
 /obj/item/storage/box/ammo/shotgunshells,

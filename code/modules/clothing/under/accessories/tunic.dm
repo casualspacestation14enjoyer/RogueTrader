@@ -11,8 +11,8 @@
 
 
 /obj/item/clothing/accessory/tunic/heph
-	name = "\improper Hephaestus Industries tunic"
-	desc = "A fashionable tunic that Hephaestus Industries provides to their lab workers."
+	name = "\improper Vostroyan tunic"
+	desc = "A fashionable tunic that Vostroyan provides to their lab workers."
 	icon_state = "tunic_heph"
 
 
@@ -34,8 +34,8 @@
 
 
 /obj/item/clothing/accessory/tunic/exec/heph
-	name = "\improper Hephaestus Industries executive tunic"
-	desc = "A fashionable tunic that Hephaestus Industries provides to their lab workers."
+	name = "\improper Vostroyan executive tunic"
+	desc = "A fashionable tunic that Vostroyan provides to their lab workers."
 	icon_state = "tunicblack_heph"
 
 

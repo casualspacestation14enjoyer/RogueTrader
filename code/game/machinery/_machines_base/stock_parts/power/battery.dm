@@ -209,7 +209,7 @@
 
 /obj/item/stock_parts/power/battery/buildable/turbo
 	name = "battery backup (rapid)"
-	desc = "The Ward-Takahashi Xcharge state-of-the-art battery backup claims to charge over ten times as fast as its competitors."
+	desc = "The Vostroya Xcharge state-of-the-art battery backup claims to charge over ten times as fast as its competitors."
 	charge_rate = 5
 	matter = list(MATERIAL_STEEL = 1000, MATERIAL_ALUMINIUM = 400, MATERIAL_PLASTIC = 400)
 

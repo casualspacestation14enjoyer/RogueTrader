@@ -14,7 +14,7 @@
 	shoes = /obj/item/clothing/shoes/dutyboots
 
 /singleton/hierarchy/outfit/job/torch/crew/fleet
-	name = OUTFIT_JOB_NAME("Dauntless Fleet Outfit")
+	name = OUTFIT_JOB_NAME("Dauntless Imperial Navy Outfit")
 	hierarchy_type = /singleton/hierarchy/outfit/job/torch/crew/fleet
 	uniform = /obj/item/clothing/under/solgov/utility/fleet
 	shoes = /obj/item/clothing/shoes/dutyboots

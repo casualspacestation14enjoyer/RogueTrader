@@ -19,10 +19,10 @@
 	name = "Grenades"
 
 /datum/uplink_category/visible_weapons
-	name = "Loud & Dangerous Weaponry"
+	name = "Loud & Dangerous War Gear"
 
 /datum/uplink_category/stealthy_weapons
-	name = "Disguised & Inconspicuous Weaponry"
+	name = "Disguised & Inconspicuous War Gear"
 
 /datum/uplink_category/stealth_items
 	name = "Stealth & Camouflage Accessories"

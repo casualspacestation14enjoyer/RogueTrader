@@ -1,5 +1,5 @@
 /obj/machinery/computer/ship/disperser
-	name = "obstruction field disperser control"
+	name = "macrocannon control"
 	icon = 'icons/obj/machines/computer.dmi'
 	icon_state = "computer"
 
@@ -50,7 +50,7 @@
 	. = ..()
 
 /**
- * Used to handle linking of OFD parts.
+ * Used to handle linking of Macrocannon parts.
  * If the parts are too far apart from eachother, it won't work.
  */
 /obj/machinery/computer/ship/disperser/proc/link_parts()
@@ -183,7 +183,7 @@
 
 	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)
 	if (!ui)
-		ui = new(user, src, ui_key, "disperser.tmpl", "[linked.name] obstruction field disperser control", 400, 550)
+		ui = new(user, src, ui_key, "disperser.tmpl", "[linked.name] macrocannon control", 400, 550)
 		ui.set_initial_data(data)
 		ui.open()
 		ui.set_auto_update(1)

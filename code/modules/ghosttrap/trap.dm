@@ -112,7 +112,7 @@ var/global/list/ghost_traps
 		if(!assess_candidate(candidate, target))
 			return
 		// Modal yes/no alert to guard misclicks
-		if(alert("Would you like to occupy \a [object]?", "Occupy", "Yes", "No") != "Yes")
+		if(alert("Would you like to occupy \a [object]?", "Occupy", "Compliance", "No") != "Compliance")
 			return
 		transfer_personality(candidate,target)
 		return TRUE

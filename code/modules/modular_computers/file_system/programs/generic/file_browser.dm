@@ -65,7 +65,7 @@
 		var/datum/computer_file/data/F = computer.get_file(open_file)
 		if(!istype(F))
 			return
-		if(F.do_not_edit && (alert("WARNING: This file is not compatible with editor. Editing it may result in permanently corrupted formatting or damaged data consistency. Edit anyway?", "Incompatible File", "No", "Yes") == "No"))
+		if(F.do_not_edit && (alert("WARNING: This file is not compatible with editor. Editing it may result in permanently corrupted formatting or damaged data consistency. Edit anyway?", "Incompatible File", "No", "Compliance") == "No"))
 			return
 		if(F.read_only)
 			error = "This file is read only. You cannot edit it."

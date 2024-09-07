@@ -1,5 +1,5 @@
 /obj/structure/solbanner
-	name = "\improper IMP banner"
+	name = "\improper Imperial banner"
 	icon = 'maps/torch/icons/obj/solbanner.dmi'
 	icon_state = "wood"
 	desc = "A wooden pole bearing a banner of Imperial Government. Ave."
@@ -8,7 +8,7 @@
 	layer = ABOVE_HUMAN_LAYER
 
 /obj/structure/solbanner/exo
-	name = "exoplanet IMP banner"
+	name = "exoplanet Imperial banner"
 	desc = "A rugged metal frame with a banner of Imperial Government on it. Resistant to radiation bleaching."
 	icon_state = "steel"
 	obj_flags = 0
@@ -24,8 +24,8 @@
 		to_chat(user, SPAN_NOTICE("[plantedby]"))
 
 /obj/item/solbanner
-	name = "\improper IMP banner capsule"
-	desc = "IMP banner packed in a rapid deployment capsule. Used for staking claims on new worlds in the name of Imperial Government."
+	name = "\improper Imperial banner capsule"
+	desc = "Imperial banner packed in a rapid deployment capsule. Used for staking claims on new worlds in the name of Imperial Government."
 	icon = 'maps/torch/icons/obj/uniques.dmi'
 	icon_state = "banner_stowed"
 	w_class = ITEM_SIZE_HUGE

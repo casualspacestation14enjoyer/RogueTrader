@@ -1112,7 +1112,7 @@
 
 /datum/reagent/drink/posca
 	name = "Posca"
-	description = "An ancient energy drink revived by Roman cosplayers on Luna."
+	description = "An ancient energy drink revived by Roman cosplayers on Vostroya."
 	taste_description = "spiced vinegar"
 	color = "#b3b599"
 

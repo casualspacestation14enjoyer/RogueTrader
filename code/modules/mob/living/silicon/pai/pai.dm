@@ -327,7 +327,7 @@ GLOBAL_LIST_INIT(possible_say_verbs, list(
 
 	// Make sure people don't kill themselves accidentally
 	if(alert("WARNING: This will immediately wipe your software and ghost you, removing your character from the round permanently (similar to cryo and robotic storage). Are you entirely sure you want to do this?",
-					"Wipe Software", "No", "No", "Yes") != "Yes")
+					"Wipe Software", "No", "No", "Compliance") != "Compliance")
 		return
 
 	fold()

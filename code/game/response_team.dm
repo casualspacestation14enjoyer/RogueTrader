@@ -20,18 +20,18 @@ var/global/can_call_ert
 	if(send_emergency_team)
 		to_chat(usr, SPAN_DANGER("[GLOB.using_map.boss_name] has already dispatched an emergency response team!"))
 		return
-	if(alert("Do you want to dispatch an Emergency Response Team?",,"Yes","No") != "Yes")
+	if(alert("Do you want to dispatch an Emergency Response Team?",,"Compliance","No") != "Compliance")
 		return
 
 	var/singleton/security_state/security_state = GET_SINGLETON(GLOB.using_map.security_state)
 	if(security_state.current_security_level_is_lower_than(security_state.high_security_level)) // Allow admins to reconsider if the alert level is below High
-		switch(alert("Current security level lower than [security_state.high_security_level.name]. Do you still want to dispatch a response team?",,"Yes","No"))
+		switch(alert("Current security level lower than [security_state.high_security_level.name]. Do you still want to dispatch a response team?",,"Compliance","No"))
 			if("No")
 				return
 
 	var/reason = input("What is the reason for dispatching this Emergency Response Team?", "Dispatching Emergency Response Team")
 
-	if(!reason && alert("You did not input a reason. Continue anyway?",,"Yes", "No") != "Yes")
+	if(!reason && alert("You did not input a reason. Continue anyway?",,"Compliance", "No") != "Compliance")
 		return
 
 	if(send_emergency_team)

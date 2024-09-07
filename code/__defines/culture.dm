@@ -12,16 +12,16 @@
 
 // Cultural IDs.
 #define FACTION_IMPERIUM    "Imperium"
-#define FACTION_INDIE_CONFED  "Gilgamesh Colonial Confederation"
+#define FACTION_INDIE_CONFED  "Tau Empire"
 #define FACTION_NANOTRASEN     "Necromundan"
 #define FACTION_FREETRADE      "Free Trade Union"
 #define FACTION_HEPHAESTUS     "Hephaestus Industries"
 #define FACTION_XYNERGY        "Xynergy"
 #define FACTION_FLEET          "Imperial Fleet"
-#define FACTION_EXPEDITIONARY  "Expeditionary Corps"
+#define FACTION_EXPEDITIONARY  "Explorator"
 #define FACTION_PCRC           "Proxima Centauri Risk Control"
 #define FACTION_SAARE          "Strategic Assault and Asset Retention Enterprises"
-#define FACTION_CORPORATE       "Expeditionary Corps Organisation"
+#define FACTION_CORPORATE       "Explorator Organisation"
 #define FACTION_DAIS           "Deimos Advanced Information Systems"
 #define FACTION_OTHER          "Other Faction"
 #define FACTION_TEST_SUBJECTS  "Test Subjects"
@@ -99,7 +99,7 @@
 #define FACTION_ADHERENT_LOYALISTS   "Loyalists"
 #define FACTION_ADHERENT_SEPARATISTS "Seperatists"
 
-// Vox cultures.
+// Xenos cultures.
 #define CULTURE_VOX_ARKSHIP    "Arkship Crew"
 #define CULTURE_VOX_SALVAGER   "Salvager Crew"
 #define CULTURE_VOX_RAIDER     "Raider Crew"

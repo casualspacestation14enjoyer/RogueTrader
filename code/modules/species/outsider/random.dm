@@ -149,7 +149,7 @@
 	if(user.species.name == SPECIES_ALIEN)
 		to_chat(user, "You're already a [SPECIES_ALIEN].")
 		return
-	if(alert("Are you sure you want to be an alien?", "Mom Look I'm An Alien!", "Yes", "No") == "No")
+	if(alert("Are you sure you want to be an alien?", "Mom Look I'm An Alien!", "Compliance", "No") == "No")
 		to_chat(user, "Okie dokie.")
 		return
 	if(user && user.species.name == SPECIES_ALIEN) //no spamming it to get free implants

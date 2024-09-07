@@ -210,7 +210,7 @@
 	temp_matter[name] = SHEET_MATERIAL_AMOUNT
 	return temp_matter
 
-// Weapons handle applying a divisor for this value locally.
+// War Gear handle applying a divisor for this value locally.
 /material/proc/get_blunt_damage()
 	return weight //todo
 

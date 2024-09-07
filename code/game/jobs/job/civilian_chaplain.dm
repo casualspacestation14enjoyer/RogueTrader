@@ -111,8 +111,8 @@
 
 			H.update_inv_l_hand() // so that it updates the bible's item_state in his hand
 
-			switch(input(H,"Look at your bible - is this what you want?") in list("Yes","No"))
-				if("Yes")
+			switch(input(H,"Look at your bible - is this what you want?") in list("Compliance","No"))
+				if("Compliance")
 					accepted = 1
 				if("No")
 					if(outoftime)

@@ -30,7 +30,7 @@
 	. = ..(mapload, SPECIES_UNATHI)
 
 /mob/living/carbon/human/vox/Initialize(mapload)
-	head_hair_style = "Long Vox Quills"
+	head_hair_style = "Long Xenos Quills"
 	. = ..(mapload, SPECIES_VOX)
 
 /mob/living/carbon/human/diona/Initialize(mapload)

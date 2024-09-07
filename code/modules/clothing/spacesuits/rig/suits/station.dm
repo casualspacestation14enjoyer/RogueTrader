@@ -385,7 +385,7 @@
 /obj/item/rig/hazard
 	name = "hazard hardsuit control module"
 	suit_type = "hazard hardsuit"
-	desc = "A security hardsuit designed for prolonged EVA in dangerous environments."
+	desc = "A militarum hardsuit designed for prolonged EVA in dangerous environments."
 	icon_state = "hazard_rig"
 	armor = list(
 		melee = ARMOR_MELEE_MAJOR,

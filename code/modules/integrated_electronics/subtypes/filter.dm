@@ -62,7 +62,7 @@
 
 /obj/item/integrated_circuit/filter/ref/obj/machinery
 	name = "machinery filter"
-	desc = "Only allow refs belonging machinery or complex objects through, such as computers and consoles."
+	desc = "Only allow refs belonging machinery or complex objects through, such as cogitators and consoles."
 	icon_state = "filter_machinery"
 	filter_type = /obj/machinery
 

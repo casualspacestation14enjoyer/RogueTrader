@@ -1,5 +1,5 @@
 /datum/gear/accessory/iccgn_patch
-	display_name = "ICCGN Patch Selection"
+	display_name = "Tau Patch Selection"
 	description = "Uniform patches of the confederation navy."
 	path = /obj/item/clothing/accessory/iccgn_patch
 	flags = GEAR_HAS_SUBTYPE_SELECTION | GEAR_HAS_NO_CUSTOMIZATION
@@ -10,7 +10,7 @@
 
 /obj/item/clothing/accessory/iccgn_patch
 	abstract_type = /obj/item/clothing/accessory/iccgn_patch
-	name = "base uniform patch, ICCGN"
+	name = "base uniform patch, Tau"
 	desc = "You should not see this."
 	icon = 'packs/factions/iccgn/patches.dmi'
 	accessory_icons = list(

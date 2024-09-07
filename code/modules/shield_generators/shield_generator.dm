@@ -287,12 +287,12 @@
 	if(href_list["begin_shutdown"])
 		if(running < SHIELD_RUNNING)
 			return
-		var/alert = alert(user, "Are you sure you wish to do this? It will drain the power inside the internal storage rapidly.", "Are you sure?", "Yes", "No")
+		var/alert = alert(user, "Are you sure you wish to do this? It will drain the power inside the internal storage rapidly.", "Are you sure?", "Compliance", "No")
 		if(!CanInteract(user, state))
 			return
 		if(running < SHIELD_RUNNING)
 			return
-		if(alert == "Yes")
+		if(alert == "Compliance")
 			set_idle(TRUE) // do this first to clear the field
 			running = SHIELD_DISCHARGING
 		return TOPIC_REFRESH
@@ -314,8 +314,8 @@
 		if(!running)
 			return TOPIC_HANDLED
 
-		var/choice = input(user, "Are you sure that you want to initiate an emergency shield shutdown? This will instantly drop the shield, and may result in unstable release of stored electromagnetic energy. Proceed at your own risk.") in list("Yes", "No")
-		if((choice != "Yes") || !running)
+		var/choice = input(user, "Are you sure that you want to initiate an emergency shield shutdown? This will instantly drop the shield, and may result in unstable release of stored electromagnetic energy. Proceed at your own risk.") in list("Compliance", "No")
+		if((choice != "Compliance") || !running)
 			return TOPIC_HANDLED
 
 		// If the shield would take 5 minutes to disperse and shut down using regular methods, it will take x1.5 (7 minutes and 30 seconds) of this time to cool down after emergency shutdown

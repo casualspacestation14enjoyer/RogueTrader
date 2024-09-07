@@ -69,7 +69,7 @@
 					/obj/item/clothing/head/helmet/space/void/security/alt,
 					/obj/item/clothing/shoes/magboots)
 	cost = 120
-	containername = "security voidsuit crate"
+	containername = "militarum voidsuit crate"
 	containertype = /obj/structure/closet/crate/secure/large
 	access = access_brig
 

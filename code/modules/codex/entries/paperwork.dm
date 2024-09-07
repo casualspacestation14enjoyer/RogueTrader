@@ -26,10 +26,10 @@
 \[ntlogo\] - Inserts the NT logo image.<br>
 \[bluelogo\] - Inserts blue NT logo image.<br>
 \[solcrest\] - Inserts Imperial crest image.<br>
-\[eclogo\] - Inserts the Expeditionary Corps logo.<br>
+\[eclogo\] - Inserts the Explorator logo.<br>
 \[daislogo\] - Inserts the Deimos Advanced Information Systems logo.<br>
 \[xynlogo\] - Inserts the Xyngergy logo.<br>
-\[iccgseal\] - Inserts ICCG seal.<br>
+\[iccgseal\] - Inserts Tau seal.<br>
 \[fleetlogo\] - Inserts the logo of the Imperial Fleet.<br>
 \[sfplogo\] - Inserts the logo of the Sol Federal Police.<br>
 \[falogo\] - Inserts the logo of the Frontier Alliance.<br>

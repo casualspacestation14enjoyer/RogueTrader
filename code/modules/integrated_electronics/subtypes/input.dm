@@ -853,7 +853,7 @@
 /obj/item/integrated_circuit/input/microphone
 	name = "microphone"
 	desc = "Useful for spying on people, or for voice-activated machines."
-	extended_desc = "This will automatically translate most human languages to Zurich Accord Common. \
+	extended_desc = "This will automatically translate most human languages to Gothic. \
 	The first activation pin is always pulsed when the circuit hears someone talk, while the second one \
 	is only triggered if it successfully translated another language."
 	icon_state = "recorder"

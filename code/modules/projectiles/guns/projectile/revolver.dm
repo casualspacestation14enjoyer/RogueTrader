@@ -54,7 +54,7 @@
 	caliber = CALIBER_PISTOL
 	ammo_type = /obj/item/ammo_casing/pistol
 	fire_sound = 'sound/weapons/gunshot/gunshot_pistol.ogg'
-	desc = "The Lumoco Arms' Solid is a rugged revolver for people who don't keep their guns well-maintained."
+	desc = "The Imperial' Solid is a rugged revolver for people who don't keep their guns well-maintained."
 	accuracy = 1
 	bulk = 0
 	fire_delay = 9

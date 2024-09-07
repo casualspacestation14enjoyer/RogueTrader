@@ -6795,8 +6795,8 @@
 	dir = 1
 	},
 /obj/machinery/requests_console{
-	announcementConsole = 1;
-	department = "Security";
+
+	department = "Security"
 	departmentType = 5;
 	pixel_y = 30
 	},
@@ -8965,7 +8965,7 @@
 	dir = 4
 	},
 /obj/machinery/requests_console{
-	department = "Cargo Bay";
+	department = "Munitorum";
 	departmentType = 2;
 	pixel_x = 30
 	},
@@ -13859,7 +13859,7 @@
 	dir = 8
 	},
 /obj/machinery/requests_console{
-	department = "Cargo Bay";
+	department = "Munitorum";
 	departmentType = 2;
 	pixel_x = -30
 	},

@@ -85,7 +85,7 @@
 					/obj/item/seeds/kudzuseed = 2)
 
 /singleton/hierarchy/supply_pack/science/shotgun
-	name = "Weapons - Ballistic Launcher"
+	name = "War Gear - Ballistic Launcher"
 	contains = list(/obj/item/gun/projectile/shotgun/pump/exploration = 1)
 	cost = 60
 	containertype = /obj/structure/closet/crate/secure/weapon

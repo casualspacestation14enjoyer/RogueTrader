@@ -37,10 +37,10 @@
 
 
 /obj/item/clothing/accessory/commonwealth_badge/explorer
-	name = "ancient Expeditionary Corps patch"
+	name = "ancient Explorator patch"
 	desc = {"\
 		A shield shaped blue and green patch with a purple chevron, signifying service \
-		in the bygone Expeditionary Corps from before the foundation of the Imperial.\
+		in the bygone Explorator from before the foundation of the Imperial.\
 	"}
 	icon_state = "explorer"
 	overlay_state = "explorer_worn"

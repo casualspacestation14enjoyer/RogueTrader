@@ -104,15 +104,15 @@
 // Torch only items off torch
 
 /obj/item/mininghome_passport_iccg
-	name = "\improper Old ICCG passport"
+	name = "\improper Old Tau passport"
 	icon = 'icons/obj/passport.dmi'
 	icon_state = "passport_iccg"
 	w_class = ITEM_SIZE_SMALL
-	desc = "A passport from the Gilgamesh Confederation. This one belongs to a man named Ivan Gregorich."
+	desc = "A passport from the Tau Empire. This one belongs to a man named Ivan Gregorich."
 
 /obj/item/clothing/head/beret/mininghome_iccg
 	name = "faded Drop Trooper beret"
-	desc = "An old ICCG Navy beret with a drop troopers crest."
+	desc = "An old Tau Navy beret with a drop troopers crest."
 	icon = 'maps/away/mininghome/icons.dmi'
 	item_icons = list(slot_head_str = 'maps/away/mininghome/onmob_icons.dmi')
 	icon_state = "terranberet-grey"
@@ -120,7 +120,7 @@
 
 /obj/item/clothing/head/beret/mininghome_scg
 	name = "faded Orbital Assault beret"
-	desc = "An old ImperiumDF Fleet beret with an orbital assault crest."
+	desc = "An old Fleet beret with an orbital assault crest."
 	icon = 'maps/away/mininghome/icons.dmi'
 	item_icons = list(slot_head_str = 'maps/away/mininghome/onmob_icons.dmi')
 	icon_state = "beret_blue"

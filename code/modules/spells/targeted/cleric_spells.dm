@@ -223,7 +223,7 @@
 	hud_state = "heal_revoke"
 
 /spell/targeted/revoke/cast(list/targets, mob/living/user)
-	if(alert(user, "Are you sure?", "Alert", "Yes", "No") == "Yes" && alert(user, "Are you ABSOLUTELY SURE?", "Alert", "Absolutely!", "No") == "Absolutely!")
+	if(alert(user, "Are you sure?", "Alert", "Compliance", "No") == "Compliance" && alert(user, "Are you ABSOLUTELY SURE?", "Alert", "Absolutely!", "No") == "Absolutely!")
 		var/should_wait = 1
 		for(var/t in targets)
 			var/mob/living/M = t

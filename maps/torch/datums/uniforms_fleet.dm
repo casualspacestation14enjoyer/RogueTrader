@@ -1,5 +1,5 @@
 /singleton/hierarchy/mil_uniform/fleet/com //Can only be officers
-	name = "Fleet command"
+	name = "Imperial Navy command"
 	departments = COM
 
 	utility_under = /obj/item/clothing/under/solgov/utility/fleet/command
@@ -24,7 +24,7 @@
 	)
 
 /singleton/hierarchy/mil_uniform/fleet/com/seniorofficer
-	name = "Fleet senior command"
+	name = "Imperial Navy senior command"
 	min_rank = 15
 
 	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/command
@@ -33,7 +33,7 @@
 	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/command
 
 /singleton/hierarchy/mil_uniform/fleet/com/flagofficer
-	name = "Fleet flag command"
+	name = "Imperial Navy flag command"
 	min_rank = 17
 
 	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/flag
@@ -42,7 +42,7 @@
 	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/flag
 
 /singleton/hierarchy/mil_uniform/fleet/eng
-	name = "Fleet engineering"
+	name = "Imperial Navy engineering"
 	departments = ENG
 
 	utility_under = /obj/item/clothing/under/solgov/utility/fleet/engineering
@@ -56,7 +56,7 @@
 			)
 
 /singleton/hierarchy/mil_uniform/fleet/eng/noncom
-	name = "Fleet engineering NCO"
+	name = "Imperial Navy engineering NCO"
 	min_rank = 4
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet
@@ -67,7 +67,7 @@
 	dress_extra = list(/obj/item/clothing/head/beret/solgov/fleet/dress)
 
 /singleton/hierarchy/mil_uniform/fleet/eng/snco
-	name = "Fleet engineering SNCO"
+	name = "Imperial Navy engineering SNCO"
 	min_rank = 7
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet
@@ -80,7 +80,7 @@
 	)
 
 /singleton/hierarchy/mil_uniform/fleet/eng/officer
-	name = "Fleet engineering CO"
+	name = "Imperial Navy engineering CO"
 	min_rank = 11
 
 	utility_extra = list(
@@ -105,11 +105,11 @@
 	)
 
 /singleton/hierarchy/mil_uniform/fleet/eng/officer/com //Can only be officers
-	name = "Fleet engineering command"
+	name = "Imperial Navy engineering command"
 	departments = ENG|COM
 
 /singleton/hierarchy/mil_uniform/fleet/eng/officer/com/seniorofficer
-	name = "Fleet engineering senior command"
+	name = "Imperial Navy engineering senior command"
 	min_rank = 15
 
 	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/command
@@ -118,7 +118,7 @@
 	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/command
 
 /singleton/hierarchy/mil_uniform/fleet/eng/officer/com/flagofficer
-	name = "Fleet engineering flag command"
+	name = "Imperial Navy engineering flag command"
 	min_rank = 17
 
 	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/flag
@@ -127,7 +127,7 @@
 	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/flag
 
 /singleton/hierarchy/mil_uniform/fleet/sec
-	name = "Fleet security"
+	name = "Imperial Navy security"
 	departments = SEC
 
 	utility_under = /obj/item/clothing/under/solgov/utility/fleet/security
@@ -142,7 +142,7 @@
 
 
 /singleton/hierarchy/mil_uniform/fleet/sec/noncom
-	name = "Fleet security NCO"
+	name = "Imperial Navy militarum NCO"
 	min_rank = 4
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet
@@ -154,7 +154,7 @@
 
 
 /singleton/hierarchy/mil_uniform/fleet/sec/snco
-	name = "Fleet security SNCO"
+	name = "Imperial Navy militarum SNCO"
 	min_rank = 7
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet
@@ -167,7 +167,7 @@
 	)
 
 /singleton/hierarchy/mil_uniform/fleet/sec/officer
-	name = "Fleet security CO"
+	name = "Imperial Navy militarum CO"
 	min_rank = 11
 
 	utility_extra = list(
@@ -192,11 +192,11 @@
 	)
 
 /singleton/hierarchy/mil_uniform/fleet/sec/officer/com //Can only be officers
-	name = "Fleet security command"
+	name = "Imperial Navy militarum command"
 	departments = SEC|COM
 
 /singleton/hierarchy/mil_uniform/fleet/sec/officer/com/seniorofficer
-	name = "Fleet security senior command"
+	name = "Imperial Navy militarum senior command"
 	min_rank = 15
 
 	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/command
@@ -205,7 +205,7 @@
 	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/command
 
 /singleton/hierarchy/mil_uniform/fleet/sec/officer/com/flagofficer
-	name = "Fleet security flag command"
+	name = "Imperial Navy militarum flag command"
 	min_rank = 17
 
 	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/flag
@@ -214,7 +214,7 @@
 	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/flag
 
 /singleton/hierarchy/mil_uniform/fleet/med
-	name = "Fleet medical"
+	name = "Imperial Navy medical"
 	departments = MED
 
 	utility_under = /obj/item/clothing/under/solgov/utility/fleet/medical
@@ -228,7 +228,7 @@
 			)
 
 /singleton/hierarchy/mil_uniform/fleet/med/noncom
-	name = "Fleet medical NCO"
+	name = "Imperial Navy medical NCO"
 	min_rank = 4
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet
@@ -239,7 +239,7 @@
 	dress_extra = list(/obj/item/clothing/head/beret/solgov/fleet/dress)
 
 /singleton/hierarchy/mil_uniform/fleet/med/snco
-	name = "Fleet medical SNCO"
+	name = "Imperial Navy medical SNCO"
 	min_rank = 7
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet
@@ -252,7 +252,7 @@
 	)
 
 /singleton/hierarchy/mil_uniform/fleet/med/officer
-	name = "Fleet medical CO"
+	name = "Imperial Navy medical CO"
 	min_rank = 11
 
 	utility_extra = list(
@@ -277,11 +277,11 @@
 	)
 
 /singleton/hierarchy/mil_uniform/fleet/med/officer/com //Can only be officers
-	name = "Fleet medical command"
+	name = "Imperial Navy medical command"
 	departments = MED|COM
 
 /singleton/hierarchy/mil_uniform/fleet/med/officer/com/seniorofficer
-	name = "Fleet medical senior command"
+	name = "Imperial Navy medical senior command"
 	min_rank = 15
 
 	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/command
@@ -290,7 +290,7 @@
 	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/command
 
 /singleton/hierarchy/mil_uniform/fleet/med/officer/com/flagofficer
-	name = "Fleet medical flag command"
+	name = "Imperial Navy medical flag command"
 	min_rank = 17
 
 	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/flag
@@ -299,7 +299,7 @@
 	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/flag
 
 /singleton/hierarchy/mil_uniform/fleet/sup
-	name = "Fleet supply"
+	name = "Imperial Navy supply"
 	departments = SUP
 
 	utility_under = /obj/item/clothing/under/solgov/utility/fleet/supply
@@ -313,7 +313,7 @@
 			)
 
 /singleton/hierarchy/mil_uniform/fleet/sup/noncom
-	name = "Fleet supply NCO"
+	name = "Imperial Navy supply NCO"
 	min_rank = 4
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet
@@ -324,7 +324,7 @@
 	dress_extra = list(/obj/item/clothing/head/beret/solgov/fleet/dress)
 
 /singleton/hierarchy/mil_uniform/fleet/sup/snco
-	name = "Fleet supply SNCO"
+	name = "Imperial Navy supply SNCO"
 	min_rank = 7
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet
@@ -337,7 +337,7 @@
 	)
 
 /singleton/hierarchy/mil_uniform/fleet/sup/officer
-	name = "Fleet supply CO"
+	name = "Imperial Navy supply CO"
 	min_rank = 11
 
 	utility_extra = list(
@@ -362,7 +362,7 @@
 	)
 
 /singleton/hierarchy/mil_uniform/fleet/sup/seniorofficer
-	name = "Fleet supply senior command"
+	name = "Imperial Navy supply senior command"
 	min_rank = 15
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet/command
@@ -377,7 +377,7 @@
 	)
 
 /singleton/hierarchy/mil_uniform/fleet/sup/flagofficer
-	name = "Fleet spply flag command"
+	name = "Imperial Navy spply flag command"
 	min_rank = 17
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet/command
@@ -392,7 +392,7 @@
 	)
 
 /singleton/hierarchy/mil_uniform/fleet/srv
-	name = "Fleet service"
+	name = "Imperial Navy service"
 	departments = SRV
 
 	utility_under = /obj/item/clothing/under/solgov/utility/fleet/service
@@ -406,7 +406,7 @@
 			)
 
 /singleton/hierarchy/mil_uniform/fleet/srv/noncom
-	name = "Fleet service NCO"
+	name = "Imperial Navy service NCO"
 	min_rank = 4
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet
@@ -418,7 +418,7 @@
 
 
 /singleton/hierarchy/mil_uniform/fleet/srv/snco
-	name = "Fleet service SNCO"
+	name = "Imperial Navy service SNCO"
 	min_rank = 7
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet
@@ -431,7 +431,7 @@
 	)
 
 /singleton/hierarchy/mil_uniform/fleet/srv/officer
-	name = "Fleet service CO"
+	name = "Imperial Navy service CO"
 	min_rank = 11
 
 	utility_extra = list(
@@ -456,7 +456,7 @@
 	)
 
 /singleton/hierarchy/mil_uniform/fleet/exp
-	name = "Fleet exploration"
+	name = "Imperial Navy exploration"
 	departments = EXP
 
 	utility_under = /obj/item/clothing/under/solgov/utility/fleet/exploration
@@ -470,7 +470,7 @@
 			)
 
 /singleton/hierarchy/mil_uniform/fleet/exp/noncom
-	name = "Fleet exploration NCO"
+	name = "Imperial Navy exploration NCO"
 	min_rank = 4
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet
@@ -482,7 +482,7 @@
 
 
 /singleton/hierarchy/mil_uniform/fleet/exp/snco
-	name = "Fleet exploration SNCO"
+	name = "Imperial Navy exploration SNCO"
 	min_rank = 7
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet
@@ -495,7 +495,7 @@
 	)
 
 /singleton/hierarchy/mil_uniform/fleet/exp/officer
-	name = "Fleet exploration CO"
+	name = "Imperial Navy exploration CO"
 	min_rank = 11
 
 	utility_extra = list(
@@ -520,7 +520,7 @@
 	)
 
 /singleton/hierarchy/mil_uniform/fleet/spt
-	name = "Fleet command support"
+	name = "Imperial Navy command support"
 	departments = SPT
 
 	utility_under = /obj/item/clothing/under/solgov/utility/fleet/command
@@ -534,7 +534,7 @@
 			)
 
 /singleton/hierarchy/mil_uniform/fleet/spt/noncom
-	name = "Fleet support NCO"
+	name = "Imperial Navy support NCO"
 	min_rank = 4
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet
@@ -546,7 +546,7 @@
 
 
 /singleton/hierarchy/mil_uniform/fleet/spt/snco
-	name = "Fleet support SNCO"
+	name = "Imperial Navy support SNCO"
 	min_rank = 7
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet
@@ -559,7 +559,7 @@
 	)
 
 /singleton/hierarchy/mil_uniform/fleet/spt/officer
-	name = "Fleet command support CO"
+	name = "Imperial Navy command support CO"
 	min_rank = 11
 
 	utility_under = /obj/item/clothing/under/solgov/utility/fleet/command
@@ -584,7 +584,7 @@
 	)
 
 /singleton/hierarchy/mil_uniform/fleet/spt/seniorofficer
-	name = "Fleet senior command support"
+	name = "Imperial Navy senior command support"
 	min_rank = 15
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet/command
@@ -599,7 +599,7 @@
 	)
 
 /singleton/hierarchy/mil_uniform/fleet/spt/flagofficer
-	name = "Fleet flag command support"
+	name = "Imperial Navy flag command support"
 	min_rank = 17
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet/command

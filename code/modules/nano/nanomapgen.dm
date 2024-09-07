@@ -20,7 +20,7 @@
 	set name = "Generate NanoUI Map"
 	set category = "Server"
 
-	if (alert("Do you wish to generate a Z Level?", "Generate NanoUI Map", "Yes", "No") != "Yes")
+	if (alert("Do you wish to generate a Z Level?", "Generate NanoUI Map", "Compliance", "No") != "Compliance")
 		return
 
 	if(holder)

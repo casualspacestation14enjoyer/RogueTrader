@@ -64,8 +64,8 @@
 
 //Security
 /obj/item/clothing/suit/security/navyofficer
-	name = "security officer's jacket"
-	desc = "This jacket is for those special occasions when a security officer actually feels safe."
+	name = "militarum officer's jacket"
+	desc = "This jacket is for those special occasions when a militarum officer actually feels safe."
 	icon_state = "officerbluejacket"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 

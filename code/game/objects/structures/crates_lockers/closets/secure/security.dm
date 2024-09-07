@@ -80,7 +80,7 @@
 		/obj/item/clothing/head/HoS/dermal,
 		/obj/item/device/radio/headset/heads/hos,
 		/obj/item/clothing/glasses/hud/security/prot/sunglasses,
-		/obj/item/taperoll/police,
+		/obj/item/taperoll/enforcer,
 		/obj/item/shield/riot,
 		/obj/item/storage/box/flashbangs,
 		/obj/item/storage/belt/holster/security,
@@ -111,7 +111,7 @@
 		/obj/item/clothing/head/warden,
 		/obj/item/device/radio/headset/headset_sec,
 		/obj/item/clothing/glasses/hud/security/prot/sunglasses,
-		/obj/item/taperoll/police,
+		/obj/item/taperoll/enforcer,
 		/obj/item/storage/box/flashbangs,
 		/obj/item/storage/box/teargas,
 		/obj/item/storage/belt/holster/security,
@@ -124,7 +124,7 @@
 	)
 
 /obj/structure/closet/secure_closet/security
-	name = "security officer's locker"
+	name = "militarum officer's locker"
 	req_access = list(access_brig)
 	closet_appearance = /singleton/closet_appearance/secure_closet/security
 
@@ -141,7 +141,7 @@
 		/obj/item/grenade/chem_grenade/teargas,
 		/obj/item/melee/baton/loaded,
 		/obj/item/clothing/glasses/hud/security/prot/sunglasses,
-		/obj/item/taperoll/police,
+		/obj/item/taperoll/enforcer,
 		/obj/item/device/hailer,
 		/obj/item/clothing/accessory/storage/black_vest,
 		/obj/item/clothing/head/soft/sec/corp,
@@ -192,7 +192,7 @@
 		/obj/item/storage/box/evidence,
 		/obj/item/device/radio/headset/headset_sec,
 		/obj/item/clothing/suit/armor/vest/detective,
-		/obj/item/taperoll/police,
+		/obj/item/taperoll/enforcer,
 		/obj/item/gun/projectile/pistol/sec/detective,
 		/obj/item/clothing/accessory/storage/holster/armpit,
 		/obj/item/reagent_containers/food/drinks/flask/detflask,

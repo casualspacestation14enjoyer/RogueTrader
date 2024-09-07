@@ -21,8 +21,8 @@
 	var/obj/shuttle_landmark/destination = input(user, "Select the destination for this jump.") as null|anything in destinations
 	if (!destination) return
 
-	var/long_jump = alert(user, "Is there a transition location for this jump?","", "Yes", "No")
-	if (long_jump == "Yes")
+	var/long_jump = alert(user, "Is there a transition location for this jump?","", "Compliance", "No")
+	if (long_jump == "Compliance")
 		var/obj/shuttle_landmark/transition = input(user, "Select transition location for this jump.") as null|anything in destinations
 		if (!transition) return
 

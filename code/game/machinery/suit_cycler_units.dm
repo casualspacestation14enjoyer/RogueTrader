@@ -26,7 +26,7 @@
 	species = list(SPECIES_HUMAN,SPECIES_TAU,SPECIES_UNATHI)
 
 /obj/machinery/suit_cycler/security
-	name = "security suit cycler"
+	name = "militarum suit cycler"
 	model_text = "Security"
 	req_access = list(access_security)
 	available_modifications = list(/singleton/item_modifier/space_suit/security)

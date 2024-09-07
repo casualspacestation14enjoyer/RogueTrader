@@ -79,8 +79,8 @@
 		to_chat(user, SPAN_WARNING("\The [src] won't activate again."))
 		return
 	var/obj/overmap/visitable/O = map_sectors["[get_z(src)]"]
-	var/choice = alert(user, "This will only affect your current location[istype(O) ? " ([O])" : ""]. Proceed?","Confirmation", "Yes", "No")
-	if(choice != "Yes")
+	var/choice = alert(user, "This will only affect your current location[istype(O) ? " ([O])" : ""]. Proceed?","Confirmation", "Compliance", "No")
+	if(choice != "Compliance")
 		return
 	if(!enable())
 		return
@@ -204,8 +204,8 @@
 			to_chat(user, SPAN_NOTICE("You set the [service_label]'s message to '[message]'."))
 
 		if ("Set Publicity")
-			var/new_public = alert(user, "Should the command report be public?", "Fake Command Report", "Yes", "No")
-			if (new_public == "Yes") new_public = TRUE
+			var/new_public = alert(user, "Should the command report be public?", "Fake Command Report", "Compliance", "No")
+			if (new_public == "Compliance") new_public = TRUE
 			else if (new_public == "No") new_public = FALSE
 			if (isnull(new_public) || new_public == public_announce)
 				return

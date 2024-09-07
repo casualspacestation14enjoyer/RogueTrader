@@ -2,7 +2,7 @@
 
 //EXO
 /obj/item/clothing/under/rank/guard
-	name = "green security guard uniform"
+	name = "green militarum guard uniform"
 	desc = "A durable uniform worn by Dauntless security."
 	icon_state = "guard"
 	item_state = "w_suit"
@@ -84,7 +84,7 @@
 
 //Necromundan
 /obj/item/clothing/under/rank/guard/nanotrasen
-	name = "red security guard uniform"
+	name = "red militarum guard uniform"
 	desc = "A durable uniform worn by subcontracted Necromundan security."
 	icon_state = "guard_nt"
 	worn_state = "guard_nt"
@@ -128,21 +128,21 @@
 
 //Heph. Industries
 /obj/item/clothing/under/rank/guard/heph
-	name = "cyan security guard uniform"
-	desc = "A durable uniform worn by subcontracted Hephaestus Industries security."
+	name = "cyan militarum guard uniform"
+	desc = "A durable uniform worn by subcontracted Vostroyan security."
 	icon_state = "guard_heph"
 	worn_state = "guard_heph"
 
 /obj/item/clothing/under/rank/scientist/heph
 	name = "\improper Hephaestus polo and pants"
-	desc = "A fashionable polo and pair of trousers belonging to Hephaestus Industries, a megacorporation primarily concerned with the research and production of weapon systems."
+	desc = "A fashionable polo and pair of trousers belonging to Vostroyan, a megacorporation primarily concerned with the research and production of weapon systems."
 	icon_state = "smock_heph"
 	worn_state = "smock_heph"
 	accessories = list(/obj/item/clothing/accessory/tunic/heph)
 
 /obj/item/clothing/under/rank/scientist/executive/heph
 	name = "\improper Hephaestus polo and pants"
-	desc = "A fashionable polo and pair of trousers made from expensive biohazard-resistant fabrics. The colors denote the wearer as a Hephaestus Industries higher-up."
+	desc = "A fashionable polo and pair of trousers made from expensive biohazard-resistant fabrics. The colors denote the wearer as a Vostroyan higher-up."
 	icon_state = "smockexec_heph"
 	worn_state = "smockexec_heph"
 	accessories = list(/obj/item/clothing/accessory/tunic/exec/heph)
@@ -154,7 +154,7 @@
 
 /obj/item/clothing/under/rank/ntpilot/heph
 	name = "cyan flight suit"
-	desc = "A sleek cyan Hephaestus Industries flight suit. It proudly sports three different patches with imperial logos on them, as well as several unnecessary looking flaps and pockets for effect."
+	desc = "A sleek cyan Vostroyan flight suit. It proudly sports three different patches with imperial logos on them, as well as several unnecessary looking flaps and pockets for effect."
 	icon_state = "pilot_heph"
 	worn_state = "pilot_heph"
 	item_icons = list(slot_w_uniform_str = 'icons/mob/onmob/onmob_under_corporate.dmi')
@@ -164,7 +164,7 @@
 
 /obj/item/clothing/under/suit_jacket/corp/heph
 	name = "\improper Hephaestus executive suit"
-	desc = "A set of Hephaestus Industries-issued suit pants and shirt that particularly enthusiastic company executives tend to wear."
+	desc = "A set of Vostroyan-issued suit pants and shirt that particularly enthusiastic company executives tend to wear."
 	icon_state = "suit_heph"
 	worn_state = "suit_heph"
 	accessories = list(/obj/item/clothing/accessory/toggleable/corpjacket/heph, /obj/item/clothing/accessory/corptie/heph)

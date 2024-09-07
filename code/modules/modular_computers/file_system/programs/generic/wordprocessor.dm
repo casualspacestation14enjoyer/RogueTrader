@@ -64,7 +64,7 @@
 	if(href_list["PRG_openfile"])
 		. = TOPIC_HANDLED
 		if(is_edited)
-			if(alert("Would you like to save your changes first?",,"Yes","No") == "Yes")
+			if(alert("Would you like to save your changes first?",,"Compliance","No") == "Compliance")
 				if(!save_file(open_file))
 					error = "I/O error: Unable to save file '[open_file]'."
 					browsing = FALSE
@@ -77,7 +77,7 @@
 	if(href_list["PRG_newfile"])
 		. = TOPIC_HANDLED
 		if(is_edited)
-			if(alert("Would you like to save your changes first?",,"Yes","No") == "Yes")
+			if(alert("Would you like to save your changes first?",,"Compliance","No") == "Compliance")
 				if(!save_file(open_file))
 					error = "I/O error: Unable to save file '[open_file]'."
 					return

@@ -1,9 +1,9 @@
 #include "icgnv_hound_shuttle.dm"
 
 /datum/map_template/ruin/icgnv_hound
-	name = "ICGNV Hound"
+	name = "Tau Hound"
 	id = "icgnv_hound"
-	description = "A standard ALFA-pattern, armed ICCGN transport shuttle. The transponder reads on open channels as ICCG and is broadcasting the designation 'ICGNV Hound' in Zurich Accord Common."
+	description = "A standard ALFA-pattern, armed Tau transport shuttle. The transponder reads on open channels as Tau and is broadcasting the designation 'Tau Hound' in Gothic."
 	suffixes = list("maps/event/iccgn_ship/icgnv_hound.dmm")
 	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/icgnv_hound)
 
@@ -15,9 +15,9 @@
 	sensor_visibility = 10
 
 /obj/overmap/visitable/ship/landable/icgnv_hound
-	name = "ICGNV Hound"
-	desc = "A standard ALFA-pattern, armed ICCGN transport shuttle. The transponder reads on open channels as ICCG and is broadcasting the designation 'ICGNV Hound' in Zurich Accord Common."
-	shuttle = "ICGNV Hound"
+	name = "Tau Hound"
+	desc = "A standard ALFA-pattern, armed Tau transport shuttle. The transponder reads on open channels as Tau and is broadcasting the designation 'Tau Hound' in Gothic."
+	shuttle = "Tau Hound"
 	icon_state = "ship"
 	moving_state = "ship_moving"
 	fore_dir = NORTH
@@ -33,13 +33,13 @@
 	)
 
 /obj/shuttle_landmark/icgnv_hound/dock
-	name = "4th Deck, Port Airlock (ICGNV Hound)"
+	name = "4th Deck, Port Airlock (Tau Hound)"
 	landmark_tag = "nav_hound_dock"
 
 //Areas
 
 /area/map_template/icgnv_hound
-	name = "\improper ICGNV Hound"
+	name = "\improper Tau Hound"
 	icon_state = "yellow"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
 	req_access = list(access_syndicate)

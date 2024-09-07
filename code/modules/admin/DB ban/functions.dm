@@ -244,7 +244,7 @@
 			message_admins("[key_name_admin(usr)] has edited a ban for [pckey]'s duration from [duration] to [value]",1)
 			update_query.Execute()
 		if("unban")
-			if(alert("Unban [pckey]?", "Unban?", "Yes", "No") == "Yes")
+			if(alert("Unban [pckey]?", "Unban?", "Compliance", "No") == "Compliance")
 				DB_ban_unban_by_id(banid)
 				return
 			else

@@ -58,7 +58,7 @@
 	visible_message(SPAN_WARNING("\The [src] beeps and ejects its empty cartridge."))
 
 /obj/item/gun/magnetic/railgun/mmi
-	desc = "The Mars Military Industries MI-72 Comet. A man-portable mass driver for squad support, anti-armour and destruction of fortifications and emplacements."
+	desc = "The Sancor Militarum Industries MI-72 Comet. A man-portable mass driver for squad support, anti-armour and destruction of fortifications and emplacements."
 	icon = 'icons/obj/guns/railgun_old.dmi'
 	icon_state = "old_railgun"
 
@@ -74,7 +74,7 @@
 	power_cost = 280 // Same number of shots, but it'll seem to recharge slightly faster
 
 	loaded = /obj/item/stack/material/rods
-	load_type = /obj/item/stack/material/rods // The Confederation learned that chunks of metal work just as well as fancy matter cartridges - actually they dont
+	load_type = /obj/item/stack/material/rods // The Tau learned that chunks of metal work just as well as fancy matter cartridges - actually they dont
 	projectile_type = /obj/item/projectile/bullet/magnetic
 	load_sheet_max = 6 // Fewer shots per "magazine", but more abundant than matter cartridges.
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 3, TECH_MAGNET = 5)
@@ -104,7 +104,7 @@
 
 /obj/item/gun/magnetic/railgun/automatic // Adminspawn only, this shit is absurd.
 	name = "\improper LMRA autocannon"
-	desc = "The HelTek Arms LMRA-14A Meteor. Originally a vehicle-mounted turret weapon used by the Confederation in the Gaia Conflict for anti-vehicular operations, the fact that it was made man-portable is mindboggling in itself."
+	desc = "The HelTek Arms LMRA-14A Meteor. Originally a vehicle-mounted turret weapon used by the Tau in the Gaia Conflict for anti-vehicular operations, the fact that it was made man-portable is mindboggling in itself."
 	icon = 'icons/obj/guns/railgun_heavy.dmi'
 	icon_state = "heavy_railgun"
 	removable_components = FALSE // Absolutely not. This has an infinity cell.
@@ -130,7 +130,7 @@
 
 /obj/item/gun/magnetic/railgun/automatic/mmi
 	name = "\improper RHR accelerator"
-	desc = "The Mars Military Industries MI-227 Meteor. Originally a vehicle-mounted turret weapon for heavy anti-vehicular and anti-structural fire, the fact that it was made man-portable is mindboggling in itself."
+	desc = "The Sancor Militarum Industries MI-227 Meteor. Originally a vehicle-mounted turret weapon for heavy anti-vehicular and anti-structural fire, the fact that it was made man-portable is mindboggling in itself."
 	icon = 'icons/obj/guns/railgun_old_heavy.dmi'
 	icon_state = "old_heavy_railgun"
 

@@ -567,10 +567,10 @@
 /mob/living/carbon/human/ork/merc/proc/question(var/client/C)
 	if(!C)
 		return FALSE
-	var/response = alert(C, "A new xenos mercenary has been awoken by Lord Trader. Are you interested?", "Ork Freebooter", "Yes", "No",)
+	var/response = alert(C, "A new xenos mercenary has been awoken by Lord Trader. Are you interested?", "Ork Freebooter", "Compliance", "No",)
 	if(!C || ckey)
 		return FALSE
-	if(response == "Yes")
+	if(response == "Compliance")
 		transfer_personality(C)
 		src.warfare_faction = IMPERIUM
 		return TRUE

@@ -17,7 +17,7 @@
 		return FALSE
 
 	var/key_name = key_name(living_holder)
-	if(alert(user, "Do you wish to kill [key_name]?", "Kill [living_holder]?", "No", "Yes") != "Yes")
+	if(alert(user, "Do you wish to kill [key_name]?", "Kill [living_holder]?", "No", "Compliance") != "Compliance")
 		return FALSE
 	if(!valid_preconditions(user))
 		to_chat(user, SPAN_NOTICE("You were unable to kill [key_name]"))

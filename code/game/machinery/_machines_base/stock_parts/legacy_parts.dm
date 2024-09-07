@@ -318,7 +318,7 @@
 	sales_price = 10
 
 
-// Combat + Magnet, Works on Weapons primarily, armor as well. (combat needed for armor)
+// Combat + Magnet, Works on War Gear primarily, armor as well. (combat needed for armor)
 
 /obj/item/rnd/combat3
 	name = "seolite firing mechanism"

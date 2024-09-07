@@ -830,8 +830,8 @@
 /obj/rune/tearreality/attack_hand(mob/living/user)
 	..()
 	if(HECOMES && !iscultist(user))
-		var/input = input(user, "Are you SURE you want to sacrifice yourself?", "DO NOT DO THIS") in list("Yes", "No")
-		if(input != "Yes")
+		var/input = input(user, "Are you SURE you want to sacrifice yourself?", "DO NOT DO THIS") in list("Compliance", "No")
+		if(input != "Compliance")
 			return
 		speak_incantation(user, "Uhrast ka'hfa heldsagen ver[pick("'","`")]lot!")
 		to_chat(user, SPAN_WARNING("In the last moment of your humble life, you feel an immense pain as fabric of reality mends... with your blood."))

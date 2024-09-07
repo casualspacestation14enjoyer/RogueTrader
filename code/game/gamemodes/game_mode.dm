@@ -266,16 +266,16 @@ var/global/list/additional_antag_types = list()
 		"suspected criminal operatives",
 		"malfunctioning von Neumann probe swarms",
 		"shadowy interlopers",
-		"a stranded Vox arkship",
+		"a stranded Xenos arkship",
 		"haywire IPC constructs",
 		"rogue Unathi exiles",
 		"artifacts of eldritch horror",
 		"a brain slug infestation",
 		"killer bugs that lay eggs in the husks of the living",
 		"a deserted transport carrying xenofauna specimens",
-		"an emissary for the gestalt requesting a security detail",
+		"an emissary for the gestalt requesting a militarum detail",
 		"radical Tau transevolutionaries",
-		"classified security operations",
+		"classified militarum operations",
 		"a gargantuan glowing goat"
 		)
 	command_announcement.Announce("The presence of [pick(reasons)] in the region is tying up all available local emergency resources; emergency response teams cannot be called at this time, and post-evacuation recovery efforts will be substantially delayed.","Emergency Transmission")

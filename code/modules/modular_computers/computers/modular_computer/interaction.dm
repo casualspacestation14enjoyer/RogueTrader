@@ -91,8 +91,8 @@
 	if(enabled)
 		ui_interact(user)
 	else if(check_rights(R_ADMIN, 0, user))
-		var/response = alert(user, "This computer is turned off. Would you like to turn it on?", "Admin Override", "Yes", "No")
-		if(response == "Yes")
+		var/response = alert(user, "This computer is turned off. Would you like to turn it on?", "Admin Override", "Compliance", "No")
+		if(response == "Compliance")
 			turn_on(user)
 
 /obj/item/modular_computer/attack_ai(mob/user)

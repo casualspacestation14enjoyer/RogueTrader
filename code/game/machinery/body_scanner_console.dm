@@ -141,7 +141,7 @@
 			D.add_new_scan(data["scan"])
 		user.visible_message(
 			SPAN_NOTICE("\The [user] keys a command into \the [src]."),
-			SPAN_NOTICE("The console beeps, confirming it has successfully sent the scan to the connected displays."),
+			SPAN_NOTICE("The console beeps in compliance, confirming it has successfully sent the scan to the connected displays."),
 			SPAN_ITALIC("You hear someone typing on a terminal, then a beep.")
 		)
 		return TOPIC_REFRESH

@@ -7,9 +7,9 @@
 #include "voxship_antagonism.dm"
 
 /datum/map_template/ruin/away_site/scavship
-	name = "Vox Scavenger Ship"
+	name = "Xenos Scavenger Ship"
 	id = "awaysite_voxship2"
-	description = "Vox Scavenger Ship."
+	description = "Xenos Scavenger Ship."
 	suffixes = list("voxship/voxship-2.dmm")
 	spawn_cost = 0.3
 	player_cost = 0
@@ -28,11 +28,11 @@
 	)
 
 	initial_restricted_waypoints = list(
-		"Vox Scavenger Ship" = list("nav_hangar_voxship")
+		"Xenos Scavenger Ship" = list("nav_hangar_voxship")
 	)
 
 /datum/shuttle/autodock/overmap/vox_ship
-	name = "Vox Scavenger Ship"
+	name = "Xenos Scavenger Ship"
 	move_time = 10
 	shuttle_area = list(
 		/area/voxship/engineering,
@@ -49,17 +49,17 @@
 	defer_initialisation = TRUE
 
 /obj/shuttle_landmark/vox_base/hangar/vox_ship
-	name = "Vox Ship Docked"
+	name = "Xenos Ship Docked"
 	landmark_tag = "nav_hangar_voxship"
 
 /obj/machinery/computer/shuttle_control/explore/vox_ship
 	name = "landing control console"
-	shuttle_tag = "Vox Scavenger Ship"
+	shuttle_tag = "Xenos Scavenger Ship"
 	req_access = list(access_voxship)
 
 /obj/overmap/visitable/ship/landable/vox_ship
 	name = "Alien Vessel"
-	shuttle = "Vox Scavenger Ship"
+	shuttle = "Xenos Scavenger Ship"
 	desc = "Sensor array detects a medium-sized vessel of irregular shape. Unknown origin."
 	color = "#233012"
 	icon_state = "ship"
@@ -69,7 +69,7 @@
 
 //Ship's little lander defined here
 /datum/shuttle/autodock/overmap/vox_lander
-	name = "Vox Scavenger Shuttle"
+	name = "Xenos Scavenger Shuttle"
 	move_time = 10
 	shuttle_area = list(/area/voxship/shuttle)
 	dock_target = "vox_scavshuttle"
@@ -79,7 +79,7 @@
 	fuel_consumption = 4
 	ceiling_type = /turf/simulated/floor/shuttle_ceiling
 	defer_initialisation = TRUE
-	mothershuttle = "Vox Scavenger Ship"
+	mothershuttle = "Xenos Scavenger Ship"
 
 /obj/shuttle_landmark/vox_base/hangar/vox_scavshuttle
 	name = "Dock"
@@ -89,12 +89,12 @@
 
 /obj/machinery/computer/shuttle_control/explore/vox_lander
 	name = "landing control console"
-	shuttle_tag = "Vox Scavenger Shuttle"
+	shuttle_tag = "Xenos Scavenger Shuttle"
 	req_access = list(access_voxship)
 
 /obj/overmap/visitable/ship/landable/vox_scavshuttle
 	name = "Unmarked shuttle"
-	shuttle = "Vox Scavenger Shuttle"
+	shuttle = "Xenos Scavenger Shuttle"
 	desc = "Sensor array detects a small, unmarked vessel."
 	fore_dir = WEST
 	vessel_size = SHIP_SIZE_TINY
@@ -118,7 +118,7 @@
 
 /singleton/submap_archetype/derelict/voxship
 	descriptor = "Shoal Scavenger Vessel"
-	map = "Vox Scavenger Ship"
+	map = "Xenos Scavenger Ship"
 	crew_jobs = list(
 		/datum/job/submap/voxship_vox,
 		/datum/job/submap/voxship_vox/doc,

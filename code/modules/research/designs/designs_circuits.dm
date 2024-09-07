@@ -612,28 +612,28 @@
 	sort_string = "KCAAC"
 
 /datum/design/circuit/disperserfront
-	name = "obstruction field disperser beam generator"
+	name = "macrocannon beam generator"
 	id = "disperserfront"
 	req_tech = list(TECH_ENGINEERING = 2, TECH_COMBAT = 2, TECH_BLUESPACE = 2)
 	build_path = /obj/item/stock_parts/circuitboard/disperserfront
 	sort_string = "KCAAD"
 
 /datum/design/circuit/dispersermiddle
-	name = "obstruction field disperser fusor"
+	name = "macrocannon fusor"
 	id = "dispersermiddle"
 	req_tech = list(TECH_ENGINEERING = 2, TECH_COMBAT = 2, TECH_BLUESPACE = 2)
 	build_path = /obj/item/stock_parts/circuitboard/dispersermiddle
 	sort_string = "KCAAE"
 
 /datum/design/circuit/disperserback
-	name = "obstruction field disperser material deconstructor"
+	name = "macrocannon material deconstructor"
 	id = "bsaback"
 	req_tech = list(TECH_ENGINEERING = 2, TECH_COMBAT = 2, TECH_BLUESPACE = 2)
 	build_path = /obj/item/stock_parts/circuitboard/disperserback
 	sort_string = "KCAAF"
 
 /datum/design/circuit/disperser_console
-	name = "obstruction field disperser control console"
+	name = "macrocannon control console"
 	id = "disperser_console"
 	req_tech = list(TECH_DATA = 2, TECH_COMBAT = 5, TECH_BLUESPACE = 5)
 	build_path = /obj/item/stock_parts/circuitboard/disperser

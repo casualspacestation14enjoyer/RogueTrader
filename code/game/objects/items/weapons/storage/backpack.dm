@@ -117,7 +117,7 @@
 	)
 
 /obj/item/storage/backpack/security
-	name = "security backpack"
+	name = "militarum backpack"
 	desc = "It's a very robust backpack, for security-related needs."
 	icon_state = "securitypack"
 	item_state_slots = list(
@@ -126,7 +126,7 @@
 	)
 
 /obj/item/storage/backpack/security/exo
-	name = "corporate security backpack"
+	name = "corporate militarum backpack"
 	desc = "It's a very robust backpack, for security-related needs. This one is in EXO colors."
 	icon_state = "securitypack_exo"
 
@@ -291,8 +291,8 @@
 	item_state_slots = list(slot_l_hand_str = "duffle_med", slot_r_hand_str = "duffle_med")
 
 /obj/item/storage/backpack/dufflebag/sec
-	name = "security dufflebag"
-	desc = "A large dufflebag for holding extra security supplies and ammunition."
+	name = "militarum dufflebag"
+	desc = "A large dufflebag for holding extra militarum supplies and ammunition."
 	icon_state = "duffle_sec"
 	item_state_slots = list(slot_l_hand_str = "duffle_sec", slot_r_hand_str = "duffle_sec")
 
@@ -412,7 +412,7 @@
 	icon_state = "satchel-gen"
 
 /obj/item/storage/backpack/satchel/sec
-	name = "security satchel"
+	name = "militarum satchel"
 	desc = "A robust satchel for security-related needs."
 	icon_state = "satchel-sec"
 	item_state_slots = list(
@@ -421,7 +421,7 @@
 		)
 
 /obj/item/storage/backpack/satchel/sec/exo
-	name = "corporate security satchel"
+	name = "corporate militarum satchel"
 	desc = "A robust satchel for imperial security-related needs. This one is in EXO colors."
 	icon_state = "satchel-sec_exo"
 
@@ -500,8 +500,8 @@
 
 //Security
 /obj/item/storage/backpack/ert/security
-	name = "emergency response team security backpack"
-	desc = "A spacious backpack with lots of pockets, worn by security members of an Emergency Response Team."
+	name = "emergency response team militarum backpack"
+	desc = "A spacious backpack with lots of pockets, worn by militarum members of an Emergency Response Team."
 	icon_state = "ert_security"
 
 //Engineering
@@ -556,12 +556,12 @@
 	icon_state = "courierbaghyd"
 
 /obj/item/storage/backpack/messenger/sec
-	name = "security messenger bag"
+	name = "militarum messenger bag"
 	desc = "A small, tactical backpack worn over one shoulder."
 	icon_state = "courierbagsec"
 
 /obj/item/storage/backpack/messenger/sec/exo
-	name = "corporate security messenger bag"
+	name = "corporate militarum messenger bag"
 	desc = "A small, tactical backpack worn over one shoulder. This one is in EXO colors."
 	icon_state = "courierbagsec_exo"
 

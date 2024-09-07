@@ -323,7 +323,7 @@
 /obj/item/book/manual/materials_chemistry_analysis
 	name = "Materials Analysis and the Chemical Implications"
 	icon_state = "chemistry"
-	author = "Jasper Pascal, Senior Lecturer in Materials Analysis at the University of Jol'Nar"
+	author = "Jasper Pascal, Senior Lecturer in Materials Analysis at the Progenium of Jol'Nar"
 	title = "Materials Analysis and the Chemical Implications"
 	dat = {"<html>
 				<head>
@@ -413,7 +413,7 @@
 				<h1><a name="Synthetic">Harvesting and utilising anomalous energy signatures</a></h1>
 				As mentioned in the foreword, my colleague from the Tyrolian Institute on Saturn's moon of Titan, in the Sol System, Doctor Raymond Ward has made great strides
 				in the area of harvesting and application of the energy emitted by anomalous phenomena from around the galaxy (although I profess I have not yet seen him
-				venture further from his birthplace on Earth than the comfortable distance of the Sol Cis-Oort Satellite Sphere).<br>
+				venture further from his birthplace on Terra than the comfortable distance of the Sol Cis-Oort Satellite Sphere).<br>
 				<br>
 				By employing a patented semi-phased alloy with unique and fascinating bluespace interaction properties, Ward's contraption is able to 'harvest' energy, store
 				it and redirect it later at will (with appropriate electronic mechanisms, of course). Although he professes to see or desire no commercial or material gain

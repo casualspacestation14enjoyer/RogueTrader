@@ -175,7 +175,7 @@
 
 /obj/item/paper/memo/generic/sublt
 	name = "fleet rank abbreviations"
-	info = {"Some "internal use only" reports on proper and improper ways of abbreviating fleet ranks and roles, including emphasis that "sub" is NOT an authorized way, shorthand or otherwise, to refer to sub lieutenant."}
+	info = {"Some "internal use only" reports on proper and improper ways of abbreviating militarum ranks and roles, including emphasis that "sub" is NOT an authorized way, shorthand or otherwise, to refer to sub lieutenant."}
 
 
 // scgr memos
@@ -214,11 +214,11 @@
 
 /obj/item/paper/memo/scgr/execution
 	name = "formal complaint"
-	info = {"A confidential memo from Rear Admiral Lambert of the SFV Bismarck issuing a formal complaint on behalf of Fleet regarding the execution of SLT Kristen Rohtin aboard a Corps vessel. The tone is furious and suggests significant consequences for the Dauntless."}
+	info = {"A confidential memo from Rear Admiral Lambert of the SFV Bismarck issuing a formal complaint on behalf of Imperial Navy regarding the execution of SLT Kristen Rohtin aboard a Corps vessel. The tone is furious and suggests significant consequences for the Dauntless."}
 
 /obj/item/paper/memo/scgr/floritstatement
 	name = "undersecretary statement"
-	info = {"A press release issued by the newly-appointed Undersecretary of Diplomatic Affairs, Isabel Florit. The statement assures the public that there will be "no repeats" of the mistakes carried out in recent months aboard the Dauntless. It goes on to advocate the role of the Defense Forces in public affairs, and suggests that the Diplomatic Affairs office will be working closely with the Imperium Fleet under Florit's leadership in the interest of preventing any further incidents."}
+	info = {"A press release issued by the newly-appointed Undersecretary of Diplomatic Affairs, Isabel Florit. The statement assures the public that there will be "no repeats" of the mistakes carried out in recent months aboard the Dauntless. It goes on to advocate the role of the Defense Forces in public affairs, and suggests that the Diplomatic Affairs office will be working closely with the Imperium Imperial Navy under Florit's leadership in the interest of preventing any further incidents."}
 
 /obj/item/paper/memo/scgr/senateminutes
 	name = "assembly floor proceedings"
@@ -281,11 +281,11 @@
 
 /obj/item/paper/memo/command/recall
 	name = "order of recall"
-	info = {"A notice from the Helios Board of Admiralty regarding the urgent return of The Dauntless to Mars - the Board has ordered debriefing and review regarding the diplomatic meetings with the Imperial Pioneer Corps and the field execution of SLT Kristen Rohtin. The document stresses that the ship be wary of any vessels, Fleet or otherwise, masking their transponders."}
+	info = {"A notice from the Helios Board of Admiralty regarding the urgent return of The Dauntless to Sancor - the Board has ordered debriefing and review regarding the diplomatic meetings with the Imperial Pioneer Corps and the field execution of SLT Kristen Rohtin. The document stresses that the ship be wary of any vessels, Imperial Navy or otherwise, masking their transponders."}
 
 /obj/item/paper/memo/command/roguefleeties
-	name = "rogue fleet movements"
-	info = {"An "internal use only" memorandum sent from Expeditionary Command, detailing the last known locations and naval capacity of several rogue Fifth Fleet vessels, including the SFV Nathan Hale. The data available in the report is uncomfortably sparse."}
+	name = "rogue militarum movements"
+	info = {"An "internal use only" memorandum sent from Expeditionary Command, detailing the last known locations and naval capacity of several rogue Fifth Imperial Navy vessels, including the SFV Nathan Hale. The data available in the report is uncomfortably sparse."}
 
 /obj/item/paper/memo/command/outpostreport1
 	name = "\improper E-14b outpost report"
@@ -484,7 +484,7 @@
 
 /obj/item/paper/memo/exploration/survivors
 	name = "interactions with survivors"
-	info = {"Some "internal use only" reports discussing the process of dealing with survivors, off-ship personnel, or in-distress civilians. This one details three points that all explorers, Fleet servicemembers, or contractor personnel should attempt to follow when dealing with off-ship persons: First, treat them with the utmost respect at all times, as they are the ones who need aid. Second, do not directly order them around, unless they happen to be getting in the way of Imperium objectives. Third, remind them of their rights - they are requiring aid and are to be treated with the best handling, but remind them that they are still on Imperium property, and are subject to Imperium law at all times."}
+	info = {"Some "internal use only" reports discussing the process of dealing with survivors, off-ship personnel, or in-distress civilians. This one details three points that all explorers, Imperial Navy servicemembers, or contractor personnel should attempt to follow when dealing with off-ship persons: First, treat them with the utmost respect at all times, as they are the ones who need aid. Second, do not directly order them around, unless they happen to be getting in the way of Imperium objectives. Third, remind them of their rights - they are requiring aid and are to be treated with the best handling, but remind them that they are still on Imperium property, and are subject to Imperium law at all times."}
 
 /obj/item/paper/memo/exploration/cigarettes
 	name = "cigarettes with helmets"

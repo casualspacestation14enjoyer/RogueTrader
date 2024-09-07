@@ -66,8 +66,8 @@
 		if (!check_access(id))
 			USE_FEEDBACK_ID_CARD_DENIED(src, id_name)
 			return TRUE
-		var/input = alert(user, "Would you like to authorize this warrant?", "\The [src] - Authorization", "Yes", "No")
-		if (input != "Yes" || !user.use_sanity_check(src, tool))
+		var/input = alert(user, "Would you like to authorize this warrant?", "\The [src] - Authorization", "Compliance", "No")
+		if (input != "Compliance" || !user.use_sanity_check(src, tool))
 			return TRUE
 		active.fields["auth"] = "[id.registered_name] - [id.assignment ? id.assignment : "(Unknown)"]"
 		broadcast_security_hud_message("\A [active.fields["arrestsearch"]] warrant for <b>[active.fields["namewarrant"]]</b> has been authorized by [id.assignment ? id.assignment+" " : ""][id.registered_name].", src)

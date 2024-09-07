@@ -8,7 +8,7 @@
 		society is a dying society. Given their role, they are generally the wealthiest members of the Empire, although their \
 		resources are often invested in various endeavors both within and outside of Tau society. Tau families tend to be small, \
 		usually limited to one, sometimes two bondings. They often dress in clothing made from soft, high-quality materials \
-		that are long and flowing, often compared by human scholars to the attire of ancient Earth nobility. Their skin is generally light blue."
+		that are long and flowing, often compared by human scholars to the attire of ancient Terra nobility. Their skin is generally light blue."
 	economic_power = 1.4
 	language = LANGUAGE_TAU
 	secondary_langs = list(

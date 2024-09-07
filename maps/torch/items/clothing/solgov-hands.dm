@@ -39,7 +39,7 @@
 	item_state = "duty_gloves_med"
 
 /obj/item/clothing/gloves/thick/duty/solgov/sec
-	name = "security duty gloves"
+	name = "militarum duty gloves"
 	desc = "These black duty gloves are made from durable synthetic materials, and have a lovely red accent color."
 	icon_state = "duty_gloves_sec"
 	item_state = "duty_gloves_sec"

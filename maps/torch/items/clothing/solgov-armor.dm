@@ -19,7 +19,7 @@
 	)
 
 /obj/item/clothing/suit/storage/vest/solgov/security
-	name = "master at arms heavy armored vest"
+	name = "militarum heavy armored vest"
 	desc = "A synthetic armor vest with MASTER AT ARMS printed in silver lettering on the chest. This one has added webbing and ballistic plates."
 	icon_state = "secwebvest"
 
@@ -30,7 +30,7 @@
 
 /obj/item/clothing/suit/armor/pcarrier/blue/sol
 	name = "peacekeeper plate carrier"
-	desc = "A lightweight plate carrier vest in IMP Peacekeeper colors. It can be equipped with armor plates, but provides no protection of its own."
+	desc = "A lightweight plate carrier vest in Imperial Peacekeeper colors. It can be equipped with armor plates, but provides no protection of its own."
 	accessories = list(/obj/item/clothing/accessory/armor_plate/medium, /obj/item/clothing/accessory/storage/pouches/blue, /obj/item/clothing/accessory/arm_guards/blue, /obj/item/clothing/accessory/armor_tag/solgov)
 
 /obj/item/clothing/suit/armor/pcarrier/light/sol

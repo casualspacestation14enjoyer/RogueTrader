@@ -140,8 +140,8 @@
 		to_chat(user, SPAN_NOTICE("\The [shade] in \the [src] is dormant."))
 		return
 	else if(shade.loc == src)
-		var/choice = alert("Would you like to invoke the spirit within?",,"Yes","No")
-		if(choice == "Yes")
+		var/choice = alert("Would you like to invoke the spirit within?",,"Compliance","No")
+		if(choice == "Compliance")
 			shade.dropInto(loc)
 			to_chat(user, SPAN_NOTICE("You summon \the [shade]."))
 		if(choice == "No")

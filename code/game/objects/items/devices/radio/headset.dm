@@ -120,14 +120,14 @@
 	ks1type = /obj/item/device/encryptionkey/binary
 
 /obj/item/device/radio/headset/headset_sec
-	name = "security vox headset"
-	desc = "This is used by your elite security force."
+	name = "militarum vox headset"
+	desc = "This is used by your elite militarum force."
 	icon_state = "sec_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/headset_sec
 
 /obj/item/device/radio/headset/headset_sec/alt
-	name = "security bowman headset"
+	name = "militarum bowman headset"
 	icon_state = "sec_headset_alt"
 	item_state = "sec_headset_alt"
 

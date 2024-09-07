@@ -351,7 +351,7 @@
 
 /datum/reagent/ethanol/vodka/premium
 	name = "Premium Vodka"
-	description = "Premium distilled vodka imported directly from the Gilgamesh Colonial Confederation."
+	description = "Premium distilled vodka imported directly from the Tau Empire."
 	taste_description = "clear kvass"
 	color = "#aaddff" // rgb: 170, 221, 255 - very light blue.
 	strength = 10
@@ -1063,7 +1063,7 @@
 	strength = 15
 
 	glass_name = "Armstrong cocktail"
-	glass_desc = "Gothic Ale, vodka and lime come together in this instant classic. Named for Neil Armstrong, who was the first man to set foot on Luna, in the 20th century."
+	glass_desc = "Gothic Ale, vodka and lime come together in this instant classic. Named for Neil Armstrong, who was the first man to set foot on Vostroya, in the Pre-Heresy."
 
 /datum/reagent/ethanol/mead
 	name = "Fenrisian Ale"
@@ -1433,13 +1433,13 @@
 
 /datum/reagent/ethanol/hellshenpa
 	name = "Hellshen Pale Ale"
-	description = "A type of ale drunk in the Hellshen regions of Mars."
+	description = "A type of ale drunk in the Hellshen regions of Sancor."
 	taste_description = "dark musty hops and Martian pride"
 	color = "#aa9162"
 	strength = 50
 
 	glass_name = "Hellshen Pale Ale"
-	glass_desc = "A type of ale drunk in the Hellshen regions of Mars."
+	glass_desc = "A type of ale drunk in the Hellshen regions of Sancor."
 
 /datum/reagent/ethanol/jagerbomb
 	name = "Jagerbomb"
@@ -1463,13 +1463,13 @@
 
 /datum/reagent/ethanol/jimmygideon
 	name = "Jimmy Gideon"
-	description = "The drink of choice of Jimmy Gideon, first man on Mars."
+	description = "The drink of choice of Jimmy Gideon, first man on Sancor."
 	taste_description = "the legacy of greatness and chocolate"
 	color = "#d9cfa5"
 	strength = 30
 
 	glass_name = "Jimmy"
-	glass_desc = "The drink of choice of Jimmy Gideon, first man on Mars."
+	glass_desc = "The drink of choice of Jimmy Gideon, first man on Sancor."
 
 /datum/reagent/ethanol/lonestarmule
 	name = "Lonestar Mule"
@@ -1493,13 +1493,13 @@
 
 /datum/reagent/ethanol/lunabrandy
 	name = "Imperial Amasec"
-	description = "A strong fermented brandy typically consumed on Luna."
+	description = "A strong fermented brandy typically consumed on Vostroya."
 	taste_description = "distilled wine and snobbery"
 	color = "#bdb6a9"
 	strength = 20
 
 	glass_name = "Imperial Amasec"
-	glass_desc = "A strong brandy largely consumed by the upper classes of Luna."
+	glass_desc = "A strong brandy largely consumed by the upper classes of Vostroya."
 
 /datum/reagent/ethanol/moscowmule
 	name = "Moscow Mule"

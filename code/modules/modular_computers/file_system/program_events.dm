@@ -15,5 +15,5 @@
 	if(background)
 		computer.visible_error("Network connectivity lost - process [filename].[filetype] (PID [rand(100,999)]) terminated.")
 	else
-		computer.visible_error("FATAL NETWORK ERROR - NTNet connection lost. Please try again later. If problem persists, please contact your system administrator.")
+		computer.visible_error("FATAL NETWORK ERROR - NTNet connection lost. Please try again later. If problem persists, please contact your local mechanicum.")
 		computer.update_host_icon()

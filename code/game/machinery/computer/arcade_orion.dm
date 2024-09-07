@@ -4,7 +4,7 @@
 //////////////////////////
 
 //Orion Trail Events
-#define ORION_TRAIL_RAIDERS				"Vox Raiders"
+#define ORION_TRAIL_RAIDERS				"Xenos Raiders"
 #define ORION_TRAIL_FLUX				"Interstellar Flux"
 #define ORION_TRAIL_ILLNESS				"Illness"
 #define ORION_TRAIL_BREAKDOWN			"Breakdown"
@@ -47,14 +47,14 @@
 						   ORION_TRAIL_COLLISION	= 1,
 						   ORION_TRAIL_CARP			= 3
 						   )
-	var/list/stops = list("Pluto","Asteroid Belt","Proxima Centauri","Dead Space","Rigel Prime","Tau Ceti Beta","Black Hole","Space Outpost Beta-9","Orion Prime")
+	var/list/stops = list("Pluto","Asteroid Belt","Proxima Centauri","Dead Space","Rigel Prime","Vostroya Beta","Black Hole","Space Outpost Beta-9","Orion Prime")
 	var/list/stopblurbs = list(
 		"Pluto, long since occupied with long-range sensors and scanners, stands ready to, and indeed continues to probe the far reaches of the galaxy.",
 		"At the edge of the Sol system lies a treacherous asteroid belt. Many have been crushed by stray asteroids and misguided judgement.",
 		"The nearest star system to Sol, in ages past it stood as a reminder of the boundaries of sub-light travel, now a low-population sanctuary for adventurers and traders.",
 		"This region of space is particularly devoid of matter. Such low-density pockets are known to exist, but the vastness of it is astounding.",
 		"Rigel Prime, the center of the Rigel system, burns hot, basking its planetary bodies in warmth and radiation.",
-		"Tau Ceti Beta has recently become a waypoint for colonists headed towards Orion. There are many ships and makeshift stations in the vicinity.",
+		"Vostroya Beta has recently become a waypoint for colonists headed towards Orion. There are many ships and makeshift stations in the vicinity.",
 		"Sensors indicate that a black hole's gravitational field is affecting the region of space we were headed through. We could stay of course, but risk of being overcome by its gravity, or we could change course to go around, which will take longer.",
 		"You have come into range of the first man-made structure in this region of space. It has been constructed not by travellers from Sol, but by colonists from Orion. It stands as a monument to the colonists' success.",
 		"You have made it to Orion! Congratulations! Your crew is one of the few to start a new foothold for mankind!"
@@ -127,7 +127,7 @@
 					event_actions += "<a href='?src=\ref[src];continue=1;slow=1;'>Take it slow</a><BR>"
 				if(ORION_TRAIL_MALFUNCTION)
 					event_info = ""
-					event_desc = "The ship's computers are malfunctioning! You can choose to fix it with a part or risk something going awry."
+					event_desc = "The ship's cogitators are malfunctioning! You can choose to fix it with a part or risk something going awry."
 					event_actions  = "<a href='?src=\ref[src];continue=1;risky=25'>Continue as normal</a><BR>"
 					if(supplies["3"] != 0)
 						event_actions += "<a href='?src=\ref[src];continue=1;fix=3'>Fix using a part.</a><BR>"
@@ -266,7 +266,7 @@
 			change_resource(null)
 			change_resource(null)
 		else
-			event_desc = "The local police mobilized too quickly, sirens blare as you barely make it away with your ship intact."
+			event_desc = "The local enforcer mobilized too quickly, sirens blare as you barely make it away with your ship intact."
 			change_resource(null,-1)
 			change_resource(null,-1)
 			if(prob(50))

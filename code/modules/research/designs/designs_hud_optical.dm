@@ -16,7 +16,7 @@
 	sort_string = "GAAAA"
 
 /datum/design/item/hud/security
-	name = "security records"
+	name = "militarum records"
 	id = "security_hud"
 	req_tech = list(TECH_MAGNET = 3, TECH_COMBAT = 2)
 	build_path = /obj/item/clothing/glasses/hud/security

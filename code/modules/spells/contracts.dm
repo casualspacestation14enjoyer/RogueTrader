@@ -17,9 +17,9 @@
 		to_chat(user, "You can't contract with yourself!")
 		return
 
-	var/ans = alert(user,"The contract clearly states that signing this contract will bind your soul to \the [contract_master]. Are you sure you want to continue?","[src]","Yes","No")
+	var/ans = alert(user,"The contract clearly states that signing this contract will bind your soul to \the [contract_master]. Are you sure you want to continue?","[src]","Compliance","No")
 
-	if(ans == "Yes")
+	if(ans == "Compliance")
 		user.visible_message("\The [user] signs the contract, their body glowing a deep yellow.")
 		if(!src.contract_effect(user))
 			user.visible_message("\The [src] visibly rejects \the [user], erasing their signature from the line.")

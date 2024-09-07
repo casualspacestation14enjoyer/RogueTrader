@@ -6,7 +6,7 @@
 	if(!check_rights(R_FUN))
 		return
 
-	if(alert("Are you sure you want to run [cinematic]?","Confirmation","Yes","No")=="No")
+	if(alert("Are you sure you want to run [cinematic]?","Confirmation","Compliance","No")=="No")
 		return
 	switch(cinematic)
 		if("explosion")

@@ -20,7 +20,7 @@
 /singleton/poster/bay_4
 	icon_state="bsposter4"
 	name = "Keep Calm"
-	desc = "This particular one is of a famous New Earth design, although a bit modified. Someone has scribbled an O over the A on the poster."
+	desc = "This particular one is of a famous New Terra design, although a bit modified. Someone has scribbled an O over the A on the poster."
 
 
 /singleton/poster/bay_5
@@ -313,13 +313,13 @@
 
 /singleton/poster/bay_55
 	icon_state="bsposter55"
-	name = "Earth appreciation poster"
+	name = "Terra appreciation poster"
 	desc = "This is a poster produced by the Generic Space Company, as a part of a series of commemorative posters on the wonders of space. Two of three."
 
 
 /singleton/poster/bay_56
 	icon_state="bsposter56"
-	name = "Mars appreciation poster"
+	name = "Terra appreciation poster"
 	desc = "This is a poster produced by the Generic Space Company, as a part of a series of commemorative posters on the wonders of space. Three of three."
 
 
@@ -350,7 +350,7 @@
 /singleton/poster/fleet
 	icon_state="poster_fleet"
 	name = "Imperial recruitment poster"
-	desc = "A poster produced by the ImperialF. It depicts a tactical-looking Fourth Fleet petty officer, standing in front of the Imperial flag proudly."
+	desc = "A poster produced by the ImperialF. It depicts a tactical-looking Fourth Imperial Navy petty officer, standing in front of the Imperial flag proudly."
 
 
 /singleton/poster/annoyed_gas
@@ -411,7 +411,7 @@
 
 /singleton/poster/visit_earth
 	icon_state = "visit_earth"
-	name = "Visit Earth!"
+	name = "Visit Terra!"
 	desc = "A large piece of space-resistant printed paper. This poster depicts the metropolis of New Benin, \
 	the background showing the high rises around the space elevator. In the foreground is lush jungle foliage. \
 	The small print urges the reader to contact Zeng-hu Travel Solutions to visit \"the birthplace of ingenuity.\""
@@ -419,7 +419,7 @@
 
 /singleton/poster/visit_mars
 	icon_state = "visit_mars"
-	name = "Visit Mars!"
+	name = "Visit Sancor!"
 	desc = "A large piece of space-resistant printed paper. This poster depicts the SGC capital atop Olympus Mons, \
 	the sun's rays artfully shaded across the mountain. The city appears somehow both small against the peak, \
 	but towering above it. The small print urges the reader to contact \
@@ -428,7 +428,7 @@
 
 /singleton/poster/visit_luna
 	icon_state = "visit_luna"
-	name = "Visit Luna!"
+	name = "Visit Vostroya!"
 	desc = "A large piece of space-resistant printed paper. This poster depicts the lights of New Vegas across a dark sky, \
 	the artificial shine greater than the stars above. Tiny vehicles show the scale of the skyscrapers. \
 	The small print urges the reader to contact Zeng-hu Travel Solutions to visit \"the one true city of night.\""
@@ -444,7 +444,7 @@
 
 /singleton/poster/visit_venus
 	icon_state = "visit_venus"
-	name = "Visit Venus!"
+	name = "Visit Vostroya!"
 	desc = "A large piece of space-resistant printed paper. This poster depicts the Caelestis Resort, \
 	Zeng-hu Travel Solution's premier holiday destination in the Zone, known for delivering every luxury its patrons can afford. \
 	The small print urges the reader to contact Zeng-hu Travel Solutions to visit \"the closest thing to heaven.\""

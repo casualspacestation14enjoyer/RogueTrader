@@ -57,7 +57,7 @@
 	dress_extra = list(/obj/item/clothing/accessory/solgov/ec_scarf)
 
 /singleton/hierarchy/mil_uniform/fleet
-	name = "Master fleet outfit"
+	name = "Master militarum outfit"
 	hierarchy_type = /singleton/hierarchy/mil_uniform/fleet
 	branches = list(/datum/mil_branch/fleet)
 

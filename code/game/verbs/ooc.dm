@@ -25,8 +25,8 @@
 			log_game("GOONCHAT: [key_name(src)] Had to fix their goonchat by re-creating the chatOutput datum")
 		else
 			chatOutput.load()
-			action = alert(src, "How about now? (give it a moment (it may also try to load twice))", "", "Yes", "No")
-			if (action == "Yes")
+			action = alert(src, "How about now? (give it a moment (it may also try to load twice))", "", "Compliance", "No")
+			if (action == "Compliance")
 				log_game("GOONCHAT: [key_name(src)] Had to fix their goonchat by re-creating the chatOutput datum and forcing a load()")
 			else
 				action = alert(src, "Welp, I'm all out of ideas. Try closing byond and reconnecting.\nWe could also disable fancy chat and re-enable oldchat", "", "Thanks anyways", "Switch to old chat")
@@ -46,8 +46,8 @@
 					log_game("GOONCHAT: [key_name(src)] Had to fix their goonchat by forcing a start()")
 				else
 					chatOutput.load()
-					action = alert(src, "How about now? (give it a moment (it may also try to load twice))", "", "Yes", "No")
-					if (action == "Yes")
+					action = alert(src, "How about now? (give it a moment (it may also try to load twice))", "", "Compliance", "No")
+					if (action == "Compliance")
 						log_game("GOONCHAT: [key_name(src)] Had to fix their goonchat by forcing a load()")
 					else
 						action = alert(src, "Welp, I'm all out of ideas. Try closing byond and reconnecting.\nWe could also disable fancy chat and re-enable oldchat", "", "Thanks anyways", "Switch to old chat")
@@ -64,8 +64,8 @@
 				else
 					chatOutput.loaded = FALSE
 					chatOutput.load()
-					action = alert(src, "How about now? (give it a moment)", "", "Yes", "No")
-					if (action == "Yes")
+					action = alert(src, "How about now? (give it a moment)", "", "Compliance", "No")
+					if (action == "Compliance")
 						log_game("GOONCHAT: [key_name(src)] Had to fix their goonchat by forcing a load()")
 					else
 						action = alert(src, "Welp, I'm all out of ideas. Try closing byond and reconnecting.\nWe could also disable fancy chat and re-enable oldchat", "", "Thanks anyways", "Switch to old chat")
@@ -82,8 +82,8 @@
 			log_game("GOONCHAT: [key_name(src)] Had to fix their goonchat by manually calling start()")
 		else
 			chatOutput.load()
-			alert(src, "How about now? (give it a moment (it may also try to load twice))", "", "Yes", "No")
-			if (action == "Yes")
+			alert(src, "How about now? (give it a moment (it may also try to load twice))", "", "Compliance", "No")
+			if (action == "Compliance")
 				log_game("GOONCHAT: [key_name(src)] Had to fix their goonchat by manually calling start() and forcing a load()")
 			else
 				action = alert(src, "Welp, I'm all out of ideas. Try closing byond and reconnecting.\nWe could also disable fancy chat and re-enable oldchat", "", "Thanks anyways", "Switch to old chat")

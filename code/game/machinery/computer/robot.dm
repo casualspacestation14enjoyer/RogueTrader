@@ -46,8 +46,8 @@
 			to_chat(user, SPAN_WARNING("Access Denied."))
 			return TOPIC_HANDLED
 
-		var/choice = input("Really [target.lockcharge ? "unlock" : "lockdown"] [target.name] ?") in list ("Yes", "No")
-		if(choice != "Yes")
+		var/choice = input("Really [target.lockcharge ? "unlock" : "lockdown"] [target.name] ?") in list ("Compliance", "No")
+		if(choice != "Compliance")
 			return TOPIC_HANDLED
 
 		if(!target || !istype(target))
@@ -78,8 +78,8 @@
 			to_chat(user, "Robot is already hacked.")
 			return TOPIC_HANDLED
 
-		var/choice = input("Really hack [target.name]? This cannot be undone.") in list("Yes", "No")
-		if(choice != "Yes")
+		var/choice = input("Really hack [target.name]? This cannot be undone.") in list("Compliance", "No")
+		if(choice != "Compliance")
 			return TOPIC_HANDLED
 
 		if(!target || !istype(target))

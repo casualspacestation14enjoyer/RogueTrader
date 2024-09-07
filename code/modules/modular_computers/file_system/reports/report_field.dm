@@ -184,7 +184,7 @@ Basic field subtypes.
 	value = "No"
 
 /datum/report_field/options/yes_no/get_options()
-	return list("Yes", "No")
+	return list("Compliance", "No")
 
 //Signature field; ask_value will obtain the user's signature.
 /datum/report_field/signature/get_value()

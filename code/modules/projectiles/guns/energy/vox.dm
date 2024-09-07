@@ -17,7 +17,7 @@
 		. = voxform.check_held_user(user, src)
 
 /*
- * Vox Darkmatter Cannon
+ * Xenos Darkmatter Cannon
  */
 /obj/item/gun/energy/darkmatter
 	name = "flux cannon"
@@ -40,7 +40,7 @@
 	set_extension(src, /datum/extension/voxform)
 
 /*
- * Vox Sonic Cannon
+ * Xenos Sonic Cannon
  */
 /obj/item/gun/energy/sonic
 	name = "soundcannon"

@@ -290,7 +290,7 @@
 	return
 
 /obj/item/toy/katana
-	name = "katana"
+	name = "grim blade"
 	desc = "Woefully underpowered in D20."
 	icon = 'icons/obj/weapons/melee_physical.dmi'
 	icon_state = "katana"
@@ -999,7 +999,7 @@
 		"As I see it, yes",
 		"Most likely",
 		"Outlook good",
-		"Yes",
+		"Compliance",
 		"Signs point to yes",
 		"Reply hazy, try again",
 		"Ask again later",

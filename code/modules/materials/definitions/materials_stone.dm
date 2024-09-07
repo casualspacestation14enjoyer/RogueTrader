@@ -61,7 +61,7 @@
 
 /material/stone/marble
 	name = MATERIAL_MARBLE
-	lore_text = "A metamorphic rock largely sourced from Earth. Prized for use in extremely expensive decorative surfaces."
+	lore_text = "A metamorphic rock largely sourced from Terra. Prized for use in extremely expensive decorative surfaces."
 	icon_colour = "#aaaaaa"
 	weight = 26
 	hardness = MATERIAL_HARD
@@ -75,7 +75,7 @@
 
 /material/stone/concrete
 	name = MATERIAL_CONCRETE
-	lore_text = "The most ubiquitous building material of old Earth, now in space. Consists of mineral aggregate bound with some sort of cementing solution."
+	lore_text = "The most ubiquitous building material of old Terra, now in space. Consists of mineral aggregate bound with some sort of cementing solution."
 	stack_type = /obj/item/stack/material/generic/brick
 	icon_colour = COLOR_GRAY
 	value = 1

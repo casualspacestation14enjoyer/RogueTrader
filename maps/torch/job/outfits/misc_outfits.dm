@@ -50,7 +50,7 @@
 	gloves = null
 
 /singleton/hierarchy/outfit/job/torch/ert/hostile
-	name = OUTFIT_JOB_NAME("Fleet - Hostile")
+	name = OUTFIT_JOB_NAME("Imperial Navy - Hostile")
 	uniform = /obj/item/clothing/under/solgov/utility/fleet/combat
 	suit = /obj/item/clothing/suit/armor/pcarrier/light/sol
 	head = /obj/item/clothing/head/helmet
@@ -60,13 +60,13 @@
 	l_ear = null
 
 /singleton/hierarchy/outfit/job/torch/ert/hostile/leader
-	name = OUTFIT_JOB_NAME("Fleet Leader - Hostile")
+	name = OUTFIT_JOB_NAME("Imperial Navy Leader - Hostile")
 	uniform = /obj/item/clothing/under/solgov/utility/fleet/combat
 	suit = /obj/item/clothing/suit/armor/bulletproof/armsman
 	head = /obj/item/clothing/head/helmet/armsman
 
 /singleton/hierarchy/outfit/job/torch/ert/hostile/suit
-	name = OUTFIT_JOB_NAME("Fleet Heavy - Hostile")
+	name = OUTFIT_JOB_NAME("Imperial Navy Heavy - Hostile")
 	back = /obj/item/rig/ert/fleet
 	gloves = null
 	suit = null

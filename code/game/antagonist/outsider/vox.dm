@@ -3,8 +3,8 @@ GLOBAL_LIST_EMPTY(vox_artifact_spawners)
 
 /datum/antagonist/vox
 	id = MODE_VOXRAIDER
-	role_text = "Vox Raider"
-	role_text_plural = "Vox Raiders"
+	role_text = "Xenos Raider"
+	role_text_plural = "Xenos Raiders"
 	landmark_id = "Vox-Spawn"
 	welcome_text = "Scrap has been hard to find lately, and the Shroud requires replacement parts. Do not disappoint your kin."
 	flags = ANTAG_VOTABLE | ANTAG_OVERRIDE_JOB | ANTAG_OVERRIDE_MOB | ANTAG_CLEAR_EQUIPMENT | ANTAG_CHOOSE_NAME | ANTAG_SET_APPEARANCE

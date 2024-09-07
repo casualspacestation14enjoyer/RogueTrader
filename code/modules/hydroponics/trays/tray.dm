@@ -149,8 +149,8 @@
 	if(!user.can_admin_interact())
 		return
 
-	var/response = alert(user, "Are you sure you want to harvest this [seed.display_name]?", "Living plant request", "Yes", "No")
-	if(response == "Yes")
+	var/response = alert(user, "Are you sure you want to harvest this [seed.display_name]?", "Living plant request", "Compliance", "No")
+	if(response == "Compliance")
 		harvest()
 
 /obj/machinery/portable_atmospherics/hydroponics/Initialize()

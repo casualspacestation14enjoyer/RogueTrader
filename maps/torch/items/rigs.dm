@@ -208,9 +208,9 @@
 * CHIEF OF SECURITY
 */
 /obj/item/rig/command/security
-	name = "security command HCM"
-	suit_type = "security command hardsuit"
-	desc = "A specialized hardsuit rig control module issued to ranking security officers of the Imperium and their peers."
+	name = "militarum command HCM"
+	suit_type = "militarum command hardsuit"
+	desc = "A specialized hardsuit rig control module issued to ranking militarum officers of the Imperium and their peers."
 	icon_state = "command_sec_rig"
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,

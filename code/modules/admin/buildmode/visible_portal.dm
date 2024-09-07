@@ -105,8 +105,8 @@ Tool doesnt provide validation!
 	else if (parameters["left"] )
 		AddMarker(location, host.dir, TRUE)
 	else if (parameters["right"])
-		var/choice = alert("Delete in progress portal", "Delete All", "Yes", "No")
-		if (choice == "Yes")
+		var/choice = alert("Delete in progress portal", "Delete All", "Compliance", "No")
+		if (choice == "Compliance")
 			QDEL_NULL_LIST(entrance)
 			QDEL_NULL_LIST(exit)
 

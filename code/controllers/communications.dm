@@ -67,10 +67,10 @@ Radiochat range: 1441 to 1489 (most devices refuse to be tune to other frequency
 
 Radio:
 1459 - standard radio chat
-1351 - Science
+1351 - Biologis
 1353 - Command
-1355 - Medical
-1357 - Engineering
+1355 - Medicae
+1357 - Mechanicus
 1359 - Security
 1341 - deathsquad
 1443 - Confession Intercom
@@ -109,7 +109,7 @@ var/global/const/COMM_FREQ = 1353
 var/global/const/ERT_FREQ	= 1345
 var/global/const/AI_FREQ	= 1343
 var/global/const/ENT_FREQ	= 1461 //entertainment frequency. This is not a diona exclusive frequency.
-var/global/const/ICCGN_FREQ = 1344
+var/global/const/ORDOS_FREQ = 1344
 var/global/const/SFV_FREQ = 1346
 
 //antagonist channels
@@ -151,26 +151,26 @@ var/global/const/AIRLOCK_AIR_FREQ  = 1379 // Used by some airlocks for atmos dev
 var/global/const/EXTERNAL_AIR_FREQ = 1380 // Used by some external airlocks.
 
 var/global/list/radiochannels = list(
-	"Common"		= PUB_FREQ,
+	"Vox"		= PUB_FREQ,
 	"Hailing"		= HAIL_FREQ,
-	"Science"		= SCI_FREQ,
+	"Biologis"		= SCI_FREQ,
 	"Command"		= COMM_FREQ,
-	"Medical"		= MED_FREQ,
-	"Engineering"	= ENG_FREQ,
-	"Security" 		= SEC_FREQ,
-	"Response Team" = ERT_FREQ,
+	"Medicae"		= MED_FREQ,
+	"Mechanicus"	= ENG_FREQ,
+	"Militarum" 		= SEC_FREQ,
+	"Ordos" = ERT_FREQ,
 	"Special Ops" 	= DTH_FREQ,
-	"Mercenary" 	= SYND_FREQ,
+	"Unknown" 	= SYND_FREQ,
 	"Raider"		= RAID_FREQ,
-	"Vox Raider"	= V_RAID_FREQ,
-	"Exploration"	= EXP_FREQ,
-	"Supply" 		= SUP_FREQ,
+	"Xenos Raider"	= V_RAID_FREQ,
+	"Explorator"	= EXP_FREQ,
+	"Secure" 		= SUP_FREQ,
 	"Service" 		= SRV_FREQ,
 	"AI Private"	= AI_FREQ,
 	"Entertainment" = ENT_FREQ,
-	"Medical (I)"	= MED_I_FREQ,
-	"Security (I)"	= SEC_I_FREQ,
-	"ICGNV Hound"   = ICCGN_FREQ
+	"Medicae (I)"	= MED_I_FREQ,
+	"Militarum (I)"	= SEC_I_FREQ,
+	"Tau Hound"   = ORDOS_FREQ
 )
 
 var/global/list/channel_color_presets = list(
@@ -178,7 +178,7 @@ var/global/list/channel_color_presets = list(
 	"Bitchin' Blue" = COMMS_COLOR_COMMAND,
 	"Bold Brass" = COMMS_COLOR_EXPLORER,
 	"Gastric Green" = COMMS_COLOR_SERVICE,
-	"Global Green" = COMMS_COLOR_COMMON,
+	"Global Green" = COMMS_COLOR_SECURITY,
 	"Grand Gold" = COMMS_COLOR_COLONY,
 	"Hippin' Hot Pink" = COMMS_COLOR_HAILING,
 	"Menacing Maroon" = COMMS_COLOR_SYNDICATE,
@@ -236,7 +236,7 @@ var/global/list/DEPT_FREQS = list(AI_FREQ, COMM_FREQ, ENG_FREQ, MED_FREQ, SEC_FR
 		return "srvradio"
 	if(frequency == ENT_FREQ) //entertainment
 		return "entradio"
-	if(frequency == MED_I_FREQ) // Medical intercom
+	if(frequency == MED_I_FREQ) // Medicae intercom
 		return "mediradio"
 	if(frequency == SEC_I_FREQ) // Security intercom
 		return "seciradio"

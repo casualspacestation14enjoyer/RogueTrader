@@ -750,11 +750,11 @@
 		if (user.a_intent == I_HURT)
 			to_chat(user, SPAN_WARNING("This food is partially eaten.") + SPAN_NOTICE(" You combine it anyway."))
 		else
-			response = alert(user, "Combine Food Scraps?", "Combine Food", "Yes", "No") == "Yes"
+			response = alert(user, "Combine Food Scraps?", "Combine Food", "Compliance", "No") == "Compliance"
 			if (!response || !user.use_sanity_check(src, other))
 				return FALSE
 	if (!response && user.a_intent == I_HELP)
-		response = alert(user, "Combine Food?", "Combine Food", "Yes", "No") == "Yes"
+		response = alert(user, "Combine Food?", "Combine Food", "Compliance", "No") == "Compliance"
 		if (!response || !user.use_sanity_check(src, other))
 			return FALSE
 	if (!user.unEquip(other, src))

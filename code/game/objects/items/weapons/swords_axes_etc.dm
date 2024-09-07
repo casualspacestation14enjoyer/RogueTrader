@@ -1,4 +1,4 @@
-/* Weapons
+/* War Gear
  * Contains:
  *		Sword
  *		Classic Baton
@@ -8,7 +8,7 @@
  * Classic Baton
  */
 /obj/item/melee/classic_baton
-	name = "police baton"
+	name = "enforcer baton"
 	desc = "A wooden truncheon for beating criminal scum."
 	icon = 'icons/obj/weapons/melee_physical.dmi'
 	icon_state = "baton"

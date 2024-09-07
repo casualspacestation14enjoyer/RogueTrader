@@ -97,8 +97,8 @@
 
 	if(!var_value) return
 
-	switch(alert("Would you like to associate a var with the list entry?",,"Yes","No"))
-		if("Yes")
+	switch(alert("Would you like to associate a var with the list entry?",,"Compliance","No"))
+		if("Compliance")
 			L += var_value
 			L[var_value] = mod_list_add_ass() //haha
 		if("No")

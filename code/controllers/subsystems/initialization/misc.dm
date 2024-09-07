@@ -11,7 +11,6 @@ SUBSYSTEM_DEF(init_misc)
 
 
 /datum/controller/subsystem/init_misc/Initialize(start_uptime)
-	GLOB.changelog_hash = md5('html/changelog.html')
 	if(config.generate_map)
 		GLOB.using_map.perform_map_generation()
 	init_antags()

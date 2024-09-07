@@ -1,14 +1,14 @@
 /***************************************
-* Highly Visible and Dangerous Weapons *
+* Highly Visible and Dangerous War Gear *
 ***************************************/
 /datum/uplink_item/item/visible_weapons
 	category = /datum/uplink_category/visible_weapons
 
 /datum/uplink_item/item/visible_weapons/smallenergy_gun
 	name = "Small Energy Gun"
-	desc = "A pocket-sized energy based sidearm with three different lethality settings."
+	desc = "A kantrael MG pattern pistol."
 	item_cost = 16
-	path = /obj/item/gun/energy/gun/small
+	path = /obj/item/gun/energy/lasgun/laspistol/militarum
 
 /datum/uplink_item/item/visible_weapons/shuriken
 	name = "Box of shurikens"
@@ -36,7 +36,7 @@
 	path = /obj/item/reagent_containers/food/snacks/monkeycube/wrapped/pikecube
 
 /datum/uplink_item/item/visible_weapons/katana
-	name = "Katana"
+	name = "Grim Blade"
 	desc = "A large sharpened steel blade capable of cutting through anything but the thickest armor."
 	item_cost = 24
 	path = /obj/item/material/sword/katana

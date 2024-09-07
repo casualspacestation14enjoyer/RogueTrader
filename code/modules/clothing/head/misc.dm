@@ -371,25 +371,25 @@
 
 /obj/item/clothing/head/deckcrew/green
 	name = "green deck crew helmet"
-	desc = "A helmet with ear protection and a visor, used by support staff in Fleet hangars."
+	desc = "A helmet with ear protection and a visor, used by support staff in Imperial Navy hangars."
 	icon_state = "deckcrew_g"
 
 /obj/item/clothing/head/deckcrew/blue
 	name = "blue deck crew helmet"
-	desc = "A helmet with ear protection and a visor, used by tug operators in Fleet hangars."
+	desc = "A helmet with ear protection and a visor, used by tug operators in Imperial Navy hangars."
 	icon_state = "deckcrew_b"
 
 /obj/item/clothing/head/deckcrew/yellow
 	name = "yellow deck crew helmet"
-	desc = "A helmet with ear protection and a visor, used by traffic control in Fleet hangars."
+	desc = "A helmet with ear protection and a visor, used by traffic control in Imperial Navy hangars."
 	icon_state = "deckcrew_y"
 
 /obj/item/clothing/head/deckcrew/purple
 	name = "purple deck crew helmet"
-	desc = "A helmet with ear protection and a visor, used by fueling personnel in Fleet hangars."
+	desc = "A helmet with ear protection and a visor, used by fueling personnel in Imperial Navy hangars."
 	icon_state = "deckcrew_p"
 
 /obj/item/clothing/head/deckcrew/red
 	name = "red deck crew helmet"
-	desc = "A helmet with ear protection and a visor, used by munitions handlers in Fleet hangars."
+	desc = "A helmet with ear protection and a visor, used by munitions handlers in Imperial Navy hangars."
 	icon_state = "deckcrew_r"

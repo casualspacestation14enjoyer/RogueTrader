@@ -1,6 +1,6 @@
 /**
  * The codex entry name to use for this atom. By default, itself. Used for items that should direct to a codex entry
- * other than itself, such as Fleet lore.
+ * other than itself, such as Imperial Navy lore.
  *
  * Returns instance of `/atom` or string.
  */

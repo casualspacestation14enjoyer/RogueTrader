@@ -25,7 +25,7 @@
 	add_field(/datum/report_field/text_label/header, "General Cargo Info")
 	add_field(/datum/report_field/pencode_text, "List the types of cargo onboard the vessel")
 	add_field(/datum/report_field/text_label/header, "Hazardous Cargo Info")
-	add_field(/datum/report_field/options/yes_no, "Weaponry")
+	add_field(/datum/report_field/options/yes_no, "War Gear")
 	add_field(/datum/report_field/options/yes_no, "Live Cargo")
 	add_field(/datum/report_field/options/yes_no, "Biohazardous material")
 	add_field(/datum/report_field/options/yes_no, "Chemical or radiation hazard")
