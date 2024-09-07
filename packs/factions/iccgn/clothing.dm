@@ -2,7 +2,7 @@
 //Main Clothing
 /obj/item/clothing/under/iccgn
 	abstract_type = /obj/item/clothing/under/iccgn
-	name = "base uniform, Tau"
+	name = "base uniform, tau empire"
 	desc = "You should not see this."
 	icon = 'packs/factions/iccgn/clothing.dmi'
 	item_icons = list(
@@ -18,8 +18,8 @@
 
 
 /obj/item/clothing/under/iccgn/pt
-	name = "physical training uniform, Tau"
-	desc = "A comfortable set of clingy shorts and a t-shirt sporting the insigna of the confederation navy."
+	name = "physical training uniform, tau empire"
+	desc = "A comfortable set of clingy shorts and a t-shirt sporting the insigna of the tau navy."
 	icon_state = "under_pt"
 	item_state_slots = list(
 		slot_l_hand_str = "under_pt_held_l",
@@ -29,8 +29,8 @@
 
 
 /obj/item/clothing/under/iccgn/utility
-	name = "utility uniform, Tau"
-	desc = "A comfortable black utility jumpsuit from a confederation navy uniform."
+	name = "utility uniform, tau empire"
+	desc = "A comfortable black utility jumpsuit from a tau navy uniform."
 	icon_state = "under_utility"
 	item_state_slots = list(
 		slot_l_hand_str = "under_utility_held_l",
@@ -40,8 +40,8 @@
 
 
 /obj/item/clothing/under/iccgn/service
-	name = "service uniform, Tau"
-	desc = "A smart service shirt and dress pants from a confederation navy uniform."
+	name = "service uniform, tau empire"
+	desc = "A smart service shirt and dress pants from a tau navy uniform."
 	icon_state = "under_service"
 	item_state_slots = list(
 		slot_l_hand_str = "under_service_held_l",
@@ -51,8 +51,8 @@
 
 
 /obj/item/clothing/under/iccgn/service_command
-	name = "service uniform, Tau"
-	desc = "A smart senior officers' shirt and dress pants from a confederation navy uniform."
+	name = "service uniform, tau empire"
+	desc = "A smart senior officers' shirt and dress pants from a tau navy uniform."
 	icon_state = "under_service_command"
 	item_state_slots = list(
 		slot_l_hand_str = "under_service_command_held_l",
@@ -64,7 +64,7 @@
 //Over Clothing
 /obj/item/clothing/suit/iccgn
 	abstract_type = /obj/item/clothing/suit/iccgn
-	name = "base jacket, Tau"
+	name = "base jacket, tau empire"
 	desc = "You should not see this."
 	icon = 'packs/factions/iccgn/clothing.dmi'
 	item_icons = list(
@@ -82,8 +82,8 @@
 
 
 /obj/item/clothing/suit/iccgn/utility
-	name = "utility jacket, Tau"
-	desc = "A rugged utility jacket from a confederation navy uniform."
+	name = "utility jacket, tau empire"
+	desc = "A rugged utility jacket from a tau navy uniform."
 	icon_state = "suit_utility"
 	item_state_slots = list(
 		slot_l_hand_str = "suit_utility_held_l",
@@ -96,8 +96,8 @@
 
 
 /obj/item/clothing/suit/iccgn/service_enlisted
-	name = "service jacket, Tau"
-	desc = "A slick enlisted persons' service jacket from a confederation navy uniform."
+	name = "service jacket, tau empire"
+	desc = "A slick enlisted persons' service jacket from a tau navy uniform."
 	icon_state = "suit_service"
 	item_state_slots = list(
 		slot_l_hand_str = "suit_service_held_l",
@@ -111,8 +111,8 @@
 
 
 /obj/item/clothing/suit/iccgn/service_officer
-	name = "service jacket, Tau"
-	desc = "A slick officers' service jacket from a confederation navy uniform."
+	name = "service jacket, tau empire"
+	desc = "A slick officers' service jacket from a tau navy uniform."
 	icon_state = "suit_service"
 	item_state_slots = list(
 		slot_l_hand_str = "suit_service_held_l",
@@ -126,8 +126,8 @@
 
 
 /obj/item/clothing/suit/iccgn/service_command
-	name = "service jacket, Tau"
-	desc = "A slick senior officers' service jacket from a confederation navy uniform."
+	name = "service jacket, tau empire"
+	desc = "A slick senior officers' service jacket from a tau navy uniform."
 	icon_state = "suit_service_command"
 	item_state_slots = list(
 		slot_l_hand_str = "suit_service_held_l",
@@ -141,8 +141,8 @@
 
 
 /obj/item/clothing/suit/iccgn/dress_enlisted
-	name = "dress cloak, Tau"
-	desc = "A stylish enlisted persons' dress cloak from a confederation navy uniform."
+	name = "dress cloak, tau empire"
+	desc = "A stylish enlisted persons' dress cloak from a tau navy uniform."
 	icon_state = "suit_dress_enlisted"
 	item_state_slots = list(
 		slot_l_hand_str = "suit_dress_enlisted_held_l",
@@ -156,8 +156,8 @@
 
 
 /obj/item/clothing/suit/iccgn/dress_officer
-	name = "dress cloak, Tau"
-	desc = "A stylish officers' dress cloak from a confederation navy uniform."
+	name = "dress cloak, tau empire"
+	desc = "A stylish officers' dress cloak from a tau navy uniform."
 	icon_state = "suit_dress_officer"
 	item_state_slots = list(
 		slot_l_hand_str = "suit_dress_officer_held_l",
@@ -171,8 +171,8 @@
 
 
 /obj/item/clothing/suit/iccgn/dress_command
-	name = "dress cloak, Tau"
-	desc = "A stylish senior officers' dress cloak from a confederation navy uniform."
+	name = "dress cloak, tau empire"
+	desc = "A stylish senior officers' dress cloak from a tau navy uniform."
 	icon_state = "suit_dress_command"
 	item_state_slots = list(
 		slot_l_hand_str = "suit_dress_command_held_l",
@@ -188,7 +188,7 @@
 //Gloves
 /obj/item/clothing/gloves/iccgn
 	abstract_type = /obj/item/clothing/gloves/iccgn
-	name = "base gloves, Tau"
+	name = "base gloves, tau empire"
 	desc = "You should not see this."
 	icon = 'packs/factions/iccgn/clothing.dmi'
 	item_icons = list(
@@ -198,8 +198,8 @@
 
 
 /obj/item/clothing/gloves/iccgn/duty
-	name = "duty gloves, Tau"
-	desc = "Regal black utility gloves from a confederation navy uniform."
+	name = "duty gloves, tau empire"
+	desc = "Regal black utility gloves from a tau navy uniform."
 	icon_state = "gloves_utility"
 	item_state_slots = list(
 		slot_l_hand_str = "gloves_utility_held_l",
@@ -211,7 +211,7 @@
 //Shoes
 /obj/item/clothing/shoes/iccgn
 	abstract_type = /obj/item/clothing/shoes/iccgn
-	name = "base shoes, Tau"
+	name = "base shoes, tau empire"
 	desc = "You should not see this."
 	icon = 'packs/factions/iccgn/clothing.dmi'
 	item_icons = list(
@@ -221,8 +221,8 @@
 
 
 /obj/item/clothing/shoes/iccgn/utility
-	name = "duty boots, Tau"
-	desc = "Spectacularly shiny utility boots from a confederation navy uniform."
+	name = "duty boots, tau empire"
+	desc = "Spectacularly shiny utility boots from a tau navy uniform."
 	icon_state = "boots_utility"
 	item_state_slots = list(
 		slot_l_hand_str = "boots_utility_held_l",
@@ -232,8 +232,8 @@
 
 
 /obj/item/clothing/shoes/iccgn/service
-	name = "service boots, Tau"
-	desc = "Extra tall service boots from a confederation navy uniform."
+	name = "service boots, tau empire"
+	desc = "Extra tall service boots from a tau navy uniform."
 	icon_state = "boots_service"
 	item_state_slots = list(
 		slot_l_hand_str = "boots_service_held_l",
@@ -245,7 +245,7 @@
 //Hats
 /obj/item/clothing/head/iccgn
 	abstract_type = /obj/item/clothing/head/iccgn
-	name = "base hat, Tau"
+	name = "base hat, tau empire"
 	desc = "You should not see this."
 	icon = 'packs/factions/iccgn/clothing.dmi'
 	item_icons = list(
@@ -255,8 +255,8 @@
 
 
 /obj/item/clothing/head/iccgn/beret
-	name = "uniform beret, Tau"
-	desc = "A slick grey beret from a confederation navy uniform."
+	name = "uniform beret, tau empire"
+	desc = "A slick grey beret from a tau navy uniform."
 	icon_state = "hat_beret"
 	item_state_slots = list(
 		slot_l_hand_str = "hat_beret_held_l",
@@ -266,8 +266,8 @@
 
 
 /obj/item/clothing/head/iccgn/service
-	name = "service cover, Tau"
-	desc = "A peaked service cap from a confederation navy uniform."
+	name = "service cover, tau empire"
+	desc = "A peaked service cap from a tau navy uniform."
 	icon_state = "hat_service"
 	item_state_slots = list(
 		slot_l_hand_str = "hat_service_held_l",
@@ -277,8 +277,8 @@
 
 
 /obj/item/clothing/head/iccgn/service_command
-	name = "service cover, Tau"
-	desc = "A senior officers' peaked service cap from a confederation navy uniform."
+	name = "service cover, tau empire"
+	desc = "A senior officers' peaked service cap from a tau navy uniform."
 	icon_state = "hat_service_command"
 	item_state_slots = list(
 		slot_l_hand_str = "hat_service_command_held_l",

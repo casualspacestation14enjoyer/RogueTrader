@@ -11,7 +11,7 @@ A brief overview is below. For more details, see the related files.
 
 ////////////Game Use/////////////
 The major research and development is performed using a combination of four machines:
-- R&D Console: A computer console that allows you to manipulate the other devices that are linked to it and view/manipulate the
+- R&D Console: A cogitator console that allows you to manipulate the other devices that are linked to it and view/manipulate the
 technologies you have researched so far.
 - Protolathe: Used to make new hand-held devices and parts for larger devices. All metals and reagents as raw materials.
 - Destructive Analyzer: You can put hand-held objects into it and it'll analyze them for technological advancements but it destroys

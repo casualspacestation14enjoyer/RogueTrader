@@ -1,4 +1,4 @@
-/// CPU that allows the computer to run programs. Better CPUs are obtainable via research and can run more programs at once.
+/// CPU that allows the cogitator to run programs. Better CPUs are obtainable via research and can run more programs at once.
 /obj/item/stock_parts/computer/processor_unit
 	name = "standard processor"
 	desc = "A standard CPU used in most computers. It can run up to three programs simultaneously."

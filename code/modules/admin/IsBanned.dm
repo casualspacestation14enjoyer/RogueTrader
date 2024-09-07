@@ -65,12 +65,12 @@
 			if(text2num(duration) > 0)
 				expires = " The ban is for [time_to_readable(text2num(duration) MINUTES)] and expires on [expiration] (server time)."
 
-			var/desc = "\nReason: You, or another user of this computer or connection ([pckey]) is banned from playing here. The ban reason is:\n[reason]\nThis ban was applied by [ackey] on [bantime], [expires]"
+			var/desc = "\nReason: You, or another user of this cogitator or connection ([pckey]) is banned from playing here. The ban reason is:\n[reason]\nThis ban was applied by [ackey] on [bantime], [expires]"
 
 			return list("reason"="[bantype]", "desc"="[desc]")
 
 		if (failedcid)
-			message_admins("[key] has logged in with a blank computer id in the ban check.")
+			message_admins("[key] has logged in with a blank cogitator id in the ban check.")
 		if (failedip)
 			message_admins("[key] has logged in with a blank ip in the ban check.")
 		return ..()	//default pager ban stuff

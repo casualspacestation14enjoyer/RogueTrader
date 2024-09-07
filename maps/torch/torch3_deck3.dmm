@@ -16322,7 +16322,7 @@
 	pixel_x = -21
 	},
 /obj/machinery/photocopier/faxmachine{
-	department = "Dauntless - Computer Lab"
+	department = "Dauntless - Cogitator Lab"
 	},
 /turf/simulated/floor/lino,
 /area/crew_quarters/office)

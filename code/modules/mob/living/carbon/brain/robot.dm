@@ -1,6 +1,6 @@
 /obj/item/device/mmi/digital/robot
 	name = "robotic intelligence circuit"
-	desc = "The pinnacle of artifical intelligence which can be achieved using classical computer science."
+	desc = "The pinnacle of artifical intelligence which can be achieved using classical cogitator science."
 	icon = 'icons/obj/module.dmi'
 	icon_state = "mainboard"
 	w_class = ITEM_SIZE_NORMAL

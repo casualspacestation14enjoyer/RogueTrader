@@ -253,7 +253,7 @@
 #define STAT_XENOFAUNA_SCANNED  "xenofauna_scanned"
 #define STAT_FLAGS_PLANTED  "planet_flags"
 
-//Number of slots a modular computer has which can be tweaked via gear tweaks.
+//Number of slots a modular cogitator has which can be tweaked via gear tweaks.
 #define TWEAKABLE_COMPUTER_PART_SLOTS 7
 
 //Lying animation

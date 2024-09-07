@@ -320,7 +320,7 @@
 	return newtext
 
 //This proc returns the number of chars of the string that is the character
-//This is used for detective work to determine fingerprint completion.
+//This is used for investigator work to determine fingerprint completion.
 /proc/stringpercent(text,character = "*")
 	if(!text || !character)
 		return 0

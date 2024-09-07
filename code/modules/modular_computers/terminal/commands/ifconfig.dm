@@ -1,4 +1,4 @@
-/// Shows information about the network card in the computer and active remote terminals
+/// Shows information about the network card in the cogitator and active remote terminals
 /datum/terminal_command/ifconfig
 	name = "ifconfig"
 	man_entry = list(

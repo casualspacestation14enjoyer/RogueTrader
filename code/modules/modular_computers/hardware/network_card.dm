@@ -106,7 +106,7 @@
 	var/turf/T = get_turf(src)
 	if(!istype(T)) //no reception in nullspace
 		return
-	if(T.z in GLOB.using_map.station_levels) // Computer is on station. Low/High signal depending on what type of network card you have
+	if(T.z in GLOB.using_map.station_levels) // Cogitator is on station. Low/High signal depending on what type of network card you have
 		. = strength
 	else if(T.z in GLOB.using_map.contact_levels) // Not on station, but close enough for radio signal to travel, or long cables in case of ethernet
 		. = strength - 1

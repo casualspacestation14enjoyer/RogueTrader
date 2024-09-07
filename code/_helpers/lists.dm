@@ -394,7 +394,7 @@ Checks if a list has the same entries and values as an element of big.
 	return (result + R.Copy(Ri, 0))
 
 
-// List of lists, sorts by element[key] - for things like crew monitoring computer sorting records by name.
+// List of lists, sorts by element[key] - for things like crew monitoring cogitator sorting records by name.
 /proc/sortByKey(list/L, key)
 	RETURN_TYPE(/list)
 	if(length(L) < 2)

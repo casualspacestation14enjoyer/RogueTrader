@@ -1,4 +1,4 @@
-/// The computer var is for the remote computer with these.
+/// The cogitator var is for the remote cogitator with these.
 /datum/terminal/remote
 	name = "Remote Terminal"
 	var/datum/extension/interactive/ntos/origin_computer

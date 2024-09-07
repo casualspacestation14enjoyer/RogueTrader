@@ -1,6 +1,6 @@
 /obj/item/clothing/accessory/iccgn_rank
 	abstract_type = /obj/item/clothing/accessory/iccgn_rank
-	name = "base rank insignia, Tau"
+	name = "base rank insignia, tau empire"
 	desc = "You should not see this."
 	icon = 'packs/factions/iccgn/ranks.dmi'
 	accessory_icons = list(

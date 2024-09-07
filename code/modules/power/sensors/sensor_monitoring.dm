@@ -29,7 +29,7 @@
 		alerting = !alerting
 		update_icon()
 
-// Updates icon of this computer according to current status.
+// Updates icon of this cogitator according to current status.
 /obj/machinery/computer/power_monitor/on_update_icon()
 	if(MACHINE_IS_BROKEN(src))
 		icon_state = "powerb"

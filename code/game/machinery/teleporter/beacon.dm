@@ -164,7 +164,7 @@ var/global/const/TELEBEACON_WIRE_SIGNALLER = 4
 	.[CODEX_INTERACTION_EMP] += "<p>Disables all established teleporter locks and disables the beacon for up to 30 seconds.</p>"
 
 
-/// Connects the beacon to a computer that's locking onto it. Returns TRUE on connection, FALSE if the connection fails.
+/// Connects the beacon to a cogitator that's locking onto it. Returns TRUE on connection, FALSE if the connection fails.
 /obj/machinery/tele_beacon/proc/connect_computer(obj/machinery/computer/teleporter/computer)
 	if (wires.IsIndexCut(TELEBEACON_WIRE_RELAY))
 		return FALSE

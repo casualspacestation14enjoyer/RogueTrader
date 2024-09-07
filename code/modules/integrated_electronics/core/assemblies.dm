@@ -708,7 +708,7 @@
 /obj/item/device/electronic_assembly/large/terminal
 	name = "type-c electronic machine"
 	icon_state = "setup_large_terminal"
-	desc = "It's a case used for assembling large electronics. This one resembles a computer terminal."
+	desc = "It's a case used for assembling large electronics. This one resembles a cogitator terminal."
 
 /obj/item/device/electronic_assembly/large/arm
 	name = "type-d electronic machine"

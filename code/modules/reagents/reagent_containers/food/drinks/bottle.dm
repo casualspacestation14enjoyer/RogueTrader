@@ -632,7 +632,7 @@
 /obj/item/reagent_containers/food/drinks/bottle/premiumvodka/Initialize()
 	. = ..()
 	reagents.add_reagent(/datum/reagent/ethanol/vodka/premium, 100)
-	var/namepick = pick("Four Stripes","Gilgamesh","Novaya Zemlya","Indie","Revenant Pattern")
+	var/namepick = pick("Four Stripes","Tau","Novaya Zemlya","Indie","Revenant Pattern")
 	var/typepick = pick("Absolut","Gold","Quadruple Distilled","Platinum","Standard")
 	name = "[namepick] [typepick]"
 

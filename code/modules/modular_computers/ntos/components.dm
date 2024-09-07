@@ -26,7 +26,7 @@
 		return network_card.get_network_tag_direct()
 	return "N/A"
 
-/// Returns the network tag visible for the outgoing connections this computer makes. Value is cached until computer next runs Process() or is shut down.
+/// Returns the network tag visible for the outgoing connections this cogitator makes. Value is cached until cogitator next runs Process() or is shut down.
 /datum/extension/interactive/ntos/proc/get_network_tag()
 	if(isnull(network_tag))
 		var/obj/item/stock_parts/computer/network_card/network_card = get_component(PART_NETWORK)
@@ -36,18 +36,18 @@
 			network_tag = "N/A"
 	return network_tag
 
-/// Returns the connection quality to NTNet for this computer for others trying to reach it.
+/// Returns the connection quality to NTNet for this cogitator for others trying to reach it.
 /datum/extension/interactive/ntos/proc/get_ntnet_status_incoming()
-	if(!on) // No signal if the computer isn't on.
+	if(!on) // No signal if the cogitator isn't on.
 		return 0
 	var/obj/item/stock_parts/computer/network_card/network_card = get_component(PART_NETWORK)
 	if(network_card)
 		return network_card.get_signal_direct()
 	return 0
 
-/// Returns the connection quality to NTNet for this computer when making outgoing connections. Value is cached until computer next runs Process() or is shut down.
+/// Returns the connection quality to NTNet for this cogitator when making outgoing connections. Value is cached until cogitator next runs Process() or is shut down.
 /datum/extension/interactive/ntos/proc/get_ntnet_status()
-	if(!on) // No signal if the computer isn't on.
+	if(!on) // No signal if the cogitator isn't on.
 		return 0
 
 	if (isAdminLevel(get_z(holder)))

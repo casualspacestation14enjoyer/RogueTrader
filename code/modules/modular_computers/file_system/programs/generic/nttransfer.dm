@@ -57,7 +57,7 @@ var/global/nttransfer_uid = 0
 		if(!remote)
 			crash_download("Connection to remote server lost")
 
-/// Returns the current ntnet speed of the computer the program is running on. NTTransfer needs to be able to get the speed from instances on other computers.
+/// Returns the current ntnet speed of the cogitator the program is running on. NTTransfer needs to be able to get the speed from instances on other computers.
 /datum/computer_file/program/nttransfer/proc/get_ntnet_speed()
 	if(computer)
 		return computer.get_ntnet_speed(computer.get_ntnet_status())

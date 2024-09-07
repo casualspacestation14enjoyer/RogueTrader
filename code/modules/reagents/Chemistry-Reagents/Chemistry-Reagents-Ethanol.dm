@@ -1422,13 +1422,13 @@
 	glass_desc = "A refreshing mix of vodka and cola."
 
 /datum/reagent/ethanol/springpunch
-	name = "Gilgamesh Spring Punch"
+	name = "Tau Spring Punch"
 	description = "A mix of vodka and lemon, extremely popular with Imperials."
 	taste_description = "refreshing clear fizz"
 	color = "#dfdeda"
 	strength = 30
 
-	glass_name = "Gilgamesh spring punch"
+	glass_name = "Tau spring punch"
 	glass_desc = "A mix of vodka and lemon, extremely popular with Imperials."
 
 /datum/reagent/ethanol/hellshenpa

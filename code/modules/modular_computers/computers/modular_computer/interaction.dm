@@ -91,7 +91,7 @@
 	if(enabled)
 		ui_interact(user)
 	else if(check_rights(R_ADMIN, 0, user))
-		var/response = alert(user, "This computer is turned off. Would you like to turn it on?", "Admin Override", "Compliance", "No")
+		var/response = alert(user, "This cogitator is turned off. Would you like to turn it on?", "Admin Override", "Compliance", "No")
 		if(response == "Compliance")
 			turn_on(user)
 
@@ -103,7 +103,7 @@
 		return attack_self(user)
 	return ..()
 
-// On-click handling. Turns on the computer if it's off and opens the GUI.
+// On-click handling. Turns on the cogitator if it's off and opens the GUI.
 /obj/item/modular_computer/attack_self(mob/user)
 	if(MUTATION_CLUMSY in user.mutations)
 		to_chat(user, SPAN_WARNING("You can't quite work out how to use [src]."))

@@ -156,7 +156,7 @@
 		to_world(SPAN_NOTICE("<b>Alert: [req_authorizations - length(authorized)] authorization\s needed to override the shuttle autopilot.</b>"))
 
 	if(usr)
-		log_and_message_admins("has inserted [ID] into the shuttle control computer - [req_authorizations - length(authorized)] authorisation\s needed")
+		log_and_message_admins("has inserted [ID] into the shuttle control cogitator - [req_authorizations - length(authorized)] authorisation\s needed")
 
 	return 1
 

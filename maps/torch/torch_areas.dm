@@ -1057,7 +1057,7 @@
 	icon_state = "robotics"
 
 /area/crew_quarters/office
-	name = "\improper Computer Lab"
+	name = "\improper Cogitator Lab"
 	icon_state = "conference"
 
 /area/holocontrol

@@ -1,4 +1,4 @@
-/// Shuts down the computer this terminal is running on
+/// Shuts down the cogitator this terminal is running on
 /datum/terminal_command/shutdown
 	name = "shutdown"
 	man_entry = list(

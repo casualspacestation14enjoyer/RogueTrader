@@ -22,7 +22,7 @@
 
 /datum/uplink_item/item/augment/aug_iatric_monitor
 	name = "Iatric Monitor CBM (head)"
-	desc = "A small computer system attached to the brain stem that monitors your life signs. It has been configured to be undetectable on body scanners. \
+	desc = "A small cogitator system attached to the brain stem that monitors your life signs. It has been configured to be undetectable on body scanners. \
 	It can be activated to gain a simple readout of your current physical state that can be understood regardless of your medical skill. \
 	NOTE: This augment is incompatible with synthetic biologies."
 	item_cost = 20

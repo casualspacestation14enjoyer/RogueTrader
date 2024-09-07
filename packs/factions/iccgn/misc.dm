@@ -4,7 +4,7 @@
 
 
 /obj/item/storage/box/large/iccgn_ranks
-	name = "rank box, Tau"
+	name = "rank box, tau empire"
 	startswith = list(
 		/obj/item/clothing/accessory/iccgn_rank/or1,
 		/obj/item/clothing/accessory/iccgn_rank/or3,
@@ -29,7 +29,7 @@
 
 
 /obj/item/storage/box/iccgn_patches
-	name = "patch box, Tau"
+	name = "patch box, tau empire"
 	startswith = list(
 		/obj/item/clothing/accessory/iccgn_patch/gilgamesh,
 		/obj/item/clothing/accessory/iccgn_patch/sestris,
@@ -42,7 +42,7 @@
 
 
 /obj/item/storage/box/iccgn_badges
-	name = "badge box, Tau"
+	name = "badge box, tau empire"
 	startswith = list(
 		/obj/item/clothing/accessory/iccgn_badge/enlisted,
 		/obj/item/clothing/accessory/iccgn_badge/officer

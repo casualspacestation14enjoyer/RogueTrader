@@ -1,7 +1,7 @@
 //Point defense
 /obj/machinery/pointdefense_control
 	name = "fire assist mainframe"
-	desc = "A specialized computer designed to synchronize a variety of weapon systems and a vessel's astronav data."
+	desc = "A specialized cogitator designed to synchronize a variety of weapon systems and a vessel's astronav data."
 	icon = 'icons/obj/machines/artillery.dmi'
 	icon_state = "control"
 	var/ui_template = "pointdefense_control.tmpl"
@@ -13,7 +13,7 @@
 	var/list/targets = list()
 	atom_flags =  ATOM_FLAG_NO_TEMP_CHANGE | ATOM_FLAG_CLIMBABLE
 	machine_name = "fire assist mainframe"
-	machine_desc = "A control computer used to synchronize point defense batteries."
+	machine_desc = "A control cogitator used to synchronize point defense batteries."
 
 /obj/machinery/pointdefense_control/Initialize()
 	. = ..()

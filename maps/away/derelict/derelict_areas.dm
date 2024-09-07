@@ -38,7 +38,7 @@
 	icon_state = "medbay"
 
 /area/constructionsite/ai
-	name = "\improper Construction Computer Core"
+	name = "\improper Construction Cogitator Core"
 	icon_state = "ai"
 
 /area/constructionsite/engineering

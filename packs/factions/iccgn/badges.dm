@@ -1,6 +1,6 @@
 /obj/item/clothing/accessory/iccgn_badge
 	abstract_type = /obj/item/clothing/accessory/iccgn_badge
-	name = "base badge, Tau"
+	name = "base badge, tau empire"
 	desc = "You should not see this."
 	icon = 'packs/factions/iccgn/badges.dmi'
 	accessory_icons = list(
@@ -18,14 +18,14 @@
 
 
 /obj/item/clothing/accessory/iccgn_badge/enlisted
-	name = "pin badge, Tau Enlisted"
-	desc = "A shiny little pin badge denoting qualification as a confederation navy enlisted person."
+	name = "pin badge, tau empire Enlisted"
+	desc = "A shiny little pin badge denoting qualification as a tau navy enlisted person."
 	icon_state = "enlisted"
 	overlay_state = "enlisted_worn"
 
 
 /obj/item/clothing/accessory/iccgn_badge/officer
-	name = "pin badge, Tau Officer"
-	desc = "A shiny little pin badge denoting qualification as a confederation navy officer."
+	name = "pin badge, tau empire Officer"
+	desc = "A shiny little pin badge denoting qualification as a tau navy officer."
 	icon_state = "officer"
 	overlay_state = "officer_worn"

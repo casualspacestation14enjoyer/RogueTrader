@@ -6,7 +6,7 @@ emit_particle()
 
 1 power box
 the only part of this thing that uses power, can hack to mess with the pa/make it better.
-Lies, only the control computer draws power.
+Lies, only the control cogitator draws power.
 
 1 fuel chamber
 contains procs for mixing gas and whatever other fuel it uses
@@ -23,7 +23,7 @@ get_available_mix()
 1 End Cap
 
 1 Control computer
-interface for the pa, acts like a computer with an html menu for diff parts and a status report
+interface for the pa, acts like a cogitator with an html menu for diff parts and a status report
 all other parts contain only a ref to this
 a /machine, tells the others to do work
 contains ref for all parts
@@ -43,14 +43,14 @@ Each part has a reference string, powered, strength, and contruction values.
 Using this the update_icon() proc is simplified a bit (using for absolutely was problematic with naming),
 so the icon_state comes out be:
 "[reference][strength]", with a switch controlling construction_states and ensuring that it doesn't
-power on while being contructed, and all these variables are set by the computer through it's scan list
+power on while being contructed, and all these variables are set by the cogitator through it's scan list
 Essential order of the icons:
 Standard - [reference]
 Wrenched - [reference]
 Wired    - [reference]w
 Closed   - [reference]c
 Powered  - [reference]p[strength]
-Strength being set by the computer and a null strength (Computer is powered off or inactive) returns a 'null', counting as empty
+Strength being set by the cogitator and a null strength (Computer is powered off or inactive) returns a 'null', counting as empty
 So, hopefully this is helpful if any more icons are to be added/changed/wondering what the hell is going on here
 
 */

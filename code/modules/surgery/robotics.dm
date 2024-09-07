@@ -564,7 +564,7 @@
 		else if(BP_IS_CRYSTAL(affected))
 			to_chat(user, SPAN_WARNING("The crystalline interior of \the [affected] is incompatible with \the [M]."))
 		else if(!target.isSynthetic())
-			to_chat(user, SPAN_WARNING("You cannot install a computer brain into a meat body."))
+			to_chat(user, SPAN_WARNING("You cannot install a cogitator brain into a meat body."))
 		else if(!target.should_have_organ(BP_BRAIN))
 			to_chat(user, SPAN_WARNING("You're pretty sure [target.species.name_plural] don't normally have a brain."))
 		else if(target.internal_organs[BP_BRAIN])

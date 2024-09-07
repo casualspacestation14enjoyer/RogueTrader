@@ -194,7 +194,7 @@
 	name = "Hacked Supply Beacon (DANGER!)"
 	desc = "Wrench this large beacon onto an exposed power cable, in order to activate it. This will call in a \
 	drop pod to the target location, containing a random assortment of (possibly useful) items. \
-	The ship's computer system will announce when this pod is enroute."
+	The ship's cogitator system will announce when this pod is enroute."
 	item_cost = 52
 	path = /obj/item/supply_beacon
 

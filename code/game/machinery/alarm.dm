@@ -211,7 +211,7 @@
 		mode=AALARM_MODE_FILL
 		apply_mode()
 
-	//atmos computer remote controll stuff
+	//atmos cogitator remote controll stuff
 	switch(rcon_setting)
 		if(RCON_NO)
 			remote_control = 0

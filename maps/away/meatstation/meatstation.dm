@@ -114,7 +114,7 @@
 
 /mob/living/simple_animal/hostile/meatstation/wormscientist
 	name = "infested scientist"
-	desc = "A scientist infested with some sort of parasitic worms."
+	desc = "A researcher infested with some sort of parasitic worms."
 	icon_state = "wormscientist"
 	icon_living = "wormscientist"
 	icon_dead = "wormscientist_dead"

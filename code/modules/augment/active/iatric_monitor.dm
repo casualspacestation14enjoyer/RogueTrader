@@ -2,7 +2,7 @@
 	name = "iatric monitor"
 	augment_slots = AUGMENT_HEAD
 	icon_state = "iatric_monitor"
-	desc = "A small computer system constantly tracks your physiological state and vital signs. A muscle gesture can be used to receive a simple diagnostic report, not unlike that from a handheld scanner."
+	desc = "A small cogitator system constantly tracks your physiological state and vital signs. A muscle gesture can be used to receive a simple diagnostic report, not unlike that from a handheld scanner."
 	augment_flags = AUGMENT_BIOLOGICAL | AUGMENT_SCANNABLE
 	origin_tech = list(TECH_DATA = 3, TECH_BIO = 2)
 

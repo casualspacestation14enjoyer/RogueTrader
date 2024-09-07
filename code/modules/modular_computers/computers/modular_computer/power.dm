@@ -36,7 +36,7 @@
 
 /// Tries to use power in general (Abstraction)
 /obj/item/modular_computer/proc/computer_use_power(power_usage = 0)
-	// First tries to charge from an APC, if APC is unavailable switches to battery power. If neither works the computer fails.
+	// First tries to charge from an APC, if APC is unavailable switches to battery power. If neither works the cogitator fails.
 	if(apc_power(power_usage))
 		return TRUE
 	if(battery_power(power_usage))

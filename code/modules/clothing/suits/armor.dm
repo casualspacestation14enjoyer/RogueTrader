@@ -78,7 +78,7 @@
 
 /obj/item/clothing/suit/armor/det_suit
 	name = "armor"
-	desc = "An armored vest with a detective's badge on it."
+	desc = "An armored vest with a investigator's badge on it."
 	icon_state = "detective-armor"
 	blood_overlay_type = "armor"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO

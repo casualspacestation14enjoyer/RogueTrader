@@ -37,14 +37,14 @@ var/global/solar_gen_rate = 1500
 	unset_control() //remove from control computer
 	..()
 
-//set the control of the panel to a given computer if closer than SOLAR_MAX_DIST
+//set the control of the panel to a given cogitator if closer than SOLAR_MAX_DIST
 /obj/machinery/power/solar/proc/set_control(obj/machinery/power/solar_control/SC)
 	if(SC && (get_dist(src, SC) > SOLAR_MAX_DIST))
 		return 0
 	control = SC
 	return 1
 
-//set the control of the panel to null and removes it from the control list of the previous control computer if needed
+//set the control of the panel to null and removes it from the control list of the previous control cogitator if needed
 /obj/machinery/power/solar/proc/unset_control()
 	if(control)
 		control.connected_panels.Remove(src)
@@ -315,7 +315,7 @@ var/global/solar_gen_rate = 1500
 		GLOB.solar_controllers |= src
 	return to_return
 
-//search for unconnected panels and trackers in the computer powernet and connect them
+//search for unconnected panels and trackers in the cogitator powernet and connect them
 /obj/machinery/power/solar_control/proc/search_for_connected()
 	if(powernet)
 		for(var/obj/machinery/power/M in powernet.nodes)
@@ -325,7 +325,7 @@ var/global/solar_gen_rate = 1500
 					if(S.set_control(src))
 						connected_panels |= S
 			else if(istype(M, /obj/machinery/power/tracker))
-				if(!connected_tracker) //if there's already a tracker connected to the computer don't add another
+				if(!connected_tracker) //if there's already a tracker connected to the cogitator don't add another
 					var/obj/machinery/power/tracker/T = M
 					if(!T.control) //i.e unconnected
 						if(T.set_control(src))
@@ -497,7 +497,7 @@ var/global/solar_gen_rate = 1500
 
 /obj/item/paper/solar
 	name = "paper- 'Going green! Setup your own solar array instructions.'"
-	info = "<h1>Welcome</h1><p>At greencorps we love the environment, and space. With this package you are able to help mother nature and produce energy without any usage of fossil fuel or phoron! Singularity energy is dangerous while solar energy is safe, which is why it's better. Now here is how you setup your own solar array.</p><p>You can make a solar panel by wrenching the solar assembly onto a cable node. Adding a glass panel, reinforced or regular glass will do, will finish the construction of your solar panel. It is that easy!</p><p>Now after setting up 19 more of these solar panels you will want to create a solar tracker to keep track of our mother nature's gift, the sun. These are the same steps as before except you insert the tracker equipment circuit into the assembly before performing the final step of adding the glass. You now have a tracker! Now the last step is to add a computer to calculate the sun's movements and to send commands to the solar panels to change direction with the sun. Setting up the solar computer is the same as setting up any computer, so you should have no trouble in doing that. You do need to put a wire node under the computer, and the wire needs to be connected to the tracker.</p><p>Congratulations, you should have a working solar array. If you are having trouble, here are some tips. Make sure all solar equipment are on a cable node, even the computer. You can always deconstruct your creations if you make a mistake.</p><p>That's all to it, be safe, be green!</p>"
+	info = "<h1>Welcome</h1><p>At greencorps we love the environment, and space. With this package you are able to help mother nature and produce energy without any usage of fossil fuel or phoron! Singularity energy is dangerous while solar energy is safe, which is why it's better. Now here is how you setup your own solar array.</p><p>You can make a solar panel by wrenching the solar assembly onto a cable node. Adding a glass panel, reinforced or regular glass will do, will finish the construction of your solar panel. It is that easy!</p><p>Now after setting up 19 more of these solar panels you will want to create a solar tracker to keep track of our mother nature's gift, the sun. These are the same steps as before except you insert the tracker equipment circuit into the assembly before performing the final step of adding the glass. You now have a tracker! Now the last step is to add a cogitator to calculate the sun's movements and to send commands to the solar panels to change direction with the sun. Setting up the solar cogitator is the same as setting up any computer, so you should have no trouble in doing that. You do need to put a wire node under the computer, and the wire needs to be connected to the tracker.</p><p>Congratulations, you should have a working solar array. If you are having trouble, here are some tips. Make sure all solar equipment are on a cable node, even the computer. You can always deconstruct your creations if you make a mistake.</p><p>That's all to it, be safe, be green!</p>"
 
 /proc/rate_control(S, V, C, Min=1, Max=5, Limit=null) //How not to name vars
 	var/href = "<A href='?src=\ref[S];rate control=1;[V]"

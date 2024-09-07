@@ -2,7 +2,7 @@
 
 /obj/machinery/computer/gravity_control_computer
 	name = "gravity generator control console"
-	desc = "A computer to control a local gravity generator.  Qualified personnel only."
+	desc = "A cogitator to control a local gravity generator.  Qualified personnel only."
 	icon = 'icons/obj/machines/computer.dmi'
 	icon_state = "airtunnel0e"
 	anchored = TRUE
