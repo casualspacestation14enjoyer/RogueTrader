@@ -202,9 +202,9 @@
 	else if (ammo_type == /obj/item/ammo_casing/pistol/practice)
 		AddOverlays(image(icon, "[initial(icon_state)]_p"))
 
-	else if (ammo_type == /obj/item/ammo_casing/pistol/small/rubber)
+	else if (ammo_type == /obj/item/ammo_casing/pistol/tech/rubber)
 		AddOverlays(image(icon, "[initial(icon_state)]_r"))
-	else if (ammo_type == /obj/item/ammo_casing/pistol/small/practice)
+	else if (ammo_type == /obj/item/ammo_casing/pistol/tech/practice)
 		AddOverlays(image(icon, "[initial(icon_state)]_p"))
 
 	else if (ammo_type == /obj/item/ammo_casing/rifle/military/practice)

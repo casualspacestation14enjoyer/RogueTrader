@@ -12,7 +12,7 @@
 	<p>This Charter does not apply to staff who are not signatory to the Solar Employee General Award, or are signatory to other workplace regulatory documents such as the internal protocols of the Explorator or the Sol Defense Fleet. Union representatives must take care to ensure that their operations on mixed jurisdiction stations and vessels are restricted to those areas that have a union worker, contractor or labourer presence.</p>
 	<p>Workers must not be adversely affected by any employer moving between jurisdictions in relation to their OHS and workers compensation entitlements. Any proposed move between jurisdictions will only occur following genuine consultation and agreement with workers and their representatives and a process of public review, including public tribunal hearings.</p>
 	<p>Consistent with OHS and Worker Compensation Policy and interstellar standards, Solar law must ensure healthy and safe workplaces and a compensation and rehabilitation system which ensures that no worker is disadvantaged should they be injured at work.</p>
-	<p>All workers have the right to join a genuine trade union. Union organised workplaces are safer workplaces.</p>
+	<p>All workers have the right to join a genuine guild. Union organised workplaces are safer workplaces.</p>
 	<h2>2. Security Levels</h2>
 	<hr>
 	<p>On stations or vessels employing the standard Imperium Alert Level protocol, the following conditions apply:</p>

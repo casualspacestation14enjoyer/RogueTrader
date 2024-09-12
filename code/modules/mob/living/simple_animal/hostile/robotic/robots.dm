@@ -88,7 +88,7 @@
 /mob/living/simple_animal/hostile/hivebot/ranged_damage/fleet_robot/ballistic
 	desc = "A relatively recent model of a 'tracker' militarum subaltern, armed with a sub-machine gun."
 	projectiletype = /obj/item/projectile/bullet/pistol/holdout
-	casingtype = /obj/item/ammo_casing/pistol/small
+	casingtype = /obj/item/ammo_casing/pistol/tech
 	projectilesound = 'sound/weapons/gunshot/gunshot_smg.ogg'
 	base_attack_cooldown = 0.5 SECONDS
 	projectile_dispersion = 2

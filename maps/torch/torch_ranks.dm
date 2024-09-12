@@ -372,25 +372,25 @@
 	sort_order = 17
 
 /datum/mil_rank/fleet/o8
-	name = "Rear Admiral"
+	name = "Rear Lord Captain"
 	name_short = "RADM"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/flag/o8, /obj/item/clothing/accessory/solgov/specialty/officer)
 	sort_order = 18
 
 /datum/mil_rank/fleet/o9
-	name = "Vice Admiral"
+	name = "Vice Lord Captain"
 	name_short = "VADM"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/flag/o9, /obj/item/clothing/accessory/solgov/specialty/officer)
 	sort_order = 19
 
 /datum/mil_rank/fleet/o10
-	name = "Admiral"
+	name = "Lord Captain"
 	name_short = "ADM"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/flag/o10, /obj/item/clothing/accessory/solgov/specialty/officer)
 	sort_order = 20
 
 /datum/mil_rank/fleet/o10_alt
-	name = "Imperial Navy Admiral"
+	name = "Imperial Navy Lord Captain"
 	name_short = "FADM"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/flag/o10_alt, /obj/item/clothing/accessory/solgov/specialty/officer)
 	sort_order = 20
@@ -449,7 +449,7 @@
 	sort_order = 16
 
 /datum/mil_rank/ec/o8
-	name = "Admiral"
+	name = "Lord Captain"
 	name_short = "ADM"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/officer/o8)
 	sort_order = 18
@@ -480,7 +480,7 @@
 	accessory = list(/obj/item/clothing/accessory/badge/solgov/representative)
 
 /datum/mil_rank/sol/agent
-	name = "SFP Agent"
+	name = "Magistratum Agent"
 	name_short = "AGT"
 	accessory = list(/obj/item/clothing/accessory/badge/agent)
 

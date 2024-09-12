@@ -31,7 +31,7 @@
 	one_hand_penalty= 3
 	burst_delay = 2
 	move_delay = 2
-	bulk = GUN_BULK_RIFLE - 3
+	bulk = GUN_BULK_RIFLE
 	accuracy = 0
 
 /obj/item/gun/energy/pulse_rifle/pistol

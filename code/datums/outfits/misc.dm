@@ -26,7 +26,7 @@
 
 	id_slot = slot_wear_id
 	id_types = list(/obj/item/card/id/centcom/station)
-	id_pda_assignment = "Admiral"
+	id_pda_assignment = "Lord Captain"
 
 /singleton/hierarchy/outfit/merchant
 	name = "Merchant"

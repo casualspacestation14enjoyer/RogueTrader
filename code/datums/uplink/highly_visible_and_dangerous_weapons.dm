@@ -5,7 +5,7 @@
 	category = /datum/uplink_category/visible_weapons
 
 /datum/uplink_item/item/visible_weapons/smallenergy_gun
-	name = "Small Energy Gun"
+	name = "Small Energy Weapon"
 	desc = "A kantrael MG pattern pistol."
 	item_cost = 16
 	path = /obj/item/gun/energy/lasgun/laspistol/militarum
@@ -68,7 +68,7 @@
 	desc = "Too much money? Not enough screaming? Try the Money Cannon."
 
 /datum/uplink_item/item/visible_weapons/energy_gun
-	name = "Energy Gun"
+	name = "Energy Weapon"
 	desc = "A energy based sidearm with three different lethality settings."
 	item_cost = 32
 	path = /obj/item/gun/energy/gun
@@ -123,7 +123,7 @@
 
 
 /datum/uplink_item/item/visible_weapons/advanced_energy_gun
-	name = "Advanced Energy Gun"
+	name = "Advanced Energy Weapon"
 	desc = "A highly experimental heavy energy weapon, with three different lethality settings."
 	item_cost = 60
 	path = /obj/item/gun/energy/gun/nuclear
@@ -211,7 +211,7 @@
 
 /datum/uplink_item/item/visible_weapons/incendiary_laser
 	name = "Incendiary Laser Blaster"
-	desc = "A laser weapon developed and subsequently banned in Sol space, it sets its targets on fire with dispersed laser technology. \
+	desc = "A laser weapon developed and subsequently banned in Imperial space, it sets its targets on fire with dispersed laser technology. \
 			Most of these blasters were swiftly bought back and destroyed - but not this one."
 	item_cost = 40
 	path = /obj/item/gun/energy/incendiary_laser

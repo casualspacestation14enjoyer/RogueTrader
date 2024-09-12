@@ -112,7 +112,7 @@
 				<ul>
 				  <li>Stun Baton</li>
 				  <li>Handcuffs</li>
-				  <li>Energy Gun</li>
+				  <li>Energy Weapon</li>
 				  <li>Megaphone</li>
 				  <li>Roll of Tape</li>
 				</ul>

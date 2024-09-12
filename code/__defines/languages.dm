@@ -12,18 +12,18 @@
 #define LANGUAGE_LOW_GOTHIC         "Low Gothic"
 
 //Alien
-#define LANGUAGE_EAL               "Encoded Audio Language"
-#define LANGUAGE_UNATHI_SINTA      "Sinta'unathi"
-#define LANGUAGE_UNATHI_YEOSA      "Yeosa'unathi"
+#define LANGUAGE_MECHANICUS               "Binaric Speech"
+#define LANGUAGE_UNATHI_SINTA      "Saurian"
+#define LANGUAGE_UNATHI_YEOSA      "Kroot"
 #define LANGUAGE_TAU         "Tau"
-#define LANGUAGE_ROOTLOCAL         "Local Rootspeak"
-#define LANGUAGE_ROOTGLOBAL        "Global Rootspeak"
-#define LANGUAGE_ADHERENT          "Protocol"
-#define LANGUAGE_VOX               "Vox-pidgin"
+#define LANGUAGE_ROOTLOCAL         "Local Xenos Speak"
+#define LANGUAGE_ROOTGLOBAL        "Global Xenos Speak"
+#define LANGUAGE_TYRANID          "Tyranid"
+#define LANGUAGE_VOX               "Xenos Speech"
 #define LANGUAGE_NABBER            "Serpentid"
 
 //Antag
-#define LANGUAGE_CULT              "Cult"
+#define LANGUAGE_CULT              "Chaos"
 #define LANGUAGE_CULT_GLOBAL       "Occult"
 #define LANGUAGE_ALIUM             "Alium"
 
@@ -45,7 +45,7 @@
 #define INNATE       64  // All mobs can be assumed to speak and understand this language. (audible emotes)
 #define NO_TALK_MSG  128 // Do not show the "\The [speaker] talks into \the [radio]" message
 #define NO_STUTTER   256 // No stuttering, slurring, or other speech problems
-#define ALT_TRANSMIT 512 // Language is not based on vision or sound (Todo: add this into the say code and use it for the rootspeak languages)
+#define ALT_TRANSMIT 512 // Language is not based on vision or sound (Todo: add this into the say code and use it for the Xenos Speak languages)
 
 // Misc
-#define MAX_LANGUAGES 3
+#define MAX_LANGUAGES 1

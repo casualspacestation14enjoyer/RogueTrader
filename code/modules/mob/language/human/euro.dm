@@ -8,7 +8,7 @@
 /datum/language/human/euro
 	name = LANGUAGE_HIGH_GOTHIC
 	desc = "A constructed language established by a conference of European and African research universities convening in Zurich, Switzerland starting in 2119, \
-			later adopted with little controversy as the lingua franca of the entirety of Sol space following the establishment of the Imperium."
+			later adopted with little controversy as the lingua franca of the entirety of Imperial space following the establishment of the Imperium."
 	speech_verb = "says"
 	whisper_verb = "whispers"
 	colour = ""

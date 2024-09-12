@@ -280,8 +280,8 @@ ribbons
 	icon_state = "ribbon_combat"
 
 /obj/item/clothing/accessory/ribbon/solgov/gaiaconflict
-	name = "\improper Gaia Conflict ribbon"
-	desc = "A military ribbon awarded to members of the Imperial Defense Forces for serving in the Gaia Conflict."
+	name = "\improper Ultramar Conflict ribbon"
+	desc = "A military ribbon awarded to members of the Imperial Defense Forces for serving in the Ultramar Conflict."
 	icon_state = "ribbon_gaiaconflict"
 
 /obj/item/clothing/accessory/ribbon/solgov/distinguished_unit
@@ -706,7 +706,7 @@ ranks - ec
 
 /obj/item/clothing/accessory/solgov/rank/ec/officer/o8
 	name = "ranks (O-8 admiral)"
-	desc = "Insignia denoting the rank of Admiral."
+	desc = "Insignia denoting the rank of Lord Captain."
 	icon_state = "ecrank_o8"
 
 /obj/item/clothing/accessory/solgov/rank/ec/officer/o8_alt
@@ -829,20 +829,20 @@ ranks - fleet
 
 /obj/item/clothing/accessory/solgov/rank/fleet/flag/o8
 	name = "ranks (O-8 rear admiral)"
-	desc = "Insignia denoting the rank of Rear Admiral."
+	desc = "Insignia denoting the rank of Rear Lord Captain."
 	icon_state = "fleetrank_o8"
 
 /obj/item/clothing/accessory/solgov/rank/fleet/flag/o9
 	name = "ranks (O-9 vice admiral)"
-	desc = "Insignia denoting the rank of Vice Admiral."
+	desc = "Insignia denoting the rank of Vice Lord Captain."
 	icon_state = "fleetrank_o9"
 
 /obj/item/clothing/accessory/solgov/rank/fleet/flag/o10
 	name = "ranks (O-10 admiral)"
-	desc = "Insignia denoting the rank of Admiral."
+	desc = "Insignia denoting the rank of Lord Captain."
 	icon_state = "fleetrank_o10"
 
 /obj/item/clothing/accessory/solgov/rank/fleet/flag/o10_alt
 	name = "ranks (O-10 militarum admiral)"
-	desc = "Insignia denoting the rank of Imperial Navy Admiral."
+	desc = "Insignia denoting the rank of Imperial Navy Lord Captain."
 	icon_state = "fleetrank_o10"

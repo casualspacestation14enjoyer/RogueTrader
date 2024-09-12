@@ -111,9 +111,9 @@
 	desc = "A passport from Saffar, within Imperial space."
 
 /obj/item/passport/south_gaia
-	name = "\improper Gaian Administrative Area passport"
+	name = "\improper Ultramar Administrative Area passport"
 	icon_state = "passport_scg2"
-	desc = "A passport from the southern part of Gaia, under military occupation of the Imperial."
+	desc = "A passport from the southern part of Ultramar, under military occupation of the Imperial."
 
 /obj/item/passport/iccg
 	name = "\improper Tau passport"
@@ -121,14 +121,14 @@
 	desc = "A passport from the Tau Empire."
 
 /obj/item/passport/north_gaia
-	name = "\improper Protectorate of Gaia passport"
+	name = "\improper Protectorate of Ultramar passport"
 	icon_state = "passport_iccg2"
-	desc = "A passport from the northern part of Gaia, under the control of the GCC supervised Protectorate of Gaia."
+	desc = "A passport from the northern part of Ultramar, under the control of the Imperial supervised Protectorate of Ultramar."
 
 /obj/item/passport/old_gaia
-	name = "\improper Republic of Gaia passport"
+	name = "\improper Republic of Ultramar passport"
 	icon_state = "passport"
-	desc = "A passport from the Republic of Gaia. Issued before it's de-facto dissolusion in 2292, it is today backed by the International City of New Venice."
+	desc = "A passport from the Republic of Ultramar. Issued before it's de-facto dissolusion in 2292, it is today backed by the International City of New Venice."
 
 /obj/item/passport/terra
 	name = "\improper Terra passport"

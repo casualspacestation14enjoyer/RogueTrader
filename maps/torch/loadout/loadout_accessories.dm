@@ -50,7 +50,7 @@
 	solribbons["Frontier ribbon"] = /obj/item/clothing/accessory/ribbon/solgov/frontier
 	solribbons["Instructor ribbon"] = /obj/item/clothing/accessory/ribbon/solgov/instructor
 	solribbons["Combat Action ribbon"] = /obj/item/clothing/accessory/ribbon/solgov/combat
-	solribbons["Gaia Conflict ribbon"] = /obj/item/clothing/accessory/ribbon/solgov/gaiaconflict
+	solribbons["Ultramar Conflict ribbon"] = /obj/item/clothing/accessory/ribbon/solgov/gaiaconflict
 	solribbons["Distinguished unit ribbon"] = /obj/item/clothing/accessory/ribbon/solgov/distinguished_unit
 	gear_tweaks += new/datum/gear_tweak/path(solribbons)
 

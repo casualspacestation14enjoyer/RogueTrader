@@ -104,7 +104,7 @@
 	share_damage = 0
 	invocation = "Yo'balada!"
 	invocation_type = SpI_SHOUT
-	spell_flags = NEEDSCLOTHES | SELECTABLE
+	spell_flags = Z2NOCAST | SELECTABLE
 	range = 3
 	duration = 150 //15 seconds.
 	cooldown_min = 200 //20 seconds

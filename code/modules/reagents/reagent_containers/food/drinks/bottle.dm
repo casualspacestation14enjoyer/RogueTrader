@@ -195,7 +195,7 @@
 
 /obj/item/reagent_containers/food/drinks/bottle/vodka
 	name = "Tunguska Triple Distilled Vodka"
-	desc = "Aah, vodka. Prime choice of drink AND fuel by Indies around the galaxy."
+	desc = "Aah, vodka. Prime choice of drink AND fuel by Blueys around the galaxy."
 	icon_state = "vodkabottle"
 	center_of_mass = "x=17;y=3"
 
@@ -821,7 +821,7 @@
 
 /obj/item/reagent_containers/food/drinks/bottle/small/gingerbeer
 	name = "Ginger Gothic Ale"
-	desc = "A delicious non-alcoholic beverage enjoyed across Sol space."
+	desc = "A delicious non-alcoholic beverage enjoyed across Imperial space."
 	icon_state = "gingerbeer"
 	center_of_mass = "x=16;y=12"
 

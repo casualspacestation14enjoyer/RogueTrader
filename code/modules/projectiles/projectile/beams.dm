@@ -190,7 +190,6 @@
 	damage = 66
 	agony = 8
 	eyeblur = 8
-	sharp = FALSE
 	damage_flags = 0
 	life_span = 5
 	armor_penetration = 40
@@ -216,7 +215,7 @@
 	name = "Meltagun beam"
 	icon_state = "melta"
 	damage = 135
-	agony = 35
+	agony = 25
 	// check_armour = "energy"
 	fire_sound = list('sound/effects/gore/sear.ogg')
 	damage_falloff_list = list(

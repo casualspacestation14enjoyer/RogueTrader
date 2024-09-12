@@ -269,7 +269,7 @@
 
 /* "Rifle" rounds */
 
-/obj/item/projectile/bullet/rifle // 5.56 Junk
+/obj/item/projectile/bullet/rifle // 8mm slug round. Ideal for soft targets and light armour.
 	damage = 40
 	armor_penetration = 20
 	distance_falloff = 1
@@ -285,7 +285,7 @@
 	damage = 48
 	armor_penetration = 15
 
-/obj/item/projectile/bullet/rifle/heavy // 7.62 Battle Round
+/obj/item/projectile/bullet/rifle/heavy // 10mm heavy rifle slug. Big recoil.
 	damage = 48
 	armor_penetration = 25
 
@@ -300,21 +300,20 @@
 	damage = 56
 	armor_penetration = 20
 
-/obj/item/projectile/bullet/rifle/military // 5.56 Militarum
-	damage = 44
-	armor_penetration = 22
+/obj/item/projectile/bullet/rifle/militarum // 6.8 Militarum. Higher AP, less damage to 8mm.
+	damage = 38
+	armor_penetration = 24
 
-/obj/item/projectile/bullet/rifle/military/ap
-	damage = 44
-	armor_penetration = 22
+/obj/item/projectile/bullet/rifle/militarum/ap
+	armor_penetration = 28
 
-/obj/item/projectile/bullet/rifle/military/kp
-	damage = 44
-	armor_penetration = 22
+/obj/item/projectile/bullet/rifle/militarum/kp
+	damage = 41
+	armor_penetration = 32
 
-/obj/item/projectile/bullet/rifle/military/ms
-	damage = 44
-	armor_penetration = 22
+/obj/item/projectile/bullet/rifle/militarum/ms
+	damage = 46
+	armor_penetration = 19
 
 /obj/item/projectile/bullet/rifle/sniper // 12.7mm Battle Round
 	damage = 60
@@ -343,6 +342,10 @@
 /obj/item/projectile/bullet/rifle/shell/apds
 	armor_penetration = 48
 
+/obj/item/projectile/bullet/rifle/shell/apds/rail
+	damage = 110
+	armor_penetration = 42
+
 /obj/item/projectile/bullet/rifle/shell/rend // Special tech shredder round. Loses wall_pen ability for huge damage.
 	damage = 110
 	penetrating = 0
@@ -370,6 +373,58 @@
 	damage = 21
 	armor_penetration = 38
 	penetrating = 3
+
+// ASTARTES AND ORKS
+
+/obj/item/projectile/bullet/bolterrifle
+	name =".75 bolt" //.75, astartes sized bolters or boltpistols
+	fire_sound = 'sound/warhammer/gunshot/loudbolt.ogg'
+	icon_state= "bolter"
+	damage = 75
+	armor_penetration = 36 //this is totally not cause its a .75
+
+/obj/item/projectile/bullet/bolterrifle/astartes
+	name =".95 bolt"  // Will make kraken penetrator variants later.
+	fire_sound = 'sound/warhammer/gunshot/loudbolt.ogg'
+	icon_state= "bolter"
+	damage = 89
+	armor_penetration = 40
+
+/obj/item/projectile/bullet/bpistol
+	name =".50 bolt" //.50, human sized bolters and bolt pistols
+	fire_sound = 'sound/warhammer/gunshot/loudbolt.ogg'
+	icon_state= "bolter"
+	damage = 68
+
+// SPECIAL BOLT ROUNDS
+
+/obj/item/projectile/bullet/bpistol/kp
+	fire_sound = 'sound/warhammer/gunshot/loudbolt.ogg'
+	damage = 73
+	armor_penetration = 39
+	penetrating = 2
+
+/obj/item/projectile/bullet/bolt/kp
+	fire_sound = 'sound/warhammer/gunshot/loudbolt.ogg'
+	damage = 83
+	armor_penetration = 41
+	penetrating = 2
+
+/obj/item/projectile/bullet/bpistol/ms // This is .75 Bolt Pistol Round
+	fire_sound = 'sound/warhammer/gunshot/loudbolt.ogg'
+	damage = 79
+	armor_penetration = 35
+
+/obj/item/projectile/bullet/bolt/ms
+	fire_sound = 'sound/warhammer/gunshot/loudbolt.ogg'
+	damage = 89
+	armor_penetration = 37
+
+/obj/item/projectile/bullet/ork
+	name = "scrap"
+	fire_sound = 'sound/warhammer/gunshot/loudbolt.ogg'
+	damage = 38
+	armor_penetration = 36
 
 // XENOS
 /obj/item/projectile/bullet/rifle/pmag // Xenos Super Penetrative Round. The rifle is an automatic railgun that fires small tiny projectiles.
@@ -461,7 +516,7 @@
 /obj/item/projectile/bullet/rifle/practice
 	damage = 5
 
-/obj/item/projectile/bullet/rifle/military/practice
+/obj/item/projectile/bullet/rifle/militarum/practice
 	damage = 5
 
 /obj/item/projectile/bullet/shotgun/practice

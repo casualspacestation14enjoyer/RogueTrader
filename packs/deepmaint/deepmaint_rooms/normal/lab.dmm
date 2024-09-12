@@ -220,7 +220,7 @@
 /area/map_template/deepmaint)
 "so" = (
 /obj/structure/table/standard,
-/obj/item/ammo_magazine/speedloader/magnum,
+/obj/item/ammo_magazine/speedloader/revolver,
 /obj/item/gun/projectile/revolver{
 	starts_loaded = 0
 	},
@@ -363,7 +363,7 @@
 /area/map_template/deepmaint)
 "Eq" = (
 /obj/decal/cleanable/blood/drip,
-/obj/item/ammo_casing/pistol/magnum/used,
+/obj/item/ammo_casing/pistol/heavy/used,
 /turf/simulated/floor/tiled,
 /area/map_template/deepmaint)
 "EA" = (

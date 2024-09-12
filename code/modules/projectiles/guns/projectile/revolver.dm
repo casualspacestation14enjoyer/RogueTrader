@@ -4,19 +4,17 @@
 	icon = 'icons/obj/guns/revolvers.dmi'
 	icon_state = "revolver"
 	item_state = "revolver"
-	caliber = CALIBER_PISTOL_MAGNUM
+	caliber = CALIBER_SLUG_MAGNUM
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	handle_casings = CYCLE_CASINGS
 	max_shells = 6
 	fire_delay = 12 //Revolvers are naturally slower-firing
-	ammo_type = /obj/item/ammo_casing/pistol/magnum
+	ammo_type = /obj/item/ammo_casing/pistol/heavy
 	mag_insert_sound = 'sound/weapons/guns/interaction/rev_magin.ogg'
 	mag_remove_sound = 'sound/weapons/guns/interaction/rev_magout.ogg'
 	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
 	accuracy = 2
-	accuracy_power = 8
 	one_hand_penalty = 2
-	bulk = 3
 
 /obj/item/gun/projectile/revolver/AltClick()
 	if(CanPhysicallyInteract(usr))
@@ -51,7 +49,7 @@
 	name = "revolver"
 	icon_state = "medium"
 	safety_icon = "medium_safety"
-	caliber = CALIBER_PISTOL
+	caliber = CALIBER_SLUG
 	ammo_type = /obj/item/ammo_casing/pistol
 	fire_sound = 'sound/weapons/gunshot/gunshot_pistol.ogg'
 	desc = "The Imperial' Solid is a rugged revolver for people who don't keep their guns well-maintained."
@@ -64,8 +62,8 @@
 	desc = "The al-Maliki & Mosley Partner is a concealed-carry revolver made for people who do not trust automatic pistols any more than the people they're dealing with."
 	icon_state = "holdout"
 	item_state = "pistol"
-	caliber = CALIBER_PISTOL_SMALL
-	ammo_type = /obj/item/ammo_casing/pistol/small
+	caliber = CALIBER_SLUG_SMALL
+	ammo_type = /obj/item/ammo_casing/pistol/tech
 	fire_sound = 'sound/weapons/gunshot/gunshot_pistol.ogg'
 	w_class = ITEM_SIZE_SMALL
 	accuracy = 1

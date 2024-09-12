@@ -133,15 +133,15 @@
 
 
 /obj/item/clothing/accessory/iccgn_rank/of8
-	name = "rank insignia, OF8 Vice-Admiral"
-	desc = "Collar tabs denoting the GCN OF-8 rank of Vice-Admiral."
+	name = "rank insignia, OF8 Vice-Lord Captain"
+	desc = "Collar tabs denoting the GCN OF-8 rank of Vice-Lord Captain."
 	icon_state = "of8"
 	overlay_state = "of_worn"
 
 
 /obj/item/clothing/accessory/iccgn_rank/of9
-	name = "rank insignia, OF9 Admiral"
-	desc = "Collar tabs denoting the GCN OF-9 rank of Admiral."
+	name = "rank insignia, OF9 Lord Captain"
+	desc = "Collar tabs denoting the GCN OF-9 rank of Lord Captain."
 	icon_state = "of9"
 	overlay_state = "of_worn"
 

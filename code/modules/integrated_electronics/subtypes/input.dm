@@ -900,9 +900,9 @@
 
 /obj/item/integrated_circuit/input/microphone/modem
 	name = "machine modulating microphone"
-	languages_understood = list(LANGUAGE_HIGH_GOTHIC, LANGUAGE_EAL)
+	languages_understood = list(LANGUAGE_HIGH_GOTHIC, LANGUAGE_MECHANICUS)
 	spawn_flags = IC_SPAWN_RESEARCH
-	extended_desc = "A microphone combined with repurposed fax machine circuitry, this will translate Encoded Audio Language used by some synthetics into ZAC."
+	extended_desc = "A microphone combined with repurposed fax machine circuitry, this will translate Binaric Speech used by some synthetics into ZAC."
 
 /obj/item/integrated_circuit/input/microphone/exo
 	name = "interspecies exchange microphone"

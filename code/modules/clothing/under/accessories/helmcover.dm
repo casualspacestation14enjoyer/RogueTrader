@@ -54,7 +54,7 @@
 
 /obj/item/clothing/accessory/helmet_cover/saare
 	name = "\improper imperial helmet cover"
-	desc = "A fabric cover for armored helmets. This one has SAARE's colors."
+	desc = "A fabric cover for armored helmets. This one has Vessorine's colors."
 	icon_state = "helmcover_saare"
 
 /obj/item/clothing/accessory/helmet_cover/lead

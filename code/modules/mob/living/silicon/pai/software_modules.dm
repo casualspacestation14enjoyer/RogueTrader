@@ -261,7 +261,7 @@
 	ram_cost = 35
 	id = "translator"
 	var/list/languages = list(
-		LANGUAGE_EAL,
+		LANGUAGE_MECHANICUS,
 		LANGUAGE_HUMAN_ARABIC,
 		LANGUAGE_HUMAN_CHINESE,
 		LANGUAGE_HUMAN_IBERIAN,

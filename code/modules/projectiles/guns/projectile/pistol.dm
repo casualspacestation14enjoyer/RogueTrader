@@ -1,11 +1,10 @@
 
 /obj/item/gun/projectile/pistol
 	load_method = MAGAZINE
-	caliber = CALIBER_PISTOL
+	caliber = CALIBER_SLUG
 	magazine_type = /obj/item/ammo_magazine/pistol
 	allowed_magazines = /obj/item/ammo_magazine/pistol
 	fire_sound = 'sound/weapons/gunshot/gunshot_pistol.ogg'
-	accuracy_power = 7
 	var/empty_icon = TRUE  //If it should change icon when empty
 	var/ammo_indicator = FALSE
 
@@ -49,7 +48,7 @@
 	item_state = "magnum"
 	safety_icon = "safety"
 	force = 9
-	caliber = CALIBER_PISTOL_MAGNUM
+	caliber = CALIBER_SLUG_MAGNUM
 	fire_delay = 12
 	screen_shake = 2
 	magazine_type = /obj/item/ammo_magazine/magnum
@@ -59,7 +58,6 @@
 	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
 	accuracy = 2
 	one_hand_penalty = 2
-	bulk = 3
 	ammo_indicator = TRUE
 
 /obj/item/gun/projectile/pistol/throwback
@@ -68,10 +66,9 @@
 	icon = 'icons/obj/guns/pistol_throwback.dmi'
 	icon_state = "pistol1"
 	magazine_type = /obj/item/ammo_magazine/pistol/throwback
-	accuracy_power = 5
 	one_hand_penalty = 2
 	fire_delay = 7
-	caliber = CALIBER_PISTOL_ANTIQUE
+	caliber = CALIBER_SLUG_ANTIQUE
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	var/base_icon = "pistol1"
 
@@ -119,7 +116,7 @@
 	icon_state = "pistol"
 	item_state = null
 	w_class = ITEM_SIZE_SMALL
-	caliber = CALIBER_PISTOL_SMALL
+	caliber = CALIBER_SLUG_SMALL
 	fire_delay = 4
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2, TECH_ESOTERIC = 2)
 	magazine_type = /obj/item/ammo_magazine/pistol/small
@@ -190,10 +187,9 @@
 	desc = "An antique gun that makes you want to yell 'IT BELONGS IN A MUSEUM!'. There appears to be some thing scratched next to the fireselector, though you cant make it out."
 	icon = 'icons/obj/guns/broomstick.dmi'
 	icon_state = "broomstick"
-	accuracy_power = 6
 	one_hand_penalty = 3
 	fire_delay = 5
-	caliber = CALIBER_PISTOL_SMALL
+	caliber = CALIBER_SLUG_SMALL
 	origin_tech = list(
 						TECH_COMBAT = 2,
 						TECH_MATERIAL = 2

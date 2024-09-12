@@ -15,7 +15,7 @@
 
 	school = "conjuration"
 	charge_max = 1200
-	spell_flags = NEEDSCLOTHES
+	spell_flags = Z2NOCAST
 	invocation = "Nouk Fhumm Sacp Risska!"
 	invocation_type = SpI_SHOUT
 	range = 1
@@ -47,7 +47,7 @@
 	feedback = "MR"
 	school = "illusion"
 	charge_max = 1200
-	spell_flags = NEEDSCLOTHES
+	spell_flags = Z2NOCAST
 	invocation = "Nouk Fhunhm Sacp Risska!"
 	invocation_type = SpI_SHOUT
 	range = 1

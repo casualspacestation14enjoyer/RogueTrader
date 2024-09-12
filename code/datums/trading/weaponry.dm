@@ -40,7 +40,7 @@
 	)
 
 /datum/trader/ship/egunshop
-	name = "Energy Gun Shop Employee"
+	name = "Energy Weapon Shop Employee"
 	name_language = TRADER_DEFAULT_NAME
 	origin = "EGun Shop"
 	possible_origins = list("The Emperor's Lasgun Shop", "Future Guns", "Solar Guard", "Kiefer's Dependable Electric Arms", "Olympus Kingsport")

@@ -33,8 +33,8 @@
 	icon_state = "gaia"
 	desc = {"\
 		A challenge coin distributed by the Imperial Defense Forces \
-		to commemorate the Gaia Conflict. On the front is the roman \
-		numeral IV in front of a roundel of Gaian national colors, \
+		to commemorate the Ultramar Conflict. On the front is the roman \
+		numeral IV in front of a roundel of Ultramar national colors, \
 		and on the back is a dove with an olive branch.\
 	"}
 
@@ -87,7 +87,7 @@
 	name = "\improper imperial challenge coin"
 	icon_state = "pcrc"
 	desc = {"\
-		A challenge coin issued by Proxima Centauri Risk Control \
+		A challenge coin issued by Necromunda \
 		to its operatives. On the front are the letters "PC" in the \
 		Greek alphabet against the imperial imperial color scheme, and \
 		on the back is a Spartan shield with the motto, "IF NOT US, \

@@ -110,7 +110,7 @@
 /obj/item/storage/backpack/satchel/syndie_kit/revolver
 	startswith = list(
 		/obj/item/gun/projectile/revolver,
-		/obj/item/ammo_magazine/speedloader/magnum
+		/obj/item/ammo_magazine/speedloader/revolver
 	)
 
 /obj/item/storage/box/syndie_kit/toxin

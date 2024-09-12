@@ -22,7 +22,7 @@
 	feedback = "SB"
 
 	charge_max = 1200 //2 minutes
-	spell_flags = NEEDSCLOTHES
+	spell_flags = Z2NOCAST
 	invocation = "Bla'yo daya!"
 	invocation_type = SpI_SHOUT
 	level_max = list(Sp_TOTAL = 3, Sp_SPEED = 3, Sp_POWER = 3)

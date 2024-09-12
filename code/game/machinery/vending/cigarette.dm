@@ -27,7 +27,7 @@
 		Professionals. Better cigarettes for better people. Yes, better people.\
 	"}
 	antag_slogans = {"\
-		With your lungs full of smoke, you’ll share the experience of countless Gaian civilians!;\
+		With your lungs full of smoke, you’ll share the experience of countless Ultramar civilians!;\
 		Smoke your troubles away. Is being a citizen of Sol worth all this trouble?;\
 		We kill you, you buy! It's the Imperial way!\
 	"}

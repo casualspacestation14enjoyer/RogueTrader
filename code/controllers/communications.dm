@@ -109,7 +109,7 @@ var/global/const/COMM_FREQ = 1353
 var/global/const/ERT_FREQ	= 1345
 var/global/const/AI_FREQ	= 1343
 var/global/const/ENT_FREQ	= 1461 //entertainment frequency. This is not a diona exclusive frequency.
-var/global/const/ORDOS_FREQ = 1344
+var/global/const/TAU_FREQ = 1344
 var/global/const/SFV_FREQ = 1346
 
 //antagonist channels
@@ -159,7 +159,7 @@ var/global/list/radiochannels = list(
 	"Mechanicus"	= ENG_FREQ,
 	"Militarum" 		= SEC_FREQ,
 	"Ordos" = ERT_FREQ,
-	"Special Ops" 	= DTH_FREQ,
+	"Vermillion"	= DTH_FREQ,
 	"Unknown" 	= SYND_FREQ,
 	"Raider"		= RAID_FREQ,
 	"Xenos Raider"	= V_RAID_FREQ,
@@ -170,7 +170,7 @@ var/global/list/radiochannels = list(
 	"Entertainment" = ENT_FREQ,
 	"Medicae (I)"	= MED_I_FREQ,
 	"Militarum (I)"	= SEC_I_FREQ,
-	"Tau Hound"   = ORDOS_FREQ
+	"Tau Empire"   = TAU_FREQ
 )
 
 var/global/list/channel_color_presets = list(

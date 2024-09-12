@@ -57,7 +57,7 @@ GLOBAL_LIST_INIT(crashed_pod_areas, new)
 		"Katydid",		"Longhorn",		"Holy TerraMoth",
 		"Monarch",		"Mydas",		"Paperwasp",
 		"Treehopper",	"Sphinxmoth",	"Leatherwing",
-		"Scarab",		"Ash Borer",	"Admiral",
+		"Scarab",		"Ash Borer",	"Lord Captain",
 		"Emperor",		"Skipper",		"Tarantula Hawk",
 		"Adder",		"Bumblebee")
 	name = "[pick("SEV", "SIC", "FTUV", "ICV", "HMS")] [pick(possible_ship_names)]"

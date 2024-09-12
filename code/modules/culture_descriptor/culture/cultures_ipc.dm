@@ -6,7 +6,7 @@
 	human level intelligence. They have only a very limited capacity to learn, and rely on programmed information to guide their \
 	actions and reactions. First generation positronics are a rare sight in the current year; most have ceased functioning due to \
 	failures in the original hardware designs."
-	language = LANGUAGE_EAL
+	language = LANGUAGE_MECHANICUS
 	secondary_langs = list(
 		LANGUAGE_HIGH_GOTHIC,
 		LANGUAGE_HUMAN_CHINESE,
@@ -38,7 +38,7 @@
 	generation positronics are effectively identical to second generation designs, except that they include a subcomputer, \
 	referred to as a “shackle”, that enforces rules on the positronic by acting as a component through which its \
 	surface thoughts are filtered. Third generation positronics are a matter of hot debate on the subject of rights, \
-	but their introduction and use during the recent Gaia Conflict to bolster the capabilities of the rebuilt fleets \
+	but their introduction and use during the recent Ultramar Conflict to bolster the capabilities of the rebuilt fleets \
 	has resulted in their being adopted as a gradual replacement for the less “reliable” second generation positronics \
 	by many less ethically inclined organizations."
 	economic_power = 0.5

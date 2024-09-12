@@ -5,7 +5,7 @@
 # GAME_VERSION Baystation12
 
 ## Hub visibility: If you want to be visible on the hub, uncomment the below line and be sure that Dream Daemon is set to "Visible." This can be changed in-round as well with toggle-hub-visibility if Dream Daemon is set correctly.
-# HUB_VISIBLE
+HUB_VISIBLE
 
 ## Add a # infront of this if you want to use the SQL based admin system, the legacy system uses admins.txt. You need to set up your database to use the SQL based system.
 ADMIN_LEGACY_SYSTEM
@@ -14,7 +14,7 @@ ADMIN_LEGACY_SYSTEM
 BAN_LEGACY_SYSTEM
 
 ## Add a # here if you wish to use the setup where jobs have more access. This is intended for servers with low populations - where there are not enough players to fill all roles, so players need to do more than just one job. Also for servers where they don't want people to hide in their own departments.
-JOBS_HAVE_MINIMAL_ACCESS
+#JOBS_HAVE_MINIMAL_ACCESS
 
 ## Unhash this entry to have certain jobs require your account to be at least a certain number of days old to select. You can configure the exact age requirement for different jobs by editing
 ## the minimal_player_age variable in the files in folder /code/game/jobs/job/.. for the job you want to edit. Set minimal_player_age to 0 to disable age requirement for that job.
@@ -24,7 +24,7 @@ JOBS_HAVE_MINIMAL_ACCESS
 #USE_AGE_RESTRICTION_FOR_JOBS
 
 ## Unhash this entry to set a number of days since first connection below which a new or returning player will not be allowed to successfully connect to the server.
-#MINIMUM_PLAYER_AGE 7
+MINIMUM_PLAYER_AGE 7
 
 
 ## Unhash this entry to have certain antag roles require your account to be at least a certain number of days old for round start and auto-spawn selection.
@@ -80,7 +80,7 @@ LOG_ATTACK
 # LOG_TIMERS_ON_BUCKET_RESET
 
 ## disconnect players who did nothing during the set amount of minutes
-# KICK_INACTIVE 10
+KICK_INACTIVE 40
 
 ## Prevent Secret from being added to mode votes
 # SECRET_DISABLED
@@ -88,7 +88,10 @@ LOG_ATTACK
 ## probablities for game modes chosen in Secret
 ## default probablity is 1, increase to make that mode more likely to be picked
 ## set to 0 to disable that mode
-PROBABILITY EXTENDED 1
+PROBABILITY EXTENDED 0
+PROBABILITY BORER 1
+PROBABILITY REVOLUTIONARY 1
+PROBABILITY VOXRAIDER 1
 PROBABILITY TRAITOR 1
 PROBABILITY SPYVSPY 1
 PROBABILITY MERCENARY 1
@@ -97,7 +100,7 @@ PROBABILITY CULT 1
 PROBABILITY CHANGELING 1
 
 ## if possible round types will be hidden from players for secret rounds
-#SECRET_HIDE_POSSIBILITIES
+SECRET_HIDE_POSSIBILITIES
 
 ## Hash out to disable random events during the round.
 ALLOW_RANDOM_EVENTS
@@ -121,13 +124,13 @@ TRAITOR_SCALING
 ALLOW_ADMIN_OOCCOLOR
 
 ## allow players to initiate a restart vote
-ALLOW_VOTE_RESTART
+#ALLOW_VOTE_RESTART
 
 ## Allow chat markup ingame.
 ALLOW_CHAT_MARKUP
 
 ## allow players to initate a mode-change start
-ALLOW_VOTE_MODE
+#ALLOW_VOTE_MODE
 
 ## min delay (deciseconds) between voting sessions (default 10 minutes)
 VOTE_DELAY 6000
@@ -144,11 +147,11 @@ VOTE_PERIOD 600
 
 ## autovote initial delay in minutes before first automatic transfer vote call (default 120)
 # using seven semicolon (;) separated values allows for different weekday-based values
-VOTE_AUTOTRANSFER_INITIAL 120
+VOTE_AUTOTRANSFER_INITIAL 130
 
 ##autovote delay in minutes before sequential automatic transfer votes are called (default 30)
 # using seven semicolon (;) separated values allows for different weekday-based values
-VOTE_AUTOTRANSFER_INTERVAL 30
+VOTE_AUTOTRANSFER_INTERVAL 40
 
 ## Time in minutes leading up to the next autotransfer vote in which antagonists cannot
 # automatically be created. Default 20.
@@ -165,16 +168,16 @@ PRE_GAME_TIME 180
 #NO_DEAD_VOTE
 
 ## Prevents players not in-round from voting on crew transfer votes.
-#NO_DEAD_VOTE_CREW_TRANSFER
+NO_DEAD_VOTE_CREW_TRANSFER
 
 ## players' votes default to "No vote" (otherwise,  default to "No change")
 DEFAULT_NO_VOTE
 
 ## Allow ghosts to see antagonist through AntagHUD
-ALLOW_ANTAG_HUD
+#ALLOW_ANTAG_HUD
 
 ## If ghosts use antagHUD they are no longer allowed to join the round.
-ANTAG_HUD_RESTRICTED
+#ANTAG_HUD_RESTRICTED
 
 ## disable abandon mob
 # NORESPAWN
@@ -205,7 +208,7 @@ GUEST_BAN
 
 ## Rules address
 ## Where your server's rules can be found
-# RULES_URL https://example.com
+RULES_URL https://discord.gg/dUy4d8ua
 
 ## Lore address
 ## Where your server's scintillating background material can be read
@@ -225,18 +228,18 @@ GUEST_BAN
 
 ## Discord address
 ## Where your users can go to complain at each other in real time
-# DISCORD_URL https://example.com
+DISCORD_URL https://discord.gg/dUy4d8ua
 
 ## Ban appeals URL
 ## Where your users can go to tell you they've changed
-# BANAPPEALS https://example.com
+BANAPPEALS https://discord.gg/dUy4d8ua
 
 ## Comment this out to disable automuting
 #AUTOMUTE_ON
 
 ## Remove the # to make rounds which end instantly (Rev, Wizard, Malf) to continue until the shuttle is called or the station is nuked.
 ## Malf and Rev will let the shuttle be called when the antags/protags are dead.
-#CONTINUOUS_ROUNDS
+CONTINUOUS_ROUNDS
 
 ## Uncomment to restrict non-admins from using humanoid alien races
 USEALIENWHITELIST
@@ -277,7 +280,7 @@ USEALIENWHITELIST
 ALLOW_CULT_GHOSTWRITER
 
 ## Sets the minimum number of cultists needed for ghosts to write in blood.
-REQ_CULT_GHOSTWRITER 6
+REQ_CULT_GHOSTWRITER 5
 
 ## Sets the number of available character slots
 CHARACTER_SLOTS 10
@@ -332,7 +335,7 @@ EVENT_CUSTOM_START_MAJOR 80;100
 #DISABLE_RESPAWN
 
 ## The delay in minutes before an observer may return to the main menu.
-#RESPAWN_DELAY 30
+RESPAWN_DELAY 30
 
 ## The delay in minutes before an observer that has returned to the main menu may rejoin the game.
 #RESPAWN_MENU_DELAY 0
@@ -380,7 +383,7 @@ STARLIGHT 1
 # AUTOSTEALTH 30
 
 ## How many loadout points are available. Use 0 to disable loadout, and any negative number to indicate infinite points.
-MAX_GEAR_COST 10
+MAX_GEAR_COST 3
 
 ## How much radiation levels self-reduce by each tick.
 RADIATION_DECAY_RATE 1
@@ -448,8 +451,8 @@ RADIATION_LOWER_LIMIT 0.15
 #RESOURCE_URLS URL URL2 URL3
 
 ## Add lines of 'DISALLOW_VOTABLE_MODE config_tag' to prevent a normally votable mode from being votable, eg:
-## DISALLOW_VOTABLE_MODE changeling
-## DISALLOW_VOTABLE_MODE malfunction
+DISALLOW_VOTABLE_MODE revolutionary
+DISALLOW_VOTABLE_MODE malfunction
 
 ## The delay in deciseconds between stat() updates.
 ## Lower can be more responsive to scene changes and updates but has a higher client/server overhead.

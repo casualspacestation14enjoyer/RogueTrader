@@ -26,7 +26,7 @@
 	icon_state = "tasercarbine"
 	w_class = ITEM_SIZE_LARGE
 	slot_flags = SLOT_BELT|SLOT_BACK
-	one_hand_penalty = 3
+	one_hand_penalty = 2
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3, TECH_POWER = 3)
 	force = 8
 	max_shots = 12
@@ -53,7 +53,7 @@
 
 /obj/item/gun/energy/stunrevolver
 	name = "stun revolver"
-	desc = "An A&M X6 Zeus. Designed by al-Maliki & Mosley, but produced under the wing of the Free Trade Union. Industry spies have been trying to get a hold of the blueprints for half a decade."
+	desc = "An A&M X6 Zeus. Designed by al-Maliki & Mosley, but produced under the wing of the Navigator Houses. Industry spies have been trying to get a hold of the blueprints for half a decade."
 	icon = 'icons/obj/guns/stunrevolver.dmi'
 	icon_state = "stunrevolver"
 	item_state = "stunrevolver"
@@ -70,7 +70,7 @@
 	item_state = "stunrifle"
 	w_class = ITEM_SIZE_HUGE
 	slot_flags = SLOT_BACK
-	one_hand_penalty = 6
+	one_hand_penalty = 3
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3, TECH_POWER = 3)
 	force = 10
 	max_shots = 10

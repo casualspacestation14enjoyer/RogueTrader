@@ -31,7 +31,7 @@
 \[xynlogo\] - Inserts the Xyngergy logo.<br>
 \[iccgseal\] - Inserts Tau seal.<br>
 \[fleetlogo\] - Inserts the logo of the Imperial Fleet.<br>
-\[sfplogo\] - Inserts the logo of the Sol Federal Police.<br>
+\[sfplogo\] - Inserts the logo of the Magistratum.<br>
 \[falogo\] - Inserts the logo of the Frontier Alliance.<br>
 \[zhlogo\] - Inserts the logo of Zeng-Hu Pharmaceuticals.<br><br>
 <b>Digital exclusive commands (NanoWord, emails, reports, text files, etc):</b><br>

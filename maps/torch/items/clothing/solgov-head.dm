@@ -21,7 +21,7 @@
 
 /obj/item/clothing/head/soft/solgov/veteranhat
 	name = "veteran hat"
-	desc = "It's a tacky black ballcap bearing the yellow service ribbon of the Gaia Conflict."
+	desc = "It's a tacky black ballcap bearing the yellow service ribbon of the Ultramar Conflict."
 	icon_state = "cap_veteran"
 
 /obj/item/clothing/head/soft/solgov/expedition
@@ -170,12 +170,12 @@
 	icon_state = "beret_white"
 
 /obj/item/clothing/head/beret/solgov/marcom
-	name = "\improper MARSCOM beret"
+	name = "\improper Munitorum beret"
 	desc = "A red beret with a gold insignia, denoting service in the IMPDF Sancor Central Command. For brass who are more inclined towards style than safety."
 	icon_state = "beret_redgold"
 
 /obj/item/clothing/head/beret/solgov/stratcom
-	name = "\improper STRATCOM beret"
+	name = "\improper Administratum beret"
 	desc = "A grey beret with a silver insignia, denoting service in the IMPDF Strategic Command. For intelligence personnel who are more inclined towards style than safety."
 	icon_state = "beret_graysilver"
 
@@ -190,7 +190,7 @@
 	icon_state = "beret_black"
 
 /obj/item/clothing/head/beret/solgov/expedition/security
-	name = "militarum militarum beret"
+	name = "militarum beret"
 	desc = "An Imperial beret with a militarum crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_security"
 

@@ -837,7 +837,7 @@
 
 /datum/design/item/mechfab/rig/egun
 	category = "Hardsuits"
-	name = "Energy Gun"
+	name = "Energy Weapon"
 	build_path = /obj/item/rig_module/mounted/energy/egun
 	materials = list(MATERIAL_STEEL = 6000, MATERIAL_GLASS = 3000, MATERIAL_PLASTIC = 2500, MATERIAL_GOLD = 2000, MATERIAL_SILVER = 1000)
 	req_tech = list(TECH_POWER = 6, TECH_COMBAT = 6, TECH_ENGINEERING = 6)

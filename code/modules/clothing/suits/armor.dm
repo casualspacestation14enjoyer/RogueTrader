@@ -203,7 +203,7 @@
 
 /obj/item/clothing/suit/armor/vest/pcrc
 	name = "contractor armored vest"
-	desc = "A synthetic armor vest. This one is marked with the crest of Proxima Centauri Risk Control, a private militarum firm."
+	desc = "A synthetic armor vest. This one is marked with the crest of Necromunda, a private militarum firm."
 	icon_state = "pcrcvest"
 
 /obj/item/clothing/suit/armor/vest/press

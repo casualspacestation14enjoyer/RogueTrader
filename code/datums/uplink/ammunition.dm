@@ -36,19 +36,19 @@
 
 /datum/uplink_item/item/ammo/rifle
 	name = "Rifle Magazine"
-	desc = "A 5mmR magazine for assault rifles like the Revenant Pattern. Contains 20 rounds."
+	desc = "A 8mm AR magazine for assault rifles like the Revenant Pattern. Contains 20 rounds."
 	item_cost = 8
 	path = /obj/item/ammo_magazine/rifle
 
 /datum/uplink_item/item/ammo/rifle
 	name = "Light Bullpup Rifle Magazine"
-	desc = "A 7mmR magazine for light bullpup assault rifles like the Z9 Pitbull. Contains 20 rounds."
+	desc = "A 6.8mm AR magazine for light bullpup autoguns like the Z9 Pitbull. Contains 20 rounds."
 	item_cost = 8
 	path = /obj/item/ammo_magazine/mil_rifle
 
 /datum/uplink_item/item/ammo/bullpup
 	name = "Heavy Bullpup Rifle Magazine"
-	desc = "A 7mmR magazine for heavy bullpup assault rifles like the Z8 Bulldog. Contains 15 rounds."
+	desc = "A 6.8mm AR magazine for heavy bullpup autoguns like the Z8 Bulldog. Contains 15 rounds."
 	item_cost = 8
 	path = /obj/item/ammo_magazine/mil_rifle/heavy
 
@@ -120,7 +120,7 @@
 	name = "Magnum Speedloader"
 	desc = "A 15mm speedloader for magnum revolvers. Contains 6 rounds."
 	item_cost = 8
-	path = /obj/item/ammo_magazine/speedloader/magnum
+	path = /obj/item/ammo_magazine/speedloader/revolver
 
 /datum/uplink_item/item/ammo/flechette
 	name = "Flechette Rifle Magazine"
@@ -143,24 +143,24 @@
 
 /datum/uplink_item/item/ammo/stripperclip
 	name = "Stripper Clip"
-	desc = "A 5mmR stripper clip used to load bolt action rifles. Contains just 5 rounds."
+	desc = "A 8mm AR stripper clip used to load bolt action rifles. Contains just 5 rounds."
 	item_cost = 2
 	path = /obj/item/ammo_magazine/speedloader/clip
 
 /datum/uplink_item/item/ammo/shotgun_drum_buckshot
 	name = "Shotgun Drum Magazine"
-	desc = "A drum magazine that can hold fifteen 12g shotgun shells. Loaded with buckshot."
+	desc = "A drum magazine that can hold fifteen 16mm shotgun shells. Loaded with buckshot."
 	item_cost = 12
 	path = /obj/item/ammo_magazine/shotgunmag/shot
 
 /datum/uplink_item/item/ammo/shotgun_drum_slugs
 	name = "Shotgun Slug Drum Magazine"
-	desc = "A drum magazine that can hold fifteen 12g shotgun shells. Loaded with slugs."
+	desc = "A drum magazine that can hold fifteen 16mm shotgun shells. Loaded with slugs."
 	item_cost = 12
 	path = /obj/item/ammo_magazine/shotgunmag
 
 /datum/uplink_item/item/ammo/shotgun_drum_flechette
 	name = "Shotgun Flechette Drum Magazine"
-	desc = "A drum magazine that can hold fifteen 12g shotgun shells. Loaded with flechettes."
+	desc = "A drum magazine that can hold fifteen 16mm shotgun shells. Loaded with flechettes."
 	item_cost = 12
 	path = /obj/item/ammo_magazine/shotgunmag/flechette
