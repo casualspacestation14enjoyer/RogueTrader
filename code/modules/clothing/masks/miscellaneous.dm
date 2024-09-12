@@ -187,10 +187,10 @@
 	visible_name = "Amaya Barros"
 
 /obj/item/clothing/mask/rubber/admiral
-	name = "\improper Admiral Diwali mask"
-	desc = "Admiral that led the infamous last stand at Helios against the Independent Navy in the Gaia conflict. For bridge officers who wish they'd achieve a fraction of that."
+	name = "\improper Lord Captain Diwali mask"
+	desc = "Lord Captain that led the infamous last stand at Helios against the Tyranids in the Ultramar conflict. For bridge officers who wish they'd achieve a fraction of that."
 	icon_state = "admiral"
-	visible_name = "Admiral Diwali"
+	visible_name = "Lord Captain Diwali"
 
 /obj/item/clothing/mask/rubber/turner
 	name = "\improper Charles Turner mask"

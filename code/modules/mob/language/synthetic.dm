@@ -65,7 +65,7 @@
 	shorthand = "N/A"
 
 /datum/language/machine
-	name = LANGUAGE_EAL
+	name = LANGUAGE_MECHANICUS
 	desc = "An efficient language of encoded tones developed by synthetics and cyborgs."
 	speech_verb = "whistles"
 	ask_verb = "chirps"

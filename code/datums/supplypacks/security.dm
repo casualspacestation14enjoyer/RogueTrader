@@ -231,16 +231,16 @@
 	access = access_security
 
 /singleton/hierarchy/supply_pack/security/bullpupammo
-	name = "Ammunition - heavy bullpup rifle"
+	name = "Ammunition - heavy autogun"
 	contains = list(/obj/item/storage/box/ammo/heavy_bullpup = 2)
 	cost = 40
 	containertype = /obj/structure/closet/crate/secure/weapon
-	containername = "heavy bullpup rifle ammunition crate"
+	containername = "heavy autogun ammunition crate"
 	access = access_hos
 	security_level = SUPPLY_SECURITY_HIGH
 
 /singleton/hierarchy/supply_pack/security/bullpupammopractice
-	name = "Ammunition - heavy bullpup rifle practice"
+	name = "Ammunition - heavy autogun practice"
 	contains = list(/obj/item/ammo_magazine/mil_rifle/heavy/practice = 8)
 	cost = 30
 	containertype = /obj/structure/closet/crate/secure/weapon
@@ -248,7 +248,7 @@
 	access = access_security
 
 /singleton/hierarchy/supply_pack/security/lightbullpupammo
-	name = "Ammunition - light bullpup rifle"
+	name = "Ammunition - light autogun"
 	contains = list(/obj/item/storage/box/ammo/light_bullpup = 2)
 	cost = 30
 	containertype = /obj/structure/closet/crate/secure/weapon
@@ -257,7 +257,7 @@
 	security_level = SUPPLY_SECURITY_HIGH
 
 /singleton/hierarchy/supply_pack/security/lightbullpupammopractice
-	name = "Ammunition - light bullpup rifle practice"
+	name = "Ammunition - light autogun practice"
 	contains = list(/obj/item/ammo_magazine/mil_rifle/light/practice = 4)
 	cost = 20
 	containertype = /obj/structure/closet/crate/secure/weapon

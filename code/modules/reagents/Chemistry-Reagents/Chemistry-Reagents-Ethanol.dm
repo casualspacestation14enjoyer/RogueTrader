@@ -246,7 +246,7 @@
 
 /datum/reagent/ethanol/rum
 	name = "Sacra"
-	description = "The historic drink of Terra navies. Extremely popular across Sol space."
+	description = "The historic drink of Terra navies. Extremely popular across Imperial space."
 	taste_description = "spiked butterscotch"
 	taste_mult = 1.1
 	color = "#ecb633"

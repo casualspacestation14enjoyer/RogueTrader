@@ -4,7 +4,7 @@
 	feedback = "TP"
 	school = "conjuration"
 	charge_max = 600
-	spell_flags = NEEDSCLOTHES
+	spell_flags = Z2NOCAST
 	invocation = "Scyar Peranda!"
 	invocation_type = SpI_SHOUT
 	charge_max = 30 MINUTES

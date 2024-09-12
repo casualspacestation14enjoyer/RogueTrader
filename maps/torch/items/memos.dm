@@ -214,7 +214,7 @@
 
 /obj/item/paper/memo/scgr/execution
 	name = "formal complaint"
-	info = {"A confidential memo from Rear Admiral Lambert of the SFV Bismarck issuing a formal complaint on behalf of Imperial Navy regarding the execution of SLT Kristen Rohtin aboard a Corps vessel. The tone is furious and suggests significant consequences for the Dauntless."}
+	info = {"A confidential memo from Rear Lord Captain Lambert of the SFV Bismarck issuing a formal complaint on behalf of Imperial Navy regarding the execution of SLT Kristen Rohtin aboard a Corps vessel. The tone is furious and suggests significant consequences for the Dauntless."}
 
 /obj/item/paper/memo/scgr/floritstatement
 	name = "undersecretary statement"
@@ -232,8 +232,8 @@
 	info = {"Some "internal use only" reports on the saluting habits of junior officers, specifically regarding the amount of cases where junior officers cause damage to objects and floor tiles by dropping items to salute their superiors."}
 
 /obj/item/paper/memo/command/unathiwork
-	name = "Sinta'unathi behavioral guide"
-	info = {"An "internal use only" memo from a mid-level officer at Expeditionary Command containing common sinta'unathi behaviors that help explain some of their quirky behaviors. A bullet list contains various hints such as "thumping the tail is a sign of itchiness", "unathi hiss when they are angry", and "letting you touch their tail is a sign of great trust". The document seems very hastily-made and you're not sure you trust it fully."}
+	name = "Saurian behavioral guide"
+	info = {"An "internal use only" memo from a mid-level officer at Expeditionary Command containing common Saurian behaviors that help explain some of their quirky behaviors. A bullet list contains various hints such as "thumping the tail is a sign of itchiness", "unathi hiss when they are angry", and "letting you touch their tail is a sign of great trust". The document seems very hastily-made and you're not sure you trust it fully."}
 
 /obj/item/paper/memo/command/blastpain
 	name = "incident report"
@@ -281,7 +281,7 @@
 
 /obj/item/paper/memo/command/recall
 	name = "order of recall"
-	info = {"A notice from the Helios Board of Admiralty regarding the urgent return of The Dauntless to Sancor - the Board has ordered debriefing and review regarding the diplomatic meetings with the Imperial Pioneer Corps and the field execution of SLT Kristen Rohtin. The document stresses that the ship be wary of any vessels, Imperial Navy or otherwise, masking their transponders."}
+	info = {"A notice from the Helios Board of Lord Captainty regarding the urgent return of The Dauntless to Sancor - the Board has ordered debriefing and review regarding the diplomatic meetings with the Imperial Pioneer Corps and the field execution of SLT Kristen Rohtin. The document stresses that the ship be wary of any vessels, Imperial Navy or otherwise, masking their transponders."}
 
 /obj/item/paper/memo/command/roguefleeties
 	name = "rogue militarum movements"
@@ -293,7 +293,7 @@
 
 /obj/item/paper/memo/command/outpostreport2
 	name = "\improper E-14b outpost report"
-	info = {"An "internal use only" memo detailing the status of the research outpost in the E-14b system. It states that construction has been delayed due to a migration of native ambulatory fungus at the site, and requests that the EC begin looking into low-impact mushroom removal methods."}
+	info = {"An "internal use only" memo detailing the status of the research outpost in the E-14b system. It states that construction has been delayed due to a migration of native ambulatory fungus at the site, and requests that the Mechanicus begin looking into low-impact mushroom removal methods."}
 
 /obj/item/paper/memo/command/evasiveflight
 	name = "evasive flight maneuvers"
@@ -345,7 +345,7 @@
 
 /obj/item/paper/memo/supply/personaldrinks
 	name = "off-menu drinks"
-	info = {"An "internal use only" memo, discussing various off-menu drinks and how to market them. It lists various amusing names, such as "Gaia Slammer", "Spicy Water", "Prison Amasec", and "Sheep Shaver", but it doesn't tell you how to make them, for some reason."}
+	info = {"An "internal use only" memo, discussing various off-menu drinks and how to market them. It lists various amusing names, such as "Ultramar Slammer", "Spicy Water", "Prison Amasec", and "Sheep Shaver", but it doesn't tell you how to make them, for some reason."}
 
 
 

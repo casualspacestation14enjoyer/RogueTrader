@@ -354,12 +354,12 @@
 
 /obj/item/clothing/head/beret/pcrc
 	name = "\improper imperial beret"
-	desc = "A navy beret with the emblem of Proxima Centauri Risk Control, a private security firm. For agents that are more inclined towards style than safety."
+	desc = "A navy beret with the emblem of Necromunda, a private security firm. For agents that are more inclined towards style than safety."
 	icon_state = "beret_corporate_pcrc"
 
 /obj/item/clothing/head/beret/saare
 	name = "\improper imperial beret"
-	desc = "A gray beret with the emblem of Strategic Assault and Asset Retention Enterprises, a private military corporation. For mercenaries that are more inclined towards style than safety."
+	desc = "A gray beret with the emblem of Vessorine Clans, a private military corporation. For mercenaries that are more inclined towards style than safety."
 	icon_state = "beret_corporate_saare"
 
 /obj/item/clothing/head/deckcrew

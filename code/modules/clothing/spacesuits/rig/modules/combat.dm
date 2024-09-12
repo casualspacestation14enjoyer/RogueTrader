@@ -409,17 +409,17 @@
 
 /obj/item/rig_module/mounted/ballistic/minigun
 
-	name = "mounted minigun"
-	desc = "An arm-mounted minigun. Reloading this looks like a pain."
+	name = "mounted autocannon"
+	desc = "An arm-mounted autocannon. Reloading this looks like a pain."
 	icon_state = "egun"
 
 	suit_overlay_active = "mounted-taser"
 
-	interface_name = "mounted minigun"
-	interface_desc = "An arm-mounted minigun. While it carries a large amount of ammo, reloading it takes a very long time. Use an ammo box on your suit control module to reload."
+	interface_name = "mounted autocannon"
+	interface_desc = "An arm-mounted autocannon. While it carries a large amount of ammo, reloading it takes a very long time. Use an ammo box on your suit control module to reload."
 	origin_tech = list(TECH_POWER = 4, TECH_COMBAT = 8, TECH_ENGINEERING = 6)
 
-	ballistic = /obj/item/gun/projectile/automatic/minigun/mounted ///Reloading handled in automatic.dm
+	ballistic = /obj/item/gun/projectile/automatic/autocannon/mounted ///Reloading handled in automatic.dm
 
 /obj/item/rig_module/fabricator
 

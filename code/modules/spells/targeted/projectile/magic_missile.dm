@@ -4,7 +4,7 @@
 	feedback = "MM"
 	school = "conjuration"
 	charge_max = 150
-	spell_flags = NEEDSCLOTHES
+	spell_flags = Z2NOCAST
 	invocation = "Forti Gy-Ama!"
 	invocation_type = SpI_SHOUT
 	range = 7

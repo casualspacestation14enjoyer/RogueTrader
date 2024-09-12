@@ -118,7 +118,7 @@
 
 
 /obj/item/storage/lunchbox/gcc
-	name = "\improper GCC lunchbox"
+	name = "\improper Xenos lunchbox"
 	icon_state = "lunchbox_tcc"
 	item_state = "toolbox_syndi"
 	desc = "A little lunchbox. This one is branded with the flag of the Tau Empire!"

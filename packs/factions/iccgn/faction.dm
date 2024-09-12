@@ -204,7 +204,7 @@
 
 
 /datum/mil_rank/iccgn/of8
-	name = "Vice-Admiral"
+	name = "Vice-Lord Captain"
 	name_short = "VAdm"
 	accessory = list(
 		/obj/item/clothing/accessory/iccgn_rank/of8
@@ -213,7 +213,7 @@
 
 
 /datum/mil_rank/iccgn/of9
-	name = "Admiral"
+	name = "Lord Captain"
 	name_short = "Adm"
 	accessory = list(
 		/obj/item/clothing/accessory/iccgn_rank/of9

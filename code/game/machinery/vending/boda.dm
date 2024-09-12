@@ -22,7 +22,7 @@
 	antag_slogans = {"\
 		It may not be the best, but our wares are actually GOOD for the consumer. Suck it, capitalists.;\
 		There is only our, there is no mine. Unless you're sent to gulag.;\
-		Guaranteed to help you tear 'em a new Gaia.;\
+		Guaranteed to help you tear 'em a new Ultramar.;\
 		100% less additives and preservatives than our Imperial competitors.\
 	"}
 	products = list(

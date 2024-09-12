@@ -461,7 +461,7 @@
 
 /singleton/poster/visit_gaia
 	icon_state = "visit_gaia"
-	name = "Visit Gaia!"
+	name = "Visit Ultramar!"
 	desc = "A large piece of space-resistant printed paper. This poster depicts small settlements and farmhouses set among rolling, \
 	grassy plains, with a distant lake beneath a peaceful blue sky. \
 	The small print urges the reader to contact Zeng-hu Travel Solutions to visit \"a land of pastoral peace, away from it all.\""

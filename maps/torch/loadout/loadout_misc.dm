@@ -33,8 +33,8 @@
 /datum/gear/trinket/misc_challenge_coin/New()
 	..()
 	var/list/options = list()
-	options["PCRC"] = /obj/item/material/coin/challenge/misc/pcrc
-	options["SAARE"] = /obj/item/material/coin/challenge/misc/saare
+	options["Necros"] = /obj/item/material/coin/challenge/misc/pcrc
+	options["Vessorine"] = /obj/item/material/coin/challenge/misc/saare
 	gear_tweaks += new /datum/gear_tweak/path (options)
 
 

@@ -1,14 +1,15 @@
-#define CALIBER_PISTOL 			"10mm"
-#define CALIBER_PISTOL_SMALL 	"7mm"
-#define CALIBER_PISTOL_MAGNUM 	"15mm"
-#define CALIBER_PISTOL_FLECHETTE "4mm"
-#define CALIBER_PISTOL_ANTIQUE	"~10mm"
+#define CALIBER_SLUG 			"10mm"
+#define CALIBER_SLUG_SMALL 	"7mm"
+#define CALIBER_SLUG_MAGNUM 	"15mm"
+#define CALIBER_SLUG_FLECHETTE "4mm"
+#define CALIBER_SLUG_ANTIQUE	"~10mm"
 
-#define CALIBER_RIFLE			"5mmR"
-#define CALIBER_RIFLE_MILITARY  "7mmR"
-#define CALIBER_ANTIMATERIAL    "15mmR"
+#define CALIBER_AUTOGUN			"8mm AR"
+#define CALIBER_AUTOGUN_TECH  "6.8mm AR"
+#define CALIBER_AUTOGUN_HEAVY		"10mm AR"
+#define CALIBER_SNIPER    "15mmR"
 
-#define CALIBER_SHOTGUN			"12g"
+#define CALIBER_SHOTGUN			"16mm"
 #define CALIBER_GYROJET			"20mmG"
 #define CALIBER_CAPS			"caps"
 #define CALIBER_DART			"darts"
@@ -24,9 +25,9 @@
 #define MAGAZINE 		4	//The magazine item itself goes inside the gun
 
 
-#define GUN_BULK_LIGHT_RIFLE 4
-#define GUN_BULK_RIFLE  5
-#define GUN_BULK_HEAVY_RIFLE 6
+#define GUN_BULK_LIGHT_RIFLE 1
+#define GUN_BULK_RIFLE  2
+#define GUN_BULK_HEAVY_RIFLE 2
 
 #define BULLET_IMPACT_NONE  "none"
 #define BULLET_IMPACT_METAL "metal"

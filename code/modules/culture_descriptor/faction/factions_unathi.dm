@@ -29,7 +29,7 @@
 	name = FACTION_UNATHI_RAH_ZAKEH
 	description = "The most prominent yeosa faction, the Rah'Zakeh league's duties primarily focus on the yeosa and upholding the Aga-Eakhe. This includes \
 	a judicial body that handles piracy, tomb raiding, smuggling, etc. They resolve religious disputes and keep records of claims as well as \
-	function as arbiters. This is only a small fraction of their duties, with over two hundred yeosa'unathi shamans that handle smaller matters. \
+	function as arbiters. This is only a small fraction of their duties, with over two hundred Kroot shamans that handle smaller matters. \
 	Among them are the Sentinels, volunteers that function as a force to put the Tribunal's decisions into effect."
 
 /singleton/cultural_info/faction/unathi/kharza

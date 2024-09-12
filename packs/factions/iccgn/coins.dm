@@ -11,7 +11,7 @@
 	desc = {"\
 		A challenge coin issued by the Tau Navy. \
 		On the front is the insignia of the Navy, and on the back \
-		is a rendering of the late Admiral Yevgeny Novikov.\
+		is a rendering of the late Lord Captain Yevgeny Novikov.\
 	"}
 
 

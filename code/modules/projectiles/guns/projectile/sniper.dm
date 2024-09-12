@@ -8,15 +8,15 @@
 	force = 10
 	slot_flags = SLOT_BACK
 	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 2, TECH_ESOTERIC = 8)
-	caliber = CALIBER_ANTIMATERIAL
+	caliber = CALIBER_SNIPER
 	screen_shake = 2 //extra kickback
 	handle_casings = HOLD_CASINGS
 	load_method = SINGLE_CASING
 	max_shells = 1
 	ammo_type = /obj/item/ammo_casing/shell
-	one_hand_penalty = 6
+	one_hand_penalty = 3
 	accuracy = -2
-	bulk = 8
+	bulk = 2
 	scoped_accuracy = 8 //increased accuracy over the LWAP because only one shot
 	scope_zoom = 2
 	var/bolt_open = 0
@@ -106,7 +106,7 @@
 	item_state = "boltaction"
 	w_class = ITEM_SIZE_LARGE
 	origin_tech = list(TECH_COMBAT = 2)
-	caliber = CALIBER_RIFLE
+	caliber = CALIBER_AUTOGUN
 	ammo_type = /obj/item/ammo_casing/rifle
 	load_method = SINGLE_CASING|SPEEDLOADER
 	max_shells = 5
@@ -127,15 +127,14 @@
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 4, TECH_ESOTERIC = 5)
 	w_class = ITEM_SIZE_HUGE
 	force = 10
-	caliber = CALIBER_RIFLE
+	caliber = CALIBER_AUTOGUN
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/rifle
 	allowed_magazines = /obj/item/ammo_magazine/rifle
-	one_hand_penalty = 8
+	one_hand_penalty = 4
 	scoped_accuracy = 8
 	scope_zoom = 1
-	accuracy_power = 8
 	accuracy = 4
 	bulk = GUN_BULK_RIFLE
 	wielded_item_state = "dmr-wielded"
@@ -159,15 +158,14 @@
 	origin_tech = list(TECH_COMBAT = 2)
 	w_class = ITEM_SIZE_HUGE
 	force = 10
-	caliber = CALIBER_RIFLE
+	caliber = CALIBER_AUTOGUN
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/iclipr
 	allowed_magazines = /obj/item/ammo_magazine/iclipr
 	auto_eject = TRUE
 	auto_eject_sound = 'sound/weapons/guns/interaction/garand_magout.ogg'
-	one_hand_penalty = 9
-	accuracy_power = 5
+	one_hand_penalty = 4
 	accuracy = 2
 	bulk = GUN_BULK_HEAVY_RIFLE
 	wielded_item_state = "garand-wielded"
@@ -194,11 +192,11 @@
 	force = 10
 	origin_tech = list(TECH_COMBAT = 2)
 	slot_flags = SLOT_BACK
-	caliber = CALIBER_PISTOL_MAGNUM
-	ammo_type = /obj/item/ammo_casing/pistol/magnum
+	caliber = CALIBER_SLUG_MAGNUM
+	ammo_type = /obj/item/ammo_casing/pistol/heavy
 	load_method = SINGLE_CASING|SPEEDLOADER
 	fire_delay = 2
-	one_hand_penalty = 8
+	one_hand_penalty = 4
 	max_shells = 10
 	accuracy = 1
 	wielded_item_state = "semistrip-wielded"

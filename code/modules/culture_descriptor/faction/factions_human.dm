@@ -8,8 +8,8 @@
 
 /singleton/cultural_info/faction/scg/fleet
 	name = FACTION_FLEET
-	description = "The Imperial Navy is the primary component of the Imperium Defence Forces. It mostly protects Imperium space from pirates, smugglers, \
-	and occasional vox raiders, with its last serious military engagement being the Gaia war over 10 years ago. \
+	description = "The Imperial Navy is the primary component of the Imperium Defence Forces. It mostly protects Imperium space from orks, tyranids, \
+	and occasional xenos raiders, with its last serious military engagement being the Ultramar war over 10 years ago. \
 	The oldest component of the Defence Forces, the Imperial Navy considers itself the pinnacle of Human military accomplishment. \
 	It is well funded, but seen as complacent and bloated. It is made up of five Fleets, with missions ranging from \
 	diplomatic militarum for Sol dignitaries, to border patrol along the vast frontier and quick reaction force duties. \
@@ -21,11 +21,7 @@
 
 /singleton/cultural_info/faction/torchco
 	name = FACTION_CORPORATE
-	description = "The Explorator Organisation is a government-owned, publically traded limited liability company assembled from the imperial \
-	backers who asssisted in funding the Torch project when it opened five years ago. Major players include Necromundan, Xynergy and \
-	Hephaestus Industries, as well as dozens of others. The Explorator Organisation reports its earnings and operation plans directly to a board of \
-	directors, made up of imperial representatives and members of Explorator command and the Committee for the Economy. \
-	While on the surface the Explorator Organisation appears to have noble goals, it is in reality a compromise between the noble ideals of pioneering \
+	description = "The /REDACTED/ a secretive arm of the Admech. \
 	science, and the imperial desire to make a quick buck off whatever is found. Rumours also abound about shady practices, hidden \
 	protocols, and xenoartifacts being 'lost' in transit, but nothing has been conclusively proven as of yet, and Imperium doubtless is \
 	reluctant to harpoon their own project."
@@ -33,42 +29,37 @@
 
 
 /singleton/cultural_info/faction/gcc
-	name = FACTION_INDIE_CONFED
-	description = "The Tau Empire, commonly referred to as the Tau Empire (GCC), is a regional power in human space,\
+	name = FACTION_TAU_EMIRE
+	description = "The Tau Empire, commonly referred to as the Tau Empire (Tau), is a regional power in human space,\
 	bordered by the Imperial Government towards the galactic centre. The capital of the Tau is the city of Ameranth on the planet of Terra \
-	in the Tau system. Externally heavily militant and isolationist, the GCC, internally, is heavily libertarian, with \
-	a strong focus on independent planetary government with the GCC itself only handling defence, foreign relations and some intergalactic trade. \
-	Increasingly anti non-human, the GCC is in a cold war with the Imperial Government following  the Gaia Conflict, a large \
-	scale conflict between the Imperium and GCC that saw a great deal of death and destruction. In Sol space \"Indies\" as they are known are \
-	heavily mistrusted and in some instances, met with downright hostility. Today the GCC continues to be an economic powerhouse following \
+	in the Tau system. Externally heavily militant and isolationist, the Tau, internally, is heavily libertarian, with \
+	a strong focus on independent planetary government with the Tau itself only handling defence, foreign relations and some intergalactic trade. \
+	Increasingly anti non-human, the Tau is in a cold war with the Imperial Government following  the Ultramar Conflict, a large \
+	scale conflict between the Imperium and Tau that saw a great deal of death and destruction. In Imperial space \"Blueys\" as they are known are \
+	heavily mistrusted and in some instances, met with downright hostility. Today the Tau continues to be an economic powerhouse following \
 	a period of steady economic recovery, with most of its exports being manufactured goods, primarily armaments."
 	economic_power = 0.9
 
 
 /singleton/cultural_info/faction/remote
 	name = FACTION_EXPEDITIONARY
-	description = "The Explorator is an Imperium agency tasked with exploration of uncharted space and worlds, \
+	description = "The Explorator Mechanicus is an mechanicus arm tasked with exploration of uncharted space and worlds, \
 	mineralogy surveys and xenoarchaeological studies and, more recently, the discovery of new alien life. \
 	The EC performs a variety of tasks: discovering and cataloging stellar objects in Observatory, \
 	initial surveys of prospective colony sites, indepth exploration of uncharted worlds, staffing \
 	long-term scientific outposts, and studying anomalies and xenoarcheological sites. \
 	While not military, it was modelled in a naval style, with employees having ranks and uniforms. \
-	Any Imperium citizen of age (18 and older) with no outstanding Imperium-wide warrants can sign up for a 2-year contract. \
-	Officer candidates are required to have at least a bachelor's degree in a relevant field (astrogation, engineering, xenoarcheology, etc)."
+	Any Imperium citizen of age with no outstanding Imperium-wide warrants can sign up for a standard lifebond contract which may include no less then three generations of their line."
 
 
 /singleton/cultural_info/faction/enforcer
 	name = FACTION_SPACECOPS
-	description = "The Sol Federal (SFP) is a government law enforcement agency tasked with enforcing Imperial Government law, \
-	investigating breaches of law, fugitive recovery and transport, and securing ports of entry. \
-	Some Agents embedded with other organizations (e.g. an <l>Explorator</l> ship) and are expected to answer to their superiours from those organizations. \
-	Notable units are Organized Crime & Vice (self-explanatory), Territory Support (ports of entry and helping local law enforcement), \
-	Special Investigations (sensitive and urgent cases) and Fugitive Recovery Division (for when local authorities are unable or unwilling to arrest someone). \
-	The contractor SFP Trackers are also used find and arrest low-profile fugitives from justice."
+	description = "The Magistratum is a government law enforcement agency tasked with enforcing Imperial Government law, \
+	investigating breaches of law, fugitive recovery and transport, and securing ports of entry."
 
 
 /singleton/cultural_info/faction/remote/nanotrasen
-	name = FACTION_NANOTRASEN
+	name = FACTION_NECROMUNDA
 	description = "The Necromundan Corporation, commonly referred to as NT, is one of the great megacorporations of the modern day.\
 	Currently headquartered in New Amsterdam on Holy Terraand headed by CEO Jackson Trasen It deals in research of the most advanced sciences, \
 	such as genetics, blue space, and - recently - the uses of phoron, as well as mass consumer manufacturing on a truly galactic scale. \
@@ -100,11 +91,11 @@
 
 
 /singleton/cultural_info/faction/free
-	name = FACTION_FREETRADE
-	description = "The Free Trade Union, commonly referred to as the FTU, is is an employee-owned conglomerate of tens of thousands of \
+	name = FACTION_NAVIGATOR
+	description = "The Navigator Houses, commonly referred to as the FTU, is is an employee-owned conglomerate of tens of thousands of \
 	various traders and merchants from all over Imperium space and beyond. Colloquially known as the 'fifth megacorp', they control a sizeable militarum \
 	of trading ships which are form the backbone of their trading force along with a large contingent of combat capable vessels that cruise the shipping lanes, \
-	keeping FTU members free from pirates. The FTU has a large amount of economic power across Sol space and operates large trade hubs and stations near most \
+	keeping FTU members free from pirates. The FTU has a large amount of economic power across Imperial space and operates large trade hubs and stations near most \
 	Gateway installations and planets. Somewhat unscrupulous, FTU stations and merchants are known for \
 	selling a great many restricted items and supplying all manner of goods indiscriminately."
 	economic_power = 1.3
@@ -112,16 +103,16 @@
 
 /singleton/cultural_info/faction/pcrc
 	name = FACTION_PCRC
-	description = "Proxima Centauri Risk Control, often known as PCRC, is one of the largest suppliers of private militarum in Sol Space. \
-	PCRC handles numerous government, private and imperial contracts and provides a variety of services ranging from private law enforcement, \
+	description = "Necromunda, often known as Necros, is one of the largest suppliers of private militarum in Sol Space. \
+	Necros handles numerous government, private and imperial contracts and provides a variety of services ranging from private law enforcement, \
 	security, close protection, asset protection, search and rescue and peacekeeping and escort duties. A relatively quiet and new company, \
 	it has quickly established itself as a reliable and effective provider of militarum solutions. This has often put it at odds with its main \
-	competitor, SAARE."
+	competitor, Vessorine."
 
 
 /singleton/cultural_info/faction/saare
 	name = FACTION_SAARE
-	description = "SAARE (Strategic Assault and Asset Retention Enterprises) is a quickly growing Private Militarum Corporation catering to large \
+	description = "Vessorine (Vessorine Clans) is a quickly growing Private Militarum Corporation catering to large \
 	firms requiring discrete military and private militarum services. The company has taken to hiring skilled veterans from both private and public \
 	military services but have begun instituting training programs to breed their own operatives for the future. Typical assignments for imperial \
 	contractors include private law enforcement, ship escort, location security, VIP escort, and VIP or asset recovery. In the last decade, the \

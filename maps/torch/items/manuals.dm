@@ -78,7 +78,7 @@
 	var/obj/overmap/visitable/torch = map_sectors["[z]"]
 	var/memo = {"
 	<tt><center><b>[SPAN_COLOR("red", "SECRET - CODE WORDS: TORCH")]</b>
-	<h3>SOL CENTRAL GOVERNMENT EXPEDITIONARY COMMAND</h3>
+	<h3>SOL CENTRAL GOVERNMENT ADMINISTRATUM</h3>
 	<img src = sollogo.png>
 	</center>
 	<b>FROM:</b> ADM William Lau<br>

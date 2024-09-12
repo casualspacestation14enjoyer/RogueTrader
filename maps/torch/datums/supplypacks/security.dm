@@ -90,9 +90,9 @@
 /singleton/hierarchy/supply_pack/security/bullpup
 	name = "War Gear - Heavy ballistic rifles"
 	contains = list(/obj/item/gun/projectile/automatic/bullpup_rifle = 2)
-	cost = 100 //A little more expensive than the 5mmR variant. Hits harder!
+	cost = 100 //A little more expensive than the 8mm AR variant. Hits harder!
 	containertype = /obj/structure/closet/crate/secure/weapon
-	containername = "bullpup heavy automatic rifle crate"
+	containername = "bullpup heavy autogun crate"
 	access = access_emergency_armory
 	security_level = SUPPLY_SECURITY_HIGH
 
@@ -101,7 +101,7 @@
 	contains = list(/obj/item/gun/projectile/automatic/bullpup_rifle/light = 2)
 	cost = 80
 	containertype = /obj/structure/closet/crate/secure/weapon
-	containername = "bullpup light automatic rifle crate"
+	containername = "bullpup light autogun crate"
 	access = access_emergency_armory
 	security_level = SUPPLY_SECURITY_HIGH
 

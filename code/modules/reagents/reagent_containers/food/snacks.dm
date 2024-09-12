@@ -4080,7 +4080,7 @@
 
 /obj/item/reagent_containers/food/snacks/gukhe_fish
 	name = "cured gukhe platter"
-	desc = "A fish cutlet cured in a bitter gukhe rub, served with a tangy dipping sauce and a garnish of seaweed. A staple of Yeosa'Unathi cooking."
+	desc = "A fish cutlet cured in a bitter gukhe rub, served with a tangy dipping sauce and a garnish of seaweed. A staple of Kroot cooking."
 	icon_state = "gukhe-fish"
 	nutriment_amt = 5
 	nutriment_desc = list("tangy fish", "bitter gukhe")

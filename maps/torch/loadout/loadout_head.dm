@@ -180,6 +180,6 @@
 /datum/gear/tactical/armor_tag_corporate/New()
 	..()
 	var/list/options = list()
-	options["SAARE tag"] = /obj/item/clothing/accessory/armor_tag/saare
-	options["PCRC tag"] =  /obj/item/clothing/accessory/armor_tag/pcrc
+	options["Vessorine tag"] = /obj/item/clothing/accessory/armor_tag/saare
+	options["Necros tag"] =  /obj/item/clothing/accessory/armor_tag/pcrc
 	gear_tweaks += new /datum/gear_tweak/path (options)

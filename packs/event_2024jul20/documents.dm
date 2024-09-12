@@ -3,9 +3,9 @@
 	info = {"\
 <center><strong><span style="color: red;">EMERGENCY ROUTING ORDERS</span></strong>
 <strong>PRECEDENCE: FLASH</strong>
-<h3>MARSCOM - HIGH COMMAND OFFICES</h3>
+<h3>Munitorum - HIGH COMMAND OFFICES</h3>
 <img src="fleetlogo.png"/></center>
-<p><tt><tt><strong>FROM:</strong> Rear Admiral Korubei Richter, Fifth Fleet<br /><strong>TO:</strong> Imperial Vessel #3, Dauntless<br /><strong>CC:</strong> Admiral William Henry Lau, Helios Project, Imperial<br /></tt></tt></p>
+<p><tt><tt><strong>FROM:</strong> Rear Lord Captain Korubei Richter, Fifth Fleet<br /><strong>TO:</strong> Imperial Vessel #3, Dauntless<br /><strong>CC:</strong> Lord Captain William Henry Lau, Helios Project, Imperial<br /></tt></tt></p>
 <hr />
 <p>Per incident and consequential orders, the Dauntless has been ordered to return to sector <strong>S5</strong>, system <strong>E-14b</strong>, effective immediately.</p>
 <p>Fifth Imperial Navy Quick Reaction Forces are currently mobilising and conducting hot jumps to secure the route as necessary, however, mass factor dilations and general distance will delay reinforcements.</p>
@@ -14,7 +14,7 @@
 <p> ... </p>
 <p>Escorting of supply and reinforcements will be handled by Imperial Navy QRF rear-echelons.</p>
 <hr/>
-<p>&nbsp;<em>This paper has been stamped with the stamp of MARSCOM - HIGH COMMAND OFFICES.</em></p>
+<p>&nbsp;<em>This paper has been stamped with the stamp of Munitorum - HIGH COMMAND OFFICES.</em></p>
 <hr/><center><img src="fleetlogo.png"/></center>
 "}
 
@@ -31,24 +31,24 @@
 /obj/item/paper/ndaorder
 	name = "Order of Non-Disclosure"
 	info = {"\
-<center><h3>EXPEDITIONARY COMMAND - OBSERVATORY</h3>
+<center><h3>ADMINISTRATUM - OBSERVATORY</h3>
 <img src="eclogo.png" /></center>
-<p><tt><tt><strong>FROM:</strong> Admiral William Henry Lau, Observatory<br /><strong>TO:</strong> Imperial Vessel #3, Dauntless<br /><strong>CC:</strong> Director Nazur Khalid, Solar Bureau of Public Information <br /><strong>SUBJECT:</strong> Non-Disclosure and Operational Security Notice<br /></tt></tt></p>
+<p><tt><tt><strong>FROM:</strong> Lord Captain William Henry Lau, Observatory<br /><strong>TO:</strong> Imperial Vessel #3, Dauntless<br /><strong>CC:</strong> Director Nazur Khalid, Solar Bureau of Public Information <br /><strong>SUBJECT:</strong> Non-Disclosure and Operational Security Notice<br /></tt></tt></p>
 <hr />
 <p>Good day, Torch.</p>
 <p>This is an important advisory for members of the command staff aboard the vessel. With the discovery of a new, potentially hostile body - it is of the utmost importance that information be disseminated in a controlled, and calculated manner.</p>
 <p>It is crucial to keep in mind that hysteria and fearmongering is still a valid concern for the masses of the Solar state. While this is not the first time that we have conducted first contact, contextually, this has been of the equivalance of first contacts with the Vox.</p>
 <p>As such, in an effort to maintain operational security, as well as ensure that non-Solar actors do not gain access to the information and experience that you have gathered - the Bureau of Public Information has imposed a ship-wide C-Notice on exchange of verbal information relating to this incident.</p>
 <p>We have authorised both independent, and government observers to board The Dauntless for information. All observers and/or journalists must have their identity and source of representation be verified by command or security.</p>
-<p>Verification can be conducted via a fax to EXCOM, from a present Representative, or line officer, with the details of the individual involved, and their representative branch.</p>
+<p>Verification can be conducted via a fax to The Administratum, from a present Representative, or line officer, with the details of the individual involved, and their representative branch.</p>
 <p>Those representing branches of the Solar Government can be given full details as needed. However, for independent civilian journalists and contracted observers, the information must be regulated. The guidelines to follow for them, are:</p>
 <p>1. It may be disseminated that the encounter was hostile in nature.</p>
 <p>2. It may be disseminated that the crew has suffered losses.</p>
 <p>3. It may be disseminated that the hostiles in question are <strong>unconfirmed</strong> to be synthetic assimilators in origin. Ensure that you keep their disposition and details as vague as possible. Sentience is to not be confirmed, under any circumstances.</p>
-<p>Any other extraneous facts can be confirmed via a present Representative, or a fax to EXCOM, per context.</p>
+<p>Any other extraneous facts can be confirmed via a present Representative, or a fax to The Administratum, per context.</p>
 <p>Ensure that all those on the ship's manifest are briefed on the basic details entailed in this notice. They must not disseminate information outside of the guidelines to those not on the ship's manifest, and may not propagate it to those who are not representatives of the Solar Government. Breach of this notice's directives is punishable by <strong>Espionage</strong>, or <strong>Sedition</strong>, at the discretion of the attending <strong>Chief of Security</strong>.</p>
 <hr />
-<p>&nbsp;<em>This paper has been stamped with the insignia of the Admiral Henry Lau.</em></p>
+<p>&nbsp;<em>This paper has been stamped with the insignia of the Lord Captain Henry Lau.</em></p>
 <hr /><center><img src="eclogo.png" /></center>
 "}
 
@@ -65,9 +65,9 @@
 /obj/item/paper/cmoorder
 	name = "Notice of Care - Psychiatrics and Synthetics"
 	info = {"\
-<center><h3>EXPEDITIONARY COMMAND - OBSERVATORY</h3>
+<center><h3>ADMINISTRATUM - OBSERVATORY</h3>
 <img src="eclogo.png" /></center>
-<p><tt><tt><strong>FROM:</strong> Commander Carom Andella, IMPEC Observatory<br /><strong>TO:</strong> Imperial Vessel #3, Dauntless<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> Notice of Care - Psychiatrics and Synthetics<br /></tt></tt></p>
+<p><tt><tt><strong>FROM:</strong> Commander Carom Andella, IMPEC Observatory<br /><strong>TO:</strong> Imperial Vessel #3, Dauntless<br /><strong>CC:</strong> Lord Captain William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> Notice of Care - Psychiatrics and Synthetics<br /></tt></tt></p>
 <hr />
 <p>Good day.</p>
 <p>This notice is for you to be aware of the repercussions of the situation that you, and your vessel has gone through.</p>
@@ -97,11 +97,11 @@
 
 
 /obj/item/paper/cosorder
-	name = "General Reminder - Security Guidelines"
+	name = "General Reminder - Militarum Guidelines"
 	info = {"\
-<center><h3>EXPEDITIONARY COMMAND - OBSERVATORY</h3>
+<center><h3>ADMINISTRATUM - OBSERVATORY</h3>
 <img src="eclogo.png" /></center>
-<p><tt><tt><strong>FROM:</strong> Commander Liam Henshell, IMPEC Observatory<br /><strong>TO:</strong> Imperial Vessel #3, Dauntless<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> General Reminder - Security Guidelines<br /></tt></tt></p>
+<p><tt><tt><strong>FROM:</strong> Commander Liam Henshell, IMPEC Observatory<br /><strong>TO:</strong> Imperial Vessel #3, Dauntless<br /><strong>CC:</strong> Lord Captain William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> General Reminder - Militarum Guidelines<br /></tt></tt></p>
 <hr />
 <p>Good day.</p>
 <p>With your retreat from the affected sectors, and subsequent incidents that required to be handled. A few pointers are henceforth embolded in order to help you maintain authority aboard the Dauntless.</p>
@@ -131,9 +131,9 @@
 /obj/item/paper/ceorder
 	name = "Emergency Orders - Electronic Warfare"
 	info = {"\
-<center><h3>EXPEDITIONARY COMMAND - OBSERVATORY</h3>
+<center><h3>ADMINISTRATUM - OBSERVATORY</h3>
 <img src="eclogo.png" /></center>
-<p><tt><tt><strong>FROM:</strong> Commander Minnie Rosulia, IMPEC Observatory<br /><strong>TO:</strong> Imperial Vessel #3, Dauntless<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> Emergency Orders - Electronic Warfare<br /></tt></tt></p>
+<p><tt><tt><strong>FROM:</strong> Commander Minnie Rosulia, IMPEC Observatory<br /><strong>TO:</strong> Imperial Vessel #3, Dauntless<br /><strong>CC:</strong> Lord Captain William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> Emergency Orders - Electronic Warfare<br /></tt></tt></p>
 <hr />
 <p>Good day.</p>
 <p>After scrutiny of available information, it has been determined that there is a major security risk of on-board ship systems. Reported compromises of electronic suites, and IT infrastructure is a serious matter.</p>
@@ -141,10 +141,10 @@
 <p>Ensure that your roboticist is well versed with standard positronic biped platforms. As well as electronic security of said units.</p>
 <p>Firmware update packages and security suites for NTNet and automated units will be sent via secure transmission from designated Imperial Navy crafts, or via physical deliveries.</p>
 <p>Ensure all SHA-512 encryption sets are well maintained, and kept up-to-date with provided, latest DAIS software specifications. Only accept update packages from verified parties.</p>
-<p>Regular reports of psychiatric and physical evaluations of synthetic units is <strong>encouraged</strong>, in co-operation with the <strong>Chief Medical Officer</strong>. These reports must be sent to EXCOM when possible.</p>
-<p>EXCOM has enacted a general order of caution, due to the high likelihood of electronic warfare from hostile parties. Any affected units must be isolated, and kept for research and evaluation.</p>
+<p>Regular reports of psychiatric and physical evaluations of synthetic units is <strong>encouraged</strong>, in co-operation with the <strong>Chief Medical Officer</strong>. These reports must be sent to The Administratum when possible.</p>
+<p>The Administratum has enacted a general order of caution, due to the high likelihood of electronic warfare from hostile parties. Any affected units must be isolated, and kept for research and evaluation.</p>
 <p>In case of danger to the vessel, units affected by electronic warfare from unknown sources may be terminated per consideration from you, and the <strong>Chief of Security</strong>, or above.</p>
-<p><strong>Release information only as needed. Leak of information without good reason is grounds for remediation. Contact EXCOM for any details.</strong></p>
+<p><strong>Release information only as needed. Leak of information without good reason is grounds for remediation. Contact The Administratum for any details.</strong></p>
 <hr />
 <p>&nbsp;<em>This paper has been stamped with the insignia of the IMPEC Observatory.</em></p>
 <hr /><center><img src="eclogo.png" /></center>
@@ -163,13 +163,13 @@
 /obj/item/paper/exploorder
 	name = "First Contact and Anomalies"
 	info = {"\
-<center><h3>EXPEDITIONARY COMMAND - OBSERVATORY</h3>
+<center><h3>ADMINISTRATUM - OBSERVATORY</h3>
 <img src="eclogo.png" /></center>
-<p><tt><tt><strong>FROM:</strong> Lieutenant Vasco Espueza, IMPEC Observatory<br /><strong>TO:</strong> Imperial Vessel #3, Dauntless<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> First Contact and Anomalies<br /></tt></tt></p>
+<p><tt><tt><strong>FROM:</strong> Lieutenant Vasco Espueza, IMPEC Observatory<br /><strong>TO:</strong> Imperial Vessel #3, Dauntless<br /><strong>CC:</strong> Lord Captain William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> First Contact and Anomalies<br /></tt></tt></p>
 <hr />
 <p>Good day.</p>
 <p>With the emergent need for a stronger solution to synthetic threats. It is <strong>authorised</strong> and <strong>highly encouraged</strong> to retain, study and utilise any anomalies exhibiting ionic properties.</p>
-<p>Imperial Navy cargo vessels will be authorised to carry anomalies from research sites, for studies aboard your vessel. Ensure a communique is sent to EXCOM for relay. Supply and logistics will be handled as needed.</p>
+<p>Imperial Navy cargo vessels will be authorised to carry anomalies from research sites, for studies aboard your vessel. Ensure a communique is sent to The Administratum for relay. Supply and logistics will be handled as needed.</p>
 <p>Ensure that your research and exploration personnel are kept in top mental integrities at all times, as first contact procedures - especially hostile - are strongly draining on the psyche.</p>
 <p>Regular evaluation of personnel is recommended, in co-operation with the <strong>Chief Medical Officer</strong>.
 <p>Encounter with synthetic hostiles must now be treated with extreme precaution for the possibility of their presence being a matter of hostile actions beyond our scope of perception.</p><br />
@@ -195,17 +195,17 @@
 /obj/item/paper/dcorder
 	name = "General Guidelines on Emergency Logistics"
 	info = {"\
-<center><h3>EXPEDITIONARY COMMAND - OBSERVATORY</h3>
+<center><h3>ADMINISTRATUM - OBSERVATORY</h3>
 <img src="eclogo.png" /></center>
-<p><tt><tt><strong>FROM:</strong> Commander Vera Soo-Hyun, IMPEC Observatory<br /><strong>TO:</strong> Imperial Vessel #3, Dauntless<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> General guidelines on Emergency Logistics<br /></tt></tt></p>
+<p><tt><tt><strong>FROM:</strong> Commander Vera Soo-Hyun, IMPEC Observatory<br /><strong>TO:</strong> Imperial Vessel #3, Dauntless<br /><strong>CC:</strong> Lord Captain William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> General guidelines on Emergency Logistics<br /></tt></tt></p>
 <hr />
 <p>Good day.</p>
 <p>This is with strong recommendation to follow appropriate validity and verification procedures when receiving and sending equipment and cargo.</p>
 <p>Imperial Navy cargo vessels will be operating in the area, and will be designated with the <strong>"FCV"</strong> temporary designations as a form of verification.</p>
 <p>Your vessel's cargo pod will be re-programmed to link-up with any present <strong>"FCV"</strong> designated cargo vessels in the vicinity for regular resupply operations.</p>
-<p>It is also <strong>strong encouraged</strong> to make use of direct communiques with EXCOM to relay requests for special cargo, as deemed necessary.</p>
+<p>It is also <strong>strong encouraged</strong> to make use of direct communiques with The Administratum to relay requests for special cargo, as deemed necessary.</p>
 <p>Cargo requests (in or out) from the <strong>Chief Engineer</strong>, <strong>Chief of Security</strong>, <strong>Chief Steward</strong> and <strong>Chief Science Officer</strong> are to be expected in high traffic.</p>
-<p>Transfer for personnel (civilian or otherwise) is to be strongly verified by EXCOM or MARSCOM before granting entry. Docked civilian merchant vessels are to be checked and scrutinised heavily. A record must be made of such, and forwarded to EXCOM.</p>
+<p>Transfer for personnel (civilian or otherwise) is to be strongly verified by The Administratum or Munitorum before granting entry. Docked civilian merchant vessels are to be checked and scrutinised heavily. A record must be made of such, and forwarded to The Administratum.</p>
 <p>Prospecting and exploration operations are to be maintained. However, any away-team operations must be stringently timed, and return of such must be kept in mind. <strong>Retrieval of lost personnel will be impossible due to current circumstances.</strong></p>
 <p>As such, while Standard Operating Procedures remain unchanged, and must still be followed - it is on the shoulders of the deck crew, or bridge crew to co-ordinate with away teams on their return times, whether verbally or via lodged flight plans.</p>
 <hr />
@@ -226,9 +226,9 @@
 /obj/item/paper/csorder
 	name = "Notice - Crisis and Serenity"
 	info = {"\
-<center><h3>EXPEDITIONARY COMMAND - OBSERVATORY</h3>
+<center><h3>ADMINISTRATUM - OBSERVATORY</h3>
 <img src="eclogo.png" /></center>
-<p><tt><tt><strong>FROM:</strong> Lieutenant Sam Nerehel, IMPEC Observatory<br /><strong>TO:</strong> Imperial Vessel #3, Dauntless<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> Notice - Crisis and Serenity<br /></tt></tt></p>
+<p><tt><tt><strong>FROM:</strong> Lieutenant Sam Nerehel, IMPEC Observatory<br /><strong>TO:</strong> Imperial Vessel #3, Dauntless<br /><strong>CC:</strong> Lord Captain William Henry Lau, Observatory <br /><strong>SUBJECT:</strong> Notice - Crisis and Serenity<br /></tt></tt></p>
 <hr />
 <p>Good day.</p>
 <p>We are gravely disconcerted with your current situation. Operating a vessel's service crew under times of duress such as these can be challenging.</p>
@@ -288,7 +288,7 @@
 	info = {"\
 <center><h3>SOL CENTRAL GOVERNMENT</h3>
 <img src="sollogo.png" /></center>
-<p><tt><tt><strong>FROM:</strong> Director Francesca Del Rey, Bureau of Emergency Operations<br /><strong>TO:</strong> Imperial Vessel #3, Dauntless<br /><strong>CC:</strong> Admiral William Henry Lau, Observatory<br /><strong>SUBJECT:</strong> Guidelines of Emergency Reponsibilities<br /></tt></tt></p>
+<p><tt><tt><strong>FROM:</strong> Director Francesca Del Rey, Bureau of Emergency Operations<br /><strong>TO:</strong> Imperial Vessel #3, Dauntless<br /><strong>CC:</strong> Lord Captain William Henry Lau, Observatory<br /><strong>SUBJECT:</strong> Guidelines of Emergency Reponsibilities<br /></tt></tt></p>
 <hr />
 <p>Good day.</p>
 <p>Regarding the latest incident surrounding the Dauntless. It is prudent that we tread extremely carefully.</p>

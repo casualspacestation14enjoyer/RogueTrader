@@ -36,7 +36,7 @@
 
 
 /singleton/hierarchy/outfit/scgec/utility_admiral
-	name = "IMPEC - Admiral Utility"
+	name = "IMPEC - Lord Captain Utility"
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer
 	shoes = /obj/item/clothing/shoes/dutyboots
 	head = /obj/item/clothing/head/soft/solgov/expedition/co
@@ -76,7 +76,7 @@
 
 
 /singleton/hierarchy/outfit/scgec/service_admiral
-	name = "IMPEC - Admiral Service"
+	name = "IMPEC - Lord Captain Service"
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer
 	suit = /obj/item/clothing/suit/storage/solgov/service/expeditionary/command
 	shoes = /obj/item/clothing/shoes/dutyboots
@@ -193,7 +193,7 @@
 
 
 /singleton/hierarchy/outfit/scgec/dress_admiral
-	name = "IMPEC - Admiral Dress"
+	name = "IMPEC - Lord Captain Dress"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary
 	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/command/adm
 	shoes = /obj/item/clothing/shoes/dress
@@ -202,7 +202,7 @@
 
 
 /singleton/hierarchy/outfit/scgec/dress_skirt_admiral
-	name = "IMPEC - Admiral Dress (Skirt)"
+	name = "IMPEC - Lord Captain Dress (Skirt)"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary/skirt
 	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/command/adm
 	shoes = /obj/item/clothing/shoes/dress

@@ -147,7 +147,6 @@
 	max_shells = 1
 	ammo_type = /obj/item/ammo_casing/shotgun/pellet
 	caliber = CALIBER_SHOTGUN
-	one_hand_penalty = 5
 	accuracy = -3
 
 /obj/item/gun/projectile/shotgun/cane/examine(mob/user, distance)

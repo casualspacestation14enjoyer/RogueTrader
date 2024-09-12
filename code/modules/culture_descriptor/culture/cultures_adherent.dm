@@ -6,7 +6,7 @@
 	and disoriented for hundreds of years following. Now in contact with humanity, the Vigil is tentatively making inroads on \
 	a place in the wider galactic culture."
 	hidden_from_codex = TRUE
-	language = LANGUAGE_ADHERENT
+	language = LANGUAGE_TYRANID
 	secondary_langs = list(
 		LANGUAGE_HIGH_GOTHIC,
 		LANGUAGE_LOW_GOTHIC

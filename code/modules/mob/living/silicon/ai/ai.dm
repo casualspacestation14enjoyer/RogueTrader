@@ -149,7 +149,7 @@ var/global/list/ai_verbs_default = list(
 
 	//Languages
 	add_language(LANGUAGE_ROBOT_GLOBAL, TRUE)
-	add_language(LANGUAGE_EAL, TRUE)
+	add_language(LANGUAGE_MECHANICUS, TRUE)
 	add_language(LANGUAGE_HIGH_GOTHIC, TRUE)
 	add_language(LANGUAGE_HUMAN_ARABIC, TRUE)
 	add_language(LANGUAGE_HUMAN_CHINESE, TRUE)

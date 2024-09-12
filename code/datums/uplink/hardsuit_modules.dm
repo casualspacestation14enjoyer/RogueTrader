@@ -23,7 +23,7 @@
 	path = /obj/item/rig_module/maneuvering_jets
 
 /datum/uplink_item/item/hardsuit_modules/egun
-	name = "\improper Mounted Energy Gun"
+	name = "\improper Mounted Energy Weapon"
 	desc = "A module that drains your power reserves in order to fire an arm mounted energy gun."
 	item_cost = 48
 	path = /obj/item/rig_module/mounted/energy/egun

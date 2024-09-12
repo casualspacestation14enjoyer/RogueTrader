@@ -1,6 +1,6 @@
 /obj/item/organ/internal/voicebox/nabber
 	name = "vocal synthesiser"
-	assists_languages = list(LANGUAGE_HUMAN_RUSSIAN, LANGUAGE_GUTTER, LANGUAGE_HIGH_GOTHIC, LANGUAGE_EAL)
+	assists_languages = list(LANGUAGE_HUMAN_RUSSIAN, LANGUAGE_GUTTER, LANGUAGE_HIGH_GOTHIC, LANGUAGE_MECHANICUS)
 
 /obj/item/organ/internal/voicebox/nabber/Initialize()
 	. = ..()

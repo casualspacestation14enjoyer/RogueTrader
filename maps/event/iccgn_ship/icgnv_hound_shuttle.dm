@@ -54,9 +54,9 @@
 	req_access = list(access_syndicate)
 
 /obj/machinery/telecomms/allinone/iccgn
-	listening_freqs = list(ORDOS_FREQ)
+	listening_freqs = list(TAU_FREQ)
 	channel_color = COMMS_COLOR_ICCG
-	channel_name = "Tau Hound"
+	channel_name = "Tau Empire"
 	circuitboard = /obj/item/stock_parts/circuitboard/telecomms/allinone/iccgn
 
 
@@ -70,7 +70,7 @@
 
 /obj/item/device/radio/headset/iccgn/Initialize()
 	. = ..()
-	set_frequency(ORDOS_FREQ)
+	set_frequency(TAU_FREQ)
 
 /obj/item/device/encryptionkey/iccgn
 	name = "\improper Tau radio encryption key"

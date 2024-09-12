@@ -4,7 +4,7 @@
 	feedback = "TP"
 	school = "conjuration"
 	charge_max = 60 SECONDS
-	spell_flags = NEEDSCLOTHES
+	spell_flags = Z2NOCAST
 	invocation = "Scyar Nila!"
 	invocation_type = SpI_SHOUT
 	cooldown_min = 200 //100 deciseconds reduction per rank

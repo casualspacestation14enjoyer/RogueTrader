@@ -76,7 +76,7 @@
 	displays_id = 0
 
 /obj/item/clothing/under/rank/centcom_officer
-	desc = "Gold trim on space-black cloth, this uniform displays the rank of \"Admiral.\"."
+	desc = "Gold trim on space-black cloth, this uniform displays the rank of \"Lord Captain.\"."
 	name = "officer's dress uniform"
 	icon_state = "officer"
 	item_state = "lawyer_black"
@@ -84,7 +84,7 @@
 	displays_id = 0
 
 /obj/item/clothing/under/rank/centcom_captain
-	desc = "Gold trim on space-black cloth, this uniform displays the rank of \"Admiral-Executive.\"."
+	desc = "Gold trim on space-black cloth, this uniform displays the rank of \"Lord Captain-Executive.\"."
 	name = "officer's dress uniform"
 	icon_state = "centcom"
 	item_state = "lawyer_black"
@@ -550,7 +550,7 @@
 
 /obj/item/clothing/under/pcrc
 	name = "\improper imperial uniform"
-	desc = "A uniform belonging to Proxima Centauri Risk Control, a private security firm."
+	desc = "A uniform belonging to Necromunda, a private security firm."
 	icon_state = "pcrc"
 	item_state = "jensensuit"
 	worn_state = "pcrc"
@@ -558,7 +558,7 @@
 
 /obj/item/clothing/under/pcrcsuit
 	name = "\improper imperial suit"
-	desc = "A suit belonging to Proxima Centauri Risk Control, a private security firm. This one looks more formal than its utility counterpart."
+	desc = "A suit belonging to Necromunda, a private security firm. This one looks more formal than its utility counterpart."
 	icon_state = "pcrcsuit"
 	item_state = "jensensuit"
 	worn_state = "pcrcsuit"
@@ -611,7 +611,7 @@
 
 /obj/item/clothing/under/saare
 	name = "\improper imperial uniform"
-	desc = "A uniform belonging to Strategic Assault and Asset Retention Enterprises, a minor private military corporation."
+	desc = "A uniform belonging to Vessorine Clans, a minor private military corporation."
 	icon_state = "saare"
 	worn_state = "saare"
 	gender_icons = 1

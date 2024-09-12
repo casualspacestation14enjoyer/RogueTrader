@@ -32,7 +32,7 @@
 				"I will maintain my company's record profits","I believe in our future","We must return to our moral core","Just like... chill out dudes")]'."
 
 			if(RESIGNATION)
-				body = "[GLOB.using_map.company_name] regretfully announces the resignation of [pick("Sector Admiral","Division Admiral","Ship Admiral","Vice Admiral")] [random_name(pick(MALE,FEMALE))]."
+				body = "[GLOB.using_map.company_name] regretfully announces the resignation of [pick("Sector Lord Captain","Division Lord Captain","Ship Lord Captain","Vice Lord Captain")] [random_name(pick(MALE,FEMALE))]."
 				if(prob(25))
 					var/locstring = pick("Segunda","Salusa","Cepheus","Andromeda","Gruis","Corona","Aquila","Asellus") + " " + pick("I","II","III","IV","V","VI","VII","VIII")
 					body += " In a ceremony on [affected_dest.name] this afternoon, they will be awarded the \
@@ -54,7 +54,7 @@
 				body = "It is with regret today that we announce the sudden passing of the "
 				if(prob(33))
 					body += "[pick("distinguished","decorated","veteran","highly respected")] \
-					[pick("Ship's Captain","Vice Admiral","Colonel","Lieutenant Colonel")] "
+					[pick("Ship's Captain","Vice Lord Captain","Colonel","Lieutenant Colonel")] "
 				else if(prob(50))
 					body += "[pick("award-winning","popular","highly respected","trend-setting")] \
 					[pick("comedian","singer/songwright","artist","playwright","TV personality","model")] "
