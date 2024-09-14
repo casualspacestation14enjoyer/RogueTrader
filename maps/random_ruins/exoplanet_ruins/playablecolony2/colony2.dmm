@@ -1596,13 +1596,13 @@
 	},
 /obj/item/storage/box/ammo/shotgunammo,
 /obj/item/storage/box/ammo/shotgunshells,
-/obj/item/gun/energy/gun/small,
-/obj/item/gun/energy/gun/small,
-/obj/item/gun/energy/gun/small,
-/obj/item/gun/energy/gun/small,
+/obj/item/gun/energy/lasgun/laspistol/grim,
+/obj/item/gun/energy/lasgun/laspistol/grim,
+/obj/item/gun/energy/lasgun/laspistol/grim,
+/obj/item/gun/energy/lasgun/laspistol/grim,
 /obj/item/storage/box/ammo/flashshells,
 /obj/floor_decal/corner/paleblue/mono,
-/obj/item/gun/energy/gun,
+/obj/item/gun/energy/lasgun/laspistol/militarum,
 /obj/structure/railing/mapped{
 	dir = 8
 	},

@@ -52,7 +52,7 @@
 	emag_gear = list(
 		/obj/item/melee/baton/robot/electrified_arm,
 		/obj/item/device/flash,
-		/obj/item/gun/energy/gun,
+		/obj/item/gun/energy/lasgun/laspistol/militarum,
 		/obj/item/rcd/borg,
 		/obj/item/flamethrower/full/loaded,
 		/obj/item/shield_diffuser,

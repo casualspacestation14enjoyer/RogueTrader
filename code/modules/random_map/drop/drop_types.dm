@@ -35,9 +35,9 @@ var/global/list/datum/supply_drop_loot/supply_drop
 /datum/supply_drop_loot/lasers/New()
 	..()
 	contents = list(
-		/obj/item/gun/energy/laser,
-		/obj/item/gun/energy/laser,
-		/obj/item/gun/energy/sniperrifle,
+		/obj/item/gun/energy/lasgun/kantrael,
+		/obj/item/gun/energy/lasgun/kantrael,
+		/obj/item/gun/energy/lasgun/lucius,
 		/obj/item/gun/energy/ionrifle)
 
 /datum/supply_drop_loot/ballistics
@@ -46,7 +46,7 @@ var/global/list/datum/supply_drop_loot/supply_drop
 /datum/supply_drop_loot/ballistics/New()
 	..()
 	contents = list(
-		/obj/item/gun/projectile/pistol/sec,
+		/obj/item/gun/projectile/pistol/slug,
 		/obj/item/gun/projectile/shotgun/doublebarrel,
 		/obj/item/gun/projectile/shotgun/pump/combat,
 		/obj/item/gun/projectile/automatic/sec_smg,
@@ -58,7 +58,7 @@ var/global/list/datum/supply_drop_loot/supply_drop
 /datum/supply_drop_loot/ballistics/New()
 	..()
 	contents = list(
-		/obj/item/gun/projectile/pistol/sec,
+		/obj/item/gun/projectile/pistol/slug,
 		/obj/item/gun/projectile/shotgun/doublebarrel,
 		/obj/item/gun/projectile/shotgun/pump/combat,
 		/obj/item/gun/projectile/automatic/sec_smg,

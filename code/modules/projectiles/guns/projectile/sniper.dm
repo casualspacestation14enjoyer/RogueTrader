@@ -24,6 +24,13 @@
 	load_sound = 'sound/weapons/guns/interaction/rifle_load.ogg'
 	fire_delay = 12
 
+/obj/item/gun/projectile/heavysniper/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.15
+	slowdown_per_slot[slot_belt] = 0.15
+	slowdown_per_slot[slot_r_hand] = 0.2
+	slowdown_per_slot[slot_l_hand] = 0.2
+
 /obj/item/gun/projectile/heavysniper/on_update_icon()
 	..()
 	if(bolt_open)
@@ -193,7 +200,7 @@
 	origin_tech = list(TECH_COMBAT = 2)
 	slot_flags = SLOT_BACK
 	caliber = CALIBER_SLUG_MAGNUM
-	ammo_type = /obj/item/ammo_casing/pistol/heavy
+	ammo_type = /obj/item/ammo_casing/magnum
 	load_method = SINGLE_CASING|SPEEDLOADER
 	fire_delay = 2
 	one_hand_penalty = 4

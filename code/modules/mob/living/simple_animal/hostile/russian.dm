@@ -32,7 +32,7 @@
 	ranged = 1
 	projectiletype = /obj/item/projectile/bullet
 	projectilesound = 'sound/weapons/gunshot/gunshot2.ogg'
-	casingtype = /obj/item/ammo_casing/pistol/heavy
+	casingtype = /obj/item/ammo_casing/magnum
 
 
 /mob/living/simple_animal/hostile/russian/death(gibbed, deathmessage, show_dead_message)

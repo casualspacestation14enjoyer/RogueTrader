@@ -155,7 +155,7 @@
 /turf/simulated/wall,
 /area/map_template/colony/medbay)
 "aC" = (
-/obj/item/gun/energy/gun/small,
+/obj/item/gun/energy/lasgun/laspistol/grim,
 /obj/item/device/flashlight/upgraded,
 /obj/item/crowbar/prybar,
 /obj/item/clothing/under/captain_fly,
@@ -1449,7 +1449,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/map_template/colony/atmospherics)
 "dj" = (
-/obj/item/gun/energy/gun/small,
+/obj/item/gun/energy/lasgun/laspistol/grim,
 /obj/item/device/flashlight/upgraded,
 /obj/item/crowbar/prybar,
 /obj/item/clothing/under/captain_fly,
@@ -2444,7 +2444,7 @@
 "eX" = (
 /obj/submap_landmark/spawnpoint/colonist_spawn,
 /obj/structure/bed/padded,
-/obj/item/gun/energy/gun/small,
+/obj/item/gun/energy/lasgun/laspistol/grim,
 /obj/item/device/flashlight/upgraded,
 /obj/item/crowbar/prybar,
 /obj/item/clothing/under/color/blackjumpshorts,
@@ -2905,7 +2905,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/map_template/colony/engineering)
 "fM" = (
-/obj/item/gun/energy/gun/small,
+/obj/item/gun/energy/lasgun/laspistol/grim,
 /obj/item/device/flashlight/upgraded,
 /obj/item/crowbar/prybar,
 /obj/item/clothing/under/captain_fly,
@@ -4343,7 +4343,7 @@
 /obj/structure/table/rack,
 /obj/item/gun/projectile/pistol/holdout,
 /obj/item/gun/projectile/pistol/holdout,
-/obj/item/gun/projectile/pistol/sec/lethal,
+/obj/item/gun/projectile/pistol/slug,
 /obj/floor_decal/industrial/warning{
 	dir = 8;
 	icon_state = "warning"
@@ -5647,7 +5647,7 @@
 /area/map_template/colony/mineralprocessing)
 "kp" = (
 /obj/structure/table/rack,
-/obj/item/gun/energy/gun,
+/obj/item/gun/energy/lasgun/laspistol/militarum,
 /obj/floor_decal/industrial/warning{
 	dir = 8;
 	icon_state = "warning"

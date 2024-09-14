@@ -5,6 +5,7 @@
 	magazine_type = /obj/item/ammo_magazine/pistol
 	allowed_magazines = /obj/item/ammo_magazine/pistol
 	fire_sound = 'sound/weapons/gunshot/gunshot_pistol.ogg'
+	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	var/empty_icon = TRUE  //If it should change icon when empty
 	var/ammo_indicator = FALSE
 
@@ -30,7 +31,7 @@
 	icon_state = "secguncomp"
 	safety_icon = "safety"
 	magazine_type = /obj/item/ammo_magazine/pistol/rubber
-	accuracy = -1
+	accuracy = 0
 	fire_delay = 6
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 
@@ -49,40 +50,16 @@
 	safety_icon = "safety"
 	force = 9
 	caliber = CALIBER_SLUG_MAGNUM
-	fire_delay = 12
+	fire_delay = 4
 	screen_shake = 2
 	magazine_type = /obj/item/ammo_magazine/magnum
 	allowed_magazines = /obj/item/ammo_magazine/magnum
 	mag_insert_sound = 'sound/weapons/guns/interaction/hpistol_magin.ogg'
 	mag_remove_sound = 'sound/weapons/guns/interaction/hpistol_magout.ogg'
 	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
-	accuracy = 2
-	one_hand_penalty = 2
+	accuracy = 0
+	one_hand_penalty = 0
 	ammo_indicator = TRUE
-
-/obj/item/gun/projectile/pistol/throwback
-	name = "pistol"
-	desc = "A product of one of thousands of illegal workshops from around the galaxy. This one appears to be a clone of a Pre-Heresy design."
-	icon = 'icons/obj/guns/pistol_throwback.dmi'
-	icon_state = "pistol1"
-	magazine_type = /obj/item/ammo_magazine/pistol/throwback
-	one_hand_penalty = 2
-	fire_delay = 7
-	caliber = CALIBER_SLUG_ANTIQUE
-	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
-	var/base_icon = "pistol1"
-
-/obj/item/gun/projectile/pistol/throwback/Initialize()
-	. = ..()
-	base_icon = "pistol[rand(1,4)]"
-	update_icon()
-
-/obj/item/gun/projectile/pistol/throwback/on_update_icon()
-	..()
-	if(ammo_magazine && length(ammo_magazine.stored_ammo))
-		icon_state = base_icon
-	else
-		icon_state = "[base_icon]-e"
 
 /obj/item/gun/projectile/pistol/gyropistol
 	name = "gyrojet pistol"
@@ -95,7 +72,7 @@
 	magazine_type = /obj/item/ammo_magazine/gyrojet
 	allowed_magazines = /obj/item/ammo_magazine/gyrojet
 	handle_casings = CLEAR_CASINGS	//the projectile is the casing
-	fire_delay = 25
+	fire_delay = 5
 	auto_eject = 1
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
 	mag_insert_sound = 'sound/weapons/guns/interaction/hpistol_magin.ogg'

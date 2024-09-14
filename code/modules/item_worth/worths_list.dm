@@ -51,7 +51,7 @@ var/global/list/worths = list(
 					/obj/item/gun/projectile/automatic = 3000,
 //PROJECTILE,
 					/obj/item/gun/projectile/pistol/sec/MK = 1200,
-					/obj/item/gun/projectile/pistol/sec = 1650,
+					/obj/item/gun/projectile/pistol/slug = 1650,
 					/obj/item/gun/projectile/pistol/magnum_pistol = 2000,
 					/obj/item/gun/projectile/pistol/gyropistol = 5500,
 					/obj/item/gun/projectile/heavysniper/ant = 1800,

@@ -78,7 +78,7 @@
 "mC" = (/obj/decal/cleanable/dirt,/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/exoplanet/concrete,/area/map_template/transshipment/airstrip)
 "mI" = (/obj/decal/cleanable/dirt,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/exoplanet/concrete,/area/map_template/transshipment/airstrip)
 "mL" = (/mob/living/simple_animal/hostile/voxslug,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tiled/techmaint,/area/map_template/transshipment/warehouse)
-"nh" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/table/rack,/obj/floor_decal/industrial/outline/grey,/obj/item/gun/energy/gun,/turf/simulated/floor/tiled/techfloor/grid,/area/map_template/transshipment/old_snz)
+"nh" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/table/rack,/obj/floor_decal/industrial/outline/grey,/obj/item/gun/energy/lasgun/laspistol/militarum,/turf/simulated/floor/tiled/techfloor/grid,/area/map_template/transshipment/old_snz)
 "nj" = (/obj/paint/green,/turf/simulated/wall,/area/map_template/transshipment/smes_crate)
 "nn" = (/obj/machinery/atmospherics/pipe/manifold/hidden,/obj/machinery/door/airlock/external{id_tag = "transshipment_hangar_inner"; frequency = 1380},/turf/simulated/floor/plating,/area/map_template/transshipment/warehouse)
 "ns" = (/obj/structure/reagent_dispensers/beerkeg,/obj/machinery/light/small{dir = 8},/turf/simulated/floor/lino,/area/map_template/transshipment/cabin_crate)
