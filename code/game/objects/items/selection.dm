@@ -25,6 +25,6 @@
 	name = "sidearm kit"
 	desc = "A secure box containing a sidearm."
 	selection_options = list(
-		"Classic - Secure Smartgun" = /obj/item/gun/energy/gun/secure/preauthorized,
-		"Stylish - Secure Smart Revolver" = /obj/item/gun/energy/revolver/secure/preauthorized
+		"Classic - Secure Smartgun" = /obj/item/gun/energy/lasgun/laspistol/militarum,
+		"Stylish - Secure Smart Revolver" = /obj/item/gun/energy/lasgun/laspistol/militarum
 	)

@@ -48,7 +48,7 @@
 /obj/structure/table/rack,
 /obj/floor_decal/corner/b_green/mono,
 /obj/item/gun/projectile/heavysniper/boltaction,
-/obj/item/gun/projectile/pistol/broomstick,
+/obj/item/gun/projectile/pistol/bolt_pistol/inquis,
 /obj/item/gun/projectile/pistol/slug/old,
 /turf/simulated/floor/tiled/dark/monotile/vox,
 /area/map_template/vox_raider)

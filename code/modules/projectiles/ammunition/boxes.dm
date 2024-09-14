@@ -386,26 +386,27 @@
 	name = "MS magazine (6.8mm AR)"
 	ammo_type = /obj/item/ammo_casing/autogun/militarum/ms
 
-/obj/item/ammo_magazine/autogun/heavy
+/obj/item/ammo_magazine/autogunheavy
 	name = "box magazine (6.8mm)"
 	icon_state = "hmg"
 	max_ammo = 58
 	ammo_type = /obj/item/ammo_casing/autogun/militarum
 
-/obj/item/ammo_magazine/autogun/heavy/ap
+/obj/item/ammo_magazine/autogunheavy/ap
 	name = "AP box magazine (6.8mm AR)"
 	ammo_type = /obj/item/ammo_casing/autogun/militarum/ap
 
-/obj/item/ammo_magazine/autogun/heavy/kp
+/obj/item/ammo_magazine/autogunheavy/kp
 	name = "KP box magazine (6.8mm AR)"
 	ammo_type = /obj/item/ammo_casing/autogun/militarum/kp
 
-/obj/item/ammo_magazine/autogun/heavy/ms
+/obj/item/ammo_magazine/autogunheavy/ms
 	name = "MS box magazine (6.8mm AR)"
 	ammo_type = /obj/item/ammo_casing/autogun/militarum/ms
 
 /obj/item/ammo_magazine/heavy
 	name = "magazine (10mm AR)"
+	max_ammo = 25
 	ammo_type = /obj/item/ammo_casing/heavy
 
 /obj/item/ammo_magazine/heavy/ap
@@ -419,6 +420,41 @@
 /obj/item/ammo_magazine/heavy/ms
 	name = "MS magazine (10mm AR)"
 	ammo_type = /obj/item/ammo_casing/heavy/ms
+
+
+/obj/item/ammo_magazine/radcarbine
+	name = "Radcarbine Magazine"
+	icon_state = "LMG-mag"
+	origin_tech = list(TECH_COMBAT = 2)
+	mag_type = MAGAZINE
+	caliber = "rad"
+	matter = list(DEFAULT_WALL_MATERIAL = 1260)
+	ammo_type = /obj/item/ammo_casing/radcarbine
+	max_ammo = 20
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/radcarbine/radpistol
+	name = "Radpistol Magazine"
+	icon_state = "mg08"
+	origin_tech = list(TECH_COMBAT = 2)
+	mag_type = MAGAZINE
+	caliber = "rad"
+	matter = list(DEFAULT_WALL_MATERIAL = 1260)
+	ammo_type = /obj/item/ammo_casing/radcarbine/radpistol
+	max_ammo = 10
+	multiple_sprites = 0
+
+
+/obj/item/ammo_magazine/pulsemag
+	name = "Pulse Matter Cartridge"
+	icon_state = "tinyersatz"
+	origin_tech = list(TECH_COMBAT = 3)
+	mag_type = MAGAZINE
+	caliber = "pmag"
+	matter = list(DEFAULT_WALL_MATERIAL = 1260)
+	ammo_type = /obj/item/ammo_casing/pmag
+	max_ammo = 45
+	multiple_sprites = 1
 
 /* ork mags */
 
@@ -459,7 +495,7 @@
 	caliber = ".75"
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
 	ammo_type = /obj/item/ammo_casing/boltpistol
-	max_ammo = 7
+	max_ammo = 8
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/bolt_pistol_magazine/empty
@@ -473,7 +509,7 @@
 	caliber = ".75"
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
 	ammo_type = /obj/item/ammo_casing/bolter
-	max_ammo = 30
+	max_ammo = 25
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/bolt_rifle_magazine/empty
@@ -492,7 +528,7 @@
 	caliber = ".75"
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
 	ammo_type = /obj/item/ammo_casing/boltpistol/ms
-	max_ammo = 10
+	max_ammo = 8
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/bolt_pistol_magazine/ms/empty
@@ -506,7 +542,7 @@
 	caliber = ".75"
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
 	ammo_type = /obj/item/ammo_casing/bolter/ms
-	max_ammo = 30
+	max_ammo = 25
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/bolt_rifle_magazine/ms/empty
@@ -520,7 +556,7 @@
 	caliber = ".75"
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
 	ammo_type = /obj/item/ammo_casing/boltpistol/kp
-	max_ammo = 10
+	max_ammo = 8
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/bolt_pistol_magazine/kp/empty
@@ -534,7 +570,7 @@
 	caliber = ".75"
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
 	ammo_type = /obj/item/ammo_casing/bolter/kp
-	max_ammo = 30
+	max_ammo = 25
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/bolt_rifle_magazine/kp/empty
@@ -549,7 +585,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	matter = list(DEFAULT_WALL_MATERIAL = 5260)
 	ammo_type = /obj/item/ammo_casing/bolter/astartes
-	max_ammo = 30
+	max_ammo = 35
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/bolt_rifle_magazine/kp/empty

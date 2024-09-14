@@ -667,9 +667,9 @@
 /obj/structure/closet/walllocker{
 	pixel_x = 32
 	},
-/obj/item/gun/projectile/shotgun/pump/combat,
-/obj/item/gun/projectile/shotgun/pump/combat,
-/obj/item/gun/projectile/shotgun/pump/combat,
+/obj/item/gun/projectile/shotgun/pump/voxlegis,
+/obj/item/gun/projectile/shotgun/pump/voxlegis,
+/obj/item/gun/projectile/shotgun/pump/voxlegis,
 /obj/item/storage/box/ammo/shotgunammo,
 /obj/item/storage/box/ammo/shotgunammo,
 /obj/item/storage/box/ammo/shotgunammo,
@@ -805,12 +805,12 @@
 /obj/structure/closet/walllocker{
 	pixel_x = -32
 	},
-/obj/item/gun/projectile/pistol/optimus,
-/obj/item/gun/projectile/pistol/optimus,
-/obj/item/gun/projectile/pistol/optimus,
-/obj/item/gun/projectile/pistol/bobcat,
-/obj/item/gun/projectile/pistol/bobcat,
-/obj/item/gun/projectile/pistol/bobcat,
+/obj/item/gun/projectile/revolver/imperial/heavy/mateba,
+/obj/item/gun/projectile/revolver/imperial/heavy/mateba,
+/obj/item/gun/projectile/revolver/imperial/heavy/mateba,
+/obj/item/gun/projectile/revolver/imperial/heavy/necros,
+/obj/item/gun/projectile/revolver/imperial/heavy/necros,
+/obj/item/gun/projectile/revolver/imperial/heavy/necros,
 /obj/item/ammo_magazine/pistol/double,
 /obj/item/ammo_magazine/pistol/double,
 /obj/item/ammo_magazine/pistol/double,
@@ -829,9 +829,9 @@
 /obj/structure/closet/walllocker{
 	pixel_x = 32
 	},
-/obj/item/gun/projectile/automatic/merc_smg,
-/obj/item/gun/projectile/automatic/merc_smg,
-/obj/item/gun/projectile/automatic/merc_smg,
+/obj/item/gun/projectile/automatic/autogun/a80,
+/obj/item/gun/projectile/automatic/autogun/a80,
+/obj/item/gun/projectile/automatic/autogun/a80,
 /obj/item/ammo_magazine/smg,
 /obj/item/ammo_magazine/smg,
 /obj/item/ammo_magazine/smg,

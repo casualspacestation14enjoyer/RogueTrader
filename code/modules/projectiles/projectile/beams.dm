@@ -216,7 +216,10 @@
 	icon_state = "melta"
 	damage = 135
 	agony = 25
-	// check_armour = "energy"
+	weaken = 2
+	eyeblur = 4
+	stun = 3
+	armor_penetration = 42
 	fire_sound = list('sound/effects/gore/sear.ogg')
 	damage_falloff_list = list(
 		list(2, 0.90),
@@ -224,8 +227,6 @@
 		list(5, 0.50),
 		list(7, 0.10),
 	)
-	stun = 3
-	armor_penetration = 42
 
 /obj/item/projectile/beam/meltagun/on_hit(atom/target, blocked = 0)
 	playsound(src, 'sound/effects/snap.ogg', 50, 1)
@@ -490,7 +491,7 @@
 	name = "plasma arc"
 	icon_state = "omnilaser"
 	fire_sound = 'sound/weapons/plasma_cutter.ogg'
-	damage = 30
+	damage = 35
 	armor_penetration = 30
 	edge = TRUE
 	damage_type = DAMAGE_BURN

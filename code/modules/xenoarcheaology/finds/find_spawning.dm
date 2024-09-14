@@ -376,8 +376,8 @@
 /obj/item/archaeological_find/laser/spawn_item()
 	var/spawn_type = pick(\
 	/obj/item/gun/energy/laser/practice,\
-	/obj/item/gun/energy/laser,\
-	/obj/item/gun/energy/xray,\
+	/obj/item/gun/energy/lasgun/kantrael,\
+	/obj/item/gun/projectile/automatic/radcarbine,\
 	/obj/item/gun/energy/captain)
 	var/obj/item/gun/energy/new_gun =  new spawn_type(loc)
 

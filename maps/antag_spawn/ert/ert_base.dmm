@@ -199,8 +199,8 @@
 /area/map_template/rescue_base/base)
 "aE" = (
 /obj/structure/table/rack,
-/obj/item/gun/projectile/shotgun/pump/combat,
-/obj/item/gun/projectile/shotgun/pump/combat,
+/obj/item/gun/projectile/shotgun/pump/voxlegis,
+/obj/item/gun/projectile/shotgun/pump/voxlegis,
 /obj/item/device/radio/intercom/specops{
 	pixel_y = 22
 	},
@@ -226,10 +226,10 @@
 /area/map_template/rescue_base/base)
 "aG" = (
 /obj/structure/table/rack,
-/obj/item/gun/energy/gun/nuclear,
-/obj/item/gun/energy/gun/nuclear,
-/obj/item/gun/energy/gun/nuclear,
-/obj/item/gun/energy/gun/nuclear,
+/obj/item/gun/energy/tau/pulserifle,
+/obj/item/gun/energy/tau/pulserifle,
+/obj/item/gun/energy/tau/pulserifle,
+/obj/item/gun/energy/tau/pulserifle,
 /turf/unsimulated/floor{
 	dir = 1;
 	icon_state = "vault"
@@ -375,9 +375,9 @@
 /area/map_template/rescue_base/base)
 "aW" = (
 /obj/structure/table/rack,
-/obj/item/gun/projectile/automatic/sec_smg,
-/obj/item/gun/projectile/automatic/sec_smg,
-/obj/item/gun/projectile/automatic/sec_smg,
+/obj/item/gun/projectile/automatic/autogun/valhalla,
+/obj/item/gun/projectile/automatic/autogun/valhalla,
+/obj/item/gun/projectile/automatic/autogun/valhalla,
 /turf/unsimulated/floor{
 	dir = 1;
 	icon_state = "vault"
@@ -428,7 +428,7 @@
 /area/map_template/rescue_base/base)
 "bd" = (
 /obj/structure/table/rack,
-/obj/item/gun/projectile/automatic/l6_saw,
+/obj/item/gun/projectile/automatic/slugrifle,
 /turf/unsimulated/floor{
 	dir = 1;
 	icon_state = "vault"
@@ -672,8 +672,8 @@
 /area/map_template/rescue_base/base)
 "bD" = (
 /obj/structure/table/rack,
-/obj/item/gun/projectile/automatic/bullpup_rifle,
-/obj/item/gun/projectile/automatic/bullpup_rifle,
+/obj/item/gun/projectile/automatic/autogun/krieg,
+/obj/item/gun/projectile/automatic/autogun/krieg,
 /turf/unsimulated/floor{
 	dir = 1;
 	icon_state = "vault"
@@ -952,8 +952,8 @@
 /area/map_template/rescue_base/base)
 "cf" = (
 /obj/structure/table/rack,
-/obj/item/gun/energy/gun/nuclear,
-/obj/item/gun/energy/gun/nuclear,
+/obj/item/gun/energy/tau/pulserifle,
+/obj/item/gun/energy/tau/pulserifle,
 /turf/unsimulated/floor{
 	dir = 1;
 	icon_state = "vault"
@@ -1295,8 +1295,8 @@
 /area/map_template/rescue_base/base)
 "cE" = (
 /obj/structure/table/rack,
-/obj/item/gun/energy/ionrifle,
-/obj/item/gun/energy/ionrifle,
+/obj/item/gun/energy/plasma,
+/obj/item/gun/energy/plasma,
 /turf/unsimulated/floor{
 	dir = 1;
 	icon_state = "vault"

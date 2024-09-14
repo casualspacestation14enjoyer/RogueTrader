@@ -208,31 +208,29 @@
 	starts_loaded = FALSE
 
 /obj/item/gun/projectile/shotgun/doublebarrel
-	name = "double-barreled shotgun"
-	desc = "A classic double-barreled shotgun. In production for centuries, it has proliferated across human space, earning a sizable reputation for being simple and effective. Produced by Valhalla."
+	name = "MS Doom"
+	desc = "A classic three-barreled shotgun. In production for centuries, it has proliferated across human space, earning a sizable reputation for being simple and effective. Produced by Valhalla."
 	icon = 'icons/obj/guns/shotguns.dmi'
 	icon_state = "dshotgun"
 	item_state = "dshotgun"
 	wielded_item_state = "dshotgun-wielded"
-	//SPEEDLOADER because rapid unloading.
-	//In principle someone could make a speedloader for it, so it makes sense.
 	load_method = SINGLE_CASING|SPEEDLOADER
 	handle_casings = CYCLE_CASINGS
-	max_shells = 2
+	max_shells = 3
 	w_class = ITEM_SIZE_HUGE
 	force = 10
 	obj_flags =  OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BACK
 	caliber = CALIBER_SHOTGUN
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 1)
-	ammo_type = /obj/item/ammo_casing/shotgun/beanbag
+	ammo_type = /obj/item/ammo_casing/shotgun
 	one_hand_penalty = 4
 	wielded_item_state = "gun_wielded"
 
 	burst_delay = 0
 	firemodes = list(
-		list(mode_name="fire one barrel at a time", burst=1),
-		list(mode_name="fire both barrels at once", burst=2),
+		list(mode_name="single", burst=1),
+		list(mode_name="double", burst=2)
 		)
 
 /obj/item/gun/projectile/shotgun/doublebarrel/pellet

@@ -78,7 +78,7 @@
 	id_tag = "scraplock";
 	name = "External Lockdown"
 	},
-/obj/item/gun/energy/captain,
+/obj/item/gun/energy/lassgun/laspistol/lord,
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/command/bridge)
 "am" = (

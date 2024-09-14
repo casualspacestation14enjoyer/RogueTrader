@@ -78,7 +78,7 @@
 /obj/structure/closet/crate/ninja/sol/WillContain()
 	return list(
 		/obj/item/rig/light/ninja/sol,
-		/obj/item/gun/projectile/pistol/m22f,
+		/obj/item/gun/projectile/revolver/imperial/heavy,
 		/obj/item/ammo_magazine/pistol/double = 2,
 		/obj/item/clothing/under/scga/utility/urban,
 		/obj/item/clothing/shoes/swat,
@@ -92,7 +92,7 @@
 /obj/structure/closet/crate/ninja/gcc/WillContain()
 	return list(
 		/obj/item/rig/light/ninja/gcc,
-		/obj/item/gun/projectile/pistol/optimus,
+		/obj/item/gun/projectile/revolver/imperial/heavy/mateba,
 		/obj/item/ammo_magazine/pistol/double = 2,
 		/obj/item/ammo_magazine/box/minigun = 2,
 		/obj/item/clothing/under/iccgn/utility,

@@ -18701,8 +18701,8 @@
 "hOb" = (
 /obj/structure/table/rack,
 /obj/floor_decal/industrial/outline/grey,
-/obj/item/gun/energy/ionrifle,
-/obj/item/gun/energy/ionrifle,
+/obj/item/gun/energy/plasma,
+/obj/item/gun/energy/plasma,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/armoury/tactical)
 "hOZ" = (
@@ -21102,8 +21102,8 @@
 /area/maintenance/substation/firstdeck)
 "kSs" = (
 /obj/structure/table/rack,
-/obj/item/gun/energy/ionrifle/small,
-/obj/item/gun/energy/ionrifle/small,
+/obj/item/gun/energy/plasma/pistol,
+/obj/item/gun/energy/plasma/pistol,
 /obj/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/dark,
 /area/security/secure_storage)

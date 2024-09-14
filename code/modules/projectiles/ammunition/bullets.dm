@@ -238,6 +238,31 @@
 	caliber = CALIBER_SNIPER
 	projectile_type = /obj/item/projectile/bullet/rifle/shell/apds/rail
 
+// MECHANICUS
+
+/obj/item/ammo_casing/radcarbine
+	name = "radcarbine casings"
+	desc = "A radcarbine casing"
+	icon_state = "fshell"
+	spent_icon = "fshell-spent"
+	caliber = "rad"
+	projectile_type = /obj/item/projectile/bullet/rifle/radcarbine
+
+/obj/item/ammo_casing/radcarbine/radpistol
+	name = "radcarbine pistol casings"
+	desc = "A radcarbine pistol casing"
+	icon_state = "fshell"
+	spent_icon = "fshell-spent"
+	caliber = "rad"
+	projectile_type = /obj/item/projectile/bullet/rifle/radcarbine/radpistol
+
+/obj/item/ammo_casing/pmag
+	name = "pulse casing"
+	desc = "pulse casing"
+	icon_state = "fshell"
+	spent_icon = "fshell-spent"
+	caliber = "pmag"
+	projectile_type = /obj/item/projectile/bullet/rifle/pmag
 
 // WARHMAMER 40k - BOLTER
 
