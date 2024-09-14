@@ -47,9 +47,9 @@ var/global/list/datum/supply_drop_loot/supply_drop
 	..()
 	contents = list(
 		/obj/item/gun/projectile/pistol/slug,
-		/obj/item/gun/projectile/shotgun/doublebarrel,
-		/obj/item/gun/projectile/shotgun/pump/combat,
-		/obj/item/gun/projectile/automatic/sec_smg,
+		/obj/item/gun/projectile/shotgun/pump/voxlegis/magrave,
+		/obj/item/gun/projectile/shotgun/pump/voxlegis,
+		/obj/item/gun/projectile/automatic/autogun/valhalla,
 		/obj/item/gun/projectile/automatic/bullpup_rifle)
 
 /datum/supply_drop_loot/ballistics
@@ -59,9 +59,9 @@ var/global/list/datum/supply_drop_loot/supply_drop
 	..()
 	contents = list(
 		/obj/item/gun/projectile/pistol/slug,
-		/obj/item/gun/projectile/shotgun/doublebarrel,
-		/obj/item/gun/projectile/shotgun/pump/combat,
-		/obj/item/gun/projectile/automatic/sec_smg,
+		/obj/item/gun/projectile/shotgun/pump/voxlegis/magrave,
+		/obj/item/gun/projectile/shotgun/pump/voxlegis,
+		/obj/item/gun/projectile/automatic/autogun/valhalla,
 		/obj/item/gun/projectile/automatic/bullpup_rifle)
 
 /datum/supply_drop_loot/seeds

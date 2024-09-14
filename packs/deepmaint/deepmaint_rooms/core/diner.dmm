@@ -124,7 +124,7 @@
 /area/map_template/deepmaint)
 "jr" = (
 /obj/structure/table/marble,
-/obj/item/gun/projectile/shotgun/doublebarrel,
+/obj/item/gun/projectile/shotgun/pump/voxlegis/magrave,
 /turf/simulated/floor/wood/yew,
 /area/map_template/deepmaint)
 "ju" = (

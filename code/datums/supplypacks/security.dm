@@ -137,11 +137,11 @@
 	access = access_security
 
 /singleton/hierarchy/supply_pack/security/egun
-	name = "War Gear - Energy sidearms"
-	contains = list(/obj/item/gun/energy/gun/secure = 4)
+	name = "War Gear - Laspistols"
+	contains = list(/obj/item/gun/energy/lasgun/laspistol/militarum = 4)
 	cost = 40
 	containertype = /obj/structure/closet/crate/secure/weapon
-	containername = "energy sidearms crate"
+	containername = "laspistol crate"
 	access = access_armory
 	security_level = SUPPLY_SECURITY_ELEVATED
 

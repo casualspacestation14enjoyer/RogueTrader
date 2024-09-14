@@ -182,7 +182,7 @@
 /area/map_template/deepmaint)
 "xg" = (
 /obj/structure/table/rack,
-/obj/item/gun/projectile/shotgun/pump,
+/obj/item/gun/projectile/shotgun/pump/voxlegis,
 /obj/machinery/door/window/brigdoor/southleft,
 /obj/item/gun/projectile/pistol/military,
 /turf/simulated/floor/tiled/dark/monotile,

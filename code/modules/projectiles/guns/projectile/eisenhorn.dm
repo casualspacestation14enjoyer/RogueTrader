@@ -9,7 +9,7 @@
 	caliber = CALIBER_SLUG
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	ammo_type = /obj/item/ammo_casing/pistol
-	fire_sound = 'sound/warhammer/gunshot/auto5.ogg'
+	fire_sound = 'sound/warhammer/guns/fire/revolver_fire.ogg'
 	accuracy = 0.3
 	fire_delay = 3.3
 	max_shells = 9
@@ -155,7 +155,7 @@
 	caliber = list(
     CALIBER_SHOTGUN
 )
-	fire_sound = 'sound/warhammer/guns/fire/fal_fire.ogg'
+	fire_sound = 'sound/warhammer/guns/fire/revolver_fire.ogg'
 
 /obj/item/gun/projectile/revolver/imperial/heavy/custom/on_update_icon()
 	..()
@@ -175,6 +175,7 @@
 	icon = 'icons/obj/guns/40kproj.dmi'
 	icon_state = "crusader_pistol"
 	item_state = "pistol"
+	fire_sound = 'sound/warhammer/guns/fire/revolver_fire.ogg'
 	ammo_type = /obj/item/ammo_casing/magnum
 	magazine_type = /obj/item/ammo_magazine/magnum
 	allowed_magazines = /obj/item/ammo_magazine/magnum

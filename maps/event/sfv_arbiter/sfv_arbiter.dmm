@@ -743,9 +743,9 @@
 /obj/structure/closet/secure_closet/guncabinet{
 	req_access = list("ACCESS_SYNDICATE")
 	},
-/obj/item/gun/projectile/automatic/merc_smg,
-/obj/item/gun/projectile/automatic/merc_smg,
-/obj/item/gun/projectile/automatic/merc_smg,
+/obj/item/gun/projectile/automatic/autogun/a80,
+/obj/item/gun/projectile/automatic/autogun/a80,
+/obj/item/gun/projectile/automatic/autogun/a80,
 /obj/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/monotile,
 /area/map_template/sfv_arbiter)
@@ -1084,12 +1084,12 @@
 /obj/structure/closet/secure_closet/guncabinet{
 	req_access = list("ACCESS_SYNDICATE")
 	},
-/obj/item/gun/energy/xray/pistol,
-/obj/item/gun/energy/xray/pistol,
-/obj/item/gun/energy/ionrifle,
-/obj/item/gun/projectile/pistol/m22f,
-/obj/item/gun/projectile/pistol/m22f,
-/obj/item/gun/projectile/pistol/m22f,
+/obj/item/gun/projectile/automatic/radcarbine/radpistol,
+/obj/item/gun/projectile/automatic/radcarbine/radpistol,
+/obj/item/gun/energy/plasma,
+/obj/item/gun/projectile/revolver/imperial/heavy,
+/obj/item/gun/projectile/revolver/imperial/heavy,
+/obj/item/gun/projectile/revolver/imperial/heavy,
 /obj/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/monotile,
 /area/map_template/sfv_arbiter)
@@ -2363,8 +2363,8 @@
 /obj/structure/closet/secure_closet/guncabinet{
 	req_access = list("ACCESS_SYNDICATE")
 	},
-/obj/item/gun/projectile/shotgun/pump/combat,
-/obj/item/gun/projectile/shotgun/pump/combat,
+/obj/item/gun/projectile/shotgun/pump/voxlegis,
+/obj/item/gun/projectile/shotgun/pump/voxlegis,
 /obj/item/gun/launcher/grenade,
 /obj/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/monotile,

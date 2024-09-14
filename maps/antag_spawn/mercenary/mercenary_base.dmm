@@ -1162,8 +1162,8 @@
 	locked = 0;
 	req_access = list("ACCESS_SYNDICATE")
 	},
-/obj/item/gun/projectile/pistol/optimus,
-/obj/item/gun/projectile/pistol/optimus,
+/obj/item/gun/projectile/revolver/imperial/heavy/mateba,
+/obj/item/gun/projectile/revolver/imperial/heavy/mateba,
 /obj/item/gun/projectile/pistol/slug/old,
 /obj/item/gun/projectile/pistol/slug/old,
 /obj/item/gun/projectile/revolver/imperial,
@@ -1504,7 +1504,7 @@
 /obj/item/gun/energy/lasgun/laspistol/militarum,
 /obj/item/gun/energy/lasgun/laspistol/grim,
 /obj/item/gun/energy/lasgun/laspistol/grim,
-/obj/item/gun/energy/ionrifle/small,
+/obj/item/gun/energy/plasma/pistol,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/map_template/merc_shuttle)
 "qj" = (

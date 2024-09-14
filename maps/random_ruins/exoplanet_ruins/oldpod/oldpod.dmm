@@ -193,10 +193,10 @@
 	},
 /obj/structure/closet/crate/freezer/rations,
 /obj/decal/cleanable/dirt,
-/obj/item/gun/projectile/pirate,
-/obj/item/gun/projectile/pirate,
-/obj/item/gun/projectile/pirate,
-/obj/item/gun/projectile/pirate,
+/obj/item/gun/energy/lasgun/laspistol/grim,
+/obj/item/gun/energy/lasgun/laspistol/grim,
+/obj/item/gun/energy/lasgun/laspistol/grim,
+/obj/item/gun/energy/lasgun/laspistol/grim,
 /turf/simulated/floor/tiled/white/monotile,
 /area/map_template/oldpod)
 "aU" = (

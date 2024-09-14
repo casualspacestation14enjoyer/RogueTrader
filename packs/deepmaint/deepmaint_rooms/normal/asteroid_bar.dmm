@@ -330,7 +330,7 @@
 /obj/structure/table/marble,
 /obj/item/paper/exodus_bartender,
 /obj/item/clothing/under/rank/bartender,
-/obj/item/gun/projectile/shotgun/doublebarrel,
+/obj/item/gun/projectile/shotgun/pump/voxlegis/magrave,
 /obj/item/storage/box/ammo/stunshells,
 /obj/item/reagent_containers/spray/pepper,
 /turf/simulated/floor/lino,

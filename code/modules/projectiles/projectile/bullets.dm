@@ -357,6 +357,33 @@
 	armor_penetration = 38
 	penetrating = 3
 
+// MECHANICUS
+/obj/item/projectile/bullet/rifle/radcarbine
+	fire_sound = 'sound/warhammer/guns/misc/laser_searwall.ogg'
+	icon_state = "shot"
+	damage = 35 // Do not increase damage more then 40 if u are reading this.
+	damage_type = DAMAGE_BRUTE
+	armor_penetration = 35
+	weaken = 1
+	irradiate = 15
+	eyeblur = 2
+	drowsy = 10
+	agony = 10
+
+/obj/item/projectile/bullet/rifle/radcarbine/radpistol
+	fire_sound = 'sound/warhammer/guns/misc/laser_searwall.ogg'
+	icon_state = "shot"
+	damage = 35
+	damage_type = DAMAGE_BRUTE
+	armor_penetration = 31
+	weaken = 1
+	irradiate = 10
+	eyeblur = 1
+	drowsy = 5
+	agony = 5
+
+
+
 // ASTARTES AND ORKS
 
 /obj/item/projectile/bullet/bpistol

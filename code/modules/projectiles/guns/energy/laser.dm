@@ -606,7 +606,7 @@
 
 /obj/item/gun/energy/plasma
 	name = "Plasma Rifle" // add alt-fire for CQB combat, low charge, low damage.
-	desc = "If you see this complain that staff used the wrong object"
+	desc = "A plasma rifle..."
 	icon_state = "prifle"
 	item_state = "plasmarifle"
 	slot_flags = SLOT_BACK
@@ -714,7 +714,7 @@
 	slowdown_per_slot[slot_l_hand] = 0.1
 
 /obj/item/gun/energy/plasma/pistol/archeotech
-	name = "archeotech plasma pistol"
+	name = "Archeotech Plasma Pistol"
 	desc = "An archeotech plasma pistol, despite it's incredible age it shows no signs of decay. It's design seems outright heretical by mechanicus standards."
 	icon_state = "glockl100"
 	item_state = "pulse_pistol"

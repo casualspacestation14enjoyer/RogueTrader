@@ -1146,7 +1146,7 @@
 /obj/structure/closet/cabinet,
 /obj/item/device/radio/hailing,
 /obj/item/device/radio/hailing,
-/obj/item/gun/energy/gun/skrell,
+/obj/item/gun/energy/tau/pulserifle,
 /obj/item/shuttle_beacon,
 /obj/machinery/light/skrell{
 	dir = 8

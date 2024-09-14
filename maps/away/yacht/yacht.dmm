@@ -94,7 +94,7 @@
 /obj/structure/safe,
 /obj/item/reagent_containers/pill/cyanide,
 /obj/item/rig/medical/equipped,
-/obj/item/gun/energy/captain,
+/obj/item/gun/energy/lassgun/laspistol/lord,
 /obj/spider/stickyweb,
 /obj/decal/cleanable/dirt,
 /turf/simulated/floor/wood/walnut,
