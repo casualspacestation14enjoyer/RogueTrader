@@ -172,7 +172,7 @@
 	name = "Small Revolver"
 	desc = "A pocket-sized holdout revolver. Easily concealable.."
 	item_cost = 24
-	path = /obj/item/gun/projectile/revolver/holdout
+	path = /obj/item/gun/projectile/revolver/imperial/holdout
 
 /datum/uplink_item/item/visible_weapons/pulserifle
 	name = "Pulse Rifle"

@@ -104,7 +104,7 @@ Unique items
 War Gear
 ******/
 
-/obj/item/gun/projectile/revolver/medium/captain
+/obj/item/gun/projectile/revolver/imperial/captain
 	name = "\improper Final Argument"
 	icon = 'maps/torch/icons/obj/uniques.dmi'
 	icon_state = "mosley"

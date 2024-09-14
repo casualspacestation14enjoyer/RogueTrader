@@ -107,7 +107,7 @@
 /obj/structure/closet/crate/ninja/corpo/WillContain()
 	return list(
 		/obj/item/rig/light/ninja/corpo,
-		/obj/item/gun/energy/gun,
+		/obj/item/gun/energy/lasgun/laspistol/militarum,
 		/obj/item/inducer,
 		/obj/item/clothing/under/rank/security/corp,
 		/obj/item/clothing/shoes/swat,
@@ -121,7 +121,7 @@
 /obj/structure/closet/crate/ninja/merc/WillContain()
 	return list(
 		/obj/item/rig/merc/ninja,
-		/obj/item/gun/projectile/revolver/medium,
+		/obj/item/gun/projectile/revolver/imperial,
 		/obj/item/ammo_magazine/speedloader = 2,
 		/obj/item/clothing/under/syndicate/combat,
 		/obj/item/clothing/shoes/swat,

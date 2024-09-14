@@ -703,7 +703,7 @@
 	speed = 1
 
 	projectilesound = 'sound/weapons/gunshot/auto5.ogg'
-	projectiletype = /obj/item/projectile/bullet/pistol/strong/revolver/ap
+	projectiletype = /obj/item/projectile/bullet/magnum/revolver/ap
 
 /mob/living/simple_animal/hostile/syndicate/ranged/sentinel
 	name = "Heretical Sentinel"
@@ -886,7 +886,7 @@
 	ranged = 1
 	rapid = 0
 	projectilesound = 'sound/weapons/gunshot/loudbolt.ogg'
-	projectiletype = /obj/item/projectile/bullet/bolterrifle
+	projectiletype = /obj/item/projectile/bullet/bolt
 
 	speak_chance = 0
 
@@ -901,6 +901,6 @@
 	ranged = 1
 	rapid = 1
 	projectilesound = 'sound/weapons/gunshot/loudbolt.ogg'
-	projectiletype = /obj/item/projectile/bullet/bolterrifle
+	projectiletype = /obj/item/projectile/bullet/bolt
 
 */

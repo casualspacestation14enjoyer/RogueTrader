@@ -5,8 +5,8 @@
 	icon_state = "secguncomp"
 
 /obj/random/lilgun/spawn_choices()
-	return list(/obj/item/gun/projectile/pistol/sec,
-				/obj/item/gun/energy/gun,
+	return list(/obj/item/gun/projectile/pistol/slug,
+				/obj/item/gun/energy/lasgun/laspistol/militarum,
 				/obj/item/gun/energy/stunrevolver,
 				/obj/item/gun/projectile/shotgun/doublebarrel/sawn,
 				/obj/item/gun/energy/xray/pistol,
@@ -15,10 +15,10 @@
 				/obj/item/gun/energy/incendiary_laser,
 				/obj/item/gun/projectile/automatic/machine_pistol,
 				/obj/item/gun/projectile/pistol/holdout,
-				/obj/item/gun/projectile/revolver,
-				/obj/item/gun/projectile/revolver/medium,
-				/obj/item/gun/energy/retro,
-				/obj/item/gun/projectile/pistol/throwback,
+				/obj/item/gun/projectile/revolver/imperial,
+				/obj/item/gun/projectile/revolver/imperial,
+				/obj/item/gun/energy/lasgun/laspistol/grim,
+				/obj/item/gun/projectile/pistol/slug/old,
 				/obj/item/gun/energy/ionrifle/small
 	)
 
@@ -30,7 +30,7 @@
 
 /obj/random/biggun/spawn_choices()
 	return list(/obj/item/gun/energy/lasercannon,
-				/obj/item/gun/energy/laser,
+				/obj/item/gun/energy/lasgun/kantrael,
 				/obj/item/gun/energy/captain,
 				/obj/item/gun/energy/pulse_rifle,
 				/obj/item/gun/energy/pulse_rifle/carbine,

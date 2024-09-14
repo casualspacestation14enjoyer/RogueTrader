@@ -35,7 +35,7 @@
 	emag_gear = list(
 		/obj/item/melee/baton/robot/electrified_arm,
 		/obj/item/device/flash,
-		/obj/item/gun/energy/gun,
+		/obj/item/gun/energy/lasgun/laspistol/militarum,
 		/obj/item/reagent_containers/spray,
 		/obj/item/gun/launcher/syringe/rapid/sleepy,
 		/obj/item/shockpaddles/robot

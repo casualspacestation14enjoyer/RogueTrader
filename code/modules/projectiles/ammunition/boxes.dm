@@ -184,9 +184,9 @@
 	ammo_type = /obj/item/ammo_casing/shell/knockout
 	max_ammo = 5
 
-/obj/item/ammo_magazine/speedloader/clip/sniper/bos
-	name = "boscolet munitions rod"
-	desc = "A stripper clip for boscelot weapons."
+/obj/item/ammo_magazine/speedloader/clip/sniper/xenos
+	name = "xenos munitions rod"
+	desc = "A stripper clip for xenos weapons."
 	ammo_type = /obj/item/ammo_casing/shell/shred
 	max_ammo = 3
 
@@ -210,22 +210,22 @@
 	desc = "A speed loader for revolvers."
 	icon_state = "spdloader_magnum"
 	caliber = CALIBER_SLUG_MAGNUM
-	ammo_type = /obj/item/ammo_casing/pistol/heavy
+	ammo_type = /obj/item/ammo_casing/magnum
 	matter = list(MATERIAL_STEEL = 1440)
-	max_ammo = 8
+	max_ammo = 7
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/speedloader/revolver/ap
 	name = "15mm AP speed loader"
-	ammo_type = /obj/item/ammo_casing/pistol/heavy/ap
+	ammo_type = /obj/item/ammo_casing/magnum/ap
 
 /obj/item/ammo_magazine/speedloader/revolver/kp
 	name = "15mm KP speed loader"
-	ammo_type = /obj/item/ammo_casing/pistol/heavy/kp
+	ammo_type = /obj/item/ammo_casing/magnum/kp
 
 /obj/item/ammo_magazine/speedloader/revolver/ms
 	name = "15mm MS speed loader"
-	ammo_type = /obj/item/ammo_casing/pistol/heavy/ms
+	ammo_type = /obj/item/ammo_casing/magnum/ms
 
 /obj/item/ammo_magazine/speedloader/small
 	name = "speed loader"
@@ -318,24 +318,24 @@
 	mag_type = MAGAZINE
 	caliber = CALIBER_SLUG_MAGNUM
 	matter = list(MATERIAL_STEEL = 1680)
-	ammo_type = /obj/item/ammo_casing/pistol/heavy
+	ammo_type = /obj/item/ammo_casing/magnum
 	max_ammo = 12
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/magnum/ap
 	name = "15mm AP slug magazine"
 	desc = "An 15mm slug magazine"
-	ammo_type = /obj/item/ammo_casing/pistol/heavy/ap
+	ammo_type = /obj/item/ammo_casing/magnum/ap
 
 /obj/item/ammo_magazine/magnum/kp
 	name = "15mm KP slug magazine"
 	desc = "An 15mm slug magazine"
-	ammo_type = /obj/item/ammo_casing/pistol/heavy/kp
+	ammo_type = /obj/item/ammo_casing/magnum/kp
 
 /obj/item/ammo_magazine/magnum/ms
 	name = "15mm MS slug magazine"
 	desc = "An 15mm slug magazine"
-	ammo_type = /obj/item/ammo_casing/pistol/heavy/ms
+	ammo_type = /obj/item/ammo_casing/magnum/ms
 
 /obj/item/ammo_magazine/magnum/empty
 	initial_ammo = 0
@@ -375,28 +375,50 @@
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/autogun/militarum/ap
-	name = "AP magazine (6.8mm)"
+	name = "AP magazine (6.8mm AR)"
 	ammo_type = /obj/item/ammo_casing/autogun/militarum/ap
 
 /obj/item/ammo_magazine/autogun/militarum/kp
-	name = "KP magazine (6.8mm)"
+	name = "KP magazine (6.8mm AR)"
 	ammo_type = /obj/item/ammo_casing/autogun/militarum/kp
 
 /obj/item/ammo_magazine/autogun/militarum/ms
-	name = "MS magazine (6.8mm)"
-	ammo_type = /obj/item/ammo_casing/autogun/heavy/ms
+	name = "MS magazine (6.8mm AR)"
+	ammo_type = /obj/item/ammo_casing/autogun/militarum/ms
+
+/obj/item/ammo_magazine/autogun/heavy
+	name = "box magazine (6.8mm)"
+	icon_state = "hmg"
+	max_ammo = 58
+	ammo_type = /obj/item/ammo_casing/autogun/militarum
 
 /obj/item/ammo_magazine/autogun/heavy/ap
-	name = "AP magazine (10mm)"
-	ammo_type = /obj/item/ammo_casing/autogun/heavy/ap
+	name = "AP box magazine (6.8mm AR)"
+	ammo_type = /obj/item/ammo_casing/autogun/militarum/ap
 
 /obj/item/ammo_magazine/autogun/heavy/kp
-	name = "KP magazine (10mm)"
-	ammo_type = /obj/item/ammo_casing/autogun/heavy/kp
+	name = "KP box magazine (6.8mm AR)"
+	ammo_type = /obj/item/ammo_casing/autogun/militarum/kp
 
 /obj/item/ammo_magazine/autogun/heavy/ms
-	name = "MS magazine (10mm)"
-	ammo_type = /obj/item/ammo_casing/autogun/heavy/ms
+	name = "MS box magazine (6.8mm AR)"
+	ammo_type = /obj/item/ammo_casing/autogun/militarum/ms
+
+/obj/item/ammo_magazine/heavy
+	name = "magazine (10mm AR)"
+	ammo_type = /obj/item/ammo_casing/heavy
+
+/obj/item/ammo_magazine/heavy/ap
+	name = "AP magazine (10mm AR)"
+	ammo_type = /obj/item/ammo_casing/heavy/ap
+
+/obj/item/ammo_magazine/heavy/kp
+	name = "KP magazine (10mm AR)"
+	ammo_type = /obj/item/ammo_casing/heavy/kp
+
+/obj/item/ammo_magazine/heavy/ms
+	name = "MS magazine (10mm AR)"
+	ammo_type = /obj/item/ammo_casing/heavy/ms
 
 /* ork mags */
 
@@ -557,7 +579,7 @@
 	desc = "A stripper clip for pistol magnum caliber weapons."
 	icon_state = "pclip"
 	caliber = CALIBER_SLUG_MAGNUM
-	ammo_type = /obj/item/ammo_casing/pistol/heavy
+	ammo_type = /obj/item/ammo_casing/magnum
 	matter = list(MATERIAL_STEEL = 1300)
 	max_ammo = 5
 	multiple_sprites = 1

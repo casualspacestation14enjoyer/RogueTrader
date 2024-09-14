@@ -122,24 +122,24 @@
 	projectile_type = /obj/item/projectile/bullet/pistol/practice
 	icon_state = "smallcasing_p"
 
-/obj/item/ammo_casing/pistol/heavy
+/obj/item/ammo_casing/magnum
 	desc = "A heavy slug casing."
 	caliber = CALIBER_SLUG_MAGNUM
-	projectile_type = /obj/item/projectile/bullet/pistol/strong
+	projectile_type = /obj/item/projectile/bullet/magnum
 	icon_state = "magnumcasing"
 	spent_icon = "magnumcasing-spent"
 
-/obj/item/ammo_casing/pistol/heavy/ap
+/obj/item/ammo_casing/magnum/ap
 	desc = "A heavy slug AP casing."
-	projectile_type = /obj/item/projectile/bullet/pistol/strong/ap
+	projectile_type = /obj/item/projectile/bullet/magnum/ap
 
-/obj/item/ammo_casing/pistol/heavy/kp
+/obj/item/ammo_casing/magnum/kp
 	desc = "A heavy slug KP casing."
-	projectile_type = /obj/item/projectile/bullet/pistol/strong/kp
+	projectile_type = /obj/item/projectile/bullet/magnum/kp
 
-/obj/item/ammo_casing/pistol/heavy/ms
+/obj/item/ammo_casing/magnum/ms
 	desc = "A heavy slug MS casing."
-	projectile_type = /obj/item/projectile/bullet/pistol/strong/ms
+	projectile_type = /obj/item/projectile/bullet/magnum/ms
 
 
 /obj/item/ammo_casing/autogun
@@ -181,23 +181,23 @@
 	projectile_type = /obj/item/projectile/bullet/rifle/militarum/kp
 
 
-/obj/item/ammo_casing/autogun/heavy
-	desc = "An 10mm slug casing."
+/obj/item/ammo_casing/heavy
+	desc = "An 10mm AR slug casing."
 	caliber = CALIBER_AUTOGUN_HEAVY
 	projectile_type = /obj/item/projectile/bullet/rifle/heavy
 	icon_state = "rifle-casing"
 	spent_icon = "rifle-casing-spent"
 
-/obj/item/ammo_casing/autogun/heavy/ap
-	desc = "An AP 10mm slug casing."
+/obj/item/ammo_casing/heavy/ap
+	desc = "An AP 10mm AR slug casing."
 	projectile_type = /obj/item/projectile/bullet/rifle/heavy/ap
 
-/obj/item/ammo_casing/autogun/heavy/ms
-	desc = "An MS 10mm slug casing."
+/obj/item/ammo_casing/heavy/ms
+	desc = "An MS 10mm AR slug casing."
 	projectile_type = /obj/item/projectile/bullet/rifle/heavy/ms
 
-/obj/item/ammo_casing/autogun/heavy/kp
-	desc = "An KP 10mm slug casing."
+/obj/item/ammo_casing/heavy/kp
+	desc = "An KP 10mm AR slug casing."
 	projectile_type = /obj/item/projectile/bullet/rifle/heavy/kp
 
 
@@ -230,28 +230,31 @@
 	desc = "An neurotoxin Discarding Sabot shell."
 	projectile_type = /obj/item/projectile/bullet/rifle/shell/knockout
 
-/obj/item/ammo_casing/a145/bos
+/obj/item/ammo_casing/xenos/bos
 	name = "Boscelot munitions piece"
 	desc = "A xenos tech fragment."
+	icon_state = "lcasing"
+	spent_icon = "lcasing-spent"
+	caliber = CALIBER_SNIPER
 	projectile_type = /obj/item/projectile/bullet/rifle/shell/apds/rail
 
 
 // WARHMAMER 40k - BOLTER
 
 /obj/item/ammo_casing/boltpistol
-	desc = "A .75 bolt pistol casing."
+	desc = "A .50 bolt pistol casing." // Bolt pistol
 	caliber = ".75"
-	projectile_type = /obj/item/projectile/bullet/bolterrifle // make seperate one for pistols later. also maybe for hoomans as well.
+	projectile_type = /obj/item/projectile/bullet/bpistol
 
 /obj/item/ammo_casing/bolter
-	desc = "A .75 bolt rifle casing."
+	desc = "A .75 bolt rifle casing." // Bolter
 	caliber = ".75"
-	projectile_type = /obj/item/projectile/bullet/bolterrifle
+	projectile_type = /obj/item/projectile/bullet/bolt
 
 /obj/item/ammo_casing/bolter/astartes
-	desc = "A .95 bolt rifle casing."
+	desc = "A .95 bolt rifle casing." // Astartes Bolter
 	caliber = ".95"
-	projectile_type = /obj/item/projectile/bullet/bolterrifle/astartes
+	projectile_type = /obj/item/projectile/bullet/bolt/astartes
 
 /obj/item/ammo_casing/ork
 	desc = "A giant and crude slug that was made with scrap."

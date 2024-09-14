@@ -1164,10 +1164,10 @@
 	},
 /obj/item/gun/projectile/pistol/optimus,
 /obj/item/gun/projectile/pistol/optimus,
-/obj/item/gun/projectile/pistol/throwback,
-/obj/item/gun/projectile/pistol/throwback,
-/obj/item/gun/projectile/revolver/medium,
-/obj/item/gun/projectile/revolver/medium,
+/obj/item/gun/projectile/pistol/slug/old,
+/obj/item/gun/projectile/pistol/slug/old,
+/obj/item/gun/projectile/revolver/imperial,
+/obj/item/gun/projectile/revolver/imperial,
 /obj/floor_decal/industrial/warning{
 	dir = 1
 	},
@@ -1500,10 +1500,10 @@
 	locked = 0;
 	req_access = list("ACCESS_SYNDICATE")
 	},
-/obj/item/gun/energy/gun,
-/obj/item/gun/energy/gun,
-/obj/item/gun/energy/gun/small,
-/obj/item/gun/energy/gun/small,
+/obj/item/gun/energy/lasgun/laspistol/militarum,
+/obj/item/gun/energy/lasgun/laspistol/militarum,
+/obj/item/gun/energy/lasgun/laspistol/grim,
+/obj/item/gun/energy/lasgun/laspistol/grim,
 /obj/item/gun/energy/ionrifle/small,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/map_template/merc_shuttle)

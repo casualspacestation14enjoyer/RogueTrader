@@ -85,11 +85,11 @@ GLOBAL_DATUM_INIT(raiders, /datum/antagonist/raider, new)
 		/obj/item/gun/projectile/shotgun/doublebarrel,
 		/obj/item/gun/projectile/shotgun/doublebarrel/pellet,
 		/obj/item/gun/projectile/shotgun/doublebarrel/sawn,
-		/obj/item/gun/projectile/pistol/sec,
+		/obj/item/gun/projectile/pistol/slug,
 		/obj/item/gun/projectile/pistol/holdout,
-		/obj/item/gun/projectile/revolver,
+		/obj/item/gun/projectile/revolver/imperial,
 		/obj/item/gun/projectile/pirate,
-		/obj/item/gun/projectile/revolver/medium,
+		/obj/item/gun/projectile/revolver/imperial,
 		/obj/item/gun/projectile/pistol/broomstick
 		)
 

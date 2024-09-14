@@ -324,7 +324,7 @@
 /obj/decal/cleanable/dirt,
 /obj/decal/cleanable/dirt,
 /obj/landmark/corpse/engineer,
-/obj/item/gun/energy/retro,
+/obj/item/gun/energy/lasgun/laspistol/grim,
 /turf/simulated/floor/tiled/monotile,
 /area/map_template/oldpod)
 "dj" = (

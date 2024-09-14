@@ -2216,7 +2216,7 @@
 /obj/structure/table/rack,
 /obj/item/stack/material/uranium/ten,
 /obj/item/stack/material/uranium/ten,
-/obj/item/gun/projectile/pistol/throwback,
+/obj/item/gun/projectile/pistol/slug/old,
 /turf/simulated/floor/tiled/techfloor,
 /area/miningstation/vault)
 "fj" = (
@@ -6501,7 +6501,7 @@
 	},
 /obj/floor_decal/industrial/hatch,
 /obj/floor_decal/industrial/hatch/yellow,
-/obj/item/gun/projectile/pistol/throwback,
+/obj/item/gun/projectile/pistol/slug/old,
 /turf/simulated/floor/tiled/techfloor,
 /area/miningstation/dorms2)
 "oV" = (
@@ -8553,7 +8553,7 @@
 /obj/structure/closet/emcloset,
 /obj/floor_decal/industrial/hatch,
 /obj/floor_decal/industrial/hatch/yellow,
-/obj/item/gun/projectile/pistol/throwback,
+/obj/item/gun/projectile/pistol/slug/old,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/miningstation/hangarhall)
 "SA" = (

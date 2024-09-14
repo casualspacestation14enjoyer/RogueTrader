@@ -21,7 +21,7 @@
 	possible_trading_items = list(
 		/obj/item/gun/projectile/pistol/holdout = TRADER_ALL,
 		/obj/item/gun/projectile/pistol/magnum_pistol = TRADER_ALL,
-		/obj/item/gun/projectile/pistol/sec = TRADER_ALL,
+		/obj/item/gun/projectile/pistol/slug = TRADER_ALL,
 		/obj/item/gun/projectile/heavysniper/boltaction	= TRADER_ALL,
 		/obj/item/gun/projectile/pistol/sec/MK = TRADER_BLACKLIST,
 		/obj/item/gun/projectile/shotgun/pump = TRADER_SUBTYPES_ONLY,

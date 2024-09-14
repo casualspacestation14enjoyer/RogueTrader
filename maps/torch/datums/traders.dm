@@ -6,7 +6,7 @@
 		/obj/item/gun/projectile/pistol/m22f = TRADER_ALL,
 		/obj/item/gun/projectile/pistol/m19 = TRADER_ALL,
 		/obj/item/gun/projectile/pistol/magnum_pistol = TRADER_ALL,
-		/obj/item/gun/projectile/pistol/sec = TRADER_ALL,
+		/obj/item/gun/projectile/pistol/slug = TRADER_ALL,
 		/obj/item/gun/projectile/heavysniper/boltaction	= TRADER_ALL,
 		/obj/item/gun/projectile/pistol/sec/MK = TRADER_BLACKLIST,
 		/obj/item/gun/projectile/shotgun/pump = TRADER_SUBTYPES_ONLY,

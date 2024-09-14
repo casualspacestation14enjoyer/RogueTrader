@@ -142,55 +142,38 @@
 	armor_penetration = 7
 
 /obj/item/projectile/bullet/pistol/holdout // Higher quality penetrative slugs
-	damage = 35
-	armor_penetration = 14
+	damage = 32
+	armor_penetration = 16
 	penetration_modifier = 0.5
 	distance_falloff = 4
 
 /obj/item/projectile/bullet/pistol/holdout/ap
-	armor_penetration = 18
-
-/obj/item/projectile/bullet/pistol/holdout/kp
-	damage = 38
-	armor_penetration = 22
-
-/obj/item/projectile/bullet/pistol/holdout/ms
-	damage = 43
-	armor_penetration = 9
-
-/obj/item/projectile/bullet/pistol/strong
-	damage = 40
-	penetration_modifier = 0.5
-	distance_falloff = 3
-	armor_penetration = 15
-
-/obj/item/projectile/bullet/pistol/strong/ap
-	armor_penetration = 19
-
-/obj/item/projectile/bullet/pistol/strong/kp
-	damage = 43
-	armor_penetration = 23
-
-/obj/item/projectile/bullet/pistol/strong/ms
-	damage = 48
-	armor_penetration = 10
-
-/obj/item/projectile/bullet/pistol/heavy
-	damage = 45
-	penetration_modifier = 0.5
-	distance_falloff = 3
 	armor_penetration = 20
 
-/obj/item/projectile/bullet/pistol/heavy/ap
+/obj/item/projectile/bullet/pistol/holdout/kp
+	damage = 35
 	armor_penetration = 24
 
-/obj/item/projectile/bullet/pistol/heavy/kp
-	damage = 48
-	armor_penetration = 28
+/obj/item/projectile/bullet/pistol/holdout/ms
+	damage = 40
+	armor_penetration = 11
 
-/obj/item/projectile/bullet/pistol/heavy/ms
-	damage = 53
-	armor_penetration = 15
+/obj/item/projectile/bullet/magnum
+	damage = 40
+	penetration_modifier = 0.5
+	distance_falloff = 2 // Heavy slug.
+	armor_penetration = 16
+
+/obj/item/projectile/bullet/magnum/ap
+	armor_penetration = 20
+
+/obj/item/projectile/bullet/magnum/kp
+	damage = 43
+	armor_penetration = 24
+
+/obj/item/projectile/bullet/magnum/ms
+	damage = 48
+	armor_penetration = 11
 
 /obj/item/projectile/bullet/pistol/rubber //"rubber" bullets
 	name = "rubber bullet"
@@ -376,55 +359,52 @@
 
 // ASTARTES AND ORKS
 
-/obj/item/projectile/bullet/bolterrifle
-	name =".75 bolt" //.75, astartes sized bolters or boltpistols
-	fire_sound = 'sound/warhammer/gunshot/loudbolt.ogg'
-	icon_state= "bolter"
-	damage = 75
-	armor_penetration = 36 //this is totally not cause its a .75
-
-/obj/item/projectile/bullet/bolterrifle/astartes
-	name =".95 bolt"  // Will make kraken penetrator variants later.
-	fire_sound = 'sound/warhammer/gunshot/loudbolt.ogg'
-	icon_state= "bolter"
-	damage = 89
-	armor_penetration = 40
-
 /obj/item/projectile/bullet/bpistol
-	name =".50 bolt" //.50, human sized bolters and bolt pistols
+	name =".50 bolt" //.50, human sized bolt pistols.
 	fire_sound = 'sound/warhammer/gunshot/loudbolt.ogg'
 	icon_state= "bolter"
 	damage = 68
-
-// SPECIAL BOLT ROUNDS
+	armor_penetration = 34
 
 /obj/item/projectile/bullet/bpistol/kp
 	fire_sound = 'sound/warhammer/gunshot/loudbolt.ogg'
+	damage = 71
+	armor_penetration = 42
+
+/obj/item/projectile/bullet/bpistol/ms
+	fire_sound = 'sound/warhammer/gunshot/loudbolt.ogg'
+	damage = 76
+	armor_penetration = 29
+
+/obj/item/projectile/bullet/bolt
+	name =".75 bolt" //.75,  locke pattern
+	fire_sound = 'sound/warhammer/gunshot/loudbolt.ogg'
+	icon_state= "bolter"
 	damage = 73
-	armor_penetration = 39
-	penetrating = 2
+	armor_penetration = 36
 
 /obj/item/projectile/bullet/bolt/kp
 	fire_sound = 'sound/warhammer/gunshot/loudbolt.ogg'
-	damage = 83
-	armor_penetration = 41
-	penetrating = 2
-
-/obj/item/projectile/bullet/bpistol/ms // This is .75 Bolt Pistol Round
-	fire_sound = 'sound/warhammer/gunshot/loudbolt.ogg'
-	damage = 79
-	armor_penetration = 35
+	damage = 76
+	armor_penetration = 44
 
 /obj/item/projectile/bullet/bolt/ms
 	fire_sound = 'sound/warhammer/gunshot/loudbolt.ogg'
-	damage = 89
-	armor_penetration = 37
+	damage = 81
+	armor_penetration = 31
+
+/obj/item/projectile/bullet/bolt/astartes
+	name =".95 bolt"  // Astartes
+	fire_sound = 'sound/warhammer/gunshot/loudbolt.ogg'
+	icon_state= "bolter"
+	damage = 83
+	armor_penetration = 40
 
 /obj/item/projectile/bullet/ork
 	name = "scrap"
 	fire_sound = 'sound/warhammer/gunshot/loudbolt.ogg'
 	damage = 38
-	armor_penetration = 36
+	armor_penetration = 30
 
 // XENOS
 /obj/item/projectile/bullet/rifle/pmag // Xenos Super Penetrative Round. The rifle is an automatic railgun that fires small tiny projectiles.
