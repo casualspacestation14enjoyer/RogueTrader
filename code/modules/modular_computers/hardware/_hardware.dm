@@ -4,7 +4,7 @@
 	icon = 'icons/obj/modular_components.dmi'
 	part_flags = PART_FLAG_HAND_REMOVE
 
-	health_max = 100
+	health_max = 200
 
 	/// If the hardware uses extra power, change this.
 	var/power_usage = 0

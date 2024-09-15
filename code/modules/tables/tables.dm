@@ -9,7 +9,7 @@
 	layer = TABLE_LAYER
 	throwpass = 1
 	mob_offset = 12
-	health_max = 10
+	health_max = 100
 	obj_flags = OBJ_FLAG_RECEIVE_TABLE
 	var/flipped = 0
 

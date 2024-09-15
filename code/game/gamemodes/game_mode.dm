@@ -268,7 +268,7 @@ var/global/list/additional_antag_types = list()
 		"shadowy interlopers",
 		"a stranded Xenos arkship",
 		"haywire IPC constructs",
-		"rogue Unathi exiles",
+		"rogue Kroot exiles",
 		"artifacts of eldritch horror",
 		"a brain slug infestation",
 		"killer bugs that lay eggs in the husks of the living",

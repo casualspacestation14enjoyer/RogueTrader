@@ -307,7 +307,7 @@
 	flags_inv = 0
 
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_modular_armor_unathi.dmi'
+		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_modular_armor_unathi.dmi'
 		)
 
 /obj/item/clothing/suit/armor/pcarrier/light
@@ -381,7 +381,7 @@
 	accessories = list(/obj/item/clothing/accessory/arm_guards/riot, /obj/item/clothing/accessory/leg_guards/riot)
 
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_modular_armor_unathi.dmi'
+		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_modular_armor_unathi.dmi'
 		)
 
 /obj/item/clothing/suit/armor/bulletproof
@@ -406,7 +406,7 @@
 	accessories = list(/obj/item/clothing/accessory/arm_guards/ballistic, /obj/item/clothing/accessory/leg_guards/ballistic)
 
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_modular_armor_unathi.dmi'
+		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_modular_armor_unathi.dmi'
 		)
 
 /obj/item/clothing/suit/armor/bulletproof/vest //because apparently some map uses this somewhere and I'm too lazy to go looking for and replacing it.
@@ -434,7 +434,7 @@
 	accessories = list(/obj/item/clothing/accessory/arm_guards/ablative, /obj/item/clothing/accessory/leg_guards/ablative)
 
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_modular_armor_unathi.dmi'
+		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_modular_armor_unathi.dmi'
 		)
 
 /obj/item/clothing/suit/armor/laserproof/handle_shield(mob/user, damage, atom/damage_source = null, mob/attacker = null, def_zone = null, attack_text = "the attack")

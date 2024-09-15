@@ -22,11 +22,11 @@
 	//Species-specific stuff.
 	species_restricted = list(SPECIES_HUMAN, SPECIES_IPC, SPECIES_TAU)
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_head_unathi.dmi',
+		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_head_unathi.dmi',
 		SPECIES_TAU = 'icons/mob/species/skrell/onmob_head_skrell.dmi',
 		)
 	sprite_sheets_obj = list(
-		SPECIES_UNATHI = 'icons/obj/clothing/species/unathi/obj_head_unathi.dmi',
+		SPECIES_KROOT = 'icons/obj/clothing/species/unathi/obj_head_unathi.dmi',
 		SPECIES_TAU = 'icons/obj/clothing/species/skrell/obj_head_skrell.dmi',
 		)
 
@@ -57,11 +57,11 @@
 
 	species_restricted = list(SPECIES_HUMAN, SPECIES_TAU, SPECIES_IPC)
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_suit_unathi.dmi',
+		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_suit_unathi.dmi',
 		SPECIES_TAU = 'icons/mob/species/skrell/onmob_suit_skrell.dmi',
 		)
 	sprite_sheets_obj = list(
-		SPECIES_UNATHI = 'icons/obj/clothing/species/unathi/obj_suit_unathi.dmi',
+		SPECIES_KROOT = 'icons/obj/clothing/species/unathi/obj_suit_unathi.dmi',
 		SPECIES_TAU = 'icons/obj/clothing/species/skrell/obj_suit_skrell.dmi',
 		)
 

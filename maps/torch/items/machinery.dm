@@ -86,14 +86,14 @@
 		/singleton/item_modifier/space_suit/science,
 		/singleton/item_modifier/space_suit/security/alt
 	)
-	species = list(SPECIES_HUMAN,SPECIES_TAU,SPECIES_UNATHI)
+	species = list(SPECIES_HUMAN,SPECIES_TAU,SPECIES_KROOT)
 
 /obj/machinery/suit_cycler/exploration
 	name = "exploration suit cycler"
 	model_text = "Exploration"
 	req_access = list(access_explorer)
 	available_modifications = list(/singleton/item_modifier/space_suit/sol/explorer)
-	species = list(SPECIES_HUMAN,SPECIES_TAU,SPECIES_UNATHI)
+	species = list(SPECIES_HUMAN,SPECIES_TAU,SPECIES_KROOT)
 
 /obj/machinery/suit_cycler/command
 	name = "command suit cycler"

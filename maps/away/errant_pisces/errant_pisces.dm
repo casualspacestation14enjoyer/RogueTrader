@@ -176,7 +176,7 @@
 /obj/landmark/corpse/carp_fisher
 	name = "carp fisher"
 	corpse_outfits = list(/singleton/hierarchy/outfit/corpse/carp_fisher)
-	species = list(SPECIES_HUMAN = 70, SPECIES_IPC = 20, SPECIES_UNATHI = 10)
+	species = list(SPECIES_HUMAN = 70, SPECIES_IPC = 20, SPECIES_KROOT = 10)
 
 /singleton/hierarchy/outfit/corpse/carp_fisher
 	name = "Dead carp fisher"

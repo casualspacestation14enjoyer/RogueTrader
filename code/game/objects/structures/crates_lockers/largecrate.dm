@@ -5,7 +5,7 @@
 	icon_state = "densecrate"
 	density = TRUE
 	atom_flags = ATOM_FLAG_NO_TEMP_CHANGE | ATOM_FLAG_CLIMBABLE
-	health_max = 100
+	health_max = 200
 	health_min_damage = 4
 
 /obj/structure/largecrate/Initialize()

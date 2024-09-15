@@ -9,7 +9,7 @@
 	silicon_restriction = STATUS_UPDATE
 	machine_name = "sensors console"
 	machine_desc = "Used to activate, monitor, and configure a spaceship's sensors. Higher range means higher temperature; dangerously high temperatures may fry the delicate equipment."
-	health_max = 100
+	health_max = 400
 	var/weakref/sensor_ref
 	var/list/last_scan
 	var/muted = FALSE

@@ -12,7 +12,7 @@ var/global/list/floor_light_cache = list()
 	active_power_usage = 20
 	power_channel = LIGHT
 	matter = list(MATERIAL_STEEL = 250, MATERIAL_GLASS = 250)
-	health_max = 5
+	health_max = 50
 	damage_hitsound = 'sound/effects/Glasshit.ogg'
 
 	var/damaged

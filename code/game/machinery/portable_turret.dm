@@ -18,7 +18,7 @@
 	active_power_usage = 300	//when active, this turret takes up constant 300 Equipment power
 	power_channel = EQUIP	//drains power from the EQUIPMENT channel
 
-	health_max = 80
+	health_max = 800
 	health_min_damage = 5
 
 	var/raised = 0			//if the turret cover is "open" and the turret is raised

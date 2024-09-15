@@ -12,7 +12,7 @@
 	density = TRUE
 	throwpass = 1
 	layer = TABLE_LAYER
-	health_max = 100
+	health_max = 800
 
 	var/paint_color
 	var/stripe_color

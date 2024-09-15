@@ -6,7 +6,7 @@
 	var/base_state = "left"
 	health_min_damage = 4
 	damage_hitsound = 'sound/effects/Glasshit.ogg'
-	health_max = 150 //If you change this, consiter changing ../door/window/brigdoor/ health at the bottom of this .dm file
+	health_max = 1500 //If you change this, consiter changing ../door/window/brigdoor/ health at the bottom of this .dm file
 	visible = FALSE
 	use_power = POWER_USE_OFF
 	stat_immune = MACHINE_STAT_NOSCREEN | MACHINE_STAT_NOINPUT | MACHINE_STAT_NOPOWER
@@ -246,7 +246,7 @@
 	icon_state = "leftsecure"
 	base_state = "leftsecure"
 	var/id = null
-	health_max = 300
+	health_max = 3000
 	pry_mod = 0.65
 
 

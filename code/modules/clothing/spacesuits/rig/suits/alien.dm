@@ -1,6 +1,6 @@
 /obj/item/rig/unathi
 	name = "\improper NT breacher chassis control module"
-	desc = "A Necromundan-made Unathi battle-rig. Looks like a fish, moves like a fish, steers like a cow."
+	desc = "A Necromundan-made Kroot battle-rig. Looks like a fish, moves like a fish, steers like a cow."
 	suit_type = "\improper NT breacher rig"
 	icon_state = "breacher_rig_cheap"
 	armor = list(
@@ -24,7 +24,7 @@
 
 /obj/item/rig/unathi/fancy
 	name = "breacher chassis control module"
-	desc = "An (outwardly) authentic Unathi breacher chassis. Huge, bulky and absurdly heavy. It must be like wearing a tank."
+	desc = "An (outwardly) authentic Kroot breacher chassis. Huge, bulky and absurdly heavy. It must be like wearing a tank."
 	suit_type = "breacher chassis"
 	icon_state = "breacher_rig"
 	armor = list(
@@ -38,15 +38,15 @@
 	online_slowdown = 2
 
 /obj/item/clothing/head/helmet/space/rig/unathi
-	species_restricted = list(SPECIES_UNATHI)
+	species_restricted = list(SPECIES_KROOT)
 	force = 5
 	sharp = TRUE
 
 /obj/item/clothing/suit/space/rig/unathi
-	species_restricted = list(SPECIES_UNATHI)
+	species_restricted = list(SPECIES_KROOT)
 
 /obj/item/clothing/shoes/magboots/rig/unathi
-	species_restricted = list(SPECIES_UNATHI)
+	species_restricted = list(SPECIES_KROOT)
 
 /obj/item/clothing/gloves/rig/unathi
-	species_restricted = list(SPECIES_UNATHI)
+	species_restricted = list(SPECIES_KROOT)

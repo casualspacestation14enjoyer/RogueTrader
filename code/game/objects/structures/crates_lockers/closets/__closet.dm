@@ -5,7 +5,7 @@
 	icon_state = "base"
 	density = TRUE
 	w_class = ITEM_SIZE_NO_CONTAINER
-	health_max = 100
+	health_max = 500
 	health_min_damage = 3
 
 	var/welded = 0

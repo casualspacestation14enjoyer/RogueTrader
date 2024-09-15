@@ -119,7 +119,7 @@
 	deform = 'icons/mob/human_races/species/monkey/stok_body.dmi'
 
 	tail = "stoktail"
-	greater_form = SPECIES_UNATHI
+	greater_form = SPECIES_KROOT
 	flesh_color = "#34af10"
 	base_color = "#066000"
 	force_cultural_info = list(

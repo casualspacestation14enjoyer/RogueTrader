@@ -8,7 +8,7 @@
 	pixel_y = -32
 	pixel_x = -32
 	idle_power_usage = 15 KILOWATTS
-	health_max = 1000
+	health_max = 3000
 	damage_hitsound = 'sound/machines/BSD_damaging.ogg'
 	health_min_damage = 10
 

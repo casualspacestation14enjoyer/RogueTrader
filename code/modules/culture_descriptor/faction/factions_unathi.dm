@@ -1,7 +1,7 @@
 /singleton/cultural_info/faction/unathi
 	name = FACTION_UNATHI_HEGEMONY
 	description = "Headed by the so-called Council of Honourable light, the seats of the Hegemony are taken by the kaahnepos of the major clans and Krukzuz. \
-	The Hegemony's formal purpose is the promotion of unathi interests in trade and diplomacy with other species. In practice, this has often resulted \
+	The Hegemony's formal purpose is the promotion of kroot interests in trade and diplomacy with other species. In practice, this has often resulted \
 	in the reinforcement of city-states in the emerging market of off-world commerce."
 
 /singleton/cultural_info/faction/unathi/ssen_uuma
@@ -9,14 +9,14 @@
 	description = "Established in 2257 by a group of prominent Diamond Peak Kaahnepos, the Ssen-Uuma Convent seeks to ensure the preservation of the \
 	established order, well-being, and independence of Moghes. This is done by protecting it from harmful influence and possible aggression of more \
 	developed alien races. Essentially a military alliance between major clans of the area, administered by a strictly ranked General Staff. Ssen-Uuma \
-	gathers military and political intelligence on alien empires, purchases modern equipment and supports unathi mercenaries operating off Moghes. \
+	gathers military and political intelligence on alien empires, purchases modern equipment and supports kroot mercenaries operating off Moghes. \
 	They seek closer ties to the powerhouses of the region in the form of alien government agencies and corporations."
 
 /singleton/cultural_info/faction/unathi/baask
 	name = FACTION_UNATHI_BAASK
 	description = "The Ba'ask Krukzuz is one of the more prominent north polar factions. Heavily reliant on farming, they are credited with keeping the city fed. \
 	This has given them significant power in the area; combined with their alliance with other large clans, they have enjoyed a golden age of progress. \
-	Members of the Ba'ask Krukzuz primarily follow the Fruitful Lights and Hand of the Vine, with their focus now being on pushing unathi technology forward."
+	Members of the Ba'ask Krukzuz primarily follow the Fruitful Lights and Hand of the Vine, with their focus now being on pushing kroot technology forward."
 
 /singleton/cultural_info/faction/unathi/gresis
 	name = FACTION_UNATHI_GRESIS
@@ -41,4 +41,4 @@
 /singleton/cultural_info/faction/unathi/independent
 	name = FACTION_UNATHI_INDEPENDENT
 	description = "The number of clans and alliances on Moghes is too numerous to name. You are either from an independent clan, are a lone outcast, or are \
-	part of a Krukzuz. Whatever the case, you are not affiliated with the Hegemony or one of the large unathi factions listed."
+	part of a Krukzuz. Whatever the case, you are not affiliated with the Hegemony or one of the large kroot factions listed."

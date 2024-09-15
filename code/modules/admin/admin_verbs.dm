@@ -711,7 +711,7 @@ var/global/list/admin_verbs_mod = list(
 	if(!istype(M, /mob/living/carbon/human))
 		to_chat(usr, SPAN_WARNING("You can only do this to humans!"))
 		return
-	switch(alert("Are you sure you wish to edit this mob's appearance? Skrell, Unathi and Xenos can result in unintended consequences.",,"Compliance","No"))
+	switch(alert("Are you sure you wish to edit this mob's appearance? Skrell, Kroot and Xenos can result in unintended consequences.",,"Compliance","No"))
 		if("No")
 			return
 	var/new_facial = input("Please select facial hair color.", "Character Generation") as color
@@ -727,7 +727,7 @@ var/global/list/admin_verbs_mod = list(
 		M.eye_color = new_eyes
 		M.update_eyes()
 
-	var/new_skin = input("Please select body color. This is for Unathi, and Skrell only!", "Character Generation") as color
+	var/new_skin = input("Please select body color. This is for Kroot, and Skrell only!", "Character Generation") as color
 	if(new_skin)
 		M.skin_color = new_skin
 

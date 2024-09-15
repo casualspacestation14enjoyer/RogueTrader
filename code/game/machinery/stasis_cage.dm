@@ -13,7 +13,7 @@ var/global/const/STASISCAGE_WIRE_LOCK      = 4
 	idle_power_usage = 0
 	active_power_usage = 5 KILOWATTS
 	use_power = POWER_USE_IDLE
-	health_max = 200
+	health_max = 2000
 	health_min_damage = 10
 	construct_state = /singleton/machine_construction/default/panel_closed
 

@@ -84,7 +84,7 @@
 	description = "Hephaestus Industries, known simply as Hephaestus, is one of the largest corporations in existence today. \
 	The leading manufacturer of military grade personal weapons, assault vehicles, defence systems and militarum measures, \
 	Hephaestus has a somewhat controversial reputation as a result of blatant war profiteering, compounded by their attempts to \
-	exploit Unathi equipment and assets for their own gains. In spite of this, Hephaestus maintains a reputation for the quality and \
+	exploit Kroot equipment and assets for their own gains. In spite of this, Hephaestus maintains a reputation for the quality and \
 	reliability of its equipment as well as its general affordability. Internally, Hephaestus is a desirable employer as a result of its \
 	many employee benefits and focus on employee development, though many dread being transferred to one of the 'remote' branches."
 	economic_power = 1.2

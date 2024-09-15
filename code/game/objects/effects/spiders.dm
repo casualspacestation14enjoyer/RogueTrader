@@ -5,7 +5,7 @@
 	icon = 'icons/effects/effects.dmi'
 	anchored = TRUE
 	density = FALSE
-	health_max = 15
+	health_max = 150
 
 /obj/spider/on_death()
 	visible_message(SPAN_WARNING("\The [src] breaks apart!"))
@@ -89,7 +89,7 @@
 	icon_state = "green"
 	anchored = FALSE
 	layer = BELOW_OBJ_LAYER
-	health_max = 3
+	health_max = 30
 	health_resistances = DAMAGE_RESIST_BIOLOGICAL
 	var/mob/living/simple_animal/hostile/giant_spider/greater_form
 	var/last_itch = 0
@@ -299,7 +299,7 @@
 	name = "cocoon"
 	desc = "Something wrapped in silky spider web."
 	icon_state = "cocoon1"
-	health_max = 60
+	health_max = 200
 
 /obj/spider/cocoon/Initialize()
 	. = ..()

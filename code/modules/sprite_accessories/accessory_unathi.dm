@@ -3,26 +3,26 @@
 	icon = 'icons/mob/human_races/species/unathi/hair.dmi'
 	icon_state = "demon_horn"
 	blend = ICON_MULTIPLY
-	species_allowed = list(SPECIES_UNATHI)
+	species_allowed = list(SPECIES_KROOT)
 
 
 /datum/sprite_accessory/hair/una/spines_long
-	name = "Long Unathi Spines"
+	name = "Long Kroot Spines"
 	icon_state = "soghun_longspines"
 
 
 /datum/sprite_accessory/hair/una/spines_short
-	name = "Short Unathi Spines"
+	name = "Short Kroot Spines"
 	icon_state = "soghun_shortspines"
 
 
 /datum/sprite_accessory/hair/una/frills_long
-	name = "Long Unathi Frills"
+	name = "Long Kroot Frills"
 	icon_state = "soghun_longfrills"
 
 
 /datum/sprite_accessory/hair/una/frills_medium
-	name = "Unathi Frills"
+	name = "Kroot Frills"
 	icon_state = "frills"
 
 
@@ -32,12 +32,12 @@
 
 
 /datum/sprite_accessory/hair/una/frills_short
-	name = "Short Unathi Frills"
+	name = "Short Kroot Frills"
 	icon_state = "soghun_shortfrills"
 
 
 /datum/sprite_accessory/hair/una/horns
-	name = "Unathi Horns"
+	name = "Kroot Horns"
 	icon_state = "soghun_horns"
 
 
@@ -97,14 +97,14 @@
 
 
 /datum/sprite_accessory/skin/unathi
-	name = "Default Unathi skin"
+	name = "Default Kroot skin"
 	icon_state = "default"
 	icon = 'icons/mob/human_races/species/unathi/skin.dmi'
-	species_allowed = list(SPECIES_UNATHI)
+	species_allowed = list(SPECIES_KROOT)
 
 
 /datum/sprite_accessory/marking/unathi
-	species_allowed = list(SPECIES_UNATHI)
+	species_allowed = list(SPECIES_KROOT)
 
 
 /datum/sprite_accessory/marking/unathi/body
@@ -311,100 +311,100 @@
 
 
 /datum/sprite_accessory/marking/unathi/tattoo/chest/hive
-	name = "Tattoo (Hive, Body, Unathi)"
+	name = "Tattoo (Hive, Body, Kroot)"
 	icon_state = "hive-chest"
 
 
 /datum/sprite_accessory/marking/unathi/tattoo/arm_left/campbell
-	name = "Tattoo (Campbell, Left Arm, Unathi)"
+	name = "Tattoo (Campbell, Left Arm, Kroot)"
 	icon_state = "campbell-arm-left"
 
 
 /datum/sprite_accessory/marking/unathi/tattoo/arm_right/campbell
-	name = "Tattoo (Campbell, Right Arm, Unathi)"
+	name = "Tattoo (Campbell, Right Arm, Kroot)"
 	icon_state = "campbell-arm-right"
 
 
 /datum/sprite_accessory/marking/unathi/tattoo/head/tiger
-	name = "Tattoo (Tiger Stripes, Head, Unathi)"
+	name = "Tattoo (Tiger Stripes, Head, Kroot)"
 	icon_state = "tiger-head"
 
 
 /datum/sprite_accessory/marking/unathi/tattoo/chest/tiger
-	name = "Tattoo (Tiger Stripes, Body, Unathi)"
+	name = "Tattoo (Tiger Stripes, Body, Kroot)"
 	icon_state = "tiger-chest"
 
 
 /datum/sprite_accessory/marking/unathi/tattoo/arm_left/tiger
-	name = "Tattoo (Tiger Stripes, Left Arm, Unathi)"
+	name = "Tattoo (Tiger Stripes, Left Arm, Kroot)"
 	icon_state = "tiger-arm-left"
 
 
 /datum/sprite_accessory/marking/unathi/tattoo/arm_right/tiger
-	name = "Tattoo (Tiger Stripes, Right Arm, Unathi)"
+	name = "Tattoo (Tiger Stripes, Right Arm, Kroot)"
 	icon_state = "tiger-arm-right"
 
 
 /datum/sprite_accessory/marking/unathi/tattoo/leg_left/tiger
-	name = "Tattoo (Tiger Stripes, Left Leg, Unathi)"
+	name = "Tattoo (Tiger Stripes, Left Leg, Kroot)"
 	icon_state = "tiger-leg-left"
 
 
 /datum/sprite_accessory/marking/unathi/tattoo/leg_right/tiger
-	name = "Tattoo (Tiger Stripes, Right Leg, Unathi)"
+	name = "Tattoo (Tiger Stripes, Right Leg, Kroot)"
 	icon_state = "tiger-leg-right"
 
 
 /datum/sprite_accessory/marking/unathi/tattoo/foot_left/tiger
-	name = "Tattoo (Tiger Stripes, Left Foot, Unathi)"
+	name = "Tattoo (Tiger Stripes, Left Foot, Kroot)"
 	icon_state = "tiger-foot-left"
 
 
 /datum/sprite_accessory/marking/unathi/tattoo/foot_right/tiger
-	name = "Tattoo (Tiger Stripes, Right Foot, Unathi)"
+	name = "Tattoo (Tiger Stripes, Right Foot, Kroot)"
 	icon_state = "tiger-foot-right"
 
 
 /datum/sprite_accessory/marking/unathi/tattoo/chest/bands
-	name = "Tattoo (Bands, Body, Unathi)"
+	name = "Tattoo (Bands, Body, Kroot)"
 	icon_state = "bands-chest"
 
 
 /datum/sprite_accessory/marking/unathi/tattoo/arm_left/bands
-	name = "Tattoo (Bands, Left Arm, Unathi)"
+	name = "Tattoo (Bands, Left Arm, Kroot)"
 	icon_state = "bands-arm-left"
 
 
 /datum/sprite_accessory/marking/unathi/tattoo/arm_right/bands
-	name = "Tattoo (Bands, Right Arm, Unathi)"
+	name = "Tattoo (Bands, Right Arm, Kroot)"
 	icon_state = "bands-arm-right"
 
 
 /datum/sprite_accessory/marking/unathi/tattoo/hand_left/bands
-	name = "Tattoo (Bands, Left Hand, Unathi)"
+	name = "Tattoo (Bands, Left Hand, Kroot)"
 	icon_state = "bands-hand-left"
 
 
 /datum/sprite_accessory/marking/unathi/tattoo/hand_right/bands
-	name = "Tattoo (Bands, Right Hand, Unathi)"
+	name = "Tattoo (Bands, Right Hand, Kroot)"
 	icon_state = "bands-hand-right"
 
 
 /datum/sprite_accessory/marking/unathi/tattoo/leg_left/bands
-	name = "Tattoo (Bands, Left Leg, Unathi)"
+	name = "Tattoo (Bands, Left Leg, Kroot)"
 	icon_state = "bands-leg-left"
 
 
 /datum/sprite_accessory/marking/unathi/tattoo/leg_right/bands
-	name = "Tattoo (Bands, Right Leg, Unathi)"
+	name = "Tattoo (Bands, Right Leg, Kroot)"
 	icon_state = "bands-leg-right"
 
 
 /datum/sprite_accessory/marking/unathi/tattoo/foot_left/bands
-	name = "Tattoo (Bands, Left Foot, Unathi)"
+	name = "Tattoo (Bands, Left Foot, Kroot)"
 	icon_state = "bands-foot-left"
 
 
 /datum/sprite_accessory/marking/unathi/tattoo/foot_right/bands
-	name = "Tattoo (Bands, Right Foot, Unathi)"
+	name = "Tattoo (Bands, Right Foot, Kroot)"
 	icon_state = "bands-foot-right"

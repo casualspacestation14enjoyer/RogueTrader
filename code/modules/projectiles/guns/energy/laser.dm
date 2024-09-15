@@ -18,6 +18,7 @@
 /obj/item/gun/energy/laser/New()
 	..()
 	slowdown_per_slot[slot_wear_suit] = 0.1
+	slowdown_per_slot[slot_back] = 0.1
 	slowdown_per_slot[slot_belt] = 0.15
 	slowdown_per_slot[slot_r_hand] = 0.15
 	slowdown_per_slot[slot_l_hand] = 0.15
@@ -190,6 +191,7 @@
 /obj/item/gun/energy/lasgun/New()
 	..()
 	slowdown_per_slot[slot_wear_suit] = 0.1
+	slowdown_per_slot[slot_back] = 0.1
 	slowdown_per_slot[slot_belt] = 0.15
 	slowdown_per_slot[slot_r_hand] = 0.15
 	slowdown_per_slot[slot_l_hand] = 0.15
@@ -241,9 +243,10 @@
 /obj/item/gun/energy/lasgun/laspistol/New()
 	..()
 	slowdown_per_slot[slot_wear_suit] = 0
+	slowdown_per_slot[slot_back] = 0
 	slowdown_per_slot[slot_belt] = 0
-	slowdown_per_slot[slot_r_hand] = 0.07
-	slowdown_per_slot[slot_l_hand] = 0.07
+	slowdown_per_slot[slot_r_hand] = 0.1
+	slowdown_per_slot[slot_l_hand] = 0.1
 
 /obj/item/gun/energy/lasgun/laspistol/grim
 	name = "Grim Laspistol"
@@ -455,6 +458,7 @@
 /obj/item/gun/energy/lasgun/lucius/New()
 	..()
 	slowdown_per_slot[slot_wear_suit] = 0.12
+	slowdown_per_slot[slot_back] = 0.12
 	slowdown_per_slot[slot_belt] = 0.18
 	slowdown_per_slot[slot_r_hand] = 0.18
 	slowdown_per_slot[slot_l_hand] = 0.18
@@ -516,6 +520,7 @@
 /obj/item/gun/energy/lasgun/hotshot/New()
 	..()
 	slowdown_per_slot[slot_wear_suit] = 0.15
+	slowdown_per_slot[slot_back] = 0.15
 	slowdown_per_slot[slot_belt] = 0.2
 	slowdown_per_slot[slot_r_hand] = 0.2
 	slowdown_per_slot[slot_l_hand] = 0.2
@@ -584,25 +589,49 @@
 	icon_state = "meltagun"
 	item_state = "multimelta"
 	wielded_item_state = "multimelta"
-	fire_sound = 'sound/warhammer/guns/fire/melta.ogg'
+	fire_sound = list('sound/warhammer/ds/flmthrowr_01.ogg')
 	icon = 'icons/cadia-sprites/migrated2/gun_2.dmi'
 	slot_flags = null // Must be held at all times or properly stored.
 	force = 12 // Heavy and slow to hit.
-	attack_cooldown = 30
 	max_shots = 5
 	w_class = ITEM_SIZE_HUGE
-	fire_delay = 16
-	charge_cost = 2000
-	cell_type = /obj/item/cell/device/high/xenos
-	projectile_type = /obj/item/projectile/beam/meltagun
+	fire_delay = 15
+	charge_cost = 20
+	ammotype = /obj/item/cell/device/high/melta
+	cell_type = /obj/item/cell/device/high/melta
+	projectile_type = /obj/item/projectile/bullet/meltagun
 
 /obj/item/gun/energy/meltagun/New()
 	..()
 	slowdown_per_slot[slot_back] = 0.2
 	slowdown_per_slot[slot_wear_suit] = 0.3
 	slowdown_per_slot[slot_belt] = 0.3
-	slowdown_per_slot[slot_r_hand] = 0.5
-	slowdown_per_slot[slot_l_hand] = 0.5
+	slowdown_per_slot[slot_r_hand] = 0.4
+	slowdown_per_slot[slot_l_hand] = 0.4
+
+/obj/item/gun/energy/meltagun/multi
+	name = "Multi Melta"
+	desc = "Is a powerful, short-ranged anti-armour weapon that produces an intense, energetic beam of heat in the tens of thousands of degrees Centigrade."
+	icon_state = "multimelta"
+	item_state = "multimelta"
+	wielded_item_state = "multimelta"
+	fire_sound = list('sound/warhammer/ds/flmthrowr_01.ogg')
+	icon = 'icons/cadia-sprites/migrated2/gun_2.dmi'
+	slot_flags = null
+	force = 12 // Heavy and slow to hit.
+	max_shots = 5
+	burst = 2
+	w_class = ITEM_SIZE_HUGE
+	fire_delay = 19
+	charge_cost = 20
+
+/obj/item/gun/energy/meltagun/multi/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.3
+	slowdown_per_slot[slot_wear_suit] = 0.3
+	slowdown_per_slot[slot_belt] = 0.3
+	slowdown_per_slot[slot_r_hand] = 0.45
+	slowdown_per_slot[slot_l_hand] = 0.45
 
 /obj/item/gun/energy/plasma
 	name = "Plasma Rifle" // add alt-fire for CQB combat, low charge, low damage.
@@ -632,8 +661,9 @@
 
 /obj/item/gun/energy/plasma/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = 0.23
-	slowdown_per_slot[slot_belt] = 0.23
+	slowdown_per_slot[slot_wear_suit] = 0.2
+	slowdown_per_slot[slot_back] = 0.2
+	slowdown_per_slot[slot_belt] = 0.2
 	slowdown_per_slot[slot_r_hand] = 0.27
 	slowdown_per_slot[slot_l_hand] = 0.27
 
@@ -664,6 +694,7 @@
 /obj/item/gun/energy/plasma/pistol/New()
 	..()
 	slowdown_per_slot[slot_wear_suit] = 0.1
+	slowdown_per_slot[slot_back] = 0.1
 	slowdown_per_slot[slot_belt] = 0.1
 	slowdown_per_slot[slot_r_hand] = 0.15
 	slowdown_per_slot[slot_l_hand] = 0.15
@@ -709,6 +740,7 @@
 /obj/item/gun/energy/plasma/pistol/xenos/New()
 	..()
 	slowdown_per_slot[slot_wear_suit] = 0
+	slowdown_per_slot[slot_back] = 0
 	slowdown_per_slot[slot_belt] = 0
 	slowdown_per_slot[slot_r_hand] = 0.1
 	slowdown_per_slot[slot_l_hand] = 0.1
@@ -758,6 +790,7 @@
 /obj/item/gun/energy/tau/ionrifle/New()
 	..()
 	slowdown_per_slot[slot_wear_suit] = 0.25
+	slowdown_per_slot[slot_back] = 0.25
 	slowdown_per_slot[slot_belt] = 0.25
 	slowdown_per_slot[slot_r_hand] = 0.3
 	slowdown_per_slot[slot_l_hand] = 0.3
@@ -787,6 +820,7 @@
 /obj/item/gun/energy/tau/railgun/New()
 	..()
 	slowdown_per_slot[slot_wear_suit] = 0.21
+	slowdown_per_slot[slot_back] = 0.21
 	slowdown_per_slot[slot_belt] = 0.21
 	slowdown_per_slot[slot_r_hand] = 0.27
 	slowdown_per_slot[slot_l_hand] = 0.27
@@ -816,6 +850,7 @@
 /obj/item/gun/energy/tau/pulsepistol/New()
 	..()
 	slowdown_per_slot[slot_wear_suit] = 0
+	slowdown_per_slot[slot_back] = 0
 	slowdown_per_slot[slot_belt] = 0
 	slowdown_per_slot[slot_r_hand] = 0.1
 	slowdown_per_slot[slot_l_hand] = 0.1
@@ -849,6 +884,7 @@
 /obj/item/gun/energy/tau/pulserifle/New()
 	..()
 	slowdown_per_slot[slot_wear_suit] = 0.15
+	slowdown_per_slot[slot_back] = 0.15
 	slowdown_per_slot[slot_belt] = 0.15
 	slowdown_per_slot[slot_r_hand] = 0.2
 	slowdown_per_slot[slot_l_hand] = 0.2

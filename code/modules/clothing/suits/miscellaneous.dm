@@ -467,7 +467,7 @@
 
 /obj/item/clothing/suit/rubber/unathi
 	name = "unathi suit"
-	desc = "A Unathi suit made out of rubber."
+	desc = "A Kroot suit made out of rubber."
 	icon_state = "lizsuit"
 
 /obj/item/clothing/suit/hospital

@@ -31,7 +31,7 @@
 	var/adrone = FALSE
 	pass_flags = 0
 	anchored = FALSE
-	health_max = 30
+	health_max = 90
 	var/detail_color = COLOR_ASSEMBLY_BLACK
 	var/list/color_whitelist = list( //This is just for checking that hacked colors aren't in the save data.
 		COLOR_ASSEMBLY_BLACK,

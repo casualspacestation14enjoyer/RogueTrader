@@ -10,7 +10,7 @@
 	var/being_used = 0
 	waterproof = FALSE
 
-	health_max = 500
+	health_max = 3000
 	health_min_damage = 5
 	damage_hitsound = 'sound/effects/Glasshit.ogg'
 

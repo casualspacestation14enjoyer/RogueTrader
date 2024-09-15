@@ -19,7 +19,7 @@
 	flags_inv = CLOTHING_BULKY
 
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_modular_armor_unathi.dmi'
+		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_modular_armor_unathi.dmi'
 		)
 
 

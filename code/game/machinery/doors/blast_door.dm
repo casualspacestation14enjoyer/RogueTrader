@@ -268,7 +268,7 @@
 	icon_state_closed_broken = "blast_closed_broken"
 
 	health_min_damage = 30
-	health_max = 1000
+	health_max = 5000
 	block_air_zones = TRUE
 
 /obj/machinery/door/blast/regular/escape_pod
@@ -300,7 +300,7 @@
 	open_sound = 'sound/machines/shutters_open.ogg'
 	close_sound = 'sound/machines/shutters_close.ogg'
 	health_min_damage = 10
-	health_max = 500
+	health_max = 3000
 	explosion_resistance = 10
 	pry_mod = 0.55
 

@@ -10,7 +10,7 @@
 	layer = BELOW_OBJ_LAYER
 	explosion_resistance = 1
 	rad_resistance_modifier = 0.1
-	health_max = 10
+	health_max = 100
 	damage_hitsound = 'sound/effects/grillehit.ogg'
 	attacked_verb = "kicks"
 	var/init_material = MATERIAL_STEEL
@@ -23,7 +23,7 @@
 	desc = "The remains of a flimsy lattice of metal rods, with bolts to secure it to the floor."
 	icon_state = "broken"
 	density = FALSE
-	health_max = 6
+	health_max = 60
 
 /obj/structure/grille/get_material()
 	return material

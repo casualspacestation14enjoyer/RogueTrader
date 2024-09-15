@@ -279,7 +279,7 @@
 	density = TRUE
 	unacidable = TRUE
 	var/obj/rune/wall/rune
-	health_max = 200
+	health_max = 2000
 
 /obj/cultwall/New(loc, bcolor)
 	..()

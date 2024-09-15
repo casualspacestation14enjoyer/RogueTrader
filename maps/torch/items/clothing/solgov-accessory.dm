@@ -4,7 +4,7 @@
 	accessory_icons = list(slot_w_uniform_str = 'maps/torch/icons/mob/onmob_accessories_solgov.dmi', slot_wear_suit_str = 'maps/torch/icons/mob/onmob_accessories_solgov.dmi')
 	w_class = ITEM_SIZE_TINY
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'maps/torch/icons/mob/unathi/onmob_accessories_solgov_unathi.dmi'
+		SPECIES_KROOT = 'maps/torch/icons/mob/unathi/onmob_accessories_solgov_unathi.dmi'
 		)
 
 /*****
@@ -220,7 +220,7 @@ scarves
 	icon = 'icons/obj/clothing/obj_accessories.dmi'
 	accessory_icons = list(slot_w_uniform_str = 'icons/mob/onmob/onmob_accessories.dmi', slot_wear_suit_str = 'icons/mob/onmob/onmob_accessories.dmi')
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_accessories_unathi.dmi'
+		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_accessories_unathi.dmi'
 		)
 	icon_state = "whitescarf"
 	on_rolled_down = ACCESSORY_ROLLED_NONE

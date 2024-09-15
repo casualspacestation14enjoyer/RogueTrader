@@ -126,7 +126,7 @@
 		/datum/mob_descriptor/height,
 		/datum/mob_descriptor/build = 1
 		)
-
+	spawn_flags = SPECIES_IS_RESTRICTED
 	appearance_flags = SPECIES_APPEARANCE_HAS_HAIR_COLOR | SPECIES_APPEARANCE_HAS_SKIN_TONE_TRITON | SPECIES_APPEARANCE_HAS_LIPS | SPECIES_APPEARANCE_HAS_UNDERWEAR | SPECIES_APPEARANCE_HAS_EYE_COLOR
 
 /datum/species/human/tritonian/can_float(mob/living/carbon/human/H)

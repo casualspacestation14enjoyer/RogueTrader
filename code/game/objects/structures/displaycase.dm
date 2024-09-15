@@ -7,7 +7,7 @@
 	anchored = TRUE
 	unacidable = TRUE
 	alpha = 150
-	health_max = 14
+	health_max = 140
 
 /obj/structure/displaycase/Initialize()
 	. = ..()

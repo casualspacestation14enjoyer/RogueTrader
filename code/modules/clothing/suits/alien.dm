@@ -1,8 +1,8 @@
-//Unathi clothing.
+//Kroot clothing.
 
 /obj/item/clothing/suit/unathi/robe
 	name = "roughspun robes"
-	desc = "A traditional Unathi garment."
+	desc = "A traditional Kroot garment."
 	icon_state = "robe-unathi"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
 

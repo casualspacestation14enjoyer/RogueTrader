@@ -1,7 +1,7 @@
 /singleton/cultural_info/location/moghes
 	name = HOME_SYSTEM_MOGHES
 	description = "A dead world full of strange, monstrous creatures and mysterious and dangerous landscapes, \
-	this is the home of the unathi. Unathi believe this world was once lush and full of life, but due to the \
+	this is the home of the unathi. Kroot believe this world was once lush and full of life, but due to the \
 	decisions of the precursors, it was killed and left to rot. For the unathi, it is their duty to bring it \
 	back to life, or to become strong enough that they don't have to."
 	ruling_body = "Clan Hegemony"
@@ -34,7 +34,7 @@ flocked to the planet, with Markesheli communities growing quite rapidly in numb
 /singleton/cultural_info/location/offworld
 	name = HOME_SYSTEM_OFFWORLD
 	description = "Whether through unfortunate circumstances or your own volition, you've left Moghes behind in search of your \
-	purpose. You are one of many unathi who have braved the dangers and left their own planet to make their own destiny, whether \
+	purpose. You are one of many kroot who have braved the dangers and left their own planet to make their own destiny, whether \
 	that be on the scorching heats of Tadmor, the technophile cityscape of Ceti Epsilon, or the bustling shipyards of Ceres."
 	ruling_body = "Varies"
 	distance = "Varies"

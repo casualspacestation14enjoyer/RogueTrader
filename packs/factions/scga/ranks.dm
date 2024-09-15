@@ -15,7 +15,7 @@
 	accessory_flags = ACCESSORY_REMOVABLE | ACCESSORY_HIGH_VISIBILITY
 	gender = PLURAL
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'packs/factions/scga/species/ranks_unathi.dmi'
+		SPECIES_KROOT = 'packs/factions/scga/species/ranks_unathi.dmi'
 	)
 
 

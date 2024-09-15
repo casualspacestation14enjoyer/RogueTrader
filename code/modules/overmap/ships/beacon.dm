@@ -6,7 +6,7 @@
 	density = TRUE
 	anchored = TRUE
 	idle_power_usage = 0
-	health_max = 100
+	health_max = 300
 	active_power_usage = 1 KILOWATTS
 	construct_state = /singleton/machine_construction/default/panel_closed
 	var/obj/overmap/radio/signal

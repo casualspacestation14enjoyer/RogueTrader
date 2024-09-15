@@ -27,6 +27,14 @@
 		item_state = "boltaction"
 		wielded_item_state = "boltaction-wielded"
 
+/obj/item/gun/projectile/heavysniper/boltaction/imperial/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.1
+	slowdown_per_slot[slot_back] = 0.1
+	slowdown_per_slot[slot_belt] = 0.15
+	slowdown_per_slot[slot_r_hand] = 0.15
+	slowdown_per_slot[slot_l_hand] = 0.15
+
 /obj/item/gun/projectile/heavysniper/boltaction/imperial/triangong
 	name = "Triangong 4-46"
 	desc = "An old custom made bolt action stub rifle chambered in 15mm rounds. It has a scope attached."
@@ -134,6 +142,14 @@
 		item_state = "shotgun"
 		wielded_item_state = "shotgun-wielded"
 
+/obj/item/gun/projectile/shotgun/pump/voxlegis/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.1
+	slowdown_per_slot[slot_back] = 0.1
+	slowdown_per_slot[slot_belt] = 0.15
+	slowdown_per_slot[slot_r_hand] = 0.15
+	slowdown_per_slot[slot_l_hand] = 0.15
+
 /obj/item/gun/projectile/shotgun/pump/voxlegis/magrave
 	name = "\improper WTX Belle Magrave"
 	desc = "A rare specialty Magrave shotgun long out of production - this retired veteran has been well maintained over the years by it's previous owners."
@@ -165,6 +181,14 @@
 		icon_state = "hunting-sawn"
 		item_state = "sawnchester"
 		wielded_item_state = "sawnchester-wielded"
+
+/obj/item/gun/projectile/shotgun/pump/voxlegis/sawn/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0
+	slowdown_per_slot[slot_back] = 0
+	slowdown_per_slot[slot_belt] = 0
+	slowdown_per_slot[slot_r_hand] = 0.1
+	slowdown_per_slot[slot_l_hand] = 0.1
 
 /obj/item/gun/projectile/automatic/autogun
 	name = "Rugged Autogun"
@@ -205,6 +229,7 @@
 /obj/item/gun/projectile/automatic/autogun/New()
 	..()
 	slowdown_per_slot[slot_back] = 0.1
+	slowdown_per_slot[slot_wear_suit] = 0.1
 	slowdown_per_slot[slot_belt] = 0.1
 	slowdown_per_slot[slot_r_hand] = 0.15
 	slowdown_per_slot[slot_l_hand] = 0.15
@@ -327,6 +352,14 @@
 		item_state = "R84"
 		wielded_item_state = "R84"
 
+/obj/item/gun/projectile/automatic/slugrifle/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.12
+	slowdown_per_slot[slot_wear_suit] = 0.12
+	slowdown_per_slot[slot_belt] = 0.12
+	slowdown_per_slot[slot_r_hand] = 0.17
+	slowdown_per_slot[slot_l_hand] = 0.17
+
 /obj/item/gun/projectile/automatic/slugrifle/scipio
 	name = "Scipio Pattern Rifle"
 	desc = "An Scipio Pattern Rifle, commonly used by agri-farmers and hunters to deal with the occasional vermin who cross their path, chambered with 7mm handgun rounds. It has a scope attached."
@@ -424,9 +457,10 @@
 /obj/item/gun/projectile/automatic/autogun/stubber/New()
 	..()
 	slowdown_per_slot[slot_back] = 0.2
+	slowdown_per_slot[slot_wear_suit] = 0.2
 	slowdown_per_slot[slot_belt] = 0.2
-	slowdown_per_slot[slot_r_hand] = 0.25
-	slowdown_per_slot[slot_l_hand] = 0.25
+	slowdown_per_slot[slot_r_hand] = 0.27
+	slowdown_per_slot[slot_l_hand] = 0.27
 
 /obj/item/gun/projectile/automatic/autogun/stubber/cognis
 	name = "Cognis Pattern Heavy Stubber"
@@ -496,6 +530,7 @@
 	slowdown_per_slot[slot_belt] = 0.4
 	slowdown_per_slot[slot_r_hand] = 0.6
 	slowdown_per_slot[slot_l_hand] = 0.6
+	slowdown_per_slot[slot_wear_suit] = 0.4
 
 /obj/item/gun/projectile/automatic/boltrifle/on_update_icon()
 	..()
@@ -598,6 +633,7 @@
 	slowdown_per_slot[slot_belt] = 0.2
 	slowdown_per_slot[slot_r_hand] = 0.4
 	slowdown_per_slot[slot_l_hand] = 0.4
+	slowdown_per_slot[slot_wear_suit] = 0.2
 
 /obj/item/gun/projectile/automatic/boltrifle/lockebolter/drusian
 	name = "Drusian Pattern bolter"
@@ -697,6 +733,14 @@
 		item_state = "pulse_pistol0"
 		wielded_item_state = "pulse_pistol0"
 
+/obj/item/gun/projectile/automatic/radcarbine/radpistol/New()
+	..()
+	slowdown_per_slot[slot_back] = 0
+	slowdown_per_slot[slot_wear_suit] = 0
+	slowdown_per_slot[slot_belt] = 0
+	slowdown_per_slot[slot_r_hand] = 0.1
+	slowdown_per_slot[slot_l_hand] = 0.1
+
 // XENOS
 
 /obj/item/gun/projectile/automatic/gaussrifle
@@ -721,8 +765,9 @@
 
 /obj/item/gun/projectile/automatic/gaussrifle/New()
 	..()
-	slowdown_per_slot[slot_back] = 0.15 // Back and wear slowdown is higher due to Xenos tech not being designed for human bodies.
+	slowdown_per_slot[slot_back] = 0.15 // Wear slowdown is higher due to Xenos tech not being designed for human bodies.
 	slowdown_per_slot[slot_belt] = 0.25
+	slowdown_per_slot[slot_wear_suit] = 0.25
 	slowdown_per_slot[slot_r_hand] = 0.4
 	slowdown_per_slot[slot_l_hand] = 0.4
 

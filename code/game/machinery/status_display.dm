@@ -17,7 +17,7 @@
 	anchored = TRUE
 	density = FALSE
 	idle_power_usage = 10
-	health_max = 10
+	health_max = 100
 	damage_hitsound = 'sound/effects/Glasshit.ogg'
 	var/mode = 1	// 0 = Blank
 					// 1 = Shuttle timer

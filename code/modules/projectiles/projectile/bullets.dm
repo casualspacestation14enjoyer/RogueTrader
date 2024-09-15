@@ -253,7 +253,7 @@
 /* "Rifle" rounds */
 
 /obj/item/projectile/bullet/rifle // 8mm slug round. Ideal for soft targets and light armour.
-	damage = 40
+	damage = 36
 	armor_penetration = 20
 	distance_falloff = 1
 
@@ -261,26 +261,26 @@
 	armor_penetration = 24
 
 /obj/item/projectile/bullet/rifle/kp
-	damage = 43
+	damage = 39
 	armor_penetration = 28
 
 /obj/item/projectile/bullet/rifle/ms
-	damage = 48
+	damage = 44
 	armor_penetration = 15
 
 /obj/item/projectile/bullet/rifle/heavy // 10mm heavy rifle slug. Big recoil.
-	damage = 48
+	damage = 43
 	armor_penetration = 25
 
 /obj/item/projectile/bullet/rifle/heavy/ap
 	armor_penetration = 29
 
 /obj/item/projectile/bullet/rifle/heavy/kp
-	damage = 51
+	damage = 46
 	armor_penetration = 32
 
 /obj/item/projectile/bullet/rifle/heavy/ms
-	damage = 56
+	damage = 51
 	armor_penetration = 20
 
 /obj/item/projectile/bullet/rifle/militarum // 6.8 Militarum. Higher AP, less damage to 8mm.
@@ -342,6 +342,30 @@
 	drowsy = 20
 	stun = 3
 	weaken = 3
+
+/obj/item/projectile/bullet/meltagun
+	name = "Meltagun beam"
+	icon_state = "melta"
+	damage = 145
+	agony = 25
+	weaken = 2
+	eyeblur = 4
+	stun = 3
+	armor_penetration = 42
+	fire_sound = list('sound/warhammer/ds/flmthrowr_01.ogg')
+	damage_falloff_list = list(
+		list(2, 0.90),
+		list(3, 0.80),
+		list(5, 0.50),
+		list(7, 0.10),
+	)
+
+/obj/item/projectile/bullet/meltagun/on_hit(atom/target, blocked = 0)
+	src.visible_message("<span class='warning'>\The [src] explodes in a bright flash!</span>")
+
+	/* var/datum/effect/effect/system/spark_spread/sparks = new /datum/effect/effect/system/spark_spread()
+	sparks.set_up(2, 1, T)
+	sparks.start() */
 
 /obj/item/projectile/bullet/rifle/shuriken/catapult
 	fire_sound = 'sound/warhammer/gunshot/needler.ogg'

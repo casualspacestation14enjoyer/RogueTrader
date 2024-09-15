@@ -6,7 +6,7 @@
 	density = TRUE
 	anchored = TRUE
 	setup = 0
-	health_max = 0
+	health_max = 1000
 	var/intialTox = 0 	//these are here to keep the mob from taking damage from things that logically wouldn't affect a rock
 	var/intialFire = 0	//it's a little sloppy I know but it was this or the GODMODE flag. Lesser of two evils.
 	var/intialBrute = 0
