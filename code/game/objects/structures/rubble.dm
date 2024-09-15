@@ -7,7 +7,7 @@
 	opacity = 1
 	density = TRUE
 	anchored = TRUE
-	health_max = 40
+	health_max = 400
 
 	var/list/loot = list(/obj/item/cell,/obj/item/stack/material/iron,/obj/item/stack/material/rods)
 	var/lootleft = 1

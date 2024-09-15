@@ -72,7 +72,7 @@
 <p>Good day.</p>
 <p>This notice is for you to be aware of the repercussions of the situation that you, and your vessel has gone through.</p>
 <p>As per information passed to us in the vague, and sparse burst transmissions - it is evident that the personnel of your vessel, Expeditionary, Imperial Navy or Civilian, have clearly endured what is usually not expected of them.</p>
-<p>Some may consider this to be reminiscent of the first contact involving the Vox, or even that of the Unathi. Hostile encounters are common, however, to the scale of involving deceased personnel while not unexpected, is unprecedented.</p>
+<p>Some may consider this to be reminiscent of the first contact involving the Vox, or even that of the Kroot. Hostile encounters are common, however, to the scale of involving deceased personnel while not unexpected, is unprecedented.</p>
 <p>And so, at this time, the mental and physical care of your fellow officers and subordinates becomes ever more so crucial. As such, we have outlined a few guidelines with which to proceed, until your vessel reaches safe harbour.</p>
 <p>1. Ensure that any crew that has been involved with the event is prioritised for psychiatric and physical care, with proper utilisation of your team.</p>
 <p>2. The Imperial Navy and Expeditionary branches are willing to offer emergency aid via long-range consultation as needed. Imperial Navy hospital ships will be on stand-by on your route, in case transfers are required.</p>

@@ -47,6 +47,7 @@
 /obj/item/gun/projectile/New()
 	..()
 	slowdown_per_slot[slot_wear_suit] = 0.1
+	slowdown_per_slot[slot_back] = 0.1
 	slowdown_per_slot[slot_belt] = 0.1
 	slowdown_per_slot[slot_r_hand] = 0.1
 	slowdown_per_slot[slot_l_hand] = 0.1

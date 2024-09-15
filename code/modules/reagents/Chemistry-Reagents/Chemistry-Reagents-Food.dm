@@ -49,7 +49,7 @@
 
 /datum/reagent/nutriment/proc/adjust_nutrition(mob/living/carbon/M, removed)
 	if (HAS_TRAIT(M, /singleton/trait/boon/cast_iron_stomach))
-		removed *= 0.1 // Unathi get most of their nutrition from meat.
+		removed *= 0.1 // Kroot get most of their nutrition from meat.
 	var/nut_removed = removed
 	var/hyd_removed = removed
 	if(nutriment_factor)

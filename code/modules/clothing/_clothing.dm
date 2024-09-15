@@ -260,7 +260,7 @@
 	slot_flags = SLOT_EARS | SLOT_TWOEARS
 	volume_multiplier = 0.1
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_ears_unathi.dmi'
+		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_ears_unathi.dmi'
 	)
 
 
@@ -285,7 +285,7 @@ BLIND     // can't see anything
 	slot_flags = SLOT_EYES
 	sprite_sheets = list(
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_eyes_vox.dmi',
-		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_eyes_unathi.dmi',
+		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_eyes_unathi.dmi',
 	)
 
 /obj/item/clothing/glasses/get_icon_state(mob/user_mob, slot)
@@ -393,11 +393,11 @@ BLIND     // can't see anything
 	slot_flags = SLOT_GLOVES
 	item_flags = ITEM_FLAG_WASHER_ALLOWED
 	attack_verb = list("challenged")
-	species_restricted = list("exclude",SPECIES_NABBER, SPECIES_UNATHI, SPECIES_VOX)
+	species_restricted = list("exclude",SPECIES_NABBER, SPECIES_KROOT, SPECIES_VOX)
 	sprite_sheets = list(
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_hands_vox.dmi',
 		SPECIES_NABBER = 'icons/mob/species/nabber/onmob_hands_gas.dmi',
-		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_hands_unathi.dmi'
+		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_hands_unathi.dmi'
 	)
 	blood_overlay_type = "bloodyhands"
 
@@ -447,7 +447,7 @@ BLIND     // can't see anything
 	name = "modified [name]"
 	desc = "[desc]<br>They have been modified to accommodate a different shape."
 	if("exclude" in species_restricted)
-		species_restricted -= SPECIES_UNATHI
+		species_restricted -= SPECIES_KROOT
 	return
 
 /obj/item/clothing/gloves/mob_can_equip(mob/user)
@@ -497,7 +497,7 @@ BLIND     // can't see anything
 		)
 	sprite_sheets = list(
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_head_vox.dmi',
-		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_head_unathi.dmi',
+		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_head_unathi.dmi',
 		SPECIES_NABBER = 'icons/mob/species/nabber/onmob_head_gas.dmi'
 	)
 	body_parts_covered = HEAD
@@ -626,7 +626,7 @@ BLIND     // can't see anything
 	body_parts_covered = FACE|EYES
 	sprite_sheets = list(
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_mask_vox.dmi',
-		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_mask_unathi.dmi',
+		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_mask_unathi.dmi',
 		)
 
 	var/voicechange = 0
@@ -706,10 +706,10 @@ BLIND     // can't see anything
 	item_flags = ITEM_FLAG_WASHER_ALLOWED
 	permeability_coefficient = 0.50
 	force = 2
-	species_restricted = list("exclude", SPECIES_NABBER, SPECIES_UNATHI, SPECIES_VOX)
+	species_restricted = list("exclude", SPECIES_NABBER, SPECIES_KROOT, SPECIES_VOX)
 	sprite_sheets = list(
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_feet_vox.dmi',
-		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_feet_unathi.dmi',
+		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_feet_unathi.dmi',
 		)
 	blood_overlay_type = "shoeblood"
 	var/overshoes = 0
@@ -878,7 +878,7 @@ BLIND     // can't see anything
 
 	sprite_sheets = list(
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_suit_vox.dmi',
-		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_suit_unathi.dmi',
+		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_suit_unathi.dmi',
 		SPECIES_NABBER = 'icons/mob/species/nabber/onmob_suit_gas.dmi'
 	)
 
@@ -934,7 +934,7 @@ BLIND     // can't see anything
 	sprite_sheets = list(
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_under_vox.dmi',
 		SPECIES_NABBER = 'icons/mob/species/nabber/onmob_under_gas.dmi',
-		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_under_unathi.dmi'
+		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_under_unathi.dmi'
 	)
 
 	//convenience var for defining the icon state for the overlay used when the clothing is worn.

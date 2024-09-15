@@ -12,7 +12,7 @@
 	frame_type = /obj/machinery/constructable_frame/computerframe/deconstruct
 	var/processing = 0
 
-	health_max = 80
+	health_max = 400
 	damage_hitsound = 'sound/weapons/smash.ogg'
 
 	var/icon_keyboard = "generic_key"

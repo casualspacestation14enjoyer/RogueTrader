@@ -220,9 +220,9 @@
 
 /obj/item/clothing/mask/rubber/species/unathi
 	name = "unathi mask"
-	desc = "A rubber unathi mask."
+	desc = "A rubber kroot mask."
 	icon_state = "lizmet"
-	species = SPECIES_UNATHI
+	species = SPECIES_KROOT
 
 /obj/item/clothing/mask/rubber/species/skrell
 	name = "skrell mask"
@@ -258,7 +258,7 @@
 			icon_state = initial(icon_state)
 			sprite_sheets = list(
 				SPECIES_VOX = 'icons/mob/species/vox/onmob_mask_vox.dmi',
-				SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_mask_unathi.dmi'
+				SPECIES_KROOT = 'icons/mob/species/unathi/onmob_mask_unathi.dmi'
 				)
 		if(slot_head)
 			flags_inv = 0
@@ -266,7 +266,7 @@
 			icon_state = "[initial(icon_state)]_up"
 			sprite_sheets = list(
 				SPECIES_VOX = 'icons/mob/species/vox/onmob_head_vox.dmi',
-				SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_head_unathi.dmi'
+				SPECIES_KROOT = 'icons/mob/species/unathi/onmob_head_unathi.dmi'
 				)
 
 	return ..()

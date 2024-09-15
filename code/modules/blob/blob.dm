@@ -19,7 +19,7 @@
 
 	layer = BLOB_SHIELD_LAYER
 
-	health_max = 30
+	health_max = 300
 	health_resistances = list(
 		DAMAGE_BRUTE     = 0.23,
 		DAMAGE_BURN      = 1.24,
@@ -211,7 +211,7 @@
 	damage_max = 40
 	expandType = /obj/blob/shield
 	product = /obj/item/blob_tendril/core
-	health_max = 450
+	health_max = 950
 
 	light_color = BLOB_COLOR_CORE
 	layer = BLOB_CORE_LAYER
@@ -340,7 +340,7 @@ regen() will cover update_icon() for this proc
 	layer = BLOB_NODE_LAYER
 	product = /obj/item/blob_tendril/core/aux
 	times_to_pulse = 4
-	health_max = 125
+	health_max = 325
 
 /obj/blob/core/secondary/process_core_health()
 	return
@@ -362,7 +362,7 @@ regen() will cover update_icon() for this proc
 	regen_rate = 4
 	expandType = /obj/blob/ravaging
 	light_color = BLOB_COLOR_SHIELD
-	health_max = 120
+	health_max = 320
 
 /obj/blob/shield/New()
 	..()
@@ -393,7 +393,7 @@ regen() will cover update_icon() for this proc
 	attack_freq = 3
 	light_color = BLOB_COLOR_RAV
 	color = "#ffd400" //Temporary, for until they get a new sprite.
-	health_max = 20
+	health_max = 200
 
 //produce
 /obj/item/blob_tendril

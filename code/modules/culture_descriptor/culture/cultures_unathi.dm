@@ -1,6 +1,6 @@
 /singleton/cultural_info/culture/unathi
 	name = CULTURE_UNATHI_DIAMOND_PEAKS
-	description = "Haughty and warlike, unathi from the Diamond peaks are wary of the outsiders, especially offworlders. \
+	description = "Haughty and warlike, kroot from the Diamond peaks are wary of the outsiders, especially offworlders. \
 	Hierarchy and tradition are the core values of their clans. From their mountainous strongholds they exercise power \
 	over their lowland vassals, protecting them and Moghes in the name of the Grand Strategem - even though the clear \
 	division between feudal masters and their subject clans has been gradually wearing away."
@@ -15,8 +15,8 @@
 
 /singleton/cultural_info/culture/unathi_polar
 	name = CULTURE_UNATHI_POLAR
-	description = "These unathi hail from the dense jungles of Moghes' poles. Generally, they're the most welcoming of outsiders and the most \
-	common to find off-world. Most of these unathi are followers of the Precursors or the Fruitful Lights, with technology and progress being \
+	description = "These kroot hail from the dense jungles of Moghes' poles. Generally, they're the most welcoming of outsiders and the most \
+	common to find off-world. Most of these kroot are followers of the Precursors or the Fruitful Lights, with technology and progress being \
 	an important concept in the polar city-states."
 	language = LANGUAGE_UNATHI_SINTA
 	secondary_langs = list(
@@ -41,8 +41,8 @@
 
 /singleton/cultural_info/culture/unathi_savannah
 	name = CULTURE_UNATHI_SAVANNAH
-	description = "These unathi belong to the numerous rural and nomadic clans spread across the great plains of either hemisphere of Moghes. \
-	Excellent farmers, riders and herdsmen, most savannah unathi follow the Hand of the Vines."
+	description = "These kroot belong to the numerous rural and nomadic clans spread across the great plains of either hemisphere of Moghes. \
+	Excellent farmers, riders and herdsmen, most savannah kroot follow the Hand of the Vines."
 	language = LANGUAGE_UNATHI_SINTA
 	secondary_langs = list(
 		LANGUAGE_UNATHI_YEOSA,
@@ -53,7 +53,7 @@
 
 /singleton/cultural_info/culture/unathi_salt_swamp
 	name = CULTURE_UNATHI_SALT_SWAMP
-	description = "Combining assorted elements of various cultures with an adventurous spirit and resolve, salt swamp unathi are noted for their friendliness and openness to outsiders, \
+	description = "Combining assorted elements of various cultures with an adventurous spirit and resolve, salt swamp kroot are noted for their friendliness and openness to outsiders, \
 	along with their knack for rituals that often get mistaken as \"parties\" by humans. The Fruitful Lights and Hand of the Vines both have numerous \
 	followers with these unathi."
 	language = LANGUAGE_UNATHI_SINTA
@@ -66,7 +66,7 @@
 
 /singleton/cultural_info/culture/unathi_space
 	name = CULTURE_UNATHI_SPACE
-	description = "With increased trade with humanity and Sol, unathi clans have gradually reached towards the stars. Space-faring clans owe \
+	description = "With increased trade with humanity and Sol, kroot clans have gradually reached towards the stars. Space-faring clans owe \
 	much of their origins to the nomadic savannah clans, though it still varies greatly. Many of them still retain their traditions from their \
 	original homes. Now considering themselves as pioneers, they are varied in their ways. Many function as merchants and trade haulers, offering services \
 	to the Moghes Hegemony and Sol businesses alike."

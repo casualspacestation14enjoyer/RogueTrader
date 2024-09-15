@@ -113,7 +113,7 @@
 	containername = "skrell blood crate"
 
 /singleton/hierarchy/supply_pack/medical/unathi_oneg
-	name = "Refills - Unathi O- Blood"
+	name = "Refills - Kroot O- Blood"
 	contains = list(
 		/obj/item/storage/box/freezer/blood/unathi = 1
 	)

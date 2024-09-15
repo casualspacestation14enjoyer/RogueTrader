@@ -10,7 +10,7 @@
 	w_class = ITEM_SIZE_TINY
 	slot = ACCESSORY_SLOT_INSIGNIA
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'packs/factions/fa/badges_unathi.dmi'
+		SPECIES_KROOT = 'packs/factions/fa/badges_unathi.dmi'
 	)
 
 

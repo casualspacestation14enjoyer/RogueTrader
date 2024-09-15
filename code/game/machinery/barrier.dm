@@ -5,7 +5,7 @@
 	icon_state = "barrier0"
 	req_access = list(access_brig)
 	density = TRUE
-	health_max = 200
+	health_max = 2000
 	health_min_damage = 7
 
 	var/locked = FALSE

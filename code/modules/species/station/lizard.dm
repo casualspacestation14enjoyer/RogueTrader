@@ -1,29 +1,28 @@
 /datum/species/unathi
-	name = SPECIES_UNATHI
-	name_plural = SPECIES_UNATHI
-	icobase = 'icons/mob/human_races/species/unathi/skin.dmi'
+	name = SPECIES_KROOT
+	name_plural = SPECIES_KROOT
+	icobase = 'icons/mob/human_races/species/unathi/r_kroot.dmi'
 	deform = 'icons/mob/human_races/species/unathi/deformed.dmi'
-	husk_icon = 'icons/mob/human_races/species/unathi/husk.dmi'
-	preview_icon = 'icons/mob/human_races/species/unathi/preview.dmi'
+	preview_icon = 'icons/mob/human_races/species/skrell/preview.dmi'
 	bandages_icon = 'icons/mob/bandage.dmi'
-	tail = "sogtail"
-	tail_animation = 'icons/mob/species/unathi/unathi_tail.dmi'
 	limb_blend = ICON_MULTIPLY
 	tail_blend = ICON_MULTIPLY
 	hidden_from_codex = FALSE
 	skin_material =   MATERIAL_SKIN_LIZARD
 	icon_template = 'icons/mob/human_races/species/unathi/template.dmi'
 
-	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/tail, /datum/unarmed_attack/claws, /datum/unarmed_attack/punch, /datum/unarmed_attack/bite/sharp)
+	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/claws, /datum/unarmed_attack/punch, /datum/unarmed_attack/bite/sharp)
 	primitive_form = "Stok"
-	darksight_range = 3
+	darksight_range = 4
 	darksight_tint = DARKTINT_MODERATE
-	gluttonous = GLUT_TINY
+	gluttonous = GLUT_ANYTHING
 	strength = STR_HIGH
-	breath_pressure = 18
-	slowdown = 0.5
+	breath_pressure = 12
+	slowdown = -0.2
 	brute_mod = 0.8
+	burn_mod = 0.7
 	flash_mod = 1.2
+	toxins_mod = 0.5
 	blood_volume = 800
 
 	health_hud_intensity = 2
@@ -34,39 +33,35 @@
 
 	body_temperature = null // cold-blooded, implemented the same way nabbers do it
 
-	description = "A heavily reptillian species, Unathi (or 'Sinta as they call themselves) hail from the \
+	description = "A heavily reptillian species, Kroot (or 'Sinta as they call themselves) hail from the \
 	Uuosa-Eso system, which roughly translates to 'burning mother'.<br/><br/>Coming from a harsh, radioactive \
 	desert planet, they mostly hold ideals of honesty, virtue, martial combat and bravery above all \
 	else, frequently even their own lives. They prefer warmer temperatures than most species and \
 	their native tongue is a heavy hissing laungage called Saurian."
 
-	cold_level_1 = 280 //Default 260 - Lower is better
-	cold_level_2 = 220 //Default 200
-	cold_level_3 = 130 //Default 120
+	cold_level_1 = 280 //Default 200 - Lower is better
+	cold_level_2 = 220 //Default 100
+	cold_level_3 = 130 //Default 50
 
-	heat_level_1 = 420 //Default 360 - Higher is better
-	heat_level_2 = 480 //Default 400
-	heat_level_3 = 1100 //Default 1000
-
-	spawn_flags = SPECIES_IS_WHITELISTED | SPECIES_NO_FBP_CONSTRUCTION | SPECIES_NO_FBP_CHARGEN | SPECIES_NO_ROBOTIC_INTERNAL_ORGANS
+	heat_level_1 = 420 //Default 460 - Higher is better
+	heat_level_2 = 480 //Default 500
+	heat_level_3 = 1100 //Default 1500
+	species_flags = SPECIES_FLAG_NO_SCAN | SPECIES_FLAG_NO_MINOR_CUT
+	spawn_flags = SPECIES_NO_FBP_CONSTRUCTION | SPECIES_NO_FBP_CHARGEN | SPECIES_NO_ROBOTIC_INTERNAL_ORGANS | SPECIES_CAN_JOIN
 	appearance_flags = SPECIES_APPEARANCE_HAS_HAIR_COLOR | SPECIES_APPEARANCE_HAS_LIPS | SPECIES_APPEARANCE_HAS_UNDERWEAR | SPECIES_APPEARANCE_HAS_SKIN_COLOR | SPECIES_APPEARANCE_HAS_EYE_COLOR
-
-	flesh_color = "#34af10"
-
-	base_color = "#066000"
 	blood_color = "#f24b2e"
 	organs_icon = 'icons/mob/human_races/species/unathi/organs.dmi'
 
 	move_trail = /obj/decal/cleanable/blood/tracks/claw
 
-	heat_discomfort_level = 320
+	heat_discomfort_level = 420
 	heat_discomfort_strings = list(
 		"You feel soothingly warm.",
 		"You feel the heat sink into your bones.",
 		"You feel warm enough to take a nap."
 		)
 
-	cold_discomfort_level = 292
+	cold_discomfort_level = 192
 	cold_discomfort_strings = list(
 		"You feel chilly.",
 		"You feel sluggish and cold.",
@@ -162,4 +157,4 @@
 	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/sandal(H),slot_shoes)
 
 /datum/species/unathi/get_bodytype(mob/living/carbon/human/H)
-	return SPECIES_UNATHI
+	return SPECIES_KROOT

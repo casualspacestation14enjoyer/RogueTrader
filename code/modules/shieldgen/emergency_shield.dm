@@ -7,7 +7,7 @@
 	opacity = 0
 	anchored = TRUE
 	unacidable = TRUE
-	health_max = 200
+	health_max = 700
 	damage_hitsound = 'sound/effects/EMPulse.ogg'
 	var/shield_generate_power = 7500	//how much power we use when regenerating
 	var/shield_idle_power = 1500		//how much power we use when just being sustained.
@@ -15,7 +15,7 @@
 /obj/machinery/shield/malfai
 	name = "emergency forcefield"
 	desc = "A weak forcefield which seems to be projected by the emergency atmosphere containment field."
-	health_max = 100 // Half health, it's not suposed to resist much.
+	health_max = 500 // Half health, it's not suposed to resist much.
 
 /obj/machinery/shield/malfai/Process()
 	damage_health(1) // Slowly lose integrity over time
@@ -56,7 +56,7 @@
 	opacity = 0
 	anchored = FALSE
 	req_access = list(access_engine)
-	health_max = 100
+	health_max = 400
 	var/active = 0
 	var/malfunction = 0 //Malfunction causes parts of the shield to slowly dissapate
 	var/list/deployed_shields = list()

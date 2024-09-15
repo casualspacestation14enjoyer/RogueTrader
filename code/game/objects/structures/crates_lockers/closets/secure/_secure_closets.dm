@@ -5,7 +5,7 @@
 	closet_appearance = /singleton/closet_appearance/secure_closet
 	setup = CLOSET_HAS_LOCK | CLOSET_CAN_BE_WELDED
 	locked = TRUE
-	health_max = 200
+	health_max = 900
 	health_min_damage = 5
 
 /obj/structure/closet/secure_closet/slice_into_parts(obj/item/weldingtool/WT, mob/user)

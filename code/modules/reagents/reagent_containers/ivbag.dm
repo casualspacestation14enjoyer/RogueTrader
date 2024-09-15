@@ -356,7 +356,7 @@
 
 
 /obj/item/reagent_containers/ivbag/blood/unathi/Initialize(mapload, blood_type)
-	return ..(mapload, blood_type, SPECIES_UNATHI)
+	return ..(mapload, blood_type, SPECIES_KROOT)
 
 
 /obj/item/reagent_containers/ivbag/blood/unathi/oneg/Initialize(mapload)

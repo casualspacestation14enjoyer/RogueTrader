@@ -133,7 +133,7 @@
 				TRADER_INSULT_GOOD    = "Hey, bro, I'm just tryin' to make a living here, okay? The Camelot schtick is part of my brand.",
 				TRADER_INSULT_BAD     = "Man, fuck you, then.",
 
-				TRADER_BRIBE_FAILURE  = "Alas, traveler - I could stay all eve, but I've an Unathi client in waiting, and they are not known for patience.",
+				TRADER_BRIBE_FAILURE  = "Alas, traveler - I could stay all eve, but I've an Kroot client in waiting, and they are not known for patience.",
 				TRADER_BRIBE_SUCCESS   = "Mayhaps I could set a spell longer, and rest my weary feet.",
 				)
 	possible_trading_items = list(/obj/item/clothing/head/wizard/magus = TRADER_THIS_TYPE,
@@ -163,4 +163,4 @@
 
 /datum/trader/ship/pet_shop/New()
 	..()
-	speech[TRADER_HAIL_START + SPECIES_UNATHI] = "Ah, you've the look of a lizard who knows his way around martial combat. Come in! We can only hope our steel meets the formidable Moghedi standards."
+	speech[TRADER_HAIL_START + SPECIES_KROOT] = "Ah, you've the look of a lizard who knows his way around martial combat. Come in! We can only hope our steel meets the formidable Moghedi standards."

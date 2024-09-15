@@ -1,6 +1,6 @@
 /datum/language/unathi
 	name = LANGUAGE_UNATHI_SINTA
-	desc = "The common language of Moghes, composed of sibilant hisses and rattles. Spoken natively by Unathi."
+	desc = "The common language of Moghes, composed of sibilant hisses and rattles. Spoken natively by Kroot."
 	speech_verb = "hisses"
 	ask_verb = "hisses"
 	exclaim_verb = "roars"

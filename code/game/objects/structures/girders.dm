@@ -4,7 +4,7 @@
 	density = TRUE
 	layer = BELOW_OBJ_LAYER
 	w_class = ITEM_SIZE_NO_CONTAINER
-	health_max = 100
+	health_max = 500
 	var/const/GIRDER_STATE_NORMAL = 0
 	var/const/GIRDER_STATE_REINFORCEMENT_UNSECURED = 1
 	var/const/GIRDER_STATE_REINFORCED = 2
@@ -20,7 +20,7 @@
 /obj/structure/girder/displaced
 	icon_state = "displaced"
 	anchored = FALSE
-	health_max = 50
+	health_max = 500
 	cover = 25
 
 /obj/structure/girder/bullet_act(obj/item/projectile/Proj)
@@ -310,7 +310,7 @@
 /obj/structure/girder/cult
 	icon= 'icons/obj/cult.dmi'
 	icon_state= "cultgirder"
-	health_max = 250
+	health_max = 1250
 	cover = 70
 
 /obj/structure/girder/cult/dismantle()

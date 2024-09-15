@@ -133,7 +133,7 @@ GLOBAL_DATUM_INIT(ninjas, /datum/antagonist/ninja, new)
 		if (13)
 			directive += "Some disgruntled [GLOB.using_map.company_name] employees have been supportive of our operations. Be wary of any mistreatment by command staff."
 		if (14)
-			var/xenorace = pick(SPECIES_UNATHI, SPECIES_TAU)
+			var/xenorace = pick(SPECIES_KROOT, SPECIES_TAU)
 			directive += "A group of [xenorace] radicals have been loyal supporters of your interest group. Favor [xenorace] crew whenever possible."
 		if (15)
 			directive += "Your interest group has recently been accused of religious insensitivity. Attempt to speak with the Chaplain and prove these accusations false."

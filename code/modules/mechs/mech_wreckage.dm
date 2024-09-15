@@ -6,7 +6,7 @@
 	anchored = TRUE
 	icon_state = "wreck"
 	icon = 'icons/mecha/mech_part_items.dmi'
-	health_max = 100
+	health_max = 500
 	health_min_damage = 20
 	var/prepared
 

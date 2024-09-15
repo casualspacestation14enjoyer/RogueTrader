@@ -958,7 +958,7 @@
 	cultural taboo, people develop and dose themselves with substances that would curl the hair on \
 	a brinker's vatgrown second head. Three Eye is one of the most notorious narcotics to ever come \
 	out of the independant habitats, and has about as much in common with recreational drugs as a \
-	Stok does with an Unathi strike trooper. It is equally effective on humans, Skrell, dionaea and \
+	Stok does with an Kroot strike trooper. It is equally effective on humans, Skrell, dionaea and \
 	probably the Captain's cat, and distributing it will get you guaranteed jail time in every \
 	human territory."
 	taste_description = "liquid starlight"

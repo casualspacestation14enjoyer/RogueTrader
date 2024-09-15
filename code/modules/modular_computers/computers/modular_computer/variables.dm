@@ -28,7 +28,7 @@
 	var/steel_sheet_cost = 5								// Amount of steel sheets refunded when disassembling an empty frame of this computer.
 	var/light_strength = 0									// Intensity of light this cogitator emits. Comparable to numbers light fixtures use.
 
-	health_max = 100
+	health_max = 500
 	/// Integer. Damage level at which the cogitator ceased to operate.
 	var/broken_damage = 50
 	var/list/terminals          // List of open terminal datums.

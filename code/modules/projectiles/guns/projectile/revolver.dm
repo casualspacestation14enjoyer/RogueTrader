@@ -17,6 +17,14 @@
 	accuracy = 2
 	one_hand_penalty = 2
 
+/obj/item/gun/projectile/revolver/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0
+	slowdown_per_slot[slot_back] = 0
+	slowdown_per_slot[slot_belt] = 0
+	slowdown_per_slot[slot_r_hand] = 0.1
+	slowdown_per_slot[slot_l_hand] = 0.1
+
 /obj/item/gun/projectile/revolver/AltClick()
 	if(CanPhysicallyInteract(usr))
 		spin_cylinder()

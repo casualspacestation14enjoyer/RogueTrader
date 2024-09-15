@@ -7,7 +7,7 @@
 	idle_power_usage = 0
 	active_power_usage = 1 KILOWATTS
 	construct_state = /singleton/machine_construction/default/panel_closed
-	health_max = 200
+	health_max = 500
 	health_min_damage = 10
 	req_access = list(access_research)
 

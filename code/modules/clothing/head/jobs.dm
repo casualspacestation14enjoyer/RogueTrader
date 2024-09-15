@@ -107,7 +107,7 @@
 		if(slot_head)
 			sprite_sheets = list(
 				SPECIES_VOX = 'icons/mob/species/vox/onmob_head_vox.dmi',
-				SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_head_unathi.dmi',
+				SPECIES_KROOT = 'icons/mob/species/unathi/onmob_head_unathi.dmi',
 				SPECIES_NABBER = 'icons/mob/species/nabber/onmob_head_gas.dmi'
 				)
 	return ..()

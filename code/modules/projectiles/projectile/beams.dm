@@ -211,31 +211,6 @@
 		if(L.fire_stacks >= 3)
 			L.IgniteMob()
 
-/obj/item/projectile/beam/meltagun
-	name = "Meltagun beam"
-	icon_state = "melta"
-	damage = 135
-	agony = 25
-	weaken = 2
-	eyeblur = 4
-	stun = 3
-	armor_penetration = 42
-	fire_sound = list('sound/effects/gore/sear.ogg')
-	damage_falloff_list = list(
-		list(2, 0.90),
-		list(3, 0.80),
-		list(5, 0.50),
-		list(7, 0.10),
-	)
-
-/obj/item/projectile/beam/meltagun/on_hit(atom/target, blocked = 0)
-	playsound(src, 'sound/effects/snap.ogg', 50, 1)
-	src.visible_message("<span class='warning'>\The [src] explodes in a bright flash!</span>")
-
-	/* var/datum/effect/effect/system/spark_spread/sparks = new /datum/effect/effect/system/spark_spread()
-	sparks.set_up(2, 1, T)
-	sparks.start() */
-
 /obj/item/projectile/beam/heavylaser
 	name = "heavy laser"
 	icon_state = "heavylaser"

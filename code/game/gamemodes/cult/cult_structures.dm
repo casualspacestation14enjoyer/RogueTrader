@@ -22,7 +22,7 @@
 	light_power = 0.5
 	light_range = 13
 	light_color = "#3e0000"
-	health_max = 20
+	health_max = 200
 	health_min_damage = 4
 	damage_hitsound = 'sound/effects/Glasshit.ogg'
 

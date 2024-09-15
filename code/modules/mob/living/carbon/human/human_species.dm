@@ -26,8 +26,8 @@
 	. = ..(mapload, SPECIES_TAU)
 
 /mob/living/carbon/human/unathi/Initialize(mapload)
-	head_hair_style = "Unathi Horns"
-	. = ..(mapload, SPECIES_UNATHI)
+	head_hair_style = "Kroot Horns"
+	. = ..(mapload, SPECIES_KROOT)
 
 /mob/living/carbon/human/vox/Initialize(mapload)
 	head_hair_style = "Long Xenos Quills"

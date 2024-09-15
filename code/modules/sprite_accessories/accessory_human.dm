@@ -65,7 +65,7 @@
 
 /datum/sprite_accessory/marking/human/horns/unathi
 	icon_state = "horns_unathi"
-	name = "Horn Biomods (Unathi)"
+	name = "Horn Biomods (Kroot)"
 
 
 /datum/sprite_accessory/marking/human/horns/spines_short
@@ -86,4 +86,3 @@
 /datum/sprite_accessory/marking/human/horns/frills_short
 	icon_state = "horns_frills_short"
 	name = "Horn Biomods (Short Frills)"
-

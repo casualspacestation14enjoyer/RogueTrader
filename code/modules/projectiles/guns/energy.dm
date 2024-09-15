@@ -7,11 +7,12 @@
 	fire_sound_text = "laser blast"
 	accuracy = 1
 
-	var/obj/item/cell/power_supply //What type of power cell this uses
+	var/obj/item/cell/power_supply //What type of power cell this uses. Currently used cell.
 	var/charge_cost = 20 //How much energy is needed to fire.
 	var/max_shots = 10 //Determines the capacity of the weapon's power cell. Specifying a cell_type overrides this value.
 	var/cell_type = /obj/item/cell/device/high
 	var/projectile_type = /obj/item/projectile/beam/practice
+	var/ammotype = /obj/item/cell/device // Restrict powercell to only this type.
 	var/modifystate
 	var/charge_meter = 1	//if set, the icon state will be chosen based on the current charge
 	var/disposable = FALSE //If set, this weapon cannot be recharged
@@ -26,6 +27,7 @@
 	..()
 	slowdown_per_slot[slot_wear_suit] = 0.1
 	slowdown_per_slot[slot_belt] = 0.1
+	slowdown_per_slot[slot_back] = 0.1
 	slowdown_per_slot[slot_r_hand] = 0.1
 	slowdown_per_slot[slot_l_hand] = 0.1
 
@@ -121,7 +123,10 @@
 
 /obj/item/gun/energy/use_tool(obj/item/I, mob/living/user, list/click_params)
 	if(istype(I, /obj/item/cell/device))
-		if(!power_supply && user.unEquip(I))
+		if(!istype(I, ammotype))
+			to_chat(user, "<span class='warning'>[src] can't use that power cell.</span>") // Restrict powercell to only this type.
+			return
+		if(!power_supply && user.unEquip(I)) // The powercell currently in the weapon.
 			I.forceMove(src)
 			power_supply = I
 			to_chat(user, SPAN_NOTICE("You install \the cell into \the [src]."))

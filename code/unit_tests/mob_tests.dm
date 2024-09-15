@@ -264,37 +264,37 @@ var/global/default_mobloc = null
 	damagetype = DAMAGE_PAIN
 
 // =================================================================
-// Unathi
+// Kroot
 // =================================================================
 
 /datum/unit_test/mob_damage/unathi
-	name = "MOB: Unathi damage check template"
+	name = "MOB: Kroot damage check template"
 	template = /datum/unit_test/mob_damage/unathi
 	mob_type = /mob/living/carbon/human/unathi
 
 /datum/unit_test/mob_damage/unathi/brute
-	name = "MOB: Unathi Brute Damage Check"
+	name = "MOB: Kroot Brute Damage Check"
 	damagetype = DAMAGE_BRUTE
 	expected_vulnerability = ARMORED
 
 /datum/unit_test/mob_damage/unathi/fire
-	name = "MOB: Unathi Fire Damage Check"
+	name = "MOB: Kroot Fire Damage Check"
 	damagetype = DAMAGE_BURN
 
 /datum/unit_test/mob_damage/unathi/tox
-	name = "MOB: Unathi Toxins Damage Check"
+	name = "MOB: Kroot Toxins Damage Check"
 	damagetype = DAMAGE_TOXIN
 
 /datum/unit_test/mob_damage/unathi/oxy
-	name = "MOB: Unathi Oxygen Damage Check"
+	name = "MOB: Kroot Oxygen Damage Check"
 	damagetype = DAMAGE_OXY
 
 /datum/unit_test/mob_damage/unathi/genetic
-	name = "MOB: Unathi Genetic Damage Check"
+	name = "MOB: Kroot Genetic Damage Check"
 	damagetype = DAMAGE_GENETIC
 
 /datum/unit_test/mob_damage/unathi/pain
-	name = "MOB: Unathi Pain Damage Check"
+	name = "MOB: Kroot Pain Damage Check"
 	damagetype = DAMAGE_PAIN
 
 // =================================================================

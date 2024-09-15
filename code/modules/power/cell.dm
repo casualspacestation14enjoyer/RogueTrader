@@ -184,6 +184,14 @@
 	maxcharge = 1200
 	matter = list(MATERIAL_STEEL = 70, MATERIAL_GLASS = 6)
 
+/obj/item/cell/device/high/melta
+	name = "melta pack"
+	desc = "A specialized promethium fuel pack for meltaguns."
+	icon = 'icons/obj/ammo.dmi'
+	icon_state = "melta"
+	maxcharge = 200
+	matter = list(MATERIAL_STEEL = 70, MATERIAL_GLASS = 6)
+
 /obj/item/cell/crap
 	name = "old power cell"
 	desc = "A cheap old power cell. It's probably been in use for quite some time now."

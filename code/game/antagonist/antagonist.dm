@@ -55,7 +55,7 @@
 	var/datum/language/required_language = null
 
 	// Used for setting appearance.
-	var/list/valid_species =       list(SPECIES_UNATHI,SPECIES_TAU,SPECIES_HUMAN,SPECIES_VOX)
+	var/list/valid_species =       list(SPECIES_KROOT,SPECIES_TAU,SPECIES_HUMAN,SPECIES_VOX)
 	var/min_player_age = 14
 
 	// Runtime vars.

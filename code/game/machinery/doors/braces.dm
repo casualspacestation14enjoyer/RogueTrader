@@ -37,7 +37,7 @@
 	desc = "A sturdy device that can be attached to an airlock to reinforce it and provide additional security."
 	icon = 'icons/obj/doors/airlock_machines.dmi'
 	icon_state = "brace_open"
-	health_max = 300
+	health_max = 700
 	var/obj/machinery/door/airlock/airlock
 	var/obj/item/airlock_electronics/brace/electronics
 

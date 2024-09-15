@@ -91,7 +91,7 @@
 	req_access = list(access_engine_equip)
 	clicksound = "switch"
 	layer = ABOVE_WINDOW_LAYER
-	health_max = 80
+	health_max = 250
 	health_min_damage = 5
 	damage_hitsound = 'sound/weapons/smash.ogg'
 	var/needs_powerdown_sound

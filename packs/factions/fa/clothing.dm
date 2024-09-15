@@ -25,7 +25,7 @@
 		slot_w_uniform_str = "vacsuit"
 	)
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'packs/factions/fa/clothing_unathi.dmi'
+		SPECIES_KROOT = 'packs/factions/fa/clothing_unathi.dmi'
 	)
 	rolled_down = FALSE
 	rolled_sleeves = FALSE

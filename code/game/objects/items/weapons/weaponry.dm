@@ -107,7 +107,7 @@
 	desc = "An energized net meant to subdue animals."
 
 	anchored = FALSE
-	health_max = 5
+	health_max = 50
 	temporary = 0
 	min_free_time = 5
 	max_free_time = 10

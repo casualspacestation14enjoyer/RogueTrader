@@ -4029,7 +4029,7 @@
 
 /obj/item/reagent_containers/food/snacks/hatchling_surprise
 	name = "hatchling surprise"
-	desc = "A poached egg on top of several fried strips of meat, favoured by Unathi young and old alike. The real surprise is if you can feed it to your hatchling without losing a finger or two."
+	desc = "A poached egg on top of several fried strips of meat, favoured by Kroot young and old alike. The real surprise is if you can feed it to your hatchling without losing a finger or two."
 	icon_state = "hatchling-surprise"
 	trash = /obj/item/trash/snack_bowl
 	bitesize = 5
@@ -4042,7 +4042,7 @@
 
 /obj/item/reagent_containers/food/snacks/red_sun_special
 	name = "red sun special"
-	desc = "A single piece of sausage sitting on melted cheese curds. A cheap dish for Unathi working in human space."
+	desc = "A single piece of sausage sitting on melted cheese curds. A cheap dish for Kroot working in human space."
 	icon_state = "red-sun-special"
 	trash = /obj/item/trash/snack_bowl
 	bitesize = 4
@@ -4097,7 +4097,7 @@
 
 /obj/item/reagent_containers/food/snacks/aghrassh_cake
 	name = "aghrassh cake"
-	desc = "A dense, calorie-packed puck of aghrassh paste, spices, and ground meat, usually eaten by desert-going Unathi. This one has an egg cracked over it to make it a bit more palatable."
+	desc = "A dense, calorie-packed puck of aghrassh paste, spices, and ground meat, usually eaten by desert-going Kroot. This one has an egg cracked over it to make it a bit more palatable."
 	icon_state = "aghrassh-cake"
 	nutriment_amt = 8
 	nutriment_desc = list("aghrassh nuts", "mealy paste")

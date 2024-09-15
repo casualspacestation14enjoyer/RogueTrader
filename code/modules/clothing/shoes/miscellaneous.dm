@@ -249,7 +249,7 @@
 	desc = "[desc]<br>They have been modified to accommodate a different shape."
 	icon_state = icon_state_modified
 	if("exclude" in species_restricted)
-		species_restricted -= SPECIES_UNATHI
+		species_restricted -= SPECIES_KROOT
 	update_icon()
 	return
 

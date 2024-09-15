@@ -129,7 +129,7 @@
 
 #define HOME_SYSTEM_SERPENTIDS "Tau-Wilo"
 
-// Unathi cultures.
+// Kroot cultures.
 #define CULTURE_UNATHI_YEOSA_ABYSS    "Abyssal Yeosa Clans"
 #define CULTURE_UNATHI_YEOSA_LITTORAL "Littoral Yeosa Clans"
 #define CULTURE_UNATHI_DIAMOND_PEAKS  "Diamond Peak Clans"

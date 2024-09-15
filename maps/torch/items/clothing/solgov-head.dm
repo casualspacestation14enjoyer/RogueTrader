@@ -4,7 +4,7 @@
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
 	siemens_coefficient = 0.9
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'maps/torch/icons/mob/unathi/onmob_head_solgov_unathi.dmi'
+		SPECIES_KROOT = 'maps/torch/icons/mob/unathi/onmob_head_solgov_unathi.dmi'
 	)
 
 //Utility
@@ -15,7 +15,7 @@
 	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'maps/torch/icons/mob/unathi/onmob_head_solgov_unathi.dmi',
+		SPECIES_KROOT = 'maps/torch/icons/mob/unathi/onmob_head_solgov_unathi.dmi',
 		SPECIES_NABBER = 'maps/torch/icons/mob/nabber/onmob_head_solgov_gas.dmi'
 	)
 
@@ -123,7 +123,7 @@
 	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'maps/torch/icons/mob/unathi/onmob_head_solgov_unathi.dmi'
+		SPECIES_KROOT = 'maps/torch/icons/mob/unathi/onmob_head_solgov_unathi.dmi'
 	)
 
 /obj/item/clothing/head/beret/solgov/equipped(mob/user, slot)
@@ -134,7 +134,7 @@
 		if(slot_head)
 			sprite_sheets = list(
 				SPECIES_VOX = 'icons/mob/species/vox/onmob_head_vox.dmi',
-				SPECIES_UNATHI = 'maps/torch/icons/mob/unathi/onmob_head_solgov_unathi.dmi',
+				SPECIES_KROOT = 'maps/torch/icons/mob/unathi/onmob_head_solgov_unathi.dmi',
 				SPECIES_NABBER = 'icons/mob/species/nabber/onmob_head_gas.dmi'
 				)
 	return
@@ -319,7 +319,7 @@
 	icon_state = "ecushankadown"
 	icon_state_up = "ecushankaup"
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'maps/torch/icons/mob/unathi/onmob_head_solgov_unathi.dmi'
+		SPECIES_KROOT = 'maps/torch/icons/mob/unathi/onmob_head_solgov_unathi.dmi'
 	)
 
 /obj/item/clothing/head/ushanka/solgov/fleet
@@ -333,7 +333,7 @@
 /obj/item/clothing/head/helmet/solgov
 	accessories = list(/obj/item/clothing/accessory/helmet_cover/blue/sol)
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'maps/torch/icons/mob/unathi/onmob_head_solgov_unathi.dmi'
+		SPECIES_KROOT = 'maps/torch/icons/mob/unathi/onmob_head_solgov_unathi.dmi'
 		)
 
 /obj/item/clothing/head/helmet/solgov/security
@@ -376,11 +376,11 @@
 	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'maps/torch/icons/mob/unathi/onmob_head_spacesuits_solgov_unathi.dmi',
+		SPECIES_KROOT = 'maps/torch/icons/mob/unathi/onmob_head_spacesuits_solgov_unathi.dmi',
 		SPECIES_TAU = 'maps/torch/icons/mob/skrell/onmob_head_solgov_skrell.dmi',
 		)
 	sprite_sheets_obj = list(
-		SPECIES_UNATHI = 'maps/torch/icons/obj/unathi/obj_head_solgov_unathi.dmi',
+		SPECIES_KROOT = 'maps/torch/icons/obj/unathi/obj_head_solgov_unathi.dmi',
 		SPECIES_TAU = 'maps/torch/icons/obj/skrell/obj_head_solgov_skrell.dmi',
 		)
 
@@ -389,11 +389,11 @@
 	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'maps/torch/icons/mob/unathi/onmob_head_spacesuits_solgov_unathi.dmi',
+		SPECIES_KROOT = 'maps/torch/icons/mob/unathi/onmob_head_spacesuits_solgov_unathi.dmi',
 		SPECIES_TAU = 'maps/torch/icons/mob/skrell/onmob_head_solgov_skrell.dmi',
 		)
 	sprite_sheets_obj = list(
-		SPECIES_UNATHI = 'maps/torch/icons/obj/unathi/obj_head_solgov_unathi.dmi',
+		SPECIES_KROOT = 'maps/torch/icons/obj/unathi/obj_head_solgov_unathi.dmi',
 		SPECIES_TAU = 'maps/torch/icons/obj/skrell/obj_head_solgov_skrell.dmi',
 		)
 
@@ -402,11 +402,11 @@
 	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'maps/torch/icons/mob/unathi/onmob_head_spacesuits_solgov_unathi.dmi',
+		SPECIES_KROOT = 'maps/torch/icons/mob/unathi/onmob_head_spacesuits_solgov_unathi.dmi',
 		SPECIES_TAU = 'maps/torch/icons/mob/skrell/onmob_head_solgov_skrell.dmi',
 		)
 	sprite_sheets_obj = list(
-		SPECIES_UNATHI = 'maps/torch/icons/obj/unathi/obj_head_solgov_unathi.dmi',
+		SPECIES_KROOT = 'maps/torch/icons/obj/unathi/obj_head_solgov_unathi.dmi',
 		SPECIES_TAU = 'maps/torch/icons/obj/skrell/obj_head_solgov_skrell.dmi',
 		)
 
@@ -415,11 +415,11 @@
 	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'maps/torch/icons/mob/unathi/onmob_head_spacesuits_solgov_unathi.dmi',
+		SPECIES_KROOT = 'maps/torch/icons/mob/unathi/onmob_head_spacesuits_solgov_unathi.dmi',
 		SPECIES_TAU = 'maps/torch/icons/mob/skrell/onmob_head_solgov_skrell.dmi',
 		)
 	sprite_sheets_obj = list(
-		SPECIES_UNATHI = 'maps/torch/icons/obj/unathi/obj_head_solgov_unathi.dmi',
+		SPECIES_KROOT = 'maps/torch/icons/obj/unathi/obj_head_solgov_unathi.dmi',
 		SPECIES_TAU = 'maps/torch/icons/obj/skrell/obj_head_solgov_skrell.dmi',
 		)
 
@@ -432,11 +432,11 @@
 	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'maps/torch/icons/mob/unathi/onmob_head_spacesuits_solgov_unathi.dmi',
+		SPECIES_KROOT = 'maps/torch/icons/mob/unathi/onmob_head_spacesuits_solgov_unathi.dmi',
 		SPECIES_TAU = 'maps/torch/icons/mob/skrell/onmob_head_solgov_skrell.dmi',
 		)
 	sprite_sheets_obj = list(
-		SPECIES_UNATHI = 'maps/torch/icons/obj/unathi/obj_head_solgov_unathi.dmi',
+		SPECIES_KROOT = 'maps/torch/icons/obj/unathi/obj_head_solgov_unathi.dmi',
 		SPECIES_TAU = 'maps/torch/icons/obj/skrell/obj_head_solgov_skrell.dmi',
 		)
 
@@ -448,11 +448,11 @@
 	icon_state = "rig0_explorer"
 	item_state = "explorer_helm"
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'maps/torch/icons/mob/unathi/onmob_head_spacesuits_solgov_unathi.dmi',
+		SPECIES_KROOT = 'maps/torch/icons/mob/unathi/onmob_head_spacesuits_solgov_unathi.dmi',
 		SPECIES_TAU = 'maps/torch/icons/mob/skrell/onmob_head_solgov_skrell.dmi',
 		)
 	sprite_sheets_obj = list(
-		SPECIES_UNATHI = 'maps/torch/icons/obj/unathi/obj_head_solgov_unathi.dmi',
+		SPECIES_KROOT = 'maps/torch/icons/obj/unathi/obj_head_solgov_unathi.dmi',
 		SPECIES_TAU = 'maps/torch/icons/obj/skrell/obj_head_solgov_skrell.dmi',
 		)
 	armor = list(

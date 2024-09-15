@@ -5,7 +5,7 @@
 	icon = 'maps/torch/icons/obj/obj_suit_solgov.dmi'
 	item_icons = list(slot_wear_suit_str = 'maps/torch/icons/mob/onmob_suit_solgov.dmi')
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'maps/torch/icons/mob/unathi/onmob_suit_solgov_unathi.dmi'
+		SPECIES_KROOT = 'maps/torch/icons/mob/unathi/onmob_suit_solgov_unathi.dmi'
 	)
 
 /obj/item/clothing/suit/storage/vest/solgov
@@ -15,7 +15,7 @@
 	icon = 'maps/torch/icons/obj/obj_suit_solgov.dmi'
 	item_icons = list(slot_wear_suit_str = 'maps/torch/icons/mob/onmob_suit_solgov.dmi')
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'maps/torch/icons/mob/unathi/onmob_suit_solgov_unathi.dmi'
+		SPECIES_KROOT = 'maps/torch/icons/mob/unathi/onmob_suit_solgov_unathi.dmi'
 	)
 
 /obj/item/clothing/suit/storage/vest/solgov/security

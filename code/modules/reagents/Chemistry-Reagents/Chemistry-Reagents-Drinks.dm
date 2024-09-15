@@ -1471,9 +1471,9 @@
 
 /datum/reagent/drink/skrianhi
 	name = "Skrianhi Tea"
-	description = "A blend of teas from Moghes, commonly drank by Unathi."
+	description = "A blend of teas from Moghes, commonly drank by Kroot."
 	taste_description = "bitter energising tea"
 	color = "#0e0900"
 	glass_name = "skrianhi tea"
-	glass_desc = "A blend of teas from Moghes, commonly drank by Unathi."
+	glass_desc = "A blend of teas from Moghes, commonly drank by Kroot."
 	adj_temp = 20
