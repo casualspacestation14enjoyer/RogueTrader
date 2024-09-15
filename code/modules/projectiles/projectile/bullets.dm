@@ -159,7 +159,7 @@
 	armor_penetration = 11
 
 /obj/item/projectile/bullet/magnum
-	damage = 40
+	damage = 38
 	penetration_modifier = 0.5
 	distance_falloff = 2 // Heavy slug.
 	armor_penetration = 16
@@ -168,11 +168,11 @@
 	armor_penetration = 20
 
 /obj/item/projectile/bullet/magnum/kp
-	damage = 43
+	damage = 41
 	armor_penetration = 24
 
 /obj/item/projectile/bullet/magnum/ms
-	damage = 48
+	damage = 46
 	armor_penetration = 11
 
 /obj/item/projectile/bullet/pistol/rubber //"rubber" bullets
@@ -284,18 +284,18 @@
 	armor_penetration = 20
 
 /obj/item/projectile/bullet/rifle/militarum // 6.8 Militarum. Higher AP, less damage to 8mm.
-	damage = 38
+	damage = 34
 	armor_penetration = 24
 
 /obj/item/projectile/bullet/rifle/militarum/ap
 	armor_penetration = 28
 
 /obj/item/projectile/bullet/rifle/militarum/kp
-	damage = 41
+	damage = 39
 	armor_penetration = 32
 
 /obj/item/projectile/bullet/rifle/militarum/ms
-	damage = 46
+	damage = 44
 	armor_penetration = 19
 
 /obj/item/projectile/bullet/rifle/sniper // 12.7mm Battle Round

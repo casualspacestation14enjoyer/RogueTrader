@@ -1,18 +1,18 @@
 /obj/item/gun/projectile/heavysniper/boltaction/imperial
 	name = "Boscelot Pattern Stub Rifle" // Slowdown is already in heavysniper
-	desc = "An old bolt action stub rifle chambered in 10mm AR militarum rounds."
+	desc = "An old bolt action stub rifle chambered in 15mm AR stub rounds."
 	icon = 'icons/obj/guns/40kproj.dmi'
 	icon_state = "boltaction"
 	item_state = "boltaction"
 	w_class = ITEM_SIZE_LARGE
-	caliber = CALIBER_AUTOGUN_HEAVY
-	ammo_type = /obj/item/ammo_casing/heavy
+	caliber = CALIBER_SNIPER
+	ammo_type = /obj/item/ammo_casing/sniper
 	load_method = SINGLE_CASING|SPEEDLOADER
 	max_shells = 8
 	accuracy = 1
 	scope_zoom = 1
 	scoped_accuracy = 2
-	fire_delay = 3.5
+	fire_delay = 3.9
 	wielded_item_state = "boltaction-wielded"
 	fire_sound = 'sound/warhammer/gunshot/auto5.ogg'
 
@@ -37,12 +37,12 @@
 
 /obj/item/gun/projectile/heavysniper/boltaction/imperial/triangong
 	name = "Triangong 4-46"
-	desc = "An old custom made bolt action stub rifle chambered in 15mm rounds. It has a scope attached."
+	desc = "An old custom made bolt action stub rifle chambered in 15mm stub rounds. It has a scope attached."
 	icon_state = "boltactionsharp"
 	item_state = "boltactionsharp"
 	w_class = ITEM_SIZE_LARGE
 	caliber = CALIBER_SNIPER
-	ammo_type = /obj/item/ammo_casing/shell
+	ammo_type = /obj/item/ammo_casing/sniper
 	max_shells = 6
 	accuracy = 0.5
 	scope_zoom = 2
@@ -64,12 +64,12 @@
 
 /obj/item/gun/projectile/heavysniper/boltaction/imperial/crucible
 	name = "Crucible Stub Rifle"
-	desc = "A militarum pattern bolt action stub rifle chambered in 15mm rounds."
+	desc = "A militarum pattern bolt action stub rifle chambered in 15mm stub rounds."
 	icon_state = "boltactionsharp"
 	item_state = "boltactionsharp"
 	w_class = ITEM_SIZE_LARGE
 	caliber = CALIBER_SNIPER
-	ammo_type = /obj/item/ammo_casing/shell
+	ammo_type = /obj/item/ammo_casing/sniper
 	max_shells = 7
 	accuracy = 1
 	scope_zoom = 1

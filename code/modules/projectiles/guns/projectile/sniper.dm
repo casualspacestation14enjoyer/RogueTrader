@@ -113,8 +113,8 @@
 	item_state = "boltaction"
 	w_class = ITEM_SIZE_LARGE
 	origin_tech = list(TECH_COMBAT = 2)
-	caliber = CALIBER_AUTOGUN
-	ammo_type = /obj/item/ammo_casing/rifle
+	caliber = CALIBER_SNIPER
+	ammo_type = /obj/item/ammo_casing/sniper
 	load_method = SINGLE_CASING|SPEEDLOADER
 	max_shells = 5
 	accuracy = 4
