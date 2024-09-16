@@ -25,7 +25,7 @@
 	head_hair_style = "Skrell Male Tentacles"
 	. = ..(mapload, SPECIES_TAU)
 
-/mob/living/carbon/human/kroot/Initialize(mapload)
+/mob/living/carbon/human/unathi/Initialize(mapload)
 	head_hair_style = "Kroot Horns"
 	. = ..(mapload, SPECIES_KROOT)
 
