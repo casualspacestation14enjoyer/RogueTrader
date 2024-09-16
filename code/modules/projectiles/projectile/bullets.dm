@@ -491,9 +491,10 @@
 	icon_state = "ion"
 	damage = 50
 	armor_penetration = 42
-	on_impact(var/atom/A)
-		empulse(A, 1, 2)
-		return 1
+
+/obj/item/projectile/bullet/rifle/galvanic/emp/on_impact(atom/A)
+	empulse(A, 1, 2)
+	return 1
 
 /*
 /obj/item/projectile/bullet/rifle/galvanic/airburst
