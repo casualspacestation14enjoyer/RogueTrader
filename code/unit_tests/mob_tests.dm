@@ -270,7 +270,7 @@ var/global/default_mobloc = null
 /datum/unit_test/mob_damage/unathi
 	name = "MOB: Kroot damage check template"
 	template = /datum/unit_test/mob_damage/unathi
-	mob_type = /mob/living/carbon/human/unathi
+	mob_type = /mob/living/carbon/human/kroot
 
 /datum/unit_test/mob_damage/unathi/brute
 	name = "MOB: Kroot Brute Damage Check"
