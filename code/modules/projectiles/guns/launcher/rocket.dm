@@ -34,6 +34,7 @@
 			FEEDBACK_UNEQUIP_FAILURE(user, tool)
 			return TRUE
 		rockets += tool
+		playsound(src, 'sound/effects/cannon_load.ogg', 50, 3)
 		user.visible_message(
 			SPAN_NOTICE("\The [user] loads \a [src] with \a [tool]."),
 			SPAN_NOTICE("You load \the [src] with \the [tool].")
@@ -57,3 +58,21 @@
 /obj/item/gun/launcher/rocket/handle_post_fire(mob/user, atom/target)
 	log_and_message_admins("fired a rocket from a rocket launcher ([src.name]) at [target].", user)
 	..()
+
+/obj/item/gun/launcher/rocket/krak
+	name = "Krak Missile Launcher"
+	desc = "A simple krak missile launcher, a robust and man-portable anti-tank weapon primarily in use by PDF forces."
+	icon_state = "rcl_rifle"
+	item_state = "rcl_rifle"
+	slot_flags = SLOT_BACK
+	w_class = ITEM_SIZE_HUGE
+	fire_sound = 'sound/warhammer/gunshot/tank.ogg'
+
+/obj/item/gun/launcher/rocket/ork
+	name = "Ork Rokit Launcha"
+	desc = "De rockity bit iz to be pointed at da umies. Charge in wid ya choppa when ya shoot it, innit."
+	icon_state = "rokkit_launcha"
+	item_state = "rcl_rifle"
+	slot_flags = SLOT_BACK
+	w_class = ITEM_SIZE_HUGE
+	fire_sound = 'sound/warhammer/gunshot/tank.ogg'

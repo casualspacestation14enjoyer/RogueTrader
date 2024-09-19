@@ -1,5 +1,6 @@
 /obj/item/projectile/bullet/pellet/fragment
-	damage = 30
+	damage = 20
+	armor_penetration = 24
 	range_step = 2 //controls damage falloff with distance. projectiles lose a "pellet" each time they travel this distance. Can be a non-integer.
 
 	base_spread = 0 //causes it to be treated as a shrapnel explosion instead of cone
@@ -12,7 +13,8 @@
 	embed = TRUE
 
 /obj/item/projectile/bullet/pellet/fragment/strong
-	damage = 60
+	damage = 35
+	armor_penetration = 27
 
 /obj/item/grenade/frag
 	name = "fragmentation grenade"
@@ -20,7 +22,7 @@
 	icon_state = "frggrenade"
 
 	var/list/fragment_types = list(/obj/item/projectile/bullet/pellet/fragment = 1)
-	var/num_fragments = 72  //total number of fragments produced by the grenade
+	var/num_fragments = 60  //total number of fragments produced by the grenade
 	var/explosion_size = 2   //size of the center explosion
 
 	//The radius of the circle used to launch projectiles. Lower values mean less projectiles are used but if set too low gaps may appear in the spread pattern
@@ -85,7 +87,7 @@
 	desc = "A light fragmentation grenade, designed to be fired from a launcher. It can still be activated and thrown by hand if necessary."
 	icon_state = "fragshell"
 
-	num_fragments = 50 //less powerful than a regular frag grenade
+	num_fragments = 42 //less powerful than a regular frag grenade
 
 /obj/item/grenade/frag/high_yield
 	name = "fragmentation bomb"
@@ -97,7 +99,7 @@
 	throw_range = 5 //heavy, can't be thrown as far
 
 	fragment_types = list(/obj/item/projectile/bullet/pellet/fragment=1,/obj/item/projectile/bullet/pellet/fragment/strong=4)
-	num_fragments = 144  //total number of fragments produced by the grenade
+	num_fragments = 80  //total number of fragments produced by the grenade
 	explosion_size = 3
 
 /obj/item/grenade/frag/high_yield/on_explosion(turf/O)
@@ -110,7 +112,7 @@
 	icon_state = "ghetto"
 	arm_sound = 'sound/effects/flare.ogg'
 
-	num_fragments = 10  // Its a /can/ , not nearly as strong as an industrially produced grenade.
+	num_fragments = 24  // Its a /can/ , not nearly as strong as an industrially produced grenade.
 	explosion_size = 1
 
 	det_time = 5

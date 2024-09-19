@@ -64,7 +64,7 @@
 	icon_state = "pistol"
 	w_class = ITEM_SIZE_NORMAL
 	burst = 2
-	fire_delay = 12
+	fire_delay = 7
 	one_hand_penalty = 1
 	max_darts = 4
 

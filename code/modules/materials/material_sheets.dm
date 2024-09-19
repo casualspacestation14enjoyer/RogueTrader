@@ -231,7 +231,7 @@
 	amount = 50
 
 /obj/item/stack/material/phoron
-	name = "solid phoron"
+	name = "solid phoron promethium"
 	material_flags = USE_MATERIAL_SINGULAR_NAME | USE_MATERIAL_PLURAL_NAME | USE_MATERIAL_ICON
 	default_type = MATERIAL_PHORON
 
@@ -292,7 +292,7 @@
 
 //Fuel for MRSPACMAN generator.
 /obj/item/stack/material/tritium
-	name = "tritium"
+	name = "tritium promethium"
 	default_type = MATERIAL_TRITIUM
 
 /obj/item/stack/material/tritium/ten
@@ -302,16 +302,16 @@
 	amount = 50
 
 /obj/item/stack/material/osmium
-	name = "osmium"
-	default_type = MATERIAL_OSMIUM
+	name = "ceramite"
+	default_type = MATERIAL_CERAMITE
 
 /obj/item/stack/material/osmium/ten
 	amount = 10
 
 /obj/item/stack/material/ocp
-	name = "osmium-carbide plasteel"
+	name = "ceramite plasteel"
 	item_state = "sheet-reinf-mult"
-	default_type = MATERIAL_OSMIUM_CARBIDE_PLASTEEL
+	default_type = MATERIAL_CERAMITE_PLASTEEL
 
 /obj/item/stack/material/ocp/ten
 	amount = 10
@@ -321,7 +321,7 @@
 
 // Fusion fuel.
 /obj/item/stack/material/deuterium
-	name = "deuterium"
+	name = "deuterium promethium"
 	default_type = MATERIAL_DEUTERIUM
 
 /obj/item/stack/material/deuterium/fifty

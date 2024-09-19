@@ -26,13 +26,13 @@
 	bleed_colour = "#816e12"
 
 	var/static/list/chemical_types = list(
-		"bicaridine" = /datum/reagent/bicaridine,
+		"regeneris-d" = /datum/reagent/bicaridine,
 		"hyperzine" =  /datum/reagent/hyperzine,
-		"tramadol" =   /datum/reagent/tramadol,
-		"dermaline" =  /datum/reagent/dermaline,
+		"morphium" =   /datum/reagent/tramadol,
+		"regeneris-b2" =  /datum/reagent/dermaline,
 		"peridaxon" =  /datum/reagent/peridaxon,
-		"inaprovaline" =  /datum/reagent/inaprovaline,
-		"dylovene" =  /datum/reagent/dylovene
+		"vitae stim" =  /datum/reagent/inaprovaline,
+		"venaxilin" =  /datum/reagent/dylovene
 	)
 
 	var/generation = 1

@@ -18,7 +18,7 @@
 	gluttonous = GLUT_ANYTHING
 	strength = STR_HIGH
 	breath_pressure = 12
-	slowdown = -0.2
+	slowdown = -0.4
 	brute_mod = 0.8
 	burn_mod = 0.7
 	flash_mod = 1.2
@@ -79,10 +79,10 @@
 		)
 
 	has_organ = list(
-		BP_HEART =	/obj/item/organ/internal/heart,
-		BP_STOMACH =  /obj/item/organ/internal/stomach,
-		BP_LUNGS =	/obj/item/organ/internal/lungs,
-		BP_LIVER =	/obj/item/organ/internal/liver,
+		BP_HEART =    /obj/item/organ/internal/heart,
+		BP_STOMACH =  /obj/item/organ/internal/stomach/unathi,
+		BP_LUNGS =    /obj/item/organ/internal/lungs,
+		BP_LIVER =    /obj/item/organ/internal/liver,
 		BP_KIDNEYS =  /obj/item/organ/internal/kidneys,
 		BP_EYES =   /obj/item/organ/internal/eyes/unathi,
 		BP_BRAIN =  /obj/item/organ/internal/brain/unathi

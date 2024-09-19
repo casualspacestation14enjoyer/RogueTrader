@@ -65,7 +65,7 @@
 	/// Checks if the gun will continue firing if the mouse button is held down.
 	var/can_autofire = FALSE
 	/// Delay after shooting before the gun can be used again. Cannot be less than [burst_delay+1].
-	var/fire_delay = 6
+	var/fire_delay = 5
 	/// Delay between shots, if firing in bursts.
 	var/burst_delay = 2
 	var/move_delay = 1

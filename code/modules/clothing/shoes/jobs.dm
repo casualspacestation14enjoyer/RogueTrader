@@ -17,7 +17,7 @@
 	item_state = "jackboots"
 	force = 3
 	armor = list(
-		melee = ARMOR_MELEE_RESISTANT,
+		melee = ARMOR_MELEE_SMALL,
 		bullet = ARMOR_BALLISTIC_MINOR,
 		laser = ARMOR_LASER_MINOR,
 		energy = ARMOR_ENERGY_MINOR,
@@ -47,7 +47,7 @@
 	item_state = "workboots"
 	item_flags = ITEM_FLAG_WASHER_ALLOWED | ITEM_FLAG_THICKMATERIAL
 	armor = list(
-		melee = ARMOR_MELEE_RESISTANT,
+		melee = ARMOR_MELEE_SMALL,
 		laser = ARMOR_LASER_MINOR,
 		energy = ARMOR_ENERGY_SMALL,
 		bomb = ARMOR_BOMB_PADDED

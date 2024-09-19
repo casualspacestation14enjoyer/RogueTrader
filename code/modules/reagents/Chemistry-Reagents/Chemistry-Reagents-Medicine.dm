@@ -1,8 +1,8 @@
 /* General medicine */
 
 /datum/reagent/inaprovaline
-	name = "Inaprovaline"
-	description = "Inaprovaline is a multipurpose neurostimulant and cardioregulator. Commonly used to slow bleeding and stabilize patients."
+	name = "Vitae Stim"
+	description = "Vitae Stim is a multipurpose neurostimulant and cardioregulator. Commonly used to slow bleeding and stabilize patients."
 	taste_description = "bitterness"
 	reagent_state = LIQUID
 	color = "#00bfff"
@@ -66,8 +66,8 @@
 		M.heal_organ_damage(0, 6 * removed)
 
 /datum/reagent/dermaline
-	name = "Dermaline"
-	description = "Dermaline is the next step in burn medication. Works twice as good as kelotane and enables the body to restore even the direst heat-damaged tissue."
+	name = "Regeneris-B2"
+	description = "Regeneris is the next step in burn medication. Works twice as good as kelotane and enables the body to restore even the direst heat-damaged tissue."
 	taste_description = "bitterness"
 	taste_mult = 1.5
 	reagent_state = LIQUID

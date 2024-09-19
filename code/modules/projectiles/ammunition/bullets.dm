@@ -200,6 +200,29 @@
 	desc = "An KP 10mm AR slug casing."
 	projectile_type = /obj/item/projectile/bullet/rifle/heavy/kp
 
+/obj/item/ammo_casing/sniper
+	name = "stub casing"
+	desc = "A sniper shell casing."
+	icon_state = "lcasing"
+	spent_icon = "lcasing-spent"
+	caliber = CALIBER_SNIPER
+	projectile_type = /obj/item/projectile/bullet/rifle/sniper
+	matter = list(MATERIAL_STEEL = 1250)
+
+/obj/item/ammo_casing/sniper/ap
+	name = "\improper AP stub casing"
+	desc = "An AP stub casing."
+	projectile_type = /obj/item/projectile/bullet/rifle/sniper/ap
+
+/obj/item/ammo_casing/sniper/kp
+	name = "\improper KP stub casing"
+	desc = "An KP stub casing."
+	projectile_type = /obj/item/projectile/bullet/rifle/sniper/kp
+
+/obj/item/ammo_casing/sniper/ms
+	name = "\improper MS stub casing"
+	desc = "An MS stub casing."
+	projectile_type = /obj/item/projectile/bullet/rifle/sniper/ms
 
 /obj/item/ammo_casing/shell
 	name = "shell casing"

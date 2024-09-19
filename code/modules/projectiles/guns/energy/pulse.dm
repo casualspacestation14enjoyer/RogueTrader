@@ -60,7 +60,7 @@
 	name = "pulse destroyer"
 	desc = "A heavy-duty, pulse-based energy weapon. Because of its complexity and cost, it is rarely seen in use except by specialists."
 	cell_type = /obj/item/cell/super
-	fire_delay = 25
+	fire_delay = 15
 	projectile_type=/obj/item/projectile/beam/pulse/destroy
 	charge_cost= 40
 

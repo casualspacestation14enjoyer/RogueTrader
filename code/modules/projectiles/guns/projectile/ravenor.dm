@@ -1,18 +1,18 @@
 /obj/item/gun/projectile/heavysniper/boltaction/imperial
 	name = "Boscelot Pattern Stub Rifle" // Slowdown is already in heavysniper
-	desc = "An old bolt action stub rifle chambered in 10mm AR militarum rounds."
+	desc = "An old bolt action stub rifle chambered in 15mm AR stub rounds."
 	icon = 'icons/obj/guns/40kproj.dmi'
 	icon_state = "boltaction"
 	item_state = "boltaction"
 	w_class = ITEM_SIZE_LARGE
-	caliber = CALIBER_AUTOGUN_HEAVY
-	ammo_type = /obj/item/ammo_casing/heavy
+	caliber = CALIBER_SNIPER
+	ammo_type = /obj/item/ammo_casing/sniper
 	load_method = SINGLE_CASING|SPEEDLOADER
 	max_shells = 8
 	accuracy = 1
 	scope_zoom = 1
 	scoped_accuracy = 2
-	fire_delay = 3.5
+	fire_delay = 3.9
 	wielded_item_state = "boltaction-wielded"
 	fire_sound = 'sound/warhammer/gunshot/auto5.ogg'
 
@@ -37,12 +37,12 @@
 
 /obj/item/gun/projectile/heavysniper/boltaction/imperial/triangong
 	name = "Triangong 4-46"
-	desc = "An old custom made bolt action stub rifle chambered in 15mm rounds. It has a scope attached."
+	desc = "An old custom made bolt action stub rifle chambered in 15mm stub rounds. It has a scope attached."
 	icon_state = "boltactionsharp"
 	item_state = "boltactionsharp"
 	w_class = ITEM_SIZE_LARGE
 	caliber = CALIBER_SNIPER
-	ammo_type = /obj/item/ammo_casing/shell
+	ammo_type = /obj/item/ammo_casing/sniper
 	max_shells = 6
 	accuracy = 0.5
 	scope_zoom = 2
@@ -64,12 +64,12 @@
 
 /obj/item/gun/projectile/heavysniper/boltaction/imperial/crucible
 	name = "Crucible Stub Rifle"
-	desc = "A militarum pattern bolt action stub rifle chambered in 15mm rounds."
+	desc = "A militarum pattern bolt action stub rifle chambered in 15mm stub rounds."
 	icon_state = "boltactionsharp"
 	item_state = "boltactionsharp"
 	w_class = ITEM_SIZE_LARGE
 	caliber = CALIBER_SNIPER
-	ammo_type = /obj/item/ammo_casing/shell
+	ammo_type = /obj/item/ammo_casing/sniper
 	max_shells = 7
 	accuracy = 1
 	scope_zoom = 1
@@ -742,6 +742,47 @@
 	slowdown_per_slot[slot_l_hand] = 0.1
 
 // XENOS
+
+/obj/item/gun/projectile/automatic/gaussrifle
+	name ="Gauss Rifle"
+	desc = "A strange alien weapon which hums with resonant frequencies alien to mankind."
+	icon = 'icons/map_project/port/ds13.dmi'
+	fire_sound = 'sound/warhammer/ds/pulse_shot.ogg'
+	caliber = "pmag"
+	max_shells = 40
+	one_hand_penalty = 3.5
+	accuracy = 0
+	fire_delay = 1.5
+	slot_flags = SLOT_BACK
+	magazine_type = /obj/item/ammo_magazine/pulsemag
+	allowed_magazines = list(/obj/item/ammo_magazine/pulsemag)
+	w_class = ITEM_SIZE_HUGE
+
+	firemodes = list(
+		list(mode_name="semi-automatic", burst=1, fire_delay=1.2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="5-round bursts", burst=5, fire_delay=4, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
+		)
+
+/obj/item/gun/projectile/automatic/gaussrifle/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.15 // Wear slowdown is higher due to Xenos tech not being designed for human bodies.
+	slowdown_per_slot[slot_belt] = 0.25
+	slowdown_per_slot[slot_wear_suit] = 0.25
+	slowdown_per_slot[slot_r_hand] = 0.4
+	slowdown_per_slot[slot_l_hand] = 0.4
+
+/obj/item/gun/projectile/automatic/radcarbine/radpistol/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "pulserifle"
+		item_state = "pulserifle"
+		wielded_item_state = "pulserifle-wielded"
+	else
+		icon_state = "pulserifle"
+		item_state = "pulserifle"
+		wielded_item_state = "pulserifle-wielded"
+
+// KRUMPIN TIME
 
 /obj/item/gun/projectile/automatic/gaussrifle
 	name ="Gauss Rifle"

@@ -146,11 +146,11 @@
 
 	charges = list(
 		list("dexalin plus",  "dexalin plus",  /datum/reagent/dexalinp,          80),
-		list("inaprovaline",  "inaprovaline",  /datum/reagent/inaprovaline,      80),
-		list("dylovene",      "dylovene",      /datum/reagent/dylovene,          80),
+		list("vitae stim",  "vitae stim",  /datum/reagent/inaprovaline,      80),
+		list("venaxilin",      "venaxilin",      /datum/reagent/dylovene,          80),
 		list("hyronalin",     "hyronalin",     /datum/reagent/hyronalin,         80),
 		list("spaceacillin",  "spaceacillin",  /datum/reagent/spaceacillin,      80),
-		list("tramadol",      "tramadol",      /datum/reagent/tramadol,          80)
+		list("morphium",      "morphium",      /datum/reagent/tramadol,          80)
 		)
 
 	var/max_reagent_volume = 80 //Used when refilling.
@@ -161,15 +161,15 @@
 	//just over a syringe worth of each. Want more? Go refill. Gives the ninja another reason to have to show their face.
 	charges = list(
 		list("dexalin plus",  "dexalin plus",  /datum/reagent/dexalinp,          20),
-		list("inaprovaline",  "inaprovaline",  /datum/reagent/inaprovaline,      20),
-		list("dylovene",      "dylovene",      /datum/reagent/dylovene,          20),
+		list("vitae stim",  "vitae stim",  /datum/reagent/inaprovaline,      20),
+		list("venaxilin",      "venaxilin",      /datum/reagent/dylovene,          20),
 		list("glucose",       "glucose",       /datum/reagent/nutriment/glucose, 80),
 		list("hyronalin",     "hyronalin",     /datum/reagent/hyronalin,         20),
-		list("bicaridine",    "bicaridine",    /datum/reagent/bicaridine,        20),
-		list("dermaline",     "dermaline",     /datum/reagent/dermaline,         20),
+		list("regeneris-d",    "regeneris-d",    /datum/reagent/bicaridine,        20),
+		list("regeneris-b2",     "regeneris-b2",     /datum/reagent/dermaline,         20),
 		list("spaceacillin",  "spaceacillin",  /datum/reagent/spaceacillin,      20),
 		list("coagulant",     "coagulant",     /datum/reagent/coagulant,         20),
-		list("tramadol",      "tramadol",      /datum/reagent/tramadol,          20)
+		list("morphium",      "morphium",      /datum/reagent/tramadol,          20)
 		)
 
 /obj/item/rig_module/chem_dispenser/accepts_item(obj/item/input_item, mob/living/user)
@@ -255,7 +255,7 @@
 	charges = list(
 		list("synaptizine", "synaptizine", /datum/reagent/synaptizine,       30),
 		list("hyperzine",   "hyperzine",   /datum/reagent/hyperzine,         30),
-		list("oxycodone",   "oxycodone",   /datum/reagent/tramadol/oxycodone,         30),
+		list("aqeuitas-d",   "aqeuitas-d",   /datum/reagent/tramadol/oxycodone,         30),
 		list("glucose",     "glucose",     /datum/reagent/nutriment/glucose, 80),
 		)
 

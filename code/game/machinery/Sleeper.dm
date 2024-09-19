@@ -14,7 +14,7 @@
 	machine_name = "sleeper"
 	machine_desc = "Sleepers are high-powered, full-body beds that can synthesize and inject simple chemicals, as well as dialyze substances from a patient's blood and slow down their body functions."
 	var/mob/living/carbon/human/occupant = null
-	var/list/base_chemicals = list("Inaprovaline" = /datum/reagent/inaprovaline, "Pain Suppressor" = /datum/reagent/paracetamol, "Nexros" = /datum/reagent/dylovene, "Dexalin" = /datum/reagent/dexalin)
+	var/list/base_chemicals = list("Vitae Stim" = /datum/reagent/inaprovaline, "Pain Suppressor" = /datum/reagent/paracetamol, "Nexros" = /datum/reagent/dylovene, "Dexalin" = /datum/reagent/dexalin)
 	var/list/available_chemicals = list()
 	var/list/upgrade_chemicals = list("Regeneris-B" = /datum/reagent/kelotane)
 	var/list/upgrade2_chemicals = list("Hyronalin" = /datum/reagent/hyronalin)

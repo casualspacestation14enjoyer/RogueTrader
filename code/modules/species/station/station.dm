@@ -11,7 +11,7 @@
 	Magnitka, an independent authoritarian planet; and many other minor colonies."
 	assisted_langs = list(LANGUAGE_NABBER)
 	min_age = 18
-	max_age = 100
+	max_age = 200
 	hidden_from_codex = FALSE
 	bandages_icon = 'icons/mob/bandage.dmi'
 
@@ -76,7 +76,7 @@
 	pronouns = list(PRONOUNS_THEY_THEM)
 	hidden_from_codex = FALSE
 	min_age = 19
-	max_age = 90
+	max_age = 190
 
 	burn_mod = 0.9
 	oxy_mod = 0.4

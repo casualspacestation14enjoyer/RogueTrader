@@ -22,7 +22,7 @@
 	var/bolt_open = 0
 	wielded_item_state = "heavysniper-wielded" //sort of placeholder
 	load_sound = 'sound/weapons/guns/interaction/rifle_load.ogg'
-	fire_delay = 12
+	fire_delay = 10
 
 /obj/item/gun/projectile/heavysniper/New()
 	..()
@@ -113,8 +113,8 @@
 	item_state = "boltaction"
 	w_class = ITEM_SIZE_LARGE
 	origin_tech = list(TECH_COMBAT = 2)
-	caliber = CALIBER_AUTOGUN
-	ammo_type = /obj/item/ammo_casing/rifle
+	caliber = CALIBER_SNIPER
+	ammo_type = /obj/item/ammo_casing/sniper
 	load_method = SINGLE_CASING|SPEEDLOADER
 	max_shells = 5
 	accuracy = 4
@@ -130,7 +130,7 @@
 	icon = 'icons/obj/guns/terran_rifle.dmi'
 	icon_state = "dmr"
 	item_state = "dmr"
-	fire_delay = 8
+	fire_delay = 6.5
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 4, TECH_ESOTERIC = 5)
 	w_class = ITEM_SIZE_HUGE
 	force = 10
@@ -202,7 +202,7 @@
 	caliber = CALIBER_SLUG_MAGNUM
 	ammo_type = /obj/item/ammo_casing/magnum
 	load_method = SINGLE_CASING|SPEEDLOADER
-	fire_delay = 2
+	fire_delay = 3.5
 	one_hand_penalty = 4
 	max_shells = 10
 	accuracy = 1

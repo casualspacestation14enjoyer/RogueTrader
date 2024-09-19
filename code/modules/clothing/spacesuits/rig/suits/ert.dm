@@ -12,9 +12,9 @@
 	req_access = list(access_cent_specops)
 
 	armor = list(
-		melee = ARMOR_MELEE_MAJOR,
+		melee = ARMOR_MELEE_KNIVES,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = ARMOR_LASER_MAJOR,
+		laser = ARMOR_LASER_HANDGUNS,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,
@@ -136,9 +136,9 @@
 	suit_type = "emergency response fleet"
 	icon_state = "ert_fleet_rig"
 	armor = list(
-		melee = ARMOR_MELEE_VERY_HIGH,
+		melee = ARMOR_MELEE_KNIVES,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = ARMOR_LASER_MAJOR,
+		laser = ARMOR_LASER_HANDGUNS,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,

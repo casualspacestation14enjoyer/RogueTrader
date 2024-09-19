@@ -163,7 +163,7 @@
 	speed = 1
 	natural_weapon = /obj/item/natural_weapon/pincers
 	natural_armor = list(
-		melee = ARMOR_MELEE_RESISTANT
+		melee = ARMOR_MELEE_SMALL
 		)
 
 	ai_holder = /datum/ai_holder/simple_animal/retaliate/royalcrab

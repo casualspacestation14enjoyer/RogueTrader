@@ -185,7 +185,7 @@
 	does_spin = FALSE
 	attack_verb = list("sliced", "torn", "cut")
 	armor = list(
-		melee = ARMOR_MELEE_RESISTANT,
+		melee = ARMOR_MELEE_SMALL,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
 		laser = ARMOR_LASER_HANDGUNS,
 		energy = ARMOR_ENERGY_SMALL,

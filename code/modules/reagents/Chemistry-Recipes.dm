@@ -80,7 +80,7 @@
 
 /* Common reactions */
 /singleton/reaction/inaprovaline
-	name = "Inaprovaline"
+	name = "Vitae Stim"
 	result = /datum/reagent/inaprovaline
 	required_reagents = list(/datum/reagent/acetone = 1, /datum/reagent/carbon = 1, /datum/reagent/sugar = 1)
 	result_amount = 3
@@ -217,7 +217,7 @@
 	result_amount = 1
 
 /singleton/reaction/dermaline
-	name = "Dermaline"
+	name = "Regeneris-B2"
 	result = /datum/reagent/dermaline
 	required_reagents = list(/datum/reagent/acetone = 1, /datum/reagent/phosphorus = 1, /datum/reagent/kelotane = 1)
 	result_amount = 3

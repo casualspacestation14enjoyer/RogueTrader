@@ -4,7 +4,7 @@
 #include "bearcat_radio.dm"
 
 /obj/submap_landmark/joinable_submap/bearcat
-	name = "FTV Bearcat"
+	name = "The Demeter"
 	archetype = /singleton/submap_archetype/derelict/bearcat
 
 /singleton/submap_archetype/derelict/bearcat
@@ -23,7 +23,7 @@
 	burn_delay = 10 SECONDS
 
 /obj/overmap/visitable/ship/bearcat/New()
-	name = "[pick("FTV","ITV","IEV")] [pick("Bearcat", "Firebug", "Defiant", "Unsinkable","Horizon","Vagrant")]"
+	name = "[pick("The Demeter", "The Demeter")]"
 	for(var/area/ship/scrap/A)
 		A.name = "\improper [name] - [A.name]"
 		GLOB.using_map.area_purity_test_exempt_areas += A.type
@@ -31,7 +31,7 @@
 	..()
 
 /datum/map_template/ruin/away_site/bearcat_wreck
-	name = "Bearcat Wreck"
+	name = "Demeter Wreck"
 	id = "awaysite_bearcat_wreck"
 	description = "A wrecked light freighter."
 	suffixes = list("bearcat/bearcat-1.dmm", "bearcat/bearcat-2.dmm")

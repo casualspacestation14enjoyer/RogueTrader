@@ -70,7 +70,7 @@
 	var/silent_steps
 
 	var/min_age = 17
-	var/max_age = 70
+	var/max_age = 200
 
 	// Speech vars.
 	var/assisted_langs = list()               // The languages the species can't speak without an assisted organ.

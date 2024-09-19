@@ -115,7 +115,7 @@
 			var/datum/extension/armor/A = get_extension(under, /datum/extension/armor)
 			if(A)
 				A.armor_values = list(
-					melee = ARMOR_MELEE_VERY_HIGH,
+					melee = ARMOR_MELEE_KNIVES,
 					bullet = ARMOR_BALLISTIC_PISTOL,
 					laser = ARMOR_LASER_SMALL,
 					energy = ARMOR_ENERGY_SMALL
@@ -123,7 +123,7 @@
 			A = get_extension(head, /datum/extension/armor)
 			if(A)
 				A.armor_values = list(
-					melee = ARMOR_MELEE_RESISTANT,
+					melee = ARMOR_MELEE_SMALL,
 					bullet = ARMOR_BALLISTIC_MINOR,
 					laser = ARMOR_LASER_MINOR,
 					energy = ARMOR_ENERGY_MINOR

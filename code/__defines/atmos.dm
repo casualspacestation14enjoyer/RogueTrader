@@ -115,8 +115,8 @@
 #define GAS_METHANE				"methane"
 #define GAS_ALIEN				"aliether"
 #define GAS_HYDROGEN			"hydrogen"
-#define GAS_DEUTERIUM			"deuterium"
-#define GAS_TRITIUM				"tritium"
+#define GAS_DEUTERIUM			"deuterium promethium"
+#define GAS_TRITIUM				"tritium promethium"
 #define GAS_HELIUM				"helium"
 #define GAS_ARGON				"argon"
 #define GAS_KRYPTON				"krypton"
@@ -126,7 +126,7 @@
 #define GAS_CHLORINE			"chlorine"
 #define GAS_SULFUR				"sulfurdioxide"
 #define GAS_STEAM				"water"
-#define GAS_PHORON				"phoron"
+#define GAS_PHORON				"phoron promethium"
 #define GAS_BORON				"boron"
 #define GAS_HEAT                "heat" //Not a real gas, used for visual effects
 #define GAS_COLD                "cold" //Not a real gas, used for visual effects

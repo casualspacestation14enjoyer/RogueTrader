@@ -1,6 +1,6 @@
 /obj/item/gun/magnetic/railgun
 	name = "railgun"
-	desc = "The HelTek Arms LM-76 Thunderclap. A portable linear motor cannon produced during the Ultramar Conflict for anti-armour and anti-fortification operations. Today, it sees wide use among private militaries, and is a staple on the black market."
+	desc = "The Vostroyan Arms LM-76 Thunderclap. A portable linear motor cannon produced during the Ultramar Conflict for anti-armour and anti-fortification operations. Today, it sees wide use among private militaries, and is a staple on the black market."
 	icon = 'icons/obj/guns/railgun.dmi'
 	icon_state = "railgun"
 	removable_components = TRUE // Can swap out the capacitor for more shots, or cell for longer usage before recharge
@@ -9,7 +9,7 @@
 	projectile_type = /obj/item/projectile/bullet/magnetic/slug
 	one_hand_penalty = 4
 	power_cost = 300
-	fire_delay = 35
+	fire_delay = 25
 	w_class = ITEM_SIZE_HUGE
 	slot_flags = SLOT_BACK
 	loaded = /obj/item/rcd_ammo/large // ~30 shots
@@ -64,7 +64,7 @@
 
 /obj/item/gun/magnetic/railgun/tcc // Oppa! Should only be available to TCC shock troops or high-budget mercs.
 	name = "advanced railgun"
-	desc = "The HelTek Arms HR-22 Hammerhead. A man-portable helical rail cannon; favorite weapon of Imperial shock troops and anti-tank personnel."
+	desc = "The Vostroyan Arms HR-22 Hammerhead. A man-portable helical rail cannon; favorite weapon of Imperial shock troops and anti-tank personnel."
 	icon = 'icons/obj/guns/railgun_adv.dmi'
 	icon_state = "railgun-tcc"
 	removable_components = TRUE // Railgunners are expected to be able to completely disassemble and reassemble their weapons in the field. But we don't have that mechanic, so the cell and capacitor will do.
@@ -104,7 +104,7 @@
 
 /obj/item/gun/magnetic/railgun/automatic // Adminspawn only, this shit is absurd.
 	name = "\improper LMRA autocannon"
-	desc = "The HelTek Arms LMRA-14A Meteor. Originally a vehicle-mounted turret weapon used by the Tau in the Ultramar Conflict for anti-vehicular operations, the fact that it was made man-portable is mindboggling in itself."
+	desc = "The Vostroyan Arms LMRA-14A Meteor. Originally a vehicle-mounted turret weapon used by the Tau in the Ultramar Conflict for anti-vehicular operations, the fact that it was made man-portable is mindboggling in itself."
 	icon = 'icons/obj/guns/railgun_heavy.dmi'
 	icon_state = "heavy_railgun"
 	removable_components = FALSE // Absolutely not. This has an infinity cell.
@@ -112,7 +112,7 @@
 	cell = /obj/item/cell/infinite
 	capacitor = /obj/item/stock_parts/capacitor/super
 
-	fire_delay =  8
+	fire_delay =  6
 
 	slot_flags = SLOT_BACK
 	w_class = ITEM_SIZE_NO_CONTAINER
@@ -141,7 +141,7 @@
 	icon_state = "flechette_gun"
 	item_state = "z8carbine"
 	one_hand_penalty = 2
-	fire_delay = 8
+	fire_delay = 6
 	removable_components = FALSE
 	cell = /obj/item/cell/hyper
 	capacitor = /obj/item/stock_parts/capacitor/adv

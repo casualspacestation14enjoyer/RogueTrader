@@ -7,7 +7,7 @@
 	slot_flags = SLOT_BELT|SLOT_BACK
 	w_class = ITEM_SIZE_LARGE
 	force = 10
-	fire_delay = 5
+	fire_delay = 4.5
 	one_hand_penalty = 2
 	bulk = GUN_BULK_RIFLE
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
@@ -98,7 +98,7 @@
 	charge_cost = 40
 	max_shots = 6
 	accuracy = 2
-	fire_delay = 8
+	fire_delay = 6
 	wielded_item_state = "gun_wielded"
 
 /obj/item/gun/energy/lasercannon/mounted
@@ -125,7 +125,7 @@
 	max_shots = 10
 	wielded_item_state = "gun_wielded"
 	combustion = 0
-	fire_delay = 5
+	fire_delay = 4.5
 
 /obj/item/gun/energy/xray/pistol
 	name = "x-ray laser gun"

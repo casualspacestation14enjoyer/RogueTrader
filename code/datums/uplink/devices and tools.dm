@@ -51,9 +51,9 @@
 
 
 /datum/uplink_item/item/tools/plastique
-	name = "C-4"
+	name = "Det Pack - Breacher"
 	desc = "Set this on a wall to put a hole exactly where you need it."
-	item_cost = 16
+	item_cost = 18
 	path = /obj/item/plastique
 
 

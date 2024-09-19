@@ -3,8 +3,8 @@
 	desc = "A spiky, golden crown. It's probably worth more than your bank account."
 	icon_state = "champhelm"
 	armor = list(
-		melee = ARMOR_MELEE_VERY_HIGH,
-		bullet = ARMOR_BALLISTIC_AP,
+		melee = ARMOR_MELEE_KNIVES,
+		bullet = ARMOR_BALLISTIC_RESISTANT,
 		laser = ARMOR_LASER_HANDGUNS,
 		energy = ARMOR_ENERGY_SMALL,
 		bomb = ARMOR_BOMB_RESISTANT,
@@ -18,8 +18,8 @@
 	siemens_coefficient = 0.5
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	armor = list(
-		melee = ARMOR_MELEE_VERY_HIGH,
-		bullet = ARMOR_BALLISTIC_AP,
+		melee = ARMOR_MELEE_KNIVES,
+		bullet = ARMOR_BALLISTIC_RESISTANT,
 		laser = ARMOR_LASER_HANDGUNS,
 		energy = ARMOR_ENERGY_SMALL,
 		bomb = ARMOR_BOMB_RESISTANT,
@@ -42,7 +42,7 @@
 	icon_state = "medievalboots"
 	force = 5
 	armor = list(
-		melee = ARMOR_MELEE_RESISTANT,
+		melee = ARMOR_MELEE_SMALL,
 		bullet = ARMOR_BALLISTIC_MINOR,
 		laser = ARMOR_LASER_MINOR,
 		energy = ARMOR_ENERGY_MINOR,
@@ -61,7 +61,7 @@
 					)
 	item_state = "excalibur"
 	edge = TRUE
-	sharp = TRUE
+	sharp = FALSE
 	w_class = ITEM_SIZE_HUGE
 	force = 35
 	throw_range = 2

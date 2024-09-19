@@ -51,7 +51,7 @@
 	item_state = "crossbow-solid"
 	fire_sound = 'sound/weapons/punchmiss.ogg' // TODO: Decent THWOK noise.
 	fire_sound_text = "a solid thunk"
-	fire_delay = 25
+	fire_delay = 15
 	slot_flags = SLOT_BACK
 	has_safety = FALSE
 

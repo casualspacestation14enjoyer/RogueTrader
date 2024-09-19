@@ -58,7 +58,7 @@
 	icon_state = "r_ocp"
 
 /turf/simulated/wall/ocp_wall/New(newloc)
-	..(newloc, MATERIAL_OSMIUM_CARBIDE_PLASTEEL, MATERIAL_OSMIUM_CARBIDE_PLASTEEL)
+	..(newloc, MATERIAL_CERAMITE_PLASTEEL, MATERIAL_CERAMITE_PLASTEEL)
 
 //Material walls
 

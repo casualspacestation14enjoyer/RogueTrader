@@ -9,7 +9,7 @@
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	handle_casings = CYCLE_CASINGS
 	max_shells = 8
-	fire_delay = 12 //Revolvers are naturally slower-firing
+	fire_delay = 5 //Revolvers are naturally slower-firing
 	ammo_type = /obj/item/ammo_casing/magnum
 	mag_insert_sound = 'sound/weapons/guns/interaction/rev_magin.ogg'
 	mag_remove_sound = 'sound/weapons/guns/interaction/rev_magout.ogg'

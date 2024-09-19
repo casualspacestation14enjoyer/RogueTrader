@@ -40,7 +40,7 @@
 	safety_icon = "safety"
 	magazine_type = /obj/item/ammo_magazine/pistol/rubber
 	accuracy = 0
-	fire_delay = 6
+	fire_delay = 4
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 
 /obj/item/gun/projectile/pistol/sec/empty
@@ -51,14 +51,14 @@
 
 /obj/item/gun/projectile/pistol/magnum_pistol
 	name = "magnum pistol"
-	desc = "The HelTek Magnus, a robust handgun that uses high-caliber ammo. Issued to Tau Pioneers for holster sized defence."
+	desc = "The Vostroyan Magnus, a robust handgun that uses high-caliber ammo. Issued to Tau Pioneers for holster sized defence."
 	icon = 'icons/obj/guns/magnum_pistol.dmi'
 	icon_state = "magnum"
 	item_state = "magnum"
 	safety_icon = "safety"
 	force = 9
 	caliber = CALIBER_SLUG_MAGNUM
-	fire_delay = 4
+	fire_delay = 4.4
 	screen_shake = 2
 	magazine_type = /obj/item/ammo_magazine/magnum
 	allowed_magazines = /obj/item/ammo_magazine/magnum
@@ -80,7 +80,7 @@
 	magazine_type = /obj/item/ammo_magazine/gyrojet
 	allowed_magazines = /obj/item/ammo_magazine/gyrojet
 	handle_casings = CLEAR_CASINGS	//the projectile is the casing
-	fire_delay = 5
+	fire_delay = 4.5
 	auto_eject = 1
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
 	mag_insert_sound = 'sound/weapons/guns/interaction/hpistol_magin.ogg'

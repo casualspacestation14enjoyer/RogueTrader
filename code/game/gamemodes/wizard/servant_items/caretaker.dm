@@ -16,7 +16,7 @@
 	desc = "A shining white and blue robe. For some reason, it reminds you of the holidays."
 	icon_state = "caretakercloak"
 	armor = list(
-		melee = ARMOR_MELEE_RESISTANT,
+		melee = ARMOR_MELEE_SMALL,
 		bullet = ARMOR_BALLISTIC_PISTOL,
 		laser = ARMOR_LASER_HANDGUNS,
 		energy = ARMOR_ENERGY_RESISTANT,

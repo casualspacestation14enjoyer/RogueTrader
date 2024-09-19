@@ -72,7 +72,7 @@
 
 	. = ..()
 
-	material = SSmaterials.get_material_by_name(MATERIAL_OSMIUM_CARBIDE_PLASTEEL)
+	material = SSmaterials.get_material_by_name(MATERIAL_CERAMITE_PLASTEEL)
 
 
 /mob/living/exosuit/premade/firefighter/spawn_mech_equipment()

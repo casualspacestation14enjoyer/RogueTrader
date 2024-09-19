@@ -19,7 +19,7 @@
 	item_flags = ITEM_FLAG_THICKMATERIAL
 	body_parts_covered = HEAD
 	armor = list(
-		melee = ARMOR_MELEE_RESISTANT,
+		melee = ARMOR_MELEE_SMALL,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
 		laser = ARMOR_LASER_HANDGUNS,
 		energy = ARMOR_ENERGY_SMALL,
@@ -76,8 +76,8 @@
 	desc = "A tan helmet made from advanced ceramic. Comfortable and robust."
 	icon_state = "helmet_tac"
 	armor = list(
-		melee = ARMOR_MELEE_MAJOR,
-		bullet = ARMOR_BALLISTIC_RIFLE,
+		melee = ARMOR_MELEE_KNIVES,
+		bullet = ARMOR_BALLISTIC_PISTOL,
 		laser = ARMOR_LASER_HANDGUNS,
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_PADDED
@@ -89,8 +89,8 @@
 	desc = "A heavily reinforced helmet painted with red markings. Feels like it could take a lot of punishment."
 	icon_state = "helmet_merc"
 	armor = list(
-		melee = ARMOR_MELEE_VERY_HIGH,
-		bullet = ARMOR_BALLISTIC_RIFLE,
+		melee = ARMOR_MELEE_KNIVES,
+		bullet = ARMOR_BALLISTIC_PISTOL,
 		laser = ARMOR_LASER_HANDGUNS,
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_PADDED
@@ -104,7 +104,7 @@
 	valid_accessory_slots = list(ACCESSORY_SLOT_HELMET_VISOR)
 	body_parts_covered = HEAD|FACE|EYES //face shield
 	armor = list(
-		melee = ARMOR_MELEE_VERY_HIGH,
+		melee = ARMOR_MELEE_KNIVES,
 		bullet = ARMOR_BALLISTIC_MINOR
 		)
 	siemens_coefficient = 0.7
@@ -128,7 +128,7 @@
 	armor = list(
 		melee = ARMOR_MELEE_SMALL,
 		bullet = ARMOR_BALLISTIC_MINOR,
-		laser = ARMOR_LASER_RIFLES,
+		laser = ARMOR_LASER_MAJOR,
 		energy = ARMOR_ENERGY_RESISTANT
 		)
 	siemens_coefficient = 0
@@ -140,7 +140,7 @@
 	valid_accessory_slots = list(ACCESSORY_SLOT_HELMET_VISOR)
 	armor = list(
 		melee = ARMOR_MELEE_MINOR,
-		bullet = ARMOR_BALLISTIC_AP,
+		bullet = ARMOR_BALLISTIC_RESISTANT,
 		laser = ARMOR_LASER_SMALL,
 		bomb = ARMOR_BOMB_PADDED
 		)
@@ -151,7 +151,7 @@
 	desc = "They're often used by highly trained Swat Members."
 	icon_state = "helmet_merc"
 	armor = list(
-		melee = ARMOR_MELEE_VERY_HIGH,
+		melee = ARMOR_MELEE_KNIVES,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
 		laser = ARMOR_LASER_HANDGUNS,
 		energy = ARMOR_ENERGY_RESISTANT,
@@ -168,7 +168,7 @@
 	icon_state = "thunderdome"
 	valid_accessory_slots = null
 	armor = list(
-		melee = ARMOR_MELEE_VERY_HIGH,
+		melee = ARMOR_MELEE_KNIVES,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
 		laser = ARMOR_LASER_HANDGUNS,
 		energy = ARMOR_ENERGY_RESISTANT,
@@ -193,7 +193,7 @@
 	icon_state = "v62"
 	valid_accessory_slots = null
 	armor = list(
-		melee = ARMOR_MELEE_VERY_HIGH,
+		melee = ARMOR_MELEE_KNIVES,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
 		laser = ARMOR_LASER_HANDGUNS,
 		energy = ARMOR_ENERGY_RESISTANT,
@@ -217,8 +217,8 @@
 		slot_r_hand_str = "syndicate-helm-green",
 		)
 	armor = list(
-		melee = ARMOR_MELEE_MAJOR,
-		bullet = ARMOR_BALLISTIC_RIFLE,
+		melee = ARMOR_MELEE_KNIVES,
+		bullet = ARMOR_BALLISTIC_PISTOL,
 		laser = ARMOR_LASER_HANDGUNS,
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BIO_MINOR
@@ -261,7 +261,7 @@
 	item_state = "pirate"
 	valid_accessory_slots = null
 	armor = list(
-		melee = ARMOR_MELEE_MAJOR,
+		melee = ARMOR_MELEE_KNIVES,
 		bullet = ARMOR_BALLISTIC_PISTOL,
 		laser = ARMOR_LASER_SMALL,
 		energy = ARMOR_ENERGY_MINOR,
@@ -285,9 +285,9 @@
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	max_pressure_protection = VOIDSUIT_MAX_PRESSURE
 	armor = list(
-		melee = ARMOR_MELEE_VERY_HIGH,
-		bullet = ARMOR_BALLISTIC_RIFLE,
-		laser = ARMOR_LASER_MAJOR,
+		melee = ARMOR_MELEE_KNIVES,
+		bullet = ARMOR_BALLISTIC_PISTOL,
+		laser = ARMOR_LASER_HANDGUNS,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,

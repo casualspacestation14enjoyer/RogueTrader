@@ -57,7 +57,7 @@
 	stasis_power = 0
 	interact_offline = TRUE
 	stat_immune = MACHINE_STAT_NOPOWER
-	base_chemicals = list("Inaprovaline" = /datum/reagent/inaprovaline, "Pain Suppressor" = /datum/reagent/paracetamol, "Nexros" = /datum/reagent/dylovene, "Dexalin" = /datum/reagent/dexalin, "Regeneris-B" = /datum/reagent/kelotane, "Hyronalin" = /datum/reagent/hyronalin)
+	base_chemicals = list("Vitae Stim" = /datum/reagent/inaprovaline, "Pain Suppressor" = /datum/reagent/paracetamol, "Nexros" = /datum/reagent/dylovene, "Dexalin" = /datum/reagent/dexalin, "Regeneris-B" = /datum/reagent/kelotane, "Hyronalin" = /datum/reagent/hyronalin)
 
 /obj/machinery/sleeper/mounted/ui_interact(mob/user, ui_key = "main", datum/nanoui/ui = null, force_open = 1, datum/topic_state/state = GLOB.mech_state)
 	. = ..()
