@@ -136,8 +136,8 @@
 	return FALSE
 
 /datum/species/human/mule
-	name = SPECIES_MULE
-	name_plural = "Mules"
+	name = SPECIES_PSYKER
+	name_plural = "Psykers"
 	description = "Psionics are a relatively new phenomenon, theorized to be linked to long-term exposure to deep, \
 	uninhabited space. Sometimes, rarely, spacers and frontier colonists inhabiting the very fringes of civilization \
 	develop a strange affinity for psionic operancy. Derogatorily known as \"mules\", these individuals are often \
@@ -146,15 +146,15 @@
 	preview_icon= 'icons/mob/human_races/species/human/subspecies/mule_preview.dmi'
 
 	spawn_flags =   SPECIES_NO_FBP_CONSTRUCTION | SPECIES_NO_FBP_CHARGEN | SPECIES_NO_ROBOTIC_INTERNAL_ORGANS
-	brute_mod =     1.25
-	burn_mod =      1.25
+	brute_mod =     0.9
+	burn_mod =      0.9
 	oxy_mod =       0.6
-	toxins_mod =    1.25
-	radiation_mod = 1.25
-	flash_mod =     1.25
+	toxins_mod =    0.8
+	radiation_mod = 0.9
+	flash_mod =     1.1
 	blood_volume =  SPECIES_BLOOD_DEFAULT * 0.85
 	min_age =       18
-	max_age =       45
+	max_age =       500
 
 /datum/species/human/mule/handle_post_spawn(mob/living/carbon/human/H)
 	if(!H.psi)

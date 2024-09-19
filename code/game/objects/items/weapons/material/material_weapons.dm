@@ -25,6 +25,7 @@
 	var/unbreakable
 	var/drops_debris = 1
 	var/worth_multiplier = 1
+	armor_penetration = 5
 
 
 /obj/item/material/New(newloc, material_key)
@@ -82,16 +83,6 @@
 		if(applies_material_name)
 			SetName("[material.display_name] [initial(name)]")
 		update_icon()
-
-/obj/item/material/on_update_icon()
-	ClearOverlays()
-	if(applies_material_colour && istype(material))
-		color = material.icon_colour
-		alpha = 100 + material.opacity * 255
-	if(furniture_icon)
-		var/image/I = image(icon, icon_state = furniture_icon)
-		I.appearance_flags = DEFAULT_APPEARANCE_FLAGS | RESET_COLOR
-		AddOverlays(I)
 
 /obj/item/material/Destroy()
 	STOP_PROCESSING(SSobj, src)

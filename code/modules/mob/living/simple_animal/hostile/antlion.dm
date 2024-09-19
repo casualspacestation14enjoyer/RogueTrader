@@ -114,7 +114,7 @@
 	maxHealth = 275
 	natural_weapon = /obj/item/natural_weapon/bite/megalion
 	natural_armor = list(
-		melee = ARMOR_MELEE_RESISTANT
+		melee = ARMOR_MELEE_SMALL
 		)
 	heal_amount = 9
 	ability_cooldown = 45 SECONDS

@@ -6,14 +6,14 @@
 	w_class = ITEM_SIZE_HUGE
 	tank_size = TANK_SIZE_HUGE
 	gauge_icon = null
-	volume = 450
+	volume = 650
 
 
 /obj/item/tank/oxygen
 	name = "oxygen tank"
 	desc = "A tank of oxygen."
 	icon_state = "oxygen"
-	volume = 180
+	volume = 280
 	tank_size = TANK_SIZE_LARGE
 	distribute_pressure = ONE_ATMOSPHERE * O2STANDARD
 	starting_pressure = list(
@@ -25,7 +25,7 @@
 	name = "oxygen tank"
 	desc = "A tank of oxygen."
 	icon_state = "oxygen_yellow"
-	volume = 180
+	volume = 280
 	tank_size = TANK_SIZE_LARGE
 	distribute_pressure = ONE_ATMOSPHERE * O2STANDARD
 	starting_pressure = list(
@@ -37,7 +37,7 @@
 	name = "nitrogen tank"
 	desc = "A tank of nitrogen."
 	icon_state = "nitrogen"
-	volume = 180
+	volume = 280
 	tank_size = TANK_SIZE_LARGE
 	distribute_pressure = ONE_ATMOSPHERE * O2STANDARD
 	starting_pressure = list(
@@ -49,7 +49,7 @@
 	name = "air tank"
 	desc = "Mixed anyone?"
 	icon_state = "oxygen"
-	volume = 180
+	volume = 280
 	tank_size = TANK_SIZE_LARGE
 	starting_pressure = list(
 		GAS_OXYGEN = 6 * ONE_ATMOSPHERE * O2STANDARD,
@@ -106,7 +106,7 @@
 	gauge_icon = "indicator_emergency"
 	gauge_cap = 4
 	tank_size = TANK_SIZE_SMALL
-	volume = 40
+	volume = 90
 	distribute_pressure = ONE_ATMOSPHERE * O2STANDARD
 	starting_pressure = list(
 		GAS_OXYGEN = 10 * ONE_ATMOSPHERE
@@ -125,7 +125,7 @@
 	gauge_icon = "indicator_emergency"
 	gauge_cap = 4
 	tank_size = TANK_SIZE_SMALL
-	volume = 60
+	volume = 125
 	distribute_pressure = ONE_ATMOSPHERE * O2STANDARD
 	starting_pressure = list(
 		GAS_OXYGEN = 10 * ONE_ATMOSPHERE
@@ -143,7 +143,7 @@
 	melee_accuracy_bonus = -10
 	gauge_icon = "indicator_emergency_double"
 	gauge_cap = 4
-	volume = 80
+	volume = 125
 	distribute_pressure = ONE_ATMOSPHERE * O2STANDARD
 	starting_pressure = list(
 		GAS_OXYGEN = 10 * ONE_ATMOSPHERE
@@ -160,7 +160,7 @@
 	force = 8
 	melee_accuracy_bonus = -10
 	gauge_icon = null
-	volume = 80
+	volume = 120
 	distribute_pressure = ONE_ATMOSPHERE * O2STANDARD
 	starting_pressure = list(
 		GAS_OXYGEN = 10 * ONE_ATMOSPHERE
@@ -211,4 +211,4 @@
 	unacidable = TRUE
 	gauge_icon = null
 	tank_size = TANK_SIZE_SMALL
-	volume = 20
+	volume = 50

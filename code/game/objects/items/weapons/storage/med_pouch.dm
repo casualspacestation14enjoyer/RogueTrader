@@ -197,15 +197,15 @@ Single Use Emergency Pouches
 	desc = "An emergency autoinjector from an emergency medical pouch."
 
 /obj/item/reagent_containers/hypospray/autoinjector/pouch_auto/inaprovaline
-	name = "emergency inaprovaline autoinjector"
+	name = "emergency vitae stim autoinjector"
 	starts_with = list(/datum/reagent/inaprovaline = 5)
 
 /obj/item/reagent_containers/hypospray/autoinjector/pouch_auto/deletrathol
-	name = "emergency deletrathol autoinjector"
+	name = "emergency aequitas-x autoinjector"
 	starts_with = list(/datum/reagent/deletrathol = 5)
 
 /obj/item/reagent_containers/hypospray/autoinjector/pouch_auto/dylovene
-	name = "emergency dylovene autoinjector"
+	name = "emergency venaxilin autoinjector"
 	starts_with = list(/datum/reagent/dylovene = 5)
 
 /obj/item/reagent_containers/hypospray/autoinjector/pouch_auto/dexalin

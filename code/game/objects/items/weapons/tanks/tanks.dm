@@ -14,7 +14,7 @@ var/global/list/tank_gauge_cache = list()
 
 	force = 15
 	attack_cooldown = 2*DEFAULT_WEAPON_COOLDOWN
-	melee_accuracy_bonus = -30
+	melee_accuracy_bonus = -10
 	throwforce = 10.0
 	throw_speed = 1
 	throw_range = 4

@@ -781,3 +781,44 @@
 		icon_state = "pulserifle"
 		item_state = "pulserifle"
 		wielded_item_state = "pulserifle-wielded"
+
+// KRUMPIN TIME
+
+/obj/item/gun/projectile/automatic/gaussrifle
+	name ="Gauss Rifle"
+	desc = "A strange alien weapon which hums with resonant frequencies alien to mankind."
+	icon = 'icons/map_project/port/ds13.dmi'
+	fire_sound = 'sound/warhammer/ds/pulse_shot.ogg'
+	caliber = "pmag"
+	max_shells = 40
+	one_hand_penalty = 3.5
+	accuracy = 0
+	fire_delay = 1.5
+	slot_flags = SLOT_BACK
+	magazine_type = /obj/item/ammo_magazine/pulsemag
+	allowed_magazines = list(/obj/item/ammo_magazine/pulsemag)
+	w_class = ITEM_SIZE_HUGE
+
+	firemodes = list(
+		list(mode_name="semi-automatic", burst=1, fire_delay=1.2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="5-round bursts", burst=5, fire_delay=4, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
+		)
+
+/obj/item/gun/projectile/automatic/gaussrifle/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.15 // Wear slowdown is higher due to Xenos tech not being designed for human bodies.
+	slowdown_per_slot[slot_belt] = 0.25
+	slowdown_per_slot[slot_wear_suit] = 0.25
+	slowdown_per_slot[slot_r_hand] = 0.4
+	slowdown_per_slot[slot_l_hand] = 0.4
+
+/obj/item/gun/projectile/automatic/radcarbine/radpistol/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "pulserifle"
+		item_state = "pulserifle"
+		wielded_item_state = "pulserifle-wielded"
+	else
+		icon_state = "pulserifle"
+		item_state = "pulserifle"
+		wielded_item_state = "pulserifle-wielded"

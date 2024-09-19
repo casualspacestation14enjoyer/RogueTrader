@@ -8,7 +8,7 @@
 	var/lighting_color
 	var/active_attack_verb
 	var/inactive_attack_verb = list()
-	armor_penetration = 50
+	armor_penetration = 10
 	atom_flags = ATOM_FLAG_NO_TEMP_CHANGE | ATOM_FLAG_NO_BLOOD
 
 
@@ -270,7 +270,7 @@
 	lighting_color = COLOR_SABER_GREEN
 	active_force = 40 //Normal attacks deal very high damage - about the same as wielded fire axe
 	active = 1
-	armor_penetration = 100
+	armor_penetration = 10
 	sharp = TRUE
 	edge = TRUE
 	anchored = TRUE    // Never spawned outside of inventory, should be fine.

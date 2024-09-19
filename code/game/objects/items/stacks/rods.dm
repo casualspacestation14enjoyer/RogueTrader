@@ -9,7 +9,7 @@
 	max_icon_state = "rod-max"
 	w_class = ITEM_SIZE_LARGE
 	attack_cooldown = 21
-	melee_accuracy_bonus = -20
+	melee_accuracy_bonus = -5
 	throw_speed = 5
 	throw_range = 20
 	max_amount = 100

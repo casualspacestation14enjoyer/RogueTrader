@@ -157,7 +157,7 @@
 
 
 /obj/item/reagent_containers/pill/inaprovaline
-	name = "Inaprovaline (30u)"
+	name = "Vitae Stim (30u)"
 	desc = "Used to stabilize patients."
 	icon_state = "pill1"
 /obj/item/reagent_containers/pill/inaprovaline/New()
@@ -187,7 +187,7 @@
 
 
 /obj/item/reagent_containers/pill/dermaline
-	name = "Dermaline (15u)"
+	name = "Regeneris (15u)"
 	desc = "Used to treat burn wounds."
 	icon_state = "pill2"
 /obj/item/reagent_containers/pill/dermaline/New()

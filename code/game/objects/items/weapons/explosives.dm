@@ -1,6 +1,6 @@
 /obj/item/plastique
-	name = "plastic explosives"
-	desc = "Used to put holes in specific areas without too much extra hole."
+	name = "det pack"
+	desc = "A simple explosive charge designed for breaching large fortifications."
 	gender = PLURAL
 	icon = 'icons/obj/assemblies/assemblies.dmi'
 	icon_state = "plastic-explosive0"
@@ -37,8 +37,8 @@
 
 /obj/item/plastique/attack_self(mob/user as mob)
 	var/newtime = input(usr, "Please set the timer.", "Timer", 10) as num
-	if (newtime < 10)
-		to_chat(user, SPAN_WARNING("You cannot set the timer to be less than 10 seconds."))
+	if (newtime < 3)
+		to_chat(user, SPAN_WARNING("You cannot set the timer to be less than 3 seconds."))
 		return
 
 	if (user.get_active_hand() == src)
@@ -53,7 +53,7 @@
 	to_chat(user, "Planting explosives...")
 	user.do_attack_animation(clicked)
 
-	if(do_after(user, 5 SECONDS, clicked, DO_DEFAULT | DO_USER_UNIQUE_ACT) && in_range(user, clicked))
+	if(do_after(user, 2 SECONDS, clicked, DO_DEFAULT | DO_USER_UNIQUE_ACT) && in_range(user, clicked))
 		if(!user.unequip_item())
 			FEEDBACK_UNEQUIP_FAILURE(user, src)
 			return TRUE
@@ -79,16 +79,17 @@
 	if(!target)
 		target = src
 	if(location)
-		explosion(location, 2, EX_ACT_LIGHT)
+		explosion(location, 4, EX_ACT_HEAVY)
 
 	if(target)
 		if (istype(target, /turf/simulated/wall))
 			var/turf/simulated/wall/W = target
 			W.kill_health()
+			explosion(location, 2, EX_ACT_HEAVY)
 		else if(istype(target, /mob/living))
-			target.ex_act(EX_ACT_HEAVY) // c4 can't gib mobs anymore.
+			target.ex_act(2, EX_ACT_DEVASTATING) // c4 can't gib mobs anymore.
 		else
-			target.ex_act(EX_ACT_DEVASTATING)
+			target.ex_act(4, EX_ACT_HEAVY)
 	if(target)
 		target.CutOverlays(image_overlay)
 	qdel(src)

@@ -54,10 +54,10 @@
 	containername = "titanium sheets crate"
 
 /singleton/hierarchy/supply_pack/materials/ocp50
-	name = "50 osmium carbide plasteel sheets"
+	name = "50 carbide plasteel sheets"
 	contains = list(/obj/item/stack/material/ocp/fifty)
 	cost = 20
-	containername = "osmium carbide plasteel sheets crate"
+	containername = "ceramite plasteel sheets crate"
 
 // Material sheets (10 - Smaller amounts, less cost efficient)
 /singleton/hierarchy/supply_pack/materials/marble10
@@ -79,10 +79,10 @@
 	containername = "titanium sheets crate"
 
 /singleton/hierarchy/supply_pack/materials/ocp10
-	name = "10 osmium carbide plasteel sheets"
+	name = "10carbide plasteel sheets"
 	contains = list(/obj/item/stack/material/ocp/ten)
 	cost = 20
-	containername = "osmium carbide plasteel sheets crate"
+	containername = "ceramite plasteel sheets crate"
 
 /singleton/hierarchy/supply_pack/materials/phoron10
 	name = "10 phoron sheets"

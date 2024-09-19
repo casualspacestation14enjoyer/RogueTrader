@@ -14,13 +14,13 @@
 
 /datum/uplink_item/item/visible_weapons/optimus
 	name = "Service Pistol, GCN, Heavy"
-	desc = "A HelTek Optimus. A heavy pistol best known as one of the Tau Navy's service weapons."
+	desc = "A Vostroyan Optimus. A heavy pistol best known as one of the Tau Navy's service weapons."
 	item_cost = 40
 	path = /obj/item/gun/projectile/pistol/optimus
 
 
 /datum/uplink_item/item/visible_weapons/bobcat
 	name = "Service Pistol, GCN, Light"
-	desc = "An Amaranth Armorers P87 Bobcat. A light pistol issued as a Tau Navy service weapon."
+	desc = "An Vostroyan P87 Bobcat. A light pistol issued as a Tau Navy service weapon."
 	item_cost = 32
 	path = /obj/item/gun/projectile/pistol/bobcat

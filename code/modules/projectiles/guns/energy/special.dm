@@ -12,7 +12,7 @@
 	one_hand_penalty = 4
 	charge_cost = 60
 	max_shots = 5
-	fire_delay = 60
+	fire_delay = 20
 	projectile_type = /obj/item/projectile/ion
 	wielded_item_state = "ionrifle-wielded"
 	combustion = 0
@@ -30,13 +30,13 @@
 	one_hand_penalty = 0
 	charge_cost = 40
 	max_shots = 3
-	fire_delay = 30
+	fire_delay = 10
 	projectile_type = /obj/item/projectile/ion/small
 
 /obj/item/gun/energy/ionrifle/mounted
 	name = "mounted ion gun"
 	desc = "You should not see this. Call a developer."
-	fire_delay = 30
+	fire_delay = 20
 	one_hand_penalty = 0
 	self_recharge = TRUE
 	use_external_power = TRUE

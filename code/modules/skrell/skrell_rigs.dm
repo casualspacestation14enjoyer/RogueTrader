@@ -40,9 +40,9 @@
 	item_state = null
 	suit_type = "recon hardsuit"
 	armor = list(
-		melee = ARMOR_MELEE_RESISTANT,
+		melee = ARMOR_MELEE_SMALL,
 		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_MAJOR,
+		laser = ARMOR_LASER_HANDGUNS,
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
@@ -103,9 +103,9 @@
 	desc = "A powerful combat hardsuit with integrated power supply and atmosphere. It's impressive design perfectly tailors to the user's body."
 	icon_state = "skrell_standard_rig"
 	armor = list(
-		melee = ARMOR_MELEE_MAJOR,
+		melee = ARMOR_MELEE_KNIVES,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = ARMOR_LASER_MAJOR,
+		laser = ARMOR_LASER_HANDGUNS,
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
@@ -125,9 +125,9 @@
 	desc = "A powerful command hardsuit with integrated power supply and atmosphere. It's impressive design perfectly tailors to the user's body."
 	icon_state = "skrell_com_rig"
 	armor = list(
-		melee = ARMOR_MELEE_MAJOR,
+		melee = ARMOR_MELEE_KNIVES,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = ARMOR_LASER_MAJOR,
+		laser = ARMOR_LASER_HANDGUNS,
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
@@ -150,9 +150,9 @@
 	interface_name = "Tau medical injector"
 	interface_desc = "A sleek medical injector of Tau design."
 	charges = list(
-		list("tramadol",            "tramadol",            /datum/reagent/tramadol,      20),
+		list("morphium",            "morphium",            /datum/reagent/tramadol,      20),
 		list("dexalinp",            "dexalinp",            /datum/reagent/dexalinp,      20),
-		list("inaprovaline",        "inaprovaline",        /datum/reagent/inaprovaline,  20)
+		list("vitae stim",        "vitae stim",        /datum/reagent/inaprovaline,  20)
 	)
 
 // Skrell combat dispenser
@@ -163,12 +163,12 @@
 	interface_name = "Tau combat injector"
 	interface_desc = "A sleek combat injector of Tau design."
 	charges = list(
-		list("tramadol",            "tramadol",            /datum/reagent/tramadol,      20),
+		list("morphium",            "morphium",            /datum/reagent/tramadol,      20),
 		list("dexalinp",            "dexalinp",            /datum/reagent/dexalinp,      20),
-		list("inaprovaline",        "inaprovaline",        /datum/reagent/inaprovaline,  20),
+		list("vitae stim",        "vitae stim",        /datum/reagent/inaprovaline,  20),
 		list("synaptizine",         "synaptizine",         /datum/reagent/synaptizine,        20),
 		list("hyperzine",           "hyperzine",           /datum/reagent/hyperzine,          20),
-		list("oxycodone",           "oxycodone",           /datum/reagent/tramadol/oxycodone, 20),
+		list("aqeuitas-d",           "aqeuitas-d",           /datum/reagent/tramadol/oxycodone, 20),
 		list("glucose",             "glucose",             /datum/reagent/nutriment/glucose,  20)
 	)
 

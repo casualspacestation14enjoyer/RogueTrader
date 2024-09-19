@@ -24,8 +24,6 @@
 	var/force_unwielded
 	var/wieldsound = null
 	var/unwieldsound = null
-	var/base_icon
-	var/base_name
 	var/unwielded_force_divisor = 0.25
 	var/wielded_parry_bonus = 20
 
@@ -42,7 +40,6 @@
 
 /obj/item/material/twohanded/update_force()
 	..()
-	base_name = name
 	force_unwielded = round(force*unwielded_force_divisor)
 	force_wielded = force
 	force = force_unwielded
@@ -57,20 +54,12 @@
 	if(wielded)
 		. += wielded_parry_bonus
 
-/obj/item/material/twohanded/on_update_icon()
-	..()
-	icon_state = "[base_icon][wielded]"
-	item_state_slots[slot_l_hand_str] = icon_state
-	item_state_slots[slot_r_hand_str] = icon_state
-	item_state_slots[slot_back_str] = base_icon
-
 /*
  * Fireaxe
  */
 /obj/item/material/twohanded/fireaxe  // DEM AXES MAN, marker -Agouri
 	icon = 'icons/obj/weapons/melee_physical.dmi'
 	icon_state = "fireaxe0"
-	base_icon = "fireaxe"
 	name = "fire axe"
 	desc = "Truly, the weapon of a madman. Who would think to fight fire with an axe?"
 
@@ -110,14 +99,13 @@
 /obj/item/material/twohanded/spear
 	icon = 'icons/obj/weapons/melee_physical.dmi'
 	icon_state = "spearglass0"
-	base_icon = "spearglass"
 	name = "spear"
 	desc = "A haphazardly-constructed yet still deadly weapon of ancient design."
-	max_force = 20	//for wielded
+	max_force = 30	//for wielded
 	applies_material_colour = 0
-	force_multiplier = 0.33 // 12/19 with hardness 60 (steel) or 10/16 with hardness 50 (glass)
-	unwielded_force_divisor = 0.20
-	thrown_force_multiplier = 1.5 // 20 when thrown with weight 15 (glass)
+	force_multiplier = 0.43
+	unwielded_force_divisor = 0.30
+	thrown_force_multiplier = 1.8
 	throw_speed = 6
 	sharp = TRUE
 	hitsound = 'sound/weapons/bladeslice.ogg'
@@ -138,14 +126,13 @@
 	desc = "HOME RUN!"
 	icon = 'icons/obj/weapons/melee_physical.dmi'
 	icon_state = "metalbat0"
-	base_icon = "metalbat"
 	item_state = "metalbat"
 	w_class = ITEM_SIZE_LARGE
 	throwforce = 7
 	attack_verb = list("smashed", "beaten", "slammed", "smacked", "struck", "battered", "bonked")
 	hitsound = 'sound/weapons/genhit3.ogg'
 	default_material = MATERIAL_MAPLE
-	max_force = 30	//for wielded
+	max_force = 35	//for wielded
 	force_multiplier = 1.1           // 22 when wielded with weight 20 (steel)
 	unwielded_force_divisor = 0.7 // 15 when unwielded based on above.
 	attack_cooldown_modifier = 1

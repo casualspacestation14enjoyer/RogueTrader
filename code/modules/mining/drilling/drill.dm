@@ -30,7 +30,7 @@
 		MATERIAL_SILVER =   /obj/item/ore/silver,
 		MATERIAL_DIAMOND =  /obj/item/ore/diamond,
 		MATERIAL_PHORON =   /obj/item/ore/phoron,
-		MATERIAL_OSMIUM =   /obj/item/ore/osmium,
+		MATERIAL_CERAMITE =   /obj/item/ore/osmium,
 		MATERIAL_HYDROGEN = /obj/item/ore/hydrogen,
 		MATERIAL_SAND =     /obj/item/ore/glass,
 		MATERIAL_GRAPHITE = /obj/item/ore/coal,
