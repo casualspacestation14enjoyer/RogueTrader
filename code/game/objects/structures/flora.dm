@@ -311,9 +311,9 @@
 	anchored = TRUE
 	mouse_opacity = 0
 
-	New()
-		..()
-		set_light(3, 3, "#28284f")
+/obj/structure/flora/jungle/New()
+	..()
+	set_light(3, 3, "#28284f")
 
 /obj/structure/flora/jungle/trees
 	name = "jungle tree"
