@@ -12525,27 +12525,6 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo)
-"EW" = (
-/obj/machinery/cryopod{
-	dir = 4
-	},
-/obj/structure/sign/double/solgovflag/left{
-	pixel_y = -32
-	},
-/turf/simulated/floor/tiled/techmaint,
-/area/crew_quarters/sleep/cryo)
-"EX" = (
-/obj/floor_decal/industrial/warning{
-	dir = 8
-	},
-/obj/structure/sign/double/solgovflag/right{
-	pixel_y = -32
-	},
-/obj/landmark{
-	name = "JoinLateCryo"
-	},
-/turf/simulated/floor/tiled/white,
-/area/crew_quarters/sleep/cryo)
 "Fa" = (
 /obj/structure/catwalk,
 /obj/structure/cable{
@@ -17930,14 +17909,6 @@
 /area/thruster/d3starboard)
 "SK" = (
 /obj/structure/sign/memorial,
-/obj/structure/sign/double/solgovflag/left{
-	pixel_x = -16;
-	pixel_y = 32
-	},
-/obj/structure/sign/double/solgovflag/right{
-	pixel_x = 16;
-	pixel_y = 32
-	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/chapel/memorial)
 "SL" = (
@@ -37113,7 +37084,7 @@ vU
 Db
 DP
 vU
-EW
+vU
 Fd
 FS
 GB
@@ -37315,7 +37286,7 @@ vV
 Dc
 DQ
 vV
-EX
+vV
 Fd
 DL
 GD

@@ -13,21 +13,21 @@
 	icon_state = "center"
 
 /obj/structure/sign/solgov
-	name = "\improper SolGov Seal"
+	name = "\improper Imperial Seal"
 	desc = "A sign which signifies who this vessel belongs to."
-	icon = 'maps/torch/icons/obj/solgov-decals.dmi'
-	icon_state = "solgovseal"
+	icon = 'icons/obj/structures/decals.dmi'
+	icon_state = "imperial"
 
 /obj/structure/sign/double/solgovflag
-	name = "\improper Imperial Government Flag"
+	name = "\improper Imperial Flag"
 	desc = "The flag of the Imperial Government, a symbol of many things to many people."
-	icon = 'maps/torch/icons/obj/solgov-decals.dmi'
+	icon = 'icons/obj/structures/decals.dmi'
 
 /obj/structure/sign/double/solgovflag/left
-	icon_state = "solgovflag-left"
+	icon_state = "imperials"
 
 /obj/structure/sign/double/solgovflag/right
-	icon_state = "solgovflag-right"
+	icon_state = "imperials"
 
 /obj/structure/sign/memorial
 	name = "memorial rock"

@@ -79,7 +79,7 @@
 	containername = "titanium sheets crate"
 
 /singleton/hierarchy/supply_pack/materials/ocp10
-	name = "10carbide plasteel sheets"
+	name = "10 carbide plasteel sheets"
 	contains = list(/obj/item/stack/material/ocp/ten)
 	cost = 20
 	containername = "ceramite plasteel sheets crate"

@@ -3664,9 +3664,6 @@
 	icon_state = "4-8"
 	},
 /obj/floor_decal/industrial/warning/fulltile,
-/obj/structure/sign/double/solgovflag/left{
-	pixel_y = 32
-	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/fourthdeck/fore)
 "mr" = (
@@ -6795,9 +6792,7 @@
 	dir = 1
 	},
 /obj/machinery/requests_console{
-
-	department = "Security"
-	departmentType = 5;
+	department = "Security"departmentType=5;
 	pixel_y = 30
 	},
 /obj/structure/disposalpipe/segment/bent,
@@ -13694,9 +13689,6 @@
 	},
 /obj/floor_decal/corner/paleblue{
 	dir = 4
-	},
-/obj/structure/sign/double/solgovflag/right{
-	pixel_y = 32
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fourthdeck/fore)
