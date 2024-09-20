@@ -74,7 +74,8 @@
 		)
 
 	inherent_verbs = list(
-		/mob/living/carbon/human/proc/diona_heal_toggle
+		/mob/living/carbon/human/proc/diona_heal_toggle,
+		/mob/living/carbon/human/proc/kroot_eat
 		)
 
 	has_organ = list(
@@ -158,3 +159,41 @@
 
 /datum/species/unathi/get_bodytype(mob/living/carbon/human/H)
 	return SPECIES_KROOT
+
+/mob/living/carbon/human/proc/kroot_eat()
+	set category = "Abilities"
+	set name = "Consume Being"
+
+	var/obj/item/grab/G = src.get_active_hand()
+	if(!istype(G))
+		to_chat(src, "<span class='warning'>We must be grabbing a creature in our active hand to consume them.</span>")
+		return
+
+	var/mob/living/carbon/human/T = G.affecting //this will be modified later as we add more rando species
+	if(!istype(T))
+		to_chat(src, "<span class='warning'>[T] is not compatible with our biology.</span>")
+		return
+
+	if(MUTATION_HUSK in T.mutations) //Eating husks would be kinda strange, but idk
+		to_chat(src, "<span class='warning'>This creature's DNA is ruined beyond useability!</span>")
+		return
+
+	var/obj/item/organ/external/affecting = T.get_organ(src.zone_sel.selecting)
+	if(!affecting || istype(affecting, /obj/item/organ/external/chest))
+		to_chat(src, "<span class='warning'>We are unable to eat this flesh.</span>") //Dont try and eat a limb that doesn't exist.
+		return
+
+	playsound(src, 'sound/effects/lecrunch.ogg', 75, 0, 4)
+	src.visible_message("<span class='danger'>[src] begins bearing their teeth...</span>")
+	var/extratime = 0
+	if(istype(affecting, /obj/item/organ/external/head))
+		extratime = 5 SECONDS
+	if(do_after(src, 5 SECONDS + extratime, T))
+		src.visible_message("<span class='danger'>[src] chomps down on [T]'s [affecting]!</span>")
+		playsound(src.loc, 'sound/weapons/bite.ogg', 100, 0, 4)
+		affecting.droplimb(0, DROPLIMB_BLUNT)
+
+		T.adjustBruteLoss(45)
+		adjustBruteLoss(-40)
+		adjust_nutrition(50)
+	return TRUE
