@@ -1998,13 +1998,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/substation/bridge)
-"dA" = (
-/obj/structure/sign/double/solgovflag/left{
-	dir = 4;
-	pixel_x = -32
-	},
-/turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/co)
 "dE" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -3863,10 +3856,6 @@
 /obj/floor_decal/corner/blue{
 	dir = 6
 	},
-/obj/structure/sign/double/solgovflag/left{
-	dir = 8;
-	pixel_x = 32
-	},
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/office/sea)
 "hV" = (
@@ -5219,10 +5208,6 @@
 /obj/item/device/camera{
 	pixel_x = 3;
 	pixel_y = -4
-	},
-/obj/structure/sign/double/solgovflag/right{
-	dir = 1;
-	pixel_y = -32
 	},
 /turf/simulated/floor/carpet/blue2,
 /area/crew_quarters/heads/office/sgr)
@@ -8206,9 +8191,6 @@
 	dir = 4;
 	pixel_x = -37
 	},
-/obj/structure/sign/double/solgovflag/left{
-	pixel_y = 32
-	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
 "uT" = (
@@ -9586,10 +9568,6 @@
 	dir = 6
 	},
 /obj/item/reagent_containers/food/drinks/cans/waterbottle,
-/obj/structure/sign/double/solgovflag/right{
-	dir = 8;
-	pixel_x = 32
-	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/sea)
 "yw" = (
@@ -10836,9 +10814,6 @@
 /obj/floor_decal/corner/blue{
 	dir = 5
 	},
-/obj/structure/sign/double/solgovflag/right{
-	pixel_y = 32
-	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
 "DY" = (
@@ -11202,9 +11177,6 @@
 	dir = 5
 	},
 /obj/structure/bed/chair/padded/blue,
-/obj/structure/sign/double/solgovflag/left{
-	pixel_y = 32
-	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
 "Ga" = (
@@ -11757,10 +11729,6 @@
 	pixel_y = -2
 	},
 /obj/random_multi/single_item/memo_scgr,
-/obj/structure/sign/double/solgovflag/left{
-	dir = 1;
-	pixel_y = -32
-	},
 /turf/simulated/floor/carpet/blue2,
 /area/crew_quarters/heads/office/sgr)
 "HK" = (
@@ -12735,13 +12703,6 @@
 /obj/item/storage/box/large/union_cards,
 /turf/simulated/floor/carpet/green,
 /area/crew_quarters/heads/office/cl/backroom)
-"LY" = (
-/obj/structure/sign/double/solgovflag/right{
-	dir = 4;
-	pixel_x = -32
-	},
-/turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/co)
 "Ma" = (
 /obj/structure/railing/mapped{
 	dir = 1;
@@ -14545,9 +14506,6 @@
 /obj/structure/bed/chair/padded/blue,
 /obj/floor_decal/corner/blue/three_quarters{
 	dir = 1
-	},
-/obj/structure/sign/double/solgovflag/right{
-	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
@@ -23389,8 +23347,8 @@ BI
 RV
 Mz
 Yz
-LY
-dA
+Pt
+Pt
 An
 uy
 Kq

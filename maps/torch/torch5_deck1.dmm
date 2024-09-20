@@ -18669,9 +18669,6 @@
 /obj/floor_decal/corner/blue/three_quarters{
 	dir = 1
 	},
-/obj/structure/sign/double/solgovflag/right{
-	pixel_y = 32
-	},
 /turf/simulated/floor/tiled/dark,
 /area/command/conference)
 "hKb" = (
@@ -28802,12 +28799,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/equipstorage)
-"uBg" = (
-/obj/structure/sign/double/solgovflag/left{
-	pixel_y = 32
-	},
-/turf/simulated/floor/tiled/dark,
-/area/command/conference)
 "uCe" = (
 /obj/floor_decal/techfloor{
 	dir = 8
@@ -42555,7 +42546,7 @@ adY
 uXJ
 aiX
 njj
-uBg
+alZ
 hIl
 ajZ
 gnt
