@@ -9,7 +9,7 @@
 	icon = 'icons/obj/tools/multitool.dmi'
 	icon_state = "multitool"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
-	force = 5.0
+	force = 11
 	w_class = ITEM_SIZE_SMALL
 	throwforce = 5.0
 	throw_range = 15

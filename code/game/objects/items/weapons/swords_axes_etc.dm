@@ -39,7 +39,7 @@
 	base_parry_chance = 30
 	slot_flags = SLOT_BELT
 	w_class = ITEM_SIZE_SMALL
-	force = 3
+	force = 13
 	var/on = 0
 
 
@@ -50,14 +50,14 @@
 		SPAN_WARNING("You extend the baton."),\
 		"You hear an ominous click.")
 		w_class = ITEM_SIZE_NORMAL
-		force = 15//quite robust
+		force = 21//quite robust
 		attack_verb = list("cracked", "struck", "snapped", "thrashed", "whapped")
 	else
 		user.visible_message(SPAN_NOTICE("\The [user] collapses their telescopic baton."),\
 		SPAN_NOTICE("You collapse the baton."),\
 		"You hear a click.")
 		w_class = ITEM_SIZE_SMALL
-		force = 3//not so robust now
+		force = 13//not so robust now
 		attack_verb = list("hit", "punched")
 
 	playsound(src.loc, 'sound/weapons/empty.ogg', 50, 1)

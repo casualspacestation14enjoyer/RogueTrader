@@ -16,16 +16,16 @@
 	var/applies_material_name = 1 //if false, does not rename item to 'material item.name'
 	var/furniture_icon  //icon states for non-material colorable overlay, i.e. handles
 
-	var/max_force = 40	 //any damage above this is added to armor penetration value
+	var/max_force = 45	 //any damage above this is added to armor penetration value
 	var/max_pen = 100 //any penetration above this value is ignored
-	var/force_multiplier = 0.5	// multiplier to material's generic damage value for this specific type of weapon
-	var/thrown_force_multiplier = 0.5
+	var/force_multiplier = 0.2	// multiplier to material's generic damage value for this specific type of weapon
+	var/thrown_force_multiplier = 0.2
 
 	var/attack_cooldown_modifier = 0
 	var/unbreakable
 	var/drops_debris = 1
 	var/worth_multiplier = 1
-	armor_penetration = 5
+	armor_penetration = 3
 
 
 /obj/item/material/New(newloc, material_key)
@@ -53,12 +53,14 @@
 		new_force = material.get_edge_damage()
 	else
 		new_force = material.get_blunt_damage()
-	new_force = round(new_force*force_multiplier)
+	new_force = round(new_force * force_multiplier)
 	force = min(new_force, max_force)
 
 	if(new_force > max_force)
-		armor_penetration = initial(armor_penetration) + new_force - max_force
-	armor_penetration += 2*max(0, material.brute_armor - 2)
+		// Scale the armor penetration gradually, capping at +2
+		armor_penetration = initial(armor_penetration) + min(2, (new_force - max_force) / 20)
+
+	armor_penetration += 2 * max(0, material.brute_armor - 2)
 	armor_penetration = min(max_pen, armor_penetration)
 
 	throwforce = round(material.get_blunt_damage()*thrown_force_multiplier)

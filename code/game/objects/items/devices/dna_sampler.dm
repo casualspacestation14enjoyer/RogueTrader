@@ -6,7 +6,7 @@
 	icon = 'icons/obj/tools/implanter.dmi'
 	icon_state = "dnainjector0"
 	item_state = "syringe_0"
-	force = 1
+	force = 5
 	var/loaded = FALSE
 	var/src_name = ""
 	var/src_pronouns = ""

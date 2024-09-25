@@ -5,9 +5,7 @@
 	icon_state = "crowbar"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BELT
-	force = 14
-	attack_cooldown = 2*DEFAULT_WEAPON_COOLDOWN
-	melee_accuracy_bonus = -10
+	force = 27
 	throwforce = 7
 	throw_range = 3
 	item_state = "crowbar"
@@ -27,7 +25,7 @@
 	desc = "A steel bar with a wedge. It comes in a variety of configurations and colours - collect them all."
 	icon_state = "prybar_preview"
 	item_state = "crowbar"
-	force = 4
+	force = 23
 	throwforce = 6
 	throw_range = 5
 	base_parry_chance = 0
@@ -49,7 +47,7 @@
 	desc = "This is an emergency forcing tool, made of steel bar with a wedge on one end, and a hatchet on the other end. It has a blue plastic grip."
 	icon_state = "emergency_forcing_tool"
 	item_state = "emergency_forcing_tool"
-	force = 12
+	force = 21
 	sharp = TRUE
 	edge = TRUE
 	throwforce = 6

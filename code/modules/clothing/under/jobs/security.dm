@@ -15,7 +15,7 @@
 	item_state = "r_suit"
 	worn_state = "warden"
 	armor = list(
-		melee = ARMOR_MELEE_SMALL
+		melee = ARMOR_MELEE_MINOR
 		)
 	siemens_coefficient = 0.9
 
@@ -32,7 +32,7 @@
 	item_state = "r_suit"
 	worn_state = "secred"
 	armor = list(
-		melee = ARMOR_MELEE_SMALL
+		melee = ARMOR_MELEE_MINOR
 		)
 	siemens_coefficient = 0.9
 
@@ -42,7 +42,7 @@
 	icon_state = "dispatch"
 	worn_state = "dispatch"
 	armor = list(
-		melee = ARMOR_MELEE_SMALL
+		melee = ARMOR_MELEE_MINOR
 		)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
 	siemens_coefficient = 0.9
@@ -54,7 +54,7 @@
 	item_state = "r_suit"
 	worn_state = "redshirt2"
 	armor = list(
-		melee = ARMOR_MELEE_SMALL
+		melee = ARMOR_MELEE_MINOR
 		)
 	siemens_coefficient = 0.9
 
@@ -73,7 +73,7 @@
 	worn_state = "swatunder"
 	gender_icons = 1
 	armor = list(
-		melee = ARMOR_MELEE_SMALL
+		melee = ARMOR_MELEE_MINOR
 		)
 	siemens_coefficient = 0.9
 
@@ -88,7 +88,7 @@
 	worn_state = "detective"
 	gender_icons = 1
 	armor = list(
-		melee = ARMOR_MELEE_SMALL
+		melee = ARMOR_MELEE_MINOR
 		)
 	siemens_coefficient = 0.9
 	accessories = list(/obj/item/clothing/accessory/blue_clip)
@@ -117,8 +117,8 @@
 		slot_r_hand_str = "det_hat",
 		)
 	armor = list(
-		melee = ARMOR_MELEE_SMALL,
-		laser = ARMOR_LASER_SMALL,
+		melee = ARMOR_MELEE_MINOR,
+		laser = ARMOR_LASER_PRIMAL,
 		energy = ARMOR_ENERGY_MINOR
 		)
 	siemens_coefficient = 0.9
@@ -144,7 +144,7 @@
 	item_state = "r_suit"
 	worn_state = "hosred"
 	armor = list(
-		melee = ARMOR_MELEE_SMALL
+		melee = ARMOR_MELEE_MINOR
 		)
 	siemens_coefficient = 0.8
 
@@ -164,9 +164,9 @@
 	desc = "You're not quite sure how you manage to take it on and off, but it implants nicely in your head."
 	icon_state = "dermal"
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_HANDGUNS,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_SMALL,
 		bomb = ARMOR_BOMB_PADDED
 		)
@@ -178,9 +178,9 @@
 	icon_state = "hos"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_HANDGUNS,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_PADDED
 		)

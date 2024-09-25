@@ -1,13 +1,13 @@
 // Light rigs are not space-capable, but don't suffer excessive slowdown or sight issues when depowered.
 /obj/item/rig/light
-	name = "light suit control module"
+	name = "light power armour"
 	desc = "A lighter, less armoured rig suit."
 	icon_state = "ninja_rig"
 	suit_type = "light suit"
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_HANDGUNS,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_PADDED
 		)
@@ -55,7 +55,7 @@
 	species_restricted = list(SPECIES_HUMAN, SPECIES_IPC, SPECIES_TAU)
 
 /obj/item/rig/light/hacker
-	name = "cybersuit control module"
+	name = "cyberpower armour"
 	suit_type = "cyber"
 	desc = "An advanced powered armour suit with many cyberwarfare enhancements. Comes with built-in insulated gloves for safely tampering with electronics."
 	icon_state = "hacker_rig"
@@ -98,14 +98,14 @@
 
 
 /obj/item/rig/light/ninja
-	name = "ominous suit control module"
+	name = "ominous power armour"
 	desc = "A unique, vaccum-proof suit of nano-enhanced armor designed specifically for assassins."
 	suit_type = "ominous"
 	icon_state = "ninja_rig"
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_HANDGUNS,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED
@@ -178,7 +178,7 @@
 	species_restricted = list(SPECIES_HUMAN, SPECIES_IPC, SPECIES_TAU)
 
 /obj/item/rig/light/ninja/sol
-	name = "solar operative suit control module"
+	name = "solar operative power armour"
 	desc = "A sleek, military hardsuit with no model number or identifying logos besides a small Solar crest on its control module. Get tactical, marine."
 	suit_type = "operative"
 	icon_state = "solop_rig"
@@ -199,16 +199,16 @@
 		)
 
 /obj/item/rig/light/ninja/gcc
-	name = "gilgamesh heavy suit control module"
+	name = "gilgamesh heavy power armour"
 	desc = "A ridiculously bulky military hardsuit with no model number or identifying logos besides a small Tau crest on its control module. This suit is built like a tank and weighs as much as one."
 	suit_type = "heavy"
 	icon_state = "gcc_rig"
 	online_slowdown = 2 ///chunky
 	offline_slowdown = 4
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_HANDGUNS,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED
@@ -232,15 +232,15 @@
 	breach_threshold = 50 ///chunky
 
 /obj/item/rig/light/ninja/corpo
-	name = "corporate mercenary suit control module"
+	name = "corporate mercenary power armour"
 	desc = "A light hardsuit with minimal armor plating. The control panel marks it as a Hephaestus X-11 Lightweight, a mobile combat suit commonly issued to imperial security teams."
 	suit_type = "corporate"
 	icon_state = "corpo_rig"
 	online_slowdown = -1 ///speedster suit
 	armor = list(
-		melee = ARMOR_MELEE_SMALL,
-		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = ARMOR_LASER_HANDGUNS,
+		melee = ARMOR_MELEE_MINOR,
+		bullet = ARMOR_BALLISTIC_CARAPACE,
+		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED
@@ -263,7 +263,7 @@
 		)
 
 /obj/item/rig/light/stealth
-	name = "stealth suit control module"
+	name = "stealth power armour"
 	suit_type = "stealth"
 	desc = "A highly advanced and expensive suit designed for covert operations."
 	icon_state = "stealth_rig"

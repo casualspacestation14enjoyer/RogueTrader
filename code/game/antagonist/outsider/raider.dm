@@ -256,7 +256,7 @@ GLOBAL_DATUM_INIT(raiders, /datum/antagonist/raider, new)
 
 /obj/random/raider/hardsuit
 	name = "Random Raider Hardsuit"
-	desc = "This is a random hardsuit control module."
+	desc = "This is a random power armour."
 	icon = 'icons/obj/rig_modules.dmi'
 	icon_state = "generic"
 

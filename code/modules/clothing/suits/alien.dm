@@ -56,9 +56,9 @@
 	desc = "A hodgepodge of various pieces of metal scrapped together into a rudimentary vox-shaped piece of armor."
 	allowed = list(/obj/item/gun, /obj/item/tank)
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_MINOR,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_BASIC,
 		bomb = ARMOR_BOMB_PADDED) //Higher melee armor versus lower everything else.
 	icon = 'icons/obj/clothing/species/vox/obj_suit_vox.dmi'
 	icon_state = "vox-scrap"

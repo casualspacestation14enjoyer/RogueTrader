@@ -10,9 +10,9 @@
 	flags_inv = HIDEFACE|BLOCKHAIR
 	permeability_coefficient = 0.01
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = ARMOR_LASER_HANDGUNS,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_SMALL,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
@@ -47,9 +47,9 @@
 		/obj/item/handcuffs
 	)
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = ARMOR_LASER_HANDGUNS,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_SMALL,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,

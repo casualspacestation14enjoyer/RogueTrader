@@ -1810,6 +1810,12 @@
 		. += 1
 	if(skill_check(SKILL_WEAPONS, SKILL_MASTER))
 		. += 1
+	if(skill_check(SKILL_WEAPONS, SKILL_LEGEND))
+		. += 1
+	if(skill_check(SKILL_WEAPONS, SKILL_PRIMARIS))
+		. += 1
+	if(skill_check(SKILL_WEAPONS, SKILL_DEMIGOD))
+		. += 1
 
 /mob/living/carbon/human/can_drown()
 	if(!internal && (!istype(wear_mask) || !wear_mask.filters_water()))

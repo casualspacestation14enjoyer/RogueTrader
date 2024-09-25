@@ -8,7 +8,7 @@
 	var/lighting_color
 	var/active_attack_verb
 	var/inactive_attack_verb = list()
-	armor_penetration = 10
+	armor_penetration = 6
 	atom_flags = ATOM_FLAG_NO_TEMP_CHANGE | ATOM_FLAG_NO_BLOOD
 
 
@@ -148,7 +148,7 @@
 	icon_state = "axe0"
 	active_icon = "axe1"
 	lighting_color = COLOR_SABER_AXE
-	active_force = 60
+	active_force = 40
 	active_throwforce = 35
 	force = 20
 	throwforce = 10
@@ -189,7 +189,7 @@
 	origin_tech = list(TECH_MAGNET = 3, TECH_ESOTERIC = 4)
 	sharp = TRUE
 	edge = TRUE
-	base_parry_chance = 50
+	base_parry_chance = 30
 	active_attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 	hitsound = 'sound/weapons/blade1.ogg'
 	var/blade_color
@@ -270,7 +270,7 @@
 	lighting_color = COLOR_SABER_GREEN
 	active_force = 40 //Normal attacks deal very high damage - about the same as wielded fire axe
 	active = 1
-	armor_penetration = 10
+	armor_penetration = 6
 	sharp = TRUE
 	edge = TRUE
 	anchored = TRUE    // Never spawned outside of inventory, should be fine.

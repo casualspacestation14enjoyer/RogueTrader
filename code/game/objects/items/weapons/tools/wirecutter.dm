@@ -6,7 +6,7 @@
 	item_state = "cutters"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BELT
-	force = 3.0
+	force = 13.0
 	throw_speed = 2
 	throw_range = 9
 	w_class = ITEM_SIZE_SMALL

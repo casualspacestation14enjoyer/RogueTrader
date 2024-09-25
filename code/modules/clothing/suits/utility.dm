@@ -20,7 +20,7 @@
 	w_class = ITEM_SIZE_LARGE
 
 	body_parts_covered = UPPER_TORSO | LOWER_TORSO| ARMS
-	armor = list(laser = ARMOR_LASER_MINOR, energy = ARMOR_ENERGY_MINOR, bomb = ARMOR_BOMB_MINOR)
+	armor = list(laser = ARMOR_LASER_BASIC, energy = ARMOR_ENERGY_MINOR, bomb = ARMOR_BOMB_MINOR)
 	allowed = list(
 		/obj/item/device/flashlight,
 		/obj/item/tank/oxygen_emergency,
@@ -70,9 +70,9 @@
 	desc = "Use in case of bomb."
 	icon_state = "bombsuit"
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_MINOR,
-		laser = ARMOR_LASER_SMALL,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_BASIC,
+		laser = ARMOR_LASER_PRIMAL,
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_SHIELDED
 		)
@@ -90,9 +90,9 @@
 	gas_transfer_coefficient = 0.01
 	permeability_coefficient = 0.01
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_MINOR,
-		laser = ARMOR_LASER_SMALL,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_BASIC,
+		laser = ARMOR_LASER_PRIMAL,
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_SHIELDED
 		)

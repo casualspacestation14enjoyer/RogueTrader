@@ -32,7 +32,7 @@
 	hitsound = null	//it is much lighter, after all.
 	throwforce = 2
 	w_class = ITEM_SIZE_SMALL
-	force = 3.0
+	force = 13.0
 	spray_amount = 80
 	starting_water = 1000
 	max_water = 1000

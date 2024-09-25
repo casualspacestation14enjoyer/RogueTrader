@@ -66,9 +66,9 @@
 	item_state = "swat_gl"
 	force = 5
 	armor = list(
-		melee = ARMOR_MELEE_SMALL,
-		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_HANDGUNS,
+		melee = ARMOR_MELEE_MINOR,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_SMALL,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_MINOR)
@@ -82,9 +82,9 @@
 	permeability_coefficient = 0.05
 	force = 5
 	armor = list(
-		melee = ARMOR_MELEE_SMALL,
-		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_HANDGUNS,
+		melee = ARMOR_MELEE_MINOR,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_SMALL,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_MINOR)
@@ -130,9 +130,9 @@
 	icon_state = "work"
 	item_state = "wgloves"
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
-		bullet = ARMOR_BALLISTIC_MINOR,
-		laser = ARMOR_LASER_MINOR
+		melee = ARMOR_MELEE_BASIC,
+		bullet = ARMOR_BALLISTIC_BASIC,
+		laser = ARMOR_LASER_BASIC
 		)
 
 /obj/item/clothing/gloves/thick/duty/modified
@@ -147,9 +147,9 @@
 	siemens_coefficient = 0.50
 	permeability_coefficient = 0.05
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_MINOR,
-		laser = ARMOR_LASER_MINOR
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_BASIC,
+		laser = ARMOR_LASER_BASIC
 		)
 
 /obj/item/clothing/gloves/guards
@@ -162,9 +162,9 @@
 	siemens_coefficient = 0.7
 	permeability_coefficient = 0.03
 	armor = list(
-		melee = ARMOR_MELEE_SMALL,
-		bullet = ARMOR_BALLISTIC_MINOR,
-		laser = ARMOR_LASER_SMALL,
+		melee = ARMOR_MELEE_MINOR,
+		bullet = ARMOR_BALLISTIC_BASIC,
+		laser = ARMOR_LASER_PRIMAL,
 		energy = ARMOR_ENERGY_SMALL,
 		bomb = ARMOR_BOMB_PADDED
 		)

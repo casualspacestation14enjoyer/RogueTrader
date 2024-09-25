@@ -35,9 +35,9 @@
 	response_disarm = "shoves"
 	response_harm = "hits"
 	natural_armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_SMALL
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_PRIMAL
 		)
 	speed = 8
 	maxHealth = 100
@@ -141,9 +141,9 @@
 	corpse = /obj/landmark/corpse/fleet/space
 	ranged = TRUE
 	natural_armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = ARMOR_LASER_HANDGUNS
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_CARAPACE,
+		laser = ARMOR_LASER_FLAK
 		)
 	speed = 4
 	maxHealth = 200

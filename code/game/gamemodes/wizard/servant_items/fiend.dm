@@ -3,9 +3,9 @@
 	desc = "A dark hood with blood-red trim. Something about the fabric blocks more light than it should."
 	icon_state = "fiendhood"
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_MINOR,
-		laser = ARMOR_LASER_SMALL,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_BASIC,
+		laser = ARMOR_LASER_PRIMAL,
 		energy = ARMOR_ENERGY_SMALL,
 		rad = ARMOR_RAD_SHIELDED
 	)
@@ -17,9 +17,9 @@
 	icon_state = "fiendcowl"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	armor = list(
-		melee = ARMOR_MELEE_SMALL,
-		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_HANDGUNS,
+		melee = ARMOR_MELEE_MINOR,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_RESISTANT,
 		rad = ARMOR_RAD_SHIELDED
 	)

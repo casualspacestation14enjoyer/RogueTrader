@@ -5,11 +5,11 @@
 	icon_state = "cane"
 	item_state = "stick"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
-	force = 5.0
+	force = 15.0
 	throwforce = 7.0
 	matter = list(MATERIAL_ALUMINIUM = 50)
 	attack_verb = list("bludgeoned", "whacked", "disciplined", "thrashed")
-	base_parry_chance = 30
+	base_parry_chance = 20
 	/// Should it support you while moving with injuries?
 	var/can_support = TRUE
 
@@ -18,7 +18,7 @@
 	desc = "A long, polished staff with a curved hook at the end, suitable for leaning on."
 	icon_state = "woodstaff"
 	item_state = "woodstaff"
-	force = 10.0
+	force = 20.0
 	matter = null
 	w_class = ITEM_SIZE_LARGE
 
@@ -136,12 +136,12 @@
 		slot_l_hand_str = "stick"
 	)
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
-	force = 5.0
+	force = 15.0
 	throwforce = 7.0
 	w_class = ITEM_SIZE_LARGE
 	matter = list(MATERIAL_ALUMINIUM = 50)
 	attack_verb = list("bludgeoned", "whacked", "disciplined", "thrashed")
-	base_parry_chance = 30
+	base_parry_chance = 20
 	load_method = SINGLE_CASING|SPEEDLOADER
 	handle_casings = CYCLE_CASINGS
 	max_shells = 1

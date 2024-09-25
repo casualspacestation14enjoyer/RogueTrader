@@ -56,7 +56,7 @@
 	desc = "A stiffened, stylised labcoat designed to fit IPCs. It has blue and purple trim, denoting it as a Xynergy labcoat."
 	icon_state = "labcoat_xy"
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_BASIC,
 		bio = ARMOR_BIO_MINOR
 		)
 	species_restricted = list(SPECIES_IPC)
@@ -107,7 +107,7 @@
 	trim and the pockets are reinforced to hold tools. It seems to have an insulated material woven in to prevent static shocks."
 	icon_state = "labcoat_dais"
 	armor = list(
-		melee = ARMOR_MELEE_MINOR
+		melee = ARMOR_MELEE_BASIC
 	)//They don't need to protect against the environment very much.
 	siemens_coefficient = 0.5 //These guys work with electronics. DAIS's labcoats shouldn't conduct very well.
 

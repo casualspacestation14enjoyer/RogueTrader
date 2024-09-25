@@ -29,7 +29,7 @@
 	max_gas = null
 	minbodytemp = 0
 	natural_armor = list(
-		melee = ARMOR_MELEE_KNIVES
+		melee = ARMOR_MELEE_FLAK
 		)
 
 	ai_holder = /datum/ai_holder/simple_animal/melee/meat
@@ -73,7 +73,7 @@
 	max_gas = null
 	minbodytemp = 0
 	natural_armor = list(
-		melee = ARMOR_MELEE_KNIVES
+		melee = ARMOR_MELEE_FLAK
 		)
 
 /mob/living/simple_animal/hostile/meat/horror
@@ -106,7 +106,7 @@
 	max_gas = null
 	minbodytemp = 0
 	natural_armor = list(
-		melee = ARMOR_MELEE_KNIVES
+		melee = ARMOR_MELEE_FLAK
 		)
 
 /mob/living/simple_animal/hostile/meat/strippedhuman
@@ -140,7 +140,7 @@
 	max_gas = null
 	minbodytemp = 0
 	natural_armor = list(
-		melee = ARMOR_MELEE_KNIVES
+		melee = ARMOR_MELEE_FLAK
 		)
 
 	say_list = /datum/say_list/meat/human
@@ -176,7 +176,7 @@
 	max_gas = null
 	minbodytemp = 0
 	natural_armor = list(
-		melee = ARMOR_MELEE_KNIVES
+		melee = ARMOR_MELEE_FLAK
 		)
 
 /mob/living/simple_animal/hostile/meat/horrorminer
@@ -210,7 +210,7 @@
 	max_gas = null
 	minbodytemp = 0
 	natural_armor = list(
-		melee = ARMOR_MELEE_KNIVES
+		melee = ARMOR_MELEE_FLAK
 		)
 
 /mob/living/simple_animal/hostile/meat/horrorsmall
@@ -244,7 +244,7 @@
 	max_gas = null
 	minbodytemp = 0
 	natural_armor = list(
-		melee = ARMOR_MELEE_KNIVES
+		melee = ARMOR_MELEE_FLAK
 		)
 
 /datum/ai_holder/simple_animal/melee/meat

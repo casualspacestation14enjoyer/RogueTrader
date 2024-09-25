@@ -4,7 +4,7 @@
 	name = "contraband item"
 	desc = "You probably shouldn't be holding this."
 	icon = 'icons/obj/structures/contraband.dmi'
-	force = 0
+	force = 2
 
 /obj/item/contraband/poster
 	name = "rolled-up poster"

@@ -1599,7 +1599,7 @@ something, make sure it's not in one of the other lists.*/
 
 /obj/random/hardsuit
 	name = "Random Hardsuit"
-	desc = "This is a random hardsuit control module."
+	desc = "This is a random power armour."
 	icon = 'icons/obj/rig_modules.dmi'
 	icon_state = "generic"
 

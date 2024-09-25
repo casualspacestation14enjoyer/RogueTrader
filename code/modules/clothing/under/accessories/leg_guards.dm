@@ -8,9 +8,9 @@
 	gender = PLURAL
 	body_parts_covered = LEGS
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_SMALL,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_PRIMAL,
 		energy = ARMOR_ENERGY_SMALL,
 		bomb = ARMOR_BOMB_PADDED
 	)
@@ -48,9 +48,9 @@
 	desc = "A pair of heavily armored leg pads in red-trimmed black. Attaches to a plate carrier."
 	icon_state = "legguards_merc"
 	armor = list(
-		melee = ARMOR_MELEE_SMALL,
-		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_HANDGUNS,
+		melee = ARMOR_MELEE_MINOR,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_PADDED
 	)
@@ -61,9 +61,9 @@
 	desc = "A pair of armored leg pads with heavy padding to protect against melee attacks. Looks like they might impair movement."
 	icon_state = "legguards_riot"
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_SMALL,
-		laser = ARMOR_LASER_SMALL,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_PRIMAL,
+		laser = ARMOR_LASER_PRIMAL,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_PADDED
 	)
@@ -75,9 +75,9 @@
 	desc = "A pair of armored leg pads with heavy plates to protect against ballistic projectiles. Looks like they might impair movement."
 	icon_state = "legguards_ballistic"
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_SMALL,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_PRIMAL,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_PADDED
 	)
@@ -89,9 +89,9 @@
 	desc = "A pair of armored leg pads with advanced shielding to protect against energy weapons. Looks like they might impair movement."
 	icon_state = "legguards_ablative"
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_SMALL,
-		laser = ARMOR_LASER_MAJOR,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_PRIMAL,
+		laser = ARMOR_LASER_CARAPACE,
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_PADDED
 	)

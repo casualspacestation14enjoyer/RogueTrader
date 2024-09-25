@@ -28,8 +28,8 @@
 	response_disarm = "bumps"
 	response_harm = "strikes"
 
-	natural_armor = list(melee = ARMOR_MELEE_SMALL,
-						bullet = ARMOR_BALLISTIC_MINOR)
+	natural_armor = list(melee = ARMOR_MELEE_MINOR,
+						bullet = ARMOR_BALLISTIC_BASIC)
 
 	var/mob/living/simple_animal/hostile/retaliate/space_whale/parent
 

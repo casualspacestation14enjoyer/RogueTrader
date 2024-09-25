@@ -14,6 +14,7 @@
 	desc = "A tank of oxygen."
 	icon_state = "oxygen"
 	volume = 280
+	force = 19
 	tank_size = TANK_SIZE_LARGE
 	distribute_pressure = ONE_ATMOSPHERE * O2STANDARD
 	starting_pressure = list(
@@ -101,7 +102,7 @@
 	w_class = ITEM_SIZE_SMALL
 	slot_flags = SLOT_BELT
 	attack_cooldown = DEFAULT_WEAPON_COOLDOWN
-	force = 5
+	force = 15
 	melee_accuracy_bonus = -10
 	gauge_icon = "indicator_emergency"
 	gauge_cap = 4
@@ -120,7 +121,7 @@
 	w_class = ITEM_SIZE_SMALL
 	slot_flags = SLOT_BELT
 	attack_cooldown = DEFAULT_WEAPON_COOLDOWN
-	force = 7
+	force = 17
 	melee_accuracy_bonus = -10
 	gauge_icon = "indicator_emergency"
 	gauge_cap = 4
@@ -139,7 +140,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	slot_flags = SLOT_BELT
 	attack_cooldown = DEFAULT_WEAPON_COOLDOWN
-	force = 8
+	force = 18
 	melee_accuracy_bonus = -10
 	gauge_icon = "indicator_emergency_double"
 	gauge_cap = 4
@@ -157,7 +158,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	slot_flags = SLOT_BELT | SLOT_BACK
 	attack_cooldown = DEFAULT_WEAPON_COOLDOWN
-	force = 8
+	force = 18
 	melee_accuracy_bonus = -10
 	gauge_icon = null
 	volume = 120
@@ -174,7 +175,7 @@
 	w_class = ITEM_SIZE_SMALL
 	slot_flags = SLOT_BELT
 	attack_cooldown = DEFAULT_WEAPON_COOLDOWN
-	force = 5
+	force = 15
 	melee_accuracy_bonus = -10
 	gauge_icon = "indicator_emergency"
 	gauge_cap = 4
@@ -193,7 +194,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	slot_flags = SLOT_BELT
 	attack_cooldown = DEFAULT_WEAPON_COOLDOWN
-	force = 8
+	force = 18
 	melee_accuracy_bonus = -10
 	gauge_icon = "indicator_emergency_double"
 	gauge_cap = 4

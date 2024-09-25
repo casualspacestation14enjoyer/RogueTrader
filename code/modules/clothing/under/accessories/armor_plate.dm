@@ -5,9 +5,9 @@
 	icon_state = "armor_light"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_SMALL,
-		laser = ARMOR_LASER_MINOR,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_PRIMAL,
+		laser = ARMOR_LASER_BASIC,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_MINOR
 		)
@@ -20,9 +20,9 @@
 	desc = "A plasteel-reinforced synthetic armor plate, providing good protection. Attaches to a plate carrier."
 	icon_state = "armor_medium"
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_SMALL,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_PRIMAL,
 		energy = ARMOR_ENERGY_SMALL,
 		bomb = ARMOR_BOMB_PADDED
 	)
@@ -33,9 +33,9 @@
 	desc = "A heavier armor plate with additional ablative coating. Attaches to a plate carrier."
 	icon_state = "armor_tactical"
 	armor = list(
-		melee = ARMOR_MELEE_SMALL,
-		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = ARMOR_LASER_HANDGUNS,
+		melee = ARMOR_MELEE_MINOR,
+		bullet = ARMOR_BALLISTIC_CARAPACE,
+		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_PADDED
 	)
@@ -47,9 +47,9 @@
 	desc = "A ceramics-reinforced synthetic armor plate, providing state of of the art protection. Attaches to a plate carrier."
 	icon_state = "armor_merc"
 	armor = list(
-		melee = ARMOR_MELEE_SMALL,
-		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_HANDGUNS,
+		melee = ARMOR_MELEE_MINOR,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_PADDED
 	)
@@ -73,9 +73,9 @@
 	name = "low-profile tactical armor vest"
 	desc = "An armor vest made of layered smart polymers. Can attach to your slacks and office shirt."
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_SMALL,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_PRIMAL,
 		energy = ARMOR_ENERGY_SMALL,
 		bomb = ARMOR_BOMB_PADDED
 	)

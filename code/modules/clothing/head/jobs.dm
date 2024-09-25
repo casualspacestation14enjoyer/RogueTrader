@@ -172,9 +172,9 @@
 	desc = "An armored red beret adorned with the crest of imperial asset protection. Doesn't sacrifice style or safety."
 	icon_state = "beret_corporate_red"
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_HANDGUNS,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_SMALL,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_RESISTANT,

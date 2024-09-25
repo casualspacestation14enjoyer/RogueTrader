@@ -13,7 +13,7 @@
 	slot_flags = SLOT_BELT
 
 	matter = list(MATERIAL_PLASTIC = 50, MATERIAL_GLASS = 20)
-	force = 7
+	force = 15
 
 	action_button_name = "Toggle Flashlight"
 	var/on = FALSE
@@ -190,7 +190,7 @@
 	desc = "A very, very heavy duty flashlight."
 	icon_state = "maglight"
 	item_state = "maglight"
-	force = 10
+	force = 18
 	base_parry_chance = 15
 	attack_verb = list ("smacked", "thwacked", "thunked")
 	matter = list(MATERIAL_ALUMINIUM = 200, MATERIAL_GLASS = 50)
@@ -204,7 +204,7 @@
 	desc = "A mining lantern."
 	icon_state = "lantern"
 	item_state = "lantern"
-	force = 10
+	force = 19
 	attack_verb = list ("bludgeoned", "bashed", "whack")
 	w_class = ITEM_SIZE_NORMAL
 	obj_flags = OBJ_FLAG_CONDUCTIBLE

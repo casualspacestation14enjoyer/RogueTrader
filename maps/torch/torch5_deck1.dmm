@@ -18342,20 +18342,16 @@
 "htK" = (
 /obj/structure/table/rack,
 /obj/floor_decal/industrial/outline/grey,
-/obj/item/storage/box/ammo/light_bullpup,
-/obj/item/storage/box/ammo/light_bullpup,
-/obj/item/gun/projectile/automatic/bullpup_rifle/light{
-	starts_loaded = 0
-	},
-/obj/item/gun/projectile/automatic/bullpup_rifle/light{
-	starts_loaded = 0
-	},
-/obj/item/gun/projectile/automatic/bullpup_rifle/light{
-	starts_loaded = 0
-	},
-/obj/item/gun/projectile/automatic/bullpup_rifle/light{
-	starts_loaded = 0
-	},
+/obj/item/gun/projectile/automatic/autogun/a80,
+/obj/item/gun/projectile/automatic/autogun/a80,
+/obj/item/gun/projectile/automatic/autogun/a80,
+/obj/item/gun/projectile/automatic/autogun/a80,
+/obj/item/ammo_magazine/autogun/militarum,
+/obj/item/ammo_magazine/autogun/militarum,
+/obj/item/ammo_magazine/autogun/militarum,
+/obj/item/ammo_magazine/autogun/militarum,
+/obj/item/ammo_magazine/autogun/militarum,
+/obj/item/ammo_magazine/autogun/militarum,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/armoury/tactical)
 "hub" = (
@@ -29184,12 +29180,18 @@
 "vjY" = (
 /obj/structure/table/rack,
 /obj/floor_decal/industrial/outline/grey,
-/obj/item/storage/box/ammo/doublestack,
-/obj/item/storage/box/ammo/doublestack,
-/obj/item/gun/projectile/pistol/m22f/empty,
-/obj/item/gun/projectile/pistol/m22f/empty,
-/obj/item/gun/projectile/pistol/m22f/empty,
-/obj/item/gun/projectile/pistol/m22f/empty,
+/obj/item/gun/projectile/pistol/stub,
+/obj/item/gun/projectile/pistol/stub,
+/obj/item/gun/projectile/pistol/stub,
+/obj/item/gun/projectile/pistol/stub,
+/obj/item/ammo_magazine/pistol,
+/obj/item/ammo_magazine/pistol,
+/obj/item/ammo_magazine/pistol,
+/obj/item/ammo_magazine/pistol,
+/obj/item/ammo_magazine/pistol,
+/obj/item/ammo_magazine/pistol,
+/obj/item/ammo_magazine/pistol,
+/obj/item/ammo_magazine/pistol,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/armoury/tactical)
 "vkW" = (

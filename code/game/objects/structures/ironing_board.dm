@@ -264,7 +264,7 @@
 	slot_flags = SLOT_BELT
 	throwforce = 10
 	throw_range = 6
-	force = 8
+	force = 12
 	attack_verb = list("slammed", "whacked", "bashed", "thunked", "battered", "bludgeoned", "thrashed")
 
 	var/iron_enabled

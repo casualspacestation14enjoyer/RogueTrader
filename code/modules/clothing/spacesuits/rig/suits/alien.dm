@@ -1,12 +1,12 @@
 /obj/item/rig/unathi
-	name = "\improper NT breacher chassis control module"
+	name = "\improper NT breacher chassis power armour"
 	desc = "A Necromundan-made Kroot battle-rig. Looks like a fish, moves like a fish, steers like a cow."
 	suit_type = "\improper NT breacher rig"
 	icon_state = "breacher_rig_cheap"
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_HANDGUNS,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
@@ -23,14 +23,14 @@
 	glove_type = /obj/item/clothing/gloves/rig/unathi
 
 /obj/item/rig/unathi/fancy
-	name = "breacher chassis control module"
+	name = "breacher chassis power armour"
 	desc = "An (outwardly) authentic Kroot breacher chassis. Huge, bulky and absurdly heavy. It must be like wearing a tank."
 	suit_type = "breacher chassis"
 	icon_state = "breacher_rig"
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = ARMOR_LASER_HANDGUNS,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_CARAPACE,
+		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_STRONG,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,

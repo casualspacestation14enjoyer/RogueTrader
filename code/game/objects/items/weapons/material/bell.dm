@@ -3,9 +3,9 @@
 	desc = "A bell to ring to get people's attention. Don't break it."
 	icon = 'icons/obj/structures/bells.dmi'
 	icon_state = "bell"
-	max_force = 5
-	force_multiplier = 0.8
-	thrown_force_multiplier = 0.3
+	max_force = 25
+	force_multiplier = 0.2
+	thrown_force_multiplier = 0.2
 	hitsound = 'sound/items/oneding.ogg'
 	default_material = MATERIAL_ALUMINIUM
 	var/normal_sound = 'sound/items/oneding.ogg'

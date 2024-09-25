@@ -1,12 +1,12 @@
 /obj/item/rig/merc
-	name = "crimson hardsuit control module"
+	name = "crimson power armour"
 	desc = "A blood-red hardsuit module with heavy armour plates."
 	icon_state = "merc_rig"
 	suit_type = "crimson hardsuit"
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_HANDGUNS,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
@@ -100,13 +100,13 @@
 		)
 
 /obj/item/rig/merc/heavy
-	name = "crimson EOD hardsuit control module"
+	name = "crimson EOD power armour"
 	desc = "A blood-red hardsuit with heavy armoured plates. Judging by the abnormally thick plates, this one is for working with explosives."
 	icon_state = "merc_rig_heavy"
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = ARMOR_LASER_HANDGUNS,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_CARAPACE,
+		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_SHIELDED,
 		bio = ARMOR_BIO_SHIELDED,

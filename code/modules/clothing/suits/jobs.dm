@@ -105,9 +105,9 @@
 		/obj/item/device/taperecorder
 	)
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_SMALL,
-		laser = ARMOR_LASER_SMALL,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_PRIMAL,
+		laser = ARMOR_LASER_PRIMAL,
 		energy = ARMOR_ENERGY_MINOR
 		)
 
@@ -138,9 +138,9 @@
 		/obj/item/device/taperecorder
 	)
 	armor = list(
-		melee = ARMOR_MELEE_SMALL,
-		bullet = ARMOR_BALLISTIC_MINOR,
-		laser = ARMOR_LASER_MINOR,
+		melee = ARMOR_MELEE_MINOR,
+		bullet = ARMOR_BALLISTIC_BASIC,
+		laser = ARMOR_LASER_BASIC,
 		energy = ARMOR_ENERGY_MINOR
 		)
 

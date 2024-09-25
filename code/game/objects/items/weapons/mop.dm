@@ -3,7 +3,7 @@
 	name = "mop"
 	icon = 'icons/obj/janitor_tools.dmi'
 	icon_state = "mop"
-	force = 5
+	force = 15
 	throwforce = 10.0
 	throw_speed = 5
 	throw_range = 10
@@ -66,7 +66,7 @@
 	name = "advanced mop"
 	icon_state = "advmop"
 	item_state = "mop"
-	force = 6
+	force = 16
 	throwforce = 11
 	mopspeed = 20
 	var/refill_enabled = TRUE //Self-refill toggle for when a janitor decides to mop with something other than water.

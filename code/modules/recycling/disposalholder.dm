@@ -76,7 +76,7 @@
 
 		if(hasmob && prob(10))
 			for(var/mob/living/H in check_mob(src))
-				H.apply_damage(30, DAMAGE_BRUTE, null, DAMAGE_FLAG_DISPERSED, "Blunt Trauma", ARMOR_MELEE_MAJOR)//horribly maim any living creature jumping down disposals.  c'est la vie
+				H.apply_damage(30, DAMAGE_BRUTE, null, DAMAGE_FLAG_DISPERSED, "Blunt Trauma", ARMOR_MELEE_POWER_ARM)//horribly maim any living creature jumping down disposals.  c'est la vie
 
 		var/obj/structure/disposalpipe/curr = loc
 		if(!istype(curr))

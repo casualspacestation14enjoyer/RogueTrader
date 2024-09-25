@@ -7,12 +7,12 @@
  */
 /obj/item/material/kitchen/utensil
 	w_class = ITEM_SIZE_TINY
-	thrown_force_multiplier = 1
+	thrown_force_multiplier = 0.3
 	origin_tech = list(TECH_MATERIAL = 1)
 	attack_verb = list("attacked", "stabbed", "poked")
-	max_force = 5
+	max_force = 40
 	force_multiplier = 0.1 // 6 when wielded with hardness 60 (steel)
-	thrown_force_multiplier = 0.25 // 5 when thrown with weight 20 (steel)
+	thrown_force_multiplier = 0.15 // 5 when thrown with weight 20 (steel)
 	puncture = TRUE
 	default_material = MATERIAL_ALUMINIUM
 
@@ -124,9 +124,9 @@
 	icon_state = "rolling_pin"
 	attack_verb = list("bashed", "battered", "bludgeoned", "thrashed", "whacked")
 	default_material = MATERIAL_WOOD
-	max_force = 15
-	force_multiplier = 0.7 // 10 when wielded with weight 15 (wood)
-	thrown_force_multiplier = 1 // as above
+	max_force = 45
+	force_multiplier = 0.2 // 10 when wielded with weight 15 (wood)
+	thrown_force_multiplier = 0.15 // as above
 
 /obj/item/material/kitchen/rollingpin/plastic/default_material = MATERIAL_PLASTIC
 /obj/item/material/kitchen/rollingpin/aluminium/default_material = MATERIAL_ALUMINIUM

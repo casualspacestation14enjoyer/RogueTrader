@@ -3,7 +3,7 @@
 	throwforce = 0
 	throw_speed = 3
 	throw_range = 6
-	force = 0
+	force = 20
 
 /obj/item/instrument/guitar
 	name = "guitar"

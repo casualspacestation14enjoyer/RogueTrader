@@ -38,9 +38,9 @@
 	maxHealth = 150
 	health = 150
 	natural_armor = list(
-				melee	= ARMOR_MELEE_RESISTANT,
-				bullet	= ARMOR_BALLISTIC_PISTOL,
-				laser	= ARMOR_LASER_HANDGUNS,
+				melee	= ARMOR_MELEE_CARAPACE,
+				bullet	= ARMOR_BALLISTIC_FLAK,
+				laser	= ARMOR_LASER_FLAK,
 				energy	= ARMOR_ENERGY_SMALL,
 				bomb	= ARMOR_BOMB_PADDED,
 				bio		= ARMOR_BIO_SHIELDED,
@@ -56,7 +56,7 @@
 	name = "riot hivebot"
 	desc = "A robot specialized in close quarters combat."
 	natural_armor = list(
-				melee	= ARMOR_MELEE_VERY_HIGH,
+				melee	= ARMOR_MELEE_ASTARTES,
 				bio		= ARMOR_BIO_SHIELDED,
 				rad		= ARMOR_RAD_SHIELDED
 				)
@@ -65,7 +65,7 @@
 	name = "bulletproof hivebot"
 	desc = "A robot specialized in ballistic defense."
 	natural_armor = list(
-				bullet	= ARMOR_BALLISTIC_RESISTANT,
+				bullet	= ARMOR_BALLISTIC_CARAPACE,
 				bio		= ARMOR_BIO_SHIELDED,
 				rad		= ARMOR_RAD_SHIELDED
 				)
@@ -74,7 +74,7 @@
 	name = "ablative hivebot"
 	desc = "A robot specialized in photonic defense."
 	natural_armor = list(
-				laser	= ARMOR_LASER_RIFLES,
+				laser	= ARMOR_LASER_POWER_ARMOUR,
 				bio		= ARMOR_BIO_SHIELDED,
 				rad		= ARMOR_RAD_SHIELDED
 				)

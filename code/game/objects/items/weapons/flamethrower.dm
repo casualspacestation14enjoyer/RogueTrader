@@ -5,7 +5,7 @@
 	icon_state = "flamethrowerbase"
 	item_state = "flamethrower_0"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
-	force = 3.0
+	force = 23.0
 	throwforce = 10.0
 	throw_speed = 1
 	throw_range = 5

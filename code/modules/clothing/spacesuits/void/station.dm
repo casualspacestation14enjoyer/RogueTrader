@@ -11,9 +11,9 @@
 		slot_r_hand_str = "eng_helm",
 		)
 	armor = list(
-		melee = ARMOR_MELEE_SMALL,
-		bullet = ARMOR_BALLISTIC_MINOR,
-		laser = ARMOR_LASER_MINOR,
+		melee = ARMOR_MELEE_MINOR,
+		bullet = ARMOR_BALLISTIC_BASIC,
+		laser = ARMOR_LASER_BASIC,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_RESISTANT
@@ -32,9 +32,9 @@
 	max_pressure_protection = ENG_VOIDSUIT_MAX_PRESSURE
 	siemens_coefficient = 0.3
 	armor = list(
-		melee = ARMOR_MELEE_SMALL,
-		bullet = ARMOR_BALLISTIC_MINOR,
-		laser = ARMOR_LASER_MINOR,
+		melee = ARMOR_MELEE_MINOR,
+		bullet = ARMOR_BALLISTIC_BASIC,
+		laser = ARMOR_LASER_BASIC,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_RESISTANT
@@ -57,9 +57,9 @@
 		slot_r_hand_str = "mining_helm",
 		)
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_MINOR,
-		laser = ARMOR_LASER_MINOR,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_BASIC,
+		laser = ARMOR_LASER_BASIC,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_MINOR
@@ -76,9 +76,9 @@
 		slot_r_hand_str = "mining_voidsuit",
 	)
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_MINOR,
-		laser = ARMOR_LASER_MINOR,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_BASIC,
+		laser = ARMOR_LASER_BASIC,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_MINOR
@@ -101,8 +101,8 @@
 		slot_r_hand_str = "medical_helm",
 		)
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		laser = ARMOR_LASER_MINOR,
+		melee = ARMOR_MELEE_FLAK,
+		laser = ARMOR_LASER_BASIC,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_SMALL
@@ -118,8 +118,8 @@
 	)
 	allowed = list(/obj/item/device/flashlight,/obj/item/tank,/obj/item/device/suit_cooling_unit,/obj/item/storage/firstaid,/obj/item/device/scanner/health,/obj/item/stack/medical)
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		laser = ARMOR_LASER_MINOR,
+		melee = ARMOR_MELEE_FLAK,
+		laser = ARMOR_LASER_BASIC,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_SMALL
@@ -141,9 +141,9 @@
 		slot_r_hand_str = "sec_helm",
 		)
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_SMALL,
-		laser = ARMOR_LASER_SMALL,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_PRIMAL,
+		laser = ARMOR_LASER_PRIMAL,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_MINOR
@@ -160,9 +160,9 @@
 		slot_r_hand_str = "sec_voidsuit",
 	)
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_SMALL,
-		laser = ARMOR_LASER_SMALL,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_PRIMAL,
+		laser = ARMOR_LASER_PRIMAL,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_MINOR
@@ -186,9 +186,9 @@
 		slot_r_hand_str = "atmos_helm",
 		)
 	armor = list(
-		melee = ARMOR_MELEE_SMALL,
-		bullet = ARMOR_BALLISTIC_MINOR,
-		laser = ARMOR_LASER_MINOR,
+		melee = ARMOR_MELEE_MINOR,
+		bullet = ARMOR_BALLISTIC_BASIC,
+		laser = ARMOR_LASER_BASIC,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_SMALL
@@ -206,9 +206,9 @@
 		slot_r_hand_str = "atmos_voidsuit",
 	)
 	armor = list(
-		melee = ARMOR_MELEE_SMALL,
-		bullet = ARMOR_BALLISTIC_MINOR,
-		laser = ARMOR_LASER_MINOR,
+		melee = ARMOR_MELEE_MINOR,
+		bullet = ARMOR_BALLISTIC_BASIC,
+		laser = ARMOR_LASER_BASIC,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_SMALL
@@ -231,9 +231,9 @@
 	icon_state = "rig0-engineeringalt"
 	item_state = "engalt_helm"
 	armor = list(
-		melee = ARMOR_MELEE_SMALL,
-		bullet = ARMOR_BALLISTIC_MINOR,
-		laser = ARMOR_LASER_MINOR,
+		melee = ARMOR_MELEE_MINOR,
+		bullet = ARMOR_BALLISTIC_BASIC,
+		laser = ARMOR_LASER_BASIC,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_SHIELDED
@@ -245,9 +245,9 @@
 	desc = "A bulky industrial voidsuit. It's a few generations old, but a reliable design and radiation shielding make up for the lack of climate control."
 	icon_state = "rig-engineeringalt"
 	armor = list(
-		melee = ARMOR_MELEE_SMALL,
-		bullet = ARMOR_BALLISTIC_MINOR,
-		laser = ARMOR_LASER_MINOR,
+		melee = ARMOR_MELEE_MINOR,
+		bullet = ARMOR_BALLISTIC_BASIC,
+		laser = ARMOR_LASER_BASIC,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_SHIELDED
@@ -285,8 +285,8 @@
 	icon_state = "rig0-medicalalt"
 	item_state = "medicalalt_helm"
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		laser = ARMOR_LASER_MINOR,
+		melee = ARMOR_MELEE_FLAK,
+		laser = ARMOR_LASER_BASIC,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_RESISTANT
@@ -299,8 +299,8 @@
 	desc = "A more recent and stylish model of Vey-Med voidsuit, with a minor upgrade to radiation shielding."
 	allowed = list(/obj/item/device/flashlight,/obj/item/tank,/obj/item/device/suit_cooling_unit,/obj/item/storage/firstaid,/obj/item/device/scanner/health,/obj/item/stack/medical)
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		laser = ARMOR_LASER_MINOR,
+		melee = ARMOR_MELEE_FLAK,
+		laser = ARMOR_LASER_BASIC,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_RESISTANT
@@ -323,9 +323,9 @@
 	item_state = "secalt_helm"
 	light_overlay = "helmet_light_alt"
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_SMALL,
-		laser = ARMOR_LASER_SMALL,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_PRIMAL,
+		laser = ARMOR_LASER_PRIMAL,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_MINOR)
@@ -335,9 +335,9 @@
 	icon_state = "rig-secalt"
 	desc = "A heavily armored voidsuit, designed to intimidate people who find black intimidating. Surprisingly slimming."
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_SMALL,
-		laser = ARMOR_LASER_SMALL,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_PRIMAL,
+		laser = ARMOR_LASER_PRIMAL,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_MINOR)
@@ -377,9 +377,9 @@
 		slot_r_hand_str = "eng_helm",
 		)
 	armor = list(
-		melee = ARMOR_MELEE_SMALL,
-		bullet = ARMOR_BALLISTIC_MINOR,
-		laser = ARMOR_LASER_SMALL,
+		melee = ARMOR_MELEE_MINOR,
+		bullet = ARMOR_BALLISTIC_BASIC,
+		laser = ARMOR_LASER_PRIMAL,
 		energy = ARMOR_ENERGY_SMALL,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,
@@ -413,9 +413,9 @@
 		slot_r_hand_str = "eng_voidsuit",
 	)
 	armor = list(
-		melee = ARMOR_MELEE_SMALL,
-		bullet = ARMOR_BALLISTIC_MINOR,
-		laser = ARMOR_LASER_SMALL,
+		melee = ARMOR_MELEE_MINOR,
+		bullet = ARMOR_BALLISTIC_BASIC,
+		laser = ARMOR_LASER_PRIMAL,
 		energy = ARMOR_ENERGY_SMALL,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,
@@ -435,9 +435,9 @@
 	icon_state = "rig0_pilot"
 	item_state = "pilot_helm"
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_MINOR,
-		laser = ARMOR_LASER_MINOR,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_BASIC,
+		laser = ARMOR_LASER_BASIC,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_SMALL
 		)
@@ -448,9 +448,9 @@
 	icon_state = "rig-pilot"
 	name = "pilot voidsuit"
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_MINOR,
-		laser = ARMOR_LASER_MINOR,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_BASIC,
+		laser = ARMOR_LASER_BASIC,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_SMALL
 		)
@@ -471,7 +471,7 @@
 	desc = "A voidsuit designed to replicate older designs with newer technology."
 	icon_state = "rig-retro"
 	armor = list(
-		melee = ARMOR_MELEE_SMALL,
+		melee = ARMOR_MELEE_MINOR,
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,
@@ -485,7 +485,7 @@
 	icon_state = "rig0-retro"
 	item_state = "helm-retro"
 	armor = list(
-		melee = ARMOR_MELEE_SMALL,
+		melee = ARMOR_MELEE_MINOR,
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,

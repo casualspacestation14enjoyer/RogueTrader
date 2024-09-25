@@ -79,7 +79,7 @@
 
 /datum/unarmed_attack/claws/strong
 	attack_verb = list("slashed")
-	damage = 12
+	damage = 25
 	shredding = TRUE
 	attack_name = "strong claws"
 
@@ -88,14 +88,14 @@
 
 /datum/unarmed_attack/bite/strong
 	attack_verb = list("mauled")
-	damage = 14
+	damage = 27
 	shredding = TRUE
 	attack_name = "strong bite"
 
 /datum/unarmed_attack/slime_glomp
 	attack_verb = list("glomped")
 	attack_noun = list("body")
-	damage = 4
+	damage = 8
 	attack_name = "glomp"
 
 /datum/unarmed_attack/slime_glomp/apply_effects(mob/living/carbon/human/user,mob/living/carbon/human/target,armour,attack_damage,zone)
@@ -160,7 +160,7 @@
 /datum/unarmed_attack/nabber
 	attack_verb = list("mauled", "slashed", "struck", "pierced")
 	attack_noun = list("forelimb")
-	damage = 14
+	damage = 22
 	shredding = TRUE
 	sharp = TRUE
 	edge = TRUE
@@ -180,7 +180,7 @@
 /datum/unarmed_attack/bite/venom
 	attack_verb = list("bit", "sank their fangs into")
 	attack_sound = 'sound/weapons/bite.ogg'
-	damage = 12
+	damage = 18
 	delay = 120
 	attack_name = "venomous bite"
 

@@ -63,10 +63,10 @@
 	name = "fire axe"
 	desc = "Truly, the weapon of a madman. Who would think to fight fire with an axe?"
 
-	max_force = 60	//for wielded
-	force_multiplier = 0.6
-	unwielded_force_divisor = 0.3
-	attack_cooldown_modifier = 6
+	max_force = 85	//for wielded
+	force_multiplier = 0.38
+	unwielded_force_divisor = 0.32
+	attack_cooldown_modifier = 1
 	sharp = TRUE
 	edge = TRUE
 	attack_verb = list("attacked", "chopped", "cleaved", "torn", "cut")
@@ -101,7 +101,7 @@
 	icon_state = "spearglass0"
 	name = "spear"
 	desc = "A haphazardly-constructed yet still deadly weapon of ancient design."
-	max_force = 30	//for wielded
+	max_force = 50	//for wielded
 	applies_material_colour = 0
 	force_multiplier = 0.43
 	unwielded_force_divisor = 0.30
@@ -113,7 +113,7 @@
 	default_material = MATERIAL_GLASS
 	does_spin = FALSE
 	worth_multiplier = 7
-	base_parry_chance = 30
+	base_parry_chance = 20
 
 /obj/item/material/twohanded/spear/shatter(consumed)
 	if(!consumed)
@@ -132,12 +132,12 @@
 	attack_verb = list("smashed", "beaten", "slammed", "smacked", "struck", "battered", "bonked")
 	hitsound = 'sound/weapons/genhit3.ogg'
 	default_material = MATERIAL_MAPLE
-	max_force = 35	//for wielded
+	max_force = 55	//for wielded
 	force_multiplier = 1.1           // 22 when wielded with weight 20 (steel)
 	unwielded_force_divisor = 0.7 // 15 when unwielded based on above.
 	attack_cooldown_modifier = 1
 	melee_accuracy_bonus = -10
-	base_parry_chance = 30
+	base_parry_chance = 20
 
 /obj/item/material/twohanded/baseballbat/proc/deflect(mob/user, atom/target, atom/movable/item, range, speed)
 	item.throw_at(target, range, speed, user, TRUE)

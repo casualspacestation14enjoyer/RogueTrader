@@ -6,19 +6,19 @@
 	item_state = "claymore"
 	slot_flags = SLOT_BELT
 	w_class = ITEM_SIZE_LARGE
-	force_multiplier = 0.25 // 15 when wielded with hardness 60 (steel)
-	armor_penetration = 10
+	force_multiplier = 0.35
+	armor_penetration = 5
 	thrown_force_multiplier = 0.5 // 10 when thrown with weight 20 (steel)
 	sharp = TRUE
 	edge = TRUE
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 	hitsound = 'sound/weapons/bladeslice.ogg'
-	base_parry_chance = 50
+	base_parry_chance = 30
 	melee_accuracy_bonus = 10
 	worth_multiplier = 30
 
 /obj/item/material/sword/replica
-	max_force = 10
+	max_force = 20
 	edge = FALSE
 	sharp = FALSE
 	force_multiplier = 0.2
@@ -28,10 +28,10 @@
 /obj/item/material/sword/makeshift
 	desc = "A large, unwieldy blade haphazardly tied together with rod and wire. The weapon of the modern caveman."
 	icon_state = "makeshift_sword"
-	force_multiplier = 0.5
+	force_multiplier = 0.3
 	attack_cooldown = 30 // slow.
 	thrown_force_multiplier = 0.2
-	base_parry_chance = 25
+	base_parry_chance = 15
 	worth_multiplier = 5
 	slot_flags = SLOT_BELT | SLOT_BACK
 
@@ -45,7 +45,7 @@
 	slot_flags = SLOT_BELT | SLOT_BACK
 
 /obj/item/material/sword/katana/replica
-	max_force = 10
+	max_force = 20
 	edge = FALSE
 	sharp = FALSE
 	force_multiplier = 0.2

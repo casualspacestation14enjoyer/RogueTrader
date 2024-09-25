@@ -8,7 +8,7 @@
 	body_parts_covered = FULL_TORSO | ARMS | FULL_LEGS
 	siemens_coefficient = 0.9
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_BASIC,
 		energy = ARMOR_ENERGY_MINOR
 	)
 

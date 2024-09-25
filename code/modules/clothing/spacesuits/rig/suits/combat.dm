@@ -1,12 +1,12 @@
 /obj/item/rig/combat
-	name = "combat hardsuit control module"
+	name = "combat power armour"
 	desc = "A sleek and dangerous hardsuit for active combat."
 	icon_state = "security_rig"
 	suit_type = "combat hardsuit"
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_HANDGUNS,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
@@ -85,14 +85,14 @@
 //Extremely OP, hardly standard issue equipment
 //Now a little less OP
 /obj/item/rig/military
-	name = "military hardsuit control module"
+	name = "military power armour"
 	desc = "An austere hardsuit used by paramilitary groups and real soldiers alike."
 	icon_state = "military_rig"
 	suit_type = "military hardsuit"
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = ARMOR_LASER_MAJOR,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_CARAPACE,
+		laser = ARMOR_LASER_CARAPACE,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,

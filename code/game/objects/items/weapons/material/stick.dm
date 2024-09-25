@@ -4,7 +4,7 @@
 	icon = 'icons/obj/weapons/melee_physical.dmi'
 	icon_state = "stick"
 	item_state = "stickmat"
-	max_force = 10
+	max_force = 30
 	force_multiplier = 0.1
 	thrown_force_multiplier = 0.1
 	w_class = ITEM_SIZE_NORMAL

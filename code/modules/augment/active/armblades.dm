@@ -8,7 +8,7 @@
 	base_parry_chance = 30
 	unbreakable = TRUE
 	unacidable = TRUE
-	force_multiplier = 0.2
+	force_multiplier = 0.34
 	sharp = TRUE
 	edge = TRUE
 	attack_verb = list("stabbed", "sliced", "cut")
@@ -37,7 +37,7 @@
 	name = "combat claws"
 	desc = "These do not grow back."
 	base_parry_chance = 40
-	force_multiplier = 0.3
+	force_multiplier = 0.36
 
 
 /obj/item/organ/internal/augment/active/item/wolverine
@@ -70,7 +70,7 @@
 	icon_state = "wristblade"
 	item_state = "wristblade"
 	base_parry_chance = 0
-	force_multiplier = 0.2
+	force_multiplier = 0.3
 	attack_cooldown_modifier = -1
 	default_material = MATERIAL_PLASTEEL
 

@@ -94,9 +94,9 @@
 	name = "captain's winter coat"
 	icon_state = "coatcaptain"
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_MINOR,
-		laser = ARMOR_LASER_SMALL,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_BASIC,
+		laser = ARMOR_LASER_PRIMAL,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_MINOR
 		)
@@ -105,9 +105,9 @@
 	name = "militarum winter coat"
 	icon_state = "coatsecurity"
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_SMALL,
-		laser = ARMOR_LASER_SMALL,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_PRIMAL,
+		laser = ARMOR_LASER_PRIMAL,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_MINOR
 		)
@@ -142,7 +142,7 @@
 	icon_state = "coat_dais"
 	siemens_coefficient = 0.5
 	armor = list(
-		melee = ARMOR_MELEE_SMALL,
+		melee = ARMOR_MELEE_MINOR,
 		energy = ARMOR_ENERGY_MINOR
 		)
 	desc = "A hooded winter coat colored blue and white and bearing the logo of Deimos Advanced Information Systems."
@@ -159,7 +159,7 @@
 	name = "mining winter coat"
 	icon_state = "coatminer"
 	armor = list(
-		melee = ARMOR_MELEE_SMALL
+		melee = ARMOR_MELEE_MINOR
 		)
 
 /obj/item/clothing/suit/storage/hooded/hoodie

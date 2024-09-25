@@ -8,7 +8,7 @@ Buildable meters
 	desc = "A pipe."
 	var/pipename
 	var/connect_types = CONNECT_TYPE_REGULAR
-	force = 7
+	force = 21
 	icon = 'icons/obj/atmospherics/pipe-item.dmi'
 	icon_state = "simple"
 	randpixel = 5
