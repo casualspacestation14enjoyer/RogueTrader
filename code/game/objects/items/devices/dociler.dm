@@ -10,7 +10,7 @@
 		slot_r_hand_str = 'icons/mob/onmob/items/righthand_guns.dmi',
 		)
 	item_state = "gun"
-	force = 1
+	force = 5
 	var/loaded = 1
 	var/charge_tick = 0
 	var/recharge_time = 140

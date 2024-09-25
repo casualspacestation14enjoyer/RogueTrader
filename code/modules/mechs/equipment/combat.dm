@@ -229,7 +229,7 @@
 	max_force = 35 // If we want to edit the force, use this number! The one below is prone to be changed when anything material gets modified.
 	force_multiplier = 0.75 // Equals 20 AP with 45 force with hardness 60 (Steel)
 	unbreakable = TRUE //Else we need a whole system for replacement blades
-	attack_cooldown_modifier = 10
+	attack_cooldown_modifier = 5
 
 /obj/item/material/hatchet/machete/mech/apply_hit_effect(mob/living/target, mob/living/user, hit_zone)
 	. = ..()

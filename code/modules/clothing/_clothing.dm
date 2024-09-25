@@ -705,7 +705,7 @@ BLIND     // can't see anything
 	slot_flags = SLOT_FEET
 	item_flags = ITEM_FLAG_WASHER_ALLOWED
 	permeability_coefficient = 0.50
-	force = 2
+	force = 5
 	species_restricted = list("exclude", SPECIES_NABBER, SPECIES_KROOT, SPECIES_VOX)
 	sprite_sheets = list(
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_feet_vox.dmi',

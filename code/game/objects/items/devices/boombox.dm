@@ -7,7 +7,7 @@
 	icon = 'icons/obj/boombox.dmi'
 	icon_state = "off"
 	item_state = "boombox"
-	force = 7
+	force = 17
 	w_class = ITEM_SIZE_HUGE //forbid putting something that emits loud sounds forever into a backpack
 	origin_tech = list(TECH_MAGNET = 2, TECH_COMBAT = 1)
 

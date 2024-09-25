@@ -9,8 +9,8 @@
 		slot_w_uniform_str = 'packs/factions/scga/clothing.dmi'
 	)
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
-		energy = ARMOR_BALLISTIC_MINOR
+		melee = ARMOR_MELEE_BASIC,
+		energy = ARMOR_BALLISTIC_BASIC
 	)
 	sprite_sheets = list(
 		SPECIES_KROOT = 'packs/factions/scga/species/clothing_unathi.dmi'
@@ -288,9 +288,9 @@
 		slot_shoes_str = "boots_utility_worn"
 	)
 	armor = list(
-		melee = ARMOR_MELEE_SMALL,
-		bullet = ARMOR_BALLISTIC_MINOR,
-		laser = ARMOR_LASER_MINOR,
+		melee = ARMOR_MELEE_MINOR,
+		bullet = ARMOR_BALLISTIC_BASIC,
+		laser = ARMOR_LASER_BASIC,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_MINOR

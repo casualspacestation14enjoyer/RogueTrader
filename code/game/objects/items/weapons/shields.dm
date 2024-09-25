@@ -61,7 +61,7 @@
 	item_state = "riot"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BACK
-	force = 5.0
+	force = 15.0
 	throwforce = 5.0
 	throw_speed = 1
 	throw_range = 4
@@ -107,7 +107,7 @@
 	item_state = "metal"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BACK
-	force = 6.0
+	force = 16.0
 	throwforce = 7.0
 	throw_range = 3
 	w_class = ITEM_SIZE_HUGE
@@ -123,7 +123,7 @@
 	icon_state = "buckler"
 	item_state = "buckler"
 	slot_flags = SLOT_BACK
-	force = 8
+	force = 18
 	throwforce = 8
 	base_block_chance = 50
 	max_block = 15
@@ -155,7 +155,7 @@
 	icon = 'icons/obj/weapons/melee_energy.dmi'
 	icon_state = "eshield0"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
-	force = 3.0
+	force = 13.0
 	throwforce = 5.0
 	throw_speed = 1
 	throw_range = 4

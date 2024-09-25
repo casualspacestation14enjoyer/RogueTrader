@@ -4,7 +4,7 @@
 	icon = 'icons/obj/toy.dmi'
 	icon_state = "latexballon"
 	item_state = "lgloves"
-	force = 0
+	force = 2
 	throwforce = 0
 	w_class = ITEM_SIZE_SMALL
 	throw_speed = 1

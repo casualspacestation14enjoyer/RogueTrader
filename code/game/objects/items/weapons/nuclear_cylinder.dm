@@ -5,7 +5,7 @@
 	icon_state = "nuclear_cylinder"
 	item_state = "nuclear"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
-	force = 10.0
+	force = 20.0
 	w_class = ITEM_SIZE_HUGE
 	throwforce = 15.0
 	throw_speed = 2

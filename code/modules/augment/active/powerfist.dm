@@ -5,7 +5,7 @@
 	icon = 'icons/obj/augment.dmi'
 	desc = "A strong, pneumatic powerfist. Packs quite the punch with other utility uses."
 	base_parry_chance = 12
-	force = 5
+	force = 15
 	attack_cooldown = 1.5 * DEFAULT_WEAPON_COOLDOWN
 	hitsound = 'sound/effects/bamf.ogg'
 	attack_verb = list("smashed", "bludgeoned", "hammered", "battered")

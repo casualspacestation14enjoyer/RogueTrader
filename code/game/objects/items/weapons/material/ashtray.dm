@@ -3,7 +3,7 @@
 	desc = "A thing to keep your butts in."
 	icon = 'icons/obj/ashtray.dmi'
 	icon_state = "ashtray"
-	max_force = 10
+	max_force = 30
 	force_multiplier = 0.1
 	thrown_force_multiplier = 0.1
 	randpixel = 5

@@ -31,8 +31,8 @@
 	response_disarm = "bumps"
 	response_harm = "strikes"
 
-	natural_armor = list(melee = ARMOR_MELEE_SMALL,
-						bullet = ARMOR_BALLISTIC_SMALL)
+	natural_armor = list(melee = ARMOR_MELEE_MINOR,
+						bullet = ARMOR_BALLISTIC_PRIMAL)
 
 	var/chosen_color
 	var/species_colors = list(COLOR_COMMAND_BLUE, COLOR_PURPLE, COLOR_DARK_BLUE_GRAY, COLOR_PALE_PINK)

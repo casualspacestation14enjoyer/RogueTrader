@@ -185,9 +185,9 @@
 	does_spin = FALSE
 	attack_verb = list("sliced", "torn", "cut")
 	armor = list(
-		melee = ARMOR_MELEE_SMALL,
-		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = ARMOR_LASER_HANDGUNS,
+		melee = ARMOR_MELEE_MINOR,
+		bullet = ARMOR_BALLISTIC_CARAPACE,
+		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_SMALL,
 		bomb = ARMOR_BOMB_PADDED
 		)
@@ -325,7 +325,7 @@
 	flags_inv = BLOCKHEADHAIR
 	color = "#5f5f5f"
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
+		melee = ARMOR_MELEE_FLAK,
 		bomb = ARMOR_BOMB_PADDED
 		)
 

@@ -212,7 +212,7 @@ meteor_act
 		return FALSE
 
 	if (user.a_intent == I_DISARM)
-		effective_force *= 0.66 //reduced effective force...
+		effective_force *= 0.80 //reduced effective force...
 
 	var/blocked = get_blocked_ratio(hit_zone, I.damtype, I.damage_flags(), I.armor_penetration, effective_force)
 

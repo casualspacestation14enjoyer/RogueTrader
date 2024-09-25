@@ -14,7 +14,7 @@
 	minbodytemp = 0
 	speed = 4
 	natural_armor = list(
-		melee = ARMOR_MELEE_KNIVES
+		melee = ARMOR_MELEE_FLAK
 		)
 	bleed_colour = SYNTH_BLOOD_COLOUR
 
@@ -49,7 +49,7 @@
 	ranged = 1
 	can_escape = 1
 	natural_armor = list(
-		melee = ARMOR_MELEE_SMALL
+		melee = ARMOR_MELEE_MINOR
 		)
 
 	natural_weapon = /obj/item/natural_weapon/hivebot/strong
@@ -151,8 +151,8 @@ The megabot
 	speed = 0
 	special_attack_cooldown = 3 MINUTES
 	natural_armor = list(
-		melee = ARMOR_MELEE_SMALL,
-		bullet = ARMOR_BALLISTIC_PISTOL
+		melee = ARMOR_MELEE_MINOR,
+		bullet = ARMOR_BALLISTIC_FLAK
 		)
 	can_escape = TRUE
 	armor_type = /datum/extension/armor/toggle

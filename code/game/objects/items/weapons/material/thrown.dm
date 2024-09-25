@@ -4,7 +4,7 @@
 	icon = 'icons/obj/weapons/other.dmi'
 	icon_state = "star"
 	randpixel = 12
-	max_force = 10
+	max_force = 35
 	force_multiplier = 0.1 // 6 with hardness 60 (steel)
 	thrown_force_multiplier = 1 // 20 with weight 20 (steel)
 	throw_speed = 8

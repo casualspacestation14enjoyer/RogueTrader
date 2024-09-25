@@ -9,7 +9,7 @@
 	icon_state = "defibunit"
 	item_state = "defibunit"
 	slot_flags = SLOT_BACK
-	force = 5
+	force = 15
 	throwforce = 6
 	w_class = ITEM_SIZE_LARGE
 	origin_tech = list(TECH_BIO = 4, TECH_POWER = 2)
@@ -209,7 +209,7 @@
 	icon_state = "defibpaddles"
 	item_state = "defibpaddles"
 	gender = PLURAL
-	force = 2
+	force = 5
 	throwforce = 6
 	w_class = ITEM_SIZE_LARGE
 

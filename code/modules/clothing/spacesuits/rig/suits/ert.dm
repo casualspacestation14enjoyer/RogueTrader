@@ -1,5 +1,5 @@
 /obj/item/rig/ert
-	name = "emergency response command hardsuit control module"
+	name = "emergency response command power armour"
 	desc = "A hardsuit used by many imperial and governmental emergency response forces. Has blue highlights. Armoured and space ready."
 	suit_type = "emergency response command"
 	icon_state = "ert_commander_rig"
@@ -12,9 +12,9 @@
 	req_access = list(access_cent_specops)
 
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = ARMOR_LASER_HANDGUNS,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_CARAPACE,
+		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,
@@ -69,7 +69,7 @@
 
 
 /obj/item/rig/ert/engineer
-	name = "emergency response engineering hardsuit control module"
+	name = "emergency response engineering power armour"
 	desc = "A hardsuit used by many imperial and governmental emergency response forces. Has orange highlights. Armoured and space ready."
 	suit_type = "emergency response engineer"
 	icon_state = "ert_engineer_rig"
@@ -88,7 +88,7 @@
 	siemens_coefficient = 0
 
 /obj/item/rig/ert/janitor
-	name = "emergency response sanitation hardsuit control module"
+	name = "emergency response sanitation power armour"
 	desc = "A hardsuit used by many imperial and governmental emergency response forces. Has purple highlights. Armoured and space ready."
 	suit_type = "emergency response sanitation"
 	icon_state = "ert_janitor_rig"
@@ -103,7 +103,7 @@
 		)
 
 /obj/item/rig/ert/medical
-	name = "emergency response medical hardsuit control module"
+	name = "emergency response medical power armour"
 	desc = "A hardsuit used by many imperial and governmental emergency response forces. Has white highlights. Armoured and space ready."
 	suit_type = "emergency response medic"
 	icon_state = "ert_medical_rig"
@@ -117,7 +117,7 @@
 		)
 
 /obj/item/rig/ert/security
-	name = "emergency response security hardsuit control module"
+	name = "emergency response security power armour"
 	desc = "A hardsuit used by many imperial and governmental emergency response forces. Has red highlights. Armoured and space ready."
 	suit_type = "emergency response security"
 	icon_state = "ert_security_rig"
@@ -131,14 +131,14 @@
 		)
 
 /obj/item/rig/ert/fleet
-	name = "emergency response hardsuit control module"
+	name = "emergency response power armour"
 	desc = "A hardsuit utilised especially by Imperial Navy combat teams. Has navy blue highlights and Sol-patterned crests on the shoulders."
 	suit_type = "emergency response fleet"
 	icon_state = "ert_fleet_rig"
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = ARMOR_LASER_HANDGUNS,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_CARAPACE,
+		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,

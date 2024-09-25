@@ -49,8 +49,8 @@
 	equip_delay = 2 SECONDS
 	body_parts_covered = FULL_HEAD
 	armor = list(
-		melee = ARMOR_MELEE_SMALL,
-		laser = ARMOR_LASER_MINOR,
+		melee = ARMOR_MELEE_MINOR,
+		laser = ARMOR_LASER_BASIC,
 		energy = ARMOR_ENERGY_SMALL
 	)
 

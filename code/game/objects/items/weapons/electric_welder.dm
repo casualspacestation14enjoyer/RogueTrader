@@ -5,7 +5,7 @@
 	welding_resource = "stored charge"
 	tank = null
 	waterproof = TRUE
-	force = 7
+	force = 17
 	throwforce = 7
 	origin_tech = list(TECH_POWER = 5, TECH_ENGINEERING = 4)
 	var/obj/item/cell/cell = /obj/item/cell/high

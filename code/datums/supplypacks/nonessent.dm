@@ -249,21 +249,21 @@
 
 /singleton/hierarchy/supply_pack/nonessent/exosuit_mod
 	num_contained = 1
-	name = "Mod - \"Firestarter\" exosuit modkit"
+	name = "Mod - \"Firestarter\" power armour modkit"
 	contains = list(/obj/item/device/kit/paint/flames_red)
 	cost = 50
-	containername = "heavy exosuit modkit crate"
+	containername = "heavy power armour modkit crate"
 
 /singleton/hierarchy/supply_pack/nonessent/exosuit_mod/chrome
-	name = "Mod - \"Burning Chrome\" exosuit modkit"
+	name = "Mod - \"Burning Chrome\" power armour modkit"
 	contains = list(/obj/item/device/kit/paint/flames_blue)
 
 /singleton/hierarchy/supply_pack/nonessent/exosuit_mod/military
-	name = "Mod - \"Guerilla\" exosuit modkit"
+	name = "Mod - \"Guerilla\" power armour modkit"
 	contains = list(/obj/item/device/kit/paint/camouflage)
 
 /singleton/hierarchy/supply_pack/nonessent/exosuit_mod/alpine
-	name = "Mod - \"Alpine\" exosuit modkit"
+	name = "Mod - \"Alpine\" power armour modkit"
 	contains = list(/obj/item/device/kit/paint/camouflage/forest)
 
 /singleton/hierarchy/supply_pack/nonessent/aromatherapy

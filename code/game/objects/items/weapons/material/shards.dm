@@ -6,7 +6,7 @@
 	sharp = TRUE
 	edge = TRUE
 	w_class = ITEM_SIZE_SMALL
-	max_force = 8
+	max_force = 25
 	force_multiplier = 0.12 // 6 with hardness 30 (glass)
 	thrown_force_multiplier = 0.4 // 4 with weight 15 (glass)
 	item_state = "shard-glass"
@@ -140,7 +140,7 @@
 	name = "shrapnel"
 	w_class = ITEM_SIZE_TINY
 	item_flags = EMPTY_BITFIELD
-	max_force = 4
+	max_force = 15
 	force_multiplier = 0.1
 	thrown_force_multiplier = 0.25
 	embed_chance = 20
@@ -169,7 +169,7 @@
 	icon_state = "caltrop"
 	default_material = MATERIAL_STEEL
 	item_flags = EMPTY_BITFIELD
-	max_force = 12
+	max_force = 15
 	thrown_force_multiplier = 0.3
 	step_sound = 'sound/obj/item/material/shard/caltrop.ogg'
 	embed_chance = 50
@@ -189,7 +189,7 @@
 	icon_state = "tack0"
 	w_class = ITEM_SIZE_TINY
 	default_material = MATERIAL_ALUMINIUM
-	max_force = 2
+	max_force = 12
 	step_sound = 'sound/obj/item/material/shard/tack.ogg'
 	embed_chance = 100
 	pierce_thin_footwear = FALSE

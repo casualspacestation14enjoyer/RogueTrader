@@ -21,9 +21,9 @@
 	natural_weapon = /obj/item/natural_weapon/claws/drake
 	var/obj/item/melee/whip/tail/tailwhip
 	natural_armor = list(
-		melee = ARMOR_MELEE_SMALL,
+		melee = ARMOR_MELEE_MINOR,
 		energy = ARMOR_ENERGY_SHIELDED,
-		laser = ARMOR_LASER_HEAVY,
+		laser = ARMOR_LASER_ASTARTES,
 		bomb = ARMOR_BOMB_SHIELDED
 	)
 	special_attack_cooldown = 80 SECONDS

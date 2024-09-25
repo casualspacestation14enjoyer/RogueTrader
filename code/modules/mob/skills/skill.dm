@@ -8,12 +8,16 @@ GLOBAL_LIST_EMPTY(skills)
 
    	// Names for different skill values, in order from 1 up.
 	var/levels = list( 		"Unskilled"			= "Unskilled Description",
-							"Basic"				= "Basic Description",
-							"Trained"			= "Trained Description",
-							"Experienced"		= "Experienced Description",
-							"Master"		= "Professional Description")
+						"Basic"				= "Basic Description",
+						"Trained"			= "Trained Description",
+						"Experienced"		= "Experienced Description",
+						"Master"			= "Professional Description",
+						"Legend"			= "Legend Description",
+						"Primaris"			= "Primaris Description",
+						"Demigod"			= "Demigod Description")
+
 	var/difficulty = SKILL_AVERAGE         //Used to compute how expensive the skill is
-	var/default_max = SKILL_TRAINED          //Makes the skill capped at this value in selection unless overriden at job level.
+	var/default_max = SKILL_MASTER          //Makes the skill capped at this value in selection unless overriden at job level.
 	var/prerequisites                      // A list of skill prerequisites, if needed.
 
 /singleton/hierarchy/skill/proc/get_cost(level)
@@ -22,6 +26,12 @@ GLOBAL_LIST_EMPTY(skills)
 			return difficulty
 		if(SKILL_EXPERIENCED, SKILL_MASTER)
 			return 2*difficulty
+		if(SKILL_LEGEND)
+			return 4*difficulty
+		if(SKILL_PRIMARIS)
+			return 5*difficulty
+		if(SKILL_DEMIGOD)
+			return 9*difficulty
 		else
 			return 0
 
@@ -78,133 +88,149 @@ GLOBAL_LIST_EMPTY(skills)
 // Category: Organizational
 
 /singleton/hierarchy/skill/organizational/bureaucracy
-	ID = "bureaucracy" // do not change ID's or it will fuckup refs like SKILL_BUREAUCRACY
+	ID = "bureaucracy" // do not change ID's on any skill ever.
 	name = "Statecraft"
-	desc = "Your ability to write and complete paperwork, navigate complex organiztions, and understand laws and regulations."
-	levels = list( "Unskilled"			= "You can usually fill out basic paperwork, if with a few errors. You have a vague understanding of the law, gleaned mostly from the news and personal experience.",
-						"Basic"				= "You are familiar with the paperwork needed to do your job, and can navigate it well. You have some understanding of the law as it applies to you and those around you.",
-						"Trained"			= "You can navigate most paperwork thrown at you, even if you are unfamiliar with it. You have a good working understanding of the law and any regulations or procedures relevant to you.",
-						"Experienced"		= "With your experience, you can easily create paperwork for any eventuality, and write reports which are clear and understandable. You have an excellent knowledge of the law, possibly including formal legal training.",
-						"Master"		= "You can make paperwork dance to your bidding, and navigate the most byzantine bureaucratic structures with ease and familiarity. Your reports are works of literature. Your knowledge of the law is both broad and intimate, and you may be certified to practice law.")
+	desc = "This skill represents your ability to navigate the vast, labyrinthine bureaucracies of the Imperium, manage paperwork, and understand the intricate web of laws and regulations that govern all aspects of Imperial life."
+	levels = list( "Unskilled"			= "You can usually fill out basic forms, though errors are common. Your understanding of Imperial law is vague at best, mostly based on hearsay or common knowledge.",
+						"Basic"				= "You are familiar with the paperwork required for your duties and can handle it with moderate efficiency. Your understanding of the Lex Imperialis is sufficient for everyday tasks.",
+						"Trained"			= "You can handle unfamiliar paperwork with ease and have a strong grasp of the laws and regulations pertinent to your role. You know how to navigate the cogitator-filled labyrinths of the Administratum.",
+						"Experienced"		= "With your experience, you can generate clear and detailed reports, and you know how to navigate even complex bureaucratic processes. Your knowledge of Imperial law may be backed by formal legal training, allowing you to manage legal affairs effectively.",
+						"Master"		= "You are a master of Imperial bureaucracy, capable of wielding paperwork as a tool to achieve your goals. Byzantine legal structures and red tape are no match for you. Your knowledge of Imperial law and regulations is vast, and you may even have the authority to represent noble houses or Imperial institutions in legal matters.")
 
 /singleton/hierarchy/skill/organizational/finance
 	ID = "finance"
 	name = "Stewardship"
-	desc = "Your ability to manage money and investments."
-	levels = list( "Unskilled"			= "Your understanding of money starts and ends with personal finance. While you are able to perform basic transactions, you get lost in the details, and can find yourself ripped off on occasion.<br>- You get some starting money. Its amount increases with level.<br>- You can use the verb \"Appraise\" to see the value of different objects.",
-						"Basic"				= "You have some limited understanding of financial transactions, and will generally be able to keep accurate records. You have little experience with investment, and managing large sums of money will likely go poorly for you.",
-						"Trained"			= "You are good at managing accounts, keeping records, and arranging transactions. You have some familiarity with mortgages, insurance, stocks, and bonds, but may be stumped when facing more complicated financial devices.",
-						"Experienced"		= "With your experience, you are familiar with any financial entities you may run across, and are a shrewd judge of value. More often than not, investments you make will pan out well.",
-						"Master"		= "You have an excellent knowledge of finance, will often make brilliant investments, and have an instinctive feel for interstellar economics. Financial instruments are weapons in your hands. You likely have professional experience in the finance industry.")
+	desc = "This skill covers your expertise in managing the vast resources of the Imperium, from personal wealth to administrating the finances of a planetary governor or noble house. It includes knowledge of trade, investment, and the economic engines of the Imperium."
+	levels = list( "Unskilled"			= "You have a basic grasp of personal finance, able to handle simple transactions, but you are easily confused by anything more complex. Occasionally, you may find yourself swindled.<br>- You receive some starting money. The amount increases with skill.<br>- You can use the 'Appraise' verb to assess the value of objects.",
+						"Basic"				= "You can manage basic financial transactions and keep reasonably accurate records, though complex investments and large sums can overwhelm you. Investment strategies are beyond your current expertise.",
+						"Trained"			= "You are competent in managing accounts, handling ledgers, and processing transactions. You have a working knowledge of bonds, loans, and trade deals, though advanced financial schemes may still trip you up.",
+						"Experienced"		= "You are familiar with most financial systems and entities, able to assess the value of assets with accuracy. Your investments are typically successful, and your judgment is trusted in financial dealings.",
+						"Master"		= "You are a financial master, capable of managing vast sums of Thrones with ease. Interstellar trade and complex financial instruments are like second nature to you. You make shrewd investments, often yielding significant returns, and likely have considerable experience managing the wealth of noble houses or Imperial institutions.")
 
 // Category: General
 
 /singleton/hierarchy/skill/general/EVA
 	ID = "EVA"
 	name = "Void Maneuvering"
-	desc = "This skill describes your skill and knowledge of space-suits and working in vacuum."
-	levels = list( "Unskilled"			= "You have basic safety training common to people who work in space: You know how to put on and seal your internals, and you can probably struggle into a space suit if you really need to, though you'll be clumsy at it. You're still prone to mistakes that may leave you trying to breathe vacuum.<br>- You can remove hardsuits. Its speed increases with level.<br>- You will always get floored when you enter gravity area from space. This chance decreases with level.<br>- You are likely to slip. This chance decreases with level.",
-						"Basic"				= "You have had thorough basic training in voidborn operations, and are unlikely to make novice mistakes. However, you have little experience working in vacuum.",
-						"Trained"			= "You can comfortably use a space suit and do so regularly in the course of your work. Checking your internals is second nature to you, and you don't panic in an emergency.<br>- You can fully operate jetpacks.",
-						"Experienced"		= "You can use all kinds of space suits, including specialized versions. Your years of experience in voidborn keep you from being disoriented in space, and you have experience using a jetpack to move around. <br>- You cannot slip anymore.",
-						"Master"		= "You are just as much at home in a vacuum as in atmosphere. You probably do your job almost entirely voidborn.<br>- You cannot get floored anymore.<br>- You get bonus speed in zero-G.")
+	desc = "Describes your knowledge and skill in operating space suits and surviving in the cold vacuum of space, essential for voidborn operations."
+	levels = list( "Unskilled"			= "You’ve received basic void safety training. You know how to seal your suit and use internals, though your movements in a void environment are clumsy. Mistakes are likely, and exposure to vacuum could be fatal.<br>- You can remove hardsuits. Speed improves with skill.<br>- You will always be floored when re-entering gravity from space. This chance decreases with skill.<br>- You are likely to slip. The chance reduces as you gain experience.",
+						"Basic"				= "You've undergone basic void operations training. Mistakes are uncommon, but your lack of hands-on experience still makes working in vacuum challenging.",
+						"Trained"			= "You’re comfortable using a space suit regularly and don’t panic in emergencies. Checking internals is instinctive, and you can navigate void environments with ease.<br>- You can fully operate jetpacks.",
+						"Experienced"		= "You’ve mastered the use of various space suits, including specialized models. Years of void experience have made you resistant to disorientation, and you maneuver expertly with a jetpack.<br>- You cannot slip anymore.",
+						"Master"		= "You are as comfortable in the void as you are in atmosphere. Zero-gravity operations are second nature to you.<br>- You no longer get floored when re-entering gravity.<br>- You gain bonus speed in zero-G.")
 
 /singleton/hierarchy/skill/general/EVA/mech
 	ID = "exosuit"
 	name = "Augmetic Armour Proficiency"
-	desc = "Allows you to operate exosuits well."
-	levels = list("Untrained" = "You are unfamiliar with exosuit controls, and if you attempt to use them you are liable to make mistakes.",
-		"Trained" = "You are proficient in exosuit operation and safety, and can use them without penalties.")
+	desc = "Describes your proficiency in operating exosuits and advanced mechanized armor, used in void combat or heavy labor."
+	levels = list( "Untrained"			= "You’re unfamiliar with exosuit controls. Using them would likely result in costly mistakes.",
+						"Trained"			= "You are proficient with exosuit operation, able to control them without penalties. Safety protocols and proper use are second nature.")
 	prerequisites = list(SKILL_EVA = SKILL_TRAINED)
-	default_max = SKILL_BASIC
-	difficulty = SKILL_AVERAGE
+	default_max = SKILL_TRAINED
+	difficulty = SKILL_TRAINED
 
 /singleton/hierarchy/skill/general/pilot
 	ID = "pilot"
 	name = "Helmsmanship"
-	desc = "Describes your experience and understanding of piloting spacecraft, from small and short-range pods to corvette sized vessels."
-	levels = list( "Unskilled"			= "You know what a spacecraft is, and you might have an abstract understanding of the differences between various ships. If your department is involved in the use of spacecraft, you know roughly what their capabilities are. You might be able to fly a spacecraft in a videogame. If you were to take the Helm of a smaller vessel, you might be able to move it with proper guidance.<br>- Travel time between tranisition decreases with level.<br>- You can fly ships but their movement might be randomized.<br>- The speed of your ship hitting carps will increase with level.",
-						"Basic"				= "You can pilot a small, short-range craft safely, but larger ships are out of your area of expertise. You are by no means an expert, and probably don't have much training. Skills of this level are typical for deck crew.<br>- You can operate small shuttlecraft without error.<br>- You can completely avoid meteors on slow speed while using tiny shuttlecrafts such as the GUP.",
-						"Trained"			= "You are a trained pilot, and can safely operate anything from a small craft to a corvette. You can spend extended periods of time piloting a spacecraft, and you're versed in the abilities of different ships, and what makes them function. You can do basic maintenance on smaller vessels, and perform most basic maneuvers. You can use armed spacecraft. You can make basic calculations relating to piloting. Skills of this level are typical for newer pilots. You have probably received formal piloting training.<br>- You can operate large ships without error.<br>- You can mostly avoid meteors on slow speed using any shuttlecrafts.",
-						"Experienced"		= "You are an experienced pilot, and can safely take the helm of many types of craft. You could probably live in a spacecraft, and you're very well versed in essentially everything related to space-faring vessels. Not only can you fly a ship, but you can perform difficult maneuvers, and make most calculations related to piloting a spacecraft. You can maintain a ship. Skills of this level are typical for very experienced pilots. You have received formal piloting training.<br>- You can somewhat avoid meteors on normal speed while using tiny shuttlecrafts.",
-						"Master"		= "Not only are you an exceptional pilot, but you have mastered peripheral functions such as stellar navigation and bluespace jump plotting. You have experience performing complex maneuvers, managing squadrons of small craft, and operating in hostile environments.<br>- You can mostly avoid meteors on normal speed using any shuttlecrafts.<br>- Less meteors will hit the ship while passing through meteor fields.")
+	desc = "Describes your experience piloting spacecraft, ranging from short-range shuttles to larger Imperial vessels like corvettes."
+	levels = list( "Unskilled"			= "You know the basics of spacecraft and can understand the different types, but have no practical experience piloting one. If you take the helm, you’ll need guidance to avoid disaster.<br>- Travel time decreases with skill.<br>- You can fly ships, but movement may be randomized.<br>- Ship collision with hazards increases as your skill improves.",
+						"Basic"				= "You can pilot small, short-range craft safely. You lack formal training, but you won’t make major mistakes on shuttle missions.<br>- You can operate small shuttlecraft without error.<br>- You can avoid meteors when moving slowly in small craft.",
+						"Trained"			= "You are a trained pilot, capable of flying larger vessels such as corvettes. You can perform basic maintenance and operate armed ships. Basic calculations for navigation are within your ability.<br>- You can fly large ships without error.<br>- You can mostly avoid meteors at slow speeds.",
+						"Experienced"		= "You are an experienced pilot, able to handle most spacecraft and complex maneuvers. You are well-versed in ship mechanics and can perform difficult piloting tasks with confidence.<br>- You can somewhat avoid meteors at normal speeds in small craft.",
+						"Master"		= "You are a master pilot, adept at navigating the dangers of space. Complex maneuvers and fleet coordination come naturally to you, and you can plot advanced bluespace jumps.<br>- You can mostly avoid meteors at normal speeds.<br>- Fewer meteors hit your ship while traversing meteor fields.")
 	difficulty = SKILL_AVERAGE
-	default_max = SKILL_TRAINED
+	default_max = SKILL_MASTER
 
 /singleton/hierarchy/skill/general/hauling
 	ID = "hauling"
 	name = "Vigor"
-	desc = "Your ability to perform tasks requiring great strength, dexterity, or endurance."
-	levels = list( "Unskilled"			= "You are not used to manual labor, tire easily, and are likely not in great shape. Extended heavy labor may be dangerous for you.<br>- You can pull objects but start to generate Lactate after tiring out. Your strength increases with level.<br>- You can throw objects. Their speed, thrown distance, and force increases with level.<br>- You can sprint, the stamina consumption rate is lowered with each level.<br>- You can leap by clicking on a distant target with grab intent, leap range is increased and chances of falling over are decreased with each level.",
-						"Basic"				= "You have some familiarity with manual labor, and are in reasonable physical shape. Tasks requiring great dexterity or strength may still elude you.<br>- You can throw \"huge\" items or normal-sized mobs without getting weakened.",
-						"Trained"			= "You have sufficient strength and dexterity for more strenuous tasks, and can perform physical labor for longer periods without tiring.",
-						"Experienced"		= "You likely have experience with heavy work in trying physical conditions, and are in excellent shape. You may visit the gym frequently.",
-						"Master"		= "You are in excellent shape. You're well-adapted to performing heavy physical labor, and may have requested extra PT.")
+	desc = "Represents your physical prowess in tasks requiring strength, dexterity, and endurance. Essential for soldiers, laborers, and anyone expected to endure grueling work."
+	levels = list( "Unskilled"			= "You tire quickly from manual labor and lack the physical conditioning required for strenuous tasks. Prolonged work could be dangerous for you.<br>- You can pull objects but will tire out quickly. Your strength improves with skill.<br>- You can throw objects, and their speed, distance, and force increase with skill.<br>- You can sprint, and stamina consumption decreases as your skill improves.<br>- You can leap at distant targets, with leap range and reduced chance of falling increasing with skill.",
+						"Basic"				= "You have some experience with physical labor and are in decent shape, but tasks requiring significant strength or endurance may still challenge you.<br>- You can throw large objects or people without being weakened.",
+						"Trained"			= "You have the strength and dexterity for strenuous tasks, capable of performing manual labor for extended periods without tiring.",
+						"Experienced"		= "You’re accustomed to physically demanding work and are in excellent shape. You may regularly engage in physical training or work in extreme conditions.",
+						"Master"		= "You are in peak physical condition, highly adapted to heavy labor or combat. Extended periods of intense physical work are no challenge for you.")
 
 /singleton/hierarchy/skill/general/computer
 	ID = "computer"
 	name = "Machine Lore"
-	desc = "Describes your understanding of cogitators, software and communication. Not a requirement for using cogitators, but definitely helps. Used in telecommunications and programming of cogitators and AIs."
-	levels = list( "Unskilled"			= "You know how to use the cogitators and communication devices that you grew up with. You can use a cogitator console, a handheld or wall-mounted radio, and your headset, as well as your PDA. You know what an AI is, but you may see them as either \"people made of silicon\" or \"only machines\"; you know they have to obey their laws, but you don't know much about how or why they work.",
-						"Basic"				= "You know the basics of programming, but you're not very good at it and couldn't do it professionally. You have a pretty good idea of what makes AIs tick. You understand how information is stored in a computer, and you can fix simple cogitator problems. You're computer-literate, but you still make mistakes. If you tried to subvert the AI, you might make mistakes in wording your new laws.<br>- The antagonist access decryption program has a chance to avoid tripping alarms and working more effectively. This increases with level.",
-						"Trained"			= "At this level, you're probably working with cogitators on a daily basis. You understand and can repair the telecommunications network. Your understanding of AI programming and psychology lets you fix problems with the AIs or cyborgs--or create problems, if you so desire. You can program cogitators and AIs and change their laws effectively.<br>- You can fully operate the Network Monitor, E-mail Administration, and AI Management Programs.",
-						"Experienced"		= "You have years of experience with cogitator networks, AI systems, telecommunications, and sysadmin tasks. You know the systems used on a daily basis intimately, and can diagnose complex problems.<br>- The antagonist dos program gives extra fake attacking nodes to the system log.<br>- You can use the command line on modular cogitators (type \"man\" for a list).",
-						"Master"		= "People are probably starting to wonder whether you might be a cogitator yourself. Cogitator code is your first language; you relate to AIs as easily as (probably more easily than) organics. You could build a telecommunications network from the ground up.")
+	desc = "Describes your knowledge of cogitators, sacred machine-spirits, and communication systems. While not required for basic cogitator use, this skill is essential for those maintaining telecommunications networks and programming within the Imperium. Handling AI is considered tech-heresy by the Adeptus Mechanicus, and is only done under strict Inquisitorial oversight."
+	levels = list( "Unskilled"			= "You can operate basic cogitators and use common communication devices, but anything beyond that eludes you. You understand simple machine-spirit functions, like radio use and PDA systems, but cogitators are more complex than you realize.<br>- Basic interaction with cogitators and radios.",
+						"Basic"				= "You know how to navigate cogitator systems and are familiar with basic machine-rites. You can handle minor repairs or program simple systems, but anything complex may lead to mistakes. Dealing with AIs is forbidden and dangerous.<br>- You can avoid triggering alarms when running unauthorized access programs, with a higher success rate as your skill improves.",
+						"Trained"			= "You regularly maintain cogitators and repair telecommunication systems, performing necessary rites to calm their machine-spirits. While knowledge of AI programming is dangerous, you understand enough to cautiously interact with them in extreme cases.<br>- You can fully operate Network Monitors, E-mail Administration, and system management programs.",
+						"Experienced"		= "You are adept with cogitator systems and have a deep understanding of telecommunication networks. Despite the Adeptus Mechanicus’ strictures, your knowledge of AI subversion and manipulation could be put to use in dire circumstances, though at great risk.<br>- Antagonist access programs can generate false logs to hide your activities.<br>- You can use advanced command lines on modular cogitators.",
+						"Master"		= "You are a master of machine-lore and can manipulate cogitators with ease, handling systems most dare not approach. You can work with forbidden AI systems, though such activities are tech-heresy and must be hidden from the Mechanicus. Your skill with cogitators allows you to design and construct entire networks from scratch, or breach the most guarded systems.<br>- Your ability to manipulate AI systems is unparalleled, though highly dangerous.")
 
 // Category: Service
 
 /singleton/hierarchy/skill/service/botany
 	ID = "botany"
 	name = "Botany"
-	desc = "Describes how good a character is at growing and maintaining plants."
-	levels = list( "Unskilled"			= "You know next to nothing about plants. While you can attempt to plant, weed, or harvest, you are just as likely to kill the plant instead.",
-						"Basic"				= "You've done some gardening. You can water, weed, fertilize, plant, and harvest, and you can recognize and deal with pests. You may be a hobby gardener.<br>- You can safely plant and weed normal plants.<br>- You can tell weeds and pests apart from each other.",
-						"Trained"			= "You are proficient at botany, and can grow plants for food or oxygen production. Your plants will generally survive and prosper. You know the basics of manipulating plant genes.<br>- You can safely plant and weed exotic plants.<br>- You can operate xenoflora machines. The sample's degradation decreases with skill level.",
-						"Experienced"		= "You're a botanist or farmer, capable of running a facility's hydroponics farms or doing botanical research. You are adept at creating custom hybrids and modified strains.",
-						"Master"		= "You're a specialized botanist. You can care for even the most exotic, fragile, or dangerous plants. You can use gene manipulation machinery with precision, and are often able to avoid the degradation of samples.")
+	desc = "Reflects your expertise in growing and maintaining plants, from food crops to xenoflora used in oxygen production or alchemical ingredients for the Imperium."
+	levels = list( "Unskilled"			= "You know next to nothing about plants. You might plant or harvest, but you're just as likely to kill the plant instead of tending to it.",
+						"Basic"				= "You’ve done basic gardening. You can water, weed, fertilize, and harvest crops, and recognize pests. You're likely growing food or oxygen for a small colony.<br>- You can safely plant and weed common plants.<br>- You can identify pests and weeds.",
+						"Trained"			= "You are skilled in botany, capable of growing food crops and oxygen-producing flora. You can work with more exotic plant species and manipulate their genes.<br>- You can safely plant and weed xenoflora.<br>- You can operate xenoflora machines. Sample degradation decreases with skill.",
+						"Experienced"		= "You are a botanist or agri-worker responsible for hydroponics systems or botanical research. You excel at hybridizing plants and creating custom strains for specialized purposes.",
+						"Master"		= "You are a master botanist, able to cultivate even the most exotic or dangerous flora. You can manipulate plant genes with precision, avoiding sample degradation, and grow life-sustaining crops for the Imperium's worlds.")
 
 /singleton/hierarchy/skill/service/cooking
 	ID = "cooking"
 	name = "Cooking"
-	desc = "Describes a character's skill at preparing meals and other consumable goods. This includes mixing alcoholic beverages."
-	levels = list( "Unskilled"			= "You barely know anything about cooking, and stick to vending machines when you can. The microwave is a device of black magic to you, and you avoid it when possible.",
-						"Basic"				= "You can make simple meals and do the cooking for your family. Things like spaghetti, grilled cheese, or simple mixed drinks are your usual fare.<br>- You can safely use the blender.",
-						"Trained"			= "You can make most meals while following instructions, and they generally turn out well. You have some experience with hosting, catering, and/or bartending.<br>- You can fully operate the drink dispensers.",
-						"Experienced"		= "You can cook professionally, keeping an entire crew fed easily. Your food is tasty and you don't have a problem with tricky or complicated dishes. You can be depended on to make just about any commonly-served drink.",
-						"Master"		= "Not only are you good at cooking and mixing drinks, but you can manage a kitchen staff and cater for special events. You can safely prepare exotic foods and drinks that would be poisonous if prepared incorrectly.")
+	desc = "Describes your skill in preparing meals and drinks for crew, soldiers, or even the aristocracy. This includes mixing alcohol and preparing exotic or hazardous foods."
+	levels = list( "Unskilled"			= "You know very little about cooking. You stick to ration packs or vending machines, and the microwave seems like forbidden tech.",
+						"Basic"				= "You can prepare simple meals and drinks, enough to keep yourself and others fed. Things like nutrient paste, simple stews, or basic mixed drinks are within your grasp.<br>- You can safely use the blender.",
+						"Trained"			= "You can follow most recipes and prepare standard meals for a crew or group. Your cooking is dependable, and you have some experience serving in mess halls or small gatherings.<br>- You can operate drink dispensers efficiently.",
+						"Experienced"		= "You are a professional cook, capable of feeding entire starship crews or garrisons. You can handle complicated recipes and drinks without issue, and your meals keep morale high.",
+						"Master"		= "You are a master chef, skilled at preparing exotic foods and drinks, even those that would be hazardous if done incorrectly. You can manage a large kitchen staff and cater for high-ranking Imperial officials or special events.")
 
 // Category: Security
 
 /singleton/hierarchy/skill/security/combat
 	ID = "combat"
 	name = "Blade Lore"
-	desc = "This skill describes your training in hand-to-hand combat or melee weapon usage. While expertise in this area is rare in the era of firearms, experts still exist among athletes."
-	levels = list( "Unskilled"			= "You can throw a punch or a kick, but it'll knock you off-balance. You're inexperienced and have probably never been in a serious hand-to-hand fight. In a fight, you might panic and run, grab whatever's nearby and blindly strike out with it, or (if the other guy is just as much of a beginner as you are) make a fool out of yourself.<br>- You can disarm, grab, and hit. Their success chance depends on the fighters' skill difference.<br>- The chance of falling over when tackled is reduced with level.",
-						"Basic"				= "You either have some experience with fistfights, or you have some training in a martial art. You can handle yourself if you really have to, and if you're a security officer, can handle a stun baton at least well enough to get the handcuffs onto a criminal.",
-						"Trained"			= "You have had close-combat training, and can easily defeat unskilled opponents. Close combat may not be your specialty, and you don't engage in it more than needed, but you know how to handle yourself in a fight.<br>- You can parry with weapons. This increases with level.<br>- You can do grab maneuvers (pinning, dislocating).<br>- You can grab targets when leaping at them and not fall over, if your species is able to do so.",
-						"Experienced"		= "You're good at hand-to-hand combat. You've trained explicitly in a martial art or as a close combatant as part of a military or enforcer unit. You can use weaponry competently and you can think strategically and quickly in a melee. You're in good shape and you spend time training.",
-						"Master"		= "You specialize in hand-to-hand combat. You're well-trained in a practical martial art, and in good shape. You spend a lot of time practicing. You can take on just about anyone, use just about any weapon, and usually come out on top. You may be a professional athlete or special forces member.")
+	default_max = SKILL_DEMIGOD
+	desc = "This skill covers your training in melee combat, from hand-to-hand fighting to the use of blades and other close-combat weapons. It determines your proficiency in parrying, attacking, and the damage dealt with martial weapons."
+	levels = list( "Unskilled"			= "You can throw a punch or swing a weapon, but you're uncoordinated and easily thrown off balance. Serious combat is beyond you, and panic or hesitation may take over.<br>- You can disarm, grab, and hit, but success depends on the skill gap.<br>- Your chance of falling over when tackled reduces with higher skill.",
+						"Basic"				= "You have some experience with fistfights or basic melee training. You can defend yourself if forced into a fight, and you can use simple weapons like a stun baton competently.",
+						"Trained"			= "You've undergone formal close-combat training, allowing you to handle most unskilled opponents. While melee combat isn't your focus, you know how to hold your own.<br>- You can parry with weapons, with success increasing at higher levels.<br>- You can execute grappling techniques like pinning and dislocating.<br>- You can leap into grabs without falling over, if your species allows.",
+						"Experienced"		= "You’re a capable combatant, trained in martial arts or as part of a military unit. You think quickly and act strategically in combat, and your familiarity with melee weapons is apparent.",
+						"Master"			= "You are a melee specialist, proficient in various martial techniques. Whether it’s with a blade, fist, or club, you fight with lethal precision, and regular training keeps you at the top of your game.",
+						"Legend"			= "Few can match your prowess in close combat. Your name is known in the Imperium, feared by your enemies. You parry and counterstrike with ruthless efficiency, facing down multiple foes with ease.<br>- You can disarm multiple opponents in one fluid motion.",
+						"Primaris"			= "You are beyond the capability of most mortals. Whether due to genetic augmentation or extraordinary skill, your reflexes and combat ability are nearly superhuman.<br>- You anticipate and counter attacks with near-perfect precision.",
+						"Demigod"			= "You are a living legend, a force of destruction on the battlefield. Be it Astartes, Eldar Exarch, or the finest of the Adeptus Custodes, only the greatest champions reach this level. Your power in combat is enough to turn the tide of a war.<br>- You are nearly unstoppable, with unmatched speed, strength, and ferocity.")
 
 /singleton/hierarchy/skill/security/combat/get_cost(level)
 	switch(level)
 		if(SKILL_BASIC)
 			return difficulty
-		if(SKILL_TRAINED, SKILL_EXPERIENCED)
+		if(SKILL_TRAINED)
 			return 2*difficulty
+		if(SKILL_EXPERIENCED)
+			return 3*difficulty
 		if(SKILL_MASTER)
 			return 4*difficulty
+		if(SKILL_LEGEND)
+			return 5*difficulty
+		if(SKILL_PRIMARIS)
+			return 10*difficulty
+		if(SKILL_DEMIGOD)
+			return 16*difficulty
 		else
 			return 0
 
 /singleton/hierarchy/skill/security/weapons
 	ID = "weapons"
 	name = "Gun Lore"
-	desc = "This skill describes your expertise with and knowledge of weapons. A low level in this skill implies knowledge of simple weapons, for example flashes. A high level in this skill implies knowledge of complex weapons, such as unconfigured grenades, riot shields, pulse rifles or bombs. A low-medium level in this skill is typical for security officers, a high level of this skill is typical for special agents and soldiers."
-	levels = list( "Unskilled"			= "You know how to recognize a weapon when you see one. You can point a gun and shoot it, though results vary wildly. You might forget the safety, you can't control burst recoil well, and you don't have trained reflexes for gun fighting.<br>- You might fire your weapon randomly.",
-						"Basic"				= "You know how to handle weapons safely, and you're comfortable using simple weapons. Your aim is decent and you can usually be trusted not to do anything stupid with a weapon you are familiar with, but your training isn't automatic yet and your performance will degrade in high-stress situations.<br>- You can use firearms. Their accuracy and spread depend on your skill level.",
-						"Trained"			= "You have had extensive weapons training, or have used weapons in combat. Your aim is better now. You are familiar with most types of weapons and can use them in a pinch. You have an understanding of tactics, and can be trusted to stay calm under fire. You may have military or enforcer experience and you probably carry a weapon on the job.<br>-You have a chance to automatically unsafety a gun when firing on harm intent.",
-						"Experienced"		= "You've used firearms and other ranged weapons in high-stress situations, and your skills have become automatic. Your aim is good.<br>-You will automatically unsafety a gun when firing it on harm intent.<br>-You can perform tactical and speed reloads. The time taken decreases with level.",
-						"Master"		= "You are an exceptional shot with a variety of weapons, from simple to exotic. You use a weapon as naturally as though it were a part of your own body. You may be a sniper or special forces operator of some kind.<br>- You get extra accuracy for sniper rifles.<br>- You automatically eject shells from bolt-action firearms.")
+	default_max = SKILL_DEMIGOD
+	desc = "This skill reflects your expertise with a variety of weapons used across the Imperium. A low level implies basic knowledge of common firearms or melee tools, while a high level grants proficiency with advanced weapons such as pulse rifles, bolt weapons, and unconfigured grenades. Special agents, soldiers, and Adeptus Astartes excel in this skill."
+	levels = list( "Unskilled"			= "You can recognize a weapon and pull the trigger, but your aim is erratic. Recoil control and weapon handling are foreign concepts, and you may forget basic safety protocols.<br>- You might fire your weapon randomly.",
+						"Basic"				= "You can handle weapons safely and use simple firearms or close combat weapons. Your aim is fair, but stress can cause mistakes. You’re comfortable with lasguns and autoguns, though not yet instinctive.<br>- You can use firearms, but their accuracy and spread are tied to your skill.",
+						"Trained"			= "You have formal weapons training or real combat experience. Your aim and weapon handling are reliable, and you can operate most standard Imperial weapons. Under fire, you keep your composure, executing trained combat reflexes.<br>- You have a chance to automatically unsafety your weapon in combat.",
+						"Experienced"		= "Your experience in combat situations has refined your skills. Your handling of firearms is instinctive, and you can adapt to various ranged weapons quickly. Tactical reloads and firing under pressure are second nature.<br>- You will automatically unsafety weapons when firing.<br>- You can perform speed reloads, with time decreasing as your skill improves.",
+						"Master"		= "You are highly skilled, with exceptional accuracy and weapon control. Whether it's a lasgun, bolter, or plasma weapon, your shots are deadly precise. Advanced tactics and sniper techniques are well within your repertoire.<br>- You gain additional accuracy with sniper rifles.<br>- You can automatically eject shells from bolt-action weapons.",
+						"Legend"			= "Your proficiency with firearms is legendary. Every shot you take is calculated and hits with lethal precision, even under the most difficult conditions. Few can match your combat prowess.<br>- You have pinpoint accuracy with all ranged weapons.",
+						"Primaris"			= "You have ascended beyond mortal limits, either through genetic augmentation or countless years of combat. Your aim is flawless, and your understanding of firearms is unrivaled across the Imperium.<br>- Your shots never miss, and you can master any weapon placed in your hands.",
+						"Demigod"			= "Your mastery of ranged combat is mythic, bending the will of battle itself. You control the battlefield with surgical precision, capable of shifting the outcome of entire engagements with your skill.<br>- Your shots are near-perfect, and your presence in combat is overwhelming.")
 
 /singleton/hierarchy/skill/security/weapons/get_cost(level)
 	switch(level)
@@ -216,18 +242,24 @@ GLOBAL_LIST_EMPTY(skills)
 			return 3*difficulty
 		if(SKILL_MASTER)
 			return 4*difficulty
+		if(SKILL_LEGEND)
+			return 5*difficulty
+		if(SKILL_PRIMARIS)
+			return 8*difficulty
+		if(SKILL_DEMIGOD)
+			return 14*difficulty
 		else
 			return 0
 
 /singleton/hierarchy/skill/security/forensics
 	ID = "forensics"
 	name = "Mortis Investigation"
-	desc = "Describes your skill at performing forensic examinations and identifying vital evidence. Does not cover analytical abilities, and as such isn't the only indicator for your investigation skill. Note that in order to perform autopsy, the surgery skill is also required."
-	levels = list( "Unskilled"			= "You know that investigators solve crimes. You may have some idea that it's bad to contaminate a crime scene, but you're not too clear on the details.",
-						"Basic"				= "You know how to avoid contaminating a crime scene. You know how to bag the evidence without contaminating it unduly.",
-						"Trained"			= "You are trained in collecting forensic evidence - fibers, fingerprints, the works. You know how autopsies are done, and might've assisted performing one.<br>- You can more easily detect fingerprints.<br>- You no longer contaminate evidence.",
-						"Experienced"		= "You're a pathologist, or investigator. You've seen your share of bizarre cases, and spent a lot of time putting pieces of forensic puzzle together, so you're faster now.<br>- You can notice additional details upon examining, such as fibers, partial prints, and gunshot residue.",
-						"Master"		= "You're a big name in forensic science. You might be an investigator who cracked a famous case, or you published papers on new methods of forensics. Either way, if there's a forensic trail, you will find it, period.<br>- You can notice traces of wiped off blood.")
+	desc = "Describes your skill at performing forensic examinations and uncovering critical evidence in the grim reality of the Imperium. Conducting autopsies requires surgical skill."
+	levels = list( "Unskilled"			= "You know that Arbites or Inquisitors investigate crimes, but the intricate details are beyond you. Contaminating a scene seems bad, though you're unclear on the specifics.",
+						"Basic"				= "You can collect evidence carefully, understanding the importance of preserving a scene. You’ve likely been involved in basic investigations or assisted in battlefield operations.",
+						"Trained"			= "You are adept at identifying key forensic details—fibers, fingerprints, and blood spatter. You've worked in high-pressure environments, examining scenes under duress.<br>- You can easily detect fingerprints.<br>- You no longer risk contaminating evidence.",
+						"Experienced"		= "With significant experience in investigations, you can uncover obscure evidence like partial prints, xenos spore traces, or ballistic residues. Your eye for detail is honed to a razor’s edge.",
+						"Master"		= "Your expertise in forensics is unmatched. Whether in the field or working for a major investigatory body, you leave no stone unturned. Forensic trails yield to your skill, even hidden blood stains cannot escape your scrutiny.")
 
 
 /singleton/hierarchy/skill/security/forensics/get_cost(level)
@@ -244,43 +276,43 @@ GLOBAL_LIST_EMPTY(skills)
 /singleton/hierarchy/skill/engineering/construction
 	ID = "construction"
 	name = "Fabrication"
-	desc = "Your ability to construct various buildings, such as walls, floors, tables and so on. Note that constructing devices such as APCs additionally requires the Electronics skill. A low level of this skill is typical for janitors, a high level of this skill is typical for engineers."
-	levels = list( "Unskilled"			= "You can break furniture, disassemble chairs and tables, bash your way through a window, open a crate, or pry open an unpowered airlock. You can recognize and use basic hand tools and inflatable barriers, though not very well.<br>- You can attempt to construct items above your skill level, success chance increases with level.",
-						"Basic"				= "You can dismantle or build a wall or window, redecorate a room, and replace floor tiles and carpeting. You can safely use a welder without burning your eyes, and using hand tools is second nature to you.<br>- You can construct items from Steel, Wood and Plastic.<br>- You can examine certain circuit boards to learn more about the machines they're used to build.",
-						"Trained"			= "You can build, repair, or dismantle most things, but will occasionally make mistakes and have things not come out the way you expected.<br>- You can construct items from Bronze, Gold, Ceramite, Plasteel, Platinum, Reinforced Glass, Sandstone, Silver, Deuterium, Metallic Hydrogen, Phoron, Phoron Glass, Tritium, and Uranium.<br>- You can construct furnitures.<br>- You can construct simple objects such as light fixtures, crude weapons, and wall-mounted frames.<br>- You can safely use the plasmacutter to deconstruct structures.<br>- You can examine machines to learn more about them.<br>- You can examine machine circuit boards to see a list of parts needed to build that machine.",
-						"Experienced"		= "You know how to seal a breach, rebuild broken piping, and repair major damage. You know the basics of structural engineering.<br>- You can construct items from ceramite-carbide Plasteel, Titanium, Diamond and make complex objects such as machine and weapon frames.",
-						"Master"		= "You are a construction worker or engineer. You could pretty much rebuild the installation or ship from the ground up, given supplies, and you're efficient and skilled at repairing damage.")
+	desc = "Your ability to construct various fortifications, including barricades, bulkheads, and hab furnishings. Complex devices, such as power generators or void shields, require additional expertise in sacred technologies, typically the domain of the Adeptus Mechanicus. A low level of this skill is common among servitors and menials, while higher levels are expected from Imperial engineers and Tech-Priests."
+	levels = list( "Unskilled"			= "You can dismantle furniture, tear down makeshift defenses, pry open malfunctioning airlocks, and handle basic tools with minimal skill.<br>- You can attempt to construct items beyond your expertise, relying on improvisation.",
+						"Basic"				= "You can assemble basic defenses like barricades, repair minor breaches, and lay hab flooring. You handle standard tools safely, such as a las-cutter.<br>- You can construct items from steel, ferrocrete, and wood.<br>- You can inspect simple tech-prayers on circuit boards to understand basic machine functions.",
+						"Trained"			= "You can reliably build, repair, and dismantle standard Imperial structures, though occasional errors may occur. You handle more advanced materials and tasks.<br>- You can construct items from Ceramite, Plasteel, and Adamantium.<br>- You can safely use a melta-cutter to deconstruct reinforced structures.<br>- You can inspect complex circuit boards to understand necessary components.",
+						"Experienced"		= "You can repair starship hull breaches, reroute power conduits, and manage structural repairs in hives or spires. You are proficient with advanced materials.<br>- You can fabricate complex parts such as weapon assemblies and components housing machine spirits.",
+						"Master"		= "You are a master Imperial engineer or Tech-Priest, capable of rebuilding entire installations or voidships with remarkable precision. Your ability to repair battle damage and rebuild critical systems is unrivaled.")
 	difficulty = SKILL_EASY
 
 /singleton/hierarchy/skill/engineering/electrical
 	ID = "electrical"
 	name = "Electro Arcana"
-	desc = "This skill describes your knowledge of electronics and the underlying physics. A low level of this skill implies you know how to lay out wiring and configure powernets, a high level of this skill is required for working complex electronic devices such as circuits or bots."
-	levels = list( "Unskilled"			= "You know that electrical wires are dangerous and getting shocked is bad; you can see and report electrical malfunctions such as broken wires or malfunctioning APCs. You can change a light bulb, and you know how to replace a battery or charge up the equipment you normally use.<br>- Every time you open the hacking panel, wires are randomized.<br>- Every time you pulse a wire, there is a chance you pulse a different one.<br>- Every time you cut a wire, there is a chance you cut/mend extra ones.<br>- You can misconnect remote signalling devices.",
-						"Basic"				= "You can do basic wiring; you can lay cable for solars or the engine. You can repair broken wiring and build simple electrical equipment like light fixtures or APCs. You know the basics of circuits and understand how to protect yourself from electrical shock. You can probably hack a vending machine.<br>- Every time you open the hacking panel, some wires might be duplicated.",
-						"Trained"			= "You can repair and build electrical equipment and do so on a regular basis. You can troubleshoot an electrical system and monitor the installation power grid. You can probably hack an airlock.<br>- You can safely hack machines.",
-						"Experienced"		= "You can repair, build, and diagnose any electrical devices with ease. You know your way around APCs, SMES units, and monitoring software, and take apart or hack most objects.<br>- You can safely place remote signaling devices.<br>- You can examine one or two wires on the hacking panel.",
-						"Master"		= "You are an electrical engineer or the equivalent. You can design, upgrade, and modify electrical equipment and you are good at maximizing the efficiency of your power network. You can hack anything on the installation you can deal with power outages and electrical problems easily and efficiently.<br>- You can examine most wires on the hacking panel.")
+	desc = "Describes your knowledge of sacred circuitry and the arcane rites required to appease machine spirits and maintain Imperial electronics."
+	levels = list( "Unskilled"			= "You know that electricity is dangerous and can identify obvious malfunctions, but fixing them requires help from a skilled technician.<br>- Wires shift unpredictably when accessing machine panels.",
+						"Basic"				= "You can perform basic wiring and repairs, using tools like plasma generators or printers. You're careful enough to avoid major mistakes.<br>- Some wires may be duplicated in hacking panels.",
+						"Trained"			= "You can confidently build and repair electrical systems, troubleshooting engine issues and managing power grids. Machine spirits respond well to your touch.<br>- You can hack machines safely.",
+						"Experienced"		= "You handle complex electrical systems and advanced tech like APCs and monitoring systems. Diagnosing electrical issues is second nature.<br>- You can place remote signaling devices.",
+						"Master"		= "You are a master of arcane electronics, capable of designing and modifying systems. You handle even singularities and high-tech devices like void shields with ease.<br>- You can examine most wires in hacking panels.")
 
 /singleton/hierarchy/skill/engineering/atmos
 	ID = "atmos"
 	name = "Aethiric Systems"
-	desc = "Describes your knowledge of piping, air distribution and gas dynamics."
-	levels = list( "Unskilled"			= "You know that the air monitors flash orange when the air is bad and red when it's deadly. You know that a flashing fire door means danger on the other side. You know that some gases are poisonous, that pressure has to be kept in a safe range, and that most creatures need oxygen to live. You can use a fire extinguisher or deploy an inflatable barrier.<br>- RPD may give out random pipes, chance decreases with levels. <br>- You cannot recompress pipes with the RPD.",
-						"Basic"				= "You know how to read an air monitor, how to use an air pump, how to analyze the atmosphere in a space, and how to help seal a breach. You can lay piping and work with gas tanks and canisters. If you work with the engine, you can set up the cooling system. You can use a fire extinguisher easily and place inflatable barriers so that they allow convenient access and airtight breach containment.<br>- You can recompress pipes with the RPD.",
-						"Trained"			= "You can run the atmospherics system. You know how to monitor the air quality across the installation detect problems, and fix them. You're trained in dealing with fires, breaches, and gas leaks, and may have exosuit or fire gear training.<br>- You can use the RPD safely.",
-						"Experienced"		= "Your atmospherics experience lets you find, diagnose, and fix breaches efficiently. You can manage complex atmospherics systems without fear of making mistakes, and are proficient with all monitoring and pumping equipment at your disposal.<br>- You can dispense a larger selection of pipes from the RPD.",
-						"Master"		= "You are an atmospherics specialist. You monitor, modify, and optimize the installation atmospherics system, and you can quickly and easily deal with emergencies. You can modify atmospherics systems to do pretty much whatever you want them to. You can easily handle a fire or breach, and are proficient at securing an area and rescuing civilians, but you're equally likely to have simply prevented it from happening in the first place.")
+	desc = "Describes your knowledge of atmospheric control, piping, and gas dynamics aboard Imperial installations."
+	levels = list( "Unskilled"			= "You understand the basics—red monitors mean lethal atmosphere, and some gases are toxic. You can use basic safety tools like fire extinguishers and inflatable barriers.<br>- RPD dispenses random pipes, decreasing with skill.",
+						"Basic"				= "You can read air monitors, handle piping, and manage gas tanks. You understand pressure management and can seal breaches with competence.<br>- You can recompress pipes with the RPD.",
+						"Trained"			= "You manage atmospheric systems efficiently, able to detect and resolve issues like gas leaks and breaches. Your skill keeps installations running smoothly.<br>- You can use the RPD safely.",
+						"Experienced"		= "You can handle complex atmospherics, diagnosing issues quickly. Breaches, fires, and gas leaks are resolved with speed and precision.<br>- You can dispense a larger selection of pipes from the RPD.",
+						"Master"		= "You can modify and optimize atmospheric systems to suit any environment. Emergencies like fires or depressurization are no match for your expertise, and you're known for preventing disasters before they occur.")
 
 /singleton/hierarchy/skill/engineering/engines
 	ID = "engines"
 	name = "Astro Engineering"
-	desc = "Describes your knowledge of the various engine types common on space stations, such as the PACMAN, singularity, supermatter or RUST engine."
-	levels = list( "Unskilled"			= "You know that \"delamination\" is a bad thing and that you should stay away from the singularity. You know the engine provides power, but you're unclear on the specifics. If you were to try to set up the engine, you would need someone to talk you through every detail--and even then, you'd probably make deadly mistakes.<br>- You can read the SM monitor readings with 40% error. This decreases with level.",
-						"Basic"				= "You know the basic theoretical principles of engine operation. You can try to set up the engine by yourself, but you are likely to need some assistance and supervision, otherwise you are likely to make mistakes. You are fully capable of running a PACMAN-type generator.",
-						"Trained"			= "You can set up the engine, and you probably won't botch it up too badly. You know how to protect yourself from radiation in the engine room. You can read the engine monitors and keep the engine going. An engine malfunction may stump you, but you can probably work out how to fix it... let's just hope you do so quickly enough to prevent serious damage.<br>- You can fully read the SM monitor readings.",
-						"Experienced"		= "You have years of experience with engines, and can set them up quickly and reliably. You're familiar with engine types other than the one you work with.<br>- You can examine the SM directly for its integrity.",
-						"Master"		= "Your engine is your baby and you know every minute detail of its workings. You can optimize the engine and you probably have your own favorite custom setup. You could build an engine from the ground up. When things go wrong, you know exactly what has happened and how to fix the problem. You can safely handle singularities and supermatter.<br>- You can examine the SM directly for an approximate number of its EER.")
+	desc = "Describes your understanding of the sacred engines that power voidships and space stations, such as plasma reactors, singularity drives, or warp cores."
+	levels = list( "Unskilled"			= "You understand that engine malfunctions are catastrophic, but beyond that, the technology is largely a mystery. Setting up an engine without guidance would result in fatal mistakes.<br>- You read engine monitors with a 40% error rate. This decreases with skill.",
+						"Basic"				= "You understand the core principles of engine operation and can maintain simpler systems like plasma reactors. Mistakes are still possible, but you can handle basic tasks.",
+						"Trained"			= "You can manage engines confidently, ensuring they operate smoothly. You're familiar with radiation shielding and can handle minor malfunctions on your own.<br>- You can fully read plasma reactor and gravitic singularity monitors.",
+						"Experienced"		= "You’ve honed your skills across various engines and systems, setting them up quickly and reliably. You can troubleshoot advanced problems without oversight.<br>- You can assess the integrity of singularities directly.",
+						"Master"		= "The engine is your domain, and you understand every nuance of its operation. You can optimize or rebuild engines from scratch, handling even singularities and warp cores with ease.")
 	difficulty = SKILL_HARD
 
 // Category: Research
@@ -288,51 +320,51 @@ GLOBAL_LIST_EMPTY(skills)
 /singleton/hierarchy/skill/research/devices
 	ID = "devices"
 	name = "Tech Devices"
-	desc = "Describes the ability to assemble complex devices, such as cogitators, circuits, printers, robots or gas tank assemblies (bombs). Note that if a device requires electronics or programming, those skills are also required in addition to this skill."
-	levels = list( "Unskilled"			= "You know how to use the technology that was present in whatever society you grew up in. You know how to tell when something is malfunctioning, but you have to call tech support to get it fixed.",
-						"Basic"				= "You use and repair high-tech equipment in the course of your daily work. You can fix simple problems, and you know how to use a circuit printer or autolathe. You can build simple robots such as cleanbots and medibots.",
-						"Trained"			= "You can build or repair an exosuit or cyborg chassis, use a protolathe and destructive analyzer, and build prosthetic limbs. You can safely transfer an MMI or posibrain into a cyborg chassis.<br>- You can attach robotic limbs. Its speed increases with level.<br>- You can perform cybernetics procedures if you have Trained Anatomy skill.",
-						"Experienced"		= "You have years of experience building or reverse-engineering complex devices. Your use of the lathes and destructive analyzers is efficient and methodical. You can design contraptions to order, and likely sell those designs at a profit.",
-						"Master"		= "You are an inventor or researcher. You can design, build, and modify equipment that most people don't even know exists. You are at home in the lab and the workshop and you've never met a gadget you couldn't take apart, put back together, and replicate.")
+	desc = "Describes your ability to assemble and repair complex devices, such as cogitators, servitors, and advanced machine spirits."
+	levels = list( "Unskilled"			= "You understand basic technology use but must rely on others to fix malfunctions. Advanced repairs are beyond you.",
+						"Basic"				= "You can repair simple technology and construct basic servitors or cogitators. You’re comfortable with standard equipment and can resolve minor issues without help.",
+						"Trained"			= "You are skilled in constructing or repairing servitors and exosuits. You can handle advanced tech like augmetics and mind-machine interfacing (MMI) safely.<br>- You can attach robotic limbs and perform basic cybernetics if trained in Anatomy.",
+						"Experienced"		= "You’ve built and reverse-engineered complex machines. You’re proficient with advanced lathes and analyzers, designing custom devices for specific needs.",
+						"Master"		= "You are a master of techcraft, able to design, build, and modify machinery to your will. No machine spirit is beyond your understanding, and you can repair even the most advanced devices with ease.")
 
 /singleton/hierarchy/skill/research/science
 	ID = "science"
 	name = "Data Scrutiny"
-	desc = "Your experience and knowledge with mechanicus methods and processes."
-	levels = list( "Unskilled"			= "You know what science is and probably have a vague idea of the mechanicus method from your scholam science classes.",
-						"Basic"				= "You keep up with mechanicus discoveries. You know a little about most fields of research. You've learned basic laboratory skills. You may read about science as a hobby; or you may be working in a field related to science and have learned about science that way. You could design a simple experiment.<br>- You can determine the presence of flora, fauna, and an atmosphere when scanning exoplanets.",
-						"Trained"			= "You are a researcher, perhaps a graduate student or post-graduate researcher. You can design an experiment, analyze your results, publish your data, and integrate what you've learned with the research of other scientists. Your laboratory skills are reliable, and you know how to find information you need when you research a new mechanicus topic. You can dissect exotic xenofauna without many issues.<br>- You can determine the composition of an atmosphere when scanning exoplanets.<br>- You can determine the number of artificial structures when scanning exoplanets.<br>- You can successfully perform surgery on slimes.",
-						"Experienced"		= "You are a junior researcher. You can formulate your own questions, use the tools at hand to test your hypotheses, and investigate entirely new phenomena. You likely have a track record of success in publishing your conclusions and attracting funding.",
-						"Master"		= "You are a professional researcher, and you have made multiple new discoveries in your field. Your experiments are well-designed. You are known as an authority in your specialty and your papers often appear in prestigious journals. You may be coordinating the research efforts of a team of scientists, and likely know how to make your findings appealing to investors.")
+	desc = "Describes your ability to analyze data using the sacred processes and methodologies of the Adeptus Mechanicus."
+	levels = list( "Unskilled"			= "You understand basic science and have heard of the Mechanicus' methods from scholam teachings. True understanding of their practices remains distant.",
+						"Basic"				= "You follow Mechanicus discoveries and have a broad understanding of Imperial research. Your laboratory skills are sufficient to design simple experiments.<br>- You can detect flora, fauna, and atmosphere when scanning exoplanets.",
+						"Trained"			= "You are skilled in research, designing experiments, and analyzing data. You can work with Mechanicus technologies and dissect xenofauna with care.<br>- You can determine atmospheric composition and detect artificial structures on exoplanets.<br>- You can perform surgery on xeno slimes.",
+						"Experienced"		= "Your experience allows you to formulate research questions and investigate unknown phenomena. You consistently publish valuable findings.",
+						"Master"		= "You are a recognized authority in your field, coordinating research teams and making significant discoveries. Your research attracts attention from influential Imperial figures.")
 
 // Category: Medical
 
 /singleton/hierarchy/skill/medical/medical
 	ID = "medical"
 	name = "Medicae"
-	desc = "Covers an understanding of the human body and medicine. At a low level, this skill gives a basic understanding of applying common types of medicine, and a rough understanding of medical devices like the health analyzer. At a high level, this skill grants exact knowledge of all the medicine available on the installation, as well as the ability to use complex medical devices like the body scanner or mass spectrometer."
-	levels = list( "Unskilled"			= "You know first aid, such as how to apply a bandage or ointment to an injury. You can use an autoinjector designed for civilian use, probably by reading the directions printed on it. You can tell when someone is badly hurt and needs a medicae; you can see whether someone has a badly broken bone, is having trouble breathing, or is unconscious. You may have trouble telling the difference between unconscious and dead at distance.<br>- You can use first aid supplies found in kits and pouches, including autoinjectors.",
-						"Basic"				= "You've taken a Militarum Medicae course. You can stop bleeding, do CPR, apply a splint, take someone's pulse, apply trauma and burn treatments, and read a handheld health scanner. You probably know that Nexros helps poisoning and Dexalin helps people with breathing problems; you can use a syringe or start an IV. You've been briefed on the symptoms of common emergencies like a punctured lung, appendicitis, alcohol poisoning, or broken bones, and though you can't treat them, you know that they need a medicae's attention. You can recognize most emergencies as emergencies and safely stabilize and transport a patient.<br>- You can fully operate Defibrillators, Health Analyzers, IV drips, and Syringes.<br>- You can comprehend most of a Body Scanner's readout.",
-						"Trained"			= "You are an experienced Medicae, an experienced healer, or a medical resident. You know how to treat most illnesses and injuries, though exotic illnesses and unusual injuries may still stump you. You have probably begun to specialize in some sub-field of medicine. In emergencies, you can think fast enough to keep your patients alive, and even when you can't treat a patient, you know how to find someone who can. You can use a full-body scanner, and you know something's off about a patient with an alien parasite or cortical borer.<br>- You can fully operate Sleepers and Body Scanners.<br>- You can apply splints without failing.<br>- You can perform simple surgery steps if you have Experienced Anatomy skill.",
-						"Experienced"		= "You are a senior healer or medicae, or a practicing medicae. You know how to use all of the medical devices available to treat a patient. Your deep knowledge of the body and medications will let you diagnose and come up with a course of treatment for most ailments. You can perform a full-body scan thoroughly and find important information.<br>- You can perform all surgery steps safely if you have Experienced Anatomy skill.",
-						"Master"		= "You are an experienced medicae or an expert healer or Medicae. You've seen almost everything there is to see when it comes to injuries and illness and even when it comes to something you haven't seen, you can apply your wide knowledge base to put together a treatment. In a pinch, you can do just about any medicine-related task, but your specialty, whatever it may be, is where you really shine.")
+	desc = "Covers your knowledge of human anatomy and battlefield medicine. At lower levels, this skill offers basic understanding of common treatments and medical devices, while higher levels allow mastery of advanced medical technologies, such as body scanners or gene-sequencers. Vital in any warzone or hive sprawl, Medicae skills keep the Emperor's forces fighting."
+	levels = list( "Unskilled"			= "You can apply basic first aid—bandages, ointments, and autoinjectors. You know when someone needs a medicae but might struggle to distinguish between unconscious and dead at a glance.<br>- You can use basic first aid supplies, including autoinjectors.",
+						"Basic"				= "You’ve completed Militarum Medicae training. You can stop bleeding, perform CPR, apply splints, and handle basic medical tools. You understand basic emergency treatments and can stabilize a patient.<br>- You can use Health Analyzers, Defibrillators, IVs, and Syringes.<br>- You can interpret Body Scanner readouts with limited accuracy.",
+						"Trained"			= "You are an experienced Medicae, capable of treating most battlefield injuries and illnesses. Your quick thinking in emergencies keeps patients alive. You can use complex medical devices and recognize alien infections.<br>- You can operate Sleepers and Body Scanners with confidence.<br>- You can perform basic surgery if you also have Trained Anatomy.",
+						"Experienced"		= "As a senior Medicae, you can diagnose and treat a wide range of injuries and illnesses. You’re adept at using all medical equipment, and no scanner reading escapes your notice.<br>- You can safely perform all surgical steps with Experienced Anatomy.",
+						"Master"		= "You are an expert Medicae, having seen nearly every injury and illness imaginable. Your skill with medicine is unparalleled, and in emergencies, you can handle nearly any medical task—even under extreme pressure.")
 
 /singleton/hierarchy/skill/medical/anatomy
 	ID = "anatomy"
 	name = "Biologis-Vitalis"
-	desc = "Gives you a detailed insight of the human body. A high skill in this is required to perform surgery. This skill may also help in examining alien biology."
-	levels = list( "Unskilled"			= "You know what organs, bones, and such are, and you know roughly where they are. You know that someone who's badly hurt or sick may need surgery.",
-						"Basic"				= "You've taken an anatomy class and you've spent at least some time poking around inside actual people. You know where everything is, more or less. You could assist in surgery, if you have the required medical skills. If you have the forensics knowledge, you could perform an autopsy. If you really had to, you could probably perform basic surgery such as an appendectomy, but you're not yet a qualified surgeon and you really shouldn't--not unless it's an emergency. If you're a xenobiologist, you know how to take out slime cores.",
-						"Trained"			= "You have some training in anatomy. Diagnosing broken bones, damaged ligaments, shrapnel wounds, and other trauma is straightforward for you. You can splint limbs with a good chance of success, operate a defibrillator competently, and perform CPR well. Surgery is still outside your training.<br>- You can do surgery (requires Trained Medicine skill too) but you are very likely to fail at every step. Its speed increases with level.<br>- You can perform cybernethics procedures if you have Trained Complex Devices skill.",
-						"Experienced"		= "You're a surgical resident, or an experienced medical medicae. You can put together broken bones, fix a damaged lung, patch up a liver, or remove an appendix without problems. But tricky surgeries, with an unstable patient or delicate manipulation of vital organs like the heart and brain, are at the edge of your ability, and you prefer to leave them to specialized surgeons. You can recognize when someone's anatomy is noticeably unusual. You're trained in working with several species, but you're probably better at surgery on your own species.<br>- You can do all surgery steps safely, if you have Experienced Medicine skill too.",
-						"Master"		= "You are an experienced surgeon. You can handle anything that gets rolled, pushed, or dragged into the OR, and you can keep a patient alive and stable even if there's no one to assist you. You can handle severe trauma cases or multiple organ failure, repair brain damage, and perform heart surgery. By now, you've probably specialized in one field, where you may have made new contributions to surgical technique. You can detect even small variations in the anatomy of a patient--even a changeling probably wouldn't slip by your notice, provided you could get one on the operating table.<br>- The penalty from operating on improper operating surfaces is reduced.")
+	desc = "Grants deep knowledge of human and xenos anatomy. High skill in this is necessary to perform surgery. This skill also aids in autopsies and understanding alien biology."
+	levels = list( "Unskilled"			= "You have a rough idea of the locations of organs and bones. You know that severe injuries may require surgery but lack the knowledge to assist effectively.",
+						"Basic"				= "You’ve studied anatomy enough to assist in surgery and perform basic procedures. You can recognize internal injuries and even conduct autopsies if required. Surgery is possible in emergencies, though unadvised.<br>- You can perform basic surgery if you also have Trained Medicine.",
+						"Trained"			= "You can diagnose broken bones, shrapnel wounds, and internal damage with ease. You handle basic surgeries competently and know how to treat common injuries. Cybernetic procedures are also within your grasp if trained.<br>- You can perform cybernetic surgeries if you have Trained Complex Devices.",
+						"Experienced"		= "You can perform most surgeries reliably, including complex operations. While highly skilled in human anatomy, you are also proficient with several xenos species. You excel in handling organ damage and repairing delicate systems.<br>- You can perform all surgery steps safely if you also have Experienced Medicine.",
+						"Master"		= "You are a master surgeon, able to handle any case, no matter how severe. From brain surgery to organ transplants, nothing escapes your expertise. Your understanding of anatomy is so refined that even disguised xenos would struggle to evade your detection.<br>- The penalty for operating in less-than-ideal environments is reduced.")
 
 /singleton/hierarchy/skill/medical/chemistry
 	ID = "chemistry"
 	name = "Biologis-Chemica"
-	desc = "Experience with mixing chemicals, and an understanding of what the effect will be. This doesn't cover an understanding of the effect of chemicals on the human body, as such the medical skill is also required for medical chemists."
-	levels = list( "Unskilled"			= "You know that chemists work with chemicals; you know that they can make medicine or poison or useful chemicals. You probably know what an element is and have a vague idea of what a chemical reaction is from some chemistry class in your scholam days.",
-						"Basic"				= "You can make basic chemicals or medication--things like space cleaner or anti-toxin. You have some training in safety and you won't blow up the lab... probably.<br>- You can safely use the industrial grinder but lose some ingredients. Its amount decreases with skill level.",
-						"Trained"			= "You can accurately measure out reagents, grind powders, and perform chemical reactions. You may still lose some product on occasion, but are unlikely to endanger yourself or those around you.<br>- You can fully operate the chem dispenser.",
-						"Experienced"		= "You work as a chemist, or else you are a medicae with training in chemistry. If you are a research chemist, you can create most useful chemicals; if you are a pharmacist, you can make most medications. At this stage, you're working mostly by-the-book. You can weaponize your chemicals by making grenades, smoke bombs, and similar devices.<br>- You can examine held containers for scannable reagents.",
-						"Master"		= "You specialized in chemistry or pharmaceuticals; you are either a medical researcher or professional chemist. You can create custom mixes and make even the trickiest of medications easily. You understand how your pharmaceuticals interact with the bodies of your patients. You are probably the originator of at least one new chemical innovation.<br>- You can examine held containers for all reagents.")
+	desc = "Your expertise in creating chemicals, medicines, and compounds. This skill doesn't include the medical understanding of how chemicals affect the body, so Medicae skill is also needed for medical chemists."
+	levels = list( "Unskilled"			= "You know that chemists work with chemicals to create useful or dangerous substances. You have a basic grasp of chemical reactions from scholam lessons.",
+						"Basic"				= "You can create basic chemicals like space cleaner or anti-toxin, with some safety training. Accidents are less likely, but still possible.<br>- You can safely use the industrial grinder but lose some ingredients.",
+						"Trained"			= "You can measure reagents and mix chemicals accurately. You can produce most common compounds without much loss. Complex chemical reactions are within your ability.<br>- You can fully operate the chem dispenser.",
+						"Experienced"		= "You’re proficient in creating complex chemicals, either for medical purposes or weaponization. Whether producing grenades or refining medicines, you work efficiently.<br>- You can examine containers to detect reagents.",
+						"Master"		= "You are a master chemist, able to produce custom mixes and rare compounds with ease. Your understanding of chemistry allows for creative innovation, and your work is likely known across the Imperium.<br>- You can examine containers for all reagent details.")

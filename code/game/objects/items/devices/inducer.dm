@@ -4,7 +4,7 @@
 	icon = 'icons/obj/tools/inducers.dmi'
 	icon_state = "inducer-sci"
 	item_state = "inducer-sci"
-	force = 7
+	force = 13
 	var/powertransfer = 500
 	var/coefficient = 0.9
 	var/opened = FALSE

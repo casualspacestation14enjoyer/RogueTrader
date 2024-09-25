@@ -39,7 +39,7 @@
 	item_state = "bl_suit"
 	worn_state = "blackutility"
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_BASIC,
 		energy = ARMOR_ENERGY_MINOR
 		)
 

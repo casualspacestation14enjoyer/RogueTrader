@@ -26,9 +26,9 @@
 	///Used in use_weapon() to say how something was attacked "[x] has been [z.attack_verb] by [y] with [z]"
 	var/list/attack_verb = list("attacked")
 	var/lock_picking_level = 0 //used to determine whether something can pick a lock, and how well.
-	var/force = 0
+	var/force = 10
 	var/attack_cooldown = DEFAULT_WEAPON_COOLDOWN
-	var/melee_accuracy_bonus = 0
+	var/melee_accuracy_bonus = 5
 	/// Used to determine how fast an item completes a certain action. Lower values are faster.
 	var/toolspeed = 1
 

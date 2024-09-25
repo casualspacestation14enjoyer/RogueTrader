@@ -5,7 +5,7 @@
 	item_state = "plunger_black"
 	icon = 'icons/obj/tools/plunger.dmi'
 	attack_verb = list("plunged")
-	force = 1
+	force = 7
 	w_class = 3
 	item_flags = null
 	slot_flags = SLOT_HEAD | SLOT_MASK
@@ -19,6 +19,6 @@
 	item_state = "plunger_black"
 	icon = 'icons/obj/tools/plunger.dmi'
 	attack_verb = list("plunged")
-	force = 1
+	force = 5
 	w_class = 3
 	hitsound = 'sound/effects/plunger.ogg'

@@ -8,7 +8,7 @@
 
 /obj/item/rig
 
-	name = "hardsuit control module"
+	name = "power armour"
 	icon = 'icons/obj/rig_modules.dmi'
 	desc = "A back-mounted hardsuit deployment and control mechanism."
 	slot_flags = SLOT_BACK
@@ -17,9 +17,9 @@
 	// These values are passed on to all component pieces.
 	armor_type = /datum/extension/armor/rig
 	armor = list(
-		melee = ARMOR_MELEE_SMALL,
-		bullet = ARMOR_BALLISTIC_MINOR,
-		laser = ARMOR_LASER_SMALL,
+		melee = ARMOR_MELEE_MINOR,
+		bullet = ARMOR_BALLISTIC_BASIC,
+		laser = ARMOR_LASER_PRIMAL,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,
@@ -105,7 +105,7 @@
 /obj/item/rig/get_mechanics_info()
 	. = ..()
 	. += {"
-		<p>A Hardsuit Control Module, or HCM, is a large device that goes into your backpack slot and can be deployed into a full powered hardsuit.</p>
+		<p>A power armour, or HCM, is a large device that goes into your backpack slot and can be deployed into a full powered hardsuit.</p>
 		<p>HCM oxygen tanks must be refilled like a normal void suit's tank.</p>
 		<p>HCM power cells must be recharged.</p>
 		<p>HCMs and their components are susceptible to damage from EMPs.</p>

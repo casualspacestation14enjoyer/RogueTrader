@@ -8,7 +8,7 @@
 	item_state = "w_suit"
 	worn_state = "guard"
 	armor = list(
-		melee = ARMOR_MELEE_SMALL
+		melee = ARMOR_MELEE_MINOR
 		)
 	siemens_coefficient = 0.9
 	item_icons = list(slot_w_uniform_str = 'icons/mob/onmob/onmob_under_corporate.dmi')
@@ -48,7 +48,7 @@
 	item_state = "lb_suit"
 	worn_state = "work"
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_BASIC,
 		bio = ARMOR_BIO_MINOR
 		)
 	item_icons = list(slot_w_uniform_str = 'icons/mob/onmob/onmob_under_corporate.dmi')

@@ -299,7 +299,7 @@
 		item_state = "pistol"
 		wielded_item_state = "pistol"
 
-/obj/item/gun/projectile/stub/talon
+/obj/item/gun/projectile/pistol/stub/talon
 	name = "Talon Stub Pistol"
 	desc = "A mechanicus forged black matted stub-pistol that fires specialized 7mm penetrator tech rounds."
 	icon_state = "talon"

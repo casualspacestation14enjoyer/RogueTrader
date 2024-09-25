@@ -8,7 +8,7 @@
 	slot_flags = SLOT_BELT
 	center_of_mass = "x=14;y=15"
 	waterproof = FALSE
-	force = 5
+	force = 15
 	throwforce = 5
 	throw_speed = 1
 	throw_range = 5
@@ -333,7 +333,7 @@
 	icon = 'icons/obj/tools/welder.dmi'
 	icon_state = "tank_normal"
 	w_class = ITEM_SIZE_SMALL
-	force = 5
+	force = 15
 	throwforce = 5
 	var/max_fuel = 20
 	var/can_refuel = 1
@@ -361,7 +361,7 @@
 	icon_state = "tank_small"
 	w_class = ITEM_SIZE_TINY
 	max_fuel = 5
-	force = 4
+	force = 14
 	throwforce = 4
 	size_in_use = ITEM_SIZE_SMALL
 	unlit_force = 5
@@ -372,7 +372,7 @@
 	icon_state = "tank_large"
 	w_class = ITEM_SIZE_SMALL
 	max_fuel = 40
-	force = 6
+	force = 16
 	throwforce = 6
 	size_in_use = ITEM_SIZE_NORMAL
 
@@ -382,7 +382,7 @@
 	icon_state = "tank_huge"
 	w_class = ITEM_SIZE_NORMAL
 	max_fuel = 80
-	force = 8
+	force = 18
 	throwforce = 8
 	size_in_use = ITEM_SIZE_LARGE
 	unlit_force = 9
@@ -394,7 +394,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	max_fuel = 40
 	can_refuel = 0
-	force = 8
+	force = 18
 	throwforce = 8
 	size_in_use = ITEM_SIZE_LARGE
 	unlit_force = 9

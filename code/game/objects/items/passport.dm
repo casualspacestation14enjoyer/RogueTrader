@@ -2,7 +2,7 @@
 	name = "passport"
 	icon = 'icons/obj/passport.dmi'
 	icon_state = "passport"
-	force = 0.5
+	force = 3
 	w_class = ITEM_SIZE_SMALL
 	attack_verb = list("whipped")
 	hitsound = 'sound/weapons/towelwhip.ogg'

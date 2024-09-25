@@ -8,16 +8,16 @@
 	desc = "A knife blade. Unusable as a weapon without a grip."
 	icon = 'icons/obj/crafting_icons.dmi'
 	icon_state = "small_blade"
-	force_multiplier = 0.1
-	thrown_force_multiplier = 0.1
+	force_multiplier = 0.2
+	thrown_force_multiplier = 0.2
 
 /obj/item/material/large_blade
 	name = "large blade"
 	desc = "A large, heavy blade. Unusable as a weapon without a grip."
 	icon = 'icons/obj/crafting_icons.dmi'
 	icon_state = "large_blade"
-	force_multiplier = 0.1
-	thrown_force_multiplier = 0.1
+	force_multiplier = 0.21
+	thrown_force_multiplier = 0.21
 
 /obj/item/material/butterflyhandle
 	name = "concealed knife grip"

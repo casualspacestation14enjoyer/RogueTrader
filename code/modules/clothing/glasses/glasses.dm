@@ -61,8 +61,8 @@
 	origin_tech = list(TECH_COMBAT = 2)
 	siemens_coefficient = 0.6
 	armor = list(
-		melee = ARMOR_MELEE_SMALL,
-		bullet = ARMOR_BALLISTIC_SMALL,
+		melee = ARMOR_MELEE_MINOR,
+		bullet = ARMOR_BALLISTIC_PRIMAL,
 		bomb = ARMOR_BOMB_MINOR
 	)
 	action_button_name = "Toggle Attachments"

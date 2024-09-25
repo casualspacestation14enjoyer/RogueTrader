@@ -10,7 +10,7 @@
 	anchored = FALSE
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
-	force = 10.0
+	force = 15.0
 	throwforce = 10.0
 	throw_speed = 1
 	throw_range = 5

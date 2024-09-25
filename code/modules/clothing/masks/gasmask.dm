@@ -11,7 +11,7 @@
 	permeability_coefficient = 0.01
 	siemens_coefficient = 0.9
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_BASIC,
 		bio = ARMOR_BIO_STRONG
 		)
 	filtered_gases = list(
@@ -72,9 +72,9 @@
 	down_icon_state = "halfgasdown"
 	pull_mask = TRUE
 	armor = list(
-		melee = ARMOR_MELEE_SMALL,
-		bullet = ARMOR_BALLISTIC_MINOR,
-		laser = ARMOR_LASER_MINOR,
+		melee = ARMOR_MELEE_MINOR,
+		bullet = ARMOR_BALLISTIC_BASIC,
+		laser = ARMOR_LASER_BASIC,
 		bio = ARMOR_BIO_RESISTANT
 		)
 
@@ -87,7 +87,7 @@
 	item_state = "gas_mask"
 	body_parts_covered = FACE|EYES
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_BASIC,
 		bio = ARMOR_BIO_STRONG,
 		rad = ARMOR_RAD_SMALL
 		)
@@ -99,7 +99,7 @@
 	item_state = "gas_alt"
 	body_parts_covered = FACE|EYES
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_BASIC,
 		bio = ARMOR_BIO_SMALL
 		)
 
@@ -111,9 +111,9 @@
 	siemens_coefficient = 0.7
 	body_parts_covered = FACE|EYES
 	armor = list(
-		melee = ARMOR_MELEE_SMALL,
-		bullet = ARMOR_BALLISTIC_MINOR,
-		laser = ARMOR_LASER_MINOR,
+		melee = ARMOR_MELEE_MINOR,
+		bullet = ARMOR_BALLISTIC_BASIC,
+		laser = ARMOR_LASER_BASIC,
 		bio = ARMOR_BIO_STRONG
 		)
 
@@ -124,9 +124,9 @@
 	item_state = "swat"
 	siemens_coefficient = 0.7
 	armor = list(
-		melee = ARMOR_MELEE_SMALL,
-		bullet = ARMOR_BALLISTIC_SMALL,
-		laser = ARMOR_LASER_MINOR,
+		melee = ARMOR_MELEE_MINOR,
+		bullet = ARMOR_BALLISTIC_PRIMAL,
+		laser = ARMOR_LASER_BASIC,
 		bio = ARMOR_BIO_STRONG
 		)
 

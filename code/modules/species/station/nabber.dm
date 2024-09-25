@@ -50,8 +50,8 @@
 	brute_mod = 0.9
 	burn_mod =  1.35
 	natural_armour_values = list(
-		melee = ARMOR_MELEE_KNIVES,
-		bullet = ARMOR_BALLISTIC_MINOR,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_BASIC,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = 0.5*ARMOR_RAD_MINOR

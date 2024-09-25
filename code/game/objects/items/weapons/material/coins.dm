@@ -5,7 +5,6 @@
 	applies_material_colour = TRUE
 	randpixel = 8
 	throwforce = 1
-	max_force = 5
 	force_multiplier = 0.1
 	thrown_force_multiplier = 0.1
 	w_class = ITEM_SIZE_TINY

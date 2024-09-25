@@ -410,7 +410,7 @@
 	item_state = "analyzer"
 	w_class = ITEM_SIZE_TINY
 	matter = list(MATERIAL_PLASTIC=20, MATERIAL_STEEL=5, MATERIAL_GLASS=5)
-	force = 1
+	force = 2
 	throwforce = 0
 	var/max_capacity = 1200
 	var/used_capacity = 0

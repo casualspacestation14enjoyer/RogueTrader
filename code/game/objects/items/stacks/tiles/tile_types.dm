@@ -17,7 +17,7 @@
 	icon_state = "tile"
 	icon = 'icons/obj/tiles.dmi'
 
-	force = 1
+	force = 11
 	throwforce = 1
 	throw_speed = 5
 	throw_range = 20
@@ -106,7 +106,7 @@
 	singular_name = "steel floor tile"
 	desc = "Those could work as a pretty decent throwing weapon." //why?
 	icon_state = "tile"
-	force = 6
+	force = 16
 	matter = list(MATERIAL_STEEL = 450)
 	throwforce = 15
 	obj_flags = OBJ_FLAG_CONDUCTIBLE

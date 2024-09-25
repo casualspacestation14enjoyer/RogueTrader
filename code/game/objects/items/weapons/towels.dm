@@ -4,7 +4,7 @@
 	icon_state = "towel"
 	item_flags = ITEM_FLAG_IS_BELT | ITEM_FLAG_WASHER_ALLOWED
 	slot_flags = SLOT_HEAD | SLOT_BELT | SLOT_OCLOTHING
-	force = 0.5
+	force = 2
 	w_class = ITEM_SIZE_NORMAL
 	attack_verb = list("whipped")
 	hitsound = 'sound/weapons/towelwhip.ogg'
@@ -40,5 +40,5 @@
 	name = "golden fleece"
 	desc = "The legendary Golden Fleece of Jason made real."
 	color = "#ffd700"
-	force = 1
+	force = 13
 	attack_verb = list("smote")
