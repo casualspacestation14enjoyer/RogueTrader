@@ -36,7 +36,7 @@
 
 /obj/structure/closet/secure_closet/security_torch/WillContain()
 	return list(
-		/obj/item/clothing/suit/armor/pcarrier/medium/security,
+		/obj/item/clothing/suit/armor/grim/medium/security,
 		/obj/item/clothing/head/helmet/solgov/security,
 		/obj/item/device/radio/headset/headset_sec,
 		/obj/item/device/radio/headset/headset_sec/alt,
@@ -64,7 +64,7 @@
 
 /obj/structure/closet/secure_closet/cos/WillContain()
 	return list(
-		/obj/item/clothing/suit/armor/pcarrier/medium/command/security,
+		/obj/item/clothing/suit/armor/grim/medium/command/security,
 		/obj/item/clothing/head/helmet/solgov/command,
 		/obj/item/device/radio/headset/heads/cos,
 		/obj/item/device/radio/headset/heads/cos/alt,
@@ -96,7 +96,7 @@
 
 /obj/structure/closet/secure_closet/brigchief/WillContain()
 	return list(
-		/obj/item/clothing/suit/armor/pcarrier/medium/security,
+		/obj/item/clothing/suit/armor/grim/medium/security,
 		/obj/item/clothing/head/helmet/solgov/security,
 		/obj/item/device/radio/headset/headset_sec,
 		/obj/item/device/radio/headset/headset_sec/alt,
@@ -128,7 +128,7 @@
 		/obj/item/device/radio/headset/headset_sec,
 		/obj/item/device/radio/headset/headset_sec/alt,
 		/obj/item/clothing/head/helmet/solgov/security,
-		/obj/item/clothing/suit/armor/pcarrier/medium/security,
+		/obj/item/clothing/suit/armor/grim/medium/security,
 		/obj/item/device/flash,
 		/obj/item/reagent_containers/spray/pepper,
 		/obj/item/taperoll/enforcer,

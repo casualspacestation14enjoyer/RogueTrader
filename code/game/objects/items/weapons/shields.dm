@@ -33,7 +33,7 @@
 
 /obj/item/shield
 	name = "shield"
-	var/base_block_chance = 60
+	var/base_block_chance = 30
 	var/max_block = 0
 
 
@@ -54,16 +54,18 @@
 
 
 /obj/item/shield/riot
-	name = "riot shield"
+	name = "Riot Shield"
 	desc = "A shield adept at blocking blunt objects from connecting with the torso of the shield wielder."
-	icon = 'icons/obj/weapons/melee_physical.dmi'
+	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "riot"
 	item_state = "riot"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BACK
-	force = 15.0
-	throwforce = 5.0
-	throw_speed = 1
+	base_block_chance = 30
+	max_block = 10
+	force = 18.0
+	throwforce = 16.0
+	throw_speed = 2
 	throw_range = 4
 	w_class = ITEM_SIZE_HUGE
 	origin_tech = list(TECH_MATERIAL = 2)
@@ -101,33 +103,34 @@
 
 
 /obj/item/shield/riot/metal
-	name = "plasteel combat shield"
-	icon = 'icons/obj/weapons/melee_physical.dmi'
-	icon_state = "metal"
+	name = "Ceramite Combat Shield"
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "shieldmetal"
 	item_state = "metal"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BACK
-	force = 16.0
-	throwforce = 7.0
+	force = 21.0
+	throwforce = 18.0
 	throw_range = 3
 	w_class = ITEM_SIZE_HUGE
 	matter = list(MATERIAL_PLASTEEL = 8500)
-	max_block = 50
+	max_block = 30
 	can_block_lasers = TRUE
-	slowdown_general = 0.5
+	slowdown_general = 0.1
+	throw_speed = 1
 
 /obj/item/shield/buckler
-	name = "buckler"
+	name = "Buckler"
 	desc = "A wooden buckler used to block sharp things from entering your body back in the day. Not very good at stopping projectiles, but still better than nothing."
 	icon = 'icons/obj/weapons/melee_physical.dmi'
 	icon_state = "buckler"
 	item_state = "buckler"
 	slot_flags = SLOT_BACK
-	force = 18
-	throwforce = 8
-	base_block_chance = 50
+	force = 20
+	throwforce = 16
+	base_block_chance = 30
 	max_block = 15
-	throw_speed = 6
+	throw_speed = 3
 	throw_range = 20
 	w_class = ITEM_SIZE_HUGE
 	origin_tech = list(TECH_MATERIAL = 1)

@@ -86,9 +86,9 @@
 		/obj/item/clothing/under/lawyer/black,
 		/obj/item/clothing/under/lawyer/red,
 		/obj/item/clothing/under/lawyer/bluesuit,
-		/obj/item/clothing/suit/storage/toggle/suit/blue,
+		/obj/item/clothing/suit/armor/grim/toggle/suit/blue,
 		/obj/item/clothing/under/lawyer/purpsuit,
-		/obj/item/clothing/suit/storage/toggle/suit/purple,
+		/obj/item/clothing/suit/armor/grim/toggle/suit/purple,
 		/obj/item/clothing/shoes/brown,
 		/obj/item/clothing/shoes/black
 	)

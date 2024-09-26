@@ -14,8 +14,7 @@
 	down_icon_state = "breathdown"
 	pull_mask = 1
 	sprite_sheets = list(
-		SPECIES_VOX = 'icons/mob/species/vox/onmob_mask_vox.dmi',
-		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_mask_unathi.dmi',
+		SPECIES_VOX = 'icons/mob/species/vox/onmob_mask_vox.dmi'
 		)
 
 /obj/item/clothing/mask/breath/medical

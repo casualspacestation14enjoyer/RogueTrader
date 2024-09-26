@@ -1,7 +1,7 @@
 /singleton/hierarchy/outfit/job/science
 	hierarchy_type = /singleton/hierarchy/outfit/job/science
 	l_ear = /obj/item/device/radio/headset/headset_sci
-	suit = /obj/item/clothing/suit/storage/toggle/labcoat
+	suit = /obj/item/clothing/suit/armor/grim/toggle/labcoat
 	shoes = /obj/item/clothing/shoes/white
 	pda_type = /obj/item/modular_computer/pda/science
 
@@ -22,13 +22,13 @@
 	name = OUTFIT_JOB_NAME("Scientist")
 	uniform = /obj/item/clothing/under/rank/scientist
 	id_types = list(/obj/item/card/id/science)
-	suit = /obj/item/clothing/suit/storage/toggle/labcoat/science
+	suit = /obj/item/clothing/suit/armor/grim/toggle/labcoat/science
 
 /singleton/hierarchy/outfit/job/science/xenobiologist
 	name = OUTFIT_JOB_NAME("Xenobiologist")
 	uniform = /obj/item/clothing/under/rank/scientist
 	id_types = list(/obj/item/card/id/science/xenobiologist)
-	suit = /obj/item/clothing/suit/storage/toggle/labcoat/science
+	suit = /obj/item/clothing/suit/armor/grim/toggle/labcoat/science
 
 /singleton/hierarchy/outfit/job/science/roboticist
 	name = OUTFIT_JOB_NAME("Roboticist")

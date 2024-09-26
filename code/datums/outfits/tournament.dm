@@ -19,7 +19,7 @@
 	name = "Tournament gear - Gangster"
 	head = /obj/item/clothing/head/det
 	uniform = /obj/item/clothing/under/det
-	suit_store = /obj/item/clothing/suit/storage/det_trench
+	suit_store = /obj/item/clothing/suit/armor/grim/storage/det_trench
 	glasses = /obj/item/clothing/glasses/thermal/plain/monocle
 	r_hand = /obj/item/gun/projectile/revolver
 	l_pocket = /obj/item/ammo_magazine/speedloader

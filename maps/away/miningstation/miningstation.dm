@@ -47,7 +47,7 @@
 /singleton/hierarchy/outfit/miningstation
 	name = OUTFIT_JOB_NAME ("Grayson Engineer")
 	uniform = /obj/item/clothing/under/hazard
-	suit = /obj/item/clothing/suit/storage/hazardvest
+	suit = /obj/item/clothing/suit/armor/grim/storage/hazardvest
 	shoes = /obj/item/clothing/shoes/jackboots
 	gloves = /obj/item/clothing/gloves/thick/duty
 	head = /obj/item/clothing/head/hardhat/orange

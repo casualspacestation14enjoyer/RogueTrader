@@ -82,13 +82,13 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 
 //Detective
-/obj/item/clothing/suit/storage/det_trench
+/obj/item/clothing/suit/armor/grim/storage/det_trench
 	name = "brown trenchcoat"
 	desc = "A rugged canvas trenchcoat, designed and created by TX Fabrication Corp. The coat is externally impact resistant - perfect for your next act of autodefenestration!"
 	icon_state = "detective"
-	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA)
 	blood_overlay_type = "coat"
-	body_parts_covered = UPPER_TORSO|ARMS
+	body_parts_covered = ARMS|LEGS
+	accessories = list(/obj/item/clothing/accessory/armor_plate/padding2)
 	allowed = list(
 		/obj/item/tank/oxygen_emergency,
 		/obj/item/tank/oxygen_emergency_extended,
@@ -105,25 +105,26 @@
 		/obj/item/device/taperecorder
 	)
 	armor = list(
-		melee = ARMOR_MELEE_FLAK,
-		bullet = ARMOR_BALLISTIC_PRIMAL,
-		laser = ARMOR_LASER_PRIMAL,
-		energy = ARMOR_ENERGY_MINOR
+		melee = ARMOR_MELEE_FLAK-1,
+		bullet = ARMOR_BALLISTIC_FLAK-8,
+		laser = ARMOR_LASER_FLAK-8,
+		energy = ARMOR_ENERGY_MINOR-8,
+		rad = ARMOR_RAD_MINOR-10,
+		bomb = ARMOR_BOMB_MINOR-10
 		)
 
-/obj/item/clothing/suit/storage/det_trench/ft
+/obj/item/clothing/suit/armor/grim/storage/det_trench/ft
 	desc = "A rugged canvas trenchcoat, designed and created by TX Fabrication Corp. This one wouldn't block much of anything."
 	armor = null
 
-/obj/item/clothing/suit/storage/det_trench/grey
+/obj/item/clothing/suit/armor/grim/storage/det_trench/grey
 	name = "grey trenchcoat"
 	icon_state = "detective2"
 
 //Forensics
-/obj/item/clothing/suit/storage/forensics
+/obj/item/clothing/suit/armor/grim/storage/forensics
 	name = "jacket"
 	desc = "A forensics technician jacket."
-	body_parts_covered = UPPER_TORSO|ARMS
 	allowed = list(
 		/obj/item/tank/oxygen_emergency,
 		/obj/item/tank/oxygen_emergency_extended,
@@ -137,25 +138,29 @@
 		/obj/item/handcuffs,
 		/obj/item/device/taperecorder
 	)
+	accessories = list(/obj/item/clothing/accessory/armor_plate/padding2)
+	body_parts_covered = LEGS|ARMS
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
-		bullet = ARMOR_BALLISTIC_BASIC,
-		laser = ARMOR_LASER_BASIC,
-		energy = ARMOR_ENERGY_MINOR
+		melee = ARMOR_MELEE_FLAK-1,
+		bullet = ARMOR_BALLISTIC_FLAK-8,
+		laser = ARMOR_LASER_FLAK-8,
+		energy = ARMOR_ENERGY_MINOR-8,
+		rad = ARMOR_RAD_MINOR-10,
+		bomb = ARMOR_BOMB_MINOR-10
 		)
 
-/obj/item/clothing/suit/storage/forensics/red
+/obj/item/clothing/suit/armor/grim/storage/forensics/red
 	name = "red jacket"
 	desc = "A red forensics technician jacket."
 	icon_state = "forensics_red"
 
-/obj/item/clothing/suit/storage/forensics/blue
+/obj/item/clothing/suit/armor/grim/storage/forensics/blue
 	name = "blue jacket"
 	desc = "A blue forensics technician jacket."
 	icon_state = "forensics_blue"
 
 //Engineering
-/obj/item/clothing/suit/storage/hazardvest
+/obj/item/clothing/suit/armor/grim/storage/hazardvest
 	name = "hazard vest"
 	desc = "A high-visibility vest used in work zones."
 	icon_state = "hazard"
@@ -180,83 +185,79 @@
 		/obj/item/clothing/head/deckcrew,
 		/obj/item/clothing/head/hardhat
 	)
-	body_parts_covered = UPPER_TORSO
-	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA)
+	body_parts_covered = null
 
-/obj/item/clothing/suit/storage/hazardvest/blue
+/obj/item/clothing/suit/armor/grim/storage/hazardvest/blue
 	name = "blue hazard vest"
 	desc = "A high-visibility vest used in work zones. This one is blue!"
 	icon_state = "hazard_b"
 
-/obj/item/clothing/suit/storage/hazardvest/white
+/obj/item/clothing/suit/armor/grim/storage/hazardvest/white
 	name = "white hazard vest"
 	desc = "A high-visibility vest used in work zones. This one is white!"
 	icon_state = "hazard_w"
 
-/obj/item/clothing/suit/storage/hazardvest/green
+/obj/item/clothing/suit/armor/grim/storage/hazardvest/green
 	name = "green hazard vest"
 	desc = "A high-visibility vest used in work zones. This one is green!"
 	icon_state = "hazard_g"
 
-/obj/item/clothing/suit/storage/hazardvest/yellow
+/obj/item/clothing/suit/armor/grim/storage/hazardvest/yellow
 	name = "yellow hazard vest"
 	desc = "A high-visibility vest used in work zones. This one is yellow!"
 	icon_state = "hazard_y"
 
-/obj/item/clothing/suit/storage/hazardvest/red
+/obj/item/clothing/suit/armor/grim/storage/hazardvest/red
 	name = "red hazard vest"
 	desc = "A high-visibility vest used in work zones. This one is red!"
 	icon_state = "hazard_r"
 
-/obj/item/clothing/suit/storage/hazardvest/purple
+/obj/item/clothing/suit/armor/grim/storage/hazardvest/purple
 	name = "purple hazard vest"
 	desc = "A high-visibility vest used in work zones. This one is purple!"
 	icon_state = "hazard_p"
 
-/obj/item/clothing/suit/storage/hazardvest/med
+/obj/item/clothing/suit/armor/grim/storage/hazardvest/med
 	name = "medical hazard vest"
 	desc = "A high-visibility vest used in work zones. This one is has a blue cross!"
 	icon_state = "hazard_med"
 
-/obj/item/clothing/suit/storage/toggle/highvis
+/obj/item/clothing/suit/armor/grim/toggle/highvis
 	name = "high visibility jacket"
 	desc = "A loose-fitting, high visibility jacket to help crew be recognizable in high traffic areas with large industrial equipment. Don't catch the Charon's landing gear with your teeth!"
 	icon_state = "highvis"
 	blood_overlay_type = "coat"
-	body_parts_covered = UPPER_TORSO|ARMS
-	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA)
+	body_parts_covered = ARMS
 
 //Lawyer
-/obj/item/clothing/suit/storage/toggle/suit
+/obj/item/clothing/suit/armor/grim/toggle/suit
 	name = "suit jacket"
 	desc = "A snappy dress jacket."
 	icon_state = "suitjacket"
 	blood_overlay_type = "coat"
-	body_parts_covered = UPPER_TORSO|ARMS
-	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA)
+	body_parts_covered = ARMS
 
-/obj/item/clothing/suit/storage/toggle/suit_double
+/obj/item/clothing/suit/armor/grim/toggle/suit_double
 	name = "double-breasted suit jacket"
 	desc = "A snappy, double-breasted dress jacket."
 	icon_state = "suitjacket_double"
 	blood_overlay_type = "coat"
-	body_parts_covered = UPPER_TORSO|ARMS
-	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA)
+	body_parts_covered = ARMS
 
-/obj/item/clothing/suit/storage/toggle/suit/blue
+/obj/item/clothing/suit/armor/grim/toggle/suit/blue
 	name = "blue suit jacket"
 	color = "#00326e"
 
-/obj/item/clothing/suit/storage/toggle/suit/purple
+/obj/item/clothing/suit/armor/grim/toggle/suit/purple
 	name = "purple suit jacket"
 	color = "#6c316c"
 
-/obj/item/clothing/suit/storage/toggle/suit/black
+/obj/item/clothing/suit/armor/grim/toggle/suit/black
 	name = "black suit jacket"
 	color = "#1f1f1f"
 
 //Medical
-/obj/item/clothing/suit/storage/toggle/fr_jacket
+/obj/item/clothing/suit/armor/grim/toggle/fr_jacket
 	name = "first responder jacket"
 	desc = "A high-visibility jacket worn by medical first responders."
 	icon_state = "fr_jacket"
@@ -274,20 +275,19 @@
 		/obj/item/tank/nitrogen_emergency,
 		/obj/item/reagent_containers/ivbag
 	)
-	body_parts_covered = UPPER_TORSO|ARMS
-	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA)
+	body_parts_covered = ARMS
 
-/obj/item/clothing/suit/storage/toggle/fr_jacket/ems
+/obj/item/clothing/suit/armor/grim/toggle/fr_jacket/ems
 	name = "\improper EMS jacket"
 	desc = "A dark blue, martian-pattern, EMS jacket. It sports high-visibility reflective stripes and a star of life on the back."
 	icon_state = "ems_jacket"
 
-/obj/item/clothing/suit/storage/toggle/fr_jacket/emrs
+/obj/item/clothing/suit/armor/grim/toggle/fr_jacket/emrs
 	name = "medical jacket"
 	desc = "A white jacket often worn in emergency medical and reanimation services across human space."
 	icon_state = "medical_jacket"
 
-/obj/item/clothing/suit/storage/security_chest_rig
+/obj/item/clothing/suit/armor/grim/storage/security_chest_rig
 	name = "chest-rig"
 	desc = "A grey chest-rig with black pouches. For when you wish you had more hands."
 	icon_state = "chest-rig"
@@ -307,9 +307,9 @@
 		/obj/item/gun
 	)
 
-	body_parts_covered = UPPER_TORSO
+	body_parts_covered = null
 
-/obj/item/clothing/suit/storage/engineering_chest_rig
+/obj/item/clothing/suit/armor/grim/storage/engineering_chest_rig
 	name = "hazard chest-rig"
 	desc = "A grey chest-rig with black pouches and orange markings worn by engineers. It has an 'Engineer' tag on its chest."
 	icon_state = "engi-chest-rig"
@@ -334,7 +334,7 @@
 		/obj/item/gun
 	)
 
-/obj/item/clothing/suit/storage/medical_chest_rig
+/obj/item/clothing/suit/armor/grim/storage/medical_chest_rig
 	name = "\improper MT chest-rig"
 	desc = "A white chest-rig with black pouches worn by medical first responders. It has a 'Medic' tag on its chest."
 	icon_state = "med-chest-rig"
@@ -362,7 +362,7 @@
 	desc = "A sterile blue apron for performing surgery."
 	icon_state = "surgical"
 	blood_overlay_type = "armor"
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	body_parts_covered = ARMS|LEGS
 	allowed = list(
 		/obj/item/stack/medical,
 		/obj/item/reagent_containers/dropper,

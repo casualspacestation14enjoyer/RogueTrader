@@ -6608,9 +6608,9 @@
 /obj/item/clothing/head/hardhat,
 /obj/item/clothing/head/hardhat,
 /obj/item/clothing/head/hardhat,
-/obj/item/clothing/suit/storage/hazardvest,
-/obj/item/clothing/suit/storage/hazardvest,
-/obj/item/clothing/suit/storage/hazardvest,
+/obj/item/clothing/suit/armor/grim/storage/hazardvest,
+/obj/item/clothing/suit/armor/grim/storage/hazardvest,
+/obj/item/clothing/suit/armor/grim/storage/hazardvest,
 /obj/structure/sign/warning/caution{
 	pixel_y = 28
 	},

@@ -38,7 +38,7 @@
 		/obj/item/storage/secure/briefcase,
 		/obj/item/clothing/shoes/laceup,
 		/obj/item/clothing/under/rank/internalaffairs/plain/nt,
-		/obj/item/clothing/suit/storage/toggle/suit/black,
+		/obj/item/clothing/suit/armor/grim/toggle/suit/black,
 		/obj/item/clothing/glasses/sunglasses/big,
 		/obj/item/storage/belt/general,
 		new /datum/atom_creator/weighted(list(/obj/item/storage/backpack, /obj/item/storage/backpack/satchel, /obj/item/storage/backpack/messenger)),
@@ -62,7 +62,7 @@
 		/obj/item/device/radio/headset/headset_com,
 		/obj/item/clothing/shoes/laceup,
 		/obj/item/clothing/under/rank/internalaffairs/plain/solgov,
-		/obj/item/clothing/suit/storage/toggle/suit/black,
+		/obj/item/clothing/suit/armor/grim/toggle/suit/black,
 		/obj/item/clothing/glasses/sunglasses/big,
 		/obj/item/storage/belt/general,
 		new /datum/atom_creator/weighted(list(/obj/item/storage/backpack, /obj/item/storage/backpack/satchel, /obj/item/storage/backpack/messenger)),
@@ -108,7 +108,7 @@
 	return list(
 		/obj/item/gun/projectile/pistol/m19/empty = 3,
 		/obj/item/storage/box/ammo/pistol = 2,
-		/obj/item/clothing/suit/armor/pcarrier/medium/command = 3,
+		/obj/item/clothing/suit/armor/grim/medium/command = 3,
 		/obj/item/clothing/head/helmet/solgov/command = 3,
 		/obj/item/clothing/accessory/storage/holster/thigh = 3
 	)

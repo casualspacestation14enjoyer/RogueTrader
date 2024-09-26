@@ -3720,11 +3720,11 @@
 /area/centcom/specops)
 "axW" = (
 /obj/structure/table/rack,
-/obj/item/clothing/suit/storage/vest/merc{
+/obj/item/clothing/suit/armor/grim/storage/vest/merc{
 	pixel_x = 2;
 	pixel_y = 2
 	},
-/obj/item/clothing/suit/storage/vest/merc{
+/obj/item/clothing/suit/armor/grim/storage/vest/merc{
 	pixel_x = 2;
 	pixel_y = 2
 	},
@@ -4143,7 +4143,7 @@
 /area/centcom/specops)
 "azp" = (
 /obj/structure/table/rack,
-/obj/item/clothing/suit/storage/vest/merc,
+/obj/item/clothing/suit/armor/grim/storage/vest/merc,
 /obj/item/clothing/head/helmet/swat,
 /turf/unsimulated/floor{
 	dir = 1;
@@ -4833,13 +4833,13 @@
 /obj/item/clothing/under/syndicate/combat,
 /obj/item/clothing/shoes/galoshes,
 /obj/item/clothing/head/bio_hood/janitor,
-/obj/item/clothing/suit/bio_suit/janitor,
+/obj/item/clothing/suit/armor/grim/bio_suit/janitor,
 /obj/item/clothing/glasses/science,
 /obj/item/storage/backpack/security,
 /obj/item/clothing/under/syndicate/combat,
 /obj/item/clothing/shoes/galoshes,
 /obj/item/clothing/head/bio_hood/janitor,
-/obj/item/clothing/suit/bio_suit/janitor,
+/obj/item/clothing/suit/armor/grim/bio_suit/janitor,
 /obj/item/clothing/glasses/science,
 /obj/item/reagent_containers/spray/cleaner{
 	pixel_x = 6;
@@ -5029,11 +5029,11 @@
 /area/centcom/specops)
 "aCo" = (
 /obj/structure/table/rack,
-/obj/item/clothing/suit/storage/vest/merc{
+/obj/item/clothing/suit/armor/grim/storage/vest/merc{
 	pixel_x = 2;
 	pixel_y = 2
 	},
-/obj/item/clothing/suit/storage/vest/merc,
+/obj/item/clothing/suit/armor/grim/storage/vest/merc,
 /obj/item/clothing/head/helmet/swat,
 /obj/item/clothing/head/helmet/swat,
 /turf/unsimulated/floor{

@@ -35,82 +35,82 @@
 
 /datum/gear/suit/suit_jacket
 	display_name = "standard suit jackets"
-	path = /obj/item/clothing/suit/storage/toggle/suit
+	path = /obj/item/clothing/suit/armor/grim/toggle/suit
 
 /datum/gear/suit/suit_jacket/New()
 	..()
 	var/suitjackets = list()
-	suitjackets += /obj/item/clothing/suit/storage/toggle/suit/black
-	suitjackets += /obj/item/clothing/suit/storage/toggle/suit/blue
-	suitjackets += /obj/item/clothing/suit/storage/toggle/suit/purple
+	suitjackets += /obj/item/clothing/suit/armor/grim/toggle/suit/black
+	suitjackets += /obj/item/clothing/suit/armor/grim/toggle/suit/blue
+	suitjackets += /obj/item/clothing/suit/armor/grim/toggle/suit/purple
 	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(suitjackets)
 
 /datum/gear/suit/custom_suit_jacket
 	display_name = "suit jacket, colour select"
-	path = /obj/item/clothing/suit/storage/toggle/suit
+	path = /obj/item/clothing/suit/armor/grim/toggle/suit
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/suit/custom_suit_jacket_double
 	display_name = "suit jacket (double-breasted), colour select"
-	path = /obj/item/clothing/suit/storage/toggle/suit_double
+	path = /obj/item/clothing/suit/armor/grim/toggle/suit_double
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/suit/hazard
 	display_name = "hazard vests"
-	path = /obj/item/clothing/suit/storage/hazardvest
+	path = /obj/item/clothing/suit/armor/grim/storage/hazardvest
 	flags = GEAR_HAS_TYPE_SELECTION
 
 /datum/gear/suit/chest_rig
 	display_name = "chest rig"
-	path = /obj/item/clothing/suit/storage
+	path = /obj/item/clothing/suit/armor/grim/storage
 
 /datum/gear/suit/chest_rig/New()
 	..()
 	var/chest_rigs = list()
-	chest_rigs += /obj/item/clothing/suit/storage/engineering_chest_rig
-	chest_rigs += /obj/item/clothing/suit/storage/security_chest_rig
-	chest_rigs += /obj/item/clothing/suit/storage/medical_chest_rig
+	chest_rigs += /obj/item/clothing/suit/armor/grim/storage/engineering_chest_rig
+	chest_rigs += /obj/item/clothing/suit/armor/grim/storage/security_chest_rig
+	chest_rigs += /obj/item/clothing/suit/armor/grim/storage/medical_chest_rig
 	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(chest_rigs)
 
 /datum/gear/suit/highvis
 	display_name = "high-visibility jacket"
-	path = /obj/item/clothing/suit/storage/toggle/highvis
+	path = /obj/item/clothing/suit/armor/grim/toggle/highvis
 
 /datum/gear/suit/hoodie
 	display_name = "hoodie, colour select"
-	path = /obj/item/clothing/suit/storage/hooded/hoodie
+	path = /obj/item/clothing/suit/armor/grim/storage/hooded/hoodie
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/suit/hoodie_sel
 	display_name = "standard hoodies"
-	path = /obj/item/clothing/suit/storage/toggle/hoodie
+	path = /obj/item/clothing/suit/armor/grim/toggle/hoodie
 
 /datum/gear/suit/hoodie_sel/New()
 	..()
 	var/hoodies = list()
-	hoodies += /obj/item/clothing/suit/storage/toggle/hoodie/cti
-	hoodies += /obj/item/clothing/suit/storage/toggle/hoodie/mu
-	hoodies += /obj/item/clothing/suit/storage/toggle/hoodie/nt
-	hoodies += /obj/item/clothing/suit/storage/toggle/hoodie/smw
+	hoodies += /obj/item/clothing/suit/armor/grim/toggle/hoodie/cti
+	hoodies += /obj/item/clothing/suit/armor/grim/toggle/hoodie/mu
+	hoodies += /obj/item/clothing/suit/armor/grim/toggle/hoodie/nt
+	hoodies += /obj/item/clothing/suit/armor/grim/toggle/hoodie/smw
 	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(hoodies)
 
 /datum/gear/suit/labcoat
 	display_name = "labcoat, colour select"
-	path = /obj/item/clothing/suit/storage/toggle/labcoat
+	path = /obj/item/clothing/suit/armor/grim/toggle/labcoat
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/suit/labcoat_blue
 	display_name = "blue trimmed labcoat"
-	path = /obj/item/clothing/suit/storage/toggle/labcoat/blue
+	path = /obj/item/clothing/suit/armor/grim/toggle/labcoat/blue
 
 /datum/gear/suit/labcoat_corp
 	display_name = "labcoat, imperial colors"
-	path = /obj/item/clothing/suit/storage/toggle/labcoat/science
+	path = /obj/item/clothing/suit/armor/grim/toggle/labcoat/science
 	flags = GEAR_HAS_TYPE_SELECTION
 
 /datum/gear/suit/coat
 	display_name = "coat, colour select"
-	path = /obj/item/clothing/suit/storage/toggle/labcoat/coat
+	path = /obj/item/clothing/suit/armor/grim/toggle/labcoat/coat
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/suit/leather
@@ -120,26 +120,26 @@
 /datum/gear/suit/leather/New()
 	..()
 	var/jackets = list()
-	jackets += /obj/item/clothing/suit/storage/toggle/bomber
-	jackets += /obj/item/clothing/suit/storage/leather_jacket/nanotrasen
-	jackets += /obj/item/clothing/suit/storage/toggle/brown_jacket/nanotrasen
-	jackets += /obj/item/clothing/suit/storage/leather_jacket
-	jackets += /obj/item/clothing/suit/storage/toggle/brown_jacket
-	jackets += /obj/item/clothing/suit/storage/mbill
-	jackets += /obj/item/clothing/suit/storage/toggle/leather_hoodie
+	jackets += /obj/item/clothing/suit/armor/grim/toggle/bomber
+	jackets += /obj/item/clothing/suit/armor/grim/storage/leather_jacket/nanotrasen
+	jackets += /obj/item/clothing/suit/armor/grim/toggle/brown_jacket/nanotrasen
+	jackets += /obj/item/clothing/suit/armor/grim/storage/leather_jacket
+	jackets += /obj/item/clothing/suit/armor/grim/toggle/brown_jacket
+	jackets += /obj/item/clothing/suit/armor/grim/storage/mbill
+	jackets += /obj/item/clothing/suit/armor/grim/toggle/leather_hoodie
 	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(jackets)
 
 /datum/gear/suit/wintercoat
 	display_name = "winter coat"
-	path = /obj/item/clothing/suit/storage/hooded/wintercoat
+	path = /obj/item/clothing/suit/armor/grim/storage/hooded/wintercoat
 
 /datum/gear/suit/wintercoat_dais
 	display_name = "winter coat, DAIS"
-	path = /obj/item/clothing/suit/storage/hooded/wintercoat/dais
+	path = /obj/item/clothing/suit/armor/grim/storage/hooded/wintercoat/dais
 
 /datum/gear/suit/track
 	display_name = "track jacket selection"
-	path = /obj/item/clothing/suit/storage/toggle/track
+	path = /obj/item/clothing/suit/armor/grim/toggle/track
 	flags = GEAR_HAS_TYPE_SELECTION
 
 /datum/gear/suit/blueapron
@@ -159,7 +159,7 @@
 
 /datum/gear/suit/medcoat/New()
 	..()
-	gear_tweaks += new/datum/gear_tweak/path/specified_types_args(/obj/item/clothing/suit/storage/toggle/fr_jacket, /obj/item/clothing/suit/storage/toggle/fr_jacket/ems, /obj/item/clothing/suit/surgicalapron, /obj/item/clothing/suit/storage/toggle/fr_jacket/emrs)
+	gear_tweaks += new/datum/gear_tweak/path/specified_types_args(/obj/item/clothing/suit/armor/grim/toggle/fr_jacket, /obj/item/clothing/suit/armor/grim/toggle/fr_jacket/ems, /obj/item/clothing/suit/surgicalapron, /obj/item/clothing/suit/armor/grim/toggle/fr_jacket/emrs)
 
 /datum/gear/suit/trenchcoat
 	display_name = "trenchcoat selection"
@@ -169,17 +169,17 @@
 /datum/gear/suit/trenchcoat/New()
 	..()
 	var/trenchcoats = list()
-	trenchcoats += /obj/item/clothing/suit/storage/det_trench
-	trenchcoats += /obj/item/clothing/suit/storage/det_trench/grey
+	trenchcoats += /obj/item/clothing/suit/armor/grim/storage/det_trench
+	trenchcoats += /obj/item/clothing/suit/armor/grim/storage/det_trench/grey
 	trenchcoats += /obj/item/clothing/suit/leathercoat
 	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(trenchcoats)
 
 
 /datum/gear/suit/pullover
 	display_name = "sweater, pullover"
-	path = /obj/item/clothing/suit/storage/pullover
+	path = /obj/item/clothing/suit/armor/grim/storage/pullover
 
 
 /datum/gear/suit/zipper
 	display_name = "sweater, zip up"
-	path = /obj/item/clothing/suit/storage/toggle/zipper
+	path = /obj/item/clothing/suit/armor/grim/toggle/zipper

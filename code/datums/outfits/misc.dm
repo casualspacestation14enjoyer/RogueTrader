@@ -76,5 +76,5 @@
 	name = "Anomalist"
 	uniform = /obj/item/clothing/under/color/white
 	shoes = /obj/item/clothing/shoes/white
-	suit = /obj/item/clothing/suit/bio_suit/anomaly
+	suit = /obj/item/clothing/suit/armor/grim/bio_suit/anomaly
 	head = /obj/item/clothing/head/bio_hood/anomaly

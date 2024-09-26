@@ -64,7 +64,7 @@
 /singleton/hierarchy/outfit/job/torch/crew/medical/contractor/paramedic
 	name = OUTFIT_JOB_NAME("Paramedic - Torch")
 	uniform = /obj/item/clothing/under/rank/medical/paramedic
-	suit = /obj/item/clothing/suit/storage/toggle/fr_jacket
+	suit = /obj/item/clothing/suit/armor/grim/toggle/fr_jacket
 	shoes = /obj/item/clothing/shoes/jackboots
 	flags = OUTFIT_FLAGS_JOB_DEFAULT | OUTFIT_EXTENDED_SURVIVAL
 

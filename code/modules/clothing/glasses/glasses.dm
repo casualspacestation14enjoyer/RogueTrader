@@ -2,8 +2,7 @@
 	name = "glasses"
 	icon = 'icons/obj/clothing/obj_eyes.dmi'
 	sprite_sheets = list(
-		SPECIES_VOX = 'icons/mob/species/vox/onmob_eyes_vox.dmi',
-		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_eyes_unathi.dmi'
+		SPECIES_VOX = 'icons/mob/species/vox/onmob_eyes_vox.dmi'
 		)
 	var/prescription = FALSE
 	off_state = "degoggles"

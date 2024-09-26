@@ -22,16 +22,16 @@ GLOBAL_LIST_EMPTY(skills)
 
 /singleton/hierarchy/skill/proc/get_cost(level)
 	switch(level)
-		if(SKILL_BASIC, SKILL_TRAINED)
+		if(SKILL_BASIC, SKILL_TRAINED, SKILL_EXPERIENCED)
 			return difficulty
-		if(SKILL_EXPERIENCED, SKILL_MASTER)
+		if(SKILL_MASTER)
 			return 2*difficulty
 		if(SKILL_LEGEND)
-			return 4*difficulty
+			return 2*difficulty
 		if(SKILL_PRIMARIS)
-			return 5*difficulty
+			return 4*difficulty
 		if(SKILL_DEMIGOD)
-			return 9*difficulty
+			return 5*difficulty
 		else
 			return 0
 
@@ -195,8 +195,8 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "You've undergone formal close-combat training, allowing you to handle most unskilled opponents. While melee combat isn't your focus, you know how to hold your own.<br>- You can parry with weapons, with success increasing at higher levels.<br>- You can execute grappling techniques like pinning and dislocating.<br>- You can leap into grabs without falling over, if your species allows.",
 						"Experienced"		= "You’re a capable combatant, trained in martial arts or as part of a military unit. You think quickly and act strategically in combat, and your familiarity with melee weapons is apparent.",
 						"Master"			= "You are a melee specialist, proficient in various martial techniques. Whether it’s with a blade, fist, or club, you fight with lethal precision, and regular training keeps you at the top of your game.",
-						"Legend"			= "Few can match your prowess in close combat. Your name is known in the Imperium, feared by your enemies. You parry and counterstrike with ruthless efficiency, facing down multiple foes with ease.<br>- You can disarm multiple opponents in one fluid motion.",
-						"Primaris"			= "You are beyond the capability of most mortals. Whether due to genetic augmentation or extraordinary skill, your reflexes and combat ability are nearly superhuman.<br>- You anticipate and counter attacks with near-perfect precision.",
+						"Legend"			= "Few can match your prowess in close combat. Your name is known in the Imperium, feared by your enemies. You parry and counterstrike with ruthless efficiency, facing down multiple foes with ease.",
+						"Primaris"			= "You are beyond the capability of most mortals. Whether due to genetic augmentation or extraordinary skill, your reflexes and combat ability are nearly superhuman.",
 						"Demigod"			= "You are a living legend, a force of destruction on the battlefield. Be it Astartes, Eldar Exarch, or the finest of the Adeptus Custodes, only the greatest champions reach this level. Your power in combat is enough to turn the tide of a war.<br>- You are nearly unstoppable, with unmatched speed, strength, and ferocity.")
 
 /singleton/hierarchy/skill/security/combat/get_cost(level)
@@ -210,9 +210,9 @@ GLOBAL_LIST_EMPTY(skills)
 		if(SKILL_MASTER)
 			return 4*difficulty
 		if(SKILL_LEGEND)
-			return 5*difficulty
+			return 6*difficulty
 		if(SKILL_PRIMARIS)
-			return 10*difficulty
+			return 9*difficulty
 		if(SKILL_DEMIGOD)
 			return 16*difficulty
 		else
@@ -243,9 +243,9 @@ GLOBAL_LIST_EMPTY(skills)
 		if(SKILL_MASTER)
 			return 4*difficulty
 		if(SKILL_LEGEND)
-			return 5*difficulty
+			return 6*difficulty
 		if(SKILL_PRIMARIS)
-			return 8*difficulty
+			return 7*difficulty
 		if(SKILL_DEMIGOD)
 			return 14*difficulty
 		else
@@ -260,16 +260,6 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "You are adept at identifying key forensic details—fibers, fingerprints, and blood spatter. You've worked in high-pressure environments, examining scenes under duress.<br>- You can easily detect fingerprints.<br>- You no longer risk contaminating evidence.",
 						"Experienced"		= "With significant experience in investigations, you can uncover obscure evidence like partial prints, xenos spore traces, or ballistic residues. Your eye for detail is honed to a razor’s edge.",
 						"Master"		= "Your expertise in forensics is unmatched. Whether in the field or working for a major investigatory body, you leave no stone unturned. Forensic trails yield to your skill, even hidden blood stains cannot escape your scrutiny.")
-
-
-/singleton/hierarchy/skill/security/forensics/get_cost(level)
-	switch(level)
-		if(SKILL_BASIC, SKILL_TRAINED, SKILL_EXPERIENCED)
-			return difficulty * 2
-		if(SKILL_MASTER)
-			return 3 * difficulty
-		else
-			return 0
 
 // Category: Engineering
 

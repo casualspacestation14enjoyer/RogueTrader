@@ -16,12 +16,9 @@
 	siemens_coefficient = 0.3
 	species_restricted = list(SPECIES_HUMAN,SPECIES_TAU,SPECIES_KROOT,SPECIES_IPC, SPECIES_VOX)
 	sprite_sheets = list(
-		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_head_unathi.dmi',
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_head_vox.dmi'
 		)
 	sprite_sheets_obj = list(
-		SPECIES_KROOT = 'icons/obj/clothing/species/unathi/obj_head_unathi.dmi',
-		SPECIES_TAU = 'icons/obj/clothing/species/skrell/obj_head_skrell.dmi',
 		SPECIES_VOX = 'icons/obj/clothing/species/vox/obj_head_vox.dmi'
 		)
 	camera = /obj/machinery/camera/network/mercenary
@@ -49,12 +46,9 @@
 	siemens_coefficient = 0.3
 	species_restricted = list(SPECIES_HUMAN,SPECIES_TAU,SPECIES_KROOT,SPECIES_IPC, SPECIES_VOX)
 	sprite_sheets = list(
-		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_suit_unathi.dmi',
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_suit_vox.dmi'
 		)
 	sprite_sheets_obj = list(
-		SPECIES_KROOT = 'icons/obj/clothing/species/unathi/obj_suit_unathi.dmi',
-		SPECIES_TAU = 'icons/obj/clothing/species/skrell/obj_suit_skrell.dmi',
 		SPECIES_VOX = 'icons/obj/clothing/species/vox/obj_suit_vox.dmi'
 		)
 

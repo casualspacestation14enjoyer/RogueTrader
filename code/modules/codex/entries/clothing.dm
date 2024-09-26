@@ -75,6 +75,6 @@
 
 	return jointext(armor_strings, "<br>")
 
-/obj/item/clothing/suit/armor/pcarrier/get_mechanics_info()
+/obj/item/clothing/suit/armor/grim/get_mechanics_info()
 	. = ..()
 	. += "<br>Its protection is provided by the plate inside, examine it for details on armor.<br>"

@@ -143,7 +143,7 @@
 	return FALSE
 
 
-/obj/item/clothing/suit/storage/attempt_store_item(obj/item/I, mob/user, silent)
+/obj/item/clothing/suit/armor/grim/storage/attempt_store_item(obj/item/I, mob/user, silent)
 	if (pockets?.can_be_inserted(I, user, TRUE) && pockets.handle_item_insertion(I, silent))
 		return TRUE
 	return ..()

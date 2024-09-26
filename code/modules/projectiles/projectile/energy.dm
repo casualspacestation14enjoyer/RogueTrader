@@ -241,6 +241,13 @@
 	damage = 82
 	armor_penetration = 41
 
+/obj/item/projectile/energy/ion/plasma/pellet
+	name = "plasma pellet"
+	fire_sound='sound/warhammer/gunshot/lasgun3.ogg'
+	icon_state = "pulse1"
+	damage = 42
+	armor_penetration = 31
+
 /obj/item/projectile/bullet/heavyplasma
 	name = "heavy plasma round"
 	icon_state = "pulse1"

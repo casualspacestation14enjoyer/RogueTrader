@@ -14,7 +14,7 @@
 	same_tile = 0
 	breakability = 4
 
-	grab_slowdown = 10
+	grab_slowdown = 6
 	upgrade_cooldown = 20
 
 	can_downgrade_on_resist = 0

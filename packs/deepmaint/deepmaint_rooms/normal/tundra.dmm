@@ -40,9 +40,9 @@
 /area/map_template/deepmaint)
 "o" = (
 /obj/structure/table/rack,
-/obj/item/clothing/suit/storage/hooded/wintercoat,
-/obj/item/clothing/suit/storage/hooded/wintercoat,
-/obj/item/clothing/suit/storage/hooded/wintercoat,
+/obj/item/clothing/suit/armor/grim/storage/hooded/wintercoat,
+/obj/item/clothing/suit/armor/grim/storage/hooded/wintercoat,
+/obj/item/clothing/suit/armor/grim/storage/hooded/wintercoat,
 /obj/floor_decal/industrial/traffic{
 	dir = 8
 	},

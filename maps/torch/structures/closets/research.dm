@@ -23,7 +23,7 @@
 
 /obj/structure/closet/secure_closet/RD_torch/WillContain()
 	return list(
-		/obj/item/clothing/suit/storage/toggle/labcoat/rd/ec,
+		/obj/item/clothing/suit/armor/grim/toggle/labcoat/rd/ec,
 		/obj/item/clothing/gloves/latex,
 		/obj/item/clothing/glasses/science,
 		/obj/item/device/radio/headset/heads/torchntdirector,
@@ -34,7 +34,7 @@
 		/obj/item/device/megaphone,
 		/obj/item/device/tape/random = 3,
 		/obj/item/clothing/glasses/welding/superior,
-		/obj/item/clothing/suit/armor/pcarrier/medium/command,
+		/obj/item/clothing/suit/armor/grim/medium/command,
 		/obj/item/clothing/head/helmet/solgov/command,
 		/obj/item/storage/box/secret_project_disks/science,
 		/obj/item/storage/belt/general/full,
@@ -50,7 +50,7 @@
 /obj/structure/closet/secure_closet/secure_closet/xenoarchaeologist_torch/WillContain()
 	return list(
 		/obj/item/clothing/under/rank/scientist,
-		/obj/item/clothing/suit/storage/toggle/labcoat/science/ec,
+		/obj/item/clothing/suit/armor/grim/toggle/labcoat/science/ec,
 		/obj/item/device/radio/headset/science,
 		/obj/item/device/radio/headset/science/alt,
 		/obj/item/clothing/mask/gas,
@@ -77,8 +77,8 @@
 /obj/structure/closet/secure_closet/scientist_torch/WillContain()
 	return list(
 		/obj/item/clothing/under/rank/scientist,
-		/obj/item/clothing/suit/storage/toggle/labcoat/science,
-		/obj/item/clothing/suit/storage/toggle/labcoat/science/ec,
+		/obj/item/clothing/suit/armor/grim/toggle/labcoat/science,
+		/obj/item/clothing/suit/armor/grim/toggle/labcoat/science/ec,
 		/obj/item/device/radio/headset/science,
 		/obj/item/device/radio/headset/science/alt,
 		/obj/item/clothing/mask/gas/half,

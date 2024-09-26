@@ -39,16 +39,16 @@
 /obj/item/clothing/under/solgov/utility/expeditionary/fiber_name = "militarum uniform"
 /obj/item/clothing/under/solgov/utility/expeditionary_skirt/fiber_name = "militarum uniform"
 /obj/item/clothing/under/solgov/dress/expeditionary/fiber_name = "militarum dress uniform"
-/obj/item/clothing/suit/storage/solgov/service/expeditionary/fiber_name = "militarum jacket"
-/obj/item/clothing/suit/storage/solgov/dress/expedition/fiber_name = "militarum dress coat"
+/obj/item/clothing/suit/armor/grim/storage/solgov/service/expeditionary/fiber_name = "militarum jacket"
+/obj/item/clothing/suit/armor/grim/storage/solgov/dress/expedition/fiber_name = "militarum dress coat"
 
 /obj/item/clothing/under/solgov/utility/fleet/fiber_name = "fleet coveralls"
 /obj/item/clothing/under/solgov/utility/fleet/polopants/fiber_name = "fleet polo and pants"
 /obj/item/clothing/under/solgov/utility/fleet/combat/fiber_name = "fleet fatigues"
 /obj/item/clothing/under/solgov/service/fleet/fiber_name = "fleet service uniform"
-/obj/item/clothing/suit/storage/jacket/solgov/fleet/fiber_name = "fleet jacket"
-/obj/item/clothing/suit/storage/solgov/service/fleet/fiber_name = "fleet service jacket"
-/obj/item/clothing/suit/storage/solgov/dress/fleet/fiber_name = "fleet dress jacket"
+/obj/item/clothing/suit/armor/grim/storage/jacket/solgov/fleet/fiber_name = "fleet jacket"
+/obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet/fiber_name = "fleet service jacket"
+/obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet/fiber_name = "fleet dress jacket"
 
 
 // Removing the has_fibers flag from things that should not leave forensic traces. Probably not exhaustive.
@@ -61,11 +61,11 @@
 /obj/item/clothing/suit/space/void/clothing_flags = CLOTHING_FLAGS_DEFAULT_FIBERLESS
 /obj/item/clothing/suit/space/rig/clothing_flags = CLOTHING_FLAGS_DEFAULT_FIBERLESS
 /obj/item/clothing/suit/radiation/clothing_flags = CLOTHING_FLAGS_DEFAULT_FIBERLESS
-/obj/item/clothing/suit/bio_suit/clothing_flags = CLOTHING_FLAGS_DEFAULT_FIBERLESS
+/obj/item/clothing/suit/armor/grim/bio_suit/clothing_flags = CLOTHING_FLAGS_DEFAULT_FIBERLESS
 /obj/item/clothing/suit/rubber/clothing_flags = CLOTHING_FLAGS_DEFAULT_FIBERLESS
 /obj/item/clothing/suit/chameleon/clothing_flags = CLOTHING_FLAGS_DEFAULT_FIBERLESS
 /obj/item/clothing/suit/armor/clothing_flags = CLOTHING_FLAGS_DEFAULT_FIBERLESS
-/obj/item/clothing/suit/armor/pcarrier/clothing_flags = CLOTHING_FLAGS_DEFAULT //re-adding fibers to plate carriers
+/obj/item/clothing/suit/armor/grim/clothing_flags = CLOTHING_FLAGS_DEFAULT //re-adding fibers to plate carriers
 
 /obj/item/clothing/accessory/chameleon/clothing_flags = CLOTHING_FLAGS_ACCESSORY_DEFAULT_FIBERLESS
 /obj/item/clothing/accessory/storage/holster/clothing_flags = CLOTHING_FLAGS_ACCESSORY_DEFAULT_FIBERLESS

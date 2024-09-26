@@ -13,7 +13,6 @@
 		slot_head_str = 'icons/mob/onmob/onmob_goggle_mod.dmi'
 	)
 	sprite_sheets = list(
-		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_goggle_mod_unathi.dmi',
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_goggle_mod_vox.dmi',
 		SPECIES_HUMAN = 'icons/mob/onmob/onmob_goggle_mod.dmi'
 	)

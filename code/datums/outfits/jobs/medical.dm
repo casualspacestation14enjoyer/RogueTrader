@@ -13,7 +13,7 @@
 	name = OUTFIT_JOB_NAME("Chief Medical Officer")
 	l_ear  =/obj/item/device/radio/headset/heads/cmo
 	uniform = /obj/item/clothing/under/rank/chief_medical_officer
-	suit = /obj/item/clothing/suit/storage/toggle/labcoat/cmo
+	suit = /obj/item/clothing/suit/armor/grim/toggle/labcoat/cmo
 	shoes = /obj/item/clothing/shoes/brown
 	l_hand = /obj/item/storage/firstaid/adv
 	r_pocket = /obj/item/device/flashlight/pen
@@ -23,14 +23,14 @@
 /singleton/hierarchy/outfit/job/medical/doctor
 	name = OUTFIT_JOB_NAME("Medical Doctor")
 	uniform = /obj/item/clothing/under/rank/medical
-	suit = /obj/item/clothing/suit/storage/toggle/labcoat
+	suit = /obj/item/clothing/suit/armor/grim/toggle/labcoat
 	l_hand = /obj/item/storage/firstaid/adv
 	r_pocket = /obj/item/device/flashlight/pen
 	id_types = list(/obj/item/card/id/medical)
 
 /singleton/hierarchy/outfit/job/medical/doctor/emergency_physician
 	name = OUTFIT_JOB_NAME("Emergency physician")
-	suit = /obj/item/clothing/suit/storage/toggle/fr_jacket
+	suit = /obj/item/clothing/suit/armor/grim/toggle/fr_jacket
 
 /singleton/hierarchy/outfit/job/medical/doctor/surgeon
 	name = OUTFIT_JOB_NAME("Surgeon")
@@ -40,7 +40,7 @@
 /singleton/hierarchy/outfit/job/medical/doctor/virologist
 	name = OUTFIT_JOB_NAME("Virologist")
 	uniform = /obj/item/clothing/under/rank/virologist
-	suit = /obj/item/clothing/suit/storage/toggle/labcoat/virologist
+	suit = /obj/item/clothing/suit/armor/grim/toggle/labcoat/virologist
 	mask = /obj/item/clothing/mask/surgical
 /singleton/hierarchy/outfit/job/medical/doctor/virologist/New()
 	..()
@@ -65,7 +65,7 @@
 /singleton/hierarchy/outfit/job/medical/chemist
 	name = OUTFIT_JOB_NAME("Chemist")
 	uniform = /obj/item/clothing/under/rank/chemist
-	suit = /obj/item/clothing/suit/storage/toggle/labcoat/chemist
+	suit = /obj/item/clothing/suit/armor/grim/toggle/labcoat/chemist
 	id_types = list(/obj/item/card/id/medical/chemist)
 	pda_type = /obj/item/modular_computer/pda/chemistry
 
@@ -76,7 +76,7 @@
 /singleton/hierarchy/outfit/job/medical/geneticist
 	name = OUTFIT_JOB_NAME("Geneticist")
 	uniform = /obj/item/clothing/under/rank/geneticist
-	suit = /obj/item/clothing/suit/storage/toggle/labcoat/genetics
+	suit = /obj/item/clothing/suit/armor/grim/toggle/labcoat/genetics
 	r_pocket = /obj/item/device/flashlight/pen
 	id_types = list(/obj/item/card/id/medical/geneticist)
 	pda_type = /obj/item/modular_computer/pda/medical
@@ -89,14 +89,14 @@
 /singleton/hierarchy/outfit/job/medical/psychiatrist
 	name = OUTFIT_JOB_NAME("Psychiatrist")
 	uniform = /obj/item/clothing/under/rank/psych
-	suit = /obj/item/clothing/suit/storage/toggle/labcoat
+	suit = /obj/item/clothing/suit/armor/grim/toggle/labcoat
 	shoes = /obj/item/clothing/shoes/laceup
 	id_types = list(/obj/item/card/id/medical/psychiatrist)
 
 /singleton/hierarchy/outfit/job/medical/paramedic
 	name = OUTFIT_JOB_NAME("Paramedic")
 	uniform = /obj/item/clothing/under/rank/medical/scrubs/black
-	suit = /obj/item/clothing/suit/storage/toggle/fr_jacket
+	suit = /obj/item/clothing/suit/armor/grim/toggle/fr_jacket
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_hand = /obj/item/storage/firstaid/adv
 	belt = /obj/item/storage/belt/medical/emt

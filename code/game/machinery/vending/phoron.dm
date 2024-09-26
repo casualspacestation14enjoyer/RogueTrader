@@ -7,7 +7,7 @@
 		Make an explosive first impression!\
 	"}
 	products = list(
-		/obj/item/clothing/suit/bio_suit = 6,
+		/obj/item/clothing/suit/armor/grim/bio_suit = 6,
 		/obj/item/clothing/head/bio_hood = 6,
 		/obj/item/device/transfer_valve = 6,
 		/obj/item/device/assembly/timer = 6,

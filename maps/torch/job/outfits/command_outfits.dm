@@ -101,7 +101,7 @@
 	name = OUTFIT_JOB_NAME("SolGov Representative")
 	l_ear = /obj/item/device/radio/headset/headset_com
 	uniform = /obj/item/clothing/under/rank/internalaffairs/plain/solgov
-	suit = /obj/item/clothing/suit/storage/toggle/suit/black
+	suit = /obj/item/clothing/suit/armor/grim/toggle/suit/black
 	shoes = /obj/item/clothing/shoes/laceup
 	id_types = list(/obj/item/card/id/torch/crew/representative)
 	pda_type = /obj/item/modular_computer/pda/heads/paperpusher

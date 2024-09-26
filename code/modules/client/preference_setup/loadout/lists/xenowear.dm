@@ -88,7 +88,7 @@
 // IPC clothing
 /datum/gear/suit/lab_xyn_machine
 	display_name = "Xynergy labcoat"
-	path = /obj/item/clothing/suit/storage/toggle/labcoat/xyn_machine
+	path = /obj/item/clothing/suit/armor/grim/toggle/labcoat/xyn_machine
 	slot = slot_wear_suit
 	sort_category = "Xenowear"
 	whitelisted = list(SPECIES_IPC)

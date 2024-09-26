@@ -219,9 +219,6 @@ scarves
 	desc = "An Imperial blue silk scarf, meant to be worn with Imperial uniforms."
 	icon = 'icons/obj/clothing/obj_accessories.dmi'
 	accessory_icons = list(slot_w_uniform_str = 'icons/mob/onmob/onmob_accessories.dmi', slot_wear_suit_str = 'icons/mob/onmob/onmob_accessories.dmi')
-	sprite_sheets = list(
-		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_accessories_unathi.dmi'
-		)
 	icon_state = "whitescarf"
 	on_rolled_down = ACCESSORY_ROLLED_NONE
 	color = "#68a0ce"

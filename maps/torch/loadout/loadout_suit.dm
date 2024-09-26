@@ -117,7 +117,7 @@
 
 /datum/gear/suit/labcoat_ec
 	display_name = "labcoat, Explorator"
-	path = /obj/item/clothing/suit/storage/toggle/labcoat/science/ec
+	path = /obj/item/clothing/suit/armor/grim/toggle/labcoat/science/ec
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps
 	)
@@ -132,19 +132,19 @@
 	allowed_roles = list(
 		/datum/job/cmo
 	)
-	path = /obj/item/clothing/suit/storage/toggle/labcoat
+	path = /obj/item/clothing/suit/armor/grim/toggle/labcoat
 	flags = GEAR_HAS_NO_CUSTOMIZATION
 
 /datum/gear/suit/labcoat_cmo/New()
 	..()
 	var/list/options = list()
-	options["chief medical officer's labcoat"] = /obj/item/clothing/suit/storage/toggle/labcoat/cmo
-	options["chief medical officer's command labcoat"] = /obj/item/clothing/suit/storage/toggle/labcoat/cmoalt
+	options["chief medical officer's labcoat"] = /obj/item/clothing/suit/armor/grim/toggle/labcoat/cmo
+	options["chief medical officer's command labcoat"] = /obj/item/clothing/suit/armor/grim/toggle/labcoat/cmoalt
 	gear_tweaks += new/datum/gear_tweak/path(options)
 
 /datum/gear/suit/labcoat_ec_cso
 	display_name = "labcoat, chief science officer, Explorator"
-	path = /obj/item/clothing/suit/storage/toggle/labcoat/rd/ec
+	path = /obj/item/clothing/suit/armor/grim/toggle/labcoat/rd/ec
 	allowed_roles = list(
 		/datum/job/rd
 	)
@@ -178,14 +178,14 @@
 
 /datum/gear/tactical/pcarrier
 	display_name = "black plate carrier"
-	path = /obj/item/clothing/suit/armor/pcarrier
+	path = /obj/item/clothing/suit/armor/grim
 	cost = 1
 	slot = slot_wear_suit
 	allowed_roles = ARMORED_ROLES
 
 /datum/gear/tactical/pcarrier/navy
 	display_name = "navy blue plate carrier"
-	path = /obj/item/clothing/suit/armor/pcarrier/navy
+	path = /obj/item/clothing/suit/armor/grim
 	allowed_branches = list(/datum/mil_branch/fleet, /datum/mil_branch/civilian)
 
 /datum/gear/tactical/pcarrier/misc
@@ -196,13 +196,13 @@
 /datum/gear/tactical/pcarrier/misc/New()
 	..()
 	var/armors = list()
-	armors["green plate carrier"] = /obj/item/clothing/suit/armor/pcarrier/green
-	armors["tan plate carrier"] = /obj/item/clothing/suit/armor/pcarrier/tan
+	armors["green plate carrier"] = /obj/item/clothing/suit/armor/grim
+	armors["tan plate carrier"] = /obj/item/clothing/suit/armor/grim
 	gear_tweaks += new/datum/gear_tweak/path(armors)
 
 /datum/gear/suit/sfp
 	display_name = "Agent's jacket"
-	path = /obj/item/clothing/suit/storage/toggle/agent_jacket
+	path = /obj/item/clothing/suit/armor/grim/toggle/agent_jacket
 	allowed_roles = list(
 		/datum/job/detective
 	)

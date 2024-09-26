@@ -2498,8 +2498,8 @@
 /obj/structure/table/rack{
 	dir = 4
 	},
-/obj/item/clothing/suit/bio_suit/anomaly,
-/obj/item/clothing/suit/bio_suit/anomaly,
+/obj/item/clothing/suit/armor/grim/bio_suit/anomaly,
+/obj/item/clothing/suit/armor/grim/bio_suit/anomaly,
 /obj/item/clothing/head/bio_hood/anomaly,
 /obj/item/clothing/head/bio_hood/anomaly,
 /obj/floor_decal/industrial/outline/yellow,
@@ -9601,7 +9601,7 @@
 /turf/simulated/floor/plating,
 /area/map_template/oldlab2/powerandatmos)
 "YK" = (
-/obj/item/clothing/suit/storage/hazardvest,
+/obj/item/clothing/suit/armor/grim/storage/hazardvest,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/catwalk_plated,

@@ -40,7 +40,7 @@
 /singleton/hierarchy/outfit/job/torch/crew/security/forensic_tech/agent
 	name = OUTFIT_JOB_NAME("Forensic Technician - Magistratum Agent")
 	uniform = /obj/item/clothing/under/det/grey
-	suit = /obj/item/clothing/suit/storage/toggle/agent_jacket
+	suit = /obj/item/clothing/suit/armor/grim/toggle/agent_jacket
 	shoes = /obj/item/clothing/shoes/dress
 
 /singleton/hierarchy/outfit/job/torch/crew/security/maa

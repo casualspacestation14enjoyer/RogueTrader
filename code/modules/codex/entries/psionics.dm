@@ -6,7 +6,7 @@
 		/obj/item/gun/projectile/revolver/foundation,
 		/obj/item/card/id/foundation,
 		/obj/item/card/id/foundation_civilian,
-		/obj/item/clothing/suit/storage/toggle/labcoat/foundation,
+		/obj/item/clothing/suit/armor/grim/toggle/labcoat/foundation,
 		/obj/item/reagent_containers/food/drinks/glass2/coffeecup/foundation
 	)
 	lore_text = "The Cuchulain Foundation is a non-profit body based out of Neptune orbit. Their logo is \

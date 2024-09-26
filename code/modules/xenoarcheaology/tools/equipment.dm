@@ -1,4 +1,4 @@
-/obj/item/clothing/suit/bio_suit/anomaly
+/obj/item/clothing/suit/armor/grim/bio_suit/anomaly
 	name = "anomaly suit"
 	desc = "A suit that protects against exotic alien energies and biological contamination."
 	icon_state = "bio_anom"

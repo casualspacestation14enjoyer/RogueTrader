@@ -304,84 +304,76 @@
 	desc = "A simple, comfortable cloak without sleeves. This one is blue."
 	icon_state = "blueponcho"
 
-/obj/item/clothing/suit/storage/toggle/bomber
+/obj/item/clothing/suit/armor/grim/toggle/bomber
 	name = "bomber jacket"
 	desc = "A thick, well-worn WW2 leather bomber jacket."
 	icon_state = "bomber"
-	body_parts_covered = UPPER_TORSO|ARMS
-	cold_protection = UPPER_TORSO|ARMS
 	min_cold_protection_temperature = T0C - 20
 	siemens_coefficient = 0.7
 
-/obj/item/clothing/suit/storage/leather_jacket
+/obj/item/clothing/suit/armor/grim/storage/leather_jacket
 	name = "black leather jacket"
 	desc = "A black leather coat."
 	icon_state = "leather_jacket"
-	body_parts_covered = UPPER_TORSO|ARMS
 
-/obj/item/clothing/suit/storage/leather_jacket/nanotrasen
+/obj/item/clothing/suit/armor/grim/storage/leather_jacket/nanotrasen
 	name = "\improper Necromundan black leather jacket"
 	desc = "A black leather coat. The Necromundan logo is proudly displayed on the back."
 	icon_state = "leather_jacket_nt"
 
 //This one has buttons for some reason
-/obj/item/clothing/suit/storage/toggle/brown_jacket
+/obj/item/clothing/suit/armor/grim/toggle/brown_jacket
 	name = "leather jacket"
 	desc = "A brown leather coat."
 	icon_state = "brown_jacket"
-	body_parts_covered = UPPER_TORSO|ARMS
 
-/obj/item/clothing/suit/storage/toggle/leather_hoodie
+/obj/item/clothing/suit/armor/grim/toggle/leather_hoodie
 	name = "leather hoodie jacket"
 	desc = "A brown leather hoodie, coloured in a dark tone. It's fun to tug at the strings."
 	icon_state = "leather_hoodie"
-	body_parts_covered = UPPER_TORSO|ARMS
 
-/obj/item/clothing/suit/storage/toggle/brown_jacket/nanotrasen
+/obj/item/clothing/suit/armor/grim/toggle/brown_jacket/nanotrasen
 	name = "\improper Necromundan leather jacket"
 	desc = "A brown leather coat. The Necromundan logo is proudly displayed on the back."
 	icon_state = "brown_jacket_nt"
 
-/obj/item/clothing/suit/storage/toggle/agent_jacket
+/obj/item/clothing/suit/armor/grim/toggle/agent_jacket
 	name = "agent jacket"
 	desc = "A black leather jacket belonging to an agent of the Magistratum."
 	icon_state = "agent_jacket"
-	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA)
-	body_parts_covered = UPPER_TORSO|ARMS
 
-/obj/item/clothing/suit/storage/toggle/hoodie
+/obj/item/clothing/suit/armor/grim/toggle/hoodie
 	name = "hoodie"
 	desc = "A warm sweatshirt."
 	icon_state = "hoodie"
 	min_cold_protection_temperature = T0C - 20
-	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS
 
-/obj/item/clothing/suit/storage/toggle/hoodie/cti
+/obj/item/clothing/suit/armor/grim/toggle/hoodie/cti
 	name = "\improper CTI hoodie"
 	desc = "A warm, black sweatshirt.  It bears the letters 'CTI' on the back, a lettering to the prestigious university in Vostroya, Ceti Technical Institute.  There is a blue supernova embroidered on the front, the emblem of CTI."
 	icon_state = "cti_hoodie"
 
-/obj/item/clothing/suit/storage/toggle/hoodie/mu
+/obj/item/clothing/suit/armor/grim/toggle/hoodie/mu
 	name = "\improper Schola Progenium hoodie"
 	desc = "A warm, gray sweatshirt.  It bears the letters 'MU' on the front, a lettering to the well-known public college, Schola Progenium."
 	icon_state = "mu_hoodie"
 
-/obj/item/clothing/suit/storage/toggle/hoodie/nt
+/obj/item/clothing/suit/armor/grim/toggle/hoodie/nt
 	name = "\improper Necromundan hoodie"
 	desc = "A warm, blue sweatshirt. It proudly bears the Necromundan logo on the back. The edges are trimmed with silver."
 	icon_state = "nt_hoodie"
 
-/obj/item/clothing/suit/storage/toggle/hoodie/smw
+/obj/item/clothing/suit/armor/grim/toggle/hoodie/smw
 	name = "\improper Space Mountain Wind hoodie"
 	desc = "A warm, black sweatshirt.  It has the logo for the popular softdrink Space Mountain Wind on both the front and the back."
 	icon_state = "smw_hoodie"
 
-/obj/item/clothing/suit/storage/toggle/hoodie/black
+/obj/item/clothing/suit/armor/grim/toggle/hoodie/black
 	name = "black hoodie"
 	desc = "A warm, black sweatshirt."
 	color = COLOR_DARK_GRAY
 
-/obj/item/clothing/suit/storage/mbill
+/obj/item/clothing/suit/armor/grim/storage/mbill
 	name = "shipping jacket"
 	desc = "A green jacket bearing the logo of Major Bill's Shipping."
 	icon_state = "mbill"
@@ -419,32 +411,32 @@
 /*
  * Track Jackets
  */
-/obj/item/clothing/suit/storage/toggle/track
+/obj/item/clothing/suit/armor/grim/toggle/track
 	name = "track jacket"
 	desc = "A track jacket, for the athletic."
 	icon_state = "trackjacket"
 
-/obj/item/clothing/suit/storage/toggle/track/blue
+/obj/item/clothing/suit/armor/grim/toggle/track/blue
 	name = "blue track jacket"
 	desc = "A blue track jacket, for the athletic."
 	icon_state = "trackjacketblue"
 
-/obj/item/clothing/suit/storage/toggle/track/green
+/obj/item/clothing/suit/armor/grim/toggle/track/green
 	name = "green track jacket"
 	desc = "A green track jacket, for the athletic."
 	icon_state = "trackjacketgreen"
 
-/obj/item/clothing/suit/storage/toggle/track/red
+/obj/item/clothing/suit/armor/grim/toggle/track/red
 	name = "red track jacket"
 	desc = "A red track jacket, for the athletic."
 	icon_state = "trackjacketred"
 
-/obj/item/clothing/suit/storage/toggle/track/white
+/obj/item/clothing/suit/armor/grim/toggle/track/white
 	name = "white track jacket"
 	desc = "A white track jacket, for the athletic."
 	icon_state = "trackjacketwhite"
 
-/obj/item/clothing/suit/storage/toggle/track/gcc
+/obj/item/clothing/suit/armor/grim/toggle/track/gcc
 	name = "\improper Imperial track jacket"
 	desc = "An Independent track jacket, for the truly cheeki breeki."
 	icon_state = "trackjackettcc"
@@ -487,13 +479,13 @@
 	color = "#ffb7db"
 
 
-/obj/item/clothing/suit/storage/toggle/zipper
+/obj/item/clothing/suit/armor/grim/toggle/zipper
 	name = "zip up sweater"
 	desc = "A black sweater that zips up in the front."
 	icon_state = "zipperjacket"
 
 
-/obj/item/clothing/suit/storage/pullover
+/obj/item/clothing/suit/armor/grim/storage/pullover
 	name = "pullover sweater"
 	desc = "A sweater made of a soft material with a short zipper on the collar."
 	icon_state = "pullover"

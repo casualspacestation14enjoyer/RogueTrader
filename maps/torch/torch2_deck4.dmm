@@ -3054,7 +3054,7 @@
 	name = "north bump";
 	pixel_y = 24
 	},
-/obj/item/clothing/suit/storage/hooded/wintercoat/solgov,
+/obj/item/clothing/suit/armor/grim/storage/hooded/wintercoat/solgov,
 /turf/simulated/floor/lino,
 /area/tcommsat/computer)
 "kH" = (

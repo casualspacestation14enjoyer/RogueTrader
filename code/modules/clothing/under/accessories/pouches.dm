@@ -1,20 +1,16 @@
 /obj/item/clothing/accessory/storage/pouches
 	name = "storage pouches"
 	desc = "A collection of black pouches that can be attached to a plate carrier. Carries up to two items."
-	icon_override = 'icons/mob/onmob/onmob_modular_armor.dmi'
-	icon = 'icons/obj/clothing/obj_suit_modular_armor.dmi'
+	icon_override = 'icons/mob/onmob/onmob_suit.dmi'
+	icon = 'icons/obj/clothing/obj_suit.dmi'
 	accessory_icons = list(
-		slot_tie_str = 'icons/mob/onmob/onmob_modular_armor.dmi',
-		slot_wear_suit_str = 'icons/mob/onmob/onmob_modular_armor.dmi'
+		slot_tie_str = 'icons/mob/onmob/onmob_suit.dmi',
+		slot_wear_suit_str = 'icons/mob/onmob/onmob_suit.dmi'
 	)
 	icon_state = "pouches"
 	gender = PLURAL
 	slot = ACCESSORY_SLOT_ARMOR_STORAGE
 	slots = 2 STORAGE_SLOTS
-
-	sprite_sheets = list(
-		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_modular_armor_unathi.dmi'
-		)
 
 
 /obj/item/clothing/accessory/storage/pouches/blue

@@ -25,7 +25,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	attack_verb = list("chopped", "torn", "cut")
 	applies_material_colour = 0
 	hitsound = "chop"
-	attack_cooldown_modifier = -0.4
+	attack_cooldown_modifier = -0.2
 	base_parry_chance = 35
 	armor_penetration = 4
 
@@ -39,12 +39,11 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	item_state = "machete"
 	w_class = ITEM_SIZE_NORMAL
 	slot_flags = SLOT_BELT
-	default_material = MATERIAL_STEEL
 	base_parry_chance = 30
 	max_force = 43
 	force_multiplier = 0.32
 	armor_penetration = 3 // Hits for more damage but worse AP. Like a shitty cutro.
-	attack_cooldown_modifier = -0.3
+	attack_cooldown_modifier = -0.1
 
 /obj/item/material/hatchet/machete/unbreakable
 	unbreakable = TRUE
@@ -73,10 +72,11 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	item_state = "mekmace"
 	max_force = 60
 	applies_material_name = FALSE
+	default_material = MATERIAL_STEEL
 	var/wielded_item_state // For two handed icon. Only add if it has it.
 	applies_material_colour = 0
-	sharp = FALSE // For decap chance.
-	edge = FALSE // If blunt set to FALSE. Otherwise TRUE.
+	sharp = TRUE // For decap chance.
+	edge = TRUE // If blunt set to FALSE. Otherwise TRUE.
 
 /obj/item/material/twohanded/warhammer/on_update_icon()
 	..()
@@ -106,14 +106,13 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	unwielded_force_divisor = 0.31
 	thrown_force_multiplier = 0.27
 	armor_penetration = 4
-	throw_speed = 4
+	throw_speed = 2
 	edge = TRUE
 	sharp = TRUE
-	default_material = MATERIAL_STEEL
 	does_spin = FALSE // Does it spin when thrown?
-	base_parry_chance = 30
+	base_parry_chance = 25
 	wielded_parry_bonus = 5
-	attack_cooldown_modifier = -0.2 // Negative value is faster speed.
+	attack_cooldown_modifier = 0
 	melee_accuracy_bonus = 5
 
 /obj/item/material/twohanded/warhammer/sword/cutro
@@ -122,13 +121,13 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	icon_state = "spatha"
 	item_state = "spatha"
 	w_class = ITEM_SIZE_NORMAL
-	attack_cooldown_modifier = -0.5
+	attack_cooldown_modifier = -0.2
 	max_force = 55
 	force_multiplier = 0.33
 	unwielded_force_divisor = 0.33
 	thrown_force_multiplier = 0.28
 	armor_penetration = 5 // 40k equiv of an arming sword or long dagger.
-	base_parry_chance = 35
+	base_parry_chance = 30
 	melee_accuracy_bonus = 5
 
 /obj/item/material/twohanded/warhammer/sword/cutro
@@ -140,7 +139,6 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	force_multiplier = 0.35
 	unwielded_force_divisor = 0.35
 	thrown_force_multiplier = 0.3
-	base_parry_chance = 37
 
 /obj/item/material/twohanded/warhammer/sword/broadsword
 	name = "Heavy Broadsword"
@@ -153,7 +151,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	unwielded_force_divisor = 0.36
 	thrown_force_multiplier = 0.30
 	armor_penetration = 5
-	base_parry_chance = 30
+	base_parry_chance = 25
 	wielded_parry_bonus = 10
 	melee_accuracy_bonus = 10
 
@@ -167,7 +165,6 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	unwielded_force_divisor = 0.38
 	thrown_force_multiplier = 0.32
 	armor_penetration = 6
-	base_parry_chance = 33
 
 /obj/item/material/twohanded/warhammer/sword/chopper
 	name = "Iron Chopper"
@@ -182,7 +179,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	unwielded_force_divisor = 0.37
 	thrown_force_multiplier = 0.3
 	armor_penetration = 3
-	base_parry_chance = 25
+	base_parry_chance = 20
 	melee_accuracy_bonus = 5
 
 /obj/item/material/twohanded/warhammer/sword/chopper/heavy
@@ -197,7 +194,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	unwielded_force_divisor = 0.39
 	thrown_force_multiplier = 0.33
 	armor_penetration = 4
-	base_parry_chance = 30
+	base_parry_chance = 25
 	melee_accuracy_bonus = 5
 
 /obj/item/material/twohanded/warhammer/sword/chopper/heavy/adamantine
@@ -221,8 +218,8 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	unwielded_force_divisor = 0.35
 	thrown_force_multiplier = 0.29
 	armor_penetration = 6 // Adamantine Masterwork Commisword.
-	throw_speed = 4.3
-	base_parry_chance = 35 // Good parry.
+	throw_speed = 2.3
+	base_parry_chance = 30 // Good parry.
 	wielded_parry_bonus = 5
 	attack_cooldown_modifier = 0.1 // Fast considering damage.
 	melee_accuracy_bonus = 7 // Accurate.
@@ -233,7 +230,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	icon_state = "sabre"
 	item_state = "sabre"
 	melee_accuracy_bonus = 10
-	base_parry_chance = 32
+	base_parry_chance = 27
 
 // CHAOS WEAPONS
 /obj/item/material/twohanded/warhammer/sword/demon
@@ -247,8 +244,8 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	unwielded_force_divisor = 0.38
 	thrown_force_multiplier = 0.30
 	armor_penetration = 7
-	throw_speed = 4
-	base_parry_chance = 40
+	throw_speed = 3
+	base_parry_chance = 35
 	wielded_parry_bonus = 5
 	attack_cooldown_modifier = 0
 	melee_accuracy_bonus = 10
@@ -259,7 +256,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	desc = "An agile trench axe issued to guardsmen, used both as a weapon and field tool. Popularized during the Heresy of Krieg, it became standard issue after the Munitorum sanctioned it based on data-scrolls from the conflict."
 	icon_state = "trenchaxe"
 	item_state = "trenchaxe"
-	wielded_item_state = "trenchaxe-w" // If you make any axe subweapons make sure to set wielded_item_state
+	wielded_item_state = "trenchaxe-w" // ALL AXE SUBWEAPONS REQUIRE WIELDED ITEM STATE SET
 	hitsound = list('sound/weapons/slash1.ogg','sound/weapons/slash2.ogg','sound/weapons/slash3.ogg')
 	attack_verb = list("bashed", "chopped", "slashed")
 	obj_flags = null // no shock
@@ -270,12 +267,11 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	unwielded_force_divisor = 0.32
 	thrown_force_multiplier = 0.30
 	armor_penetration = 5 // Hits heavy. Crushes/Cuts Armor.
-	throw_speed = 4.5
+	throw_speed = 2.5
 	edge = TRUE
 	sharp = TRUE
-	default_material = MATERIAL_STEEL
 	does_spin = TRUE
-	base_parry_chance = 20 // Really bad one handed. Equal to a sword when two handed.
+	base_parry_chance = 15 // Really bad one handed. Equal to a sword when two handed.
 	wielded_parry_bonus = 15
 	attack_cooldown_modifier = 1
 	melee_accuracy_bonus = 5
@@ -297,11 +293,11 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	unwielded_force_divisor = 0.30
 	thrown_force_multiplier = 0.30
 	armor_penetration = 6 // Pens armor.
-	throw_speed = 3.5
+	throw_speed = 4
 	edge = TRUE
 	sharp = FALSE // no decap
 	does_spin = FALSE
-	base_parry_chance = 15
+	base_parry_chance = 10
 	wielded_parry_bonus = 20 // Defending eezi
 	attack_cooldown_modifier = 0.7
 	melee_accuracy_bonus = 7 // Primitive easy to use weapon.
@@ -328,10 +324,10 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	unwielded_force_divisor = 0.32
 	thrown_force_multiplier = 0.32
 	armor_penetration = 7
-	throw_speed = 4.5
+	throw_speed = 3
 	edge = TRUE // Decaps. Big boy.
 	sharp = TRUE
-	base_parry_chance = 10
+	base_parry_chance = 5
 	wielded_parry_bonus = 30 // Long reach good defense.
 	attack_cooldown_modifier = 1.2
 	melee_accuracy_bonus = 7
@@ -359,8 +355,8 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	unwielded_force_divisor = 0.36
 	thrown_force_multiplier = 0.34
 	armor_penetration = 6
-	throw_speed = 5
-	base_parry_chance = 15
+	throw_speed = 2
+	base_parry_chance = 10
 	wielded_parry_bonus = 25
 	attack_cooldown_modifier = 1.6
 	melee_accuracy_bonus = 10
@@ -387,8 +383,8 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	unwielded_force_divisor = 0.36
 	thrown_force_multiplier = 0.36
 	armor_penetration = 6
-	throw_speed = 5
-	base_parry_chance = 15 // Not as fancy as a saintie. But simple can be effective.
+	throw_speed = 1
+	base_parry_chance = 10 // Not as fancy as a saintie. But simple can be effective.
 	wielded_parry_bonus = 15
 	attack_cooldown_modifier = 1.4
 	melee_accuracy_bonus = 5
@@ -418,12 +414,11 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	unwielded_force_divisor = 0.62
 	thrown_force_multiplier = 0.45
 	armor_penetration = 7 // Ceramite Teeth.
-	throw_speed = 5.5
+	throw_speed = 1
 	edge = TRUE
 	sharp = TRUE
-	default_material = MATERIAL_STEEL
 	does_spin = TRUE
-	base_parry_chance = 30
+	base_parry_chance = 25
 	wielded_parry_bonus = 5
 	attack_cooldown_modifier = 1.2 // Chainblade.
 	melee_accuracy_bonus = 10 // Chainblades don't miss.
@@ -437,9 +432,9 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	armor_penetration = 6
 	unwielded_force_divisor = 0.57
 	thrown_force_multiplier = 0.43
-	throw_speed = 5
+	throw_speed = 2
 	max_force = 90
-	base_parry_chance = 35
+	base_parry_chance = 30
 	wielded_parry_bonus = 5
 	attack_cooldown_modifier = 0.9 // Lighter one handed variant of the Mercy, faster attack, higher accuracy and defense in exchange for damage.
 	melee_accuracy_bonus = 15
@@ -450,7 +445,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	icon_state = "ggchain"
 	item_state = "inqchainsword"
 	max_force = 110
-	armor_penetration = 8
+	armor_penetration = 7
 	force_multiplier = 0.66
 	unwielded_force_divisor =  0.64
 	melee_accuracy_bonus = 15
@@ -461,13 +456,13 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	icon_state = "eviscerator"
 	item_state = "eviscerator"
 	wielded_item_state ="eviscerator"
-	max_force = 120
+	max_force = 110
 	armor_penetration = 8
 	force_multiplier = 0.71 // Super OP fast astartes chainsword.
 	unwielded_force_divisor =  0.6
 	melee_accuracy_bonus = 15
 	attack_cooldown_modifier = 2
-	base_parry_chance = 40
+	base_parry_chance = 35
 
 /obj/item/material/twohanded/warhammer/chainsword/drusian
 	name = "Drusian Pattern Chainsword"
@@ -478,8 +473,8 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	force_multiplier = 0.62
 	unwielded_force_divisor = 0.59
 	thrown_force_multiplier = 0.5
-	throw_speed = 4.5
-	base_parry_chance = 37
+	throw_speed = 1
+	base_parry_chance = 32
 	wielded_parry_bonus = 5
 	attack_cooldown_modifier = 0.85 // Same design as guard just higher quality.
 	melee_accuracy_bonus = 17
@@ -490,14 +485,54 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	icon_state = "pcsword"
 	item_state = "pcsword"
 	wielded_item_state = "pcsword"
-	armor_penetration = 9
+	armor_penetration = 8
 	force_multiplier = 0.74 // Super OP fast astartes chainsword.
 	unwielded_force_divisor =  0.72
 	thrown_force_multiplier = 0.62
-	throw_speed = 4
+	throw_speed = 2
 	melee_accuracy_bonus = 20
 	attack_cooldown_modifier = 0.65
-	base_parry_chance = 40
+	base_parry_chance = 25 // Astartes melee skill is crazy high.
+	wielded_parry_bonus = 5
+	str_requirement = 1 // Does a skill check. Do not set to anything else.
+
+/obj/item/material/twohanded/warhammer/axe/thunderhammer
+	name = "Thunder Hammer"
+	desc = "A brutal weapon, not for the faint of heart. This weapon is the chosen wargear for Ordos Agents and Astartes -- legendary for it's use against daemonkind. A truly terrifying power-weapon."
+	icon_state = "thunder_hammer"
+	item_state = "thunder_hammer"
+	wielded_item_state = "thunder_hammer-w"
+	obj_flags = null // Power weapons dont get shocked.
+	slot_flags = null
+	w_class = ITEM_SIZE_HUGE
+	attack_verb = list("smited", "thrashed", "struck")
+	max_force = 100
+	force_multiplier = 0.75
+	unwielded_force_divisor = 0.71
+	thrown_force_multiplier = 0.55
+	armor_penetration = 8 // THUNDER
+	throw_speed = 0.5
+	edge = TRUE // Blows you apart.
+	sharp = TRUE
+	does_spin = FALSE
+	base_parry_chance = 15
+	wielded_parry_bonus = 20
+	attack_cooldown_modifier = 1.6
+	melee_accuracy_bonus = 10
+
+/obj/item/material/twohanded/warhammer/axe/thunderhammer/astartes
+	name = "Astartes Thunder Hammer"
+	max_force = 110
+	armor_penetration = 9
+	force_multiplier = 0.78 // Main benefit is you swing faster comp to human ver.
+	unwielded_force_divisor =  0.74
+	thrown_force_multiplier = 0.58
+	throw_speed = 0.5
+	base_parry_chance = 10 // Astartes melee covers this.
+	wielded_parry_bonus = 20
+	attack_cooldown_modifier = 1 // Astartes melee skill is crazy high.
+	melee_accuracy_bonus = 10
+	str_requirement = 1
 
 // XENOS / HERETIC WEAPONS
 
@@ -511,24 +546,40 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	w_class = ITEM_SIZE_HUGE
 	slot_flags = SLOT_BELT
 	max_force = 100
-	force_multiplier = 0.51 // 41 Force with hardness 100 (steel)
+	force_multiplier = 0.51
 	unwielded_force_divisor = 0.47
 	thrown_force_multiplier = 0.43
 	armor_penetration = 8 // Ork Magic.
-	throw_speed = 4
+	throw_speed = 2
 	edge = TRUE
 	sharp = TRUE // Ork mace so big it make head go bye bye.
-	default_material = MATERIAL_STEEL
-	does_spin = TRUE // Does it spin when thrown?
+	does_spin = FALSE // Ork throwing is like shooting a bullet.
 	base_parry_chance = 30
 	wielded_parry_bonus = 0 // Orks don't two hand melee.
 	attack_cooldown_modifier = 0.6
 	melee_accuracy_bonus = 12 // Too big to miss.
+	str_requirement = 1
 
 /obj/item/material/twohanded/warhammer/orkmace/New() // Waagh speed
 	..()
 	slowdown_per_slot[slot_r_hand] = -0.1
 	slowdown_per_slot[slot_l_hand] = -0.1
+
+/obj/item/material/twohanded/warhammer/orkmace/choppa
+	name = "Ork Choppa"
+	desc = "Fixed out of a rusted sheet of metal, this choppa looks too big to be a sword. More like a piece of iron."
+	icon_state = "choppa"
+	item_state = "choppa"
+	wielded_item_state = "pcsword"
+	attack_verb = list("ganked", "smushed", "grotted", "smacked")
+	armor_penetration = 7
+	force_multiplier = 0.54 // Hit harder. Worse AP. Deflect worse. Swing faster.
+	unwielded_force_divisor =  0.50
+	thrown_force_multiplier = 0.45
+	throw_speed = 3
+	melee_accuracy_bonus = 10
+	attack_cooldown_modifier = 0.5
+	base_parry_chance = 25
 
 /obj/item/material/twohanded/warhammer/lashoftorment
 	name = "Lash Of Torment"
@@ -547,12 +598,11 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	unwielded_force_divisor = 0.1
 	thrown_force_multiplier = 0.25
 	armor_penetration = 7 // Chaos Magic.
-	throw_speed = 4
+	throw_speed = 1
 	edge = TRUE
 	sharp = TRUE
-	default_material = MATERIAL_STEEL
 	does_spin = TRUE
-	base_parry_chance = 35
+	base_parry_chance = 25
 	wielded_parry_bonus = 10
 	attack_cooldown_modifier = 0.7
 	melee_accuracy_bonus = 15 // Tis a whip.
@@ -572,12 +622,179 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 		user.do_attack_animation(target)
 
 		var/blocked = target.get_blocked_ratio(hit_zone, DAMAGE_BURN, damage = 43)
-		target.Weaken(rand(0-6) * (1 - blocked))
+		target.Weaken(pick(0,0,6) * (1 - blocked)) // may need to examine this calc later. 1-blocked?
 		target.apply_damage(43, DAMAGE_BURN, hit_zone, src)
 		return 1
 
 
 	return ..()
+
+// COMBAT KNIVES
+
+/obj/item/material/twohanded/warhammer/knife
+	name = "Utility Knife"
+	desc = "A versatile tool, more for work than for fighting. It’s the kind of knife you’d find on any belt, sharp enough to get the job done when things need cutting."
+	icon_state = "combatknife"
+	item_state = "EB-knife"
+	attack_verb = list("slashed")
+	hitsound = 'sound/weapons/bladeslice.ogg'
+	obj_flags = OBJ_FLAG_CONDUCTIBLE
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_POCKET
+	w_class = ITEM_SIZE_SMALL
+	max_force = 40
+	force_multiplier = 0.22
+	unwielded_force_divisor = 0.21
+	thrown_force_multiplier = 0.20
+	armor_penetration = 4 // Knife go in gap of armor.
+	throw_speed = 4.5
+	edge = TRUE
+	sharp = TRUE
+	does_spin = FALSE
+	base_parry_chance = 20
+	wielded_parry_bonus = 5
+	attack_cooldown_modifier = -0.6
+	melee_accuracy_bonus = 0 // Difficult to use.
+	lock_picking_level = 4
+
+
+/obj/item/material/twohanded/warhammer/knife/use_after(mob/living/carbon/C as mob, mob/user as mob)
+	. = FALSE
+	if (istype(C) && (C.handcuffed) && (istype(C.handcuffed, /obj/item/handcuffs/cable)))
+		usr.visible_message("\The [usr] cuts \the [C]'s restraints with \the [src]!",\
+		"You cut \the [C]'s restraints with \the [src]!",\
+		"You hear cable being cut.")
+		C.handcuffed = null
+		if (C.buckled && C.buckled.buckle_require_restraints)
+			C.buckled.unbuckle_mob()
+		C.update_inv_handcuffed()
+		return TRUE
+
+
+/obj/item/material/twohanded/warhammer/knife/rare
+	name = "Trench Knife"
+	desc = "A blade built for the mud and blood, designed to punch through the chaos of close-quarters combat."
+	icon_state = "knife_trench"
+	max_force = 45
+	force_multiplier = 0.26
+	unwielded_force_divisor = 0.25
+	thrown_force_multiplier = 0.18 // Not good at throwing.
+	base_parry_chance = 23
+	wielded_parry_bonus = 5
+	attack_cooldown_modifier = -0.4
+	melee_accuracy_bonus = 3
+	armor_penetration = 5
+	lock_picking_level = 2
+
+
+/obj/item/material/twohanded/warhammer/knife/bowie
+	name = "Combat Knife"
+	desc = "Reliable, heavy, and meant for work in the harshest conditions."
+	icon_state = "knife_bowie"
+	max_force = 45
+	force_multiplier = 0.25 // A more balanced knife compared to the trench.
+	unwielded_force_divisor = 0.24
+	thrown_force_multiplier = 0.23 // Now thats a knoife
+	base_parry_chance = 20
+	wielded_parry_bonus = 5
+	attack_cooldown_modifier = -0.4
+	melee_accuracy_bonus = 5
+	armor_penetration = 5
+	throw_speed = 4
+	lock_picking_level = 3
+
+/obj/item/material/twohanded/warhammer/knife/glaive
+	name = "Glaive Chopper"
+	desc = "An improvised monster of metal, this glaive head has been refitted into something brutal."
+	icon_state = "glaive-dagger"
+	item_state = "salvagedmachete"
+	max_force = 50
+	force_multiplier = 0.28
+	unwielded_force_divisor = 0.27
+	thrown_force_multiplier = 0.21
+	base_parry_chance = 25
+	wielded_parry_bonus = 5
+	attack_cooldown_modifier = 0
+	melee_accuracy_bonus = 3
+	armor_penetration = 4
+	throw_speed = 3
+	lock_picking_level = 0
+
+/obj/item/material/twohanded/warhammer/knife/catachan
+	name = "Strange Knife"
+	desc = "A catachan dagger, a mix between a machete and a shortsword. A brutal weapon used by the death world's jungle fighters."
+	icon_state = "catachanfang"
+	item_state = "EB-knife"
+	max_force = 55
+	slot_flags = SLOT_BELT|SLOT_BACK
+	w_class = ITEM_SIZE_NORMAL
+	force_multiplier = 0.32
+	unwielded_force_divisor = 0.3
+	thrown_force_multiplier = 0.3
+	base_parry_chance = 25 // Excellent parry.
+	wielded_parry_bonus = 5
+	attack_cooldown_modifier = 0
+	melee_accuracy_bonus = 0 // Difficult to use.
+	armor_penetration = 6
+	throw_speed = 3
+	lock_picking_level = 0
+
+
+// EXOTIC
+
+/obj/item/material/twohanded/warhammer/powermaul
+	name = "Shock Maul"
+	desc = "The Power Maul commonly used by members of the Adeptus Arbites. It is good for stunning victims."
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "thunder_hammer_old"
+	item_state = "thunder_hammer_old"
+	color = "#292929"
+	max_force = 55
+	slot_flags = SLOT_BELT|SLOT_BACK
+	w_class = ITEM_SIZE_NORMAL
+	force_multiplier = 0.22
+	unwielded_force_divisor = 0.19
+	thrown_force_multiplier = 0.22
+	base_parry_chance = 25
+	wielded_parry_bonus = 5
+	attack_cooldown_modifier = 0.5
+	melee_accuracy_bonus = 5
+	throw_speed = 0.5
+	w_class = ITEM_SIZE_HUGE
+	atom_flags = ATOM_FLAG_NO_BLOOD
+	attack_verb = list("beaten", "smashed")
+	armor_penetration = 5 // Non Lethal Shock
+	var/stunforce = 0
+	var/agonyforce = 50
+
+/obj/item/material/twohanded/warhammer/powermaul/apply_hit_effect(mob/living/target, mob/living/user, var/hit_zone)
+	var/agony = agonyforce
+	var/stun = stunforce
+	var/obj/item/organ/external/affecting = null
+	if(ishuman(target))
+		var/mob/living/carbon/human/H = target
+		affecting = H.get_organ(hit_zone)
+
+	if(user.a_intent == I_HURT)
+		. = ..()
+		if (!.)	//item/attack() does it's own messaging and logs
+			return 0	// item/attack() will return 1 if they hit, 0 if they missed.
+
+		stun *= 0.5
+		agony = 20
+	else
+		if(affecting)
+			target.visible_message("<span class='danger'>[target] has been shocked in the [affecting.name] with [src] by [user]!</span>")
+		else
+			target.visible_message("<span class='danger'>[target] has been shocked with [src] by [user]!</span>")
+
+	//stun effects
+	target.stun_effect_act(stun, agony, hit_zone, src)
+
+	if(ishuman(target))
+		var/mob/living/carbon/human/H = target
+		H.forcesay(GLOB.hit_appends)
+
+
 /*
 #define EFFECT_STUN     "stun"
 #define EFFECT_WEAKEN   "weaken"
@@ -587,3 +804,173 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 #define EFFECT_DROWSY   "drowsy"
 #define EFFECT_PAIN     "pain" // These are ur melee effects
 	*/
+
+/*
+/obj/item/melee/energy/powersword //basis for other power weapons
+	name = "Power Sword"
+	desc = "A adamantium sword with a void shield generator inside of it, the void shield will cut through almost anything that it touches when its on, so make sure you don't cut yourself."
+	item_state = "powersword"
+	icon_state = "powersword"
+	wielded_icon = "powersword-w"
+	active_force = 47 //should be enough to cut off most limbs
+	active_throwforce = 18
+	icon = 'icons/obj/guardpower_gear_32xOBJ.dmi'
+	force = 42
+	armor_penetration = 8
+	throwforce = 15
+	throw_speed = 1
+	throw_range = 4
+	block_chance = 30
+	sales_price = 0
+	weapon_speed_delay = 9 //2 seconds
+	edge = 1
+	sharp = 1
+	w_class = ITEM_SIZE_HUGE
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
+	atom_flags = 0
+	obj_flags = OBJ_FLAG_CONDUCTIBLE
+	origin_tech = list(TECH_MAGNET = 6, TECH_COMBAT = 6)
+	attack_verb = list("attacked", "chopped", "cleaved", "torn", "cut", "slashed", "sliced")
+	hitsound = "slash_sound"
+	parry_sounds = list('sound/weapons/bladeparry1.ogg', 'sound/weapons/bladeparry2.ogg', 'sound/weapons/bladeparry3.ogg', 'sound/weapons/bladeparry4.ogg')
+	drop_sound = 'sound/items/drop_sword.ogg'
+	grab_sound = 'sound/items/unholster_sword02.ogg'
+	equipsound = 'sound/items/holster_sword1.ogg'
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HEAD
+	armor = list(melee = 1, bullet = 3, laser = 3, energy = 3, bomb = 3, bio = 0, rad = 0)
+
+/obj/item/melee/energy/powersword/activate(mob/living/user)
+	..()
+	icon_state = "powersword_on"
+	to_chat(user, "<span class='notice'>\The [src] is now energised.</span>")
+
+/obj/item/melee/energy/powersword/deactivate(mob/living/user)
+	..()
+	icon_state = initial(icon_state)
+	to_chat(user, "<span class='notice'>\The [src] is de-energised. It's just a regular adamantium sword now.</span>")
+
+/obj/item/melee/energy/powersword/astartes/ingelldina
+	name = "Ingelldina Pattern Power Sword"
+	desc = "A adamantium sword with a void shield generator inside of it, this one is very long and heavy, clearly having been made for one of the sons of the emperor."
+	item_state = "powersword" // There is no on-mob for powersword we must use this. It looks alright.
+	icon_state = "powersword"
+	wielded_icon = "powersword-w"
+	active_force = 47 //should be enough to cut off most limbs
+	active_throwforce = 20
+	force = 42 //its just a adamantium sword when offline
+	throwforce = 15
+	throw_speed = 1
+	throw_range = 4
+	sharp = TRUE
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE //we have a power sword belt sprite, but im not going to code it in just yet, alright? enough codin' today
+	block_chance = 33
+	sales_price = 0
+	w_class = ITEM_SIZE_HUGE
+	atom_flags = 0
+	obj_flags = OBJ_FLAG_CONDUCTIBLE
+	origin_tech = list(TECH_MAGNET = 7, TECH_COMBAT = 7)
+	attack_verb = list("attacked", "chopped", "cleaved", "torn", "cut")
+	armor_penetration = 10
+
+
+
+/obj/item/melee/energy/powersword/claw/integrated
+	name = "Power Claws"
+	desc = "A gauntlet with 4 clawed fingers with a void shield generator inside of it, the voidshield makes a concentrated power field around each of the 4 claws, making them able to cut through almost anything, this one was integrated to the user's armor and would need a series of ajustments to be safely removed."
+	icon_state = "powerclaw-alt_mag"
+	item_state = "none"
+	wielded_icon = "none"
+	active_force = 46
+	active_throwforce = 0
+	force = 41
+	throwforce = 1
+	throw_speed = 1
+	throw_range = 1
+	weapon_speed_delay = 8
+	armor_penetration = 7
+	edge = 1
+	sharp = 1
+	block_chance = 15
+	sales_price = 0
+	obj_flags = OBJ_FLAG_CONDUCTIBLE
+	w_class = ITEM_SIZE_LARGE
+	atom_flags = 0
+	origin_tech = list(TECH_MAGNET = 1, TECH_COMBAT = 1)
+	attack_verb = list("mauled", "clawed", "cleaved", "torn", "cut")
+
+/obj/item/melee/energy/powersword/claw/integrated/activate(mob/living/user)
+	..()
+	icon_state = "powerclaw-alt_on_mag"
+	to_chat(user, "<span class='notice'>\The [src] is now energised.</span>")
+
+/obj/item/melee/energy/powersword/claw/integrated/deactivate(mob/living/user)
+	..()
+	icon_state = initial(icon_state)
+	to_chat(user, "<span class='notice'>\The [src] is de-energised. It's just some adamantium claws now now.</span>")
+
+
+/obj/item/melee/energy/powersword/claw/integrated/dropped()
+	..()
+	spawn(1) if(src) qdel(src)
+
+/obj/item/melee/energy/powersword/claw/integrated/terminator
+	name = "Terminator Lightning Claws"
+	desc = "A gauntlet with 4 clawed fingers with a void shield generator inside of it, the voidshield makes a concentrated power field around each of the 4 claws, making them able to cut through almost anything, this one was integrated to the user's armor and would need a series of ajustments to be safely removed."
+	icon_state = "powerclaw-alt_mag"
+	item_state = "none"
+	wielded_icon = "none"
+	active_force = 58
+	active_throwforce = 0
+	force = 35
+	throwforce = 1
+	throw_speed = 1
+	throw_range = 1
+	weapon_speed_delay = 8
+	armor_penetration = 22
+	edge = 1
+	sharp = 1
+	block_chance = 66
+	obj_flags = OBJ_FLAG_CONDUCTIBLE
+	w_class = ITEM_SIZE_LARGE
+	atom_flags = 0
+	attack_verb = list("mauled", "clawed", "cleaved", "torn", "cut")
+	can_door_force = 1
+
+/obj/item/melee/energy/powersword/fist/integrated/terminator //Make other sub-groups for this when other power fists get added.
+	name = "Terminator Power Fist"
+	desc = "A powerful ceramite gauntlet, coated in a crackling power field, this one was integrated to the user's armor and would need a series of ajustments to be safely removed."
+	icon_state = "powerclaw-alt_mag"
+	item_state = "none"
+	wielded_icon = "none"
+	active_force = 55
+	active_throwforce = 0
+	force = 38
+	throwforce = 1
+	throw_speed = 1
+	throw_range = 1
+	weapon_speed_delay = 8
+	armor_penetration = 18
+	edge = 1
+	sharp = 1
+	block_chance = 45
+	obj_flags = OBJ_FLAG_CONDUCTIBLE
+	w_class = ITEM_SIZE_LARGE
+	atom_flags = 0
+	attack_verb = list("crushed", "slammed", "bludgeoned", "smashed", "slammed")
+	can_door_force = 1
+//	wall_breaker = 1
+
+/obj/item/melee/energy/powersword/fist/integrated/terminator/activate(mob/living/user)
+	..()
+	icon_state = "powerclaw-alt_on_mag"
+	to_chat(user, "<span class='notice'>\The [src] is now energised.</span>")
+
+/obj/item/melee/energy/powersword/fist/integrated/terminator/deactivate(mob/living/user)
+	..()
+	icon_state = initial(icon_state)
+	to_chat(user, "<span class='notice'>\The [src] is de-energised. It's just a ceramite fist now.</span>")
+
+/obj/item/melee/energy/powersword/fist/integrated/terminator/dropped()
+	..()
+	spawn(1) if(src) qdel(src)
+*/

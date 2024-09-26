@@ -1,19 +1,16 @@
 /obj/item/clothing/accessory/armor_tag
 	name = "base armor tag"
 	desc = "A collection of various tags for placing on the front of a plate carrier."
-	icon_override = 'icons/mob/onmob/onmob_modular_armor.dmi'
-	icon = 'icons/obj/clothing/obj_suit_modular_armor.dmi'
+	icon_override = 'icons/mob/onmob/onmob_suit.dmi'
+	icon = 'icons/obj/clothing/obj_suit.dmi'
 	accessory_icons = list(
-		slot_tie_str = 'icons/mob/onmob/onmob_modular_armor.dmi',
-		slot_wear_suit_str = 'icons/mob/onmob/onmob_modular_armor.dmi'
+		slot_tie_str = 'icons/mob/onmob/onmob_suit.dmi',
+		slot_wear_suit_str = 'icons/mob/onmob/onmob_suit.dmi'
 	)
 	icon_state = null
 	slot = ACCESSORY_SLOT_ARMOR_MISC
 	w_class = ITEM_SIZE_TINY
 
-	sprite_sheets = list(
-		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_modular_armor_unathi.dmi'
-		)
 
 
 /obj/item/clothing/accessory/armor_tag/nt
