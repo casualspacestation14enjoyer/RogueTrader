@@ -47,7 +47,7 @@
 		/obj/item/folder/blue,
 		/obj/item/material/knife/folding/swiss/officer,
 		/obj/item/storage/backpack/satchel/com,
-		/obj/item/clothing/suit/armor/pcarrier/medium/command,
+		/obj/item/clothing/suit/armor/grim/medium/command,
 		/obj/item/clothing/head/helmet/solgov/command,
 	)
 
@@ -75,7 +75,7 @@
 		/obj/item/material/knife/folding/swiss/officer,
 		/obj/item/storage/backpack/satchel/com,
 		/obj/item/storage/box/imprinting,
-		/obj/item/clothing/suit/armor/pcarrier/medium/command,
+		/obj/item/clothing/suit/armor/grim/medium/command,
 		/obj/item/clothing/head/helmet/solgov/command
 	)
 
@@ -87,7 +87,7 @@
 /obj/structure/closet/secure_closet/sea/WillContain()
 	return list(
 		/obj/item/clothing/glasses/sunglasses,
-		/obj/item/clothing/suit/armor/pcarrier/medium/command,
+		/obj/item/clothing/suit/armor/grim/medium/command,
 		/obj/item/clothing/head/helmet/solgov/command,
 		/obj/item/storage/belt/holster/general,
 		/obj/item/device/radio/headset/sea,

@@ -3,7 +3,7 @@
 
 /singleton/hierarchy/supply_pack/security/lightarmorsol
 	name = "Armor - Imperial light"
-	contains = list(/obj/item/clothing/suit/armor/pcarrier/light/sol = 4,
+	contains = list(/obj/item/clothing/suit/armor/grim/light/sol = 4,
 					/obj/item/clothing/head/helmet/solgov =4)
 	cost = 30
 	containertype = /obj/structure/closet/crate/secure
@@ -12,7 +12,7 @@
 
 /singleton/hierarchy/supply_pack/security/secarmor
 	name = "Armor - Security"
-	contains = list(/obj/item/clothing/suit/armor/pcarrier/medium/security = 2,
+	contains = list(/obj/item/clothing/suit/armor/grim/medium/security = 2,
 					/obj/item/clothing/head/helmet/solgov/security =2)
 	cost = 20
 	containertype = /obj/structure/closet/crate/secure
@@ -21,7 +21,7 @@
 
 /singleton/hierarchy/supply_pack/security/comarmor
 	name = "Armor - Command"
-	contains = list(/obj/item/clothing/suit/armor/pcarrier/medium/command = 2,
+	contains = list(/obj/item/clothing/suit/armor/grim/medium/command = 2,
 					/obj/item/clothing/head/helmet/solgov/command =2)
 	cost = 20
 	containertype = /obj/structure/closet/crate/secure

@@ -13,7 +13,7 @@
 		)
 	siemens_coefficient = 0.4
 	emp_protection = 10
-	online_slowdown = 0.5
+	online_slowdown = 0
 	offline_slowdown = 1
 	item_flags = ITEM_FLAG_THICKMATERIAL
 	offline_vision_restriction = TINT_NONE
@@ -182,8 +182,8 @@
 	desc = "A sleek, military hardsuit with no model number or identifying logos besides a small Solar crest on its control module. Get tactical, marine."
 	suit_type = "operative"
 	icon_state = "solop_rig"
-	online_slowdown = 1
-	offline_slowdown = 2
+	online_slowdown = 0
+	offline_slowdown = 1
 	initial_modules = list(
 		/obj/item/rig_module/vision,
 		/obj/item/rig_module/chem_dispenser/ninja,
@@ -203,8 +203,8 @@
 	desc = "A ridiculously bulky military hardsuit with no model number or identifying logos besides a small Tau crest on its control module. This suit is built like a tank and weighs as much as one."
 	suit_type = "heavy"
 	icon_state = "gcc_rig"
-	online_slowdown = 2 ///chunky
-	offline_slowdown = 4
+	online_slowdown = 1
+	offline_slowdown = 2
 	armor = list(
 		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_FLAK,

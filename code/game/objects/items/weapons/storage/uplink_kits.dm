@@ -161,7 +161,7 @@
 
 /obj/item/storage/backpack/satchel/syndie_kit/armor
 	startswith = list(
-		/obj/item/clothing/suit/armor/pcarrier/merc,
+		/obj/item/clothing/suit/armor/grim/merc,
 		/obj/item/clothing/head/helmet/merc
 	)
 /obj/item/storage/box/syndie_kit/corpse_cube

@@ -9157,7 +9157,7 @@
 /obj/item/clothing/shoes/dutyboots,
 /obj/item/clothing/accessory/storage/holster/thigh,
 /obj/item/clothing/glasses/tacgoggles,
-/obj/item/clothing/suit/armor/pcarrier/medium/sol,
+/obj/item/clothing/suit/armor/grim/medium/sol,
 /obj/item/clothing/head/helmet,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/armoury/tactical)
@@ -18297,7 +18297,7 @@
 /obj/item/clothing/shoes/dutyboots,
 /obj/item/clothing/accessory/storage/holster/thigh,
 /obj/item/clothing/glasses/tacgoggles,
-/obj/item/clothing/suit/armor/pcarrier/medium/sol,
+/obj/item/clothing/suit/armor/grim/medium/sol,
 /obj/item/clothing/head/helmet,
 /obj/machinery/rotating_alarm/security_alarm,
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -25799,7 +25799,7 @@
 /area/rnd/misc_lab)
 "qSx" = (
 /obj/structure/closet,
-/obj/item/clothing/suit/storage/toggle/labcoat,
+/obj/item/clothing/suit/armor/grim/toggle/labcoat,
 /obj/item/storage/box/evidence,
 /obj/item/storage/box/syringes,
 /obj/item/storage/box/latexgloves,

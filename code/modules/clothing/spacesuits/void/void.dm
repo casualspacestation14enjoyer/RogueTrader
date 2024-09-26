@@ -21,14 +21,6 @@
 
 	//Species-specific stuff.
 	species_restricted = list(SPECIES_HUMAN, SPECIES_IPC, SPECIES_TAU)
-	sprite_sheets = list(
-		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_head_unathi.dmi',
-		SPECIES_TAU = 'icons/mob/species/skrell/onmob_head_skrell.dmi',
-		)
-	sprite_sheets_obj = list(
-		SPECIES_KROOT = 'icons/obj/clothing/species/unathi/obj_head_unathi.dmi',
-		SPECIES_TAU = 'icons/obj/clothing/species/skrell/obj_head_skrell.dmi',
-		)
 
 	light_overlay = "helmet_light"
 	valid_accessory_slots = list(ACCESSORY_SLOT_HELMET_VISOR)
@@ -56,14 +48,6 @@
 	siemens_coefficient = 0.4
 
 	species_restricted = list(SPECIES_HUMAN, SPECIES_TAU, SPECIES_IPC)
-	sprite_sheets = list(
-		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_suit_unathi.dmi',
-		SPECIES_TAU = 'icons/mob/species/skrell/onmob_suit_skrell.dmi',
-		)
-	sprite_sheets_obj = list(
-		SPECIES_KROOT = 'icons/obj/clothing/species/unathi/obj_suit_unathi.dmi',
-		SPECIES_TAU = 'icons/obj/clothing/species/skrell/obj_suit_skrell.dmi',
-		)
 
 	//Breach thresholds, should ideally be inherited by most (if not all) voidsuits.
 	//With 0.2 resiliance, will reach 10 breach damage after 3 laser carbine blasts or 8 smg hits.

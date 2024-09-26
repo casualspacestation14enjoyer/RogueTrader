@@ -2333,7 +2333,7 @@
 	},
 /area/voxship/fore)
 "fl" = (
-/obj/item/clothing/suit/storage/toggle/labcoat,
+/obj/item/clothing/suit/armor/grim/toggle/labcoat,
 /turf/simulated/floor/tiled/freezer{
 	initial_gas = list("nitrogen"=101.383)
 	},

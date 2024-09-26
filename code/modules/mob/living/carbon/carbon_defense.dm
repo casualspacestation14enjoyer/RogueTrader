@@ -6,16 +6,16 @@
 	// Adjust effective_force based on skill levels
 	var/X = 1.5  // Default multiplier for no skill
 	if (user.skill_check(SKILL_COMBAT, SKILL_DEMIGOD))
-		X = 6
+		X = 6.3
 	else if (user.skill_check(SKILL_COMBAT, SKILL_PRIMARIS))
-		X = 5
+		X = 5.3
 	else if (user.skill_check(SKILL_COMBAT, SKILL_LEGEND))
-		X = 3
+		X = 3.1
 	else if (user.skill_check(SKILL_COMBAT, SKILL_MASTER))
 		X = 2.5
 	else if (user.skill_check(SKILL_COMBAT, SKILL_EXPERIENCED))
 		X = 2
-	else if (user.skill_check(SKILL_COMBAT, SKILL_TRAINED)) // At baseline levels damage should be the same, only scaling at high levels.
+	else if (user.skill_check(SKILL_COMBAT, SKILL_TRAINED)) // At baseline levels damage increase is smaller.
 		X = 1.7
 	else if (user.skill_check(SKILL_COMBAT, SKILL_BASIC))
 		X = 1.5

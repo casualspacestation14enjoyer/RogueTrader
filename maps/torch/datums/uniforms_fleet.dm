@@ -7,16 +7,16 @@
 				/obj/item/clothing/under/solgov/utility/fleet/combat/command,
 				/obj/item/clothing/head/beret/solgov/fleet/command,
 				/obj/item/clothing/head/ushanka/solgov/fleet,
-				/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/fleet,
+				/obj/item/clothing/suit/armor/grim/storage/hooded/wintercoat/solgov/fleet,
 				/obj/item/clothing/head/soft/solgov/fleet,
 				/obj/item/clothing/gloves/thick/duty/solgov/fleet
 			)
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet/command
-	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/officer
+	service_over = /obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet/officer
 	service_extra = list(/obj/item/clothing/suit/solgov/fleet_sweater/officer)
 
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/officer
+	dress_over = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet/officer
 	dress_hat = /obj/item/clothing/head/solgov/dress/fleet/command
 	dress_extra = list(
 		/obj/item/material/sword/replica/officersword,
@@ -27,19 +27,19 @@
 	name = "Imperial Navy senior command"
 	min_rank = 15
 
-	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/command
+	service_over = /obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet/command
 	service_extra = list(/obj/item/clothing/suit/solgov/fleet_sweater/command)
 
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/command
+	dress_over = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet/command
 
 /singleton/hierarchy/mil_uniform/fleet/com/flagofficer
 	name = "Imperial Navy flag command"
 	min_rank = 17
 
-	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/flag
+	service_over = /obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet/flag
 	service_extra = /obj/item/clothing/suit/solgov/fleet_sweater/flag
 
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/flag
+	dress_over = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet/flag
 
 /singleton/hierarchy/mil_uniform/fleet/eng
 	name = "Imperial Navy engineering"
@@ -50,7 +50,7 @@
 				/obj/item/clothing/under/solgov/utility/fleet/combat/engineering,
 				/obj/item/clothing/head/beret/solgov/fleet/engineering,
 				/obj/item/clothing/head/ushanka/solgov/fleet,
-				/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/fleet,
+				/obj/item/clothing/suit/armor/grim/storage/hooded/wintercoat/solgov/fleet,
 				/obj/item/clothing/head/soft/solgov/fleet,
 				/obj/item/clothing/gloves/thick/duty/solgov/fleet
 			)
@@ -60,9 +60,9 @@
 	min_rank = 4
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet
-	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet
+	service_over = /obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet
 
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet
+	dress_over = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet
 	dress_hat = /obj/item/clothing/head/solgov/dress/fleet
 	dress_extra = list(/obj/item/clothing/head/beret/solgov/fleet/dress)
 
@@ -71,9 +71,9 @@
 	min_rank = 7
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet
-	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/snco
+	service_over = /obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet/snco
 
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
+	dress_over = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet/snco
 	dress_extra = list(
 		/obj/item/material/sword/replica/officersword/pettyofficer,
 		/obj/item/clothing/head/beret/solgov/fleet/dress
@@ -88,16 +88,16 @@
 				/obj/item/clothing/head/beret/solgov/fleet/command,
 				/obj/item/clothing/head/beret/solgov/fleet/engineering,
 				/obj/item/clothing/head/ushanka/solgov/fleet,
-				/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/fleet,
+				/obj/item/clothing/suit/armor/grim/storage/hooded/wintercoat/solgov/fleet,
 				/obj/item/clothing/head/soft/solgov/fleet,
 				/obj/item/clothing/gloves/thick/duty/solgov/fleet
 			)
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet/command
-	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/officer
+	service_over = /obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet/officer
 	service_extra = list(/obj/item/clothing/suit/solgov/fleet_sweater/officer)
 
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/officer
+	dress_over = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet/officer
 	dress_hat = /obj/item/clothing/head/solgov/dress/fleet/command
 	dress_extra = list(
 		/obj/item/material/sword/replica/officersword,
@@ -112,19 +112,19 @@
 	name = "Imperial Navy engineering senior command"
 	min_rank = 15
 
-	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/command
+	service_over = /obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet/command
 	service_extra = list(/obj/item/clothing/suit/solgov/fleet_sweater/command)
 
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/command
+	dress_over = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet/command
 
 /singleton/hierarchy/mil_uniform/fleet/eng/officer/com/flagofficer
 	name = "Imperial Navy engineering flag command"
 	min_rank = 17
 
-	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/flag
+	service_over = /obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet/flag
 	service_extra = list(/obj/item/clothing/suit/solgov/fleet_sweater/flag)
 
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/flag
+	dress_over = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet/flag
 
 /singleton/hierarchy/mil_uniform/fleet/sec
 	name = "Imperial Navy security"
@@ -135,7 +135,7 @@
 				/obj/item/clothing/under/solgov/utility/fleet/combat/security,
 				/obj/item/clothing/head/beret/solgov/fleet/security,
 				/obj/item/clothing/head/ushanka/solgov/fleet,
-				/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/fleet,
+				/obj/item/clothing/suit/armor/grim/storage/hooded/wintercoat/solgov/fleet,
 				/obj/item/clothing/head/soft/solgov/fleet,
 				/obj/item/clothing/gloves/thick/duty/solgov/fleet
 			)
@@ -146,9 +146,9 @@
 	min_rank = 4
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet
-	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet
+	service_over = /obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet
 
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet
+	dress_over = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet
 	dress_hat = /obj/item/clothing/head/solgov/dress/fleet
 	dress_extra = list(/obj/item/clothing/head/beret/solgov/fleet/dress)
 
@@ -158,9 +158,9 @@
 	min_rank = 7
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet
-	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/snco
+	service_over = /obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet/snco
 
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
+	dress_over = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet/snco
 	dress_extra = list(
 		/obj/item/material/sword/replica/officersword/pettyofficer,
 		/obj/item/clothing/head/beret/solgov/fleet/dress
@@ -175,16 +175,16 @@
 				/obj/item/clothing/head/beret/solgov/fleet/command,
 				/obj/item/clothing/head/beret/solgov/fleet/security,
 				/obj/item/clothing/head/ushanka/solgov/fleet,
-				/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/fleet,
+				/obj/item/clothing/suit/armor/grim/storage/hooded/wintercoat/solgov/fleet,
 				/obj/item/clothing/head/soft/solgov/fleet,
 				/obj/item/clothing/gloves/thick/duty/solgov/fleet
 			)
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet/command
-	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/officer
+	service_over = /obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet/officer
 	service_extra = list(/obj/item/clothing/suit/solgov/fleet_sweater/officer)
 
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/officer
+	dress_over = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet/officer
 	dress_hat = /obj/item/clothing/head/solgov/dress/fleet/command
 	dress_extra = list(
 		/obj/item/material/sword/replica/officersword,
@@ -199,19 +199,19 @@
 	name = "Imperial Navy militarum senior command"
 	min_rank = 15
 
-	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/command
+	service_over = /obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet/command
 	service_extra = list(/obj/item/clothing/suit/solgov/fleet_sweater/command)
 
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/command
+	dress_over = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet/command
 
 /singleton/hierarchy/mil_uniform/fleet/sec/officer/com/flagofficer
 	name = "Imperial Navy militarum flag command"
 	min_rank = 17
 
-	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/flag
+	service_over = /obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet/flag
 	service_extra = list(/obj/item/clothing/suit/solgov/fleet_sweater/flag)
 
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/flag
+	dress_over = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet/flag
 
 /singleton/hierarchy/mil_uniform/fleet/med
 	name = "Imperial Navy medical"
@@ -222,7 +222,7 @@
 				/obj/item/clothing/under/solgov/utility/fleet/combat/medical,
 				/obj/item/clothing/head/beret/solgov/fleet/medical,
 				/obj/item/clothing/head/ushanka/solgov/fleet,
-				/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/fleet,
+				/obj/item/clothing/suit/armor/grim/storage/hooded/wintercoat/solgov/fleet,
 				/obj/item/clothing/head/soft/solgov/fleet,
 				/obj/item/clothing/gloves/thick/duty/solgov/fleet
 			)
@@ -232,9 +232,9 @@
 	min_rank = 4
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet
-	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet
+	service_over = /obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet
 
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet
+	dress_over = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet
 	dress_hat = /obj/item/clothing/head/solgov/dress/fleet
 	dress_extra = list(/obj/item/clothing/head/beret/solgov/fleet/dress)
 
@@ -243,9 +243,9 @@
 	min_rank = 7
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet
-	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/snco
+	service_over = /obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet/snco
 
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
+	dress_over = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet/snco
 	dress_extra = list(
 		/obj/item/material/sword/replica/officersword/pettyofficer,
 		/obj/item/clothing/head/beret/solgov/fleet/dress
@@ -260,16 +260,16 @@
 				/obj/item/clothing/head/beret/solgov/fleet/command,
 				/obj/item/clothing/head/beret/solgov/fleet/medical,
 				/obj/item/clothing/head/ushanka/solgov/fleet,
-				/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/fleet,
+				/obj/item/clothing/suit/armor/grim/storage/hooded/wintercoat/solgov/fleet,
 				/obj/item/clothing/head/soft/solgov/fleet,
 				/obj/item/clothing/gloves/thick/duty/solgov/fleet
 			)
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet/command
-	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/officer
+	service_over = /obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet/officer
 	service_extra = list(/obj/item/clothing/suit/solgov/fleet_sweater/officer)
 
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/officer
+	dress_over = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet/officer
 	dress_hat = /obj/item/clothing/head/solgov/dress/fleet/command
 	dress_extra = list(
 		/obj/item/material/sword/replica/officersword,
@@ -284,19 +284,19 @@
 	name = "Imperial Navy medical senior command"
 	min_rank = 15
 
-	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/command
+	service_over = /obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet/command
 	service_extra = list(/obj/item/clothing/suit/solgov/fleet_sweater/command)
 
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/command
+	dress_over = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet/command
 
 /singleton/hierarchy/mil_uniform/fleet/med/officer/com/flagofficer
 	name = "Imperial Navy medical flag command"
 	min_rank = 17
 
-	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/flag
+	service_over = /obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet/flag
 	service_extra = list(/obj/item/clothing/suit/solgov/fleet_sweater/flag)
 
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/flag
+	dress_over = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet/flag
 
 /singleton/hierarchy/mil_uniform/fleet/sup
 	name = "Imperial Navy supply"
@@ -307,7 +307,7 @@
 				/obj/item/clothing/under/solgov/utility/fleet/combat/supply,
 				/obj/item/clothing/head/beret/solgov/fleet/supply,
 				/obj/item/clothing/head/ushanka/solgov/fleet,
-				/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/fleet,
+				/obj/item/clothing/suit/armor/grim/storage/hooded/wintercoat/solgov/fleet,
 				/obj/item/clothing/head/soft/solgov/fleet,
 				/obj/item/clothing/gloves/thick/duty/solgov/fleet
 			)
@@ -317,9 +317,9 @@
 	min_rank = 4
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet
-	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet
+	service_over = /obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet
 
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet
+	dress_over = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet
 	dress_hat = /obj/item/clothing/head/solgov/dress/fleet
 	dress_extra = list(/obj/item/clothing/head/beret/solgov/fleet/dress)
 
@@ -328,9 +328,9 @@
 	min_rank = 7
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet
-	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/snco
+	service_over = /obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet/snco
 
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
+	dress_over = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet/snco
 	dress_extra = list(
 		/obj/item/material/sword/replica/officersword/pettyofficer,
 		/obj/item/clothing/head/beret/solgov/fleet/dress
@@ -345,16 +345,16 @@
 				/obj/item/clothing/head/beret/solgov/fleet/command,
 				/obj/item/clothing/head/beret/solgov/fleet/supply,
 				/obj/item/clothing/head/ushanka/solgov/fleet,
-				/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/fleet,
+				/obj/item/clothing/suit/armor/grim/storage/hooded/wintercoat/solgov/fleet,
 				/obj/item/clothing/head/soft/solgov/fleet,
 				/obj/item/clothing/gloves/thick/duty/solgov/fleet
 			)
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet/command
-	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/officer
+	service_over = /obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet/officer
 	service_extra = list(/obj/item/clothing/suit/solgov/fleet_sweater/officer)
 
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/officer
+	dress_over = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet/officer
 	dress_hat = /obj/item/clothing/head/solgov/dress/fleet/command
 	dress_extra = list(
 		/obj/item/material/sword/replica/officersword,
@@ -366,10 +366,10 @@
 	min_rank = 15
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet/command
-	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/command
+	service_over = /obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet/command
 	service_extra = list(/obj/item/clothing/suit/solgov/fleet_sweater/command)
 
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/command
+	dress_over = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet/command
 	dress_hat = /obj/item/clothing/head/solgov/dress/fleet/command
 	dress_extra = list(
 		/obj/item/material/sword/replica/officersword,
@@ -381,10 +381,10 @@
 	min_rank = 17
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet/command
-	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/flag
+	service_over = /obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet/flag
 	service_extra = list(/obj/item/clothing/suit/solgov/fleet_sweater/flag)
 
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/flag
+	dress_over = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet/flag
 	dress_hat = /obj/item/clothing/head/solgov/dress/fleet/command
 	dress_extra = list(
 		/obj/item/material/sword/replica/officersword,
@@ -400,7 +400,7 @@
 				/obj/item/clothing/under/solgov/utility/fleet/combat/service,
 				/obj/item/clothing/head/beret/solgov/fleet/service,
 				/obj/item/clothing/head/ushanka/solgov/fleet,
-				/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/fleet,
+				/obj/item/clothing/suit/armor/grim/storage/hooded/wintercoat/solgov/fleet,
 				/obj/item/clothing/head/soft/solgov/fleet,
 				/obj/item/clothing/gloves/thick/duty/solgov/fleet
 			)
@@ -410,9 +410,9 @@
 	min_rank = 4
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet
-	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet
+	service_over = /obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet
 
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet
+	dress_over = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet
 	dress_hat = /obj/item/clothing/head/solgov/dress/fleet
 	dress_extra = list(/obj/item/clothing/head/beret/solgov/fleet/dress)
 
@@ -422,9 +422,9 @@
 	min_rank = 7
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet
-	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/snco
+	service_over = /obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet/snco
 
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
+	dress_over = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet/snco
 	dress_extra = list(
 		/obj/item/material/sword/replica/officersword/pettyofficer,
 		/obj/item/clothing/head/beret/solgov/fleet/dress
@@ -439,16 +439,16 @@
 				/obj/item/clothing/head/beret/solgov/fleet/command,
 				/obj/item/clothing/head/beret/solgov/fleet/service,
 				/obj/item/clothing/head/ushanka/solgov/fleet,
-				/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/fleet,
+				/obj/item/clothing/suit/armor/grim/storage/hooded/wintercoat/solgov/fleet,
 				/obj/item/clothing/head/soft/solgov/fleet,
 				/obj/item/clothing/gloves/thick/duty/solgov/fleet
 			)
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet/command
-	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/officer
+	service_over = /obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet/officer
 	service_extra = list(/obj/item/clothing/suit/solgov/fleet_sweater/officer)
 
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/officer
+	dress_over = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet/officer
 	dress_hat = /obj/item/clothing/head/solgov/dress/fleet/command
 	dress_extra = list(
 		/obj/item/material/sword/replica/officersword,
@@ -464,7 +464,7 @@
 				/obj/item/clothing/under/solgov/utility/fleet/combat/exploration,
 				/obj/item/clothing/head/beret/solgov/fleet/exploration,
 				/obj/item/clothing/head/ushanka/solgov/fleet,
-				/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/fleet,
+				/obj/item/clothing/suit/armor/grim/storage/hooded/wintercoat/solgov/fleet,
 				/obj/item/clothing/head/soft/solgov/fleet,
 				/obj/item/clothing/gloves/thick/duty/solgov/fleet
 			)
@@ -474,9 +474,9 @@
 	min_rank = 4
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet
-	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet
+	service_over = /obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet
 
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet
+	dress_over = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet
 	dress_hat = /obj/item/clothing/head/solgov/dress/fleet
 	dress_extra = list(/obj/item/clothing/head/beret/solgov/fleet/dress)
 
@@ -486,9 +486,9 @@
 	min_rank = 7
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet
-	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/snco
+	service_over = /obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet/snco
 
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
+	dress_over = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet/snco
 	dress_extra = list(
 		/obj/item/material/sword/replica/officersword/pettyofficer,
 		/obj/item/clothing/head/beret/solgov/fleet/dress
@@ -503,16 +503,16 @@
 				/obj/item/clothing/head/beret/solgov/fleet/command,
 				/obj/item/clothing/head/beret/solgov/fleet/exploration,
 				/obj/item/clothing/head/ushanka/solgov/fleet,
-				/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/fleet,
+				/obj/item/clothing/suit/armor/grim/storage/hooded/wintercoat/solgov/fleet,
 				/obj/item/clothing/head/soft/solgov/fleet,
 				/obj/item/clothing/gloves/thick/duty/solgov/fleet
 			)
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet/command
-	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/officer
+	service_over = /obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet/officer
 	service_extra = list(/obj/item/clothing/suit/solgov/fleet_sweater/officer)
 
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/officer
+	dress_over = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet/officer
 	dress_hat = /obj/item/clothing/head/solgov/dress/fleet/command
 	dress_extra = list(
 		/obj/item/material/sword/replica/officersword,
@@ -528,7 +528,7 @@
 				/obj/item/clothing/under/solgov/utility/fleet/combat/command,
 				/obj/item/clothing/head/beret/solgov/fleet,
 				/obj/item/clothing/head/ushanka/solgov/fleet,
-				/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/fleet,
+				/obj/item/clothing/suit/armor/grim/storage/hooded/wintercoat/solgov/fleet,
 				/obj/item/clothing/head/soft/solgov/fleet,
 				/obj/item/clothing/gloves/thick/duty/solgov/fleet
 			)
@@ -538,9 +538,9 @@
 	min_rank = 4
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet
-	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet
+	service_over = /obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet
 
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet
+	dress_over = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet
 	dress_hat = /obj/item/clothing/head/solgov/dress/fleet
 	dress_extra = list(/obj/item/clothing/head/beret/solgov/fleet/dress)
 
@@ -550,9 +550,9 @@
 	min_rank = 7
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet
-	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/snco
+	service_over = /obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet/snco
 
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
+	dress_over = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet/snco
 	dress_extra = list(
 		/obj/item/material/sword/replica/officersword/pettyofficer,
 		/obj/item/clothing/head/beret/solgov/fleet/dress
@@ -567,16 +567,16 @@
 				/obj/item/clothing/under/solgov/utility/fleet/combat/command,
 				/obj/item/clothing/head/beret/solgov/fleet/command,
 				/obj/item/clothing/head/ushanka/solgov/fleet,
-				/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/fleet,
+				/obj/item/clothing/suit/armor/grim/storage/hooded/wintercoat/solgov/fleet,
 				/obj/item/clothing/head/soft/solgov/fleet,
 				/obj/item/clothing/gloves/thick/duty/solgov/fleet
 			)
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet/command
-	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/officer
+	service_over = /obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet/officer
 	service_extra = list(/obj/item/clothing/suit/solgov/fleet_sweater/officer)
 
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/officer
+	dress_over = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet/officer
 	dress_hat = /obj/item/clothing/head/solgov/dress/fleet/command
 	dress_extra = list(
 		/obj/item/material/sword/replica/officersword,
@@ -588,10 +588,10 @@
 	min_rank = 15
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet/command
-	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/command
+	service_over = /obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet/command
 	service_extra = list(/obj/item/clothing/suit/solgov/fleet_sweater/command)
 
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/command
+	dress_over = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet/command
 	dress_hat = /obj/item/clothing/head/solgov/dress/fleet/command
 	dress_extra = list(
 		/obj/item/material/sword/replica/officersword,
@@ -603,10 +603,10 @@
 	min_rank = 17
 
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet/command
-	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/flag
+	service_over = /obj/item/clothing/suit/armor/grim/storage/solgov/service/fleet/flag
 	service_extra = list(/obj/item/clothing/suit/solgov/fleet_sweater/flag)
 
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/flag
+	dress_over = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/fleet/flag
 	dress_hat = /obj/item/clothing/head/solgov/dress/fleet/command
 	dress_extra = list(
 		/obj/item/material/sword/replica/officersword,

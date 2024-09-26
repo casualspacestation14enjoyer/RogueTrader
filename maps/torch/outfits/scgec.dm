@@ -46,7 +46,7 @@
 /singleton/hierarchy/outfit/scgec/service
 	name = "IMPEC - Enlisted Service"
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary
-	suit = /obj/item/clothing/suit/storage/solgov/service/expeditionary
+	suit = /obj/item/clothing/suit/armor/grim/storage/solgov/service/expeditionary
 	shoes = /obj/item/clothing/shoes/dutyboots
 	head = /obj/item/clothing/head/solgov/service/expedition
 
@@ -54,7 +54,7 @@
 /singleton/hierarchy/outfit/scgec/service_command
 	name = "IMPEC - Command Service"
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer
-	suit = /obj/item/clothing/suit/storage/solgov/service/expeditionary/command
+	suit = /obj/item/clothing/suit/armor/grim/storage/solgov/service/expeditionary/command
 	shoes = /obj/item/clothing/shoes/dutyboots
 	head = /obj/item/clothing/head/solgov/service/expedition/command
 
@@ -62,7 +62,7 @@
 /singleton/hierarchy/outfit/scgec/service_senior_command
 	name = "IMPEC - Senior Command Service"
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer
-	suit = /obj/item/clothing/suit/storage/solgov/service/expeditionary/command
+	suit = /obj/item/clothing/suit/armor/grim/storage/solgov/service/expeditionary/command
 	shoes = /obj/item/clothing/shoes/dutyboots
 	head = /obj/item/clothing/head/solgov/service/expedition/senior_command
 
@@ -70,7 +70,7 @@
 /singleton/hierarchy/outfit/scgec/service_captain
 	name = "IMPEC - Captain Service"
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer
-	suit = /obj/item/clothing/suit/storage/solgov/service/expeditionary/command
+	suit = /obj/item/clothing/suit/armor/grim/storage/solgov/service/expeditionary/command
 	shoes = /obj/item/clothing/shoes/dutyboots
 	head = /obj/item/clothing/head/solgov/service/expedition/captain
 
@@ -78,7 +78,7 @@
 /singleton/hierarchy/outfit/scgec/service_admiral
 	name = "IMPEC - Lord Captain Service"
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer
-	suit = /obj/item/clothing/suit/storage/solgov/service/expeditionary/command
+	suit = /obj/item/clothing/suit/armor/grim/storage/solgov/service/expeditionary/command
 	shoes = /obj/item/clothing/shoes/dutyboots
 	head = /obj/item/clothing/head/solgov/service/expedition/captain
 
@@ -87,7 +87,7 @@
 /singleton/hierarchy/outfit/scgec/dress_enlisted
 	name = "IMPEC - Enlisted Dress"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary
-	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition
+	suit = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/expedition
 	shoes = /obj/item/clothing/shoes/dress
 	head = /obj/item/clothing/head/solgov/service/expedition
 	gloves = /obj/item/clothing/gloves/white
@@ -96,7 +96,7 @@
 /singleton/hierarchy/outfit/scgec/dress_skirt_enlisted
 	name = "IMPEC - Enlisted Dress (Skirt)"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary/skirt
-	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition
+	suit = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/expedition
 	shoes = /obj/item/clothing/shoes/dress
 	head = /obj/item/clothing/head/solgov/service/expedition
 	gloves = /obj/item/clothing/gloves/white
@@ -105,7 +105,7 @@
 /singleton/hierarchy/outfit/scgec/dress_senior_enlisted
 	name = "IMPEC - Senior Enlisted Dress"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary
-	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/senior
+	suit = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/expedition/senior
 	shoes = /obj/item/clothing/shoes/dress
 	head = /obj/item/clothing/head/solgov/service/expedition
 	gloves = /obj/item/clothing/gloves/white
@@ -114,7 +114,7 @@
 /singleton/hierarchy/outfit/scgec/dress_skirt_senior_enlisted
 	name = "IMPEC - Senior Enlisted Dress (Skirt)"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary/skirt
-	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/chief
+	suit = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/expedition/chief
 	shoes = /obj/item/clothing/shoes/dress
 	head = /obj/item/clothing/head/solgov/service/expedition
 	gloves = /obj/item/clothing/gloves/white
@@ -123,7 +123,7 @@
 /singleton/hierarchy/outfit/scgec/dress_chief_enlisted
 	name = "IMPEC - Chief Enlisted Dress"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary
-	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/chief
+	suit = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/expedition/chief
 	shoes = /obj/item/clothing/shoes/dress
 	head = /obj/item/clothing/head/solgov/service/expedition
 	gloves = /obj/item/clothing/gloves/white
@@ -132,7 +132,7 @@
 /singleton/hierarchy/outfit/scgec/dress_skirt_chief_enlisted
 	name = "IMPEC - Chief Enlisted Dress (Skirt)"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary/skirt
-	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/senior
+	suit = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/expedition/senior
 	shoes = /obj/item/clothing/shoes/dress
 	head = /obj/item/clothing/head/solgov/service/expedition
 	gloves = /obj/item/clothing/gloves/white
@@ -141,7 +141,7 @@
 /singleton/hierarchy/outfit/scgec/dress_command
 	name = "IMPEC - Command Dress"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary
-	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/command
+	suit = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/expedition/command
 	shoes = /obj/item/clothing/shoes/dress
 	head = /obj/item/clothing/head/solgov/service/expedition/command
 	gloves = /obj/item/clothing/gloves/white
@@ -150,7 +150,7 @@
 /singleton/hierarchy/outfit/scgec/dress_skirt_command
 	name = "IMPEC - Command Dress (Skirt)"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary/skirt
-	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/command
+	suit = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/expedition/command
 	shoes = /obj/item/clothing/shoes/dress
 	head = /obj/item/clothing/head/solgov/service/expedition/command
 	gloves = /obj/item/clothing/gloves/white
@@ -159,7 +159,7 @@
 /singleton/hierarchy/outfit/scgec/dress_senior_command
 	name = "IMPEC - Senior Command Dress"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary
-	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/command/cdr
+	suit = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/expedition/command/cdr
 	shoes = /obj/item/clothing/shoes/dress
 	head = /obj/item/clothing/head/solgov/service/expedition/senior_command
 	gloves = /obj/item/clothing/gloves/white
@@ -168,7 +168,7 @@
 /singleton/hierarchy/outfit/scgec/dress_skirt_senior_command
 	name = "IMPEC - Senior Command Dress (Skirt)"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary/skirt
-	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/command/cdr
+	suit = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/expedition/command/cdr
 	shoes = /obj/item/clothing/shoes/dress
 	head = /obj/item/clothing/head/solgov/service/expedition/senior_command
 	gloves = /obj/item/clothing/gloves/white
@@ -177,7 +177,7 @@
 /singleton/hierarchy/outfit/scgec/dress_captain
 	name = "IMPEC - Captain Dress"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary
-	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/command/capt
+	suit = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/expedition/command/capt
 	shoes = /obj/item/clothing/shoes/dress
 	head = /obj/item/clothing/head/solgov/service/expedition/captain
 	gloves = /obj/item/clothing/gloves/white
@@ -186,7 +186,7 @@
 /singleton/hierarchy/outfit/scgec/dress_skirt_captain
 	name = "IMPEC - Captain Dress (Skirt)"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary/skirt
-	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/command/capt
+	suit = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/expedition/command/capt
 	shoes = /obj/item/clothing/shoes/dress
 	head = /obj/item/clothing/head/solgov/service/expedition/captain
 	gloves = /obj/item/clothing/gloves/white
@@ -195,7 +195,7 @@
 /singleton/hierarchy/outfit/scgec/dress_admiral
 	name = "IMPEC - Lord Captain Dress"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary
-	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/command/adm
+	suit = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/expedition/command/adm
 	shoes = /obj/item/clothing/shoes/dress
 	head = /obj/item/clothing/head/solgov/service/expedition/captain
 	gloves = /obj/item/clothing/gloves/white
@@ -204,7 +204,7 @@
 /singleton/hierarchy/outfit/scgec/dress_skirt_admiral
 	name = "IMPEC - Lord Captain Dress (Skirt)"
 	uniform = /obj/item/clothing/under/solgov/dress/expeditionary/skirt
-	suit = /obj/item/clothing/suit/storage/solgov/dress/expedition/command/adm
+	suit = /obj/item/clothing/suit/armor/grim/storage/solgov/dress/expedition/command/adm
 	shoes = /obj/item/clothing/shoes/dress
 	head = /obj/item/clothing/head/solgov/service/expedition/captain
 	gloves = /obj/item/clothing/gloves/white

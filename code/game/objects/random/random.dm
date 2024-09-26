@@ -1337,21 +1337,21 @@
 	icon_state = "syndicate"
 
 /obj/random/suit/spawn_choices()
-	return list(/obj/item/clothing/suit/storage/hazardvest = 4,
-				/obj/item/clothing/suit/storage/toggle/labcoat = 4,
+	return list(/obj/item/clothing/suit/armor/grim/storage/hazardvest = 4,
+				/obj/item/clothing/suit/armor/grim/toggle/labcoat = 4,
 				/obj/item/clothing/suit/space/emergency = 1,
 				/obj/item/clothing/suit/armor/vest = 4,
-				/obj/item/clothing/suit/storage/security_chest_rig = 4,
-				/obj/item/clothing/suit/storage/vest/tactical = 1,
-				/obj/item/clothing/suit/storage/vest = 3,
-				/obj/item/clothing/suit/storage/toggle/bomber = 3,
+				/obj/item/clothing/suit/armor/grim/storage/security_chest_rig = 4,
+				/obj/item/clothing/suit/armor/grim/storage/vest/tactical = 1,
+				/obj/item/clothing/suit/armor/grim/storage/vest = 3,
+				/obj/item/clothing/suit/armor/grim/toggle/bomber = 3,
 				/obj/item/clothing/suit/chef/classic = 3,
 				/obj/item/clothing/suit/surgicalapron = 2,
 				/obj/item/clothing/suit/apron/overalls = 3,
-				/obj/item/clothing/suit/bio_suit/general = 1,
-				/obj/item/clothing/suit/storage/toggle/hoodie/black = 3,
-				/obj/item/clothing/suit/storage/toggle/brown_jacket = 3,
-				/obj/item/clothing/suit/storage/leather_jacket = 3,
+				/obj/item/clothing/suit/armor/grim/bio_suit/general = 1,
+				/obj/item/clothing/suit/armor/grim/toggle/hoodie/black = 3,
+				/obj/item/clothing/suit/armor/grim/toggle/brown_jacket = 3,
+				/obj/item/clothing/suit/armor/grim/storage/leather_jacket = 3,
 				/obj/item/clothing/suit/apron = 4)
 
 /obj/random/clothing
@@ -1516,7 +1516,7 @@ something, make sure it's not in one of the other lists.*/
 				/obj/item/clothing/glasses/thermal = 1,
 				/obj/item/clothing/glasses/welding/superior = 7,
 				/obj/item/clothing/head/collectable/petehat = 4,
-				/obj/item/clothing/suit/storage/vest/merc = 3,
+				/obj/item/clothing/suit/armor/grim/storage/vest/merc = 3,
 				/obj/item/clothing/suit/straight_jacket = 6,
 				/obj/item/clothing/head/helmet/merc = 3,
 				/obj/item/stack/material/diamond/ten = 7,

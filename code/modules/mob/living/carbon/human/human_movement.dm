@@ -47,6 +47,18 @@
 						item_slowdown = item_slowdown / (size_mod + 1)
 					else
 						item_slowdown = item_slowdown - size_mod
+				if(I.str_requirement)
+					if(skill_check(SKILL_COMBAT, SKILL_DEMIGOD))
+						item_slowdown += 0.02
+					else if(skill_check(SKILL_COMBAT, SKILL_PRIMARIS))
+						item_slowdown += 0.05
+					else if(skill_check(SKILL_COMBAT, SKILL_LEGEND))
+						// Minor slowdown for high-level users.
+						item_slowdown += 0.4
+					else
+						to_chat(src, "<span class='danger'>You are too weak to use this item!</span>")
+						drop_item()
+
 				total_item_slowdown += max(item_slowdown, 0)
 		tally += total_item_slowdown
 

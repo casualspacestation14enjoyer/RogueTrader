@@ -31,7 +31,7 @@
 /singleton/hierarchy/outfit/marooned_officer
 	name = "Dead Magnitka's militarum officer"
 	uniform = /obj/item/clothing/under/magintka_uniform
-	suit = /obj/item/clothing/suit/storage/hooded/wintercoat
+	suit = /obj/item/clothing/suit/armor/grim/storage/hooded/wintercoat
 	shoes = /obj/item/clothing/shoes/jackboots
 	gloves = /obj/item/clothing/gloves/thick
 	head = /obj/item/clothing/head/beret

@@ -83,7 +83,7 @@
 /singleton/hierarchy/outfit/corpse/zhp_guard
 	name = "Dead ZHP guard"
 	uniform = /obj/item/clothing/under/rank/virologist
-	suit = /obj/item/clothing/suit/armor/pcarrier
+	suit = /obj/item/clothing/suit/armor/grim
 	head = /obj/item/clothing/head/soft/lar_maria/zhp_cap
 	shoes = /obj/item/clothing/shoes/dutyboots
 	l_ear = /obj/item/device/radio/headset
@@ -138,7 +138,7 @@
 /singleton/hierarchy/outfit/corpse/zhp_virologist
 	name = "Dead male ZHP virologist"
 	uniform = /obj/item/clothing/under/rank/virologist
-	suit = /obj/item/clothing/suit/storage/toggle/labcoat
+	suit = /obj/item/clothing/suit/armor/grim/toggle/labcoat
 	shoes = /obj/item/clothing/shoes/white
 	gloves = /obj/item/clothing/gloves/latex/nitrile
 	head = /obj/item/clothing/head/surgery
@@ -160,7 +160,7 @@
 /singleton/hierarchy/outfit/corpse/zhp_virologist_female
 	name = "Dead female ZHP virologist"
 	uniform = /obj/item/clothing/under/rank/virologist
-	suit = /obj/item/clothing/suit/storage/toggle/labcoat
+	suit = /obj/item/clothing/suit/armor/grim/toggle/labcoat
 	shoes = /obj/item/clothing/shoes/white
 	gloves = /obj/item/clothing/gloves/latex/nitrile
 	mask = /obj/item/clothing/mask/surgical

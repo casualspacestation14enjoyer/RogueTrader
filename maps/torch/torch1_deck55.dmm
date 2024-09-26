@@ -10129,7 +10129,7 @@
 /obj/floor_decal/industrial/outline/yellow,
 /obj/structure/table/rack,
 /obj/item/clothing/shoes/magboots,
-/obj/item/clothing/suit/bio_suit/anomaly,
+/obj/item/clothing/suit/armor/grim/bio_suit/anomaly,
 /obj/item/clothing/mask/breath,
 /obj/item/clothing/head/bio_hood/anomaly,
 /turf/simulated/floor/tiled/white/monotile,

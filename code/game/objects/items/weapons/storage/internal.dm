@@ -23,7 +23,7 @@
 //These procs are completely optional, it is up to the master item to decide when it's storage get's opened by calling open()
 //However they are helpful for allowing the master item to pretend it is a storage item itself.
 //If you are using these you will probably want to override use_tool() as well.
-//See /obj/item/clothing/suit/storage for an example.
+//See /obj/item/clothing/suit/armor/grim/storage for an example.
 
 //items that use internal storage have the option of calling this to emulate default storage MouseDrop behaviour.
 //returns 1 if the master item's parent's MouseDrop() should be called, 0 otherwise. It's strange, but no other way of

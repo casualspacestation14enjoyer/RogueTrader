@@ -51,8 +51,8 @@
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_MINOR
 	)
-	online_slowdown = 2
-	offline_slowdown = 4
+	online_slowdown = 1
+	offline_slowdown = 2
 	vision_restriction = TINT_MODERATE
 	offline_vision_restriction = TINT_BLIND
 	max_pressure_protection = FIRESUIT_MAX_PRESSURE
@@ -125,9 +125,7 @@
 
 	req_access = list(access_engine_equip)
 
-	sprite_sheets = list(
-		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_rig_back_unathi.dmi'
-	)
+
 
 /obj/item/clothing/head/helmet/space/rig/eva
 	light_overlay = "helmet_light_alt"
@@ -136,9 +134,6 @@
 
 /obj/item/clothing/suit/space/rig/eva
 	species_restricted = list(SPECIES_HUMAN,SPECIES_TAU,SPECIES_KROOT,SPECIES_IPC)
-	sprite_sheets = list(
-		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_suit_unathi.dmi'
-		)
 	allowed = list(
 		/obj/item/device/flashlight,
 		/obj/item/tank,
@@ -153,16 +148,11 @@
 
 /obj/item/clothing/shoes/magboots/rig/eva
 	species_restricted = list(SPECIES_HUMAN,SPECIES_TAU,SPECIES_KROOT,SPECIES_IPC)
-	sprite_sheets = list(
-		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_feet_unathi.dmi'
-	)
+
 
 /obj/item/clothing/gloves/rig/eva
 	species_restricted = list(SPECIES_HUMAN,SPECIES_TAU,SPECIES_KROOT,SPECIES_IPC)
 	siemens_coefficient = 0
-	sprite_sheets = list(
-		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_hands_unathi.dmi'
-	)
 
 /obj/item/rig/eva/equipped
 
@@ -218,15 +208,10 @@
 	light_overlay = "helmet_light_alt"
 	camera = /obj/machinery/camera/network/helmet
 	species_restricted = list(SPECIES_HUMAN,SPECIES_TAU,SPECIES_KROOT,SPECIES_IPC)
-	sprite_sheets = list(
-		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_head_unathi.dmi',
-		SPECIES_TAU = 'icons/mob/species/skrell/onmob_head_skrell.dmi'
-	)
+
 /obj/item/clothing/suit/space/rig/ce
 	species_restricted = list(SPECIES_HUMAN,SPECIES_TAU,SPECIES_KROOT,SPECIES_IPC)
-	sprite_sheets = list(
-		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_suit_unathi.dmi'
-	)
+
 	allowed = list(
 		/obj/item/gun,
 		/obj/item/device/flashlight,
@@ -243,9 +228,7 @@
 	)
 /obj/item/clothing/shoes/magboots/rig/ce
 	species_restricted = list(SPECIES_HUMAN,SPECIES_TAU,SPECIES_KROOT,SPECIES_IPC)
-	sprite_sheets = list(
-		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_feet_unathi.dmi'
-	)
+
 /obj/item/clothing/gloves/rig/ce
 	siemens_coefficient = 0
 
@@ -340,10 +323,6 @@
 	light_overlay = "helmet_light_wide"
 	camera = /obj/machinery/camera/network/helmet
 	species_restricted = list(SPECIES_HUMAN, SPECIES_KROOT, SPECIES_TAU, SPECIES_IPC)
-	sprite_sheets = list(
-		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_head_unathi.dmi',
-		SPECIES_TAU = 'icons/mob/species/skrell/onmob_head_skrell.dmi',
-	)
 
 /obj/item/clothing/suit/space/rig/medical
 	species_restricted = list(SPECIES_HUMAN,SPECIES_TAU, SPECIES_KROOT, SPECIES_IPC)
@@ -361,15 +340,9 @@
 
 /obj/item/clothing/shoes/magboots/rig/medical
 	species_restricted = list(SPECIES_HUMAN,SPECIES_TAU, SPECIES_KROOT, SPECIES_IPC)
-	sprite_sheets = list(
-		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_feet_unathi.dmi'
-	)
 
 /obj/item/clothing/gloves/rig/medical
 	species_restricted = list(SPECIES_HUMAN,SPECIES_TAU, SPECIES_KROOT, SPECIES_IPC)
-	sprite_sheets = list(
-		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_hands_unathi.dmi'
-	)
 
 /obj/item/rig/medical/equipped
 
@@ -475,9 +448,6 @@
 //All in one suit
 /obj/item/clothing/suit/space/rig/zero
 	species_restricted = list(SPECIES_HUMAN,SPECIES_TAU, SPECIES_KROOT, SPECIES_IPC)
-	sprite_sheets = list(
-		SPECIES_KROOT = 'icons/mob/species/unathi/onmob_suit_unathi.dmi'
-	)
 	breach_threshold = 18
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	allowed = list(

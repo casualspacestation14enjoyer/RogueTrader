@@ -12,7 +12,7 @@
 
 /singleton/hierarchy/supply_pack/security/lightarmor
 	name = "Armor - Light"
-	contains = list(/obj/item/clothing/suit/armor/pcarrier/light = 4,
+	contains = list(/obj/item/clothing/suit/armor/grim/light = 4,
 					/obj/item/clothing/head/helmet =4)
 	cost = 30
 	containertype = /obj/structure/closet/crate/secure
@@ -21,7 +21,7 @@
 
 /singleton/hierarchy/supply_pack/security/armor
 	name = "Armor - Unmarked"
-	contains = list(/obj/item/clothing/suit/armor/pcarrier/medium = 2,
+	contains = list(/obj/item/clothing/suit/armor/grim/medium = 2,
 					/obj/item/clothing/head/helmet =2)
 	cost = 20
 	containertype = /obj/structure/closet/crate/secure
@@ -31,7 +31,7 @@
 /singleton/hierarchy/supply_pack/security/tacticalarmor
 	name = "Armor - Tactical"
 	contains = list(/obj/item/clothing/under/tactical,
-					/obj/item/clothing/suit/armor/pcarrier/tan/tactical,
+					/obj/item/clothing/suit/armor/grim/tan/tactical,
 					/obj/item/clothing/head/helmet/tactical,
 					/obj/item/clothing/mask/balaclava/tactical,
 					/obj/item/clothing/glasses/tacgoggles,
@@ -313,7 +313,7 @@
 /singleton/hierarchy/supply_pack/security/securitybiosuit
 	name = "Gear - Security biohazard gear"
 	contains = list(/obj/item/clothing/head/bio_hood/security,
-					/obj/item/clothing/suit/bio_suit/security,
+					/obj/item/clothing/suit/armor/grim/bio_suit/security,
 					/obj/item/clothing/mask/gas,
 					/obj/item/tank/oxygen,
 					/obj/item/clothing/gloves/latex)

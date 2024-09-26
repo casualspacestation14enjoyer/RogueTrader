@@ -627,13 +627,11 @@
 	switch(slot)
 		if(slot_wear_suit)
 			sprite_sheets = list(
-				SPECIES_VOX = 'icons/mob/species/vox/onmob_suit_vox.dmi',
-				SPECIES_KROOT = 'icons/mob/species/unathi/onmob_suit_unathi.dmi'
+				SPECIES_VOX = 'icons/mob/species/vox/onmob_suit_vox.dmi'
 				)
 		if(slot_head)
 			sprite_sheets = list(
-				SPECIES_VOX = 'icons/mob/species/vox/onmob_head_vox.dmi',
-				SPECIES_KROOT = 'icons/mob/species/unathi/onmob_head_unathi.dmi'
+				SPECIES_VOX = 'icons/mob/species/vox/onmob_head_vox.dmi'
 				)
 	return ..()
 

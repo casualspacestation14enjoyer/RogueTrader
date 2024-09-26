@@ -24,7 +24,7 @@
 	var/force_danger = 0						// If the grab is strong enough to be able to force someone to do something harmful to them.
 	var/restrains = 0							// If the grab acts like cuffs and prevents action from the victim.
 
-	var/grab_slowdown = 7
+	var/grab_slowdown = 5
 
 	var/shift = 0
 

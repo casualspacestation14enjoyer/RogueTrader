@@ -52,7 +52,7 @@
 /singleton/hierarchy/outfit/job/torch/ert/hostile
 	name = OUTFIT_JOB_NAME("Imperial Navy - Hostile")
 	uniform = /obj/item/clothing/under/solgov/utility/fleet/combat
-	suit = /obj/item/clothing/suit/armor/pcarrier/light/sol
+	suit = /obj/item/clothing/suit/armor/grim/light/sol
 	head = /obj/item/clothing/head/helmet
 	mask = /obj/item/clothing/mask/gas/half
 	glasses = /obj/item/clothing/glasses/tacgoggles

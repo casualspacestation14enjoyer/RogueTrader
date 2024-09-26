@@ -5,14 +5,6 @@
 		var/datum/extension/armor/armor_datum = armor
 		. = armor_datum.apply_damage_modifications(arglist(.))
 
-/mob/living/proc/get_blocked_ratio(def_zone, damage_type, damage_flags, armor_pen, damage)
-	var/list/armors = get_armors_by_zone(def_zone, damage_type, damage_flags)
-	. = 0
-	for(var/armor in armors)
-		var/datum/extension/armor/armor_datum = armor
-		. = 1 - (1 - .) * (1 - armor_datum.get_blocked(damage_type, damage_flags, armor_pen, damage)) // multiply the amount we let through
-	. = min(1, .)
-
 /mob/living/proc/get_armors_by_zone(def_zone, damage_type, damage_flags)
 	. = list()
 	var/natural_armor = get_extension(src, /datum/extension/armor)
@@ -21,30 +13,102 @@
 	if(psi)
 		. += get_extension(psi, /datum/extension/armor)
 
+
+
+/mob/living/proc/get_blocked_ratio(def_zone, damage_type, damage_flags, armor_pen, damage)
+	var/list/armors = get_armors_by_zone(def_zone, damage_type, damage_flags)
+	. = 0
+
+	// Iterate over all armors covering the damage zone
+	for(var/armor in armors)
+	{
+		// Ensure armor is of the correct type before proceeding
+		if(istype(armor, /datum/extension/armor))
+		{
+			var/datum/extension/armor/armor_datum = armor  // Properly assign armor_datum
+
+			// Use get_value() to get the armor's base protection value (armor_value)
+			var armor_value = armor_datum.get_value(get_armor_key(damage_type, damage_flags))
+
+			// Skip further calculations if armor_pen is extremely high
+			if (armor_pen >= 200)
+				continue
+
+			// Full block if armor value is much higher than armor_pen + 10
+			if (armor_value > armor_pen + 10)
+			{
+				show_message("<span class='warning'>Your armor protects you!</span>")
+				playsound(src, "sound/weapons/armorblockheavy[rand(1,3)].ogg", 50, 1, 1)
+				return 1.0  // 100% block
+			}
+			// If armor penetration exceeds armor value, continue without blocking
+			if (armor_pen >= armor_value)
+				continue
+			var damage_breakthrough = ((armor_value - armor_pen) / 20) * 100
+			if (damage_breakthrough < 0)
+				damage_breakthrough = 0
+			// Show message and sound if partial block occurs
+			if (damage_breakthrough > 0)
+			{
+				show_message("<span class='warning'>Your armor weakens the blow!</span>")
+				playsound(src, "sound/weapons/armorblock[rand(1,4)].ogg", 50, 1, 1)
+			}
+
+			// Accumulate blocked ratio for this armor piece
+			. = 1 - (1 - .) * (1 - damage_breakthrough / 100)
+		}
+	}
+
+	// Cap the blocked ratio to a maximum of 100%
+	. = min(1, .)
+
+
 /mob/living/bullet_act(obj/item/projectile/P, def_zone)
+{
 	if (status_flags & GODMODE)
 		return PROJECTILE_FORCE_MISS
 
 	//Being hit while using a deadman switch
 	var/obj/item/device/assembly/signaler/signaler = get_active_hand()
 	if(istype(signaler) && signaler.deadman)
+	{
 		log_and_message_admins("has triggered a signaler deadman's switch", src)
 		visible_message(SPAN_WARNING("[src] triggers their deadman's switch"))
 		signaler.signal()
+	}
 
-	//Armor
+	// Armor calculation
 	var/damage = P.damage
 	var/flags = P.damage_flags()
-	var/damaged
+	var/damaged = 0
+
+	// First, get the blocked ratio for armor mitigation
+	var/block_ratio = get_blocked_ratio(def_zone, P.damage_type, flags, P.armor_penetration, P.damage)
+
+	// Apply block_ratio to reduce the incoming damage
+	damage *= (1 - block_ratio)  // Reduce the damage based on block ratio
+
+	// Apply the final damage after reduction from armor
 	if(!P.nodamage)
+	{
 		damaged = apply_damage(damage, P.damage_type, def_zone, flags, P, P.armor_penetration)
 		bullet_impact_visuals(P, def_zone, damaged)
-	if(damaged || P.nodamage) // Run the block computation if we did damage or if we only use armor for effects (nodamage)
-		. = get_blocked_ratio(def_zone, P.damage_type, flags, P.armor_penetration, P.damage)
-	P.on_hit(src, ., def_zone)
+	}
 
+	// If damage was applied or P.nodamage is true, perform any additional processing
+	if(damaged || P.nodamage)
+	{
+		// Handle additional effects, sounds, etc.
+		P.on_hit(src, block_ratio, def_zone)
+	}
+
+	// Handle AI reaction
 	if(ai_holder && P.firer)
+	{
 		ai_holder.react_to_attack(P.firer)
+	}
+}
+
 
 // For visuals and blood splatters etc
 /mob/living/proc/bullet_impact_visuals(obj/item/projectile/P, def_zone, damage)
@@ -133,11 +197,16 @@
 
 ///Called when the mob is hit with an item in combat. Returns the blocked result
 /mob/living/proc/hit_with_weapon(obj/item/I, mob/living/user, effective_force, hit_zone)
-	if(!effective_force)
+	if (!effective_force)
 		return FALSE
+
+	// Get the blocked ratio based on armor and reduce the effective force
+	var/block_ratio = get_blocked_ratio(hit_zone, I.damtype, I.damage_flags(), I.armor_penetration, effective_force)
+	effective_force *= (1 - block_ratio)  // Apply the block ratio
 
 	var/damage_flags = I.damage_flags()
 	return apply_damage(effective_force, I.damtype, hit_zone, damage_flags, used_weapon=I, armor_pen=I.armor_penetration)
+
 
 /mob/living/post_use_item(obj/item/tool, mob/living/user, interaction_handled, use_call)
 	if (interaction_handled && ai_holder && (use_call == "use" || use_call == "weapon"))

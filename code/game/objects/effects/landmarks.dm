@@ -118,7 +118,7 @@
 /obj/landmark/costume/madscientist/New()
 	new /obj/item/clothing/under/gimmick/rank/captain/suit(src.loc)
 	new /obj/item/clothing/head/flatcap(src.loc)
-	new /obj/item/clothing/suit/storage/toggle/labcoat/mad(src.loc)
+	new /obj/item/clothing/suit/armor/grim/toggle/labcoat/mad(src.loc)
 	new /obj/item/clothing/glasses/green(src.loc)
 	delete_me = 1
 
@@ -167,7 +167,7 @@
 	delete_me = 1
 
 /obj/landmark/costume/plaguedoctor/New()
-	new /obj/item/clothing/suit/bio_suit/plaguedoctorsuit(src.loc)
+	new /obj/item/clothing/suit/armor/grim/bio_suit/plaguedoctorsuit(src.loc)
 	new /obj/item/clothing/head/plaguedoctorhat(src.loc)
 	delete_me = 1
 

@@ -282,7 +282,7 @@ GLOBAL_LIST_EMPTY(vox_artifact_spawners)
 		"Iatric monitor - 1" = list(1, /obj/item/organ/internal/augment/active/iatric_monitor),
 		"Internal Air System - 1" = list(1, /obj/item/organ/internal/augment/active/internal_air_system),
 		"Adaptive Binoculars - 1" = list(1, /obj/item/organ/internal/augment/active/item/adaptive_binoculars),
-		"Advanced Armored Vest - 4" = list(4, /obj/item/clothing/suit/armor/pcarrier/merc, /obj/item/clothing/head/helmet/merc),
+		"Advanced Armored Vest - 4" = list(4, /obj/item/clothing/suit/armor/grim/merc, /obj/item/clothing/head/helmet/merc),
 		"Nerve Dampeners - 6" = list(6, /obj/item/organ/internal/augment/active/nerve_dampeners),
 		"Hazard Hardsuit - 12" = list(12, /obj/item/rig/hazard),
 		)

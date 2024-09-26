@@ -2797,9 +2797,9 @@
 /obj/structure/table/rack{
 	pixel_x = -1
 	},
-/obj/item/clothing/suit/armor/pcarrier/merc,
-/obj/item/clothing/suit/armor/pcarrier/merc,
-/obj/item/clothing/suit/armor/pcarrier/merc,
+/obj/item/clothing/suit/armor/grim/merc,
+/obj/item/clothing/suit/armor/grim/merc,
+/obj/item/clothing/suit/armor/grim/merc,
 /obj/item/clothing/head/helmet/merc,
 /obj/item/clothing/head/helmet/merc,
 /obj/item/clothing/head/helmet/merc,

@@ -97,7 +97,7 @@
 		/obj/item/device/radio/headset/headset_pilot/alt,
 		/obj/item/device/binoculars,
 		/obj/item/clothing/gloves/thick,
-		/obj/item/clothing/suit/storage/hazardvest/blue,
+		/obj/item/clothing/suit/armor/grim/storage/hazardvest/blue,
 		/obj/item/selection/pilot_helmet,
 		/obj/item/storage/firstaid/light,
 		/obj/item/material/knife/folding/swiss/explorer,

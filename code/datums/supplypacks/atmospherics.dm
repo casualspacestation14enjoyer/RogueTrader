@@ -13,7 +13,7 @@
 	name = "Emergency equipment"
 	containertype = /obj/structure/closet/crate/large
 	contains = list(/obj/item/storage/toolbox/emergency = 2,
-					/obj/item/clothing/suit/storage/hazardvest = 2,
+					/obj/item/clothing/suit/armor/grim/storage/hazardvest = 2,
 					/obj/item/tank/oxygen_emergency_extended = 4,
 			 		/obj/item/clothing/suit/space/emergency = 4,
 					/obj/item/clothing/head/helmet/space/emergency = 4,

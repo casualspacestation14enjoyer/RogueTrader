@@ -10,7 +10,7 @@
 
 	///This saves our blood splatter overlay, which will be processed not to go over the edges of the sprite
 	var/image/blood_overlay = null
-
+	var/str_requirement = 0
 	var/sales_price = 0
 	var/randpixel = 6
 	var/r_speed = 1.0
@@ -28,7 +28,7 @@
 	var/lock_picking_level = 0 //used to determine whether something can pick a lock, and how well.
 	var/force = 10
 	var/attack_cooldown = DEFAULT_WEAPON_COOLDOWN
-	var/melee_accuracy_bonus = 5
+	var/melee_accuracy_bonus = 3
 	/// Used to determine how fast an item completes a certain action. Lower values are faster.
 	var/toolspeed = 1
 

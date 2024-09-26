@@ -21,10 +21,10 @@
 		verbs |= /obj/item/clothing/proc/toggle_buttons
 
 
-/obj/item/clothing/suit/storage/toggle/buttons_suffix = "_open"
+/obj/item/clothing/suit/armor/grim/toggle/buttons_suffix = "_open"
 
 
-/obj/item/clothing/suit/storage/toggle/inherit_custom_item_data(datum/custom_item/citem)
+/obj/item/clothing/suit/armor/grim/toggle/inherit_custom_item_data(datum/custom_item/citem)
 	. = ..()
 	if (citem.additional_data["custom_icon_state"])
 		custom_icon_state = citem.additional_data["custom_icon_state"]

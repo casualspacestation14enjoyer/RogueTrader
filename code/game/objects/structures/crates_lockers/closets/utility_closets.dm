@@ -71,7 +71,7 @@
 /obj/structure/closet/toolcloset/New()
 	..()
 	if(prob(40))
-		new /obj/item/clothing/suit/storage/hazardvest(src)
+		new /obj/item/clothing/suit/armor/grim/storage/hazardvest(src)
 	if(prob(70))
 		new /obj/item/device/flashlight(src)
 	if(prob(70))

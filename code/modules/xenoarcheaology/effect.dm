@@ -139,7 +139,7 @@
 
 /obj/item/rig/hazmat/anomaly_protection = 1
 
-/obj/item/clothing/suit/bio_suit/anomaly/anomaly_protection = 0.7
+/obj/item/clothing/suit/armor/grim/bio_suit/anomaly/anomaly_protection = 0.7
 
 /obj/item/clothing/suit/space/void/excavation/anomaly_protection = 0.6
 

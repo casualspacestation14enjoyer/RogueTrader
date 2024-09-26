@@ -163,7 +163,7 @@
 /singleton/hierarchy/outfit/job/scavver/pilot
 	name = "Salvage Pilot"
 	uniform = /obj/item/clothing/under/rank/dispatch
-	suit = /obj/item/clothing/suit/armor/pcarrier/light
+	suit = /obj/item/clothing/suit/armor/grim/light
 	r_pocket = /obj/item/device/radio/map_preset/scavver
 	l_pocket = /obj/item/crowbar/prybar
 	shoes = /obj/item/clothing/shoes/jackboots
@@ -174,7 +174,7 @@
 	uniform = /obj/item/clothing/under/caretaker
 	r_pocket = /obj/item/device/radio/map_preset/scavver
 	l_pocket = /obj/item/crowbar/prybar
-	suit = /obj/item/clothing/suit/storage/toggle/labcoat
+	suit = /obj/item/clothing/suit/armor/grim/toggle/labcoat
 	shoes = /obj/item/clothing/shoes/white
 	gloves = /obj/item/clothing/gloves/latex
 	belt = null

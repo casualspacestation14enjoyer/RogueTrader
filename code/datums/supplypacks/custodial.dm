@@ -52,7 +52,7 @@
 /singleton/hierarchy/supply_pack/custodial/janitorbiosuits
 	name = "Gear - Janitor biohazard equipment"
 	contains = list(/obj/item/clothing/head/bio_hood/janitor,
-					/obj/item/clothing/suit/bio_suit/janitor,
+					/obj/item/clothing/suit/armor/grim/bio_suit/janitor,
 					/obj/item/clothing/mask/gas,
 					/obj/item/tank/oxygen)
 	cost = 30
