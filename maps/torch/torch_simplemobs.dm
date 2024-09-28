@@ -14,8 +14,8 @@
 /obj/item/clothing/suit/armor/bulletproof/armsman
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_ARMOR_ARMS, ACCESSORY_SLOT_ARMOR_LEGS, ACCESSORY_SLOT_ARMOR_STORAGE)
 	accessories = list(
-		/obj/item/clothing/accessory/arm_guards/riot,
-		/obj/item/clothing/accessory/leg_guards/riot,
+		/obj/item/clothing/accessory/arm_guards/flak,
+		/obj/item/clothing/accessory/leg_guards/flak,
 		/obj/item/clothing/accessory/armor_tag/solgov/lead,
 		/obj/item/clothing/accessory/storage/pouches
 		)

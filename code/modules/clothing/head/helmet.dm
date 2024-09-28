@@ -19,7 +19,7 @@
 	item_flags = ITEM_FLAG_THICKMATERIAL
 	body_parts_covered = HEAD
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_SMALL,
@@ -126,7 +126,7 @@
 	icon_state = "helmet_reflect"
 	valid_accessory_slots = list(ACCESSORY_SLOT_HELMET_VISOR)
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_BASIC,
 		laser = ARMOR_LASER_CARAPACE,
 		energy = ARMOR_ENERGY_RESISTANT

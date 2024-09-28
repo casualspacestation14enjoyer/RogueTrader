@@ -11343,10 +11343,10 @@
 /area/security/secure_storage)
 "aOG" = (
 /obj/structure/table/rack,
-/obj/item/clothing/accessory/arm_guards/ablative,
-/obj/item/clothing/accessory/arm_guards/ablative,
-/obj/item/clothing/accessory/leg_guards/ablative,
-/obj/item/clothing/accessory/leg_guards/ablative,
+/obj/item/clothing/accessory/arm_guards/reactivelas,
+/obj/item/clothing/accessory/arm_guards/reactivelas,
+/obj/item/clothing/accessory/leg_guards/reactivelas,
+/obj/item/clothing/accessory/leg_guards/reactivelas,
 /obj/item/clothing/suit/armor/laserproof,
 /obj/item/clothing/suit/armor/laserproof,
 /obj/item/clothing/head/helmet/ablative,
@@ -16896,10 +16896,10 @@
 /area/medical/surgery)
 "ePu" = (
 /obj/structure/table/rack,
-/obj/item/clothing/accessory/leg_guards/ballistic,
-/obj/item/clothing/accessory/leg_guards/ballistic,
-/obj/item/clothing/accessory/arm_guards/ballistic,
-/obj/item/clothing/accessory/arm_guards/ballistic,
+/obj/item/clothing/accessory/leg_guards/reactiveslug,
+/obj/item/clothing/accessory/leg_guards/reactiveslug,
+/obj/item/clothing/accessory/arm_guards/reactiveslug,
+/obj/item/clothing/accessory/arm_guards/reactiveslug,
 /obj/item/clothing/suit/armor/bulletproof,
 /obj/item/clothing/suit/armor/bulletproof,
 /obj/item/clothing/head/helmet/ballistic,

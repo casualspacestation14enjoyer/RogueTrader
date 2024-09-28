@@ -2,9 +2,9 @@
 /obj/item/projectile/bullet/magnetic
 	name = "rod"
 	icon_state = "rod"
-	damage = 90
+	damage = 75
 	penetrating = 5
-	armor_penetration = 41
+	armor_penetration = 28
 	penetration_modifier = 1.1
 	fire_sound = 'sound/weapons/railgun.ogg'
 	distance_falloff = 1
@@ -12,13 +12,13 @@
 /obj/item/projectile/bullet/magnetic/slug
 	name = "slug"
 	icon_state = "gauss_silenced"
-	damage = 93
-	armor_penetration = 46
+	damage = 80
+	armor_penetration = 26
 
 /obj/item/projectile/bullet/magnetic/flechette
 	name = "flechette"
 	icon_state = "flechette"
-	damage = 45
-	armor_penetration = 44
+	damage = 75
+	armor_penetration = 30
 	fire_sound = 'sound/weapons/rapidslice.ogg'
 	distance_falloff = 0.5

@@ -44,7 +44,7 @@
 			// If armor penetration exceeds armor value, continue without blocking
 			if (armor_pen >= armor_value)
 				continue
-			var damage_breakthrough = ((armor_value - armor_pen) / 20) * 100
+			var damage_breakthrough = ((armor_value - armor_pen) / 15) * 100
 			if (damage_breakthrough < 0)
 				damage_breakthrough = 0
 			// Show message and sound if partial block occurs

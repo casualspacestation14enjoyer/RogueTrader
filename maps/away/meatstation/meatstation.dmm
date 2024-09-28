@@ -8440,8 +8440,8 @@
 "uI" = (
 /obj/structure/table/rack,
 /obj/random/trash,
-/obj/item/clothing/accessory/arm_guards/riot,
-/obj/item/clothing/accessory/leg_guards/riot,
+/obj/item/clothing/accessory/arm_guards/flak,
+/obj/item/clothing/accessory/leg_guards/flak,
 /obj/item/shield/riot,
 /obj/floor_decal/corner/grey/border{
 	dir = 1

@@ -21,7 +21,7 @@
 	icon_state = "armor_r"
 	icon_state_broken = "armor_r_broken"
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_MINOR,
@@ -37,7 +37,7 @@
 	icon_state = "armor_e"
 	icon_state_broken = "armor_e_broken"
 	armor = list(
-		melee = ARMOR_MELEE_MINOR ,
+		melee = ARMOR_MELEE_PRIMAL ,
 		bullet = ARMOR_BALLISTIC_PRIMAL,
 		laser = ARMOR_LASER_PRIMAL,
 		energy = ARMOR_ENERGY_SHIELDED,

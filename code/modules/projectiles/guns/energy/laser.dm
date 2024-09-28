@@ -167,7 +167,7 @@
 
 
 /obj/item/gun/energy/lasgun
-	name = "Broken Kantrael M36 Lasgun"
+	name = "broken kantrael lasgun"
 	desc = " Of Cadian design, it is one of the most common and less unique Lasguns that can be found throughout the Imperial Arsenal due to its cheap price and reliability. The Planet broke before the guard did."
 	icon = 'icons/obj/guns/40k.dmi'
 	icon_state = "lasgun"
@@ -197,7 +197,7 @@
 	slowdown_per_slot[slot_l_hand] = 0.15
 
 /obj/item/gun/energy/lasgun/kantrael
-	name = "Kantrael M36 Lasgun"
+	name = "kantrael lasgun"
 	desc = " Of Cadian design, it is one of the most common and less unique Lasguns that can be found throughout the Imperial Arsenal due to its cheap price and reliability. The Planet broke before the guard did."
 	icon = 'icons/obj/guns/40k.dmi'
 	icon_state = "lasgun"
@@ -223,7 +223,7 @@
 		)
 
 /obj/item/gun/energy/lasgun/laspistol // ALL LASPISTOLS MUST BE CHILDREN OF LASPISTOL OR THEY WILL HAVE BAD SLOWDOWN.
-	name = "Civitas Pattern Laspistol"
+	name = "civitas pattern laspistol"
 	desc = "The Civitas is both somewhat bulky and inefficient (owing to lower quality components than a military-grade laspistol), but remains popular due to its ease of manufacture, longevity and simplicity of maintenance. They are made on almost every hive world and often in the hands of civilians."
 	icon_state = "laspistolciv"
 	item_state = "energykill"
@@ -249,7 +249,7 @@
 	slowdown_per_slot[slot_l_hand] = 0.1
 
 /obj/item/gun/energy/lasgun/laspistol/grim
-	name = "Grim Laspistol"
+	name = "grim laspistol"
 	desc = "The Laspistol variant of the Grim Lasrifle. Forged together by spare parts and significant ingenuity."
 	icon_state = "semip"
 	fire_delay = 4.4
@@ -260,7 +260,7 @@
 	sales_price = 8
 
 /obj/item/gun/energy/lasgun/laspistol/militarum
-	name = "Kantrael MG Laspistol"
+	name = "kantrael laspistol"
 	desc = "Kantrael MG is a Cadian Laspistol used by their shock regiments' NCOs. It is slow firing but pacts a punch for a laspistol. It is also possible to overcharge."
 	icon_state = "laspistol"
 	accuracy = 0
@@ -274,7 +274,7 @@
 		)
 
 /obj/item/gun/energy/lasgun/laspistol/militarum/bloodpact
-	name = "Strange Laspistol"
+	name = "strange laspistol"
 	desc = "A laspistol bearing the markings and colours of the Sekites. Older in design and smaller, it is less efficient with it's lasgun cells than more modern variants."
 	icon_state = "bloodlaspistol"
 	accuracy = 0
@@ -285,7 +285,7 @@
 		)
 
 /obj/item/gun/energy/las/laspistol/lucius
-	name = "Lucius-pattern Laspistol"
+	name = "lucius-pattern laspistol"
 	desc = "A standard-issue sidearm for the enlisted personnel, non-commissioned officers and commanding officers of the Death Korps of Krieg. Can overcharge to have the same output as a rifle"
 	icon_state = "luciuspistol"
 	accuracy = 0
@@ -300,7 +300,7 @@
 		)
 
 /obj/item/gun/energy/lasgun/laspistol/accatran
-	name = "Accatran MK II Pattern Laspistol"
+	name = "accatran-pattern laspistol"
 	desc = "An older pattern of the Accatran Laspistols. Fully auto but extremely power inefficient and somewhat inaccurate."
 	icon_state = "accatranp"
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
@@ -318,7 +318,7 @@
 		)
 
 /obj/item/gun/energy/lassgun/laspistol/lord
-	name = "Archeotech Laspistol" // Overall superior version of the Hellpistol.
+	name = "archeotech laspistol" // Overall superior version of the Hellpistol.
 	desc = "A xenos-tech laspistol modified further by the machinations of the AdMech, this artifact of combined xenos and human engineering looks centuries old."
 	icon_state = "lordlaspistol"
 	item_state = "hrrevolver"
@@ -339,7 +339,7 @@
 	sales_price = 0
 
 /obj/item/gun/energy/lasgun/laspistol/hellpistol
-	name = "Hellpistol"
+	name = "hellpistol"
 	desc = "A high-powered pistol favoured by Tempestus Scions, Inquisitorial Agents, and high-ranking Adeptus Militarum officers."
 	icon_state = "hellpistol"
 	item_state = "hrrevolver" // hrrevolver is for cool looking pistols/laspistols
@@ -359,7 +359,7 @@
 	sales_price = 100
 
 /obj/item/gun/energy/lasgun/grim
-	name = "Grim Lasrifle"
+	name = "grim lasrifle"
 	desc = "The Grim or Scrap Lasrifle is the name given to the many unsanctioned patterns of lasrifles produced in the underhives of the imperium, often sewn together with blackmarket components and stolen machinery."
 	icon_state = "semir"
 	item_state = "semir"
@@ -377,7 +377,7 @@
 	sales_price = 7
 
 /obj/item/gun/energy/lasgun/triplex
-	name = "Triplex Pattern Lasgun"
+	name = "triplex-pattern lasgun"
 	desc = " A highly versatile refined lasgun used by the Mordian Iron Guard ."
 	icon = 'icons/obj/guns/40k.dmi'
 	color = COLOR_GUNMETAL
@@ -406,7 +406,7 @@
 		)
 
 /obj/item/gun/energy/lasgun/catachan
-	name = "Mark IV Lascarbine"
+	name = "catachan lascarbine"
 	desc = "The Mark IV lascarbine is a special lascarbine used by the Catachan Jungle Fighters. Excellent for warfare in jungle environments due to it's bayonet and light frame"
 	icon_state = "lascarbine"
 	item_state = "lascar"
@@ -432,7 +432,7 @@
 		)
 
 /obj/item/gun/energy/lasgun/lucius
-	name = "Lucius No.98 Lasgun"
+	name = "lucius-pattern lasgun"
 	desc = "A Lucius-made Lasgun, unlike STC-based Lasgun, the No.98 operates in a higher than average 21 megathoule while using a standard Power cell, resulting in a more powerful shot than other pattern lasguns."
 	icon_state = "lucius"
 	item_state = "luscius"
@@ -464,7 +464,7 @@
 	slowdown_per_slot[slot_l_hand] = 0.18
 
 /obj/item/gun/energy/lasgun/accatran
-	name = "Accatran Mark VI Pattern Lasgun"
+	name = "accatran-pattern lasgun"
 	desc = "The Accatran Patterns are bullpup in design, affording them similar damage to that of a laspistol but with the capacity of a typical lasrifle and with a very high rate of fire for a lasgun. The choice pattern of the Elite Elysian Droptroopers."
 	icon_state = "accatran"
 	item_state = "lascar"
@@ -489,7 +489,7 @@
 		)
 
 /obj/item/gun/energy/lasgun/hotshot
-	name = "Ryza Pattern Hot-Shot Lasgun" // In future write some code for a Powerpack Backpack which effects self_recharge code. Enabling it? Make astartes packs work this way too for their E-Guns.
+	name = "ryza-pattern hotshot lasgun" // In future write some code for a Powerpack Backpack which effects self_recharge code. Enabling it? Make astartes packs work this way too for their E-Guns.
 	desc = "The favored standard weapon of Tempestus Scions, reknowned for its damage and penetration."
 	icon_state = "hotshotgun"
 	item_state = "lascar"
@@ -526,7 +526,7 @@
 	slowdown_per_slot[slot_l_hand] = 0.2
 
 /obj/item/gun/energy/lasgun/hotshot/masterwork
-	name = "Masterwork Hot-Shot Lasgun"
+	name = "ryza-pattern hotshot lasgun"
 	desc = "A masterwork hotshot Ryza Pattern crafted by a holy Tech Priest of Sancor."
 	icon_state = "hellgun_plugalt"
 	force = 15
@@ -537,7 +537,7 @@
 	sales_price = 150
 
 /obj/item/gun/energy/lasgun/hotshot/krieg // Krieg -- considered a Masterwork Hotshot
-	name = "Type XIV Lasgun Heavy"
+	name = "XIV lasgun heavy"
 	desc = "The standard Hellgun issued to Grenadiers of the Death Korps of Krieg."
 	icon_state = "hotshot_krieg"
 	item_state = "hevluscius"
@@ -557,7 +557,7 @@
 		)
 
 /obj/item/gun/energy/lasgun/hotshot/volkite
-	name = "Mars-Omega Pattern Volkite Caliver"
+	name = "volkite caliver"
 	desc = "The Sancor-Omega Pattern Volkite Caliver is a revered weapon of ancient design, rarely seen outside the most elite units of the Adeptus Astartes. It utilizes a Volkite emitter to unleash intense beams of particle energy that incinerate targets with terrifying precision."
 	icon_state = "volkite"
 	item_state = "hevluscius"
@@ -584,7 +584,7 @@
 		)
 
 /obj/item/gun/energy/meltagun
-	name = "Melta Gun"
+	name = "melta gun"
 	desc = "Is a powerful, short-ranged anti-armour weapon that produces an intense, energetic beam of heat in the tens of thousands of degrees Centigrade."
 	icon_state = "meltagun"
 	item_state = "multimelta"
@@ -610,7 +610,7 @@
 	slowdown_per_slot[slot_l_hand] = 0.4
 
 /obj/item/gun/energy/meltagun/multi
-	name = "Multi Melta"
+	name = "multi melta"
 	desc = "Is a powerful, short-ranged anti-armour weapon that produces an intense, energetic beam of heat in the tens of thousands of degrees Centigrade."
 	icon_state = "multimelta"
 	item_state = "multimelta"
@@ -634,7 +634,7 @@
 	slowdown_per_slot[slot_l_hand] = 0.45
 
 /obj/item/gun/energy/plasma
-	name = "Plasma Rifle" // add alt-fire for CQB combat, low charge, low damage.
+	name = "plasma rifle" // add alt-fire for CQB combat, low charge, low damage.
 	desc = "A plasma rifle..."
 	icon_state = "prifle"
 	item_state = "plasmarifle"
@@ -668,7 +668,7 @@
 	slowdown_per_slot[slot_l_hand] = 0.27
 
 /obj/item/gun/energy/plasma/pistol // Better stats as plasma pistols are more often rare DAOT tech and not Forge-World manufactured.
-	name = "Plasma Pistol" // Need archeotech, astartes and xenos variant. Including miniatirised.
+	name = "plasma pistol" // Need archeotech, astartes and xenos variant. Including miniatirised.
 	desc = "A plasma pistol. Great for dealing with threats swiftly. It has an overheat scale and on the end of it is written 'Boom!'."
 	icon_state = "ppistol"
 	item_state = "plasmapistol"
@@ -700,7 +700,7 @@
 	slowdown_per_slot[slot_l_hand] = 0.15
 
 /obj/item/gun/energy/plasma/pistol/chaos
-	name = "Heretic Plasma Pistol"
+	name = "heretic plasma pistol"
 	desc = "A plasma pistol blessed by the ruinous powers. You can feel the warp energy going trough it. It has an overheat scale and on the end of it is written 'Boom!'."
 	icon_state = "chaosppistol"
 	charge_cost = 75 // magek
@@ -711,7 +711,7 @@
 		)
 
 /obj/item/gun/energy/plasma/pistol/mechanicus
-	name = "Ryza Pattern Plasma Pistol"
+	name = "ryza-pattern plasma pistol"
 	desc = "A plasma pistol from the forge world of Ryza with an in-built targeting cogitator. It's adamantium receiver is detailed with the inscriptions of Ryza Secundus' factorium. It has an overheat scale and on the end of it is written 'Boom!'."
 	icon_state = "toasterppistol" // Benefits over regular pistol is purely just firing speed and accuracy only.
 	item_state = "pulse_pistol"
@@ -724,7 +724,7 @@
 		)
 
 /obj/item/gun/energy/plasma/pistol/xenos
-	name = "Xenos Plasma Pistol"
+	name = "xenos plasma pistol"
 	desc = "An ancient plasma pistol forged by xenos gun smiths, despite it's incredible age it shows no signs of decay. Looks small enough to fit into a compact holster."
 	icon_state = "xenolpistol" // Benefits are small size and low charge cost.
 	item_state = "pulse_pistol"
@@ -746,7 +746,7 @@
 	slowdown_per_slot[slot_l_hand] = 0.1
 
 /obj/item/gun/energy/plasma/pistol/archeotech
-	name = "Archeotech Plasma Pistol"
+	name = "archeotech plasma pistol"
 	desc = "An archeotech plasma pistol, despite it's incredible age it shows no signs of decay. It's design seems outright heretical by mechanicus standards."
 	icon_state = "glockl100"
 	item_state = "pulse_pistol"
@@ -762,7 +762,7 @@
 //Tau weapons
 
 /obj/item/gun/energy/tau/ionrifle
-	name = "ION Cannon"
+	name = "ION cannon"
 	desc = "The ION Cannon is a Tau weapon that projects a concentrated beam of ionized particles. Upon impact, it releases a burst of high-energy ions This advanced technology delivers precise and powerful shots, effective against both infantry and armored targets."
 	icon_state = "ionriflet"
 	item_state = "ionriflet"
@@ -796,7 +796,7 @@
 	slowdown_per_slot[slot_l_hand] = 0.3
 
 /obj/item/gun/energy/tau/railgun
-	name = "Rail Gun"
+	name = "tau rail gun"
 	desc = "The Railgun is a Tau weapon that accelerates high-density projectiles using magnetic fields. Upon impact, it delivers a precise and penetrating shot with overwhelming kinetic force. This sophisticated technology is effective against both infantry and heavily armored units."
 	icon_state = "railgun"
 	item_state = "railgun"
@@ -826,7 +826,7 @@
 	slowdown_per_slot[slot_l_hand] = 0.27
 
 /obj/item/gun/energy/tau/pulsepistol
-	name = "Pulse Pistol" // Higher damage then hellpistol but slower firing and higher charge cost. Low accuracy as well.
+	name = "tau pulse pistol" // Higher damage then hellpistol but slower firing and higher charge cost. Low accuracy as well.
 	desc = "The trusty sidearm of the T'au Empire."
 	icon_state = "pulsep"
 	item_state = "pulsep"
@@ -856,7 +856,7 @@
 	slowdown_per_slot[slot_l_hand] = 0.1
 
 /obj/item/gun/energy/tau/pulserifle
-	name = "Pulse Rifle" // Fires the same round as pulse pistol but better stats. 4-round burst with slightly better burst rate then lasguns.
+	name = "tau pulse rifle" // Fires the same round as pulse pistol but better stats. 4-round burst with slightly better burst rate then lasguns.
 	desc = "The standard-issue pulse rifle of the Fire Warrior Caste"
 	icon_state = "pulseb"
 	item_state = "pulseb"
