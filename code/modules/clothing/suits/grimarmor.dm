@@ -201,7 +201,7 @@
 	icon_state = "heretmil"
 	item_state = "heretmil"
 	body_parts_covered = LEGS|ARMS // Sekites scavenge and use any armor attachments they can.
-	accessories = list(/obj/item/clothing/accessory/armor_plate/carapace,/obj/item/clothing/accessory/leg_guards/ballistic)
+	accessories = list(/obj/item/clothing/accessory/armor_plate/carapace,/obj/item/clothing/accessory/leg_guards/reactiveslug)
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-45
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+450
 	slowdown_general = 0.04
@@ -402,7 +402,7 @@
 	flags_inv = CLOTHING_BULKY
 	slowdown_general = 0.5
 	siemens_coefficient = 0.5
-	accessories = list(/obj/item/clothing/accessory/arm_guards/riot)
+	accessories = list(/obj/item/clothing/accessory/arm_guards/flak)
 
 /obj/item/clothing/suit/armor/bulletproof
 	name = "ballistic vest"
@@ -423,7 +423,7 @@
 	flags_inv = CLOTHING_BULKY
 	slowdown_general = 0.5
 	siemens_coefficient = 0.7
-	accessories = list(/obj/item/clothing/accessory/arm_guards/ballistic, /obj/item/clothing/accessory/leg_guards/ballistic)
+	accessories = list(/obj/item/clothing/accessory/arm_guards/reactiveslug, /obj/item/clothing/accessory/leg_guards/reactiveslug)
 
 /obj/item/clothing/suit/armor/bulletproof/vest //because apparently some map uses this somewhere and I'm too lazy to go looking for and replacing it.
 	accessories = null
@@ -447,7 +447,7 @@
 	flags_inv = CLOTHING_BULKY
 	slowdown_general = 0.5
 	siemens_coefficient = 0
-	accessories = list(/obj/item/clothing/accessory/arm_guards/ablative, /obj/item/clothing/accessory/leg_guards/ablative)
+	accessories = list(/obj/item/clothing/accessory/arm_guards/reactivelas, /obj/item/clothing/accessory/leg_guards/reactivelas)
 
 /obj/item/clothing/suit/armor/laserproof/handle_shield(mob/user, damage, atom/damage_source = null, mob/attacker = null, def_zone = null, attack_text = "the attack")
 	if(istype(damage_source, /obj/item/projectile/energy) || istype(damage_source, /obj/item/projectile/beam))

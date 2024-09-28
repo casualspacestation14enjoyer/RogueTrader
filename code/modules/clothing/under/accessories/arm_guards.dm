@@ -1,5 +1,5 @@
 /obj/item/clothing/accessory/arm_guards
-	name = "heavy reinforcements"
+	name = "crude armplates"
 	desc = "Heavy armor reinforcement, similar in design to a bodyglove but worn on the outside for maximum protection covering the arms."
 	icon_override = 'icons/mob/onmob/onmob_suit.dmi'
 	icon = 'icons/obj/clothing/obj_suit.dmi'
@@ -13,11 +13,11 @@
 	slowdown = 0.04
 	armor = list(
 		melee = 0,
-		bullet = 3,
-		laser = 3,
-		energy = 3,
-		rad = 6,
-		bomb = 6
+		bullet = 1,
+		laser = 1,
+		energy = 1,
+		rad = 5,
+		bomb = 5
 		)
 	slot = ACCESSORY_SLOT_ARMOR_ARMS
 	body_location = ARMS
@@ -25,78 +25,79 @@
 
 
 /obj/item/clothing/accessory/arm_guards/blue
-	desc = "A pair of blue arm pads reinforced with armor plating. Attaches to a plate carrier."
 	icon_state = "armguards_blue"
 
 
 /obj/item/clothing/accessory/arm_guards/navy
-	desc = "A pair of navy blue arm pads reinforced with armor plating. Attaches to a plate carrier."
 	icon_state = "armguards_navy"
 
 
 /obj/item/clothing/accessory/arm_guards/green
-	desc = "A pair of green arm pads reinforced with armor plating. Attaches to a plate carrier."
 	icon_state = "armguards_green"
 
 
 /obj/item/clothing/accessory/arm_guards/tan
-	desc = "A pair of tan arm pads reinforced with armor plating. Attaches to a plate carrier."
 	icon_state = "armguards_tan"
 
 
 /obj/item/clothing/accessory/arm_guards/merc
-	name = "heavy arm guards"
-	desc = "A pair of red-trimmed black arm pads reinforced with heavy armor plating. Attaches to a plate carrier."
+	name = "carapace armplates"
+	desc = "A pair of extra light red-trimmed black carapace armplates."
 	icon_state = "armguards_merc"
+	slowdown = 0.03
 	armor = list(
-		melee = 0,
-		bullet = 4,
-		laser = 4,
-		energy = 4,
-		rad = 8,
-		bomb = 6
+		melee = 1,
+		bullet = 1,
+		laser = 1,
+		energy = 1,
+		rad = 7,
+		bomb = 7
 		)
 
 
-/obj/item/clothing/accessory/arm_guards/riot
-	name = "arm guards"
-	desc = "A pair of armored arm pads with heavy padding to protect against melee attacks."
+/obj/item/clothing/accessory/arm_guards/flak
+	name = "flak armplates"
+	desc = "A pair of heavy armored flak armplates."
 	icon_state = "armguards_riot"
+	slowdown = 0.04
 	armor = list(
 		melee = 1,
-		bullet = 2,
-		laser = 2,
-		energy = 2,
-		bomb = 4
+		bullet = 1,
+		laser = 1,
+		energy = 1,
+		rad = 5,
+		bomb = 5
 	)
 	siemens_coefficient = 0.5
 
 
-/obj/item/clothing/accessory/arm_guards/ballistic
-	name = "arm guards"
-	desc = "A pair of armored arm pads with heavy plates to protect against ballistic projectiles."
+/obj/item/clothing/accessory/arm_guards/reactiveslug
+	name = "heavy arm guards"
+	desc = "A pair of reactive armor tech armplates. Designed to stop slug rounds."
 	icon_state = "armguards_ballistic"
+	slowdown = 0.06
 	armor = list(
-		melee = 0,
-		bullet = 5,
-		laser = 3,
+		melee = 1,
+		bullet = 2,
+		laser = 1,
 		rad = 6,
 		energy = 3,
-		bomb = 6
+		bomb = 10
 	)
 	siemens_coefficient = 0.7
 
 
-/obj/item/clothing/accessory/arm_guards/ablative
-	name = "arm guards"
-	desc = "A pair of armored arm pads with advanced shielding to protect against energy weapons."
-	icon_state = "armguards_ablative" // Super cool tech.
+/obj/item/clothing/accessory/arm_guards/reactivelas
+	name = "heavy arm guards"
+	desc = "A pair of reactive armor tech armplates. Designed to stop energy weapons."
+	icon_state = "armguards_ablative"
+	slowdown = 0.06
 	armor = list(
-		melee = 0,
-		bullet = 4,
-		laser = 6,
+		melee = 1,
+		bullet = 1,
+		laser = 2,
 		rad = 10,
-		energy = 6,
-		bomb = 8
+		energy = 10,
+		bomb = 15
 	)
 	siemens_coefficient = 0
