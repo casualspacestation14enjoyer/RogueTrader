@@ -500,6 +500,10 @@ BLIND     // can't see anything
 	item_flags = ITEM_FLAG_WASHER_ALLOWED
 	w_class = ITEM_SIZE_SMALL
 	blood_overlay_type = "helmetblood"
+	cold_protection = UPPER_TORSO|LOWER_TORSO
+	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE+25
+	heat_protection = UPPER_TORSO|LOWER_TORSO
+	max_heat_protection_temperature = HELMET_MAX_HEAT_PROTECTION_TEMPERATURE-100
 
 	var/image/light_overlay_image
 	var/light_overlay = "helmet_light"
@@ -700,7 +704,7 @@ BLIND     // can't see anything
 	item_flags = ITEM_FLAG_WASHER_ALLOWED
 	permeability_coefficient = 0.50
 	force = 5
-	species_restricted = list("exclude", SPECIES_NABBER, SPECIES_KROOT, SPECIES_VOX)
+	species_restricted = list("exclude", SPECIES_NABBER, SPECIES_VOX)
 	sprite_sheets = list(
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_feet_vox.dmi'
 		)
@@ -711,6 +715,10 @@ BLIND     // can't see anything
 	var/can_add_hidden_item = TRUE
 	var/hidden_item_max_w_class = ITEM_SIZE_SMALL
 	var/obj/item/hidden_item = null
+	cold_protection = FEET
+	heat_protection = FEET
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-50
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+500
 
 /obj/item/clothing/shoes/Destroy()
 	. = ..()
@@ -1164,7 +1172,7 @@ BLIND     // can't see anything
 	update_clothing_icon()
 
 /obj/item/clothing/under/rank/New()
-	sensor_mode = pick(list_values(SUIT_SENSOR_MODES))
+	sensor_mode = SUIT_SENSOR_OFF
 	..()
 
 /obj/item/clothing/under/AltClick(mob/user)

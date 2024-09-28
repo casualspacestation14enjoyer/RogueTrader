@@ -28,7 +28,7 @@
 	w_class = ITEM_SIZE_HUGE//bulky item
 	gas_transfer_coefficient = 0
 	permeability_coefficient = 0
-	accessories = list(/obj/item/clothing/accessory/armor_plate/paddingbio2)
+	accessories = list(/obj/item/clothing/accessory/armor_plate/paddingmech)
 	body_parts_covered = LEGS|ARMS|HANDS|FEET
 	allowed = list(
 		/obj/item/tank/oxygen_emergency,

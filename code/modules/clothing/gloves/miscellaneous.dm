@@ -66,7 +66,7 @@
 	item_state = "swat_gl"
 	force = 5
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_SMALL,
@@ -82,7 +82,7 @@
 	permeability_coefficient = 0.05
 	force = 5
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_SMALL,
@@ -162,7 +162,7 @@
 	siemens_coefficient = 0.7
 	permeability_coefficient = 0.03
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_BASIC,
 		laser = ARMOR_LASER_PRIMAL,
 		energy = ARMOR_ENERGY_SMALL,

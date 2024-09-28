@@ -7,7 +7,7 @@
 	has_sensor = 0
 	gender_icons = 1
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_BASIC,
 		laser = ARMOR_LASER_BASIC
 		)

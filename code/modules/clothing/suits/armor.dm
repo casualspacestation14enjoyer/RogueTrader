@@ -10,6 +10,7 @@
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
 	siemens_coefficient = 0.6
 	equip_delay = 2 SECONDS
+	slowdown_general = 0.1
 
 /obj/item/clothing/suit/armor/equip_delay_before(mob/user, slot, equip_flags)
 	user.setClickCooldown(1 SECOND)
@@ -37,7 +38,7 @@
 	cold_protection = UPPER_TORSO|LOWER_TORSO
 	heat_protection = UPPER_TORSO|LOWER_TORSO
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_PRIMAL,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_MINOR,
@@ -54,7 +55,7 @@
 	desc = "An armoured jacket with silver rank pips and livery."
 	icon_state = "warden_jacket"
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_PRIMAL,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_MINOR,
@@ -83,7 +84,7 @@
 	blood_overlay_type = "armor"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_PRIMAL,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_MINOR,
@@ -221,6 +222,8 @@
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_SMALL,
+		bio = ARMOR_BIO_MINOR-8,
+		rad = ARMOR_RAD_MINOR-8,
 		bomb = ARMOR_BOMB_PADDED
 		)
 	allowed = list(/obj/item/gun/energy,/obj/item/device/radio,/obj/item/reagent_containers/spray/pepper,/obj/item/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/melee/baton,/obj/item/handcuffs,/obj/item/gun/magnetic)
@@ -262,10 +265,12 @@
 	desc = "A high-quality armored vest made from a hard synthetic material. It is surprisingly flexible and light, despite formidable armor plating."
 	icon_state = "mercwebvest"
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_SMALL,
+		bio = ARMOR_BIO_MINOR,
+		rad = ARMOR_RAD_MINOR,
 		bomb = ARMOR_BOMB_PADDED
 		)
 	body_parts_covered = ARMS|LEGS //now covers legs with new sprite
@@ -282,6 +287,8 @@
 		bullet = ARMOR_BALLISTIC_PRIMAL,
 		laser = ARMOR_LASER_BASIC,
 		energy = ARMOR_ENERGY_MINOR,
+		bio = ARMOR_BIO_MINOR-8,
+		rad = ARMOR_RAD_MINOR-8,
 		bomb = ARMOR_BOMB_MINOR
 		)
 	slowdown_general = 0.4

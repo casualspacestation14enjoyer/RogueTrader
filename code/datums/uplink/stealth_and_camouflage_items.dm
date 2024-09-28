@@ -14,13 +14,13 @@
 	name = "Concealable Armor"
 	desc = "An armor vest that can be worn under a jacket. About as tough as a light plate."
 	item_cost = 15
-	path = /obj/item/clothing/accessory/armor_plate/sneaky
+	path = /obj/item/clothing/accessory/armor_plate/bodyglove
 
 /datum/uplink_item/item/stealth_items/tactical_sneaky_armor
 	name = "Concealable Tactical Armor"
 	desc = "An armor vest that can be worn under a jacket. About as tough as a medium plate."
 	item_cost = 25
-	path = /obj/item/clothing/accessory/armor_plate/sneakytech
+	path = /obj/item/clothing/accessory/armor_plate/bodyglove2
 
 /datum/uplink_item/item/stealth_items/balaclava
 	name = "Balaclava"

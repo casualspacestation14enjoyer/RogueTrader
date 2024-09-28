@@ -72,7 +72,7 @@
 	down_icon_state = "halfgasdown"
 	pull_mask = TRUE
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_BASIC,
 		laser = ARMOR_LASER_BASIC,
 		bio = ARMOR_BIO_RESISTANT
@@ -111,7 +111,7 @@
 	siemens_coefficient = 0.7
 	body_parts_covered = FACE|EYES
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_BASIC,
 		laser = ARMOR_LASER_BASIC,
 		bio = ARMOR_BIO_STRONG
@@ -124,7 +124,7 @@
 	item_state = "swat"
 	siemens_coefficient = 0.7
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_PRIMAL,
 		laser = ARMOR_LASER_BASIC,
 		bio = ARMOR_BIO_STRONG

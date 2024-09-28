@@ -197,7 +197,7 @@
 	icon_state = "sound"
 	fire_sound = 'sound/effects/basscannon.ogg'
 	damage = 5
-	armor_penetration = 40
+	armor_penetration = 30
 	damage_type = DAMAGE_BRUTE
 	vacuum_traversal = 0
 	penetration_modifier = 0.2
@@ -223,7 +223,7 @@
 	icon_state = "dark_pellet"
 	fire_sound = 'sound/weapons/eLuger.ogg'
 	damage = 10
-	armor_penetration = 35
+	armor_penetration = 31
 	damage_type = DAMAGE_BRUTE
 
 // 40k energy projectiles
@@ -231,29 +231,29 @@
 	name = "ION round"
 	fire_sound='sound/warhammer/gunshot/lasgun3.ogg'
 	icon_state = "pulse1"
-	damage = 82
-	armor_penetration = 44
+	damage = 79
+	armor_penetration = 32
 
 /obj/item/projectile/energy/ion/plasma
 	name = "plasma round"
 	fire_sound='sound/warhammer/gunshot/lasgun3.ogg'
 	icon_state = "pulse1"
-	damage = 82
-	armor_penetration = 41
+	damage = 83
+	armor_penetration = 33
 
 /obj/item/projectile/energy/ion/plasma/pellet
 	name = "plasma pellet"
 	fire_sound='sound/warhammer/gunshot/lasgun3.ogg'
 	icon_state = "pulse1"
-	damage = 42
-	armor_penetration = 31
+	damage = 36
+	armor_penetration = 30
 
 /obj/item/projectile/bullet/heavyplasma
 	name = "heavy plasma round"
 	icon_state = "pulse1"
 	fire_sound='sound/warhammer/gunshot/lasgun3.ogg'
-	armor_penetration = 41
-	damage = 52
+	armor_penetration = 34
+	damage = 40
 	agony = 20
 	damage_type = DAMAGE_BURN
 
@@ -266,8 +266,8 @@
 	name = "metal slug"
 	icon_state = "dark_pellet"
 	fire_sound='sound/warhammer/gunshot/lasgun3.ogg'
-	armor_penetration = 44
-	damage = 82
+	armor_penetration = 34
+	damage = 81
 	damage_type = DAMAGE_BRUTE
 
 /obj/item/projectile/bullet/railgun/on_hit(atom/target)
@@ -279,12 +279,12 @@
 	name = "pulse round"
 	fire_sound='sound/warhammer/gunshot/lasgun2.ogg'
 	icon_state = "pulse1"
-	damage = 64
-	armor_penetration = 35
+	damage = 56
+	armor_penetration = 26
 
 /obj/item/projectile/energy/pulserifle
 	name = "pulse round"
 	fire_sound='sound/warhammer/gunshot/lasgun2.ogg'
 	icon_state = "pulse1"
-	damage = 64
-	armor_penetration = 35
+	damage = 58
+	armor_penetration = 28

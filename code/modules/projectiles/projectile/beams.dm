@@ -5,7 +5,8 @@
 	fire_sound='sound/weapons/Laser.ogg'
 	impact_sounds = list(BULLET_IMPACT_MEAT = SOUNDS_LASER_MEAT, BULLET_IMPACT_METAL = SOUNDS_LASER_METAL)
 	pass_flags = PASS_FLAG_TABLE
-	damage = 40
+	damage = 26
+	armor_penetration = 18
 	damage_type = DAMAGE_BURN
 	sharp = TRUE
 	damage_flags = DAMAGE_FLAG_LASER
@@ -64,7 +65,7 @@
 
 /obj/item/projectile/beam/smalllaser
 	damage = 35
-	armor_penetration = 10
+	armor_penetration = 19
 	distance_falloff = 2
 	damage_falloff_list = list(
 		list(5, 0.87),
@@ -73,7 +74,7 @@
 
 /obj/item/projectile/beam/midlaser
 	damage = 40
-	armor_penetration = 15
+	armor_penetration = 20
 	distance_falloff = 1
 	damage_falloff_list = list(
 		list(6, 0.98),
@@ -83,8 +84,9 @@
 /obj/item/projectile/beam/lasgun
 	icon_state = "laser"
 	fire_sound = 'sound/warhammer/gunshot/lasgun2.ogg'
-	damage = 50
-	armor_penetration = 22
+	damage = 45
+	penetration_modifier = 0.4
+	armor_penetration = 24
 	distance_falloff = 1
 	damage_falloff_list = list(
 		list(6, 0.98),
@@ -94,19 +96,20 @@
 /obj/item/projectile/beam/lasgun/weak
 	icon_state = "laser"
 	fire_sound = 'sound/warhammer/gunshot/lasgun1.ogg'
-	damage = 41
+	damage = 38
 	armor_penetration = 22
+	penetration_modifier = 0.2
 	distance_falloff = 1
 	damage_falloff_list = list(
 		list(6, 0.98),
 		list(8, 0.92),
 	)
 
-/obj/item/projectile/beam/lasgun/overcharge // Overcharge rule is you add +10/20(Kantrael/Longlas) to charge cost in exchange for standard overcharge increase.
+/obj/item/projectile/beam/lasgun/overcharge // +5 dam +4 AP -- deals 27 percent of it's damage against astartes power armor.
 	icon_state = "heavylaser"
 	fire_sound = 'sound/warhammer/gunshot/lasgun3.ogg'
-	damage = 60
-	armor_penetration = 35
+	damage = 50
+	armor_penetration = 28
 	penetration_modifier = 0.5
 	distance_falloff = 1
 	damage_falloff_list = list(
@@ -117,8 +120,9 @@
 /obj/item/projectile/beam/lasgun/lucius
 	icon_state = "laser"
 	fire_sound = 'sound/warhammer/gunshot/lasgun2.ogg'
-	damage = 54
-	armor_penetration = 30
+	damage = 48
+	armor_penetration = 26
+	penetration_modifier = 0.5
 	distance_falloff = 1
 	damage_falloff_list = list(
 		list(6, 0.98),
@@ -128,8 +132,9 @@
 /obj/item/projectile/beam/lasgun/lucius/overcharge
 	icon_state = "laser"
 	fire_sound = 'sound/warhammer/gunshot/lasgun2.ogg'
-	damage = 66
-	armor_penetration = 33
+	damage = 53
+	armor_penetration = 30
+	penetration_modifier = 0.6
 	distance_falloff = 1
 	damage_falloff_list = list(
 		list(6, 0.98),
@@ -139,8 +144,8 @@
 /obj/item/projectile/beam/lasgun/hotshot
 	icon_state = "heavylaser"
 	fire_sound = 'sound/warhammer/gunshot/lasgun3.ogg'
-	damage = 61
-	armor_penetration = 33
+	damage = 50
+	armor_penetration = 28
 	penetration_modifier = 0.5
 	distance_falloff = 1
 	damage_falloff_list = list(
@@ -151,9 +156,9 @@
 /obj/item/projectile/beam/lasgun/hotshot/overcharge
 	icon_state = "heavylaser"
 	fire_sound = 'sound/warhammer/gunshot/lasgun3.ogg'
-	damage = 71
-	armor_penetration = 35
-	penetration_modifier = 0.5
+	damage = 54
+	armor_penetration = 32
+	penetration_modifier = 0.6
 	distance_falloff = 1
 	damage_falloff_list = list(
 		list(6, 0.98),
@@ -163,9 +168,9 @@
 /obj/item/projectile/beam/lasgun/longlas
 	icon_state = "heavylaser"
 	fire_sound = 'sound/warhammer/gunshot/lasgun3.ogg'
-	damage = 81
-	armor_penetration = 35
-	penetration_modifier = 0.5
+	damage = 58
+	armor_penetration = 32 // AP can't be too high or else it'll ignore power armor.
+	penetration_modifier = 0.8
 	distance_falloff = 1
 	damage_falloff_list = list(
 		list(6, 0.98),
@@ -174,9 +179,9 @@
 /obj/item/projectile/beam/lasgun/longlas/overcharge
 	icon_state = "heavylaser"
 	fire_sound = 'sound/warhammer/gunshot/lasgun3.ogg'
-	damage = 96
-	armor_penetration = 40
-	penetration_modifier = 0.5
+	damage = 62
+	armor_penetration = 36
+	penetration_modifier = 0.9
 	distance_falloff = 1
 	damage_falloff_list = list(
 		list(6, 0.98),
@@ -187,12 +192,13 @@
 	name = "volkite laser blast"
 	icon_state = "beam_incen"
 	fire_sound= 'sound/warhammer/gunshot/lasgun3.ogg'
-	damage = 66
+	damage = 54
 	agony = 8
 	eyeblur = 8
 	damage_flags = 0
+	penetration_modifier = 0.3 // Volkite sets you on fire. Lasbeams explode chunks off you. So less arterial bleed.
 	life_span = 5
-	armor_penetration = 40
+	armor_penetration = 34
 	damage_falloff_list = list(
 		list(3, 0.90), // Distance, Damage Multiplier. E.G. Distance of 3 or more means 0.90 damage mult.
 		list(5, 0.80),
@@ -216,7 +222,7 @@
 	icon_state = "heavylaser"
 	fire_sound = 'sound/weapons/lasercannonfire.ogg'
 	damage = 66
-	armor_penetration = 30
+	armor_penetration = 28
 	distance_falloff = 0.5
 	penetration_modifier = 0.5
 	damage_falloff_list = list(
@@ -234,7 +240,7 @@
 	icon_state = "xray"
 	fire_sound = 'sound/weapons/laser3.ogg'
 	damage = 37
-	armor_penetration = 30
+	armor_penetration = 28
 	distance_falloff = 1.5
 	damage_falloff_list = list(
 		list(3, 0.95),
@@ -248,7 +254,7 @@
 
 /obj/item/projectile/beam/xray/midlaser
 	damage = 35
-	armor_penetration = 50
+	armor_penetration = 30
 	distance_falloff = 1
 	damage_falloff_list = list(
 		list(4, 0.96),
@@ -261,7 +267,7 @@
 	icon_state = "u_laser"
 	fire_sound='sound/weapons/pulse.ogg'
 	damage = 25 //lower damage, but fires in bursts
-	armor_penetration = 25
+	armor_penetration = 22
 	distance_falloff = 1.5
 	damage_falloff_list = list(
 		list(3, 0.95),
@@ -275,7 +281,7 @@
 
 /obj/item/projectile/beam/pulse/mid
 	damage = 35
-	armor_penetration = 30
+	armor_penetration = 24
 	distance_falloff = 1
 	damage_falloff_list = list(
 		list(4, 0.96),
@@ -285,7 +291,7 @@
 
 /obj/item/projectile/beam/pulse/heavy
 	damage = 35
-	armor_penetration = 35
+	armor_penetration = 26
 	distance_falloff = 0.5
 	damage_falloff_list = list(
 		list(6, 0.97),
@@ -295,8 +301,8 @@
 
 /obj/item/projectile/beam/pulse/destroy
 	name = "destroyer pulse"
-	damage = 70 //badmins be badmins I don't give a fuck
-	armor_penetration = 40
+	damage = 50 //badmins be badmins I don't give a fuck
+	armor_penetration = 30
 	damage_falloff_list = list(
 		list(6, 0.99),
 		list(9, 0.98),
@@ -382,9 +388,9 @@
 	name = "sniper beam"
 	icon_state = "xray"
 	fire_sound = 'sound/weapons/marauder.ogg'
-	damage = 55
+	damage = 53
 	penetration_modifier = 0.5
-	armor_penetration = 20
+	armor_penetration = 29
 	damage_falloff_list = null
 
 	muzzle_type = /obj/projectile/laser/xray/muzzle
@@ -467,7 +473,7 @@
 	icon_state = "omnilaser"
 	fire_sound = 'sound/weapons/plasma_cutter.ogg'
 	damage = 35
-	armor_penetration = 30
+	armor_penetration = 28
 	edge = TRUE
 	damage_type = DAMAGE_BURN
 	life_span = 5
@@ -525,7 +531,7 @@
 	name = "particle lance"
 	icon_state = "particle"
 	damage = 45
-	armor_penetration = 50
+	armor_penetration = 32
 	muzzle_type = /obj/projectile/laser_particle/muzzle
 	tracer_type = /obj/projectile/laser_particle/tracer
 	impact_type = /obj/projectile/laser_particle/impact
@@ -534,14 +540,14 @@
 /obj/item/projectile/beam/particle/small
 	name = "particle beam"
 	damage = 40
-	armor_penetration = 20
+	armor_penetration = 24
 	penetration_modifier = 0.6
 
 /obj/item/projectile/beam/darkmatter
 	name = "dark matter bolt"
 	icon_state = "darkb"
 	damage = 50
-	armor_penetration = 35
+	armor_penetration = 33
 	damage_type = DAMAGE_BRUTE
 	muzzle_type = /obj/projectile/darkmatter/muzzle
 	tracer_type = /obj/projectile/darkmatter/tracer
@@ -562,7 +568,7 @@
 	name = "point defense salvo"
 	icon_state = "laser"
 	damage = 15
-	armor_penetration = 10
+	armor_penetration = 20
 	damage_type = DAMAGE_BURN //You should be safe inside a voidsuit
 	sharp = FALSE //"Wide" spectrum beam
 	muzzle_type = /obj/projectile/pointdefense/muzzle

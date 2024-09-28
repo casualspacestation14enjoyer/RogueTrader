@@ -60,7 +60,7 @@
 	origin_tech = list(TECH_COMBAT = 2)
 	siemens_coefficient = 0.6
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_PRIMAL,
 		bomb = ARMOR_BOMB_MINOR
 	)

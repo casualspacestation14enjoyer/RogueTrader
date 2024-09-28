@@ -1,13 +1,15 @@
 /obj/item/clothing/suit/armor/grim/storage
 	var/obj/item/storage/internal/pockets/pockets
 	var/slots = 2
+	body_parts_covered = LEGS|ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/padding)
 	armor = list(
 		melee = ARMOR_MELEE_FLAK-1,
 		bullet = ARMOR_BALLISTIC_FLAK-8,
 		laser = ARMOR_LASER_FLAK-8,
 		energy = ARMOR_ENERGY_MINOR-8,
-		rad = ARMOR_RAD_MINOR-10,
+		rad = ARMOR_RAD_MINOR-5,
+		bio = ARMOR_BIO_MINOR-15,
 		bomb = ARMOR_BOMB_MINOR-10
 		)
 

@@ -8,7 +8,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	item_flags = null
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_BASIC,
 		laser = ARMOR_LASER_PRIMAL,
 		energy = ARMOR_ENERGY_MINOR,
@@ -40,7 +40,7 @@
 	icon_state = "Damage-Control-Helmet-light"
 	light_overlay = "EMS_light"
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_BASIC,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_PADDED,

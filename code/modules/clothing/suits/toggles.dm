@@ -141,7 +141,7 @@
 	icon_state = "coat_dais"
 	siemens_coefficient = 0.5
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_PRIMAL,
 		energy = ARMOR_ENERGY_MINOR
 		)
 	desc = "A hooded winter coat colored blue and white and bearing the logo of Deimos Advanced Information Systems."
@@ -158,7 +158,7 @@
 	name = "mining winter coat"
 	icon_state = "coatminer"
 	armor = list(
-		melee = ARMOR_MELEE_MINOR
+		melee = ARMOR_MELEE_PRIMAL
 		)
 
 /obj/item/clothing/suit/armor/grim/storage/hooded/hoodie

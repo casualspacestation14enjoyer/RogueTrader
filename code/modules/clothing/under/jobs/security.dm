@@ -15,7 +15,7 @@
 	item_state = "r_suit"
 	worn_state = "warden"
 	armor = list(
-		melee = ARMOR_MELEE_MINOR
+		melee = ARMOR_MELEE_PRIMAL
 		)
 	siemens_coefficient = 0.9
 
@@ -32,7 +32,7 @@
 	item_state = "r_suit"
 	worn_state = "secred"
 	armor = list(
-		melee = ARMOR_MELEE_MINOR
+		melee = ARMOR_MELEE_PRIMAL
 		)
 	siemens_coefficient = 0.9
 
@@ -42,7 +42,7 @@
 	icon_state = "dispatch"
 	worn_state = "dispatch"
 	armor = list(
-		melee = ARMOR_MELEE_MINOR
+		melee = ARMOR_MELEE_PRIMAL
 		)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
 	siemens_coefficient = 0.9
@@ -54,7 +54,7 @@
 	item_state = "r_suit"
 	worn_state = "redshirt2"
 	armor = list(
-		melee = ARMOR_MELEE_MINOR
+		melee = ARMOR_MELEE_PRIMAL
 		)
 	siemens_coefficient = 0.9
 
@@ -73,7 +73,7 @@
 	worn_state = "swatunder"
 	gender_icons = 1
 	armor = list(
-		melee = ARMOR_MELEE_MINOR
+		melee = ARMOR_MELEE_PRIMAL
 		)
 	siemens_coefficient = 0.9
 
@@ -88,7 +88,7 @@
 	worn_state = "detective"
 	gender_icons = 1
 	armor = list(
-		melee = ARMOR_MELEE_MINOR
+		melee = ARMOR_MELEE_PRIMAL
 		)
 	siemens_coefficient = 0.9
 	accessories = list(/obj/item/clothing/accessory/blue_clip)
@@ -117,7 +117,7 @@
 		slot_r_hand_str = "det_hat",
 		)
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_PRIMAL,
 		laser = ARMOR_LASER_PRIMAL,
 		energy = ARMOR_ENERGY_MINOR
 		)
@@ -144,7 +144,7 @@
 	item_state = "r_suit"
 	worn_state = "hosred"
 	armor = list(
-		melee = ARMOR_MELEE_MINOR
+		melee = ARMOR_MELEE_PRIMAL
 		)
 	siemens_coefficient = 0.8
 

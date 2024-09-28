@@ -5,7 +5,7 @@
 	icon_state = "rig0-syndie"
 	item_state = "syndie_helm"
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_CARAPACE,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_MINOR,
@@ -34,7 +34,7 @@
 	)
 	w_class = ITEM_SIZE_LARGE //normally voidsuits are bulky but the merc voidsuit is 'advanced' or something
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_CARAPACE,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_MINOR,

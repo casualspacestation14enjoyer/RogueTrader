@@ -48,9 +48,9 @@
 	siemens_coefficient = 0.6
 
 	cold_protection = FEET
-	min_cold_protection_temperature = SHOE_MIN_COLD_PROTECTION_TEMPERATURE
 	heat_protection = FEET
-	max_heat_protection_temperature = SHOE_MAX_HEAT_PROTECTION_TEMPERATURE
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-100
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+1000
 
 
 /obj/item/clothing/shoes/dutyboots
@@ -58,7 +58,7 @@
 	desc = "A pair of steel-toed synthleather boots with a mirror shine."
 	icon_state = "duty"
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_PRIMAL,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_PADDED,
 		rad = ARMOR_RAD_MINOR
@@ -77,7 +77,7 @@
 	icon_state = "desert"
 	force = 3
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_SMALL,

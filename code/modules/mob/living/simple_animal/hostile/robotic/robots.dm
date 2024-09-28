@@ -19,7 +19,7 @@
 	reload_sound = 'sound/mecha/internaldmgalarm.ogg'
 
 	natural_armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_MINOR,
@@ -165,7 +165,7 @@
 	can_escape = TRUE
 
 	natural_armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_MINOR,

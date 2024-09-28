@@ -1,5 +1,5 @@
 /obj/item/clothing/accessory/arm_guards
-	name = "Heavy Reinforcements"
+	name = "heavy reinforcements"
 	desc = "Heavy armor reinforcement, similar in design to a bodyglove but worn on the outside for maximum protection covering the arms."
 	icon_override = 'icons/mob/onmob/onmob_suit.dmi'
 	icon = 'icons/obj/clothing/obj_suit.dmi'
@@ -10,7 +10,7 @@
 	icon_state = "armguards"
 	gender = PLURAL
 	body_parts_covered = ARMS // Don't assign melee defense to arm_guards unless absolutely necessary. Can break the meta.
-	slowdown = 0.06
+	slowdown = 0.04
 	armor = list(
 		melee = 0,
 		bullet = 3,
@@ -59,7 +59,7 @@
 
 
 /obj/item/clothing/accessory/arm_guards/riot
-	name = "riot arm guards"
+	name = "arm guards"
 	desc = "A pair of armored arm pads with heavy padding to protect against melee attacks."
 	icon_state = "armguards_riot"
 	armor = list(
@@ -73,7 +73,7 @@
 
 
 /obj/item/clothing/accessory/arm_guards/ballistic
-	name = "ballistic arm guards"
+	name = "arm guards"
 	desc = "A pair of armored arm pads with heavy plates to protect against ballistic projectiles."
 	icon_state = "armguards_ballistic"
 	armor = list(
@@ -88,7 +88,7 @@
 
 
 /obj/item/clothing/accessory/arm_guards/ablative
-	name = "ablative arm guards"
+	name = "arm guards"
 	desc = "A pair of armored arm pads with advanced shielding to protect against energy weapons."
 	icon_state = "armguards_ablative" // Super cool tech.
 	armor = list(

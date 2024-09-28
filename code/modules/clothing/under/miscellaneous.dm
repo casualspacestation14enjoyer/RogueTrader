@@ -98,7 +98,7 @@
 	item_state = "bl_suit"
 	worn_state = "ert_uniform"
 	armor = list(
-		melee = ARMOR_MELEE_MINOR
+		melee = ARMOR_MELEE_PRIMAL
 		)
 	siemens_coefficient = 0.9
 

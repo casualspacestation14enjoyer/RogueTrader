@@ -238,7 +238,7 @@
 	icon_state = "corpo_rig"
 	online_slowdown = -1 ///speedster suit
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_CARAPACE,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_RESISTANT,

@@ -88,7 +88,7 @@
 	icon_state = "detective"
 	blood_overlay_type = "coat"
 	body_parts_covered = ARMS|LEGS
-	accessories = list(/obj/item/clothing/accessory/armor_plate/padding2)
+	accessories = list(/obj/item/clothing/accessory/armor_plate/paddingheavy)
 	allowed = list(
 		/obj/item/tank/oxygen_emergency,
 		/obj/item/tank/oxygen_emergency_extended,
@@ -138,14 +138,15 @@
 		/obj/item/handcuffs,
 		/obj/item/device/taperecorder
 	)
-	accessories = list(/obj/item/clothing/accessory/armor_plate/padding2)
+	accessories = list(/obj/item/clothing/accessory/armor_plate/paddingheavy)
 	body_parts_covered = LEGS|ARMS
 	armor = list(
 		melee = ARMOR_MELEE_FLAK-1,
 		bullet = ARMOR_BALLISTIC_FLAK-8,
 		laser = ARMOR_LASER_FLAK-8,
 		energy = ARMOR_ENERGY_MINOR-8,
-		rad = ARMOR_RAD_MINOR-10,
+		rad = ARMOR_RAD_MINOR+5, // Magistratum enforcers probably have hazard-lining to protect from exploring underhives.
+		bio = ARMOR_BIO_MINOR,
 		bomb = ARMOR_BOMB_MINOR-10
 		)
 

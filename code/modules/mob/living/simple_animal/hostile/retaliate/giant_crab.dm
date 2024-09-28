@@ -23,7 +23,7 @@
 	return_damage_max = 5
 	harm_intent_damage = 1
 	natural_armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_FLAK
 		)
 	special_attack_min_range = 0

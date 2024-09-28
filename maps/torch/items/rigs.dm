@@ -118,7 +118,7 @@
 	desc = "A specialized hardsuit rig control module issued to commanding officers of the Imperium."
 	icon_state = "command_CO_rig"
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_PRIMAL,
 		energy = ARMOR_ENERGY_SMALL,
@@ -213,7 +213,7 @@
 	desc = "A specialized hardsuit rig control module issued to ranking militarum officers of the Imperium and their peers."
 	icon_state = "command_sec_rig"
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_CARAPACE,
 		laser = ARMOR_LASER_PRIMAL,
 		energy = ARMOR_ENERGY_SMALL,

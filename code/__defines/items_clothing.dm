@@ -170,30 +170,30 @@
 
 #define SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE 2.0 // What min_cold_protection_temperature is set to for space-helmet quality headwear. MUST NOT BE 0.
 #define   SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE 2.0 // What min_cold_protection_temperature is set to for space-suit quality jumpsuits or suits. MUST NOT BE 0.
-#define       HELMET_MIN_COLD_PROTECTION_TEMPERATURE 160 // For normal helmets.
-#define        ARMOR_MIN_COLD_PROTECTION_TEMPERATURE 160 // For armor.
+#define       HELMET_MIN_COLD_PROTECTION_TEMPERATURE 2.0 // For normal helmets.
+#define        ARMOR_MIN_COLD_PROTECTION_TEMPERATURE 25 // For armor.
 #define       GLOVES_MIN_COLD_PROTECTION_TEMPERATURE 2.0 // For some gloves.
 #define         SHOE_MIN_COLD_PROTECTION_TEMPERATURE 2.0 // For shoes.
 
 #define  SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE 5000  // These need better heat protect, but not as good heat protect as firesuits.
-#define    FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE 30000 // What max_heat_protection_temperature is set to for firesuit quality headwear. MUST NOT BE 0.
-#define FIRE_HELMET_MAX_HEAT_PROTECTION_TEMPERATURE 30000 // For fire-helmet quality items. (Red and white hardhats)
+#define    FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE 8000 // What max_heat_protection_temperature is set to for firesuit quality headwear. MUST NOT BE 0.
+#define FIRE_HELMET_MAX_HEAT_PROTECTION_TEMPERATURE 9000 // For fire-helmet quality items. (Red and white hardhats)
 #define      HELMET_MAX_HEAT_PROTECTION_TEMPERATURE 600   // For normal helmets.
 #define       ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE 600   // For armor.
 #define      GLOVES_MAX_HEAT_PROTECTION_TEMPERATURE 1500  // For some gloves.
 #define        SHOE_MAX_HEAT_PROTECTION_TEMPERATURE 1500  // For shoes.
 
-#define  FIRESUIT_MAX_PRESSURE 		100 * ONE_ATMOSPHERE   // Firesuis and atmos voidsuits
-#define  RIG_MAX_PRESSURE 			50 * ONE_ATMOSPHERE   // Rigs
-#define  LIGHT_RIG_MAX_PRESSURE 	25 * ONE_ATMOSPHERE   // Rigs
-#define  ENG_VOIDSUIT_MAX_PRESSURE 	50 * ONE_ATMOSPHERE
-#define  VOIDSUIT_MAX_PRESSURE 		25 * ONE_ATMOSPHERE
-#define  SPACE_SUIT_MAX_PRESSURE 	5 * ONE_ATMOSPHERE
+#define  FIRESUIT_MAX_PRESSURE 		60 * ONE_ATMOSPHERE   // Firesuis and atmos voidsuits
+#define  RIG_MAX_PRESSURE 			80 * ONE_ATMOSPHERE   // Rigs
+#define  LIGHT_RIG_MAX_PRESSURE 	55 * ONE_ATMOSPHERE   // Rigs
+#define  ENG_VOIDSUIT_MAX_PRESSURE 	60 * ONE_ATMOSPHERE
+#define  VOIDSUIT_MAX_PRESSURE 		45 * ONE_ATMOSPHERE
+#define  SPACE_SUIT_MAX_PRESSURE 	15 * ONE_ATMOSPHERE
 
 // Fire.
 #define FIRE_MIN_STACKS          -20
 #define FIRE_MAX_STACKS           25
-#define FIRE_MAX_FIRESUIT_STACKS  20 // If the number of stacks goes above this firesuits won't protect you anymore. If not, you can walk around while on fire like a badass.
+#define FIRE_MAX_FIRESUIT_STACKS  24 // If the number of stacks goes above this firesuits won't protect you anymore. If not, you can walk around while on fire like a badass.
 
 #define THROWFORCE_SPEED_DIVISOR    5  // The throwing speed value at which the throwforce multiplier is exactly 1.
 #define THROWNOBJ_KNOCKBACK_SPEED   15 // The minumum speed of a w_class 2 thrown object that will cause living mobs it hits to be knocked back. Heavier objects can cause knockback at lower speeds.

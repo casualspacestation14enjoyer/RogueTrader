@@ -16,7 +16,7 @@
 	var/puncture = FALSE
 	var/in_use = 0 // If we have a user using us, this will be set on. We will check if the user has stopped using us, and thus stop updating and LAGGING EVERYTHING!
 	var/damtype = DAMAGE_BRUTE
-	var/armor_penetration = 3
+	var/armor_penetration = 5
 	var/anchor_fall = FALSE
 	var/holographic = 0 //if the obj is a holographic object spawned by the holodeck
 

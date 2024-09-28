@@ -1,14 +1,14 @@
 /obj/item/clothing/suit/armor/grim/toggle/labcoat
-	name = "labcoat"
-	desc = "A suit that protects against minor chemical spills."
+	name = "medicae labcoat"
+	desc = "A standard medicae suit that protects against bacterial and radiological hazards."
 	icon_state = "labcoat"
 	blood_overlay_type = "coat"
-	body_parts_covered = ARMS
+	body_parts_covered = ARMS|LEGS
 	allowed = list(/obj/item/device/scanner/gas,/obj/item/stack/medical,/obj/item/reagent_containers/dropper,/obj/item/reagent_containers/syringe,/obj/item/reagent_containers/hypospray,/obj/item/device/scanner/health,/obj/item/device/flashlight/pen,/obj/item/reagent_containers/glass/bottle,/obj/item/reagent_containers/glass/beaker,/obj/item/reagent_containers/pill,/obj/item/storage/pill_bottle,/obj/item/paper)
 	accessories = list(/obj/item/clothing/accessory/armor_plate/paddingbio)
 	armor = list(
 		bio = ARMOR_BIO_RESISTANT,
-		rad = ARMOR_RAD_MINOR
+		rad = ARMOR_RAD_MINOR+20
 		)
 
 /obj/item/clothing/suit/armor/grim/toggle/labcoat/cmo

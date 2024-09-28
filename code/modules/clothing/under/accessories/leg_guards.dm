@@ -7,7 +7,7 @@
 	icon_state = "legguards"
 	gender = PLURAL
 	body_parts_covered = LEGS
-	slowdown = 0.07
+	slowdown = 0.05
 	armor = list(
 		melee = 0,
 		bullet = 3,
@@ -56,7 +56,7 @@
 
 
 /obj/item/clothing/accessory/leg_guards/riot
-	name = "riot leg guards"
+	name = "leg guards"
 	desc = "A pair of armored leg pads with heavy padding to protect against melee attacks. Looks like they might impair movement."
 	icon_state = "legguards_riot"
 	armor = list(
@@ -70,7 +70,7 @@
 
 
 /obj/item/clothing/accessory/leg_guards/ballistic
-	name = "ballistic leg guards"
+	name = "leg guards"
 	desc = "A pair of armored leg pads with heavy plates to protect against ballistic projectiles. Looks like they might impair movement."
 	icon_state = "legguards_ballistic"
 	armor = list(
@@ -85,7 +85,7 @@
 
 
 /obj/item/clothing/accessory/leg_guards/ablative
-	name = "ablative leg guards"
+	name = "leg guards"
 	desc = "A pair of armored leg pads with advanced shielding to protect against energy weapons. Looks like they might impair movement."
 	icon_state = "legguards_ablative"
 	armor = list(

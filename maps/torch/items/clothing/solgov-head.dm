@@ -456,7 +456,7 @@
 		SPECIES_TAU = 'maps/torch/icons/obj/skrell/obj_head_solgov_skrell.dmi',
 		)
 	armor = list(
-		melee = ARMOR_MELEE_MINOR,
+		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_BASIC,
 		laser = ARMOR_LASER_BASIC,
 		energy = ARMOR_ENERGY_RESISTANT,
