@@ -18,10 +18,10 @@
 	slowdown_general = 0.04
 	armor = list(
 		melee = ARMOR_MELEE_FLAK-2,
-		bullet = ARMOR_BALLISTIC_FLAK-8,
-		laser = ARMOR_LASER_FLAK-8,
-		energy = ARMOR_ENERGY_MINOR-8,
-		bio = ARMOR_BIO_MINOR-8,
+		bullet = ARMOR_BALLISTIC_FLAK-6,
+		laser = ARMOR_LASER_FLAK-6,
+		energy = ARMOR_ENERGY_MINOR-6,
+		bio = ARMOR_BIO_MINOR-6,
 		rad = ARMOR_RAD_MINOR-10,
 		bomb = ARMOR_BOMB_MINOR-8
 		)
@@ -46,9 +46,9 @@
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+250 // Consider militarum patterns to have good rad and temp resistance so we don't get guardsmen in EVA suits
 	armor = list(
 		melee = ARMOR_MELEE_FLAK-1,
-		bullet = ARMOR_BALLISTIC_FLAK-6,
-		laser = ARMOR_LASER_FLAK-6,
-		energy = ARMOR_ENERGY_MINOR-6,
+		bullet = ARMOR_BALLISTIC_FLAK-1,
+		laser = ARMOR_LASER_FLAK-1,
+		energy = ARMOR_ENERGY_MINOR-4,
 		rad = ARMOR_RAD_MINOR-5,
 		bio = ARMOR_BIO_MINOR-5,
 		bomb = ARMOR_BOMB_MINOR-6
@@ -65,8 +65,8 @@
 	slowdown_general = 0.06
 	armor = list(
 		melee = ARMOR_MELEE_CARAPACE-1,
-		bullet = ARMOR_BALLISTIC_CARAPACE-6,
-		laser = ARMOR_LASER_CARAPACE-6,
+		bullet = ARMOR_BALLISTIC_CARAPACE-1,
+		laser = ARMOR_LASER_CARAPACE-1,
 		energy = ARMOR_ENERGY_MINOR,
 		rad = ARMOR_RAD_MINOR+15,
 		bio = ARMOR_BIO_MINOR+10,
@@ -107,9 +107,9 @@
 	slowdown_general = 0.03
 	armor = list(
 		melee = ARMOR_MELEE_FLAK-1,
-		bullet = ARMOR_BALLISTIC_FLAK-3,
-		laser = ARMOR_LASER_FLAK-3,
-		energy = ARMOR_ENERGY_MINOR-3,
+		bullet = ARMOR_BALLISTIC_FLAK-1,
+		laser = ARMOR_LASER_FLAK-1,
+		energy = ARMOR_ENERGY_MINOR-1,
 		bio = ARMOR_BIO_MINOR,
 		rad = ARMOR_RAD_MINOR,
 		bomb = ARMOR_BOMB_MINOR
@@ -127,9 +127,9 @@
 	slowdown_general = 0.04
 	armor = list(
 		melee = ARMOR_MELEE_FLAK-1,
-		bullet = ARMOR_BALLISTIC_FLAK-5,
-		laser = ARMOR_LASER_FLAK-5,
-		energy = ARMOR_ENERGY_MINOR-5,
+		bullet = ARMOR_BALLISTIC_FLAK-2,
+		laser = ARMOR_LASER_FLAK-2,
+		energy = ARMOR_ENERGY_MINOR-1,
 		bio = ARMOR_BIO_MINOR,
 		rad = ARMOR_RAD_MINOR,
 		bomb = ARMOR_BOMB_MINOR
@@ -147,9 +147,9 @@
 	slowdown_general = 0.07
 	armor = list(
 		melee = ARMOR_MELEE_FLAK+1,
-		bullet = ARMOR_BALLISTIC_FLAK+4,
-		laser = ARMOR_LASER_FLAK+4,
-		energy = ARMOR_ENERGY_MINOR+4,
+		bullet = ARMOR_BALLISTIC_FLAK+1,
+		laser = ARMOR_LASER_FLAK+1,
+		energy = ARMOR_ENERGY_MINOR+1,
 		bio = ARMOR_BIO_MINOR+4,
 		rad = ARMOR_RAD_MINOR+4,
 		bomb = ARMOR_BOMB_MINOR+4
@@ -187,12 +187,12 @@
 	slowdown_general = 0.02
 	armor = list(
 		melee = ARMOR_MELEE_FLAK-1,
-		bullet = ARMOR_BALLISTIC_FLAK-2,
-		laser = ARMOR_LASER_FLAK-2,
-		energy = ARMOR_ENERGY_MINOR-2,
-		bio = ARMOR_BIO_MINOR-2,
+		bullet = ARMOR_BALLISTIC_FLAK-1,
+		laser = ARMOR_LASER_FLAK-1,
+		energy = ARMOR_ENERGY_MINOR-1,
+		bio = ARMOR_BIO_MINOR,
 		rad = ARMOR_RAD_MINOR,
-		bomb = ARMOR_BOMB_MINOR-2
+		bomb = ARMOR_BOMB_MINOR
 		)
 
 /obj/item/clothing/suit/armor/grim/bloodpact
@@ -206,7 +206,7 @@
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+450
 	slowdown_general = 0.04
 	armor = list(
-		melee = ARMOR_MELEE_FLAK-1,
+		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_MINOR,
@@ -229,12 +229,12 @@
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+350
 	armor = list(
 		melee = ARMOR_MELEE_FLAK-1,
-		bullet = ARMOR_BALLISTIC_FLAK-6,
-		laser = ARMOR_LASER_FLAK-6,
-		energy = ARMOR_ENERGY_MINOR-6,
-		rad = ARMOR_RAD_MINOR-5,
-		bio = ARMOR_BIO_MINOR-5,
-		bomb = ARMOR_BOMB_MINOR-6
+		bullet = ARMOR_BALLISTIC_FLAK-1,
+		laser = ARMOR_LASER_FLAK-2,
+		energy = ARMOR_ENERGY_MINOR-2,
+		rad = ARMOR_RAD_MINOR,
+		bio = ARMOR_BIO_MINOR,
+		bomb = ARMOR_BOMB_MINOR-2
 		)
 
 /obj/item/clothing/suit/armor/enforcermarshal
@@ -248,9 +248,9 @@
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+500
 	armor = list(
 		melee = ARMOR_MELEE_CARAPACE,
-		bullet = ARMOR_BALLISTIC_CARAPACE+2,
-		laser = ARMOR_LASER_CARAPACE+2,
-		energy = ARMOR_ENERGY_MINOR+14,
+		bullet = ARMOR_BALLISTIC_CARAPACE+1,
+		laser = ARMOR_LASER_CARAPACE+1,
+		energy = ARMOR_ENERGY_MINOR+10,
 		rad = ARMOR_RAD_MINOR+25,
 		bio = ARMOR_BIO_MINOR+15,
 		bomb = ARMOR_BOMB_PADDED+5
@@ -267,9 +267,9 @@
 	slowdown_general = 0.10
 	armor = list(
 		melee = ARMOR_MELEE_FLAK,
-		bullet = ARMOR_BALLISTIC_FLAK+2,
-		laser = ARMOR_LASER_FLAK+2,
-		energy = ARMOR_ENERGY_MINOR+2,
+		bullet = ARMOR_BALLISTIC_FLAK+1,
+		laser = ARMOR_LASER_FLAK+1,
+		energy = ARMOR_ENERGY_MINOR+1,
 		bio = ARMOR_BIO_MINOR+8,
 		rad = ARMOR_RAD_MINOR+15,
 		bomb = ARMOR_BOMB_MINOR+8
@@ -287,9 +287,9 @@
 	slowdown_general = 0.04
 	armor = list(
 		melee = ARMOR_MELEE_FLAK-1,
-		bullet = ARMOR_BALLISTIC_FLAK-5,
-		laser = ARMOR_LASER_FLAK-6,
-		energy = ARMOR_ENERGY_MINOR-5,
+		bullet = ARMOR_BALLISTIC_FLAK-1,
+		laser = ARMOR_LASER_FLAK-1,
+		energy = ARMOR_ENERGY_MINOR-1,
 		rad = ARMOR_RAD_MINOR+10,
 		bio = ARMOR_BIO_MINOR+5,
 		bomb = ARMOR_BOMB_MINOR
@@ -307,8 +307,8 @@
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+350
 	armor = list(
 		melee = ARMOR_MELEE_CARAPACE-1,
-		bullet = ARMOR_BALLISTIC_CARAPACE-5,
-		laser = ARMOR_LASER_CARAPACE-5,
+		bullet = ARMOR_BALLISTIC_CARAPACE-1,
+		laser = ARMOR_LASER_CARAPACE-1,
 		energy = ARMOR_ENERGY_MINOR,
 		rad = ARMOR_RAD_MINOR+15,
 		bio = ARMOR_BIO_MINOR+10,
@@ -321,14 +321,14 @@
 	icon_state = "towntrench_heavy"
 	item_state = "towntrench_heavy"
 	body_parts_covered = LEGS|ARMS
-	slowdown_general = 0.05
+	slowdown_general = 0.04 // Light due to missing parts of the armor.
 	accessories = list(/obj/item/clothing/accessory/armor_plate/carapace)
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-35
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+350
 	armor = list(
 		melee = ARMOR_MELEE_CARAPACE-1,
-		bullet = ARMOR_BALLISTIC_CARAPACE-7,
-		laser = ARMOR_LASER_CARAPACE-7,
+		bullet = ARMOR_BALLISTIC_CARAPACE-2,
+		laser = ARMOR_LASER_CARAPACE-2,
 		energy = ARMOR_ENERGY_MINOR-2,
 		rad = ARMOR_RAD_MINOR+5,
 		bio = ARMOR_BIO_MINOR,
@@ -345,9 +345,9 @@
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-50
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+500
 	armor = list(
-		melee = ARMOR_MELEE_CARAPACE,
-		bullet = ARMOR_BALLISTIC_CARAPACE+4,
-		laser = ARMOR_LASER_CARAPACE+4,
+		melee = ARMOR_MELEE_CARAPACE+1,
+		bullet = ARMOR_BALLISTIC_CARAPACE+2,
+		laser = ARMOR_LASER_CARAPACE+2,
 		energy = ARMOR_ENERGY_MINOR+16,
 		rad = ARMOR_RAD_MINOR+35,
 		bio = ARMOR_BIO_MINOR+25,
@@ -385,53 +385,52 @@
 	item_flags = ITEM_FLAG_THICKMATERIAL | ITEM_FLAG_INVALID_FOR_CHAMELEON
 
 /obj/item/clothing/suit/armor/riot
-	name = "riot vest"
-	desc = "An armored vest with heavy padding to protect against melee attacks."
+	name = "heavy ganger armor"
+	desc = "An armored flak suit with heavy padding to protect against melee attacks."
 	icon_state = "riotcarrier"
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_ARMOR_ARMS, ACCESSORY_SLOT_ARMOR_LEGS)
 	restricted_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_ARMOR_ARMS, ACCESSORY_SLOT_ARMOR_LEGS)
 	armor = list(
 		melee = ARMOR_MELEE_FLAK+1,
-		bullet = ARMOR_BALLISTIC_FLAK-6,
-		laser = ARMOR_LASER_FLAK-6,
-		energy = ARMOR_ENERGY_MINOR-6,
+		bullet = ARMOR_BALLISTIC_FLAK-3,
+		laser = ARMOR_LASER_FLAK-3,
+		energy = ARMOR_ENERGY_MINOR-3,
 		bio = ARMOR_BIO_MINOR,
 		rad = ARMOR_RAD_MINOR-5,
 		bomb = ARMOR_BOMB_MINOR-6
 		)
 	flags_inv = CLOTHING_BULKY
-	slowdown_general = 0.5
+	slowdown_general = 0.11
 	siemens_coefficient = 0.5
-	accessories = list(/obj/item/clothing/accessory/arm_guards/flak)
+	accessories = list(/obj/item/clothing/accessory/arm_guards/flak,obj/item/clothing/accessory/leg_guards/flak)
 
 /obj/item/clothing/suit/armor/bulletproof
-	name = "ballistic vest"
-	desc = "An armored vest with heavy plates to protect against ballistic projectiles."
+	name = "reactive armor suit"
+	desc = "A strange slug resistant reactive suit with heavy plates to protect against ballistic projectiles."
 	icon_state = "ballisticcarrier"
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_ARMOR_ARMS, ACCESSORY_SLOT_ARMOR_LEGS)
 	restricted_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_ARMOR_ARMS, ACCESSORY_SLOT_ARMOR_LEGS)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	armor = list(
-		melee = ARMOR_MELEE_PRIMAL,
-		bullet = ARMOR_BALLISTIC_CARAPACE,
-		laser = ARMOR_LASER_PRIMAL,
+		melee = ARMOR_MELEE_FLAK-1,
+		bullet = ARMOR_BALLISTIC_FLAK+2,
+		laser = ARMOR_LASER_FLAK-2,
 		energy = ARMOR_ENERGY_MINOR,
 		bio = ARMOR_BIO_MINOR-8,
 		rad = ARMOR_RAD_MINOR,
 		bomb = ARMOR_BOMB_PADDED
 		)
 	flags_inv = CLOTHING_BULKY
-	slowdown_general = 0.5
+	slowdown_general = 0.12
 	siemens_coefficient = 0.7
-	accessories = list(/obj/item/clothing/accessory/arm_guards/reactiveslug, /obj/item/clothing/accessory/leg_guards/reactiveslug)
 
 /obj/item/clothing/suit/armor/bulletproof/vest //because apparently some map uses this somewhere and I'm too lazy to go looking for and replacing it.
 	accessories = null
 	item_flags = ITEM_FLAG_THICKMATERIAL | ITEM_FLAG_INVALID_FOR_CHAMELEON
 
 /obj/item/clothing/suit/armor/laserproof
-	name = "ablative vest"
-	desc = "An armored vest with advanced shielding to protect against energy weapons."
+	name = "reactive armor suit"
+	desc = "A strange energy resistant reactive suit with advanced shielding to protect against energy weapons."
 	icon_state = "ablativecarrier"
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_ARMOR_ARMS, ACCESSORY_SLOT_ARMOR_LEGS)
 	restricted_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_ARMOR_ARMS, ACCESSORY_SLOT_ARMOR_LEGS)
@@ -439,21 +438,20 @@
 	armor = list(
 		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_FLAK,
-		laser = ARMOR_LASER_CARAPACE,
+		laser = ARMOR_LASER_FLAK+2,
 		bio = ARMOR_BIO_MINOR-8,
 		rad = ARMOR_RAD_MINOR,
 		energy = ARMOR_ENERGY_RESISTANT
 		)
 	flags_inv = CLOTHING_BULKY
-	slowdown_general = 0.5
+	slowdown_general = 0.13
 	siemens_coefficient = 0
-	accessories = list(/obj/item/clothing/accessory/arm_guards/reactivelas, /obj/item/clothing/accessory/leg_guards/reactivelas)
 
 /obj/item/clothing/suit/armor/laserproof/handle_shield(mob/user, damage, atom/damage_source = null, mob/attacker = null, def_zone = null, attack_text = "the attack")
 	if(istype(damage_source, /obj/item/projectile/energy) || istype(damage_source, /obj/item/projectile/beam))
 		var/obj/item/projectile/P = damage_source
 
-		var/reflectchance = 40 - round(damage/3)
+		var/reflectchance = 28 - round(damage/3)
 		if(!(def_zone in list(BP_CHEST, BP_GROIN))) //not changing this so arm and leg shots reflect, gives some incentive to not aim center-mass
 			reflectchance /= 2
 		if(P.starting && prob(reflectchance))
