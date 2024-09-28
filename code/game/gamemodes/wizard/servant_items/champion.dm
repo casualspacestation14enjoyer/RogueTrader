@@ -12,7 +12,7 @@
 		)
 
 /obj/item/clothing/suit/champarmor
-	name = "champion's armor"
+	name = "champion's armour"
 	desc = "A mighty suit of silver and gold armor, with a gleaming blue crystal inlaid into its left gaunlet."
 	icon_state = "champarmor"
 	siemens_coefficient = 0.5

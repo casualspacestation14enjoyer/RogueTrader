@@ -377,7 +377,7 @@
 
 /obj/random/loot/randomarmor
 	name = "Random Armor"
-	desc = "This is a loot spawner that spawns pilgrim and pilgrim+ level armor"
+	desc = "This is a loot spawner that spawns pilgrim and pilgrim+ level armour"
 	icon_state = "randomarmor"
 
 /obj/random/loot/randomarmor/spawn_choices()

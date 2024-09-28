@@ -52,7 +52,7 @@
 //Voxclothing
 
 /obj/item/clothing/suit/armor/vox_scrap
-	name = "rusted metal armor"
+	name = "rusted metal armour"
 	desc = "A hodgepodge of various pieces of metal scrapped together into a rudimentary vox-shaped piece of armor."
 	allowed = list(/obj/item/gun, /obj/item/tank)
 	armor = list(

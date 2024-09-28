@@ -636,7 +636,7 @@
 	id = "augment_booster_muscles"
 
 /datum/design/item/mechfab/augment/armor
-	name = "Subdermal armor"
+	name = "Subdermal armour"
 	build_path = /obj/item/organ/internal/augment/armor
 	materials = list(MATERIAL_STEEL = 10000, MATERIAL_GLASS = 750)
 	id = "augment_armor"

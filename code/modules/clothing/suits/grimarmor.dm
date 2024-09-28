@@ -14,7 +14,7 @@
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-15
-	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+150
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+100
 	slowdown_general = 0.04
 	armor = list(
 		melee = ARMOR_MELEE_FLAK-2,
@@ -60,8 +60,8 @@
 	icon_state = "explorer"
 	item_state = "explorer"
 	accessories = list(/obj/item/clothing/accessory/armor_plate/carapace)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-40 // Merc gear is outfitted for combat not extended ops
-	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+400
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-35 // Merc gear is outfitted for combat not extended ops
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+300
 	slowdown_general = 0.06
 	armor = list(
 		melee = ARMOR_MELEE_CARAPACE-1,
@@ -76,14 +76,14 @@
 // MILITARUM
 
 /obj/item/clothing/suit/armor/grim/cadian
-	name = "cadian pattern flak armor"
+	name = "cadian pattern flak armour"
 	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, reinforced with heavy flak inserts for better protection in the field."
 	icon_state = "farmor"
 	item_state = "farmor"
 	body_parts_covered = LEGS|ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/flakheavy)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-45
-	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+450
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-35
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+300
 	slowdown_general = 0.04
 	armor = list(
 		melee = ARMOR_MELEE_FLAK-1,
@@ -96,55 +96,22 @@
 	)
 
 /obj/item/clothing/suit/armor/grim/cadian/medicae
-	name = "cadian medicae flak armor"
+	name = "cadian medicae flak armour"
 	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, It is so common that it became symbol of the Astra Militarum as a whole. This one is in it light configuration, bearing the Red Cross of a Combat Medicae. This one is made to be lighter to accomodate movement."
 	icon_state = "medicae"
 	item_state = "medicae"
-	body_parts_covered = LEGS|ARMS
-	accessories = list(/obj/item/clothing/accessory/armor_plate/flak) // Lighter. More mobile.
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-40
-	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+400
-	slowdown_general = 0.03
-	armor = list(
-		melee = ARMOR_MELEE_FLAK-1,
-		bullet = ARMOR_BALLISTIC_FLAK-1,
-		laser = ARMOR_LASER_FLAK-1,
-		energy = ARMOR_ENERGY_MINOR-1,
-		bio = ARMOR_BIO_MINOR,
-		rad = ARMOR_RAD_MINOR,
-		bomb = ARMOR_BOMB_MINOR
-	)
-
-/obj/item/clothing/suit/armor/grim/cadian/conscript
-	name = "cadian light flak armor"
-	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, It is so common that it became symbol of the Astra Militarum as a whole. This one is in it light configuration, issued to the Whiteshields."
-	icon_state = "fvest"
-	item_state = "fvest"
-	body_parts_covered = LEGS|ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/flak)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-35
-	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+350
-	slowdown_general = 0.04
-	armor = list(
-		melee = ARMOR_MELEE_FLAK-1,
-		bullet = ARMOR_BALLISTIC_FLAK-2,
-		laser = ARMOR_LASER_FLAK-2,
-		energy = ARMOR_ENERGY_MINOR-1,
-		bio = ARMOR_BIO_MINOR,
-		rad = ARMOR_RAD_MINOR,
-		bomb = ARMOR_BOMB_MINOR
-	)
 
 /obj/item/clothing/suit/armor/grim/cadian/heavy
-	name = "cadian heavy flak armor"
+	name = "cadian heavy flak armour"
 	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, It is so common that it became symbol of the Astra Militarum as a whole. This one is in it heavy configuration"
 	icon_state = "fharmor"
 	item_state = "fharmor"
 	body_parts_covered = LEGS|ARMS // Same as regular Cadian but provides better leg/arm protection.
 	accessories = list(/obj/item/clothing/accessory/armor_plate/flakheavy)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-55
-	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+500
-	slowdown_general = 0.07
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-45
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+400
+	slowdown_general = 0.055
 	armor = list(
 		melee = ARMOR_MELEE_FLAK+1,
 		bullet = ARMOR_BALLISTIC_FLAK+1,
@@ -155,6 +122,26 @@
 		bomb = ARMOR_BOMB_MINOR+4
 	)
 
+/obj/item/clothing/suit/armor/grim/cadian/sergeant
+	name = "cadian sergeant's carapace armour"
+	desc = "The reinforced carapace armor worn by Cadian Sergeants, offering enhanced protection with carapace inserts."
+	icon_state = "fharmor"
+	item_state = "fharmor"
+	body_parts_covered = LEGS|ARMS
+	accessories = list(/obj/item/clothing/accessory/armor_plate/carapace)
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-55
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+500
+	slowdown_general = 0.06
+	armor = list(
+		melee = ARMOR_MELEE_CARAPACE-1,
+		bullet = ARMOR_BALLISTIC_CARAPACE,
+		laser = ARMOR_LASER_CARAPACE,
+		energy = ARMOR_ENERGY_MINOR+10,
+		bio = ARMOR_BIO_MINOR+15,
+		rad = ARMOR_RAD_MINOR+25,
+		bomb = ARMOR_BOMB_MINOR+15
+	)
+
 /obj/item/clothing/suit/armor/grim/cadian/carapace
 	name = "cadian pattern carapace armour"
 	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, reinforced with carapace plates for enhanced protection in combat zones."
@@ -162,16 +149,77 @@
 	item_state = "fharmor"
 	body_parts_covered = LEGS|ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/carapaceheavy)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-60
-	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+500
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-45
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+400
 	slowdown_general = 0.06
 	armor = list(
 		melee = ARMOR_MELEE_CARAPACE-1,
 		bullet = ARMOR_BALLISTIC_CARAPACE,
 		laser = ARMOR_LASER_CARAPACE,
-		energy = ARMOR_ENERGY_MINOR,
+		energy = ARMOR_ENERGY_MINOR+10,
 		bio = ARMOR_BIO_MINOR+15,
 		rad = ARMOR_RAD_MINOR+25,
+		bomb = ARMOR_BOMB_MINOR+15
+	)
+
+/obj/item/clothing/suit/armor/grim/krieger
+	name = "krieg overcoat"
+	desc = "A reinforced Krieg flak overcoat, resistant to environmental hazards like radiation and biohazards, with decent ballistic and thermal protection."
+	icon_state = "kriegcoat"
+	item_state = "kriegcoat"
+	body_parts_covered = LEGS|ARMS
+	accessories = list(/obj/item/clothing/accessory/armor_plate/flak)
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-40
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+400
+	slowdown_general = 0.055
+	armor = list(
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK+1,
+		laser = ARMOR_LASER_FLAK+1,
+		energy = ARMOR_ENERGY_MINOR+2,
+		rad = ARMOR_RAD_MINOR+40,
+		bio = ARMOR_BIO_MINOR+40,
+		bomb = ARMOR_BOMB_MINOR+10
+	)
+
+/obj/item/clothing/suit/armor/grim/krieger/sergeant
+	name = "krieg watchmaster's overcoat"
+	desc = "The reinforced carapace overcoat of a Krieg Watchmaster, offering additional protection against hazardous environments and combat damage."
+	icon_state = "kriegcoat"
+	item_state = "kriegcoat"
+	body_parts_covered = LEGS|ARMS
+	accessories = list(/obj/item/clothing/accessory/armor_plate/carapace)
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-50
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+500
+	slowdown_general = 0.065 // Light carapace.
+	armor = list(
+		melee = ARMOR_MELEE_CARAPACE,
+		bullet = ARMOR_BALLISTIC_CARAPACE,
+		laser = ARMOR_LASER_CARAPACE,
+		energy = ARMOR_ENERGY_MINOR+15,
+		rad = ARMOR_RAD_MINOR+25,
+		bio = ARMOR_BIO_MINOR+15,
+		bomb = ARMOR_BOMB_MINOR+15
+	)
+
+
+/obj/item/clothing/suit/armor/grim/krieger/grenadier
+	name = "krieg grenadier overcoat"
+	desc = "A Krieg grenadier carapace-plated overcoat, offering excellent protection at the cost of movement."
+	icon_state = "grencoat"
+	item_state = "grencoat"
+	body_parts_covered = LEGS|ARMS
+	accessories = list(/obj/item/clothing/accessory/armor_plate/carapaceheavy)
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-50
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+500
+	slowdown_general = 0.075 // Similar to cadian carapace but heavier. Krieg gear is for slow -- defensive/siege warfare.
+	armor = list(
+		melee = ARMOR_MELEE_CARAPACE,
+		bullet = ARMOR_BALLISTIC_CARAPACE+1,
+		laser = ARMOR_LASER_CARAPACE+1,
+		energy = ARMOR_ENERGY_MINOR+15,
+		rad = ARMOR_RAD_MINOR+25,
+		bio = ARMOR_BIO_MINOR+15,
 		bomb = ARMOR_BOMB_MINOR+15
 	)
 
@@ -183,8 +231,8 @@
 	body_parts_covered = LEGS|ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/flaklamellar) // Flak Padding. lighter and weaker.
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-35
-	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+350
-	slowdown_general = 0.02
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+300
+	slowdown_general = 0.025
 	armor = list(
 		melee = ARMOR_MELEE_FLAK-1,
 		bullet = ARMOR_BALLISTIC_FLAK-1,
@@ -195,15 +243,304 @@
 		bomb = ARMOR_BOMB_MINOR
 		)
 
+/obj/item/clothing/suit/armor/grim/valhallan
+	name = "valhallan overcoat"
+	desc = "A thermal flak overcoat designed for Valhallan Ice Warriors, providing standard protection against energy projectiles and blunt force."
+	icon_state = "valarmor"
+	item_state = "valarmor"
+	body_parts_covered = LEGS|ARMS
+	accessories = list(/obj/item/clothing/accessory/armor_plate/flaklamellar)
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-60
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+300
+	slowdown_general = 0.04
+	armor = list(
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK-1,
+		laser = ARMOR_LASER_FLAK+1,
+		energy = ARMOR_ENERGY_MINOR,
+		rad = ARMOR_RAD_MINOR+10,
+		bio = ARMOR_BIO_MINOR,
+		bomb = ARMOR_BOMB_MINOR-5
+	)
+
+/obj/item/clothing/suit/armor/grim/valhallan/medicae
+	name = "valhallan medicae vercoat"
+	desc = "A lightweight, thermally insulated Valhallan overcoat worn by Combat Medicae, offering basic protection with increased mobility."
+	icon_state = "mvalarmor"
+	item_state = "mvalarmor"
+
+/obj/item/clothing/suit/armor/grim/valhallan/sergeant
+	name = "valhalan sergeant's overcoat"
+	desc = "A Valhallan overcoat with additional markings and improved protection, worn by Sergeants."
+	body_parts_covered = LEGS | ARMS
+	slowdown_general = 0.06
+	armor = list(
+		melee = ARMOR_MELEE_CARAPACE,
+		bullet = ARMOR_BALLISTIC_CARAPACE-1,
+		laser = ARMOR_LASER_CARAPACE+1,
+		energy = ARMOR_ENERGY_MINOR+10,
+		bio = ARMOR_BIO_MINOR+15,
+		rad = ARMOR_RAD_MINOR+5,
+		bomb = ARMOR_BOMB_MINOR+5
+	)
+
+
+/obj/item/clothing/suit/armor/grim/maccabian
+	name = "maccabian carapace armor"
+	desc = "The standard carapace armor worn by Maccabian Jannisaries, designed for resilience in the field."
+	icon_state = "M_Armor-Icon"
+	item_state = "M_Armor-Icon"
+	body_parts_covered = LEGS|ARMS
+	accessories = list(/obj/item/clothing/accessory/armor_plate/carapace)
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-45
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+400
+	slowdown_general = 0.065
+	armor = list(
+		melee = ARMOR_MELEE_CARAPACE,
+		bullet = ARMOR_BALLISTIC_CARAPACE,
+		laser = ARMOR_LASER_CARAPACE,
+		energy = ARMOR_ENERGY_MINOR+10,
+		rad = ARMOR_RAD_MINOR+10,
+		bio = ARMOR_BIO_MINOR+5,
+		bomb = ARMOR_BOMB_MINOR+5
+	)
+
+/obj/item/clothing/suit/armor/grim/maccabian/sergeant
+	name = "maccabian sergeant's armor"
+	desc = "The flak armor worn by Maccabian Sergeants, reinforced with carapace plates for enhanced protection."
+	icon_state = "M_SArmor-Icon"
+	item_state = "M_SArmor-Icon"
+	body_parts_covered = LEGS|ARMS
+	accessories = list(/obj/item/clothing/accessory/armor_plate/carapacemaster)
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-45
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+450
+	slowdown_general = 0.075
+	armor = list(
+		melee = ARMOR_MELEE_CARAPACE+1,
+		bullet = ARMOR_BALLISTIC_CARAPACE+1,
+		laser = ARMOR_LASER_CARAPACE+1,
+		energy = ARMOR_ENERGY_MINOR+10,
+		rad = ARMOR_RAD_MINOR+10,
+		bio = ARMOR_BIO_MINOR+5,
+		bomb = ARMOR_BOMB_MINOR+5
+	)
+
+
+/obj/item/clothing/suit/armor/grim/catachan
+	name = "catachan flak vest"
+	desc = "A light flak vest worn by Catachan Guardsmen, designed for mobility over protection."
+	icon_state = "Catachan_Vest"
+	item_state = "Catachan_Vest"
+	body_parts_covered = LEGS
+	accessories = list(/obj/item/clothing/accessory/armor_plate/carapace)
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-35
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+300
+	slowdown_general = 0
+	armor = list(
+		melee = ARMOR_MELEE_FLAK-1,
+		bullet = ARMOR_BALLISTIC_FLAK-1,
+		laser = ARMOR_LASER_FLAK-1,
+		energy = ARMOR_ENERGY_MINOR-2,
+		rad = ARMOR_RAD_MINOR,
+		bio = ARMOR_BIO_MINOR,
+		bomb = ARMOR_BOMB_MINOR
+	)
+
+/obj/item/clothing/suit/armor/grim/catachan/sergeant
+	name = "Catachan Sergeant's Flak Vest"
+	desc = "A decorated Catachan flak vest worn by sergeants, offering slightly better protection without compromising mobility."
+	body_parts_covered = LEGS
+	accessories = list(/obj/item/clothing/accessory/armor_plate/carapacemaster)
+
+/obj/item/clothing/suit/armor/grim/cadian/conscript
+	name = "cadian light flak armour"
+	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, It is so common that it became symbol of the Astra Militarum as a whole. This one is in it light configuration, issued to the Whiteshields."
+	icon_state = "fvest"
+	item_state = "fvest"
+	body_parts_covered = LEGS|ARMS
+	accessories = list(/obj/item/clothing/accessory/armor_plate/flak)
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-25
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+200
+	slowdown_general = 0.04
+	armor = list(
+		melee = ARMOR_MELEE_FLAK-1,
+		bullet = ARMOR_BALLISTIC_FLAK-2,
+		laser = ARMOR_LASER_FLAK-2,
+		energy = ARMOR_ENERGY_MINOR-1,
+		bio = ARMOR_BIO_MINOR,
+		rad = ARMOR_RAD_MINOR,
+		bomb = ARMOR_BOMB_MINOR
+	)
+
+/obj/item/clothing/suit/armor/grim/cadian/conscript/pdf
+	name = "PDF flak armour"
+	desc = "A non standard pattern of flak armour issued to planetary defense forces, this particular variant being inferior to guard issue kit."
+	icon_state = "PDF-T"
+	item_state = "PDF-T"
+
+/obj/item/clothing/suit/armor/grim/cadian/conscript/medic
+	name = "PDF medicae armour"
+	icon_state = "PDF-MedicT"
+	item_state = "PDF-MedicT"
+
+/obj/item/clothing/suit/armor/grim/cadian/conscript/spec
+	name = "PDF heavy armour"
+	icon_state = "PDF-SpecialT"
+	item_state = "PDF-SpecialT"
+	accessories = list(/obj/item/clothing/accessory/armor_plate/flakheavy)
+	slowdown_general = 0.06
+	armor = list(
+		melee = ARMOR_MELEE_FLAK-1,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK,
+		energy = ARMOR_ENERGY_MINOR,
+		bio = ARMOR_BIO_MINOR,
+		rad = ARMOR_RAD_MINOR,
+		bomb = ARMOR_BOMB_MINOR
+	)
+
+/obj/item/clothing/suit/armor/grim/commissar
+	name = "commissar's greatcoat"
+	desc = "The infamous greatcoat worn by an Imperial Commissar, reinforced with carapace-lamellar lining for additional protection."
+	icon_state = "commissar4"
+	item_state = "commissar4"
+	body_parts_covered = LEGS|ARMS
+	accessories = list(/obj/item/clothing/accessory/armor_plate/carapacemaster) // There's only a handful of commissar's to a regiment. They get the good stuff.
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-45
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+400
+	slowdown_general = 0.075 // Commissar's aren't fast.
+	armor = list(
+		melee = ARMOR_MELEE_CARAPACE+1,
+		bullet = ARMOR_BALLISTIC_CARAPACE+1,
+		laser = ARMOR_LASER_CARAPACE+1,
+		energy = ARMOR_ENERGY_MINOR+20,
+		bio = ARMOR_BIO_MINOR+25,
+		rad = ARMOR_RAD_MINOR+35,
+		bomb = ARMOR_BOMB_MINOR+15
+	)
+
+/obj/item/clothing/suit/armor/grim/commissar/krieg
+	name = "commissar's breastplate"
+	desc = "The Commissar's iconic coat, this out tailored to match more of the uniform theme of the Officers of Krieg. Though the Krieg Guardsmen don't fear you, the others certainly will."
+	icon_state = "Kriegissarplate"
+	item_state = "Kriegissarplate"
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-50
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+500
+	slowdown_general = 0.065
+	armor = list(
+		melee = ARMOR_MELEE_CARAPACE,
+		bullet = ARMOR_BALLISTIC_CARAPACE,
+		laser = ARMOR_LASER_CARAPACE,
+		energy = ARMOR_ENERGY_MINOR+15,
+		rad = ARMOR_RAD_MINOR+25,
+		bio = ARMOR_BIO_MINOR+15,
+		bomb = ARMOR_BOMB_MINOR+15
+	)
+
+
+/obj/item/clothing/suit/armor/grim/commissar/catachan
+	name = "commissar's trenchjacket"
+	desc = "What used to be a decorated and custom tailored coat of the Officio Prefectus is now crudely stripped of decoration and cut down to be lighter and more breathable for the jungles of Catachan, although, also padded to be more resistant to melee attacks. Though, wearing something like this out here is more of a power move."
+	icon_state = "catacommissar"
+	item_state = "catacommissar"
+
+/obj/item/clothing/suit/armor/grim/commissar/mordian
+	name = "commissar's dress formals"
+	desc = "A Mordian Commissar's formal uniform, tailored to specifically meet regulation standards. The wearer shall make guardsman follow orders to the letter."
+	icon_state = "MordianC"
+	item_state = "MordianC"
+
+
+/obj/item/clothing/suit/armor/stormtrooper
+	name = "stormtrooper's carapace armour"
+	desc = "The carapace armor worn by Inquisitorial Stormtroopers, designed for heavy frontline combat. Shows signs of extensive use."
+	icon_state = "i-Stormtrooper Armor"
+	item_state = "i-Stormtrooper Armor"
+	body_parts_covered = LEGS|ARMS|FULL_TORSO
+	slowdown_general = 0.10
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-50
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+500
+	armor = list(
+		melee = ARMOR_MELEE_CARAPACE-1, // No wasted weight on melee protection for Stormtroopers.
+		bullet = ARMOR_BALLISTIC_CARAPACE+1,
+		laser = ARMOR_LASER_CARAPACE+1,
+		energy = ARMOR_ENERGY_MINOR+15,
+		rad = ARMOR_RAD_MINOR+35,
+		bio = ARMOR_BIO_MINOR+25,
+		bomb = ARMOR_BOMB_PADDED+15
+		)
+
+/obj/item/clothing/suit/armor/grim/cadian/officer
+	name = "militarum officer's coat"
+	desc = "A formal coat worn by command staff of the Imperial Guard, reinforced with integrated carapace and armourplas plates. It has an insignia spear belonging to that of the general staff for the local Lord General Militant."
+	icon_state = "officertanjacket"
+	item_state = "officertanjacket"
+	accessories = list(/obj/item/clothing/accessory/armor_plate/carapace)
+	body_parts_covered = LEGS | ARMS
+	armor = list(
+		melee = ARMOR_MELEE_CARAPACE-1,
+		bullet = ARMOR_BALLISTIC_CARAPACE-1,
+		laser = ARMOR_LASER_CARAPACE-1,
+		energy = ARMOR_ENERGY_MINOR+5,
+		bomb = ARMOR_BOMB_MINOR+15,
+		rad = ARMOR_RAD_MINOR+10,
+		bio = ARMOR_BIO_MINOR+10
+	)
+	slowdown_general = 0.045
+
+// ORDOS / HERETIC
+/obj/item/clothing/suit/armor/grim/agent
+	name = "carapace coat"
+	desc = "A brilliantly made carapace coat for Inquisitorial Agents, adorned with holy seals and the Rosette to ward off Chaos corruption."
+	icon_state = "acolytecoat"
+	item_state = "acolytecoat"
+	body_parts_covered = LEGS | ARMS
+	accessories = list(/obj/item/clothing/accessory/armor_plate/carapaceheavy)
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE -40
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +400
+	slowdown_general = 0.06
+	armor = list(
+		melee = ARMOR_MELEE_CARAPACE + 1,
+		bullet = ARMOR_BALLISTIC_CARAPACE + 1,
+		laser = ARMOR_LASER_CARAPACE + 1,
+		energy = ARMOR_ENERGY_MINOR + 25,
+		bio = ARMOR_BIO_MINOR + 20,
+		rad = ARMOR_RAD_MINOR + 30,
+		bomb = ARMOR_BOMB_PADDED + 20
+	)
+
+/obj/item/clothing/suit/armor/grim/agent/inquisitor
+	name = "masterwork carapace coat"
+	desc = "The formidable, brilliantly made Carapace Armour for the Inquisitorial Agent, bearing the holy symbol of the Inquisition, the Rosette."
+	icon_state = "inqcoat"
+	item_state = "inqcoat"
+	body_parts_covered = LEGS | ARMS
+	accessories = list(/obj/item/clothing/accessory/armor_plate/carapacemaster)
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE -50
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +500
+	slowdown_general = 0.06
+	armor = list(
+		melee = ARMOR_MELEE_CARAPACE + 1,
+		bullet = ARMOR_BALLISTIC_CARAPACE + 2,
+		laser = ARMOR_LASER_CARAPACE + 2,
+		energy = ARMOR_ENERGY_MINOR + 35,
+		bio = ARMOR_BIO_MINOR + 30,
+		rad = ARMOR_RAD_MINOR + 40,
+		bomb = ARMOR_BOMB_PADDED + 30
+	)
+
+
+
+
 /obj/item/clothing/suit/armor/grim/bloodpact
-	name = "Sekite Armor"
+	name = "sekite armour"
 	desc = "War torn and suited to savage needs. This is the armor of a Sekite warrior. It has certainly seen blood flown upon it."
 	icon_state = "heretmil"
 	item_state = "heretmil"
 	body_parts_covered = LEGS|ARMS // Sekites scavenge and use any armor attachments they can.
 	accessories = list(/obj/item/clothing/accessory/armor_plate/carapace,/obj/item/clothing/accessory/leg_guards/reactiveslug)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-45
-	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+450
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-35
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+300
 	slowdown_general = 0.04
 	armor = list(
 		melee = ARMOR_MELEE_FLAK,
@@ -215,18 +552,17 @@
 		bomb = ARMOR_BOMB_MINOR
 	)
 
-
-
-//// ADMINISTRATUM
+//// MAGISTRATUM
 /obj/item/clothing/suit/armor/grim/bountyhunter
-	name = "bounty hunter's armor"
+	name = "bounty hunter's armour"
 	desc = "Worn by those who make a living tracking down Imperial fugitives or collecting bounties, this armor is built for mobility and resilience."
 	icon_state = "valhalla"
 	item_state = "valhalla"
 	body_parts_covered = LEGS|ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/flak)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-40
-	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+350
+	slowdown_general = 0.025
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-25
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+200
 	armor = list(
 		melee = ARMOR_MELEE_FLAK-1,
 		bullet = ARMOR_BALLISTIC_FLAK-1,
@@ -238,12 +574,12 @@
 		)
 
 /obj/item/clothing/suit/armor/enforcermarshal
-	name = "marshal's patrol armor"
+	name = "marshal's patrol armour"
 	desc = "The carapace armor worn by Magistratum Marshals, reinforced to provide superior protection against explosions and small arms fire. Lighter than standard carapace suits but still robust."
 	icon_state = "MarshalArmor"
 	item_state = "MarshalArmor"
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
-	slowdown_general = 0.12 // Hard armor sets get more slowdown for having equalized protection. They are fully superior to traditional armors with no weaknesses.
+	slowdown_general = 0.11 // Better slowdown then standard modular armors.
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-50
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+500
 	armor = list(
@@ -257,14 +593,14 @@
 		)
 
 /obj/item/clothing/suit/armor/enforcer2
-	name = "enforcer's patrol armor"
+	name = "enforcer's patrol armour"
 	desc = "The flak armor worn by a Magistratum Enforcer. Heavy and robust, its distinctive blue design provides superior protection against explosions and small arms fire in urban combat."
 	icon_state = "PalaniteArmor"
 	item_state = "PalaniteArmour"
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-40
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+400
-	slowdown_general = 0.10
+	slowdown_general = 0.09
 	armor = list(
 		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_FLAK+1,
@@ -284,7 +620,7 @@
 	accessories = list(/obj/item/clothing/accessory/armor_plate/flak)
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-30
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+300
-	slowdown_general = 0.04
+	slowdown_general = 0.035
 	armor = list(
 		melee = ARMOR_MELEE_FLAK-1,
 		bullet = ARMOR_BALLISTIC_FLAK-1,
@@ -301,10 +637,10 @@
 	icon_state = "enforcercoat"
 	item_state = "enforcercoat"
 	body_parts_covered = LEGS|ARMS
-	slowdown_general = 0.06
+	slowdown_general = 0.055
 	accessories = list(/obj/item/clothing/accessory/armor_plate/carapaceheavy) // Heavy cheaper plates. Marshals can't have two sets of masterwork.
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-35
-	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+350
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-40
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+400
 	armor = list(
 		melee = ARMOR_MELEE_CARAPACE-1,
 		bullet = ARMOR_BALLISTIC_CARAPACE-1,
@@ -321,10 +657,10 @@
 	icon_state = "towntrench_heavy"
 	item_state = "towntrench_heavy"
 	body_parts_covered = LEGS|ARMS
-	slowdown_general = 0.04 // Light due to missing parts of the armor.
+	slowdown_general = 0.035 // Light due to missing parts of the armor.
 	accessories = list(/obj/item/clothing/accessory/armor_plate/carapace)
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-35
-	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+350
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+300
 	armor = list(
 		melee = ARMOR_MELEE_CARAPACE-1,
 		bullet = ARMOR_BALLISTIC_CARAPACE-2,
@@ -336,12 +672,12 @@
 	)
 
 /obj/item/clothing/suit/armor/arbitrator
-	name = "arbitrator's carapace armor"
+	name = "arbitrator's carapace armour"
 	desc = "Worn by Magistratum Arbitrators, this carapace armor offers exceptional protection against explosives and small arms fire, balancing mobility with heavy-duty defense."
 	icon_state = "Judge"
 	item_state = "Judge"
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
-	slowdown_general = 0.11 // Hard armor sets get more slowdown for having equalized protection. They are fully superior to traditional armors with no weaknesses.
+	slowdown_general = 0.1 // Hard armor sets get more slowdown for having equalized protection. They are fully superior to traditional armors with no weaknesses.
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-50
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+500
 	armor = list(
@@ -385,7 +721,7 @@
 	item_flags = ITEM_FLAG_THICKMATERIAL | ITEM_FLAG_INVALID_FOR_CHAMELEON
 
 /obj/item/clothing/suit/armor/riot
-	name = "heavy ganger armor"
+	name = "heavy ganger armour"
 	desc = "An armored flak suit with heavy padding to protect against melee attacks."
 	icon_state = "riotcarrier"
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_ARMOR_ARMS, ACCESSORY_SLOT_ARMOR_LEGS)
@@ -400,7 +736,7 @@
 		bomb = ARMOR_BOMB_MINOR-6
 		)
 	flags_inv = CLOTHING_BULKY
-	slowdown_general = 0.11
+	slowdown_general = 0.06
 	siemens_coefficient = 0.5
 	accessories = list(/obj/item/clothing/accessory/arm_guards/flak,/obj/item/clothing/accessory/leg_guards/flak)
 
@@ -412,16 +748,16 @@
 	restricted_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_ARMOR_ARMS, ACCESSORY_SLOT_ARMOR_LEGS)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	armor = list(
-		melee = ARMOR_MELEE_FLAK-1,
+		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_FLAK+2,
-		laser = ARMOR_LASER_FLAK-2,
+		laser = ARMOR_LASER_FLAK-1,
 		energy = ARMOR_ENERGY_MINOR,
 		bio = ARMOR_BIO_MINOR-8,
 		rad = ARMOR_RAD_MINOR,
 		bomb = ARMOR_BOMB_PADDED
 		)
 	flags_inv = CLOTHING_BULKY
-	slowdown_general = 0.12
+	slowdown_general = 0.09
 	siemens_coefficient = 0.7
 
 /obj/item/clothing/suit/armor/bulletproof/vest //because apparently some map uses this somewhere and I'm too lazy to go looking for and replacing it.
@@ -437,14 +773,14 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	armor = list(
 		melee = ARMOR_MELEE_FLAK,
-		bullet = ARMOR_BALLISTIC_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK+1,
 		laser = ARMOR_LASER_FLAK+2,
 		bio = ARMOR_BIO_MINOR-8,
 		rad = ARMOR_RAD_MINOR,
 		energy = ARMOR_ENERGY_RESISTANT
 		)
 	flags_inv = CLOTHING_BULKY
-	slowdown_general = 0.13
+	slowdown_general = 0.1
 	siemens_coefficient = 0
 
 /obj/item/clothing/suit/armor/laserproof/handle_shield(mob/user, damage, atom/damage_source = null, mob/attacker = null, def_zone = null, attack_text = "the attack")

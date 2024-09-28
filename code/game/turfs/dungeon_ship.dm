@@ -210,7 +210,7 @@ NOTE: This dungeon is made to be unforgiving, brutal and merciless, but giving e
 
 
 /obj/item/clothing/suit/armor/leper
-	name = "leper armor"
+	name = "leper armour"
 	desc = "An ancient armor from millenia ago, it's state is very much pristine and looks like it was masterfully crafted."
 	icon_state = "leper"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
@@ -233,7 +233,7 @@ NOTE: This dungeon is made to be unforgiving, brutal and merciless, but giving e
 	sales_price = 0 // Only 1 in the map
 
 /obj/item/clothing/suit/armor/cerb
-	name = "cerberus armor"
+	name = "cerberus armour"
 	desc = "A questionable armor of unknown origin, it does seem familiar though.."
 	icon_state = "TrustworthyCerberus"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS

@@ -21,7 +21,7 @@
 
 //Captain's space suit This is not the proper path but I don't currently know enough about how this all works to mess with it.
 /obj/item/clothing/suit/armor/captain
-	name = "Captain's armor"
+	name = "Captain's armour"
 	desc = "A bulky, heavy-duty piece of exclusive imperial armor. YOU are in charge!"
 	icon_state = "caparmor"
 	item_state_slots = list(
