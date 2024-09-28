@@ -402,7 +402,7 @@
 	flags_inv = CLOTHING_BULKY
 	slowdown_general = 0.11
 	siemens_coefficient = 0.5
-	accessories = list(/obj/item/clothing/accessory/arm_guards/flak,obj/item/clothing/accessory/leg_guards/flak)
+	accessories = list(/obj/item/clothing/accessory/arm_guards/flak,/obj/item/clothing/accessory/leg_guards/flak)
 
 /obj/item/clothing/suit/armor/bulletproof
 	name = "reactive armor suit"
