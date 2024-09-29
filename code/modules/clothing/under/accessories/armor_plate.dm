@@ -215,6 +215,27 @@
 		bomb = ARMOR_BOMB_MINOR-2
 		)
 
+/obj/item/clothing/accessory/armor_plate/mechplate
+	name = "hazard plating"
+	desc = "A special tech hazard plating used primarily by mechanicus tech priests -- it's been ripped out..."
+	icon = 'icons/obj/clothing/obj_suit.dmi'
+	icon_state = "helmcover_green"
+	item_flags = ITEM_FLAG_THICKMATERIAL
+	color = COLOR_BEASTY_BROWN
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-70
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+700
+	slowdown = 0.08
+	armor = list(
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_CARAPACE,
+		laser = ARMOR_LASER_CARAPACE,
+		energy = ARMOR_ENERGY_MINOR+20,
+		rad = ARMOR_RAD_RESISTANT+48,
+		bio = ARMOR_BIO_RESISTANT+48,
+		bomb = ARMOR_BOMB_MINOR+10
+		)
+
 /obj/item/clothing/accessory/armor_plate/bodyglovebio
 	name = "biohazard bodyglove" // DO NOT EVER ATTACH TO ARMOR. BODYGLOVES ARE NOT ARMOR ACCESORIES. THEY ARE UNIFORM ATTACHMENTS
 	desc = "Composed of layered polymer fibers, attached to a uniform, this chemical bodyglove offers lightweight and flexible protection, suitable for menial mechanicus duties and light exploration."

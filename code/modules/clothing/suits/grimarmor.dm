@@ -123,7 +123,7 @@
 	)
 
 /obj/item/clothing/suit/armor/grim/cadian/sergeant
-	name = "cadian sergeant's carapace armour"
+	name = "cadian carapace armour"
 	desc = "The reinforced carapace armor worn by Cadian Sergeants, offering enhanced protection with carapace inserts."
 	icon_state = "fharmor"
 	item_state = "fharmor"
@@ -143,11 +143,12 @@
 	)
 
 /obj/item/clothing/suit/armor/grim/cadian/carapace
-	name = "cadian pattern carapace armour"
+	name = "cadian carapace armour"
 	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, reinforced with carapace plates for enhanced protection in combat zones."
 	icon_state = "fharmor"
 	item_state = "fharmor"
 	body_parts_covered = LEGS|ARMS
+	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
 	accessories = list(/obj/item/clothing/accessory/armor_plate/carapaceheavy)
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-45
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+400
@@ -163,7 +164,7 @@
 	)
 
 /obj/item/clothing/suit/armor/grim/krieger
-	name = "krieg overcoat"
+	name = "krieg flak overcoat"
 	desc = "A reinforced Krieg flak overcoat, resistant to environmental hazards like radiation and biohazards, with decent ballistic and thermal protection."
 	icon_state = "kriegcoat"
 	item_state = "kriegcoat"
@@ -209,6 +210,7 @@
 	icon_state = "grencoat"
 	item_state = "grencoat"
 	body_parts_covered = LEGS|ARMS
+	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
 	accessories = list(/obj/item/clothing/accessory/armor_plate/carapaceheavy)
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-50
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+500
@@ -244,7 +246,7 @@
 		)
 
 /obj/item/clothing/suit/armor/grim/valhallan
-	name = "valhallan overcoat"
+	name = "valhallan flak overcoat"
 	desc = "A thermal flak overcoat designed for Valhallan Ice Warriors, providing standard protection against energy projectiles and blunt force."
 	icon_state = "valarmor"
 	item_state = "valarmor"
@@ -270,8 +272,9 @@
 	item_state = "mvalarmor"
 
 /obj/item/clothing/suit/armor/grim/valhallan/sergeant
-	name = "valhalan sergeant's overcoat"
+	name = "valhalan carapace overcoat"
 	desc = "A Valhallan overcoat with additional markings and improved protection, worn by Sergeants."
+	accessories = list(/obj/item/clothing/accessory/armor_plate/carapace)
 	body_parts_covered = LEGS | ARMS
 	slowdown_general = 0.06
 	armor = list(
@@ -284,13 +287,13 @@
 		bomb = ARMOR_BOMB_MINOR+5
 	)
 
-
 /obj/item/clothing/suit/armor/grim/maccabian
 	name = "maccabian carapace armor"
 	desc = "The standard carapace armor worn by Maccabian Jannisaries, designed for resilience in the field."
 	icon_state = "M_Armor-Icon"
 	item_state = "M_Armor-Icon"
 	body_parts_covered = LEGS|ARMS
+	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
 	accessories = list(/obj/item/clothing/accessory/armor_plate/carapace)
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-45
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+400
@@ -306,11 +309,12 @@
 	)
 
 /obj/item/clothing/suit/armor/grim/maccabian/sergeant
-	name = "maccabian sergeant's armor"
+	name = "maccabian carapace armor"
 	desc = "The flak armor worn by Maccabian Sergeants, reinforced with carapace plates for enhanced protection."
 	icon_state = "M_SArmor-Icon"
 	item_state = "M_SArmor-Icon"
 	body_parts_covered = LEGS|ARMS
+	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
 	accessories = list(/obj/item/clothing/accessory/armor_plate/carapacemaster)
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-45
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+450
@@ -324,7 +328,6 @@
 		bio = ARMOR_BIO_MINOR+5,
 		bomb = ARMOR_BOMB_MINOR+5
 	)
-
 
 /obj/item/clothing/suit/armor/grim/catachan
 	name = "catachan flak vest"
@@ -347,7 +350,7 @@
 	)
 
 /obj/item/clothing/suit/armor/grim/catachan/sergeant
-	name = "Catachan Sergeant's Flak Vest"
+	name = "catachan flak vest"
 	desc = "A decorated Catachan flak vest worn by sergeants, offering slightly better protection without compromising mobility."
 	body_parts_covered = LEGS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/carapacemaster)
@@ -437,7 +440,6 @@
 		bomb = ARMOR_BOMB_MINOR+15
 	)
 
-
 /obj/item/clothing/suit/armor/grim/commissar/catachan
 	name = "commissar's trenchjacket"
 	desc = "What used to be a decorated and custom tailored coat of the Officio Prefectus is now crudely stripped of decoration and cut down to be lighter and more breathable for the jungles of Catachan, although, also padded to be more resistant to melee attacks. Though, wearing something like this out here is more of a power move."
@@ -450,12 +452,12 @@
 	icon_state = "MordianC"
 	item_state = "MordianC"
 
-
 /obj/item/clothing/suit/armor/stormtrooper
 	name = "stormtrooper's carapace armour"
 	desc = "The carapace armor worn by Inquisitorial Stormtroopers, designed for heavy frontline combat. Shows signs of extensive use."
 	icon_state = "i-Stormtrooper Armor"
 	item_state = "i-Stormtrooper Armor"
+	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	slowdown_general = 0.10
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-50
@@ -496,7 +498,8 @@
 	item_state = "acolytecoat"
 	body_parts_covered = LEGS | ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/carapaceheavy)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE -40
+	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE -45
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +400
 	slowdown_general = 0.06
 	armor = list(
@@ -504,8 +507,8 @@
 		bullet = ARMOR_BALLISTIC_CARAPACE + 1,
 		laser = ARMOR_LASER_CARAPACE + 1,
 		energy = ARMOR_ENERGY_MINOR + 25,
-		bio = ARMOR_BIO_MINOR + 20,
-		rad = ARMOR_RAD_MINOR + 30,
+		bio = ARMOR_BIO_MINOR + 30,
+		rad = ARMOR_RAD_MINOR + 40,
 		bomb = ARMOR_BOMB_PADDED + 20
 	)
 
@@ -515,22 +518,61 @@
 	icon_state = "inqcoat"
 	item_state = "inqcoat"
 	body_parts_covered = LEGS | ARMS
+	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
 	accessories = list(/obj/item/clothing/accessory/armor_plate/carapacemaster)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE -50
-	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +500
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE -60
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +600
 	slowdown_general = 0.06
 	armor = list(
 		melee = ARMOR_MELEE_CARAPACE + 1,
 		bullet = ARMOR_BALLISTIC_CARAPACE + 2,
 		laser = ARMOR_LASER_CARAPACE + 2,
 		energy = ARMOR_ENERGY_MINOR + 35,
-		bio = ARMOR_BIO_MINOR + 30,
-		rad = ARMOR_RAD_MINOR + 40,
+		bio = ARMOR_BIO_MINOR + 40,
+		rad = ARMOR_RAD_MINOR + 50,
 		bomb = ARMOR_BOMB_PADDED + 30
 	)
 
+/obj/item/clothing/suit/armor/grim/agent/hereticus
+	name = "masterwork carapace coat"
+	desc = "The Inquisitor's holy coat, forged from a Tech-priest of Mars for his use in his path of holy fire toward enemies of our Emperor, Hanging from the coat a Inquisitorial Rosette, It shines brightly as if it is the Emperor himself is present, For he'll cleanse the darkness."
+	icon_state = "hereticuscoat"
+	item_state = "hereticuscoat"
+	body_parts_covered = LEGS | ARMS
+	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
+	accessories = list(/obj/item/clothing/accessory/armor_plate/carapacemaster)
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE -60
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +600
+	slowdown_general = 0.06
+	armor = list(
+		melee = ARMOR_MELEE_CARAPACE + 1,
+		bullet = ARMOR_BALLISTIC_CARAPACE + 2,
+		laser = ARMOR_LASER_CARAPACE + 2,
+		energy = ARMOR_ENERGY_MINOR + 35,
+		bio = ARMOR_BIO_MINOR + 40,
+		rad = ARMOR_RAD_MINOR + 50,
+		bomb = ARMOR_BOMB_PADDED + 30
+	)
 
-
+/obj/item/clothing/suit/armor/inqparmor
+	name = "relic power armour"
+	desc = "This ancient and sacred power armour was forged by the tech-priests of Mars, sanctified for the Inquisitor's righteous crusade against the enemies of the Emperor. Bearing the engraved Inquisitorial Rosette, its gleaming surface radiates with the Emperor's divine light, as if his presence guides the wearer to purge the darkness."
+	icon_state = "inqarmor"
+	item_state = "inqarmor"
+	body_parts_covered = LEGS|ARMS|FULL_TORSO
+	max_pressure_protection = RIG_MAX_PRESSURE
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE -100
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +1000
+	slowdown_general = 0.12 // Tiny bit slow. Design wise power armor is more rare then a lemun russ tank, it has no downsides. It simply is superior to all other armor.
+	armor = list(
+		melee = ARMOR_MELEE_POWER_ARM,
+		bullet = ARMOR_BALLISTIC_POWER_ARMOUR,
+		laser = ARMOR_LASER_POWER_ARMOUR,
+		energy = ARMOR_ENERGY_MINOR + 55,
+		bio = ARMOR_BIO_MINOR + 84,
+		rad = ARMOR_RAD_MINOR + 86,
+		bomb = ARMOR_BOMB_PADDED + 45
+	)
 
 /obj/item/clothing/suit/armor/grim/bloodpact
 	name = "sekite armour"
@@ -538,6 +580,7 @@
 	icon_state = "heretmil"
 	item_state = "heretmil"
 	body_parts_covered = LEGS|ARMS // Sekites scavenge and use any armor attachments they can.
+	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
 	accessories = list(/obj/item/clothing/accessory/armor_plate/carapace,/obj/item/clothing/accessory/leg_guards/reactiveslug)
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-35
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+300
@@ -551,6 +594,225 @@
 		rad = ARMOR_RAD_MINOR,
 		bomb = ARMOR_BOMB_MINOR
 	)
+
+// ADEPTA SORORITAS
+/obj/item/clothing/suit/armor/sister/sacredrosepower
+	name = "sacred rose power armour"
+	desc = "The Sacred and holy Power Armour adorned by Battle Sister of the Order Of The Sacred Rose, It's illuminate the field with it glorious light, Being near it make you feels safer and secured."
+	icon_state = "sister"
+	item_state = "sister"
+	flags_inv = HIDEJUMPSUIT
+	body_parts_covered = LEGS|ARMS|FULL_TORSO
+	max_pressure_protection = RIG_MAX_PRESSURE
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE -100
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +1000
+	slowdown_general = 0.11 // Slightly faster then inqisitorial, these relics are icons to the sisters and treated as extensions of the emperor.
+	armor = list(
+		melee = ARMOR_MELEE_POWER_ARM,
+		bullet = ARMOR_BALLISTIC_POWER_ARMOUR,
+		laser = ARMOR_LASER_POWER_ARMOUR,
+		energy = ARMOR_ENERGY_MINOR + 55,
+		bio = ARMOR_BIO_MINOR + 84,
+		rad = ARMOR_RAD_MINOR + 86,
+		bomb = ARMOR_BOMB_PADDED + 45
+	)
+
+/obj/item/clothing/suit/armor/sister/repentia
+	name = "repentia carapace armour"
+	desc = "The tattered garb of a penitent sister of battle. The minimal carapace of armor is a symbol of their faith on the Repentia's deathmarch towards a glorious end."
+	icon_state = "repentia_chest"
+	item_state = "repentia_chest"
+	flags_inv = HIDEJUMPSUIT
+	body_parts_covered = LEGS|ARMS|FULL_TORSO
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE -25 // The temp resistance is more the sisters faith then anything.
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +250
+	slowdown_general = 0.07
+	armor = list(
+		melee = ARMOR_MELEE_CARAPACE-1,
+		bullet = ARMOR_BALLISTIC_CARAPACE-1,
+		laser = ARMOR_LASER_CARAPACE-1,
+		energy = ARMOR_ENERGY_MINOR + 15,
+		bio = ARMOR_BIO_MINOR + 14,
+		rad = ARMOR_RAD_MINOR + 16,
+		bomb = ARMOR_BOMB_MINOR +15
+	)
+
+/obj/item/clothing/suit/armor/sister/martyredpower
+	name = "ourt martyred lady power armour"
+	desc = "The Sacred and holy Power Armour adorned by Battle Sister of the Order Of Our Martyred Lady. Being near it make you feels safer and secured."
+	icon_state = "mlsister"
+	item_state = "mlsister"
+	flags_inv = HIDEJUMPSUIT
+	body_parts_covered = LEGS|ARMS|FULL_TORSO
+	max_pressure_protection = RIG_MAX_PRESSURE
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE -100
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +1000
+	slowdown_general = 0.11
+	armor = list(
+		melee = ARMOR_MELEE_POWER_ARM,
+		bullet = ARMOR_BALLISTIC_POWER_ARMOUR,
+		laser = ARMOR_LASER_POWER_ARMOUR,
+		energy = ARMOR_ENERGY_MINOR + 55,
+		bio = ARMOR_BIO_MINOR + 84,
+		rad = ARMOR_RAD_MINOR + 86,
+		bomb = ARMOR_BOMB_PADDED + 45
+	)
+
+/obj/item/clothing/suit/armor/sister/bloodyrosepower
+	name = "bloody rose power armour"
+	desc = "The blood red power armor of The Order of the Bloody Rose."
+	icon_state = "brsister"
+	item_state = "brsister"
+	flags_inv = HIDEJUMPSUIT
+	body_parts_covered = LEGS|ARMS|FULL_TORSO
+	max_pressure_protection = RIG_MAX_PRESSURE
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE -100
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +1000
+	slowdown_general = 0.11
+	armor = list(
+		melee = ARMOR_MELEE_POWER_ARM,
+		bullet = ARMOR_BALLISTIC_POWER_ARMOUR,
+		laser = ARMOR_LASER_POWER_ARMOUR,
+		energy = ARMOR_ENERGY_MINOR + 55,
+		bio = ARMOR_BIO_MINOR + 84,
+		rad = ARMOR_RAD_MINOR + 86,
+		bomb = ARMOR_BOMB_PADDED + 45
+	)
+
+/obj/item/clothing/suit/armor/sister/novitae
+	name = "novitae ceramite armor"
+	desc = "The Ancient and Deconsecrated Ceramite Armour adorned by Novice Militants during their training in Messina' Monastarium. Stripped of almost all iconography and with damaged plating. It has scriptures across it's surface, recounting the triumph and martyrdom of countless saints."
+	icon_state = "ooml"
+	item_state = "ooml"
+	flags_inv = HIDEJUMPSUIT
+	body_parts_covered = LEGS|ARMS|FULL_TORSO
+	max_pressure_protection = VOIDSUIT_MAX_PRESSURE
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE -50
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +500
+	slowdown_general = 0.11 // Same speed as sister but trash stats compared.
+	armor = list(
+		melee = ARMOR_MELEE_POWER_ARM-1,
+		bullet = ARMOR_BALLISTIC_POWER_ARMOUR-2, // 1 point above carapace
+		laser = ARMOR_LASER_POWER_ARMOUR-2,
+		energy = ARMOR_ENERGY_MINOR + 35,
+		bio = ARMOR_BIO_MINOR + 64,
+		rad = ARMOR_RAD_MINOR + 66,
+		bomb = ARMOR_BOMB_PADDED + 15
+	)
+
+// MECHANICUS
+/obj/item/clothing/suit/armor/grim/storage/hooded/magos
+	name = "Magos Biologis robes"
+	desc = "Green robes riddled with augments, scanners and syringes. The robes look incredibly old and worn, you can tell this magos has lived a long and scholarly life."
+	icon_state = "genetor"
+	item_state = "genetor"
+	canremove = 0
+	unacidable = 1
+	body_parts_covered = LEGS | ARMS
+	accessories = list(/obj/item/clothing/accessory/armor_plate/mechplate)
+	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE -70
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +700
+	slowdown_general = 0.08
+	armor = list(
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_CARAPACE-2,
+		laser = ARMOR_LASER_CARAPACE-1,
+		energy = ARMOR_ENERGY_MINOR+20,
+		rad = ARMOR_RAD_RESISTANT+48,
+		bio = ARMOR_BIO_RESISTANT+48,
+		bomb = ARMOR_BOMB_MINOR+10
+		)
+	action_button_name = "Toggle Hood"
+	hoodtype = /obj/item/clothing/head/hoodiehood
+
+
+/obj/item/clothing/suit/armor/grim/storage/hooded/skitarii
+	name = "skitarii exoskeleton"
+	desc = "Tailored and reinforced by the Adeptus Mechanicus, these sturdy and protective robes are being issued to Skitarii warriors."
+	icon_state = "skitsuit"
+	item_state = "skitsuit"
+	canremove = 0
+	unacidable = 1
+	body_parts_covered = LEGS | ARMS
+	accessories = list(/obj/item/clothing/accessory/armor_plate/carapace)
+	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE -65
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +600
+	slowdown_general = 0.07 // Skitarii get superior armor stats to tech priests and slowdown since they're engineered to be combat units. Tech priests aren't designed for that.
+	armor = list(
+		melee = ARMOR_MELEE_CARAPACE,
+		bullet = ARMOR_BALLISTIC_CARAPACE,
+		laser = ARMOR_LASER_CARAPACE,
+		energy = ARMOR_ENERGY_MINOR+20,
+		rad = ARMOR_RAD_RESISTANT+48,
+		bio = ARMOR_BIO_RESISTANT+48,
+		bomb = ARMOR_BOMB_MINOR+10
+		)
+	action_button_name = "Toggle Hood"
+	hoodtype = /obj/item/clothing/head/hoodiehood
+
+/obj/item/clothing/suit/armor/grim/storage/hooded/stalker
+	name = "ruststalker exoskeleton"
+	desc = "Tailored and reinforced by the Adeptus Mechanicus, this strange armour is issued to Skitarii Ruststalkers. It shimmers oddly in the light, and seems to have storage pouches for skulls."
+	icon_state = "skitsuit"
+	item_state = "skitsuit"
+	canremove = 0
+	unacidable = 1
+	body_parts_covered = LEGS | ARMS
+	accessories = list(/obj/item/clothing/accessory/armor_plate/carapace)
+	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE -65
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +600
+	slowdown_general = 0.055
+	armor = list(
+		melee = ARMOR_MELEE_CARAPACE,
+		bullet = ARMOR_BALLISTIC_CARAPACE-1,
+		laser = ARMOR_LASER_CARAPACE-1,
+		energy = ARMOR_ENERGY_MINOR+10,
+		rad = ARMOR_RAD_RESISTANT+48,
+		bio = ARMOR_BIO_RESISTANT+48,
+		bomb = ARMOR_BOMB_MINOR+5
+		)
+	action_button_name = "Toggle Hood"
+	hoodtype = /obj/item/clothing/head/hoodiehood
+
+/obj/item/clothing/suit/armor/grim/storage/hooded/vanguard
+	name = "vanguard exoskeleton"
+	desc = "Tailored and reinforced by the Adeptus Mechanicus, these heavy ceramite plates offer near-complete protection from attack."
+	icon_state = "rig-hazardhardsuit"
+	item_state = "rig-hazardhardsuit"
+	canremove = 0
+	unacidable = 1
+	body_parts_covered = LEGS | ARMS
+	accessories = list(/obj/item/clothing/accessory/armor_plate/carapaceheavy)
+	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE -95
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +900
+	slowdown_general = 0.08
+	armor = list(
+		melee = ARMOR_MELEE_CARAPACE,
+		bullet = ARMOR_BALLISTIC_CARAPACE+1,
+		laser = ARMOR_LASER_CARAPACE+1,
+		energy = ARMOR_ENERGY_MINOR+20,
+		rad = ARMOR_RAD_RESISTANT+48,
+		bio = ARMOR_BIO_RESISTANT+48,
+		bomb = ARMOR_BOMB_MINOR+10
+		)
+	action_button_name = "Toggle Hood"
+	hoodtype = /obj/item/clothing/head/hoodiehood
+
+/*
+
+/obj/item/clothing/suit/storage/hooded/genestealer
+	name = "tyranid chitin"
+	desc = "The hide of a Tyranid Genestealer"
+	armor = list(melee = 10, bullet = 30, laser = 30, energy = 20, bomb = 30, bio = 100, rad = 100)
+	icon_state = "gsfeet"
+	item_state = "gsfeet"
+	canremove = 0
+	unacidable = 1
+	species_restricted = list(SPECIES_TYRANID) */
 
 //// MAGISTRATUM
 /obj/item/clothing/suit/armor/grim/bountyhunter
@@ -579,6 +841,7 @@
 	icon_state = "MarshalArmor"
 	item_state = "MarshalArmor"
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
+	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
 	slowdown_general = 0.11 // Better slowdown then standard modular armors.
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-50
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+500
@@ -598,6 +861,7 @@
 	icon_state = "PalaniteArmor"
 	item_state = "PalaniteArmour"
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
+	max_pressure_protection = VOIDSUIT_MAX_PRESSURE
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-40
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+400
 	slowdown_general = 0.09
@@ -677,6 +941,7 @@
 	icon_state = "Judge"
 	item_state = "Judge"
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
+	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
 	slowdown_general = 0.1 // Hard armor sets get more slowdown for having equalized protection. They are fully superior to traditional armors with no weaknesses.
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-50
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+500
