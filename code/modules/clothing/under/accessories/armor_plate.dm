@@ -14,8 +14,8 @@
 		bullet = ARMOR_BALLISTIC_FLAK-2,
 		laser = ARMOR_LASER_FLAK-2,
 		energy = ARMOR_ENERGY_MINOR-2,
-		bio = ARMOR_BIO_MINOR-2,
-		rad = ARMOR_RAD_MINOR,
+		bio = ARMOR_BIO_MINOR,
+		rad = ARMOR_RAD_MINOR+5,
 		bomb = ARMOR_BOMB_MINOR-2
 		)
 	slot = ACCESSORY_SLOT_ARMOR_CHEST
@@ -33,8 +33,8 @@
 		bullet = ARMOR_BALLISTIC_FLAK+1,
 		laser = ARMOR_LASER_FLAK+1,
 		energy = ARMOR_ENERGY_MINOR+1,
-		bio = ARMOR_BIO_MINOR+5,
-		rad = ARMOR_RAD_MINOR+10,
+		bio = ARMOR_BIO_MINOR+10,
+		rad = ARMOR_RAD_MINOR+20,
 		bomb = ARMOR_BOMB_MINOR+2
 		)
 	slowdown = 0.06
@@ -51,8 +51,8 @@
 		bullet = ARMOR_BALLISTIC_FLAK+2,
 		laser = ARMOR_LASER_FLAK+2,
 		energy = ARMOR_ENERGY_MINOR+2,
-		bio = ARMOR_BIO_MINOR+8,
-		rad = ARMOR_RAD_MINOR+15,
+		bio = ARMOR_BIO_MINOR+20,
+		rad = ARMOR_RAD_MINOR+30,
 		bomb = ARMOR_BOMB_MINOR+8
 		)
 	slowdown = 0.08
@@ -69,8 +69,8 @@
 		bullet = ARMOR_BALLISTIC_FLAK-1,
 		laser = ARMOR_LASER_FLAK-1,
 		energy = ARMOR_ENERGY_MINOR-1,
-		bio = ARMOR_BIO_MINOR,
-		rad = ARMOR_RAD_MINOR+5,
+		bio = ARMOR_BIO_MINOR+10,
+		rad = ARMOR_RAD_MINOR+20,
 		bomb = ARMOR_BOMB_MINOR-2
 	)
 	slowdown = 0.04 // Lighter weight, allows for better mobility
@@ -88,8 +88,8 @@
 		bullet = ARMOR_BALLISTIC_CARAPACE+1,
 		laser = ARMOR_LASER_CARAPACE+1,
 		energy = ARMOR_ENERGY_MINOR+10,
-		rad = ARMOR_RAD_MINOR+10,
-		bio = ARMOR_BIO_MINOR,
+		rad = ARMOR_RAD_MINOR+30,
+		bio = ARMOR_BIO_MINOR+20,
 		bomb = ARMOR_BOMB_PADDED-5
 		)
 
@@ -107,8 +107,8 @@
 		bullet = ARMOR_BALLISTIC_CARAPACE+2,
 		laser = ARMOR_LASER_CARAPACE+2,
 		energy = ARMOR_ENERGY_MINOR+12,
-		rad = ARMOR_RAD_MINOR+25,
-		bio = ARMOR_BIO_MINOR+15,
+		rad = ARMOR_RAD_MINOR+45,
+		bio = ARMOR_BIO_MINOR+35,
 		bomb = ARMOR_BOMB_PADDED+5
 		)
 
@@ -126,8 +126,8 @@
 		bullet = ARMOR_BALLISTIC_CARAPACE+2,
 		laser = ARMOR_LASER_CARAPACE+2,
 		energy = ARMOR_ENERGY_MINOR+12,
-		rad = ARMOR_RAD_MINOR+20,
-		bio = ARMOR_BIO_MINOR+10,
+		rad = ARMOR_RAD_MINOR+40,
+		bio = ARMOR_BIO_MINOR+20,
 		bomb = ARMOR_BOMB_PADDED
 		)
 	slowdown = 0.09
@@ -210,13 +210,34 @@
 		bullet = ARMOR_BALLISTIC_PRIMAL+1,
 		laser = ARMOR_LASER_PRIMAL+1,
 		energy = ARMOR_ENERGY_MINOR+4,
-		rad = ARMOR_RAD_RESISTANT+35,
-		bio = ARMOR_BIO_RESISTANT+35,
+		rad = ARMOR_RAD_RESISTANT+45,
+		bio = ARMOR_BIO_RESISTANT+45,
 		bomb = ARMOR_BOMB_MINOR-2
 		)
 
+/obj/item/clothing/accessory/armor_plate/mechplate
+	name = "hazard plating"
+	desc = "A special tech hazard plating used primarily by mechanicus tech priests -- it's been ripped out..."
+	icon = 'icons/obj/clothing/obj_suit.dmi'
+	icon_state = "helmcover_green"
+	item_flags = ITEM_FLAG_THICKMATERIAL
+	color = COLOR_BEASTY_BROWN
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-70
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+700
+	slowdown = 0.08
+	armor = list(
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_CARAPACE,
+		laser = ARMOR_LASER_CARAPACE,
+		energy = ARMOR_ENERGY_MINOR+20,
+		rad = ARMOR_RAD_RESISTANT+48,
+		bio = ARMOR_BIO_RESISTANT+48,
+		bomb = ARMOR_BOMB_MINOR+10
+		)
+
 /obj/item/clothing/accessory/armor_plate/bodyglovebio
-	name = "biohazard bodyglove"
+	name = "biohazard bodyglove" // DO NOT EVER ATTACH TO ARMOR. BODYGLOVES ARE NOT ARMOR ACCESORIES. THEY ARE UNIFORM ATTACHMENTS
 	desc = "Composed of layered polymer fibers, attached to a uniform, this chemical bodyglove offers lightweight and flexible protection, suitable for menial mechanicus duties and light exploration."
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	siemens_coefficient = 0.1
@@ -232,8 +253,8 @@
 	slot = ACCESSORY_SLOT_UTILITY // Worn alongside a carrier plate.
 	w_class = ITEM_SIZE_NORMAL
 	blood_overlay_type = "armor" // Bodygloves use base armor_plate temp protection.
-	icon_state = "jensen_s"
-	item_state = "jensen_s"
+	icon_state = "robotics"
+	item_state = "robotics_s"
 	slowdown = 0.03
 	flags_inv = null
 	armor = list(
@@ -263,8 +284,8 @@
 	slot = ACCESSORY_SLOT_UTILITY // Worn alongside a carrier plate.
 	w_class = ITEM_SIZE_NORMAL
 	blood_overlay_type = "armor"
-	icon_state = "jensen_s"
-	item_state = "jensen_s"
+	icon_state = "robotics"
+	item_state = "robotics_s"
 	slowdown = 0.04
 	flags_inv = null
 	armor = list(
@@ -336,7 +357,7 @@
 		)
 
 /obj/item/clothing/accessory/armor_plate/bodyglovecatachan
-	name = "catachan under armor"
+	name = "catachan under armour"
 	desc = "Made from tech polymers, attached to a uniform, this death world variant balances energy protection with advanced bio defense systems, though it is vulnerable to primitive firearms and melee attacks, it's users rarely have to worry about losing when it comes to glorious melee."
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS // SLEEVES ARE BULLSHIT
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-40

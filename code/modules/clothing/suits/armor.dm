@@ -46,7 +46,7 @@
 		)
 
 /obj/item/clothing/suit/armor/vest/old/security
-	name = "militarum armor"
+	name = "militarum armour"
 	desc = "An armored vest that protects against some damage. This one has a imperial badge."
 	icon_state = "armorsec"
 
@@ -95,7 +95,7 @@
 //Reactive armor
 //When the wearer gets hit, this armor will teleport the user a short distance away (to safety or to more danger, no one knows. That's the fun of it!)
 /obj/item/clothing/suit/armor/reactive
-	name = "reactive teleport armor"
+	name = "reactive teleport armour"
 	desc = "Someone separated our Chief Science Officer from their own head!"
 	active = 0.0
 	icon_state = "reactiveoff"
@@ -148,7 +148,7 @@
 //Non-hardsuit ERT armor.
 //Commander
 /obj/item/clothing/suit/armor/vest/ert
-	name = "asset protection command armor"
+	name = "asset protection command armour"
 	desc = "A set of armor worn by many imperial and private asset protection forces. Has blue highlights."
 	icon_state = "ertarmor_cmd"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
@@ -162,19 +162,19 @@
 
 //Security
 /obj/item/clothing/suit/armor/vest/ert/security
-	name = "asset protection militarum armor"
+	name = "asset protection militarum armour"
 	desc = "A set of armor worn by many imperial and private asset protection forces. Has red highlights."
 	icon_state = "ertarmor_sec"
 
 //Engineer
 /obj/item/clothing/suit/armor/vest/ert/engineer
-	name = "asset protection engineering armor"
+	name = "asset protection engineering armour"
 	desc = "A set of armor worn by many imperial and private asset protection forces. Has orange highlights."
 	icon_state = "ertarmor_eng"
 
 //Medical
 /obj/item/clothing/suit/armor/vest/ert/medical
-	name = "asset protection medical armor"
+	name = "asset protection medical armour"
 	desc = "A set of armor worn by many imperial and private asset protection forces. Has red and white highlights."
 	icon_state = "ertarmor_med"
 
@@ -261,7 +261,7 @@
 	icon_state = "tacwebvest"
 
 /obj/item/clothing/suit/armor/grim/storage/vest/merc
-	name = "heavy combat armor"
+	name = "heavy combat armour"
 	desc = "A high-quality armored vest made from a hard synthetic material. It is surprisingly flexible and light, despite formidable armor plating."
 	icon_state = "mercwebvest"
 	armor = list(
@@ -278,7 +278,7 @@
 	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS
 
 /obj/item/clothing/suit/armor/makeshift
-	name = "makeshift armor"
+	name = "makeshift armour"
 	desc = "A pair of sheets held together by rods and wires, meant to cover your upper body and back."
 	icon_state = "makeshift-armor"
 	blood_overlay_type = "armor"
@@ -300,7 +300,7 @@
 
 
 /obj/item/clothing/suit/armor/centcomm
-	name = "\improper Cent. Com. armor"
+	name = "\improper Cent. Com. armour"
 	desc = "A suit that protects against some damage."
 	icon_state = "centcom"
 	w_class = ITEM_SIZE_HUGE//bulky item
@@ -319,7 +319,7 @@
 	siemens_coefficient = 0
 
 /obj/item/clothing/suit/armor/heavy
-	name = "heavy armor"
+	name = "heavy armour"
 	desc = "A heavily armored suit that protects against moderate damage."
 	icon_state = "heavy"
 	w_class = ITEM_SIZE_HUGE//bulky item

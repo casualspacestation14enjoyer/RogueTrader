@@ -1,5 +1,5 @@
 /obj/item/organ/internal/augment/armor
-	name = "subdermal armor"
+	name = "subdermal armour"
 	augment_slots = AUGMENT_ARMOR
 	icon_state = "armor-chest"
 	desc = "A flexible composite mesh designed to prevent tearing and puncturing of underlying tissue."
