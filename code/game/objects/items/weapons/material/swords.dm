@@ -29,7 +29,7 @@
 	desc = "A large, unwieldy blade haphazardly tied together with rod and wire. The weapon of the modern caveman."
 	icon_state = "makeshift_sword"
 	force_multiplier = 0.3
-	attack_cooldown = 30 // slow.
+	attack_cooldown = 8
 	thrown_force_multiplier = 0.2
 	base_parry_chance = 15
 	worth_multiplier = 5

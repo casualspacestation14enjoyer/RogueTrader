@@ -128,7 +128,6 @@
 	icon_state = "crystal"
 	item_state = "toolbox_crystal"
 	origin_tech = list(TECH_COMBAT = 1, TECH_MATERIAL = 3)
-	attack_cooldown = 15
 
 /obj/item/storage/toolbox/crystal/Initialize()
 	new /obj/item/device/multitool/crystal(src)

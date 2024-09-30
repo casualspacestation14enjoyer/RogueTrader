@@ -100,7 +100,7 @@
 	attack_verb = list("crushed", "sliced")
 	w_class = ITEM_SIZE_NORMAL
 	force = 20.0
-	attack_cooldown = 30.0
+	attack_cooldown = 7
 	throwforce = 8.0
 	hitsound = 'sound/items/jaws_pry.ogg'
 	toolspeed = 0.5

@@ -9,6 +9,7 @@
 	item_state = ""	//no inhands
 	slot_flags = SLOT_TIE
 	w_class = ITEM_SIZE_SMALL
+	equip_delay = 2 SECONDS
 	var/accessory_flags = ACCESSORY_DEFAULT_FLAGS
 	var/slot = ACCESSORY_SLOT_DECOR
 	var/body_location = UPPER_TORSO //most accessories are here
@@ -85,10 +86,13 @@
 /obj/item/clothing/accessory/proc/on_attached(obj/item/clothing/S, mob/user)
 	if(!istype(S))
 		return
+	if (equip_delay > 0)
+		equip_delay_before(user, S)
+		sleep(equip_delay)
+		equip_delay_after(user, S)
 	parent = S
 	forceMove(parent)
 	parent.AddOverlays(get_inv_overlay())
-
 	if(user)
 		to_chat(user, SPAN_NOTICE("You attach \the [src] to \the [parent]."))
 		src.add_fingerprint(user)
@@ -98,6 +102,10 @@
 	if(!parent)
 		return
 	parent.CutOverlays(get_inv_overlay())
+	if (equip_delay > 0)
+		equip_delay_before(user)
+		sleep(equip_delay)
+		equip_delay_after(user)
 	parent = null
 	if(user)
 		usr.put_in_hands(src)

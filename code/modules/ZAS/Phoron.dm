@@ -48,10 +48,13 @@ var/global/image/contamination_overlay = image('icons/effects/contamination.dmi'
 	else if (item_flags & ITEM_FLAG_WASHER_ALLOWED) return 1
 
 /obj/item/proc/contaminate()
-	//Do a contamination overlay? Temporary measure to keep contamination less deadly than it was.
-	if(!contaminated)
-		contaminated = 1
-		AddOverlays(contamination_overlay)
+    // Do a contamination overlay? Temporary measure to keep contamination less deadly than it was.
+    if(!contaminated)
+        contaminated = 1
+        AddOverlays(contamination_overlay)
+        spawn(1000)
+            if(contaminated)  // After 100 seconds clothing will naturally decontaminate. We don't use FETHING washing machine in the 41st millenium.
+                decontaminate()
 
 /obj/item/proc/decontaminate()
 	contaminated = 0
