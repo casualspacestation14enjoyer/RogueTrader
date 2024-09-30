@@ -252,6 +252,66 @@
 		bomb = ARMOR_BOMB_MINOR +15
 	)
 
+/obj/item/clothing/suit/armor/grim/pilgrim/medicae
+	name = "practioner robes"
+	desc = "Worn by practioners and other surgoens."
+	icon_state = "prac_robes"
+	item_state = "prac_robes"
+	body_parts_covered = LEGS|ARMS
+	accessories = list(/obj/item/clothing/accessory/armor_plate/paddingmech)
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-15
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-300
+	slowdown_general = 0.04
+	armor = list(
+		melee = ARMOR_MELEE_FLAK-1,
+		bullet = ARMOR_BALLISTIC_FLAK-1,
+		laser = ARMOR_LASER_FLAK-2,
+		energy = ARMOR_ENERGY_MINOR+2,
+		bio = ARMOR_BIO_MINOR+30,
+		rad = ARMOR_RAD_MINOR+40,
+		bomb = ARMOR_BOMB_MINOR+5
+		)
+
+/obj/item/clothing/suit/storage/sistersuperiorsuit
+	name = "sister hospitaller's suit"
+	desc = "The holy garments marking the wearer as sister hospitaller"
+	icon_state = "hospitaller"
+	item_state = "hospitaller"
+	body_parts_covered = LEGS|ARMS
+	accessories = list(/obj/item/clothing/accessory/armor_plate/paddingmech)
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-15
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-300
+	slowdown_general = 0.045
+	armor = list(
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK+1,
+		laser = ARMOR_LASER_FLAK,
+		energy = ARMOR_ENERGY_MINOR+2,
+		bio = ARMOR_BIO_MINOR+50,
+		rad = ARMOR_RAD_MINOR+60,
+		bomb = ARMOR_BOMB_MINOR+20
+		)
+
+/obj/item/clothing/suit/storage/sistersuit
+	name = "sister discipulus's suit"
+	desc = "The holy garments marking the wearer as a discipulus hospitaller"
+	icon_state = "hospitallerold"
+	item_state = "hospitallerold"
+	body_parts_covered = LEGS|ARMS
+	accessories = list(/obj/item/clothing/accessory/armor_plate/paddingmech)
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-15
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-300
+	slowdown_general = 0.04
+	armor = list(
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK,
+		energy = ARMOR_ENERGY_MINOR+2,
+		bio = ARMOR_BIO_MINOR+40,
+		rad = ARMOR_RAD_MINOR+50,
+		bomb = ARMOR_BOMB_MINOR+10
+		)
+
 /obj/item/clothing/suit/armor/grim/zealot
 	name = "heavy mantle"
 	desc = "An imperial cult mantle with heavy flak plates blessed by the Ecceliarchy to protect the wearer from threats to aid in protecting the faithful and to repel the heretic."
@@ -494,64 +554,4 @@
 		bio = ARMOR_BIO_MINOR+10,
 		rad = ARMOR_RAD_MINOR+20,
 		bomb = ARMOR_BOMB_MINOR
-		)
-
-/obj/item/clothing/suit/armor/grim/pilgrim/medicae
-	name = "practioner robes"
-	desc = "Worn by practioners and other surgoens."
-	icon_state = "prac_robes"
-	item_state = "prac_robes"
-	body_parts_covered = LEGS|ARMS
-	accessories = list(/obj/item/clothing/accessory/armor_plate/paddingmech)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-15
-	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-300
-	slowdown_general = 0.04
-	armor = list(
-		melee = ARMOR_MELEE_FLAK-1,
-		bullet = ARMOR_BALLISTIC_FLAK-1,
-		laser = ARMOR_LASER_FLAK-2,
-		energy = ARMOR_ENERGY_MINOR+2,
-		bio = ARMOR_BIO_MINOR+30,
-		rad = ARMOR_RAD_MINOR+40,
-		bomb = ARMOR_BOMB_MINOR+5
-		)
-
-/obj/item/clothing/suit/storage/sistersuperiorsuit
-	name = "sister hospitaller's suit"
-	desc = "The holy garments marking the wearer as sister hospitaller"
-	icon_state = "hospitaller"
-	item_state = "hospitaller"
-	body_parts_covered = LEGS|ARMS
-	accessories = list(/obj/item/clothing/accessory/armor_plate/paddingmech)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-15
-	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-300
-	slowdown_general = 0.045
-	armor = list(
-		melee = ARMOR_MELEE_FLAK,
-		bullet = ARMOR_BALLISTIC_FLAK+1,
-		laser = ARMOR_LASER_FLAK,
-		energy = ARMOR_ENERGY_MINOR+2,
-		bio = ARMOR_BIO_MINOR+50,
-		rad = ARMOR_RAD_MINOR+60,
-		bomb = ARMOR_BOMB_MINOR+20
-		)
-
-/obj/item/clothing/suit/storage/sistersuit
-	name = "sister discipulus's suit"
-	desc = "The holy garments marking the wearer as a discipulus hospitaller"
-	icon_state = "hospitallerold"
-	item_state = "hospitallerold"
-	body_parts_covered = LEGS|ARMS
-	accessories = list(/obj/item/clothing/accessory/armor_plate/paddingmech)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-15
-	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-300
-	slowdown_general = 0.04
-	armor = list(
-		melee = ARMOR_MELEE_FLAK,
-		bullet = ARMOR_BALLISTIC_FLAK,
-		laser = ARMOR_LASER_FLAK,
-		energy = ARMOR_ENERGY_MINOR+2,
-		bio = ARMOR_BIO_MINOR+40,
-		rad = ARMOR_RAD_MINOR+50,
-		bomb = ARMOR_BOMB_MINOR+10
 		)
