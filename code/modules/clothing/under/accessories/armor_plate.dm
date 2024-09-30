@@ -10,7 +10,7 @@
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-20
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+200
 	slowdown = 0.05
-	equip_delay = 2.5 SECONDS
+	equip_delay = 3.5 SECONDS
 	armor = list(
 		melee = ARMOR_MELEE_FLAK-1,
 		bullet = ARMOR_BALLISTIC_FLAK-2,
@@ -30,7 +30,7 @@
 	item_flags = ITEM_FLAG_THICKMATERIAL
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-30
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+300
-	equip_delay = 3 SECONDS
+	equip_delay = 4 SECONDS
 	armor = list(
 		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_FLAK+1,
@@ -115,7 +115,7 @@
 	item_flags = ITEM_FLAG_THICKMATERIAL
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-400
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+400
-	equip_delay = 3.5 SECONDS
+	equip_delay = 4.5 SECONDS
 	armor = list(
 		melee = ARMOR_MELEE_FLAK+1,
 		bullet = ARMOR_BALLISTIC_FLAK+2,
