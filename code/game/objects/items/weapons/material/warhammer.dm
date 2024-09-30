@@ -154,6 +154,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	base_parry_chance = 25
 	wielded_parry_bonus = 10
 	melee_accuracy_bonus = 10
+	equip_delay = 0.6 SECONDS
 
 /obj/item/material/twohanded/warhammer/sword/broadsword/adamantine
 	name = "Adamantine Broadsword"
@@ -196,6 +197,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	armor_penetration = 4
 	base_parry_chance = 25
 	melee_accuracy_bonus = 5
+	equip_delay = 0.4 SECONDS
 
 /obj/item/material/twohanded/warhammer/sword/chopper/heavy/adamantine
 	name = "Heavy Adamantine Chopper"
@@ -249,7 +251,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	wielded_parry_bonus = 5
 	attack_cooldown_modifier = 0
 	melee_accuracy_bonus = 10
-
+	equip_delay = 0.5 SECONDS
 
 /obj/item/material/twohanded/warhammer/axe
 	name = "Trench Axe"
@@ -275,7 +277,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	wielded_parry_bonus = 15
 	attack_cooldown_modifier = 1
 	melee_accuracy_bonus = 5
-
+	equip_delay = 0.75 SECONDS
 
 /obj/item/material/twohanded/warhammer/axe/spear
 	name = "Hunting Spear"
@@ -301,6 +303,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	wielded_parry_bonus = 20 // Defending eezi
 	attack_cooldown_modifier = 0.7
 	melee_accuracy_bonus = 7 // Primitive easy to use weapon.
+	equip_delay = 0.3 SECONDS
 
 /obj/item/material/twohanded/warhammer/axe/spear/adamantine
 	name = "Adamantine Spear"
@@ -331,6 +334,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	wielded_parry_bonus = 30 // Long reach good defense.
 	attack_cooldown_modifier = 1.2
 	melee_accuracy_bonus = 7
+	equip_delay = 0.65 SECONDS
 
 /obj/item/material/twohanded/warhammer/axe/spear/fuscina/adamantine
 	name = "Adamantine Fuscina"
@@ -361,6 +365,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	attack_cooldown_modifier = 1.6
 	melee_accuracy_bonus = 10
 	does_spin = FALSE // Spear.
+	equip_delay = 0.8 SECONDS
 
 /obj/item/material/twohanded/warhammer/axe/saintie/adamantine
 	name = "Adamantine Saintie"
@@ -388,6 +393,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	wielded_parry_bonus = 15
 	attack_cooldown_modifier = 1.4
 	melee_accuracy_bonus = 5
+	equip_delay = 0.75 SECONDS
 
 /obj/item/material/twohanded/warhammer/axe/bardiche/adamantine
 	name = "Adamantine Bardiche"
@@ -422,6 +428,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	wielded_parry_bonus = 5
 	attack_cooldown_modifier = 1.2 // Chainblade.
 	melee_accuracy_bonus = 10 // Chainblades don't miss.
+	equip_delay = 0.5 SECONDS
 
 /obj/item/material/twohanded/warhammer/chainsword/guard
 	name = "Imperial Guard chainsword"
@@ -438,6 +445,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	wielded_parry_bonus = 5
 	attack_cooldown_modifier = 0.9 // Lighter one handed variant of the Mercy, faster attack, higher accuracy and defense in exchange for damage.
 	melee_accuracy_bonus = 15
+	equip_delay = 0.4 SECONDS
 
 /obj/item/material/twohanded/warhammer/chainsword/relic
 	name = "Relic Pattern Chainsword"
@@ -449,6 +457,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	force_multiplier = 0.66
 	unwielded_force_divisor =  0.64
 	melee_accuracy_bonus = 15
+	equip_delay = 0.5 SECONDS
 
 /obj/item/material/twohanded/warhammer/chainsword/eviscerator
 	name = "Eviscerator Pattern Chainsword"
@@ -463,6 +472,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	melee_accuracy_bonus = 15
 	attack_cooldown_modifier = 2
 	base_parry_chance = 35
+	equip_delay = 0.65 SECONDS
 
 /obj/item/material/twohanded/warhammer/chainsword/drusian
 	name = "Drusian Pattern Chainsword"
@@ -478,6 +488,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	wielded_parry_bonus = 5
 	attack_cooldown_modifier = 0.85 // Same design as guard just higher quality.
 	melee_accuracy_bonus = 17
+	equip_delay = 0.4 SECONDS
 
 /obj/item/material/twohanded/warhammer/chainsword/astartes
 	name = "Mark I Pattern Chainsword"
@@ -495,6 +506,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	base_parry_chance = 25 // Astartes melee skill is crazy high.
 	wielded_parry_bonus = 5
 	str_requirement = 1 // Does a skill check. Do not set to anything else.
+	equip_delay = 0.1 SECONDS
 
 /obj/item/material/twohanded/warhammer/axe/thunderhammer
 	name = "Thunder Hammer"
@@ -519,6 +531,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	wielded_parry_bonus = 20
 	attack_cooldown_modifier = 1.6
 	melee_accuracy_bonus = 10
+	equip_delay = 0.8 SECONDS
 
 /obj/item/material/twohanded/warhammer/axe/thunderhammer/astartes
 	name = "Astartes Thunder Hammer"
@@ -533,6 +546,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	attack_cooldown_modifier = 1 // Astartes melee skill is crazy high.
 	melee_accuracy_bonus = 10
 	str_requirement = 1
+	equip_delay = 0.2 SECONDS
 
 // XENOS / HERETIC WEAPONS
 
@@ -606,6 +620,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	wielded_parry_bonus = 10
 	attack_cooldown_modifier = 0.7
 	melee_accuracy_bonus = 15 // Tis a whip.
+	equip_delay = 0.3 SECONDS
 
 /obj/item/material/twohanded/warhammer/lashoftorment/New() // Magic
 	..()
@@ -763,6 +778,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	atom_flags = ATOM_FLAG_NO_BLOOD
 	attack_verb = list("beaten", "smashed")
 	armor_penetration = 5 // Non Lethal Shock
+	equip_delay = 0.5 SECONDS
 	var/stunforce = 0
 	var/agonyforce = 50
 

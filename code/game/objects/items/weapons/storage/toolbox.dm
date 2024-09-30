@@ -6,7 +6,7 @@
 	item_state = "toolbox_red"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	force = 22
-	attack_cooldown = 21
+	attack_cooldown = 7
 	melee_accuracy_bonus = -5
 	throwforce = 10
 	throw_speed = 1
@@ -78,7 +78,7 @@
 	icon_state = "syndicate"
 	item_state = "toolbox_syndi"
 	origin_tech = list(TECH_COMBAT = 1, TECH_ESOTERIC = 1)
-	attack_cooldown = 10
+	attack_cooldown = 6
 	base_parry_chance = 30
 	startswith = list(
 		/obj/item/clothing/gloves/insulated,

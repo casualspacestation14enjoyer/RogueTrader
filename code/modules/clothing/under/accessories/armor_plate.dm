@@ -6,9 +6,11 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	cold_protection = UPPER_TORSO|LOWER_TORSO
 	heat_protection = UPPER_TORSO|LOWER_TORSO
+	max_pressure_protection = VOIDSUIT_MAX_PRESSURE
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-20
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+200
 	slowdown = 0.05
+	equip_delay = 2.5 SECONDS
 	armor = list(
 		melee = ARMOR_MELEE_FLAK-1,
 		bullet = ARMOR_BALLISTIC_FLAK-2,
@@ -28,6 +30,7 @@
 	item_flags = ITEM_FLAG_THICKMATERIAL
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-30
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+300
+	equip_delay = 3 SECONDS
 	armor = list(
 		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_FLAK+1,
@@ -39,6 +42,72 @@
 		)
 	slowdown = 0.06
 
+/obj/item/clothing/accessory/armor_plate/nurgle
+	name = "nurgle plates"
+	desc = "A disgusting plague infused plating, providing enhanced protection against ballistic impacts and energy discharge. It writhes as if the metal were alive."
+	icon_state = "armor_medium"
+	color = COLOR_PAKISTAN_GREEN
+	item_flags = ITEM_FLAG_THICKMATERIAL
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-50
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+400
+	cold_protection = FULL_BODY // CHAOS PROTECTION
+	heat_protection = FULL_BODY
+	equip_delay = 15 SECONDS
+	armor = list(
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK+1,
+		laser = ARMOR_LASER_FLAK+1,
+		energy = ARMOR_ENERGY_MINOR+1,
+		bio = ARMOR_BIO_SHIELDED,
+		rad = ARMOR_RAD_SHIELDED,
+		bomb = ARMOR_BOMB_MINOR+2
+		)
+	slowdown = 0.07
+
+/obj/item/clothing/accessory/armor_plate/nurgleheavy
+	name = "heavy nurgle plates"
+	desc = "A disgusting plague infused plating, providing enhanced protection against ballistic impacts and energy discharge. It writhes as if the metal were alive."
+	icon_state = "armor_medium"
+	color = COLOR_PAKISTAN_GREEN
+	item_flags = ITEM_FLAG_THICKMATERIAL
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-50
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+400
+	cold_protection = FULL_BODY // CHAOS PROTECTION
+	heat_protection = FULL_BODY
+	equip_delay = 17 SECONDS
+	armor = list(
+		melee = ARMOR_MELEE_FLAK+1,
+		bullet = ARMOR_BALLISTIC_FLAK+2,
+		laser = ARMOR_LASER_FLAK+2,
+		energy = ARMOR_ENERGY_MINOR+1,
+		bio = ARMOR_BIO_SHIELDED,
+		rad = ARMOR_RAD_SHIELDED,
+		bomb = ARMOR_BOMB_MINOR+12
+		)
+	slowdown = 0.085
+
+/obj/item/clothing/accessory/armor_plate/tzeentch
+	name = "exotic plates"
+	desc = "A beautiful alien plating, providing enhanced protection against ballistic impacts and energy discharge. It writhes with constant sparks of chaos magic."
+	icon_state = "armor_medium"
+	color = COLOR_PALE_PURPLE_GRAY
+	item_flags = ITEM_FLAG_THICKMATERIAL
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-50
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+400
+	cold_protection = FULL_BODY // CHAOS PROTECTION
+	heat_protection = FULL_BODY
+	equip_delay = 16 SECONDS
+	armor = list(
+		melee = ARMOR_MELEE_FLAK+1,
+		bullet = ARMOR_BALLISTIC_FLAK+3,
+		laser = ARMOR_LASER_FLAK+3,
+		energy = ARMOR_ENERGY_MINOR+1,
+		bio = ARMOR_BIO_MINOR+20,
+		rad = ARMOR_RAD_MINOR+30,
+		bomb = ARMOR_BOMB_MINOR+20
+		)
+	slowdown = 0.07
+
 /obj/item/clothing/accessory/armor_plate/flakheavy
 	name = "heavy flak plates"
 	desc = "A plasteel-reinforced flak plate, providing enhanced protection against ballistic impacts and energy discharge."
@@ -46,6 +115,7 @@
 	item_flags = ITEM_FLAG_THICKMATERIAL
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-400
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+400
+	equip_delay = 3.5 SECONDS
 	armor = list(
 		melee = ARMOR_MELEE_FLAK+1,
 		bullet = ARMOR_BALLISTIC_FLAK+2,
@@ -64,6 +134,7 @@
 	item_flags = ITEM_FLAG_THICKMATERIAL
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-45
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+450
+	equip_delay = 7 SECONDS
 	armor = list(
 		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_FLAK-1,
@@ -83,6 +154,7 @@
 	item_flags = ITEM_FLAG_THICKMATERIAL
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-50
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+500
+	equip_delay = 4 SECONDS
 	armor = list(
 		melee = ARMOR_MELEE_CARAPACE,
 		bullet = ARMOR_BALLISTIC_CARAPACE+1,
@@ -102,6 +174,7 @@
 	item_flags = ITEM_FLAG_THICKMATERIAL
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-60
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+600
+	equip_delay = 4 SECONDS
 	armor = list(
 		melee = ARMOR_MELEE_CARAPACE+1,
 		bullet = ARMOR_BALLISTIC_CARAPACE+2,
@@ -121,6 +194,7 @@
 	item_flags = ITEM_FLAG_THICKMATERIAL
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-65
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+650
+	equip_delay = 5 SECONDS
 	armor = list(
 		melee = ARMOR_MELEE_CARAPACE+1,
 		bullet = ARMOR_BALLISTIC_CARAPACE+2,
@@ -141,11 +215,13 @@
 	icon_state = "helmcover_green"
 	color = COLOR_BEASTY_BROWN
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	equip_delay = 7 SECONDS // Basically ripping out the lining.
+	max_pressure_protection = null
 	slowdown = 0.02
 	armor = list(
 		melee = ARMOR_MELEE_PRIMAL-1,
 		bullet = ARMOR_BALLISTIC_PRIMAL,
-		laser = ARMOR_LASER_PRIMAL,
+		laser = ARMOR_LASER_PRIMAL-1,
 		energy = ARMOR_ENERGY_MINOR-4,
 		bio = ARMOR_BIO_MINOR-6,
 		rad = ARMOR_RAD_MINOR,
@@ -160,13 +236,15 @@
 	color = COLOR_BEASTY_BROWN
 	item_flags = ITEM_FLAG_THICKMATERIAL
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	max_pressure_protection = null
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-35
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+350
+	equip_delay = 9 SECONDS // Basically ripping out the lining.
 	slowdown = 0.03
 	armor = list(
 		melee = ARMOR_MELEE_PRIMAL,
-		bullet = ARMOR_BALLISTIC_PRIMAL+1,
-		laser = ARMOR_LASER_PRIMAL+1,
+		bullet = ARMOR_BALLISTIC_PRIMAL+1, // Heavy padding is better for bullets then las.
+		laser = ARMOR_LASER_PRIMAL,
 		energy = ARMOR_ENERGY_MINOR-3,
 		bio = ARMOR_BIO_MINOR,
 		rad = ARMOR_RAD_MINOR+10,
@@ -180,9 +258,11 @@
 	icon_state = "helmcover_green"
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-40
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+400
+	max_pressure_protection = SPACE_SUIT_MAX_PRESSURE
 	item_flags = ITEM_FLAG_THICKMATERIAL
 	color = COLOR_BEASTY_BROWN
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	equip_delay = 10 SECONDS
 	slowdown = 0.03
 	armor = list(
 		melee = ARMOR_MELEE_PRIMAL-1,
@@ -200,11 +280,13 @@
 	icon = 'icons/obj/clothing/obj_suit.dmi'
 	icon_state = "helmcover_green"
 	item_flags = ITEM_FLAG_THICKMATERIAL
+	max_pressure_protection = SPACE_SUIT_MAX_PRESSURE
 	color = COLOR_BEASTY_BROWN
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-55
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+550
 	slowdown = 0.05
+	equip_delay = 12 SECONDS
 	armor = list(
 		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_PRIMAL+1,
@@ -223,8 +305,10 @@
 	item_flags = ITEM_FLAG_THICKMATERIAL
 	color = COLOR_BEASTY_BROWN
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-70
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+700
+	equip_delay = 18 SECONDS
 	slowdown = 0.08
 	armor = list(
 		melee = ARMOR_MELEE_FLAK,
@@ -234,6 +318,29 @@
 		rad = ARMOR_RAD_RESISTANT+48,
 		bio = ARMOR_BIO_RESISTANT+48,
 		bomb = ARMOR_BOMB_MINOR+10
+		)
+
+/obj/item/clothing/accessory/armor_plate/mechplatemagos
+	name = "special hazard plating"
+	desc = "A special tech hazard plating used primarily by mechanicus tech priests -- it's been ripped out..."
+	icon = 'icons/obj/clothing/obj_suit.dmi'
+	icon_state = "helmcover_green"
+	item_flags = ITEM_FLAG_THICKMATERIAL
+	color = COLOR_BEASTY_BROWN
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-70
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+700
+	equip_delay = 18 SECONDS
+	slowdown = 0.095
+	armor = list(
+		melee = ARMOR_MELEE_FLAK+1,
+		bullet = ARMOR_BALLISTIC_CARAPACE+2,
+		laser = ARMOR_LASER_CARAPACE+2,
+		energy = ARMOR_ENERGY_MINOR+30,
+		rad = ARMOR_RAD_RESISTANT+60,
+		bio = ARMOR_BIO_RESISTANT+60,
+		bomb = ARMOR_BOMB_MINOR+20
 		)
 
 /obj/item/clothing/accessory/armor_plate/bodyglovebio
@@ -255,6 +362,7 @@
 	blood_overlay_type = "armor" // Bodygloves use base armor_plate temp protection.
 	icon_state = "robotics"
 	item_state = "robotics_s"
+	equip_delay = 3 SECONDS
 	slowdown = 0.03
 	flags_inv = null
 	armor = list(
@@ -280,12 +388,14 @@
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+50
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	max_pressure_protection = SPACE_SUIT_MAX_PRESSURE
 	slot_flags = SLOT_OCLOTHING //can wear in suit slot as well
 	slot = ACCESSORY_SLOT_UTILITY // Worn alongside a carrier plate.
 	w_class = ITEM_SIZE_NORMAL
 	blood_overlay_type = "armor"
 	icon_state = "robotics"
 	item_state = "robotics_s"
+	equip_delay = 3.5 SECONDS
 	slowdown = 0.04
 	flags_inv = null
 	armor = list(
@@ -299,7 +409,7 @@
 		)
 
 /obj/item/clothing/accessory/armor_plate/bodyglove
-	name = "low-profile bodyglove"
+	name = "undersuit bodyglove"
 	desc = "Composed of layered polymer fibers, attached to a uniform, this low-profile bodyglove offers lightweight and flexible protection, suitable for minimizing bulk without sacrificing defense."
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-10
@@ -316,6 +426,7 @@
 	icon_state = "jensen_s"
 	item_state = "jensen_s"
 	slowdown = 0.03 // Almost the same as Mech but lighter and offers no decent bio/rad prot.
+	equip_delay = 2 SECONDS
 	flags_inv = null
 	armor = list(
 		melee = 0,
@@ -328,7 +439,7 @@
 		)
 
 /obj/item/clothing/accessory/armor_plate/bodyglove2
-	name = "low-profile bodyglove"
+	name = "armoured bodyglove"
 	desc = "Made from tech polymers, attached to a uniform, this experimental bodyglove balances flexibility with advanced defensive capabilities, providing enhanced protection at the cost of more cumbersome movement."
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-30
@@ -340,11 +451,13 @@
 	item_flags = ITEM_FLAG_THICKMATERIAL
 	slot_flags = SLOT_OCLOTHING
 	slot = ACCESSORY_SLOT_UTILITY // Attaches to uniform or can be worn as exosuit.
+	max_pressure_protection = SPACE_SUIT_MAX_PRESSURE
 	w_class = ITEM_SIZE_NORMAL
 	blood_overlay_type = "armor"
 	icon_state = "robotics"
 	item_state = "robotics_s"
 	slowdown = 0.07 // This item is super OP if stacked with power armor. It can be the difference between a lasgun critting you or just causing an injury.
+	equip_delay = 3 SECONDS
 	flags_inv = null
 	armor = list(
 		melee = 1,
@@ -373,6 +486,7 @@
 	blood_overlay_type = "armor"
 	icon_state = "catacomm" // Bulletproof pants and shirt.
 	item_state = "catacomm_s"
+	equip_delay = 0.5 SECONDS
 	slowdown = 0.05 // better bodyglove since it doesn't protect arms and offers no melee protection. Catachan design since their weakness is only ranged fighting and rad/bio.
 	flags_inv = null
 	armor = list(

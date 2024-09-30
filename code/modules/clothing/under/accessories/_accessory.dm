@@ -85,10 +85,13 @@
 /obj/item/clothing/accessory/proc/on_attached(obj/item/clothing/S, mob/user)
 	if(!istype(S))
 		return
+	if (equip_delay > 0)
+		equip_delay_before(user, S)
+		sleep(equip_delay)
+		equip_delay_after(user, S)
 	parent = S
 	forceMove(parent)
 	parent.AddOverlays(get_inv_overlay())
-
 	if(user)
 		to_chat(user, SPAN_NOTICE("You attach \the [src] to \the [parent]."))
 		src.add_fingerprint(user)
