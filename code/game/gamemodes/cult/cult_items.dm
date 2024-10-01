@@ -86,7 +86,7 @@
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_PRIMAL,
 		energy = ARMOR_ENERGY_SMALL,
-		bomb = ARMOR_BOMB_PADDED
+		bomb = ARMOR_BOMB_THIRTY
 	)
 	flags_inv = HIDEJUMPSUIT
 	siemens_coefficient = 0.6
@@ -105,7 +105,7 @@
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_RESISTANT,
-		bomb = ARMOR_BOMB_PADDED
+		bomb = ARMOR_BOMB_THIRTY
 	)
 
 /obj/item/clothing/head/helmet/space/cult
@@ -116,8 +116,8 @@
 		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
-		energy = ARMOR_ENERGY_MINOR,
-		bomb = ARMOR_BOMB_PADDED,
+		energy = ARMOR_ENERGY_TEN,
+		bomb = ARMOR_BOMB_THIRTY,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_MINOR
 	) //Real tanky shit.
@@ -132,8 +132,8 @@
 		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
-		energy = ARMOR_ENERGY_MINOR,
-		bomb = ARMOR_BOMB_PADDED,
+		energy = ARMOR_ENERGY_TEN,
+		bomb = ARMOR_BOMB_THIRTY,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_MINOR
 	)

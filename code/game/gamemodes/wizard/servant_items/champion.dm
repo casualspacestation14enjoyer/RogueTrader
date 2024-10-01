@@ -45,8 +45,8 @@
 		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_BASIC,
 		laser = ARMOR_LASER_BASIC,
-		energy = ARMOR_ENERGY_MINOR,
-		bomb = ARMOR_BOMB_PADDED
+		energy = ARMOR_ENERGY_TEN,
+		bomb = ARMOR_BOMB_THIRTY
 	)
 
 /obj/item/excalibur

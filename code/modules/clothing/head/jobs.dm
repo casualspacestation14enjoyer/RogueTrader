@@ -175,7 +175,7 @@
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_SMALL,
-		bomb = ARMOR_BOMB_PADDED,
+		bomb = ARMOR_BOMB_THIRTY,
 		bio = ARMOR_BIO_RESISTANT,
 		rad = ARMOR_RAD_MINOR
 	)

@@ -20,7 +20,7 @@
 		melee = ARMOR_MELEE_FLAK-1,
 		bullet = ARMOR_BALLISTIC_FLAK-2,
 		laser = ARMOR_LASER_FLAK-2,
-		energy = ARMOR_ENERGY_MINOR-6,
+		energy = ARMOR_ENERGY_TEN-6,
 		bio = ARMOR_BIO_MINOR-6,
 		rad = ARMOR_RAD_MINOR-10,
 		bomb = ARMOR_BOMB_MINOR-8
@@ -48,13 +48,80 @@
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
 	slowdown_general = 0.04
 	armor = list(
-		melee = ARMOR_MELEE_FLAK-1,
+		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
-		energy = ARMOR_ENERGY_MINOR,
+		energy = ARMOR_ENERGY_TEN,
 		bio = ARMOR_BIO_MINOR,
-		rad = ARMOR_RAD_MINOR,
+		rad = ARMOR_RAD_MINOR+15,
 		bomb = ARMOR_BOMB_MINOR
+	)
+
+/obj/item/clothing/suit/armor/grim/cadian/conscript
+	name = "cadian light flak armour"
+	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, It is so common that it became symbol of the Astra Militarum as a whole. This one is in it light configuration, issued to the Whiteshields."
+	icon_state = "fvest"
+	item_state = "fvest"
+	body_parts_covered = LEGS|ARMS
+	accessories = list(/obj/item/clothing/accessory/armor_plate/flak)
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-25
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-100
+	slowdown_general = 0.02
+	armor = list(
+		melee = ARMOR_MELEE_FLAK-1,
+		bullet = ARMOR_BALLISTIC_FLAK-2,
+		laser = ARMOR_LASER_FLAK-2,
+		energy = ARMOR_ENERGY_TEN-1,
+		bio = ARMOR_BIO_MINOR,
+		rad = ARMOR_RAD_MINOR+10,
+		bomb = ARMOR_BOMB_MINOR
+	)
+
+/obj/item/clothing/suit/armor/grim/cadian/conscript/pdf
+	name = "PDF flak armour"
+	desc = "A non standard pattern of flak armour issued to planetary defense forces, this particular variant being inferior to guard issue kit."
+	icon_state = "PDF-T"
+	item_state = "PDF-T"
+
+/obj/item/clothing/suit/armor/grim/cadian/conscript/medic
+	name = "PDF medicae armour"
+	icon_state = "PDF-MedicT"
+	item_state = "PDF-MedicT"
+
+/obj/item/clothing/suit/armor/grim/cadian/conscript/spec
+	name = "PDF heavy armour"
+	icon_state = "PDF-SpecialT"
+	item_state = "PDF-SpecialT"
+	accessories = list(/obj/item/clothing/accessory/armor_plate/flakheavy)
+	slowdown_general = 0.5
+	armor = list(
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK,
+		energy = ARMOR_ENERGY_TEN,
+		bio = ARMOR_BIO_MINOR,
+		rad = ARMOR_RAD_MINOR+15,
+		bomb = ARMOR_BOMB_MINOR
+	)
+
+/obj/item/clothing/suit/armor/grim/cadian/conscript/captain
+	name = "PDF captain's armour"
+	desc = "The carapace armor issued to a Planetary Defense Force captain, providing reliable protection while maintaining a balance of mobility and durability."
+	icon_state = "PDF-CaptainT"
+	item_state = "PDF-CaptainT"
+	body_parts_covered = LEGS|ARMS
+	accessories = list(/obj/item/clothing/accessory/armor_plate/carapaceheavy)
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-25
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-100
+	slowdown_general = 0.05
+	armor = list(
+		melee = ARMOR_MELEE_CARAPACE-1,
+		bullet = ARMOR_BALLISTIC_CARAPACE,
+		laser = ARMOR_LASER_CARAPACE,
+		energy = ARMOR_ENERGY_TEN+10,
+		bio = ARMOR_BIO_MINOR+10,
+		rad = ARMOR_RAD_MINOR+30,
+		bomb = ARMOR_BOMB_MINOR+15
 	)
 
 /obj/item/clothing/suit/armor/grim/cadian/medicae
@@ -80,9 +147,9 @@
 		melee = ARMOR_MELEE_FLAK+1,
 		bullet = ARMOR_BALLISTIC_FLAK+1,
 		laser = ARMOR_LASER_FLAK+1,
-		energy = ARMOR_ENERGY_MINOR+1,
-		bio = ARMOR_BIO_MINOR+4,
-		rad = ARMOR_RAD_MINOR+4,
+		energy = ARMOR_ENERGY_TEN+1,
+		bio = ARMOR_BIO_MINOR+5,
+		rad = ARMOR_RAD_MINOR+25,
 		bomb = ARMOR_BOMB_MINOR+4
 	)
 
@@ -101,8 +168,8 @@
 		melee = ARMOR_MELEE_CARAPACE-1,
 		bullet = ARMOR_BALLISTIC_CARAPACE,
 		laser = ARMOR_LASER_CARAPACE,
-		energy = ARMOR_ENERGY_MINOR+10,
-		bio = ARMOR_BIO_MINOR+15,
+		energy = ARMOR_ENERGY_TEN+10,
+		bio = ARMOR_BIO_MINOR+5,
 		rad = ARMOR_RAD_MINOR+25,
 		bomb = ARMOR_BOMB_MINOR+15
 	)
@@ -122,8 +189,8 @@
 		melee = ARMOR_MELEE_CARAPACE-1,
 		bullet = ARMOR_BALLISTIC_CARAPACE,
 		laser = ARMOR_LASER_CARAPACE,
-		energy = ARMOR_ENERGY_MINOR+10,
-		bio = ARMOR_BIO_MINOR+15,
+		energy = ARMOR_ENERGY_TEN+10,
+		bio = ARMOR_BIO_MINOR+5,
 		rad = ARMOR_RAD_MINOR+25,
 		bomb = ARMOR_BOMB_MINOR+15
 	)
@@ -143,9 +210,9 @@
 		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_FLAK+1,
 		laser = ARMOR_LASER_FLAK+1,
-		energy = ARMOR_ENERGY_MINOR+2,
+		energy = ARMOR_ENERGY_TEN+2,
 		rad = ARMOR_RAD_MINOR+40,
-		bio = ARMOR_BIO_MINOR+40,
+		bio = ARMOR_BIO_MINOR+20,
 		bomb = ARMOR_BOMB_MINOR+10
 	)
 
@@ -164,9 +231,9 @@
 		melee = ARMOR_MELEE_CARAPACE,
 		bullet = ARMOR_BALLISTIC_CARAPACE,
 		laser = ARMOR_LASER_CARAPACE,
-		energy = ARMOR_ENERGY_MINOR+15,
-		rad = ARMOR_RAD_MINOR+25,
-		bio = ARMOR_BIO_MINOR+15,
+		energy = ARMOR_ENERGY_TEN+15,
+		rad = ARMOR_RAD_MINOR+45,
+		bio = ARMOR_BIO_MINOR+25,
 		bomb = ARMOR_BOMB_MINOR+15
 	)
 
@@ -186,9 +253,9 @@
 		melee = ARMOR_MELEE_CARAPACE,
 		bullet = ARMOR_BALLISTIC_CARAPACE+1,
 		laser = ARMOR_LASER_CARAPACE+1,
-		energy = ARMOR_ENERGY_MINOR+15,
-		rad = ARMOR_RAD_MINOR+25,
-		bio = ARMOR_BIO_MINOR+15,
+		energy = ARMOR_ENERGY_TEN+15,
+		rad = ARMOR_RAD_MINOR+55,
+		bio = ARMOR_BIO_MINOR+35,
 		bomb = ARMOR_BOMB_MINOR+15
 	)
 
@@ -206,9 +273,9 @@
 		melee = ARMOR_MELEE_FLAK-1,
 		bullet = ARMOR_BALLISTIC_FLAK-1,
 		laser = ARMOR_LASER_FLAK-1,
-		energy = ARMOR_ENERGY_MINOR-1,
+		energy = ARMOR_ENERGY_TEN-1,
 		bio = ARMOR_BIO_MINOR,
-		rad = ARMOR_RAD_MINOR,
+		rad = ARMOR_RAD_MINOR+10,
 		bomb = ARMOR_BOMB_MINOR
 		)
 
@@ -227,8 +294,8 @@
 		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_FLAK-1,
 		laser = ARMOR_LASER_FLAK+1,
-		energy = ARMOR_ENERGY_MINOR,
-		rad = ARMOR_RAD_MINOR+10,
+		energy = ARMOR_ENERGY_TEN,
+		rad = ARMOR_RAD_MINOR+15,
 		bio = ARMOR_BIO_MINOR,
 		bomb = ARMOR_BOMB_MINOR-5
 	)
@@ -249,8 +316,8 @@
 		melee = ARMOR_MELEE_CARAPACE,
 		bullet = ARMOR_BALLISTIC_CARAPACE-1,
 		laser = ARMOR_LASER_CARAPACE+1,
-		energy = ARMOR_ENERGY_MINOR+10,
-		bio = ARMOR_BIO_MINOR+15,
+		energy = ARMOR_ENERGY_TEN+10,
+		bio = ARMOR_BIO_MINOR+25,
 		rad = ARMOR_RAD_MINOR+5,
 		bomb = ARMOR_BOMB_MINOR+5
 	)
@@ -270,9 +337,9 @@
 		melee = ARMOR_MELEE_CARAPACE,
 		bullet = ARMOR_BALLISTIC_CARAPACE,
 		laser = ARMOR_LASER_CARAPACE,
-		energy = ARMOR_ENERGY_MINOR+10,
-		rad = ARMOR_RAD_MINOR+10,
-		bio = ARMOR_BIO_MINOR+5,
+		energy = ARMOR_ENERGY_TEN+10,
+		rad = ARMOR_RAD_MINOR+35,
+		bio = ARMOR_BIO_MINOR+15,
 		bomb = ARMOR_BOMB_MINOR+5
 	)
 
@@ -291,9 +358,9 @@
 		melee = ARMOR_MELEE_CARAPACE+1,
 		bullet = ARMOR_BALLISTIC_CARAPACE+1,
 		laser = ARMOR_LASER_CARAPACE+1,
-		energy = ARMOR_ENERGY_MINOR+10,
-		rad = ARMOR_RAD_MINOR+10,
-		bio = ARMOR_BIO_MINOR+5,
+		energy = ARMOR_ENERGY_TEN+10,
+		rad = ARMOR_RAD_MINOR+45,
+		bio = ARMOR_BIO_MINOR+25,
 		bomb = ARMOR_BOMB_MINOR+5
 	)
 
@@ -311,7 +378,7 @@
 		melee = ARMOR_MELEE_FLAK-1,
 		bullet = ARMOR_BALLISTIC_FLAK-1,
 		laser = ARMOR_LASER_FLAK-1,
-		energy = ARMOR_ENERGY_MINOR-2,
+		energy = ARMOR_ENERGY_TEN-2,
 		rad = ARMOR_RAD_MINOR,
 		bio = ARMOR_BIO_MINOR,
 		bomb = ARMOR_BOMB_MINOR
@@ -322,53 +389,6 @@
 	desc = "A decorated Catachan flak vest worn by sergeants, offering slightly better protection without compromising mobility."
 	body_parts_covered = LEGS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/carapacemaster)
-
-/obj/item/clothing/suit/armor/grim/cadian/conscript
-	name = "cadian light flak armour"
-	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, It is so common that it became symbol of the Astra Militarum as a whole. This one is in it light configuration, issued to the Whiteshields."
-	icon_state = "fvest"
-	item_state = "fvest"
-	body_parts_covered = LEGS|ARMS
-	accessories = list(/obj/item/clothing/accessory/armor_plate/flak)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-25
-	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-100
-	slowdown_general = 0.04
-	armor = list(
-		melee = ARMOR_MELEE_FLAK-1,
-		bullet = ARMOR_BALLISTIC_FLAK-2,
-		laser = ARMOR_LASER_FLAK-2,
-		energy = ARMOR_ENERGY_MINOR-1,
-		bio = ARMOR_BIO_MINOR,
-		rad = ARMOR_RAD_MINOR,
-		bomb = ARMOR_BOMB_MINOR
-	)
-
-/obj/item/clothing/suit/armor/grim/cadian/conscript/pdf
-	name = "PDF flak armour"
-	desc = "A non standard pattern of flak armour issued to planetary defense forces, this particular variant being inferior to guard issue kit."
-	icon_state = "PDF-T"
-	item_state = "PDF-T"
-
-/obj/item/clothing/suit/armor/grim/cadian/conscript/medic
-	name = "PDF medicae armour"
-	icon_state = "PDF-MedicT"
-	item_state = "PDF-MedicT"
-
-/obj/item/clothing/suit/armor/grim/cadian/conscript/spec
-	name = "PDF heavy armour"
-	icon_state = "PDF-SpecialT"
-	item_state = "PDF-SpecialT"
-	accessories = list(/obj/item/clothing/accessory/armor_plate/flakheavy)
-	slowdown_general = 0.06
-	armor = list(
-		melee = ARMOR_MELEE_FLAK-1,
-		bullet = ARMOR_BALLISTIC_FLAK,
-		laser = ARMOR_LASER_FLAK,
-		energy = ARMOR_ENERGY_MINOR,
-		bio = ARMOR_BIO_MINOR,
-		rad = ARMOR_RAD_MINOR,
-		bomb = ARMOR_BOMB_MINOR
-	)
 
 /obj/item/clothing/suit/armor/grim/commissar
 	name = "commissar's greatcoat"
@@ -384,7 +404,7 @@
 		melee = ARMOR_MELEE_CARAPACE+1,
 		bullet = ARMOR_BALLISTIC_CARAPACE+1,
 		laser = ARMOR_LASER_CARAPACE+1,
-		energy = ARMOR_ENERGY_MINOR+20,
+		energy = ARMOR_ENERGY_TEN+20,
 		bio = ARMOR_BIO_MINOR+25,
 		rad = ARMOR_RAD_MINOR+35,
 		bomb = ARMOR_BOMB_MINOR+15
@@ -402,7 +422,7 @@
 		melee = ARMOR_MELEE_CARAPACE,
 		bullet = ARMOR_BALLISTIC_CARAPACE,
 		laser = ARMOR_LASER_CARAPACE,
-		energy = ARMOR_ENERGY_MINOR+15,
+		energy = ARMOR_ENERGY_TEN+15,
 		rad = ARMOR_RAD_MINOR+25,
 		bio = ARMOR_BIO_MINOR+15,
 		bomb = ARMOR_BOMB_MINOR+15
@@ -434,11 +454,17 @@
 		melee = ARMOR_MELEE_CARAPACE-1, // No wasted weight on melee protection for Stormtroopers.
 		bullet = ARMOR_BALLISTIC_CARAPACE+1,
 		laser = ARMOR_LASER_CARAPACE+1,
-		energy = ARMOR_ENERGY_MINOR+15,
-		rad = ARMOR_RAD_MINOR+35,
+		energy = ARMOR_ENERGY_TEN+15,
+		rad = ARMOR_RAD_MINOR+45,
 		bio = ARMOR_BIO_MINOR+25,
-		bomb = ARMOR_BOMB_PADDED+15
+		bomb = ARMOR_BOMB_THIRTY+15
 		)
+
+/obj/item/clothing/suit/armor/stormtrooper/scion
+	name = "tempestus scion's carapace armour"
+	desc = "Solid Carapace armour, belonging to the elite forces of the Tempestus Scions."
+	icon_state = "ScionArmour"
+	item_state = "ScionArmour"
 
 /obj/item/clothing/suit/armor/grim/cadian/officer
 	name = "militarum officer's coat"
@@ -451,12 +477,32 @@
 		melee = ARMOR_MELEE_CARAPACE-1,
 		bullet = ARMOR_BALLISTIC_CARAPACE-1,
 		laser = ARMOR_LASER_CARAPACE-1,
-		energy = ARMOR_ENERGY_MINOR+5,
+		energy = ARMOR_ENERGY_TEN+5,
 		bomb = ARMOR_BOMB_MINOR+15,
 		rad = ARMOR_RAD_MINOR+10,
 		bio = ARMOR_BIO_MINOR+10
 	)
 	slowdown_general = 0.045
+
+/obj/item/clothing/suit/armor/kasrkin
+	name = "kasrkin carapace"
+	desc = "The Carapace Armor of an Elite Kasrkin, a reliable stormtrooper armor."
+	icon_state = "kasrkinarmor"
+	item_state = "kasrkinarmor"
+	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
+	body_parts_covered = LEGS|ARMS|FULL_TORSO
+	slowdown_general = 0.10
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-50
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+120
+	armor = list(
+		melee = ARMOR_MELEE_CARAPACE-1, // No wasted weight on melee protection for Stormtroopers.
+		bullet = ARMOR_BALLISTIC_CARAPACE+1,
+		laser = ARMOR_LASER_CARAPACE+1,
+		energy = ARMOR_ENERGY_TEN+15,
+		rad = ARMOR_RAD_MINOR+45,
+		bio = ARMOR_BIO_MINOR+25,
+		bomb = ARMOR_BOMB_THIRTY+15
+		)
 
 
 
@@ -475,9 +521,9 @@
 		melee = ARMOR_MELEE_FLAK-1,
 		bullet = ARMOR_BALLISTIC_FLAK-1,
 		laser = ARMOR_LASER_FLAK-2,
-		energy = ARMOR_ENERGY_MINOR-2,
-		rad = ARMOR_RAD_MINOR,
-		bio = ARMOR_BIO_MINOR,
+		energy = ARMOR_ENERGY_TEN-2,
+		rad = ARMOR_RAD_MINOR+15, // patrols sewers and underhives
+		bio = ARMOR_BIO_MINOR+5,
 		bomb = ARMOR_BOMB_MINOR-2
 		)
 
@@ -495,10 +541,10 @@
 		melee = ARMOR_MELEE_CARAPACE,
 		bullet = ARMOR_BALLISTIC_CARAPACE+1,
 		laser = ARMOR_LASER_CARAPACE+1,
-		energy = ARMOR_ENERGY_MINOR+10,
+		energy = ARMOR_ENERGY_TEN+10,
 		rad = ARMOR_RAD_MINOR+45,
 		bio = ARMOR_BIO_MINOR+35,
-		bomb = ARMOR_BOMB_PADDED+5
+		bomb = ARMOR_BOMB_THIRTY+5
 		)
 
 /obj/item/clothing/suit/armor/enforcer2
@@ -515,7 +561,7 @@
 		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_FLAK+1,
 		laser = ARMOR_LASER_FLAK+1,
-		energy = ARMOR_ENERGY_MINOR+1,
+		energy = ARMOR_ENERGY_TEN+1,
 		bio = ARMOR_BIO_MINOR+28,
 		rad = ARMOR_RAD_MINOR+35,
 		bomb = ARMOR_BOMB_MINOR+8
@@ -535,7 +581,7 @@
 		melee = ARMOR_MELEE_FLAK-1,
 		bullet = ARMOR_BALLISTIC_FLAK-1,
 		laser = ARMOR_LASER_FLAK-1,
-		energy = ARMOR_ENERGY_MINOR-1,
+		energy = ARMOR_ENERGY_TEN-1,
 		rad = ARMOR_RAD_MINOR+10,
 		bio = ARMOR_BIO_MINOR+5,
 		bomb = ARMOR_BOMB_MINOR
@@ -555,7 +601,7 @@
 		melee = ARMOR_MELEE_CARAPACE-1,
 		bullet = ARMOR_BALLISTIC_CARAPACE-1,
 		laser = ARMOR_LASER_CARAPACE-1,
-		energy = ARMOR_ENERGY_MINOR,
+		energy = ARMOR_ENERGY_TEN,
 		rad = ARMOR_RAD_MINOR+15,
 		bio = ARMOR_BIO_MINOR+10,
 		bomb = ARMOR_BOMB_MINOR+5,
@@ -573,10 +619,10 @@
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+300
 	armor = list(
 		melee = ARMOR_MELEE_CARAPACE-1,
-		bullet = ARMOR_BALLISTIC_CARAPACE-2,
-		laser = ARMOR_LASER_CARAPACE-2,
-		energy = ARMOR_ENERGY_MINOR-2,
-		rad = ARMOR_RAD_MINOR+5,
+		bullet = ARMOR_BALLISTIC_FLAK+1,
+		laser = ARMOR_LASER_FLAK+1,
+		energy = ARMOR_ENERGY_TEN-2,
+		rad = ARMOR_RAD_MINOR+10,
 		bio = ARMOR_BIO_MINOR,
 		bomb = ARMOR_BOMB_MINOR-5,
 	)
@@ -595,10 +641,10 @@
 		melee = ARMOR_MELEE_CARAPACE+1,
 		bullet = ARMOR_BALLISTIC_CARAPACE+2,
 		laser = ARMOR_LASER_CARAPACE+2,
-		energy = ARMOR_ENERGY_MINOR+16,
+		energy = ARMOR_ENERGY_TEN+16,
 		rad = ARMOR_RAD_MINOR+35,
 		bio = ARMOR_BIO_MINOR+25,
-		bomb = ARMOR_BOMB_PADDED+15
+		bomb = ARMOR_BOMB_THIRTY+15
 		)
 
 // MECHANICUS
@@ -618,7 +664,7 @@
 		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
-		energy = ARMOR_ENERGY_MINOR+5,
+		energy = ARMOR_ENERGY_TEN+5,
 		bio = ARMOR_BIO_MINOR+20,
 		rad = ARMOR_RAD_MINOR+30,
 		bomb = ARMOR_BOMB_MINOR+15
@@ -636,7 +682,7 @@
 		melee = ARMOR_MELEE_FLAK-1,
 		bullet = ARMOR_BALLISTIC_FLAK-1,
 		laser = ARMOR_LASER_FLAK-1,
-		energy = ARMOR_ENERGY_MINOR,
+		energy = ARMOR_ENERGY_TEN,
 		bio = ARMOR_BIO_MINOR+20,
 		rad = ARMOR_RAD_MINOR+30,
 		bomb = ARMOR_BOMB_MINOR+5
@@ -657,9 +703,9 @@
 	slowdown_general = 0.08
 	armor = list(
 		melee = ARMOR_MELEE_FLAK,
-		bullet = ARMOR_BALLISTIC_CARAPACE-2,
+		bullet = ARMOR_BALLISTIC_FLAK+1,
 		laser = ARMOR_LASER_CARAPACE-1,
-		energy = ARMOR_ENERGY_MINOR+20,
+		energy = ARMOR_ENERGY_TEN+20,
 		rad = ARMOR_RAD_RESISTANT+48,
 		bio = ARMOR_BIO_RESISTANT+48,
 		bomb = ARMOR_BOMB_MINOR+10
@@ -674,9 +720,9 @@
 	canremove = 0
 	armor = list(
 		melee = ARMOR_MELEE_FLAK,
-		bullet = ARMOR_BALLISTIC_CARAPACE-2,
+		bullet = ARMOR_BALLISTIC_FLAK+1,
 		laser = ARMOR_LASER_CARAPACE-1,
-		energy = ARMOR_ENERGY_MINOR+20,
+		energy = ARMOR_ENERGY_TEN+20,
 		rad = ARMOR_RAD_RESISTANT+48,
 		bio = ARMOR_BIO_RESISTANT+48,
 		bomb = ARMOR_BOMB_MINOR+10
@@ -699,9 +745,9 @@
 	slowdown_general = 0.08
 	armor = list(
 		melee = ARMOR_MELEE_FLAK,
-		bullet = ARMOR_BALLISTIC_CARAPACE-2,
+		bullet = ARMOR_BALLISTIC_FLAK+1,
 		laser = ARMOR_LASER_CARAPACE-1,
-		energy = ARMOR_ENERGY_MINOR+20,
+		energy = ARMOR_ENERGY_TEN+20,
 		rad = ARMOR_RAD_RESISTANT+48,
 		bio = ARMOR_BIO_RESISTANT+48,
 		bomb = ARMOR_BOMB_MINOR+10
@@ -732,9 +778,9 @@
 	slowdown_general = 0.08
 	armor = list(
 		melee = ARMOR_MELEE_FLAK,
-		bullet = ARMOR_BALLISTIC_CARAPACE-2,
+		bullet = ARMOR_BALLISTIC_FLAK+1,
 		laser = ARMOR_LASER_CARAPACE-1,
-		energy = ARMOR_ENERGY_MINOR+20,
+		energy = ARMOR_ENERGY_TEN+20,
 		rad = ARMOR_RAD_RESISTANT+48,
 		bio = ARMOR_BIO_RESISTANT+48,
 		bomb = ARMOR_BOMB_MINOR+10
@@ -744,9 +790,9 @@
 	item_state = "magoshelm"
 	armor = list(
 		melee = ARMOR_MELEE_FLAK,
-		bullet = ARMOR_BALLISTIC_CARAPACE-2,
+		bullet = ARMOR_BALLISTIC_FLAK+1,
 		laser = ARMOR_LASER_CARAPACE-1,
-		energy = ARMOR_ENERGY_MINOR+20,
+		energy = ARMOR_ENERGY_TEN+20,
 		rad = ARMOR_RAD_RESISTANT+48,
 		bio = ARMOR_BIO_RESISTANT+48,
 		bomb = ARMOR_BOMB_MINOR+10
@@ -769,7 +815,7 @@
 		melee = ARMOR_MELEE_CARAPACE,
 		bullet = ARMOR_BALLISTIC_CARAPACE,
 		laser = ARMOR_LASER_CARAPACE,
-		energy = ARMOR_ENERGY_MINOR+20,
+		energy = ARMOR_ENERGY_TEN+20,
 		rad = ARMOR_RAD_RESISTANT+48,
 		bio = ARMOR_BIO_RESISTANT+48,
 		bomb = ARMOR_BOMB_MINOR+10
@@ -790,7 +836,7 @@
 		melee = ARMOR_MELEE_CARAPACE,
 		bullet = ARMOR_BALLISTIC_CARAPACE,
 		laser = ARMOR_LASER_CARAPACE,
-		energy = ARMOR_ENERGY_MINOR+20,
+		energy = ARMOR_ENERGY_TEN+20,
 		rad = ARMOR_RAD_RESISTANT+48,
 		bio = ARMOR_BIO_RESISTANT+48,
 		bomb = ARMOR_BOMB_MINOR+10
@@ -812,7 +858,7 @@
 		melee = ARMOR_MELEE_CARAPACE-1,
 		bullet = ARMOR_BALLISTIC_CARAPACE-1,
 		laser = ARMOR_LASER_CARAPACE-1,
-		energy = ARMOR_ENERGY_MINOR+10,
+		energy = ARMOR_ENERGY_TEN+10,
 		rad = ARMOR_RAD_RESISTANT+48,
 		bio = ARMOR_BIO_RESISTANT+48,
 		bomb = ARMOR_BOMB_MINOR+5
@@ -833,7 +879,7 @@
 		melee = ARMOR_MELEE_CARAPACE-1,
 		bullet = ARMOR_BALLISTIC_CARAPACE-1,
 		laser = ARMOR_LASER_CARAPACE-1,
-		energy = ARMOR_ENERGY_MINOR+10,
+		energy = ARMOR_ENERGY_TEN+10,
 		rad = ARMOR_RAD_RESISTANT+48,
 		bio = ARMOR_BIO_RESISTANT+48,
 		bomb = ARMOR_BOMB_MINOR+5
@@ -856,7 +902,7 @@
 		melee = ARMOR_MELEE_CARAPACE-1,
 		bullet = ARMOR_BALLISTIC_CARAPACE+1,
 		laser = ARMOR_LASER_CARAPACE+1,
-		energy = ARMOR_ENERGY_MINOR+20,
+		energy = ARMOR_ENERGY_TEN+20,
 		rad = ARMOR_RAD_RESISTANT+48,
 		bio = ARMOR_BIO_RESISTANT+48,
 		bomb = ARMOR_BOMB_MINOR+10
@@ -877,7 +923,7 @@
 		melee = ARMOR_MELEE_CARAPACE,
 		bullet = ARMOR_BALLISTIC_CARAPACE+1,
 		laser = ARMOR_LASER_CARAPACE+1,
-		energy = ARMOR_ENERGY_MINOR+20,
+		energy = ARMOR_ENERGY_TEN+20,
 		rad = ARMOR_RAD_RESISTANT+48,
 		bio = ARMOR_BIO_RESISTANT+48,
 		bomb = ARMOR_BOMB_MINOR+10
@@ -900,7 +946,7 @@
 		melee = ARMOR_MELEE_CARAPACE,
 		bullet = ARMOR_BALLISTIC_POWER_ARMOUR, // In the books killing a servitor is like trying to blow up a chimera.
 		laser = ARMOR_LASER_POWER_ARMOUR,
-		energy = ARMOR_ENERGY_MINOR+20,
+		energy = ARMOR_ENERGY_TEN+20,
 		rad = ARMOR_RAD_RESISTANT+48,
 		bio = ARMOR_BIO_RESISTANT+48,
 		bomb = ARMOR_BOMB_MINOR+10
@@ -951,7 +997,7 @@
 		melee = ARMOR_MELEE_FLAK+1,
 		bullet = ARMOR_BALLISTIC_FLAK-3,
 		laser = ARMOR_LASER_FLAK-3,
-		energy = ARMOR_ENERGY_MINOR-3,
+		energy = ARMOR_ENERGY_TEN-3,
 		bio = ARMOR_BIO_MINOR,
 		rad = ARMOR_RAD_MINOR-5,
 		bomb = ARMOR_BOMB_MINOR-6
@@ -972,10 +1018,10 @@
 		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_FLAK+2,
 		laser = ARMOR_LASER_FLAK-1,
-		energy = ARMOR_ENERGY_MINOR,
+		energy = ARMOR_ENERGY_TEN,
 		bio = ARMOR_BIO_MINOR-8,
 		rad = ARMOR_RAD_MINOR,
-		bomb = ARMOR_BOMB_PADDED
+		bomb = ARMOR_BOMB_THIRTY
 		)
 	flags_inv = CLOTHING_BULKY
 	slowdown_general = 0.09

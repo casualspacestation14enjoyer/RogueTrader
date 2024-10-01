@@ -62,7 +62,7 @@
 		bullet = ARMOR_BALLISTIC_PRIMAL,
 		laser = ARMOR_LASER_PRIMAL,
 		energy = ARMOR_ENERGY_SMALL,
-		bomb = ARMOR_BOMB_PADDED,
+		bomb = ARMOR_BOMB_THIRTY,
 		bio = ARMOR_BIO_MINOR,
 		rad = ARMOR_RAD_MINOR
 		)

@@ -23,7 +23,7 @@
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_SMALL,
-		bomb = ARMOR_BOMB_PADDED
+		bomb = ARMOR_BOMB_THIRTY
 		)
 	flags_inv = HIDEEARS|BLOCKHEADHAIR
 	cold_protection = HEAD
@@ -80,7 +80,7 @@
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_RESISTANT,
-		bomb = ARMOR_BOMB_PADDED
+		bomb = ARMOR_BOMB_THIRTY
 		)
 	siemens_coefficient = 0.6
 
@@ -93,7 +93,7 @@
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_RESISTANT,
-		bomb = ARMOR_BOMB_PADDED
+		bomb = ARMOR_BOMB_THIRTY
 		)
 	siemens_coefficient = 0.5
 
@@ -142,7 +142,7 @@
 		melee = ARMOR_MELEE_BASIC,
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_PRIMAL,
-		bomb = ARMOR_BOMB_PADDED
+		bomb = ARMOR_BOMB_THIRTY
 		)
 	siemens_coefficient = 0.7
 
@@ -155,7 +155,7 @@
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_RESISTANT,
-		bomb = ARMOR_BOMB_PADDED
+		bomb = ARMOR_BOMB_THIRTY
 		)
 	valid_accessory_slots = list(ACCESSORY_SLOT_HELMET_VISOR)
 	cold_protection = HEAD
@@ -172,7 +172,7 @@
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_RESISTANT,
-		bomb = ARMOR_BOMB_PADDED
+		bomb = ARMOR_BOMB_THIRTY
 		)
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE
@@ -197,7 +197,7 @@
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_RESISTANT,
-		bomb = ARMOR_BOMB_PADDED
+		bomb = ARMOR_BOMB_THIRTY
 		)
 	flags_inv = HIDEEARS|HIDEEYES
 	body_parts_covered = HEAD|EYES|BLOCKHEADHAIR
@@ -264,8 +264,8 @@
 		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_PRIMAL,
-		energy = ARMOR_ENERGY_MINOR,
-		bomb = ARMOR_BOMB_PADDED,
+		energy = ARMOR_ENERGY_TEN,
+		bomb = ARMOR_BOMB_THIRTY,
 		bio = ARMOR_BIO_SMALL,
 		rad = ARMOR_RAD_MINOR
 	)
@@ -288,7 +288,7 @@
 		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
-		energy = ARMOR_ENERGY_MINOR,
+		energy = ARMOR_ENERGY_TEN,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_SMALL

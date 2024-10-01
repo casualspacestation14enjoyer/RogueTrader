@@ -20,8 +20,8 @@
 		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_BASIC,
 		laser = ARMOR_LASER_BASIC,
-		energy = ARMOR_ENERGY_MINOR,
-		bomb = ARMOR_BOMB_PADDED
+		energy = ARMOR_ENERGY_TEN,
+		bomb = ARMOR_BOMB_THIRTY
 		)
 	siemens_coefficient = 0.7
 	gas_transfer_coefficient = 0.90
@@ -50,7 +50,7 @@
 		melee = ARMOR_MELEE_PRIMAL,
 		laser = ARMOR_LASER_BASIC,
 		energy = ARMOR_ENERGY_SMALL,
-		bomb = ARMOR_BOMB_PADDED
+		bomb = ARMOR_BOMB_THIRTY
 		)
 	siemens_coefficient = 0.7
 	gas_transfer_coefficient = 0.90

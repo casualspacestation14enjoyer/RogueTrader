@@ -8,8 +8,8 @@
 		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
-		energy = ARMOR_ENERGY_MINOR,
-		bomb = ARMOR_BOMB_PADDED
+		energy = ARMOR_ENERGY_TEN,
+		bomb = ARMOR_BOMB_THIRTY
 		)
 	siemens_coefficient = 0.4
 	emp_protection = 10
@@ -107,7 +107,7 @@
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_RESISTANT,
-		bomb = ARMOR_BOMB_PADDED,
+		bomb = ARMOR_BOMB_THIRTY,
 		bio = ARMOR_BIO_SHIELDED
 		)
 	siemens_coefficient = 0.2 //heavy hardsuit level shock protection
@@ -210,7 +210,7 @@
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_RESISTANT,
-		bomb = ARMOR_BOMB_PADDED,
+		bomb = ARMOR_BOMB_THIRTY,
 		bio = ARMOR_BIO_SHIELDED
 		)
 	initial_modules = list(
@@ -242,7 +242,7 @@
 		bullet = ARMOR_BALLISTIC_CARAPACE,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_RESISTANT,
-		bomb = ARMOR_BOMB_PADDED,
+		bomb = ARMOR_BOMB_THIRTY,
 		bio = ARMOR_BIO_SHIELDED
 	)
 

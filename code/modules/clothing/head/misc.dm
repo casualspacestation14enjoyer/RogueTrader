@@ -189,7 +189,7 @@
 		bullet = ARMOR_BALLISTIC_CARAPACE,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_SMALL,
-		bomb = ARMOR_BOMB_PADDED
+		bomb = ARMOR_BOMB_THIRTY
 		)
 
 /obj/item/clothing/head/beaverhat
@@ -326,7 +326,7 @@
 	color = "#5f5f5f"
 	armor = list(
 		melee = ARMOR_MELEE_FLAK,
-		bomb = ARMOR_BOMB_PADDED
+		bomb = ARMOR_BOMB_THIRTY
 		)
 
 /obj/item/clothing/head/tank/olive

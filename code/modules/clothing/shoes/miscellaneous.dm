@@ -59,8 +59,8 @@
 	icon_state = "duty"
 	armor = list(
 		melee = ARMOR_MELEE_PRIMAL,
-		energy = ARMOR_ENERGY_MINOR,
-		bomb = ARMOR_BOMB_PADDED,
+		energy = ARMOR_ENERGY_TEN,
+		bomb = ARMOR_BOMB_THIRTY,
 		rad = ARMOR_RAD_MINOR
 		)
 	siemens_coefficient = 0.7

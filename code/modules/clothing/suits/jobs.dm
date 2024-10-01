@@ -108,7 +108,7 @@
 		melee = ARMOR_MELEE_FLAK-1,
 		bullet = ARMOR_BALLISTIC_FLAK-8,
 		laser = ARMOR_LASER_FLAK-8,
-		energy = ARMOR_ENERGY_MINOR-8,
+		energy = ARMOR_ENERGY_TEN-8,
 		rad = ARMOR_RAD_MINOR-10,
 		bomb = ARMOR_BOMB_MINOR-10
 		)
@@ -144,7 +144,7 @@
 		melee = ARMOR_MELEE_FLAK-1,
 		bullet = ARMOR_BALLISTIC_FLAK-8,
 		laser = ARMOR_LASER_FLAK-8,
-		energy = ARMOR_ENERGY_MINOR-8,
+		energy = ARMOR_ENERGY_TEN-8,
 		rad = ARMOR_RAD_MINOR+5, // Magistratum enforcers probably have hazard-lining to protect from exploring underhives.
 		bio = ARMOR_BIO_MINOR,
 		bomb = ARMOR_BOMB_MINOR-10

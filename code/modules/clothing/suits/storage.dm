@@ -7,7 +7,7 @@
 		melee = ARMOR_MELEE_FLAK-1,
 		bullet = ARMOR_BALLISTIC_FLAK-8,
 		laser = ARMOR_LASER_FLAK-8,
-		energy = ARMOR_ENERGY_MINOR-8,
+		energy = ARMOR_ENERGY_TEN-8,
 		rad = ARMOR_RAD_MINOR-5,
 		bio = ARMOR_BIO_MINOR-15,
 		bomb = ARMOR_BOMB_MINOR-10

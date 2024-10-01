@@ -14,12 +14,117 @@
 		melee = ARMOR_MELEE_POWER_ARM-2,
 		bullet = ARMOR_BALLISTIC_POWER_ARMOUR-1,
 		laser = ARMOR_LASER_POWER_ARMOUR-2,
-		energy = ARMOR_ENERGY_MINOR+26,
+		energy = ARMOR_ENERGY_TEN+26,
 		rad = ARMOR_RAD_MINOR+25,
 		bio = ARMOR_BIO_MINOR+15,
-		bomb = ARMOR_BOMB_PADDED+5
+		bomb = ARMOR_BOMB_THIRTY+5
 		)
 
+// ORKS
+
+/obj/item/clothing/suit/armor/orkarmor
+	name = "'Eavy Metal Ork Armor"
+	desc = "Scavenged 'eavy bitz to keep ya' krumpin' longa'!"
+	icon_state = "ork_m_armor"
+	item_state = "ork_m_armor" // Make sure orks ignore cold, heat, pressure and vacuum.
+	body_parts_covered = LEGS|ARMS|FULL_TORSO
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-45
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+50
+	slowdown_general = 0.4 // Make sure to set ork speed to match this slowdown. So it only slows down non-orks wearing it.
+	armor = list(
+		melee = ARMOR_MELEE_FLAK+2,
+		bullet = ARMOR_BALLISTIC_FLAK+1,
+		laser = ARMOR_LASER_FLAK+1,
+		energy = ARMOR_ENERGY_TEN+10,
+		bio = ARMOR_BIO_MINOR+20,
+		rad = ARMOR_RAD_MINOR+40,
+		bomb = ARMOR_BOMB_MINOR+30 // Orks get amazing resistances to rads and bombs from gestalt. Being bombed is just character building for orks.
+	)
+
+/obj/item/clothing/suit/armor/orkarmor/snazzy
+	name = "Shoota Boyz Armor"
+	desc = "Snazzy Armor of em ranged shoota boy types. Gud all rounda. Wat eva dat wurd means..."
+	icon_state = "snazzya"
+	item_state = "snazzya"
+	armor = list(
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK+2,
+		laser = ARMOR_LASER_FLAK+2,
+		energy = ARMOR_ENERGY_TEN+10,
+		bio = ARMOR_BIO_MINOR+20,
+		rad = ARMOR_RAD_MINOR+40,
+		bomb = ARMOR_BOMB_MINOR+30
+	)
+
+/obj/item/clothing/suit/armor/orkarmor/skullza
+	name = "Orky Boy Skull Armor"
+	desc = "Da armor of a real lova of humie skullz'. Dis Boy 'oves gettin' in klose kombat, it's defeenses help loads in da maylays!"
+	icon_state = "ork_skullza"
+	item_state = "ork_skullza"
+	slowdown_general = 0.25
+	armor = list(
+		melee = ARMOR_MELEE_FLAK+2,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK,
+		energy = ARMOR_ENERGY_TEN+10,
+		bio = ARMOR_BIO_MINOR+20,
+		rad = ARMOR_RAD_MINOR+40,
+		bomb = ARMOR_BOMB_MINOR+30
+	)
+
+/obj/item/clothing/suit/armor/orkarmor/zog
+	name = "Zogging Ork Boy Armor"
+	desc = "Da buttom of de barrel, dis one. Won't protek ya much. Betta dun nuffin, me guesses..."
+	icon_state = "zoga"
+	item_state = "zoga"
+	body_parts_covered = LEGS|FULL_TORSO // sleevless ork
+	slowdown_general = 0.2
+	armor = list(
+		melee = ARMOR_MELEE_FLAK+1,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK,
+		energy = ARMOR_ENERGY_TEN+5,
+		bio = ARMOR_BIO_MINOR+10,
+		rad = ARMOR_RAD_MINOR+30,
+		bomb = ARMOR_BOMB_MINOR+20
+	)
+
+/obj/item/clothing/suit/armor/orkarmor/freeb
+	name = "Freeboota Coat"
+	desc = "Freeboota Coat of em ranged merc boy types. Gud all rounda. Wat eva dat wurd means..."
+	icon_state = "freeboota"
+	item_state = "freeboota"
+	body_parts_covered = ARMS|LEGS|FULL_TORSO
+	slowdown_general = 0.25
+	armor = list(
+		melee = ARMOR_MELEE_FLAK, // freeboota's are smart. more las prot, less melee.
+		bullet = ARMOR_BALLISTIC_FLAK+1,
+		laser = ARMOR_LASER_FLAK+1,
+		energy = ARMOR_ENERGY_TEN+5,
+		bio = ARMOR_BIO_MINOR+10,
+		rad = ARMOR_RAD_MINOR+30,
+		bomb = ARMOR_BOMB_MINOR+20
+	)
+
+/obj/item/clothing/suit/armor/orkarmor/captain
+	name = "Tha Kaptin's Coat"
+	desc = "DA BOSS WEARS THIS!"
+	icon_state = "freeboota"
+	item_state = "freeboota"
+	color = COLOR_DARK_GUNMETAL
+	body_parts_covered = LEGS|ARMS|FULL_TORSO
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-45
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+50
+	slowdown_general = 0.4
+	armor = list(
+		melee = ARMOR_MELEE_FLAK+2,
+		bullet = ARMOR_BALLISTIC_FLAK+3,
+		laser = ARMOR_LASER_FLAK+3,
+		energy = ARMOR_ENERGY_TEN+20,
+		bio = ARMOR_BIO_MINOR+30,
+		rad = ARMOR_RAD_MINOR+50,
+		bomb = ARMOR_BOMB_MINOR+45 // Gestalt so strong they can only be killed in a fair duel.
+	)
 
 // Tau
 /obj/item/clothing/suit/armor/tau
@@ -36,10 +141,10 @@
 		melee = ARMOR_MELEE_POWER_ARM-2,
 		bullet = ARMOR_BALLISTIC_POWER_ARMOUR-2,
 		laser = ARMOR_LASER_POWER_ARMOUR-2,
-		energy = ARMOR_ENERGY_MINOR+26,
+		energy = ARMOR_ENERGY_TEN+26,
 		rad = ARMOR_RAD_MINOR+55,
 		bio = ARMOR_BIO_MINOR+35,
-		bomb = ARMOR_BOMB_PADDED+5
+		bomb = ARMOR_BOMB_THIRTY+5
 		)
 
 /obj/item/clothing/suit/armor/tau/breacher
@@ -56,10 +161,10 @@
 		melee = ARMOR_MELEE_POWER_ARM-1,
 		bullet = ARMOR_BALLISTIC_POWER_ARMOUR-1,
 		laser = ARMOR_LASER_POWER_ARMOUR-1,
-		energy = ARMOR_ENERGY_MINOR+26,
+		energy = ARMOR_ENERGY_TEN+26,
 		rad = ARMOR_RAD_MINOR+65,
 		bio = ARMOR_BIO_MINOR+45,
-		bomb = ARMOR_BOMB_PADDED+15
+		bomb = ARMOR_BOMB_THIRTY+15
 		)
 
 /obj/item/clothing/suit/armor/tau/scout
@@ -74,10 +179,10 @@
 		melee = ARMOR_MELEE_POWER_ARM-3,
 		bullet = ARMOR_BALLISTIC_POWER_ARMOUR-3,
 		laser = ARMOR_LASER_POWER_ARMOUR-2,
-		energy = ARMOR_ENERGY_MINOR+26,
+		energy = ARMOR_ENERGY_TEN+26,
 		rad = ARMOR_RAD_MINOR+55,
 		bio = ARMOR_BIO_MINOR+35,
-		bomb = ARMOR_BOMB_PADDED
+		bomb = ARMOR_BOMB_THIRTY
 		)
 
 // Eldar
@@ -95,10 +200,10 @@
 		melee = ARMOR_MELEE_CARAPACE+1,
 		bullet = ARMOR_BALLISTIC_CARAPACE+2,
 		laser = ARMOR_LASER_CARAPACE+2,
-		energy = ARMOR_ENERGY_MINOR+30,
+		energy = ARMOR_ENERGY_TEN+30,
 		rad = ARMOR_RAD_MINOR+65,
 		bio = ARMOR_BIO_MINOR+65,
-		bomb = ARMOR_BOMB_PADDED+5
+		bomb = ARMOR_BOMB_THIRTY+5
 		)
 
 /obj/item/clothing/suit/armor/eldar/drukhari
@@ -115,10 +220,10 @@
 		melee = ARMOR_MELEE_CARAPACE+1,
 		bullet = ARMOR_BALLISTIC_CARAPACE+1,
 		laser = ARMOR_LASER_CARAPACE+1,
-		energy = ARMOR_ENERGY_MINOR+30,
+		energy = ARMOR_ENERGY_TEN+30,
 		rad = ARMOR_RAD_MINOR+55,
 		bio = ARMOR_BIO_MINOR+55,
-		bomb = ARMOR_BOMB_PADDED+5
+		bomb = ARMOR_BOMB_THIRTY+5
 		)
 
 /obj/item/clothing/suit/armor/eldar/corsair
@@ -135,10 +240,10 @@
 		melee = ARMOR_MELEE_CARAPACE,
 		bullet = ARMOR_BALLISTIC_CARAPACE+1,
 		laser = ARMOR_LASER_CARAPACE+2,
-		energy = ARMOR_ENERGY_MINOR+30,
+		energy = ARMOR_ENERGY_TEN+30,
 		rad = ARMOR_RAD_MINOR+55,
 		bio = ARMOR_BIO_MINOR+55,
-		bomb = ARMOR_BOMB_PADDED+5
+		bomb = ARMOR_BOMB_THIRTY+5
 		)
 
 /obj/item/clothing/suit/armor/eldar/ranger
@@ -155,10 +260,10 @@
 		melee = ARMOR_MELEE_CARAPACE+1,
 		bullet = ARMOR_BALLISTIC_CARAPACE+2,
 		laser = ARMOR_LASER_CARAPACE+2,
-		energy = ARMOR_ENERGY_MINOR+30,
+		energy = ARMOR_ENERGY_TEN+30,
 		rad = ARMOR_RAD_MINOR+65,
 		bio = ARMOR_BIO_MINOR+65,
-		bomb = ARMOR_BOMB_PADDED+5
+		bomb = ARMOR_BOMB_THIRTY+5
 		)
 
 /obj/item/clothing/suit/armor/eldar/ranger/verb/toggle_eldar_camo()
