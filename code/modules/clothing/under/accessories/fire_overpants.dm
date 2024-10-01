@@ -5,7 +5,7 @@
 	gas_transfer_coefficient = 0.90
 	permeability_coefficient = 0.50
 
-	armor = list(laser = ARMOR_LASER_BASIC, energy = ARMOR_ENERGY_MINOR, bomb = ARMOR_BOMB_MINOR)
+	armor = list(laser = ARMOR_LASER_BASIC, energy = ARMOR_ENERGY_TEN, bomb = ARMOR_BOMB_MINOR)
 	body_parts_covered = LOWER_TORSO | LEGS
 	body_location = LOWER_TORSO | LEGS
 	slowdown = 0.5

@@ -96,7 +96,7 @@
 		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_BASIC,
 		laser = ARMOR_LASER_PRIMAL,
-		energy = ARMOR_ENERGY_MINOR,
+		energy = ARMOR_ENERGY_TEN,
 		bomb = ARMOR_BOMB_MINOR
 		)
 
@@ -107,7 +107,7 @@
 		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_PRIMAL,
 		laser = ARMOR_LASER_PRIMAL,
-		energy = ARMOR_ENERGY_MINOR,
+		energy = ARMOR_ENERGY_TEN,
 		bomb = ARMOR_BOMB_MINOR
 		)
 
@@ -142,7 +142,7 @@
 	siemens_coefficient = 0.5
 	armor = list(
 		melee = ARMOR_MELEE_PRIMAL,
-		energy = ARMOR_ENERGY_MINOR
+		energy = ARMOR_ENERGY_TEN
 		)
 	desc = "A hooded winter coat colored blue and white and bearing the logo of Deimos Advanced Information Systems."
 

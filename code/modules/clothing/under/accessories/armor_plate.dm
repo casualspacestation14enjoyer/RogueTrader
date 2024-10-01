@@ -15,7 +15,7 @@
 		melee = ARMOR_MELEE_FLAK-1,
 		bullet = ARMOR_BALLISTIC_FLAK-2,
 		laser = ARMOR_LASER_FLAK-2,
-		energy = ARMOR_ENERGY_MINOR-2,
+		energy = ARMOR_ENERGY_TEN-2,
 		bio = ARMOR_BIO_MINOR,
 		rad = ARMOR_RAD_MINOR+5,
 		bomb = ARMOR_BOMB_MINOR-2
@@ -35,7 +35,7 @@
 		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_FLAK+1,
 		laser = ARMOR_LASER_FLAK+1,
-		energy = ARMOR_ENERGY_MINOR+1,
+		energy = ARMOR_ENERGY_TEN+1,
 		bio = ARMOR_BIO_MINOR+10,
 		rad = ARMOR_RAD_MINOR+20,
 		bomb = ARMOR_BOMB_MINOR+2
@@ -57,7 +57,7 @@
 		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_FLAK+1,
 		laser = ARMOR_LASER_FLAK+1,
-		energy = ARMOR_ENERGY_MINOR+1,
+		energy = ARMOR_ENERGY_TEN+1,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_SHIELDED,
 		bomb = ARMOR_BOMB_MINOR+2
@@ -79,7 +79,7 @@
 		melee = ARMOR_MELEE_FLAK+1,
 		bullet = ARMOR_BALLISTIC_FLAK+2,
 		laser = ARMOR_LASER_FLAK+2,
-		energy = ARMOR_ENERGY_MINOR+1,
+		energy = ARMOR_ENERGY_TEN+1,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_SHIELDED,
 		bomb = ARMOR_BOMB_MINOR+12
@@ -101,7 +101,7 @@
 		melee = ARMOR_MELEE_FLAK+1,
 		bullet = ARMOR_BALLISTIC_FLAK+3,
 		laser = ARMOR_LASER_FLAK+3,
-		energy = ARMOR_ENERGY_MINOR+1,
+		energy = ARMOR_ENERGY_TEN+1,
 		bio = ARMOR_BIO_MINOR+20,
 		rad = ARMOR_RAD_MINOR+30,
 		bomb = ARMOR_BOMB_MINOR+20
@@ -120,7 +120,7 @@
 		melee = ARMOR_MELEE_FLAK+1,
 		bullet = ARMOR_BALLISTIC_FLAK+2,
 		laser = ARMOR_LASER_FLAK+2,
-		energy = ARMOR_ENERGY_MINOR+2,
+		energy = ARMOR_ENERGY_TEN+2,
 		bio = ARMOR_BIO_MINOR+20,
 		rad = ARMOR_RAD_MINOR+30,
 		bomb = ARMOR_BOMB_MINOR+8
@@ -139,12 +139,32 @@
 		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_FLAK-1,
 		laser = ARMOR_LASER_FLAK-1,
-		energy = ARMOR_ENERGY_MINOR-1,
+		energy = ARMOR_ENERGY_TEN-1,
 		bio = ARMOR_BIO_MINOR+10,
 		rad = ARMOR_RAD_MINOR+20,
-		bomb = ARMOR_BOMB_MINOR-2
+		bomb = ARMOR_BOMB_MINOR+5
 	)
 	slowdown = 0.04 // Lighter weight, allows for better mobility
+
+/obj/item/clothing/accessory/armor_plate/flaktribal
+	name = "tribal flak lamellar"
+	desc = "Old scavenged flak-plates sewn in with hard cured xenos leathers and alien fabrics."
+	icon_state = "armor_medium"
+	color = COLOR_BEASTY_BROWN
+	item_flags = ITEM_FLAG_THICKMATERIAL
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-45
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+450
+	slowdown = 0.04
+	equip_delay = 9 SECONDS
+	armor = list(
+		melee = ARMOR_MELEE_FLAK-1,
+		bullet = ARMOR_BALLISTIC_FLAK-1,
+		laser = ARMOR_LASER_FLAK-1,
+		energy = ARMOR_ENERGY_TEN-1,
+		bio = ARMOR_BIO_MINOR+5,
+		rad = ARMOR_RAD_MINOR+15,
+		bomb = ARMOR_BOMB_MINOR
+	)
 
 
 /obj/item/clothing/accessory/armor_plate/carapace
@@ -159,10 +179,10 @@
 		melee = ARMOR_MELEE_CARAPACE,
 		bullet = ARMOR_BALLISTIC_CARAPACE+1,
 		laser = ARMOR_LASER_CARAPACE+1,
-		energy = ARMOR_ENERGY_MINOR+10,
+		energy = ARMOR_ENERGY_TEN+10,
 		rad = ARMOR_RAD_MINOR+30,
 		bio = ARMOR_BIO_MINOR+20,
-		bomb = ARMOR_BOMB_PADDED-5
+		bomb = ARMOR_BOMB_THIRTY-5
 		)
 
 	slowdown = 0.07
@@ -179,10 +199,10 @@
 		melee = ARMOR_MELEE_CARAPACE+1,
 		bullet = ARMOR_BALLISTIC_CARAPACE+2,
 		laser = ARMOR_LASER_CARAPACE+2,
-		energy = ARMOR_ENERGY_MINOR+12,
+		energy = ARMOR_ENERGY_TEN+12,
 		rad = ARMOR_RAD_MINOR+45,
 		bio = ARMOR_BIO_MINOR+35,
-		bomb = ARMOR_BOMB_PADDED+5
+		bomb = ARMOR_BOMB_THIRTY+5
 		)
 
 	slowdown = 0.07
@@ -199,10 +219,10 @@
 		melee = ARMOR_MELEE_CARAPACE+1,
 		bullet = ARMOR_BALLISTIC_CARAPACE+2,
 		laser = ARMOR_LASER_CARAPACE+2,
-		energy = ARMOR_ENERGY_MINOR+12,
+		energy = ARMOR_ENERGY_TEN+12,
 		rad = ARMOR_RAD_MINOR+40,
 		bio = ARMOR_BIO_MINOR+20,
-		bomb = ARMOR_BOMB_PADDED
+		bomb = ARMOR_BOMB_THIRTY
 		)
 	slowdown = 0.09
 
@@ -222,7 +242,7 @@
 		melee = ARMOR_MELEE_PRIMAL-1,
 		bullet = ARMOR_BALLISTIC_PRIMAL,
 		laser = ARMOR_LASER_PRIMAL-1,
-		energy = ARMOR_ENERGY_MINOR-4,
+		energy = ARMOR_ENERGY_TEN-4,
 		bio = ARMOR_BIO_MINOR-6,
 		rad = ARMOR_RAD_MINOR,
 		bomb = ARMOR_BOMB_MINOR-6
@@ -245,7 +265,7 @@
 		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_PRIMAL+1, // Heavy padding is better for bullets then las.
 		laser = ARMOR_LASER_PRIMAL,
-		energy = ARMOR_ENERGY_MINOR-3,
+		energy = ARMOR_ENERGY_TEN-3,
 		bio = ARMOR_BIO_MINOR,
 		rad = ARMOR_RAD_MINOR+10,
 		bomb = ARMOR_BOMB_MINOR-4
@@ -268,7 +288,7 @@
 		melee = ARMOR_MELEE_PRIMAL-1,
 		bullet = ARMOR_BALLISTIC_PRIMAL,
 		laser = ARMOR_LASER_PRIMAL,
-		energy = ARMOR_ENERGY_MINOR,
+		energy = ARMOR_ENERGY_TEN,
 		rad = ARMOR_RAD_RESISTANT,
 		bio = ARMOR_BIO_RESISTANT,
 		bomb = ARMOR_BOMB_MINOR-4
@@ -291,7 +311,7 @@
 		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_PRIMAL+1,
 		laser = ARMOR_LASER_PRIMAL+1,
-		energy = ARMOR_ENERGY_MINOR+4,
+		energy = ARMOR_ENERGY_TEN+4,
 		rad = ARMOR_RAD_RESISTANT+45,
 		bio = ARMOR_BIO_RESISTANT+45,
 		bomb = ARMOR_BOMB_MINOR-2
@@ -314,7 +334,7 @@
 		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_CARAPACE,
 		laser = ARMOR_LASER_CARAPACE,
-		energy = ARMOR_ENERGY_MINOR+20,
+		energy = ARMOR_ENERGY_TEN+20,
 		rad = ARMOR_RAD_RESISTANT+48,
 		bio = ARMOR_BIO_RESISTANT+48,
 		bomb = ARMOR_BOMB_MINOR+10
@@ -337,7 +357,7 @@
 		melee = ARMOR_MELEE_FLAK+1,
 		bullet = ARMOR_BALLISTIC_CARAPACE+2,
 		laser = ARMOR_LASER_CARAPACE+2,
-		energy = ARMOR_ENERGY_MINOR+30,
+		energy = ARMOR_ENERGY_TEN+30,
 		rad = ARMOR_RAD_RESISTANT+60,
 		bio = ARMOR_BIO_RESISTANT+60,
 		bomb = ARMOR_BOMB_MINOR+20

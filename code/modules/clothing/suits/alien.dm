@@ -59,7 +59,7 @@
 		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_BASIC,
-		bomb = ARMOR_BOMB_PADDED) //Higher melee armor versus lower everything else.
+		bomb = ARMOR_BOMB_THIRTY) //Higher melee armor versus lower everything else.
 	icon = 'icons/obj/clothing/species/vox/obj_suit_vox.dmi'
 	icon_state = "vox-scrap"
 	body_parts_covered = UPPER_TORSO|ARMS|LOWER_TORSO|LEGS

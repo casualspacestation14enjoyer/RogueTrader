@@ -187,5 +187,5 @@
 		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_BASIC,
-		energy = ARMOR_ENERGY_MINOR
+		energy = ARMOR_ENERGY_TEN
 		)

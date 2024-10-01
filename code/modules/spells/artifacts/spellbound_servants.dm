@@ -126,7 +126,7 @@
 					melee = ARMOR_MELEE_PRIMAL,
 					bullet = ARMOR_BALLISTIC_BASIC,
 					laser = ARMOR_LASER_BASIC,
-					energy = ARMOR_ENERGY_MINOR
+					energy = ARMOR_ENERGY_TEN
 					)
 			familiar_type = /mob/living/simple_animal/hostile/bear
 	var/spell/targeted/shapeshift/familiar/F = new()

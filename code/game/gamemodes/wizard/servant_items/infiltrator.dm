@@ -6,7 +6,7 @@
 		melee = ARMOR_MELEE_BASIC,
 		bullet = ARMOR_BALLISTIC_BASIC,
 		laser = ARMOR_LASER_BASIC,
-		energy = ARMOR_ENERGY_MINOR
+		energy = ARMOR_ENERGY_TEN
 		)
 
 /obj/item/clothing/suit/infilsuit
@@ -17,7 +17,7 @@
 		melee = ARMOR_MELEE_BASIC,
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_BASIC,
-		energy = ARMOR_ENERGY_MINOR
+		energy = ARMOR_ENERGY_TEN
 		)
 
 /obj/item/clothing/under/lawyer/infil

@@ -9,7 +9,7 @@
 	siemens_coefficient = 0.9
 	armor = list(
 		melee = ARMOR_MELEE_BASIC,
-		energy = ARMOR_ENERGY_MINOR
+		energy = ARMOR_ENERGY_TEN
 	)
 
 

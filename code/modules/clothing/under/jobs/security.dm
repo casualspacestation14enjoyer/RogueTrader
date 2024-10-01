@@ -119,7 +119,7 @@
 	armor = list(
 		melee = ARMOR_MELEE_PRIMAL,
 		laser = ARMOR_LASER_PRIMAL,
-		energy = ARMOR_ENERGY_MINOR
+		energy = ARMOR_ENERGY_TEN
 		)
 	siemens_coefficient = 0.9
 	flags_inv = BLOCKHEADHAIR
@@ -168,7 +168,7 @@
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_SMALL,
-		bomb = ARMOR_BOMB_PADDED
+		bomb = ARMOR_BOMB_THIRTY
 		)
 	siemens_coefficient = 0.6
 
@@ -181,8 +181,8 @@
 		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
-		energy = ARMOR_ENERGY_MINOR,
-		bomb = ARMOR_BOMB_PADDED
+		energy = ARMOR_ENERGY_TEN,
+		bomb = ARMOR_BOMB_THIRTY
 		)
 	flags_inv = HIDEJUMPSUIT
 	siemens_coefficient = 0.6

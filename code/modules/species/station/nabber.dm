@@ -52,7 +52,7 @@
 	natural_armour_values = list(
 		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_BASIC,
-		bomb = ARMOR_BOMB_PADDED,
+		bomb = ARMOR_BOMB_THIRTY,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = 0.5*ARMOR_RAD_MINOR
 		)

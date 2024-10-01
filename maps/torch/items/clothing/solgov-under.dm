@@ -40,7 +40,7 @@
 	worn_state = "blackutility"
 	armor = list(
 		melee = ARMOR_MELEE_BASIC,
-		energy = ARMOR_ENERGY_MINOR
+		energy = ARMOR_ENERGY_TEN
 		)
 
 /obj/item/clothing/under/solgov/utility/expeditionary
