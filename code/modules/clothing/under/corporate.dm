@@ -22,7 +22,7 @@
 	worn_state = "smock"
 	permeability_coefficient = 0.50
 	armor = list(
-		bio = ARMOR_BIO_MINOR
+		bio = ARMOR_BIO_THIRTY
 		)
 	item_icons = list(slot_w_uniform_str = 'icons/mob/onmob/onmob_under_corporate.dmi')
 	gender_icons = 1
@@ -43,7 +43,7 @@
 	worn_state = "work"
 	armor = list(
 		melee = ARMOR_MELEE_BASIC,
-		bio = ARMOR_BIO_MINOR
+		bio = ARMOR_BIO_THIRTY
 		)
 	item_icons = list(slot_w_uniform_str = 'icons/mob/onmob/onmob_under_corporate.dmi')
 	gender_icons = 1

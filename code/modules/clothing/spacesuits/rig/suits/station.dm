@@ -49,7 +49,7 @@
 		energy = ARMOR_ENERGY_TEN,
 		bomb = ARMOR_BOMB_THIRTY,
 		bio = ARMOR_BIO_SHIELDED,
-		rad = ARMOR_RAD_MINOR
+		rad = ARMOR_RAD_THIRTY
 	)
 	online_slowdown = 1
 	offline_slowdown = 2
@@ -111,7 +111,7 @@
 		bullet = ARMOR_BALLISTIC_BASIC,
 		laser = ARMOR_LASER_BASIC,
 		energy = ARMOR_ENERGY_SMALL,
-		bomb = ARMOR_BOMB_MINOR,
+		bomb = ARMOR_BOMB_TEN,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_SHIELDED
 	)
@@ -367,7 +367,7 @@
 		energy = ARMOR_ENERGY_TEN,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
-		rad = ARMOR_RAD_MINOR
+		rad = ARMOR_RAD_THIRTY
 	)
 	offline_vision_restriction = TINT_BLIND
 
@@ -417,7 +417,7 @@
 	icon_state = "null_rig"
 	armor = list(
 		bio = ARMOR_BIO_SHIELDED,
-		rad = ARMOR_RAD_MINOR
+		rad = ARMOR_RAD_THIRTY
 	)
 	online_slowdown = 0
 	offline_slowdown = 1

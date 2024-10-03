@@ -42,7 +42,7 @@
 		bullet = ARMOR_BALLISTIC_PRIMAL,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_TEN,
-		bomb = ARMOR_BOMB_MINOR
+		bomb = ARMOR_BOMB_TEN
 		)
 
 /obj/item/clothing/suit/armor/vest/old/security
@@ -59,7 +59,7 @@
 		bullet = ARMOR_BALLISTIC_PRIMAL,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_TEN,
-		bomb = ARMOR_BOMB_MINOR
+		bomb = ARMOR_BOMB_TEN
 		)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS
@@ -88,7 +88,7 @@
 		bullet = ARMOR_BALLISTIC_PRIMAL,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_TEN,
-		bomb = ARMOR_BOMB_MINOR
+		bomb = ARMOR_BOMB_TEN
 		)
 
 
@@ -222,8 +222,8 @@
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_SMALL,
-		bio = ARMOR_BIO_MINOR-8,
-		rad = ARMOR_RAD_MINOR-8,
+		bio = ARMOR_BIO_THIRTY-8,
+		rad = ARMOR_RAD_THIRTY-8,
 		bomb = ARMOR_BOMB_THIRTY
 		)
 	allowed = list(/obj/item/gun/energy,/obj/item/device/radio,/obj/item/reagent_containers/spray/pepper,/obj/item/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/melee/baton,/obj/item/handcuffs,/obj/item/gun/magnetic)
@@ -269,8 +269,8 @@
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_SMALL,
-		bio = ARMOR_BIO_MINOR,
-		rad = ARMOR_RAD_MINOR,
+		bio = ARMOR_BIO_THIRTY,
+		rad = ARMOR_RAD_THIRTY,
 		bomb = ARMOR_BOMB_THIRTY
 		)
 	body_parts_covered = ARMS|LEGS //now covers legs with new sprite
@@ -287,9 +287,9 @@
 		bullet = ARMOR_BALLISTIC_PRIMAL,
 		laser = ARMOR_LASER_BASIC,
 		energy = ARMOR_ENERGY_TEN,
-		bio = ARMOR_BIO_MINOR-8,
-		rad = ARMOR_RAD_MINOR-8,
-		bomb = ARMOR_BOMB_MINOR
+		bio = ARMOR_BIO_THIRTY-8,
+		rad = ARMOR_RAD_THIRTY-8,
+		bomb = ARMOR_BOMB_TEN
 		)
 	slowdown_general = 0.4
 	siemens_coefficient = 1.3 // This /is/ a pair of exposed metal sheets and cable coil.

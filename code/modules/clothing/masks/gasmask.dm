@@ -75,7 +75,7 @@
 		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_BASIC,
 		laser = ARMOR_LASER_BASIC,
-		bio = ARMOR_BIO_RESISTANT
+		bio = ARMOR_BIO_FIFTY
 		)
 
 //In scaling order of utility and seriousness

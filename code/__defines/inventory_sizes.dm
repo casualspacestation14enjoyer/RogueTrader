@@ -15,9 +15,9 @@
 //in exchange for being limited in the w_class of items that will fit
 #define BASE_STORAGE_CAPACITY(w_class) (7*(w_class-1))
 
-#define DEFAULT_BACKPACK_STORAGE BASE_STORAGE_CAPACITY(5)
-#define DEFAULT_LARGEBOX_STORAGE BASE_STORAGE_CAPACITY(4)
-#define DEFAULT_BOX_STORAGE      BASE_STORAGE_CAPACITY(3)
+#define DEFAULT_BACKPACK_STORAGE BASE_STORAGE_CAPACITY(6)
+#define DEFAULT_LARGEBOX_STORAGE BASE_STORAGE_CAPACITY(5)
+#define DEFAULT_BOX_STORAGE      BASE_STORAGE_CAPACITY(4)
 
 #define STORAGE_SLOTS *1
 #define STORAGE_FREEFORM *-1
@@ -29,13 +29,13 @@
 */
 
 /// Emergency tanks, except doubles
-#define TANK_SIZE_SMALL 10
+#define TANK_SIZE_SMALL 5
 
 /// Double tanks & fuel tanks
-#define TANK_SIZE_MEDIUM 20
+#define TANK_SIZE_MEDIUM 10
 
 /// Full size tanks
-#define TANK_SIZE_LARGE 30
+#define TANK_SIZE_LARGE 15
 
 /// Scrubber tanks & jetpacks
-#define TANK_SIZE_HUGE 40
+#define TANK_SIZE_HUGE 20

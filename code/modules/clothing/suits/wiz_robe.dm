@@ -63,8 +63,8 @@
 		laser = ARMOR_LASER_PRIMAL,
 		energy = ARMOR_ENERGY_SMALL,
 		bomb = ARMOR_BOMB_THIRTY,
-		bio = ARMOR_BIO_MINOR,
-		rad = ARMOR_RAD_MINOR
+		bio = ARMOR_BIO_THIRTY,
+		rad = ARMOR_RAD_THIRTY
 		)
 	allowed = list(/obj/item/teleportation_scroll)
 	siemens_coefficient = 0.8

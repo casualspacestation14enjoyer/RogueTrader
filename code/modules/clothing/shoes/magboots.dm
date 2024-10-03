@@ -16,7 +16,7 @@
 	var/online_slowdown = 3
 	cold_protection = FEET
 	heat_protection = FEET
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-100
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+1000
 
 /obj/item/clothing/shoes/magboots/proc/set_slowdown()

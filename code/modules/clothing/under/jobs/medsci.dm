@@ -8,7 +8,7 @@
 	item_state = "lb_suit"
 	worn_state = "director"
 	armor = list(
-		bio = ARMOR_BIO_MINOR
+		bio = ARMOR_BIO_THIRTY
 		)
 
 /obj/item/clothing/under/rank/research_director/rdalt
@@ -18,7 +18,7 @@
 	item_state = "lb_suit"
 	worn_state = "rdalt"
 	armor = list(
-		bio = ARMOR_BIO_MINOR
+		bio = ARMOR_BIO_THIRTY
 		)
 
 /obj/item/clothing/under/rank/research_director/dress_rd
@@ -28,7 +28,7 @@
 	item_state = "lb_suit"
 	worn_state = "dress_rd"
 	armor = list(
-		bio = ARMOR_BIO_MINOR
+		bio = ARMOR_BIO_THIRTY
 		)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 
@@ -41,7 +41,7 @@
 	gender_icons = 1
 	permeability_coefficient = 0.50
 	armor = list(
-		bio = ARMOR_BIO_MINOR
+		bio = ARMOR_BIO_THIRTY
 		)
 /*
  * Medical
@@ -54,7 +54,7 @@
 	worn_state = "cmo"
 	permeability_coefficient = 0.50
 	armor = list(
-		bio = ARMOR_BIO_MINOR
+		bio = ARMOR_BIO_THIRTY
 		)
 
 /obj/item/clothing/under/rank/geneticist
@@ -65,7 +65,7 @@
 	worn_state = "geneticswhite"
 	permeability_coefficient = 0.50
 	armor = list(
-		bio = ARMOR_BIO_MINOR
+		bio = ARMOR_BIO_THIRTY
 		)
 
 /obj/item/clothing/under/rank/virologist
@@ -77,7 +77,7 @@
 	gender_icons = 1
 	permeability_coefficient = 0.50
 	armor = list(
-		bio = ARMOR_BIO_MINOR
+		bio = ARMOR_BIO_THIRTY
 		)
 
 /obj/item/clothing/under/rank/nursesuit
@@ -88,7 +88,7 @@
 	worn_state = "nursesuit"
 	permeability_coefficient = 0.50
 	armor = list(
-		bio = ARMOR_BIO_MINOR
+		bio = ARMOR_BIO_THIRTY
 		)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 
@@ -100,7 +100,7 @@
 	worn_state = "nurse"
 	permeability_coefficient = 0.50
 	armor = list(
-		bio = ARMOR_BIO_MINOR
+		bio = ARMOR_BIO_THIRTY
 		)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 
@@ -113,7 +113,7 @@
 	gender_icons = 1
 	permeability_coefficient = 0.50
 	armor = list(
-		bio = ARMOR_BIO_MINOR
+		bio = ARMOR_BIO_THIRTY
 		)
 
 /obj/item/clothing/under/rank/medical
@@ -125,7 +125,7 @@
 	gender_icons = 1
 	permeability_coefficient = 0.50
 	armor = list(
-		bio = ARMOR_BIO_MINOR
+		bio = ARMOR_BIO_THIRTY
 		)
 
 /obj/item/clothing/under/rank/medical/paramedic
@@ -206,7 +206,7 @@
 	worn_state = "geneticist_new"
 	permeability_coefficient = 0.50
 	armor = list(
-		bio = ARMOR_BIO_MINOR
+		bio = ARMOR_BIO_THIRTY
 		)
 
 /obj/item/clothing/under/rank/chemist_new
@@ -217,7 +217,7 @@
 	worn_state = "chemist_new"
 	permeability_coefficient = 0.50
 	armor = list(
-		bio = ARMOR_BIO_MINOR
+		bio = ARMOR_BIO_THIRTY
 		)
 
 /obj/item/clothing/under/rank/scientist_new
@@ -228,7 +228,7 @@
 	worn_state = "scientist_new"
 	permeability_coefficient = 0.50
 	armor = list(
-		bio = ARMOR_BIO_MINOR
+		bio = ARMOR_BIO_THIRTY
 		)
 
 /obj/item/clothing/under/rank/virologist_new
@@ -239,5 +239,5 @@
 	worn_state = "virologist_new"
 	permeability_coefficient = 0.50
 	armor = list(
-		bio = ARMOR_BIO_MINOR
+		bio = ARMOR_BIO_THIRTY
 		)

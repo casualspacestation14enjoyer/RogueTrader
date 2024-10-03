@@ -20,7 +20,7 @@
 	w_class = ITEM_SIZE_LARGE
 
 	body_parts_covered = UPPER_TORSO | LOWER_TORSO| ARMS
-	armor = list(laser = ARMOR_LASER_BASIC, energy = ARMOR_ENERGY_TEN, bomb = ARMOR_BOMB_MINOR)
+	armor = list(laser = ARMOR_LASER_BASIC, energy = ARMOR_ENERGY_TEN, bomb = ARMOR_BOMB_TEN)
 	allowed = list(
 		/obj/item/device/flashlight,
 		/obj/item/tank/oxygen_emergency,
@@ -126,7 +126,7 @@
 	flags_inv = BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EYES
 	armor = list(
-		bio = ARMOR_BIO_RESISTANT,
+		bio = ARMOR_BIO_FIFTY,
 		rad = ARMOR_RAD_SHIELDED
 		)
 
@@ -150,7 +150,7 @@
 		/obj/item/device/geiger
 	)
 	armor = list(
-		bio = ARMOR_BIO_RESISTANT,
+		bio = ARMOR_BIO_FIFTY,
 		rad = ARMOR_RAD_SHIELDED
 		)
 	flags_inv = HIDEJUMPSUIT|HIDETAIL|HIDEGLOVES|HIDESHOES

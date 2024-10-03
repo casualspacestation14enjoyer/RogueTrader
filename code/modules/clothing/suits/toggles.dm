@@ -72,7 +72,7 @@
 	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	armor = list(
-		bio = ARMOR_BIO_MINOR
+		bio = ARMOR_BIO_THIRTY
 		)
 	action_button_name = "Toggle Winter Hood"
 	hoodtype = /obj/item/clothing/head/winterhood
@@ -97,7 +97,7 @@
 		bullet = ARMOR_BALLISTIC_BASIC,
 		laser = ARMOR_LASER_PRIMAL,
 		energy = ARMOR_ENERGY_TEN,
-		bomb = ARMOR_BOMB_MINOR
+		bomb = ARMOR_BOMB_TEN
 		)
 
 /obj/item/clothing/suit/armor/grim/storage/hooded/wintercoat/security
@@ -108,28 +108,28 @@
 		bullet = ARMOR_BALLISTIC_PRIMAL,
 		laser = ARMOR_LASER_PRIMAL,
 		energy = ARMOR_ENERGY_TEN,
-		bomb = ARMOR_BOMB_MINOR
+		bomb = ARMOR_BOMB_TEN
 		)
 
 /obj/item/clothing/suit/armor/grim/storage/hooded/wintercoat/medical
 	name = "medical winter coat"
 	icon_state = "coatmedical"
 	armor = list(
-		bio = ARMOR_BIO_RESISTANT
+		bio = ARMOR_BIO_FIFTY
 		)
 
 /obj/item/clothing/suit/armor/grim/storage/hooded/wintercoat/science
 	name = "science winter coat"
 	icon_state = "coatscience"
 	armor = list(
-		bomb = ARMOR_BOMB_MINOR
+		bomb = ARMOR_BOMB_TEN
 		)
 
 /obj/item/clothing/suit/armor/grim/storage/hooded/wintercoat/engineering
 	name = "engineering winter coat"
 	icon_state = "coatengineer"
 	armor = list(
-		rad = ARMOR_RAD_MINOR
+		rad = ARMOR_RAD_THIRTY
 		)
 
 /obj/item/clothing/suit/armor/grim/storage/hooded/wintercoat/engineering/atmos

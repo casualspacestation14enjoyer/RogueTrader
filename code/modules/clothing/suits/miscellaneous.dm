@@ -53,7 +53,7 @@
 		energy = ARMOR_ENERGY_TEN,
 		bomb = ARMOR_BOMB_THIRTY,
 		bio = ARMOR_BIO_SMALL,
-		rad = ARMOR_RAD_MINOR
+		rad = ARMOR_RAD_THIRTY
 	)
 	siemens_coefficient = 0.9
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS

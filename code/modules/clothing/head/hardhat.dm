@@ -13,8 +13,8 @@
 		laser = ARMOR_LASER_PRIMAL,
 		energy = ARMOR_ENERGY_TEN,
 		bomb = ARMOR_BOMB_THIRTY,
-		bio = ARMOR_BIO_MINOR,
-		rad = ARMOR_RAD_MINOR
+		bio = ARMOR_BIO_THIRTY,
+		rad = ARMOR_RAD_THIRTY
 	)
 	flags_inv = 0
 	siemens_coefficient = 0.9
@@ -44,7 +44,7 @@
 		bullet = ARMOR_BALLISTIC_BASIC,
 		energy = ARMOR_ENERGY_TEN,
 		bomb = ARMOR_BOMB_THIRTY,
-		bio = ARMOR_BIO_MINOR
+		bio = ARMOR_BIO_THIRTY
 	)
 
 /obj/item/clothing/head/hardhat/light/medic

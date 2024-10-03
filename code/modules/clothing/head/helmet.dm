@@ -6,16 +6,8 @@
 		slot_l_hand_str = "helmet",
 		slot_r_hand_str = "helmet",
 		)
-	valid_accessory_slots = list(
-		ACCESSORY_SLOT_HELMET_COVER,
-		ACCESSORY_SLOT_HELMET_DECOR,
-		ACCESSORY_SLOT_HELMET_VISOR
-	)
-	restricted_accessory_slots = list(
-		ACCESSORY_SLOT_HELMET_COVER,
-		ACCESSORY_SLOT_HELMET_DECOR,
-		ACCESSORY_SLOT_HELMET_VISOR
-	)
+	valid_accessory_slots = null
+	restricted_accessory_slots = null
 	item_flags = ITEM_FLAG_THICKMATERIAL
 	body_parts_covered = HEAD
 	armor = list(
@@ -221,7 +213,7 @@
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_RESISTANT,
-		bomb = ARMOR_BIO_MINOR
+		bomb = ARMOR_BIO_THIRTY
 		)
 
 //Security
@@ -267,7 +259,7 @@
 		energy = ARMOR_ENERGY_TEN,
 		bomb = ARMOR_BOMB_THIRTY,
 		bio = ARMOR_BIO_SMALL,
-		rad = ARMOR_RAD_MINOR
+		rad = ARMOR_RAD_THIRTY
 	)
 	flags_inv = BLOCKHAIR
 	body_parts_covered = 0

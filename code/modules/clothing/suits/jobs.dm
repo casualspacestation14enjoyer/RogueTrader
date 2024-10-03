@@ -109,8 +109,8 @@
 		bullet = ARMOR_BALLISTIC_FLAK-8,
 		laser = ARMOR_LASER_FLAK-8,
 		energy = ARMOR_ENERGY_TEN-8,
-		rad = ARMOR_RAD_MINOR-10,
-		bomb = ARMOR_BOMB_MINOR-10
+		rad = ARMOR_RAD_THIRTY-10,
+		bomb = ARMOR_BOMB_TEN-10
 		)
 
 /obj/item/clothing/suit/armor/grim/storage/det_trench/ft
@@ -145,9 +145,9 @@
 		bullet = ARMOR_BALLISTIC_FLAK-8,
 		laser = ARMOR_LASER_FLAK-8,
 		energy = ARMOR_ENERGY_TEN-8,
-		rad = ARMOR_RAD_MINOR+5, // Magistratum enforcers probably have hazard-lining to protect from exploring underhives.
-		bio = ARMOR_BIO_MINOR,
-		bomb = ARMOR_BOMB_MINOR-10
+		rad = ARMOR_RAD_THIRTY+5, // Magistratum enforcers probably have hazard-lining to protect from exploring underhives.
+		bio = ARMOR_BIO_THIRTY,
+		bomb = ARMOR_BOMB_TEN-10
 		)
 
 /obj/item/clothing/suit/armor/grim/storage/forensics/red

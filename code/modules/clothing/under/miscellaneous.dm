@@ -698,7 +698,7 @@
 	siemens_coefficient = 0.8
 	armor = list(
 		energy = ARMOR_ENERGY_SMALL,
-		rad = ARMOR_RAD_MINOR
+		rad = ARMOR_RAD_THIRTY
 		)
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 

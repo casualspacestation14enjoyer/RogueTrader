@@ -462,7 +462,7 @@
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_THIRTY,
 		bio = ARMOR_BIO_SHIELDED,
-		rad = ARMOR_RAD_RESISTANT
+		rad = ARMOR_RAD_FIFTY
 		)
 	light_overlay = "helmet_light_dual_alt"
 	tinted = FALSE
