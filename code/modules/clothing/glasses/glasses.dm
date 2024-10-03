@@ -62,7 +62,7 @@
 	armor = list(
 		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_PRIMAL,
-		bomb = ARMOR_BOMB_MINOR
+		bomb = ARMOR_BOMB_TEN
 	)
 	action_button_name = "Toggle Attachments"
 	valid_accessory_slots = list(ACCESSORY_SLOT_GLASSES_VISION, ACCESSORY_SLOT_GLASSES_HUD)

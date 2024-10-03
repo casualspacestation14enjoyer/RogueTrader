@@ -26,7 +26,7 @@
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_SMALL,
 		bomb = ARMOR_BOMB_RESISTANT,
-		bio = ARMOR_BIO_MINOR
+		bio = ARMOR_BIO_THIRTY
 		)
 	item_flags = ITEM_FLAG_NOSLIP | ITEM_FLAG_WASHER_ALLOWED
 	siemens_coefficient = 0.6
@@ -42,14 +42,14 @@
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_SMALL,
 		bomb = ARMOR_BOMB_RESISTANT,
-		bio = ARMOR_BIO_MINOR
+		bio = ARMOR_BIO_THIRTY
 		)
 	item_flags = ITEM_FLAG_NOSLIP | ITEM_FLAG_WASHER_ALLOWED | ITEM_FLAG_THICKMATERIAL
 	siemens_coefficient = 0.6
 
 	cold_protection = FEET
 	heat_protection = FEET
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-100
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+1000
 
 
@@ -61,7 +61,7 @@
 		melee = ARMOR_MELEE_PRIMAL,
 		energy = ARMOR_ENERGY_TEN,
 		bomb = ARMOR_BOMB_THIRTY,
-		rad = ARMOR_RAD_MINOR
+		rad = ARMOR_RAD_THIRTY
 		)
 	siemens_coefficient = 0.7
 	gas_transfer_coefficient = 0.90

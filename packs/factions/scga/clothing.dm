@@ -293,7 +293,7 @@
 		laser = ARMOR_LASER_BASIC,
 		energy = ARMOR_ENERGY_TEN,
 		bomb = ARMOR_BOMB_THIRTY,
-		bio = ARMOR_BIO_MINOR
+		bio = ARMOR_BIO_THIRTY
 		)
 	siemens_coefficient = 0.7
 

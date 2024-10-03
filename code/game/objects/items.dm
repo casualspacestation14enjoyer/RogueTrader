@@ -29,6 +29,7 @@
 	var/force = 10
 	var/attack_cooldown = DEFAULT_WEAPON_COOLDOWN
 	var/melee_accuracy_bonus = 3
+	var/disorientation = 0 // Decreases accuracy for melee attacks.
 	/// Used to determine how fast an item completes a certain action. Lower values are faster.
 	var/toolspeed = 1
 

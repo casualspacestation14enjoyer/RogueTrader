@@ -500,9 +500,9 @@ BLIND     // can't see anything
 	item_flags = ITEM_FLAG_WASHER_ALLOWED
 	w_class = ITEM_SIZE_SMALL
 	blood_overlay_type = "helmetblood"
-	cold_protection = UPPER_TORSO|LOWER_TORSO
+	cold_protection = HEAD
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE+25
-	heat_protection = UPPER_TORSO|LOWER_TORSO
+	heat_protection = HEAD
 	max_heat_protection_temperature = HELMET_MAX_HEAT_PROTECTION_TEMPERATURE-100
 
 	var/image/light_overlay_image
@@ -717,7 +717,7 @@ BLIND     // can't see anything
 	var/obj/item/hidden_item = null
 	cold_protection = FEET
 	heat_protection = FEET
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-50
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+500
 
 /obj/item/clothing/shoes/Destroy()

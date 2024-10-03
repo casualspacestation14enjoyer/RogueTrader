@@ -6,7 +6,7 @@
 	item_state = "g_suit"
 	worn_state = "chief"
 	armor = list(
-		rad = ARMOR_RAD_MINOR
+		rad = ARMOR_RAD_THIRTY
 		)
 
 /obj/item/clothing/under/rank/atmospheric_technician
@@ -25,7 +25,7 @@
 	worn_state = "engine"
 	gender_icons = 1
 	armor = list(
-		rad = ARMOR_RAD_MINOR
+		rad = ARMOR_RAD_THIRTY
 		)
 
 /obj/item/clothing/under/rank/roboticist

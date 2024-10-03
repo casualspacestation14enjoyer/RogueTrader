@@ -1,4 +1,5 @@
-
+// CULTISTS
+// CULTISTS
 // CULTISTS
 
 /obj/item/clothing/suit/armor/grim/cult
@@ -8,7 +9,7 @@
 	item_state = "heretmil"
 	body_parts_covered = LEGS|ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/flak)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-15
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
 	slowdown_general = 0.04
 	armor = list(
@@ -16,9 +17,9 @@
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK-1,
 		energy = ARMOR_ENERGY_TEN,
-		bio = ARMOR_BIO_MINOR-10,
-		rad = ARMOR_RAD_MINOR+5,
-		bomb = ARMOR_BOMB_MINOR+10
+		bio = ARMOR_BIO_THIRTY-10,
+		rad = ARMOR_RAD_THIRTY+5,
+		bomb = ARMOR_BOMB_TEN+10
 	)
 
 /obj/item/clothing/suit/armor/grim/cult/lasduster
@@ -28,7 +29,7 @@
 	item_state = "chemsis"
 	body_parts_covered = LEGS|ARMS // Specialized anti-las armor cult armor.
 	accessories = list(/obj/item/clothing/accessory/armor_plate/flakheavy)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-15
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
 	slowdown_general = 0.03
 	armor = list(
@@ -36,9 +37,9 @@
 		bullet = ARMOR_BALLISTIC_FLAK-1,
 		laser = ARMOR_LASER_FLAK+1,
 		energy = ARMOR_ENERGY_TEN,
-		bio = ARMOR_BIO_MINOR-5,
-		rad = ARMOR_RAD_MINOR+10,
-		bomb = ARMOR_BOMB_MINOR+10
+		bio = ARMOR_BIO_THIRTY-5,
+		rad = ARMOR_RAD_THIRTY+10,
+		bomb = ARMOR_BOMB_TEN+10
 	)
 
 /obj/item/clothing/suit/armor/grim/cult/militia
@@ -48,7 +49,7 @@
 	item_state = "bluecoat"
 	body_parts_covered = LEGS|ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/flak)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-15
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
 	slowdown_general = 0.035
 	armor = list(
@@ -56,9 +57,9 @@
 		bullet = ARMOR_BALLISTIC_FLAK-1,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_TEN,
-		bio = ARMOR_BIO_MINOR+5,
-		rad = ARMOR_RAD_MINOR+15,
-		bomb = ARMOR_BOMB_MINOR+10
+		bio = ARMOR_BIO_THIRTY+5,
+		rad = ARMOR_RAD_THIRTY+15,
+		bomb = ARMOR_BOMB_TEN+10
 	)
 
 /obj/item/clothing/suit/armor/grim/cult/cloak
@@ -68,7 +69,7 @@
 	item_state = "bluecoat_sniper"
 	body_parts_covered = LEGS|ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/flaklamellar)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-15
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
 	slowdown_general = 0.035
 	armor = list(
@@ -76,9 +77,9 @@
 		bullet = ARMOR_BALLISTIC_FLAK-1,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_TEN,
-		bio = ARMOR_BIO_MINOR+5,
-		rad = ARMOR_RAD_MINOR+15,
-		bomb = ARMOR_BOMB_MINOR+10
+		bio = ARMOR_BIO_THIRTY+5,
+		rad = ARMOR_RAD_THIRTY+15,
+		bomb = ARMOR_BOMB_TEN+10
 	)
 
 /obj/item/clothing/suit/armor/grim/cult/tzee
@@ -89,17 +90,17 @@
 	body_parts_covered = LEGS|ARMS
 	max_pressure_protection = SPACE_SUIT_MAX_PRESSURE
 	accessories = list(/obj/item/clothing/accessory/armor_plate/tzeentch)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-15
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+150
 	slowdown_general = 0.055
 	armor = list(
 		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_FLAK+1,
 		laser = ARMOR_LASER_FLAK+1,
-		energy = ARMOR_ENERGY_TEN+2,
-		bio = ARMOR_BIO_MINOR+10,
-		rad = ARMOR_RAD_MINOR+25,
-		bomb = ARMOR_BOMB_MINOR+15
+		energy = ARMOR_ENERGY_TEN+10,
+		bio = ARMOR_BIO_THIRTY+10,
+		rad = ARMOR_RAD_THIRTY+25,
+		bomb = ARMOR_BOMB_TEN+15
 	)
 
 /obj/item/clothing/suit/armor/grim/cult/nurgle
@@ -110,7 +111,7 @@
 	body_parts_covered = LEGS|ARMS
 	max_pressure_protection = SPACE_SUIT_MAX_PRESSURE
 	accessories = list(/obj/item/clothing/accessory/armor_plate/nurgle)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-15
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+100
 	slowdown_general = 0.065
 	armor = list(
@@ -118,9 +119,9 @@
 		bullet = ARMOR_BALLISTIC_FLAK+1,
 		laser = ARMOR_LASER_FLAK+1,
 		energy = ARMOR_ENERGY_TEN+10,
-		bio = ARMOR_BIO_MINOR+25,
-		rad = ARMOR_RAD_MINOR+25,
-		bomb = ARMOR_BOMB_MINOR+20
+		bio = ARMOR_BIO_THIRTY+25,
+		rad = ARMOR_RAD_THIRTY+25,
+		bomb = ARMOR_BOMB_TEN+20
 	)
 
 /obj/item/clothing/suit/armor/grim/cult/nurgleheavy
@@ -131,7 +132,7 @@
 	body_parts_covered = LEGS|ARMS
 	max_pressure_protection = VOIDSUIT_MAX_PRESSURE
 	accessories = list(/obj/item/clothing/accessory/armor_plate/nurgleheavy)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-15
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+150
 	slowdown_general = 0.08
 	armor = list(
@@ -139,9 +140,9 @@
 		bullet = ARMOR_BALLISTIC_FLAK+2,
 		laser = ARMOR_LASER_FLAK+2,
 		energy = ARMOR_ENERGY_TEN+15,
-		bio = ARMOR_BIO_MINOR+35,
-		rad = ARMOR_RAD_MINOR+35,
-		bomb = ARMOR_BOMB_MINOR+30
+		bio = ARMOR_BIO_THIRTY+35,
+		rad = ARMOR_RAD_THIRTY+35,
+		bomb = ARMOR_BOMB_TEN+30
 	)
 
 /obj/item/clothing/suit/armor/grim/cult/renegade
@@ -152,7 +153,7 @@
 	body_parts_covered = LEGS|ARMS
 	max_pressure_protection = SPACE_SUIT_MAX_PRESSURE
 	accessories = list(/obj/item/clothing/accessory/armor_plate/flak)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-35
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+35
 	slowdown_general = 0.03
 	armor = list(
@@ -160,9 +161,9 @@
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK-1,
 		energy = ARMOR_ENERGY_TEN,
-		bio = ARMOR_BIO_MINOR,
-		rad = ARMOR_RAD_MINOR,
-		bomb = ARMOR_BOMB_MINOR
+		bio = ARMOR_BIO_THIRTY,
+		rad = ARMOR_RAD_THIRTY,
+		bomb = ARMOR_BOMB_TEN
 	)
 
 /obj/item/clothing/suit/armor/grim/cult/bloodpact
@@ -173,7 +174,7 @@
 	body_parts_covered = LEGS|ARMS
 	max_pressure_protection = SPACE_SUIT_MAX_PRESSURE
 	accessories = list(/obj/item/clothing/accessory/armor_plate/carapaceheavy,/obj/item/clothing/accessory/leg_guards/flak) // Bloodpact are heavily armoured shock troops.
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-35
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+35
 	slowdown_general = 0.045
 	armor = list(
@@ -181,9 +182,9 @@
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_TEN,
-		bio = ARMOR_BIO_MINOR+5,
-		rad = ARMOR_RAD_MINOR+10,
-		bomb = ARMOR_BOMB_MINOR
+		bio = ARMOR_BIO_THIRTY+5,
+		rad = ARMOR_RAD_THIRTY+10,
+		bomb = ARMOR_BOMB_TEN
 	)
 
 /obj/item/clothing/suit/armor/grim/cult/sekite
@@ -194,7 +195,7 @@
 	body_parts_covered = LEGS|ARMS
 	max_pressure_protection = SPACE_SUIT_MAX_PRESSURE
 	accessories = list(/obj/item/clothing/accessory/armor_plate/carapace,/obj/item/clothing/accessory/leg_guards/reactiveslug)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-35
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+35
 	slowdown_general = 0.05
 	armor = list(
@@ -202,12 +203,15 @@
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_TEN,
-		bio = ARMOR_BIO_MINOR+5,
-		rad = ARMOR_RAD_MINOR+1,
-		bomb = ARMOR_BOMB_MINOR
+		bio = ARMOR_BIO_THIRTY+5,
+		rad = ARMOR_RAD_THIRTY+1,
+		bomb = ARMOR_BOMB_TEN
 	)
 
 // ECCLESIARCHY
+// ECCLESIARCHY
+// ECCLESIARCHY
+
 /obj/item/clothing/suit/armor/sister/sacredrosepower
 	name = "sacred rose power armour"
 	desc = "The Sacred and holy Power Armour adorned by Battle Sister of the Order Of The Sacred Rose, It's illuminate the field with it glorious light, Being near it make you feels safer and secured."
@@ -216,17 +220,17 @@
 	flags_inv = HIDEJUMPSUIT
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	max_pressure_protection = RIG_MAX_PRESSURE
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE -100
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +1500
 	slowdown_general = 0.11 // Slightly faster then inqisitorial, these relics are icons to the sisters and treated as extensions of the emperor.
 	armor = list(
 		melee = ARMOR_MELEE_POWER_ARM,
 		bullet = ARMOR_BALLISTIC_POWER_ARMOUR,
 		laser = ARMOR_LASER_POWER_ARMOUR,
-		energy = ARMOR_ENERGY_TEN + 55,
-		bio = ARMOR_BIO_MINOR + 84,
-		rad = ARMOR_RAD_MINOR + 86,
-		bomb = ARMOR_BOMB_THIRTY + 45
+		energy = ARMOR_ENERGY_TEN+55,
+		bio = ARMOR_BIO_THIRTY+84,
+		rad = ARMOR_RAD_THIRTY+86,
+		bomb = ARMOR_BOMB_THIRTY+20
 	)
 
 /obj/item/clothing/suit/armor/sister/martyredpower
@@ -237,17 +241,17 @@
 	flags_inv = HIDEJUMPSUIT
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	max_pressure_protection = RIG_MAX_PRESSURE
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE -100
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +1500
 	slowdown_general = 0.11
 	armor = list(
 		melee = ARMOR_MELEE_POWER_ARM,
 		bullet = ARMOR_BALLISTIC_POWER_ARMOUR,
 		laser = ARMOR_LASER_POWER_ARMOUR,
-		energy = ARMOR_ENERGY_TEN + 55,
-		bio = ARMOR_BIO_MINOR + 84,
-		rad = ARMOR_RAD_MINOR + 86,
-		bomb = ARMOR_BOMB_THIRTY + 45
+		energy = ARMOR_ENERGY_TEN+55,
+		bio = ARMOR_BIO_THIRTY+84,
+		rad = ARMOR_RAD_THIRTY+86,
+		bomb = ARMOR_BOMB_THIRTY+20
 	)
 
 /obj/item/clothing/suit/armor/sister/bloodyrosepower
@@ -258,17 +262,17 @@
 	flags_inv = HIDEJUMPSUIT
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	max_pressure_protection = RIG_MAX_PRESSURE
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE -100
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +1500
 	slowdown_general = 0.11
 	armor = list(
 		melee = ARMOR_MELEE_POWER_ARM,
 		bullet = ARMOR_BALLISTIC_POWER_ARMOUR,
 		laser = ARMOR_LASER_POWER_ARMOUR,
-		energy = ARMOR_ENERGY_TEN + 55,
-		bio = ARMOR_BIO_MINOR + 84,
-		rad = ARMOR_RAD_MINOR + 86,
-		bomb = ARMOR_BOMB_THIRTY + 45
+		energy = ARMOR_ENERGY_TEN+55,
+		bio = ARMOR_BIO_THIRTY+84,
+		rad = ARMOR_RAD_THIRTY+86,
+		bomb = ARMOR_BOMB_THIRTY+20
 	)
 
 /obj/item/clothing/suit/armor/sister/novitae
@@ -279,17 +283,17 @@
 	flags_inv = HIDEJUMPSUIT
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	max_pressure_protection = VOIDSUIT_MAX_PRESSURE
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE -50
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +1100
 	slowdown_general = 0.11 // Same speed as sister but trash stats compared.
 	armor = list(
 		melee = ARMOR_MELEE_POWER_ARM-1,
 		bullet = ARMOR_BALLISTIC_POWER_ARMOUR-2, // 1 point above carapace
 		laser = ARMOR_LASER_POWER_ARMOUR-2,
-		energy = ARMOR_ENERGY_TEN + 35,
-		bio = ARMOR_BIO_MINOR + 64,
-		rad = ARMOR_RAD_MINOR + 66,
-		bomb = ARMOR_BOMB_THIRTY + 15
+		energy = ARMOR_ENERGY_TEN+35,
+		bio = ARMOR_BIO_THIRTY+64,
+		rad = ARMOR_RAD_THIRTY+66,
+		bomb = ARMOR_BOMB_THIRTY+10
 	)
 
 /obj/item/clothing/suit/armor/sister/repentia
@@ -306,10 +310,10 @@
 		melee = ARMOR_MELEE_CARAPACE-1,
 		bullet = ARMOR_BALLISTIC_CARAPACE-1,
 		laser = ARMOR_LASER_CARAPACE-1,
-		energy = ARMOR_ENERGY_TEN + 15,
-		bio = ARMOR_BIO_MINOR + 14,
-		rad = ARMOR_RAD_MINOR + 16,
-		bomb = ARMOR_BOMB_MINOR +15
+		energy = ARMOR_ENERGY_TEN+15,
+		bio = ARMOR_BIO_THIRTY+14,
+		rad = ARMOR_RAD_THIRTY+16,
+		bomb = ARMOR_BOMB_TEN +15
 	)
 
 /obj/item/clothing/suit/armor/sister/hospitaller
@@ -318,17 +322,17 @@
 	icon_state = "hospitaller"
 	item_state = "hospitaller"
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-15
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-300
 	slowdown_general = 0.05
 	armor = list(
 		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_FLAK+1,
 		laser = ARMOR_LASER_FLAK,
-		energy = ARMOR_ENERGY_TEN+2,
-		bio = ARMOR_BIO_MINOR+50,
-		rad = ARMOR_RAD_MINOR+60,
-		bomb = ARMOR_BOMB_MINOR+20
+		energy = ARMOR_ENERGY_TEN+10,
+		bio = ARMOR_BIO_THIRTY+50,
+		rad = ARMOR_RAD_THIRTY+60,
+		bomb = ARMOR_BOMB_TEN+20
 		)
 
 /obj/item/clothing/suit/armor/sister/disciplus
@@ -338,17 +342,17 @@
 	item_state = "hospitallerold"
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	accessories = list(/obj/item/clothing/accessory/armor_plate/paddingmech)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-15
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-300
 	slowdown_general = 0.045
 	armor = list(
 		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
-		energy = ARMOR_ENERGY_TEN+2,
-		bio = ARMOR_BIO_MINOR+40,
-		rad = ARMOR_RAD_MINOR+50,
-		bomb = ARMOR_BOMB_MINOR+10
+		energy = ARMOR_ENERGY_TEN+10,
+		bio = ARMOR_BIO_THIRTY+40,
+		rad = ARMOR_RAD_THIRTY+50,
+		bomb = ARMOR_BOMB_TEN+10
 		)
 
 /obj/item/clothing/suit/armor/grim/medicae
@@ -358,17 +362,17 @@
 	item_state = "prac_robes"
 	body_parts_covered = LEGS|ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/paddingmech)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-15
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-300
 	slowdown_general = 0.04
 	armor = list(
 		melee = ARMOR_MELEE_FLAK-1,
 		bullet = ARMOR_BALLISTIC_FLAK-1,
 		laser = ARMOR_LASER_FLAK-2,
-		energy = ARMOR_ENERGY_TEN+2,
-		bio = ARMOR_BIO_MINOR+30,
-		rad = ARMOR_RAD_MINOR+40,
-		bomb = ARMOR_BOMB_MINOR+5
+		energy = ARMOR_ENERGY_TEN+10,
+		bio = ARMOR_BIO_THIRTY+30,
+		rad = ARMOR_RAD_THIRTY+40,
+		bomb = ARMOR_BOMB_TEN+5
 		)
 
 /obj/item/clothing/suit/armor/grim/ministorumrobes
@@ -378,7 +382,7 @@
 	item_state = "ministorum_priest"
 	body_parts_covered = LEGS|ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/flak)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-15
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-150
 	slowdown_general = 0.065
 	armor = list(
@@ -386,9 +390,9 @@
 		bullet = ARMOR_BALLISTIC_FLAK-1,
 		laser = ARMOR_LASER_FLAK-2,
 		energy = ARMOR_ENERGY_TEN-1,
-		bio = ARMOR_BIO_MINOR+15,
-		rad = ARMOR_RAD_MINOR+15,
-		bomb = ARMOR_BOMB_MINOR+10
+		bio = ARMOR_BIO_THIRTY+15,
+		rad = ARMOR_RAD_THIRTY+15,
+		bomb = ARMOR_BOMB_TEN+10
 	)
 
 /obj/item/clothing/suit/armor/grim/witch
@@ -399,7 +403,7 @@
 	body_parts_covered = LEGS | ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/flakheavy)
 	max_pressure_protection = SPACE_SUIT_MAX_PRESSURE
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE -25
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
 	slowdown_general = 0.05 // Basically cadian heavy flak but worse stats and temp protection.
 	armor = list(
@@ -407,9 +411,9 @@
 		bullet = ARMOR_BALLISTIC_FLAK+1,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_TEN,
-		bio = ARMOR_BIO_MINOR,
-		rad = ARMOR_RAD_MINOR,
-		bomb = ARMOR_BOMB_MINOR
+		bio = ARMOR_BIO_THIRTY,
+		rad = ARMOR_RAD_THIRTY,
+		bomb = ARMOR_BOMB_TEN
 	)
 
 /obj/item/clothing/suit/armor/grim/feudal
@@ -419,7 +423,7 @@
 	item_state = "zealot"
 	body_parts_covered = LEGS|ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/flakheavy)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-15
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-150
 	slowdown_general = 0.035 // heavy crude armor.
 	armor = list(
@@ -427,9 +431,9 @@
 		bullet = ARMOR_BALLISTIC_FLAK-1,
 		laser = ARMOR_LASER_FLAK-2,
 		energy = ARMOR_ENERGY_TEN-1,
-		bio = ARMOR_BIO_MINOR-5,
-		rad = ARMOR_RAD_MINOR+5,
-		bomb = ARMOR_BOMB_MINOR+10
+		bio = ARMOR_BIO_THIRTY-5,
+		rad = ARMOR_RAD_THIRTY+5,
+		bomb = ARMOR_BOMB_TEN+10
 	)
 
 /obj/item/clothing/suit/armor/feudal/cuirass
@@ -446,9 +450,9 @@
 		bullet = ARMOR_BALLISTIC_FLAK-2,
 		laser = ARMOR_LASER_FLAK-1,
 		energy = ARMOR_ENERGY_TEN,
-		bio = ARMOR_BIO_MINOR-10,
-		rad = ARMOR_RAD_MINOR-20,
-		bomb = ARMOR_BOMB_MINOR-15
+		bio = ARMOR_BIO_THIRTY-10,
+		rad = ARMOR_RAD_THIRTY-20,
+		bomb = ARMOR_BOMB_TEN-7
 	)
 
 /obj/item/clothing/suit/armor/feudal/breastplate
@@ -465,9 +469,9 @@
 		bullet = ARMOR_BALLISTIC_FLAK-2,
 		laser = ARMOR_LASER_FLAK-1,
 		energy = ARMOR_ENERGY_TEN,
-		bio = ARMOR_BIO_MINOR-10,
-		rad = ARMOR_RAD_MINOR-20,
-		bomb = ARMOR_BOMB_MINOR-15
+		bio = ARMOR_BIO_THIRTY-10,
+		rad = ARMOR_RAD_THIRTY-20,
+		bomb = ARMOR_BOMB_TEN-7
 	)
 
 /obj/item/clothing/suit/armor/feudal/heavyplate
@@ -484,9 +488,9 @@
 		bullet = ARMOR_BALLISTIC_FLAK-1,
 		laser = ARMOR_LASER_FLAK-1,
 		energy = ARMOR_ENERGY_TEN,
-		bio = ARMOR_BIO_MINOR-5,
-		rad = ARMOR_RAD_MINOR-10,
-		bomb = ARMOR_BOMB_MINOR-15
+		bio = ARMOR_BIO_THIRTY-5,
+		rad = ARMOR_RAD_THIRTY-10,
+		bomb = ARMOR_BOMB_TEN-7
 	)
 
 /obj/item/clothing/suit/armor/feudal/fullplate
@@ -503,9 +507,9 @@
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_TEN,
-		bio = ARMOR_BIO_MINOR,
-		rad = ARMOR_RAD_MINOR,
-		bomb = ARMOR_BOMB_MINOR-15
+		bio = ARMOR_BIO_THIRTY,
+		rad = ARMOR_RAD_THIRTY,
+		bomb = ARMOR_BOMB_TEN-7
 	)
 
 /obj/item/clothing/suit/armor/feudal/holyplate
@@ -522,9 +526,9 @@
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_TEN,
-		bio = ARMOR_BIO_MINOR,
-		rad = ARMOR_RAD_MINOR,
-		bomb = ARMOR_BOMB_MINOR-15
+		bio = ARMOR_BIO_THIRTY,
+		rad = ARMOR_RAD_THIRTY,
+		bomb = ARMOR_BOMB_TEN-7
 	)
 
 /obj/item/clothing/suit/armor/feudal/holyplate/brigandine
@@ -538,9 +542,9 @@
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK-1,
 		energy = ARMOR_ENERGY_TEN,
-		bio = ARMOR_BIO_MINOR,
-		rad = ARMOR_RAD_MINOR,
-		bomb = ARMOR_BOMB_MINOR-15
+		bio = ARMOR_BIO_THIRTY,
+		rad = ARMOR_RAD_THIRTY,
+		bomb = ARMOR_BOMB_TEN-7
 	)
 
 /obj/item/clothing/suit/armor/feudal/hauberkheavy
@@ -557,9 +561,9 @@
 		bullet = ARMOR_BALLISTIC_FLAK-2,
 		laser = ARMOR_LASER_FLAK-2,
 		energy = ARMOR_ENERGY_TEN,
-		bio = ARMOR_BIO_MINOR-10,
-		rad = ARMOR_RAD_MINOR-20,
-		bomb = ARMOR_BOMB_MINOR-15
+		bio = ARMOR_BIO_THIRTY-10,
+		rad = ARMOR_RAD_THIRTY-10,
+		bomb = ARMOR_BOMB_TEN-7
 	)
 
 /obj/item/clothing/suit/armor/grim/tribal
@@ -569,7 +573,7 @@
 	item_state = "tribal_armor"
 	body_parts_covered = LEGS|ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/flaktribal)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-15
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-150
 	slowdown_general = 0.032
 	armor = list(
@@ -577,9 +581,9 @@
 		bullet = ARMOR_BALLISTIC_FLAK-1,
 		laser = ARMOR_LASER_FLAK-2,
 		energy = ARMOR_ENERGY_TEN-1,
-		bio = ARMOR_BIO_MINOR-5,
-		rad = ARMOR_RAD_MINOR+15,
-		bomb = ARMOR_BOMB_MINOR+10
+		bio = ARMOR_BIO_THIRTY-5,
+		rad = ARMOR_RAD_THIRTY+15,
+		bomb = ARMOR_BOMB_TEN+10
 	)
 
 /obj/item/clothing/suit/armor/grim/tribal/plate
@@ -589,7 +593,7 @@
 	item_state = "bonearmor"
 	body_parts_covered = LEGS|ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/flaktribal)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-15
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-150
 	slowdown_general = 0.04
 	armor = list(
@@ -597,12 +601,15 @@
 		bullet = ARMOR_BALLISTIC_FLAK-1,
 		laser = ARMOR_LASER_FLAK-1,
 		energy = ARMOR_ENERGY_TEN-1,
-		bio = ARMOR_BIO_MINOR,
-		rad = ARMOR_RAD_MINOR+25,
-		bomb = ARMOR_BOMB_MINOR+15
+		bio = ARMOR_BIO_THIRTY,
+		rad = ARMOR_RAD_THIRTY+25,
+		bomb = ARMOR_BOMB_TEN+15
 	)
 
-// PILGRIMS
+// PILGRIMS & SCUM
+// PILGRIMS & SCUM
+// PILGRIMS & SCUM
+
 /obj/item/clothing/suit/armor/pilgrim
 	name = "tattered robes"
 	desc = "Tattered, filthy robes worn by the lowest dregs of society, offering little more than shame and the stink of squalor."
@@ -610,7 +617,7 @@
 	item_state = "slaverobe"
 	body_parts_covered = LEGS|ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/paddingheavy)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-10
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-350
 	slowdown_general = 0.024
 	armor = list(
@@ -618,9 +625,9 @@
 		bullet = ARMOR_BALLISTIC_PRIMAL+1,
 		laser = ARMOR_LASER_PRIMAL+1,
 		energy = ARMOR_ENERGY_TEN-3,
-		bio = ARMOR_BIO_MINOR,
-		rad = ARMOR_RAD_MINOR+10,
-		bomb = ARMOR_BOMB_MINOR-4
+		bio = ARMOR_BIO_THIRTY,
+		rad = ARMOR_RAD_THIRTY+10,
+		bomb = ARMOR_BOMB_TEN-4
 		)
 
 /obj/item/clothing/suit/armor/grim/pilgrim/musician
@@ -630,7 +637,7 @@
 	item_state = "xomrobe"
 	body_parts_covered = LEGS|ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/paddingheavy)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-15
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-300
 	slowdown_general = 0.02
 	armor = list(
@@ -638,9 +645,9 @@
 		bullet = ARMOR_BALLISTIC_PRIMAL+1,
 		laser = ARMOR_LASER_PRIMAL+1,
 		energy = ARMOR_ENERGY_TEN-3,
-		bio = ARMOR_BIO_MINOR,
-		rad = ARMOR_RAD_MINOR+10,
-		bomb = ARMOR_BOMB_MINOR-4
+		bio = ARMOR_BIO_THIRTY,
+		rad = ARMOR_RAD_THIRTY+10,
+		bomb = ARMOR_BOMB_TEN-4
 		)
 
 /obj/item/clothing/suit/armor/grim/pilgrim/admin
@@ -650,7 +657,7 @@
 	item_state = "robes_item"
 	body_parts_covered = LEGS|ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/paddingheavy)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-15
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-300
 	slowdown_general = 0.03 // High quality cloth
 	armor = list(
@@ -658,9 +665,9 @@
 		bullet = ARMOR_BALLISTIC_FLAK-1,
 		laser = ARMOR_LASER_FLAK-2,
 		energy = ARMOR_ENERGY_TEN-3,
-		bio = ARMOR_BIO_MINOR-15,
-		rad = ARMOR_RAD_MINOR,
-		bomb = ARMOR_BOMB_MINOR
+		bio = ARMOR_BIO_THIRTY-15,
+		rad = ARMOR_RAD_THIRTY,
+		bomb = ARMOR_BOMB_TEN
 		)
 
 
@@ -671,7 +678,7 @@
 	item_state = "male2"
 	body_parts_covered = LEGS|ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/flak) // Trader's got monei
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-15
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-300
 	slowdown_general = 0.02
 	armor = list(
@@ -679,9 +686,9 @@
 		bullet = ARMOR_BALLISTIC_FLAK-1,
 		laser = ARMOR_LASER_FLAK-2,
 		energy = ARMOR_ENERGY_TEN,
-		bio = ARMOR_BIO_MINOR-10,
-		rad = ARMOR_RAD_MINOR, // no rads for the money man
-		bomb = ARMOR_BOMB_MINOR
+		bio = ARMOR_BIO_THIRTY-10,
+		rad = ARMOR_RAD_THIRTY, // no rads for the money man
+		bomb = ARMOR_BOMB_TEN
 		)
 
 /obj/item/clothing/suit/armor/grim/pilgrim/penitent
@@ -691,7 +698,7 @@
 	item_state = "grosthrobe"
 	body_parts_covered = LEGS|ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/paddingheavy)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-15
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-300
 	slowdown_general = 0.01
 	armor = list(
@@ -699,9 +706,9 @@
 		bullet = ARMOR_BALLISTIC_PRIMAL+1,
 		laser = ARMOR_LASER_PRIMAL+1,
 		energy = ARMOR_ENERGY_TEN-3,
-		bio = ARMOR_BIO_MINOR,
-		rad = ARMOR_RAD_MINOR+10,
-		bomb = ARMOR_BOMB_MINOR-4
+		bio = ARMOR_BIO_THIRTY,
+		rad = ARMOR_RAD_THIRTY+10,
+		bomb = ARMOR_BOMB_TEN-4
 		)
 
 /obj/item/clothing/suit/armor/grim/pilgrim/innapron
@@ -711,7 +718,7 @@
 	item_state = "mapron"
 	body_parts_covered = LEGS|ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/paddingheavy)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-15
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-300
 	slowdown_general = 0.02
 	armor = list(
@@ -719,9 +726,9 @@
 		bullet = ARMOR_BALLISTIC_FLAK-1,
 		laser = ARMOR_LASER_FLAK-2,
 		energy = ARMOR_ENERGY_TEN,
-		bio = ARMOR_BIO_MINOR+5,
-		rad = ARMOR_RAD_MINOR+10, // no rads for the money man
-		bomb = ARMOR_BOMB_MINOR
+		bio = ARMOR_BIO_THIRTY+5,
+		rad = ARMOR_RAD_THIRTY+10, // no rads for the money man
+		bomb = ARMOR_BOMB_TEN
 		)
 
 /obj/item/clothing/suit/armor/grim/pilgrim/stalker
@@ -731,7 +738,7 @@
 	item_state = "chokha"
 	body_parts_covered = LEGS|ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/flaklamellar)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-15
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-300
 	slowdown_general = 0.03
 	armor = list(
@@ -739,9 +746,9 @@
 		bullet = ARMOR_BALLISTIC_FLAK-1, // Good overall defense but slow.
 		laser = ARMOR_LASER_FLAK-1,
 		energy = ARMOR_ENERGY_TEN,
-		bio = ARMOR_BIO_MINOR-10,
-		rad = ARMOR_RAD_MINOR+10,
-		bomb = ARMOR_BOMB_MINOR
+		bio = ARMOR_BIO_THIRTY-10,
+		rad = ARMOR_RAD_THIRTY+10,
+		bomb = ARMOR_BOMB_TEN
 		)
 
 /obj/item/clothing/suit/armor/grim/pilgrim/pathfinder
@@ -751,7 +758,7 @@
 	item_state = "sherpa"
 	body_parts_covered = LEGS|ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/paddingheavy)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-15
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-300
 	slowdown_general = 0.025
 	armor = list(
@@ -759,9 +766,9 @@
 		bullet = ARMOR_BALLISTIC_FLAK-1,
 		laser = ARMOR_LASER_FLAK-2,
 		energy = ARMOR_ENERGY_TEN,
-		bio = ARMOR_BIO_MINOR-10,
-		rad = ARMOR_RAD_MINOR+10,
-		bomb = ARMOR_BOMB_MINOR
+		bio = ARMOR_BIO_THIRTY-10,
+		rad = ARMOR_RAD_THIRTY+10,
+		bomb = ARMOR_BOMB_TEN
 		)
 
 /obj/item/clothing/suit/armor/grim/hiver
@@ -771,7 +778,7 @@
 	item_state = "wornmfp"
 	body_parts_covered = LEGS|ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/paddingheavy)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE-15
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-300
 	slowdown_general = 0.01
 	armor = list(
@@ -779,9 +786,9 @@
 		bullet = ARMOR_BALLISTIC_FLAK-2,
 		laser = ARMOR_LASER_FLAK-2,
 		energy = ARMOR_ENERGY_TEN,
-		bio = ARMOR_BIO_MINOR+10,
-		rad = ARMOR_RAD_MINOR+20,
-		bomb = ARMOR_BOMB_MINOR
+		bio = ARMOR_BIO_THIRTY+10,
+		rad = ARMOR_RAD_THIRTY+20,
+		bomb = ARMOR_BOMB_TEN
 		)
 
 /obj/item/clothing/suit/armor/grim/hiver/leatherjacket

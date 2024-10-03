@@ -11,7 +11,7 @@
 		energy = ARMOR_ENERGY_TEN,
 		bomb = ARMOR_BOMB_THIRTY,
 		bio = ARMOR_BIO_SHIELDED,
-		rad = ARMOR_RAD_MINOR
+		rad = ARMOR_RAD_THIRTY
 		)
 	origin_tech = list(TECH_MATERIAL = 1)
 
@@ -41,7 +41,7 @@
 		bullet = ARMOR_BALLISTIC_PRIMAL,
 		laser = ARMOR_LASER_PRIMAL,
 		energy = ARMOR_ENERGY_SHIELDED,
-		bomb = ARMOR_BOMB_MINOR,
+		bomb = ARMOR_BOMB_TEN,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_SMALL
 		)

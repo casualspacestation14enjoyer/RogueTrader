@@ -175,15 +175,15 @@
 #define       GLOVES_MIN_COLD_PROTECTION_TEMPERATURE 2.0 // For some gloves.
 #define         SHOE_MIN_COLD_PROTECTION_TEMPERATURE 2.0 // For shoes.
 
-#define  SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE 5000  // These need better heat protect, but not as good heat protect as firesuits.
-#define    FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE 8000 // What max_heat_protection_temperature is set to for firesuit quality headwear. MUST NOT BE 0.
-#define FIRE_HELMET_MAX_HEAT_PROTECTION_TEMPERATURE 9000 // For fire-helmet quality items. (Red and white hardhats)
+#define  SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE 3000  // These need better heat protect, but not as good heat protect as firesuits.
+#define    FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE 3000 // What max_heat_protection_temperature is set to for firesuit quality headwear. MUST NOT BE 0.
+#define FIRE_HELMET_MAX_HEAT_PROTECTION_TEMPERATURE 3000 // For fire-helmet quality items. (Red and white hardhats)
 #define      HELMET_MAX_HEAT_PROTECTION_TEMPERATURE 600   // For normal helmets.
 #define       ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE 600   // For armor.
 #define      GLOVES_MAX_HEAT_PROTECTION_TEMPERATURE 1500  // For some gloves.
 #define        SHOE_MAX_HEAT_PROTECTION_TEMPERATURE 1500  // For shoes.
 
-#define  FIRESUIT_MAX_PRESSURE 		60 * ONE_ATMOSPHERE   // Firesuis and atmos voidsuits
+#define  FIRESUIT_MAX_PRESSURE 		50 * ONE_ATMOSPHERE   // Firesuis and atmos voidsuits
 #define  RIG_MAX_PRESSURE 			80 * ONE_ATMOSPHERE   // Rigs
 #define  LIGHT_RIG_MAX_PRESSURE 	55 * ONE_ATMOSPHERE   // Rigs
 #define  ENG_VOIDSUIT_MAX_PRESSURE 	60 * ONE_ATMOSPHERE

@@ -23,18 +23,18 @@
 #define  ARMOR_MELEE_POWER_ARM			14 // Power Armor.
 #define  ARMOR_MELEE_ASTARTES		15 // Astartes Power armor.
 
-#define  ARMOR_BIO_MINOR			15
+#define  ARMOR_BIO_THIRTY			15
 #define  ARMOR_BIO_SMALL			35
-#define  ARMOR_BIO_RESISTANT		50
+#define  ARMOR_BIO_FIFTY		50
 #define  ARMOR_BIO_STRONG			75
 #define  ARMOR_BIO_SHIELDED			99
 
-#define  ARMOR_RAD_MINOR			30
+#define  ARMOR_RAD_THIRTY			30
 #define  ARMOR_RAD_SMALL			45
-#define  ARMOR_RAD_RESISTANT		50
+#define  ARMOR_RAD_FIFTY		50
 #define  ARMOR_RAD_SHIELDED			99
 
-#define  ARMOR_BOMB_MINOR			10
+#define  ARMOR_BOMB_TEN			10
 #define  ARMOR_BOMB_THIRTY			30
 #define  ARMOR_BOMB_RESISTANT		55
 #define  ARMOR_BOMB_SHIELDED		65

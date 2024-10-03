@@ -7,8 +7,8 @@
 	allowed = list(/obj/item/device/scanner/gas,/obj/item/stack/medical,/obj/item/reagent_containers/dropper,/obj/item/reagent_containers/syringe,/obj/item/reagent_containers/hypospray,/obj/item/device/scanner/health,/obj/item/device/flashlight/pen,/obj/item/reagent_containers/glass/bottle,/obj/item/reagent_containers/glass/beaker,/obj/item/reagent_containers/pill,/obj/item/storage/pill_bottle,/obj/item/paper)
 	accessories = list(/obj/item/clothing/accessory/armor_plate/paddingbio)
 	armor = list(
-		bio = ARMOR_BIO_RESISTANT,
-		rad = ARMOR_RAD_MINOR+20
+		bio = ARMOR_BIO_FIFTY,
+		rad = ARMOR_RAD_THIRTY+20
 		)
 
 /obj/item/clothing/suit/armor/grim/toggle/labcoat/cmo

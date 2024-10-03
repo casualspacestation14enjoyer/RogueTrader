@@ -115,7 +115,7 @@
 	item_state = "janitor"
 	gender_icons = 1
 	armor = list(
-		bio = ARMOR_BIO_MINOR
+		bio = ARMOR_BIO_THIRTY
 		)
 
 

@@ -110,9 +110,9 @@
 			f_loss = 60
 
 			if (get_sound_volume_multiplier() >= 0.2)
-				ear_damage += 30
+				ear_damage += 25
 				ear_deaf += 120
-			if (prob(70))
+			if (prob(30))
 				Paralyse(10)
 
 		if(EX_ACT_LIGHT)
@@ -120,8 +120,8 @@
 			if (get_sound_volume_multiplier() >= 0.2)
 				ear_damage += 15
 				ear_deaf += 60
-			if (prob(50))
-				Paralyse(10)
+			if (prob(15))
+				Paralyse(5)
 
 	// focus most of the blast on one organ
 	apply_damage(0.7 * b_loss, DAMAGE_BRUTE, null, DAMAGE_FLAG_EXPLODE, used_weapon = "Explosive blast")

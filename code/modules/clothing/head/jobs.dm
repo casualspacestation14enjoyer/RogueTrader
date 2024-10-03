@@ -176,8 +176,8 @@
 		laser = ARMOR_LASER_FLAK,
 		energy = ARMOR_ENERGY_SMALL,
 		bomb = ARMOR_BOMB_THIRTY,
-		bio = ARMOR_BIO_RESISTANT,
-		rad = ARMOR_RAD_MINOR
+		bio = ARMOR_BIO_FIFTY,
+		rad = ARMOR_RAD_THIRTY
 	)
 	siemens_coefficient = 0.9
 
