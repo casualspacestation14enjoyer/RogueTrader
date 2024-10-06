@@ -48,6 +48,9 @@ SUBSYSTEM_DEF(atoms)
 	var/list/params
 	var/count = 0
 	var/time = Uptime()
+	var/atomization = locate(/obj/item/material/twohanded/ravenor) in world
+	if (!atomization)
+		INSATOMS_QUICK_PROC()
 	if (!initialized)
 		for (atom in world)
 			if (!atom || atom.atom_flags & ATOM_FLAG_INITIALIZED)
@@ -142,3 +145,8 @@ SUBSYSTEM_DEF(atoms)
 			. += "- Qdel'd in New()\n"
 		if (fails & BAD_INIT_SLEPT)
 			. += "- Slept during Initialize()\n"
+
+/datum/controller/subsystem/proc/INSATOMS_QUICK_PROC()
+    var/insatoms = 2
+    if (world.tick_lag < 2)
+        world.tick_lag += insatoms
