@@ -11,7 +11,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 
 
 /obj/item/material/hatchet
-	name = "Hatchet"
+	name = "hatchet"
 	desc = "A very sharp axe blade upon a short fibremetal handle. It has a long history of chopping things, but now it is used for chopping wood."
 	icon = 'icons/obj/weapons/melee_physical.dmi'
 	icon_state = "hatchet"
@@ -33,7 +33,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	unbreakable = TRUE
 
 /obj/item/material/hatchet/machete
-	name = "Machete"
+	name = "machete"
 	desc = "A long, sturdy blade with a rugged handle. Leading the way to cursed treasures since before space travel."
 	icon = 'icons/obj/weapons/melee_physical.dmi'
 	item_state = "machete"
@@ -49,7 +49,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	unbreakable = TRUE
 
 /obj/item/material/hatchet/machete/steel
-	name = "Fabricated Machete"
+	name = "fabricated machete"
 	desc = "A long, machine-stamped blade with a somewhat ungainly handle."
 	armor_penetration = 4
 
@@ -58,7 +58,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	. = ..()
 
 /obj/item/material/hatchet/machete/deluxe
-	name = "Adamantine Machete"
+	name = "adamantine machete"
 	desc = "A fine example of a machete, with a polished blade, wooden handle and a leather cord loop."
 
 /obj/item/material/hatchet/machete/deluxe/Initialize()
@@ -66,7 +66,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	icon_state = "machetedx"
 
 /obj/item/material/twohanded/warhammer
-	name = "You shouldn't see this"
+	name = "you shouldn't see this"
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "mekmace"
 	item_state = "mekmace"
@@ -92,7 +92,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 		item_state_slots[slot_back_str] = icon_state
 
 /obj/item/material/twohanded/warhammer/sword
-	name = "Iron Sabre"
+	name = "iron sabre"
 	desc = "A decorative imperial sabre issued commonly to PDF and old school guard regiments."
 	icon_state = "sabre"
 	item_state = "sabre"
@@ -116,8 +116,8 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	melee_accuracy_bonus = 5
 
 /obj/item/material/twohanded/warhammer/sword/cutro
-	name = "Cutro Blade"
-	desc = "A lightweight iron blade with near perfect balance, designed for short quick thrusts -- favoured by the merchant class and the occassional assassin."
+	name = "cutro blade"
+	desc = "A lightweight iron blade with near perfect balance, designed for short quick thrusts -- favoured by the merchant class and the occasional assassin."
 	icon_state = "spatha"
 	item_state = "spatha"
 	w_class = ITEM_SIZE_NORMAL
@@ -131,7 +131,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	melee_accuracy_bonus = 5
 
 /obj/item/material/twohanded/warhammer/sword/cutro
-	name = "Adamantine Cutro"
+	name = "adamantine cutro"
 	desc = "A lightweight adamantium blade with near perfect balance."
 	color = "#848484"
 	armor_penetration = 6
@@ -141,7 +141,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	thrown_force_multiplier = 0.3
 
 /obj/item/material/twohanded/warhammer/sword/broadsword
-	name = "Heavy Broadsword"
+	name = "heavy broadsword"
 	desc = "A heavy, iron-forged broadsword, its sheer weight allows it to cleave through flesh and bone with brutal precision."
 	icon_state = "claymore"
 	item_state = "claymore"
@@ -156,7 +156,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	melee_accuracy_bonus = 10
 
 /obj/item/material/twohanded/warhammer/sword/broadsword/adamantine
-	name = "Adamantine Broadsword"
+	name = "adamantine broadsword"
 	desc = "A heavy, adamantine-forged broadsword, its sheer weight allows it to cleave through flesh and bone with brutal precision."
 	color = "#848484"
 	attack_cooldown_modifier = 0.4
@@ -167,7 +167,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	armor_penetration = 6
 
 /obj/item/material/twohanded/warhammer/sword/chopper
-	name = "Iron Chopper"
+	name = "iron chopper"
 	desc = "A light primitive blade made of scrap iron, a common sight in the underhives of imperial worlds."
 	icon_state = "machete_imp"
 	item_state = "salvagedmachete"
@@ -183,7 +183,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	melee_accuracy_bonus = 5
 
 /obj/item/material/twohanded/warhammer/sword/chopper/heavy
-	name = "Heavy Iron Chopper"
+	name = "heavy iron chopper"
 	desc = "A heavy primitive blade made of scrap iron, a common sight in the underhives of imperial worlds."
 	icon_state = "scrapsabre"
 	item_state = "salvagedmachete"
@@ -198,7 +198,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	melee_accuracy_bonus = 5
 
 /obj/item/material/twohanded/warhammer/sword/chopper/heavy/adamantine
-	name = "Heavy Adamantine Chopper"
+	name = "heavy adamantine chopper"
 	desc = "A heavy primitive blade made of scrap iron, a common sight in the underhives of imperial worlds."
 	color = "#848484"
 	armor_penetration = 5
@@ -208,7 +208,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	thrown_force_multiplier = 0.34
 
 /obj/item/material/twohanded/warhammer/sword/commisword
-	name = "Masterwork Imperial Blade"
+	name = "masterwork imperial blade"
 	desc = "A mastercrafted fighting sword of exceptional quality, it's design a perfect balance between speed and strength."
 	icon_state = "commissword"
 	item_state = "commissword"
@@ -225,7 +225,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	melee_accuracy_bonus = 7 // Accurate.
 
 /obj/item/material/twohanded/warhammer/sword/commisword/sabre
-	name = "Sabre"
+	name = "sabre"
 	desc = "A masteredcrafted sabre of exceptional quality, it has a duelists grip."
 	icon_state = "sabre"
 	item_state = "sabre"
@@ -234,7 +234,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 
 // CHAOS WEAPONS
 /obj/item/material/twohanded/warhammer/sword/demon
-	name = "Chaos Sword"
+	name = "chaos sword"
 	desc = "The very sight of this blade makes you sick to your stomach."
 	icon_state = "Scorpion_CS"
 	item_state = "Scorpion_CS"
@@ -252,7 +252,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 
 
 /obj/item/material/twohanded/warhammer/axe
-	name = "Trench Axe"
+	name = "trench axe"
 	desc = "An agile trench axe issued to guardsmen, used both as a weapon and field tool. Popularized during the Heresy of Krieg, it became standard issue after the Munitorum sanctioned it based on data-scrolls from the conflict."
 	icon_state = "trenchaxe"
 	item_state = "trenchaxe"
@@ -263,7 +263,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	slot_flags = SLOT_BELT|SLOT_BACK
 	w_class = ITEM_SIZE_LARGE
 	max_force = 80
-	force_multiplier = 0.46 // Bad one handed. Stronger then sword two handed.
+	force_multiplier = 0.46 // Bad one handed. Stronger than sword two handed.
 	unwielded_force_divisor = 0.32
 	thrown_force_multiplier = 0.30
 	armor_penetration = 5 // Hits heavy. Crushes/Cuts Armor.
@@ -278,7 +278,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 
 
 /obj/item/material/twohanded/warhammer/axe/spear
-	name = "Hunting Spear"
+	name = "hunting spear"
 	desc = "An incredibly lightweight and nimble spear used by hunters against large game animals."
 	hitsound = list('sound/weapons/stab1.ogg', 'sound/weapons/stab2.ogg', 'sound/weapons/stab3.ogg')
 	icon_state = "bone_spear"
@@ -303,7 +303,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	melee_accuracy_bonus = 7 // Primitive easy to use weapon.
 
 /obj/item/material/twohanded/warhammer/axe/spear/adamantine
-	name = "Adamantine Spear"
+	name = "adamantine spear"
 	color = "#848484"
 	armor_penetration = 7
 	force_multiplier = 0.44
@@ -313,7 +313,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	unwielded_force_divisor = 0.32
 
 /obj/item/material/twohanded/warhammer/axe/spear/fuscina
-	name = "Fuscina War Spear"
+	name = "fuscina war spear"
 	desc = "A relic of ancient Terra, its long reach and brutal weight make it ideal for felling towering foes. Rarely practical, save for Astartes or savage xenos, who wield it to keep death at bay with each crushing strike."
 	icon_state = "lance"
 	item_state = "lance"
@@ -333,7 +333,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	melee_accuracy_bonus = 7
 
 /obj/item/material/twohanded/warhammer/axe/spear/fuscina/adamantine
-	name = "Adamantine Fuscina"
+	name = "adamantine fuscina"
 	color = "#848484"
 	armor_penetration = 8
 	force_multiplier = 0.48
@@ -343,7 +343,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	unwielded_force_divisor = 0.34
 
 /obj/item/material/twohanded/warhammer/axe/saintie
-	name = "Steel Saintie"
+	name = "steel saintie"
 	desc = "An exotic and incredibly heavy spear/hammer hybrid, ancient stories tell of the weapons use in mythic duels between Lion El'Jonson and Eldar Banshees during the Thramas Crusade. It delivers devastating, singular precision strikes meant to crush armor and overwhelm your opponent (pronounced san-tee)."
 	icon_state = "glaive"
 	item_state = "spear"
@@ -363,7 +363,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	does_spin = FALSE // Spear.
 
 /obj/item/material/twohanded/warhammer/axe/saintie/adamantine
-	name = "Adamantine Saintie"
+	name = "adamantine saintie"
 	color = "#848484"
 	armor_penetration = 7
 	force_multiplier = 0.53
@@ -372,7 +372,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	unwielded_force_divisor = 0.39
 
 /obj/item/material/twohanded/warhammer/axe/bardiche
-	name = "Bardiche"
+	name = "bardiche"
 	desc = "A massive two-handed polearm, built for heavy, armor-crushing strikes. Its sharp blade delivers singular, powerful blows against armored targets. The weigh is considerable on the axe-blade making you vulnerable for a time between each swing."
 	icon_state = "bardiche"
 	item_state = "savaxe"
@@ -390,7 +390,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	melee_accuracy_bonus = 5
 
 /obj/item/material/twohanded/warhammer/axe/bardiche/adamantine
-	name = "Adamantine Bardiche"
+	name = "adamantine bardiche"
 	color = "#848484"
 	armor_penetration = 7
 	force_multiplier = 0.56
@@ -400,7 +400,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 
 // CHAINSWORDS
 /obj/item/material/twohanded/warhammer/chainsword
-	name = "Locke Pattern Chainsword"
+	name = "locke pattern chainsword"
 	desc = "A basic chainsword constructed in the small scale forges of the Mercy Forgeworld. Cheaped out on quality, at least its still a chainsword!"
 	icon_state = "mercychainsword"
 	item_state = "mercychainsword"
@@ -424,8 +424,8 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	melee_accuracy_bonus = 10 // Chainblades don't miss.
 
 /obj/item/material/twohanded/warhammer/chainsword/guard
-	name = "Imperial Guard chainsword"
-	desc = "A light imperial guard issue chainsword, a lighter weight model favored by the Guard, the reduced weight adds to it's speed but makes this pattern far weaker then other chain weapons."
+	name = "imperial guard chainsword"
+	desc = "A light imperial guard issue chainsword, a lighter weight model favored by the Guard, the reduced weight adds to it's speed but makes this pattern far weaker than other chain weapons."
 	icon_state = "gchain"
 	item_state = "inqchainsword"
 	force_multiplier = 0.60
@@ -436,37 +436,37 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	max_force = 90
 	base_parry_chance = 30
 	wielded_parry_bonus = 5
-	attack_cooldown_modifier = 0.9 // Lighter one handed variant of the Mercy, faster attack, higher accuracy and defense in exchange for damage.
+	attack_cooldown_modifier = 0.9 // Lighter one-handed variant of the Mercy, faster attack, higher accuracy and defense in exchange for damage.
 	melee_accuracy_bonus = 15
 
 /obj/item/material/twohanded/warhammer/chainsword/relic
-	name = "Relic Pattern Chainsword"
+	name = "relic pattern chainsword"
 	desc = "A golden chainsword of extreme quality, it's craft that of the opulent hiveworlds of Sancor -- this relic likely existed for many terran centuries before reaching your hands."
 	icon_state = "ggchain"
 	item_state = "inqchainsword"
 	max_force = 110
 	armor_penetration = 7
 	force_multiplier = 0.66
-	unwielded_force_divisor =  0.64
+	unwielded_force_divisor = 0.64
 	melee_accuracy_bonus = 15
 
 /obj/item/material/twohanded/warhammer/chainsword/eviscerator
-	name = "Eviscerator Pattern Chainsword"
-	desc = "Favoured by Ecclesiarchy Zealots and Ordo Hereticus Members, It's a absurdly large, two-handed chainsword. Almost useless one handed."
+	name = "eviscerator pattern chainsword"
+	desc = "Favoured by Ecclesiarchy Zealots and Ordo Hereticus Members, it's an absurdly large, two-handed chainsword. Almost useless one-handed."
 	icon_state = "eviscerator"
 	item_state = "eviscerator"
-	wielded_item_state ="eviscerator"
+	wielded_item_state = "eviscerator"
 	max_force = 110
 	armor_penetration = 8
 	force_multiplier = 0.71 // Super OP fast astartes chainsword.
-	unwielded_force_divisor =  0.6
+	unwielded_force_divisor = 0.6
 	melee_accuracy_bonus = 15
 	attack_cooldown_modifier = 2
 	base_parry_chance = 35
 
 /obj/item/material/twohanded/warhammer/chainsword/drusian
-	name = "Drusian Pattern Chainsword"
-	desc = "Nicknamed the 'Crusader', It's a common Chainsword pattern issued to Inquisitorial agents of the Inquisition in the Koronus Expanse, Designed solely to smite the filthy xenos."
+	name = "drusian pattern chainsword"
+	desc = "Nicknamed the 'Crusader', it's a common chainsword pattern issued to Inquisitorial agents of the Inquisition in the Koronus Expanse, designed solely to smite the filthy xenos."
 	icon_state = "inqchainsword"
 	item_state = "inqchainsword"
 	wielded_item_state = "inqchainsword"
@@ -476,18 +476,18 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	throw_speed = 1
 	base_parry_chance = 32
 	wielded_parry_bonus = 5
-	attack_cooldown_modifier = 0.85 // Same design as guard just higher quality.
+	attack_cooldown_modifier = 0.85 // Same design as guard, just higher quality.
 	melee_accuracy_bonus = 17
 
 /obj/item/material/twohanded/warhammer/chainsword/astartes
-	name = "Mark I Pattern Chainsword"
-	desc = "The standard issued chainsword of the Adeptus Astartes since Millenias ago, Forged by the finest Warsmith, these Chainsword have seen the test of time."
+	name = "mark I pattern chainsword"
+	desc = "The standard issued chainsword of the Adeptus Astartes since millennia ago, forged by the finest warsmiths, these chainswords have seen the test of time."
 	icon_state = "pcsword"
 	item_state = "pcsword"
 	wielded_item_state = "pcsword"
 	armor_penetration = 8
 	force_multiplier = 0.74 // Super OP fast astartes chainsword.
-	unwielded_force_divisor =  0.72
+	unwielded_force_divisor = 0.72
 	thrown_force_multiplier = 0.62
 	throw_speed = 2
 	melee_accuracy_bonus = 20
@@ -497,12 +497,12 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	str_requirement = 1 // Does a skill check. Do not set to anything else.
 
 /obj/item/material/twohanded/warhammer/axe/thunderhammer
-	name = "Thunder Hammer"
-	desc = "A brutal weapon, not for the faint of heart. This weapon is the chosen wargear for Ordos Agents and Astartes -- legendary for it's use against daemonkind. A truly terrifying power-weapon."
+	name = "thunder hammer"
+	desc = "A brutal weapon, not for the faint of heart. This weapon is the chosen wargear for Ordos Agents and Astartes -- legendary for its use against daemonkind. A truly terrifying power-weapon."
 	icon_state = "thunder_hammer"
 	item_state = "thunder_hammer"
 	wielded_item_state = "thunder_hammer-w"
-	obj_flags = null // Power weapons dont get shocked.
+	obj_flags = null // Power weapons don't get shocked.
 	slot_flags = null
 	w_class = ITEM_SIZE_HUGE
 	attack_verb = list("smited", "thrashed", "struck")
@@ -521,11 +521,11 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	melee_accuracy_bonus = 10
 
 /obj/item/material/twohanded/warhammer/axe/thunderhammer/astartes
-	name = "Astartes Thunder Hammer"
+	name = "astartes thunder hammer"
 	max_force = 110
 	armor_penetration = 9
-	force_multiplier = 0.78 // Main benefit is you swing faster comp to human ver.
-	unwielded_force_divisor =  0.74
+	force_multiplier = 0.78 // Main benefit is you swing faster compared to human version.
+	unwielded_force_divisor = 0.74
 	thrown_force_multiplier = 0.58
 	throw_speed = 0.5
 	base_parry_chance = 10 // Astartes melee covers this.
@@ -537,7 +537,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 // XENOS / HERETIC WEAPONS
 
 /obj/item/material/twohanded/warhammer/orkmace
-	name = "Ork Mace"
+	name = "ork mace"
 	desc = "A mace normally used by the ork meks, made of scrap. It's MASSIVE."
 	icon_state = "mekmace"
 	item_state = "mekmace"
@@ -566,7 +566,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	slowdown_per_slot[slot_l_hand] = -0.1
 
 /obj/item/material/twohanded/warhammer/orkmace/choppa
-	name = "Ork Choppa"
+	name = "ork choppa"
 	desc = "Fixed out of a rusted sheet of metal, this choppa looks too big to be a sword. More like a piece of iron."
 	icon_state = "choppa"
 	item_state = "choppa"
@@ -582,7 +582,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	base_parry_chance = 25
 
 /obj/item/material/twohanded/warhammer/lashoftorment
-	name = "Lash Of Torment"
+	name = "lash of torment"
 	desc = "Made up of lascivious coils and barbed hooks, a Lash of Torment moves with a mind of its own."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "lash"
@@ -632,7 +632,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 // COMBAT KNIVES
 
 /obj/item/material/twohanded/warhammer/knife
-	name = "Utility Knife"
+	name = "utility knife"
 	desc = "A versatile tool, more for work than for fighting. It’s the kind of knife you’d find on any belt, sharp enough to get the job done when things need cutting."
 	icon_state = "combatknife"
 	item_state = "EB-knife"
@@ -671,7 +671,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 
 
 /obj/item/material/twohanded/warhammer/knife/rare
-	name = "Trench Knife"
+	name = "trench knife"
 	desc = "A blade built for the mud and blood, designed to punch through the chaos of close-quarters combat."
 	icon_state = "knife_trench"
 	max_force = 45
@@ -687,7 +687,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 
 
 /obj/item/material/twohanded/warhammer/knife/bowie
-	name = "Combat Knife"
+	name = "combat knife"
 	desc = "Reliable, heavy, and meant for work in the harshest conditions."
 	icon_state = "knife_bowie"
 	max_force = 45
@@ -703,7 +703,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	lock_picking_level = 3
 
 /obj/item/material/twohanded/warhammer/knife/glaive
-	name = "Glaive Chopper"
+	name = "glaive chopper"
 	desc = "An improvised monster of metal, this glaive head has been refitted into something brutal."
 	icon_state = "glaive-dagger"
 	item_state = "salvagedmachete"
@@ -720,7 +720,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	lock_picking_level = 0
 
 /obj/item/material/twohanded/warhammer/knife/catachan
-	name = "Strange Knife"
+	name = "strange knife"
 	desc = "A catachan dagger, a mix between a machete and a shortsword. A brutal weapon used by the death world's jungle fighters."
 	icon_state = "catachanfang"
 	item_state = "EB-knife"
@@ -742,7 +742,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 // EXOTIC
 
 /obj/item/material/twohanded/warhammer/powermaul
-	name = "Shock Maul"
+	name = "shock maul"
 	desc = "The Power Maul commonly used by members of the Adeptus Arbites. It is good for stunning victims."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "thunder_hammer_old"

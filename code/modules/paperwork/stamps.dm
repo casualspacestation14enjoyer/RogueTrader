@@ -18,7 +18,7 @@
 	icon_state = "stamp-cap"
 
 /obj/item/stamp/ce
-	name = "chief engineer's rubber stamp"
+	name = "magos explorator's rubber stamp"
 	icon_state = "stamp-ce"
 
 /obj/item/stamp/rd

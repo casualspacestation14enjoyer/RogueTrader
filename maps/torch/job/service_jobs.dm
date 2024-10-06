@@ -1,4 +1,4 @@
-/datum/job/chief_steward
+/datum/job/qm
 	title = "Chief Steward"
 	department = "Service"
 	department_flag = SRV
@@ -37,7 +37,7 @@
 		access_o_mess
 	)
 
-/datum/job/chaplain
+/datum/job/chaplain_militant
 	title = "Chaplain"
 	department = "Service"
 	department_flag = SRV
@@ -63,7 +63,7 @@
 		access_radio_serv
 	)
 
-/datum/job/janitor
+/datum/job/chamber_assistant
 	title = "Sanitation Technician"
 	department = "Service"
 	department_flag = SRV
@@ -93,7 +93,7 @@
 	)
 
 
-/datum/job/chef
+/datum/job/chamber_magister
 	title = "Steward"
 	department = "Service"
 	department_flag = SRV
@@ -128,7 +128,7 @@
 	)
 
 
-/datum/job/crew
+/datum/job/deck_scum
 	title = "Crewman"
 	department = "Service"
 	department_flag = SRV

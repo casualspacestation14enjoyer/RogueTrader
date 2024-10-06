@@ -1,5 +1,5 @@
 SUBSYSTEM_DEF(ai)
-	name = "AI"
+	name = "Machine Spirit"
 	init_order = SS_INIT_AI
 	priority = SS_PRIORITY_AI
 	wait = 2 SECONDS

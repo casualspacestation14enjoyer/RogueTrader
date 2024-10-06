@@ -147,7 +147,7 @@ var/global/repository/follow/follow_repository = new()
 /datum/follow_holder/ai
 	sort_order = 1
 	followed_type = /mob/living/silicon/ai
-	suffix = "AI"
+	suffix = "Machine Spirit"
 
 /datum/follow_holder/pai
 	sort_order = 2

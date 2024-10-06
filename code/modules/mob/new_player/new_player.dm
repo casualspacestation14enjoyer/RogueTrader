@@ -255,7 +255,7 @@
 	SScustomitems.equip_custom_items(character)
 
 	// AIs don't need a spawnpoint, they must spawn at an empty core
-	if(character.mind.assigned_role == "AI")
+	if(character.mind.assigned_role == "Machine Spirit")
 
 		character = character.AIize(move=0) // AIize the character, but don't move them yet
 
@@ -396,7 +396,7 @@
 			continue
 		for(var/datum/job/prof in categorizedJobs[jobcat]["jobs"])
 			if(jobcat == "Command")
-				if(istype(prof, /datum/job/captain))
+				if(istype(prof, /datum/job/rogue_trader))
 					dat += prof.get_join_link(client, "byond://?src=\ref[src];SelectedJob=[prof.title]", show_invalid_jobs, TRUE)
 				else
 					dat += prof.get_join_link(client, "byond://?src=\ref[src];SelectedJob=[prof.title]", show_invalid_jobs)

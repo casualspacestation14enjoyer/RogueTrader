@@ -5,10 +5,6 @@
 	pda_type = /obj/item/modular_computer/pda/medical
 	pda_slot = slot_l_store
 
-/singleton/hierarchy/outfit/job/medical/New()
-	..()
-	BACKPACK_OVERRIDE_MEDICAL
-
 /singleton/hierarchy/outfit/job/medical/cmo
 	name = OUTFIT_JOB_NAME("Chief Medical Officer")
 	l_ear  =/obj/item/device/radio/headset/heads/cmo
@@ -42,9 +38,6 @@
 	uniform = /obj/item/clothing/under/rank/virologist
 	suit = /obj/item/clothing/suit/armor/grim/toggle/labcoat/virologist
 	mask = /obj/item/clothing/mask/surgical
-/singleton/hierarchy/outfit/job/medical/doctor/virologist/New()
-	..()
-	BACKPACK_OVERRIDE_RESEARCH_CORP
 
 /singleton/hierarchy/outfit/job/medical/doctor/nurse
 	name = OUTFIT_JOB_NAME("Nurse")
@@ -68,10 +61,6 @@
 	suit = /obj/item/clothing/suit/armor/grim/toggle/labcoat/chemist
 	id_types = list(/obj/item/card/id/medical/chemist)
 	pda_type = /obj/item/modular_computer/pda/chemistry
-
-/singleton/hierarchy/outfit/job/medical/chemist/New()
-	..()
-	BACKPACK_OVERRIDE_RESEARCH_CORP
 
 /singleton/hierarchy/outfit/job/medical/geneticist
 	name = OUTFIT_JOB_NAME("Geneticist")

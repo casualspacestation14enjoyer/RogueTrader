@@ -11,8 +11,8 @@
 	flags_inv = CLOTHING_BULKY // DO NOT USE THIS IF YOU DONT KNOW HOW PLATE CARRIER CODE WORKS
 	item_flags = ITEM_FLAG_THICKMATERIAL | ITEM_FLAG_INVALID_FOR_CHAMELEON
 	body_parts_covered = LEGS
-	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS
+	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-200
 	slowdown_general = 0.04
@@ -262,8 +262,8 @@
 /obj/item/clothing/suit/armor/grim/mordian
 	name = "mordian patrol jacket"
 	desc = "The fatigues worn by a Mordian Iron Guardsman. Light and robust in the colour blue, designed to protect against blast and small arms fire."
-	icon_state = "enforcercoat"
-	item_state = "enforcercoat"
+	icon_state = "MordianC"
+	item_state = "MordianC"
 	body_parts_covered = LEGS|ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/flaklamellar) // Flak Padding. lighter and weaker.
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
@@ -277,6 +277,24 @@
 		bio = ARMOR_BIO_THIRTY,
 		rad = ARMOR_RAD_THIRTY+10,
 		bomb = ARMOR_BOMB_TEN
+		)
+
+/obj/item/clothing/suit/armor/grim/mordian/sergeant
+	name = "mordian carapace jacket"
+	desc = "The fatigues worn by a Mordian Iron Guardsman. Light and robust in the colour blue, designed to protect against blast and small arms fire. This one is reinforced with carapace plating."
+	icon_state = "MordianC"
+	item_state = "MordianCsergeant"
+	accessories = list(/obj/item/clothing/accessory/armor_plate/carapace)
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+50
+	slowdown_general = 0.035
+	armor = list(
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK,
+		energy = ARMOR_ENERGY_TEN+5,
+		bio = ARMOR_BIO_THIRTY+5,
+		rad = ARMOR_RAD_THIRTY+20,
+		bomb = ARMOR_BOMB_TEN+5
 		)
 
 /obj/item/clothing/suit/armor/grim/valhallan
@@ -299,6 +317,7 @@
 		bio = ARMOR_BIO_THIRTY,
 		bomb = ARMOR_BOMB_TEN-5
 	)
+
 
 /obj/item/clothing/suit/armor/grim/valhallan/medicae
 	name = "valhallan medicae vercoat"
@@ -438,7 +457,7 @@
 	name = "commissar's dress formals"
 	desc = "A Mordian Commissar's formal uniform, tailored to specifically meet regulation standards. The wearer shall make guardsman follow orders to the letter."
 	icon_state = "MordianC"
-	item_state = "MordianC"
+	item_state = "MordianCsergeant"
 
 /obj/item/clothing/suit/armor/stormtrooper
 	name = "stormtrooper's carapace armour"
@@ -688,21 +707,24 @@
 		bomb = ARMOR_BOMB_TEN+5
 		)
 
-/obj/item/clothing/suit/armor/grim/mechanicus
+/obj/item/clothing/suit/armor/grim/mechanicus/techpriest
 	name = "tech priest robes"
-	desc = "Green robes riddled with augments, scanners, and syringes. Worn and weathered, these robes have clearly seen the long service of a veteran Tech-Priest, their ancient mechanisms still thrumming with life."
-	icon_state = "techpriest"
-	item_state = "techpriest"
+	desc = "Red robes adorned with metal augmentations, scanners, and plates, marking the wearer as a veteran Tech-Priest of Mars. Resistant to biohazards and radiation, these ancient mechanisms still hum with life."
+	icon_state = "Mars_Engineseer"
+	item_state = "Mars_Engineseer"
 	canremove = 0
 	unacidable = 1
-	body_parts_covered = LEGS | ARMS
+	body_parts_covered = LEGS | ARMS | HEAD
 	accessories = list(/obj/item/clothing/accessory/armor_plate/mechplate)
 	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +600
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|HEAD
+	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|HEAD
+	flags_inv = HIDEMASK|HIDEEARS|BLOCKHAIR
 	slowdown_general = 0.08
 	armor = list(
-		melee = ARMOR_MELEE_FLAK, // Temp until we can make a mechanicus species.
+		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_FLAK+1,
 		laser = ARMOR_LASER_CARAPACE-1,
 		energy = ARMOR_ENERGY_TEN+30,
@@ -710,8 +732,37 @@
 		bio = ARMOR_BIO_FIFTY+58,
 		bomb = ARMOR_BOMB_TEN+20
 		)
+
+/obj/item/clothing/suit/armor/grim/mechanicus/techpriest/mob_can_equip(mob/living/carbon/human/user, slot)
+	if(user.get_equipped_item(slot_head))
+		to_chat(user, "You are already wearing headgear, you cannot wear the tech priest robes over it.")
+		return FALSE
+	if(slot == slot_head)
+		to_chat(user, "Your mechanicus robes already cover your head, you cannot wear a helmet.")
+		return FALSE
+	return ..()
+
+/obj/item/clothing/suit/armor/grim/mechanicus/techpriest/ryza
+	name = "tech priest robes"
+	desc = "Dark orange robes reinforced with metallic augments and plating, well suited for the fiery forges of Ryza. The ancient tech inside offers strong resistance to biohazards and radiation."
+	icon_state = "Ryza_Engineseer"
+	item_state = "Ryza_Engineseer"
+
+/obj/item/clothing/suit/armor/grim/mechanicus/techpriest/stygies
+	name = "tech priest robes"
+	desc = "Black, shadowy robes enhanced with augments and scanner arrays, reflecting the covert nature of Stygies' tech priests. The augmentations provide robust protection against biohazards and radiation."
+	icon_state = "Stygies8_Engineseer"
+	item_state = "Stygies8_Engineseer"
+
+/obj/item/clothing/suit/armor/grim/mechanicus/techpriest/metalica
+	name = "tech priest robes"
+	desc = "Pale white robes marked with metallic enhancements, representing the pure and efficient form of Metalica's Tech-Priests. The ancient augments offer high resistance to biohazards and radiation."
+	icon_state = "Metalica_Engineseer"
+	item_state = "Metalica_Engineseer"
+
+
 /obj/item/clothing/head/hardhat/techpriest
-	name = "augmented head"
+	name = "augmented head" // Do not use this with the new tech priest armors.
 	desc = "The augmented skull and hood signifying one is a priest of the Adeptus Mechanicus."
 	icon_state = "techpriestnew"
 	item_state = "techpriestnew"
@@ -731,14 +782,14 @@
 		bio = ARMOR_BIO_FIFTY+48,
 		bomb = ARMOR_BOMB_TEN+10
 		)
-	flags_inv = BLOCKHAIR|BLOCKHEADHAIR|HIDEEARS|HIDEEYES
+	flags_inv = BLOCKHAIR|HIDEEARS|HIDEEYES
 	flash_protection = FLASH_PROTECTION_MAJOR
 
 /obj/item/clothing/suit/armor/grim/mechanicus/biologis
 	name = "biologis robes"
 	desc = "Plain robes adorned with various wriggling mechanical appendages. These robes belong to a Magos Biologis, devoted to unlocking the biological mysteries of the universe with a machine-like precision."
 	icon_state = "genetor"
-	item_state = "genetor"
+	item_state = "genetor_hooded"
 	canremove = 0
 	unacidable = 1
 	body_parts_covered = LEGS | ARMS
@@ -757,7 +808,7 @@
 		bomb = ARMOR_BOMB_TEN+20
 		)
 /obj/item/clothing/head/hardhat/techpriest/biologis
-	name = "Biologis' hood"
+	name = "Biologis hood"
 	desc = "An ancient cowl covering a heavily augmented face."
 	icon_state = "genetor"
 	item_state = "genetor"

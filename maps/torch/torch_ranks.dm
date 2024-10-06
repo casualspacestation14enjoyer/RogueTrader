@@ -121,7 +121,7 @@
 		/datum/mil_rank/ec/o6
 	)
 
-	assistant_job = /datum/job/crew
+	assistant_job = /datum/job/deck_scum
 
 	min_skill = list( // 4 points
 		SKILL_HAULING = SKILL_BASIC, // 1 point
@@ -178,7 +178,7 @@
 		/datum/mil_rank/fleet/o5
 	)
 
-	assistant_job = /datum/job/crew
+	assistant_job = /datum/job/deck_scum
 	min_skill = list( // 4 points
 		SKILL_HAULING = SKILL_BASIC, // 1 point
 		SKILL_WEAPONS = SKILL_BASIC, // 2 points

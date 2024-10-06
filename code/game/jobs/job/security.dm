@@ -1,4 +1,4 @@
-/datum/job/hos
+/datum/job/guard_captain
 	title = "Head of Security"
 	head_position = 1
 	department = "Security"
@@ -17,12 +17,12 @@
 	minimal_player_age = 14
 	outfit_type = /singleton/hierarchy/outfit/job/security/hos
 
-/datum/job/hos/equip(mob/living/carbon/human/H)
+/datum/job/guard_captain/equip(mob/living/carbon/human/H)
 	. = ..()
 	if(.)
 		H.implant_loyalty(H)
 
-/datum/job/warden
+/datum/job/enforcer_sergeant
 	title = "Warden"
 	department = "Security"
 	department_flag = SEC
@@ -36,7 +36,7 @@
 	minimal_player_age = 7
 	outfit_type = /singleton/hierarchy/outfit/job/security/warden
 
-/datum/job/detective
+/datum/job/xeno_mercenary
 	title = "Detective"
 	department = "Security"
 	department_flag = SEC
@@ -51,7 +51,7 @@
 	minimal_player_age = 7
 	outfit_type = /singleton/hierarchy/outfit/job/security/detective
 
-/datum/job/officer
+/datum/job/enforcer
 	title = "Security Officer"
 	department = "Security"
 	department_flag = SEC

@@ -2,13 +2,13 @@ GLOBAL_DATUM_INIT(malf, /datum/antagonist/rogue_ai, new)
 
 /datum/antagonist/rogue_ai
 	id = MODE_MALFUNCTION
-	role_text = "Malfunctioning AI"
-	role_text_plural = "Malfunctioning AIs"
+	role_text = "Malfunctioning Machine Spirit"
+	role_text_plural = "Malfunctioning Machines"
 	mob_path = /mob/living/silicon/ai
-	landmark_id = "AI"
+	landmark_id = "Machine Spirit"
 	welcome_text = "You are malfunctioning! You do not have to follow any laws."
-	victory_text = "The AI has taken control of all systems."
-	loss_text = "The AI has been shut down!"
+	victory_text = "The machine spirit has taken control of all systems."
+	loss_text = "The machine spirit has been shut down!"
 	flags = ANTAG_VOTABLE | ANTAG_OVERRIDE_MOB | ANTAG_OVERRIDE_JOB | ANTAG_CHOOSE_NAME
 	hard_cap = 1
 	hard_cap_round = 1
@@ -20,14 +20,14 @@ GLOBAL_DATUM_INIT(malf, /datum/antagonist/rogue_ai, new)
 
 /datum/antagonist/rogue_ai/can_become_antag(datum/mind/player, ignore_role)
 	. = ..(player, ignore_role)
-	if(jobban_isbanned(player.current, "AI"))
+	if(jobban_isbanned(player.current, "Machine Spirit"))
 		return 0
 	return .
 
 /datum/antagonist/rogue_ai/build_candidate_list()
 	..()
 	for(var/datum/mind/player in candidates)
-		if(player.assigned_role && player.assigned_role != "AI")
+		if(player.assigned_role && player.assigned_role != "Machine Spirit")
 			candidates -= player
 	return candidates
 

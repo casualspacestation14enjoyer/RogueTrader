@@ -120,8 +120,8 @@
 
 /datum/gear/accessory/armband_emt
 	allowed_roles = list(
-		/datum/job/doctor,
-		/datum/job/medical_trainee
+		/datum/job/hospitaller,
+		/datum/job/novitiate
 	)
 	flags = GEAR_HAS_NO_CUSTOMIZATION
 
@@ -129,11 +129,11 @@
 	display_name = "medical armband"
 	path = /obj/item/clothing/accessory/armband/medblue
 	allowed_roles = list(
-		/datum/job/cmo,
-		/datum/job/senior_doctor,
-		/datum/job/junior_doctor,
-		/datum/job/doctor,
-		/datum/job/medical_trainee
+		/datum/job/magos_biologis,
+		/datum/job/chirugeon,
+		/datum/job/medicae,
+		/datum/job/hospitaller,
+		/datum/job/novitiate
 	)
 	flags = GEAR_HAS_NO_CUSTOMIZATION
 
@@ -249,7 +249,7 @@
 	allowed_branches = UNIFORMED_BRANCHES
 
 /datum/gear/foundation_civilian
-	allowed_roles = list(/datum/job/psychiatrist)
+	allowed_roles = list(/datum/job/rogue_guest)
 
 /*********************
  tactical accessories

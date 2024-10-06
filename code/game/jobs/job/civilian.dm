@@ -1,4 +1,4 @@
-/datum/job/chef
+/datum/job/chamber_magister
 	title = "Chef"
 	department = "Service"
 	department_flag = SRV
@@ -21,7 +21,7 @@
 	outfit_type = /singleton/hierarchy/outfit/job/service/gardener
 
 //Cargo
-/datum/job/qm
+/datum/job/noble_guest
 	title = "Quartermaster"
 	department = "Supply"
 	department_flag = SUP
@@ -34,7 +34,7 @@
 	ideal_character_age = 40
 	outfit_type = /singleton/hierarchy/outfit/job/cargo/qm
 
-/datum/job/cargo_tech
+/datum/job/pilgrim
 	title = "Cargo Technician"
 	department = "Supply"
 	department_flag = SUP
@@ -44,7 +44,7 @@
 	access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
 	outfit_type = /singleton/hierarchy/outfit/job/cargo/cargo_tech
 
-/datum/job/mining
+/datum/job/unexpected_guest
 	title = "Shaft Miner"
 	department = "Supply"
 	department_flag = SUP
@@ -56,7 +56,7 @@
 	alt_titles = list("Drill Technician","Prospector")
 	outfit_type = /singleton/hierarchy/outfit/job/cargo/mining
 
-/datum/job/janitor
+/datum/job/chamber_assistant
 	title = "Janitor"
 	department = "Service"
 	department_flag = SRV

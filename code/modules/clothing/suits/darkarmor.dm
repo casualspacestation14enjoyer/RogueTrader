@@ -697,7 +697,7 @@
 		melee = ARMOR_MELEE_POWER_ARM-2,
 		bullet = ARMOR_BALLISTIC_POWER_ARMOUR-2,
 		laser = ARMOR_LASER_POWER_ARMOUR-2,
-		energy = ARMOR_ENERGY_TEN+26,
+		energy = ARMOR_ENERGY_TEN+20,
 		rad = ARMOR_RAD_THIRTY+55,
 		bio = ARMOR_BIO_THIRTY+35,
 		bomb = ARMOR_BOMB_THIRTY+5
@@ -711,13 +711,13 @@
 	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
-	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+500
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+700
 	slowdown_general = 0.125
 	armor = list(
 		melee = ARMOR_MELEE_POWER_ARM-1,
 		bullet = ARMOR_BALLISTIC_POWER_ARMOUR-1,
 		laser = ARMOR_LASER_POWER_ARMOUR-1,
-		energy = ARMOR_ENERGY_TEN+26,
+		energy = ARMOR_ENERGY_TEN+30,
 		rad = ARMOR_RAD_THIRTY+65,
 		bio = ARMOR_BIO_THIRTY+45,
 		bomb = ARMOR_BOMB_THIRTY+15

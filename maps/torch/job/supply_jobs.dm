@@ -1,4 +1,4 @@
-/datum/job/qm
+/datum/job/noble_guest
 	title = "Deck Chief"
 	department = "Supply"
 	department_flag = SUP
@@ -42,7 +42,7 @@
 							 /datum/computer_file/program/deck_management,
 							 /datum/computer_file/program/reports)
 
-/datum/job/cargo_tech
+/datum/job/pilgrim
 	title = "Deck Technician"
 	department = "Supply"
 	department_flag = SUP
@@ -81,7 +81,7 @@
 							 /datum/computer_file/program/deck_management,
 							 /datum/computer_file/program/reports)
 
-/datum/job/mining
+/datum/job/unexpected_guest
 	title = "Prospector"
 	department = "Supply"
 	department_flag = SUP

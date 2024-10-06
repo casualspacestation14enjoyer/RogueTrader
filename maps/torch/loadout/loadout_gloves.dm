@@ -21,11 +21,11 @@
 		/datum/job/rd,
 		/datum/job/scientist,
 		/datum/job/scientist_assistant,
-		/datum/job/chef,
+		/datum/job/chamber_magister,
 		/datum/job/assistant,
 		/datum/job/merchant,
 		/datum/job/pathfinder,
-		/datum/job/nt_pilot,
+		/datum/job/shuttle_pilot,
 		/datum/job/explorer
 	)
 

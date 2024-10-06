@@ -1,14 +1,10 @@
 /singleton/hierarchy/outfit/job/engineering
 	hierarchy_type = /singleton/hierarchy/outfit/job/engineering
 	belt = /obj/item/storage/belt/utility/full
-	l_ear = /obj/item/device/radio/headset/headset_eng
+	l_ear = /obj/item/device/radio/headset/headset_mechanicus
 	shoes = /obj/item/clothing/shoes/workboots
 	pda_slot = slot_l_store
 	flags = OUTFIT_FLAGS_JOB_DEFAULT | OUTFIT_EXTENDED_SURVIVAL
-
-/singleton/hierarchy/outfit/job/engineering/New()
-	..()
-	BACKPACK_OVERRIDE_ENGINEERING
 
 /singleton/hierarchy/outfit/job/engineering/chief_engineer
 	name = OUTFIT_JOB_NAME("Chief engineer")

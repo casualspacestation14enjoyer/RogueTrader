@@ -10,7 +10,7 @@
 /datum/gear/suit/trenchcoat
 	allowed_roles = list(
 		/datum/job/assistant,
-		/datum/job/detective,
+		/datum/job/xeno_mercenary,
 		/datum/job/merchant,
 		/datum/job/submap/bearcat_captain,
 		/datum/job/submap/bearcat_crewman,
@@ -25,24 +25,24 @@
 /datum/gear/suit/security_poncho
 	allowed_roles = list(
 		/datum/job/merchant,
-		/datum/job/detective
+		/datum/job/xeno_mercenary
 	)
 	allowed_branches = UNIFORMED_BRANCHES
 
 /datum/gear/suit/medical_poncho
 	allowed_roles = list(
-		/datum/job/senior_doctor,
-		/datum/job/junior_doctor,
-		/datum/job/doctor,
-		/datum/job/psychiatrist,
+		/datum/job/chirugeon,
+		/datum/job/medicae,
+		/datum/job/hospitaller,
+		/datum/job/rogue_guest,
 		/datum/job/merchant,
-		/datum/job/chemist
+		/datum/job/pharmacologis
 	)
 	allowed_branches = UNIFORMED_BRANCHES
 
 /datum/gear/suit/engineering_poncho
 	allowed_roles = list(
-		/datum/job/engineer,
+		/datum/job/tech_priest,
 		/datum/job/roboticist,
 		/datum/job/merchant
 	)
@@ -67,7 +67,7 @@
 
 /datum/gear/suit/cargo_poncho
 	allowed_roles = list(
-		/datum/job/cargo_tech,
+		/datum/job/pilgrim,
 		/datum/job/merchant
 	)
 	allowed_branches = UNIFORMED_BRANCHES
@@ -130,7 +130,7 @@
 /datum/gear/suit/labcoat_cmo
 	display_name = "labcoat, chief medical officer"
 	allowed_roles = list(
-		/datum/job/cmo
+		/datum/job/magos_biologis
 	)
 	path = /obj/item/clothing/suit/armor/grim/toggle/labcoat
 	flags = GEAR_HAS_NO_CUSTOMIZATION
@@ -153,7 +153,7 @@
 /datum/gear/suit/wintercoat_dais
 	display_name = "winter coat, DAIS"
 	allowed_roles = list(
-		/datum/job/engineer,
+		/datum/job/tech_priest,
 		/datum/job/roboticist,
 		/datum/job/scientist_assistant,
 		/datum/job/scientist,
@@ -204,7 +204,7 @@
 	display_name = "Agent's jacket"
 	path = /obj/item/clothing/suit/armor/grim/toggle/agent_jacket
 	allowed_roles = list(
-		/datum/job/detective
+		/datum/job/xeno_mercenary
 	)
 	allowed_branches = list(
 		/datum/mil_branch/solgov
@@ -213,6 +213,6 @@
 
 /datum/gear/suit/chest_rig/New()
 	allowed_roles = TECHNICAL_ROLES + SECURITY_ROLES + list(
-		/datum/job/doctor
+		/datum/job/hospitaller
 	)
 	..()

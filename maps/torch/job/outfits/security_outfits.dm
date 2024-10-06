@@ -3,10 +3,6 @@
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	pda_slot = slot_l_store
 
-/singleton/hierarchy/outfit/job/torch/crew/security/New()
-	..()
-	BACKPACK_OVERRIDE_SECURITY
-
 /singleton/hierarchy/outfit/job/torch/crew/security/brig_chief
 	name = OUTFIT_JOB_NAME("Brig Chief")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/security

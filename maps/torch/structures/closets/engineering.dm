@@ -31,7 +31,7 @@
 	)
 
 /obj/structure/closet/secure_closet/engineering_chief_torch
-	name = "chief engineer's locker"
+	name = "magos explorator's locker"
 	req_access = list(access_ce)
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/engineering/ce
 
@@ -65,7 +65,7 @@
 	)
 
 /obj/structure/closet/secure_closet/engineering_torch
-	name = "engineer's locker"
+	name = "tech priest's locker"
 	req_access = list(access_engine_equip)
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/engineering
 
@@ -73,8 +73,8 @@
 	return list(
 		/obj/item/clothing/accessory/storage/brown_vest,
 		/obj/item/storage/belt/utility/full,
-		/obj/item/device/radio/headset/headset_eng,
-		/obj/item/device/radio/headset/headset_eng/alt,
+		/obj/item/device/radio/headset/headset_mechanicus,
+		/obj/item/device/radio/headset/headset_mechanicus/alt,
 		/obj/item/clothing/suit/armor/grim/storage/engineering_chest_rig,
 		/obj/item/clothing/mask/gas,
 		/obj/item/clothing/glasses/meson,
@@ -86,15 +86,15 @@
 	)
 
 /obj/structure/closet/secure_closet/engineering_senior
-	name = "senior engineer's locker"
+	name = "tech priest's locker"
 	req_access = list(access_seneng)
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/engineering/se
 
 /obj/structure/closet/secure_closet/engineering_senior/WillContain()
 	return list(
 		/obj/item/clothing/accessory/storage/brown_vest,
-		/obj/item/device/radio/headset/headset_eng,
-		/obj/item/device/radio/headset/headset_eng/alt,
+		/obj/item/device/radio/headset/headset_mechanicus,
+		/obj/item/device/radio/headset/headset_mechanicus/alt,
 		/obj/item/clothing/suit/armor/grim/storage/engineering_chest_rig,
 		/obj/item/clothing/mask/gas,
 		/obj/item/storage/belt/utility/full,
@@ -120,8 +120,8 @@
 		/obj/item/clothing/head/hardhat/red,
 		/obj/item/device/flashlight,
 		/obj/item/storage/belt/utility/full,
-		/obj/item/device/radio/headset/headset_eng,
-		/obj/item/device/radio/headset/headset_eng/alt,
+		/obj/item/device/radio/headset/headset_mechanicus,
+		/obj/item/device/radio/headset/headset_mechanicus/alt,
 		/obj/item/tank/oxygen_emergency_double,
 		/obj/item/clothing/mask/gas,
 		/obj/item/taperoll/atmos,

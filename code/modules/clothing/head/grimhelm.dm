@@ -487,89 +487,160 @@
 	icon_state = "CataCommissarHat"
 	item_state = "CataCommissarHat"
 
+// TAU
+
+
+/obj/item/clothing/head/helmet/tau
+	name = "fire warrior Helmet"
+	desc = "A advanced helmet produced for Tau Fire Caste Warriors, made out of...acceptable quality ceramite."
+	icon_state = "fwhelm"
+	item_state = "fwhelm"
+	flags_inv = HIDEMASK|HIDEEARS|BLOCKHAIR
+	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+600
+	slowdown_general = 0.010
+	disorientation = 1 // Tau no melee.
+	armor = list(
+		melee = ARMOR_MELEE_POWER_ARM-3,
+		bullet = ARMOR_BALLISTIC_POWER_ARMOUR-3,
+		laser = ARMOR_LASER_POWER_ARMOUR-3,
+		energy = ARMOR_ENERGY_TEN+16,
+		rad = ARMOR_RAD_THIRTY+55,
+		bio = ARMOR_BIO_THIRTY+35,
+		bomb = ARMOR_BOMB_THIRTY-5
+		)
+
+
+/obj/item/clothing/head/helmet/tau/breacher
+	name = "fire warrior Helmet"
+	desc = "The white and bright helmet of a Tau Breacher."
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+800
+	icon_state = "tbrea"
+	item_state = "tbrea"
+	slowdown_general = 0.012
+	disorientation = 1.25
+	armor = list(
+		melee = ARMOR_MELEE_POWER_ARM-2,
+		bullet = ARMOR_BALLISTIC_POWER_ARMOUR-2,
+		laser = ARMOR_LASER_POWER_ARMOUR-2,
+		energy = ARMOR_ENERGY_TEN+20,
+		rad = ARMOR_RAD_THIRTY+65,
+		bio = ARMOR_BIO_THIRTY+45,
+		bomb = ARMOR_BOMB_THIRTY+5
+		)
+
+/obj/item/clothing/head/helmet/tau/scout
+	name = "fire warrior scout helmet"
+	desc = "A advanced helmet produced for Tau Fire Caste Sharpshooters, its made out of some pretty lightweight ceramite and some bits of steel, its probably able to take a few shots before becoming useless."
+	icon_state = "scout"
+	item_state = "scout"
+	disorientation = 0.5
+
 // Ork
 
 /obj/item/clothing/head/helmet/orkhelmet
-	name = "Metal Ork Helmet"
+	name = "metal ork helm"
 	desc = "A genioos mekboy 'ad da bright idea of gluin' spikey bits on sum scrap and 'ammering it a tad. Now ya can 'ear it as a helm! Lookz gud against em boolets."
 	icon_state = "ork_helm"
 	item_state = "ork_helm"
 	body_parts_covered = FACE|EYES|HEAD
-	slowdown_general = 0.01
+	slowdown_general = 0.04
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+400
 	max_pressure_protection = VOIDSUIT_MAX_PRESSURE
 	disorientation = 1
 	armor = list(
-		melee = ARMOR_MELEE_FLAK-1,
+		melee = ARMOR_MELEE_FLAK+1,
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
-		energy = ARMOR_ENERGY_TEN,
-		bio = ARMOR_BIO_THIRTY+28,
-		rad = ARMOR_RAD_THIRTY+35,
-		bomb = ARMOR_BOMB_TEN
+		energy = ARMOR_ENERGY_TEN+5,
+		bio = ARMOR_BIO_THIRTY+20,
+		rad = ARMOR_RAD_THIRTY+40,
+		bomb = ARMOR_BOMB_TEN+15
 	)
 
-/obj/item/clothing/head/helmet/orkhelmet/warboss
-	name = "Boss's Elmet"
+/obj/item/clothing/head/helmet/orkhelmet/captain
+	name = "kaptin's hat"
 	desc = "A genioos mekboy 'ad da bright idea of gluin' spikey bits on sum scrap and 'ammering it a tad. Now ya can 'ear it as a helm! Lookz gud against em boolets."
-	icon_state = "ork_helm"
-	item_state = "ork_helm"
-	armor = list(melee = 12, bullet = 45, laser = 45, energy = 25, bomb = 25, bio = 0, rad = 0)
+	icon_state = "freeboota"
+	item_state = "freeboota"
+	disorientation = 0.5
+	armor = list(
+		melee = ARMOR_MELEE_FLAK+2,
+		bullet = ARMOR_BALLISTIC_FLAK+3,
+		laser = ARMOR_LASER_FLAK+3,
+		energy = ARMOR_ENERGY_TEN+20,
+		bio = ARMOR_BIO_THIRTY+30,
+		rad = ARMOR_RAD_THIRTY+50,
+		bomb = ARMOR_BOMB_TEN+45 // Gestalt so strong they can only be killed in a fair duel.
+	)
 
 /obj/item/clothing/head/helmet/orkhelmet/leather
-	name = "Boy's Letha Helmet"
+	name = "leatha' helm"
 	desc = "Da most cam-. Comma-. Cahm-. A LOT OF BOYS HAVE DIS HERE LEATHA 'ELMET IN DA WAAAAGH!"
 	icon_state = "orkhelmet"
 	item_state = "orkhelmet"
+	disorientation = 0.5
+	slowdown_general = 0
 	cold_protection = HEAD
-	armor = list(melee = 10, bullet = 30, laser = 30, energy = 20, bomb = 20, bio = 0, rad = 0)
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	armor = list(
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK-1,
+		laser = ARMOR_LASER_FLAK-1,
+		energy = ARMOR_ENERGY_TEN,
+		bio = ARMOR_BIO_THIRTY+15,
+		rad = ARMOR_RAD_THIRTY+30,
+		bomb = ARMOR_BOMB_TEN+5
+	)
 
-/obj/item/clothing/head/helmet/orkhelmet/horns
-	name = "Spiky Leatha helmet"
-	desc = "Da normal leather 'elmet, but a git's gon' and glue'd some spikey horns on it! What a mad lad innit? More melee protektion, it just makez sense!"
-	icon_state = "orkhelmethorns"
-	item_state = "orkhelmethorns"
-	cold_protection = HEAD
-	armor = list(melee = 10, bullet = 30, laser = 30, energy = 10, bomb = 30, bio = 0, rad = 0)
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-
-/obj/item/clothing/head/helmet/orkhelmet/sight
-	name = "Flashgitz Sighta"
-	desc = "Da sights of a Flashgitz, or even a Loota. Ya reckon dat bit of glass will deflect dem lasers, givin' added protektion."
-	icon_state = "orkhelmetsight"
-	item_state = "orkhelmetsight"
-	cold_protection = HEAD
-	armor = list(melee = 10, bullet = 30, laser = 38, energy = 20, bomb = 20, bio = 0, rad = 0)
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-
-/obj/item/clothing/head/helmet/orkhelmet/fur
-	name = "Grenadir Fur 'Elmet"
-	desc = "Keeps da bombas away from ya noggin. 'Elps against bombs, dunno bout shrapnel, mate."
-	icon_state = "orkhelmetfur"
-	item_state = "orkhelmetfur"
-	cold_protection = HEAD
-	armor = list(melee = 10, bullet = 38, laser = 31, energy = 30, bomb = 60, bio = 0, rad = 0)
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-
-/obj/item/clothing/head/helmet/orkhelmet/knot
-	name = "Orky Hair Knot"
+/obj/item/clothing/head/helmet/orkhelmet/leather/knot
+	name = "orky knot-top"
 	desc = "ZOGGING GORK AND MORK. 'ET SOMETIN BETTA ON YA 'EAD, YA CHEAPSKATE!"
 	icon_state = "orkknot"
 	item_state = "orkknot"
-	cold_protection = HEAD
-	armor = list(melee = 10, bullet = 30, laser = 30, energy = 10, bomb = 20, bio = 0, rad = 0)
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
-
-/obj/item/clothing/head/helmet/orkhelmet/freeb
-	name = "Pirate 'Elmet"
+/obj/item/clothing/head/helmet/orkhelmet/leather/freebota
+	name = "piratin' hat"
 	desc = "OI MATES GET ON DA WATA' LETS KRUMP SOME UMIES"
 	icon_state = "freeboota"
 	item_state = "freeboota"
-	cold_protection = HEAD
-	armor = list(melee = 10, bullet = 35, laser = 35, energy = 10, bomb = 20, bio = 0, rad = 0)
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/helmet/orkhelmet/leatherheavy
+	name = "heavy leatha' helm"
+	desc = "Da normal leather 'elmet, but a git's gon' and glue'd some spikey horns on it! What a mad lad innit? More melee protektion, it just makez sense!"
+	icon_state = "orkhelmethorns"
+	item_state = "orkhelmethorns"
+
+/obj/item/clothing/head/helmet/orkhelmet/las
+	name = "shiny metul' helm"
+	desc = "Da sights of a Flashgitz, or even a Loota. Ya reckon dat bit of glass will deflect dem lasers, givin' added protektion."
+	icon_state = "orkhelmetsight"
+	item_state = "orkhelmetsight"
+	armor = list(
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK+1,
+		energy = ARMOR_ENERGY_TEN+5,
+		bio = ARMOR_BIO_THIRTY+20,
+		rad = ARMOR_RAD_THIRTY+40,
+		bomb = ARMOR_BOMB_TEN+15
+	)
+
+/obj/item/clothing/head/helmet/orkhelmet/grenadier
+	name = "boomin' fur hat"
+	desc = "Keeps da bombas away from ya noggin. 'Elps against bombs en boohlies, mate."
+	icon_state = "orkhelmetfur"
+	item_state = "orkhelmetfur"
+	armor = list(
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK+1,
+		laser = ARMOR_LASER_FLAK,
+		energy = ARMOR_ENERGY_TEN+5,
+		bio = ARMOR_BIO_THIRTY+20,
+		rad = ARMOR_RAD_THIRTY+40,
+		bomb = ARMOR_BOMB_TEN+25
+	)
+
+
 
 /*
 
@@ -599,40 +670,6 @@
 	desc = "Used for taking blows to the noggin without getting hurt."
 	armor = list(melee = 2, bullet = 38, laser = 38, energy = 30, bomb = 50, bio = 5, rad = 5)//proteck ya neck
 	str_requirement = 18
-
-
-
-
-// Tau
-
-/obj/item/clothing/head/helmet/fw
-	name = "fire warrior Helmet"
-	desc = "A advanced helmet produced for Tau Fire Caste Warriors, made out of...acceptable quality ceramite."
-	icon_state = "fwhelm"
-	item_state = "fwhelm"
-	armor = list(melee = 5, bullet = 34, laser = 34, energy = 35, bomb = 35, bio = 100, rad = 100)
-	siemens_coefficient = 0.6
-	body_parts_covered = FACE|EYES|HEAD
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-	sales_price = 5
-
-/obj/item/clothing/head/helmet/fw/breacher
-	name = "fire warrior Helmet"
-	desc = "The white and bright helmet of a Tau Breacher."
-	icon_state = "tbrea"
-	item_state = "tbrea"
-	armor = list(melee = 7, bullet = 39, laser = 39, energy = 30, bomb = 35, bio = 100, rad = 100)
-
-/obj/item/clothing/head/helmet/scout
-	name = "fire warrior scout helmet"
-	desc = "A advanced helmet produced for Tau Fire Caste Sharpshooters, its made out of some pretty lightweight ceramite and some bits of steel, its probably able to take a few shots before becoming useless."
-	icon_state = "scout"
-	item_state = "scout"
-	armor = list(melee = 7, bullet = 30, laser = 30, energy = 25, bomb = 40, bio = 100, rad = 100)
-	siemens_coefficient = 0.6
-	body_parts_covered = FACE|EYES|HEAD
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-	sales_price = 7
 
 
 // Eldar

@@ -1,7 +1,7 @@
 /datum/job/chief_engineer
 	title = "Chief Engineer"
 	head_position = 1
-	department = "Engineering"
+	department = "Mechanicus"
 	department_flag = ENG|COM
 
 	total_positions = 1
@@ -23,7 +23,7 @@
 
 /datum/job/engineer
 	title = "Engineer"
-	department = "Engineering"
+	department = "Mechanicus"
 	department_flag = ENG
 
 	total_positions = 8
@@ -35,4 +35,3 @@
 	access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction, access_atmospherics, access_emergency_storage)
 	alt_titles = list("Maintenance Technician","Engine Technician","Electrician",
 		"Atmospheric Technician" = /singleton/hierarchy/outfit/job/engineering/atmos)
-	outfit_type = /singleton/hierarchy/outfit/job/engineering/engineer

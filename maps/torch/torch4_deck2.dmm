@@ -1032,8 +1032,8 @@
 /obj/item/aicard,
 /obj/item/clothing/gloves/insulated,
 /obj/item/clothing/gloves/insulated,
-/obj/item/device/radio/headset/headset_eng,
-/obj/item/device/radio/headset/headset_eng,
+/obj/item/device/radio/headset/headset_mechanicus,
+/obj/item/device/radio/headset/headset_mechanicus,
 /obj/item/device/multitool{
 	pixel_x = 3
 	},
@@ -5193,7 +5193,7 @@
 "ly" = (
 /obj/machinery/requests_console{
 	announcementConsole = 1;
-	department = "Engineering";
+	department = "Mechanicus";
 	departmentType = 3;
 	name = "Engineering RC";
 	pixel_x = -32
@@ -14410,7 +14410,7 @@
 /obj/floor_decal/industrial/outline/yellow,
 /obj/machinery/requests_console{
 	announcementConsole = 1;
-	department = "Engineering";
+	department = "Mechanicus";
 	departmentType = 3;
 	name = "Engineering RC";
 	pixel_y = 32

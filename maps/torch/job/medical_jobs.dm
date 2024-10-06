@@ -1,5 +1,5 @@
-/datum/job/senior_doctor
-	title = "Physician"
+/datum/job/chirugeon
+	title = "Chirugeon" // Disabled for now -- Hospitaller is acting as Chirugeon unless we really need one later.
 	department = "Medical"
 	department_flag = MED
 	minimal_player_age = 2
@@ -7,11 +7,9 @@
 	ideal_character_age = 45
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Chief Medical Officer"
+	supervisors = "the Rogue Trader"
 	selection_color = "#013d3b"
 	economic_power = 10
-	alt_titles = list(
-		"Surgeon")
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/medical/senior
 	allowed_branches = list(
 		/datum/mil_branch/civilian
@@ -41,8 +39,8 @@
 	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
 							 /datum/computer_file/program/camera_monitor)
 
-/datum/job/junior_doctor
-	title = "Medical Resident"
+/datum/job/medicae
+	title = "Medicae"
 	department = "Medical"
 	department_flag = MED
 	minimal_player_age = 2
@@ -50,7 +48,7 @@
 	ideal_character_age = 45
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "physicians and the Chief Medical Officer"
+	supervisors = "the Magos Biologis and Rogue Trader"
 	selection_color = "#013d3b"
 	economic_power = 6
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/medical/senior
@@ -82,11 +80,11 @@
 	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
 							 /datum/computer_file/program/camera_monitor)
 
-/datum/job/doctor
-	title = "Medical Technician"
+/datum/job/hospitaller
+	title = "Sister Hospitaller"
 	total_positions = 3
 	spawn_positions = 3
-	supervisors = "physicians and the Chief Medical Officer"
+	supervisors = "the Magos Biologis and Rogue Trader"
 	economic_power = 7
 	minimum_character_age = list(SPECIES_HUMAN = 19)
 	ideal_character_age = 40
@@ -121,13 +119,13 @@
 	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
 							 /datum/computer_file/program/camera_monitor)
 
-/datum/job/medical_trainee
-	title = "Trainee Medical Technician"
+/datum/job/novitiate
+	title = "Novitiate"
 	department = "Medical"
 	department_flag = MED
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "medical personnel and the Chief Medical Officer"
+	supervisors = "the God Emperor, the Magos Biologis and Rogue Trader"
 	selection_color = "#013d3b"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 20
@@ -164,11 +162,11 @@
 	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
 							 /datum/computer_file/program/camera_monitor)
 
-/datum/job/medical_trainee/get_description_blurb()
+/datum/job/novitiate/get_description_blurb()
 	return "You are a Trainee Medical Technician. You are learning how to treat and recover wounded crew from the more experienced medical personnel aboard. You are subordinate to the rest of the medical team. The role is only for players new to the medical system and department."
 
-/datum/job/chemist
-	title = "Pharmacist"
+/datum/job/pharmacologis
+	title = "Pharmacologis"
 	department = "Medical"
 	department_flag = MED
 	total_positions = 1
@@ -201,10 +199,10 @@
 	 	access_virology, access_morgue, access_crematorium, access_radio_med
 	)
 
-/datum/job/chemist/get_description_blurb()
+/datum/job/pharmacologis/get_description_blurb()
 	return "You are the Pharmacist. You make medicine and other useful substances. You are not a doctor or medic; you should not be treating patients, but rather providing the medicine to do so. You are subordinate to Physicians and Medical Technicians."
 
-/datum/job/psychiatrist
+/datum/job/rogue_guest
 	title = "Counselor"
 	total_positions = 1
 	spawn_positions = 1
@@ -243,11 +241,11 @@
 	)
 	give_psionic_implant_on_join = FALSE
 
-/datum/job/psychiatrist/equip(mob/living/carbon/human/H)
+/datum/job/rogue_guest/equip(mob/living/carbon/human/H)
 	if (H.mind?.role_alt_title == "Mentalist")
 		psi_faculties = list("[PSI_COERCION]" = PSI_RANK_OPERANT)
 	return ..()
 
 
-/datum/job/psychiatrist/get_description_blurb()
+/datum/job/rogue_guest/get_description_blurb()
 		return "You are the Counselor. Your main responsibility is the mental health and wellbeing of the crew. You are subordinate to the Chief Medical Officer."

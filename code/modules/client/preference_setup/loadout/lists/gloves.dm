@@ -61,7 +61,7 @@
 	allowed_roles = list(
 		/datum/job/rd,
 		/datum/job/scientist,
-		/datum/job/chef,
+		/datum/job/chamber_magister,
 		/datum/job/assistant
 	)
 

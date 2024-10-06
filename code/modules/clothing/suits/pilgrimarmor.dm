@@ -190,8 +190,8 @@
 /obj/item/clothing/suit/armor/grim/cult/sekite
 	name = "sekite armour"
 	desc = "War torn and suited to savage needs. This is the armor of a Sekite warrior. It has certainly seen blood flown upon it."
-	icon_state = "heretmil"
-	item_state = "heretmil"
+	icon_state = "Sek_Armor"
+	item_state = "Sek_Armor"
 	body_parts_covered = LEGS|ARMS
 	max_pressure_protection = SPACE_SUIT_MAX_PRESSURE
 	accessories = list(/obj/item/clothing/accessory/armor_plate/carapace,/obj/item/clothing/accessory/leg_guards/reactiveslug)

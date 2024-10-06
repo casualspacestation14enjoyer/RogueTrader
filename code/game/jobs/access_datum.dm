@@ -307,7 +307,7 @@ var/global/const/access_xenobiology = "ACCESS_XENOBIO" //55
 var/global/const/access_ce = "ACCESS_CHIEF_ENGINEER" //56
 /datum/access/ce
 	id = access_ce
-	desc = "Chief Engineer"
+	desc = "Magos Explorator"
 	region = ACCESS_REGION_ENGINEERING
 
 var/global/const/access_hop = "ACCESS_HEAD_OF_PERSONNEL" //57
