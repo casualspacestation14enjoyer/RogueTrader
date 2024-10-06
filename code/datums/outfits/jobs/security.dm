@@ -6,10 +6,6 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	backpack_contents = list(/obj/item/handcuffs = 1)
 
-/singleton/hierarchy/outfit/job/security/New()
-	..()
-	BACKPACK_OVERRIDE_SECURITY
-
 /singleton/hierarchy/outfit/job/security/hos
 	name = OUTFIT_JOB_NAME("Head of security")
 	l_ear = /obj/item/device/radio/headset/heads/hos

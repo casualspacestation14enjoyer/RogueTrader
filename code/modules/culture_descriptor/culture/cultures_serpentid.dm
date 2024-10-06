@@ -41,14 +41,14 @@
 
 /singleton/cultural_info/culture/nabber/c
 	name = CULTURE_NABBER_C
-	valid_jobs = list(/datum/job/janitor)
+	valid_jobs = list(/datum/job/chamber_assistant)
 
 /singleton/cultural_info/culture/nabber/c/plus
 	name = CULTURE_NABBER_CPLUS
 
 /singleton/cultural_info/culture/nabber/b
 	name = CULTURE_NABBER_B
-	valid_jobs = list(/datum/job/chef)
+	valid_jobs = list(/datum/job/chamber_magister)
 
 /singleton/cultural_info/culture/nabber/b/minus
 	name = CULTURE_NABBER_BMINUS
@@ -58,7 +58,7 @@
 
 /singleton/cultural_info/culture/nabber/a
 	name = CULTURE_NABBER_A
-	valid_jobs = list(/datum/job/chemist, /datum/job/roboticist)
+	valid_jobs = list(/datum/job/pharmacologis, /datum/job/roboticist)
 
 /singleton/cultural_info/culture/nabber/a/minus
 	name = CULTURE_NABBER_AMINUS

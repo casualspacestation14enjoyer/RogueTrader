@@ -33,9 +33,16 @@
 
 /obj/item/clothing/head/helmet/flak/chaos/bloodpact
 	name = "Heavy Flak Helmet"
-	desc = "A carapace helmet forged for the Bloodpact Warriors of the sanguinary warlord of Chaos -- Sek."
+	desc = "A carapace helmet forged for the Bloodpact Warriors of the sanguinary warlords of Chaos.."
 	icon_state = "BP_Helmet"
 	item_state = "BP_Helmet"
+
+/obj/item/clothing/head/helmet/flak/chaos/sekite
+	name = "Heavy Flak Helmet"
+	desc = "A carapace helmet forged for the Sekite Warriors of the sanguinary warlord of Chaos."
+	icon_state = "Sek_Helmet"
+	item_state = "Sek_Helmet"
+
 
 /obj/item/clothing/head/helmet/flak/chaos/renegade
 	name = "renegade militia mask"

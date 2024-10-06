@@ -34,9 +34,9 @@
 
 /obj/structure/closet/secure_closet/CO/WillContain()
 	return list(
-		/obj/item/device/radio/headset/heads/torchexec,
+		/obj/item/device/radio/headset/heads/bridge,
 		/obj/item/clothing/glasses/sunglasses,
-		/obj/item/device/radio/headset/heads/torchexec/alt,
+		/obj/item/device/radio/headset/heads/bridge/alt,
 		/obj/item/storage/belt/general,
 		/obj/item/melee/telebaton,
 		/obj/item/device/flash,
@@ -59,13 +59,13 @@
 /obj/structure/closet/secure_closet/XO/WillContain()
 	return list(
 		/obj/item/clothing/glasses/sunglasses,
-		/obj/item/device/radio/headset/heads/torchexec,
+		/obj/item/device/radio/headset/heads/bridge,
 		/obj/item/storage/belt/general,
 		/obj/item/melee/telebaton,
 		/obj/item/device/flash,
 		/obj/item/device/megaphone,
 		/obj/item/storage/box/headset,
-		/obj/item/device/radio/headset/heads/torchexec/alt,
+		/obj/item/device/radio/headset/heads/bridge/alt,
 		/obj/item/storage/box/radiokeys,
 		/obj/item/storage/box/large/ids,
 		/obj/item/storage/box/PDAs,

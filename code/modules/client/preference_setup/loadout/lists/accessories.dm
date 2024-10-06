@@ -99,7 +99,7 @@
 	display_name = "Medicae armband"
 	path = /obj/item/clothing/accessory/armband/medgreen
 	allowed_roles = list(
-		/datum/job/doctor
+		/datum/job/hospitaller
 	)
 	flags = GEAR_HAS_NO_CUSTOMIZATION
 
@@ -136,7 +136,7 @@
 	display_name = "chaplain insignia"
 	path = /obj/item/clothing/accessory/chaplain
 	allowed_roles = list(
-		/datum/job/chaplain
+		/datum/job/chaplain_militant
 	)
 	flags = GEAR_HAS_NO_CUSTOMIZATION
 

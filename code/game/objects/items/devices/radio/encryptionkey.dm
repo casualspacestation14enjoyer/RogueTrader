@@ -93,7 +93,7 @@
 /obj/item/device/encryptionkey/heads/captain
 	name = "captain's encryption key"
 	icon_state = "cap_cypherkey"
-	channels = list("Command" = 1, "Security" = 1, "Engineering" = 0, "Science" = 0, "Medical" = 0, "Supply" = 0, "Service" = 0, "Hailing" = 0)
+	channels = list("Command" = 1, "Security" = 1, "Science" = 0, "Medical" = 0, "Supply" = 0, "Service" = 0, "Hailing" = 0)
 
 /obj/item/device/encryptionkey/heads/ai_integrated
 	name = "ai integrated encryption key"
@@ -112,7 +112,7 @@
 	channels = list("Security" = 1, "Command" = 1, "Hailing" = 1)
 
 /obj/item/device/encryptionkey/heads/ce
-	name = "chief engineer's encryption key"
+	name = "magos explorator's encryption key"
 	icon_state = "ce_cypherkey"
 	channels = list("Engineering" = 1, "Command" = 1, "Hailing" = 1)
 

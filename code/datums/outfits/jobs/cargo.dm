@@ -25,10 +25,6 @@
 	backpack_contents = list(/obj/item/crowbar = 1, /obj/item/storage/ore = 1)
 	flags = OUTFIT_FLAGS_JOB_DEFAULT | OUTFIT_EXTENDED_SURVIVAL
 
-/singleton/hierarchy/outfit/job/cargo/mining/New()
-	..()
-	BACKPACK_OVERRIDE_ENGINEERING
-
 /singleton/hierarchy/outfit/job/cargo/mining/void
 	name = OUTFIT_JOB_NAME("Shaft miner - Voidsuit")
 	head = /obj/item/clothing/head/helmet/space/void/mining

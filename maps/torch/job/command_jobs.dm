@@ -1,6 +1,6 @@
-/datum/job/captain
-	title = "Commanding Officer"
-	supervisors = "the Sol Central Government and the Sol Code of Uniform Justice"
+/datum/job/rogue_trader
+	title = "Rogue Trader"
+	supervisors = "the God Emperor and your own ambition."
 	minimal_player_age = 14
 	economic_power = 16
 	minimum_character_age = list(SPECIES_HUMAN = 40)
@@ -12,32 +12,35 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 36
-	min_skill = list( // 9 points
-		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point
-		SKILL_SCIENCE = SKILL_TRAINED, // 4 point
-		SKILL_PILOT = SKILL_TRAINED // 4 points
+	skill_points = 20
+	min_skill = list(
+		SKILL_BUREAUCRACY = SKILL_EXPERIENCED,
+		SKILL_FINANCE = SKILL_TRAINED,
+		SKILL_HAULING = SKILL_TRAINED,
+		SKILL_MEDICAL = SKILL_BASIC,
+		SKILL_DEVICES = SKILL_BASIC,
+		SKILL_COMBAT = SKILL_EXPERIENCED,
+		SKILL_WEAPONS = SKILL_EXPERIENCED,
+		SKILL_MECH = SKILL_TRAINED,
+		SKILL_COMPUTER = SKILL_TRAINED,
+		SKILL_EVA = SKILL_TRAINED
 	)
-
-	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
-	                    SKILL_SCIENCE     = SKILL_MAX)
 
 	software_on_spawn = list(/datum/computer_file/program/comm,
 							 /datum/computer_file/program/card_mod,
 							 /datum/computer_file/program/camera_monitor,
 							 /datum/computer_file/program/reports)
+/datum/job/rogue_trader/get_description_blurb()
+	return "You are the Rogue Trader, commander of the Dauntless, an Imperial corvette exploratory vessel. Tasked with navigating the uncharted terror -- the Ghoul Stars, you lead a diverse retinue representing many factions, each serving a crucial role aboard your ship. While you hold ultimate authority, you work closely with your Magos Explorator, whose resources and personnel are vital to your survival in this cursed region. Rely on your officers to manage the deck scum, explore forgotten worlds, and broker alliances or hostilities with the human, alien, and worse. The emperor protects..."
 
-/datum/job/captain/get_description_blurb()
-	return "You are the Commanding Officer. You are the top dog. You are an experienced professional officer in control of an entire ship, and ultimately responsible for all that happens onboard. Your job is to make sure [GLOB.using_map.full_name] fulfils its space exploration mission. Delegate to your Executive Officer, your department heads, and your Senior Enlisted Advisor to effectively manage the ship, and listen to and trust their expertise."
-
-/datum/job/captain/post_equip_rank(mob/person, alt_title)
+/datum/job/rogue_trader/post_equip_rank(mob/person, alt_title)
 	var/sound/announce_sound = (GAME_STATE <= RUNLEVEL_SETUP)? null : sound('sound/misc/boatswain.ogg', volume=20)
 	captain_announcement.Announce("All hands, [alt_title || title] [person.real_name] on deck!", new_sound = announce_sound)
 	..()
 
-/datum/job/hop
-	title = "Executive Officer"
-	supervisors = "the Commanding Officer"
+/datum/job/seneschal
+	title = "Seneschal"
+	supervisors = "the Rogue Trader and your own ambition."
 	department = "Command"
 	department_flag = COM
 	minimal_player_age = 14
@@ -58,8 +61,6 @@
 		SKILL_PILOT = SKILL_BASIC // 2 points
 	)
 
-	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
-	                    SKILL_SCIENCE     = SKILL_MAX)
 
 	access = list(
 		access_security, access_brig, access_armory, access_forensics_lockers, access_heads, access_medical, access_morgue, access_tox, access_tox_storage,
@@ -82,7 +83,7 @@
 							 /datum/computer_file/program/camera_monitor,
 							 /datum/computer_file/program/reports)
 
-/datum/job/hop/get_description_blurb()
+/datum/job/seneschal/get_description_blurb()
 	return "You are the Executive Officer. You are an experienced senior officer, second in command of the ship, and are responsible for the smooth operation of the ship under your Commanding Officer. In their absence, you are expected to take their place. Your primary duty is directly managing department heads and all those outside a department heading. You are also responsible for the contractors and passengers aboard the ship. Consider the Senior Enlisted Advisor and Bridge Officers tools at your disposal."
 
 /datum/job/rd
@@ -92,6 +93,8 @@
 	minimal_player_age = 14
 	minimum_character_age = list(SPECIES_HUMAN = 35)
 	ideal_character_age = 60
+	total_positions = 0
+	spawn_positions = 0
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/research/cso
 	allowed_branches = list(
 		/datum/mil_branch/civilian
@@ -134,12 +137,12 @@
 /datum/job/rd/get_description_blurb()
 	return "You are the Chief Science Officer. You are responsible for the research department. You handle the science aspects of the project and liase with the imperial interests of the Explorator Organisation. Make sure science gets done, do some yourself, and get your scientists on away missions to find things to benefit the project. Advise the CO on science matters."
 
-/datum/job/cmo
-	title = "Chief Medical Officer"
-	supervisors = "the Commanding Officer and the Executive Officer"
+/datum/job/magos_biologis
+	title = "Magos Biologis"
+	supervisors = "the Rogue Trader and when required, Magos Explorator."
 	economic_power = 14
 	minimal_player_age = 14
-	minimum_character_age = list(SPECIES_HUMAN = 35)
+	minimum_character_age = list(SPECIES_HUMAN = 25)
 	ideal_character_age = 48
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/cmo
 	allowed_branches = list(
@@ -148,18 +151,23 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 32
-	min_skill = list( // 41 points
-		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point
-		SKILL_MEDICAL = SKILL_EXPERIENCED, // 16 points
-		SKILL_ANATOMY = SKILL_EXPERIENCED, // 16 points
-		SKILL_CHEMISTRY = SKILL_BASIC, // 4 points
-		SKILL_DEVICES = SKILL_TRAINED // 4 points
+	skill_points = 15
+	min_skill = list(
+		SKILL_BUREAUCRACY = SKILL_TRAINED,
+		SKILL_MEDICAL = SKILL_MASTER,
+		SKILL_ANATOMY = SKILL_MASTER,
+		SKILL_CHEMISTRY = SKILL_MASTER,
+		SKILL_DEVICES = SKILL_EXPERIENCED,
+		SKILL_COMBAT = SKILL_TRAINED,
+		SKILL_WEAPONS = SKILL_TRAINED,
+		SKILL_FORENSICS = SKILL_TRAINED,
+		SKILL_SCIENCE = SKILL_TRAINED,
+		SKILL_MECH = SKILL_TRAINED,
+		SKILL_COMPUTER = SKILL_TRAINED,
+		SKILL_EVA = SKILL_TRAINED,
+		SKILL_CONSTRUCTION = SKILL_TRAINED,
+		SKILL_ELECTRICAL = SKILL_TRAINED
 	)
-
-	max_skill = list(   SKILL_MEDICAL     = SKILL_MAX,
-	                    SKILL_ANATOMY     = SKILL_MAX,
-	                    SKILL_CHEMISTRY   = SKILL_MAX)
 
 	access = list(
 		access_medical, access_morgue, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
@@ -175,14 +183,14 @@
 							 /datum/computer_file/program/camera_monitor,
 							 /datum/computer_file/program/reports)
 
-/datum/job/cmo/get_description_blurb()
-	return "You are the Chief Medical Officer. You manage the medical department. You ensure all members of medical are skilled, tasked and handling their duties. Ensure your doctors are staffing your infirmary and your corpsman/paramedics are ready for response. Act as a second surgeon or backup pharmacist in the absence of either. You are expected to know medical very well, along with general regulations."
+/datum/job/magos_biologis/get_description_blurb()
+	return "As the Magos Biologis, you are part of the Rogue Trader's retinue, operating beyond the constraints of the Mechanicus. You manage the biological research and medical efforts aboard the vessel, overseeing Skitarii and Medicae personnel alike. Your duty is to ensure your medicae staff are prepared for surgery, treatment, and field response, and that every biological specimen or anomaly is studied with ruthless efficiency. You are expected to lead in matters of biology and medicine, stepping in as surgeon or advisor when necessary, always furthering the quest for knowledge and mastery over the flesh."
 
-/datum/job/chief_engineer
-	title = "Chief Engineer"
-	supervisors = "the Commanding Officer and the Executive Officer"
+/datum/job/magos_explorator
+	title = "Magos Explorator"
+	supervisors = "the Mechanicus and at times the Rogue Trader"
 	economic_power = 12
-	minimum_character_age = list(SPECIES_HUMAN = 27)
+	minimum_character_age = list(SPECIES_HUMAN = 31)
 	ideal_character_age = 40
 	minimal_player_age = 14
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/chief_engineer
@@ -192,22 +200,26 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 36
-	min_skill = list( // 31 points
-		SKILL_BUREAUCRACY  = SKILL_BASIC, // 1 point
-		SKILL_COMPUTER = SKILL_TRAINED, // 2 points
-		SKILL_EVA = SKILL_TRAINED, // 2 points
-		SKILL_CONSTRUCTION = SKILL_TRAINED, // 2 points
-		SKILL_ELECTRICAL = SKILL_TRAINED, // 4 points
-		SKILL_ATMOS = SKILL_TRAINED, // 4 points
-		SKILL_ENGINES = SKILL_EXPERIENCED // 16 points
+	skill_points = 8
+	min_skill = list(
+		SKILL_BUREAUCRACY  = SKILL_TRAINED,
+		SKILL_COMBAT = SKILL_TRAINED,
+		SKILL_WEAPONS = SKILL_EXPERIENCED,
+		SKILL_FORENSICS = SKILL_TRAINED,
+		SKILL_SCIENCE = SKILL_EXPERIENCED,
+		SKILL_DEVICES = SKILL_TRAINED,
+		SKILL_MECH = SKILL_TRAINED,
+		SKILL_PILOT = SKILL_TRAINED,
+		SKILL_COMPUTER = SKILL_EXPERIENCED,
+		SKILL_EVA = SKILL_TRAINED,
+		SKILL_CONSTRUCTION = SKILL_EXPERIENCED,
+		SKILL_ELECTRICAL = SKILL_EXPERIENCED,
+		SKILL_ATMOS = SKILL_EXPERIENCED,
+		SKILL_MEDICAL = SKILL_TRAINED,
+		SKILL_CHEMISTRY = SKILL_TRAINED,
+		SKILL_ANATOMY = SKILL_TRAINED,
+		SKILL_ENGINES = SKILL_EXPERIENCED
 	)
-
-	max_skill = list(   SKILL_CONSTRUCTION = SKILL_MAX,
-	                    SKILL_ELECTRICAL   = SKILL_MAX,
-	                    SKILL_ATMOS        = SKILL_MAX,
-	                    SKILL_ENGINES      = SKILL_MAX,
-						SKILL_DEVICES = SKILL_EXPERIENCED)
 
 	access = list(
 		access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
@@ -229,17 +241,28 @@
 							 /datum/computer_file/program/shields_monitor,
 							 /datum/computer_file/program/reports)
 
-/datum/job/chief_engineer/get_description_blurb()
-	return "You are the Chief Engineer. You manage the Engineering Department. You are responsible for the Senior engineer, who is your right hand and (should be) an experienced, skilled engineer. Delegate to and listen to them. Manage your engineers, ensure vessel power stays on, breaches are patched and problems are fixed. Advise the CO on engineering matters. You are also responsible for the maintenance and control of any vessel synthetics. You are an experienced engineer with a wealth of theoretical knowledge. You should also know vessel regulations to a reasonable degree."
+/datum/job/magos_explorator/equip(mob/living/carbon/human/H)
+	. = ..()
+	var/current_name = H.real_name
+	..()
+	H.fully_replace_character_name("Magos [current_name]")
+	H.say(":e Memory cache integrity at 87%... Motive force appeased. Security apparatis functional. Non organics uncorrupted.")
+	to_chat(H, "<span class='notice'><b><font size=3>As the Magos Explorator, you manage the technology and exploration efforts aboard The Dauntless, working in partnership with the Rogue Trader. Your duties are divided between maintaining the sacred machinery of the ship and pursuing the discovery of lost knowledge and power across the stars. Overseeing tech-priests, bondsmen, menials, slaves, and Skitarii, you ensure their work serves the dual purpose of keeping the ship operational and advancing the Mechanicum’s quest for knowledge, all while respecting the Rogue Trader’s command.</font></b></span>")
 
-/datum/job/hos
-	title = "Chief of Security"
+
+/datum/job/magos_explorator/get_description_blurb()
+	return "As the Magos Explorator, you manage the technology and exploration efforts aboard The Dauntless, working in partnership with the Rogue Trader. Your duties are divided between maintaining the sacred machinery of the ship and pursuing the discovery of lost knowledge and power across the stars. Overseeing tech-priests, bondsmen, menials, slaves, and Skitarii, you ensure their work serves the dual purpose of keeping the ship operational and advancing the Mechanicum’s quest for knowledge, all while respecting the Rogue Trader’s command."
+
+/datum/job/guard_captain
+	title = "Cadian Captain"
 	supervisors = "the Commanding Officer and the Executive Officer"
 	economic_power = 10
 	minimal_player_age = 14
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	ideal_character_age = 35
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/cos
+	total_positions = 0
+	spawn_positions = 0
 	allowed_branches = list(
 		/datum/mil_branch/civilian
 	)
@@ -273,7 +296,7 @@
 							 /datum/computer_file/program/camera_monitor,
 							 /datum/computer_file/program/reports)
 
-/datum/job/hos/get_description_blurb()
+/datum/job/guard_captain/get_description_blurb()
 	return "You are the Chief of Security. You manage ship security. The Masters at Arms and the Militarum Police, as well as the Brig Chief and the Forensic Technician. You keep the vessel safe. You handle both internal and external security matters. You are the law. You are subordinate to the CO and the XO. You are expected to know the SCMJ and Sol law and Alert Procedure to a very high degree along with general regulations."
 
 /datum/job/representative
@@ -289,6 +312,8 @@
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/representative
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/civ)
+	total_positions = 0
+	spawn_positions = 0
 	skill_points = 26
 	min_skill = list( // 5 points
 		SKILL_BUREAUCRACY = SKILL_EXPERIENCED, // 4 points
@@ -356,7 +381,7 @@
 /datum/job/sea/get_description_blurb()
 	return "You are the Senior Enlisted Advisor. You are the highest enlisted person on the ship. You are directly subordinate to the CO. You advise them on enlisted concerns and provide expertise and advice to officers. You are responsible for ensuring discipline and good conduct among enlisted, as well as notifying officers of any issues and \"advising\" them on mistakes they make. You also handle various duties on behalf of the CO and XO. You are an experienced enlisted person, very likely equal only in experience to the CO and XO. You know the regulations better than anyone."
 
-/datum/job/bridgeofficer
+/datum/job/void_officer
 	title = "Bridge Officer"
 	department = "Support"
 	department_flag = SPT
@@ -402,5 +427,5 @@
 							 /datum/computer_file/program/reports,
 							 /datum/computer_file/program/deck_management)
 
-/datum/job/bridgeofficer/get_description_blurb()
+/datum/job/void_officer/get_description_blurb()
 	return "You are a Bridge Officer. You are a very junior officer. You do not give orders of your own. You are subordinate to all of command. You handle matters on the bridge and report directly to the CO and XO. You take The Dauntless's helm and pilot the Aquila if needed. You monitor bridge cogitator programs and communications and report relevant information to command."

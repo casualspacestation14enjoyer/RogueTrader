@@ -388,14 +388,27 @@ BLIND     // can't see anything
 	var/mob/living/carbon/human/wearer = null	//Used for covered rings when dropping
 	body_parts_covered = HANDS
 	slot_flags = SLOT_GLOVES
+	heat_protection = HANDS
+	cold_protection = HANDS
 	item_flags = ITEM_FLAG_WASHER_ALLOWED
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
 	attack_verb = list("challenged")
-	species_restricted = list("exclude",SPECIES_NABBER, SPECIES_KROOT, SPECIES_VOX)
+	species_restricted = list("exclude",SPECIES_NABBER, SPECIES_VOX)
 	sprite_sheets = list(
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_hands_vox.dmi',
 		SPECIES_NABBER = 'icons/mob/species/nabber/onmob_hands_gas.dmi'
 	)
 	blood_overlay_type = "bloodyhands"
+	armor = list(
+		melee = ARMOR_MELEE_FLAK-2,
+		bullet = ARMOR_BALLISTIC_FLAK-3,
+		laser = ARMOR_LASER_FLAK-3,
+		energy = ARMOR_ENERGY_TEN,
+		bio = ARMOR_BIO_THIRTY,
+		rad = ARMOR_RAD_THIRTY+15,
+		bomb = ARMOR_BOMB_TEN-5
+	)
 
 /obj/item/clothing/gloves/Initialize()
 	if(item_flags & ITEM_FLAG_PREMODIFIED)
@@ -717,8 +730,19 @@ BLIND     // can't see anything
 	var/obj/item/hidden_item = null
 	cold_protection = FEET
 	heat_protection = FEET
+	max_pressure_protection = VOIDSUIT_MAX_PRESSURE
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+100
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+500
+	armor = list(
+		melee = ARMOR_MELEE_FLAK-2,
+		bullet = ARMOR_BALLISTIC_FLAK-3,
+		laser = ARMOR_LASER_FLAK-3,
+		energy = ARMOR_ENERGY_TEN,
+		bio = ARMOR_BIO_THIRTY+5,
+		rad = ARMOR_RAD_THIRTY+35,
+		bomb = ARMOR_BOMB_TEN
+	)
 
 /obj/item/clothing/shoes/Destroy()
 	. = ..()

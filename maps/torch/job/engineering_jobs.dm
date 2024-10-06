@@ -1,30 +1,45 @@
-/datum/job/senior_engineer
-	title = "Senior Engineer"
-	department = "Engineering"
+
+
+/datum/job/data_smith
+	title = "Data Smith"
+	department = "Mechanicus"
 	department_flag = ENG
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = "the Chief Engineer"
+	total_positions = 2 // Does science and genetics.
+	spawn_positions = 2
+	supervisors = "the Magos Explorator"
 	selection_color = "#5b4d20"
 	economic_power = 7
 	minimal_player_age = 3
 	minimum_character_age = list(SPECIES_HUMAN = 27)
 	ideal_character_age = 40
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/engineering/senior_engineer
+	alt_titles = list(
+		"Lexmechanic",
+		"Genetor",
+		"Artificer",
+		"Chymist",
+	)
 	allowed_branches = list(
 		/datum/mil_branch/civilian
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 26
-	min_skill = list( // 22 points
-		SKILL_COMPUTER = SKILL_TRAINED, // 2 points
-		SKILL_EVA = SKILL_TRAINED, // 2 points
-		SKILL_CONSTRUCTION = SKILL_TRAINED, // 2 points
-		SKILL_ELECTRICAL = SKILL_TRAINED, // 4 points
-		SKILL_ATMOS = SKILL_TRAINED, // 4 points
-		SKILL_ENGINES = SKILL_TRAINED // 8 points
+	skill_points = 12
+	min_skill = list(
+		SKILL_WEAPONS = SKILL_TRAINED,
+		SKILL_SCIENCE = SKILL_EXPERIENCED,
+		SKILL_DEVICES = SKILL_TRAINED,
+		SKILL_MECH = SKILL_TRAINED,
+		SKILL_COMPUTER = SKILL_EXPERIENCED,
+		SKILL_EVA = SKILL_TRAINED,
+		SKILL_CONSTRUCTION = SKILL_TRAINED,
+		SKILL_ELECTRICAL = SKILL_TRAINED,
+		SKILL_ATMOS = SKILL_TRAINED,
+		SKILL_MEDICAL = SKILL_BASIC,
+		SKILL_CHEMISTRY = SKILL_BASIC,
+		SKILL_ANATOMY = SKILL_BASIC,
+		SKILL_ENGINES = SKILL_BASIC
 	)
 
 	max_skill = list(   SKILL_CONSTRUCTION = SKILL_MAX,
@@ -46,23 +61,21 @@
 							 /datum/computer_file/program/camera_monitor,
 							 /datum/computer_file/program/shields_monitor)
 
-/datum/job/senior_engineer/get_description_blurb()
+/datum/job/data_smith/get_description_blurb()
 	return "You are the Senior Engineer. You are a veteran SNCO. You are subordinate to the Chief Engineer though you may have many years more experience than them and your subordinates are the rest of engineering. You should be an expert in practically every engineering area and familiar and possess leadership skills. Coordinate the team and ensure the smooth running of the department along with the Chief Engineer."
 
-/datum/job/engineer
-	title = "Engineer"
+/datum/job/tech_priest
+	title = "Enginseer"
 	total_positions = 6
 	spawn_positions = 6
-	supervisors = "the Chief Engineer"
+	supervisors = "the Magos Explorator"
 	economic_power = 5
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 19)
 	ideal_character_age = 30
 	alt_titles = list(
-		"Engine Technician",
-		"Damage Control Technician",
-		"Electrician",
-		"Atmospheric Technician",
+		"Fabricator Adept",
+		"Electro Priest",
 		)
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/engineering/engineer
 	allowed_branches = list(
@@ -71,14 +84,19 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 26
-	min_skill = list( // 12 points
-		SKILL_COMPUTER = SKILL_BASIC, // 1 point
-		SKILL_EVA = SKILL_BASIC, // 1 point
-		SKILL_CONSTRUCTION = SKILL_TRAINED, // 2 points
-		SKILL_ELECTRICAL = SKILL_BASIC, // 2 points
-		SKILL_ATMOS = SKILL_BASIC, // 2 points
-		SKILL_ENGINES = SKILL_BASIC // 4 points
+	skill_points = 15
+	min_skill = list(
+		SKILL_WEAPONS = SKILL_BASIC,
+		SKILL_SCIENCE = SKILL_BASIC,
+		SKILL_DEVICES = SKILL_TRAINED,
+		SKILL_MECH = SKILL_TRAINED,
+		SKILL_COMPUTER = SKILL_TRAINED,
+		SKILL_EVA = SKILL_TRAINED,
+		SKILL_CONSTRUCTION = SKILL_TRAINED,
+		SKILL_ELECTRICAL = SKILL_TRAINED,
+		SKILL_ATMOS = SKILL_BASIC,
+		SKILL_MEDICAL = SKILL_BASIC,
+		SKILL_ENGINES = SKILL_TRAINED
 	)
 
 	max_skill = list(   SKILL_CONSTRUCTION = SKILL_MAX,
@@ -100,16 +118,16 @@
 							 /datum/computer_file/program/camera_monitor,
 							 /datum/computer_file/program/shields_monitor)
 
-/datum/job/engineer/get_description_blurb()
+/datum/job/tech_priest/get_description_blurb()
 	return "You are an Engineer. You operate under one of many titles and may be highly specialised in a specific area of engineering. You probably have at least a general familiarity with most other areas though this is not expected. You are subordinate to the Senior Engineer and the Chief Engineer and are expected to follow them."
 
-/datum/job/engineer_trainee
-	title = "Engineer Trainee"
-	department = "Engineering"
+/datum/job/bondsman
+	title = "Bondsman"
+	department = "Mechanicus"
 	department_flag = ENG
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Chief Engineer and Engineering Personnel"
+	supervisors = "the Mechanicus and Rogue Trader"
 	selection_color = "#5b4d20"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 20
@@ -152,12 +170,12 @@
 							 /datum/computer_file/program/camera_monitor,
 							 /datum/computer_file/program/shields_monitor)
 
-/datum/job/engineer_trainee/get_description_blurb()
+/datum/job/bondsman/get_description_blurb()
 	return "You are an Engineer Trainee. You are learning how to operate the various onboard engineering systems from senior engineering staff. You are subordinate to all of the other engineers aboard. The role is only for players new to the engineering system and department."
 
 /datum/job/roboticist
 	title = "Roboticist"
-	department = "Engineering"
+	department = "Mechanicus"
 	department_flag = ENG|ROB
 
 	total_positions = 2

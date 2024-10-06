@@ -10,14 +10,14 @@
 	icon_state = "sci_headset_alt"
 	item_state = "sci_headset_alt"
 
-/obj/item/device/radio/headset/heads/torchexec
+/obj/item/device/radio/headset/heads/bridge
 	name = "executive headset"
 	desc = "The headset of those brave men and women who command The Dauntless."
 	icon_state = "com_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/heads/torchexec
 
-/obj/item/device/radio/headset/heads/torchexec/alt
+/obj/item/device/radio/headset/heads/bridge/alt
 	name = "executive bowman headset"
 	icon_state = "com_headset_alt"
 	item_state = "com_headset_alt"

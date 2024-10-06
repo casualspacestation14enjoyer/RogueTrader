@@ -147,7 +147,7 @@
 	tools = list(SWISSKNF_SBLADE, SWISSKNF_CLIFTER, SWISSKNF_COPENER, SWISSKNF_GBLADE)
 
 /obj/item/material/knife/folding/swiss/engineer
-	name = "engineer's combi-knife"
+	name = "tech priest's combi-knife"
 	desc = "A small, yellow, multi-purpose folding knife. This one adds a wood saw and wire cutters."
 	color = COLOR_AMBER
 

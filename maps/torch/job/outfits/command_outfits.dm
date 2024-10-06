@@ -1,70 +1,75 @@
 /singleton/hierarchy/outfit/job/torch/crew/command
 	name = OUTFIT_JOB_NAME("Torch Command Outfit")
 	hierarchy_type = /singleton/hierarchy/outfit/job/torch/crew/command
-	l_ear = /obj/item/device/radio/headset/headset_com
+	l_ear = /obj/item/device/radio/headset/heads/bridge
 
 /singleton/hierarchy/outfit/job/torch/crew/command/CO
 	name = OUTFIT_JOB_NAME("Commanding Officer")
 	glasses = /obj/item/clothing/glasses/sunglasses
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/command
-	l_ear = /obj/item/device/radio/headset/heads/torchexec
+	l_ear = /obj/item/device/radio/headset/heads/bridge
 	shoes = /obj/item/clothing/shoes/dutyboots
 	head = /obj/item/clothing/head/soft/solgov/expedition/co
 	id_types = list(/obj/item/card/id/torch/gold)
 	pda_type = /obj/item/modular_computer/pda/captain
 
-/singleton/hierarchy/outfit/job/torch/crew/command/CO/New()
-	..()
-	BACKPACK_OVERRIDE_COMMAND
-
 /singleton/hierarchy/outfit/job/torch/crew/command/XO
 	name = OUTFIT_JOB_NAME("Executive Officer")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/command
-	l_ear = /obj/item/device/radio/headset/heads/torchexec
+	l_ear = /obj/item/device/radio/headset/heads/bridge
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_types = list(/obj/item/card/id/torch/silver)
 	pda_type = /obj/item/modular_computer/pda/heads/hop
 
-/singleton/hierarchy/outfit/job/torch/crew/command/XO/New()
-	..()
-	BACKPACK_OVERRIDE_COMMAND
-
-/singleton/hierarchy/outfit/job/torch/crew/command/XO/fleet
-	name = OUTFIT_JOB_NAME("Executive Officer - Fleet")
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/command
-	shoes = /obj/item/clothing/shoes/dutyboots
-
 /singleton/hierarchy/outfit/job/torch/crew/command/cmo
-	name = OUTFIT_JOB_NAME("Chief Medical Officer - Torch")
-	l_ear  =/obj/item/device/radio/headset/heads/cmo
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/medical
-	shoes = /obj/item/clothing/shoes/dutyboots
-	id_types = list(/obj/item/card/id/torch/silver/medical)
+	name = OUTFIT_JOB_NAME("Magos Biologis")
+	flags = OUTFIT_FLAGS_JOB_DEFAULT | OUTFIT_EXTENDED_SURVIVAL
+	head = /obj/item/clothing/head/hardhat/techpriest/biologis
+	mask = /obj/item/clothing/mask/gas/techpriest/magos
+	glasses = /obj/item/clothing/glasses/science/magos
+	belt = /obj/item/storage/belt/medical
+	suit = /obj/item/clothing/suit/armor/grim/mechanicus/biologis
+	shoes = /obj/item/clothing/shoes/jackboots/skitshoes/techpriest
+	uniform = /obj/item/clothing/under/rank/engineer
+	r_pocket = null
+	l_ear = /obj/item/device/radio/headset/heads/bridge
+	l_hand = null
+	gloves = /obj/item/clothing/gloves/thick/swat/techpriest
+	id_types = /obj/item/card/id/torch/silver/medical
 	pda_type = /obj/item/modular_computer/pda/heads/cmo
 	pda_slot = slot_l_store
-
-/singleton/hierarchy/outfit/job/torch/crew/command/cmo/New()
-	..()
-	BACKPACK_OVERRIDE_MEDICAL
-
-/singleton/hierarchy/outfit/job/torch/crew/command/cmo/fleet
-	name = OUTFIT_JOB_NAME("Chief Medical Officer - Fleet")
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/medical
-	shoes = /obj/item/clothing/shoes/dutyboots
+	back = /obj/item/storage/backpack/satchel/warfare/techpriest
+	backpack_contents = list(/obj/item/pen = 1,
+		/obj/item/gun/energy/lasgun/laspistol/hellpistol = 1
+		// /obj/item/book/manual/ripley_build_and_repair = 1,
+		// /obj/item/book/manual/engineering_construction = 1,
+		// /obj/item/paper/administratum/mech = 1,
+		)
 
 /singleton/hierarchy/outfit/job/torch/crew/command/chief_engineer
-	name = OUTFIT_JOB_NAME("Chief Engineer - Torch")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/engineering
-	shoes = /obj/item/clothing/shoes/dutyboots
+	name = OUTFIT_JOB_NAME("Magos Explorator")
+	flags = OUTFIT_FLAGS_JOB_DEFAULT | OUTFIT_EXTENDED_SURVIVAL
+	head = /obj/item/clothing/head/hardhat/techpriest/magos
+	mask = /obj/item/clothing/mask/gas/techpriest/magos
+	glasses = /obj/item/clothing/glasses/science/magos
+	belt = /obj/item/storage/belt/utility/full
+	suit = /obj/item/clothing/suit/armor/grim/mechanicus/magos
+	shoes = /obj/item/clothing/shoes/jackboots/skitshoes/techpriest
+	uniform = /obj/item/clothing/under/rank/chief_engineer
+	r_pocket = null
 	l_ear = /obj/item/device/radio/headset/heads/ce
-	id_types = list(/obj/item/card/id/torch/silver/engineering)
+	l_hand = null
+	gloves = /obj/item/clothing/gloves/thick/swat/techpriest
+	id_types = /obj/item/card/id/torch/silver/engineering
 	pda_type = /obj/item/modular_computer/pda/heads/ce
 	pda_slot = slot_l_store
-	flags = OUTFIT_FLAGS_JOB_DEFAULT | OUTFIT_EXTENDED_SURVIVAL
-
-/singleton/hierarchy/outfit/job/torch/crew/command/chief_engineer/New()
-	..()
-	BACKPACK_OVERRIDE_ENGINEERING
+	back = /obj/item/storage/backpack/satchel/warfare/techpriest
+	backpack_contents = list(/obj/item/pen = 1,
+	/obj/item/gun/energy/plasma/pistol/mechanicus = 1
+		// /obj/item/book/manual/ripley_build_and_repair = 1,
+		// /obj/item/book/manual/engineering_construction = 1,
+		// /obj/item/paper/administratum/mech = 1,
+		)
 
 /singleton/hierarchy/outfit/job/torch/crew/command/chief_engineer/fleet
 	name = OUTFIT_JOB_NAME("Chief Engineer - Fleet")
@@ -79,13 +84,35 @@
 	id_types = list(/obj/item/card/id/torch/silver/security)
 	pda_type = /obj/item/modular_computer/pda/heads/hos
 
-/singleton/hierarchy/outfit/job/torch/crew/command/cos/New()
-	..()
-	BACKPACK_OVERRIDE_SECURITY
+
+/singleton/hierarchy/outfit/job/torch/crew/command/bridgeofficer
+	name = OUTFIT_JOB_NAME("Bridge Officer")
+	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/command
+	shoes = /obj/item/clothing/shoes/dutyboots
+	id_types = list(/obj/item/card/id/torch/crew/bridgeofficer)
+	pda_type = /obj/item/modular_computer/pda/heads
+	l_ear = /obj/item/device/radio/headset/heads/bridge
+
+// DONT USE
+/singleton/hierarchy/outfit/job/torch/crew/command/XO/fleet
+	name = OUTFIT_JOB_NAME("Executive Officer - Fleet")
+	uniform = /obj/item/clothing/under/solgov/utility/fleet/command
+	shoes = /obj/item/clothing/shoes/dutyboots
+
+/singleton/hierarchy/outfit/job/torch/crew/command/cmo/fleet
+	name = OUTFIT_JOB_NAME("Chief Medical Officer - Fleet")
+	uniform = /obj/item/clothing/under/solgov/utility/fleet/medical
+	shoes = /obj/item/clothing/shoes/dutyboots
 
 /singleton/hierarchy/outfit/job/torch/crew/command/cos/fleet
 	name = OUTFIT_JOB_NAME("Chief of Security - Fleet")
 	uniform = /obj/item/clothing/under/solgov/utility/fleet/security
+	shoes = /obj/item/clothing/shoes/dutyboots
+
+
+/singleton/hierarchy/outfit/job/torch/crew/command/bridgeofficer/fleet
+	name = OUTFIT_JOB_NAME("Bridge Officer - Fleet")
+	uniform = /obj/item/clothing/under/solgov/utility/fleet/command
 	shoes = /obj/item/clothing/shoes/dutyboots
 
 /singleton/hierarchy/outfit/job/torch/passenger/workplace_liaison
@@ -113,24 +140,3 @@
 	l_ear = /obj/item/device/radio/headset/sea
 	id_types = list(/obj/item/card/id/torch/crew/sea)
 	pda_type = /obj/item/modular_computer/pda/heads
-
-/singleton/hierarchy/outfit/job/torch/crew/command/sea/New()
-	..()
-	BACKPACK_OVERRIDE_COMMAND
-
-/singleton/hierarchy/outfit/job/torch/crew/command/bridgeofficer
-	name = OUTFIT_JOB_NAME("Bridge Officer")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/command
-	shoes = /obj/item/clothing/shoes/dutyboots
-	id_types = list(/obj/item/card/id/torch/crew/bridgeofficer)
-	pda_type = /obj/item/modular_computer/pda/heads
-	l_ear = /obj/item/device/radio/headset/bridgeofficer
-
-/singleton/hierarchy/outfit/job/torch/crew/command/bridgeofficer/New()
-	..()
-	BACKPACK_OVERRIDE_COMMAND
-
-/singleton/hierarchy/outfit/job/torch/crew/command/bridgeofficer/fleet
-	name = OUTFIT_JOB_NAME("Bridge Officer - Fleet")
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/command
-	shoes = /obj/item/clothing/shoes/dutyboots

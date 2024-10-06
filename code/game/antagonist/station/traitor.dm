@@ -5,7 +5,7 @@ GLOBAL_DATUM_INIT(traitors, /datum/antagonist/traitor, new)
 	id = MODE_TRAITOR
 	antaghud_indicator = "hud_traitor"
 	blacklisted_jobs = list(/datum/job/ai, /datum/job/submap)
-	restricted_jobs = list(/datum/job/captain, /datum/job/lawyer, /datum/job/hos)
+	restricted_jobs = list(/datum/job/rogue_trader, /datum/job/lawyer, /datum/job/guard_captain)
 	flags = ANTAG_SUSPICIOUS | ANTAG_RANDSPAWN | ANTAG_VOTABLE
 	skill_setter = /datum/antag_skill_setter/station
 

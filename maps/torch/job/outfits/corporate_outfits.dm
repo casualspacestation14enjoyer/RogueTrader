@@ -16,10 +16,6 @@
 	pda_type = /obj/item/modular_computer/pda/science
 	id_types = list(/obj/item/card/id/torch/passenger/research/scientist)
 
-/singleton/hierarchy/outfit/job/torch/passenger/research/scientist/New()
-	..()
-	BACKPACK_OVERRIDE_RESEARCH_CORP
-
 /singleton/hierarchy/outfit/job/torch/passenger/research/assist
 	name = OUTFIT_JOB_NAME("Research Assistant - Torch")
 	uniform = /obj/item/clothing/under/rank/scientist

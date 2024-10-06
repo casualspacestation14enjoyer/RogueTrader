@@ -4,9 +4,9 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	item_flags = ITEM_FLAG_THICKMATERIAL
 	flags_inv = CLOTHING_BULKY
-	cold_protection = UPPER_TORSO|LOWER_TORSO
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS
+	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
-	heat_protection = UPPER_TORSO|LOWER_TORSO
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
 	siemens_coefficient = 0.6
 	equip_delay = 2 SECONDS

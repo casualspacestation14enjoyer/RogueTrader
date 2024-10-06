@@ -80,7 +80,7 @@
 	if(move)
 		var/obj/loc_landmark
 		for(var/obj/landmark/start/sloc in landmarks_list)
-			if (sloc.name != "AI")
+			if (sloc.name != "Machine Spirit")
 				continue
 			if (locate(/mob/living) in sloc.loc)
 				continue
@@ -94,7 +94,7 @@
 		if (!loc_landmark)
 			to_chat(O, "Oh god sorry we can't find an unoccupied AI spawn location, so we're spawning you on top of someone.")
 			for(var/obj/landmark/start/sloc in landmarks_list)
-				if (sloc.name == "AI")
+				if (sloc.name == "Machine Spirit")
 					loc_landmark = sloc
 		if (!loc_landmark)
 			to_chat(O, SPAN_DEBUG("We still failed to find a AI spawn location. Where you're standing is now you're new home."))

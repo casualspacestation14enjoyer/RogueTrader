@@ -50,7 +50,7 @@
 	cold_protection = FEET
 	heat_protection = FEET
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
-	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+1000
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+700
 
 
 /obj/item/clothing/shoes/dutyboots
@@ -76,12 +76,6 @@
 	desc = "Tan boots with extra padding and armor."
 	icon_state = "desert"
 	force = 3
-	armor = list(
-		melee = ARMOR_MELEE_PRIMAL,
-		bullet = ARMOR_BALLISTIC_FLAK,
-		laser = ARMOR_LASER_FLAK,
-		energy = ARMOR_ENERGY_SMALL,
-		bomb = ARMOR_BOMB_RESISTANT)
 	siemens_coefficient = 0.7
 
 /obj/item/clothing/shoes/dress
@@ -143,11 +137,6 @@
 	item_state = "cult"
 	force = 2
 	siemens_coefficient = 0.7
-
-	cold_protection = FEET
-	min_cold_protection_temperature = SHOE_MIN_COLD_PROTECTION_TEMPERATURE
-	heat_protection = FEET
-	max_heat_protection_temperature = SHOE_MAX_HEAT_PROTECTION_TEMPERATURE
 	species_restricted = null
 
 /obj/item/clothing/shoes/cyborg
@@ -272,3 +261,326 @@
 /obj/item/clothing/shoes/foamclog/flipflobster/toeless/Initialize()
 	. = ..()
 	cut_clogs()
+
+
+//ADEPTUS MECHANICUS
+/obj/item/clothing/shoes/jackboots/skitshoes //walking sounds only play with shoes and I was losing my mind
+	name = "skitarii feet"
+	desc = "Augmented for speed and power."
+	icon_state = "skitshoes"
+	item_state = "skitshoes"
+	siemens_coefficient = 1
+	unacidable = 1
+	canremove = 0
+	item_flags = ITEM_FLAG_NOSLIP
+	canremove = FALSE
+	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+1000
+	armor = list(
+		melee = ARMOR_MELEE_FLAK-1,
+		bullet = ARMOR_BALLISTIC_FLAK-1,
+		laser = ARMOR_LASER_FLAK-1,
+		energy = ARMOR_ENERGY_TEN,
+		bio = ARMOR_BIO_THIRTY+5,
+		rad = ARMOR_RAD_THIRTY+55,
+		bomb = ARMOR_BOMB_TEN+10
+	)
+
+/obj/item/clothing/shoes/jackboots/skitshoes/ruststalker //walking sounds only play with shoes and I was losing my mind not having them
+	name = "ruststalker feet"
+	desc = "Augmented for speed and power"
+	icon_state = "skitshoes"
+	item_state = "skitshoes"
+	siemens_coefficient = 1
+	unacidable = 1
+	item_flags = ITEM_FLAG_NOSLIP
+	canremove = FALSE
+
+/obj/item/clothing/shoes/jackboots/skitshoes/vanguard //walking sounds only play with shoes and I was losing my mind not having them
+	name = "vanguard feet"
+	desc = "Augmented for speed and power"
+	icon_state = "skitshoes"
+	item_state = "skitshoes"
+	siemens_coefficient = 1
+	unacidable = 1
+	item_flags = ITEM_FLAG_NOSLIP
+	canremove = FALSE
+
+/obj/item/clothing/shoes/jackboots/skitshoes/techpriest
+	name = "techno-boots"
+	desc = "Cybernetic legs scurry the Tech-priest where he is needed."
+	icon_state = "techpriest"
+	item_state = "techpriest"
+	siemens_coefficient = 0.7
+	unacidable = 1
+	item_flags = ITEM_FLAG_NOSLIP
+	canremove = FALSE
+//PILGRIM SHIT BELOW
+
+/obj/item/clothing/shoes/jackboots/vigilante
+	name = "shining shoes"
+	desc = "A shined pair of shoes"
+	icon_state = "vigilante_boots"
+	item_state = "vigilante_boots"
+	siemens_coefficient = 0.7
+	item_flags = ITEM_FLAG_NOSLIP
+
+/obj/item/clothing/shoes/jackboots/prac_boots
+	name = "practioner boots"
+	desc = "Squish."
+	icon_state = "prac_boots"
+	item_state = "prac_boots"
+
+/obj/item/clothing/shoes/jackboots/pilgrim_boots
+	name = "pilgrim boots"
+	desc = "The black leather boots of a pilgrim, somehow they manage to both fit and don't fit on you, they feel comfortable, can hold a knife."
+	icon_state = "prac_boots"
+	item_state = "prac_boots"
+
+//GUARDSMAN SHIT
+
+/obj/item/clothing/shoes/jackboots/cadian
+	name = "combat boots"
+	desc = "Astra Militarum's common combat boots, found worn by most Imperial Agencies and Astra Militarum."
+	icon_state = "jackboots"
+	item_state = "jackboots"
+
+/obj/item/clothing/shoes/jackboots/catachan
+	name = "combat boots"
+	desc = "Astra Militarum's common combat boots, found worn by most Imperial Agencies and Astra Militarum."
+	icon_state = "jackboots"
+	item_state = "jackboots"
+
+/obj/item/clothing/shoes/jackboots/krieg
+	name = "krieg pattern combat boots"
+	desc = "The Krieg Regiment, unlike most of the Astra Militarum, prefer their less protective but more mobile boots over the standard Mars Pattern used by the Munitorium."
+	icon_state = "kriegboots"
+	item_state = "kriegboots"
+
+/obj/item/clothing/shoes/jackboots/krieg/grenadier
+	name = "krieg grenadier pattern combat boots"
+	desc = "The Krieg Regiment, unlike most of the Astra Militarum, prefer their less protective but more mobile boots over the standard Mars Pattern used by the Munitorium. Though, in this particular case they have lamented to armoring their own."
+	icon_state = "grenboots"
+	item_state = "grenboots"
+	armor = list(
+		melee = ARMOR_MELEE_FLAK-1,
+		bullet = ARMOR_BALLISTIC_FLAK-1,
+		laser = ARMOR_LASER_FLAK-1,
+		energy = ARMOR_ENERGY_TEN,
+		bio = ARMOR_BIO_THIRTY+5,
+		rad = ARMOR_RAD_THIRTY+55,
+		bomb = ARMOR_BOMB_TEN+10
+	)
+
+/obj/item/clothing/shoes/jackboots/maccabian
+	name = "maccabian pattern combat boots"
+	desc = "The Krieg Regiment, unlike most of the Astra Militarum, prefer their less protective but more mobile boots over the standard Mars Pattern used by the Munitorium."
+	icon_state = "M_Boots-Icon"
+	item_state = "M_Boots-Icon"
+
+//Commissar shoes, not being currently used.
+/obj/item/clothing/shoes/jackboots/commissar
+	name = "commissar boots"
+	desc = "Knee-high riding boots of an officer of the Officio Prefectus."
+	icon_state = "comm_boots"
+	item_state = "comm_boots"
+
+// Astartes Stuff
+
+/obj/item/clothing/shoes/jackboots/astartes
+	name = "astartes mark vii combat boots"
+	desc = "Boots of the Emperor's Space Marine."
+	icon_state = "rg_lib"
+	item_state = "rg_lib"
+	canremove = 1
+	unacidable = 1
+	str_requirement = 1
+	item_flags = ITEM_FLAG_NOSLIP
+	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+1000
+	armor = list(
+		melee = ARMOR_MELEE_FLAK+1,
+		bullet = ARMOR_BALLISTIC_FLAK+3,
+		laser = ARMOR_LASER_FLAK+3,
+		energy = ARMOR_ENERGY_TEN+5,
+		bio = ARMOR_BIO_THIRTY+35,
+		rad = ARMOR_RAD_THIRTY+65,
+		bomb = ARMOR_BOMB_TEN+30
+	)
+
+/obj/item/clothing/shoes/jackboots/astartes/smurfs
+	name = "astartes mark vii combat boots"
+	desc = "Boots of the Emperor's Space Marine, This one is painted in the colour scheme of the 12th chapter, the Ultramarines."
+	icon_state = "umboots"
+	item_state = "umboots"
+
+/obj/item/clothing/shoes/jackboots/astartes/bloodangel
+	name = "astartes mark vii combat boots"
+	desc = "Boots of the Emperor's Space Marine, This one is painted in the colour scheme of the 9th chapter, the Blood Angels."
+	icon_state = "ba_boots"
+	item_state = "ba_boots"
+
+/obj/item/clothing/shoes/jackboots/astartes/sallys
+	name = "astartes mark vii combat boots"
+	desc = "Boots of the Emperor's Space Marine, This one is painted in the colour scheme of the 18th chapter, the Salamanders."
+	icon_state = "sl_boots"
+	item_state = "sl_boots"
+
+/obj/item/clothing/shoes/jackboots/astartes/raven
+	name = "astartes mark vii combat boots"
+	desc = "Boots of the Emperor's Space Marine, This one is painted in the colour scheme of the 19th chapter, the Raven Guard."
+	icon_state = "rg_lib"
+	item_state = "rg_lib"
+
+// Sororitas
+/obj/item/clothing/shoes/jackboots/sisterofbattle
+	name = "sacred rose power boots"
+	desc = "A pair of Power Boots issued to the Sororitas-Militant of the Order Of The Sacred Rose of the Adepta Sororitas."
+	icon_state = "sister"
+	item_state = "sister"
+	canremove = 1
+	unacidable = 1
+	item_flags = ITEM_FLAG_NOSLIP
+	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+1000
+	armor = list(
+		melee = ARMOR_MELEE_FLAK+1,
+		bullet = ARMOR_BALLISTIC_FLAK+2,
+		laser = ARMOR_LASER_FLAK+2,
+		energy = ARMOR_ENERGY_TEN+5,
+		bio = ARMOR_BIO_THIRTY+25,
+		rad = ARMOR_RAD_THIRTY+55,
+		bomb = ARMOR_BOMB_TEN+15
+	)
+
+/obj/item/clothing/shoes/jackboots/sisterofbattle/repentia
+	name = "repentia sandals"
+	desc = "Worn sandals given Sisters Repentia</i>"
+	icon_state = "roman"
+	item_state = "roman"
+	canremove = 1
+	unacidable = 1
+	item_flags = ITEM_FLAG_NOSLIP
+	max_pressure_protection = VOIDSUIT_MAX_PRESSURE
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+100
+	armor = list(
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK,
+		energy = ARMOR_ENERGY_TEN,
+		bio = ARMOR_BIO_THIRTY+5,
+		rad = ARMOR_RAD_THIRTY,
+		bomb = ARMOR_BOMB_TEN
+	)
+
+/obj/item/clothing/shoes/jackboots/sisterofbattle/mlsister
+	name = "martyred lady power boots"
+	desc = "A pair of Power Boots issued to the sisters of the Order Of Our Martyred Lady of the Adepta Sororitas.</i>"
+	icon_state = "mlsister"
+	item_state = "mlsister"
+	canremove = 1
+	unacidable = 1
+
+/obj/item/clothing/shoes/jackboots/sisterofbattle/brsister
+	name = "bloody rose power boots"
+	desc = "A pair of Power Boots issued to the sisters of the Order Of Our Martyred Lady of the Adepta Sororitas.</i>"
+	icon_state = "brsister"
+	item_state = "brsister"
+	canremove = 1
+	unacidable = 1
+	item_flags = ITEM_FLAG_NOSLIP
+
+//Inquisition Stuff
+
+/obj/item/clothing/shoes/jackboots/inquisitor
+	name = "combat boots"
+	desc = "Tall plasteel boots with black paint."
+	icon_state = "inqshoes"
+	item_state = "inqshoes"
+	cold_protection = FEET
+	item_flags = ITEM_FLAG_NOSLIP
+	armor = list(
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK,
+		energy = ARMOR_ENERGY_TEN,
+		bio = ARMOR_BIO_THIRTY+15,
+		rad = ARMOR_RAD_THIRTY+65,
+		bomb = ARMOR_BOMB_TEN+20
+	)
+
+/obj/item/clothing/shoes/jackboots/inquisitor/acolyte
+	name = "combat boots"
+	desc = "Reinforced combat boots."
+	icon_state = "jackboots"
+	item_state = "jackboots"
+	siemens_coefficient = 0.7
+	cold_protection = FEET
+	armor = list(
+		melee = ARMOR_MELEE_FLAK-1,
+		bullet = ARMOR_BALLISTIC_FLAK-1,
+		laser = ARMOR_LASER_FLAK-1,
+		energy = ARMOR_ENERGY_TEN,
+		bio = ARMOR_BIO_THIRTY+5,
+		rad = ARMOR_RAD_THIRTY+55,
+		bomb = ARMOR_BOMB_TEN+10
+	)
+
+/obj/item/clothing/shoes/krootfeet //walking sounds only play with shoes and I was losing my mind not having them
+	name = "kroot feet"
+	desc = "The spindly webbed feet of a Kroot"
+	icon_state = "None"
+	item_state = "None"
+	canremove = 0
+	unacidable = 1
+
+
+// Ork
+
+/obj/item/clothing/shoes/orkboots //walking sounds only play with shoes and I was losing my mind not having them
+	name = "ork boots"
+	desc = "da stompas"
+	icon_state = "ork_boots"
+	item_state = "ork_boots"
+	canremove = 0
+	item_flags = ITEM_FLAG_NOSLIP
+	armor = list(
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK,
+		energy = ARMOR_ENERGY_TEN,
+		bio = ARMOR_BIO_THIRTY+15,
+		rad = ARMOR_RAD_THIRTY+65,
+		bomb = ARMOR_BOMB_TEN+20
+	)
+
+//Eldar Stuff
+
+/obj/item/clothing/shoes/eldar
+  name = "guardian mesh boots"
+  desc = "A ancient set of boots. It looks like it's made out of thermoplas in a scale like pattern. It has extra cushion to protect the wearers feet."
+  icon_state = "eldboots"
+  item_state = "eldboots"
+  armor = list(
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK,
+		energy = ARMOR_ENERGY_TEN,
+		bio = ARMOR_BIO_THIRTY+15,
+		rad = ARMOR_RAD_THIRTY+65,
+		bomb = ARMOR_BOMB_TEN+20
+	)
+
+
+/obj/item/clothing/shoes/eldar/ranger
+  name = "eldar ranger boots"
+  desc = "An Eldar Ranger's set of boots, these appear to be made up of layers of cameoline treated materials, with a thermoplas underlayer."
+  icon_state = "eldboots"
+  item_state = "eldboots"
+
+
+/obj/item/clothing/shoes/eldar/druhkari
+  name = "ghostplate boots"
+  desc = "A ancient set of boots. It looks like it's made out of hardened resin in a thin-scale like pattern. It has extra cushion to protect the wearers feet."
+  icon_state = "deldboots"
+  item_state = "deldboots"

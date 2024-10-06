@@ -253,23 +253,12 @@ SUBSYSTEM_DEF(jobs)
 			for (var/mob/mob as anything in candidates)
 				if (!mob.client)
 					continue
-				var/age = mob.client.prefs.age
-				if (age < job.minimum_character_age)
-					continue
-				if (age < job.minimum_character_age + 10)
-					weightedCandidates[mob] = 3
-				else if (age < job.ideal_character_age - 10)
-					weightedCandidates[mob] = 6
-				else if (age < job.ideal_character_age + 10)
-					weightedCandidates[mob] = 10
-				else if (age < job.ideal_character_age + 20)
-					weightedCandidates[mob] = 6
-				else
-					weightedCandidates[mob] = 3
+				weightedCandidates[mob] = 5
 			var/mob/new_player/candidate = pickweight(weightedCandidates)
 			if (assign_role(candidate, command_position, mode = mode))
 				return TRUE
 	return FALSE
+
 
 ///This proc is called at the start of the level loop of divide_occupations() and will cause head jobs to be checked before any other jobs of the same level
 /datum/controller/subsystem/jobs/proc/CheckHeadPositions(level, datum/game_mode/mode)
@@ -446,7 +435,7 @@ SUBSYSTEM_DEF(jobs)
 		job.setup_account(H)
 
 		// EMAIL GENERATION
-		if(rank != "Robot" && rank != "AI")		//These guys get their emails later.
+		if(rank != "Robot" && rank != "Machine Spirit")		//These guys get their emails later.
 			var/domain
 			var/addr = H.real_name
 			var/pass
@@ -555,7 +544,7 @@ SUBSYSTEM_DEF(jobs)
 
 /datum/controller/subsystem/jobs/proc/spawn_empty_ai()
 	for(var/obj/landmark/start/S in landmarks_list)
-		if(S.name != "AI")
+		if(S.name != "Machine Spirit")
 			continue
 		if(locate(/mob/living) in S.loc)
 			continue

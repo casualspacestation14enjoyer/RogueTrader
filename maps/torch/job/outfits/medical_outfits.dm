@@ -4,10 +4,6 @@
 	pda_type = /obj/item/modular_computer/pda/medical
 	pda_slot = slot_l_store
 
-/singleton/hierarchy/outfit/job/torch/crew/medical/New()
-	..()
-	BACKPACK_OVERRIDE_MEDICAL
-
 /singleton/hierarchy/outfit/job/torch/crew/medical/senior
 	name = OUTFIT_JOB_NAME("Physician")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/medical
@@ -74,10 +70,6 @@
 	shoes = /obj/item/clothing/shoes/white
 	pda_type = /obj/item/modular_computer/pda/chemistry
 	id_types = list(/obj/item/card/id/torch/contractor/chemist)
-
-/singleton/hierarchy/outfit/job/torch/crew/medical/contractor/chemist/New()
-	..()
-	BACKPACK_OVERRIDE_CHEMISTRY
 
 /singleton/hierarchy/outfit/job/torch/crew/medical/counselor
 	name = OUTFIT_JOB_NAME("Counselor")

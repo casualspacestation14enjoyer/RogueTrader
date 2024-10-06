@@ -99,7 +99,7 @@
 
 	var/list/spawn_headset_options = list(
 		/obj/item/device/radio/headset/headset_sec,
-		/obj/item/device/radio/headset/headset_eng,
+		/obj/item/device/radio/headset/headset_mechanicus,
 		/obj/item/device/radio/headset/headset_med,
 		/obj/item/device/radio/headset/headset_sci,
 		/obj/item/device/radio/headset/headset_cargo
@@ -706,7 +706,7 @@
 /mob/living/simple_animal/hostile/retaliate/parrot/Poly
 	name = "Poly"
 	desc = "Poly the Parrot. An expert on quantum cracker theory."
-	spawn_headset_options = list(/obj/item/device/radio/headset/headset_eng)
+	spawn_headset_options = list(/obj/item/device/radio/headset/headset_mechanicus)
 
 
 /mob/living/simple_animal/hostile/retaliate/parrot/say(message)

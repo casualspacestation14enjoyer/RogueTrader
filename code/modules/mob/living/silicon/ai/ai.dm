@@ -42,7 +42,7 @@ var/global/list/ai_verbs_default = list(
 
 
 /mob/living/silicon/ai
-	name = "AI"
+	name = "Machine Spirit"
 	icon = 'icons/mob/AI.dmi'//
 	icon_state = "ai"
 	anchored = TRUE // -- TLE
@@ -214,7 +214,7 @@ var/global/list/ai_verbs_default = list(
 		show_laws()
 		to_chat(src, "<b>These laws may be changed by other players or by other random events.</b>")
 
-	job = "AI"
+	job = "Machine Spirit"
 	setup_icon()
 	eyeobj.possess(src)
 
@@ -292,7 +292,7 @@ var/global/list/ai_verbs_default = list(
 	if(stat || !has_power())
 		return
 
-	var/new_sprite = input("Select an icon!", "AI", selected_sprite) as null|anything in available_icons()
+	var/new_sprite = input("Select an icon!", "Machine Spirit", selected_sprite) as null|anything in available_icons()
 	if(new_sprite)
 		selected_sprite = new_sprite
 

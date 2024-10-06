@@ -2,10 +2,6 @@
 	l_ear = /obj/item/device/radio/headset/headset_cargo
 	hierarchy_type = /singleton/hierarchy/outfit/job/torch/crew/supply
 
-/singleton/hierarchy/outfit/job/torch/crew/supply/New()
-	..()
-	BACKPACK_OVERRIDE_ENGINEERING
-
 /singleton/hierarchy/outfit/job/torch/crew/supply/deckofficer
 	name = OUTFIT_JOB_NAME("Deck Chief")
 	l_ear = /obj/item/device/radio/headset/headset_deckofficer
@@ -46,7 +42,3 @@
 	pda_type = /obj/item/modular_computer/pda/mining
 	flags = OUTFIT_FLAGS_JOB_DEFAULT | OUTFIT_EXTENDED_SURVIVAL
 	l_ear = /obj/item/device/radio/headset/headset_mining
-
-/singleton/hierarchy/outfit/job/torch/passenger/research/prospector/New()
-	..()
-	BACKPACK_OVERRIDE_ENGINEERING

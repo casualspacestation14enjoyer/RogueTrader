@@ -232,7 +232,7 @@ var/global/list/empty_playable_ai_cores = list()
 		if (new_brain.stat == DEAD)
 			USE_FEEDBACK_FAILURE("\The [tool] is dead and cannot be installed into \the [src].")
 			return TRUE
-		if (jobban_isbanned(brain, "AI"))
+		if (jobban_isbanned(brain, "Machine Spirit"))
 			USE_FEEDBACK_FAILURE("This particular intelligence cannot be installed into an AI core.")
 			return TRUE
 		if (!user.unEquip(tool, src))

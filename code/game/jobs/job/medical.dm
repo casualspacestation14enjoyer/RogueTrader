@@ -1,5 +1,6 @@
-/datum/job/cmo
-	title = "Chief Medical Officer"
+/*
+/datum/job/magos_biologis
+	title = "Magos Biologis"
 	head_position = 1
 	department = "Medical"
 	department_flag = MED|COM
@@ -18,7 +19,7 @@
 	ideal_character_age = 50
 	outfit_type = /singleton/hierarchy/outfit/job/medical/cmo
 
-/datum/job/doctor
+/datum/job/hospitaller
 	title = "Medical Doctor"
 	department = "Medical"
 	department_flag = MED
@@ -38,7 +39,7 @@
 	outfit_type = /singleton/hierarchy/outfit/job/medical/doctor
 
 //Chemist is a medical job damnit	//YEAH FUCK YOU SCIENCE	-Pete	//Guys, behave -Erro
-/datum/job/chemist
+/datum/job/pharmacologis
 	title = "Pharmacist"
 	department = "Medical"
 	department_flag = MED
@@ -66,7 +67,7 @@
 	access = list(access_medical, access_morgue, access_surgery, access_chemistry, access_virology, access_research)
 	outfit_type = /singleton/hierarchy/outfit/job/medical/geneticist
 
-/datum/job/psychiatrist
+/datum/job/rogue_guest
 	title = "Psychiatrist"
 	department = "Medical"
 	department_flag = MED
@@ -94,3 +95,5 @@
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_eva, access_maint_tunnels, access_external_airlocks, access_psychiatrist)
 	alt_titles = list("Emergency Medical Technician" = /singleton/hierarchy/outfit/job/medical/paramedic/emt)
 	outfit_type = /singleton/hierarchy/outfit/job/medical/paramedic
+
+*/

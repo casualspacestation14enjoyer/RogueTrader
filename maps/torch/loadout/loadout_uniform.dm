@@ -71,10 +71,10 @@
 	allowed_roles = ENGINEERING_ROLES
 
 /datum/gear/uniform/corp_overalls
-	allowed_roles = list(/datum/job/mining, /datum/job/scientist_assistant)
+	allowed_roles = list(/datum/job/unexpected_guest, /datum/job/scientist_assistant)
 
 /datum/gear/uniform/corp_flight
-	allowed_roles = list(/datum/job/nt_pilot)
+	allowed_roles = list(/datum/job/shuttle_pilot)
 
 /datum/gear/uniform/corp_exec
 	allowed_roles = list(/datum/job/liaison)

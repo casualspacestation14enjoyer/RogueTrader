@@ -1,5 +1,5 @@
 /obj/structure/closet/secure_closet/engineering_chief
-	name = "chief engineer's locker"
+	name = "magos explorator's locker"
 	closet_appearance = /singleton/closet_appearance/secure_closet/engineering/ce
 	req_access = list(access_ce)
 
@@ -53,7 +53,7 @@
 	)
 
 /obj/structure/closet/secure_closet/engineering_personal
-	name = "engineer's locker"
+	name = "tech priest's locker"
 	req_access = list(access_engine_equip)
 	closet_appearance = /singleton/closet_appearance/secure_closet/engineering
 
@@ -63,7 +63,7 @@
 		new/datum/atom_creator/weighted(list(/obj/item/storage/backpack/industrial, /obj/item/storage/backpack/satchel/eng)),
 		new/datum/atom_creator/simple(/obj/item/storage/backpack/dufflebag/eng, 50),
 		/obj/item/storage/toolbox/mechanical,
-		/obj/item/device/radio/headset/headset_eng,
+		/obj/item/device/radio/headset/headset_mechanicus,
 		/obj/item/clothing/suit/armor/grim/storage/hazardvest,
 		/obj/item/clothing/mask/gas,
 		/obj/item/clothing/glasses/meson,
@@ -83,7 +83,7 @@
 		/obj/item/clothing/suit/fire/firefighter,
 		/obj/item/device/flashlight,
 		/obj/item/extinguisher,
-		/obj/item/device/radio/headset/headset_eng,
+		/obj/item/device/radio/headset/headset_mechanicus,
 		/obj/item/clothing/suit/armor/grim/storage/hazardvest,
 		/obj/item/clothing/mask/gas,
 		/obj/item/taperoll/atmos

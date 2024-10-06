@@ -1,4 +1,4 @@
-/datum/job/warden
+/datum/job/enforcer_sergeant
 	title = "Brig Chief"
 	total_positions = 1
 	spawn_positions = 1
@@ -37,7 +37,7 @@
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
 							 /datum/computer_file/program/camera_monitor)
 
-/datum/job/detective
+/datum/job/xeno_mercenary
 	title = "Forensic Technician"
 	total_positions = 1
 	spawn_positions = 1
@@ -80,7 +80,7 @@
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
 							 /datum/computer_file/program/camera_monitor)
 
-/datum/job/officer
+/datum/job/enforcer
 	title = "Master at Arms"
 	total_positions = 4
 	spawn_positions = 4

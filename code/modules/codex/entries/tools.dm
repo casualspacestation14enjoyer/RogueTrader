@@ -30,7 +30,7 @@
 
 /datum/codex_entry/toolbelt
 	associated_paths = list(/obj/item/storage/belt/utility)
-	mechanics_text = "The tool-belt has enough slots to carry a full engineer's toolset: screwdriver, crowbar, wrench, welder, cable coil, and multitool. Simply click the belt to move a tool to one of its slots."
+	mechanics_text = "The tool-belt has enough slots to carry a full tech priest's toolset: screwdriver, crowbar, wrench, welder, cable coil, and multitool. Simply click the belt to move a tool to one of its slots."
 	lore_text = "Good hide is hard to come by in certain regions of the galaxy. When they can't come across it, most TSCs will outfit their crews with toolbelts made of synthesized leather."
 	antag_text = "Only amateurs skip grabbing a tool-belt."
 

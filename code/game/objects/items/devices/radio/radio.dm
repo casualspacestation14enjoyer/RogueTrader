@@ -422,7 +422,7 @@
 
 	// --- AI ---
 	else if (isAI(M))
-		jobname = "AI"
+		jobname = "Machine Spirit"
 
 	// --- Cyborg ---
 	else if (isrobot(M))

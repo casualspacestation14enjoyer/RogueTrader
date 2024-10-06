@@ -6,7 +6,7 @@
 /obj/item/storage/backpack
 	name = "backpack"
 	desc = "You wear this on your back and put items into it."
-	icon = 'icons/obj/clothing/obj_backpacks.dmi'
+	icon = 'icons/obj/storage.dmi'
 	item_icons = list(
 		slot_l_hand_str = 'icons/mob/onmob/items/lefthand_backpacks.dmi',
 		slot_r_hand_str = 'icons/mob/onmob/items/righthand_backpacks.dmi',
@@ -24,6 +24,7 @@
 	max_storage_space = DEFAULT_BACKPACK_STORAGE
 	open_sound = 'sound/effects/storage/unzip.ogg'
 	allow_slow_dump = TRUE
+	slowdown_general = 0.025
 
 	/// Can this backpack be opened while worn on the back?
 	var/worn_access = TRUE
@@ -448,40 +449,7 @@
 		slot_r_hand_str = "satchel-sci",
 		)
 
-//Smuggler's satchel
-/obj/item/storage/backpack/satchel/flat
-	name = "\improper Smuggler's satchel"
-	desc = "A very slim satchel, that can easily fit into tight spaces."
-	icon_state = "satchel-flat"
-	item_state = "satchel-norm"
-	level = ATOM_LEVEL_UNDER_TILE
-	w_class = ITEM_SIZE_NORMAL //Can fit in backpacks itself.
-	storage_slots = 5
-	max_w_class = ITEM_SIZE_NORMAL
-	max_storage_space = 15
-	contents_banned = list(/obj/item/storage/backpack/satchel/flat)
-	startswith = list(
-		/obj/item/stack/tile/floor,
-		/obj/item/crowbar
-		)
 
-/obj/item/storage/backpack/satchel/flat/MouseDrop(obj/over_object)
-	var/turf/T = get_turf(src)
-	if(hides_under_flooring() && isturf(T) && !T.is_plating())
-		return
-	..()
-
-/obj/item/storage/backpack/satchel/flat/hide(i)
-	set_invisibility(i ? INVISIBILITY_ABSTRACT : 0)
-	anchored = i ? TRUE : FALSE
-	alpha = i ? 128 : initial(alpha)
-
-/obj/item/storage/backpack/satchel/flat/use_tool(obj/item/tool, mob/living/user, list/click_params)
-	var/turf/T = get_turf(src)
-	if(hides_under_flooring() && isturf(T) && !T.is_plating())
-		to_chat(user, SPAN_WARNING("You must remove the plating first."))
-		return TRUE
-	return ..()
 
 //ERT backpacks.
 /obj/item/storage/backpack/ert
@@ -585,3 +553,219 @@
 // prevents consumption by dept versions
 /obj/item/storage/backpack/messenger/grey
 	name = "grey messenger bag"
+
+
+
+// WARHAMMER
+// WARHAMMER
+//Smuggler's satchel
+/obj/item/storage/backpack/satchel/flat
+	name = "\improper Smuggler's satchel"
+	desc = "A very slim satchel, that can easily fit into tight spaces."
+	icon_state = "satchel-flat"
+	item_state = "satchel-norm"
+	level = ATOM_LEVEL_UNDER_TILE
+	w_class = ITEM_SIZE_NORMAL //Can fit in backpacks itself.
+	storage_slots = 5
+	max_w_class = ITEM_SIZE_NORMAL
+	max_storage_space = DEFAULT_BACKPACK_STORAGE-2
+	contents_banned = list(/obj/item/storage/backpack/satchel/flat)
+	startswith = list(
+		/obj/item/stack/tile/floor,
+		/obj/item/crowbar
+		)
+
+/obj/item/storage/backpack/satchel/flat/MouseDrop(obj/over_object)
+	var/turf/T = get_turf(src)
+	if(hides_under_flooring() && isturf(T) && !T.is_plating())
+		return
+	..()
+
+/obj/item/storage/backpack/satchel/flat/hide(i)
+	set_invisibility(i ? INVISIBILITY_ABSTRACT : 0)
+	anchored = i ? TRUE : FALSE
+	alpha = i ? 128 : initial(alpha)
+
+/obj/item/storage/backpack/satchel/flat/use_tool(obj/item/tool, mob/living/user, list/click_params)
+	var/turf/T = get_turf(src)
+	if(hides_under_flooring() && isturf(T) && !T.is_plating())
+		to_chat(user, SPAN_WARNING("You must remove the plating first."))
+		return TRUE
+	return ..()
+
+/obj/item/storage/backpack/satchel/heavy
+	name = "heavy rucksack"
+	desc = "A heavy rucksack."
+	icon_state = "warfare_satchel"
+	max_storage_space = DEFAULT_BACKPACK_STORAGE+3
+	slowdown_general = 0.05
+
+/obj/item/storage/backpack/satchel/warfare
+	desc = "Fit for war, and not much else."
+	icon_state = "warfare_satchel"
+
+/obj/item/storage/backpack/satchel/warfare/techpriest
+	desc = "BZZZRRRRT."
+	icon_state = "warfare_satchel"
+	max_storage_space = DEFAULT_BACKPACK_STORAGE+6
+	canremove = FALSE
+	// var/can_toggle = 1
+/*
+/obj/item/storage/backpack/satchel/warfare/techpriest/verb/toggleallen()
+	set name = "Pull Out Allen Wrench"
+	set category = "Tools"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+	else
+		to_chat(usr,"You pull out the holy Wrench of Allen!")
+		usr.put_in_hands(new /obj/item/device/allenwrench(usr))
+
+
+
+/obj/item/storage/backpack/satchel/warfare/techpriest/verb/toggleoils()
+	set name = "Pull Out Holy Oils"
+	set category = "Tools"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+	else
+		to_chat(usr,"You pull out a bottle of holy oil.")
+		usr.put_in_hands(new /obj/item/device/holyoils(usr))
+
+
+
+/obj/item/storage/backpack/satchel/warfare/techpriest/verb/togglechisel()
+	set name = "Activate Chisel"
+	set category = "Tools"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+	else
+		to_chat(usr,"You pull out the auto-chisel and activate it in a single motion.")
+		usr.put_in_hands(new /obj/item/device/autochisel(usr))
+
+
+/obj/item/storage/backpack/satchel/warfare/techpriest/verb/togglecutter()
+	set name = "Activate Laser Cutter"
+	set category = "Tools"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+	else
+		to_chat(usr,"You pull out a small laser cutter and prepare to cut stuff.")
+		usr.put_in_hands(new /obj/item/device/lasercutter(usr))
+
+
+/obj/item/storage/backpack/satchel/warfare/techpriest/magos
+	name = "Combat Servo-Satchel"
+
+/obj/item/storage/backpack/satchel/warfare/techpriest/magos/verb/toggle_axe()
+	set name = "Pull Out Omnissian Axe"
+	set category = "Tools"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+	else
+		to_chat(usr,"You pull out giant power axe from under your robes and activate it! For the omnissiah!.")
+		usr.put_in_hands(new /obj/item/melee/omnissiah_axe(usr))
+
+/obj/item/storage/backpack/satchel/warfare/techpriest/techmarine
+	name = "Combat Servo-Satchel"
+
+/obj/item/storage/backpack/satchel/warfare/techpriest/techmarine/verb/toggle_aaxe()
+	set name = "Pull Out Omnissian Axe"
+	set category = "Tools"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+	else
+		to_chat(usr,"You pull out giant power axe from under your robes and activate it! For the Emperor!")
+		usr.put_in_hands(new /obj/item/melee/omnissiah_axe/astartes(usr))
+
+
+/obj/item/storage/backpack/satchel/warfare/techpriest/biologis
+	name = "Medical Servo-Satchel"
+	icon_state = "warfare_satchel"
+	canremove = FALSE
+
+/obj/item/storage/backpack/satchel/warfare/techpriest/biologis/verb/toggleneural()
+	set name = "Configure Neural Adapter"
+	set category = "Tools"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+	else
+		to_chat(usr,"You pull out a Neural Adapter and activate it quickly in a single brief motion.")
+		usr.put_in_hands(new /obj/item/device/neuraladapter(usr))
+
+
+/obj/item/storage/backpack/satchel/warfare/chestrig
+	name = "Chestrig"
+	desc = "Holds ammo and other goodies. But not a lot of it."
+	icon_state = "chestrig"
+
+/obj/item/storage/backpack/satchel/warfare/ruststalker
+	var/can_toggle = 1
+	var/is_toggled = 1
+	canremove = FALSE
+
+/obj/item/storage/backpack/satchel/warfare/ruststalker/verb/toggleclaw()
+	set name = "Extend Claws"
+	set category = "Tools"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+	else
+		to_chat(usr,"You extend your power claws.")
+		usr.put_in_hands(new /obj/item/melee/energy/powersword/claw/integrated(usr))
+
+
+/obj/item/storage/backpack/warfare
+	desc = "Holds more than a satchel, but can't open it on your back."
+	icon_state = "warfare_backpack"
+
+/obj/item/storage/backpack/satchel/krieger
+	desc = "Field ready kit, tried and tested through countless encounters."
+	icon_state = "kriegpack"
+	item_state = "kriegpack"
+
+/obj/item/storage/backpack/satchel/krieger/grenadier
+	desc = "An assembled kit for air filtration, weapon power supply, and basic storage. Perfect to bring with you into no man's land."
+	icon_state = "grenpack"
+	item_state = "grenpack"
+
+/obj/item/storage/backpack/satchel/maccabian
+	desc = "Field ready kit, tried and tested through countless encounters."
+	icon_state = "M_Backpack-Icon"
+	item_state = "M_Backpack-Icon"
+
+/obj/item/storage/backpack/satchel/maccabian/sergeant
+	desc = "Field ready kit, tried and tested through countless encounters."
+	icon_state = "M_SBackpack-Icon"
+	item_state = "M_SBackpack-Icon"
+
+
+/obj/item/storage/backpack/satchel/ordinate
+	name = "Administratum Ink Pack"
+	desc = "Burocracy on the go"
+	icon_state = "ordinate"
+	item_state = "ordinate"
+
+*/
