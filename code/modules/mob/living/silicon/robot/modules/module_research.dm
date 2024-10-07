@@ -2,7 +2,7 @@
 	name = "research module"
 	display_name = "Research"
 	channels = list(
-		"Science" = TRUE
+		"Biologis" = TRUE
 	)
 	networks = list(
 		NETWORK_RESEARCH

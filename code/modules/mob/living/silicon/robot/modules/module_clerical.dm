@@ -74,7 +74,7 @@
 	display_name = "Clerical"
 	channels = list(
 		"Service" = TRUE,
-		"Supply" =  TRUE
+		"Machinarum" =  TRUE
 	)
 	sprites = list(
 		"Waitress" = "Service",

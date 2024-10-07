@@ -74,7 +74,7 @@
 
 /obj/item/device/encryptionkey/iccgn
 	name = "\improper Tau radio encryption key"
-	channels = list("Tau Hound" = 1)
+	channels = list("Tau Empire" = 1)
 
 /obj/item/stock_parts/circuitboard/telecomms/allinone/iccgn
 	build_path = /obj/machinery/telecomms/allinone/iccgn

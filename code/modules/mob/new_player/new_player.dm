@@ -13,7 +13,7 @@
 	var/totalPlayers = 0		 //Player counts for the Lobby tab
 	var/totalPlayersReady = 0
 	var/datum/browser/panel
-	var/show_invalid_jobs = 0
+	var/show_invalid_jobs = 1
 
 
 /mob/new_player/Destroy()
@@ -331,7 +331,7 @@
 		"Medical" =         list(jobs = list(), dep = MED, color = "#99ffe6"),
 		"Research" =        list(jobs = list(), dep = SCI, color = "#e6b3e6", colBreak = 1),
 		"Supply" =          list(jobs = list(), dep = SUP, color = "#ead4ae"),
-		"Exploration" =     list(jobs = list(), dep = EXP, color = "#ffd699"),
+		"Explorator" =     list(jobs = list(), dep = EXP, color = "#ffd699"),
 		"ERROR" =           list(jobs = list(), color = "#ffffff", colBreak = 1)
 	)
 	// TORCH JOBS
@@ -396,10 +396,7 @@
 			continue
 		for(var/datum/job/prof in categorizedJobs[jobcat]["jobs"])
 			if(jobcat == "Command")
-				if(istype(prof, /datum/job/rogue_trader))
-					dat += prof.get_join_link(client, "byond://?src=\ref[src];SelectedJob=[prof.title]", show_invalid_jobs, TRUE)
-				else
-					dat += prof.get_join_link(client, "byond://?src=\ref[src];SelectedJob=[prof.title]", show_invalid_jobs)
+				dat += prof.get_join_link(client, "byond://?src=\ref[src];SelectedJob=[prof.title]", show_invalid_jobs)
 			else if(prof.department_flag & COM)
 				dat += prof.get_join_link(client, "byond://?src=\ref[src];SelectedJob=[prof.title]", show_invalid_jobs, TRUE)
 			else

@@ -1,6 +1,6 @@
 /datum/job/pathfinder
 	title = "Pathfinder"
-	department = "Exploration"
+	department = "Explorator"
 	department_flag = EXP
 	total_positions = 1
 	spawn_positions = 1
@@ -46,7 +46,7 @@
 /datum/job/shuttle_pilot
 	title = "Shuttle Pilot"
 	supervisors = "the Pathfinder"
-	department = "Exploration"
+	department = "Explorator"
 	department_flag = EXP
 	total_positions = 1
 	spawn_positions = 1
@@ -81,7 +81,7 @@
 
 /datum/job/explorer
 	title = "Explorer"
-	department = "Exploration"
+	department = "Explorator"
 	department_flag = EXP
 	total_positions = 5
 	spawn_positions = 5

@@ -109,7 +109,7 @@ var/global/const/NETWORK_FIFTH_DECK  = "Fifth Deck"
 /obj/machinery/power/smes/buildable/preset/torch/substation_full/rust
 	uncreated_component_parts = list(/obj/item/stock_parts/smes_coil/super_io = 2)
 
-// Supermatter output SMES
+// Volkite output SMES
 /obj/machinery/power/smes/buildable/preset/torch/engine_main
 	uncreated_component_parts = list(
 		/obj/item/stock_parts/smes_coil/super_io = 2,

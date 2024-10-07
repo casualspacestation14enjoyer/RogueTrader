@@ -12,8 +12,8 @@
 
 /datum/admins/proc/setup_supermatter()
 	set category = "Debug"
-	set name = "Setup Supermatter"
-	set desc = "Allows you to start the Supermatter engine."
+	set name = "Setup Volkite"
+	set desc = "Allows you to start the Volkite engine."
 
 	if (!istype(src,/datum/admins))
 		src = usr.client.holder
@@ -175,7 +175,7 @@
 
 // Energises the supermatter. Errors when unable to locate supermatter.
 /obj/engine_setup/core
-	name = "Supermatter Core Marker"
+	name = "Volkite Core Marker"
 	var/energy_setting = 0
 
 /obj/engine_setup/core/activate(last = 0)

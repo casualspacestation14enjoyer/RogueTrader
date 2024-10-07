@@ -315,27 +315,7 @@
 	unacidable = 1
 	item_flags = ITEM_FLAG_NOSLIP
 	canremove = FALSE
-//PILGRIM SHIT BELOW
 
-/obj/item/clothing/shoes/jackboots/vigilante
-	name = "shining shoes"
-	desc = "A shined pair of shoes"
-	icon_state = "vigilante_boots"
-	item_state = "vigilante_boots"
-	siemens_coefficient = 0.7
-	item_flags = ITEM_FLAG_NOSLIP
-
-/obj/item/clothing/shoes/jackboots/prac_boots
-	name = "practioner boots"
-	desc = "Squish."
-	icon_state = "prac_boots"
-	item_state = "prac_boots"
-
-/obj/item/clothing/shoes/jackboots/pilgrim_boots
-	name = "pilgrim boots"
-	desc = "The black leather boots of a pilgrim, somehow they manage to both fit and don't fit on you, they feel comfortable, can hold a knife."
-	icon_state = "prac_boots"
-	item_state = "prac_boots"
 
 //GUARDSMAN SHIT
 
@@ -557,11 +537,11 @@
 //Eldar Stuff
 
 /obj/item/clothing/shoes/eldar
-  name = "guardian mesh boots"
-  desc = "A ancient set of boots. It looks like it's made out of thermoplas in a scale like pattern. It has extra cushion to protect the wearers feet."
-  icon_state = "eldboots"
-  item_state = "eldboots"
-  armor = list(
+	name = "guardian mesh boots"
+	desc = "A ancient set of boots. It looks like it's made out of thermoplas in a scale like pattern. It has extra cushion to protect the wearers feet."
+	icon_state = "eldboots"
+	item_state = "eldboots"
+	armor = list(
 		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_FLAK,
 		laser = ARMOR_LASER_FLAK,
@@ -584,3 +564,106 @@
   desc = "A ancient set of boots. It looks like it's made out of hardened resin in a thin-scale like pattern. It has extra cushion to protect the wearers feet."
   icon_state = "deldboots"
   item_state = "deldboots"
+
+//PILGRIM SHIT BELOW
+
+/obj/item/clothing/shoes/jackboots/vigilante
+	name = "shining shoes"
+	desc = "A shined pair of shoes"
+	icon_state = "vigilante_boots"
+	item_state = "vigilante_boots"
+	siemens_coefficient = 0.7
+	item_flags = ITEM_FLAG_NOSLIP
+
+/obj/item/clothing/shoes/jackboots/prac_boots
+	name = "practioner boots"
+	desc = "Squish."
+	icon_state = "prac_boots"
+	item_state = "prac_boots"
+
+/obj/item/clothing/shoes/jackboots/pilgrim_boots
+	name = "pilgrim boots"
+	desc = "The black leather boots of a pilgrim, somehow they manage to both fit and don't fit on you, they feel comfortable, can hold a knife."
+	icon_state = "prac_boots"
+	item_state = "prac_boots"
+
+/obj/item/clothing/shoes/jackboots/inquisitor
+	name = "noble boots"
+	desc = "A pair of high quality black leather boots for stomping heretics faces in."
+	icon_state = "noble-boots"
+	item_state = "noble-boots"
+	item_flags = ITEM_FLAG_NOSLIP
+
+/obj/item/clothing/shoes/jackboots/noble
+	name = "noble boots"
+	desc = "A pair of high quality black leather boots for kicking the filthy peasants and participating in questionable hedonistic activities at the chambers."
+	icon_state = "noble-boots"
+	item_state = "noble-boots"
+
+/obj/item/clothing/shoes/jackboots/mordian
+	name = "Mordian Dress Boots"
+	desc = "A pair of high quality black leather boots for parades and drilling"
+	icon_state = "noble-boots"
+	item_state = "noble-boots"
+
+/obj/item/clothing/shoes/jackboots/noble/rt
+	name = "rogue boots"
+	desc = "A pair of high quality black leather boots for kicking the filthy peasants and participating in questionable hedonistic activities at the chambers."
+	icon_state = "Boots"
+	item_state = "Boots"
+
+/obj/item/clothing/shoes/scion
+	name = "Tempestus Scion Boots"
+	desc = "Armoured boots belonging to the elite Tempestus Scions."
+	icon_state = "ScionBoots"
+	item_state = "ScionBoots"
+	force = 5
+	armor = list(melee = 10, bullet = 20, laser = 20,energy = 25, bomb = 50, bio = 100, rad = 0)
+	item_flags = ITEM_FLAG_NOSLIP
+	siemens_coefficient = 0.6
+
+
+// OTHER
+/obj/item/clothing/shoes/jackboots/grot
+	name = "Small shoes"
+	desc = "Handmade small shoes"
+	icon_state = "Grotshoes"
+	item_state = "Grotshoes"
+
+/obj/item/clothing/shoes/jackboots/grot/grc
+	name = "Small combat boots"
+	desc = "A smaller version of the jackboots issued to imperium forces."
+	icon_state = "GRCboots"
+	item_state = "GRCboots"
+
+/obj/item/clothing/shoes/necron
+	name = "Necron Feet"
+	desc = "A set of heavy duty necrodermis feet, designed for all terrains."
+	icon_state = null
+	item_state = null
+	item_flags = ITEM_FLAG_NOSLIP
+	siemens_coefficient = 0
+	unacidable = 1
+	canremove = 0
+	armor = list(melee = 25, bullet = 25, laser = 25,energy = 25, bomb = 50, bio = 100, rad = 100)
+
+
+/*
+/obj/item/clothing/shoes/jackboots/ogryn
+	name = "Ogryn Combat Boots"
+	desc = "Giant slabs of leather and steel hiding Emperor knows what."
+	icon = 'icons/mob/32x40/feet.dmi'
+	item_icons = list(slot_shoes_str = 'icons/mob/32x40/feet.dmi')
+	icon_state = "ogryn_boots"
+	item_state = "ogryn_boots"
+	armor = list(melee = 10, bullet = 25, laser = 20, energy = 35, bomb = 35, bio = 0, rad = 0)
+	//no more ogryn foot pics, remove the 3 lines below to add ogryn foot pics
+	unacidable = 1
+	item_flags = ITEM_FLAG_NOSLIP
+	canremove = TRUE
+
+//giant knife
+/obj/item/clothing/shoes/jackboots/ogryn/New()
+	..()
+	knife = new /obj/item/melee/sword/combat_knife/catachan/giant
+	update_icon()*/

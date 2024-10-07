@@ -24,7 +24,7 @@ BAN_LEGACY_SYSTEM
 #USE_AGE_RESTRICTION_FOR_JOBS
 
 ## Unhash this entry to set a number of days since first connection below which a new or returning player will not be allowed to successfully connect to the server.
-MINIMUM_PLAYER_AGE 7
+#MINIMUM_PLAYER_AGE 7
 
 
 ## Unhash this entry to have certain antag roles require your account to be at least a certain number of days old for round start and auto-spawn selection.

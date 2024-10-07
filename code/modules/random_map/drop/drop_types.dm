@@ -24,7 +24,7 @@ var/global/list/datum/supply_drop_loot/supply_drop
 	return name
 
 /datum/supply_drop_loot/supermatter
-	name = "Supermatter"
+	name = "Volkite"
 /datum/supply_drop_loot/supermatter/New()
 	..()
 	contents = list(/obj/machinery/power/supermatter)

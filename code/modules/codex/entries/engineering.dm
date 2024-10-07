@@ -2,9 +2,9 @@
 	associated_paths = list(/obj/machinery/power/supermatter)
 	mechanics_text = "When energized by a laser (or something hitting it), it emits radiation and heat.  If the heat reaches above 7000 kelvin, it will send an alert and start taking damage. \
 	After integrity falls to zero percent, it will delaminate, causing a massive explosion, station-wide radiation spikes, and hallucinations. \
-	Supermatter reacts badly to oxygen in the atmosphere.  It'll also heat up really quick if it is in vacuum.<br>\
+	Volkite reacts badly to oxygen in the atmosphere.  It'll also heat up really quick if it is in vacuum.<br>\
 	<br>\
-	Supermatter cores are extremely dangerous to be close to, and requires protection to handle properly.  The protection you will need is:<br>\
+	Volkite cores are extremely dangerous to be close to, and requires protection to handle properly.  The protection you will need is:<br>\
 	Optical meson scanners on your eyes, to prevent hallucinations when looking at the supermatter.<br>\
 	Radiation helmet and suit, as the supermatter is radioactive.<br>\
 	<br>\

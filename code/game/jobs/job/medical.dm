@@ -1,4 +1,3 @@
-/*
 /datum/job/magos_biologis
 	title = "Magos Biologis"
 	head_position = 1
@@ -95,5 +94,3 @@
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_eva, access_maint_tunnels, access_external_airlocks, access_psychiatrist)
 	alt_titles = list("Emergency Medical Technician" = /singleton/hierarchy/outfit/job/medical/paramedic/emt)
 	outfit_type = /singleton/hierarchy/outfit/job/medical/paramedic
-
-*/

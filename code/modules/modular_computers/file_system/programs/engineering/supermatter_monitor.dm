@@ -4,7 +4,7 @@
 
 /datum/computer_file/program/supermatter_monitor
 	filename = "supmon"
-	filedesc = "Supermatter Monitoring"
+	filedesc = "Volkite Monitoring"
 	nanomodule_path = /datum/nano_module/supermatter_monitor
 	program_icon_state = "smmon_0"
 	program_key_state = "tech_key"
@@ -29,7 +29,7 @@
 		update_computer_icon()
 
 /datum/nano_module/supermatter_monitor
-	name = "Supermatter monitor"
+	name = "Volkite monitor"
 	var/list/supermatters
 	var/obj/machinery/power/supermatter/active = null		// Currently selected supermatter crystal.
 	var/screen = SM_MONITOR_SCREEN_MAIN // Which screen the monitor is currently on
@@ -154,7 +154,7 @@
 
 	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)
 	if (!ui)
-		ui = new(user, src, ui_key, "supermatter_monitor.tmpl", "Supermatter Monitoring", 600, 400, state = state)
+		ui = new(user, src, ui_key, "supermatter_monitor.tmpl", "Volkite Monitoring", 600, 400, state = state)
 		if(host.update_layout())
 			ui.auto_update_layout = 1
 		ui.set_initial_data(data)

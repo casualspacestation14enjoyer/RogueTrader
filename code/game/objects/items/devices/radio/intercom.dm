@@ -41,7 +41,7 @@
 		"Hailing" = 1
 	)
 	if (use_common)
-		channels += list("Common" = 1)
+		channels += list("Vox" = 1)
 
 	. = ..()
 
