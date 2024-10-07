@@ -61,7 +61,7 @@
 	icon_state = "eng_cypherkey"
 	channels = list("Mechanicus" =1, "Machinarum" = 1)
 
-/obj/item/device/encryptionkey/headset_eng
+/obj/item/device/encryptionkey/headset_eng_bond
 	name = "engineering radio encryption key"
 	icon_state = "eng_cypherkey"
 	channels = list("Machinarum" = 1)
