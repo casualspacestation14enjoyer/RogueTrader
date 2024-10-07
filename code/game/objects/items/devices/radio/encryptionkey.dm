@@ -59,7 +59,12 @@
 /obj/item/device/encryptionkey/headset_eng
 	name = "engineering radio encryption key"
 	icon_state = "eng_cypherkey"
-	channels = list("Mechanicus" = 1)
+	channels = list("Mechanicus" =1, "Machinarum" = 1)
+
+/obj/item/device/encryptionkey/headset_eng
+	name = "engineering radio encryption key"
+	icon_state = "eng_cypherkey"
+	channels = list("Machinarum" = 1)
 
 /obj/item/device/encryptionkey/headset_rob
 	name = "robotics radio encryption key"
@@ -114,12 +119,12 @@
 /obj/item/device/encryptionkey/heads/ce
 	name = "magos explorator's encryption key"
 	icon_state = "ce_cypherkey"
-	channels = list("Mechanicus" = 1, "Command" = 1, "Hailing" = 1)
+	channels = list("Machinarum" = 1, "Mechanicus" = 1, "Command" = 1, "Hailing" = 1)
 
 /obj/item/device/encryptionkey/heads/cmo
 	name = "chief medical officer's encryption key"
 	icon_state = "cmo_cypherkey"
-	channels = list("Medicae" = 1, "Command" = 1, "Hailing" = 1)
+	channels = list("Machinarum" = 1, "Medicae" = 1, "Command" = 1, "Hailing" = 1)
 
 /obj/item/device/encryptionkey/heads/hop
 	name = "head of personnel's encryption key"

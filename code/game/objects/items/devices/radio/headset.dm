@@ -143,7 +143,7 @@
 	name = "engineering bowman headset"
 	icon_state = "eng_headset_alt"
 	item_state = "eng_headset_alt"
-	ks1type = /obj/item/device/encryptionkey/headset_eng
+	ks1type = /obj/item/device/encryptionkey/headset_eng_bond
 
 /obj/item/device/radio/headset/headset_rob
 	name = "robotics vox headset"
