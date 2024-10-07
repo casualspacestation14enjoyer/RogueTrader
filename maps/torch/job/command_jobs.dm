@@ -5,6 +5,8 @@
 	economic_power = 16
 	minimum_character_age = list(SPECIES_HUMAN = 40)
 	ideal_character_age = 50
+	total_positions = 1
+	spawn_positions = 1
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/CO
 	allowed_branches = list(
 		/datum/mil_branch/civilian
@@ -34,8 +36,7 @@
 	return "You are the Rogue Trader, commander of the Dauntless, an Imperial corvette exploratory vessel. Tasked with navigating the uncharted terror -- the Ghoul Stars, you lead a diverse retinue representing many factions, each serving a crucial role aboard your ship. While you hold ultimate authority, you work closely with your Magos Explorator, whose resources and personnel are vital to your survival in this cursed region. Rely on your officers to manage the deck scum, explore forgotten worlds, and broker alliances or hostilities with the human, alien, and worse. The emperor protects..."
 
 /datum/job/rogue_trader/post_equip_rank(mob/person, alt_title)
-	var/sound/announce_sound = (GAME_STATE <= RUNLEVEL_SETUP)? null : sound('sound/misc/boatswain.ogg', volume=20)
-	captain_announcement.Announce("All hands, [alt_title || title] [person.real_name] on deck!", new_sound = announce_sound)
+	captain_announcement.Announce("All crew, [alt_title || title] [person.real_name] on deck!")
 	..()
 
 /datum/job/seneschal
@@ -43,6 +44,8 @@
 	supervisors = "the Rogue Trader and your own ambition."
 	department = "Command"
 	department_flag = COM
+	total_positions = 1
+	spawn_positions = 1
 	minimal_player_age = 14
 	economic_power = 14
 	minimum_character_age = list(SPECIES_HUMAN = 35)
@@ -137,121 +140,7 @@
 /datum/job/rd/get_description_blurb()
 	return "You are the Chief Science Officer. You are responsible for the research department. You handle the science aspects of the project and liase with the imperial interests of the Explorator Organisation. Make sure science gets done, do some yourself, and get your scientists on away missions to find things to benefit the project. Advise the CO on science matters."
 
-/datum/job/magos_biologis
-	title = "Magos Biologis"
-	supervisors = "the Rogue Trader and when required, Magos Explorator."
-	economic_power = 14
-	minimal_player_age = 14
-	minimum_character_age = list(SPECIES_HUMAN = 25)
-	ideal_character_age = 48
-	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/cmo
-	allowed_branches = list(
-		/datum/mil_branch/civilian
-	)
-	allowed_ranks = list(
-		/datum/mil_rank/civ/civ
-	)
-	skill_points = 15
-	min_skill = list(
-		SKILL_BUREAUCRACY = SKILL_TRAINED,
-		SKILL_MEDICAL = SKILL_MASTER,
-		SKILL_ANATOMY = SKILL_MASTER,
-		SKILL_CHEMISTRY = SKILL_MASTER,
-		SKILL_DEVICES = SKILL_EXPERIENCED,
-		SKILL_COMBAT = SKILL_TRAINED,
-		SKILL_WEAPONS = SKILL_TRAINED,
-		SKILL_FORENSICS = SKILL_TRAINED,
-		SKILL_SCIENCE = SKILL_TRAINED,
-		SKILL_MECH = SKILL_TRAINED,
-		SKILL_COMPUTER = SKILL_TRAINED,
-		SKILL_EVA = SKILL_TRAINED,
-		SKILL_CONSTRUCTION = SKILL_TRAINED,
-		SKILL_ELECTRICAL = SKILL_TRAINED
-	)
 
-	access = list(
-		access_medical, access_morgue, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
-		access_teleporter, access_eva, access_bridge, access_heads,
-		access_chapel_office, access_crematorium, access_chemistry, access_virology, access_aquila,
-		access_cmo, access_surgery, access_RC_announce, access_keycard_auth, access_psychiatrist,
-		access_medical_equip, access_solgov_crew, access_senmed, access_hangar, access_torch_fax, access_radio_comm,
-		access_radio_med
-	)
-
-	software_on_spawn = list(/datum/computer_file/program/comm,
-							 /datum/computer_file/program/suit_sensors,
-							 /datum/computer_file/program/camera_monitor,
-							 /datum/computer_file/program/reports)
-
-/datum/job/magos_biologis/get_description_blurb()
-	return "As the Magos Biologis, you are part of the Rogue Trader's retinue, operating beyond the constraints of the Mechanicus. You manage the biological research and medical efforts aboard the vessel, overseeing Skitarii and Medicae personnel alike. Your duty is to ensure your medicae staff are prepared for surgery, treatment, and field response, and that every biological specimen or anomaly is studied with ruthless efficiency. You are expected to lead in matters of biology and medicine, stepping in as surgeon or advisor when necessary, always furthering the quest for knowledge and mastery over the flesh."
-
-/datum/job/magos_explorator
-	title = "Magos Explorator"
-	supervisors = "the Mechanicus and at times the Rogue Trader"
-	economic_power = 12
-	minimum_character_age = list(SPECIES_HUMAN = 31)
-	ideal_character_age = 40
-	minimal_player_age = 14
-	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/chief_engineer
-	allowed_branches = list(
-		/datum/mil_branch/civilian
-	)
-	allowed_ranks = list(
-		/datum/mil_rank/civ/civ
-	)
-	skill_points = 8
-	min_skill = list(
-		SKILL_BUREAUCRACY  = SKILL_TRAINED,
-		SKILL_COMBAT = SKILL_TRAINED,
-		SKILL_WEAPONS = SKILL_EXPERIENCED,
-		SKILL_FORENSICS = SKILL_TRAINED,
-		SKILL_SCIENCE = SKILL_EXPERIENCED,
-		SKILL_DEVICES = SKILL_TRAINED,
-		SKILL_MECH = SKILL_TRAINED,
-		SKILL_PILOT = SKILL_TRAINED,
-		SKILL_COMPUTER = SKILL_EXPERIENCED,
-		SKILL_EVA = SKILL_TRAINED,
-		SKILL_CONSTRUCTION = SKILL_EXPERIENCED,
-		SKILL_ELECTRICAL = SKILL_EXPERIENCED,
-		SKILL_ATMOS = SKILL_EXPERIENCED,
-		SKILL_MEDICAL = SKILL_TRAINED,
-		SKILL_CHEMISTRY = SKILL_TRAINED,
-		SKILL_ANATOMY = SKILL_TRAINED,
-		SKILL_ENGINES = SKILL_EXPERIENCED
-	)
-
-	access = list(
-		access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
-		access_ai_upload, access_teleporter, access_eva, access_bridge, access_heads,
-		access_tech_storage, access_robotics, access_atmospherics, access_janitor, access_construction,
-		access_network, access_network_admin, access_ce, access_RC_announce, access_keycard_auth, access_tcomsat,
-		access_solgov_crew, access_aquila, access_seneng, access_hangar, access_torch_fax, access_torch_helm, access_radio_comm,
-		access_radio_eng
-		)
-
-	software_on_spawn = list(/datum/computer_file/program/comm,
-							 /datum/computer_file/program/ntnetmonitor,
-							 /datum/computer_file/program/power_monitor,
-							 /datum/computer_file/program/supermatter_monitor,
-							 /datum/computer_file/program/alarm_monitor,
-							 /datum/computer_file/program/atmos_control,
-							 /datum/computer_file/program/rcon_console,
-							 /datum/computer_file/program/camera_monitor,
-							 /datum/computer_file/program/shields_monitor,
-							 /datum/computer_file/program/reports)
-
-/datum/job/magos_explorator/equip(mob/living/carbon/human/H)
-	. = ..()
-	var/current_name = H.real_name
-	..()
-	H.fully_replace_character_name("Magos [current_name]")
-	H.say(":e Memory cache integrity at 87%... Motive force appeased. Security apparatis functional. Non organics uncorrupted.")
-	to_chat(H, "<span class='notice'><b><font size=3>As the Magos Explorator, you manage the technology and exploration efforts aboard The Dauntless, working in partnership with the Rogue Trader. Your duties are divided between maintaining the sacred machinery of the ship and pursuing the discovery of lost knowledge and power across the stars. Overseeing tech-priests, bondsmen, menials, slaves, and Skitarii, you ensure their work serves the dual purpose of keeping the ship operational and advancing the Mechanicum’s quest for knowledge, all while respecting the Rogue Trader’s command.</font></b></span>")
-
-
-/datum/job/magos_explorator/get_description_blurb()
-	return "As the Magos Explorator, you manage the technology and exploration efforts aboard The Dauntless, working in partnership with the Rogue Trader. Your duties are divided between maintaining the sacred machinery of the ship and pursuing the discovery of lost knowledge and power across the stars. Overseeing tech-priests, bondsmen, menials, slaves, and Skitarii, you ensure their work serves the dual purpose of keeping the ship operational and advancing the Mechanicum’s quest for knowledge, all while respecting the Rogue Trader’s command."
 
 /datum/job/guard_captain
 	title = "Cadian Captain"
@@ -261,8 +150,8 @@
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	ideal_character_age = 35
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/cos
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	allowed_branches = list(
 		/datum/mil_branch/civilian
 	)

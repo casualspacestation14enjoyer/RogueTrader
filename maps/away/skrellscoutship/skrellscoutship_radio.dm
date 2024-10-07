@@ -37,4 +37,4 @@
 
 /obj/item/device/radio/headset/map_preset/skrellscoutship/iccgn
 	name = "\improper Tau radio encryption key"
-	channels = list("Tau Hound" = 1)
+	channels = list("Tau Empire" = 1)

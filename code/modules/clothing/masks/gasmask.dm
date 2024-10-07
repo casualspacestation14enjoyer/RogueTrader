@@ -57,7 +57,7 @@
 
 	return filtered
 
-/obj/item/clothing/mask/gas/radical
+/obj/item/clothing/mask/gas/void
 	name = "gas mask"
 	desc = "A face-covering mask that can be connected to an air supply. Filters harmful gases from the air. This one has additional filters to remove radioactive particles."
 	icon_state = "gas_mask"

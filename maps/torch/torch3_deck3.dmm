@@ -5922,7 +5922,7 @@
 /obj/structure/table/steel,
 /obj/machinery/requests_console{
 	announcementConsole = 1;
-	department = "Militarum";
+	department = "Security";
 	departmentType = 5;
 	pixel_y = -32
 	},

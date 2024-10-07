@@ -139,24 +139,24 @@ var/global/datum/announcement/minor/minor_announcement = new(new_sound = 'sound/
 	// During red alert all jobs are announced on main frequency.
 	var/singleton/security_state/security_state = GET_SINGLETON(GLOB.using_map.security_state)
 	if (security_state.current_security_level_is_same_or_higher_than(security_state.high_security_level))
-		return "Common"
+		return "Vox"
 
 	if(job.department_flag & (COM | CIV | MSC))
-		return "Common"
+		return "Vox"
 	if(job.department_flag & SUP)
-		return "Supply"
+		return "Machinarum"
 	if(job.department_flag & SPT)
 		return "Command"
 	if(job.department_flag & SEC)
-		return "Security"
+		return "Militarum"
 	if(job.department_flag & ENG)
-		return "Engineering"
+		return "Mechanicus"
 	if(job.department_flag & MED)
-		return "Medical"
+		return "Medicae"
 	if(job.department_flag & SCI)
-		return "Science"
+		return "Biologis"
 	if(job.department_flag & SRV)
 		return "Service"
 	if(job.department_flag & EXP)
-		return "Exploration"
-	return "Common"
+		return "Explorator"
+	return "Vox"

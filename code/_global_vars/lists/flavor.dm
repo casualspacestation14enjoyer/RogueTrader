@@ -26,7 +26,7 @@ GLOBAL_LIST_INIT(scarySounds, list(
 GLOBAL_LIST_EMPTY(tagger_locations)
 
 GLOBAL_LIST_INIT(station_prefixes, list("", "Imperium", "Heretical", "Cuban",
-	"Psychic", "Elegant", "Common", "Uncommon", "Rare", "Unique",
+	"Psychic", "Elegant", "Vox", "Uncommon", "Rare", "Unique",
 	"Houseruled", "Religious", "Atheist", "Traditional", "Houseruled",
 	"Mad", "Super", "Ultra", "Secret", "Top Secret", "Deep", "Death",
 	"Zybourne", "Central", "Main", "Government", "Uoi", "Fat",

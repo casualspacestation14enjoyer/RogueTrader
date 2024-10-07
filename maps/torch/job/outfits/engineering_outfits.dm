@@ -17,16 +17,11 @@
 	l_ear = /obj/item/device/radio/headset/headset_mechanicus
 	l_hand = null
 	gloves = /obj/item/clothing/gloves/thick/swat/techpriest
-	id_types = /obj/item/card/id/torch/crew/engineering/senior
+	id_types = list(/obj/item/card/id/torch/crew/engineering/senior)
 	pda_type = /obj/item/modular_computer/pda/heads/ce
 	pda_slot = slot_l_store
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest
-	backpack_contents = list(/obj/item/pen = 1,
-		/obj/item/gun/energy/lasgun/laspistol/accatran = 1
-		// /obj/item/book/manual/ripley_build_and_repair = 1,
-		// /obj/item/book/manual/engineering_construction = 1,
-		// /obj/item/paper/administratum/mech = 1,
-		)
+	backpack_contents = list(/obj/item/pen = 1, /obj/item/gun/energy/lasgun/laspistol/accatran = 1)
 
 /singleton/hierarchy/outfit/job/torch/crew/engineering/senior_engineer/fleet
 	name = OUTFIT_JOB_NAME("Senior Engineer - Fleet")
@@ -35,10 +30,41 @@
 
 /singleton/hierarchy/outfit/job/torch/crew/engineering/engineer
 	name = OUTFIT_JOB_NAME("Enginseer")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/engineering
-	shoes = /obj/item/clothing/shoes/dutyboots
+	head = null
+	mask = /obj/item/clothing/mask/gas/techpriest
+	glasses = /obj/item/clothing/glasses/science/techpriest
+	belt = /obj/item/storage/belt/utility/full
+	suit = /obj/item/clothing/suit/armor/grim/mechanicus/techpriest
+	shoes = /obj/item/clothing/shoes/jackboots/skitshoes/techpriest
+	uniform = /obj/item/clothing/under/rank/engineer
+	r_pocket = null
+	l_ear = /obj/item/device/radio/headset/headset_mechanicus
+	l_hand = null
+	gloves = /obj/item/clothing/gloves/thick/swat/techpriest
 	id_types = list(/obj/item/card/id/torch/crew/engineering)
 	pda_type = /obj/item/modular_computer/pda/engineering
+	pda_slot = slot_l_store
+	back = /obj/item/storage/backpack/satchel/warfare/techpriest
+	backpack_contents = list(/obj/item/pen = 1, /obj/item/gun/energy/lasgun/laspistol = 1)
+
+/singleton/hierarchy/outfit/job/torch/crew/engineering/bondsman
+	name = OUTFIT_JOB_NAME("Bondsman")
+	head = /obj/item/clothing/head/hardhat/bondsman
+	mask = /obj/item/clothing/mask/gas/void
+	glasses = /obj/item/clothing/glasses/night
+	belt = /obj/item/storage/belt/utility/full
+	suit = /obj/item/clothing/suit/armor/grim/storage/hooded/mechanicus/bondsman
+	shoes = /obj/item/clothing/shoes/jackboots/pilgrim_boots
+	uniform = /obj/item/clothing/under/rank/engineer
+	r_pocket = null
+	l_ear = /obj/item/device/radio/headset/headset_mechanicus
+	l_hand = null
+	gloves = /obj/item/clothing/gloves/thick/duty
+	id_types = list(/obj/item/card/id/torch/crew/engineering)
+	pda_type = /obj/item/modular_computer/pda/engineering
+	pda_slot = slot_l_store
+	back = /obj/item/storage/backpack/satchel/flat
+	backpack_contents = list(/obj/item/pen = 1, /obj/item/material/twohanded/ravenor/knife/trench)
 
 /singleton/hierarchy/outfit/job/torch/crew/engineering/engineer/fleet
 	name = OUTFIT_JOB_NAME("Engineer - Fleet")

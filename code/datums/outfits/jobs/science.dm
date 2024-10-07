@@ -34,7 +34,3 @@
 	id_types = list(/obj/item/card/id/science/roboticist)
 	pda_slot = slot_r_store
 	pda_type = /obj/item/modular_computer/pda/roboticist
-
-/singleton/hierarchy/outfit/job/science/roboticist/New()
-	..()
-	backpack_overrides.Cut()

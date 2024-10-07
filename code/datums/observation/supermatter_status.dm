@@ -1,4 +1,4 @@
-//	Observer Pattern Implementation: Supermatter status changed
+//	Observer Pattern Implementation: Volkite status changed
 //		Registration type: /datum/supermatter (register for the global event only)
 //
 //		Raised when: After a supermatter shard changes status
@@ -10,5 +10,5 @@
 GLOBAL_DATUM_INIT(supermatter_status, /singleton/observ/supermatter_status, new)
 
 /singleton/observ/supermatter_status
-	name = "Supermatter status changed"
+	name = "Volkite status changed"
 	expected_type = /obj/machinery/power/supermatter

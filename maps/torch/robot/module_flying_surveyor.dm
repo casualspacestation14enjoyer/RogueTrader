@@ -3,7 +3,7 @@
 	display_name = "Surveyor"
 	channels = list(
 		"Science" = TRUE,
-		"Exploration" = TRUE
+		"Explorator" = TRUE
 	)
 	networks = list(NETWORK_RESEARCH)
 	sprites = list(

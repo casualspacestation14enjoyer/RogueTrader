@@ -192,7 +192,7 @@
 		)
 		if (use_common)
 			freq_listening += PUB_FREQ
-			channel_tags += list(list(PUB_FREQ, "Common", COMMS_COLOR_COMMON))
+			channel_tags += list(list(PUB_FREQ, "Vox", COMMS_COLOR_COMMON))
 		autolinkers = list(
 			"[name_lower]_server"
 		)
@@ -205,19 +205,19 @@
 /obj/machinery/telecomms/server/presets/science
 	id = "Science Server"
 	freq_listening = list(SCI_FREQ)
-	channel_tags = list(list(SCI_FREQ, "Science", COMMS_COLOR_SCIENCE))
+	channel_tags = list(list(SCI_FREQ, "Biologis", COMMS_COLOR_SCIENCE))
 	autolinkers = list("science")
 
 /obj/machinery/telecomms/server/presets/medical
 	id = "Medical Server"
 	freq_listening = list(MED_FREQ)
-	channel_tags = list(list(MED_FREQ, "Medical", COMMS_COLOR_MEDICAL))
+	channel_tags = list(list(MED_FREQ, "Medicae", COMMS_COLOR_MEDICAL))
 	autolinkers = list("medical")
 
 /obj/machinery/telecomms/server/presets/supply
 	id = "Supply Server"
 	freq_listening = list(SUP_FREQ)
-	channel_tags = list(list(SUP_FREQ, "Supply", COMMS_COLOR_SUPPLY))
+	channel_tags = list(list(SUP_FREQ, "Machinarum", COMMS_COLOR_SUPPLY))
 	autolinkers = list("supply")
 
 /obj/machinery/telecomms/server/presets/service
@@ -230,7 +230,7 @@
 	id = "Common Server"
 	freq_listening = list(PUB_FREQ, AI_FREQ, ENT_FREQ, MED_I_FREQ, SEC_I_FREQ, HAIL_FREQ) // AI Private, Common, and Departmental Intercomms
 	channel_tags = list(
-		list(PUB_FREQ, "Common", COMMS_COLOR_COMMON),
+		list(PUB_FREQ, "Vox", COMMS_COLOR_COMMON),
 		list(AI_FREQ, "AI Private", COMMS_COLOR_AI),
 		list(ENT_FREQ, "Entertainment", COMMS_COLOR_ENTERTAIN),
 		list(MED_I_FREQ, "Medical (I)", COMMS_COLOR_MEDICAL_I),
@@ -256,13 +256,13 @@
 /obj/machinery/telecomms/server/presets/engineering
 	id = "Engineering Server"
 	freq_listening = list(ENG_FREQ)
-	channel_tags = list(list(ENG_FREQ, "Engineering", COMMS_COLOR_ENGINEER))
+	channel_tags = list(list(ENG_FREQ, "Mechanicus", COMMS_COLOR_ENGINEER))
 	autolinkers = list("engineering")
 
 /obj/machinery/telecomms/server/presets/security
 	id = "Security Server"
 	freq_listening = list(SEC_FREQ)
-	channel_tags = list(list(SEC_FREQ, "Security", COMMS_COLOR_SECURITY))
+	channel_tags = list(list(SEC_FREQ, "Militarum", COMMS_COLOR_SECURITY))
 	autolinkers = list("security")
 
 /obj/machinery/telecomms/server/presets/centcomm

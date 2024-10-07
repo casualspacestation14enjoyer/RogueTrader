@@ -4,7 +4,7 @@
 	l_ear = /obj/item/device/radio/headset/heads/bridge
 
 /singleton/hierarchy/outfit/job/torch/crew/command/CO
-	name = OUTFIT_JOB_NAME("Commanding Officer")
+	name = OUTFIT_JOB_NAME("Rogue Trader")
 	glasses = /obj/item/clothing/glasses/sunglasses
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/command
 	l_ear = /obj/item/device/radio/headset/heads/bridge
@@ -14,7 +14,7 @@
 	pda_type = /obj/item/modular_computer/pda/captain
 
 /singleton/hierarchy/outfit/job/torch/crew/command/XO
-	name = OUTFIT_JOB_NAME("Executive Officer")
+	name = OUTFIT_JOB_NAME("Seneschal")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/command
 	l_ear = /obj/item/device/radio/headset/heads/bridge
 	shoes = /obj/item/clothing/shoes/dutyboots
@@ -23,7 +23,6 @@
 
 /singleton/hierarchy/outfit/job/torch/crew/command/cmo
 	name = OUTFIT_JOB_NAME("Magos Biologis")
-	flags = OUTFIT_FLAGS_JOB_DEFAULT | OUTFIT_EXTENDED_SURVIVAL
 	head = /obj/item/clothing/head/hardhat/techpriest/biologis
 	mask = /obj/item/clothing/mask/gas/techpriest/magos
 	glasses = /obj/item/clothing/glasses/science/magos
@@ -35,20 +34,13 @@
 	l_ear = /obj/item/device/radio/headset/heads/bridge
 	l_hand = null
 	gloves = /obj/item/clothing/gloves/thick/swat/techpriest
-	id_types = /obj/item/card/id/torch/silver/medical
+	id_types = list(/obj/item/card/id/torch/silver/medical)
 	pda_type = /obj/item/modular_computer/pda/heads/cmo
-	pda_slot = slot_l_store
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest
-	backpack_contents = list(/obj/item/pen = 1,
-		/obj/item/gun/energy/lasgun/laspistol/hellpistol = 1
-		// /obj/item/book/manual/ripley_build_and_repair = 1,
-		// /obj/item/book/manual/engineering_construction = 1,
-		// /obj/item/paper/administratum/mech = 1,
-		)
+	backpack_contents = list(/obj/item/pen = 1, /obj/item/gun/energy/lasgun/laspistol/hellpistol = 1)
 
 /singleton/hierarchy/outfit/job/torch/crew/command/chief_engineer
 	name = OUTFIT_JOB_NAME("Magos Explorator")
-	flags = OUTFIT_FLAGS_JOB_DEFAULT | OUTFIT_EXTENDED_SURVIVAL
 	head = /obj/item/clothing/head/hardhat/techpriest/magos
 	mask = /obj/item/clothing/mask/gas/techpriest/magos
 	glasses = /obj/item/clothing/glasses/science/magos
@@ -60,16 +52,10 @@
 	l_ear = /obj/item/device/radio/headset/heads/ce
 	l_hand = null
 	gloves = /obj/item/clothing/gloves/thick/swat/techpriest
-	id_types = /obj/item/card/id/torch/silver/engineering
+	id_types = list(/obj/item/card/id/torch/silver/engineering)
 	pda_type = /obj/item/modular_computer/pda/heads/ce
-	pda_slot = slot_l_store
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest
-	backpack_contents = list(/obj/item/pen = 1,
-	/obj/item/gun/energy/plasma/pistol/mechanicus = 1
-		// /obj/item/book/manual/ripley_build_and_repair = 1,
-		// /obj/item/book/manual/engineering_construction = 1,
-		// /obj/item/paper/administratum/mech = 1,
-		)
+	backpack_contents = list(/obj/item/pen = 1, /obj/item/gun/energy/plasma/pistol/mechanicus = 1)
 
 /singleton/hierarchy/outfit/job/torch/crew/command/chief_engineer/fleet
 	name = OUTFIT_JOB_NAME("Chief Engineer - Fleet")

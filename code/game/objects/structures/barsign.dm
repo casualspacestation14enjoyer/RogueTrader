@@ -20,7 +20,7 @@
 		if("Information Action Ratio")
 			to_chat(user, "It's the place to go!")
 		if("Three Starboard")
-			to_chat(user, "It says 'Three Starboard' alongside a crude rendition of the SEV Torch- who makes this stuff?")
+			to_chat(user, "It says 'Three Starboard' alongside a crude rendition of the Dauntless who makes this stuff?")
 		if("The Clowns Head")
 			to_chat(user, "A rather catching portrait of what you can only presume to be the idea of a madman... A Clown Queen...")
 		if("The Cranky Goldfish")

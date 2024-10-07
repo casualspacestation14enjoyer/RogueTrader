@@ -342,10 +342,10 @@
 
 
 /obj/item/book/manual/supermatter_engine
-	name = "Supermatter Engine Operating Manual"
+	name = "Volkite Engine Operating Manual"
 	icon_state = "bookSupermatter"
 	author = "Central Engineering Division"
-	title = "Supermatter Engine Operating Manual"
+	title = "Volkite Engine Operating Manual"
 	url = "Supermatter_Engine"
 
 /obj/item/book/manual/rust_engine

@@ -1,3 +1,57 @@
+/datum/job/magos_biologis
+	title = "Magos Biologis"
+	supervisors = "the Rogue Trader and when required, Magos Explorator."
+	economic_power = 14
+	minimal_player_age = 14
+	minimum_character_age = list(SPECIES_HUMAN = 25)
+	ideal_character_age = 48
+	total_positions = 1
+	spawn_positions = 1
+	department = "Medical"
+	department_flag = MED
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/cmo
+	allowed_branches = list(
+		/datum/mil_branch/civilian
+	)
+	allowed_ranks = list(
+		/datum/mil_rank/civ/civ
+	)
+	skill_points = 15
+	min_skill = list(
+		SKILL_BUREAUCRACY = SKILL_TRAINED,
+		SKILL_MEDICAL = SKILL_MASTER,
+		SKILL_ANATOMY = SKILL_MASTER,
+		SKILL_CHEMISTRY = SKILL_MASTER,
+		SKILL_DEVICES = SKILL_EXPERIENCED,
+		SKILL_COMBAT = SKILL_TRAINED,
+		SKILL_WEAPONS = SKILL_TRAINED,
+		SKILL_FORENSICS = SKILL_TRAINED,
+		SKILL_SCIENCE = SKILL_TRAINED,
+		SKILL_MECH = SKILL_TRAINED,
+		SKILL_COMPUTER = SKILL_TRAINED,
+		SKILL_EVA = SKILL_TRAINED,
+		SKILL_CONSTRUCTION = SKILL_TRAINED,
+		SKILL_ELECTRICAL = SKILL_TRAINED
+	)
+
+	access = list(
+		access_medical, access_morgue, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
+		access_teleporter, access_eva, access_bridge, access_heads,
+		access_chapel_office, access_crematorium, access_chemistry, access_virology, access_aquila,
+		access_cmo, access_surgery, access_RC_announce, access_keycard_auth, access_psychiatrist,
+		access_medical_equip, access_solgov_crew, access_senmed, access_hangar, access_torch_fax, access_radio_comm,
+		access_radio_med
+	)
+
+	software_on_spawn = list(/datum/computer_file/program/comm,
+							 /datum/computer_file/program/suit_sensors,
+							 /datum/computer_file/program/camera_monitor,
+							 /datum/computer_file/program/reports)
+
+/datum/job/magos_biologis/get_description_blurb()
+	return "As the Magos Biologis, you are part of the Rogue Trader's retinue, operating beyond the constraints of the Mechanicus. You manage the biological research and medical efforts aboard the vessel, overseeing Skitarii and Medicae personnel alike. Your duty is to ensure your medicae staff are prepared for surgery, treatment, and field response, and that every biological specimen or anomaly is studied with ruthless efficiency. You are expected to lead in matters of biology and medicine, stepping in as surgeon or advisor when necessary, always furthering the quest for knowledge and mastery over the flesh."
+
+
 /datum/job/chirugeon
 	title = "Chirugeon" // Disabled for now -- Hospitaller is acting as Chirugeon unless we really need one later.
 	department = "Medical"

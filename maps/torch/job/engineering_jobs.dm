@@ -1,3 +1,71 @@
+/datum/job/magos_explorator
+	title = "Magos Explorator"
+	supervisors = "the Mechanicus and at times the Rogue Trader"
+	department = "Mechanicus"
+	department_flag = ENG
+	economic_power = 12
+	minimum_character_age = list(SPECIES_HUMAN = 31)
+	ideal_character_age = 40
+	minimal_player_age = 14
+	total_positions = 1
+	spawn_positions = 1
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/chief_engineer
+	allowed_branches = list(
+		/datum/mil_branch/civilian
+	)
+	allowed_ranks = list(
+		/datum/mil_rank/civ/civ
+	)
+	skill_points = 8
+	min_skill = list(
+		SKILL_BUREAUCRACY  = SKILL_TRAINED,
+		SKILL_COMBAT = SKILL_TRAINED,
+		SKILL_WEAPONS = SKILL_EXPERIENCED,
+		SKILL_FORENSICS = SKILL_TRAINED,
+		SKILL_SCIENCE = SKILL_EXPERIENCED,
+		SKILL_DEVICES = SKILL_TRAINED,
+		SKILL_MECH = SKILL_TRAINED,
+		SKILL_PILOT = SKILL_TRAINED,
+		SKILL_COMPUTER = SKILL_EXPERIENCED,
+		SKILL_EVA = SKILL_TRAINED,
+		SKILL_CONSTRUCTION = SKILL_EXPERIENCED,
+		SKILL_ELECTRICAL = SKILL_EXPERIENCED,
+		SKILL_ATMOS = SKILL_EXPERIENCED,
+		SKILL_MEDICAL = SKILL_TRAINED,
+		SKILL_CHEMISTRY = SKILL_TRAINED,
+		SKILL_ANATOMY = SKILL_TRAINED,
+		SKILL_ENGINES = SKILL_EXPERIENCED
+	)
+
+	access = list(
+		access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
+		access_ai_upload, access_teleporter, access_eva, access_bridge, access_heads,
+		access_tech_storage, access_robotics, access_atmospherics, access_janitor, access_construction,
+		access_network, access_network_admin, access_ce, access_RC_announce, access_keycard_auth, access_tcomsat,
+		access_solgov_crew, access_aquila, access_seneng, access_hangar, access_torch_fax, access_torch_helm, access_radio_comm,
+		access_radio_eng
+		)
+
+	software_on_spawn = list(/datum/computer_file/program/comm,
+							 /datum/computer_file/program/ntnetmonitor,
+							 /datum/computer_file/program/power_monitor,
+							 /datum/computer_file/program/supermatter_monitor,
+							 /datum/computer_file/program/alarm_monitor,
+							 /datum/computer_file/program/atmos_control,
+							 /datum/computer_file/program/rcon_console,
+							 /datum/computer_file/program/camera_monitor,
+							 /datum/computer_file/program/shields_monitor,
+							 /datum/computer_file/program/reports)
+
+/datum/job/magos_explorator/equip(mob/living/carbon/human/H)
+	var/current_name = H.real_name
+	H.fully_replace_character_name("Magos [current_name]")
+	H.say(":e Memory cache integrity at 87%... Motive force appeased. Security apparatis functional. Non organics uncorrupted.")
+	to_chat(H, "<span class='notice'><b><font size=3>As the Magos Explorator, you manage the technology and exploration efforts aboard The Dauntless, working in partnership with the Rogue Trader. Your duties are divided between maintaining the sacred machinery of the ship and pursuing the discovery of lost knowledge and power across the stars. Overseeing tech-priests, bondsmen, menials, slaves, and Skitarii, you ensure their work serves the dual purpose of keeping the ship operational and advancing the Mechanicum’s quest for knowledge, all while respecting the Rogue Trader’s command.</font></b></span>")
+	return ..()
+
+/datum/job/magos_explorator/get_description_blurb()
+	return "As the Magos Explorator, you manage the technology and exploration efforts aboard The Dauntless, working in partnership with the Rogue Trader. Your duties are divided between maintaining the sacred machinery of the ship and pursuing the discovery of lost knowledge and power across the stars. Overseeing tech-priests, bondsmen, menials, slaves, and Skitarii, you ensure their work serves the dual purpose of keeping the ship operational and advancing the Mechanicum’s quest for knowledge, all while respecting the Rogue Trader’s command."
 
 
 /datum/job/data_smith
@@ -66,8 +134,8 @@
 
 /datum/job/tech_priest
 	title = "Enginseer"
-	total_positions = 6
-	spawn_positions = 6
+	total_positions = 3
+	spawn_positions = 3
 	supervisors = "the Magos Explorator"
 	economic_power = 5
 	minimal_player_age = 0
@@ -125,14 +193,14 @@
 	title = "Bondsman"
 	department = "Mechanicus"
 	department_flag = ENG
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 3
+	spawn_positions = 3
 	supervisors = "the Mechanicus and Rogue Trader"
 	selection_color = "#5b4d20"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 20
 
-	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/engineering/engineer
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/engineering/bondsman
 	allowed_branches = list(
 		/datum/mil_branch/civilian
 	)
@@ -140,15 +208,18 @@
 		/datum/mil_rank/civ/civ
 	)
 
-	skill_points = 10
-	min_skill = list( // 23 points
-		SKILL_COMPUTER = SKILL_BASIC, // 1 point
-		SKILL_HAULING = SKILL_TRAINED, // 2 points
-		SKILL_EVA = SKILL_TRAINED, // 2 points
-		SKILL_CONSTRUCTION = SKILL_TRAINED, // 2 points
-		SKILL_ELECTRICAL = SKILL_TRAINED, // 4 points
-		SKILL_ATMOS = SKILL_TRAINED, // 4 points
-		SKILL_ENGINES = SKILL_TRAINED // 8 points
+	skill_points = 14
+	min_skill = list(
+		SKILL_WEAPONS = SKILL_BASIC,
+		SKILL_COMBAT = SKILL_TRAINED,
+		SKILL_HAULING = SKILL_TRAINED,
+		SKILL_MECH = SKILL_TRAINED,
+		SKILL_EVA = SKILL_TRAINED,
+		SKILL_CONSTRUCTION = SKILL_TRAINED,
+		SKILL_ELECTRICAL = SKILL_BASIC,
+		SKILL_ATMOS = SKILL_BASIC,
+		SKILL_MEDICAL = SKILL_BASIC,
+		SKILL_ENGINES = SKILL_BASIC
 	)
 
 	max_skill = list(   SKILL_CONSTRUCTION = SKILL_MAX,
@@ -163,15 +234,11 @@
 	)
 
 	software_on_spawn = list(/datum/computer_file/program/power_monitor,
-							 /datum/computer_file/program/supermatter_monitor,
 							 /datum/computer_file/program/alarm_monitor,
-							 /datum/computer_file/program/atmos_control,
-							 /datum/computer_file/program/rcon_console,
-							 /datum/computer_file/program/camera_monitor,
-							 /datum/computer_file/program/shields_monitor)
+							 /datum/computer_file/program/camera_monitor)
 
 /datum/job/bondsman/get_description_blurb()
-	return "You are an Engineer Trainee. You are learning how to operate the various onboard engineering systems from senior engineering staff. You are subordinate to all of the other engineers aboard. The role is only for players new to the engineering system and department."
+	return "You are a Bondsman under the service of the Mechanicus aboard the Rogue Trader’s vessel, lifebonded to the Magos Explorator and likely a descendant of gang-pressed families taken from their homeworlds. Tasked with menial yet vital technical work, your duties include maintaining ship systems, assisting with resource extraction, and performing hazardous tasks in the ship's more dangerous zones."
 
 /datum/job/roboticist
 	title = "Roboticist"

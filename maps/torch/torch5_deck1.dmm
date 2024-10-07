@@ -14477,7 +14477,7 @@
 "bCX" = (
 /obj/structure/table/steel,
 /obj/item/storage/box/cdeathalarm_kit,
-/obj/item/melee/telebaton,
+/obj/item/material/twohanded/ravenor/sword/cutro,
 /obj/item/melee/telebaton,
 /obj/item/melee/telebaton,
 /obj/item/device/flash,

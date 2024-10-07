@@ -15,7 +15,7 @@
 	// Depower the supermatter, as it would quickly blow up once we remove all gases from the pipes.
 	for(var/obj/machinery/power/supermatter/S in SSmachines.machinery)
 		S.power = 0
-	to_chat(usr, "\[1/5\] - Supermatter depowered")
+	to_chat(usr, "\[1/5\] - Volkite depowered")
 
 	// Remove all gases from all pipenets
 	for(var/net in SSmachines.pipenets)

@@ -670,7 +670,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 		return TRUE
 
 
-/obj/item/material/twohanded/ravenor/knife/rare
+/obj/item/material/twohanded/ravenor/knife/trench
 	name = "trench knife"
 	desc = "A blade built for the mud and blood, designed to punch through the chaos of close-quarters combat."
 	icon_state = "knife_trench"

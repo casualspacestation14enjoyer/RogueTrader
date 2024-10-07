@@ -125,18 +125,18 @@
 		return
 
 	// Generic checks, similar to checks done by supermatter monitor program.
-	aw_normal = status_adminwarn_check(SUPERMATTER_NORMAL, aw_normal, "INFO: Supermatter crystal has been energised", FALSE)
-	aw_warning = status_adminwarn_check(SUPERMATTER_WARNING, aw_warning, "WARN: Supermatter crystal is taking integrity damage", FALSE)
-	aw_danger = status_adminwarn_check(SUPERMATTER_DANGER, aw_danger, "WARN: Supermatter integrity is below 50%", TRUE)
-	aw_emerg = status_adminwarn_check(SUPERMATTER_EMERGENCY, aw_emerg, "CRIT: Supermatter integrity is below 25%", FALSE)
-	aw_delam = status_adminwarn_check(SUPERMATTER_DELAMINATING, aw_delam, "CRIT: Supermatter is delaminating", TRUE)
+	aw_normal = status_adminwarn_check(SUPERMATTER_NORMAL, aw_normal, "INFO: Volkite crystal has been energised", FALSE)
+	aw_warning = status_adminwarn_check(SUPERMATTER_WARNING, aw_warning, "WARN: Volkite crystal is taking integrity damage", FALSE)
+	aw_danger = status_adminwarn_check(SUPERMATTER_DANGER, aw_danger, "WARN: Volkite integrity is below 50%", TRUE)
+	aw_emerg = status_adminwarn_check(SUPERMATTER_EMERGENCY, aw_emerg, "CRIT: Volkite integrity is below 25%", FALSE)
+	aw_delam = status_adminwarn_check(SUPERMATTER_DELAMINATING, aw_delam, "CRIT: Volkite is delaminating", TRUE)
 
 	// EPR check. Only runs when supermatter is energised. Triggers when there is very low amount of coolant in the core (less than one standard canister).
 	// This usually means a core breach or deliberate venting.
 	if(get_status() && (get_epr() < 0.5))
 		if(!aw_EPR)
 			var/area/A = get_area(src)
-			log_and_message_admins("WARN: Supermatter EPR value low. Possible core breach detected in [A.name]", null, src)
+			log_and_message_admins("WARN: Volkite EPR value low. Possible core breach detected in [A.name]", null, src)
 		aw_EPR = TRUE
 	else
 		aw_EPR = FALSE
@@ -193,7 +193,7 @@
 	if(exploded)
 		return
 
-	log_and_message_admins("Supermatter delaminating at [x] [y] [z]", null, src)
+	log_and_message_admins("Volkite delaminating at [x] [y] [z]", null, src)
 	anchored = TRUE
 	grav_pulling = 1
 	exploded = 1
@@ -303,10 +303,10 @@
 	else
 		alert_msg = null
 	if(alert_msg)
-		GLOB.global_announcer.autosay(alert_msg, "Supermatter Monitor", "Engineering")
+		GLOB.global_announcer.autosay(alert_msg, "Volkite Monitor", "Mechanicus")
 		//Public alerts
 		if((damage > emergency_point) && !public_alert)
-			GLOB.global_announcer.autosay("WARNING: SUPERMATTER CRYSTAL DELAMINATION IMMINENT! SAFEROOMS UNBOLTED.", "Supermatter Monitor")
+			GLOB.global_announcer.autosay("WARNING: SUPERMATTER CRYSTAL DELAMINATION IMMINENT! SAFEROOMS UNBOLTED.", "Volkite Monitor")
 			public_alert = 1
 			GLOB.using_map.unbolt_saferooms() // torch
 			for(var/mob/M in GLOB.player_list)
@@ -314,7 +314,7 @@
 				if(T && (T.z in GLOB.using_map.station_levels) && !istype(M,/mob/new_player) && !isdeaf(M))
 					sound_to(M, 'sound/ambience/matteralarm.ogg')
 		else if(safe_warned && public_alert)
-			GLOB.global_announcer.autosay(alert_msg, "Supermatter Monitor")
+			GLOB.global_announcer.autosay(alert_msg, "Volkite Monitor")
 			public_alert = 0
 
 /obj/machinery/power/supermatter/Process()
@@ -506,7 +506,7 @@
 
 	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)
 	if (!ui)
-		ui = new(user, src, ui_key, "supermatter_crystal.tmpl", "Supermatter Crystal", 500, 300)
+		ui = new(user, src, ui_key, "supermatter_crystal.tmpl", "Volkite Crystal", 500, 300)
 		ui.set_initial_data(data)
 		ui.open()
 		ui.set_auto_update(1)
@@ -574,7 +574,7 @@
 	for(var/atom/A in range(pull_range, target))
 		A.singularity_pull(target, pull_power)
 
-/obj/machinery/power/supermatter/GotoAirflowDest(n) //Supermatter not pushed around by airflow
+/obj/machinery/power/supermatter/GotoAirflowDest(n) //Volkite not pushed around by airflow
 	return
 
 /obj/machinery/power/supermatter/RepelAirflowDest(n)
@@ -589,7 +589,7 @@
 			power *= 3
 		if(EX_ACT_LIGHT)
 			power *= 2
-	log_and_message_admins("WARN: Explosion near the Supermatter! New EER: [power].", null, src)
+	log_and_message_admins("WARN: Explosion near the Volkite! New EER: [power].", null, src)
 
 /obj/machinery/power/supermatter/shard //Small subtype, less efficient and more sensitive, but less boom.
 	name = "supermatter shard"

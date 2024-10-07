@@ -37,7 +37,7 @@
 /obj/machinery/telecomms/server/presets/exploration
 	id = "Exploration Server"
 	freq_listening = list(EXP_FREQ)
-	channel_tags = list(list(EXP_FREQ, "Exploration", COMMS_COLOR_EXPLORER))
+	channel_tags = list(list(EXP_FREQ, "Explorator", COMMS_COLOR_EXPLORER))
 	autolinkers = list("exploration")
 
 // Suit cyclers and storage
@@ -90,7 +90,7 @@
 
 /obj/machinery/suit_cycler/exploration
 	name = "exploration suit cycler"
-	model_text = "Exploration"
+	model_text = "Explorator"
 	req_access = list(access_explorer)
 	available_modifications = list(/singleton/item_modifier/space_suit/sol/explorer)
 	species = list(SPECIES_HUMAN,SPECIES_TAU,SPECIES_KROOT)

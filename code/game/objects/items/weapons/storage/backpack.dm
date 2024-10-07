@@ -560,7 +560,7 @@
 // WARHAMMER
 //Smuggler's satchel
 /obj/item/storage/backpack/satchel/flat
-	name = "\improper Smuggler's satchel"
+	name = "light satchel"
 	desc = "A very slim satchel, that can easily fit into tight spaces."
 	icon_state = "satchel-flat"
 	item_state = "satchel-norm"
@@ -601,6 +601,7 @@
 	slowdown_general = 0.05
 
 /obj/item/storage/backpack/satchel/warfare
+	name = "light satchel"
 	desc = "Fit for war, and not much else."
 	icon_state = "warfare_satchel"
 

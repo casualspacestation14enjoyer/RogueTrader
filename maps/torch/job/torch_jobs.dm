@@ -20,11 +20,11 @@
 #undef HUMAN_ONLY_JOBS
 
 	allowed_jobs = list(
-		/datum/job/rogue_trader, /datum/job/seneschal, /datum/job/magos_biologis, /datum/job/magos_explorator, /datum/job/guard_captain,
+		/datum/job/rogue_trader, /datum/job/seneschal,
 		/datum/job/void_officer, /datum/job/pathfinder, /datum/job/shuttle_pilot, /datum/job/explorer,
-		/datum/job/data_smith, /datum/job/tech_priest, /datum/job/roboticist, /datum/job/bondsman,
-		/datum/job/enforcer, /datum/job/enforcer_sergeant, /datum/job/xeno_mercenary,
-		/datum/job/hospitaller, /datum/job/medicae, /datum/job/pharmacologis,
+		/datum/job/magos_explorator, /datum/job/data_smith, /datum/job/tech_priest, /datum/job/roboticist, /datum/job/bondsman,
+		/datum/job/guard_captain, /datum/job/enforcer, /datum/job/enforcer_sergeant, /datum/job/xeno_mercenary,
+		/datum/job/magos_biologis, /datum/job/hospitaller, /datum/job/medicae, /datum/job/pharmacologis,
 		/datum/job/rogue_guest,
 		/datum/job/noble_guest, /datum/job/unexpected_guest,
 		/datum/job/qm, /datum/job/chamber_magister, /datum/job/chamber_assistant, /datum/job/deck_scum,

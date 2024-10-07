@@ -1,8 +1,3 @@
-/singleton/hierarchy/outfit/job/torch/crew/exploration/New()
-	..()
-	backpack_overrides[/singleton/backpack_outfit/backpack]      = /obj/item/storage/backpack/explorer
-	backpack_overrides[/singleton/backpack_outfit/satchel]       = /obj/item/storage/backpack/satchel/explorer
-	backpack_overrides[/singleton/backpack_outfit/messenger_bag] = /obj/item/storage/backpack/messenger/explorer
 
 /singleton/hierarchy/outfit/job/torch/crew/exploration/pathfinder
 	name = OUTFIT_JOB_NAME("Pathfinder")

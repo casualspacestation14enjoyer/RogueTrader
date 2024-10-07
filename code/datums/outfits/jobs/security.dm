@@ -33,10 +33,6 @@
 	pda_type = /obj/item/modular_computer/pda/forensics
 	backpack_contents = list(/obj/item/storage/box/evidence = 1)
 
-/singleton/hierarchy/outfit/job/security/detective/New()
-	..()
-	backpack_overrides.Cut()
-
 /singleton/hierarchy/outfit/job/security/detective/forensic
 	name = OUTFIT_JOB_NAME("Forensic technician")
 	head = null

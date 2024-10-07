@@ -51,7 +51,7 @@
 	"}
 	var/obj/machinery/message_server/message_server = get_message_server()
 	if (message_server)
-		message_server.send_rc_message("Engineering", my_department, message, "", "", 2)
+		message_server.send_rc_message("Mechanicus", my_department, message, "", "", 2)
 	message = SPAN_DANGER("Malicious program detected in [areaDisplay] lighting and airlock control systems.")
 	for (var/mob/living/silicon/ai/ai in GLOB.player_list)
 		to_chat(ai, message)
