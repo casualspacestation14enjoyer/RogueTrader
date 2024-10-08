@@ -77,7 +77,7 @@
 	path = /obj/item/clothing/head/helmet/skrell
 	whitelisted = list(SPECIES_TAU)
 	sort_category = "Xenowear"
-	allowed_roles = list(/datum/job/guard_captain, /datum/job/enforcer_sergeant, /datum/job/enforcer, /datum/job/xeno_mercenary)
+	allowed_roles = list(/datum/job/guard_captain, /datum/job/enforcer_sergeant, /datum/job/enforcer, /datum/job/detective)
 
 /datum/gear/accessory/skrell_badge
 	display_name = "Tau SDTF badge"

@@ -34,7 +34,7 @@
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/under/cadian_uniform
-	name = "Cadian Battle Dress Uniform"
+	name = "guard uniform"
 	desc = "The uniform of the common, but brave Cadian Regiment."
 	icon_state = "guard"
 	item_state = "guard"
@@ -42,7 +42,7 @@
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/under/rank/valhallan_uniform
-	name = "Valhalla Battle Uniform"
+	name = "valhallan uniform"
 	desc = "The uniform made out of their planetary predator's furs, durable and warm, made for the cold warriors of Valhalla Regiment."
 	icon_state = "krieg"
 	item_state = "krieg"
@@ -51,7 +51,7 @@
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/under/casual_pants/catachan
-	name = "Catachan Battle Shorts"
+	name = "catachan shorts"
 	desc = "Catachan fear no heat, no boltguns, no lasguns. They don't need shirts, They're Catachan Jungle Hunters."
 	icon_state = "camopants"
 	cold_protection = LOWER_TORSO | LEGS
@@ -266,7 +266,12 @@
 	desc = "Heretics beware."
 	icon_state = "uni-church"
 	item_state = "uni-church"
-	slowdown_general = -20
+
+/obj/item/clothing/under/rt
+	name = "trader's garb"
+	desc = "Heretics beware."
+	icon_state = "rtc"
+	item_state = "rtc"
 
 /obj/item/clothing/under/guard/uniform
 	name = "trooper uniform"

@@ -115,7 +115,7 @@
 				to_chat(user, SPAN_WARNING("There is no charging port on \the [gun]!"))
 				return TRUE
 			length = 3 SECONDS
-			if (user.get_skill_value(SKILL_WEAPONS) <= SKILL_TRAINED)
+			if (user.get_skill_value(SKILL_GUNS) <= SKILL_TRAINED)
 				length += rand(1, 3) SECONDS
 		if (user.get_skill_value(SKILL_ELECTRICAL) < SKILL_TRAINED)
 			length += rand(4, 6) SECONDS

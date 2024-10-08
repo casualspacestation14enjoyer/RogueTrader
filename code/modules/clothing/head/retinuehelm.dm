@@ -2,7 +2,55 @@
 // The Governor Stuff
 
 
+/obj/item/clothing/head/helmet/pilgrimcap/inquisitor
+	name = "cappello romano"
+	desc = "A round wide-brimmed hat worn by more traditional Roman Catholic clergy."
+	icon_state = "brim-hat"
+	item_state = "brim-hat"
+	flags_inv = BLOCKHEADHAIR
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-100
+	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
+	slowdown_general = 0
+	disorientation = 0
+	armor = list(
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK,
+		energy = ARMOR_ENERGY_TEN,
+		bio = ARMOR_BIO_THIRTY-10,
+		rad = ARMOR_RAD_THIRTY+5,
+		bomb = ARMOR_BOMB_TEN+5
+	)
 
+/obj/item/clothing/head/helmet/pilgrimcap/hospitallerhelm
+	name = "blessed head garments"
+	desc = "The holy garments marking the wearer as a member of the Adeptus Sororitas"
+	icon_state = "medical_rig"
+	item_state = "medical_rig"
+	flags_inv = BLOCKHEADHAIR
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-100
+	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
+	slowdown_general = 0
+	disorientation = 0
+	armor = list(
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK,
+		energy = ARMOR_ENERGY_TEN,
+		bio = ARMOR_BIO_THIRTY-10,
+		rad = ARMOR_RAD_THIRTY+5,
+		bomb = ARMOR_BOMB_TEN+5
+	)
+
+/obj/item/clothing/head/helmet/pilgrimcap/chaossack
+	name = "cultist sack"
+	desc = "A hood made of cloth, made to chant the hymns of the dark gods."
+	icon_state = "cult_chanter_item"
+	item_state = "cult_chanter"
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-100
+	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
+	slowdown_general = 0
+	disorientation = 0
 
 /obj/item/clothing/head/helmet/pilgrimcap/roguetrader
 	name = "rogue trader's cap"
@@ -69,7 +117,7 @@
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+200
 	max_pressure_protection = VOIDSUIT_MAX_PRESSURE
 	disorientation = 0.75
-	flags_inv = BLOCKHAIR
+	flags_inv = BLOCKHEADHAIR
 	body_parts_covered = FACE|EYES|HEAD
 	armor = list(
 		melee = ARMOR_MELEE_FLAK,
@@ -108,7 +156,7 @@
 	slowdown_general = 0.012
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+300
 	disorientation = 0.75
-	flags_inv = HIDEEARS|BLOCKHAIR
+	flags_inv = HIDEEARS|BLOCKHEADHAIR
 	body_parts_covered = FACE|EYES|HEAD
 	armor = list(
 		melee = ARMOR_MELEE_FLAK+1,
@@ -129,7 +177,7 @@
 	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+400
 	disorientation = 0.75
-	flags_inv = HIDEMASK|HIDEEARS|BLOCKHAIR
+	flags_inv = HIDEMASK|HIDEEARS|BLOCKHEADHAIR
 	body_parts_covered = FACE|EYES|HEAD
 	armor = list(
 		melee = ARMOR_MELEE_FLAK+1,
@@ -178,7 +226,7 @@
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+1600
 	max_pressure_protection = RIG_MAX_PRESSURE
 	disorientation = 0.75
-	flags_inv = HIDEMASK|HIDEEARS|BLOCKHAIR
+	flags_inv = HIDEMASK|HIDEEARS|BLOCKHEADHAIR
 	body_parts_covered = FACE|EYES|HEAD
 	armor = list(
 		melee = ARMOR_MELEE_POWER_ARM-1,

@@ -541,7 +541,7 @@ var/global/bomb_set
 		if(timeleft - world.time <= self_destruct_cutoff)
 			if(!announced)
 				priority_announcement.Announce("The self-destruct sequence has reached terminal countdown, abort systems have been disabled.", "Self-Destruct Control Computer")
-				announced = TRUE
+				announced = FALSE
 			if(world.time >= time_to_explosion)
 				var/range
 				if(timeleft - world.time <= (self_destruct_cutoff/2))

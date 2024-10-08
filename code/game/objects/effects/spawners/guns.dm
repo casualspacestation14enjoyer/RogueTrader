@@ -31,7 +31,6 @@
 /obj/random/biggun/spawn_choices()
 	return list(/obj/item/gun/projectile/automatic/radcarbine/radpistol,
 				/obj/item/gun/energy/lasgun/kantrael,
-				/obj/item/gun/energy/lassgun/laspistol/lord,
 				/obj/item/gun/energy/tau/pulsepistol,
 				/obj/item/gun/energy/tau/pulsepistol,
 				/obj/item/gun/energy/lasgun/triplex,

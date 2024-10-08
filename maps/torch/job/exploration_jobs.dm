@@ -26,7 +26,7 @@
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
 	                    SKILL_SCIENCE     = SKILL_MAX,
 	                    SKILL_COMBAT      = SKILL_EXPERIENCED,
-	                    SKILL_WEAPONS     = SKILL_EXPERIENCED)
+	                    SKILL_GUNS     = SKILL_EXPERIENCED)
 
 	access = list(
 		access_pathfinder, access_explorer, access_eva, access_maint_tunnels, access_bridge, access_emergency_storage,
@@ -102,7 +102,7 @@
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
 	                    SKILL_SCIENCE     = SKILL_MAX,
 	                    SKILL_COMBAT      = SKILL_EXPERIENCED,
-	                    SKILL_WEAPONS     = SKILL_EXPERIENCED)
+	                    SKILL_GUNS     = SKILL_EXPERIENCED)
 
 	access = list(
 		access_explorer, access_maint_tunnels, access_eva, access_emergency_storage,

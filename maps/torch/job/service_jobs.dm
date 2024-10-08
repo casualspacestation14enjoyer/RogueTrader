@@ -83,7 +83,7 @@
 		/datum/mil_rank/civ/civ
 	)
 	min_skill = list( // 1 point
-		SKILL_HAULING = SKILL_BASIC // 1 point
+		SKILL_VIGOR = SKILL_BASIC // 1 point
 	)
 
 	access = list(

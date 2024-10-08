@@ -64,7 +64,7 @@
 			aura_image.pixel_y = -64 - owner.default_pixel_y
 
 	if(!announced && owner && owner.client && !QDELETED(src))
-		announced = TRUE
+		announced = FALSE
 		to_chat(owner, "<hr>")
 		to_chat(owner, SPAN_NOTICE(FONT_LARGE("You are <b>psionic</b>, touched by powers beyond understanding.")))
 		to_chat(owner, SPAN_NOTICE("<b>Shift-left-click your Psi icon</b> on the bottom right to <b>view a summary of how to use them</b>, or <b>left click</b> it to <b>suppress or unsuppress</b> your psionics. Beware: overusing your gifts can have <b>deadly consequences</b>."))

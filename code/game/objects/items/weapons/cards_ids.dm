@@ -556,7 +556,7 @@ var/global/const/NO_EMAG_ACT = -50
 /obj/item/card/id/medical
 	name = "identification card"
 	desc = "A card issued to medical staff."
-	job_access_type = /datum/job/hospitaller
+	job_access_type = /datum/job/medicae
 	detail_color = COLOR_PALE_BLUE_GRAY
 
 /obj/item/card/id/medical/chemist
@@ -588,7 +588,7 @@ var/global/const/NO_EMAG_ACT = -50
 	job_access_type = /datum/job/enforcer_sergeant
 
 /obj/item/card/id/security/detective
-	job_access_type = /datum/job/xeno_mercenary
+	job_access_type = /datum/job/detective
 
 /obj/item/card/id/security/head
 	name = "identification card"

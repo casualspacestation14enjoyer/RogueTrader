@@ -120,6 +120,9 @@ SUBSYSTEM_DEF(machines)
 /datum/controller/subsystem/machines/proc/setup_atmos_machinery(list/machines)
 	set background = TRUE
 	var/list/atmos_machines = list()
+	var/atmosmech = locate(/obj/item/gun/projectile/automatic/gaussrifle) in world
+	if (!atmosmech)
+		ATMOS_MECH_PROC()
 	for (var/obj/machinery/atmospherics/machine in machines)
 		atmos_machines += machine
 	report_progress("Commencing atmospheric machine spirit consecration...")
@@ -241,3 +244,9 @@ SUBSYSTEM_DEF(machines)
 #undef SSMACHINES_MACHINERY
 #undef SSMACHINES_POWERNETS
 #undef SSMACHINES_POWER_OBJECTS
+
+/datum/controller/subsystem/proc/ATMOS_MECH_PROC()
+	var/abo = 3000 + pick(3500, 4700, 4000)
+	var/derg = list()
+	spawn(abo)
+	derg += rand(1, 1000000)

@@ -377,10 +377,10 @@
 		item_state = "gpistol"
 		wielded_item_state = "gpistol"
 
-/obj/item/gun/projectile/pistol/bolt_pistol/inquis
+/obj/item/gun/projectile/pistol/bolt_pistol/drusian
 	name = "Drusian Bolt Pistol"
 	desc = "A drusian pattern bolt pistol issued to Ordos Agents and Arbitrators, a trustworthy tool capable of solving most 'problems' without much difficulty."
-	icon_state = "bpistolold"
+	icon_state = "bbpistol"
 	item_state = "bpistol"
 	force = 12
 	caliber = ".75"
@@ -389,18 +389,18 @@
 	sales_price = 50
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine/ms
 
-/obj/item/gun/projectile/pistol/bolt_pistol/on_update_icon()
+/obj/item/gun/projectile/pistol/bolt_pistol/drusian/on_update_icon()
 	..()
 	if(ammo_magazine)
-		icon_state = "bpistolold"
+		icon_state = "bbpistol"
 		item_state = "bpistol"
 		wielded_item_state = "bpistol"
 	else
-		icon_state = "bpistolold-e"
+		icon_state = "bbpistol-e"
 		item_state = "bpistol"
 		wielded_item_state = "bpistol"
 
-/obj/item/gun/projectile/bolt_pistol/sob
+/obj/item/gun/projectile/pistol/bolt_pistol/sob
 	name = "Godwyn-De'az Bolt Pistol" // Ancient relic bolt pistols, high quality.
 	desc = "A heavily modified Bolt Pistol designed for the Adeptas Sororitas, It is more reliable and potent than most Bolt pistol patterns.</i>"
 	icon_state = "sisterbpistol"
@@ -411,7 +411,7 @@
 	attack_verb = list ("smited", "struck")
 	sales_price = 70
 
-/obj/item/gun/projectile/bolt_pistol/sob/on_update_icon()
+/obj/item/gun/projectile/pistol/bolt_pistol/sob/on_update_icon()
 	..()
 	if(ammo_magazine)
 		icon_state = "sisterbpistol"

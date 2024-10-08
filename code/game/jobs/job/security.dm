@@ -36,11 +36,10 @@
 	minimal_player_age = 7
 	outfit_type = /singleton/hierarchy/outfit/job/security/warden
 
-/datum/job/xeno_mercenary
+/datum/job/detective
 	title = "Detective"
 	department = "Security"
 	department_flag = SEC
-
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "the head of security"

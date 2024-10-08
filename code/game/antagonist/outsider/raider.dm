@@ -64,7 +64,7 @@ GLOBAL_DATUM_INIT(raiders, /datum/antagonist/raider, new)
 
 	var/list/raider_guns = list(
 		/obj/item/gun/energy/lasgun/laspistol/grim,
-		/obj/item/gun/energy/las/laspistol/lucius,
+		/obj/item/gun/energy/lasgun/laspistol/lucius,
 		/obj/item/gun/energy/tau/railgun,
 		/obj/item/gun/energy/lasgun/laspistol/hellpistol,
 		/obj/item/gun/energy/lasgun/grim,

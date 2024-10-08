@@ -362,7 +362,7 @@
 	var/mob/living/L = AM
 	if (!istype(L))
 		return
-	var/chance = TT.thrower.skill_check(SKILL_HAULING, SKILL_EXPERIENCED) ? 100 : 50
+	var/chance = TT.thrower.skill_check(SKILL_VIGOR, SKILL_EXPERIENCED) ? 100 : 50
 	if (prob(chance))
 		slam_into(L)
 

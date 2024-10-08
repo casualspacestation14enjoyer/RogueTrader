@@ -332,13 +332,13 @@
 	item_state = "jackboots"
 
 /obj/item/clothing/shoes/jackboots/krieg
-	name = "krieg pattern combat boots"
+	name = "combat boots"
 	desc = "The Krieg Regiment, unlike most of the Astra Militarum, prefer their less protective but more mobile boots over the standard Mars Pattern used by the Munitorium."
 	icon_state = "kriegboots"
 	item_state = "kriegboots"
 
 /obj/item/clothing/shoes/jackboots/krieg/grenadier
-	name = "krieg grenadier pattern combat boots"
+	name = "combat boots"
 	desc = "The Krieg Regiment, unlike most of the Astra Militarum, prefer their less protective but more mobile boots over the standard Mars Pattern used by the Munitorium. Though, in this particular case they have lamented to armoring their own."
 	icon_state = "grenboots"
 	item_state = "grenboots"
@@ -353,7 +353,7 @@
 	)
 
 /obj/item/clothing/shoes/jackboots/maccabian
-	name = "maccabian pattern combat boots"
+	name = "combat boots"
 	desc = "The Krieg Regiment, unlike most of the Astra Militarum, prefer their less protective but more mobile boots over the standard Mars Pattern used by the Munitorium."
 	icon_state = "M_Boots-Icon"
 	item_state = "M_Boots-Icon"

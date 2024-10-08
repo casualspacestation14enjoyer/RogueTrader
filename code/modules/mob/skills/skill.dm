@@ -141,7 +141,7 @@ GLOBAL_LIST_EMPTY(skills)
 	difficulty = SKILL_AVERAGE
 	default_max = SKILL_MASTER
 
-/singleton/hierarchy/skill/general/hauling
+/singleton/hierarchy/skill/general/vigor
 	ID = "hauling"
 	name = "Vigor"
 	desc = "Represents your physical prowess in tasks requiring strength, dexterity, and endurance. Essential for soldiers, laborers, and anyone expected to endure grueling work."
@@ -218,7 +218,7 @@ GLOBAL_LIST_EMPTY(skills)
 		else
 			return 0
 
-/singleton/hierarchy/skill/security/weapons
+/singleton/hierarchy/skill/security/guns
 	ID = "weapons"
 	name = "Gun Lore"
 	default_max = SKILL_DEMIGOD
@@ -232,7 +232,7 @@ GLOBAL_LIST_EMPTY(skills)
 						"Primaris"			= "You have ascended beyond mortal limits, either through genetic augmentation or countless years of combat. Your aim is flawless, and your understanding of firearms is unrivaled across the Imperium.<br>- Your shots never miss, and you can master any weapon placed in your hands.",
 						"Demigod"			= "Your mastery of ranged combat is mythic, bending the will of battle itself. You control the battlefield with surgical precision, capable of shifting the outcome of entire engagements with your skill.<br>- Your shots are near-perfect, and your presence in combat is overwhelming.")
 
-/singleton/hierarchy/skill/security/weapons/get_cost(level)
+/singleton/hierarchy/skill/security/guns/get_cost(level)
 	switch(level)
 		if(SKILL_BASIC)
 			return difficulty

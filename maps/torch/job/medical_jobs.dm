@@ -1,6 +1,6 @@
 /datum/job/magos_biologis
 	title = "Magos Biologis"
-	supervisors = "the Rogue Trader and when required, Magos Explorator."
+	supervisors = "the Rogue Trader and the Machine God."
 	economic_power = 14
 	minimal_player_age = 14
 	minimum_character_age = list(SPECIES_HUMAN = 25)
@@ -9,14 +9,14 @@
 	spawn_positions = 1
 	department = "Medical"
 	department_flag = MED
-	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/cmo
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/biologis
 	allowed_branches = list(
 		/datum/mil_branch/civilian
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 15
+	skill_points = 10
 	min_skill = list(
 		SKILL_BUREAUCRACY = SKILL_TRAINED,
 		SKILL_MEDICAL = SKILL_MASTER,
@@ -24,7 +24,7 @@
 		SKILL_CHEMISTRY = SKILL_MASTER,
 		SKILL_DEVICES = SKILL_EXPERIENCED,
 		SKILL_COMBAT = SKILL_TRAINED,
-		SKILL_WEAPONS = SKILL_TRAINED,
+		SKILL_GUNS = SKILL_TRAINED,
 		SKILL_FORENSICS = SKILL_TRAINED,
 		SKILL_SCIENCE = SKILL_TRAINED,
 		SKILL_MECH = SKILL_TRAINED,
@@ -33,6 +33,17 @@
 		SKILL_CONSTRUCTION = SKILL_TRAINED,
 		SKILL_ELECTRICAL = SKILL_TRAINED
 	)
+
+	max_skill = list(	SKILL_MEDICAL = SKILL_MASTER,
+						SKILL_DEVICES = SKILL_MASTER,
+						SKILL_SCIENCE = SKILL_MASTER,
+						SKILL_COMPUTER = SKILL_MASTER,
+						SKIL_ELECTRICAL = SKILL_MASTER,
+						SKILL_CONSTRUCTION = SKILL_MASTER,
+						SKILL_ANATOMY = SKILL_MASTER,
+						SKILL_GUNS = SKILL_MASTER,
+						SKILL_FORENSICS = SKILL_MASTER,
+						SKILL_CHEMISTRY = SKILL_MASTER)
 
 	access = list(
 		access_medical, access_morgue, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
@@ -51,50 +62,16 @@
 /datum/job/magos_biologis/get_description_blurb()
 	return "As the Magos Biologis, you are part of the Rogue Trader's retinue, operating beyond the constraints of the Mechanicus. You manage the biological research and medical efforts aboard the vessel, overseeing Skitarii and Medicae personnel alike. Your duty is to ensure your medicae staff are prepared for surgery, treatment, and field response, and that every biological specimen or anomaly is studied with ruthless efficiency. You are expected to lead in matters of biology and medicine, stepping in as surgeon or advisor when necessary, always furthering the quest for knowledge and mastery over the flesh."
 
+/datum/job/data_smith/equip(mob/living/carbon/human/H)
+	var/current_name = H.real_name
+	var/selected_title = alt_titles[H.mind.role_alt_title]
+	H.fully_replace_character_name("Magos Biologis [current_name]")
+	H.say(":e OMVISS1@H &(47*TECHNICA)B(ADMECH)... transponder signal active.")
+	to_chat(H, "<span class='notice'><b><font size=2>As the [selected_title], you are part of the Rogue Trader's retinue, operating beyond the constraints of the Mechanicus. You manage the biological research and medical efforts aboard the vessel, overseeing Skitarii and Medicae personnel alike. Your duty is to ensure your medicae staff are prepared for surgery, treatment, and field response, and that every biological specimen or anomaly is studied with ruthless efficiency. You are expected to lead in matters of biology and medicine, stepping in as surgeon or advisor when necessary, always furthering the quest for knowledge and mastery over the flesh.</font></b></span>")
+	return ..()
 
-/datum/job/chirugeon
-	title = "Chirugeon" // Disabled for now -- Hospitaller is acting as Chirugeon unless we really need one later.
-	department = "Medical"
-	department_flag = MED
-	minimal_player_age = 2
-	minimum_character_age = list(SPECIES_HUMAN = 29)
-	ideal_character_age = 45
-	total_positions = 2
-	spawn_positions = 2
-	supervisors = "the Rogue Trader"
-	selection_color = "#013d3b"
-	economic_power = 10
-	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/medical/senior
-	allowed_branches = list(
-		/datum/mil_branch/civilian
-	)
-	allowed_ranks = list(
-		/datum/mil_rank/civ/civ
-	)
-	skill_points = 26
-	min_skill = list( // 41 points
-		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point
-		SKILL_MEDICAL = SKILL_EXPERIENCED, // 16 points
-		SKILL_ANATOMY = SKILL_EXPERIENCED, // 16 points
-		SKILL_CHEMISTRY = SKILL_BASIC, // 4 points
-		SKILL_DEVICES = SKILL_TRAINED // 4 points
-	)
-
-	max_skill = list(   SKILL_MEDICAL     = SKILL_MAX,
-	                    SKILL_ANATOMY     = SKILL_MAX,
-	                    SKILL_CHEMISTRY   = SKILL_MAX)
-
-	access = list(
-		access_medical, access_morgue, access_virology, access_maint_tunnels, access_emergency_storage,
-		access_crematorium, access_chemistry, access_surgery,
-		access_medical_equip, access_solgov_crew, access_senmed, access_radio_med
-	)
-
-	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
-							 /datum/computer_file/program/camera_monitor)
-
-/datum/job/medicae
-	title = "Medicae"
+/datum/job/sister_hospitaller
+	title = "Sister Hospitaller"
 	department = "Medical"
 	department_flag = MED
 	minimal_player_age = 2
@@ -102,28 +79,34 @@
 	ideal_character_age = 45
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Magos Biologis and Rogue Trader"
+	supervisors = "the Magos Biologis, Chaplain Militant and Rogue Trader"
 	selection_color = "#013d3b"
 	economic_power = 6
-	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/medical/senior
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/medical/hospitaller
 	allowed_branches = list(
 		/datum/mil_branch/civilian
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 22
-	min_skill = list( // 41 points
-		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point
-		SKILL_MEDICAL = SKILL_EXPERIENCED, // 16 points
-		SKILL_ANATOMY = SKILL_EXPERIENCED, // 16 points
-		SKILL_CHEMISTRY = SKILL_BASIC, // 4 points
-		SKILL_DEVICES = SKILL_TRAINED // 4 points
+	skill_points = 14
+	min_skill = list(
+		SKILL_VIGOR = SKILL_TRAINED,
+		SKILL_MEDICAL = SKILL_EXPERIENCED,
+		SKILL_ANATOMY = SKILL_EXPERIENCED,
+		SKILL_CHEMISTRY = SKILL_EXPERIENCED,
+		SKILL_COMBAT = SKILL_TRAINED,
+		SKILL_GUNS = SKILL_TRAINED,
+		SKILL_FORENSICS = SKILL_TRAINED,
+		SKILL_EVA = SKILL_TRAINED
 	)
 
-	max_skill = list(   SKILL_MEDICAL     = SKILL_MAX,
-	                    SKILL_ANATOMY     = SKILL_MAX,
-	                    SKILL_CHEMISTRY   = SKILL_MAX)
+	max_skill = list(	SKILL_MEDICAL = SKILL_MASTER,
+						SKILL_VIGOR = SKILL_MASTER,
+						SKILL_ANATOMY = SKILL_MASTER,
+						SKILL_GUNS = SKILL_LEGEND,
+						SKILL_COMBAT = SKILL_LEGEND,
+						SKILL_CHEMISTRY = SKILL_MASTER)
 
 	access = list(
 		access_medical, access_morgue, access_virology, access_maint_tunnels, access_emergency_storage,
@@ -133,35 +116,99 @@
 
 	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
 							 /datum/computer_file/program/camera_monitor)
+/datum/job/sister_hospitaller/get_description_blurb()
+	return "As the Sister Hospitaller, you are responsible for overseeing the health and medical training of the crew. A guiding hand for novitiates, you impart the knowledge and faith required to heal both body and soul, embodying the sacred duty of the Orders Hospitaller. Your care extends beyond the physical, offering spiritual solace to those in need, ensuring that the crew remains steadfast in both their service and devotion."
 
-/datum/job/hospitaller
-	title = "Sister Hospitaller"
+/datum/job/sister_hospitaller/equip(mob/living/carbon/human/H)
+	var/current_name = H.real_name
+	var/selected_title = alt_titles[H.mind.role_alt_title]
+	if (!selected_title)
+		selected_title = title
+	H.fully_replace_character_name("[selected_title] [current_name]")
+	to_chat(H, "<span class='notice'><b><font size=2>As the [selected_title], you are responsible for overseeing the health and medical training of the crew. A guiding hand for novitiates, you impart the knowledge and faith required to heal both body and soul, embodying the sacred duty of the Orders Hospitaller. Your care extends beyond the physical, offering spiritual solace to those in need, ensuring that the crew remains steadfast in both their service and devotion.</font></b></span>")
+	return ..()
+
+/datum/job/pharmacologis
+	title = "Pharmacologis"
+	department = "Medical"
+	department_flag = MED
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the Magos Biologis and Rogue Trader"
+	selection_color = "#013d3b"
+	economic_power = 4
+	minimum_character_age = list(SPECIES_HUMAN = 25)
+	ideal_character_age = 30
+	minimal_player_age = 7
+	alt_titles = list(
+		"Senior Medicae",
+		"Chief Chirugeon"
+	)
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/medical/pharmacologis
+	allowed_branches = list(/datum/mil_branch/civilian)
+	allowed_ranks = list(/datum/mil_rank/civ/civ)
+	skill_points = 18
+	min_skill = list(
+		SKILL_MEDICAL = SKILL_TRAINED,
+		SKILL_ANATOMY = SKILL_EXPERIENCED,
+		SKILL_CHEMISTRY = SKILL_EXPERIENCED,
+		SKILL_FORENSICS = SKILL_EXPERIENCED,
+	)
+
+	max_skill = list(	SKILL_MEDICAL = SKILL_MASTER,
+						SKILL_FORENSICS = SKILL_MASTER,
+						SKILL_ANATOMY = SKILL_MASTER,
+						SKILL_CHEMISTRY = SKILL_MASTER)
+
+	access = list(
+		access_medical, access_maint_tunnels, access_emergency_storage,
+		access_medical_equip, access_solgov_crew, access_chemistry,
+	 	access_virology, access_morgue, access_crematorium, access_radio_med
+	)
+
+/datum/job/pharmacologis/get_description_blurb()
+	return "As the Pharmacologis, you serve alongside the Medicae and Sister Hospitaller, wielding your knowledge of chemistry and biological science to support their sacred work. You are responsible for the formulation of complex medicines, compounds, and stimulants, as well as assisting in advanced surgical procedures when required. Though you are not tasked with direct patient care, your role is critical—ensuring the crew can fight, endure, and survive in the Emperor’s name. Your work stands at the intersection of science and duty, safeguarding the vitality of those who serve the Imperium."
+
+/datum/job/pharmacologis/equip(mob/living/carbon/human/H)
+	var/current_name = H.real_name
+	var/selected_title = alt_titles[H.mind.role_alt_title]
+	if (!selected_title)
+		selected_title = title
+	H.fully_replace_character_name("[selected_title] [current_name]")
+	to_chat(H, "<span class='notice'><b><font size=2>As the [selected_title], you serve alongside the Medicae and Sister Hospitaller, wielding your knowledge of chemistry and biological science to support their sacred work. You are responsible for the formulation of complex medicines, compounds, and stimulants, as well as assisting in advanced surgical procedures when required. Though you are not tasked with direct patient care, your role is critical—ensuring the crew can fight, endure, and survive in the Emperor’s name. Your work stands at the intersection of science and duty, safeguarding the vitality of those who serve the Imperium.</font></b></span>")
+	return ..()
+
+/datum/job/medicae
+	title = "Medicae"
 	total_positions = 3
 	spawn_positions = 3
-	supervisors = "the Magos Biologis and Rogue Trader"
+	supervisors = "the Sister Hospitaller and Rogue Trader"
 	economic_power = 7
 	minimum_character_age = list(SPECIES_HUMAN = 19)
 	ideal_character_age = 40
 	minimal_player_age = 0
-	alt_titles = list(
-		"Paramedic",
-		"Corpsman")
-	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/medical/doctor
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/medical/medicae
+	alt_titles = list("Chirugeon")
 	allowed_branches = list(
 		/datum/mil_branch/civilian
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 28
-	min_skill = list( // 9 points
-		SKILL_EVA = SKILL_BASIC, // 1 point
-		SKILL_MEDICAL = SKILL_BASIC, // 4 points
-		SKILL_ANATOMY = SKILL_BASIC // 4 points
+	skill_points = 18
+	min_skill = list(
+		SKILL_VIGOR = SKILL_BASIC,
+		SKILL_MEDICAL = SKILL_TRAINED,
+		SKILL_ANATOMY = SKILL_TRAINED,
+		SKILL_CHEMISTRY = SKILL_TRAINED,
+		SKILL_COMBAT = SKILL_BASIC, // Surgery skill overlap
+		SKILL_FORENSICS = SKILL_TRAINED,
 	)
 
-	max_skill = list(   SKILL_MEDICAL     = SKILL_MAX,
-	                    SKILL_CHEMISTRY   = SKILL_MAX)
+	max_skill = list(	SKILL_MEDICAL = SKILL_MASTER,
+						SKILL_FORENSICS = SKILL_MASTER,
+						SKILL_ANATOMY = SKILL_MASTER,
+						SKILL_CHEMISTRY = SKILL_MASTER)
 
 	access = list(
 		access_medical, access_morgue, access_maint_tunnels,
@@ -173,20 +220,31 @@
 	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
 							 /datum/computer_file/program/camera_monitor)
 
+/datum/job/medicae/get_description_blurb()
+	return "You are a Medicae aboard the Rogue Trader’s vessel, trained to deal with the harsh and unforgiving conditions of both space and hive cities. Your responsibilities include treating battlefield injuries, performing surgeries, and managing the health of the crew. Whether responding to emergencies or ensuring long-term health, your experience in crowded, under-equipped environments has honed your ability to handle crises with efficiency and precision, making you indispensable in the chaos of the void."
+
+/datum/job/medicae/equip(mob/living/carbon/human/H)
+	var/current_name = H.real_name
+	var/selected_title = alt_titles[H.mind.role_alt_title]
+	if (!selected_title)
+		selected_title = title
+	H.fully_replace_character_name("[current_name]")
+	to_chat(H, "<span class='notice'><b><font size=2>You are a [selected_title] aboard the Rogue Trader’s vessel, trained to deal with the harsh and unforgiving conditions of both space and hive cities. Your responsibilities include treating battlefield injuries, performing surgeries, and managing the health of the crew. Whether responding to emergencies or ensuring long-term health, your experience in crowded, under-equipped environments has honed your ability to handle crises with efficiency and precision, making you indispensable in the chaos of the void.</font></b></span>")
+	return ..()
+
 /datum/job/novitiate
 	title = "Novitiate"
 	department = "Medical"
 	department_flag = MED
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the God Emperor, the Magos Biologis and Rogue Trader"
+	supervisors = "the God Emperor, Sister Hospitaller and Rogue Trader"
 	selection_color = "#013d3b"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 20
-	alt_titles = list(
-		"Corpsman Trainee")
+	alt_titles = list("Progena")
 
-	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/medical/doctor
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/medical/medicae
 	allowed_branches = list(
 		/datum/mil_branch/civilian
 	)
@@ -194,17 +252,16 @@
 		/datum/mil_rank/civ/civ
 	)
 
-	skill_points = 10
-	min_skill = list( // 24 points
-		SKILL_EVA = SKILL_TRAINED, // 2 points
-		SKILL_HAULING = SKILL_TRAINED, // 2 points
-		SKILL_MEDICAL = SKILL_EXPERIENCED, // 16 points
-		SKILL_ANATOMY = SKILL_BASIC // 4 points
-	)
-
-	max_skill = list(   SKILL_MEDICAL     = SKILL_MAX,
-	                    SKILL_ANATOMY     = SKILL_MAX,
-	                    SKILL_CHEMISTRY   = SKILL_MAX)
+	skill_points = 18
+	min_skill = list(
+		SKILL_VIGOR = SKILL_BASIC,
+		SKILL_MEDICAL = SKILL_BASIC,
+		SKILL_ANATOMY = SKILL_BASIC,
+		SKILL_CHEMISTRY = SKILL_TRAINED,
+		SKILL_GUNS = SKILL_BASIC, // Training from hospitaller
+		SKILL_COMBAT = SKILL_BASIC,
+		SKILL_FORENSICS = SKILL_BASIC,
+	) // No max skill list, they cap at experienced.
 
 	access = list(
 		access_medical, access_morgue, access_maint_tunnels,
@@ -217,44 +274,17 @@
 							 /datum/computer_file/program/camera_monitor)
 
 /datum/job/novitiate/get_description_blurb()
-	return "You are a Trainee Medical Technician. You are learning how to treat and recover wounded crew from the more experienced medical personnel aboard. You are subordinate to the rest of the medical team. The role is only for players new to the medical system and department."
+	return "As a Novitiate aboard the vessel, you are in the early stages of rigorous training under the Sister Hospitaller and Chaplain Militant. Your education spans both spiritual teachings and practical disciplines, preparing you for a future role within the Imperium."
 
-/datum/job/pharmacologis
-	title = "Pharmacologis"
-	department = "Medical"
-	department_flag = MED
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = "medical personnel, and the Chief Medical Officer"
-	selection_color = "#013d3b"
-	economic_power = 4
-	minimum_character_age = list(SPECIES_HUMAN = 25)
-	ideal_character_age = 30
-	minimal_player_age = 7
-	alt_titles = list(
-		"Chemist"
-	)
-	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/medical/contractor/chemist
-	allowed_branches = list(/datum/mil_branch/civilian)
-	allowed_ranks = list(/datum/mil_rank/civ/civ)
-	skill_points = 21
-	min_skill = list( // 12 points
-		SKILL_MEDICAL = SKILL_BASIC, // 4 points
-		SKILL_CHEMISTRY = SKILL_TRAINED // 8 points
-	)
+/datum/job/novitiate/equip(mob/living/carbon/human/H)
+	var/current_name = H.real_name
+	var/selected_title = alt_titles[H.mind.role_alt_title]
+	if (!selected_title)
+		selected_title = title
+	H.fully_replace_character_name("[selected_title] [current_name]")
+	to_chat(H, "<span class='notice'><b><font size=2>As a [selected_title] aboard the vessel, you are in the early stages of rigorous training under the Sister Hospitaller and Chaplain Militant. Your education spans both spiritual teachings and practical disciplines, preparing you for a future role within the Imperium.</font></b></span>")
+	return ..()
 
-	max_skill = list(   SKILL_MEDICAL     = SKILL_BASIC,
-						SKILL_ANATOMY	  = SKILL_BASIC,
-	                    SKILL_CHEMISTRY   = SKILL_MAX)
-
-	access = list(
-		access_medical, access_maint_tunnels, access_emergency_storage,
-		access_medical_equip, access_solgov_crew, access_chemistry,
-	 	access_virology, access_morgue, access_crematorium, access_radio_med
-	)
-
-/datum/job/pharmacologis/get_description_blurb()
-	return "You are the Pharmacist. You make medicine and other useful substances. You are not a doctor or medic; you should not be treating patients, but rather providing the medicine to do so. You are subordinate to Physicians and Medical Technicians."
 
 /datum/job/rogue_guest
 	title = "Counselor"
@@ -303,3 +333,40 @@
 
 /datum/job/rogue_guest/get_description_blurb()
 		return "You are the Counselor. Your main responsibility is the mental health and wellbeing of the crew. You are subordinate to the Chief Medical Officer."
+
+/datum/job/juniormedicae
+	title = "Junior Medicae" // Disabled for now -- Hospitaller is acting as Chirugeon unless we really need one later.
+	department = "Medical"
+	department_flag = MED
+	minimal_player_age = 2
+	minimum_character_age = list(SPECIES_HUMAN = 29)
+	ideal_character_age = 45
+	total_positions = 2
+	spawn_positions = 2
+	supervisors = "the Rogue Trader"
+	selection_color = "#013d3b"
+	economic_power = 10
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/medical/hospitaller
+	allowed_branches = list(
+		/datum/mil_branch/civilian
+	)
+	allowed_ranks = list(
+		/datum/mil_rank/civ/civ
+	)
+	skill_points = 26
+	min_skill = list( // 41 points
+		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point
+		SKILL_MEDICAL = SKILL_EXPERIENCED, // 16 points
+		SKILL_ANATOMY = SKILL_EXPERIENCED, // 16 points
+		SKILL_CHEMISTRY = SKILL_BASIC, // 4 points
+		SKILL_DEVICES = SKILL_TRAINED // 4 points
+	)
+
+	access = list(
+		access_medical, access_morgue, access_virology, access_maint_tunnels, access_emergency_storage,
+		access_crematorium, access_chemistry, access_surgery,
+		access_medical_equip, access_solgov_crew, access_senmed, access_radio_med
+	)
+
+	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
+							 /datum/computer_file/program/camera_monitor)

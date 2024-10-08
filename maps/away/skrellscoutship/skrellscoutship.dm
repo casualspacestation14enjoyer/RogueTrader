@@ -73,9 +73,9 @@ var/global/const/access_skrellscoutship = "ACCESS_SKRELLSCOUT"
 	min_skill = list( // 24 points
 		SKILL_EVA = SKILL_TRAINED, // 2 points
 		SKILL_PILOT = SKILL_TRAINED, // 4 points
-		SKILL_HAULING = SKILL_TRAINED, // 2 points
+		SKILL_VIGOR = SKILL_TRAINED, // 2 points
 		SKILL_COMBAT = SKILL_TRAINED, // 6 points
-		SKILL_WEAPONS = SKILL_TRAINED, // 6 points
+		SKILL_GUNS = SKILL_TRAINED, // 6 points
 		SKILL_MEDICAL = SKILL_BASIC // 4 points
 	)
 
@@ -94,9 +94,9 @@ var/global/const/access_skrellscoutship = "ACCESS_SKRELLSCOUT"
 	is_semi_antagonist = TRUE
 	min_skill = list( // 20 points
 		SKILL_EVA = SKILL_TRAINED, // 2 points
-		SKILL_HAULING = SKILL_TRAINED, // 2 points
+		SKILL_VIGOR = SKILL_TRAINED, // 2 points
 		SKILL_COMBAT = SKILL_TRAINED, // 6 points
-		SKILL_WEAPONS = SKILL_TRAINED, // 6 points
+		SKILL_GUNS = SKILL_TRAINED, // 6 points
 		SKILL_MEDICAL = SKILL_BASIC // 4 points
 	)
 

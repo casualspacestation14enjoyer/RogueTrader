@@ -219,7 +219,7 @@ var/global/list/all_objectives = list()
 	var/target_name
 
 	var/static/possible_items[] = list(
-		"the lord traders archeotech pistol" = /obj/item/gun/energy/lassgun/laspistol/lord,
+		"the lord traders archeotech pistol" = /obj/item/gun/energy/lasgun/laspistol/lord,
 		"a bluespace rift generator" = /obj/item/integrated_circuit/manipulation/bluespace_rift,
 		"an RCD" = /obj/item/rcd,
 		"a jetpack" = /obj/item/tank/jetpack,

@@ -342,7 +342,7 @@
 	desc = "The Mark XIc Visor are issued along with the Mark XIc Rebreather as part of the Frigid Survival Kit, It is designed to prevent flare and blindness."
 	icon_state = "iggoggles"
 	item_state = "iggoggles"
-	darkness_view = 8
+	darkness_view = 10
 	body_parts_covered = EYES
 	flash_protection = FLASH_PROTECTION_MODERATE
 
@@ -382,6 +382,34 @@
 	icon_state = "nvg_avi_on"
 	off_state = "avi_off"
 	item_state = "nvg_avi_on"
+
+/obj/item/clothing/glasses/scion
+	name = "Omnishield Visor"
+	desc = "An integrated multi-spectral scanning system."
+	darkness_view = 13
+	see_invisible = SEE_INVISIBLE_NOLIGHTING
+	icon_state = "thermal"
+	item_state = "glasses"
+	body_parts_covered = EYES
+	siemens_coefficient = 0.9
+	unacidable = 1
+	flash_protection =  FLASH_PROTECTION_MODERATE
+	vision_flags = SEE_TURFS|SEE_MOBS
+
+/obj/item/clothing/glasses/sniper
+	name = "Mark XIIc Visor"
+	desc = "The Mark XIIc sniper variant night vision visor are special night vision goggles which make a much larger area visible to the user without adding any negative effects to their vision."
+	icon_state = "thermal"
+	darkness_view = 20
+	see_invisible = SEE_INVISIBLE_NOLIGHTING
+	item_state = "glasses"
+	body_parts_covered = EYES
+	unacidable = 1
+	flash_protection = FLASH_PROTECTION_MODERATE
+
+/obj/item/clothing/glasses/sniper/New()
+	..()
+	overlay = GLOB.global_hud.nvg
 
 // XENOS VISION
 
@@ -505,48 +533,17 @@
 	unacidable = 1
 	flash_protection =  FLASH_PROTECTION_MAJOR
 
-/obj/item/clothing/glasses/sniper
-	name = "Mark XIIc Visor"
-	desc = "The Mark XIIc sniper variant night vision visor are special night vision goggles which make a much larger area visible to the user without adding any negative effects to their vision."
-	icon_state = "thermal"
-	darkness_view = 12
-	see_invisible = SEE_INVISIBLE_NOLIGHTING
-	item_state = "glasses"
-	body_parts_covered = EYES
-	unacidable = 1
-	flash_protection = FLASH_PROTECTION_MODERATE
-
-/obj/item/clothing/glasses/sniper/New()
-	..()
-	overlay = GLOB.global_hud.nvg
-
 /obj/item/clothing/glasses/vindicare
 	name = "Vindicare Visor"
 	desc = "The peak of vision augmentation techology, these goggles are permanently bonded to the user's eyes."
 	icon_state = "thermal"
 	canremove = 0
 	darkness_view = 26
+	hud = HUD_MEDICAL
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
 	item_state = "thermal"
 	body_parts_covered = EYES
 	siemens_coefficient = 0
 	flash_protection = FLASH_PROTECTION_MAJOR
 	unacidable = 1
-	var/view_range = 10 //They can see further normally
 	vision_flags = SEE_TURFS|SEE_MOBS|SEE_OBJS
-
-/obj/item/clothing/glasses/vindicare/process_hud(var/mob/M)
-	process_med_hud(M, 1)
-
-/obj/item/clothing/glasses/scion
-	name = "Omnishield Visor"
-	desc = "An integrated multi-spectral scanning system."
-	darkness_view = 13
-	see_invisible = SEE_INVISIBLE_NOLIGHTING
-	icon_state = "thermal"
-	item_state = "glasses"
-	body_parts_covered = EYES
-	siemens_coefficient = 0.9
-	unacidable = 1
-	flash_protection =  FLASH_PROTECTION_MODERATE
-	vision_flags = SEE_TURFS|SEE_MOBS

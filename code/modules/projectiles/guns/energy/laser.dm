@@ -284,7 +284,7 @@
 		list(mode_name="overcharge", projectile_type=/obj/item/projectile/beam/lasgun, charge_cost=43, burst=3, burst_delay=2, fire_delay=4.7),
 		)
 
-/obj/item/gun/energy/las/laspistol/lucius
+/obj/item/gun/energy/lasgun/laspistol/lucius
 	name = "lucius-pattern laspistol"
 	desc = "A standard-issue sidearm for the enlisted personnel, non-commissioned officers and commanding officers of the Death Korps of Krieg. Can overcharge to have the same output as a rifle"
 	icon_state = "luciuspistol"
@@ -317,7 +317,7 @@
 		list(mode_name="burst", projectile_type=/obj/item/projectile/beam/lasgun/weak, charge_cost=31, burst=3, burst_delay=2, fire_delay=4),
 		)
 
-/obj/item/gun/energy/lassgun/laspistol/lord
+/obj/item/gun/energy/lasgun/laspistol/lord
 	name = "archeotech laspistol" // Overall superior version of the Hellpistol.
 	desc = "A xenos-tech laspistol modified further by the machinations of the AdMech, this artifact of combined xenos and human engineering looks centuries old."
 	icon_state = "lordlaspistol"

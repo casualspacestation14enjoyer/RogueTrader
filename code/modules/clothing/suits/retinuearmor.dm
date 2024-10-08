@@ -837,7 +837,7 @@
 	icon_state = "uegarmor"
 	item_state = "uegarmor"
 	armor = list(melee = 9, bullet = 34, laser = 33, energy = 30, bomb = 40, bio = 30, rad = 30)
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/lasgun/)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -849,7 +849,7 @@
 	icon_state = "exile"
 	item_state = "exile"
 	armor = list(melee = 11, bullet = 28, laser = 28, energy = 30, bomb = 40, bio = 30, rad = 30)
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/lasgun/)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -865,7 +865,7 @@
 	icon_state = "ogryn1"
 	item_state = "ogryn1"
 	armor = list(melee = 8, bullet = 31, laser = 31, energy = 31, bomb = 30, bio = 30, rad = 20)
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/lasgun/)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|HANDS|FEET|HEAD
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -878,7 +878,7 @@
 	icon_state = "ogryn2"
 	item_state = "ogryn2"
 	armor = list(melee = 10, bullet = 30, laser = 30, energy = 30, bomb = 30, bio = 30, rad = 20)
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/lasgun/)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|HANDS|FEET|HEAD
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -891,7 +891,7 @@
 	icon_state = "shadow"
 	item_state = "shadow"
 	armor = list(melee = 12, bullet = 49, laser = 49, energy = 39, bomb = 50, bio = 100, rad = 100)
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/lasgun/)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|HANDS|FEET|HEAD
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -923,7 +923,7 @@
 	icon_state = "lightpa2"
 	item_state = "lightpa2"
 	armor = list(melee = 12, bullet = 46, laser = 46, energy = 34, bomb = 20, bio = 100, rad = 100)
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/lasgun/)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -974,7 +974,7 @@
 	desc = "Mysterious armour belonging to the strange Inquisitors of the ordo Chronos, this suit seems to warp space around it."
 	icon_state = "inqarmor"
 	item_state = "inqarmor"
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/lasgun/)
 	armor = list(melee = 100, bullet = 100, laser = 100, energy = 100, bomb = 100, bio = 100, rad = 100) //Ordo Chronos bullshit, and it's event armour.
 	sales_price = 0
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS | HEAD| FACE | EYES
@@ -1019,7 +1019,7 @@
 	desc = "Mysterious armour belonging to the strange Inquisitors of the ordo Chronos, this suit seems to warp space around it."
 	icon_state = "inqarmor"
 	item_state = "inqarmor"
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/lasgun/)
 	armor = list(melee = 100, bullet = 100, laser = 100, energy = 100, bomb = 100, bio = 100, rad = 100) //Ordo Chronos bullshit, and it's event armour.
 	sales_price = 0
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS | HEAD| FACE | EYES
@@ -1042,7 +1042,7 @@
 	desc = "This armour is clearly antique, seemingly predating the Imperium entirely."
 	icon_state = "military_rig_sealed"
 	item_state = "military_rig_sealed"
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/lasgun/)
 	armor = list(melee = 100, bullet = 100, laser = 100, energy = 100, bomb = 100, bio = 100, rad = 100) //Archeotech, and it's event armour.
 	sales_price = 0
 	canremove = 0

@@ -3035,7 +3035,7 @@
 /obj/item/ammo_magazine/smg_top/rubber,
 /obj/item/ammo_magazine/smg_top/rubber,
 /obj/item/ammo_magazine/smg_top/rubber,
-/obj/item/gun/projectile/automatic/autogun/valhalla,
+/obj/item/gun/projectile/automatic/gaussrifle,
 /obj/item/gun/projectile/automatic/autogun/valhalla,
 /obj/item/gun/projectile/automatic/autogun/valhalla,
 /turf/unsimulated/floor{
