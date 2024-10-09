@@ -1802,11 +1802,7 @@
 		. -= 1
 	if(shock_stage > 30)
 		. -= 1
-	if(skill_check(SKILL_GUNS, SKILL_BASIC))
-		. += 1
-	if(skill_check(SKILL_GUNS, SKILL_TRAINED))
-		. += 1
-	if(skill_check(SKILL_GUNS, SKILL_EXPERIENCED))
+	if(skill_check(SKILL_GUNS, SKILL_EXPERIENCED)) // Temporarily experiment with only Experienced+ giving gun acc bonuses since the new meta allows pretty much everyone to get Exp level easily.
 		. += 1
 	if(skill_check(SKILL_GUNS, SKILL_MASTER))
 		. += 1
