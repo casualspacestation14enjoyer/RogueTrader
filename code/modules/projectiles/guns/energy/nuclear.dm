@@ -143,5 +143,5 @@
 	// Safety
 	if (ismob(loc))
 		var/mob/M = loc
-		if (M.skill_check(SKILL_WEAPONS, SKILL_BASIC))
+		if (M.skill_check(SKILL_GUNS, SKILL_BASIC))
 			AddOverlays(image('icons/obj/guns/gui.dmi', "safety[safety()]"))

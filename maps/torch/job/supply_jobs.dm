@@ -23,7 +23,7 @@
 	min_skill = list( // 9 points
 		SKILL_BUREAUCRACY = SKILL_TRAINED, // 2 points
 		SKILL_FINANCE = SKILL_BASIC, // 1 point
-		SKILL_HAULING = SKILL_BASIC, // 1 point
+		SKILL_VIGOR = SKILL_BASIC, // 1 point
 		SKILL_EVA = SKILL_BASIC, // 1 point
 		SKILL_PILOT = SKILL_BASIC, // 2 points
 		SKILL_MECH = SKILL_BASIC // 2 points
@@ -65,7 +65,7 @@
 	min_skill = list( // 5 points
 		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point
 		SKILL_FINANCE = SKILL_BASIC, // 1 point
-		SKILL_HAULING = SKILL_BASIC, // 1 point
+		SKILL_VIGOR = SKILL_BASIC, // 1 point
 		SKILL_MECH =	SKILL_BASIC // 2 points
 	)
 
@@ -96,7 +96,7 @@
 		"Shaft Miner",
 		"Salvage Technician")
 	min_skill = list( // 3 points
-		SKILL_HAULING = SKILL_TRAINED, // 2 points
+		SKILL_VIGOR = SKILL_TRAINED, // 2 points
 		SKILL_EVA = SKILL_BASIC // 1 point
 		)
 

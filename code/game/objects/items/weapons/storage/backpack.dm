@@ -593,7 +593,7 @@
 		return TRUE
 	return ..()
 
-/obj/item/storage/backpack/satchel/heavy
+/obj/item/storage/backpack/satchel/warfare/heavy
 	name = "heavy rucksack"
 	desc = "A heavy rucksack."
 	icon_state = "warfare_satchel"

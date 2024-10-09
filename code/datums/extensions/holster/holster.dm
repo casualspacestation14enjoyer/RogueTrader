@@ -42,7 +42,7 @@
 		if(istype(I, /obj/item/gun))
 			var/obj/item/gun/G = I
 			G.check_accidents(user)
-			if(user.a_intent == I_HELP && G.has_safety && !G.safety_state && user.skill_check(SKILL_WEAPONS, SKILL_EXPERIENCED))
+			if(user.a_intent == I_HELP && G.has_safety && !G.safety_state && user.skill_check(SKILL_GUNS, SKILL_EXPERIENCED))
 				G.toggle_safety(user)
 		holstered = I
 		storage.handle_item_insertion(holstered, 1)
@@ -76,7 +76,7 @@
 			if(istype(holstered, /obj/item/gun))
 				var/obj/item/gun/G = holstered
 				G.check_accidents(user)
-				if(G.safety() && user.skill_check(SKILL_WEAPONS, SKILL_EXPERIENCED)) // Experienced shooter will disable safety before shooting.
+				if(G.safety() && user.skill_check(SKILL_GUNS, SKILL_EXPERIENCED)) // Experienced shooter will disable safety before shooting.
 					G.toggle_safety(user)
 			usr.visible_message(
 				SPAN_DANGER("\The [user] draws \the [holstered], ready to go!"),

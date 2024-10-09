@@ -50,12 +50,12 @@
 /singleton/hierarchy/outfit/job/torch/crew/engineering/bondsman
 	name = OUTFIT_JOB_NAME("Bondsman")
 	head = /obj/item/clothing/head/hardhat/bondsman
-	mask = /obj/item/clothing/mask/gas/void
+	mask = /obj/item/clothing/mask/gas/explorer
 	glasses = /obj/item/clothing/glasses/night
 	belt = /obj/item/storage/belt/utility/full
 	suit = /obj/item/clothing/suit/armor/grim/storage/hooded/mechanicus/bondsman
 	shoes = /obj/item/clothing/shoes/jackboots/pilgrim_boots
-	uniform = /obj/item/clothing/under/rank/engineer
+	uniform = /obj/item/clothing/under/rank/victorian/black
 	r_pocket = null
 	l_ear = /obj/item/device/radio/headset/headset_mechanicus
 	l_hand = null

@@ -7,26 +7,35 @@
 	ideal_character_age = 50
 	total_positions = 1
 	spawn_positions = 1
-	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/CO
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/roguetrader
 	allowed_branches = list(
 		/datum/mil_branch/civilian
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 20
+	skill_points = 18
 	min_skill = list(
 		SKILL_BUREAUCRACY = SKILL_EXPERIENCED,
 		SKILL_FINANCE = SKILL_TRAINED,
-		SKILL_HAULING = SKILL_TRAINED,
+		SKILL_PILOT = SKILL_EXPERIENCED,
+		SKILL_VIGOR = SKILL_TRAINED,
 		SKILL_MEDICAL = SKILL_BASIC,
 		SKILL_DEVICES = SKILL_BASIC,
 		SKILL_COMBAT = SKILL_EXPERIENCED,
-		SKILL_WEAPONS = SKILL_EXPERIENCED,
+		SKILL_GUNS = SKILL_EXPERIENCED,
 		SKILL_MECH = SKILL_TRAINED,
 		SKILL_COMPUTER = SKILL_TRAINED,
 		SKILL_EVA = SKILL_TRAINED
 	)
+
+	max_skill = list(	SKILL_BUREAUCRACY = SKILL_MASTER,
+						SKILL_FINANCE = SKILL_MASTER,
+						SKILL_DEVICES = SKILL_MASTER,
+						SKILL_VIGOR = SKILL_MASTER,
+						SKILL_GUNS = SKILL_PRIMARIS,
+						SKILL_COMBAT = SKILL_PRIMARIS,
+						SKILL_PILOT = SKILL_MASTER)
 
 	software_on_spawn = list(/datum/computer_file/program/comm,
 							 /datum/computer_file/program/card_mod,
@@ -35,9 +44,15 @@
 /datum/job/rogue_trader/get_description_blurb()
 	return "You are the Rogue Trader, commander of the Dauntless, an Imperial corvette exploratory vessel. Tasked with navigating the uncharted terror -- the Ghoul Stars, you lead a diverse retinue representing many factions, each serving a crucial role aboard your ship. While you hold ultimate authority, you work closely with your Magos Explorator, whose resources and personnel are vital to your survival in this cursed region. Rely on your officers to manage the deck scum, explore forgotten worlds, and broker alliances or hostilities with the human, alien, and worse. The emperor protects..."
 
-/datum/job/rogue_trader/post_equip_rank(mob/person, alt_title)
-	captain_announcement.Announce("All crew, [alt_title || title] [person.real_name] on deck!")
-	..()
+/datum/job/rogue_trader/equip(mob/living/carbon/human/H)
+	var/current_name = H.real_name
+	var/selected_title = alt_titles[H.mind.role_alt_title]
+	if (!selected_title)
+		selected_title = title
+	H.fully_replace_character_name("[selected_title] [current_name]")
+	captain_announcement.Announce("All crew, [selected_title] [current_name] has arrived...")
+	to_chat(H, "<span class='notice'><b><font size=2>You are the [selected_title], commander of the Dauntless, an Imperial corvette exploratory vessel. Tasked with navigating the uncharted terror -- the Ghoul Stars, you lead a diverse retinue representing many factions, each serving a crucial role aboard your ship. While you hold ultimate authority, you work closely with your Magos Explorator, whose resources and personnel are vital to your survival in this cursed region. Rely on your officers to manage the deck scum, explore forgotten worlds, and broker alliances or hostilities with the human, alien, and worse. The emperor protects...</font></b></span>")
+	return ..()
 
 /datum/job/seneschal
 	title = "Seneschal"
@@ -50,20 +65,35 @@
 	economic_power = 14
 	minimum_character_age = list(SPECIES_HUMAN = 35)
 	ideal_character_age = 45
-	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/XO
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/seneschal
 	allowed_branches = list(
 		/datum/mil_branch/civilian
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 36
-	min_skill = list( // 5 points
-		SKILL_BUREAUCRACY = SKILL_TRAINED, // 2 points
-		SKILL_COMPUTER = SKILL_BASIC, // 1 point
-		SKILL_PILOT = SKILL_BASIC // 2 points
+	skill_points = 18
+	min_skill = list(
+		SKILL_BUREAUCRACY = SKILL_EXPERIENCED,
+		SKILL_FINANCE = SKILL_TRAINED,
+		SKILL_PILOT = SKILL_TRAINED,
+		SKILL_VIGOR = SKILL_TRAINED,
+		SKILL_MEDICAL = SKILL_BASIC,
+		SKILL_DEVICES = SKILL_BASIC,
+		SKILL_COMBAT = SKILL_EXPERIENCED,
+		SKILL_GUNS = SKILL_EXPERIENCED,
+		SKILL_MECH = SKILL_TRAINED,
+		SKILL_COMPUTER = SKILL_TRAINED,
+		SKILL_EVA = SKILL_TRAINED
 	)
 
+	max_skill = list(	SKILL_BUREAUCRACY = SKILL_MASTER,
+						SKILL_FINANCE = SKILL_MASTER,
+						SKILL_DEVICES = SKILL_MASTER,
+						SKILL_VIGOR = SKILL_MASTER,
+						SKILL_GUNS = SKILL_LEGEND,
+						SKILL_COMBAT = SKILL_LEGEND,
+						SKILL_PILOT = SKILL_MASTER)
 
 	access = list(
 		access_security, access_brig, access_armory, access_forensics_lockers, access_heads, access_medical, access_morgue, access_tox, access_tox_storage,
@@ -87,7 +117,49 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/seneschal/get_description_blurb()
-	return "You are the Executive Officer. You are an experienced senior officer, second in command of the ship, and are responsible for the smooth operation of the ship under your Commanding Officer. In their absence, you are expected to take their place. Your primary duty is directly managing department heads and all those outside a department heading. You are also responsible for the contractors and passengers aboard the ship. Consider the Senior Enlisted Advisor and Bridge Officers tools at your disposal."
+    return "You are the Seneschal, the trusted advisor and chief administrator aboard the Dauntless. Your duties involve managing the vast wealth, resources, and trade networks of the Rogue Trader, ensuring colonies, contracts, and logistics run smoothly. You oversee the ship’s operations, handling everything from diplomacy to the darker dealings of the trade empire. While the Rogue Trader focuses on larger ventures, you maintain the foundations that keep the dynasty profitable and in control."
+
+/datum/job/seneschal/equip(mob/living/carbon/human/H)
+	var/current_name = H.real_name
+	var/selected_title = alt_titles[H.mind.role_alt_title]
+	if (!selected_title)
+		selected_title = title
+	H.fully_replace_character_name("[selected_title] [current_name]")
+	to_chat(H, "<span class='notice'><b><font size=2>You are the [selected_title], the trusted advisor and chief administrator aboard the Dauntless. Your duties involve managing the vast wealth, resources, and trade networks of the Rogue Trader, ensuring colonies, contracts, and logistics run smoothly. You oversee the ship’s operations, handling everything from diplomacy to the darker dealings of the trade empire. While the Rogue Trader focuses on larger ventures, you maintain the foundations that keep the dynasty profitable and in control.</font></b></span>")
+	return ..()
+
+/datum/job/mercenary
+	title = "Mercenary"
+	department = "Command"
+	department_flag = COM
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the Rogue Trader"
+	selection_color = "#2f2f7f"
+	economic_power = 16
+	minimal_player_age = 0
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/mercenary
+	allowed_branches = list(/datum/mil_branch/civilian)
+	allowed_ranks = list(/datum/mil_rank/civ/civ)
+	total_positions = 0
+	spawn_positions = 0
+	skill_points = 26
+	min_skill = list( // 5 points
+		SKILL_BUREAUCRACY = SKILL_EXPERIENCED, // 4 points
+		SKILL_FINANCE = SKILL_BASIC // 1 point
+	)
+	minimum_character_age = list(SPECIES_HUMAN = 27)
+
+	access = list(
+		access_representative, access_security, access_medical,
+		access_bridge, access_cargo, access_solgov_crew,
+		access_hangar, access_torch_fax, access_radio_comm
+	)
+
+	software_on_spawn = list(/datum/computer_file/program/reports)
+
+/datum/job/mercenary/get_description_blurb()
+	return "You are the Imperium Representative. You are a civilian assigned as both a diplomatic liaison for first contact and foreign affair situations on board. You are also responsible for monitoring for any serious missteps of justice, sol law or other ethical or legal issues aboard and informing and advising the Commanding Officer of them. You are a mid-level bureaucrat. You liaise between the crew and imperial interests on board. Send faxes back to Sol on mission progress and important events."
 
 /datum/job/rd
 	title = "Chief Science Officer"
@@ -141,86 +213,6 @@
 	return "You are the Chief Science Officer. You are responsible for the research department. You handle the science aspects of the project and liase with the imperial interests of the Explorator Organisation. Make sure science gets done, do some yourself, and get your scientists on away missions to find things to benefit the project. Advise the CO on science matters."
 
 
-
-/datum/job/guard_captain
-	title = "Cadian Captain"
-	supervisors = "the Commanding Officer and the Executive Officer"
-	economic_power = 10
-	minimal_player_age = 14
-	minimum_character_age = list(SPECIES_HUMAN = 25)
-	ideal_character_age = 35
-	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/cos
-	total_positions = 1
-	spawn_positions = 1
-	allowed_branches = list(
-		/datum/mil_branch/civilian
-	)
-	allowed_ranks = list(
-		/datum/mil_rank/civ/civ
-	)
-	skill_points = 34
-	min_skill = list( // 15 points
-		SKILL_BUREAUCRACY = SKILL_TRAINED, // 2 points
-		SKILL_EVA = SKILL_BASIC, // 1 point
-		SKILL_COMBAT = SKILL_BASIC, // 2 points
-		SKILL_WEAPONS = SKILL_TRAINED, // 6 points
-		SKILL_FORENSICS = SKILL_BASIC // 4 points
-	)
-
-	max_skill = list(   SKILL_COMBAT      = SKILL_MAX,
-	                    SKILL_WEAPONS     = SKILL_MAX,
-	                    SKILL_FORENSICS   = SKILL_MAX)
-
-	access = list(
-		access_security, access_brig, access_armory, access_forensics_lockers,
-		access_maint_tunnels, access_external_airlocks, access_emergency_storage,
-		access_teleporter, access_eva, access_bridge, access_heads, access_aquila,
-		access_hos, access_RC_announce, access_keycard_auth, access_sec_doors,
-		access_solgov_crew, access_gun, access_emergency_armory, access_hangar, access_torch_fax,
-		access_radio_comm, access_radio_sec
-	)
-
-	software_on_spawn = list(/datum/computer_file/program/comm,
-							 /datum/computer_file/program/digitalwarrant,
-							 /datum/computer_file/program/camera_monitor,
-							 /datum/computer_file/program/reports)
-
-/datum/job/guard_captain/get_description_blurb()
-	return "You are the Chief of Security. You manage ship security. The Masters at Arms and the Militarum Police, as well as the Brig Chief and the Forensic Technician. You keep the vessel safe. You handle both internal and external security matters. You are the law. You are subordinate to the CO and the XO. You are expected to know the SCMJ and Sol law and Alert Procedure to a very high degree along with general regulations."
-
-/datum/job/representative
-	title = "SolGov Representative"
-	department = "Support"
-	department_flag = SPT
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = "the Sol Central Government and the Imperial Charter"
-	selection_color = "#2f2f7f"
-	economic_power = 16
-	minimal_player_age = 0
-	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/representative
-	allowed_branches = list(/datum/mil_branch/civilian)
-	allowed_ranks = list(/datum/mil_rank/civ/civ)
-	total_positions = 0
-	spawn_positions = 0
-	skill_points = 26
-	min_skill = list( // 5 points
-		SKILL_BUREAUCRACY = SKILL_EXPERIENCED, // 4 points
-		SKILL_FINANCE = SKILL_BASIC // 1 point
-	)
-	minimum_character_age = list(SPECIES_HUMAN = 27)
-
-	access = list(
-		access_representative, access_security, access_medical,
-		access_bridge, access_cargo, access_solgov_crew,
-		access_hangar, access_torch_fax, access_radio_comm
-	)
-
-	software_on_spawn = list(/datum/computer_file/program/reports)
-
-/datum/job/representative/get_description_blurb()
-	return "You are the Imperium Representative. You are a civilian assigned as both a diplomatic liaison for first contact and foreign affair situations on board. You are also responsible for monitoring for any serious missteps of justice, sol law or other ethical or legal issues aboard and informing and advising the Commanding Officer of them. You are a mid-level bureaucrat. You liaise between the crew and imperial interests on board. Send faxes back to Sol on mission progress and important events."
-
 /datum/job/sea
 	title = "Senior Enlisted Advisor"
 	department = "Support"
@@ -244,12 +236,12 @@
 	min_skill = list( // 5 points
 		SKILL_EVA = SKILL_BASIC, // 1 point
 		SKILL_COMBAT = SKILL_BASIC, // 2 points
-		SKILL_WEAPONS = SKILL_BASIC // 2 points
+		SKILL_GUNS = SKILL_BASIC // 2 points
 	)
 
 	max_skill = list(	SKILL_PILOT        = SKILL_TRAINED,
 	                    SKILL_COMBAT       = SKILL_EXPERIENCED,
-	                    SKILL_WEAPONS      = SKILL_EXPERIENCED,
+	                    SKILL_GUNS      = SKILL_EXPERIENCED,
 	                    SKILL_CONSTRUCTION = SKILL_MAX,
 	                    SKILL_ELECTRICAL   = SKILL_MAX,
 	                    SKILL_ENGINES      = SKILL_MAX,

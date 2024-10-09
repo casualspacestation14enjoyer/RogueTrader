@@ -1794,7 +1794,7 @@
 
 /mob/living/carbon/human/ranged_accuracy_mods()
 	. = ..()
-	if(get_shock() > 10 && !skill_check(SKILL_WEAPONS, SKILL_TRAINED))
+	if(get_shock() > 10 && !skill_check(SKILL_GUNS, SKILL_TRAINED))
 		. -= 1
 	if(get_shock() > 50)
 		. -= 1
@@ -1802,19 +1802,15 @@
 		. -= 1
 	if(shock_stage > 30)
 		. -= 1
-	if(skill_check(SKILL_WEAPONS, SKILL_BASIC))
+	if(skill_check(SKILL_GUNS, SKILL_EXPERIENCED)) // Temporarily experiment with only Experienced+ giving gun acc bonuses since the new meta allows pretty much everyone to get Exp level easily.
 		. += 1
-	if(skill_check(SKILL_WEAPONS, SKILL_TRAINED))
+	if(skill_check(SKILL_GUNS, SKILL_MASTER))
 		. += 1
-	if(skill_check(SKILL_WEAPONS, SKILL_EXPERIENCED))
+	if(skill_check(SKILL_GUNS, SKILL_LEGEND))
 		. += 1
-	if(skill_check(SKILL_WEAPONS, SKILL_MASTER))
+	if(skill_check(SKILL_GUNS, SKILL_PRIMARIS))
 		. += 1
-	if(skill_check(SKILL_WEAPONS, SKILL_LEGEND))
-		. += 1
-	if(skill_check(SKILL_WEAPONS, SKILL_PRIMARIS))
-		. += 1
-	if(skill_check(SKILL_WEAPONS, SKILL_DEMIGOD))
+	if(skill_check(SKILL_GUNS, SKILL_DEMIGOD))
 		. += 1
 
 /mob/living/carbon/human/can_drown()

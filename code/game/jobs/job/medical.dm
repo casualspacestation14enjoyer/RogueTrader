@@ -18,7 +18,7 @@
 	ideal_character_age = 50
 	outfit_type = /singleton/hierarchy/outfit/job/medical/cmo
 
-/datum/job/hospitaller
+/datum/job/medicae
 	title = "Medical Doctor"
 	department = "Medical"
 	department_flag = MED

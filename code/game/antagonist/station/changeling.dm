@@ -6,7 +6,7 @@ GLOBAL_DATUM_INIT(changelings, /datum/antagonist/changeling, new)
 	role_text_plural = "Changelings"
 	feedback_tag = "changeling_objective"
 	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg, /datum/job/submap)
-	restricted_jobs = list(/datum/job/enforcer, /datum/job/enforcer_sergeant, /datum/job/xeno_mercenary, /datum/job/rogue_trader, /datum/job/guard_captain)
+	restricted_jobs = list(/datum/job/enforcer, /datum/job/enforcer_sergeant, /datum/job/detective, /datum/job/rogue_trader, /datum/job/guard_captain)
 	welcome_text = "Use say \"%LANGUAGE_PREFIX%g message\" to communicate with your fellow changelings. Remember: you get all of their absorbed DNA if you absorb them."
 	flags = ANTAG_SUSPICIOUS | ANTAG_RANDSPAWN | ANTAG_VOTABLE
 	antaghud_indicator = "hudchangeling"

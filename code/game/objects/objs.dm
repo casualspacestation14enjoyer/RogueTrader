@@ -35,7 +35,7 @@
 			if (!isturf(loc))
 				USE_FEEDBACK_FAILURE("\The [src] must be on a turf to lift \the [dropped] onto it.")
 				return TRUE
-			if (!user.skill_check(SKILL_HAULING, SKILL_BASIC))
+			if (!user.skill_check(SKILL_VIGOR, SKILL_BASIC))
 				USE_FEEDBACK_FAILURE("You're not strong enough to lift \the [dropped] onto \the [src].")
 				return TRUE
 			var/has_blocker = FALSE
@@ -52,7 +52,7 @@
 				SPAN_NOTICE("\The [user] starts lifting \the [dropped] onto \the [src]."),
 				SPAN_NOTICE("You start lifting \the [dropped] onto \the [src].")
 			)
-			if (!user.do_skilled(6 SECONDS, SKILL_HAULING, src, do_flags = DO_PUBLIC_UNIQUE) || !user.use_sanity_check(src, dropped))
+			if (!user.do_skilled(6 SECONDS, SKILL_VIGOR, src, do_flags = DO_PUBLIC_UNIQUE) || !user.use_sanity_check(src, dropped))
 				return TRUE
 			if (!HAS_FLAGS(obj_flags, OBJ_FLAG_RECEIVE_TABLE))
 				USE_FEEDBACK_FAILURE("\The [src]'s state has changed.")

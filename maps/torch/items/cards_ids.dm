@@ -38,18 +38,18 @@
 	detail_color = COLOR_PALE_BLUE_GRAY
 
 /obj/item/card/id/torch/crew/medical
-	job_access_type = /datum/job/hospitaller
+	job_access_type = /datum/job/medicae
 	detail_color = COLOR_PALE_BLUE_GRAY
 
 /obj/item/card/id/torch/crew/medical/senior
-	job_access_type = /datum/job/chirugeon
+	job_access_type = /datum/job/juniormedicae
 
 /obj/item/card/id/torch/contractor/medical
-	job_access_type = /datum/job/hospitaller
+	job_access_type = /datum/job/medicae
 	detail_color = COLOR_PALE_BLUE_GRAY
 
 /obj/item/card/id/torch/contractor/medical/senior
-	job_access_type = /datum/job/chirugeon
+	job_access_type = /datum/job/juniormedicae
 
 /obj/item/card/id/torch/contractor/chemist
 	job_access_type = /datum/job/pharmacologis
@@ -74,7 +74,7 @@
 	extra_details = list("onegoldstripe")
 
 /obj/item/card/id/torch/crew/security/forensic
-	job_access_type = /datum/job/xeno_mercenary
+	job_access_type = /datum/job/detective
 
 
 /obj/item/card/id/torch/silver/engineering
@@ -133,7 +133,7 @@
 
 
 /obj/item/card/id/torch/crew/representative
-	job_access_type = /datum/job/representative
+	job_access_type = /datum/job/mercenary
 	detail_color = COLOR_COMMAND_BLUE
 
 /obj/item/card/id/torch/crew/sea

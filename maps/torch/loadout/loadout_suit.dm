@@ -10,7 +10,7 @@
 /datum/gear/suit/trenchcoat
 	allowed_roles = list(
 		/datum/job/assistant,
-		/datum/job/xeno_mercenary,
+		/datum/job/detective,
 		/datum/job/merchant,
 		/datum/job/submap/bearcat_captain,
 		/datum/job/submap/bearcat_crewman,
@@ -25,15 +25,15 @@
 /datum/gear/suit/security_poncho
 	allowed_roles = list(
 		/datum/job/merchant,
-		/datum/job/xeno_mercenary
+		/datum/job/detective
 	)
 	allowed_branches = UNIFORMED_BRANCHES
 
 /datum/gear/suit/medical_poncho
 	allowed_roles = list(
-		/datum/job/chirugeon,
+		/datum/job/juniormedicae,
+		/datum/job/sister_hospitaller,
 		/datum/job/medicae,
-		/datum/job/hospitaller,
 		/datum/job/rogue_guest,
 		/datum/job/merchant,
 		/datum/job/pharmacologis
@@ -204,7 +204,7 @@
 	display_name = "Agent's jacket"
 	path = /obj/item/clothing/suit/armor/grim/toggle/agent_jacket
 	allowed_roles = list(
-		/datum/job/xeno_mercenary
+		/datum/job/detective
 	)
 	allowed_branches = list(
 		/datum/mil_branch/solgov
@@ -213,6 +213,6 @@
 
 /datum/gear/suit/chest_rig/New()
 	allowed_roles = TECHNICAL_ROLES + SECURITY_ROLES + list(
-		/datum/job/hospitaller
+		/datum/job/medicae
 	)
 	..()

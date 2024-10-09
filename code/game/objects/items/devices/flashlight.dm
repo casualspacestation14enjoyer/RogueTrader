@@ -285,7 +285,7 @@
 
 /obj/item/device/flashlight/flare/Initialize()
 	. = ..()
-	fuel = rand(4 MINUTES, 5 MINUTES) // Sorry for changing this so much but I keep under-estimating how long X number of ticks last in seconds.v
+	fuel = rand(6 MINUTES, 9 MINUTES) // Sorry for changing this so much but I keep under-estimating how long X number of ticks last in seconds.v
 	update_icon()
 
 /obj/item/device/flashlight/flare/Destroy()

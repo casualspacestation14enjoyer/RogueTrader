@@ -93,7 +93,7 @@
 				/obj/item/clothing/accessory/armguards/riot = 6,
 				/obj/item/clothing/glasses/cadiangoggles/elite = 2,
 				/obj/item/clothing/head/helmet/guardhelmet/carapace = 1,
-				/obj/item/storage/backpack/satchel/heavy = 1,
+				/obj/item/storage/backpack/satchel/warfare/heavy = 1,
 				/obj/item/clothing/accessory/legguards/riot = 6)
 
 /obj/random/loot/lightmelee
@@ -235,11 +235,11 @@
 
 /obj/random/loot/sidearms/spawn_choices()
 	return list(
-				/obj/item/gun/energy/las/laspistol = 4,
-				/obj/item/gun/energy/las/laspistol/shitty = 5,
-				/obj/item/gun/energy/las/laspistol/accatran = 1,
-				/obj/item/gun/energy/las/laspistol/militarum/lucius = 2,
-				/obj/item/gun/energy/las/laspistol/militarum = 2,
+				/obj/item/gun/energy/lasgun/laspistol = 4,
+				/obj/item/gun/energy/lasgun/laspistol/shitty = 5,
+				/obj/item/gun/energy/lasgun/laspistol/accatran = 1,
+				/obj/item/gun/energy/lasgun/laspistol/militarum/lucius = 2,
+				/obj/item/gun/energy/lasgun/laspistol/militarum = 2,
 				/obj/item/gun/projectile/talon/renegade = 1,
 				/obj/item/gun/projectile/revolver/mateba = 1,
 				/obj/item/gun/projectile/revolver/villiers = 1,
@@ -335,7 +335,7 @@
 		/obj/item/gun/projectile/automatic/agripinaaii = 1,
 		/obj/item/gun/projectile/automatic/messina = 1,
 		/obj/item/gun/projectile/thrower = 1,
-		/obj/item/storage/backpack/satchel/heavy = 1
+		/obj/item/storage/backpack/satchel/warfare/heavy = 1
 	)
 
 
@@ -346,15 +346,15 @@
 
 /obj/random/loot/badweaponlas/spawn_choices()
 	return list(
-		/obj/item/gun/energy/las/laspistol/shitty = 9,
-		/obj/item/gun/energy/las/lasgun/shitty = 7,
-		/obj/item/gun/energy/las/laspistol = 5,
-		/obj/item/gun/energy/las/laspistol/militarum = 3,
-		/obj/item/gun/energy/las/laspistol/militarum/lucius = 2,
-		/obj/item/gun/energy/las/lasgun/lucius = 3,
-		/obj/item/gun/energy/las/lasgun/catachan = 1,
-		/obj/item/gun/energy/las/lasgun/accatran = 1,
-		/obj/item/gun/energy/las/lasgun = 4
+		/obj/item/gun/energy/lasgun/laspistol/shitty = 9,
+		/obj/item/gun/energy/lasgun//shitty = 7,
+		/obj/item/gun/energy/lasgun/laspistol = 5,
+		/obj/item/gun/energy/lasgun/laspistol/militarum = 3,
+		/obj/item/gun/energy/lasgun/laspistol/militarum/lucius = 2,
+		/obj/item/gun/energy/lasgun//lucius = 3,
+		/obj/item/gun/energy/lasgun//catachan = 1,
+		/obj/item/gun/energy/lasgun//accatran = 1,
+		/obj/item/gun/energy/lasgun/ = 4
 	)
 
 /obj/random/loot/goodweapon
@@ -368,10 +368,10 @@
 				/obj/item/gun/projectile/bolter_pistol/inquis = 1,
 				/obj/item/gun/energy/pulse/plasma/rifle = 1,
 				/obj/item/gun/energy/pulse/plasma/pistol = 3,
-				/obj/item/gun/energy/las/hotshot = 2,
+				/obj/item/gun/energy/lasgun/hotshot = 2,
 				/obj/item/gun/energy/melta/handheld = 1,
-				/obj/item/gun/energy/las/lasgun/longlas = 2,
-				/obj/item/gun/energy/las/lasgun/longlas/krieg = 2,
+				/obj/item/gun/energy/lasgun//longlas = 2,
+				/obj/item/gun/energy/lasgun//longlas/krieg = 2,
 				/obj/item/gun/projectile/heavysniper = 2
 				)
 
@@ -457,7 +457,7 @@
 				/obj/item/stack/thrones2/ten = 1,
 				/obj/item/grenade/frag/high_yield/homemade = 1,
 				/obj/item/grenade/frag = 1,
-				/obj/item/storage/backpack/satchel/heavy = 1,
+				/obj/item/storage/backpack/satchel/warfare/heavy = 1,
 				/obj/item/clothing/under/rank/victorian = 1,
 				/obj/item/grenade/frag/high_yield/krak = 1)
 
@@ -475,7 +475,7 @@
 				/obj/item/clothing/suit/armor/militia = 2,
 				/obj/item/melee/sword/combat_knife = 1,
 				/obj/item/stack/thrones2/ten = 2,
-				/obj/item/storage/backpack/satchel/heavy = 1,
+				/obj/item/storage/backpack/satchel/warfare/heavy = 1,
 				/obj/item/clothing/accessory/holster/waist = 3,
 				/obj/item/clothing/accessory/storage/webbing = 5,
 				/obj/item/storage/belt/utility/full = 2,

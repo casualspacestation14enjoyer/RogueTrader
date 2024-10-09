@@ -214,6 +214,14 @@
 		bomb = ARMOR_BOMB_TEN+5
 	)
 
+/obj/item/clothing/gloves/thick/swat/combat/warfare
+	icon_state = "warfare_gloves"
+	item_state = "warfare_gloves"
+
+/obj/item/clothing/gloves/thick/swat/combat/warfare/rt
+	icon_state = "rtg"
+	item_state = "rtg"
+
 /obj/item/clothing/gloves/thick/swat/krieg
 	icon_state = "krieggloves"
 	item_state = "krieggloves"

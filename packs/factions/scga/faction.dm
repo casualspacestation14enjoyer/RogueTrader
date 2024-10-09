@@ -4,8 +4,8 @@
 	email_domain = "army.mil.scg"
 	assistant_job = null
 	min_skill = list( // 6 points
-		SKILL_HAULING = SKILL_TRAINED, // 2 points
-		SKILL_WEAPONS = SKILL_BASIC, // 2 points
+		SKILL_VIGOR = SKILL_TRAINED, // 2 points
+		SKILL_GUNS = SKILL_BASIC, // 2 points
 		SKILL_COMBAT = SKILL_BASIC // 2 points
 	)
 

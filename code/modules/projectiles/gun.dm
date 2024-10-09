@@ -124,7 +124,7 @@
 	var/safety_icon
 
 	/// What skill governs safe handling of this gun. Basic skill level and higher will also show the safety overlay to the player.
-	var/gun_skill = SKILL_WEAPONS
+	var/gun_skill = SKILL_GUNS
 	/// What skill level is needed in the gun's skill to completely negate the chance of an accident.
 	var/safety_skill = SKILL_EXPERIENCED
 
@@ -171,7 +171,7 @@
 		return 0
 
 	var/mob/living/M = user
-	if(!safety() && world.time > last_safety_check + 5 MINUTES && !user.skill_check(SKILL_WEAPONS, SKILL_BASIC))
+	if(!safety() && world.time > last_safety_check + 5 MINUTES && !user.skill_check(SKILL_GUNS, SKILL_BASIC))
 		if(prob(30))
 			toggle_safety()
 			return 1
@@ -260,7 +260,7 @@
 		return
 
 	if(safety())
-		if(user.a_intent == I_HURT && user.skill_check(SKILL_WEAPONS, SKILL_EXPERIENCED) && user.client?.get_preference_value(/datum/client_preference/safety_toggle_on_intent) == GLOB.PREF_YES)
+		if(user.a_intent == I_HURT && user.skill_check(SKILL_GUNS, SKILL_EXPERIENCED) && user.client?.get_preference_value(/datum/client_preference/safety_toggle_on_intent) == GLOB.PREF_YES)
 			toggle_safety(user)
 		else
 			handle_click_safety(user)
@@ -430,7 +430,7 @@
 	var/disp_mod = dispersion[min(burst, length(dispersion))]
 	var/stood_still = last_handled
 	//Not keeping gun active will throw off aim (for non-Masters)
-	if(user.skill_check(SKILL_WEAPONS, SKILL_TRAINED))
+	if(user.skill_check(SKILL_GUNS, SKILL_TRAINED))
 		stood_still = min(user.l_move_time, last_handled)
 	else
 		stood_still = max(user.l_move_time, last_handled)
@@ -446,7 +446,7 @@
 		acc_mod -= one_hand_penalty/2
 		disp_mod += one_hand_penalty*0.5 //dispersion per point of two-handedness
 
-	if(burst > 1 && !user.skill_check(SKILL_WEAPONS, SKILL_TRAINED))
+	if(burst > 1 && !user.skill_check(SKILL_GUNS, SKILL_TRAINED))
 		acc_mod -= 1
 		disp_mod += 0.5
 
@@ -588,7 +588,7 @@
 	zoom(user, zoom_offset, view_size)
 	if(zoom)
 		accuracy = scoped_accuracy
-		if(user.skill_check(SKILL_WEAPONS, SKILL_TRAINED))
+		if(user.skill_check(SKILL_GUNS, SKILL_TRAINED))
 			accuracy += 1
 		if(screen_shake)
 			screen_shake = round(screen_shake*zoom_amount+1) //screen shake is worse when looking through a scope
@@ -601,7 +601,7 @@
 
 /obj/item/gun/examine(mob/user)
 	. = ..()
-	if(user.skill_check(SKILL_WEAPONS, SKILL_BASIC))
+	if(user.skill_check(SKILL_GUNS, SKILL_BASIC))
 		if(length(firemodes) > 1)
 			var/datum/firemode/current_mode = firemodes[sel_mode]
 			to_chat(user, "The fire selector is set to [current_mode.name].")
@@ -633,7 +633,7 @@
 
 /obj/item/gun/attack_self(mob/user)
 	var/datum/firemode/new_mode = switch_firemodes(user)
-	if(prob(20) && !user.skill_check(SKILL_WEAPONS, SKILL_BASIC))
+	if(prob(20) && !user.skill_check(SKILL_GUNS, SKILL_BASIC))
 		new_mode = switch_firemodes(user)
 	if(new_mode)
 		to_chat(user, SPAN_NOTICE("\The [src] is now set to [new_mode.name]."))

@@ -153,9 +153,9 @@
 		bomb = ARMOR_BOMB_TEN+4
 	)
 
-/obj/item/clothing/suit/armor/grim/cadian/sergeant
+/obj/item/clothing/suit/armor/grim/cadian/officer
 	name = "cadian carapace armour"
-	desc = "The reinforced carapace armor worn by Cadian Sergeants, offering enhanced protection with carapace inserts."
+	desc = "The reinforced carapace armor worn by Cadian Officers, offering enhanced protection with carapace inserts."
 	icon_state = "fharmor"
 	item_state = "fharmor"
 	body_parts_covered = LEGS|ARMS
@@ -325,9 +325,9 @@
 	icon_state = "mvalarmor"
 	item_state = "mvalarmor"
 
-/obj/item/clothing/suit/armor/grim/valhallan/sergeant
+/obj/item/clothing/suit/armor/grim/valhallan/captain
 	name = "valhalan carapace overcoat"
-	desc = "A Valhallan overcoat with additional markings and improved protection, worn by Sergeants."
+	desc = "A Valhallan overcoat with additional markings and improved protection, worn by Officers."
 	accessories = list(/obj/item/clothing/accessory/armor_plate/carapace)
 	body_parts_covered = LEGS | ARMS
 	slowdown_general = 0.06

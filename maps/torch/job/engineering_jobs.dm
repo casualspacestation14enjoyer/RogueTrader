@@ -20,7 +20,7 @@
 	min_skill = list(
 		SKILL_BUREAUCRACY  = SKILL_TRAINED,
 		SKILL_COMBAT = SKILL_TRAINED,
-		SKILL_WEAPONS = SKILL_EXPERIENCED,
+		SKILL_GUNS = SKILL_EXPERIENCED,
 		SKILL_FORENSICS = SKILL_TRAINED,
 		SKILL_SCIENCE = SKILL_EXPERIENCED,
 		SKILL_DEVICES = SKILL_TRAINED,
@@ -36,6 +36,22 @@
 		SKILL_ANATOMY = SKILL_TRAINED,
 		SKILL_ENGINES = SKILL_EXPERIENCED
 	)
+
+	max_skill = list(	SKILL_MEDICAL = SKILL_EXPERIENCED,
+						SKILL_DEVICES = SKILL_MASTER,
+						SKILL_SCIENCE = SKILL_MASTER,
+						SKILL_COMPUTER = SKILL_MASTER,
+						SKIL_ELECTRICAL = SKILL_MASTER,
+						SKILL_CONSTRUCTION = SKILL_MASTER,
+						SKILL_VIGOR = SKILL_EXPERIENCED,
+						SKILL_ANATOMY = SKILL_EXPERIENCED,
+						SKILL_GUNS = SKILL_PRIMARIS,
+						SKILL_FORENSICS = SKILL_EXPERIENCED,
+						SKILL_COMBAT = SKILL_LEGEND,
+						SKILL_ENGINES = SKILL_MASTER,
+						SKILL_ATMOS = SKILL_MASTER,
+						SKILL_PILOT = SKILL_MASTER,
+						SKILL_CHEMISTRY = SKILL_MASTER)
 
 	access = list(
 		access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
@@ -59,9 +75,10 @@
 
 /datum/job/magos_explorator/equip(mob/living/carbon/human/H)
 	var/current_name = H.real_name
-	H.fully_replace_character_name("Magos [current_name]")
+	var/selected_title = alt_titles[H.mind.role_alt_title]
+	H.fully_replace_character_name("Magos Explorator [current_name]")
 	H.say(":e Memory cache integrity at 87%... Motive force appeased. Security apparatis functional. Non organics uncorrupted.")
-	to_chat(H, "<span class='notice'><b><font size=3>As the Magos Explorator, you manage the technology and exploration efforts aboard The Dauntless, working in partnership with the Rogue Trader. Your duties are divided between maintaining the sacred machinery of the ship and pursuing the discovery of lost knowledge and power across the stars. Overseeing tech-priests, bondsmen, menials, slaves, and Skitarii, you ensure their work serves the dual purpose of keeping the ship operational and advancing the Mechanicum’s quest for knowledge, all while respecting the Rogue Trader’s command.</font></b></span>")
+	to_chat(H, "<span class='notice'><b><font size=2>As the [selected_title], you manage the technology and exploration efforts aboard The Dauntless, working in partnership with the Rogue Trader. Your duties are divided between maintaining the sacred machinery of the ship and pursuing the discovery of lost knowledge and power across the stars. Overseeing tech-priests, bondsmen, menials, slaves, and Skitarii, you ensure their work serves the dual purpose of keeping the ship operational and advancing the Mechanicum’s quest for knowledge, all while respecting the Rogue Trader’s command.</font></b></span>")
 	return ..()
 
 /datum/job/magos_explorator/get_description_blurb()
@@ -84,7 +101,6 @@
 	alt_titles = list(
 		"Lexmechanic",
 		"Genetor",
-		"Artificer",
 		"Chymist",
 	)
 	allowed_branches = list(
@@ -95,7 +111,7 @@
 	)
 	skill_points = 12
 	min_skill = list(
-		SKILL_WEAPONS = SKILL_TRAINED,
+		SKILL_GUNS = SKILL_TRAINED,
 		SKILL_SCIENCE = SKILL_EXPERIENCED,
 		SKILL_DEVICES = SKILL_TRAINED,
 		SKILL_MECH = SKILL_TRAINED,
@@ -110,10 +126,21 @@
 		SKILL_ENGINES = SKILL_BASIC
 	)
 
-	max_skill = list(   SKILL_CONSTRUCTION = SKILL_MAX,
-						SKILL_ELECTRICAL   = SKILL_MAX,
-						SKILL_ATMOS        = SKILL_MAX,
-						SKILL_ENGINES      = SKILL_MAX)
+	max_skill = list(	SKILL_MEDICAL = SKILL_EXPERIENCED,
+						SKILL_DEVICES = SKILL_MASTER,
+						SKILL_SCIENCE = SKILL_MASTER,
+						SKILL_COMPUTER = SKILL_MASTER,
+						SKIL_ELECTRICAL = SKILL_MASTER,
+						SKILL_CONSTRUCTION = SKILL_MASTER,
+						SKILL_VIGOR = SKILL_EXPERIENCED,
+						SKILL_ANATOMY = SKILL_EXPERIENCED,
+						SKILL_GUNS = SKILL_MASTER,
+						SKILL_FORENSICS = SKILL_EXPERIENCED,
+						SKILL_COMBAT = SKILL_MASTER,
+						SKILL_ENGINES = SKILL_MASTER,
+						SKILL_ATMOS = SKILL_MASTER,
+						SKILL_PILOT = SKILL_MASTER,
+						SKILL_CHEMISTRY = SKILL_MASTER)
 
 	access = list(
 		access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
@@ -130,7 +157,17 @@
 							 /datum/computer_file/program/shields_monitor)
 
 /datum/job/data_smith/get_description_blurb()
-	return "You are the Senior Engineer. You are a veteran SNCO. You are subordinate to the Chief Engineer though you may have many years more experience than them and your subordinates are the rest of engineering. You should be an expert in practically every engineering area and familiar and possess leadership skills. Coordinate the team and ensure the smooth running of the department along with the Chief Engineer."
+	return "As a member of the mechanicus aboard The Dauntless, your role centers on the pursuit of knowledge and the preservation of ancient technologies. Focused on research and data analysis, you delve into the mysteries of the machine, whether through the study of archives, the recovery of lost information, or the understanding of sacred technology. Overseeing tech-acolytes and other personnel, your purpose is to advance the Mechanicus' quest for knowledge while safeguarding the ship's technological sanctity."
+
+/datum/job/data_smith/equip(mob/living/carbon/human/H)
+	var/current_name = H.real_name
+	var/selected_title = alt_titles[H.mind.role_alt_title]
+	if (!selected_title)
+		selected_title = title
+	H.fully_replace_character_name("[selected_title] [current_name]")
+	H.say(":e OMVISS1@H &(47*TECHNICA)B(ADMECH)... transponder signal active.")
+	to_chat(H, "<span class='notice'><b><font size=2>As a member of the mechanicus aboard The Dauntless, your role centers on the pursuit of knowledge and the preservation of ancient technologies. Focused on research and data analysis, you delve into the mysteries of the machine, whether through the study of archives, the recovery of lost information, or the understanding of sacred technology. Overseeing tech-acolytes and other personnel, your purpose is to advance the Mechanicus' quest for knowledge while safeguarding the ship's technological sanctity.</font></b></span>")
+	return ..()
 
 /datum/job/tech_priest
 	title = "Enginseer"
@@ -142,8 +179,8 @@
 	minimum_character_age = list(SPECIES_HUMAN = 19)
 	ideal_character_age = 30
 	alt_titles = list(
-		"Fabricator Adept",
-		"Electro Priest",
+		"Fabricator",
+		"Artificer",
 		)
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/engineering/engineer
 	allowed_branches = list(
@@ -154,7 +191,7 @@
 	)
 	skill_points = 15
 	min_skill = list(
-		SKILL_WEAPONS = SKILL_BASIC,
+		SKILL_GUNS = SKILL_BASIC,
 		SKILL_SCIENCE = SKILL_BASIC,
 		SKILL_DEVICES = SKILL_TRAINED,
 		SKILL_MECH = SKILL_TRAINED,
@@ -167,10 +204,15 @@
 		SKILL_ENGINES = SKILL_TRAINED
 	)
 
-	max_skill = list(   SKILL_CONSTRUCTION = SKILL_MAX,
-	                    SKILL_ELECTRICAL   = SKILL_MAX,
-	                    SKILL_ATMOS        = SKILL_MAX,
-	                    SKILL_ENGINES      = SKILL_MAX)
+	max_skill = list(	SKILL_DEVICES = SKILL_MASTER,
+						SKILL_COMPUTER = SKILL_MASTER,
+						SKIL_ELECTRICAL = SKILL_MASTER,
+						SKILL_CONSTRUCTION = SKILL_MASTER,
+						SKILL_GUNS = SKILL_MASTER,
+						SKILL_COMBAT = SKILL_MASTER,
+						SKILL_ENGINES = SKILL_MASTER,
+						SKILL_ATMOS = SKILL_MASTER,
+						SKILL_PILOT = SKILL_MASTER)
 
 	access = list(
 		access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
@@ -187,7 +229,17 @@
 							 /datum/computer_file/program/shields_monitor)
 
 /datum/job/tech_priest/get_description_blurb()
-	return "You are an Engineer. You operate under one of many titles and may be highly specialised in a specific area of engineering. You probably have at least a general familiarity with most other areas though this is not expected. You are subordinate to the Senior Engineer and the Chief Engineer and are expected to follow them."
+	return "As a member of the Mechanicus aboard The Dauntless, your role is dedicated to maintaining the sacred machinery that keeps the ship operational. Focused on engineering, repairs, and the appeasement of machine spirits, you oversee the function of essential systems. Whether guiding tech-acolytes or directly addressing mechanical issues, your purpose is to ensure the smooth operation of the ship’s technology, preserving its sanctity and efficiency for the Omnissiah."
+
+/datum/job/tech_priest/equip(mob/living/carbon/human/H)
+	var/current_name = H.real_name
+	var/selected_title = alt_titles[H.mind.role_alt_title]
+	if (!selected_title)
+		selected_title = title
+	H.fully_replace_character_name("[selected_title] [current_name]")
+	H.say(":e OMVISS1@H &(47*TECHNICA)B(ADMECH)... transponder signal active.")
+	to_chat(H, "<span class='notice'><b><font size=2>As a member of the Mechanicus aboard The Dauntless, your role is dedicated to maintaining the sacred machinery that keeps the ship operational. Focused on engineering, repairs, and the appeasement of machine spirits, you oversee the function of essential systems. Whether guiding tech-acolytes or directly addressing mechanical issues, your purpose is to ensure the smooth operation of the ship’s technology, preserving its sanctity and efficiency for the Omnissiah.</font></b></span>")
+	return ..()
 
 /datum/job/bondsman
 	title = "Bondsman"
@@ -210,9 +262,9 @@
 
 	skill_points = 14
 	min_skill = list(
-		SKILL_WEAPONS = SKILL_BASIC,
+		SKILL_GUNS = SKILL_BASIC,
 		SKILL_COMBAT = SKILL_TRAINED,
-		SKILL_HAULING = SKILL_TRAINED,
+		SKILL_VIGOR = SKILL_TRAINED,
 		SKILL_MECH = SKILL_TRAINED,
 		SKILL_EVA = SKILL_TRAINED,
 		SKILL_CONSTRUCTION = SKILL_TRAINED,
@@ -222,10 +274,21 @@
 		SKILL_ENGINES = SKILL_BASIC
 	)
 
-	max_skill = list(   SKILL_CONSTRUCTION = SKILL_MAX,
-	                    SKILL_ELECTRICAL   = SKILL_MAX,
-	                    SKILL_ATMOS        = SKILL_MAX,
-	                    SKILL_ENGINES      = SKILL_MAX)
+	max_skill = list(	SKILL_MEDICAL = SKILL_EXPERIENCED, // Bondsman are gang-pressed so they theoretically could have any number of skills from their old hive-world lives.
+						SKILL_DEVICES = SKILL_EXPERIENCED,
+						SKILL_SCIENCE = SKILL_EXPERIENCED,
+						SKILL_COMPUTER = SKILL_EXPERIENCED,
+						SKIL_ELECTRICAL = SKILL_EXPERIENCED,
+						SKILL_CONSTRUCTION = SKILL_MASTER,
+						SKILL_VIGOR = SKILL_MASTER,
+						SKILL_ANATOMY = SKILL_EXPERIENCED,
+						SKILL_GUNS = SKILL_EXPERIENCED,
+						SKILL_FORENSICS = SKILL_EXPERIENCED,
+						SKILL_COMBAT = SKILL_EXPERIENCED,
+						SKILL_ENGINES = SKILL_EXPERIENCED,
+						SKILL_ATMOS = SKILL_EXPERIENCED,
+						SKILL_PILOT = SKILL_EXPERIENCED,
+						SKILL_CHEMISTRY = SKILL_EXPERIENCED)
 
 	access = list(
 		access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
@@ -239,6 +302,16 @@
 
 /datum/job/bondsman/get_description_blurb()
 	return "You are a Bondsman under the service of the Mechanicus aboard the Rogue Trader’s vessel, lifebonded to the Magos Explorator and likely a descendant of gang-pressed families taken from their homeworlds. Tasked with menial yet vital technical work, your duties include maintaining ship systems, assisting with resource extraction, and performing hazardous tasks in the ship's more dangerous zones."
+
+/datum/job/bondsman/equip(mob/living/carbon/human/H)
+	var/current_name = H.real_name
+	var/selected_title = alt_titles[H.mind.role_alt_title]
+	if (!selected_title)
+		selected_title = title
+	H.fully_replace_character_name("[current_name]")
+	H.say(":e OMVISS1@H &(47*INDENTURED)B(X1HK)... transponder signal active.")
+	to_chat(H, "<span class='notice'><b><font size=2>You are a [selected_title] under the service of the Mechanicus aboard the Rogue Trader’s vessel, lifebonded to the Magos Explorator and likely a descendant of gang-pressed families taken from their homeworlds. Tasked with menial yet vital technical work, your duties include maintaining ship systems, assisting with resource extraction, and performing hazardous tasks in the ship's more dangerous zones.</font></b></span>")
+	return ..()
 
 /datum/job/roboticist
 	title = "Roboticist"

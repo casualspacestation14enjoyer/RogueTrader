@@ -4,18 +4,19 @@
 										/datum/job/tech_priest, /datum/job/roboticist, /datum/job/pharmacologis, /datum/job/scientist_assistant, /datum/job/scientist, /datum/job/shuttle_pilot,
 										/datum/job/unexpected_guest),
 		/datum/species/nabber = list(/datum/job/ai, /datum/job/cyborg, /datum/job/chamber_assistant, /datum/job/scientist_assistant, /datum/job/pharmacologis,
-									 /datum/job/roboticist, /datum/job/pilgrim, /datum/job/chamber_magister, /datum/job/tech_priest, /datum/job/hospitaller),
+									 /datum/job/roboticist, /datum/job/pilgrim, /datum/job/chamber_magister, /datum/job/tech_priest, /datum/job/medicae),
 		/datum/species/vox = list(/datum/job/ai, /datum/job/cyborg),
+		/datum/species/unathi = list(/datum/job/mercenary), // Whitelist mercs here
 		/datum/species/human/mule = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant)
 	)
 
-#define HUMAN_ONLY_JOBS /datum/job/rogue_trader, /datum/job/seneschal, /datum/job/magos_biologis, /datum/job/magos_explorator, /datum/job/guard_captain, /datum/job/void_officer, /datum/job/pathfinder, /datum/job/shuttle_pilot, /datum/job/explorer, /datum/job/data_smith, /datum/job/tech_priest, /datum/job/roboticist, /datum/job/bondsman, /datum/job/enforcer, /datum/job/enforcer_sergeant, /datum/job/chirugeon, /datum/job/hospitaller, /datum/job/medicae, /datum/job/pharmacologis, /datum/job/noble_guest, /datum/job/pilgrim, /datum/job/senior_scientist, /datum/job/scientist, /datum/job/scientist_assistant, /datum/job/qm, /datum/job/chamber_magister, /datum/job/chamber_assistant, /datum/job/cyborg, /datum/job/chaplain_militant
+#define HUMAN_ONLY_JOBS /datum/job/rogue_trader, /datum/job/seneschal, /datum/job/magos_biologis, /datum/job/magos_explorator, /datum/job/guard_captain, /datum/job/void_officer, /datum/job/pathfinder, /datum/job/shuttle_pilot, /datum/job/explorer, /datum/job/data_smith, /datum/job/tech_priest, /datum/job/roboticist, /datum/job/bondsman, /datum/job/enforcer, /datum/job/enforcer_sergeant, /datum/job/juniormedicae, /datum/job/medicae, /datum/job/sister_hospitaller, /datum/job/pharmacologis, /datum/job/noble_guest, /datum/job/pilgrim, /datum/job/senior_scientist, /datum/job/scientist, /datum/job/scientist_assistant, /datum/job/qm, /datum/job/chamber_magister, /datum/job/chamber_assistant, /datum/job/cyborg, /datum/job/chaplain_militant
 	species_to_job_blacklist = list(
 		/datum/species/unathi  = list(HUMAN_ONLY_JOBS, /datum/job/liaison, /datum/job/enforcer_sergeant), //Other jobs unavailable via branch restrictions,
 		/datum/species/unathi/yeosa = list(HUMAN_ONLY_JOBS, /datum/job/liaison, /datum/job/enforcer_sergeant),
 		/datum/species/skrell  = list(HUMAN_ONLY_JOBS),
 		/datum/species/machine = list(HUMAN_ONLY_JOBS, /datum/job/liaison, /datum/job/rogue_guest, /datum/job/void_officer, /datum/job/data_smith, /datum/job/enforcer_sergeant, /datum/job/noble_guest, /datum/job/senior_scientist, /datum/job/qm),
-		/datum/species/diona   = list(HUMAN_ONLY_JOBS, /datum/job/enforcer, /datum/job/liaison, /datum/job/enforcer_sergeant, /datum/job/hospitaller, /datum/job/novitiate),	//Other jobs unavailable via branch restrictions,
+		/datum/species/diona   = list(HUMAN_ONLY_JOBS, /datum/job/enforcer, /datum/job/liaison, /datum/job/enforcer_sergeant, /datum/job/medicae, /datum/job/novitiate),	//Other jobs unavailable via branch restrictions,
 	)
 #undef HUMAN_ONLY_JOBS
 
@@ -23,8 +24,8 @@
 		/datum/job/rogue_trader, /datum/job/seneschal,
 		/datum/job/void_officer, /datum/job/pathfinder, /datum/job/shuttle_pilot, /datum/job/explorer,
 		/datum/job/magos_explorator, /datum/job/data_smith, /datum/job/tech_priest, /datum/job/roboticist, /datum/job/bondsman,
-		/datum/job/guard_captain, /datum/job/enforcer, /datum/job/enforcer_sergeant, /datum/job/xeno_mercenary,
-		/datum/job/magos_biologis, /datum/job/hospitaller, /datum/job/medicae, /datum/job/pharmacologis,
+		/datum/job/guard_captain, /datum/job/enforcer, /datum/job/enforcer_sergeant, /datum/job/detective,
+		/datum/job/magos_biologis, /datum/job/medicae, /datum/job/sister_hospitaller, /datum/job/pharmacologis,
 		/datum/job/rogue_guest,
 		/datum/job/noble_guest, /datum/job/unexpected_guest,
 		/datum/job/qm, /datum/job/chamber_magister, /datum/job/chamber_assistant, /datum/job/deck_scum,
@@ -71,7 +72,7 @@
 	..()
 
 /singleton/cultural_info/culture/nabber/a/plus/New()
-	LAZYADD(valid_jobs, /datum/job/hospitaller)
+	LAZYADD(valid_jobs, /datum/job/medicae)
 	..()
 
 /datum/job

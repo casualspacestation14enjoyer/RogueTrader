@@ -120,7 +120,7 @@
 
 /datum/gear/accessory/armband_emt
 	allowed_roles = list(
-		/datum/job/hospitaller,
+		/datum/job/medicae,
 		/datum/job/novitiate
 	)
 	flags = GEAR_HAS_NO_CUSTOMIZATION
@@ -130,9 +130,9 @@
 	path = /obj/item/clothing/accessory/armband/medblue
 	allowed_roles = list(
 		/datum/job/magos_biologis,
-		/datum/job/chirugeon,
+		/datum/job/juniormedicae,
+		/datum/job/sister_hospitaller,
 		/datum/job/medicae,
-		/datum/job/hospitaller,
 		/datum/job/novitiate
 	)
 	flags = GEAR_HAS_NO_CUSTOMIZATION

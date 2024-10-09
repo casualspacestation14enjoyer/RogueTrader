@@ -1,5 +1,5 @@
 /obj/item/organ/internal/augment/boost/muscle
-	buffs = list(SKILL_HAULING = 1)
+	buffs = list(SKILL_VIGOR = 1)
 	buffpath = /datum/skill_buff/augment/muscle
 	name = "mechanical muscles"
 	augment_slots = AUGMENT_LEG
@@ -21,7 +21,7 @@
 		other = owner.internal_organs_by_name["[BP_L_LEG]_aug"]
 	if (other && istype(other)) //we must be second to activate buff
 		var/succesful = TRUE
-		if (owner.get_skill_value(SKILL_HAULING) < SKILL_MASTER)
+		if (owner.get_skill_value(SKILL_VIGOR) < SKILL_MASTER)
 			succesful = FALSE
 			var/datum/skill_buff/augment/muscle/A
 			A = owner.buff_skill(buffs, 0, buffpath)

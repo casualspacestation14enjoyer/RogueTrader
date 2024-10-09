@@ -23,7 +23,7 @@
 	display_name = "Xenofauna Acquisition Specialist badge"
 	path = /obj/item/clothing/accessory/solgov/skillbadge/netgun
 	allowed_skills = list(
-		SKILL_WEAPONS = SKILL_TRAINED
+		SKILL_GUNS = SKILL_TRAINED
 	)
 
 /datum/gear/skill/netgun/stripe
