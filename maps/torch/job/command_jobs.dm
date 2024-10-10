@@ -46,12 +46,15 @@
 
 /datum/job/rogue_trader/equip(mob/living/carbon/human/H)
 	var/current_name = H.real_name
-	var/selected_title = alt_titles[H.mind.role_alt_title]
-	if (!selected_title)
-		selected_title = title
-	H.fully_replace_character_name("[selected_title] [current_name]")
-	captain_announcement.Announce("All crew, [selected_title] [current_name] has arrived...")
-	to_chat(H, "<span class='notice'><b><font size=2>You are the [selected_title], commander of the Dauntless, an Imperial corvette exploratory vessel. Tasked with navigating the uncharted terror -- the Ghoul Stars, you lead a diverse retinue representing many factions, each serving a crucial role aboard your ship. While you hold ultimate authority, you work closely with your Magos Explorator, whose resources and personnel are vital to your survival in this cursed region. Rely on your officers to manage the deck scum, explore forgotten worlds, and broker alliances or hostilities with the human, alien, and worse. The emperor protects...</font></b></span>")
+	var/current_title = trimtext(H.mind.role_alt_title)
+	H.voice_in_head(pick(GLOB.lone_thoughts))
+	if(current_title && (H.mind.role_alt_title in alt_titles))
+		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
+	else
+		current_title = title // use default title
+	H.fully_replace_character_name("[current_title] [current_name]")
+	captain_announcement.Announce("All crew, [current_title] [current_name] has arrived...")
+	to_chat(H, "<span class='notice'><b><font size=2>You are the [current_title], commander of the Dauntless, an Imperial corvette exploratory vessel. Tasked with navigating the uncharted terror -- the Ghoul Stars, you lead a diverse retinue representing many factions, each serving a crucial role aboard your ship. While you hold ultimate authority, you work closely with your Magos Explorator, whose resources and personnel are vital to your survival in this cursed region. Rely on your officers to manage the deck scum, explore forgotten worlds, and broker alliances or hostilities with the human, alien, and worse. The emperor protects...</font></b></span>")
 	return ..()
 
 /datum/job/seneschal
@@ -121,11 +124,14 @@
 
 /datum/job/seneschal/equip(mob/living/carbon/human/H)
 	var/current_name = H.real_name
-	var/selected_title = alt_titles[H.mind.role_alt_title]
-	if (!selected_title)
-		selected_title = title
-	H.fully_replace_character_name("[selected_title] [current_name]")
-	to_chat(H, "<span class='notice'><b><font size=2>You are the [selected_title], the trusted advisor and chief administrator aboard the Dauntless. Your duties involve managing the vast wealth, resources, and trade networks of the Rogue Trader, ensuring colonies, contracts, and logistics run smoothly. You oversee the ship’s operations, handling everything from diplomacy to the darker dealings of the trade empire. While the Rogue Trader focuses on larger ventures, you maintain the foundations that keep the dynasty profitable and in control.</font></b></span>")
+	var/current_title = trimtext(H.mind.role_alt_title)
+	H.voice_in_head(pick(GLOB.lone_thoughts))
+	if(current_title && (H.mind.role_alt_title in alt_titles))
+		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
+	else
+		current_title = title // use default title
+	H.fully_replace_character_name("[current_title] [current_name]")
+	to_chat(H, "<span class='notice'><b><font size=2>You are the [current_title], the trusted advisor and chief administrator aboard the Dauntless. Your duties involve managing the vast wealth, resources, and trade networks of the Rogue Trader, ensuring colonies, contracts, and logistics run smoothly. You oversee the ship’s operations, handling everything from diplomacy to the darker dealings of the trade empire. While the Rogue Trader focuses on larger ventures, you maintain the foundations that keep the dynasty profitable and in control.</font></b></span>")
 	return ..()
 
 /datum/job/mercenary
@@ -212,6 +218,54 @@
 /datum/job/rd/get_description_blurb()
 	return "You are the Chief Science Officer. You are responsible for the research department. You handle the science aspects of the project and liase with the imperial interests of the Explorator Organisation. Make sure science gets done, do some yourself, and get your scientists on away missions to find things to benefit the project. Advise the CO on science matters."
 
+/datum/job/void_officer
+	title = "Void Officer"
+	department = "Support"
+	department_flag = SPT
+	total_positions = 3
+	spawn_positions = 3
+	supervisors = "the Commanding Officer and heads of staff"
+	selection_color = "#2f2f7f"
+	minimal_player_age = 0
+	economic_power = 8
+	minimum_character_age = list(SPECIES_HUMAN = 22)
+	ideal_character_age = 24
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/bridgeofficer
+	allowed_branches = list(
+		/datum/mil_branch/civilian
+	)
+	allowed_ranks = list(
+		/datum/mil_rank/civ/civ
+	)
+	skill_points = 26
+	min_skill = list( // 5 points
+		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point
+		SKILL_PILOT = SKILL_TRAINED // 4 points
+	)
+
+	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
+
+
+	access = list(
+		access_security, access_medical, access_engine, access_maint_tunnels, access_emergency_storage,
+		access_bridge, access_janitor, access_kitchen, access_cargo, access_mailsorting, access_RC_announce, access_keycard_auth,
+		access_solgov_crew, access_aquila, access_aquila_helm, access_guppy, access_guppy_helm, access_external_airlocks,
+		access_eva, access_hangar, access_cent_creed, access_explorer, access_expedition_shuttle, access_expedition_shuttle_helm, access_teleporter,
+		access_torch_fax, access_torch_helm, access_radio_comm, access_radio_eng, access_radio_exp, access_radio_serv, access_radio_sci, access_radio_sup
+	)
+
+	software_on_spawn = list(/datum/computer_file/program/comm,
+							 /datum/computer_file/program/suit_sensors,
+							 /datum/computer_file/program/power_monitor,
+							 /datum/computer_file/program/supermatter_monitor,
+							 /datum/computer_file/program/alarm_monitor,
+							 /datum/computer_file/program/camera_monitor,
+							 /datum/computer_file/program/shields_monitor,
+							 /datum/computer_file/program/reports,
+							 /datum/computer_file/program/deck_management)
+
+/datum/job/void_officer/get_description_blurb()
+	return "You are a . You are a very junior officer. You do not give orders of your own. You are subordinate to all of command. You handle matters on the bridge and report directly to the CO and XO. You take The Dauntless's helm and pilot the Aquila if needed. You monitor bridge cogitator programs and communications and report relevant information to command."
 
 /datum/job/sea
 	title = "Senior Enlisted Advisor"
@@ -261,52 +315,3 @@
 
 /datum/job/sea/get_description_blurb()
 	return "You are the Senior Enlisted Advisor. You are the highest enlisted person on the ship. You are directly subordinate to the CO. You advise them on enlisted concerns and provide expertise and advice to officers. You are responsible for ensuring discipline and good conduct among enlisted, as well as notifying officers of any issues and \"advising\" them on mistakes they make. You also handle various duties on behalf of the CO and XO. You are an experienced enlisted person, very likely equal only in experience to the CO and XO. You know the regulations better than anyone."
-
-/datum/job/void_officer
-	title = "Bridge Officer"
-	department = "Support"
-	department_flag = SPT
-	total_positions = 3
-	spawn_positions = 3
-	supervisors = "the Commanding Officer and heads of staff"
-	selection_color = "#2f2f7f"
-	minimal_player_age = 0
-	economic_power = 8
-	minimum_character_age = list(SPECIES_HUMAN = 22)
-	ideal_character_age = 24
-	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/bridgeofficer
-	allowed_branches = list(
-		/datum/mil_branch/civilian
-	)
-	allowed_ranks = list(
-		/datum/mil_rank/civ/civ
-	)
-	skill_points = 26
-	min_skill = list( // 5 points
-		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point
-		SKILL_PILOT = SKILL_TRAINED // 4 points
-	)
-
-	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
-
-
-	access = list(
-		access_security, access_medical, access_engine, access_maint_tunnels, access_emergency_storage,
-		access_bridge, access_janitor, access_kitchen, access_cargo, access_mailsorting, access_RC_announce, access_keycard_auth,
-		access_solgov_crew, access_aquila, access_aquila_helm, access_guppy, access_guppy_helm, access_external_airlocks,
-		access_eva, access_hangar, access_cent_creed, access_explorer, access_expedition_shuttle, access_expedition_shuttle_helm, access_teleporter,
-		access_torch_fax, access_torch_helm, access_radio_comm, access_radio_eng, access_radio_exp, access_radio_serv, access_radio_sci, access_radio_sup
-	)
-
-	software_on_spawn = list(/datum/computer_file/program/comm,
-							 /datum/computer_file/program/suit_sensors,
-							 /datum/computer_file/program/power_monitor,
-							 /datum/computer_file/program/supermatter_monitor,
-							 /datum/computer_file/program/alarm_monitor,
-							 /datum/computer_file/program/camera_monitor,
-							 /datum/computer_file/program/shields_monitor,
-							 /datum/computer_file/program/reports,
-							 /datum/computer_file/program/deck_management)
-
-/datum/job/void_officer/get_description_blurb()
-	return "You are a Bridge Officer. You are a very junior officer. You do not give orders of your own. You are subordinate to all of command. You handle matters on the bridge and report directly to the CO and XO. You take The Dauntless's helm and pilot the Aquila if needed. You monitor bridge cogitator programs and communications and report relevant information to command."

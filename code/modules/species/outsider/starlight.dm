@@ -102,8 +102,8 @@
 	hunger_factor = 0
 	breath_type = null
 
-	burn_mod = 10
-	brute_mod = 0
+	burn_mod = 1
+	brute_mod = 0.2
 	oxy_mod = 0
 	toxins_mod = 0
 	radiation_mod = 0

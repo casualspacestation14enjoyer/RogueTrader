@@ -13,7 +13,7 @@
 	eyeblur = 4
 	hitscan = TRUE
 	invisibility = INVISIBILITY_ABSTRACT	//beam projectiles are invisible as they are rendered by the effect engine
-	penetration_modifier = 0.3
+	rupture_artery = 0.3
 	distance_falloff = 1.5
 	damage_falloff = TRUE
 	var/mob_passthrough_checker = 0
@@ -74,7 +74,7 @@
 
 /obj/item/projectile/beam/midlaser
 	damage = 40
-	armor_penetration = 20
+	armor_penetration = 22
 	distance_falloff = 1
 	damage_falloff_list = list(
 		list(6, 0.98),
@@ -85,8 +85,8 @@
 	icon_state = "laser"
 	fire_sound = 'sound/warhammer/gunshot/lasgun2.ogg'
 	damage = 45
-	penetration_modifier = 0.4
-	armor_penetration = 24
+	rupture_artery = 0.4
+	armor_penetration = 25
 	distance_falloff = 1
 	damage_falloff_list = list(
 		list(6, 0.98),
@@ -97,8 +97,8 @@
 	icon_state = "laser"
 	fire_sound = 'sound/warhammer/gunshot/lasgun1.ogg'
 	damage = 38
-	armor_penetration = 22
-	penetration_modifier = 0.2
+	armor_penetration = 23
+	rupture_artery = 0.2
 	distance_falloff = 1
 	damage_falloff_list = list(
 		list(6, 0.98),
@@ -109,8 +109,8 @@
 	icon_state = "heavylaser"
 	fire_sound = 'sound/warhammer/gunshot/lasgun3.ogg'
 	damage = 50
-	armor_penetration = 28
-	penetration_modifier = 0.5
+	armor_penetration = 29
+	rupture_artery = 0.5
 	distance_falloff = 1
 	damage_falloff_list = list(
 		list(6, 0.98),
@@ -121,8 +121,8 @@
 	icon_state = "laser"
 	fire_sound = 'sound/warhammer/gunshot/lasgun2.ogg'
 	damage = 48
-	armor_penetration = 26
-	penetration_modifier = 0.5
+	armor_penetration = 27
+	rupture_artery = 0.5
 	distance_falloff = 1
 	damage_falloff_list = list(
 		list(6, 0.98),
@@ -133,8 +133,8 @@
 	icon_state = "laser"
 	fire_sound = 'sound/warhammer/gunshot/lasgun2.ogg'
 	damage = 53
-	armor_penetration = 30
-	penetration_modifier = 0.6
+	armor_penetration = 31
+	rupture_artery = 0.6
 	distance_falloff = 1
 	damage_falloff_list = list(
 		list(6, 0.98),
@@ -145,8 +145,8 @@
 	icon_state = "heavylaser"
 	fire_sound = 'sound/warhammer/gunshot/lasgun3.ogg'
 	damage = 50
-	armor_penetration = 28
-	penetration_modifier = 0.5
+	armor_penetration = 29
+	rupture_artery = 0.5
 	distance_falloff = 1
 	damage_falloff_list = list(
 		list(6, 0.98),
@@ -157,8 +157,8 @@
 	icon_state = "heavylaser"
 	fire_sound = 'sound/warhammer/gunshot/lasgun3.ogg'
 	damage = 54
-	armor_penetration = 32
-	penetration_modifier = 0.6
+	armor_penetration = 33
+	rupture_artery = 0.6
 	distance_falloff = 1
 	damage_falloff_list = list(
 		list(6, 0.98),
@@ -169,8 +169,8 @@
 	icon_state = "heavylaser"
 	fire_sound = 'sound/warhammer/gunshot/lasgun3.ogg'
 	damage = 58
-	armor_penetration = 32 // AP can't be too high or else it'll ignore power armor.
-	penetration_modifier = 0.8
+	armor_penetration = 33 // AP can't be too high or else it'll ignore power armor.
+	rupture_artery = 0.8
 	distance_falloff = 1
 	damage_falloff_list = list(
 		list(6, 0.98),
@@ -180,8 +180,8 @@
 	icon_state = "heavylaser"
 	fire_sound = 'sound/warhammer/gunshot/lasgun3.ogg'
 	damage = 62
-	armor_penetration = 36
-	penetration_modifier = 0.9
+	armor_penetration = 37
+	rupture_artery = 0.9
 	distance_falloff = 1
 	damage_falloff_list = list(
 		list(6, 0.98),
@@ -196,9 +196,9 @@
 	agony = 8
 	eyeblur = 8
 	damage_flags = 0
-	penetration_modifier = 0.3 // Volkite sets you on fire. Lasbeams explode chunks off you. So less arterial bleed.
+	rupture_artery = 0.3 // Volkite sets you on fire. Lasbeams explode chunks off you. So less arterial bleed.
 	life_span = 5
-	armor_penetration = 34
+	armor_penetration = 35
 	damage_falloff_list = list(
 		list(3, 0.90), // Distance, Damage Multiplier. E.G. Distance of 3 or more means 0.90 damage mult.
 		list(5, 0.80),
@@ -222,9 +222,9 @@
 	icon_state = "heavylaser"
 	fire_sound = 'sound/weapons/lasercannonfire.ogg'
 	damage = 66
-	armor_penetration = 28
+	armor_penetration = 29
 	distance_falloff = 0.5
-	penetration_modifier = 0.5
+	rupture_artery = 0.5
 	damage_falloff_list = list(
 		list(6, 0.97),
 		list(9, 0.94),
@@ -240,7 +240,7 @@
 	icon_state = "xray"
 	fire_sound = 'sound/weapons/laser3.ogg'
 	damage = 37
-	armor_penetration = 28
+	armor_penetration = 29
 	distance_falloff = 1.5
 	damage_falloff_list = list(
 		list(3, 0.95),
@@ -267,7 +267,7 @@
 	icon_state = "u_laser"
 	fire_sound='sound/weapons/pulse.ogg'
 	damage = 25 //lower damage, but fires in bursts
-	armor_penetration = 22
+	armor_penetration = 23
 	distance_falloff = 1.5
 	damage_falloff_list = list(
 		list(3, 0.95),
@@ -281,7 +281,7 @@
 
 /obj/item/projectile/beam/pulse/mid
 	damage = 35
-	armor_penetration = 24
+	armor_penetration = 25
 	distance_falloff = 1
 	damage_falloff_list = list(
 		list(4, 0.96),
@@ -291,7 +291,7 @@
 
 /obj/item/projectile/beam/pulse/heavy
 	damage = 35
-	armor_penetration = 26
+	armor_penetration = 27
 	distance_falloff = 0.5
 	damage_falloff_list = list(
 		list(6, 0.97),
@@ -389,7 +389,7 @@
 	icon_state = "xray"
 	fire_sound = 'sound/weapons/marauder.ogg'
 	damage = 53
-	penetration_modifier = 0.5
+	rupture_artery = 0.5
 	armor_penetration = 29
 	damage_falloff_list = null
 
@@ -506,7 +506,7 @@
 	damage_flags = 0
 	damage_type = DAMAGE_STUN
 	life_span = 3
-	penetration_modifier = 0.4
+	rupture_artery = 0.4
 	var/potency_min = 4
 	var/potency_max = 6
 
@@ -535,13 +535,13 @@
 	muzzle_type = /obj/projectile/laser_particle/muzzle
 	tracer_type = /obj/projectile/laser_particle/tracer
 	impact_type = /obj/projectile/laser_particle/impact
-	penetration_modifier = 0.8
+	rupture_artery = 0.8
 
 /obj/item/projectile/beam/particle/small
 	name = "particle beam"
 	damage = 40
 	armor_penetration = 24
-	penetration_modifier = 0.6
+	rupture_artery = 0.6
 
 /obj/item/projectile/beam/darkmatter
 	name = "dark matter bolt"
@@ -568,7 +568,7 @@
 	name = "point defense salvo"
 	icon_state = "laser"
 	damage = 15
-	armor_penetration = 20
+	armor_penetration = 22
 	damage_type = DAMAGE_BURN //You should be safe inside a voidsuit
 	sharp = FALSE //"Wide" spectrum beam
 	muzzle_type = /obj/projectile/pointdefense/muzzle

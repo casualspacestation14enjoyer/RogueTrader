@@ -382,6 +382,21 @@
 	icon_state = "nvg_avi_on"
 	off_state = "avi_off"
 	item_state = "nvg_avi_on"
+	darkness_view = 14
+
+/obj/item/clothing/glasses/night/aviators/catachan
+	name = "tech aviators"
+	desc = "Night-vision glasses integrated into a pair of aviator sunglasses. It does little to protect against the sun, but it sure looks cool."
+	icon_state = "nvg_avi_on"
+	off_state = "avi_off"
+	item_state = "nvg_avi_on"
+	darkness_view = 13
+	see_invisible = SEE_INVISIBLE_NOLIGHTING
+	body_parts_covered = EYES
+	siemens_coefficient = 0.9
+	unacidable = 1
+	flash_protection =  FLASH_PROTECTION_MODERATE
+	vision_flags = SEE_TURFS|SEE_MOBS
 
 /obj/item/clothing/glasses/scion
 	name = "Omnishield Visor"

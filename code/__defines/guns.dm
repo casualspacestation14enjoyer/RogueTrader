@@ -5,7 +5,6 @@
 #define CALIBER_SLUG_ANTIQUE	"~10mm"
 
 #define CALIBER_AUTOGUN			"8mm AR"
-#define CALIBER_AUTOGUN_TECH  "6.8mm AR"
 #define CALIBER_AUTOGUN_HEAVY		"10mm AR"
 #define CALIBER_SNIPER    "15mmR"
 

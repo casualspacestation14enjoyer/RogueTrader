@@ -42,12 +42,12 @@
 
 	min_age = 1
 	max_age = 100
-	brute_mod = 0.9 // Vunerable to Brute.
-	burn_mod = 0.75 // Resistance to Burn.
-	stun_mod = 0.8 // Resistant to concussion
-	weaken_mod = 0.8 // Advanced health systems.
-	paralysis_mod = 0.8
-	toxins_mod = 0.8
+	brute_mod = 0.75 // Vunerable to Brute.
+	burn_mod = 0.55 // Resistance to Burn.
+	stun_mod = 0.7 // Resistant to concussion
+	weaken_mod = 0.7 // Advanced health systems.
+	paralysis_mod = 0.7
+	toxins_mod = 0.7
 
 	gluttonous = GLUT_TINY|GLUT_ITEM_NORMAL
 	stomach_capacity = 12

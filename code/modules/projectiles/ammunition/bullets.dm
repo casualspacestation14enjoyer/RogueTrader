@@ -163,7 +163,7 @@
 
 /obj/item/ammo_casing/autogun/militarum
 	desc = "A 6.8mm slug casing."
-	caliber = CALIBER_AUTOGUN_TECH
+	caliber = CALIBER_AUTOGUN
 	projectile_type = /obj/item/projectile/bullet/rifle/militarum
 	icon_state = "rifle-casing"
 	spent_icon = "rifle-casing-spent"
@@ -395,7 +395,7 @@
 
 /obj/item/ammo_casing/rifle/military
 	desc = "A military rifle slug casing."
-	caliber = CALIBER_AUTOGUN_TECH
+	caliber = CALIBER_AUTOGUN
 	icon_state = "rifle_mil"
 	spent_icon = "rifle_mil-spent"
 

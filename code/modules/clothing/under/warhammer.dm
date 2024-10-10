@@ -7,9 +7,7 @@
 	icon_state = "maccabian"
 	item_state = "maccabian"
 	worn_state = "maccabian"
-	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 60, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/under/rank/maccabian/medic
 	desc = "These durable undersuit are used to represent the zealous, smells like holy oils and other aromatics. This one is the Medicae Variant"
@@ -29,9 +27,7 @@
 	icon_state = "krieg"
 	item_state = "krieg"
 	worn_state = "krieg"
-	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 60, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/under/cadian_uniform
 	name = "guard uniform"
@@ -39,7 +35,6 @@
 	icon_state = "guard"
 	item_state = "guard"
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/under/rank/valhallan_uniform
 	name = "valhallan uniform"
@@ -48,14 +43,12 @@
 	item_state = "krieg"
 	worn_state = "krieg"
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/under/casual_pants/catachan
 	name = "catachan shorts"
 	desc = "Catachan fear no heat, no boltguns, no lasguns. They don't need shirts, They're Catachan Jungle Hunters."
 	icon_state = "camopants"
 	cold_protection = LOWER_TORSO | LEGS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/under/rank/krieg_uniform/commissar
 	name = "commissar's Dress Uniform"
@@ -78,7 +71,6 @@
 	desc = "The bodysuit worn by Astartes underneath their Power Armour."
 	icon_state = "swatunder"
 	worn_state = "swatunder"
-	armor = list(melee = 1, bullet = 5, laser = 5,energy = 5, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.9
 
 // Adepta Sororitas
@@ -86,28 +78,21 @@
 /obj/item/clothing/under/guard/uniform/sisterofbattle
 	name = "Adepta Sororitas Bodysuit"
 	desc = "The bodysuit worn by Adepta Sororitas underneath their Power Armour."
-	armor = list(melee = 1, bullet = 5, laser = 5,energy = 5, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.9
-	species_restricted = list(SPECIES_HUMAN)
-
 
 /obj/item/clothing/under/guard/uniform/sisterofbattle/repentia
 	name = "Faith of the Repentia"
 	desc = "When there is no armor to defend from heretics, the Emperor protects."
-	armor = list(melee = 1, bullet = 5, laser = 5,energy = 5, bomb = 0, bio = 0, rad = 0)
 	icon_state = "repentia_nude"
 	worn_state = "repentia_nude"
 	siemens_coefficient = 0.9
-	species_restricted = list(SPECIES_HUMAN)
 
 /obj/item/clothing/under/guard/uniform/sisterofbattle/zealot
 	name = "Robes of the Faithful"
 	desc = "When you're blessed there's no need for a helmet, the Emperor protects."
-	armor = list(melee = 1, bullet = 5, laser = 5,energy = 5, bomb = 0, bio = 0, rad = 0)
 	icon_state = "zealot"
 	worn_state = "zealot"
 	siemens_coefficient = 0.9
-	species_restricted = list(SPECIES_HUMAN)
 
 /obj/item/clothing/under/administratum
 	name = "administratum underlayers"
@@ -115,19 +100,15 @@
 	icon_state = "combat"
 	item_state = "bl_suit"
 	worn_state = "combat"
-	armor = list(melee = 1, bullet = 5, laser = 5,energy = 5, bomb = 5, bio = 5, rad = 50)
-	has_sensor = SUIT_HAS_SENSORS
 
 /obj/item/clothing/under/necron
 	name = "Necrodermis Skin"
 	desc = "A thin layer of Necrodermis making up the skin of a Necron."
-	armor = list(melee = 5, bullet = 5, laser = 5,energy = 5, bomb = 0, bio = 100, rad = 100)
 	icon_state = "golem"
 	worn_state = "golem"
 	siemens_coefficient = 0.1
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	unacidable = 1
 	canremove = 0
 
@@ -148,7 +129,6 @@
 	item_state = "scoutoutfit"
 	worn_state = "scoutoutfit"
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/under/rank/skitarii
 	desc = "Heavily-augmented body, reinforced to fit the Mechanicus purposes."
@@ -159,7 +139,6 @@
 	canremove = 0
 	unacidable = 1
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/under/rank/ork // only using this one atm
 	desc = "Tattered and torn from a life of battle and strife."
@@ -169,7 +148,6 @@
 	worn_state = "ork_clothes"
 
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/under/rank/ork/two
 	icon_state = "orkpants"
@@ -189,7 +167,6 @@
 	item_state = "vest"
 	worn_state = "vest"
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/under/rank/victorian/blred
 	icon_state = "vestblred"
@@ -256,7 +233,6 @@
 	item_icons = list(slot_w_uniform_str = 'icons/mob/32x40/uniforms.dmi')
 	icon_state = "ogryn_full"
 	worn_state = "ogryn_full"
-	armor = list(melee = 1, bullet = 1, laser = 1,energy = 30, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.9
 
 
@@ -279,7 +255,6 @@
 	icon_state = "guard"
 	item_state = "guard"
 	worn_state = "guard"
-	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.9
 
 /obj/item/clothing/under/guard/renegadeuniform
@@ -293,9 +268,7 @@
 	desc = "A standardised armoured undersuit worn by Tempestus Scions"
 	icon_state = "ScionUndersuit"
 	item_state = "scionundersuit"
-	armor = list(melee = 1, bullet = 1, laser = 1, energy = 20, bomb = 20, bio = 20, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 
 /obj/item/clothing/under/grot
@@ -303,11 +276,9 @@
 	desc = "What a fool"
 	icon_state = "Grotrags"
 	item_state = "Grotrags"
-	slowdown_general = -20
 
 /obj/item/clothing/under/grot/grc
 	name = "Expensive revolutionary suit"
 	desc = "A true revolutionist"
 	icon_state = "GRCrags"
 	item_state = "GRCrags"
-	slowdown_general = -20

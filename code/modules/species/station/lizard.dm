@@ -19,10 +19,11 @@
 	strength = STR_HIGH
 	breath_pressure = 12
 	slowdown = -0.4
-	brute_mod = 0.8
-	burn_mod = 0.7
+	brute_mod = 0.55
+	burn_mod = 0.65
 	flash_mod = 1.2
 	toxins_mod = 0.5
+	radiation_mod = 0.4
 	blood_volume = 800
 
 	health_hud_intensity = 2

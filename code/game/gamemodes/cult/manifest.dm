@@ -1,8 +1,8 @@
 /datum/species/human/cult
 	name = "Cult"
 	spawn_flags = SPECIES_IS_RESTRICTED
-	brute_mod = 2
-	burn_mod = 2
+	brute_mod = 1
+	burn_mod = 1
 	species_flags = SPECIES_FLAG_NO_SCAN
 	force_cultural_info = list(
 		TAG_CULTURE =   CULTURE_CULTIST,

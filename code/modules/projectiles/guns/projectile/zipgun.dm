@@ -36,7 +36,7 @@
 		fire_sound = 'sound/weapons/gunshot/shotgun.ogg'
 	if(caliber == CALIBER_SLUG)
 		fire_sound = 'sound/weapons/gunshot/gunshot_pistol.ogg'
-	if(caliber == CALIBER_AUTOGUN || caliber == CALIBER_AUTOGUN_TECH)
+	if(caliber == CALIBER_AUTOGUN || caliber == CALIBER_AUTOGUN)
 		fire_sound = 'sound/weapons/gunshot/gunshot3.ogg'
 	. = ..()
 

@@ -13,7 +13,7 @@
 	oxy_mod =       0.6
 	breath_pressure = 17
 	radiation_mod = 1
-	brute_mod =     0.9
+	brute_mod =     0.7
 	strength = STR_HIGH
 
 	descriptors = list(
@@ -32,12 +32,11 @@
 	icobase =     'icons/mob/human_races/species/human/subspecies/spacer_body.dmi'
 	preview_icon= 'icons/mob/human_races/species/human/subspecies/spacer_preview.dmi'
 
-	oxy_mod =   0.4
-	breath_pressure = 15
-	toxins_mod =   0.9
-	brute_mod = 1.05
-	radiation_mod = 0.8
-	darksight_range = 5
+	oxy_mod =   0.35
+	toxins_mod =   0.7
+	brute_mod = 0.8
+	radiation_mod = 0.6
+	darksight_range = 4
 	darksight_tint = DARKTINT_MODERATE
 
 	descriptors = list(
@@ -69,7 +68,7 @@
 	icobase =     'icons/mob/human_races/species/human/subspecies/vatgrown_body.dmi'
 	preview_icon= 'icons/mob/human_races/species/human/subspecies/vatgrown_preview.dmi'
 
-	toxins_mod =   1.1
+	toxins_mod =   0.75
 	has_organ = list(
 		BP_HEART =    /obj/item/organ/internal/heart,
 		BP_STOMACH =  /obj/item/organ/internal/stomach,
@@ -101,9 +100,9 @@
 	slowdown = 1
 
 	oxy_mod =             0.5
-	brute_mod =           0.8
-	toxins_mod =          1.15
-	radiation_mod =       1.15
+	brute_mod =           0.75
+	toxins_mod =          1
+	radiation_mod =       0.75
 	body_temperature =    302
 	water_soothe_amount = 5
 
@@ -146,13 +145,12 @@
 	preview_icon= 'icons/mob/human_races/species/human/subspecies/mule_preview.dmi'
 
 	spawn_flags =   SPECIES_NO_FBP_CONSTRUCTION | SPECIES_NO_FBP_CHARGEN | SPECIES_NO_ROBOTIC_INTERNAL_ORGANS
-	brute_mod =     0.9
-	burn_mod =      0.9
-	oxy_mod =       0.6
-	toxins_mod =    0.8
-	radiation_mod = 0.9
-	flash_mod =     1.1
-	blood_volume =  SPECIES_BLOOD_DEFAULT * 0.85
+	brute_mod =     0.65
+	burn_mod =      0.65
+	oxy_mod =       0.5
+	toxins_mod =    0.7
+	radiation_mod = 0.6
+	flash_mod =     1.2
 	min_age =       18
 	max_age =       500
 

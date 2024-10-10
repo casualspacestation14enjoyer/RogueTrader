@@ -127,13 +127,16 @@ var/global/list/sparring_attack_cache = list()
 /datum/unarmed_attack/bite
 	attack_verb = list("bit")
 	attack_sound = 'sound/weapons/bite.ogg'
-	damage = 19
+	damage = 17
 	attack_name = "bite"
 
 /datum/unarmed_attack/bite/sharp
 	attack_verb = list("bit", "chomped")
 	sharp = TRUE
 	edge = TRUE
+
+/datum/unarmed_attack/bite/sharp/strong
+	damage = 19
 
 /datum/unarmed_attack/bite/is_usable(mob/living/carbon/human/user, mob/living/carbon/human/target, zone)
 
@@ -151,7 +154,7 @@ var/global/list/sparring_attack_cache = list()
 	attack_noun = list("fist")
 	eye_attack_text = "fingers"
 	eye_attack_text_victim = "digits"
-	damage = 17
+	damage = 16
 	attack_name = "punch"
 
 /datum/unarmed_attack/punch/show_attack(mob/living/carbon/human/user, mob/living/carbon/human/target, zone, attack_damage)
@@ -197,11 +200,14 @@ var/global/list/sparring_attack_cache = list()
 	else
 		user.visible_message(SPAN_CLASS("danger", "[user] [pick("punched", "threw a punch at", "struck", "slammed their [pick(attack_noun)] into")] [target]'s [organ]!")) //why do we have a separate set of verbs for lying targets?
 
+/datum/unarmed_attack/punch/strong
+	damage = 19
+
 /datum/unarmed_attack/kick
 	attack_verb = list("kicked", "kicked", "kicked", "kneed")
 	attack_noun = list("kick", "kick", "kick", "knee strike")
 	attack_sound = "swing_hit"
-	damage = 23
+	damage = 17
 	attack_name = "kick"
 
 /datum/unarmed_attack/kick/is_usable(mob/living/carbon/human/user, mob/living/carbon/human/target, zone)
@@ -235,6 +241,9 @@ var/global/list/sparring_attack_cache = list()
 		if(1 to 2)	user.visible_message(SPAN_DANGER("\The [user] threw \the [target] a glancing [pick(attack_noun)] to \the [organ]!")) //it's not that they're kicking lightly, it's that the kick didn't quite connect
 		if(3 to 4)	user.visible_message(SPAN_DANGER("\The [user] [pick(attack_verb)] \the [target] in [target_pronouns.his] [organ]!"))
 		if(5)		user.visible_message(SPAN_DANGER("\The [user] landed a strong [pick(attack_noun)] against \the [target]'s [organ]!"))
+
+/datum/unarmed_attack/kick/strong
+	damage = 19
 
 /datum/unarmed_attack/stomp
 	attack_verb = list("stomped on")
@@ -282,6 +291,9 @@ var/global/list/sparring_attack_cache = list()
 			user.visible_message(pick(
 				SPAN_CLASS("danger", "\The [user] stomped down hard onto \the [target]'s [organ][pick("", "with their [shoe_text]")]!"),
 				SPAN_DANGER("\The [user] slammed [user_pronouns.his] [shoe_text] down onto \the [target]'s [organ]!")))
+
+/datum/unarmed_attack/stomp/strong
+	damage = 12
 
 /datum/unarmed_attack/light_strike
 	deal_halloss = 3

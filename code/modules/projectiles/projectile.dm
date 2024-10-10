@@ -57,7 +57,7 @@
 	var/drowsy = 0
 	var/agony = 0
 	var/embed = FALSE // whether or not the projectile can embed itself in the mob
-	var/penetration_modifier = 0.2 //How likely this projectile is to embed or rupture artery
+	var/rupture_artery = 0.2 //How likely this projectile is to embed or rupture artery
 	var/space_knockback = 0	//whether or not it will knock things back in space
 
 	var/hitscan = FALSE		// whether the projectile should be hitscan
@@ -524,7 +524,7 @@
 	if(!can_embed() || (organ.species.species_flags & SPECIES_FLAG_NO_EMBED))
 		return
 	//Embed or sever artery
-	var/damage_prob = 0.5 * wound.damage * penetration_modifier
+	var/damage_prob = 0.5 * wound.damage * rupture_artery
 	if(prob(damage_prob))
 		var/obj/item/shrapnel = get_shrapnel()
 		if(shrapnel)

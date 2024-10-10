@@ -216,9 +216,9 @@
 		bomb = ARMOR_BOMB_TEN+10
 	)
 
-/obj/item/clothing/suit/armor/grim/krieger/sergeant
-	name = "krieg watchmaster's overcoat"
-	desc = "The reinforced carapace overcoat of a Krieg Watchmaster, offering additional protection against hazardous environments and combat damage."
+/obj/item/clothing/suit/armor/grim/krieger/officer
+	name = "krieg officer's overcoat"
+	desc = "The reinforced carapace overcoat of a Krieg Officer, offering additional protection against hazardous environments and combat damage."
 	icon_state = "kriegcoat"
 	item_state = "kriegcoat"
 	body_parts_covered = LEGS|ARMS
@@ -325,7 +325,7 @@
 	icon_state = "mvalarmor"
 	item_state = "mvalarmor"
 
-/obj/item/clothing/suit/armor/grim/valhallan/captain
+/obj/item/clothing/suit/armor/grim/valhallan/officer
 	name = "valhalan carapace overcoat"
 	desc = "A Valhallan overcoat with additional markings and improved protection, worn by Officers."
 	accessories = list(/obj/item/clothing/accessory/armor_plate/carapace)
@@ -485,7 +485,7 @@
 	icon_state = "ScionArmour"
 	item_state = "ScionArmour"
 
-/obj/item/clothing/suit/armor/grim/cadian/officer
+/obj/item/clothing/suit/armor/grim/cadian/officer_formal
 	name = "militarum officer's coat"
 	desc = "A formal coat worn by command staff of the Imperial Guard, reinforced with integrated carapace and armourplas plates. It has an insignia spear belonging to that of the general staff for the local Lord General Militant."
 	icon_state = "officertanjacket"

@@ -345,7 +345,7 @@
 	name = "magazine (8mm)"
 	icon_state = "5556"
 	mag_type = MAGAZINE
-	caliber = "autogun"
+	caliber = CALIBER_AUTOGUN
 	matter = list(DEFAULT_WALL_MATERIAL = 1800)
 	ammo_type = /obj/item/ammo_casing/autogun
 	max_ammo = 33
@@ -368,7 +368,7 @@
 	icon_state = "5556"
 	color = COLOR_DARK_GUNMETAL
 	mag_type = MAGAZINE
-	caliber = "autogun"
+	caliber = CALIBER_AUTOGUN
 	matter = list(DEFAULT_WALL_MATERIAL = 1800)
 	ammo_type = /obj/item/ammo_casing/autogun/militarum
 	max_ammo = 37
@@ -748,7 +748,7 @@
 	icon_state = "bullpup"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
-	caliber = CALIBER_AUTOGUN_TECH
+	caliber = CALIBER_AUTOGUN
 	matter = list(MATERIAL_STEEL = 1800)
 	ammo_type = /obj/item/ammo_casing/rifle/military
 	max_ammo = 18

@@ -5,7 +5,7 @@
 	damage = 75
 	penetrating = 5
 	armor_penetration = 28
-	penetration_modifier = 1.1
+	rupture_artery = 1.1
 	fire_sound = 'sound/weapons/railgun.ogg'
 	distance_falloff = 1
 

@@ -218,7 +218,7 @@
 	desc = "Unlike the more common Cadian-pattern, the Mark IX is made out of durable plasteel, giving it higher defensive capabilities though at the cost of weight and production."
 	icon_state = "krieghelm"
 	item_state = "krieghelm"
-	flags_inv = HIDEMASK|HIDEEARS|BLOCKHAIR
+	flags_inv = HIDEEARS|BLOCKHAIR
 	max_pressure_protection = VOIDSUIT_MAX_PRESSURE
 	body_parts_covered = FACE|EYES|HEAD
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+100
@@ -240,7 +240,7 @@
 	icon_state = "krieghelm"
 	item_state = "krieghelm"
 
-/obj/item/clothing/head/helmet/flak/krieg/sergeant
+/obj/item/clothing/head/helmet/flak/krieg/officer
 	name = "Krieg IX carapace helmet"
 	desc = "Unlike the more common Cadian-pattern, the Mark IX is made out of durable plasteel, giving it higher defensive capabilities though at the cost of weight and production."
 	icon_state = "WatchHelm"
@@ -281,7 +281,7 @@
 	desc = "Unlike the more common Cadian-pattern, the Mark IX is made out of durable plasteel, giving it higher defensive capabilities though at the cost of weight and production."
 	icon_state = "M_Helmet-Icon"
 	item_state = "M_Helmet-Icon"
-	flags_inv = HIDEMASK|HIDEEARS|BLOCKHAIR
+	flags_inv = HIDEEARS|BLOCKHAIR
 	body_parts_covered = FACE|EYES|HEAD
 	max_pressure_protection = VOIDSUIT_MAX_PRESSURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+200
@@ -340,7 +340,7 @@
 	name = "kasrkin carapace helmet"
 	desc = "A carapace helmet belonging to the elite stormtroopers of the Kasrkin. Cadia may not be intact, but your brain will when in combat with this on."
 	icon_state = "kasrkinhelmet"
-	flags_inv = HIDEMASK|HIDEEARS|BLOCKHAIR
+	flags_inv = HIDEEARS|BLOCKHAIR
 	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+550
 	slowdown_general = 0.012

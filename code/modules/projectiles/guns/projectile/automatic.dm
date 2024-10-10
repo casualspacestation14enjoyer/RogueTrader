@@ -196,7 +196,7 @@
 	item_state = "z8carbine"
 	w_class = ITEM_SIZE_HUGE
 	force = 10
-	caliber = CALIBER_AUTOGUN_TECH
+	caliber = CALIBER_AUTOGUN
 	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 3)
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
@@ -397,7 +397,7 @@
 	item_state = null
 	w_class = ITEM_SIZE_HUGE
 	force = 12
-	caliber = CALIBER_AUTOGUN_TECH
+	caliber = CALIBER_AUTOGUN
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 1, TECH_ESOTERIC = 5)
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE

@@ -200,7 +200,7 @@
 	armor_penetration = 30
 	damage_type = DAMAGE_BRUTE
 	vacuum_traversal = 0
-	penetration_modifier = 0.2
+	rupture_artery = 0.2
 	penetrating = 1
 	min_dizziness_amt = 10
 	med_dizziness_amt = 60

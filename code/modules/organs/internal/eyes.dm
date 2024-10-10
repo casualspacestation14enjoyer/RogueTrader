@@ -117,7 +117,7 @@
 	verbs |= /obj/item/organ/internal/eyes/proc/change_eye_color
 	update_colour()
 	flash_mod = 1
-	darksight_range = 2
+	darksight_range = 3
 	darksight_tint = DARKTINT_NONE
 	status = ORGAN_ROBOTIC
 

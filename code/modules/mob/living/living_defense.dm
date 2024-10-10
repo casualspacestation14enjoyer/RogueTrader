@@ -34,8 +34,8 @@
 			if (armor_pen >= 200)
 				continue
 
-			// Full block if armor value is much higher than armor_pen + 10
-			if (armor_value > armor_pen + 10)
+			// Full block if armor value is much higher than armor_pen + 15. Shouldn't activate unless someone fires a pea shooter at power armor.
+			if (armor_value > armor_pen + 15)
 			{
 				show_message("<span class='warning'>Your armor protects you!</span>")
 				playsound(src, "sound/weapons/armorblockheavy[rand(1,3)].ogg", 50, 1, 1)
@@ -44,7 +44,7 @@
 			// If armor penetration exceeds armor value, continue without blocking
 			if (armor_pen >= armor_value)
 				continue
-			var damage_breakthrough = ((armor_value - armor_pen) / 15) * 100
+			var damage_breakthrough = (((armor_value * (rand(70, 110) / 100)) - armor_pen) / 15) * 100
 			if (damage_breakthrough < 0)
 				damage_breakthrough = 0
 			// Show message and sound if partial block occurs

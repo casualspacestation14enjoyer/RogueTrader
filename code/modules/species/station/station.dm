@@ -78,10 +78,8 @@
 	min_age = 19
 	max_age = 190
 
-	burn_mod = 0.9
-	oxy_mod = 0.4
-	flash_mod = 1.1
-	toxins_mod = 1.1
+	burn_mod = 0.8
+	oxy_mod = 0.7
 	siemens_coefficient = 1.3
 	warning_low_pressure = WARNING_LOW_PRESSURE
 	hazard_low_pressure = HAZARD_LOW_PRESSURE
@@ -218,7 +216,7 @@
 	assisted_langs = list(LANGUAGE_NABBER)
 	spawns_with_stack = 0
 	health_hud_intensity = 2
-	hunger_factor = 3
+	hunger_factor = 1
 	thirst_factor = 0.01
 
 	min_age = 1

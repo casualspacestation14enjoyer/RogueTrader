@@ -94,11 +94,6 @@
 		if (src.Move(T))
 			return
 
-/mob/living/carbon/airlock_crush(crush_damage)
-	..()
-	if (can_feel_pain())
-		emote("scream")
-
 /mob/living/silicon/robot/airlock_crush(crush_damage)
 	..(round(crush_damage / CYBORG_AIRLOCKCRUSH_RESISTANCE)) //TODO implement robot melee armour and remove this.
 
