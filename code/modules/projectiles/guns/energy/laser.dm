@@ -270,7 +270,7 @@
 	sales_price = 20
 	firemodes = list(
 		list(mode_name="single", projectile_type=/obj/item/projectile/beam/lasgun/weak, charge_cost=31, burst=1, burst_delay=2, fire_delay=4),
-		list(mode_name="overcharge", projectile_type=/obj/item/projectile/beam/lasgun, charge_cost=41, burst=3, burst_delay=2, fire_delay=4.7),
+		list(mode_name="overcharge", projectile_type=/obj/item/projectile/beam/lasgun, charge_cost=41, burst=1, burst_delay=2, fire_delay=4.7),
 		)
 
 /obj/item/gun/energy/lasgun/laspistol/militarum/bloodpact
@@ -281,7 +281,7 @@
 	charge_cost = 33
 	firemodes = list(
 		list(mode_name="single", projectile_type=/obj/item/projectile/beam/lasgun/weak, charge_cost=33, burst=1, burst_delay=2, fire_delay=4),
-		list(mode_name="overcharge", projectile_type=/obj/item/projectile/beam/lasgun, charge_cost=43, burst=3, burst_delay=2, fire_delay=4.7),
+		list(mode_name="overcharge", projectile_type=/obj/item/projectile/beam/lasgun, charge_cost=43, burst=1, burst_delay=2, fire_delay=4.7),
 		)
 
 /obj/item/gun/energy/lasgun/laspistol/lucius
@@ -296,7 +296,7 @@
 
 	firemodes = list(
 		list(mode_name="single", projectile_type=/obj/item/projectile/beam/lasgun, charge_cost=38, burst=1, burst_delay=2.2, fire_delay=4.5),
-		list(mode_name="overcharge", projectile_type=/obj/item/projectile/beam/lasgun/overcharge, charge_cost=48, burst=3, burst_delay=2.2, fire_delay=5.5),
+		list(mode_name="overcharge", projectile_type=/obj/item/projectile/beam/lasgun/overcharge, charge_cost=48, burst=1, burst_delay=2.2, fire_delay=5.5),
 		)
 
 /obj/item/gun/energy/lasgun/laspistol/accatran

@@ -257,7 +257,7 @@
 	desc = "an armoured flak-lamellar recon hood."
 	icon_state = "reconhood"
 	item_state = "reconhood"
-	flags_inv = HIDEMASK|HIDEEARS|BLOCKHEADHAIR
+	flags_inv = HIDEEARS|BLOCKHEADHAIR
 	max_pressure_protection = SPACE_SUIT_MAX_PRESSURE
 	slowdown_general = 0.008
 	disorientation = 0.5

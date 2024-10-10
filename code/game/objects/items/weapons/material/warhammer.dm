@@ -130,7 +130,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	base_parry_chance = 30
 	melee_accuracy_bonus = 5
 
-/obj/item/material/twohanded/ravenor/sword/cutro
+/obj/item/material/twohanded/ravenor/sword/cutro/adamantine
 	name = "adamantine cutro"
 	desc = "A lightweight adamantium blade with near perfect balance."
 	color = "#848484"

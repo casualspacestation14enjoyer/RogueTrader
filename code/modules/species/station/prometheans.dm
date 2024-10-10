@@ -35,7 +35,7 @@ var/global/datum/species/shapeshifter/promethean/prometheans
 	min_age =             1
 	max_age =             5
 	brute_mod =           0.5
-	burn_mod =            2
+	burn_mod =            0.8
 	oxy_mod =             0
 	total_health =        240
 	siemens_coefficient = -1

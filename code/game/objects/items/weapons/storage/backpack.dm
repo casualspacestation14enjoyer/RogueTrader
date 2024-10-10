@@ -598,12 +598,48 @@
 	desc = "A heavy rucksack."
 	icon_state = "warfare_satchel"
 	max_storage_space = DEFAULT_BACKPACK_STORAGE+3
-	slowdown_general = 0.05
+	slowdown_general = 0.04
 
 /obj/item/storage/backpack/satchel/warfare
 	name = "light satchel"
 	desc = "Fit for war, and not much else."
 	icon_state = "warfare_satchel"
+	max_storage_space = DEFAULT_BACKPACK_STORAGE
+	slowdown_general = 0.015
+
+/obj/item/storage/backpack/satchel/krieger
+	desc = "Field ready kit, tried and tested through countless encounters."
+	icon_state = "kriegpack"
+	item_state = "kriegpack"
+	max_storage_space = DEFAULT_BACKPACK_STORAGE+2
+	slowdown_general = 0.035
+
+/obj/item/storage/backpack/satchel/krieger/grenadier
+	desc = "An assembled kit for air filtration, weapon power supply, and basic storage. Perfect to bring with you into no man's land."
+	icon_state = "grenpack"
+	item_state = "grenpack"
+	max_storage_space = DEFAULT_BACKPACK_STORAGE
+	slowdown_general = 0.015
+
+/obj/item/storage/backpack/satchel/maccabian
+	desc = "Field ready kit, tried and tested through countless encounters."
+	icon_state = "M_Backpack-Icon"
+	item_state = "M_Backpack-Icon"
+	max_storage_space = DEFAULT_BACKPACK_STORAGE
+	slowdown_general = 0.015
+
+/obj/item/storage/backpack/satchel/maccabian/sergeant
+	desc = "Field ready kit, tried and tested through countless encounters."
+	icon_state = "M_SBackpack-Icon"
+	item_state = "M_SBackpack-Icon"
+	max_storage_space = DEFAULT_BACKPACK_STORAGE
+	slowdown_general = 0.015
+
+/obj/item/storage/backpack/satchel/ordinate
+	name = "Administratum Ink Pack"
+	desc = "Burocracy on the go"
+	icon_state = "ordinate"
+	item_state = "ordinate"
 
 /obj/item/storage/backpack/satchel/warfare/techpriest
 	desc = "BZZZRRRRT."
@@ -738,35 +774,6 @@
 		usr.put_in_hands(new /obj/item/melee/energy/powersword/claw/integrated(usr))
 
 
-/obj/item/storage/backpack/warfare
-	desc = "Holds more than a satchel, but can't open it on your back."
-	icon_state = "warfare_backpack"
 
-/obj/item/storage/backpack/satchel/krieger
-	desc = "Field ready kit, tried and tested through countless encounters."
-	icon_state = "kriegpack"
-	item_state = "kriegpack"
-
-/obj/item/storage/backpack/satchel/krieger/grenadier
-	desc = "An assembled kit for air filtration, weapon power supply, and basic storage. Perfect to bring with you into no man's land."
-	icon_state = "grenpack"
-	item_state = "grenpack"
-
-/obj/item/storage/backpack/satchel/maccabian
-	desc = "Field ready kit, tried and tested through countless encounters."
-	icon_state = "M_Backpack-Icon"
-	item_state = "M_Backpack-Icon"
-
-/obj/item/storage/backpack/satchel/maccabian/sergeant
-	desc = "Field ready kit, tried and tested through countless encounters."
-	icon_state = "M_SBackpack-Icon"
-	item_state = "M_SBackpack-Icon"
-
-
-/obj/item/storage/backpack/satchel/ordinate
-	name = "Administratum Ink Pack"
-	desc = "Burocracy on the go"
-	icon_state = "ordinate"
-	item_state = "ordinate"
 
 */

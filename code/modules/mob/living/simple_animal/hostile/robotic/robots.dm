@@ -115,7 +115,7 @@
 	muzzle_type = /obj/projectile/laser/pulse/muzzle
 	tracer_type = /obj/projectile/laser/pulse/tracer
 	impact_type = /obj/projectile/laser/pulse/impact
-	penetration_modifier = 1.5
+	rupture_artery = 1.5
 
 /obj/item/projectile/beam/bunkerbuster/check_penetrate(atom/A)
 	..()
@@ -123,7 +123,7 @@
 	var/chance = damage
 	var/datum/extension/penetration/P = get_extension(A, /datum/extension/penetration)
 	if(P)
-		chance = min(100, P.PenetrationProbability(chance, damage, damage_type) * penetration_modifier)
+		chance = min(100, P.PenetrationProbability(chance, damage, damage_type) * rupture_artery)
 
 	if(prob(chance))
 		if(A.opacity)

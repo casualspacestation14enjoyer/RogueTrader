@@ -18,17 +18,6 @@
 	mag_insert_sound 	= 'sound/warhammer/guns/interact/rev_magin.ogg'
 	load_sound = 'sound/warhammer/guns/interact/rev_magin.ogg'
 
-/obj/item/gun/projectile/revolver/imperial/on_update_icon()
-	..()
-	if(ammo_magazine)
-		icon_state = "snubby"
-		item_state = "crevolver"
-		wielded_item_state = "crevolver"
-	else
-		icon_state = "snubby-e"
-		item_state = "crevolver"
-		wielded_item_state = "crevolver"
-
 /obj/item/gun/projectile/revolver/imperial/holdout
 	name = "Holdout Revolver"
 	desc = "A concealed-carry revolver that is more compact at the cost of additional recoil. It fires small 7mm tech rounds"
@@ -43,17 +32,6 @@
 	fire_delay = 3.2
 	max_shells = 9
 
-/obj/item/gun/projectile/revolver/imperial/holdout/on_update_icon()
-	..()
-	if(ammo_magazine)
-		icon_state = "mervex"
-		item_state = "crevolver"
-		wielded_item_state = "crevolver"
-	else
-		icon_state = "mervex"
-		item_state = "crevolver"
-		wielded_item_state = "crevolver"
-
 /obj/item/gun/projectile/revolver/imperial/heavy
 	name = "Heavy Slug Revolver"
 	desc = "A heavy slug revolver chambered in 15mm, standard issue to Guard Officers and Magistratum Enforcers."
@@ -66,18 +44,6 @@
 	fire_delay = 3.5
 	max_shells = 7
 
-/obj/item/gun/projectile/revolver/imperial/heavy/on_update_icon()
-	..()
-	if(ammo_magazine)
-		icon_state = "slug_revolver"
-		item_state = "crevolver"
-		wielded_item_state = "crevolver"
-	else
-		icon_state = "slug_revolver"
-		item_state = "crevolver"
-		wielded_item_state = "crevolver"
-
-
 /obj/item/gun/projectile/revolver/imperial/heavy/mateba
 	name = "Heavy Slug Revolver"
 	desc = "A custom made mateba slug revolver -- clearly forged by a talented of gunsmith, it's makers mark signifying it's origins beyond the Ghoul Stars."
@@ -87,17 +53,6 @@
 	fire_delay= 3.3
 	max_shells = 8
 
-/obj/item/gun/projectile/revolver/imperial/heavy/mateba/on_update_icon()
-	..()
-	if(ammo_magazine)
-		icon_state = "goldmateba"
-		item_state = "crevolver"
-		wielded_item_state = "crevolver"
-	else
-		icon_state = "goldmateba-e"
-		item_state = "crevolver"
-		wielded_item_state = "crevolver"
-
 /obj/item/gun/projectile/revolver/imperial/heavy/necros
 	name = "Heavy Slug Revolver"
 	desc = "A necromundan slug revolver -- a favorite among bounty hunters due to it's supreme accuracy at a distance."
@@ -105,17 +60,6 @@
 	accuracy = 0.6
 	fire_delay= 3.5
 	max_shells = 7
-
-/obj/item/gun/projectile/revolver/imperial/heavy/necros/on_update_icon()
-	..()
-	if(ammo_magazine)
-		icon_state = "necros"
-		item_state = "crevolver"
-		wielded_item_state = "crevolver"
-	else
-		icon_state = "necros"
-		item_state = "crevolver"
-		wielded_item_state = "crevolver"
 
 /obj/item/gun/projectile/revolver/imperial/heavy/custom
 	name = "Custom Slug Revolver"
@@ -126,48 +70,8 @@
 	max_shells = 8
 	ammo_type = /obj/item/ammo_casing/autogun/militarum
 	caliber = list(
-    CALIBER_AUTOGUN_TECH
+	CALIBER_AUTOGUN
 )
-
-/obj/item/gun/projectile/revolver/imperial/heavy/custom/on_update_icon()
-	..()
-	if(ammo_magazine)
-		icon_state = "hunting_revolver"
-		item_state = "crevolver"
-		wielded_item_state = "crevolver"
-	else
-		icon_state = "hunting_revolver"
-		item_state = "crevolver"
-		wielded_item_state = "crevolver"
-
-/obj/item/gun/projectile/revolver/imperial/heavy/officer
-	name = "Heavy Slug Revolver"
-	desc = "This slug revolver is custom forged to fire heavy shotgun shells and slug rounds. The recoil is punishing and it can only hold four shells at a time."
-	icon_state = "mrevolver"
-	item_state = "crevolver"
-	caliber = "shotgun"
-	handle_casings = CYCLE_CASINGS
-	max_shells = 4
-	force = 15
-	accuracy = -0.5
-	fire_delay= 3.7
-	ammo_type = /obj/item/ammo_casing/shotgun
-	caliber = list(
-    CALIBER_SHOTGUN
-)
-	fire_sound = 'sound/warhammer/guns/fire/revolver_fire.ogg'
-
-/obj/item/gun/projectile/revolver/imperial/heavy/custom/on_update_icon()
-	..()
-	if(ammo_magazine)
-		icon_state = "mrevolver"
-		item_state = "crevolver"
-		wielded_item_state = "crevolver"
-	else
-		icon_state = "mrevolver-e"
-		item_state = "crevolver"
-		wielded_item_state = "crevolver"
-
 
 /obj/item/gun/projectile/pistol/slug // Do not get the calibers mixed up. Slug pistols use caliber_slug_magnum.
 	name = "Slug Pistol"
@@ -183,7 +87,7 @@
 	one_hand_penalty = 0
 	fire_delay = 3.7
 	caliber = list(
-    CALIBER_SLUG_MAGNUM
+	CALIBER_SLUG_MAGNUM
 )
 	accuracy = -0.5
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
@@ -212,8 +116,8 @@
 	accuracy = -1 // Fires both Antique and Magnum rounds. Not accurate.
 	sales_price = 15
 	caliber = list(
-    CALIBER_SLUG_MAGNUM,
-    CALIBER_SLUG_ANTIQUE
+	CALIBER_SLUG_MAGNUM,
+	CALIBER_SLUG_ANTIQUE
 )
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 
@@ -228,6 +132,34 @@
 		item_state = "pistol"
 		wielded_item_state = "pistol"
 
+/obj/item/gun/projectile/pistol/slug/shotgun
+	name = "Maccabian Slug Pistol"
+	desc = "This slug pistol is custom forged to fire heavy 16mm slugs with a magazine insert for standard shotshell holders. The recoil is punishing and it can only hold eight shells at a time."
+	icon_state = "mrevolver"
+	item_state = "crevolver"
+	caliber = "shotgun"
+	force = 15
+	accuracy = -0.5
+	fire_delay= 3.7
+	allowed_magazines = /obj/item/ammo_magazine/shotholder
+	magazine_type = /obj/item/ammo_magazine/shotholder/flechette
+	ammo_type = /obj/item/ammo_casing/shotgun
+	caliber = list(
+	CALIBER_SHOTGUN
+)
+	fire_sound = 'sound/warhammer/guns/fire/revolver_fire.ogg'
+
+/obj/item/gun/projectile/pistol/slug/shotgun/on_update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "mrevolver"
+		item_state = "crevolver"
+		wielded_item_state = "crevolver"
+	else
+		icon_state = "mrevolver-e"
+		item_state = "crevolver"
+		wielded_item_state = "crevolver"
+
 /obj/item/gun/projectile/pistol/stub
 	name = "Kieji stub pistol"
 	desc = "A standard pattern 10mm stub pistol, on the side is the makers mark of it's forger -- this pistol has history."
@@ -238,8 +170,8 @@
 	allowed_magazines = /obj/item/ammo_magazine/pistol
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	caliber = list(
-    CALIBER_SLUG,
-    CALIBER_SLUG_ANTIQUE
+	CALIBER_SLUG,
+	CALIBER_SLUG_ANTIQUE
 )
 	sales_price = 8
 	accuracy = 0.3
@@ -305,7 +237,7 @@
 	icon_state = "talon"
 	fire_delay = 2.5
 	caliber = list(
-    CALIBER_SLUG_SMALL
+	CALIBER_SLUG_SMALL
 )
 	magazine_type = /obj/item/ammo_magazine/pistol/small/ap
 	allowed_magazines = /obj/item/ammo_magazine/pistol/small

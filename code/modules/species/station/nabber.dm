@@ -47,8 +47,8 @@
 	hud_type = /datum/hud_data/nabber
 
 	total_health = 200
-	brute_mod = 0.9
-	burn_mod =  1.35
+	brute_mod = 0.65
+	burn_mod =  0.75
 	natural_armour_values = list(
 		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_BASIC,

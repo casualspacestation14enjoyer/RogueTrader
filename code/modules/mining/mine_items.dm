@@ -158,6 +158,18 @@
 	throwforce = 7.0
 	w_class = ITEM_SIZE_SMALL
 
+/obj/item/shovel/krieg
+	name = "krieg shovel"
+	desc = "A small tool for digging and moving dirt."
+	icon = 'icons/obj/tools.dmi'
+	icon_state = "entrenching_tool"
+	item_state = "trench"
+	force = 24
+	sharp = 1
+	armor_penetration = 6
+	throwforce = 20
+	w_class = ITEM_SIZE_NORMAL
+
 // Flags.
 /obj/item/stack/flag
 	name = "beacon"

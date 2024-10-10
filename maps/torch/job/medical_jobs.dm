@@ -64,10 +64,15 @@
 
 /datum/job/data_smith/equip(mob/living/carbon/human/H)
 	var/current_name = H.real_name
-	var/selected_title = alt_titles[H.mind.role_alt_title]
+	var/current_title = trimtext(H.mind.role_alt_title)
+	H.voice_in_head(pick(GLOB.lone_thoughts))
+	if(current_title && (H.mind.role_alt_title in alt_titles))
+		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
+	else
+		current_title = title // use default title
 	H.fully_replace_character_name("Magos Biologis [current_name]")
 	H.say(":e OMVISS1@H &(47*TECHNICA)B(ADMECH)... transponder signal active.")
-	to_chat(H, "<span class='notice'><b><font size=2>As the [selected_title], you are part of the Rogue Trader's retinue, operating beyond the constraints of the Mechanicus. You manage the biological research and medical efforts aboard the vessel, overseeing Skitarii and Medicae personnel alike. Your duty is to ensure your medicae staff are prepared for surgery, treatment, and field response, and that every biological specimen or anomaly is studied with ruthless efficiency. You are expected to lead in matters of biology and medicine, stepping in as surgeon or advisor when necessary, always furthering the quest for knowledge and mastery over the flesh.</font></b></span>")
+	to_chat(H, "<span class='notice'><b><font size=2>As the [current_title], you are part of the Rogue Trader's retinue, operating beyond the constraints of the Mechanicus. You manage the biological research and medical efforts aboard the vessel, overseeing Skitarii and Medicae personnel alike. Your duty is to ensure your medicae staff are prepared for surgery, treatment, and field response, and that every biological specimen or anomaly is studied with ruthless efficiency. You are expected to lead in matters of biology and medicine, stepping in as surgeon or advisor when necessary, always furthering the quest for knowledge and mastery over the flesh.</font></b></span>")
 	return ..()
 
 /datum/job/sister_hospitaller
@@ -121,11 +126,14 @@
 
 /datum/job/sister_hospitaller/equip(mob/living/carbon/human/H)
 	var/current_name = H.real_name
-	var/selected_title = alt_titles[H.mind.role_alt_title]
-	if (!selected_title)
-		selected_title = title
-	H.fully_replace_character_name("[selected_title] [current_name]")
-	to_chat(H, "<span class='notice'><b><font size=2>As the [selected_title], you are responsible for overseeing the health and medical training of the crew. A guiding hand for novitiates, you impart the knowledge and faith required to heal both body and soul, embodying the sacred duty of the Orders Hospitaller. Your care extends beyond the physical, offering spiritual solace to those in need, ensuring that the crew remains steadfast in both their service and devotion.</font></b></span>")
+	var/current_title = trimtext(H.mind.role_alt_title)
+	H.voice_in_head(pick(GLOB.lone_thoughts))
+	if(current_title && (H.mind.role_alt_title in alt_titles))
+		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
+	else
+		current_title = title // use default title
+	H.fully_replace_character_name("[current_title] [current_name]")
+	to_chat(H, "<span class='notice'><b><font size=2>As the [current_title], you are responsible for overseeing the health and medical training of the crew. A guiding hand for novitiates, you impart the knowledge and faith required to heal both body and soul, embodying the sacred duty of the Orders Hospitaller. Your care extends beyond the physical, offering spiritual solace to those in need, ensuring that the crew remains steadfast in both their service and devotion.</font></b></span>")
 	return ..()
 
 /datum/job/pharmacologis
@@ -171,11 +179,14 @@
 
 /datum/job/pharmacologis/equip(mob/living/carbon/human/H)
 	var/current_name = H.real_name
-	var/selected_title = alt_titles[H.mind.role_alt_title]
-	if (!selected_title)
-		selected_title = title
-	H.fully_replace_character_name("[selected_title] [current_name]")
-	to_chat(H, "<span class='notice'><b><font size=2>As the [selected_title], you serve alongside the Medicae and Sister Hospitaller, wielding your knowledge of chemistry and biological science to support their sacred work. You are responsible for the formulation of complex medicines, compounds, and stimulants, as well as assisting in advanced surgical procedures when required. Though you are not tasked with direct patient care, your role is critical—ensuring the crew can fight, endure, and survive in the Emperor’s name. Your work stands at the intersection of science and duty, safeguarding the vitality of those who serve the Imperium.</font></b></span>")
+	var/current_title = trimtext(H.mind.role_alt_title)
+	H.voice_in_head(pick(GLOB.lone_thoughts))
+	if(current_title && (H.mind.role_alt_title in alt_titles))
+		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
+	else
+		current_title = title // use default title
+	H.fully_replace_character_name("[current_title] [current_name]")
+	to_chat(H, "<span class='notice'><b><font size=2>As the [current_title], you serve alongside the Medicae and Sister Hospitaller, wielding your knowledge of chemistry and biological science to support their sacred work. You are responsible for the formulation of complex medicines, compounds, and stimulants, as well as assisting in advanced surgical procedures when required. Though you are not tasked with direct patient care, your role is critical—ensuring the crew can fight, endure, and survive in the Emperor’s name. Your work stands at the intersection of science and duty, safeguarding the vitality of those who serve the Imperium.</font></b></span>")
 	return ..()
 
 /datum/job/medicae
@@ -225,11 +236,14 @@
 
 /datum/job/medicae/equip(mob/living/carbon/human/H)
 	var/current_name = H.real_name
-	var/selected_title = alt_titles[H.mind.role_alt_title]
-	if (!selected_title)
-		selected_title = title
+	var/current_title = trimtext(H.mind.role_alt_title)
+	H.voice_in_head(pick(GLOB.lone_thoughts))
+	if(current_title && (H.mind.role_alt_title in alt_titles))
+		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
+	else
+		current_title = title // use default title
 	H.fully_replace_character_name("[current_name]")
-	to_chat(H, "<span class='notice'><b><font size=2>You are a [selected_title] aboard the Rogue Trader’s vessel, trained to deal with the harsh and unforgiving conditions of both space and hive cities. Your responsibilities include treating battlefield injuries, performing surgeries, and managing the health of the crew. Whether responding to emergencies or ensuring long-term health, your experience in crowded, under-equipped environments has honed your ability to handle crises with efficiency and precision, making you indispensable in the chaos of the void.</font></b></span>")
+	to_chat(H, "<span class='notice'><b><font size=2>You are a [current_title] aboard the Rogue Trader’s vessel, trained to deal with the harsh and unforgiving conditions of both space and hive cities. Your responsibilities include treating battlefield injuries, performing surgeries, and managing the health of the crew. Whether responding to emergencies or ensuring long-term health, your experience in crowded, under-equipped environments has honed your ability to handle crises with efficiency and precision, making you indispensable in the chaos of the void.</font></b></span>")
 	return ..()
 
 /datum/job/novitiate
@@ -278,11 +292,14 @@
 
 /datum/job/novitiate/equip(mob/living/carbon/human/H)
 	var/current_name = H.real_name
-	var/selected_title = alt_titles[H.mind.role_alt_title]
-	if (!selected_title)
-		selected_title = title
-	H.fully_replace_character_name("[selected_title] [current_name]")
-	to_chat(H, "<span class='notice'><b><font size=2>As a [selected_title] aboard the vessel, you are in the early stages of rigorous training under the Sister Hospitaller and Chaplain Militant. Your education spans both spiritual teachings and practical disciplines, preparing you for a future role within the Imperium.</font></b></span>")
+	var/current_title = trimtext(H.mind.role_alt_title)
+	H.voice_in_head(pick(GLOB.lone_thoughts))
+	if(current_title && (H.mind.role_alt_title in alt_titles))
+		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
+	else
+		current_title = title // use default title
+	H.fully_replace_character_name("[current_title] [current_name]")
+	to_chat(H, "<span class='notice'><b><font size=2>As a [current_title] aboard the vessel, you are in the early stages of rigorous training under the Sister Hospitaller and Chaplain Militant. Your education spans both spiritual teachings and practical disciplines, preparing you for a future role within the Imperium.</font></b></span>")
 	return ..()
 
 

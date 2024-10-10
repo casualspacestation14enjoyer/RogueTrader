@@ -1413,7 +1413,7 @@ GLOBAL_LIST_INIT(random_backpacks, list(
 /obj/random/backpack
 	name = "random backpack"
 	desc = "This is a random backpack."
-	icon = 'icons/obj/clothing/obj_backpacks.dmi'
+	icon = 'icons/obj/storage.dmi'
 	icon_state = "backpack"
 
 /obj/random/backpack/spawn_choices()

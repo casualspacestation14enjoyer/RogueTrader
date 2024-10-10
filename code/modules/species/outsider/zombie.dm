@@ -55,8 +55,8 @@ GLOBAL_LIST_INIT(zombie_species, list(\
 	species_flags = SPECIES_FLAG_NO_PAIN | SPECIES_FLAG_NO_SCAN
 	spawn_flags = SPECIES_IS_RESTRICTED
 	vision_flags = SEE_SELF | SEE_MOBS
-	brute_mod = 1.0
-	burn_mod = 1.5 //Vulnerable to fire
+	brute_mod = 0.5
+	burn_mod = 0.5
 	oxy_mod = 0.0
 	stun_mod = 0.2
 	weaken_mod = 0.3

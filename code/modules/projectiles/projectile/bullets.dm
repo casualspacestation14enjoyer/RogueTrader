@@ -3,11 +3,11 @@
 	icon_state = "bullet"
 	fire_sound = null
 	damage = 30
-	armor_penetration = 16
+	armor_penetration = 21
 	damage_type = DAMAGE_BRUTE
 	damage_flags = DAMAGE_FLAG_BULLET | DAMAGE_FLAG_SHARP
 	embed = TRUE
-	penetration_modifier = 0.4
+	rupture_artery = 0.4
 	space_knockback = 1
 	var/mob_passthrough_check = 0
 	var/is_pellet = FALSE
@@ -127,53 +127,53 @@
 
 /obj/item/projectile/bullet/pistol
 	damage = 35
-	armor_penetration = 20
+	armor_penetration = 21
 	distance_falloff = 3
 
 /obj/item/projectile/bullet/pistol/ap
-	armor_penetration = 22 // +2
+	armor_penetration = 23 // +2
 
 /obj/item/projectile/bullet/pistol/kp
 	damage = 38 // +3 damage.
-	armor_penetration = 24 // +2 added with AP. So +4 total from standard.
+	armor_penetration = 25 // +2 added with AP. So +4 total from standard.
 
 /obj/item/projectile/bullet/pistol/ms
 	damage = 43 // MS rounds are +5 damage -2 AP to all rounds
-	armor_penetration = 18
+	armor_penetration = 19
 
 /obj/item/projectile/bullet/pistol/holdout // Higher quality penetrative slugs
 	damage = 32
-	armor_penetration = 21
-	penetration_modifier = 0.5
+	armor_penetration = 22
+	rupture_artery = 0.5
 	distance_falloff = 4
 
 /obj/item/projectile/bullet/pistol/holdout/ap
-	armor_penetration = 23
+	armor_penetration = 24
 
 /obj/item/projectile/bullet/pistol/holdout/kp
 	damage = 35
-	armor_penetration = 25
+	armor_penetration = 26
 
 /obj/item/projectile/bullet/pistol/holdout/ms
 	damage = 40
-	armor_penetration = 21
+	armor_penetration = 20
 
 /obj/item/projectile/bullet/magnum
 	damage = 38
-	penetration_modifier = 0.5
+	rupture_artery = 0.5
 	distance_falloff = 2 // Heavy slug.
-	armor_penetration = 22
+	armor_penetration = 24
 
 /obj/item/projectile/bullet/magnum/ap
-	armor_penetration = 24
+	armor_penetration = 26
 
 /obj/item/projectile/bullet/magnum/kp
 	damage = 41
-	armor_penetration = 26
+	armor_penetration = 28
 
 /obj/item/projectile/bullet/magnum/ms
 	damage = 46
-	armor_penetration = 20
+	armor_penetration = 22
 
 /obj/item/projectile/bullet/pistol/rubber //"rubber" bullets
 	name = "rubber bullet"
@@ -195,7 +195,7 @@
 /obj/item/projectile/bullet/flechette
 	damage = 35
 	penetrating = 1
-	armor_penetration = 23
+	armor_penetration = 25
 	embed = FALSE
 	distance_falloff = 2
 
@@ -204,19 +204,19 @@
 /obj/item/projectile/bullet/shotgun
 	name = "slug"
 	damage = 65
-	armor_penetration = 22
+	armor_penetration = 24
 	distance_falloff = 4
 
 /obj/item/projectile/bullet/shotgun/ap
-	armor_penetration = 25
+	armor_penetration = 27
 
 /obj/item/projectile/bullet/shotgun/kp
 	damage = 68
-	armor_penetration = 27 // special rounds scale better on big slugs.
+	armor_penetration = 29 // special rounds scale better on big slugs.
 
 /obj/item/projectile/bullet/shotgun/ms
 	damage = 70
-	armor_penetration = 21
+	armor_penetration = 24
 
 /obj/item/projectile/bullet/shotgun/beanbag
 	name = "beanbag"
@@ -243,75 +243,75 @@
 	name = "flechette"
 	icon_state = "flechette"
 	damage = 18 // Tigher spread and higher AP. On paper this thing blows regular pellets out of the water when dealing with flak.
-	armor_penetration = 21
+	armor_penetration = 23
 	pellets = 6
 	range_step = 3
 	base_spread = 99
 	spread_step = 15
-	penetration_modifier = 0.4
+	rupture_artery = 0.4
 
 /* "Rifle" rounds */
 
 /obj/item/projectile/bullet/rifle // 8mm slug round. Ideal for soft targets and light armour.
 	damage = 38
-	armor_penetration = 22
+	armor_penetration = 25
 	distance_falloff = 1
 
 /obj/item/projectile/bullet/rifle/ap
-	armor_penetration = 24
+	armor_penetration = 27
 
 /obj/item/projectile/bullet/rifle/kp
 	damage = 41
-	armor_penetration = 26
+	armor_penetration = 29
 
 /obj/item/projectile/bullet/rifle/ms
 	damage = 43
-	armor_penetration = 20
+	armor_penetration = 23
 
 /obj/item/projectile/bullet/rifle/heavy // 10mm heavy rifle slug. Big recoil.
 	damage = 43
-	armor_penetration = 24
+	armor_penetration = 26
 
 /obj/item/projectile/bullet/rifle/heavy/ap
-	armor_penetration = 26
+	armor_penetration = 28
 
 /obj/item/projectile/bullet/rifle/heavy/kp
 	damage = 46
-	armor_penetration = 28
+	armor_penetration = 30
 
 /obj/item/projectile/bullet/rifle/heavy/ms
 	damage = 51
-	armor_penetration = 20
+	armor_penetration = 26
 
 /obj/item/projectile/bullet/rifle/militarum // 6.8 Militarum. Higher AP, less damage to 8mm.
 	damage = 36
-	armor_penetration = 24
+	armor_penetration = 26
 
 /obj/item/projectile/bullet/rifle/militarum/ap
-	armor_penetration = 26
+	armor_penetration = 28
 
 /obj/item/projectile/bullet/rifle/militarum/kp
 	damage = 39
-	armor_penetration = 28
+	armor_penetration = 30
 
 /obj/item/projectile/bullet/rifle/militarum/ms
 	damage = 41
-	armor_penetration = 22
+	armor_penetration = 24
 
 /obj/item/projectile/bullet/rifle/sniper // 12.7mm Battle Round
 	damage = 58
-	armor_penetration = 32
+	armor_penetration = 33
 
 /obj/item/projectile/bullet/rifle/sniper/ap
-	armor_penetration = 34
+	armor_penetration = 35
 
 /obj/item/projectile/bullet/rifle/sniper/kp
 	damage = 61
-	armor_penetration = 36
+	armor_penetration = 37
 
 /obj/item/projectile/bullet/rifle/sniper/ms
 	damage = 63
-	armor_penetration = 30
+	armor_penetration = 31
 
 /obj/item/projectile/bullet/rifle/shell // 12.7mm Tech Round
 	damage = 85
@@ -319,7 +319,7 @@
 	weaken = 2
 	penetrating = 3
 	armor_penetration = 34
-	penetration_modifier = 1
+	rupture_artery = 1
 	distance_falloff = 0.5
 
 /obj/item/projectile/bullet/rifle/shell/apds
@@ -327,17 +327,17 @@
 
 /obj/item/projectile/bullet/rifle/shell/apds/rail
 	damage = 110
-	armor_penetration = 32 // Not a penetrative slug -- just hot metal being fired by a xenos magnetic rail device.
+	armor_penetration = 33 // Not a penetrative slug -- just hot metal being fired by a xenos magnetic rail device.
 
 /obj/item/projectile/bullet/rifle/shell/rend // Special tech shredder round. Loses wall_pen ability for huge damage.
 	damage = 100
 	penetrating = 0
-	armor_penetration = 32
+	armor_penetration = 33
 
 /obj/item/projectile/bullet/rifle/shell/knockout // Round for putting space marines and xenos to sleep for capture or killing.
 	damage = 40
 	penetrating = 0
-	armor_penetration = 32
+	armor_penetration = 33
 	paralyze = 3
 	drowsy = 20
 	stun = 3

@@ -325,12 +325,6 @@
 	icon_state = "jackboots"
 	item_state = "jackboots"
 
-/obj/item/clothing/shoes/jackboots/catachan
-	name = "combat boots"
-	desc = "Astra Militarum's common combat boots, found worn by most Imperial Agencies and Astra Militarum."
-	icon_state = "jackboots"
-	item_state = "jackboots"
-
 /obj/item/clothing/shoes/jackboots/krieg
 	name = "combat boots"
 	desc = "The Krieg Regiment, unlike most of the Astra Militarum, prefer their less protective but more mobile boots over the standard Mars Pattern used by the Munitorium."
@@ -593,12 +587,30 @@
 	icon_state = "noble-boots"
 	item_state = "noble-boots"
 	item_flags = ITEM_FLAG_NOSLIP
+	armor = list(
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK,
+		energy = ARMOR_ENERGY_TEN,
+		bio = ARMOR_BIO_THIRTY+25,
+		rad = ARMOR_RAD_THIRTY+75,
+		bomb = ARMOR_BOMB_TEN+25
+	)
 
 /obj/item/clothing/shoes/jackboots/noble
 	name = "noble boots"
 	desc = "A pair of high quality black leather boots for kicking the filthy peasants and participating in questionable hedonistic activities at the chambers."
 	icon_state = "noble-boots"
 	item_state = "noble-boots"
+	armor = list(
+		melee = ARMOR_MELEE_FLAK-1,
+		bullet = ARMOR_BALLISTIC_FLAK-1,
+		laser = ARMOR_LASER_FLAK-1,
+		energy = ARMOR_ENERGY_TEN,
+		bio = ARMOR_BIO_THIRTY+5,
+		rad = ARMOR_RAD_THIRTY+55,
+		bomb = ARMOR_BOMB_TEN+10
+	)
 
 /obj/item/clothing/shoes/jackboots/mordian
 	name = "Mordian Dress Boots"
@@ -611,14 +623,30 @@
 	desc = "A pair of high quality black leather boots for kicking the filthy peasants and participating in questionable hedonistic activities at the chambers."
 	icon_state = "Boots"
 	item_state = "Boots"
+	armor = list(
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK,
+		energy = ARMOR_ENERGY_TEN,
+		bio = ARMOR_BIO_THIRTY+25,
+		rad = ARMOR_RAD_THIRTY+75,
+		bomb = ARMOR_BOMB_TEN+25
+	)
 
 /obj/item/clothing/shoes/scion
 	name = "Tempestus Scion Boots"
 	desc = "Armoured boots belonging to the elite Tempestus Scions."
 	icon_state = "ScionBoots"
 	item_state = "ScionBoots"
-	force = 5
-	armor = list(melee = 10, bullet = 20, laser = 20,energy = 25, bomb = 50, bio = 100, rad = 0)
+	armor = list(
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK,
+		energy = ARMOR_ENERGY_TEN,
+		bio = ARMOR_BIO_THIRTY+25,
+		rad = ARMOR_RAD_THIRTY+75,
+		bomb = ARMOR_BOMB_TEN+25
+	)
 	item_flags = ITEM_FLAG_NOSLIP
 	siemens_coefficient = 0.6
 
@@ -645,7 +673,15 @@
 	siemens_coefficient = 0
 	unacidable = 1
 	canremove = 0
-	armor = list(melee = 25, bullet = 25, laser = 25,energy = 25, bomb = 50, bio = 100, rad = 100)
+	armor = list(
+		melee = ARMOR_MELEE_FLAK-1,
+		bullet = ARMOR_BALLISTIC_FLAK-1,
+		laser = ARMOR_LASER_FLAK-1,
+		energy = ARMOR_ENERGY_TEN,
+		bio = ARMOR_BIO_THIRTY+5,
+		rad = ARMOR_RAD_THIRTY+55,
+		bomb = ARMOR_BOMB_TEN+10
+	)
 
 
 /*
