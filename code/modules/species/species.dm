@@ -1,6 +1,34 @@
 /*
 	Datum-based species. Should make for much cleaner and easier to maintain race code.
 */
+var/list/death_messages = list(
+	"Seizes up, body convulsing once before falling still, lifeless.",
+	"A shudder runs through them before they crumple, eyes dull and empty.",
+	"Falls hard to the ground, death taking them with a final, vacant stare.",
+	"Their body gives out, collapsing lifeless as the light leaves their eyes.",
+	"Collapses, their last breath escaping as the world fades from their gaze."
+)
+var/list/knockout_messages = list(
+	"Falls to the ground, unconscious.",
+	"Slumps to the floor, out cold.",
+	"Drops hard, lying still as they pass out.",
+	"Hits the ground with a dull sound, unmoving.",
+	"Falls heavily, unconscious as they hit the floor."
+)
+var/list/halloss_messages = list(
+	"Staggers, strength failing, and collapses, too weak to go on.",
+	"Falls to their knees, every ounce of strength drained, before slumping over.",
+	"Legs buckle beneath them as they crumple, utterly spent.",
+	"Collapses under their own weight, too exhausted to stand.",
+	"Stumbles, then crashes to the ground, body too weak to continue."
+)
+var/list/halloss_messages_self = list(
+	"The pain overwhelms you, forcing your body to collapse under its weight.",
+	"Your legs give out, and the agony drags you down, unable to keep going.",
+	"The pain is too much to bear, and you drop, utterly spent.",
+	"Your body rebels, collapsing under the unrelenting agony coursing through you.",
+	"You can't fight it any longer, and you fall, the pain blinding your senses."
+)
 
 /datum/species
 
@@ -86,17 +114,17 @@
 	var/list/unarmed_attacks = null           // For empty hand harm-intent attack
 
 	var/list/natural_armour_values            // Armour values used if naked.
-	var/brute_mod =      1                    // Physical damage multiplier.
-	var/burn_mod =       1                    // Burn damage multiplier.
-	var/toxins_mod =     1                    // Toxloss modifier
-	var/radiation_mod =  1                    // Radiation modifier
+	var/brute_mod =      0.75                    // Physical damage multiplier.
+	var/burn_mod =       0.75                    // Burn damage multiplier.
+	var/toxins_mod =     0.8                    // Toxloss modifier
+	var/radiation_mod =  0.6                    // Radiation modifier
 
 	var/oxy_mod =        0.5                    // Oxyloss modifier
-	var/flash_mod =      1                    // Stun from blindness modifier.
+	var/flash_mod =      0.9                    // Stun from blindness modifier.
 	var/metabolism_mod = 1                    // Reagent metabolism modifier
-	var/stun_mod =       1                    // Stun period modifier.
+	var/stun_mod =       0.9                    // Stun period modifier.
 	var/paralysis_mod =  1                    // Paralysis period modifier.
-	var/weaken_mod =     1                    // Weaken period modifier.
+	var/weaken_mod =     0.8                    // Weaken period modifier.
 
 	var/vision_flags = SEE_SELF               // Same flags as glasses.
 
@@ -112,10 +140,12 @@
 	var/dusted_anim =   "dust-h"
 
 	var/death_sound
-	var/death_message = "seizes up and falls limp, their eyes dead and lifeless..."
-	var/knockout_message = "collapses, having been knocked unconscious."
-	var/halloss_message = "slumps over, too weak to continue fighting..."
-	var/halloss_message_self = "The pain is too severe for you to keep going..."
+	// Usage in code
+	var/death_message
+	var/knockout_message
+	var/halloss_message
+	var/halloss_message_self
+
 
 	var/limbs_are_nonsolid
 	var/spawns_with_stack = 0
@@ -141,14 +171,14 @@
 	var/heat_discomfort_level = 315                             // Aesthetic messages about feeling warm.
 	var/cold_discomfort_level = 285                             // Aesthetic messages about feeling chilly.
 	var/list/heat_discomfort_strings = list(
-		"You feel sweat drip down your neck.",
-		"You feel uncomfortably warm.",
-		"Your skin prickles in the heat."
+		"It's hot in here.",
+		"You feel warm.",
+		"It's getting warmer in here."
 		)
 	var/list/cold_discomfort_strings = list(
-		"You feel chilly.",
-		"You shiver suddenly.",
-		"Your chilly flesh stands out in goosebumps."
+		"You feel cold.",
+		"It's getting colder.",
+		"You can feel the temperature dropping."
 		)
 
 	var/water_soothe_amount
@@ -164,7 +194,7 @@
 	var/list/inherent_verbs 	  // Species-specific verbs.
 	var/has_fine_manipulation = 1 // Can use small items.
 	var/siemens_coefficient = 1   // The lower, the thicker the skin and better the insulation.
-	var/darksight_range = 2       // Native darksight distance.
+	var/darksight_range = 3       // Native darksight distance.
 	var/darksight_tint = DARKTINT_NONE // How shadows are tinted.
 	var/species_flags = 0         // Various specific features.
 	var/appearance_flags = 0      // Appearance/display related features.

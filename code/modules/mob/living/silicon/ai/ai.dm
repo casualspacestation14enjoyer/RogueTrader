@@ -157,7 +157,7 @@ var/global/list/ai_verbs_default = list(
 	add_language(LANGUAGE_HUMAN_INDIAN, TRUE)
 	add_language(LANGUAGE_HUMAN_RUSSIAN, TRUE)
 	add_language(LANGUAGE_HUMAN_SELENIAN, TRUE)
-	add_language(LANGUAGE_UNATHI_SINTA, TRUE)
+	add_language(LANGUAGE_KROOT_SINTA, TRUE)
 	add_language(LANGUAGE_TAU, TRUE)
 	add_language(LANGUAGE_LOW_GOTHIC, TRUE)
 	add_language(LANGUAGE_SIGN, FALSE)

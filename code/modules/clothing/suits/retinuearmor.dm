@@ -347,13 +347,13 @@
 	icon_state = "ladiesvictoriancoatg"
 	item_state = "ladiesvictoriancoatg"
 
-/obj/item/clothing/suit/armor/grim/noble/maleslan
-	name = "studded coat"
-	desc = "An ellegant studded coat worn by the illustrious servants of noble courts."
+/obj/item/clothing/suit/armor/grim/noble/officer
+	name = "padded overcoat"
+	desc = "An ellegant studded coat worn by the illustrious members of a voidcraft's bridge crew."
 	icon_state = "castellan"
 	item_state = "castellan"
 	body_parts_covered = LEGS|ARMS
-	accessories = list(/obj/item/clothing/accessory/armor_plate/flaklamellar)
+	accessories = list(/obj/item/clothing/accessory/armor_plate/carapace)
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-300
 	slowdown_general = 0.035
@@ -370,6 +370,27 @@
 // MERCANTILE
 // MERCANTILE
 // MERCANTILE
+
+/obj/item/clothing/suit/armor/grim/kroot
+	name = "carapace mantle"
+	desc = "Organic armor layered to enhance Kroot resilience, the Carapace Mantle provides crucial protection against a variety of threats while allowing for the freedom of movement that Kroot require."
+	icon_state = "merc"
+	item_state = "merc"
+	body_parts_covered = LEGS|ARMS
+	accessories = list(/obj/item/clothing/accessory/armor_plate/carapace)
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
+	slowdown_general = 0.03
+	armor = list(
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK,
+		energy = ARMOR_ENERGY_TEN+5,
+		rad = ARMOR_RAD_THIRTY+25,
+		bio = ARMOR_BIO_THIRTY+15,
+		bomb = ARMOR_BOMB_TEN+5
+		)
+
 
 /obj/item/clothing/suit/armor/grim/merc
 	name = "mercenary flak armour"
@@ -746,6 +767,46 @@
 		bomb = ARMOR_BOMB_TEN
 	)
 
+/obj/item/clothing/suit/armor/grim/scrapforged/ranger2
+	name = "colonial ranger duster"
+	desc = "A duster with a flak plate insert, sewn together with grox leather."
+	icon_state = "ranger2"
+	item_state = "ranger2"
+	accessories = list(/obj/item/clothing/accessory/armor_plate/flak)
+	body_parts_covered = LEGS | ARMS
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
+	slowdown_general = 0.06
+	armor = list(
+		melee = ARMOR_MELEE_CARAPACE-1,
+		bullet = ARMOR_BALLISTIC_FLAK+1,
+		laser = ARMOR_LASER_FLAK+1,
+		energy = ARMOR_ENERGY_TEN+10,
+		bio = ARMOR_BIO_THIRTY+10,
+		rad = ARMOR_RAD_THIRTY+15,
+		bomb = ARMOR_BOMB_TEN
+	)
+
+/obj/item/clothing/suit/armor/grim/scrapforged/ranger3
+	name = "flak duster"
+	desc = "A duster with a flak plate insert, sewn together with grox leather."
+	icon_state = "ranger3"
+	item_state = "ranger3"
+	accessories = list(/obj/item/clothing/accessory/armor_plate/flak)
+	body_parts_covered = LEGS | ARMS
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
+	slowdown_general = 0.06
+	armor = list(
+		melee = ARMOR_MELEE_FLAK+1,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK,
+		energy = ARMOR_ENERGY_TEN+10,
+		bio = ARMOR_BIO_THIRTY+10,
+		rad = ARMOR_RAD_THIRTY+15,
+		bomb = ARMOR_BOMB_TEN
+	)
+
 /obj/item/clothing/suit/armor/grim/scrapforged/flakcuirass
 	name = "heavy flak cuirass"
 	desc = "Unmarked heavy flak armor manufactured by the underhives of the ghoul stars."
@@ -786,45 +847,7 @@
 		bomb = ARMOR_BOMB_TEN
 	)
 
-/obj/item/clothing/suit/armor/grim/scrapforged/ranger2
-	name = "colonial ranger duster"
-	desc = "A duster with a flak plate insert, sewn together with grox leather."
-	icon_state = "ranger2"
-	item_state = "ranger2"
-	accessories = list(/obj/item/clothing/accessory/armor_plate/flak)
-	body_parts_covered = LEGS | ARMS
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
-	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
-	slowdown_general = 0.06
-	armor = list(
-		melee = ARMOR_MELEE_CARAPACE-1,
-		bullet = ARMOR_BALLISTIC_FLAK+1,
-		laser = ARMOR_LASER_FLAK+1,
-		energy = ARMOR_ENERGY_TEN+10,
-		bio = ARMOR_BIO_THIRTY+10,
-		rad = ARMOR_RAD_THIRTY+15,
-		bomb = ARMOR_BOMB_TEN
-	)
 
-/obj/item/clothing/suit/armor/grim/scrapforged/ranger3
-	name = "flak duster"
-	desc = "A duster with a flak plate insert, sewn together with grox leather."
-	icon_state = "ranger3"
-	item_state = "ranger3"
-	accessories = list(/obj/item/clothing/accessory/armor_plate/flak)
-	body_parts_covered = LEGS | ARMS
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
-	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
-	slowdown_general = 0.06
-	armor = list(
-		melee = ARMOR_MELEE_FLAK+1,
-		bullet = ARMOR_BALLISTIC_FLAK,
-		laser = ARMOR_LASER_FLAK,
-		energy = ARMOR_ENERGY_TEN+10,
-		bio = ARMOR_BIO_THIRTY+10,
-		rad = ARMOR_RAD_THIRTY+15,
-		bomb = ARMOR_BOMB_TEN
-	)
 
 
 

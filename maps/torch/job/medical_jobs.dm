@@ -1,8 +1,8 @@
 /datum/job/magos_biologis
 	title = "Magos Biologis"
 	supervisors = "the Rogue Trader and the Machine God."
-	economic_power = 14
-	minimal_player_age = 14
+	economic_power = 8
+	minimal_player_age = 3
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	ideal_character_age = 48
 	total_positions = 1
@@ -55,7 +55,6 @@
 	)
 
 	software_on_spawn = list(/datum/computer_file/program/comm,
-							 /datum/computer_file/program/suit_sensors,
 							 /datum/computer_file/program/camera_monitor,
 							 /datum/computer_file/program/reports)
 
@@ -66,6 +65,20 @@
 	var/current_name = H.real_name
 	var/current_title = trimtext(H.mind.role_alt_title)
 	H.voice_in_head(pick(GLOB.lone_thoughts))
+	H.species.cold_level_1 = SYNTH_COLD_LEVEL_1
+	H.species.cold_level_2 = SYNTH_COLD_LEVEL_2
+	H.species.cold_level_3 = SYNTH_COLD_LEVEL_3
+	H.species.heat_level_1 = 600
+	H.species.heat_level_2 = 700
+	H.species.heat_level_3 = 2000
+	H.species.hazard_high_pressure = HAZARD_HIGH_PRESSURE * 0.4
+	H.species.hazard_low_pressure = -1
+	H.species.brute_mod = 0.7
+	H.species.burn_mod = 0.7
+	H.species.toxins_mod = 0.45
+	H.species.radiation_mod = 0.3
+	H.species.hunger_factor = DEFAULT_HUNGER_FACTOR * 0.3 // Biologis has the best biology
+	H.species.species_flags = SPECIES_FLAG_LOW_GRAV_ADAPTED | SPECIES_FLAG_NO_EMBED
 	if(current_title && (H.mind.role_alt_title in alt_titles))
 		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
 	else
@@ -128,6 +141,9 @@
 	var/current_name = H.real_name
 	var/current_title = trimtext(H.mind.role_alt_title)
 	H.voice_in_head(pick(GLOB.lone_thoughts))
+	H.species.weaken_mod = 0.71
+	H.species.stun_mod = 0.71
+	H.species.slowdown = -0.2
 	if(current_title && (H.mind.role_alt_title in alt_titles))
 		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
 	else
@@ -144,10 +160,10 @@
 	spawn_positions = 1
 	supervisors = "the Magos Biologis and Rogue Trader"
 	selection_color = "#013d3b"
-	economic_power = 4
+	economic_power = 6
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	ideal_character_age = 30
-	minimal_player_age = 7
+	minimal_player_age = 1
 	alt_titles = list(
 		"Senior Medicae",
 		"Chief Chirugeon"
@@ -194,7 +210,7 @@
 	total_positions = 3
 	spawn_positions = 3
 	supervisors = "the Sister Hospitaller and Rogue Trader"
-	economic_power = 7
+	economic_power = 6
 	minimum_character_age = list(SPECIES_HUMAN = 19)
 	ideal_character_age = 40
 	minimal_player_age = 0
@@ -308,16 +324,11 @@
 	total_positions = 1
 	spawn_positions = 1
 	ideal_character_age = 40
-	economic_power = 5
+	economic_power = 4
 	minimum_character_age = list(SPECIES_HUMAN = 24)
 	minimal_player_age = 0
 	supervisors = "the Chief Medical Officer"
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/medical/counselor
-	alt_titles = list(
-		"Psychiatrist",
-		"Psychologist",
-		"Mentalist"
-	)
 
 	allowed_branches = list(
 		/datum/mil_branch/civilian)
@@ -362,7 +373,7 @@
 	spawn_positions = 2
 	supervisors = "the Rogue Trader"
 	selection_color = "#013d3b"
-	economic_power = 10
+	economic_power = 4
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/medical/hospitaller
 	allowed_branches = list(
 		/datum/mil_branch/civilian

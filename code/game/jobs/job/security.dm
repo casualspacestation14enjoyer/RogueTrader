@@ -36,7 +36,7 @@
 	minimal_player_age = 7
 	outfit_type = /singleton/hierarchy/outfit/job/security/warden
 
-/datum/job/detective
+/datum/job/guardsman
 	title = "Detective"
 	department = "Security"
 	department_flag = SEC

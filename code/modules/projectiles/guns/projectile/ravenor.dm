@@ -91,7 +91,7 @@
 
 /obj/item/gun/projectile/heavysniper/boltaction/imperial/thrower
 	name = "Xenos Thrower"
-	desc = "Xenos Thrower is an incredibly advanced single-shot magrail hunting thrower developed by the local nomadic tribes of Greater Messina. The Messian Tribes developed the weapon after studying Seolite artifacts that over generations were guarded and kept secret, eventually becoming great heirlooms of power. They say there is only a handful of these rifles left..."
+	desc = "Xenos Thrower is an incredibly advanced single-shot magrail hunting thrower developed by the local xenos tribes."
 	icon_state = "musket"
 	item_state = "musket"
 	w_class = ITEM_SIZE_LARGE
@@ -103,6 +103,7 @@
 	ammo_type = /obj/item/ammo_casing/xenos/bos
 	one_hand_penalty = 1.5
 	accuracy = 1.5
+	fire_delay = 4
 	wielded_item_state = "musket-wielded"
 	fire_sound = 'sound/warhammer/ds/divet_fire.ogg'
 	sales_price = 30
@@ -515,7 +516,7 @@
 	load_sound = 'sound/warhammer/guns/interact/ltrifle_cock.ogg'
 	fire_delay = 4.2
 	one_hand_penalty = 2
-	accuracy = 0.5
+	accuracy = -1
 	sales_price = 60
 
 	firemodes = list(
@@ -609,7 +610,7 @@
 	allowed_magazines = list(/obj/item/ammo_magazine/bolt_rifle_magazine)
 	fire_delay = 4.3
 	burst = 1
-	accuracy = -0.5
+	accuracy = -1.5
 	sales_price = 60
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=4.3, burst_delay=2.2, burst_accuracy=null, dispersion=null),
@@ -641,7 +642,7 @@
 	max_shells = 25
 	one_hand_penalty = 1.8
 	fire_delay = 4
-	accuracy = 0
+	accuracy = -1
 	sales_price = 75
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=4, burst_delay=2, burst_accuracy=null, dispersion=null),
@@ -656,7 +657,7 @@
 	one_hand_penalty = 1.5
 	slot_flags = SLOT_BACK|SLOT_BELT
 	fire_delay = 3.8 // Faster firing compared to Drusian, but less accurate. Designed for one handed use while wielding a chainsword.
-	accuracy = -0.5
+	accuracy = -1
 	sales_price = 75
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=3.8, burst_delay=1.9, burst_accuracy=null, dispersion=null),

@@ -31,7 +31,8 @@
 	icon = 'icons/obj/tools/mining_drills.dmi'
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BELT
-	force = 15.0
+	force = 21.0
+	armor_penetration = 6
 	throwforce = 4.0
 	icon_state = "drill"
 	item_state = "jackhammer"
@@ -112,21 +113,21 @@
 /obj/item/pickaxe/hand/silver
 	name = "silver pickaxe"
 	desc = "This makes no metallurgic sense."
-	digspeed = 30
+	digspeed = 50
 	origin_tech = list(TECH_MATERIAL = 3)
 	hardware_color = COLOR_SILVER
 
 /obj/item/pickaxe/hand/gold
 	name = "golden pickaxe"
 	desc = "This makes no metallurgic sense."
-	digspeed = 20
+	digspeed = 60
 	origin_tech = list(TECH_MATERIAL = 4)
 	hardware_color = COLOR_GOLD
 
 /obj/item/pickaxe/hand/diamond
 	name = "diamond pickaxe"
 	desc = "A pickaxe with a diamond pick head."
-	digspeed = 10
+	digspeed = 20
 	origin_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 4)
 	hardware_color = COLOR_DIAMOND
 
@@ -139,7 +140,7 @@
 	icon_state = "shovel"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BELT
-	force = 8.0
+	force = 18.0
 	throwforce = 4.0
 	item_state = "shovel"
 	w_class = ITEM_SIZE_HUGE
@@ -154,7 +155,7 @@
 	desc = "A small tool for digging and moving dirt."
 	icon_state = "spade"
 	item_state = "spade"
-	force = 5.0
+	force = 16.0
 	throwforce = 7.0
 	w_class = ITEM_SIZE_SMALL
 

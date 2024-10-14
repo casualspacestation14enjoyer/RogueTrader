@@ -254,7 +254,7 @@
 	projectile_type = /obj/item/projectile/bullet/rifle/shell/knockout
 
 /obj/item/ammo_casing/xenos/bos
-	name = "Boscelot munitions piece"
+	name = "boscelot munitions piece"
 	desc = "A xenos tech fragment."
 	icon_state = "lcasing"
 	spent_icon = "lcasing-spent"

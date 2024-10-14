@@ -10,7 +10,7 @@
 /datum/gear/suit/trenchcoat
 	allowed_roles = list(
 		/datum/job/assistant,
-		/datum/job/detective,
+		/datum/job/guardsman,
 		/datum/job/merchant,
 		/datum/job/submap/bearcat_captain,
 		/datum/job/submap/bearcat_crewman,
@@ -25,7 +25,7 @@
 /datum/gear/suit/security_poncho
 	allowed_roles = list(
 		/datum/job/merchant,
-		/datum/job/detective
+		/datum/job/guardsman
 	)
 	allowed_branches = UNIFORMED_BRANCHES
 
@@ -204,7 +204,7 @@
 	display_name = "Agent's jacket"
 	path = /obj/item/clothing/suit/armor/grim/toggle/agent_jacket
 	allowed_roles = list(
-		/datum/job/detective
+		/datum/job/guardsman
 	)
 	allowed_branches = list(
 		/datum/mil_branch/solgov

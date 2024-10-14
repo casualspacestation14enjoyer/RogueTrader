@@ -2,6 +2,7 @@
 	name = OUTFIT_JOB_NAME("Torch Command Outfit")
 	hierarchy_type = /singleton/hierarchy/outfit/job/torch/crew/command
 	l_ear = /obj/item/device/radio/headset/heads/bridge
+	l_pocket = /obj/item/device/flashlight/maglight
 
 /singleton/hierarchy/outfit/job/torch/crew/command/roguetrader
 	name = OUTFIT_JOB_NAME("Rogue Trader")
@@ -15,7 +16,7 @@
 	head = /obj/item/clothing/head/helmet/pilgrimcap/roguetrader
 	id_types = list(/obj/item/card/id/torch/gold)
 	pda_type = /obj/item/modular_computer/pda/captain
-	back = /obj/item/storage/backpack/satchel/flat
+	back = /obj/item/storage/backpack/satchel/warfare/heavy
 	backpack_contents = list(/obj/item/pen = 1, /obj/item/gun/energy/lasgun/laspistol/lord = 1)
 
 /singleton/hierarchy/outfit/job/torch/crew/command/seneschal
@@ -29,17 +30,36 @@
 	shoes = /obj/item/clothing/shoes/jackboots/noble
 	id_types = list(/obj/item/card/id/torch/silver)
 	pda_type = /obj/item/modular_computer/pda/heads/hop
-	back = /obj/item/storage/backpack/satchel/flat
+	back = /obj/item/storage/backpack/satchel/warfare/heavy
 	backpack_contents = list(/obj/item/pen = 1, /obj/item/gun/projectile/pistol/bolt_pistol/drusian = 1, /obj/item/ammo_magazine/bolt_pistol_magazine/ms = 1)
 
-/singleton/hierarchy/outfit/job/torch/crew/mercenary
-	name = OUTFIT_JOB_NAME("Mercenary")
-	l_ear = /obj/item/device/radio/headset/headset_com
-	uniform = /obj/item/clothing/under/rank/internalaffairs/plain/solgov
-	suit = /obj/item/clothing/suit/armor/grim/toggle/suit/black
-	shoes = /obj/item/clothing/shoes/laceup
-	id_types = list(/obj/item/card/id/torch/crew/representative)
-	pda_type = /obj/item/modular_computer/pda/heads/paperpusher
+/singleton/hierarchy/outfit/job/torch/crew/command/bridgeofficer
+	name = OUTFIT_JOB_NAME("Void Officer")
+	suit = /obj/item/clothing/suit/armor/grim/noble/officer
+	glasses = /obj/item/clothing/glasses/eyepatch/hud/medical
+	uniform = /obj/item/clothing/under/rank/victorian/redbl
+	gloves = /obj/item/clothing/gloves/thick/duty
+	l_ear = /obj/item/device/radio/headset/heads/bridge
+	head = null
+	shoes = /obj/item/clothing/shoes/jackboots/noble
+	id_types = list(/obj/item/card/id/torch/silver)
+	pda_type = /obj/item/modular_computer/pda/heads
+	back = /obj/item/storage/backpack/satchel/warfare/heavy
+	backpack_contents = list(/obj/item/pen = 1, /obj/item/gun/energy/lasgun/laspistol/militarum = 1, /obj/item/cell/device/high/mechanicus = 1)
+
+/singleton/hierarchy/outfit/job/torch/crew/krootmerc
+	name = OUTFIT_JOB_NAME("Kroot Tracker")
+	suit = /obj/item/clothing/suit/armor/grim/kroot
+	uniform = /obj/item/clothing/under/rank/kroot
+	l_ear = /obj/item/device/radio/headset/heads/bridge
+	l_hand = /obj/item/gun/projectile/heavysniper/boltaction/imperial/thrower
+	r_hand = /obj/item/material/twohanded/ravenor/axe/spear/adamantine
+	head = null
+	shoes = null
+	id_types = list(/obj/item/card/id/torch/silver)
+	pda_type = /obj/item/modular_computer/pda/heads
+	back = /obj/item/storage/backpack/satchel/explorer
+	backpack_contents = list(/obj/item/pen = 1, /obj/item/gun/projectile/pistol/slug/old = 1, /obj/item/ammo_magazine/speedloader/clip/sniper/xenos = 4)
 
 /singleton/hierarchy/outfit/job/torch/crew/command/biologis
 	name = OUTFIT_JOB_NAME("Magos Biologis")
@@ -104,7 +124,7 @@
 	belt = /obj/item/storage/belt/holster/security
 	suit = /obj/item/clothing/suit/armor/grim/valhallan/officer
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
-	uniform = /obj/item/clothing/under/cadian_uniform
+	uniform = /obj/item/clothing/under/rank/valhallan_uniform
 	r_pocket = null
 	l_ear = /obj/item/device/radio/headset/heads/cos
 	l_hand = /obj/item/gun/projectile/automatic/boltrifle/lockebolter/drusian
@@ -123,7 +143,7 @@
 	belt = /obj/item/storage/belt/holster/security
 	suit = /obj/item/clothing/suit/armor/grim/krieger/officer
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
-	uniform = /obj/item/clothing/under/cadian_uniform
+	uniform = /obj/item/clothing/under/rank/krieg_uniform
 	r_pocket = null
 	l_ear = /obj/item/device/radio/headset/heads/cos
 	l_hand = /obj/item/gun/energy/lasgun/hotshot/krieg
@@ -143,7 +163,7 @@
 	belt = /obj/item/material/twohanded/ravenor/knife/catachan
 	suit = /obj/item/clothing/suit/armor/grim/catachan/sergeant
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
-	uniform = /obj/item/clothing/under/cadian_uniform
+	uniform = /obj/item/clothing/under/rank/catachan
 	r_pocket = null
 	l_ear = /obj/item/device/radio/headset/heads/cos
 	l_hand = /obj/item/gun/projectile/pistol/bolt_pistol/drusian
@@ -173,14 +193,6 @@
 	pda_type = /obj/item/modular_computer/pda/heads/hos
 	back = /obj/item/storage/backpack/satchel/maccabian
 	backpack_contents = list(/obj/item/pen = 1, /obj/item/material/twohanded/ravenor/knife/glaive = 1, /obj/item/ammo_magazine/shotholder/flechette = 1, /obj/item/ammo_magazine/heavy = 2)
-
-/singleton/hierarchy/outfit/job/torch/crew/command/bridgeofficer
-	name = OUTFIT_JOB_NAME("Void Officer")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/command
-	shoes = /obj/item/clothing/shoes/dutyboots
-	id_types = list(/obj/item/card/id/torch/crew/bridgeofficer)
-	pda_type = /obj/item/modular_computer/pda/heads
-	l_ear = /obj/item/device/radio/headset/heads/bridge
 
 // DONT USE
 /singleton/hierarchy/outfit/job/torch/crew/command/chief_engineer/fleet

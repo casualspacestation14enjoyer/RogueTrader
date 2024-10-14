@@ -13,15 +13,15 @@
 /datum/species/var/list/autohiss_extra_map = null
 /datum/species/var/list/autohiss_exempt = null
 
-/datum/species/unathi/autohiss_basic_map = list(
+/datum/species/kroot/autohiss_basic_map = list(
 	"s" = list("ss", "sss", "ssss")
 )
-/datum/species/unathi/autohiss_extra_map = list(
+/datum/species/kroot/autohiss_extra_map = list(
 	"x" = list("ks", "kss", "ksss")
 )
-/datum/species/unathi/autohiss_exempt = list(
-	LANGUAGE_UNATHI_SINTA,
-	LANGUAGE_UNATHI_YEOSA
+/datum/species/kroot/autohiss_exempt = list(
+	LANGUAGE_KROOT_SINTA,
+	LANGUAGE_KROOT
 )
 
 /datum/species/proc/handle_autohiss(message, datum/language/lang, mode)

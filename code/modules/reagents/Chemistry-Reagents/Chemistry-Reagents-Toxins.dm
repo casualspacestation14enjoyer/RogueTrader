@@ -881,7 +881,7 @@
 	..()
 
 /datum/reagent/drugs/mindbreaker
-	name = "Mindbreaker Toxin"
+	name = "Obscura"
 	description = "A powerful hallucinogen, it can cause fatal effects in users."
 	taste_description = "sourness"
 	reagent_state = LIQUID

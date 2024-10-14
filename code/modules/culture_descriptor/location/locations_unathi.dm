@@ -1,52 +1,17 @@
 /singleton/cultural_info/location/moghes
 	name = HOME_SYSTEM_MOGHES
-	description = "A dead world full of strange, monstrous creatures and mysterious and dangerous landscapes, \
-	this is the home of the unathi. Kroot believe this world was once lush and full of life, but due to the \
-	decisions of the precursors, it was killed and left to rot. For the unathi, it is their duty to bring it \
-	back to life, or to become strong enough that they don't have to."
-	ruling_body = "Clan Hegemony"
+	description = "A once vibrant world now ravaged by war and radiation, Moghes is the ancestral home of the Kroot. Its forests, though greatly diminished, are sacred to the Kroot, who fight to preserve their way of life amid the planet's hostile environment."
+	ruling_body = "Tribal Councils"
 	distance = "20 light-years"
-	secondary_langs = list(
-		LANGUAGE_UNATHI_SINTA,
-		LANGUAGE_UNATHI_YEOSA,
-		LANGUAGE_SIGN,
-		LANGUAGE_HIGH_GOTHIC,
-		LANGUAGE_LOW_GOTHIC
-	)
 
 /singleton/cultural_info/location/ouere
 	name = HOME_SYSTEM_OUERE
-	description = "The recently discovered system of precursor gateway devices connecting Moghes to its smaller sister \
-planet of Ouere has seen many clans and small groups stepping through it into this new world. There is \
-no clear consensus on how to treat this new world - either as a logical extension of Moghes, a completely new entity, \
-or simply as a resource base for improving the home planet. Many colonists, artifact hunters, and ostracised groups have \
-flocked to the planet, with Markesheli communities growing quite rapidly in numbers compared to other parts of Moghes. "
-	ruling_body = "Clan Hegemony"
+	description = "A newly discovered, resource-rich world, Ouere has attracted many Kroot looking to establish new tribes or bolster their genetic stock. While some see it as an opportunity for growth, others view it as a frontier full of danger and potential."
+	ruling_body = "Tribal Councils"
 	distance = "20 light-years"
-	secondary_langs = list(
-		LANGUAGE_UNATHI_SINTA,
-		LANGUAGE_UNATHI_YEOSA,
-		LANGUAGE_SIGN,
-		LANGUAGE_HIGH_GOTHIC,
-		LANGUAGE_LOW_GOTHIC
-	)
 
 /singleton/cultural_info/location/offworld
 	name = HOME_SYSTEM_OFFWORLD
-	description = "Whether through unfortunate circumstances or your own volition, you've left Moghes behind in search of your \
-	purpose. You are one of many kroot who have braved the dangers and left their own planet to make their own destiny, whether \
-	that be on the scorching heats of Tadmor, the technophile cityscape of Ceti Epsilon, or the bustling shipyards of Ceres."
+	description = "Many Kroot venture beyond their home systems, serving as mercenaries or seeking new genetic material to strengthen their kind. They can be found scattered throughout the galaxy, adapting to diverse environments while remaining tied to their tribal roots."
 	ruling_body = "Varies"
 	distance = "Varies"
-	secondary_langs = list(
-		LANGUAGE_UNATHI_SINTA,
-		LANGUAGE_UNATHI_YEOSA,
-		LANGUAGE_SIGN,
-		LANGUAGE_HIGH_GOTHIC,
-		LANGUAGE_HUMAN_CHINESE,
-		LANGUAGE_HUMAN_ARABIC,
-		LANGUAGE_HUMAN_INDIAN,
-		LANGUAGE_HUMAN_IBERIAN,
-		LANGUAGE_HUMAN_RUSSIAN,
-		LANGUAGE_LOW_GOTHIC
-	)

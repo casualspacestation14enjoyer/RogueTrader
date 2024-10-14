@@ -1,5 +1,5 @@
 //Due to how large this one is it gets its own file
-/datum/job/chaplain_militant
+/datum/job/chaplain
 	title = "Chaplain"
 	department = "Civilian"
 	department_flag = CIV
@@ -10,7 +10,7 @@
 	access = list(access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels)
 	outfit_type = /singleton/hierarchy/outfit/job/chaplain
 
-/datum/job/chaplain_militant/equip(mob/living/carbon/human/H, alt_title, ask_questions = TRUE)
+/datum/job/chaplain/equip(mob/living/carbon/human/H, alt_title, ask_questions = TRUE)
 	. = ..()
 	if(!.)
 		return

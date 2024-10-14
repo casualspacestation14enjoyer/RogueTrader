@@ -40,9 +40,9 @@ effective or pretty fucking useless.
 	for(var/mob/living/carbon/human/M in orange(10, user))
 		stun_victims += M
 		spawn()
-			if(prob(50))
+			if(prob(60))
 				M.Weaken(rand(10,20))
-				if(prob(25))
+				if(prob(35))
 					M.Stun(rand(5,10))
 				to_chat(M, SPAN_DANGER("You feel a tremendous, paralyzing wave flood your mind."))
 			else

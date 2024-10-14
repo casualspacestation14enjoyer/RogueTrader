@@ -3,6 +3,7 @@
 	l_ear = /obj/item/device/radio/headset/headset_mechanicus
 	pda_slot = slot_l_store
 	flags = OUTFIT_FLAGS_JOB_DEFAULT | OUTFIT_EXTENDED_SURVIVAL
+	l_pocket = /obj/item/device/flashlight/lantern
 
 /singleton/hierarchy/outfit/job/torch/crew/engineering/senior_engineer
 	name = OUTFIT_JOB_NAME("Data Smith")
@@ -14,7 +15,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots/skitshoes/techpriest
 	uniform = /obj/item/clothing/under/rank/engineer
 	r_pocket = null
-	l_ear = /obj/item/device/radio/headset/headset_mechanicus
+	l_ear = /obj/item/device/radio/headset/headset_mechanicus/smith
 	l_hand = null
 	gloves = /obj/item/clothing/gloves/thick/swat/techpriest
 	id_types = list(/obj/item/card/id/torch/crew/engineering/senior)
@@ -57,13 +58,13 @@
 	shoes = /obj/item/clothing/shoes/jackboots/pilgrim_boots
 	uniform = /obj/item/clothing/under/rank/victorian/black
 	r_pocket = null
-	l_ear = /obj/item/device/radio/headset/headset_mechanicus
+	l_ear = /obj/item/device/radio/headset/headset_mechanicus/bondsman
 	l_hand = null
 	gloves = /obj/item/clothing/gloves/thick/duty
 	id_types = list(/obj/item/card/id/torch/crew/engineering)
 	pda_type = /obj/item/modular_computer/pda/engineering
 	pda_slot = slot_l_store
-	back = /obj/item/storage/backpack/satchel/flat
+	back = /obj/item/storage/backpack/satchel/warfare/heavy
 	backpack_contents = list(/obj/item/pen = 1, /obj/item/material/twohanded/ravenor/knife/trench)
 
 /singleton/hierarchy/outfit/job/torch/crew/engineering/engineer/fleet

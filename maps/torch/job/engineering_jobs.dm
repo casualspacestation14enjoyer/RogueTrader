@@ -3,10 +3,10 @@
 	supervisors = "the Mechanicus and at times the Rogue Trader"
 	department = "Mechanicus"
 	department_flag = ENG
-	economic_power = 12
+	economic_power = 18
 	minimum_character_age = list(SPECIES_HUMAN = 31)
 	ideal_character_age = 40
-	minimal_player_age = 14
+	minimal_player_age = 4
 	total_positions = 1
 	spawn_positions = 1
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/chief_engineer
@@ -77,6 +77,20 @@
 	var/current_name = H.real_name
 	var/current_title = trimtext(H.mind.role_alt_title)
 	H.voice_in_head(pick(GLOB.lone_thoughts))
+	H.species.cold_level_1 = SYNTH_COLD_LEVEL_1
+	H.species.cold_level_2 = SYNTH_COLD_LEVEL_2
+	H.species.cold_level_3 = SYNTH_COLD_LEVEL_3
+	H.species.heat_level_1 = 600
+	H.species.heat_level_2 = 700
+	H.species.heat_level_3 = 2000
+	H.species.hazard_high_pressure = HAZARD_HIGH_PRESSURE * 0.4
+	H.species.hazard_low_pressure = -1
+	H.species.brute_mod = 0.65
+	H.species.burn_mod = 0.65
+	H.species.toxins_mod = 0.55
+	H.species.radiation_mod = 0.3
+	H.species.hunger_factor = DEFAULT_HUNGER_FACTOR * 0.35
+	H.species.species_flags = SPECIES_FLAG_LOW_GRAV_ADAPTED | SPECIES_FLAG_NO_EMBED
 	if(current_title && (H.mind.role_alt_title in alt_titles))
 		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
 	else
@@ -99,7 +113,7 @@
 	supervisors = "the Magos Explorator"
 	selection_color = "#5b4d20"
 	economic_power = 7
-	minimal_player_age = 3
+	minimal_player_age = 2
 	minimum_character_age = list(SPECIES_HUMAN = 27)
 	ideal_character_age = 40
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/engineering/senior_engineer
@@ -168,6 +182,20 @@
 	var/current_name = H.real_name
 	var/current_title = trimtext(H.mind.role_alt_title)
 	H.voice_in_head(pick(GLOB.lone_thoughts))
+	H.species.cold_level_1 = SYNTH_COLD_LEVEL_1
+	H.species.cold_level_2 = SYNTH_COLD_LEVEL_2
+	H.species.cold_level_3 = SYNTH_COLD_LEVEL_3
+	H.species.heat_level_1 = 600
+	H.species.heat_level_2 = 700
+	H.species.heat_level_3 = 2000
+	H.species.hazard_high_pressure = HAZARD_HIGH_PRESSURE * 0.4
+	H.species.hazard_low_pressure = -1
+	H.species.brute_mod = 0.7
+	H.species.burn_mod = 0.7
+	H.species.toxins_mod = 0.7
+	H.species.radiation_mod = 0.4
+	H.species.hunger_factor = DEFAULT_HUNGER_FACTOR * 0.5
+	H.species.species_flags = SPECIES_FLAG_LOW_GRAV_ADAPTED | SPECIES_FLAG_NO_EMBED
 	if(current_title && (H.mind.role_alt_title in alt_titles))
 		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
 	else
@@ -183,7 +211,7 @@
 	spawn_positions = 3
 	supervisors = "the Magos Explorator"
 	economic_power = 5
-	minimal_player_age = 0
+	minimal_player_age = 1
 	minimum_character_age = list(SPECIES_HUMAN = 19)
 	ideal_character_age = 30
 	alt_titles = list(
@@ -243,6 +271,20 @@
 	var/current_name = H.real_name
 	var/current_title = trimtext(H.mind.role_alt_title)
 	H.voice_in_head(pick(GLOB.lone_thoughts))
+	H.species.cold_level_1 = SYNTH_COLD_LEVEL_1
+	H.species.cold_level_2 = SYNTH_COLD_LEVEL_2
+	H.species.cold_level_3 = SYNTH_COLD_LEVEL_3
+	H.species.heat_level_1 = 600
+	H.species.heat_level_2 = 700
+	H.species.heat_level_3 = 2000
+	H.species.hazard_high_pressure = HAZARD_HIGH_PRESSURE * 0.4
+	H.species.hazard_low_pressure = -1
+	H.species.brute_mod = 0.7
+	H.species.burn_mod = 0.7
+	H.species.toxins_mod = 0.7
+	H.species.radiation_mod = 0.4
+	H.species.hunger_factor = DEFAULT_HUNGER_FACTOR * 0.5
+	H.species.species_flags = SPECIES_FLAG_LOW_GRAV_ADAPTED | SPECIES_FLAG_NO_EMBED
 	if(current_title && (H.mind.role_alt_title in alt_titles))
 		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
 	else
@@ -285,21 +327,8 @@
 		SKILL_ENGINES = SKILL_BASIC
 	)
 
-	max_skill = list(	SKILL_MEDICAL = SKILL_EXPERIENCED, // Bondsman are gang-pressed so they theoretically could have any number of skills from their old hive-world lives.
-						SKILL_DEVICES = SKILL_EXPERIENCED,
-						SKILL_SCIENCE = SKILL_EXPERIENCED,
-						SKILL_COMPUTER = SKILL_EXPERIENCED,
-						SKIL_ELECTRICAL = SKILL_EXPERIENCED,
-						SKILL_CONSTRUCTION = SKILL_MASTER,
-						SKILL_VIGOR = SKILL_MASTER,
-						SKILL_ANATOMY = SKILL_EXPERIENCED,
-						SKILL_GUNS = SKILL_EXPERIENCED,
-						SKILL_FORENSICS = SKILL_EXPERIENCED,
-						SKILL_COMBAT = SKILL_EXPERIENCED,
-						SKILL_ENGINES = SKILL_EXPERIENCED,
-						SKILL_ATMOS = SKILL_EXPERIENCED,
-						SKILL_PILOT = SKILL_EXPERIENCED,
-						SKILL_CHEMISTRY = SKILL_EXPERIENCED)
+	max_skill = list(	SKILL_CONSTRUCTION = SKILL_MASTER,
+						SKILL_VIGOR = SKILL_MASTER)
 
 	access = list(
 		access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,

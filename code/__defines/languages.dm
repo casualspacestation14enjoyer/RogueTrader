@@ -13,8 +13,8 @@
 
 //Alien
 #define LANGUAGE_MECHANICUS               "Binaric Speech"
-#define LANGUAGE_UNATHI_SINTA      "Saurian"
-#define LANGUAGE_UNATHI_YEOSA      "Kroot"
+#define LANGUAGE_KROOT_SINTA      "Saurian"
+#define LANGUAGE_KROOT      "Kroot"
 #define LANGUAGE_TAU         "Tau"
 #define LANGUAGE_ROOTLOCAL         "Local Xenos Speak"
 #define LANGUAGE_ROOTGLOBAL        "Global Xenos Speak"

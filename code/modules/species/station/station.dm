@@ -55,7 +55,7 @@
 		return "staring blankly, not reacting to your presence"
 	return ..()
 
-/datum/species/skrell
+/datum/species/tau
 	name = SPECIES_TAU
 	name_plural = SPECIES_TAU
 	icobase = 'icons/mob/human_races/species/skrell/body.dmi'
@@ -68,12 +68,9 @@
 	caste system, with the Ethereals at the helm ensuring the smooth operation of their expanding Empire. Though primarily \
 	herbivores, the Tau maintain cooperative relations with various species across the galaxy. However, they are often \
 	reticent about their advanced technologies and the inner workings of their society, sharing little even with their closest allies."
-	assisted_langs = list(LANGUAGE_NABBER)
 	health_hud_intensity = 1.75
 	meat_type = /obj/item/reagent_containers/food/snacks/fish/octopus
 	bone_material = MATERIAL_BONE_CARTILAGE
-	genders = list(PLURAL)
-	pronouns = list(PRONOUNS_THEY_THEM)
 	hidden_from_codex = FALSE
 	min_age = 19
 	max_age = 190
@@ -81,6 +78,7 @@
 	burn_mod = 0.8
 	oxy_mod = 0.7
 	siemens_coefficient = 1.3
+	slowdown = -0.5
 	warning_low_pressure = WARNING_LOW_PRESSURE
 	hazard_low_pressure = HAZARD_LOW_PRESSURE
 	warning_high_pressure = WARNING_HIGH_PRESSURE
@@ -109,12 +107,6 @@
 	cold_discomfort_level = 292 //Higher than perhaps it should be, to avoid big speed reduction at normal room temp
 	heat_discomfort_level = 368
 
-	descriptors = list(
-		/datum/mob_descriptor/height = 1,
-		/datum/mob_descriptor/build = 0,
-		/datum/mob_descriptor/headtail_length = 0
-	)
-
 	available_cultural_info = list(
 		TAG_CULTURE = list(
 			CULTURE_TAU,
@@ -133,13 +125,8 @@
 		),
 		TAG_FACTION = list(
 			FACTION_IMPERIUM,
-			FACTION_TAU_VORLAAN,
-			FACTION_TAU_KORLAAN,
-			FACTION_TAU_AELAN,
-			FACTION_TAU_VASTAR,
-			FACTION_TAU_SHOVAN,
-			FACTION_TAU_OTHER_FACTIONS,
-			FACTION_TAU_OTHER_GROUPS,
+			FACTION_TAU_EMPIRE,
+			FACTION_TAU_VOKAR,
 			FACTION_OTHER
 		),
 		TAG_RELIGION = list(
@@ -185,13 +172,13 @@
 
 	bodyfall_sound = 'sound/effects/bodyfall_skrell.ogg'
 
-/datum/species/skrell/get_sex(mob/living/carbon/human/H)
+/datum/species/tau/get_sex(mob/living/carbon/human/H)
 	return istype(H) && (H.descriptors["headtail length"] == 1 ? MALE : FEMALE)
 
-/datum/species/skrell/check_background()
+/datum/species/tau/check_background()
 	return TRUE
 
-/datum/species/skrell/can_float(mob/living/carbon/human/H)
+/datum/species/tau/can_float(mob/living/carbon/human/H)
 	if(!H.is_physically_disabled())
 		if(H.encumbrance() < 2)
 			return TRUE

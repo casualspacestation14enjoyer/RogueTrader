@@ -44,7 +44,7 @@
 	worn_state = "krieg"
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
 
-/obj/item/clothing/under/casual_pants/catachan
+/obj/item/clothing/under/rank/catachan
 	name = "catachan shorts"
 	desc = "Catachan fear no heat, no boltguns, no lasguns. They don't need shirts, They're Catachan Jungle Hunters."
 	icon_state = "camopants"
@@ -120,7 +120,6 @@
 	icon_state = "jumpsuitdown"
 	item_state = "jumpsuitdown"
 	worn_state = "jumpsuitdown"
-
 
 /obj/item/clothing/under/rank/kroot
 	desc = "Tattered and torn from a life of battle and strife."
