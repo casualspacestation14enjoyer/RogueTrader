@@ -30,9 +30,9 @@
 	species_to_branch_whitelist = list(
 		/datum/species/diona        = list(/datum/mil_branch/civilian),
 		/datum/species/nabber       = list(/datum/mil_branch/civilian),
-		/datum/species/skrell       = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/skrell_fleet),
-		/datum/species/unathi       = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
-		/datum/species/unathi/yeosa = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
+		/datum/species/tau       = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/skrell_fleet),
+		/datum/species/kroot       = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
+		/datum/species/kroot/yeosa = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
 		/datum/species/adherent     = list(/datum/mil_branch/civilian),
 		/datum/species/vox          = list(/datum/mil_branch/alien)
 	)
@@ -64,7 +64,7 @@
 				/datum/mil_rank/fleet/o1
 			)
 		),
-		/datum/species/skrell = list(
+		/datum/species/tau = list(
 			/datum/mil_branch/expeditionary_corps = list(
 				/datum/mil_rank/ec/e3,
 				/datum/mil_rank/ec/e5,
@@ -72,13 +72,13 @@
 				/datum/mil_rank/ec/o1
 			)
 		),
-		/datum/species/unathi = list(
+		/datum/species/kroot = list(
 			/datum/mil_branch/expeditionary_corps = list(
 				/datum/mil_rank/ec/e3,
 				/datum/mil_rank/ec/e5
 			)
 		),
-		/datum/species/unathi/yeosa = list(
+		/datum/species/kroot/yeosa = list(
 			/datum/mil_branch/expeditionary_corps = list(
 				/datum/mil_rank/ec/e3,
 				/datum/mil_rank/ec/e5

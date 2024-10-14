@@ -4,14 +4,14 @@
  */
 
 /obj/item/storage/backpack
-	name = "backpack"
+	name = "rucksack"
 	desc = "You wear this on your back and put items into it."
 	icon = 'icons/obj/storage.dmi'
 	item_icons = list(
 		slot_l_hand_str = 'icons/mob/onmob/items/lefthand_backpacks.dmi',
 		slot_r_hand_str = 'icons/mob/onmob/items/righthand_backpacks.dmi',
 		)
-	icon_state = "backpack"
+	icon_state = "warfare_satchel"
 	item_state = null
 	//most backpacks use the default backpack state for inhand overlays
 	item_state_slots = list(
@@ -247,6 +247,18 @@
 	w_class = ITEM_SIZE_HUGE
 	max_storage_space = DEFAULT_BACKPACK_STORAGE + 10
 	worn_access = FALSE
+
+/obj/item/storage/backpack/dufflebag/gangerloot
+	startswith = list(
+		/obj/item/clothing/suit/armor/grim/scrapforged/heavyplate,
+		/obj/item/clothing/suit/armor/grim/scrapforged/heavycuirass,
+		/obj/item/clothing/suit/armor/grim/scrapforged/heavycuirass,
+		/obj/item/clothing/suit/armor/grim/scrapforged/heavycuirass,
+		/obj/item/clothing/head/helmet/pilgrimhelm/metalvisor,
+		/obj/item/clothing/head/helmet/pilgrimhelm/flak,
+		/obj/item/clothing/head/helmet/pilgrimhelm/flak/metalheavy,
+		/obj/item/clothing/head/helmet/pilgrimhelm/flak/metalheavy,
+	)
 
 /obj/item/storage/backpack/dufflebag/syndie
 	name = "black dufflebag"
@@ -571,7 +583,6 @@
 	max_storage_space = DEFAULT_BACKPACK_STORAGE-2
 	contents_banned = list(/obj/item/storage/backpack/satchel/flat)
 	startswith = list(
-		/obj/item/stack/tile/floor,
 		/obj/item/crowbar
 		)
 

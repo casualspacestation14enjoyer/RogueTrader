@@ -1,4 +1,4 @@
-/datum/job/chamber_magister
+/datum/job/chef
 	title = "Chef"
 	department = "Service"
 	department_flag = SRV
@@ -44,7 +44,7 @@
 	access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
 	outfit_type = /singleton/hierarchy/outfit/job/cargo/cargo_tech
 
-/datum/job/unexpected_guest
+/datum/job/shaft_miner
 	title = "Shaft Miner"
 	department = "Supply"
 	department_flag = SUP
@@ -56,7 +56,7 @@
 	alt_titles = list("Drill Technician","Prospector")
 	outfit_type = /singleton/hierarchy/outfit/job/cargo/mining
 
-/datum/job/chamber_assistant
+/datum/job/janitor
 	title = "Janitor"
 	department = "Service"
 	department_flag = SRV

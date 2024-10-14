@@ -717,7 +717,7 @@ BLIND     // can't see anything
 	item_flags = ITEM_FLAG_WASHER_ALLOWED
 	permeability_coefficient = 0.50
 	force = 5
-	species_restricted = list("exclude", SPECIES_NABBER, SPECIES_VOX)
+	species_restricted = list("exclude", SPECIES_NABBER, SPECIES_VOX, SPECIES_KROOT)
 	sprite_sheets = list(
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_feet_vox.dmi'
 		)

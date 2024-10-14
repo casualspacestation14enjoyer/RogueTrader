@@ -588,7 +588,7 @@ var/global/const/NO_EMAG_ACT = -50
 	job_access_type = /datum/job/enforcer_sergeant
 
 /obj/item/card/id/security/detective
-	job_access_type = /datum/job/detective
+	job_access_type = /datum/job/guardsman
 
 /obj/item/card/id/security/head
 	name = "identification card"

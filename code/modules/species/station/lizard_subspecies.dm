@@ -1,4 +1,4 @@
-/datum/species/unathi/yeosa
+/datum/species/kroot/yeosa
 	name = SPECIES_YEOSA
 	name_plural = SPECIES_YEOSA
 	preview_icon = 'icons/mob/human_races/species/unathi/yeosa_preview.dmi'
@@ -23,19 +23,20 @@
 
 	additional_available_cultural_info = list(
 		TAG_CULTURE = list(
-			CULTURE_UNATHI_YEOSA_ABYSS,
-			CULTURE_UNATHI_YEOSA_LITTORAL
+			CULTURE_KROOT_DESERT,
+			CULTURE_KROOT_SALT_SWAMP,
+			CULTURE_KROOT_SPACE,
 		),
 		TAG_FACTION = list(
-			FACTION_UNATHI_RAH_ZAKEH,
-			FACTION_UNATHI_KHARZA
+			FACTION_KROOT,
+			FACTION_KROOT_WILD
 		),
 		TAG_RELIGION = list(
 			RELIGION_UNATHI_AGA_EAKHE
 		)
 	)
 
-	default_cultural_info = list(TAG_FACTION = FACTION_UNATHI_INDEPENDENT)
+	default_cultural_info = list(TAG_FACTION = FACTION_KROOT_INDEPENDENT)
 
 	override_organ_types = list(
 		BP_LUNGS =  /obj/item/organ/internal/lungs/gills
@@ -48,7 +49,7 @@
 	ingest_amount = 15
 
 
-/datum/species/unathi/yeosa/can_float(mob/living/carbon/human/H)
+/datum/species/kroot/yeosa/can_float(mob/living/carbon/human/H)
 	if(!H.is_physically_disabled())
 		if(H.encumbrance() < 2)
 			return TRUE

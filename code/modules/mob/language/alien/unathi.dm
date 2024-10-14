@@ -1,5 +1,5 @@
 /datum/language/unathi
-	name = LANGUAGE_UNATHI_SINTA
+	name = LANGUAGE_KROOT_SINTA
 	desc = "The common language of Moghes, composed of sibilant hisses and rattles. Spoken natively by Kroot."
 	speech_verb = "hisses"
 	ask_verb = "hisses"
@@ -9,7 +9,7 @@
 	flags = WHITELISTED
 	space_chance = 40
 	partial_understanding = list(
-		LANGUAGE_UNATHI_YEOSA = 20
+		LANGUAGE_KROOT = 20
 	)
 	syllables = list(
 		"za", "az", "ze", "ez", "zi", "iz", "zo", "oz", "zu", "uz", "zs", "sz",
@@ -24,7 +24,7 @@
 	has_written_form = TRUE
 
 /datum/language/yeosa
-	name = LANGUAGE_UNATHI_YEOSA
+	name = LANGUAGE_KROOT
 	desc = "A language of Moghes consisting of a combination of spoken word and gesticulation. While it is uncommonly spoken in the drier regions, it enjoys popular usage as the official tongue of the Yeosa clans."
 	speech_verb = "hisses"
 	ask_verb = "rattles"
@@ -34,7 +34,7 @@
 	flags = WHITELISTED
 	space_chance = 40
 	partial_understanding = list(
-		LANGUAGE_UNATHI_SINTA = 20
+		LANGUAGE_KROOT_SINTA = 20
 	)
 	syllables = list(
 		"azs","zis","zau","azua","skiu","zuakz","izo","aei","ki","kut","zo",

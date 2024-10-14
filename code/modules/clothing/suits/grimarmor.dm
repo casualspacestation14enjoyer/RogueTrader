@@ -546,9 +546,9 @@
 		bomb = ARMOR_BOMB_TEN-2
 		)
 
-/obj/item/clothing/suit/armor/enforcermarshal
-	name = "marshal's patrol armour"
-	desc = "The carapace armor worn by Magistratum Marshals, reinforced to provide superior protection against explosions and small arms fire. Lighter than standard carapace suits but still robust."
+/obj/item/clothing/suit/armor/enforcer_sgt
+	name = "enforcer's patrol armour"
+	desc = "The carapace armor worn by Enforcers, reinforced to provide superior protection against explosions and small arms fire. Lighter than standard carapace suits but still robust."
 	icon_state = "MarshalArmor"
 	item_state = "MarshalArmor"
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
@@ -606,9 +606,9 @@
 		bomb = ARMOR_BOMB_TEN
 	)
 
-/obj/item/clothing/suit/armor/grim/enforcer/marshal
-	name = "marshal's patrol jacket"
-	desc = "A flak jacket worn by Messina Enforcer Marshals. Black and streamlined, it provides mobility while offering enhanced protection against blasts and small arms fire."
+/obj/item/clothing/suit/armor/grim/enforcer/sergeant
+	name = "enforcer's patrol jacket"
+	desc = "A flak jacket worn by Messina Enforcer's. Black and streamlined, it provides mobility while offering enhanced protection against blasts and small arms fire."
 	icon_state = "enforcercoat"
 	item_state = "enforcercoat"
 	body_parts_covered = LEGS|ARMS

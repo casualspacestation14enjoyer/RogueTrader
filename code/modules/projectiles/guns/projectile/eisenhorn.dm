@@ -243,7 +243,8 @@
 	allowed_magazines = /obj/item/ammo_magazine/pistol/small
 	auto_eject = 1
 	accuracy = 0.5
-	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
+	silenced = TRUE
+	auto_eject_sound = 'sound/weapons/rcd_crossbow.ogg'
 
 /obj/item/gun/projectile/pistol/stub/talon/on_update_icon()
 	..()
@@ -264,7 +265,7 @@
 	item_state = "bpistol"
 	force = 12
 	caliber = ".75"
-	accuracy = 0
+	accuracy = -1.5
 	fire_delay = 3.8
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
@@ -290,7 +291,7 @@
 	item_state = "gpistol"
 	force = 13
 	caliber = ".75"
-	accuracy = 0.3
+	accuracy = -1
 	fire_delay = 3.7
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
@@ -316,7 +317,7 @@
 	item_state = "bpistol"
 	force = 12
 	caliber = ".75"
-	accuracy = 0.5
+	accuracy = -1
 	fire_delay = 3.7
 	sales_price = 50
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine/ms
@@ -338,7 +339,7 @@
 	icon_state = "sisterbpistol"
 	item_state = "sisterbpistol"
 	force = 14
-	accuracy = 0.6
+	accuracy = -1
 	fire_delay = 3.6
 	attack_verb = list ("smited", "struck")
 	sales_price = 70

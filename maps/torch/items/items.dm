@@ -65,7 +65,7 @@ Torch specific items
 		)
 
 /obj/item/storage/backpack/satchel/explorer
-	name = "explorer satchel"
+	name = "grim satchel"
 	desc = "A rugged satchel for field work."
 	icon_state = "satchel-exp"
 	item_state_slots = list(

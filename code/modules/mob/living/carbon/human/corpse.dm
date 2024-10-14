@@ -169,7 +169,7 @@
 
 
 /obj/landmark/corpse/bridgeofficer
-	name = ""
+	name = "Void Officer"
 	corpse_outfits = list(/singleton/hierarchy/outfit/nanotrasen/officer)
 
 /obj/landmark/corpse/commander

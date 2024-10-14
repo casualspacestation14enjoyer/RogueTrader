@@ -348,7 +348,7 @@
 	mix_message = "The solution boils off to form a fine powder."
 
 /singleton/reaction/mindbreaker
-	name = "Mindbreaker Toxin"
+	name = "Obscura"
 	result = /datum/reagent/drugs/mindbreaker
 	required_reagents = list(/datum/reagent/silicon = 1, /datum/reagent/hydrazine = 1, /datum/reagent/dylovene = 1)
 	result_amount = 3

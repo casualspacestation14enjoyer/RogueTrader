@@ -3,6 +3,7 @@
 	l_ear = /obj/item/device/radio/headset/headset_med
 	pda_type = /obj/item/modular_computer/pda/medical
 	pda_slot = slot_l_store
+	l_pocket = /obj/item/device/flashlight/lantern
 
 /singleton/hierarchy/outfit/job/torch/crew/medical/hospitaller
 	name = OUTFIT_JOB_NAME("Hospitaller")

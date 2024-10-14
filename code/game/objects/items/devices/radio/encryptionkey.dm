@@ -66,15 +66,20 @@
 	icon_state = "eng_cypherkey"
 	channels = list("Medicae" = 1, "Mechanicus" =1, "Machinarum" = 1, "Hailing" = 1)
 
+/obj/item/device/encryptionkey/headset_eng_smith
+	name = "engineering radio encryption key"
+	icon_state = "eng_cypherkey"
+	channels = list("Biologis" = 1, "Medicae" = 1, "Mechanicus" =1, "Machinarum" = 1, "Hailing" = 1)
+
 /obj/item/device/encryptionkey/headset_eng_bond
 	name = "engineering radio encryption key"
 	icon_state = "eng_cypherkey"
-	channels = list("Machinarum" = 1, "Hailing" = 1)
+	channels = list("Mechanicus" = 1, "Machinarum" = 1, "Hailing" = 1)
 
 /obj/item/device/encryptionkey/headset_rob
 	name = "robotics radio encryption key"
 	icon_state = "rob_cypherkey"
-	channels = list("Mechanicus" = 1, "Biologis" = 1)
+	channels = list("Mechanicus" = 1)
 
 /obj/item/device/encryptionkey/headset_med
 	name = "medical radio encryption key"
@@ -84,12 +89,12 @@
 /obj/item/device/encryptionkey/headset_sci
 	name = "science radio encryption key"
 	icon_state = "sci_cypherkey"
-	channels = list("Biologis" = 1)
+	channels = list("Biologis" = 1, "Hailing" = 1)
 
 /obj/item/device/encryptionkey/headset_medsci
 	name = "medical research radio encryption key"
 	icon_state = "medsci_cypherkey"
-	channels = list("Medicae" = 1, "Biologis" = 1, "Hailing" = 1)
+	channels = list("Medicae" = 1, "Hailing" = 1)
 
 /obj/item/device/encryptionkey/headset_com
 	name = "command radio encryption key"
@@ -124,12 +129,12 @@
 /obj/item/device/encryptionkey/heads/ce
 	name = "magos explorator's encryption key"
 	icon_state = "ce_cypherkey"
-	channels = list("Medicae" = 1, "Militarum" = 1, "Machinarum" = 1, "Mechanicus" = 1, "Command" = 1, "Hailing" = 1)
+	channels = list("Biologis" = 1, "Medicae" = 1, "Militarum" = 1, "Machinarum" = 1, "Mechanicus" = 1, "Command" = 1, "Hailing" = 1)
 
 /obj/item/device/encryptionkey/heads/cmo
 	name = "chief medical officer's encryption key"
 	icon_state = "cmo_cypherkey"
-	channels = list("Machinarum" = 1, "Medicae" = 1, "Command" = 1, "Hailing" = 1)
+	channels = list("Biologis" = 1, "Mechanicus" = 1, "Machinarum" = 1, "Medicae" = 1, "Command" = 1, "Hailing" = 1)
 
 /obj/item/device/encryptionkey/heads/hop
 	name = "head of personnel's encryption key"
@@ -139,12 +144,12 @@
 /obj/item/device/encryptionkey/headset_cargo
 	name = "supply radio encryption key"
 	icon_state = "cargo_cypherkey"
-	channels = list("Machinarum" = 1)
+	channels = list("Machinarum" = 1, "Hailing" = 1)
 
 /obj/item/device/encryptionkey/headset_service
 	name = "service radio encryption key"
 	icon_state = "srv_cypherkey"
-	channels = list("Service" = 1)
+	channels = list("Service" = 1, "Hailing" = 1)
 
 /obj/item/device/encryptionkey/ert
 	name = "\improper ERT radio encryption key"
@@ -158,9 +163,9 @@
 
 /obj/item/device/encryptionkey/entertainment
 	name = "entertainment radio key"
-	channels = list("Entertainment" = 1)
+	channels = list("Entertainment" = 1, "Hailing" = 1)
 
 /obj/item/device/encryptionkey/headset_mining
 	name = "prospector radio encryption key"
 	icon_state = "srv_cypherkey"
-	channels = list("Machinarum" = 1)
+	channels = list("Machinarum" = 1, "Hailing" = 1)

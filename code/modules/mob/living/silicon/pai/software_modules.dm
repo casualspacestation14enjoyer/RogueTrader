@@ -269,7 +269,7 @@
 		LANGUAGE_HUMAN_RUSSIAN,
 		LANGUAGE_HUMAN_SELENIAN,
 		LANGUAGE_TAU,
-		LANGUAGE_UNATHI_SINTA
+		LANGUAGE_KROOT_SINTA
 	)
 
 /datum/pai_software/translator/toggle(mob/living/silicon/pai/user)

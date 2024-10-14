@@ -186,8 +186,8 @@
 
 /obj/item/ammo_magazine/speedloader/clip/sniper/xenos
 	name = "xenos munitions rod"
-	desc = "A stripper clip for xenos weapons."
-	ammo_type = /obj/item/ammo_casing/shell/shred
+	desc = "A metal munitions rod for xenos weapons."
+	ammo_type = /obj/item/ammo_casing/xenos/bos
 	max_ammo = 3
 
 // STANDARD PATTERN

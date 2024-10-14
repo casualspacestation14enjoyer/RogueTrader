@@ -69,12 +69,12 @@
 	job_access_type = /datum/job/enforcer
 	detail_color = "#e00000"
 
-/obj/item/card/id/torch/crew/security/brigchief
+/obj/item/card/id/torch/crew/security/enforcer_sgt
 	job_access_type = /datum/job/enforcer_sergeant
 	extra_details = list("onegoldstripe")
 
 /obj/item/card/id/torch/crew/security/forensic
-	job_access_type = /datum/job/detective
+	job_access_type = /datum/job/guardsman
 
 
 /obj/item/card/id/torch/silver/engineering
@@ -97,7 +97,7 @@
 	job_access_type = /datum/job/roboticist
 
 
-/obj/item/card/id/torch/crew/supply/deckofficer
+/obj/item/card/id/torch/crew/supply/noble_guest
 	job_access_type = /datum/job/noble_guest
 	detail_color = COLOR_BROWN
 	extra_details = list("onegoldstripe")

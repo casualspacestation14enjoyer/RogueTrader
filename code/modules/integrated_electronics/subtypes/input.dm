@@ -906,7 +906,7 @@
 
 /obj/item/integrated_circuit/input/microphone/exo
 	name = "interspecies exchange microphone"
-	languages_understood = list(LANGUAGE_HIGH_GOTHIC, LANGUAGE_HUMAN_SELENIAN, LANGUAGE_UNATHI_SINTA, LANGUAGE_TAU)
+	languages_understood = list(LANGUAGE_HIGH_GOTHIC, LANGUAGE_HUMAN_SELENIAN, LANGUAGE_KROOT_SINTA, LANGUAGE_TAU)
 	spawn_flags = IC_SPAWN_RESEARCH
 	extended_desc = "A microphone with a xenolinguistic database to facilitate EXO missions with mixed species. It translates the most common Tau and Kroot dialects to ZAC."
 	//Selenian is an in-character undocumented feature demanded by a corp exec

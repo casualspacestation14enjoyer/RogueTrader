@@ -29,14 +29,15 @@
 	min_age =                 8000
 	max_age =                 12000
 	antaghud_offset_y =       14
-	warning_low_pressure =    50
-	hazard_low_pressure =     -1
+
 	mob_size =                MOB_LARGE
 	strength =                STR_HIGH
 
 	speech_sounds = list('sound/voice/chime.ogg')
 	speech_chance = 25
 
+	warning_low_pressure =    50
+	hazard_low_pressure =     -1
 	cold_level_1 = SYNTH_COLD_LEVEL_1
 	cold_level_2 = SYNTH_COLD_LEVEL_2
 	cold_level_3 = SYNTH_COLD_LEVEL_3

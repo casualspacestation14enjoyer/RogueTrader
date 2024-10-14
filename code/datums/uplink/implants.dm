@@ -36,8 +36,8 @@
 
 /datum/uplink_item/item/implants/imp_imprinting
 	name = "Neural Imprinting Implant"
-	desc = "An implant able to be used on someone who is under the influence of Mindbreaker Toxin to give them a \
-	set of law-like instructions to follow. This kit contains a dose of Mindbreaker Toxin."
+	desc = "An implant able to be used on someone who is under the influence of Obscura to give them a \
+	set of law-like instructions to follow. This kit contains a dose of Obscura."
 	item_cost = 20
 	path = /obj/item/storage/box/syndie_kit/imp_imprinting
 	antag_roles = list(MODE_TRAITOR)

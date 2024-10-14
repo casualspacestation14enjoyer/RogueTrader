@@ -9,14 +9,11 @@
  * Security
  */
 /obj/item/clothing/under/rank/warden
-	desc = "It's made of a slightly sturdier material than standard jumpsuits, to allow for more robust protection. It has the word \"Warden\" written on the shoulders."
-	name = "warden's jumpsuit"
+	desc = "It's made of a slightly sturdier material than standard jumpsuits, to allow for more robust protection."
+	name = "enforcers jumpsuit"
 	icon_state = "warden"
 	item_state = "r_suit"
 	worn_state = "warden"
-	armor = list(
-		melee = ARMOR_MELEE_PRIMAL
-		)
 	siemens_coefficient = 0.9
 
 /obj/item/clothing/head/warden
@@ -31,9 +28,6 @@
 	icon_state = "security"
 	item_state = "r_suit"
 	worn_state = "secred"
-	armor = list(
-		melee = ARMOR_MELEE_PRIMAL
-		)
 	siemens_coefficient = 0.9
 
 /obj/item/clothing/under/rank/dispatch
@@ -41,9 +35,6 @@
 	desc = "A dress shirt and khakis with a militarum patch sewn on."
 	icon_state = "dispatch"
 	worn_state = "dispatch"
-	armor = list(
-		melee = ARMOR_MELEE_PRIMAL
-		)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
 	siemens_coefficient = 0.9
 
@@ -53,9 +44,6 @@
 	icon_state = "redshirt2"
 	item_state = "r_suit"
 	worn_state = "redshirt2"
-	armor = list(
-		melee = ARMOR_MELEE_PRIMAL
-		)
 	siemens_coefficient = 0.9
 
 /obj/item/clothing/under/rank/security/corp
@@ -72,9 +60,6 @@
 	icon_state = "swatunder"
 	worn_state = "swatunder"
 	gender_icons = 1
-	armor = list(
-		melee = ARMOR_MELEE_PRIMAL
-		)
 	siemens_coefficient = 0.9
 
 /*
@@ -87,9 +72,6 @@
 	item_state = "det"
 	worn_state = "detective"
 	gender_icons = 1
-	armor = list(
-		melee = ARMOR_MELEE_PRIMAL
-		)
 	siemens_coefficient = 0.9
 	accessories = list(/obj/item/clothing/accessory/blue_clip)
 
@@ -143,9 +125,6 @@
 	icon_state = "hos"
 	item_state = "r_suit"
 	worn_state = "hosred"
-	armor = list(
-		melee = ARMOR_MELEE_PRIMAL
-		)
 	siemens_coefficient = 0.8
 
 /obj/item/clothing/under/rank/head_of_security/corp

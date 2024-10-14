@@ -82,6 +82,7 @@
 	damage = 25
 	shredding = TRUE
 	attack_name = "strong claws"
+	blocked_by_gloves = FALSE
 
 /datum/unarmed_attack/claws/strong/gloves
 	blocked_by_gloves = FALSE
