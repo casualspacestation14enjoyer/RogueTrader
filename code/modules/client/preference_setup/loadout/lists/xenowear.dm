@@ -155,7 +155,7 @@
 
 /datum/gear/gloves/botany/modified
 	display_name = "modified gloves, botany"
-	path = /obj/item/clothing/gloves/thick/botany/modified
+	path = /obj/item/clothing/gloves/thick/leather/modified
 	sort_category = "Xenowear"
 	whitelisted = list(SPECIES_KROOT, SPECIES_YEOSA)
 

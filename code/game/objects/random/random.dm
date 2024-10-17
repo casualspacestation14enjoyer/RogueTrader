@@ -1270,7 +1270,7 @@
 /obj/random/gloves/spawn_choices()
 	return list(/obj/item/clothing/gloves/insulated = 3,
 				/obj/item/clothing/gloves/thick = 6,
-				/obj/item/clothing/gloves/thick/botany = 5,
+				/obj/item/clothing/gloves/thick/leather = 5,
 				/obj/item/clothing/gloves/latex = 4,
 				/obj/item/clothing/gloves/thick/swat = 3,
 				/obj/item/clothing/gloves/thick/combat = 3,

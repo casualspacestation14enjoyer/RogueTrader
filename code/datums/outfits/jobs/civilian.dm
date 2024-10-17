@@ -17,7 +17,7 @@
 	name = OUTFIT_JOB_NAME("Gardener")
 	uniform = /obj/item/clothing/under/rank/hydroponics
 	suit = /obj/item/clothing/suit/apron
-	gloves = /obj/item/clothing/gloves/thick/botany
+	gloves = /obj/item/clothing/gloves/thick/leather
 	r_pocket = /obj/item/device/scanner/plant
 	id_types = list(/obj/item/card/id/civilian/botanist)
 	pda_type = /obj/item/modular_computer/pda

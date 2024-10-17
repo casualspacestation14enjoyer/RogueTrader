@@ -3,6 +3,7 @@
 	name = "master shotgun object"
 	desc = "You should not see this."
 	fire_sound = 'sound/weapons/gunshot/shotgun.ogg'
+	accuracy = -1.5
 
 /obj/item/gun/projectile/shotgun/pump
 	name = "shotgun"
@@ -21,6 +22,7 @@
 	ammo_type = /obj/item/ammo_casing/shotgun/beanbag
 	handle_casings = HOLD_CASINGS
 	one_hand_penalty = 4
+	accuracy = -1
 	bulk = 1
 	var/recentpump = 0 // to prevent spammage
 	wielded_item_state = "shotgun-wielded"
@@ -219,11 +221,12 @@
 	max_shells = 3
 	w_class = ITEM_SIZE_HUGE
 	force = 10
+	accuracy = -1
 	obj_flags =  OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BACK
 	caliber = CALIBER_SHOTGUN
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 1)
-	ammo_type = /obj/item/ammo_casing/shotgun
+	ammo_type = /obj/item/ammo_casing/shotgun/flechette
 	one_hand_penalty = 4
 	wielded_item_state = "gun_wielded"
 
@@ -308,9 +311,9 @@
 	item_state = "sawnshotgun"
 	wielded_item_state = "sawnshotgun-wielded"
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
-	ammo_type = /obj/item/ammo_casing/shotgun/pellet
+	ammo_type = /obj/item/ammo_casing/shotgun/ms
 	w_class = ITEM_SIZE_NORMAL
-	force = 5
+	accuracy = -1.5
 	one_hand_penalty = 0
 
 
@@ -339,7 +342,7 @@
 	one_hand_penalty = 4
 	bulk = GUN_BULK_RIFLE
 	burst_delay = 2
-	accuracy = -1
+	accuracy = -1.5
 	jam_chance = 0.5
 	safety_icon = "safety"
 

@@ -9,24 +9,19 @@
 	name = OUTFIT_JOB_NAME("Hospitaller")
 	head = /obj/item/clothing/head/helmet/pilgrimcap/hospitallerhelm
 	mask = /obj/item/clothing/mask/gas/half
-	glasses = /obj/item/clothing/glasses/night/aviators
+	glasses = /obj/item/clothing/glasses/eyepatch/hud/medical
 	belt = /obj/item/storage/belt/medical
 	suit = /obj/item/clothing/suit/armor/sister/hospitaller
 	shoes = /obj/item/clothing/shoes/jackboots
-	uniform = /obj/item/clothing/under/rank/medical
+	uniform = /obj/item/clothing/under/rank/nursesuit
 	r_pocket = null
 	l_ear = /obj/item/device/radio/headset/headset_med
-	l_hand = null
+	l_hand = /obj/item/gun/projectile/pistol/bolt_pistol/sob
 	gloves = /obj/item/clothing/gloves/prac_gloves
 	id_types = list(/obj/item/card/id/torch/crew/medical/senior)
 	pda_type = /obj/item/modular_computer/pda/medical
 	back = /obj/item/storage/backpack/satchel/leather
-	backpack_contents = list(/obj/item/pen = 1, /obj/item/gun/projectile/pistol/bolt_pistol/sob = 1, /obj/item/ammo_magazine/bolt_pistol_magazine = 1)
-
-/singleton/hierarchy/outfit/job/torch/crew/medical/hospitaller/fleet
-	name = OUTFIT_JOB_NAME("Physician - Fleet")
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/medical
-	shoes = /obj/item/clothing/shoes/dutyboots
+	backpack_contents = list(/obj/item/pen = 1, /obj/item/ammo_magazine/bolt_pistol_magazine = 1, /obj/item/reagent_containers/hypospray/vial = 1, /obj/item/storage/firstaid/light = 1)
 
 /singleton/hierarchy/outfit/job/torch/crew/medical/pharmacologis
 	name = OUTFIT_JOB_NAME("Pharmacologis")
@@ -36,15 +31,15 @@
 	belt = /obj/item/storage/belt/medical
 	suit = /obj/item/clothing/suit/armor/grim/medicae
 	shoes = /obj/item/clothing/shoes/jackboots/prac_boots
-	uniform = /obj/item/clothing/under/rank/victorian/black
+	uniform = /obj/item/clothing/under/rank/medical/scrubs/black
 	r_pocket = null
 	l_ear = /obj/item/device/radio/headset/headset_med
-	l_hand = null
+	l_hand = /obj/item/storage/firstaid/adv
 	gloves = /obj/item/clothing/gloves/prac_gloves
 	id_types = list(/obj/item/card/id/torch/crew/medical/senior)
 	pda_type = /obj/item/modular_computer/pda/medical
 	back = /obj/item/storage/backpack/satchel/leather
-	backpack_contents = list(/obj/item/pen = 1)
+	backpack_contents = list(/obj/item/pen = 1, /obj/item/reagent_containers/hypospray/vial = 1, /obj/item/reagent_containers/hypospray/autoinjector/detox = 1, /obj/item/reagent_containers/hypospray/autoinjector/coagulant = 1)
 
 /singleton/hierarchy/outfit/job/torch/crew/medical/medicae
 	name = OUTFIT_JOB_NAME("Medicae")
@@ -54,15 +49,15 @@
 	belt = /obj/item/storage/belt/medical
 	suit = /obj/item/clothing/suit/armor/grim/medicae
 	shoes = /obj/item/clothing/shoes/jackboots/prac_boots
-	uniform = /obj/item/clothing/under/rank/victorian/black
+	uniform = /obj/item/clothing/under/rank/medical/scrubs/black
 	r_pocket = null
 	l_ear = /obj/item/device/radio/headset/headset_med
-	l_hand = null
+	l_hand = /obj/item/storage/firstaid/regular
 	gloves = /obj/item/clothing/gloves/prac_gloves
 	id_types = list(/obj/item/card/id/torch/crew/medical/senior)
 	pda_type = /obj/item/modular_computer/pda/medical
 	back = /obj/item/storage/backpack/satchel/leather
-	backpack_contents = list(/obj/item/pen = 1)
+	backpack_contents = list(/obj/item/pen = 1, /obj/item/reagent_containers/hypospray/vial = 1, /obj/item/reagent_containers/hypospray/autoinjector/combatstim = 1, /obj/item/reagent_containers/hypospray/autoinjector/coagulant = 1)
 
 /singleton/hierarchy/outfit/job/torch/crew/medical/medicae/fleet
 	name = OUTFIT_JOB_NAME("Medical Technician - Fleet")
@@ -105,6 +100,10 @@
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_types = list(/obj/item/card/id/torch/crew/medical/counselor)
 
+/singleton/hierarchy/outfit/job/torch/crew/medical/hospitaller/fleet
+	name = OUTFIT_JOB_NAME("Physician - Fleet")
+	uniform = /obj/item/clothing/under/solgov/utility/fleet/medical
+	shoes = /obj/item/clothing/shoes/dutyboots
 
 /singleton/hierarchy/outfit/job/torch/crew/medical/contractor/senior
 	name = OUTFIT_JOB_NAME("Physician - Contractor")

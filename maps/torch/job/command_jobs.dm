@@ -14,7 +14,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 16
+	skill_points = 13
 	min_skill = list(
 		SKILL_BUREAUCRACY = SKILL_EXPERIENCED,
 		SKILL_FINANCE = SKILL_TRAINED,
@@ -88,7 +88,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 13
+	skill_points = 11
 	min_skill = list(
 		SKILL_BUREAUCRACY = SKILL_EXPERIENCED,
 		SKILL_FINANCE = SKILL_TRAINED,
@@ -178,7 +178,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 13
+	skill_points = 11
 	min_skill = list(
 		SKILL_BUREAUCRACY = SKILL_TRAINED,
 		SKILL_FINANCE = SKILL_BASIC,
@@ -249,7 +249,7 @@
 	allowed_ranks = list(/datum/mil_rank/civ/civ)
 	total_positions = 0
 	spawn_positions = 0
-	skill_points = 14
+	skill_points = 11
 	min_skill = list(SKILL_VIGOR = SKILL_EXPERIENCED,
 					SKILL_COMBAT = SKILL_EXPERIENCED, // Worse skills then imperials. Since they are more primitive bioforms.
 					SKILL_GUNS = SKILL_BASIC,
@@ -265,9 +265,7 @@
 		access_radio_sec
 	)
 
-	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
-							 /datum/computer_file/program/camera_monitor,
-							 /datum/computer_file/program/reports)
+	software_on_spawn = list(/datum/computer_file/program/camera_monitor)
 
 /datum/job/mercenary/get_description_blurb()
 	return "As the Xenos Mercenary, you serve as the Lifeward to the Rogue Trader, using your alien abilities to fulfill your duties. Your role is fluid, from enforcing order and discipline to handling tasks that fall beyond the reach of the human crew. You protect essential personnel, ensure the Trader's will is carried out, and use your unique skills to safeguard the vessel."

@@ -56,7 +56,7 @@
 
 /datum/gear/gloves/botany
 	display_name = "gloves, botany"
-	path = /obj/item/clothing/gloves/thick/botany
+	path = /obj/item/clothing/gloves/thick/leather
 	cost = 3
 	allowed_roles = list(
 		/datum/job/rd,

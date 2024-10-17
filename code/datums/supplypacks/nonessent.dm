@@ -104,7 +104,7 @@
 					/obj/item/clothing/suit/armor/grim/bio_suit/plaguedoctorsuit,
 					/obj/item/clothing/under/schoolgirl,
 					/obj/item/clothing/under/owl,
-					/obj/item/clothing/under/waiter,
+					/obj/item/clothing/under/service,
 					/obj/item/clothing/under/gladiator,
 					/obj/item/clothing/under/soviet,
 					/obj/item/clothing/under/scratch,

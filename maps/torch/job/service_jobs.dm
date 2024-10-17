@@ -1,6 +1,6 @@
 
 /datum/job/chaplain_militant
-	title = "Chaplain Militant"
+	title = "Chaplain Militant" // alt roles; confessor
 	department = "Service"
 	department_flag = SRV
 	total_positions = 1
@@ -15,9 +15,15 @@
 		/datum/mil_branch/civilian)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ)
-	min_skill = list( // 1 point
-		SKILL_BUREAUCRACY = SKILL_BASIC // 1 point
+	skill_points = 22
+	min_skill = list(
+		SKILL_COMBAT = SKILL_BASIC,
+		SKILL_MEDICAL = SKILL_BASIC,
+		SKILL_VIGOR = SKILL_BASIC,
 	)
+
+	max_skill = list(	SKILL_VIGOR = SKILL_MASTER,
+						SKILL_COMBAT = SKILL_LEGEND)
 
 	access = list(
 		access_morgue, access_chapel_office,
@@ -26,18 +32,15 @@
 	)
 
 /datum/job/chamber_assistant
-	title = "Sanitation Technician"
+	title = "Chamber Assistant"
 	department = "Service"
-	department_flag = SRV
-	total_positions = 2
-	spawn_positions = 2
+	department_flag = SRV // alt roles; Agri-worker. Servant.
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "the Chief Steward"
 	create_record = FALSE
 	minimum_character_age = list(SPECIES_HUMAN = 20)
 	ideal_character_age = 20
-	alt_titles = list(
-		"Custodian",
-		"Janitor")
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/service/janitor
 	allowed_branches = list(
 		/datum/mil_branch/civilian
@@ -45,8 +48,11 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	min_skill = list( // 1 point
-		SKILL_VIGOR = SKILL_BASIC // 1 point
+	skill_points = 18
+	min_skill = list(
+		SKILL_COMBAT = SKILL_BASIC,
+		SKILL_MEDICAL = SKILL_BASIC,
+		SKILL_VIGOR = SKILL_BASIC,
 	)
 
 	access = list(
@@ -57,30 +63,31 @@
 
 
 /datum/job/chamber_magister
-	title = "Steward"
+	title = "Chamber Magister" // alt_titles; innkeeper. gets shotgun. magister has a las pistol.
 	department = "Service"
 	department_flag = SRV
 	total_positions = 1
 	spawn_positions = 1
 	minimum_character_age = list(SPECIES_HUMAN = 20)
 	supervisors = "the Chief Steward"
-	alt_titles = list(
-		"Bartender",
-		"Cook",
-		"Culinary Specialist"
-	)
-	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/service/cook
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/service/magister
 	allowed_branches = list(
 		/datum/mil_branch/civilian
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	min_skill = list( // 7 points
-		SKILL_BOTANY = SKILL_BASIC, // 1 point
-		SKILL_CHEMISTRY = SKILL_BASIC, // 4 points
-		SKILL_COOKING = SKILL_TRAINED // 2 points
+	skill_points = 20
+	min_skill = list(
+		SKILL_COMBAT = SKILL_BASIC,
+		SKILL_MEDICAL = SKILL_BASIC,
+		SKILL_VIGOR = SKILL_BASIC,
 	)
+
+	max_skill = list(	SKILL_DEVICES = SKILL_MASTER,
+						SKILL_VIGOR = SKILL_MASTER,
+						SKILL_GUNS = SKILL_MASTER,
+						SKILL_COMBAT = SKILL_MASTER)
 	access = list(
 		access_commissary,
 		access_hydroponics,
@@ -90,42 +97,8 @@
 		access_o_mess
 	)
 
-/datum/job/deck_scum/get_description_blurb()
-	return "As Deck Scum, you’re the bottom rung, drifting through whatever job you’re handed next. Your service may be a punishment for a crime, it may be that you were stolen from your world and enslaved, or worse... that you chose this life for yourself. You are a dredge of society now, an outcast, surviving in the underbelly of the Rogue Trader's corvette."
-
-/datum/job/deck_scum/equip(mob/living/carbon/human/H)
-	var/current_name = H.real_name
-	var/current_title = trimtext(H.mind.role_alt_title)
-	H.voice_in_head(pick(GLOB.lone_thoughts))
-	H.fully_replace_character_name("[current_name]")
-	if(current_title && (H.mind.role_alt_title in alt_titles))
-		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
-	else
-		current_title = title // use default title
-	if(current_title == "Penitent" || current_title == "Deck Scum" || current_title == "Pathfinder" || current_title == "Miner")
-		if(current_title == "Penitent")
-			if(prob(80))
-				to_chat(H,"<span class='danger'><b><font size=4>THE PENITENT</font></b></span>")
-				to_chat(H, "<span class='notice'><b><font size=2>As the Penitent, you are condemned to suffer for your past crimes, undertaking the most dangerous and brutal tasks, hoping to earn absolution through relentless service to the Imperium.</font></b></span>")
-				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/penitent, slot_w_uniform)
-				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/pilgrim/penitent, slot_wear_suit)
-				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/pilgrimcap/pleb, slot_head)
-				H.equip_to_slot_or_store_or_drop(new /obj/item/pen, slot_in_backpack)
-				H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife/glaive, slot_belt)
-				H.species.hunger_factor = DEFAULT_HUNGER_FACTOR * 0.75
-				H.species.weaken_mod = 0.75
-				H.species.stun_mod = 0.75
-			else
-				to_chat(H,"<span class='danger'><b><font size=4>THE OPERATIVE</font></b></span>")
-				to_chat(H, "<span class='notice'><b><font size=2>As the operative you are here under false pretense, masquerading as a Crewman. In this role you must further the aims of your secret benefactor by whatever means necessary(make something up)</font></b></span>")
-				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
-				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/pilgrimhelm/flak/metal, slot_head)
-				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/scrapforged/duster, slot_wear_suit)
-				H.equip_to_slot_or_store_or_drop(new /obj/item/pen, slot_in_backpack)
-				H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife, slot_belt)
-
 /datum/job/noble_guest
-	title = "Noble Heir"
+	title = "Noble Heir" // alt titles; noble heir, planetary governor, xenos ambassador(use the tithe to_world stuff for this)
 	department = "Supply"
 	department_flag = SUP
 	create_record = FALSE
@@ -168,6 +141,40 @@
 	software_on_spawn = list(/datum/computer_file/program/supply,
 							 /datum/computer_file/program/deck_management,
 							 /datum/computer_file/program/reports)
+
+/datum/job/deck_scum/get_description_blurb()
+	return "As Deck Scum, you’re the bottom rung, drifting through whatever job you’re handed next. Your service may be a punishment for a crime, it may be that you were stolen from your world and enslaved, or worse... that you chose this life for yourself. You are a dredge of society now, an outcast, surviving in the underbelly of the Rogue Trader's corvette."
+
+/datum/job/deck_scum/equip(mob/living/carbon/human/H)
+	var/current_name = H.real_name
+	var/current_title = trimtext(H.mind.role_alt_title)
+	H.voice_in_head(pick(GLOB.lone_thoughts))
+	H.fully_replace_character_name("[current_name]")
+	if(current_title && (H.mind.role_alt_title in alt_titles))
+		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
+	else
+		current_title = title // use default title
+	if(current_title == "Penitent" || current_title == "Deck Scum" || current_title == "Pathfinder" || current_title == "Miner")
+		if(current_title == "Penitent")
+			if(prob(80))
+				to_chat(H,"<span class='danger'><b><font size=4>THE PENITENT</font></b></span>")
+				to_chat(H, "<span class='notice'><b><font size=2>As the Penitent, you are condemned to suffer for your past crimes, undertaking the most dangerous and brutal tasks, hoping to earn absolution through relentless service to the Imperium.</font></b></span>")
+				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/penitent, slot_w_uniform)
+				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/pilgrim/penitent, slot_wear_suit)
+				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/pilgrimcap/pleb, slot_head)
+				H.equip_to_slot_or_store_or_drop(new /obj/item/pen, slot_in_backpack)
+				H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife/glaive, slot_belt)
+				H.species.hunger_factor = DEFAULT_HUNGER_FACTOR * 0.75
+				H.species.weaken_mod = 0.75
+				H.species.stun_mod = 0.75
+			else
+				to_chat(H,"<span class='danger'><b><font size=4>THE OPERATIVE</font></b></span>")
+				to_chat(H, "<span class='notice'><b><font size=2>As the operative you are here under false pretense, masquerading as a Crewman. In this role you must further the aims of your secret benefactor by whatever means necessary(make something up)</font></b></span>")
+				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
+				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/pilgrimhelm/flak/metal, slot_head)
+				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/scrapforged/duster, slot_wear_suit)
+				H.equip_to_slot_or_store_or_drop(new /obj/item/pen, slot_in_backpack)
+				H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife, slot_belt)
 
 /datum/job/unexpected_guest
 	title = "Gang Boss"

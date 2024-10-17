@@ -111,7 +111,7 @@ var/global/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 	//Economy stuff
 	var/starting_money = 1000		//Money in station account
 	var/department_money = 600		//Money in department accounts
-	var/salary_modifier	= 0.06			//Multiplier to starting character money
+	var/salary_modifier	= 1			//Multiplier to starting character money
 	var/station_departments = list()//Gets filled automatically depending on jobs allowed
 
 	var/supply_currency_name = "Scrip"

@@ -36,8 +36,8 @@
 	item_state = "sl_suit"
 	gender_icons = 1
 
-/obj/item/clothing/under/waiter
-	name = "waiter's outfit"
+/obj/item/clothing/under/service
+	name = "magister's outfit"
 	desc = "It's a very smart uniform with a special pocket for tip."
 	icon_state = "waiter"
 	item_state = "waiter"

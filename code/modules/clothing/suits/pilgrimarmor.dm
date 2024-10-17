@@ -650,9 +650,9 @@
 		bomb = ARMOR_BOMB_TEN-4
 		)
 
-/obj/item/clothing/suit/armor/grim/pilgrim/admin
-	name = "administrator's garb"
-	desc = "Elegant clothing for a wealthy administrator, this one seems to have a hidden carapace armor plate in it... the plate seems to be of a cheap quality..."
+/obj/item/clothing/suit/armor/grim/pilgrim/servant
+	name = "ornate robes"
+	desc = "Elegant clothing for a servant of the imperium..."
 	icon_state = "robes"
 	item_state = "robes_item"
 	body_parts_covered = LEGS|ARMS

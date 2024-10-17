@@ -100,7 +100,6 @@
 	back = /obj/item/storage/backpack/satchel/krieger
 	backpack_contents = list(/obj/item/pen = 1, /obj/item/material/twohanded/ravenor/knife/trench = 1, /obj/item/cell/device/high/laspack/hotshot = 3, /obj/item/device/flashlight/flare = 1)
 
-
 /singleton/hierarchy/outfit/job/torch/crew/security/catachan
 	name = OUTFIT_JOB_NAME("Catachan Sergeant")
 	head = /obj/item/clothing/head/helmet/guardcap/catachan
@@ -112,13 +111,13 @@
 	uniform = /obj/item/clothing/under/rank/catachan
 	r_pocket = null
 	l_ear = /obj/item/device/radio/headset/headset_sec
-	l_hand = /obj/item/gun/projectile/shotgun/doublebarrel
+	l_hand = /obj/item/gun/projectile/shotgun/doublebarrel/sawn
 	r_hand = /obj/item/gun/energy/lasgun/catachan
 	gloves = /obj/item/clothing/gloves/thick/swat/cadian
 	id_types = list(/obj/item/card/id/torch/crew/security)
 	pda_type = /obj/item/modular_computer/pda/security
 	back = /obj/item/storage/backpack/satchel/warfare
-	backpack_contents = list(/obj/item/pen = 1, /obj/item/cell/device/high/laspack/hotshot = 3, /obj/item/device/flashlight/flare = 1)
+	backpack_contents = list(/obj/item/pen = 1, /obj/item/cell/device/high/laspack/hotshot = 2, /obj/item/ammo_magazine/shotholder/ms = 1, /obj/item/device/flashlight/flare = 1)
 
 
 /singleton/hierarchy/outfit/job/torch/crew/security/maccabian
