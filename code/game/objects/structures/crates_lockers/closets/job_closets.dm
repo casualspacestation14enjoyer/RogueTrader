@@ -39,7 +39,7 @@
 /obj/structure/closet/chefcloset/WillContain()
 	return list(
 		/obj/item/clothing/under/sundress,
-		/obj/item/clothing/under/waiter = 2,
+		/obj/item/clothing/under/service = 2,
 		/obj/item/device/radio/headset/headset_service = 2,
 		/obj/item/storage/box/mousetraps = 2,
 		/obj/item/clothing/under/rank/chef,

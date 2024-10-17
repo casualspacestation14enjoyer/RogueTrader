@@ -9,7 +9,7 @@
 					/obj/item/material/hatchet,
 					/obj/item/material/minihoe,
 					/obj/item/device/scanner/plant,
-					/obj/item/clothing/gloves/thick/botany,
+					/obj/item/clothing/gloves/thick/leather,
 					/obj/item/clothing/suit/apron,
 					/obj/item/material/minihoe,
 					/obj/item/storage/box/botanydisk

@@ -265,7 +265,7 @@
 	item_state = "com_headset_alt"
 
 /obj/item/device/radio/headset/heads/cmo
-	name = "chief medical officer's headset"
+	name = "biologis headset"
 	desc = "The headset of the highly trained medical chief."
 	icon_state = "com_headset"
 	item_state = "headset"

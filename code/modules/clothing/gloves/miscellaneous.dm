@@ -98,13 +98,13 @@
 	min_cold_protection_temperature = GLOVES_MIN_COLD_PROTECTION_TEMPERATURE
 	heat_protection = HANDS
 
-/obj/item/clothing/gloves/thick/botany
+/obj/item/clothing/gloves/thick/leather
 	desc = "These leather work gloves protect against thorns, barbs, prickles, spikes and other harmful objects of floral origin."
 	name = "thick leather gloves"
 	icon_state = "leather"
 	item_state = "ggloves"
 
-/obj/item/clothing/gloves/thick/botany/modified
+/obj/item/clothing/gloves/thick/leather/modified
 	item_flags = ITEM_FLAG_PREMODIFIED | ITEM_FLAG_WASHER_ALLOWED
 
 /obj/item/clothing/gloves/latex

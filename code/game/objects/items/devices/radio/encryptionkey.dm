@@ -103,7 +103,7 @@
 
 /obj/item/device/encryptionkey/merchant
 	name = "merchant encryption key"
-	channels = list("Machinarum" = 1, "Hailing" = 1)
+	channels = list("Service" = 1, "Machinarum" = 1, "Hailing" = 1)
 
 /obj/item/device/encryptionkey/heads/captain
 	name = "captain's encryption key"
@@ -149,7 +149,7 @@
 /obj/item/device/encryptionkey/headset_service
 	name = "service radio encryption key"
 	icon_state = "srv_cypherkey"
-	channels = list("Service" = 1, "Hailing" = 1)
+	channels = list("Machinarum" = 1, "Service" = 1, "Hailing" = 1)
 
 /obj/item/device/encryptionkey/ert
 	name = "\improper ERT radio encryption key"

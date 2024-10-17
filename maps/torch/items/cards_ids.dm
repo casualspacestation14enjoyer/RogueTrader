@@ -121,7 +121,7 @@
 /obj/item/card/id/torch/crew/service/janitor
 	job_access_type = /datum/job/chamber_assistant
 
-/obj/item/card/id/torch/crew/service/chef
+/obj/item/card/id/torch/crew/service/magister
 	job_access_type = /datum/job/chamber_magister
 
 /obj/item/card/id/torch/crew/service/chaplain

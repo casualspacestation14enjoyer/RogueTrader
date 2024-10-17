@@ -1,7 +1,7 @@
 /singleton/hierarchy/outfit/job/torch/crew/command
 	name = OUTFIT_JOB_NAME("Torch Command Outfit")
 	hierarchy_type = /singleton/hierarchy/outfit/job/torch/crew/command
-	l_ear = /obj/item/device/radio/headset/heads/bridge
+	l_ear = /obj/item/device/radio/headset/headset_com
 	l_pocket = /obj/item/device/flashlight/maglight
 
 /singleton/hierarchy/outfit/job/torch/crew/command/roguetrader
@@ -11,7 +11,7 @@
 	uniform = /obj/item/clothing/under/rt
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator/rt
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare/rt
-	l_ear = /obj/item/device/radio/headset/heads/bridge
+	l_ear = /obj/item/device/radio/headset/headset_com
 	shoes = /obj/item/clothing/shoes/jackboots/noble/rt
 	head = /obj/item/clothing/head/helmet/pilgrimcap/roguetrader
 	id_types = list(/obj/item/card/id/torch/gold)
@@ -25,7 +25,7 @@
 	glasses = /obj/item/clothing/glasses/night/aviators
 	uniform = /obj/item/clothing/under/rank/victorian/grey
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
-	l_ear = /obj/item/device/radio/headset/heads/bridge
+	l_ear = /obj/item/device/radio/headset/headset_com
 	head = /obj/item/clothing/head/helmet/pilgrimcap/roguetrader/seneschal
 	shoes = /obj/item/clothing/shoes/jackboots/noble
 	id_types = list(/obj/item/card/id/torch/silver)
@@ -39,7 +39,7 @@
 	glasses = /obj/item/clothing/glasses/eyepatch/hud/medical
 	uniform = /obj/item/clothing/under/rank/victorian/redbl
 	gloves = /obj/item/clothing/gloves/thick/duty
-	l_ear = /obj/item/device/radio/headset/heads/bridge
+	l_ear = /obj/item/device/radio/headset/headset_com
 	head = null
 	shoes = /obj/item/clothing/shoes/jackboots/noble
 	id_types = list(/obj/item/card/id/torch/silver)
@@ -51,7 +51,7 @@
 	name = OUTFIT_JOB_NAME("Kroot Tracker")
 	suit = /obj/item/clothing/suit/armor/grim/kroot
 	uniform = /obj/item/clothing/under/rank/kroot
-	l_ear = /obj/item/device/radio/headset/heads/bridge
+	l_ear = /obj/item/device/radio/headset/headset_com
 	l_hand = /obj/item/gun/projectile/heavysniper/boltaction/imperial/thrower
 	r_hand = /obj/item/material/twohanded/ravenor/axe/spear/adamantine
 	head = null
@@ -59,6 +59,7 @@
 	id_types = list(/obj/item/card/id/torch/silver)
 	pda_type = /obj/item/modular_computer/pda/heads
 	back = /obj/item/storage/backpack/satchel/explorer
+	l_pocket = /obj/item/device/flashlight/maglight
 	backpack_contents = list(/obj/item/pen = 1, /obj/item/gun/projectile/pistol/slug/old = 1, /obj/item/ammo_magazine/speedloader/clip/sniper/xenos = 4)
 
 /singleton/hierarchy/outfit/job/torch/crew/command/biologis
@@ -71,7 +72,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots/skitshoes/techpriest
 	uniform = /obj/item/clothing/under/rank/engineer
 	r_pocket = null
-	l_ear = /obj/item/device/radio/headset/heads/bridge
+	l_ear = /obj/item/device/radio/headset/heads/cmo
 	l_hand = null
 	gloves = /obj/item/clothing/gloves/thick/swat/techpriest
 	id_types = list(/obj/item/card/id/torch/silver/medical)
