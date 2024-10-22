@@ -433,8 +433,8 @@
 
 
 /obj/item/reagent_containers/food/drinks/bottle/champagne
-	name = "Murcelano Vinyard's Premium Champagne"
-	desc = "The regal drink of celebrities and royalty."
+	name = "Murcelano Vinyard's Premium Amasec"
+	desc = "The regal drink of merchants and royalty."
 	icon_state = "champagne"
 	center_of_mass = "x=16;y=4"
 	atom_flags = 0
@@ -638,7 +638,7 @@
 
 
 /obj/item/reagent_containers/food/drinks/bottle/premiumwine
-	name = "Uve De Blanc"
+	name = "Uve De Amasec"
 	desc = "You feel pretentious just looking at it."
 	icon_state = "whitewinebottle"
 	center_of_mass = "x=16;y=4"
@@ -654,7 +654,7 @@
 
 
 /obj/item/reagent_containers/food/drinks/bottle/brandy
-	name = "New Amsterdam Deluxe Amasec"
+	name = "Terran Deluxe Amasec"
 	desc = "A bottle of premium Imperial brandy."
 	icon_state = "lunabrandy"
 	center_of_mass = "x=16;y=4"
