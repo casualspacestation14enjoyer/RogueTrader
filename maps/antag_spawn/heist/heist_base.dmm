@@ -1585,7 +1585,7 @@
 /turf/simulated/floor/plating,
 /area/map_template/skipjack_station/start)
 "dK" = (
-/obj/structure/closet/crate/freezer/rations,
+/obj/structure/closet/crate/warhammer/freezer/rations,
 /obj/item/clothing/mask/gas/cyborg,
 /obj/random/donkpocket_box,
 /obj/item/reagent_containers/food/snacks/tastybread,

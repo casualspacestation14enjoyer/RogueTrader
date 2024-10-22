@@ -491,7 +491,7 @@
 /area/lost_supply_base)
 "bc" = (
 /obj/random/projectile,
-/obj/landmark/corpse/syndicate,
+/obj/landmark/corpse/infardi,
 /turf/simulated/floor,
 /area/lost_supply_base)
 "bd" = (
@@ -1029,7 +1029,7 @@
 /turf/simulated/floor/tiled,
 /area/lost_supply_base/common)
 "cC" = (
-/obj/structure/closet/crate/freezer,
+/obj/structure/closet/crate/warhammer/freezer,
 /turf/simulated/floor,
 /area/lost_supply_base)
 "cD" = (
@@ -1086,7 +1086,7 @@
 /turf/simulated/floor,
 /area/lost_supply_base)
 "cO" = (
-/obj/structure/closet/crate/freezer/rations,
+/obj/structure/closet/crate/warhammer/freezer/rations,
 /turf/simulated/floor,
 /area/lost_supply_base)
 "cP" = (
@@ -1767,7 +1767,7 @@
 /area/lost_supply_base)
 "fC" = (
 /obj/random/energy,
-/obj/landmark/corpse/syndicate,
+/obj/landmark/corpse/infardi,
 /turf/simulated/floor,
 /area/lost_supply_base)
 "fD" = (
@@ -1920,7 +1920,7 @@
 /area/lost_supply_base/supply)
 "fX" = (
 /obj/item/gun/projectile/shotgun/pump/voxlegis,
-/obj/landmark/corpse/syndicate,
+/obj/landmark/corpse/infardi,
 /turf/simulated/floor/tiled{
 	icon_state = "steel_broken4"
 	},
@@ -2128,7 +2128,7 @@
 /turf/simulated/wall/r_titanium,
 /area/space)
 "zL" = (
-/obj/structure/closet/crate/freezer,
+/obj/structure/closet/crate/warhammer/freezer,
 /obj/item/organ/internal/kidneys,
 /obj/item/organ/internal/kidneys,
 /obj/item/organ/internal/kidneys,

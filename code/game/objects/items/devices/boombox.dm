@@ -5,7 +5,7 @@
 	name = "boombox"
 	desc = "A device used to emit rhythmic sounds, colloquialy refered to as a 'boombox'. It's in a retro style (massive), and absolutely unwieldy."
 	icon = 'icons/obj/boombox.dmi'
-	icon_state = "off"
+	icon_state = "boombox"
 	item_state = "boombox"
 	force = 17
 	w_class = ITEM_SIZE_HUGE //forbid putting something that emits loud sounds forever into a backpack

@@ -158,7 +158,7 @@
 
 
 /obj/item/reagent_containers/food/drinks/bottle/gin
-	name = "Griffeater Gin"
+	name = "Rotgut Gin"
 	desc = "A bottle of high quality gin, produced in the New London Space Station."
 	icon_state = "ginbottle"
 	center_of_mass = "x=16;y=4"
@@ -170,8 +170,8 @@
 
 
 /obj/item/reagent_containers/food/drinks/bottle/whiskey
-	name = "Uncle Git's Special Reserve Amasec"
-	desc = "A premium single-malt whiskey, gently matured inside the tunnels of a nuclear shelter. TUNNEL WHISKEY RULES."
+	name = "Imperial Reserve Amasec"
+	desc = "A premium single-malt amasec, gently matured inside the upper-hives of an imperial world."
 	icon_state = "whiskeybottle"
 	center_of_mass = "x=16;y=3"
 
@@ -182,8 +182,8 @@
 
 
 /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey
-	name = "Special Blend Amasec"
-	desc = "Just when you thought regular whiskey was good... This silky, amber goodness has to come along and ruin everything."
+	name = "Maccabian Reserve Amasec"
+	desc = "Just when you thought regular amasec was good... This silky, amber goodness has to come along and ruin everything."
 	icon_state = "whiskeybottle2"
 	center_of_mass = "x=16;y=3"
 
@@ -241,8 +241,8 @@
 
 
 /obj/item/reagent_containers/food/drinks/bottle/rum
-	name = "Captain Pete's Cuban Spiced Sacra"
-	desc = "This isn't just rum, oh no. It's practically GRIFF in a bottle."
+	name = "Valhallan Spiced Sacra"
+	desc = "This isn't just any old Sacra, oh no. It's practically fire in a bottle."
 	icon_state = "rumbottle"
 	center_of_mass = "x=16;y=8"
 
@@ -278,7 +278,7 @@
 
 /obj/item/reagent_containers/food/drinks/bottle/kahlua
 	name = "Robert Robust's Coffee Liqueur"
-	desc = "A widely known, Mexican coffee-flavoured liqueur. In production since 1936, HONK!"
+	desc = "A widely known, Mexican coffee-flavoured liqueur. In production since M41, HONK!"
 	icon_state = "kahluabottle"
 	center_of_mass = "x=17;y=3"
 
@@ -289,7 +289,7 @@
 
 
 /obj/item/reagent_containers/food/drinks/bottle/goldschlager
-	name = "College Girl Goldschlager"
+	name = "Scholam Girl Goldschlager"
 	desc = "Because they are the only ones who will drink 100 proof cinnamon schnapps."
 	icon_state = "goldschlagerbottle"
 	center_of_mass = "x=15;y=3"
@@ -301,7 +301,7 @@
 
 
 /obj/item/reagent_containers/food/drinks/bottle/cognac
-	name = "Chateau De Baton Premium Cognac"
+	name = "Chateau de Ordos Premium Cognac"
 	desc = "A sweet and strongly alchoholic drink, made after numerous distillations and years of maturing. You might as well not scream 'SHITCURITY' this time."
 	icon_state = "cognacbottle"
 	center_of_mass = "x=16;y=6"
@@ -313,7 +313,7 @@
 
 
 /obj/item/reagent_containers/food/drinks/bottle/wine
-	name = "Doublebeard Bearded Special Amasec"
+	name = "Necromundan Special Amasec"
 	desc = "A faint aura of unease and asspainery surrounds the bottle."
 	icon_state = "winebottle"
 	center_of_mass = "x=16;y=4"
@@ -325,7 +325,7 @@
 
 
 /obj/item/reagent_containers/food/drinks/bottle/absinthe
-	name = "Jailbreaker Verte Absinthe"
+	name = "Arbites Verte Absinthe"
 	desc = "One sip of this and you just know you're gonna have a good time."
 	icon_state = "absinthebottle"
 	center_of_mass = "x=16;y=6"

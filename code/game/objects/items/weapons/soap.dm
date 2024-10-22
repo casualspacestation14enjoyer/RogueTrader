@@ -185,3 +185,13 @@
 		AddOverlays(image('icons/obj/soap.dmi', icon_state = "soap_key_overlay"))
 	else if(decal_name)
 		AddOverlays(overlay_image(icon, "decal-[decal_name]"))
+
+/obj/item/soap/slannesh
+	icon = 'icons/map_project/fluff_items.dmi'
+	desc = "This smells of alchohol, aprhodisiacs and other narcotics."
+	icon_state = "soapslaanesh"
+
+/obj/item/soap/soapimp
+	icon = 'icons/map_project/fluff_items.dmi'
+	desc = "An imperial soap bar, the emperor protects and cleans."
+	icon_state = "soapimp"

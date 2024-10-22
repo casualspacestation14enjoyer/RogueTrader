@@ -119,7 +119,7 @@
 /turf/simulated/floor/ceiling,
 /area/slavers_base/mort)
 "aB" = (
-/obj/structure/closet/crate/freezer,
+/obj/structure/closet/crate/warhammer/freezer,
 /turf/simulated/floor/ceiling,
 /area/slavers_base/mort)
 "aC" = (
@@ -475,7 +475,7 @@
 /turf/simulated/floor/ceiling,
 /area/slavers_base/cells)
 "bv" = (
-/obj/structure/closet/crate/freezer/rations,
+/obj/structure/closet/crate/warhammer/freezer/rations,
 /turf/simulated/floor/ceiling,
 /area/slavers_base/cells)
 "bw" = (
@@ -499,7 +499,7 @@
 /turf/simulated/floor/tiled,
 /area/slavers_base/cells)
 "bz" = (
-/obj/structure/closet/crate/freezer/rations,
+/obj/structure/closet/crate/warhammer/freezer/rations,
 /obj/decal/cleanable/dirt,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
@@ -1445,12 +1445,12 @@
 /turf/simulated/floor/ceiling,
 /area/slavers_base/med)
 "dE" = (
-/obj/structure/closet/crate/freezer/rations,
+/obj/structure/closet/crate/warhammer/freezer/rations,
 /obj/item/reagent_containers/food/snacks/liquidfood,
 /turf/simulated/floor/ceiling,
 /area/slavers_base/med)
 "dF" = (
-/obj/structure/closet/crate/freezer/rations,
+/obj/structure/closet/crate/warhammer/freezer/rations,
 /turf/simulated/floor/ceiling,
 /area/slavers_base/med)
 "dG" = (

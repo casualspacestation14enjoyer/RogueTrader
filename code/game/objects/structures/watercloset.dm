@@ -612,6 +612,11 @@
 
 	return ..()
 
+/obj/structure/hygiene/sink/puddle/well
+	name = "well"
+	desc = "A well that seems to contain fresh water."
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "well"
 
 /obj/item/taperoll/bog
 	name = "toilet paper roll"

@@ -18,15 +18,15 @@
 	name = "teeth"
 	attack_verb = list("bit")
 	hitsound = 'sound/weapons/bite.ogg'
-	force = 10
+	force = 14
 	sharp = TRUE
 
 /obj/item/natural_weapon/bite/weak
-	force = 5
+	force = 10
 	attack_verb = list("bit", "nipped")
 
 /obj/item/natural_weapon/bite/mouse
-	force = 1
+	force = 3
 	attack_verb = list("nibbled")
 	hitsound = null
 
@@ -36,7 +36,7 @@
 /obj/item/natural_weapon/claws
 	name = "claws"
 	attack_verb = list("mauled", "clawed", "slashed")
-	force = 15
+	force = 17
 	sharp = TRUE
 	edge = TRUE
 
@@ -44,29 +44,29 @@
 	force = 25
 
 /obj/item/natural_weapon/claws/weak
-	force = 5
+	force = 10
 	attack_verb = list("clawed", "scratched")
 
 /obj/item/natural_weapon/hooves
 	name = "hooves"
 	attack_verb = list("kicked")
-	force = 5
+	force = 10
 
 /obj/item/natural_weapon/punch
 	name = "fists"
 	attack_verb = list("punched")
-	force = 10
+	force = 15
 
 /obj/item/natural_weapon/pincers
 	name = "pincers"
-	force = 10
+	force = 18
 	attack_verb = list("snipped", "pinched")
 
 /obj/item/natural_weapon/drone_slicer
 	name = "sharpened leg"
 	gender = NEUTER
 	attack_verb = list("sliced")
-	force = 5
+	force = 10
 	damtype = DAMAGE_BRUTE
 	edge = TRUE
 	show_in_message = TRUE
@@ -78,7 +78,7 @@
 	name = "beak"
 	gender = NEUTER
 	attack_verb = list("pecked", "jabbed", "poked")
-	force = 5
+	force = 12
 	sharp = TRUE
 
 /obj/item/natural_weapon/large

@@ -25,8 +25,8 @@ Civilian
 
 /datum/job/assistant
 	title = "Passenger"
-	total_positions = -1
-	spawn_positions = -1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the Executive Officer"
 	economic_power = 6
 	announced = FALSE
@@ -55,7 +55,7 @@ Civilian
 	department_flag = CIV
 	total_positions = 2
 	spawn_positions = 2
-	availablity_chance = 50
+	availablity_chance = 100
 	supervisors = "the invisible hand of the market"
 	ideal_character_age = 30
 	minimal_player_age = 0

@@ -7923,7 +7923,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/port)
 "AD" = (
-/obj/structure/closet/crate/freezer,
+/obj/structure/closet/crate/warhammer/freezer,
 /obj/random/single/cola,
 /obj/random/single/cola,
 /obj/random/single/cola,
@@ -9052,7 +9052,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/auxillary/port)
 "Fm" = (
-/obj/structure/closet/crate/freezer,
+/obj/structure/closet/crate/warhammer/freezer,
 /obj/random/medical,
 /obj/floor_decal/techfloor{
 	dir = 1

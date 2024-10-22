@@ -25,8 +25,6 @@
 		return
 	icon_state = "[initial(icon_state)][amount]"//If there is money then we take our initial icon_state and add the ammount of money in the stack to it.
 
-
-
 /obj/item/stack/thrones/use()
 	. = ..()
 	update_icon()

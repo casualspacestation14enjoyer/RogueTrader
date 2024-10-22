@@ -232,7 +232,7 @@
 	},
 /area/map_template/vox_raider)
 "ck" = (
-/obj/structure/closet/crate/freezer,
+/obj/structure/closet/crate/warhammer/freezer,
 /obj/item/reagent_containers/glass/bottle/antitoxin,
 /obj/item/reagent_containers/glass/bottle/antitoxin,
 /obj/item/reagent_containers/glass/bottle/inaprovaline,
@@ -968,7 +968,7 @@
 /turf/simulated/floor/plating/vox,
 /area/map_template/vox_raider)
 "Xy" = (
-/obj/structure/closet/crate/freezer/meat,
+/obj/structure/closet/crate/warhammer/freezer/meat,
 /obj/item/reagent_containers/food/snacks/meat/beef,
 /obj/item/reagent_containers/food/snacks/meat/beef,
 /obj/item/reagent_containers/food/snacks/meat/beef,

@@ -1822,7 +1822,7 @@
 /turf/simulated/floor/grass/cut,
 /area/abandoned_hotel/lobby)
 "vB" = (
-/obj/structure/closet/crate/freezer{
+/obj/structure/closet/crate/warhammer/freezer{
 	name = "emergency rations"
 	},
 /turf/simulated/floor/tiled,

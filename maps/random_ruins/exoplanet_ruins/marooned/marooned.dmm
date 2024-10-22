@@ -112,7 +112,7 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/map_template/marooned)
 "at" = (
-/obj/structure/closet/crate/freezer,
+/obj/structure/closet/crate/warhammer/freezer,
 /obj/structure/handrail{
 	dir = 4
 	},
@@ -120,7 +120,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/map_template/marooned)
 "au" = (
-/obj/structure/closet/crate/freezer,
+/obj/structure/closet/crate/warhammer/freezer,
 /obj/structure/handrail,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/map_template/marooned)
@@ -141,7 +141,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/map_template/marooned)
 "ay" = (
-/obj/structure/closet/crate/freezer,
+/obj/structure/closet/crate/warhammer/freezer,
 /obj/item/paper/marooned/note04,
 /obj/item/paper/marooned/note05{
 	pixel_x = -3;

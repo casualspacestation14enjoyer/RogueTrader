@@ -277,8 +277,6 @@ var/global/list/worths = list(
 					/obj/item/tank/jetpack = 390,
 					/obj/item/tank = 40,
 					/obj/item/contraband/poster = 25,
-// 40k melee
-					/obj/item/material/ravenor = 100 // This covers all 40k melee's. Their actual values are determined by worth_mult under the item.
 //MATERIAL,
 					/obj/item/material/sword/katana/replica = -120,
 					/obj/item/material/sword/katana = -150,

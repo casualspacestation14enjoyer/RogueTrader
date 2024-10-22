@@ -8269,7 +8269,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/merchant_station)
 "aOe" = (
-/obj/structure/closet/crate/freezer,
+/obj/structure/closet/crate/warhammer/freezer,
 /obj/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/dark,
 /area/merchant_station)
@@ -10489,7 +10489,7 @@
 /turf/simulated/floor/plating,
 /area/merchant_station)
 "aWm" = (
-/obj/structure/closet/crate/freezer,
+/obj/structure/closet/crate/warhammer/freezer,
 /obj/decal/cleanable/dirt,
 /turf/simulated/floor/tiled,
 /area/merchant_station)

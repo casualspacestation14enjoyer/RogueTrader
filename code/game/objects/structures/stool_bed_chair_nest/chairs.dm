@@ -419,3 +419,24 @@
 /obj/structure/bed/chair/pew/left/mahogany
 	color = WOOD_COLOR_RICH
 	pew_material = MATERIAL_MAHOGANY
+
+/obj/structure/bed/chair/throne
+	name = "\the rogue throne"
+	desc = "Fit for baron, count, or even duke. Surely fit for your sorry rear end."
+	base_icon = "throne"
+	icon_state = "throne"
+
+/obj/structure/bed/chair/governor_throne
+	name = "planetary Governor Throne"
+	desc = "An expensive and serious looking chair to use on an office."
+	base_icon = "comm"
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "comm"
+
+
+/obj/structure/bed/chair/ancient_throne
+	name = "ancient throne"
+	desc = "An old throne that seems to be made out of metal, how long it's been there is unknown."
+	base_icon = "Chair"
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "Chair"

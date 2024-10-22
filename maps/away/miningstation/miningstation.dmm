@@ -7496,7 +7496,7 @@
 /turf/simulated/floor/tiled/white,
 /area/miningstation/surgery)
 "ra" = (
-/obj/structure/closet/crate/freezer,
+/obj/structure/closet/crate/warhammer/freezer,
 /obj/floor_decal/corner/blue{
 	dir = 6
 	},

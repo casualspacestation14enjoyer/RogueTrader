@@ -3591,7 +3591,7 @@
 /turf/simulated/floor/steel_dirty,
 /area/map_template/mininghome_lockers)
 "FU" = (
-/obj/structure/closet/crate/freezer/meat,
+/obj/structure/closet/crate/warhammer/freezer/meat,
 /obj/machinery/light/small{
 	dir = 1
 	},

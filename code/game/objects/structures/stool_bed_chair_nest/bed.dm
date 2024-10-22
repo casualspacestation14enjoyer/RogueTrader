@@ -212,3 +212,28 @@
 	name = "dirty mattress"
 	icon_state = "dirty_mattress"
 	desc = "A dirty, smelly mattress covered in body fluids. You wouldn't want to touch this."
+
+/obj/structure/bed/royal
+	name = "royal bed"
+	desc = "For prime comfort in absolute luxury."
+	icon = 'icons/obj/bigbed.dmi'
+	icon_state = "bed"
+
+/obj/structure/bed/royal/bottom
+	name = "royal bed"
+	desc = "For prime comfort in absolute luxury."
+	icon_state = "bed2"
+
+/obj/structure/bed/krootbed
+	name = "kroot bed"
+	desc = "The bed of a Kroot Hunter"
+
+/obj/structure/bed/barrack
+	name = "bunk bed"
+	desc = "For tired soldiers to rest on, aswell as wounded, deceased, dying, and so on."
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "cerb0"
+
+/obj/structure/bed/barrack1
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "cerb1"

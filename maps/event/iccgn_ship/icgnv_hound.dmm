@@ -1185,7 +1185,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/map_template/icgnv_hound)
 "YV" = (
-/obj/structure/closet/crate/freezer,
+/obj/structure/closet/crate/warhammer/freezer,
 /obj/floor_decal/borderfloorblack{
 	dir = 6
 	},

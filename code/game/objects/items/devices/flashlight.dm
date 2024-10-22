@@ -236,6 +236,17 @@
 
 
 // the desk lamps are a bit special
+/obj/item/device/flashlight/candelabra
+	name = "candelabra"
+	desc = "A candle holder with multiple arms. While there's flashlights some nobles prefer this."
+	icon = 'icons/map_project/fluff_items.dmi'
+	icon_state = "candelabrum3"
+	item_state = "candelabrum3"
+	obj_flags = OBJ_FLAG_CONDUCTIBLE
+	flashlight_range = 4
+	w_class = ITEM_SIZE_NORMAL
+	sales_price = 15
+
 /obj/item/device/flashlight/lamp
 	name = "desk lamp"
 	desc = "A desk lamp with an adjustable mount."

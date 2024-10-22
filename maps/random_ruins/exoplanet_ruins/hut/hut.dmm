@@ -35,7 +35,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/template_noop)
 "j" = (
-/obj/structure/closet/crate/freezer/rations,
+/obj/structure/closet/crate/warhammer/freezer/rations,
 /obj/decal/cleanable/cobweb2,
 /turf/simulated/floor/tiled/dark,
 /area/template_noop)

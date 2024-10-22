@@ -25,8 +25,8 @@
 /obj/item/clothing/head/helmet/pilgrimcap/hospitallerhelm
 	name = "blessed head garments"
 	desc = "The holy garments marking the wearer as a member of the Adeptus Sororitas"
-	icon_state = "medical_rig"
-	item_state = "medical_rig"
+	icon_state = "surgcap"
+	item_state = "surgcap"
 	flags_inv = BLOCKHEADHAIR
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-100
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE

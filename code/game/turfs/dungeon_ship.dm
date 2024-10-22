@@ -1,15 +1,3 @@
-/*
-
-A dm file for the dungeon on the planet, an old colony ship from the M21 that was trapped in the Ocean of the planet for thousands of years.
-
-Here's going to be most of what's necessary, taking a dark approach for the dungeon however. If you got complaints then you can go bother me later.
-
-If i knew the spriters whom did most of the assets, i'd credit them, but lifeweb has many contributors and some have left SS13, Rip Dw4o
-
-NOTE: This dungeon is made to be unforgiving, brutal and merciless, but giving exceptional good loot that cant be found anywhere else, it's expected that lone players die horribly here without any support or allies, bring a party like an MMORPG game you fucking dumbasses.
-
-*/
-
 /turf/simulated/floor/ship_floor
 	name = "old steel floor"
 	icon = 'icons/map_project/ship/shiptiles.dmi'

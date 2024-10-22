@@ -269,7 +269,7 @@
 /turf/simulated/floor/tiled,
 /area/map_template/ecship/crew)
 "aP" = (
-/obj/structure/closet/crate/freezer/rations,
+/obj/structure/closet/crate/warhammer/freezer/rations,
 /obj/structure/handrail{
 	dir = 8
 	},

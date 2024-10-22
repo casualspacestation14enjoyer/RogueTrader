@@ -3838,7 +3838,7 @@
 /turf/space,
 /area/space)
 "iS" = (
-/obj/structure/closet/crate/freezer/meat,
+/obj/structure/closet/crate/warhammer/freezer/meat,
 /obj/item/reagent_containers/food/snacks/meat,
 /obj/item/reagent_containers/food/snacks/meat/meatstationmeat,
 /obj/item/reagent_containers/food/snacks/meat/meatstationmeat,
