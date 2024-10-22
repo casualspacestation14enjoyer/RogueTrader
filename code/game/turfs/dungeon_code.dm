@@ -1,6 +1,6 @@
 
 
-/*
+
 
 
 /obj/structure/hivedecor/xenos
@@ -9,22 +9,20 @@
 	icon = 'icons/map_project/port/comm_tower3.dmi'
 	icon_state = "resin_final"
 
-
-
 /obj/structure/hivedecor/vehicle
 	name = "Cargo-8"
 	desc = "An ancient cargo hauler of imperial design."
 	icon = 'icons/map_project/port/van.dmi'
 	icon_state = "van_base"
 
-/obj/structure/closet/warhammer/crate/xenos/cargo8
+/obj/structure/closet/crate/warhammer/xenos/cargo8
 	name = "Cargo-8"
 	desc = "An ancient cargo hauler of imperial design."
 	icon = 'icons/map_project/port/van.dmi'
 	icon_state = "vancrate"
 	icon_opened = "vancrateopen"
 	icon_closed = "vancrate"
-*/
+
 /obj/structure/hivedecor/vehicle/tau
 	name = "Destroyed Tau APC"
 	desc = "A destroyed armored personnel carrier of Tau origin."
@@ -263,37 +261,144 @@
 	icon = 'icons/map_project/port/objects.dmi'
 	icon_state = "rack"
 
-/obj/structure/closet/warhammer/crate/xenos
+/obj/structure/closet/crate/warhammer
+	name = "crate"
+	desc = "A rectangular steel crate."
+	icon = 'icons/obj/storage.dmi'
+	icon_state = "cgold"
+	icon_opened = "cgoldopen"
+	icon_closed = "cgold"
+	health_max = 600
+	closet_appearance = null // If you remove this closets break.
+
+
+/obj/structure/closet/crate/warhammer/freezer
+	name = "freezer"
+	desc = "A freezer."
+	temperature = -16 CELSIUS
+	icon_state = "freezer"
+	icon_opened = "freezeropen"
+	icon_closed = "freezer"
+	var/target_temp = T0C - 40
+	var/cooling_power = 40
+
+/obj/structure/closet/crate/warhammer/freezer/return_air()
+	var/datum/gas_mixture/gas = (..())
+	if(!gas)	return null
+	var/datum/gas_mixture/newgas = new/datum/gas_mixture()
+	newgas.copy_from(gas)
+	if(newgas.temperature <= target_temp)	return
+
+	if((newgas.temperature - cooling_power) > target_temp)
+		newgas.temperature -= cooling_power
+	else
+		newgas.temperature = target_temp
+	return newgas
+
+/obj/structure/closet/crate/warhammer/freezer/ProcessAtomTemperature()
+	return PROCESS_KILL
+
+/obj/structure/closet/crate/warhammer/freezer/rations //For use in the escape shuttle
+	name = "emergency rations"
+	desc = "A crate of emergency rations."
+
+/obj/structure/closet/crate/warhammer/freezer/rations/WillContain()
+	return list(/obj/random/mre = 6, /obj/item/reagent_containers/food/drinks/cans/waterbottle = 12)
+
+/obj/structure/closet/crate/warhammer/freezer/meat
+	name = "meat crate"
+	desc = "A crate of meat."
+
+/obj/structure/closet/crate/warhammer/freezer/meat/WillContain()
+	return list(
+		/obj/item/reagent_containers/food/snacks/meat/beef = 4,
+		/obj/item/reagent_containers/food/snacks/meat/syntiflesh = 4,
+		/obj/random/fish = 8
+	)
+
+
+/obj/structure/closet/crate/warhammer/large
+	name = "large crate"
+	desc = "A hefty metal crate with an electronic locking system."
+	icon = 'icons/obj/storage.dmi'
+	icon_state = "ancientclosed"
+	icon_opened = "ancientopen"
+	icon_closed = "ancientclosed"
+	storage_capacity = 2 * MOB_LARGE
+	storage_types = CLOSET_STORAGE_ITEMS|CLOSET_STORAGE_STRUCTURES
+
+/obj/structure/closet/crate/warhammer/cargo
+	name = "cargo crate"
+	desc = "A hefty metal crate with an electronic locking system."
+	icon = 'icons/obj/storage.dmi'
+	icon_state = "cargo1"
+	icon_opened = "cargo0"
+	icon_closed = "cargo1"
+	storage_capacity = 2 * MOB_LARGE
+	storage_types = CLOSET_STORAGE_ITEMS|CLOSET_STORAGE_STRUCTURES
+
+/obj/structure/closet/crate/warhammer/mining
+	desc = "A mining car. This one doesn't work on rails, but has to be dragged."
+	name = "Mining car (not for rails)"
+	icon = 'icons/obj/storage.dmi'
+	icon_state = "miningcar"
+	icon_opened = "miningcar"
+	icon_closed = "miningcar"
+	storage_capacity = 2 * MOB_LARGE
+	storage_types = CLOSET_STORAGE_ITEMS|CLOSET_STORAGE_STRUCTURES
+
+/obj/structure/closet/crate/warhammer/biohazard
+	name = "biohazard cart"
+	desc = "A heavy, metal cart with wheels."
+	icon_state = "biohazard"
+	icon_opened = "biohazardopen"
+	icon_closed = "biohazard"
+	open_sound = 'sound/items/Deconstruct.ogg'
+	close_sound = 'sound/items/Deconstruct.ogg'
+	setup = CLOSET_HAS_LOCK
+	storage_types = CLOSET_STORAGE_ITEMS|CLOSET_STORAGE_STRUCTURES
+	locked = TRUE
+
+/obj/structure/closet/crate/warhammer/secure
 	name = "secure crate"
+	desc = "A heavy, metal crate with an electronic lock."
+	setup = CLOSET_HAS_LOCK
+	storage_types = CLOSET_STORAGE_ITEMS|CLOSET_STORAGE_STRUCTURES
+	locked = TRUE
+	icon_state = "ecrate"
+	icon_opened = "ecrateopen"
+	icon_closed = "ecrate"
+
+/obj/structure/closet/crate/warhammer/xenos
+	name = "xenos crate"
 	desc = "A xenos secure crate."
 	icon = 'icons/map_project/port/objects.dmi'
 	icon_state = "secure_crate"
 	icon_opened = "secure_crate2"
 	icon_closed = "secure_crate"
 
-/obj/structure/closet/warhammer/crate/xenos/chest
-	name = "secure chest"
+/obj/structure/closet/crate/warhammer/xenos/chest
+	name = "xenos chest"
 	desc = "A xenos secure chest."
 	icon_state = "chest"
 	icon_opened = "chest2"
 	icon_closed = "chest"
-	req_access = list(access_security)
 
-/obj/structure/closet/warhammer/crate/xenos/chest2
-	name = "secure chest"
+/obj/structure/closet/crate/warhammer/xenos/chest2
+	name = "xenos chest"
 	desc = "A xenos secure chest."
 	icon_state = "chest_white"
 	icon_opened = "chest_white2"
 	icon_closed = "chest_white"
 
-/obj/structure/closet/warhammer/crate/xenos/chest3
-	name = "secure chest"
+/obj/structure/closet/crate/warhammer/xenos/chest3
+	name = "xenos chest"
 	desc = "A xenos secure chest."
 	icon_state = "crate_ds_blue1"
 	icon_opened = "crate_ds_blue1_open"
 	icon_closed = "crate_ds_blue1"
 
-/obj/structure/closet/warhammer/crate/xenos/droppod
+/obj/structure/closet/crate/warhammer/xenos/droppod
 	name = "xenos drop pod"
 	desc = "An ancient xenos drop pod."
 	icon = 'icons/map_project/port/droppod_32x64.dmi'
@@ -301,7 +406,7 @@
 	icon_opened = "techpod_open"
 	icon_closed = "techpod_closed"
 
-/obj/structure/closet/warhammer/secure_closet/personal/safe
+/obj/structure/closet/crate/warhammer/secure_closet/personal/safe
 	name = "secure safe"
 	desc = "A secure safe."
 	icon = 'icons/map_project/port/structures.dmi'
@@ -310,7 +415,7 @@
 	icon_closed = "safe"
 	anchored = 1
 
-/obj/structure/closet/warhammer/secure_closet/personal/floorsafe
+/obj/structure/closet/crate/warhammer/secure_closet/personal/floorsafe
 	name = "secure safe"
 	desc = "A secure safe."
 	icon = 'icons/map_project/port/structures.dmi'
@@ -320,6 +425,70 @@
 	anchored = 1
 	density = 0
 
+/obj/structure/closet/warhammer
+	name = "fancy cabinet"
+	desc = "To store rich and fancy things on it."
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "fancyc_closed"
+	icon_opened = "fancyc_open"
+	icon_closed = "fancyc_closed"
+	closet_appearance = null
+
+/obj/structure/closet/warhammer/fancy
+	name = "fancy wardrobe"
+	desc = "Store your exotic and unique clothes here."
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "fancycloset_closed"
+	icon_opened = "fancycloset_open"
+	icon_closed = "fancycloset_closed"
+
+/obj/structure/closet/warhammer/luxury
+	name = "luxurious cabinet"
+	desc = "To keep things such as gold bars, exotic drugs and weapons, now in style."
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "luxuryc_closed"
+	icon_opened = "luxuryc_open"
+	icon_closed = "luxuryc_closed"
+
+/obj/structure/closet/warhammer/wood
+	name = "wooden closet"
+	desc = "Although a bit old, it can still store things with no problem."
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "woode_closed"
+	icon_opened = "woode_open"
+	icon_closed = "woode_closed"
+
+/obj/structure/closet/warhammer/narnia
+	name = "polished wood closet"
+	desc = "Store your fuzzy clothes here, or hope you end in a fantasy world when you enter on it, which wont happen."
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "narnia_closed"
+	icon_opened = "narnia_open"
+	icon_closed = "narnia_closed"
+
+/obj/structure/closet/warhammer/iron_c
+	name = "iron cabinet"
+	desc = "A somewhat rusty iron cabinet."
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "iron_cabinet_closed"
+	icon_opened = "iron_cabinet_open"
+	icon_closed = "iron_cabinet_closed"
+
+/obj/structure/closet/warhammer/darkwood
+	name = "darkwood cabinet"
+	desc = "A darkwood cabinet."
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "dark_cabinet_closed"
+	icon_opened = "dark_cabinet_open"
+	icon_closed = "dark_cabinet_closed"
+
+/obj/structure/closet/warhammer/metal
+	name = "metal locker"
+	desc = "A metal locker, seems to be a bit old."
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "metal_locker_closed"
+	icon_opened = "metal_locker_open"
+	icon_closed = "metal_locker_closed"
 
 // NECRON TOMB - An old mechanicus outpost that was manned by penal units and mechanicus priest studying a tomb, they've been out of contact for several months
 

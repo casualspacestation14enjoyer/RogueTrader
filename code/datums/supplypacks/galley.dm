@@ -13,7 +13,7 @@
 					/obj/item/reagent_containers/glass/bottle/dye/polychromic = 1
 					)
 	cost = 10
-	containertype = /obj/structure/closet/crate/freezer
+	containertype = /obj/structure/closet/crate/warhammer/freezer
 	containername = "kitchen supplies crate"
 
 
@@ -44,21 +44,21 @@
 /singleton/hierarchy/supply_pack/galley/beef
 	name = "Perishables - Beef"
 	contains = list(/obj/item/reagent_containers/food/snacks/meat/beef = 6)
-	containertype = /obj/structure/closet/crate/freezer
+	containertype = /obj/structure/closet/crate/warhammer/freezer
 	containername = "cow meat crate"
 	cost = 20
 
 /singleton/hierarchy/supply_pack/galley/goat
 	name = "Perishables - Goat meat"
 	contains = list(/obj/item/reagent_containers/food/snacks/meat/goat = 6)
-	containertype = /obj/structure/closet/crate/freezer
+	containertype = /obj/structure/closet/crate/warhammer/freezer
 	containername = "goat meat crate"
 	cost = 20
 
 /singleton/hierarchy/supply_pack/galley/chicken
 	name = "Perishables - Poultry"
 	contains = list(/obj/item/reagent_containers/food/snacks/meat/chicken = 6)
-	containertype = /obj/structure/closet/crate/freezer
+	containertype = /obj/structure/closet/crate/warhammer/freezer
 	containername = "chicken meat crate"
 	cost = 20
 
@@ -67,21 +67,21 @@
 	contains = list(
 		/obj/random/fish = 8
 	)
-	containertype = /obj/structure/closet/crate/freezer
+	containertype = /obj/structure/closet/crate/warhammer/freezer
 	containername = "seafood crate"
 	cost = 20
 
 /singleton/hierarchy/supply_pack/galley/eggs
 	name = "Perishables - Eggs"
 	contains = list(/obj/item/storage/fancy/egg_box/full = 2)
-	containertype = /obj/structure/closet/crate/freezer
+	containertype = /obj/structure/closet/crate/warhammer/freezer
 	containername = "egg crate"
 	cost = 15
 
 /singleton/hierarchy/supply_pack/galley/milk
 	name = "Perishables - Milk"
 	contains = list(/obj/item/reagent_containers/food/drinks/milk = 3)
-	containertype = /obj/structure/closet/crate/freezer
+	containertype = /obj/structure/closet/crate/warhammer/freezer
 	containername = "milk crate"
 	cost = 15
 
@@ -89,7 +89,7 @@
 /singleton/hierarchy/supply_pack/galley/thoom
 	name = "Perishables - Th'oom Juice"
 	contains = list(/obj/item/reagent_containers/food/drinks/bottle/thoom = 2)
-	containertype = /obj/structure/closet/crate/freezer
+	containertype = /obj/structure/closet/crate/warhammer/freezer
 	containername = "th'oom juice crate"
 	cost = 10
 
@@ -105,7 +105,7 @@
 		/obj/item/pizzabox/fruit
 	)
 	cost = 15
-	containertype = /obj/structure/closet/crate/freezer
+	containertype = /obj/structure/closet/crate/warhammer/freezer
 	containername = "pizza crate"
 	supply_method = /singleton/supply_method/randomized
 
@@ -123,7 +123,7 @@
 					/obj/item/storage/mre/menu9,
 					/obj/item/storage/mre/menu10)
 	cost = 30
-	containertype = /obj/structure/closet/crate/freezer
+	containertype = /obj/structure/closet/crate/warhammer/freezer
 	containername = "emergency rations"
 	supply_method = /singleton/supply_method/randomized
 
@@ -153,7 +153,7 @@
 	contains = list(/obj/item/reagent_containers/food/drinks/bottle/premiumwine = 1,
 					/obj/item/reagent_containers/food/drinks/bottle/premiumvodka = 1)
 	cost = 60
-	containertype = /obj/structure/closet/crate/freezer
+	containertype = /obj/structure/closet/crate/warhammer/freezer
 	containername = "premium drinks crate"
 
 /singleton/hierarchy/supply_pack/galley/barsupplies

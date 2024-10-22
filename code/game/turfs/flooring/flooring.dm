@@ -155,137 +155,6 @@
 	flags = TURF_REMOVE_SCREWDRIVER
 	footstep_type = /singleton/footsteps/tiles
 
-/singleton/flooring/tiling
-	name = "floor"
-	desc = "A solid, heavy set of flooring plates."
-	icon = 'icons/turf/flooring/tiles.dmi'
-	icon_base = "tiled"
-	color = COLOR_DARK_GUNMETAL
-	has_damage_range = 4
-	damage_temperature = T0C+1400
-	flags = TURF_REMOVE_CROWBAR | TURF_CAN_BREAK | TURF_CAN_BURN
-	build_type = /obj/item/stack/tile/floor
-	can_paint = 1
-	footstep_type = /singleton/footsteps/tiles
-
-/singleton/flooring/tiling/mono
-	icon_base = "monotile"
-	build_type = /obj/item/stack/tile/mono
-
-/singleton/flooring/tiling/mono/dark
-	color = COLOR_DARK_GRAY
-	build_type = /obj/item/stack/tile/mono/dark
-
-/singleton/flooring/tiling/mono/white
-	icon_base = "monotile_light"
-	color = COLOR_OFF_WHITE
-	build_type = /obj/item/stack/tile/mono/white
-
-/singleton/flooring/tiling/white
-	icon_base = "tiled_light"
-	desc = "How sterile."
-	color = COLOR_OFF_WHITE
-	build_type = /obj/item/stack/tile/floor_white
-
-/singleton/flooring/tiling/dark
-	desc = "How ominous."
-	color = COLOR_DARK_GRAY
-	build_type = /obj/item/stack/tile/floor_dark
-
-/singleton/flooring/tiling/dark/mono
-	icon_base = "monotile"
-	build_type = null
-
-/singleton/flooring/tiling/freezer
-	desc = "Don't slip."
-	icon_base = "freezer"
-	color = null
-	has_damage_range = null
-	flags = TURF_REMOVE_CROWBAR
-	build_type = /obj/item/stack/tile/floor_freezer
-
-/singleton/flooring/tiling/tech
-	icon = 'icons/turf/flooring/techfloor.dmi'
-	icon_base = "techfloor_gray"
-	build_type = /obj/item/stack/tile/techgrey
-	color = null
-
-/singleton/flooring/tiling/tech/grid
-	icon_base = "techfloor_grid"
-	build_type = /obj/item/stack/tile/techgrid
-
-/singleton/flooring/tiling/new_tile
-	icon_base = "tile_full"
-	color = null
-	build_type = null
-
-/singleton/flooring/tiling/new_tile/cargo_one
-	icon_base = "cargo_one_full"
-	build_type = null
-
-/singleton/flooring/tiling/new_tile/kafel
-	icon_base = "kafel_full"
-	build_type = null
-
-/singleton/flooring/tiling/stone
-	icon_base = "stone"
-	build_type = /obj/item/stack/tile/stone
-
-/singleton/flooring/tiling/new_tile/techmaint
-	icon_base = "techmaint"
-	build_type = /obj/item/stack/tile/techmaint
-
-/singleton/flooring/tiling/new_tile/monofloor
-	icon_base = "monofloor"
-	color = COLOR_GUNMETAL
-
-/singleton/flooring/tiling/new_tile/steel_grid
-	icon_base = "grid"
-	color = COLOR_GUNMETAL
-	build_type = /obj/item/stack/tile/grid
-
-/singleton/flooring/tiling/new_tile/steel_ridged
-	icon_base = "ridged"
-	color = COLOR_GUNMETAL
-	build_type = /obj/item/stack/tile/ridge
-
-/singleton/flooring/wood
-	name = "wooden floor"
-	desc = "Polished wood planks."
-	icon = 'icons/turf/flooring/wood.dmi'
-	icon_base = "wood"
-	has_damage_range = 6
-	damage_temperature = T0C+200
-	descriptor = "planks"
-	build_type = /obj/item/stack/tile/wood
-	flags = TURF_CAN_BREAK | TURF_IS_FRAGILE | TURF_REMOVE_SCREWDRIVER
-	footstep_type = /singleton/footsteps/wood
-	color = WOOD_COLOR_GENERIC
-
-/singleton/flooring/wood/mahogany
-	color = WOOD_COLOR_RICH
-	build_type = /obj/item/stack/tile/mahogany
-
-/singleton/flooring/wood/maple
-	color = WOOD_COLOR_PALE
-	build_type = /obj/item/stack/tile/maple
-
-/singleton/flooring/wood/ebony
-	color = WOOD_COLOR_BLACK
-	build_type = /obj/item/stack/tile/ebony
-
-/singleton/flooring/wood/walnut
-	color = WOOD_COLOR_CHOCOLATE
-	build_type = /obj/item/stack/tile/walnut
-
-/singleton/flooring/wood/bamboo
-	color = WOOD_COLOR_PALE2
-	build_type = /obj/item/stack/tile/bamboo
-
-/singleton/flooring/wood/yew
-	color = WOOD_COLOR_YELLOW
-	build_type = /obj/item/stack/tile/yew
-
 /singleton/flooring/reinforced
 	name = "reinforced floor"
 	desc = "Heavily reinforced with steel plating."
@@ -425,16 +294,102 @@
 
 
 
-// WARHAMMER 40k
+// WARHAMMER
 
-/singleton/flooring/tiling/steel
+/singleton/flooring/tiling
 	name = "floor"
-	desc = "Scuffed from the passage of countless menials."
+	desc = "A solid, heavy set of flooring plates."
 	icon = 'icons/turf/flooring/tiles.dmi'
 	icon_base = "steel"
 	color = null
-	has_base_range = 3
+	has_damage_range = 4
 	damage_temperature = T0C+1400
+	flags = TURF_REMOVE_CROWBAR | TURF_CAN_BREAK | TURF_CAN_BURN
+	build_type = /obj/item/stack/tile/floor
+	can_paint = 1
+	footstep_type = /singleton/footsteps/tiles
+
+/singleton/flooring/tiling/mono
+	icon_base = "monotile"
+	build_type = /obj/item/stack/tile/mono
+
+/singleton/flooring/tiling/mono/dark
+	color = COLOR_DARK_GRAY
+	build_type = /obj/item/stack/tile/mono/dark
+
+/singleton/flooring/tiling/mono/white
+	icon_base = "monotile_light"
+	color = COLOR_OFF_WHITE
+	build_type = /obj/item/stack/tile/mono/white
+
+/singleton/flooring/tiling/white2
+	icon_base = "tiled_light"
+	desc = "How sterile."
+	color = COLOR_OFF_WHITE
+	build_type = /obj/item/stack/tile/floor_white
+
+/singleton/flooring/tiling/dark2
+	desc = "How ominous."
+	color = COLOR_DARK_GRAY
+	build_type = /obj/item/stack/tile/floor_dark
+
+/singleton/flooring/tiling/dark/mono
+	icon_base = "monotile"
+	build_type = null
+
+/singleton/flooring/tiling/freezer2
+	desc = "Don't slip."
+	icon_base = "freezer"
+	color = null
+	has_damage_range = null
+	flags = TURF_REMOVE_CROWBAR
+	build_type = /obj/item/stack/tile/floor_freezer
+
+/singleton/flooring/tiling/tech
+	icon = 'icons/turf/flooring/techfloor.dmi'
+	icon_base = "techfloor_gray"
+	build_type = /obj/item/stack/tile/techgrey
+	color = null
+
+/singleton/flooring/tiling/tech/grid
+	icon_base = "techfloor_grid"
+	build_type = /obj/item/stack/tile/techgrid
+
+/singleton/flooring/tiling/new_tile
+	icon_base = "tile_full"
+	color = null
+	build_type = null
+
+/singleton/flooring/tiling/new_tile/cargo_one
+	icon_base = "cargo_one_full"
+	build_type = null
+
+/singleton/flooring/tiling/new_tile/kafel
+	icon_base = "kafel_full"
+	build_type = null
+
+/singleton/flooring/tiling/stone
+	icon_base = "stone"
+	build_type = /obj/item/stack/tile/stone
+
+/singleton/flooring/tiling/new_tile/techmaint
+	icon_base = "techmaint"
+	build_type = /obj/item/stack/tile/techmaint
+
+/singleton/flooring/tiling/new_tile/monofloor
+	icon_base = "monofloor"
+	color = COLOR_GUNMETAL
+
+/singleton/flooring/tiling/new_tile/steel_grid
+	icon_base = "grid"
+	color = COLOR_GUNMETAL
+	build_type = /obj/item/stack/tile/grid
+
+/singleton/flooring/tiling/new_tile/steel_ridged
+	icon_base = "ridged"
+	color = COLOR_GUNMETAL
+	build_type = /obj/item/stack/tile/ridge
+
 
 /singleton/flooring/tiling/stone
 	icon_base = "stone"
@@ -448,9 +403,6 @@
 	icon_base = "white"
 	color = null
 	build_type = /obj/item/stack/tile/floor_white
-
-/singleton/flooring/tiling/white/mono
-	icon_base = "monotile"
 
 /singleton/flooring/tiling/dark
 	desc = "How ominous."
@@ -471,14 +423,40 @@
 
 /singleton/flooring/wood
 	name = "wooden floor"
-	desc = "Polished redwood planks."
+	desc = "Polished wood planks."
 	icon = 'icons/turf/flooring/wood.dmi'
 	icon_base = "wood"
 	has_damage_range = 6
 	damage_temperature = T0C+200
-	build_type = /obj/item/stack/tile/wood
 	descriptor = "planks"
-	flags = TURF_CAN_BREAK | TURF_IS_FRAGILE | TURF_CAN_BURN
+	build_type = /obj/item/stack/tile/wood
+	flags = TURF_CAN_BREAK | TURF_IS_FRAGILE | TURF_REMOVE_SCREWDRIVER
+	footstep_type = /singleton/footsteps/wood
+	color = WOOD_COLOR_GENERIC
+
+/singleton/flooring/wood/mahogany
+	color = WOOD_COLOR_RICH
+	build_type = /obj/item/stack/tile/mahogany
+
+/singleton/flooring/wood/maple
+	color = WOOD_COLOR_PALE
+	build_type = /obj/item/stack/tile/maple
+
+/singleton/flooring/wood/ebony
+	color = WOOD_COLOR_BLACK
+	build_type = /obj/item/stack/tile/ebony
+
+/singleton/flooring/wood/walnut
+	color = WOOD_COLOR_CHOCOLATE
+	build_type = /obj/item/stack/tile/walnut
+
+/singleton/flooring/wood/bamboo
+	color = WOOD_COLOR_PALE2
+	build_type = /obj/item/stack/tile/bamboo
+
+/singleton/flooring/wood/yew
+	color = WOOD_COLOR_YELLOW
+	build_type = /obj/item/stack/tile/yew
 
 /singleton/flooring/new_wood
 	name = "wooden floor"
@@ -537,56 +515,6 @@
 	apply_thermal_conductivity = 0.025
 	apply_heat_capacity = 325000
 
-/singleton/flooring/reinforced/circuit
-	name = "processing strata"
-	icon = 'icons/turf/flooring/circuit.dmi'
-	icon_base = "bcircuit"
-	build_type = null
-	flags = TURF_ACID_IMMUNE | TURF_CAN_BREAK | TURF_REMOVE_WRENCH
-
-/singleton/flooring/reinforced/circuit/green
-	icon_base = "gcircuit"
-
-/singleton/flooring/reinforced/circuit/red
-	icon_base = "rcircuit"
-	flags = TURF_ACID_IMMUNE
-
-/singleton/flooring/reinforced/cult
-	name = "engraved floor"
-	desc = "Unsettling whispers waver from the surface..."
-	icon = 'icons/turf/flooring/cult.dmi'
-	icon_base = "cult"
-	build_type = null
-	has_damage_range = 6
-	flags = TURF_ACID_IMMUNE | TURF_CAN_BREAK | TURF_REMOVE_WRENCH
-
-/singleton/flooring/reinforced/shuttle
-	name = "floor"
-	icon = 'icons/turf/shuttle.dmi'
-	build_type = null
-	flags = TURF_ACID_IMMUNE | TURF_CAN_BREAK | TURF_REMOVE_WRENCH
-
-/singleton/flooring/reinforced/shuttle/blue
-	icon_base = "floor"
-
-/singleton/flooring/reinforced/shuttle/yellow
-	icon_base = "floor2"
-
-/singleton/flooring/reinforced/shuttle/white
-	icon_base = "floor3"
-
-/singleton/flooring/reinforced/shuttle/red
-	icon_base = "floor4"
-
-/singleton/flooring/reinforced/shuttle/purple
-	icon_base = "floor5"
-
-/singleton/flooring/reinforced/shuttle/darkred
-	icon_base = "floor6"
-
-/singleton/flooring/reinforced/shuttle/black
-	icon_base = "floor7"
-
 /singleton/flooring/diona
 	name = "biomass"
 	desc = "a mass of small intertwined aliens forming a floor... Creepy."
@@ -604,13 +532,6 @@
 
 /singleton/flooring/reinforced/ramp/bottom
 	icon_base = "rampbot"
-
-/singleton/flooring/diona
-	name = "biomass"
-	desc = "a mass of small intertwined aliens forming a floor... Creepy."
-	icon = 'icons/turf/floors.dmi'
-	icon_base = "diona"
-	flags = TURF_ACID_IMMUNE | TURF_REMOVE_SHOVEL
 
 /singleton/flooring/snow
 	name = "snow"

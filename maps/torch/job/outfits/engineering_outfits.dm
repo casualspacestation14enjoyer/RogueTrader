@@ -22,7 +22,7 @@
 	pda_type = /obj/item/modular_computer/pda/heads/ce
 	pda_slot = slot_l_store
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest
-	backpack_contents = list(/obj/item/pen = 1, /obj/item/gun/energy/lasgun/laspistol/accatran = 1)
+	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/gun/energy/lasgun/laspistol/accatran = 1)
 
 /singleton/hierarchy/outfit/job/torch/crew/engineering/senior_engineer/fleet
 	name = OUTFIT_JOB_NAME("Senior Engineer - Fleet")
@@ -46,7 +46,7 @@
 	pda_type = /obj/item/modular_computer/pda/engineering
 	pda_slot = slot_l_store
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest
-	backpack_contents = list(/obj/item/pen = 1, /obj/item/gun/energy/lasgun/laspistol = 1)
+	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/gun/energy/lasgun/laspistol = 1)
 
 /singleton/hierarchy/outfit/job/torch/crew/engineering/bondsman
 	name = OUTFIT_JOB_NAME("Bondsman")
@@ -65,7 +65,7 @@
 	pda_type = /obj/item/modular_computer/pda/engineering
 	pda_slot = slot_l_store
 	back = /obj/item/storage/backpack/satchel/warfare/heavy
-	backpack_contents = list(/obj/item/pen = 1, /obj/item/material/twohanded/ravenor/knife/trench)
+	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/material/twohanded/ravenor/knife/trench)
 
 /singleton/hierarchy/outfit/job/torch/crew/engineering/engineer/fleet
 	name = OUTFIT_JOB_NAME("Engineer - Fleet")

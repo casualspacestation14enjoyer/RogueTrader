@@ -891,7 +891,7 @@
 /turf/simulated/floor/tiled,
 /area/smugglers/dorms)
 "ci" = (
-/obj/structure/closet/crate/freezer/rations,
+/obj/structure/closet/crate/warhammer/freezer/rations,
 /obj/decal/cleanable/cobweb2,
 /obj/decal/cleanable/dirt,
 /turf/simulated/floor/tiled,

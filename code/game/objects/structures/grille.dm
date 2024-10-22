@@ -268,3 +268,78 @@
 	to_chat(user, SPAN_NOTICE("You assemble a grille"))
 	ST.in_use = 0
 	F.add_fingerprint(user)
+
+/obj/structure/grille/warhammer/on_update_icon()
+	return
+
+/obj/structure/grille/warhammer/use_tool(obj/item/tool, mob/user, list/click_params)
+	// Plasma Cutter - Cut grille
+	if (istype(tool, /obj/item/gun/energy/plasmacutter))
+		var/obj/item/gun/energy/plasmacutter/plasmacutter = tool
+		if (!plasmacutter.slice(user))
+			return TRUE
+		playsound(src, 'sound/items/Welder.ogg', 50, TRUE)
+		dismantle()
+		user.visible_message(
+			SPAN_NOTICE("\The [user] cuts \the [src] apart with \a [tool]."),
+			SPAN_NOTICE("You cut \the [src] apart with \the [tool].")
+		)
+		return TRUE
+
+	// Wirecutter - Cut grille
+	if (isWirecutter(tool))
+		if(prob(10))
+			playsound(src, 'sound/items/Wirecutter.ogg', 50, TRUE)
+			dismantle()
+			user.visible_message(
+				SPAN_NOTICE("\The [user] cuts \the [src] apart with \a [tool]."),
+				SPAN_NOTICE("You cut \the [src] apart with \the [tool].")
+			)
+			return TRUE
+		else
+			playsound(src, 'sound/items/Wirecutter.ogg', 50, TRUE)
+			user.visible_message(
+				SPAN_NOTICE("\The [user] struggles to cut \the [src] apart with \a [tool]."),
+				SPAN_NOTICE("You struggle to cut \the [src] apart with \the [tool].")
+			)
+			return TRUE
+
+
+	// Material Stack - Place window
+	if (istype(tool, /obj/item/stack/material))
+		var/obj/item/stack/material/stack = tool
+		if (stack.material.opacity > 0.7)
+			USE_FEEDBACK_FAILURE("\The [tool] cannot be used to make a window.")
+			return TRUE
+		place_window(user, loc, tool)
+		return TRUE
+
+	return ..()
+
+/obj/structure/grille/warhammer
+	name = "iron fence"
+	desc = "An iron fence, to keep people from going inside or outside."
+	icon = 'icons/map_project/fence.dmi'
+	icon_state = "iron"
+	health_max = 350 // Near the Governor garden, so it should hold at least a bit more
+
+/obj/structure/grille/warhammer/fence
+	name = "fence"
+	desc = "A fence, to keep people from going inside or outside."
+	icon = 'icons/map_project/fence.dmi'
+	icon_state = "fence1"
+	health_max = 200 // Standard Fence, cant be crafted sadly, should be on industrial areas & such on the map
+
+/obj/structure/grille/warhammer/metal_bars
+	name = "metal bars"
+	desc = "A pair of metal bars that allow liquids to go through, but not solid objects, at least big ones"
+	icon = 'icons/map_project/fence.dmi'
+	icon_state = "bars"
+	health_max = 300 // Metal bars are meant to be strong so..
+
+/obj/structure/grille/warhammer/cell
+	name = "cell bars"
+	desc = "A pair of metal bars, these seem to be very resistant to stop anyone from going in and out."
+	icon = 'icons/map_project/fence.dmi'
+	icon_state = "bars"
+	health_max = 1500 // Absolutely STRONG, can be cut easily with wirecutters, but dont want anyone just slamming their fists on it for 20

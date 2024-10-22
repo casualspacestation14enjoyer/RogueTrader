@@ -3575,7 +3575,7 @@
 /turf/simulated/floor/tiled/freezer,
 /area/errant_pisces/dorms)
 "iJ" = (
-/obj/structure/closet/crate/freezer,
+/obj/structure/closet/crate/warhammer/freezer,
 /turf/simulated/floor/tiled/freezer,
 /area/errant_pisces/dorms)
 "iK" = (
@@ -4370,7 +4370,7 @@
 /turf/simulated/floor/tiled,
 /area/errant_pisces/cryo)
 "kO" = (
-/obj/structure/closet/crate/freezer/rations,
+/obj/structure/closet/crate/warhammer/freezer/rations,
 /turf/simulated/floor/plating,
 /area/errant_pisces/general_storage)
 "kP" = (
@@ -4475,7 +4475,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/obj/structure/closet/crate/freezer/rations,
+/obj/structure/closet/crate/warhammer/freezer/rations,
 /turf/simulated/floor/plating,
 /area/errant_pisces/general_storage)
 "li" = (

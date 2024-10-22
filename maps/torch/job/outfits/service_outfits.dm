@@ -35,7 +35,7 @@
 	id_types = list(/obj/item/card/id/torch/crew/service/magister)
 	pda_type = /obj/item/modular_computer/pda
 	l_pocket = /obj/item/device/flashlight/lantern
-	backpack_contents = list(/obj/item/pen = 1, /obj/item/material/twohanded/ravenor/knife = 1, /obj/item/ammo_magazine/shotholder/flechette = 1)
+	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/material/twohanded/ravenor/knife = 1, /obj/item/ammo_magazine/shotholder/flechette = 1)
 
 /singleton/hierarchy/outfit/job/torch/crew/service/janitor
 	name = OUTFIT_JOB_NAME("Chamber Assistant")
@@ -63,7 +63,7 @@
 	id_types = list(/obj/item/card/id/torch/crew/service/chaplain)
 	l_pocket = /obj/item/device/flashlight/lantern
 	pda_type = /obj/item/modular_computer/pda
-	backpack_contents = list(/obj/item/pen = 1, /obj/item/material/twohanded/ravenor/knife = 1)
+	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/material/twohanded/ravenor/knife = 1)
 
 
 /singleton/hierarchy/outfit/job/torch/crew/service/guest/fleet

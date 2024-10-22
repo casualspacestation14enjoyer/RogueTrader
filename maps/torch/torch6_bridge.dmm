@@ -7766,7 +7766,7 @@
 	},
 /obj/floor_decal/industrial/outline/yellow,
 /obj/machinery/light,
-/obj/structure/closet/crate/freezer/rations,
+/obj/structure/closet/crate/warhammer/freezer/rations,
 /turf/simulated/floor/tiled/techfloor,
 /area/aquila/storage)
 "tN" = (

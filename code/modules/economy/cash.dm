@@ -179,7 +179,7 @@
 	return
 
 /obj/item/spacecash/ewallet
-	name = "Munitorum Dataslate"
+	name = "mercantile dataslate"
 	icon_state = "munitorium_efundcard"
 	desc = "A dataslate that holds an amount of money."
 	var/owner_name = "" //So the ATM can set it so the EFTPOS can put a valid name on transactions.

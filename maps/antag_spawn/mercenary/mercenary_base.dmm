@@ -1790,7 +1790,7 @@
 /turf/simulated/floor/plating,
 /area/map_template/merc_shuttle)
 "uJ" = (
-/obj/structure/closet/crate/freezer,
+/obj/structure/closet/crate/warhammer/freezer,
 /obj/item/reagent_containers/glass/bottle/antitoxin,
 /obj/item/reagent_containers/glass/bottle/antitoxin,
 /obj/item/reagent_containers/glass/bottle/inaprovaline,

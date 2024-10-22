@@ -33,34 +33,53 @@
 	var/icon_broken = "sparks"
 	var/icon_off
 
-/obj/structure/closet/warhammer/update_icon()
+/obj/structure/closet/on_update_icon()
+	if(opened)
+		icon_state = "open"
+		ClearOverlays()
+	else
+		if(broken)
+			icon_state = "closed_emagged[welded ? "_welded" : ""]"
+		else
+			if(locked)
+				icon_state = "closed_locked[welded ? "_welded" : ""]"
+			else
+				icon_state = "closed_unlocked[welded ? "_welded" : ""]"
+			ClearOverlays()
+
+/obj/structure/closet/warhammer/on_update_icon() // closets
 	if(!opened)
 		if(broken && icon_off)
 			icon_state = icon_off
 			overlays += icon_broken
-		else if((setup & CLOSET_HAS_LOCK) && locked && icon_locked)
+		else if(locked)
 			icon_state = icon_locked
 		else
 			icon_state = icon_closed
-		if(welded)
-			overlays += "welded"
+		ClearOverlays()
 	else
 		icon_state = icon_opened
+		ClearOverlays()
+
+/obj/structure/closet/crate/warhammer/on_update_icon() // crates
+	if(!opened)
+		if(broken && icon_off)
+			icon_state = icon_off
+			overlays += icon_broken
+		else if(locked)
+			icon_state = icon_locked
+		else
+			icon_state = icon_closed
+		ClearOverlays()
+	else
+		icon_state = icon_opened
+		ClearOverlays()
 
 /obj/structure/closet/Initialize()
 	..()
 
 	if((setup & CLOSET_HAS_LOCK))
 		verbs += /obj/structure/closet/proc/togglelock_verb
-
-	if(ispath(closet_appearance))
-		var/singleton/closet_appearance/app = GET_SINGLETON(closet_appearance)
-		if(app)
-			icon = app.icon
-			color = null
-			queue_icon_update()
-
-	material = SSmaterials.get_material_by_name(material)
 
 	return INITIALIZE_HINT_LATELOAD
 
@@ -445,20 +464,6 @@
 		src.toggle(usr)
 	else
 		to_chat(usr, SPAN_WARNING("This mob type can't use this verb."))
-
-/obj/structure/closet/on_update_icon()
-	if(opened)
-		icon_state = "open"
-		ClearOverlays()
-	else
-		if(broken)
-			icon_state = "closed_emagged[welded ? "_welded" : ""]"
-		else
-			if(locked)
-				icon_state = "closed_locked[welded ? "_welded" : ""]"
-			else
-				icon_state = "closed_unlocked[welded ? "_welded" : ""]"
-			ClearOverlays()
 
 /obj/structure/closet/on_death()
 	dump_contents()

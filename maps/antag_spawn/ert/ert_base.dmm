@@ -3168,7 +3168,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/map_template/rescue_base/start)
 "gs" = (
-/obj/structure/closet/crate/freezer/rations,
+/obj/structure/closet/crate/warhammer/freezer/rations,
 /turf/simulated/floor/plating,
 /area/map_template/rescue_base/start)
 "gt" = (

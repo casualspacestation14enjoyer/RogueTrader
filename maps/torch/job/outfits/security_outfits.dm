@@ -21,7 +21,7 @@
 	id_types = list(/obj/item/card/id/torch/crew/security/enforcer_sgt)
 	pda_type = /obj/item/modular_computer/pda/security
 	back = /obj/item/storage/backpack/satchel/warfare
-	backpack_contents = list(/obj/item/pen = 1, /obj/item/material/twohanded/ravenor/knife/bowie = 1, /obj/item/ammo_magazine/bolt_pistol_magazine = 2, /obj/item/device/flashlight/flare = 1)
+	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/material/twohanded/ravenor/knife/bowie = 1, /obj/item/ammo_magazine/bolt_pistol_magazine = 2, /obj/item/device/flashlight/flare = 1)
 
 /singleton/hierarchy/outfit/job/torch/crew/security/enforcer
 	name = OUTFIT_JOB_NAME("Enforcer")
@@ -40,7 +40,7 @@
 	id_types = list(/obj/item/card/id/torch/crew/security)
 	pda_type = /obj/item/modular_computer/pda/security
 	back = /obj/item/storage/backpack/satchel/warfare
-	backpack_contents = list(/obj/item/pen = 1, /obj/item/material/twohanded/ravenor/knife = 1, /obj/item/ammo_magazine/magnum/ms = 2, /obj/item/device/flashlight/flare = 1)
+	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/material/twohanded/ravenor/knife = 1, /obj/item/ammo_magazine/magnum/ms = 2, /obj/item/device/flashlight/flare = 1)
 
 
 /singleton/hierarchy/outfit/job/torch/crew/security/cadian
@@ -60,7 +60,7 @@
 	id_types = list(/obj/item/card/id/torch/crew/security)
 	pda_type = /obj/item/modular_computer/pda/security
 	back = /obj/item/storage/backpack/satchel/warfare/heavy
-	backpack_contents = list(/obj/item/pen = 1, /obj/item/material/twohanded/ravenor/knife/trench = 1, /obj/item/cell/device/high/laspack/hotshot = 2, /obj/item/cell/device/high/laspack = 1, /obj/item/device/flashlight/flare = 1)
+	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/material/twohanded/ravenor/knife/trench = 1, /obj/item/cell/device/high/laspack/hotshot = 2, /obj/item/cell/device/high/laspack = 1, /obj/item/device/flashlight/flare = 1)
 
 /singleton/hierarchy/outfit/job/torch/crew/security/valhallan
 	name = OUTFIT_JOB_NAME("Valhallan Guardsman")
@@ -79,7 +79,7 @@
 	id_types = list(/obj/item/card/id/torch/crew/security)
 	pda_type = /obj/item/modular_computer/pda/security
 	back = /obj/item/storage/backpack/satchel/warfare/heavy
-	backpack_contents = list(/obj/item/pen = 1, /obj/item/material/twohanded/ravenor/knife = 1, /obj/item/ammo_magazine/autogun/militarum/ap = 3, /obj/item/cell/device/high/laspack = 1, /obj/item/device/flashlight/flare = 1)
+	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/material/twohanded/ravenor/knife = 1, /obj/item/ammo_magazine/autogun/militarum/ap = 3, /obj/item/cell/device/high/laspack = 1, /obj/item/device/flashlight/flare = 1)
 
 /singleton/hierarchy/outfit/job/torch/crew/security/krieg
 	name = OUTFIT_JOB_NAME("Krieg Guardsman")
@@ -98,7 +98,7 @@
 	id_types = list(/obj/item/card/id/torch/crew/security)
 	pda_type = /obj/item/modular_computer/pda/security
 	back = /obj/item/storage/backpack/satchel/krieger
-	backpack_contents = list(/obj/item/pen = 1, /obj/item/material/twohanded/ravenor/knife/trench = 1, /obj/item/cell/device/high/laspack/hotshot = 3, /obj/item/device/flashlight/flare = 1)
+	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/material/twohanded/ravenor/knife/trench = 1, /obj/item/cell/device/high/laspack/hotshot = 3, /obj/item/device/flashlight/flare = 1)
 
 /singleton/hierarchy/outfit/job/torch/crew/security/catachan
 	name = OUTFIT_JOB_NAME("Catachan Sergeant")
@@ -117,7 +117,7 @@
 	id_types = list(/obj/item/card/id/torch/crew/security)
 	pda_type = /obj/item/modular_computer/pda/security
 	back = /obj/item/storage/backpack/satchel/warfare
-	backpack_contents = list(/obj/item/pen = 1, /obj/item/cell/device/high/laspack/hotshot = 2, /obj/item/ammo_magazine/shotholder/ms = 1, /obj/item/device/flashlight/flare = 1)
+	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/cell/device/high/laspack/hotshot = 2, /obj/item/ammo_magazine/shotholder/ms = 1, /obj/item/device/flashlight/flare = 1)
 
 
 /singleton/hierarchy/outfit/job/torch/crew/security/maccabian
@@ -137,7 +137,7 @@
 	id_types = list(/obj/item/card/id/torch/crew/security)
 	pda_type = /obj/item/modular_computer/pda/security
 	back = /obj/item/storage/backpack/satchel/maccabian
-	backpack_contents = list(/obj/item/pen = 1, /obj/item/material/twohanded/ravenor/knife/glaive = 1, /obj/item/ammo_magazine/autogunheavy = 2, /obj/item/ammo_magazine/pistol/small/ap)
+	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/material/twohanded/ravenor/knife/glaive = 1, /obj/item/ammo_magazine/autogunheavy = 2, /obj/item/ammo_magazine/pistol/small/ap)
 
 /singleton/hierarchy/outfit/job/torch/crew/security/enforcer/fleet
 	name = OUTFIT_JOB_NAME("Master at Arms - Fleet")

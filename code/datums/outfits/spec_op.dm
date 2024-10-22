@@ -69,20 +69,37 @@
 
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_RESET_EQUIPMENT
 
-/singleton/hierarchy/outfit/mercenary/syndicate
-	name = "Spec Ops - Heretic"
-	suit = /obj/item/clothing/suit/armor/vest
-	mask = /obj/item/clothing/mask/gas
-	head = /obj/item/clothing/head/helmet/swat
-	shoes = /obj/item/clothing/shoes/swat
-	id_desc = "Heretic Operative"
+/singleton/hierarchy/outfit/mercenary/infardi
+	name = "Infardi Militia"
+	suit = /obj/item/clothing/suit/armor/grim/cult/militia
+	mask = /obj/item/clothing/mask/gas/prac_mask
+	head = /obj/item/clothing/head/helmet/flak/chaos/heretic
+	shoes = /obj/item/clothing/shoes/jackboots/pilgrim_boots
+	id_desc = "Infardi"
 
-/singleton/hierarchy/outfit/mercenary/syndicate/commando
-	name = "Spec Ops - Heretic Commando"
-	suit = /obj/item/clothing/suit/space/void/merc
-	mask = /obj/item/clothing/mask/gas/syndicate
-	head = /obj/item/clothing/head/helmet/space/void/merc
-	back = /obj/item/tank/jetpack/oxygen
+/singleton/hierarchy/outfit/mercenary/infardi/trooper
+	name = "Infardi Trooper"
+	suit = /obj/item/clothing/suit/armor/grim/cult/sekite
+	mask = /obj/item/clothing/mask/gas/prac_mask
+	head = /obj/item/clothing/head/helmet/flak/chaos/heretic
+	shoes = /obj/item/clothing/shoes/jackboots/pilgrim_boots
+	l_pocket = /obj/item/tank/oxygen_emergency
+	id_desc = "Infardi Trooper"
+
+/singleton/hierarchy/outfit/mercenary/bloodpact
+	name = "Bloodpact Soldier"
+	suit = /obj/item/clothing/suit/armor/grim/cult/bloodpact
+	mask = /obj/item/clothing/mask/gas/prac_mask
+	head = /obj/item/clothing/head/helmet/flak/chaos/bloodpact
+	shoes = /obj/item/clothing/shoes/jackboots/noble
+	id_desc = "Infardi"
+
+/singleton/hierarchy/outfit/mercenary/bloodpact/commando
+	name = "Bloodpact Commando"
+	suit = /obj/item/clothing/suit/armor/grim/cult/bloodpact
+	mask = /obj/item/clothing/mask/gas/prac_mask
+	head = /obj/item/clothing/head/helmet/flak/chaos/bloodpact
+	shoes = /obj/item/clothing/shoes/jackboots/noble
 	l_pocket = /obj/item/tank/oxygen_emergency
 
 /singleton/hierarchy/outfit/foundation

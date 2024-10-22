@@ -9629,7 +9629,7 @@
 /obj/item/reagent_containers/ivbag/blood/skrell/oneg,
 /obj/item/reagent_containers/ivbag/blood/unathi/oneg,
 /obj/item/reagent_containers/ivbag/blood/unathi/oneg,
-/obj/structure/closet/crate/freezer,
+/obj/structure/closet/crate/warhammer/freezer,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/medical)
 "xK" = (
@@ -15650,7 +15650,7 @@
 /obj/floor_decal/corner/yellow{
 	dir = 1
 	},
-/obj/structure/closet/crate/freezer,
+/obj/structure/closet/crate/warhammer/freezer,
 /obj/item/device/mmi,
 /obj/item/device/mmi,
 /obj/machinery/alarm{
@@ -17331,7 +17331,7 @@
 /area/maintenance/seconddeck/central)
 "Wa" = (
 /obj/floor_decal/industrial/outline/grey,
-/obj/structure/closet/crate/freezer/rations,
+/obj/structure/closet/crate/warhammer/freezer/rations,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/central)
 "Wb" = (

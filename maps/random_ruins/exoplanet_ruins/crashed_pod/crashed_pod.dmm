@@ -633,7 +633,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/map_template/crashed_pod)
 "fD" = (
-/obj/structure/closet/crate/freezer/rations,
+/obj/structure/closet/crate/warhammer/freezer/rations,
 /obj/floor_decal/industrial/hatch/orange,
 /obj/machinery/power/terminal,
 /obj/structure/cable{

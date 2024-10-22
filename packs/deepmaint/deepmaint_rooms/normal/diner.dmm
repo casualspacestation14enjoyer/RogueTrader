@@ -33,7 +33,7 @@
 /turf/simulated/floor/wood/walnut,
 /area/map_template/deepmaint)
 "fM" = (
-/mob/living/simple_animal/hostile/human/syndicate/melee,
+/mob/living/simple_animal/hostile/human/heretic/berserker,
 /turf/simulated/floor/wood/walnut,
 /area/map_template/deepmaint)
 "fO" = (
@@ -268,7 +268,7 @@
 /area/map_template/deepmaint)
 "NV" = (
 /obj/item/stool/bar/padded,
-/mob/living/simple_animal/hostile/human/syndicate,
+/mob/living/simple_animal/hostile/human/heretic,
 /turf/simulated/floor/wood/walnut,
 /area/map_template/deepmaint)
 "OF" = (
@@ -283,7 +283,7 @@
 /turf/simulated/floor/lino,
 /area/map_template/deepmaint)
 "QU" = (
-/mob/living/simple_animal/hostile/human/syndicate/ranged,
+/mob/living/simple_animal/hostile/human/heretic/bloodpact,
 /turf/simulated/floor/wood/walnut,
 /area/map_template/deepmaint)
 "Rh" = (

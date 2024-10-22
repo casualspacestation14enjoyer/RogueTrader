@@ -152,49 +152,6 @@
 /obj/structure/closet/crate/solar_assembly/WillContain()
 	return list(/obj/item/solar_assembly = 16)
 
-/obj/structure/closet/crate/freezer
-	name = "freezer"
-	desc = "A freezer."
-	temperature = -16 CELSIUS
-	closet_appearance = /singleton/closet_appearance/crate/freezer
-
-	var/target_temp = T0C - 40
-	var/cooling_power = 40
-
-/obj/structure/closet/crate/freezer/return_air()
-	var/datum/gas_mixture/gas = (..())
-	if(!gas)	return null
-	var/datum/gas_mixture/newgas = new/datum/gas_mixture()
-	newgas.copy_from(gas)
-	if(newgas.temperature <= target_temp)	return
-
-	if((newgas.temperature - cooling_power) > target_temp)
-		newgas.temperature -= cooling_power
-	else
-		newgas.temperature = target_temp
-	return newgas
-
-/obj/structure/closet/crate/freezer/ProcessAtomTemperature()
-	return PROCESS_KILL
-
-/obj/structure/closet/crate/freezer/rations //For use in the escape shuttle
-	name = "emergency rations"
-	desc = "A crate of emergency rations."
-
-/obj/structure/closet/crate/freezer/rations/WillContain()
-	return list(/obj/random/mre = 6, /obj/item/reagent_containers/food/drinks/cans/waterbottle = 12)
-
-/obj/structure/closet/crate/freezer/meat
-	name = "meat crate"
-	desc = "A crate of meat."
-
-/obj/structure/closet/crate/freezer/meat/WillContain()
-	return list(
-		/obj/item/reagent_containers/food/snacks/meat/beef = 4,
-		/obj/item/reagent_containers/food/snacks/meat/syntiflesh = 4,
-		/obj/random/fish = 8
-	)
-
 /obj/structure/closet/crate/bin
 	name = "large bin"
 	desc = "A large bin."

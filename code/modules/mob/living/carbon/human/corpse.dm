@@ -193,14 +193,23 @@
 /obj/landmark/corpse/russian/ranged
 	corpse_outfits = list(/singleton/hierarchy/outfit/soviet_soldier)
 
-/obj/landmark/corpse/syndicate
-	name = "Heretic Operative"
-	corpse_outfits = list(/singleton/hierarchy/outfit/mercenary/syndicate)
+/obj/landmark/corpse/infardi
+	name = "Infardi Militia"
+	corpse_outfits = list(/singleton/hierarchy/outfit/mercenary/infardi)
 	spawn_flags = CORPSE_SPAWNER_NO_RANDOMIZATION
 
-/obj/landmark/corpse/syndicate/commando
-	name = "Heretic Commando"
-	corpse_outfits = list(/singleton/hierarchy/outfit/mercenary/syndicate/commando)
+/obj/landmark/corpse/infardi/trooper
+	name = "Infardi Trooper"
+	corpse_outfits = list(/singleton/hierarchy/outfit/mercenary/infardi/trooper)
+	spawn_flags = CORPSE_SPAWNER_NO_RANDOMIZATION
+
+/obj/landmark/corpse/bloodpact
+	name = "Bloodpact Soldier"
+	corpse_outfits = list(/singleton/hierarchy/outfit/mercenary/bloodpact)
+
+/obj/landmark/corpse/bloodpact/commando
+	name = "Bloodpact Commando"
+	corpse_outfits = list(/singleton/hierarchy/outfit/mercenary/bloodpact/commando)
 
 /obj/landmark/corpse/anomalist
 	name = "Dead Anomalist"

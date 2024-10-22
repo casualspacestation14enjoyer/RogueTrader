@@ -437,7 +437,7 @@
 /turf/simulated/wall/r_wall,
 /area/map_template/colony/airlock)
 "bi" = (
-/obj/structure/closet/crate/freezer/rations,
+/obj/structure/closet/crate/warhammer/freezer/rations,
 /obj/floor_decal/techfloor{
 	dir = 9
 	},
@@ -1771,7 +1771,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/map_template/colony/atmospherics)
 "dQ" = (
-/obj/structure/closet/crate/freezer,
+/obj/structure/closet/crate/warhammer/freezer,
 /obj/item/reagent_containers/ivbag/nanoblood,
 /obj/item/reagent_containers/ivbag/blood/human/oneg,
 /obj/item/reagent_containers/ivbag/blood/human/oneg,
@@ -1782,7 +1782,7 @@
 /turf/simulated/floor/tiled/freezer,
 /area/map_template/colony/surgery)
 "dR" = (
-/obj/structure/closet/crate/freezer,
+/obj/structure/closet/crate/warhammer/freezer,
 /obj/item/storage/box/pillbottles,
 /obj/item/storage/firstaid/adv,
 /obj/item/storage/firstaid/adv,
@@ -3182,7 +3182,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
-/obj/structure/closet/crate/freezer,
+/obj/structure/closet/crate/warhammer/freezer,
 /obj/random/drinkbottle,
 /obj/random/drinkbottle,
 /obj/random/drinkbottle,
@@ -7053,7 +7053,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
-/obj/structure/closet/crate/freezer/rations,
+/obj/structure/closet/crate/warhammer/freezer/rations,
 /obj/floor_decal/techfloor{
 	dir = 10
 	},
@@ -7065,7 +7065,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/map_template/colony)
 "mN" = (
-/obj/structure/closet/crate/freezer/rations,
+/obj/structure/closet/crate/warhammer/freezer/rations,
 /obj/floor_decal/techfloor,
 /obj/item/storage/mre/menu10,
 /obj/item/storage/mre/menu9,

@@ -3583,7 +3583,7 @@
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/gym)
 "ih" = (
-/obj/structure/closet/crate/freezer,
+/obj/structure/closet/crate/warhammer/freezer,
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/galleybackroom)
 "ii" = (
@@ -3835,7 +3835,7 @@
 /turf/simulated/floor/carpet,
 /area/crew_quarters/recreation)
 "iF" = (
-/obj/structure/closet/crate/freezer,
+/obj/structure/closet/crate/warhammer/freezer,
 /obj/item/reagent_containers/food/drinks/cans/speer,
 /obj/item/reagent_containers/food/drinks/cans/speer,
 /obj/item/reagent_containers/food/drinks/cans/speer,

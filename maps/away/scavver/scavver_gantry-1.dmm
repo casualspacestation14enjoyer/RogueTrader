@@ -831,7 +831,7 @@
 /turf/simulated/floor/wood/yew,
 /area/scavver/yachtdown)
 "np" = (
-/obj/structure/closet/crate/freezer,
+/obj/structure/closet/crate/warhammer/freezer,
 /obj/item/reagent_containers/ivbag/blood/human/oneg,
 /obj/floor_decal/corner/blue/mono,
 /obj/item/reagent_containers/food/drinks/cans/waterbottle,
@@ -2867,7 +2867,7 @@
 	dir = 1;
 	icon_state = "railing0-1"
 	},
-/obj/structure/closet/crate/freezer/rations,
+/obj/structure/closet/crate/warhammer/freezer/rations,
 /turf/simulated/floor,
 /area/scavver/gantry/down1)
 "XN" = (

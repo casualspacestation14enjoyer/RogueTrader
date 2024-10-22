@@ -4,6 +4,7 @@
 	anchored = 1
 	density = 1
 	layer = 4
+	health_max = 1200
 
 
 /obj/structure/statue/proc/rotater()
@@ -210,6 +211,7 @@
 	icon_state = "angel_cool"
 	anchored = 1
 	density = 1
+	health_max = 800
 
 /obj/structure/hivedecor/oldclock
 	name = "Old Clock"

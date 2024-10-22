@@ -3923,7 +3923,7 @@
 /area/maintenance/fifthdeck/fore)
 "jp" = (
 /obj/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/crate/freezer/rations,
+/obj/structure/closet/crate/warhammer/freezer/rations,
 /obj/machinery/light/spot,
 /turf/simulated/floor/ceramic,
 /area/quartermaster/storage)
