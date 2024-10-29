@@ -12,8 +12,8 @@
 		/datum/job/assistant,
 		/datum/job/guardsman,
 		/datum/job/merchant,
-		/datum/job/submap/bearcat_captain,
-		/datum/job/submap/bearcat_crewman,
+		/datum/job/submap/noble,
+		/datum/job/submap/demeter_crew,
 		/datum/job/submap/colonist,
 		/datum/job/submap/pod
 	)

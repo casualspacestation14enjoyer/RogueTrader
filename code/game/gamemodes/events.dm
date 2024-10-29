@@ -12,7 +12,7 @@ var/global/hadevent    = 0
 			A.update_icon()
 			break
 
-/proc/high_radiation_event()
+/proc/rejectie()
 
 /* // Haha, this is way too laggy. I'll keep the prison break though.
 	for(var/obj/machinery/light/L in world)

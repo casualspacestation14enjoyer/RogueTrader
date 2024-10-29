@@ -21,7 +21,7 @@
 	id_types = list(/obj/item/card/id/torch/crew/medical/senior)
 	pda_type = /obj/item/modular_computer/pda/medical
 	back = /obj/item/storage/backpack/satchel/leather
-	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/ammo_magazine/bolt_pistol_magazine = 1, /obj/item/reagent_containers/hypospray/vial = 1, /obj/item/storage/firstaid/light = 1)
+	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/ammo_magazine/bolt_pistol_magazine = 1, /obj/item/reagent_containers/hypospray/vial = 1, /obj/item/defibrillator/compact/combat/loaded = 1)
 
 /singleton/hierarchy/outfit/job/torch/crew/medical/pharmacologis
 	name = OUTFIT_JOB_NAME("Pharmacologis")

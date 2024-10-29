@@ -162,7 +162,7 @@
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/penitent, slot_w_uniform)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/pilgrim/penitent, slot_wear_suit)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/pilgrimcap/pleb, slot_head)
-				H.equip_to_slot_or_store_or_drop(new /obj/item/pen, slot_in_backpack)
+				H.equip_to_slot_or_store_or_drop(new /obj/item/pen/fancy/quill, slot_in_backpack)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife/glaive, slot_belt)
 				H.species.hunger_factor = DEFAULT_HUNGER_FACTOR * 0.75
 				H.species.weaken_mod = 0.75
@@ -173,7 +173,7 @@
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/pilgrimhelm/flak/metal, slot_head)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/scrapforged/duster, slot_wear_suit)
-				H.equip_to_slot_or_store_or_drop(new /obj/item/pen, slot_in_backpack)
+				H.equip_to_slot_or_store_or_drop(new /obj/item/pen/fancy/quill, slot_in_backpack)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife, slot_belt)
 
 /datum/job/unexpected_guest
@@ -227,7 +227,7 @@
 		current_title = title // use default title
 	to_chat(H,"<span class='danger'><b><font size=4>THE GANG BOSS</font></b></span>")
 	H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
-	H.equip_to_slot_or_store_or_drop(new /obj/item/pen, slot_in_backpack)
+	H.equip_to_slot_or_store_or_drop(new /obj/item/pen/fancy/quill, slot_in_backpack)
 	H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife, slot_belt)
 	H.equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/dufflebag/gangerloot, slot_l_hand)
 	H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/pilgrimhelm/flak/metal, slot_head)
@@ -298,7 +298,7 @@
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/penitent, slot_w_uniform)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/pilgrim/penitent, slot_wear_suit)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/pilgrimcap/pleb, slot_head)
-				H.equip_to_slot_or_store_or_drop(new /obj/item/pen, slot_in_backpack)
+				H.equip_to_slot_or_store_or_drop(new /obj/item/pen/fancy/quill, slot_in_backpack)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife/glaive, slot_belt)
 				H.species.hunger_factor = DEFAULT_HUNGER_FACTOR * 0.75
 				H.species.weaken_mod = 0.75
@@ -309,14 +309,14 @@
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/pilgrimhelm/flak/metal, slot_head)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/scrapforged/duster, slot_wear_suit)
-				H.equip_to_slot_or_store_or_drop(new /obj/item/pen, slot_in_backpack)
+				H.equip_to_slot_or_store_or_drop(new /obj/item/pen/fancy/quill, slot_in_backpack)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife, slot_belt)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/pistol/stub/talon, slot_in_backpack)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/ammo_magazine/pistol/small/ap, slot_in_backpack)
 		if(current_title == "Pathfinder")
 			to_chat(H,"<span class='danger'><b><font size=4>THE PATHFINDER</font></b></span>")
 			to_chat(H, "<span class='notice'><b><font size=2>As the Pathfinder, you’re tasked with leading the way on deadly planets and through uncharted terrain, scouring every grim corner for threats and relics.</font></b></span>")
-			H.equip_to_slot_or_store_or_drop(new /obj/item/pen, slot_in_backpack)
+			H.equip_to_slot_or_store_or_drop(new /obj/item/pen/fancy/quill, slot_in_backpack)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife, slot_belt)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/dufflebag, slot_l_hand)
 			if(prob(10))
@@ -334,7 +334,7 @@
 		if(current_title == "Deck Scum")
 			to_chat(H,"<span class='danger'><b><font size=4>DECK SCUM</font></b></span>")
 			to_chat(H, "<span class='notice'><b><font size=2>As Deck Scum, you’re the bottom rung, drifting through whatever job you’re handed next. Your service may be a punishment for a crime, it may be that you were stolen from your world and enslaved, or worse... that you chose this life for yourself. You are a dredge of society now, an outcast, surviving in the underbelly of the Rogue Trader's corvette.</font></b></span>")
-			H.equip_to_slot_or_store_or_drop(new /obj/item/pen, slot_in_backpack)
+			H.equip_to_slot_or_store_or_drop(new /obj/item/pen/fancy/quill, slot_in_backpack)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife, slot_belt)
 			H.species.weaken_mod = 0.75
 			H.species.stun_mod = 0.75
@@ -370,7 +370,7 @@
 				H.equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/hypospray/autoinjector/pain, slot_in_backpack)
 		if(current_title == "Miner")
 			to_chat(H,"<span class='danger'><b><font size=4>THE MINER</font></b></span>")
-			H.equip_to_slot_or_store_or_drop(new /obj/item/pen, slot_in_backpack)
+			H.equip_to_slot_or_store_or_drop(new /obj/item/pen/fancy/quill, slot_in_backpack)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife, slot_belt)
 			H.species.brute_mod = 0.71
 			H.species.weaken_mod = 0.73

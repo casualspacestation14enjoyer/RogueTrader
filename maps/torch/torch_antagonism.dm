@@ -1,27 +1,27 @@
 //Makes sure we don't get any merchant antags as a balance concern. Can also be used for future Torch specific antag restrictions.
 /datum/antagonist/changeling
-	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant, /datum/job/rogue_trader, /datum/job/seneschal, /datum/job/submap)
-	restricted_jobs = list(/datum/job/novitiate, /datum/job/bondsman, /datum/job/sister_hospitaller)
+	blacklisted_jobs = list()
+	restricted_jobs = list()
 
 /datum/antagonist/godcultist
-	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg, /datum/job/chaplain_militant, /datum/job/merchant, /datum/job/rogue_trader, /datum/job/seneschal, /datum/job/guard_captain, /datum/job/submap)
-	restricted_jobs = list(/datum/job/novitiate, /datum/job/bondsman, /datum/job/sister_hospitaller)
+	blacklisted_jobs = list()
+	restricted_jobs = list()
 
 /datum/antagonist/cultist
-	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg, /datum/job/chaplain_militant, /datum/job/rogue_guest, /datum/job/merchant, /datum/job/rogue_trader, /datum/job/seneschal, /datum/job/guard_captain, /datum/job/submap)
-	restricted_jobs = list(/datum/job/novitiate, /datum/job/bondsman, /datum/job/sister_hospitaller)
+	blacklisted_jobs = list()
+	restricted_jobs = list()
 
 /datum/antagonist/loyalists
-	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg, /datum/job/submap, /datum/job/merchant)
-	restricted_jobs = list(/datum/job/enforcer, /datum/job/novitiate, /datum/job/bondsman, /datum/job/sister_hospitaller)
+	blacklisted_jobs = list()
+	restricted_jobs = list()
 
 /datum/antagonist/revolutionary
-	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg, /datum/job/submap, /datum/job/merchant)
-	restricted_jobs = list(/datum/job/rogue_trader, /datum/job/seneschal, /datum/job/enforcer, /datum/job/novitiate, /datum/job/bondsman, /datum/job/sister_hospitaller)
+	blacklisted_jobs = list()
+	restricted_jobs = list()
 
 /datum/antagonist/traitor
-	blacklisted_jobs = list(/datum/job/merchant, /datum/job/rogue_trader, /datum/job/seneschal, /datum/job/ai, /datum/job/submap, /datum/job/guard_captain, /datum/job/novitiate, /datum/job/bondsman, /datum/job/sister_hospitaller)
-	restricted_jobs = list(/datum/job/lawyer, /datum/job/cyborg)
+	blacklisted_jobs = list()
+	restricted_jobs = list()
 
 /datum/antagonist/ert
 	var/sic //Second-In-Command

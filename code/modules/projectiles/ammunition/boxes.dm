@@ -158,6 +158,26 @@
 	max_ammo = 10
 	multiple_sprites = 1
 
+/obj/item/ammo_magazine/speedloader/clip/stub
+	name = "12mm stripper clip"
+	desc = "A stripper clip for sniper pattern stub weapons."
+	caliber = CALIBER_STUB
+	ammo_type = /obj/item/ammo_casing/sniper
+	max_ammo = 9
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/speedloader/clip/stub/ap
+	name = "12mm AP stripper clip"
+	ammo_type = /obj/item/ammo_casing/sniper/ap
+
+/obj/item/ammo_magazine/speedloader/clip/stub/kp
+	name = "12mm KP stripper clip"
+	ammo_type = /obj/item/ammo_casing/sniper/kp
+
+/obj/item/ammo_magazine/speedloader/clip/stub/ms
+	name = "12mm MS stripper clip"
+	ammo_type = /obj/item/ammo_casing/sniper/ms
+
 /obj/item/ammo_magazine/speedloader/clip/sniper
 	name = "15mm stripper clip"
 	desc = "A stripper clip for sniper pattern weapons."
@@ -226,6 +246,29 @@
 /obj/item/ammo_magazine/speedloader/revolver/ms
 	name = "15mm MS speed loader"
 	ammo_type = /obj/item/ammo_casing/magnum/ms
+
+/obj/item/ammo_magazine/speedloader/militarum
+	name = "6.8mm speed loader"
+	desc = "A speed loader for revolvers loaded with 6.8mm autogun rounds."
+	icon_state = "spdloader_magnum"
+	caliber = CALIBER_AUTOGUN
+	ammo_type = /obj/item/ammo_casing/autogun/militarum
+	matter = list(MATERIAL_STEEL = 1440)
+	max_ammo = 6
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/speedloader/militarum/ap
+	name = "6.8mm AP speed loader"
+	ammo_type = /obj/item/ammo_casing/autogun/militarum/ap
+
+/obj/item/ammo_magazine/speedloader/militarum/kp
+	name = "6.8 KP speed loader"
+	ammo_type = /obj/item/ammo_casing/autogun/militarum/kp
+
+/obj/item/ammo_magazine/speedloader/militarum/ms
+	name = "6.8 MS speed loader"
+	ammo_type = /obj/item/ammo_casing/autogun/militarum/ms
+
 
 /obj/item/ammo_magazine/speedloader/small
 	name = "speed loader"

@@ -1,41 +1,41 @@
-var/global/const/access_bearcat = "ACCESS_BEARCAT" //998
-/datum/access/bearcat
-	id = access_bearcat
-	desc = "FTU Crewman"
+var/global/const/access_demeter = "access_demeter" //998
+/datum/access/demeter
+	id = access_demeter
+	desc = "Demeter Crewman"
 	region = ACCESS_REGION_NONE
 
-var/global/const/access_bearcat_captain = "ACCESS_BEARCAT_CAPTAIN" //999
-/datum/access/bearcat_captain
-	id = access_bearcat_captain
-	desc = "FTU Captain"
+var/global/const/access_demeter_captain = "access_demeter_CAPTAIN" //999
+/datum/access/demeter_captain
+	id = access_demeter_captain
+	desc = "Demeter Captain"
 	region = ACCESS_REGION_NONE
 
-/obj/item/card/id/bearcat
-	access = list(access_bearcat)
+/obj/item/card/id/demeter
+	access = list(access_demeter, access_demeter_captain)
 
-/obj/item/card/id/bearcat_captain
-	access = list(access_bearcat, access_bearcat_captain)
+/obj/item/card/id/demeter_captain
+	access = list(access_demeter, access_demeter_captain)
 
-/obj/machinery/door/airlock/autoname/bearcat
+/obj/machinery/door/airlock/autoname/demeter
 
-/obj/machinery/door/airlock/autoname/engineering/bearcat
+/obj/machinery/door/airlock/autoname/engineering/demeter
 
-/obj/machinery/door/airlock/autoname/command/bearcat
+/obj/machinery/door/airlock/autoname/command/demeter
 
-/obj/structure/closet/secure_closet/engineering_electrical/bearcat
-	req_access = list(access_bearcat)
+/obj/structure/closet/secure_closet/engineering_electrical/demeter
+	req_access = list(access_demeter)
 
-/obj/structure/closet/secure_closet/engineering_welding/bearcat
-	req_access = list(access_bearcat)
+/obj/structure/closet/secure_closet/engineering_welding/demeter
+	req_access = list(access_demeter)
 
-/obj/machinery/vending/engineering/bearcat
-	req_access = list(access_bearcat)
+/obj/machinery/vending/engineering/demeter
+	req_access = list(access_demeter)
 
-/obj/machinery/vending/tool/bearcat
-	req_access = list(access_bearcat)
+/obj/machinery/vending/tool/demeter
+	req_access = list(access_demeter)
 
-/obj/machinery/suit_storage_unit/engineering/salvage/bearcat
-	req_access = list(access_bearcat)
+/obj/machinery/suit_storage_unit/engineering/salvage/demeter
+	req_access = list(access_demeter)
 
-/obj/machinery/suit_cycler/salvage/bearcat
-	req_access = list(access_bearcat)
+/obj/machinery/suit_cycler/salvage/demeter
+	req_access = list(access_demeter)

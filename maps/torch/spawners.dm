@@ -15,7 +15,7 @@
 		/obj/item/gun/energy/lasgun/laspistol/grim,
 		/obj/item/gun/projectile/pistol/slug/old,
 		/obj/item/gun/energy/plasma/pistol,
-		/obj/item/gun/projectile/revolver/imperial/heavy/necros,
+		/obj/item/gun/projectile/revolver/imperial/heavy/bounty,
 		/obj/item/gun/projectile/pistol/m19
 	)
 

@@ -1,11 +1,11 @@
 /obj/item/gun/projectile/heavysniper/boltaction/imperial
 	name = "Boscelot Pattern Stub Rifle" // Slowdown is already in heavysniper
-	desc = "An old bolt action stub rifle chambered in 15mm AR stub rounds."
+	desc = "An old bolt action stub rifle chambered in 12mm AR stub rounds."
 	icon = 'icons/obj/guns/40kproj.dmi'
 	icon_state = "boltaction"
 	item_state = "boltaction"
 	w_class = ITEM_SIZE_LARGE
-	caliber = CALIBER_SNIPER
+	caliber = CALIBER_STUB
 	ammo_type = /obj/item/ammo_casing/sniper
 	load_method = SINGLE_CASING|SPEEDLOADER
 	max_shells = 8
@@ -37,11 +37,11 @@
 
 /obj/item/gun/projectile/heavysniper/boltaction/imperial/triangong
 	name = "Triangong 4-46"
-	desc = "An old custom made bolt action stub rifle chambered in 15mm stub rounds. It has a scope attached."
+	desc = "An old custom made bolt action stub rifle chambered in 12mm stub rounds. It has a scope attached."
 	icon_state = "boltactionsharp"
 	item_state = "boltactionsharp"
 	w_class = ITEM_SIZE_LARGE
-	caliber = CALIBER_SNIPER
+	caliber = CALIBER_STUB
 	ammo_type = /obj/item/ammo_casing/sniper
 	max_shells = 6
 	accuracy = 0.5
@@ -64,11 +64,11 @@
 
 /obj/item/gun/projectile/heavysniper/boltaction/imperial/crucible
 	name = "Crucible Stub Rifle"
-	desc = "A militarum pattern bolt action stub rifle chambered in 15mm stub rounds."
+	desc = "A militarum pattern bolt action stub rifle chambered in 12mm stub rounds."
 	icon_state = "boltactionsharp"
 	item_state = "boltactionsharp"
 	w_class = ITEM_SIZE_LARGE
-	caliber = CALIBER_SNIPER
+	caliber = CALIBER_STUB
 	ammo_type = /obj/item/ammo_casing/sniper
 	max_shells = 7
 	accuracy = 1
@@ -206,7 +206,7 @@
 	caliber = list(
 	CALIBER_AUTOGUN
 )
-	fire_sound = 'sound/warhammer/guns/fire/smg_fire.ogg' // reminder sounds are under warhammer/
+	fire_sound = 'sound/warhammer/gunshot/auto3.ogg'
 	ammo_type = /obj/item/ammo_casing/autogun
 	magazine_type = /obj/item/ammo_magazine/autogun
 	allowed_magazines = /obj/item/ammo_magazine/autogun
@@ -434,7 +434,7 @@
 	fire_delay = 3.5
 	sales_price = 20
 	caliber = CALIBER_AUTOGUN
-	fire_sound = 'sound/warhammer/gunshot/auto2.ogg'
+	fire_sound = 'sound/warhammer/gunshot/auto3.ogg'
 	ammo_type = /obj/item/ammo_casing/autogun/militarum
 	magazine_type = /obj/item/ammo_magazine/autogunheavy
 	allowed_magazines = /obj/item/ammo_magazine/autogunheavy
@@ -473,7 +473,7 @@
 	fire_delay = 3.4
 	sales_price = 25
 	caliber = CALIBER_AUTOGUN
-	fire_sound = 'sound/warhammer/gunshot/auto2.ogg'
+	fire_sound = 'sound/warhammer/gunshot/auto3.ogg'
 	ammo_type = /obj/item/ammo_casing/autogun/militarum
 	magazine_type = /obj/item/ammo_magazine/autogunheavy/ap
 	allowed_magazines = /obj/item/ammo_magazine/autogunheavy

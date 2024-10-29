@@ -626,26 +626,6 @@
 		bomb = ARMOR_BOMB_TEN+5,
 	)
 
-/obj/item/clothing/suit/armor/grim/carapacejacket
-	name = "carapace jacket"
-	desc = "The carapace patrol jacket was once worn by some frontier marshal of an unnamed world... it looks centuries old."
-	icon_state = "towntrench_heavy"
-	item_state = "towntrench_heavy"
-	body_parts_covered = LEGS|ARMS
-	slowdown_general = 0.035 // Light due to missing parts of the armor.
-	accessories = list(/obj/item/clothing/accessory/armor_plate/carapace)
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
-	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+300
-	armor = list(
-		melee = ARMOR_MELEE_CARAPACE-1,
-		bullet = ARMOR_BALLISTIC_FLAK+1,
-		laser = ARMOR_LASER_FLAK+1,
-		energy = ARMOR_ENERGY_TEN-2,
-		rad = ARMOR_RAD_THIRTY+10,
-		bio = ARMOR_BIO_THIRTY,
-		bomb = ARMOR_BOMB_TEN-5,
-	)
-
 /obj/item/clothing/suit/armor/arbitrator
 	name = "arbitrator's carapace armour"
 	desc = "Worn by Magistratum Arbitrators, this carapace armor offers exceptional protection against explosives and small arms fire, balancing mobility with heavy-duty defense."

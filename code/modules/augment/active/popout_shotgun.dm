@@ -1,5 +1,5 @@
 /obj/item/organ/internal/augment/active/item/popout_shotgun
-	name = "pop-out shotgun"
+	name = "pop-out slug cannon"
 	desc = "A galvanized steel mechanism that replaces most of the flesh below the elbow. Using the arm's natural range of motion as a hinge, it can be flicked open to reveal a 12-gauge shotgun with room for a single shell."
 	action_button_name = "Deploy shotgun"
 	icon_state = "popout_shotgun"
@@ -12,7 +12,7 @@
 
 
 /obj/item/gun/projectile/shotgun/popout
-	name = "pop-out shotgun"
+	name = "pop-out slug cannon"
 	desc = "A specialized 12-gauge shotgun concealed in the forearm. A deadly surprise."
 	icon = 'icons/obj/augment.dmi'
 	icon_state = "popout_shotgun"
@@ -23,7 +23,7 @@
 	obj_flags =  OBJ_FLAG_CONDUCTIBLE
 	caliber = CALIBER_SHOTGUN
 	load_method = SINGLE_CASING
-	ammo_type = /obj/item/ammo_casing/shotgun/pellet
+	ammo_type = /obj/item/ammo_casing/shotgun/kp
 	handle_casings = EJECT_CASINGS
 	load_sound = 'sound/weapons/guns/interaction/shotgun_instert.ogg'
 	has_safety = FALSE // No brakes on this train baby

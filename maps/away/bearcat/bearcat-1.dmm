@@ -162,7 +162,7 @@
 /area/ship/scrap/escape_port)
 "at" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
-/obj/item/device/radio/intercom/map_preset/bearcat{
+/obj/item/device/radio/intercom/map_preset/demeter{
 	default_hailing = 1;
 	dir = 4;
 	pixel_x = -22
@@ -185,8 +185,8 @@
 /obj/item/stamp/cargo,
 /obj/item/stamp/denied,
 /obj/random/clipboard,
-/obj/item/device/radio/map_preset/bearcat,
-/obj/item/device/radio/intercom/map_preset/bearcat{
+/obj/item/device/radio/map_preset/demeter,
+/obj/item/device/radio/intercom/map_preset/demeter{
 	dir = 8;
 	pixel_x = 22
 	},
@@ -329,7 +329,7 @@
 /turf/simulated/wall,
 /area/ship/scrap/gambling)
 "aM" = (
-/obj/machinery/door/airlock/autoname/bearcat,
+/obj/machinery/door/airlock/autoname/demeter,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -378,7 +378,7 @@
 /turf/simulated/floor/tiled,
 /area/ship/scrap/cargo/lower)
 "aS" = (
-/obj/machinery/door/airlock/autoname/bearcat,
+/obj/machinery/door/airlock/autoname/demeter,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -585,7 +585,7 @@
 /turf/simulated/floor,
 /area/ship/scrap/gambling)
 "bm" = (
-/obj/machinery/door/airlock/autoname/bearcat,
+/obj/machinery/door/airlock/autoname/demeter,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
@@ -619,7 +619,7 @@
 /turf/simulated/floor,
 /area/ship/scrap/maintenance/lower)
 "bo" = (
-/obj/machinery/door/airlock/autoname/bearcat,
+/obj/machinery/door/airlock/autoname/demeter,
 /turf/simulated/floor,
 /area/ship/scrap/cargo/lower)
 "bp" = (
@@ -710,7 +710,7 @@
 /turf/simulated/floor,
 /area/ship/scrap/maintenance/lower)
 "bw" = (
-/obj/machinery/door/airlock/autoname/bearcat,
+/obj/machinery/door/airlock/autoname/demeter,
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
@@ -1003,7 +1003,7 @@
 /obj/floor_decal/corner/beige{
 	dir = 9
 	},
-/obj/item/device/radio/intercom/map_preset/bearcat{
+/obj/item/device/radio/intercom/map_preset/demeter{
 	dir = 4;
 	pixel_x = -22
 	},
@@ -1147,7 +1147,7 @@
 /turf/simulated/floor,
 /area/ship/scrap/broken2)
 "cq" = (
-/obj/machinery/door/airlock/autoname/bearcat,
+/obj/machinery/door/airlock/autoname/demeter,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
@@ -1226,7 +1226,7 @@
 /turf/simulated/floor,
 /area/ship/scrap/maintenance/lower)
 "cy" = (
-/obj/machinery/door/airlock/autoname/bearcat,
+/obj/machinery/door/airlock/autoname/demeter,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
@@ -1364,7 +1364,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/door/airlock/autoname/bearcat,
+/obj/machinery/door/airlock/autoname/demeter,
 /turf/simulated/floor,
 /area/ship/scrap/maintenance/lower)
 "cP" = (
@@ -1445,7 +1445,7 @@
 	pixel_x = 24
 	},
 /obj/machinery/organ_printer/robot/mapped,
-/obj/item/device/radio/intercom/map_preset/bearcat{
+/obj/item/device/radio/intercom/map_preset/demeter{
 	pixel_y = 22
 	},
 /turf/simulated/floor,
@@ -1625,7 +1625,7 @@
 /turf/simulated/floor,
 /area/ship/scrap/broken1)
 "dn" = (
-/obj/machinery/door/airlock/autoname/bearcat,
+/obj/machinery/door/airlock/autoname/demeter,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
@@ -1671,7 +1671,7 @@
 /turf/simulated/floor/tiled,
 /area/ship/scrap/cargo/lower)
 "ds" = (
-/obj/machinery/door/airlock/autoname/bearcat,
+/obj/machinery/door/airlock/autoname/demeter,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
@@ -1764,7 +1764,7 @@
 /turf/simulated/floor/tiled,
 /area/ship/scrap/broken1)
 "dA" = (
-/obj/machinery/door/airlock/autoname/bearcat,
+/obj/machinery/door/airlock/autoname/demeter,
 /obj/paint/brown,
 /turf/simulated/floor/tiled,
 /area/ship/scrap/cargo/lower)
@@ -1776,7 +1776,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/door/airlock/autoname/bearcat,
+/obj/machinery/door/airlock/autoname/demeter,
 /turf/simulated/floor,
 /area/ship/scrap/cargo/lower)
 "dC" = (
@@ -1863,7 +1863,7 @@
 /turf/simulated/floor,
 /area/ship/scrap/maintenance/lower)
 "dL" = (
-/obj/machinery/door/airlock/autoname/bearcat,
+/obj/machinery/door/airlock/autoname/demeter,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
@@ -1982,7 +1982,7 @@
 /turf/simulated/floor,
 /area/ship/scrap/maintenance/lower)
 "dS" = (
-/obj/machinery/door/airlock/autoname/bearcat,
+/obj/machinery/door/airlock/autoname/demeter,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
@@ -2029,7 +2029,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/door/airlock/autoname/bearcat,
+/obj/machinery/door/airlock/autoname/demeter,
 /turf/simulated/floor,
 /area/ship/scrap/maintenance/storage)
 "dZ" = (
@@ -2110,7 +2110,7 @@
 /obj/item/FixOVein,
 /obj/structure/closet/crate,
 /obj/item/mop,
-/obj/item/device/radio/map_preset/bearcat,
+/obj/item/device/radio/map_preset/demeter,
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	level = 2
 	},
@@ -2137,7 +2137,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/item/device/radio/intercom/map_preset/bearcat{
+/obj/item/device/radio/intercom/map_preset/demeter{
 	dir = 8;
 	pixel_x = 22
 	},
@@ -2192,7 +2192,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/obj/machinery/vending/engineering/bearcat,
+/obj/machinery/vending/engineering/demeter,
 /turf/simulated/floor/tiled,
 /area/ship/scrap/maintenance/techstorage)
 "eo" = (
@@ -2224,7 +2224,7 @@
 /turf/simulated/floor,
 /area/ship/scrap/maintenance/techstorage)
 "eq" = (
-/obj/machinery/door/airlock/autoname/bearcat,
+/obj/machinery/door/airlock/autoname/demeter,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
@@ -2324,7 +2324,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/door/airlock/autoname/bearcat,
+/obj/machinery/door/airlock/autoname/demeter,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
@@ -2534,7 +2534,7 @@
 /turf/simulated/floor,
 /area/ship/scrap/maintenance/storage)
 "eM" = (
-/obj/item/device/radio/intercom/map_preset/bearcat{
+/obj/item/device/radio/intercom/map_preset/demeter{
 	dir = 4;
 	pixel_x = -22
 	},
@@ -2583,8 +2583,8 @@
 "eR" = (
 /obj/structure/table/standard,
 /obj/item/inflatable_dispenser,
-/obj/item/device/radio/map_preset/bearcat,
-/obj/item/device/radio/map_preset/bearcat,
+/obj/item/device/radio/map_preset/demeter,
+/obj/item/device/radio/map_preset/demeter,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
@@ -2606,29 +2606,29 @@
 /area/ship/scrap/maintenance/storage)
 "eT" = (
 /obj/item/clothing/head/welding,
-/obj/item/device/radio/map_preset/bearcat,
+/obj/item/device/radio/map_preset/demeter,
 /obj/item/tape_roll,
 /obj/structure/table/standard,
-/obj/item/device/radio/intercom/map_preset/bearcat{
+/obj/item/device/radio/intercom/map_preset/demeter{
 	pixel_y = -32
 	},
 /turf/simulated/floor,
 /area/ship/scrap/maintenance/storage)
 "eU" = (
-/obj/machinery/vending/tool/bearcat,
+/obj/machinery/vending/tool/demeter,
 /turf/simulated/floor,
 /area/ship/scrap/maintenance/storage)
 "eV" = (
-/obj/machinery/suit_cycler/salvage/bearcat,
+/obj/machinery/suit_cycler/salvage/demeter,
 /turf/simulated/floor/tiled,
 /area/ship/scrap/maintenance/eva)
 "eW" = (
-/obj/machinery/suit_storage_unit/engineering/salvage/bearcat,
+/obj/machinery/suit_storage_unit/engineering/salvage/demeter,
 /obj/machinery/light/small,
 /turf/simulated/floor/tiled,
 /area/ship/scrap/maintenance/eva)
 "eX" = (
-/obj/machinery/suit_storage_unit/engineering/salvage/bearcat,
+/obj/machinery/suit_storage_unit/engineering/salvage/demeter,
 /obj/machinery/alarm{
 	dir = 8;
 	pixel_x = 24;
@@ -2721,7 +2721,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/item/device/radio/intercom/map_preset/bearcat{
+/obj/item/device/radio/intercom/map_preset/demeter{
 	dir = 8;
 	pixel_x = 22
 	},
@@ -2758,7 +2758,7 @@
 	},
 /area/ship/scrap/crew/dorms3)
 "EP" = (
-/obj/machinery/door/airlock/autoname/bearcat,
+/obj/machinery/door/airlock/autoname/demeter,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
