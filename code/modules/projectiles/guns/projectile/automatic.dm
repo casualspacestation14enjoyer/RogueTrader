@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/automatic
 	name = "Necromundan SMG"
-	desc = "A necromundan lightweight, fast firing submachine gun chambered in a small caliber."
+	desc = "A necromundan lightweight, fast firing submachine gun chambered in a small needle caliber."
 	icon = 'icons/obj/guns/40kproj.dmi'
 	icon_state = "machinepistol"
 	item_state = "machinepistol"
@@ -56,7 +56,7 @@
 	slot_flags = SLOT_BACK|SLOT_BELT
 	w_class = ITEM_SIZE_NORMAL
 	one_hand_penalty = 1
-	accuracy = 0
+	accuracy = -1
 	fire_delay = 2.5
 	sales_price = 8
 	caliber = CALIBER_SLUG // before doing all mattguns, we need to dupe all the calibers first -- but merge calibers that fit. then add variants as in Eipharius.
@@ -66,8 +66,8 @@
 	magazine_type = /obj/item/ammo_magazine/machine_pistol
 	allowed_magazines = /obj/item/ammo_magazine/machine_pistol
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=3, burst_delay=1.5, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3, burst_delay=1.5, burst_accuracy=list(0,-1,-1), dispersion=null)
+		list(mode_name="semi-automatic", burst=1, fire_delay=3.3, burst_delay=1.5, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3.3, burst_delay=1.5, burst_accuracy=list(-1,-1,-1), dispersion=null)
 		)
 
 /obj/item/gun/projectile/automatic/machine_pistol/on_update_icon()
@@ -95,16 +95,16 @@
 	slot_flags = SLOT_BELT|SLOT_BACK
 	magazine_type = /obj/item/ammo_magazine/smg
 	allowed_magazines = /obj/item/ammo_magazine/smg
-	fire_sound = 'sound/weapons/gunshot/gunshot_smg.ogg'
+	fire_sound = 'sound/warhammer/gunshot/auto2.ogg'
 	auto_eject = 1
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
-	accuracy = 1
+	accuracy = -1
 	one_hand_penalty = 1.5
 
 	//SMG
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=3, burst_delay=1.5, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3, burst_delay=1.5, burst_accuracy=list(0,-1,-1), dispersion=null)
+		list(mode_name="semi-automatic", burst=1, fire_delay=3.4, burst_delay=1.3, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3.4, burst_delay=1.3, burst_accuracy=list(-1,-1,-1), dispersion=null)
 		)
 
 /obj/item/gun/projectile/automatic/merc_smg/on_update_icon()
@@ -126,20 +126,20 @@
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ESOTERIC = 5)
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/rifle
+	magazine_type = /obj/item/ammo_magazine/autogun
 	one_hand_penalty = 4
-	allowed_magazines = /obj/item/ammo_magazine/rifle
-	accuracy = 2
+	allowed_magazines = /obj/item/ammo_magazine/autogun
+	accuracy = 0
 	bulk = GUN_BULK_HEAVY_RIFLE
 	wielded_item_state = "arifle-wielded"
 	mag_insert_sound = 'sound/weapons/guns/interaction/ltrifle_magin.ogg'
 	mag_remove_sound = 'sound/weapons/guns/interaction/ltrifle_magout.ogg'
-	fire_sound = 'sound/weapons/gunshot/gunshot3.ogg'
+	fire_sound = 'sound/warhammer/gunshot/auto2.ogg'
 
 	//Assault rifle, burst fire degrades quicker than SMG, worse one-handing penalty, slightly increased move delay
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=3, burst_delay=1.5, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3, burst_delay=1.5, burst_accuracy=list(0,-1,-1), dispersion=null)
+		list(mode_name="semi-automatic", burst=1, fire_delay=3.6, burst_delay=1.5, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3.6, burst_delay=1.5, burst_accuracy=list(0,-1,-1), dispersion=null)
 		)
 
 /obj/item/gun/projectile/automatic/assault_rifle/on_update_icon()
@@ -167,13 +167,12 @@
 	magazine_type = /obj/item/ammo_magazine/smg_top
 	allowed_magazines = /obj/item/ammo_magazine/smg_top
 	one_hand_penalty = 3
-	fire_sound = 'sound/weapons/gunshot/gunshot_smg.ogg'
+	fire_sound = 'sound/warhammer/gunshot/auto2.ogg'
 
 	//machine pistol, like SMG but easier to one-hand with
 	firemodes = list(
-		list(mode_name="semi auto",       burst=1, fire_delay=3,    move_delay=null, one_hand_penalty=3, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3, move_delay=4,    one_hand_penalty=4, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0)),
-		list(mode_name="short bursts",   burst=5, fire_delay=3, move_delay=4,    one_hand_penalty=5, burst_accuracy=list(0,-1,-1,-1,-2), dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2)),
+		list(mode_name="semi-automatic", burst=1, fire_delay=3.3, burst_delay=1.4, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3.3, burst_delay=1.4, burst_accuracy=list(0,-1,-1), dispersion=null)
 		)
 
 /obj/item/gun/projectile/automatic/sec_smg/on_update_icon()
@@ -200,22 +199,22 @@
 	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 3)
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/mil_rifle/heavy
-	allowed_magazines = /obj/item/ammo_magazine/mil_rifle //Interchangable but poor performance
+	magazine_type = /obj/item/ammo_magazine/autogun
+	allowed_magazines = /obj/item/ammo_magazine/autogun
 	auto_eject = 1
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
 	accuracy = 2
 	one_hand_penalty = 4
 	bulk = GUN_BULK_RIFLE
-	burst_delay = 4
+	burst_delay = 2
 	wielded_item_state = "z8carbine-wielded"
 	mag_insert_sound = 'sound/weapons/guns/interaction/batrifle_magin.ogg'
 	mag_remove_sound = 'sound/weapons/guns/interaction/batrifle_magout.ogg'
-	fire_sound = 'sound/weapons/gunshot/gunshot2.ogg'
+	fire_sound = 'sound/warhammer/gunshot/auto3.ogg'
 	firemodes = list(
-		list(mode_name="semi auto",       burst=1,    fire_delay=3,    move_delay=null, use_launcher=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", burst=3,    fire_delay=3, move_delay=6,    use_launcher=null, one_hand_penalty=9, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.6, 1.0)),
-		list(mode_name="fire grenades",  burst=null, fire_delay=3, move_delay=null, use_launcher=1,    one_hand_penalty=10, burst_accuracy=null, dispersion=null)
+		list(mode_name="semi auto",       burst=1,    fire_delay=3.5,    move_delay=null, use_launcher=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3,    fire_delay=3.5, move_delay=6,    use_launcher=null, one_hand_penalty=9, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.6, 1.0)),
+		list(mode_name="fire grenades",  burst=null, fire_delay=3.5, move_delay=null, use_launcher=1,    one_hand_penalty=10, burst_accuracy=null, dispersion=null)
 		)
 
 	var/use_launcher = 0
@@ -281,7 +280,7 @@
 	desc = "The Z9 Pitbull is the modern answer to violence's question. It has been given a blued finish with a Sol yellow stripe for easy identification of its owner. It's slightly more accurate than its larger cousin, the Z8."
 	icon = 'icons/obj/guns/bullpup_rifle_light.dmi'
 	item_state = "z9carbine"
-	magazine_type = /obj/item/ammo_magazine/mil_rifle/light
+	magazine_type = /obj/item/ammo_magazine/autogun
 	one_hand_penalty = 3 //Slightly lighter than the Z8. Still don't try it.
 	bulk = GUN_BULK_LIGHT_RIFLE
 	has_launcher = FALSE
@@ -309,7 +308,7 @@
 	ammo_type = /obj/item/ammo_casing/rifle
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/box/machinegun
-	allowed_magazines = list(/obj/item/ammo_magazine/box/machinegun, /obj/item/ammo_magazine/rifle)
+	allowed_magazines = list(/obj/item/ammo_magazine/box/machinegun, /obj/item/ammo_magazine/autogun)
 	one_hand_penalty = 4
 	mag_insert_sound = 'sound/weapons/guns/interaction/lmg_magin.ogg'
 	mag_remove_sound = 'sound/weapons/guns/interaction/lmg_magout.ogg'
@@ -327,7 +326,7 @@
 	var/cover_open = 0
 
 /obj/item/gun/projectile/automatic/l6_saw/mag
-	magazine_type = /obj/item/ammo_magazine/rifle
+	magazine_type = /obj/item/ammo_magazine/autogun
 
 /obj/item/gun/projectile/automatic/l6_saw/special_check(mob/user)
 	if(cover_open)
@@ -401,8 +400,8 @@
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 1, TECH_ESOTERIC = 5)
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/mil_rifle/heavy
-	allowed_magazines = /obj/item/ammo_magazine/mil_rifle
+	magazine_type = /obj/item/ammo_magazine/autogun
+	allowed_magazines = /obj/item/ammo_magazine/autogun
 	one_hand_penalty = 4
 	accuracy_power = 9
 	accuracy = 1

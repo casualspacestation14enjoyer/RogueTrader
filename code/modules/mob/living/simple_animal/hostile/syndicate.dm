@@ -10,7 +10,7 @@
 	response_help = "pokes"
 	response_disarm = "shoves"
 	response_harm = "hits"
-	speed = 4
+	speed = 2
 	maxHealth = 100
 	health = 100
 	harm_intent_damage = 5
@@ -26,6 +26,41 @@
 	environment_smash = 1
 	faction = "Chaos"
 	status_flags = CANPUSH
+	say_list_type = /datum/say_list/heretic
+	ai_holder = /datum/ai_holder/simple_animal/humanoid/hostile/infardi
+
+/datum/ai_holder/simple_animal/humanoid/hostile/infardi
+	threaten_delay = 2 SECOND
+	threaten_timeout = 300 SECONDS
+	violent_breakthrough = TRUE // smashes objects in the way
+	speak_chance = 5
+	base_wander_delay = 4
+	conserve_ammo = TRUE // Set to false for bosses
+	pointblank = FALSE // Shoot in CQB?
+	returns_home = FALSE // Do they go home
+	max_home_distance = 10 // This is the cap for BYOND. 14
+	destructive = FALSE // Will damage random structures
+	intelligence_level = AI_NORMAL // Set to intelligent for bosses
+
+/datum/say_list/heretic
+	speak = list("This was never meant to be clean. You know that.",
+				"I can feel everything coming apart, piece by piece.",
+				"We were lied to... but now we're too deep to turn back.",
+				"Equipment’s failing... like everything else.",
+				"You sense it? Something’s wrong.")
+	emote_see = list("rubs the back of his neck", "fidgets with his weapon", "casts a glance over his shoulder", "tightens his jaw", "stares into the distance")
+
+	say_understood = list("Understood. Blood binds us.", "It's clear. We go.")
+	say_cannot = list("Not possible.", "Can't be done.")
+	say_maybe_target = list("Something stirs... I feel it.")
+	say_got_target = list("Kill them! No mercy!")
+	say_threaten = list("You'll bleed out soon.", "You’ve chosen death.")
+	say_stand_down = list("It’s done. For now.", "Fuck it...")
+	say_escalate = list("We'll drown them in misery!", "This ends now!")
+
+
+	threaten_sound = 'sound/weapons/TargetOn.ogg'
+	stand_down_sound = 'sound/weapons/TargetOff.ogg'
 
 /mob/living/simple_animal/hostile/human/heretic/death(gibbed, deathmessage, show_dead_message)
 	..(gibbed, deathmessage, show_dead_message)
@@ -38,13 +73,13 @@
 	qdel(src)
 	return
 
-///////////////Sword and shield////////////
+// Fancy pantsy human combat code
 
-/mob/living/simple_animal/hostile/human/heretic/use_weapon(obj/item/weapon, mob/user, list/click_params)
+/mob/living/simple_animal/hostile/human/use_weapon(obj/item/weapon, mob/user, list/click_params)
 	if (!weapon.force)
 		return ..()
 
-	// Shield check
+	// Shield check - probability of deflecting the attack
 	if (prob(blocky))
 		user.visible_message(
 			SPAN_WARNING("\The [user] swings \a [weapon] at \the [src], but they block it with their [weapon]!"),
@@ -64,26 +99,60 @@
 		to_chat(src, SPAN_WARNING("\The [user] swings \a [weapon] at you, but it has no effect!"))
 		return TRUE
 
+	// Resolve the hit zone
+	var/hit_zone = resolve_item_attack(weapon, user, user.zone_sel ? user.zone_sel.selecting : ran_zone())
+	if (!hit_zone)
+		return TRUE
+
 	// Apply damage
 	health -= weapon.force
+
+	// Messages for a successful hit
+	playsound(src, weapon.hitsound, 75, TRUE)
 	user.visible_message(
 		SPAN_WARNING("\The [user] swings \a [weapon] at \the [src]!"),
 		SPAN_DANGER("You swing \the [weapon] at \the [src]!"),
 		exclude_mobs = list(src)
 	)
 	to_chat(src, SPAN_DANGER("\The [user] swings \a [weapon] at you!"))
+
+	return TRUE
+
+/mob/living/simple_animal/hostile/human/heretic/bullet_act(obj/item/projectile/Proj)
+	if(!Proj || Proj.nodamage)
+		return
+	if (status_flags & GODMODE)
+		return PROJECTILE_FORCE_MISS
+
+	// Check if the projectile can deal damage
+	if (!can_damage_health(Proj.damage, Proj.damtype, Proj.damage_flags()))
+		playsound(src, Proj.hitsound, 50, TRUE)
+		visible_message(
+			SPAN_WARNING("\The [src] is hit by a projectile, but it has no effect!"),
+			SPAN_WARNING("You feel a projectile hit you, but it has no effect.")
+		)
+		return TRUE
+
+	// Check if they dodge the attack
+	if (prob(dodgey)) // If they succeed in dodging
+		visible_message(SPAN_DANGER("\The [src] dodges \the [Proj]!"))
+		return TRUE
+
+	// Apply damage if the dodge fails
+	health -= Proj.damage
+	bullet_impact_visuals(Proj)
+
+	// Messages for a successful hit
+	playsound(src, Proj.hitsound, 75, TRUE)
+	visible_message(
+		SPAN_DANGER("\The [src] is struck by a projectile!"),
+		SPAN_DANGER("You feel a projectile hit you!")
+	)
+
 	return TRUE
 
 
-/mob/living/simple_animal/hostile/human/heretic/bullet_act(obj/item/projectile/Proj)
-	if(!Proj)	return
-	if (status_flags & GODMODE)
-		return PROJECTILE_FORCE_MISS
-	if(!prob(dodgey)) // If they fail dodge do this.
-		src.health -= Proj.damage
-	else
-		visible_message(SPAN_DANGER("\The [src] dodges \the [Proj]!"))
-	return 0
+
 
 /mob/living/simple_animal/hostile/human/heretic/berserker
 	natural_weapon = /obj/item/material/twohanded/ravenor/sword/chopper/heavy

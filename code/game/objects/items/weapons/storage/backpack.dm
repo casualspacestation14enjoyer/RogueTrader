@@ -260,6 +260,7 @@
 		/obj/item/clothing/head/helmet/pilgrimhelm/flak/metalheavy,
 	)
 
+
 /obj/item/storage/backpack/dufflebag/syndie
 	name = "black dufflebag"
 	desc = "A large dufflebag for holding extra tactical supplies."
@@ -603,6 +604,47 @@
 		to_chat(user, SPAN_WARNING("You must remove the plating first."))
 		return TRUE
 	return ..()
+
+/obj/item/storage/backpack/satchel/flat/deserter
+	startswith = list(
+		/obj/item/clothing/mask/gas/half/cadianrespirator,
+		/obj/item/clothing/shoes/jackboots/cadian,
+		/obj/item/grenade/frag/high_yield/krak/detpack,
+		/obj/item/clothing/gloves/thick/swat/cadian,
+	)
+
+/obj/item/storage/backpack/satchel/flat/thief1
+	startswith = list(
+		/obj/item/device/multitool/hacktool,
+		/obj/item/device/radio_jammer,
+		/obj/item/device/uplink_service/fake_rad_storm,
+		/obj/item/card/id/syndicate,
+		/obj/item/device/cosmetic_surgery_kit,
+		/obj/item/storage/backpack/chameleon/sydie_kit,
+		/obj/item/clothing/mask/fakemoustache,
+		/obj/item/device/radio/headset/headset_service,
+	)
+
+/obj/item/storage/backpack/satchel/flat/thief2
+	startswith = list(
+		/obj/item/card/emag,
+		/obj/item/clothing/mask/chameleon/voice,
+		/obj/item/device/chameleon,
+		/obj/item/device/uplink_service/fake_command_report,
+		/obj/item/card/id/syndicate,
+		/obj/item/device/radio/headset/headset_service,
+		/obj/item/clothing/shoes/jackboots/pilgrim_boots,
+	)
+
+/obj/item/storage/backpack/satchel/flat/thief3
+	startswith = list(
+		/obj/item/device/multitool/hacktool,
+		/obj/item/device/cosmetic_surgery_kit,
+		/obj/item/card/id/torch/crew,
+		/obj/item/device/radio/headset/headset_service,
+		/obj/item/clothing/shoes/jackboots/pilgrim_boots,
+		/obj/item/clothing/accessory/armor_plate/bodyglove,
+	)
 
 /obj/item/storage/backpack/satchel/warfare/heavy
 	name = "heavy rucksack"

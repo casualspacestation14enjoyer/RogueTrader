@@ -1,6 +1,7 @@
 /singleton/hierarchy/outfit/job/torch/crew/service
-	l_ear = /obj/item/device/radio/headset/headset_cargo
+	l_ear = /obj/item/device/radio/headset/headset_service
 	hierarchy_type = /singleton/hierarchy/outfit/job/torch/crew/service
+	l_pocket = /obj/item/device/flashlight/lantern
 
 /singleton/hierarchy/outfit/job/torch/crew/service/crewman
 	name = OUTFIT_JOB_NAME("Deck Scum")
@@ -9,8 +10,6 @@
 	back = /obj/item/storage/backpack/satchel/warfare/heavy
 	id_types = list(/obj/item/card/id/torch/crew)
 	pda_type = /obj/item/modular_computer/pda
-	l_pocket = /obj/item/device/flashlight/lantern
-	l_ear = /obj/item/device/radio/headset/headset_cargo
 
 /singleton/hierarchy/outfit/job/torch/crew/service/guest
 	name = OUTFIT_JOB_NAME("Noble Guest")
@@ -20,7 +19,6 @@
 	id_types = list(/obj/item/card/id/torch/crew/supply/noble_guest)
 	pda_type = /obj/item/modular_computer/pda
 	l_pocket = /obj/item/device/flashlight/lantern
-	l_ear = /obj/item/device/radio/headset/headset_cargo
 
 /singleton/hierarchy/outfit/job/torch/crew/service/magister
 	name = OUTFIT_JOB_NAME("Chamber Magister")
@@ -35,7 +33,7 @@
 	id_types = list(/obj/item/card/id/torch/crew/service/magister)
 	pda_type = /obj/item/modular_computer/pda
 	l_pocket = /obj/item/device/flashlight/lantern
-	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/material/twohanded/ravenor/knife = 1, /obj/item/ammo_magazine/shotholder/flechette = 1)
+	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/material/twohanded/ravenor/knife = 1, /obj/item/ammo_magazine/shotholder/flechette = 1, /obj/item/implant/translator = 1)
 
 /singleton/hierarchy/outfit/job/torch/crew/service/janitor
 	name = OUTFIT_JOB_NAME("Chamber Assistant")

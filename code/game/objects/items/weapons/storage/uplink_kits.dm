@@ -66,12 +66,9 @@
 /obj/item/storage/backpack/chameleon/sydie_kit
 	startswith = list(
 		/obj/item/clothing/under/chameleon,
-		/obj/item/clothing/suit/chameleon,
 		/obj/item/clothing/shoes/chameleon,
-		/obj/item/clothing/head/chameleon,
 		/obj/item/clothing/mask/chameleon,
 		/obj/item/storage/box/syndie_kit/chameleon,
-		/obj/item/gun/energy/chameleon,
 		)
 
 /obj/item/storage/box/syndie_kit/chameleon
@@ -158,6 +155,10 @@
 /obj/item/storage/secure/briefcase/money
 
 	startswith = list(/obj/item/spacecash/bundle/c1000 = 10)
+
+/obj/item/storage/secure/briefcase/money2
+
+	startswith = list(/obj/item/spacecash/bundle/c1000 = 5)
 
 /obj/item/storage/backpack/satchel/syndie_kit/armor
 	startswith = list(

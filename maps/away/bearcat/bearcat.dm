@@ -3,26 +3,26 @@
 #include "bearcat_access.dm"
 #include "bearcat_radio.dm"
 
-/obj/submap_landmark/joinable_submap/bearcat
+/obj/submap_landmark/joinable_submap/demeter
 	name = "The Demeter"
-	archetype = /singleton/submap_archetype/derelict/bearcat
+	archetype = /singleton/submap_archetype/derelict/demeter
 
-/singleton/submap_archetype/derelict/bearcat
+/singleton/submap_archetype/derelict/demeter
 	descriptor = "derelict cargo vessel"
 	map = "Bearcat Wreck"
 	crew_jobs = list(
-		/datum/job/submap/bearcat_captain,
-		/datum/job/submap/bearcat_crewman
+		/datum/job/submap/noble,
+		/datum/job/submap/demeter_crew
 	)
 
-/obj/overmap/visitable/ship/bearcat
+/obj/overmap/visitable/ship/demeter
 	name = "light freighter"
 	color = "#00ffff"
 	vessel_mass = 20000
 	max_speed = 1/(10 SECONDS)
 	burn_delay = 10 SECONDS
 
-/obj/overmap/visitable/ship/bearcat/New()
+/obj/overmap/visitable/ship/demeter/New()
 	name = "[pick("The Demeter", "The Demeter")]"
 	for(var/area/ship/scrap/A)
 		A.name = "\improper [name] - [A.name]"
@@ -30,7 +30,7 @@
 	name = "[name], \a [initial(name)]"
 	..()
 
-/datum/map_template/ruin/away_site/bearcat_wreck
+/datum/map_template/ruin/away_site/demeter_wreck
 	name = "Demeter Wreck"
 	id = "awaysite_bearcat_wreck"
 	description = "A wrecked light freighter."
@@ -124,7 +124,7 @@
 	uniform = /obj/item/clothing/under/casual_pants/classicjeans
 	suit = /obj/item/clothing/suit/armor/grim/storage/hooded/wintercoat
 	shoes = /obj/item/clothing/shoes/black
-	r_pocket = /obj/item/device/radio/map_preset/bearcat
+	r_pocket = /obj/item/device/radio/map_preset/demeter
 
 /singleton/hierarchy/outfit/deadcap/post_equip(mob/living/carbon/human/H)
 	..()

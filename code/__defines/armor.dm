@@ -19,7 +19,7 @@
 #define  ARMOR_MELEE_BASIC			7 // Pen code deals percentile damage so long as AP is within 20 points of the armor rating. Though if it's 18 points below the damage is 10 percent.
 #define  ARMOR_MELEE_PRIMAL			9 // Heavy clothing
 #define  ARMOR_MELEE_FLAK			10 // Flak armor. Machetes. Knives.
-#define  ARMOR_MELEE_CARAPACE		11 // Medieval armor. Swords.
+#define  ARMOR_MELEE_CARAPACE		12 // Medieval armor. Swords.
 #define  ARMOR_MELEE_POWER_ARM			14 // Power Armor.
 #define  ARMOR_MELEE_ASTARTES		15 // Astartes Power armor.
 

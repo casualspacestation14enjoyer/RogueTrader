@@ -205,7 +205,7 @@
 	desc = "A sniper shell casing."
 	icon_state = "lcasing"
 	spent_icon = "lcasing-spent"
-	caliber = CALIBER_SNIPER
+	caliber = CALIBER_STUB
 	projectile_type = /obj/item/projectile/bullet/rifle/sniper
 	matter = list(MATERIAL_STEEL = 1250)
 

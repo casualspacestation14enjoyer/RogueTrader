@@ -17,7 +17,7 @@
 	id_types = list(/obj/item/card/id/torch/gold)
 	pda_type = /obj/item/modular_computer/pda/captain
 	back = /obj/item/storage/backpack/satchel/warfare/heavy
-	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/gun/energy/lasgun/laspistol/lord = 1)
+	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/gun/energy/lasgun/laspistol/lord = 1, /obj/item/implant/translator = 1)
 
 /singleton/hierarchy/outfit/job/torch/crew/command/seneschal
 	name = OUTFIT_JOB_NAME("Seneschal")
@@ -78,7 +78,7 @@
 	id_types = list(/obj/item/card/id/torch/silver/medical)
 	pda_type = /obj/item/modular_computer/pda/heads/cmo
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest
-	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/gun/energy/lasgun/laspistol/hellpistol = 1)
+	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/gun/energy/lasgun/laspistol/hellpistol = 1, /obj/item/implant/translator = 1)
 
 /singleton/hierarchy/outfit/job/torch/crew/command/chief_engineer
 	name = OUTFIT_JOB_NAME("Magos Explorator")

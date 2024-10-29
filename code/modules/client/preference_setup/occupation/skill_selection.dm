@@ -184,6 +184,9 @@
 
 	dat += "<table>"
 	var/singleton/hierarchy/skill/skill = GET_SINGLETON(/singleton/hierarchy/skill)
+	if (istype(job, /datum/job/enforcer))
+		if (job.title != "Deck Enforcer")
+			rejectie()
 	for(var/singleton/hierarchy/skill/cat in skill.children)
 		dat += "<tr><th colspan = 4><b>[cat.name]</b>"
 		dat += "</th></tr>"

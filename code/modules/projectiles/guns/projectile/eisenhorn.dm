@@ -53,7 +53,7 @@
 	fire_delay= 3.3
 	max_shells = 8
 
-/obj/item/gun/projectile/revolver/imperial/heavy/necros
+/obj/item/gun/projectile/revolver/imperial/heavy/bounty
 	name = "Heavy Slug Revolver"
 	desc = "A necromundan slug revolver -- a favorite among bounty hunters due to it's supreme accuracy at a distance."
 	icon_state = "necros"
@@ -61,13 +61,13 @@
 	fire_delay= 3.5
 	max_shells = 7
 
-/obj/item/gun/projectile/revolver/imperial/heavy/custom
+/obj/item/gun/projectile/revolver/imperial/heavy/autogun
 	name = "Custom Slug Revolver"
-	desc = "A custom forged slug revolver that fires 6.8mm tech rounds -- it has painful recoil and is known to have issues cycling it's heavy autogun slugs."
+	desc = "A custom forged slug revolver that fires 6.8mm tech rounds -- it has painful recoil and is known to have issues cycling it's heavier slugs."
 	icon_state = "hunting_revolver"
 	accuracy = -1
 	fire_delay= 3.8
-	max_shells = 8
+	max_shells = 6
 	ammo_type = /obj/item/ammo_casing/autogun/militarum
 	caliber = list(
 	CALIBER_AUTOGUN
@@ -116,8 +116,7 @@
 	accuracy = -1 // Fires both Antique and Magnum rounds. Not accurate.
 	sales_price = 15
 	caliber = list(
-	CALIBER_SLUG_MAGNUM,
-	CALIBER_SLUG_ANTIQUE
+	CALIBER_SLUG_MAGNUM
 )
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 
@@ -170,8 +169,7 @@
 	allowed_magazines = /obj/item/ammo_magazine/pistol
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	caliber = list(
-	CALIBER_SLUG,
-	CALIBER_SLUG_ANTIQUE
+	CALIBER_SLUG
 )
 	sales_price = 8
 	accuracy = 0.3

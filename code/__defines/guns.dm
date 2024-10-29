@@ -6,6 +6,7 @@
 
 #define CALIBER_AUTOGUN			"8mm AR"
 #define CALIBER_AUTOGUN_HEAVY		"10mm AR"
+#define CALIBER_STUB    "12mmR"
 #define CALIBER_SNIPER    "15mmR"
 
 #define CALIBER_SHOTGUN			"16mm"

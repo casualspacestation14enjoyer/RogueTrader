@@ -113,8 +113,10 @@
 			holder.emote(pick(holder.say_list.emote_predef))
 		if (COMM_AUDIBLE_EMOTE)
 			holder.audible_emote(pick(holder.say_list.emote_hear))
+			playsound(holder, holder.say_list.emotehear_sound, 50, 1)
 		if (COMM_VISUAL_EMOTE)
 			holder.visible_emote(pick(holder.say_list.emote_see))
+			playsound(holder, holder.say_list.emotesee_sound, 50, 1)
 
 // Override this if you want non-standard idle emote behaviour. E.g., reactions to injury.
 /datum/ai_holder/proc/handle_idle_speaking()

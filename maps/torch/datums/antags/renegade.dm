@@ -17,7 +17,7 @@
 	/obj/item/gun/projectile/automatic/radcarbine/radpistol,
 	/obj/item/gun/energy/toxgun,
 	/obj/item/gun/energy/lasgun/hotshot/volkite,
-	/obj/item/gun/projectile/revolver/imperial/heavy/necros,
+	/obj/item/gun/projectile/revolver/imperial/heavy/bounty,
 	/obj/item/gun/projectile/revolver/imperial/heavy/mateba,
 	/obj/item/gun/projectile/revolver/imperial/heavy,
 	/obj/item/gun/projectile/pistol/m19
