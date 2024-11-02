@@ -1,5 +1,5 @@
 //Makes sure we don't get any merchant antags as a balance concern. Can also be used for future Torch specific antag restrictions.
-/datum/antagonist/changeling
+/datum/antagonist/genestealer
 	blacklisted_jobs = list()
 	restricted_jobs = list()
 

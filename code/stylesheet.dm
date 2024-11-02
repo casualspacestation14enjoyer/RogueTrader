@@ -111,7 +111,7 @@ h1.alert, h2.alert		{color: #000080;}
 .soghun					{color: #228b22;}
 .yeosa					{color: #218b89;}
 .nabber_lang			{color: #525252;}
-.changeling				{color: #800080;}
+.genestealer				{color: #800080;}
 .vox					{color: #aa00aa;}
 .rough					{font-family: "Trebuchet MS", cursive, sans-serif;}
 .say_quote				{font-family: Georgia, Verdana, sans-serif;}

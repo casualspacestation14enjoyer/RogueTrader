@@ -1,7 +1,7 @@
 /obj/item/book/tome
-	name = "arcane tome"
-	icon = 'icons/obj/weapons/melee_physical.dmi'
-	icon_state = "tome"
+	name = "Chef Recipes"
+	icon = 'icons/obj/items/books.dmi'
+	icon_state = "IRIT"
 	throw_speed = 1
 	throw_range = 5
 	w_class = 2
@@ -9,17 +9,25 @@
 	carved = 2 // Don't carve it
 
 /obj/item/book/tome/attack_self(mob/living/user)
+	playsound(user.loc, 'sound/items/handle/paper_pickup.ogg', 20, 1)
 	if(!iscultist(user))
-		to_chat(user, SPAN_NOTICE("\The [src] seems full of illegible scribbles. Is this a joke?"))
+		to_chat(user, SPAN_NOTICE("\The [src] is filled with heretical markings that make your head spin..."))
+		if(prob(20))
+			user.Weaken(1)
+			user.adjustFireLoss(10)
+			user.stun_effect_act(0, 30, BP_R_HAND)
 	else
-		to_chat(user, "Hold \the [src] in your hand while drawing a rune to use it.")
+		to_chat(user, "Filled with heretical texts ancient text seems to be a living vessel for the warp.")
+	icon_state = "IRIT1"
+	spawn(5 SECONDS)
+	icon_state = "IRIT"
 
 /obj/item/book/tome/examine(mob/user)
 	. = ..()
-	if(!iscultist(user))
-		to_chat(user, "An old, dusty tome with frayed edges and a sinister looking cover.")
-	else
-		to_chat(user, "The scriptures of Nar-Sie, The One Who Sees, The Geometer of Blood. Contains the details of every ritual his followers could think of. Most of these are useless, though.")
+/*	if(!iscultist(user))
+		to_chat(user, "...")*/
+	if(iscultist(user))
+		to_chat(user, "The scriptures of the Sovereign, The One Who Sees, The Geometer of Blood. Contains the details of every ritual his followers could think of. Most of these are useless, though.")
 
 /obj/item/book/tome/use_before(mob/living/M, mob/living/user)
 	. = FALSE
@@ -46,19 +54,19 @@
 		to_chat(user, SPAN_NOTICE("You unbless \the [A]."))
 		var/holy2water = A.reagents.get_reagent_amount(/datum/reagent/water/holywater)
 		A.reagents.del_reagent(/datum/reagent/water/holywater)
-		A.reagents.add_reagent(/datum/reagent/water, holy2water)
+		A.reagents.add_reagent(/datum/reagent/toxin, holy2water)
 		return TRUE
 
-/mob/proc/make_rune(rune, cost = 5, tome_required = 0)
+/mob/proc/make_rune(rune, cost = 10, tome_required = 0)
 	var/has_tome = !!IsHolding(/obj/item/book/tome)
-	var/has_robes = 0
+	var/has_helm = 0
 	var/cult_ground = 0
 
 	if(!has_tome && tome_required && mob_needs_tome())
 		to_chat(src, SPAN_WARNING("This rune is too complex to draw by memory, you need to have a tome in your hand to draw it."))
 		return
-	if(istype(get_equipped_item(slot_head), /obj/item/clothing/head/culthood) && istype(get_equipped_item(slot_wear_suit), /obj/item/clothing/suit/cultrobes) && istype(get_equipped_item(slot_shoes), /obj/item/clothing/shoes/cult))
-		has_robes = 1
+	if(istype(get_equipped_item(slot_head), /obj/item/clothing/head/helmet/flak/chaos))
+		has_helm = 1
 	var/turf/T = get_turf(src)
 	if(T.holy)
 		to_chat(src, SPAN_WARNING("This place is blessed, you may not draw runes on it - defile it first."))
@@ -75,14 +83,14 @@
 	var/timer
 	var/damage = 1
 	if(has_tome)
-		if(has_robes && cult_ground)
+		if(has_helm && cult_ground)
 			self = "Feeling greatly empowered, you slice open your finger and make a rune on the engraved floor. It shifts when your blood touches it, and starts vibrating as you begin to chant the ritual that binds your life essence with the dark arcane energies flowing through the surrounding world."
 			timer = 1 SECOND
-			damage = 0.2
-		else if(has_robes)
+			damage = 0.4
+		else if(has_helm)
 			self = "Feeling empowered in your robes, you slice open your finger and start drawing a rune, chanting the ritual that binds your life essence with the dark arcane energies flowing through the surrounding world."
 			timer = 3 SECONDS
-			damage = 0.8
+			damage = 0.7
 		else if(cult_ground)
 			self = "You slice open your finger and slide it over the engraved floor, watching it shift when your blood touches it. It vibrates when you begin to chant the ritual that binds your life essence with the dark arcane energies flowing through the surrounding world." // Sadly, you don't have access to the bell nor the candelbarum
 			timer = 2 SECONDS
@@ -92,19 +100,22 @@
 			timer = 4 SECONDS
 	else
 		self = "Working without your tome, you try to draw the rune from your memory"
-		if(has_robes && cult_ground)
+		if(has_helm && cult_ground)
 			self += ". You feel that you remember it perfectly, finishing it with a few bold strokes. The engraved floor shifts under your touch, and vibrates once you begin your chants."
 			timer = 3 SECONDS
-		else if(has_robes)
+			damage = 0.5
+		else if(has_helm)
 			self += ". You don't remember it well, but you feel strangely empowered. You begin chanting, the unknown words slipping into your mind from beyond."
 			timer = 5 SECONDS
+			damage = 0.8
 		else if(cult_ground)
 			self += ", watching as the floor shifts under your touch, correcting the rune. You begin your chants, and the ground starts to vibrate."
 			timer = 4 SECONDS
+			damage = 0.9
 		else
 			self += ", having to cut your finger two more times before you make it resemble the pattern in your memory. It still looks a little off."
 			timer = 8 SECONDS
-			damage = 2
+			damage = 1.1
 	visible_message(SPAN_WARNING("\The [src] slices open a finger and begins to chant and paint symbols on the floor."), SPAN_NOTICE("[self]"), "You hear chanting.")
 	if(do_after(src, timer, T, DO_PUBLIC_UNIQUE))
 		remove_blood_simple(cost * damage)
@@ -118,7 +129,7 @@
 	return 0
 
 /mob/living/carbon/human/make_rune(rune, cost, tome_required)
-	if(should_have_organ(BP_HEART) && vessel && !vessel.has_reagent(/datum/reagent/blood, species.blood_volume * 0.7))
+	if(should_have_organ(BP_HEART) && vessel && !vessel.has_reagent(/datum/reagent/blood, species.blood_volume * 0.4))
 		to_chat(src, SPAN_DANGER("You are too weak to draw runes."))
 		return
 	..()
@@ -167,11 +178,13 @@ var/global/list/Tier1Runes = list(
 	/mob/proc/emp_imbue,
 	/mob/proc/cult_communicate,
 	/mob/proc/obscure,
+	/mob/proc/armor_rune,
+	/mob/proc/armor_rune2,
+	/mob/proc/armor_rune3,
 	/mob/proc/reveal
 	)
 
 var/global/list/Tier2Runes = list(
-	/mob/proc/armor_rune,
 	/mob/proc/offering_rune,
 	/mob/proc/drain_rune,
 	/mob/proc/emp_rune,
@@ -191,55 +204,67 @@ var/global/list/Tier4Runes = list(
 	)
 
 /mob/proc/convert_rune()
-	set category = "Cult Magic"
+	set category = "Chaos Cult"
 	set name = "Rune: Convert"
 
 	make_rune(/obj/rune/convert, tome_required = 1)
 
 /mob/proc/teleport_rune()
-	set category = "Cult Magic"
+	set category = "Chaos Cult"
 	set name = "Rune: Teleport"
 
 	make_rune(/obj/rune/teleport, tome_required = 1)
 
 /mob/proc/tome_rune()
-	set category = "Cult Magic"
+	set category = "Chaos Cult"
 	set name = "Rune: Summon Tome"
 
 	make_rune(/obj/rune/tome, cost = 15)
 
 /mob/proc/wall_rune()
-	set category = "Cult Magic"
+	set category = "Chaos Cult"
 	set name = "Rune: Wall"
 
 	make_rune(/obj/rune/wall, tome_required = 1)
 
 /mob/proc/ajorney_rune()
-	set category = "Cult Magic"
+	set category = "Chaos Cult"
 	set name = "Rune: Astral Journey"
 
 	make_rune(/obj/rune/ajorney)
 
 /mob/proc/defile_rune()
-	set category = "Cult Magic"
+	set category = "Chaos Cult"
 	set name = "Rune: Defile"
 
 	make_rune(/obj/rune/defile, tome_required = 1)
 
 /mob/proc/massdefile_rune()
-	set category = "Cult Magic"
+	set category = "Chaos Cult"
 	set name = "Rune: Mass Defile"
 
-	make_rune(/obj/rune/massdefile, tome_required = 1, cost = 20)
+	make_rune(/obj/rune/massdefile, tome_required = 1, cost = 25)
 
 /mob/proc/armor_rune()
-	set category = "Cult Magic"
-	set name = "Rune: Summon Robes"
+	set category = "Chaos Cult"
+	set name = "Rune: Summon Tzeentch Wargear"
 
 	make_rune(/obj/rune/armor, tome_required = 1)
 
+/mob/proc/armor_rune2()
+	set category = "Chaos Cult"
+	set name = "Rune: Summon Nurglite Wargear"
+
+	make_rune(/obj/rune/armor2, tome_required = 1)
+
+/mob/proc/armor_rune3()
+	set category = "Chaos Cult"
+	set name = "Rune: Summon Khornate Wargear"
+
+	make_rune(/obj/rune/armor3, tome_required = 1)
+
 /mob/proc/offering_rune()
-	set category = "Cult Magic"
+	set category = "Chaos Cult"
 	set name = "Rune: Offering"
 
 	make_rune(/obj/rune/offering, tome_required = 1)
@@ -247,67 +272,67 @@ var/global/list/Tier4Runes = list(
 
 
 /mob/proc/drain_rune()
-	set category = "Cult Magic"
+	set category = "Chaos Cult"
 	set name = "Rune: Blood Drain"
 
 	make_rune(/obj/rune/drain, tome_required = 1)
 
 /mob/proc/emp_rune()
-	set category = "Cult Magic"
+	set category = "Chaos Cult"
 	set name = "Rune: EMP"
 
 	make_rune(/obj/rune/emp, tome_required = 1)
 
 /mob/proc/weapon_rune()
-	set category = "Cult Magic"
+	set category = "Chaos Cult"
 	set name = "Rune: Summon Weapon"
 
 	make_rune(/obj/rune/weapon, tome_required = 1)
 
 /mob/proc/shell_rune()
-	set category = "Cult Magic"
+	set category = "Chaos Cult"
 	set name = "Rune: Summon Shell"
 
-	make_rune(/obj/rune/shell, cost = 10, tome_required = 1)
+	make_rune(/obj/rune/shell, cost = 15, tome_required = 1)
 
 /mob/proc/bloodboil_rune()
-	set category = "Cult Magic"
+	set category = "Chaos Cult"
 	set name = "Rune: Blood Boil"
 
 	make_rune(/obj/rune/blood_boil, cost = 20, tome_required = 1)
 
 /mob/proc/confuse_rune()
-	set category = "Cult Magic"
+	set category = "Chaos Cult"
 	set name = "Rune: Confuse"
 
 	make_rune(/obj/rune/confuse)
 
 /mob/proc/revive_rune()
-	set category = "Cult Magic"
+	set category = "Chaos Cult"
 	set name = "Rune: Revive"
 
 	make_rune(/obj/rune/revive, tome_required = 1)
 
 /mob/proc/tearreality_rune()
-	set category = "Cult Magic"
+	set category = "Chaos Cult"
 	set name = "Rune: Tear Reality"
 
 	make_rune(/obj/rune/tearreality, cost = 50, tome_required = 1)
 
 /mob/proc/stun_imbue()
-	set category = "Cult Magic"
+	set category = "Chaos Cult"
 	set name = "Imbue: Stun"
 
-	make_rune(/obj/rune/imbue/stun, cost = 20, tome_required = 1)
+	make_rune(/obj/rune/imbue/stun, cost = 30, tome_required = 1)
 
 /mob/proc/emp_imbue()
-	set category = "Cult Magic"
+	set category = "Chaos Cult"
 	set name = "Imbue: EMP"
 
 	make_rune(/obj/rune/imbue/emp)
 
 /mob/proc/cult_communicate()
-	set category = "Cult Magic"
+	set category = "Chaos Cult"
 	set name = "Communicate"
 
 	if(incapacitated())
@@ -343,13 +368,13 @@ var/global/list/Tier4Runes = list(
 	visible_message(SPAN_WARNING("\The [src] cuts [pronouns.his] finger and starts drawing on the back of [pronouns.his] hand."))
 
 /mob/proc/obscure()
-	set category = "Cult Magic"
+	set category = "Chaos Cult"
 	set name = "Rune: Obscure"
 
 	make_rune(/obj/rune/obscure)
 
 /mob/proc/reveal()
-	set category = "Cult Magic"
+	set category = "Chaos Cult"
 	set name = "Rune: Reveal"
 
 	make_rune(/obj/rune/reveal)

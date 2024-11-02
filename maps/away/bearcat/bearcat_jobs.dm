@@ -7,6 +7,7 @@
 	unexplored space. With the captain lost and most of the crew dead, the burden of survival now rests on you and the \
 	few remaining souls. It’s time to choose an acting captain and salvage what little remains—before the darkness claims \
 	the rest."
+	whitelisted_species = list(SPECIES_HUMAN,SPECIES_VOX,SPECIES_TAU,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_KROOT)
 	alt_titles = list(
 		"Witch Hunter",
 		"Bounty Hunter",
@@ -62,6 +63,15 @@
 		if(current_title == "Paladin")
 			to_chat(H,"<span class='danger'><b><font size=4>THE PALADIN</font></b></span>")
 			to_chat(H, "<span class='notice'><b><font size=2>As the Paladin aboard the Demeter, you’re a disgraced zealot of the Ecclesiarchy turned sellsword. Once a staunch defender of faith, you now roam the stars seeking redemption and purpose, willing to take on any job that aligns with your warped sense of righteousness.</font></b></span>")
+			if(prob(2))
+				H.make_genestealer()
+				to_chat(H, "<span class='notice'><b><font size=2>You are a genestealer bioform, a unique strain of tyranid genestealer capable of rapid transformation. The swarm considers you to be an abomination, but under the guidance of what you believe to be the true hivemind, you will surely succeed where the others have failed. Everything is connected.</font></b></span>")
+			else if(prob(2))
+				to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
+				to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
+				spawn(65 SECONDS)
+				GLOB.cult.add_antagonist(H.mind, ignore_role = 1, do_not_equip = 0)
+				to_chat(H, "<span class='notice'><b><font size=2>You are a heretical cultist loyal to one or more of the Chaos Gods -- unlike the many pretenders you are truly blessed by the warp and can survive encounters that would boil the brains of most mortal men.</font></b></span>")
 			H.species.brute_mod = 0.7
 			H.species.burn_mod = 0.7
 			H.species.weaken_mod = 0.71
@@ -99,6 +109,15 @@
 		if(current_title == "Mercenary")
 			to_chat(H,"<span class='danger'><b><font size=4>THE MERCENARY</font></b></span>")
 			to_chat(H, "<span class='notice'><b><font size=2>As the Mercenary aboard the Demeter, you’re a passenger seeking new contracts in the Ghoul Stars. Once a soldier, you now sell your skills to the highest bidder, always on the lookout for lucrative opportunities that finally lead to an early retirement.</font></b></span>")
+			if(prob(1))
+				H.make_genestealer()
+				to_chat(H, "<span class='notice'><b><font size=2>You are a genestealer bioform, a unique strain of tyranid genestealer capable of rapid transformation. The swarm considers you to be an abomination, but under the guidance of what you believe to be the true hivemind, you will surely succeed where the others have failed. Everything is connected.</font></b></span>")
+			else if(prob(1))
+				to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
+				to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
+				spawn(65 SECONDS)
+				GLOB.cult.add_antagonist(H.mind, ignore_role = 1, do_not_equip = 0)
+				to_chat(H, "<span class='notice'><b><font size=2>You are a heretical cultist loyal to one or more of the Chaos Gods -- unlike the many pretenders you are truly blessed by the warp and can survive encounters that would boil the brains of most mortal men.</font></b></span>")
 			H.species.brute_mod = 0.7
 			H.species.hunger_factor = DEFAULT_HUNGER_FACTOR * 1.15
 			H.equip_to_slot_or_store_or_drop(new /obj/item/pen/fancy/quill, slot_in_backpack)
@@ -106,16 +125,22 @@
 			H.equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/dufflebag, slot_l_hand)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/tactical, slot_w_uniform)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/flat, slot_back)
-			if(prob(10))
+			if(prob(20))
+				if(prob(50))
+					H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/scrapforged/flakcuirass, slot_wear_suit)
+				else
+					H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/scrapforged/heavyflak, slot_wear_suit)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/pilgrimhelm/flak/ranger, slot_head)
-				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/scrapforged/heavyflak, slot_wear_suit)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/automatic/autogun/krieg, slot_belt)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/ammo_magazine/autogun/ap, slot_in_backpack)
-			else if(prob(10))
-				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/scrapforged/carapace, slot_wear_suit)
+			else if(prob(25))
+				if(prob(50))
+					H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/scrapforged/carapacecuirass, slot_wear_suit)
+				else
+					H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/scrapforged/carapace, slot_wear_suit)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/automatic/autogun/stubber, slot_belt)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/ammo_magazine/autogunheavy, slot_in_backpack)
-			else if(prob(10))
+			else if(prob(20))
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/pilgrimhelm/flak/ranger/alt, slot_head)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/scrapforged/carapace3, slot_wear_suit)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/automatic/slugrifle, slot_belt)
@@ -151,6 +176,15 @@
 		if(current_title == "Deserter")
 			to_chat(H,"<span class='danger'><b><font size=4>THE DESERTER</font></b></span>")
 			to_chat(H, "<span class='notice'><b><font size=2>As the Deserter aboard the Demeter, you've abandoned the PDF in search of fortune as a mercenary. Once loyal to the captain, your knowledge of Militarum codes and procedures now serves you as you navigate the dangerous life of a hired gun.</font></b></span>")
+			if(prob(3))
+				H.make_genestealer()
+				to_chat(H, "<span class='notice'><b><font size=2>You are a genestealer bioform, a unique strain of tyranid genestealer capable of rapid transformation. The swarm considers you to be an abomination, but under the guidance of what you believe to be the true hivemind, you will surely succeed where the others have failed. Everything is connected.</font></b></span>")
+			else if(prob(3))
+				to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
+				to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
+				spawn(65 SECONDS)
+				GLOB.cult.add_antagonist(H.mind, ignore_role = 1, do_not_equip = 0)
+				to_chat(H, "<span class='notice'><b><font size=2>You are a heretical cultist loyal to one or more of the Chaos Gods -- unlike the many pretenders you are truly blessed by the warp and can survive encounters that would boil the brains of most mortal men.</font></b></span>")
 			H.species.brute_mod = 0.7
 			H.equip_to_slot_or_store_or_drop(new /obj/item/pen/fancy/quill, slot_in_backpack)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife, slot_belt)
@@ -159,7 +193,7 @@
 			H.equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/flat/deserter, slot_l_hand) // has gloves, mask, shoes and detpack
 			if(prob(5))
 				H.equip_to_slot_or_store_or_drop(new /obj/item/card/emag, slot_in_backpack)
-			else if(prob(5))
+			else if(prob(10))
 				H.equip_to_slot_or_store_or_drop(new /obj/item/device/radio_jammer, slot_in_backpack)
 			if(prob(40))
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/flak/conscript/pdf, slot_head)
@@ -228,6 +262,15 @@
 		if(current_title == "Crewman")
 			to_chat(H,"<span class='danger'><b><font size=4>THE CREWMAN</font></b></span>")
 			to_chat(H, "<span class='notice'><b><font size=2>As the Crewman, you are a key member of the Demeter, a vessel once led by a captain now lost to the void. Your knowledge of the ship's operations is critical, shaped by loyalty to a dead master and the harsh realities of life within the grimdark of the ghoul stars.</font></b></span>")
+			if(prob(3))
+				H.make_genestealer()
+				to_chat(H, "<span class='notice'><b><font size=2>You are a genestealer bioform, a unique strain of tyranid genestealer capable of rapid transformation. The swarm considers you to be an abomination, but under the guidance of what you believe to be the true hivemind, you will surely succeed where the others have failed. Everything is connected.</font></b></span>")
+			else if(prob(3))
+				to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
+				to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
+				spawn(65 SECONDS)
+				GLOB.cult.add_antagonist(H.mind, ignore_role = 1, do_not_equip = 0)
+				to_chat(H, "<span class='notice'><b><font size=2>You are a heretical cultist loyal to one or more of the Chaos Gods -- unlike the many pretenders you are truly blessed by the warp and can survive encounters that would boil the brains of most mortal men.</font></b></span>")
 			H.species.species_flags = SPECIES_FLAG_LOW_GRAV_ADAPTED
 			H.species.toxins_mod = 0.6
 			H.species.radiation_mod = 0.55
@@ -256,7 +299,7 @@
 			H.equip_to_slot_or_store_or_drop(new /obj/item/storage/briefcase/crimekit, slot_l_hand)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/hiver/carapace, slot_wear_suit)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/flat, slot_back)
-			H.equip_to_slot_or_store_or_drop(new /obj/item/storage/box/syndie_kit/spy, slot_in_backpack) // Kind of like a shittier Thief class but more respectable and with a big revolver.
+			H.equip_to_slot_or_store_or_drop(new /obj/item/storage/box/contraband/spy, slot_in_backpack) // Kind of like a shittier Thief class but more respectable and with a big revolver.
 			if(prob(50))
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian/black, slot_w_uniform)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/revolver/imperial/heavy/autogun, slot_r_hand)
@@ -325,20 +368,30 @@
 		if(current_title == "Merchant")
 			to_chat(H,"<span class='danger'><b><font size=4>THE MERCHANT</font></b></span>")
 			to_chat(H, "<span class='notice'><b><font size=2>As the Merchant aboard the Demeter, you are a passenger seeking new opportunities in the Ghoul Stars. With your keen eye for profit and trade, you aim to expand your business, hoping to capitalize on the chaos and scarcity of resources in this grim sector.</font></b></span>")
+			if(prob(1))
+				H.make_genestealer()
+				to_chat(H, "<span class='notice'><b><font size=2>You are a genestealer bioform, a unique strain of tyranid genestealer capable of rapid transformation. The swarm considers you to be an abomination, but under the guidance of what you believe to be the true hivemind, you will surely succeed where the others have failed. Everything is connected.</font></b></span>")
+			else if(prob(1))
+				to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
+				to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
+				spawn(65 SECONDS)
+				GLOB.cult.add_antagonist(H.mind, ignore_role = 1, do_not_equip = 0)
+				to_chat(H, "<span class='notice'><b><font size=2>You are a heretical cultist loyal to one or more of the Chaos Gods -- unlike the many pretenders you are truly blessed by the warp and can survive encounters that would boil the brains of most mortal men.</font></b></span>")
 			H.equip_to_slot_or_store_or_drop(new /obj/item/pen/fancy/quill, slot_in_backpack)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife, slot_belt)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/flat, slot_back)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/pilgrim/merchant, slot_wear_suit)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/bowlerhat/razor, slot_head)
-			H.equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/syndie_kit/clerical, slot_in_backpack)
+			H.equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/contraband/clerical, slot_in_backpack)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/storage/secure/briefcase/money, slot_r_hand)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/shotgun/cane, slot_l_hand)
 			if(prob(50))
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian/black, slot_w_uniform)
-				H.equip_to_slot_or_store_or_drop(new /obj/item/storage/box/syndie_kit/cigarette, slot_in_backpack)
+				H.equip_to_slot_or_store_or_drop(new /obj/item/storage/box/contraband/cigarette, slot_in_backpack)
 			else
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian/black, slot_w_uniform)
-				H.equip_to_slot_or_store_or_drop(new /obj/item/storage/box/syndie_kit/imp_explosive, slot_in_backpack)
+				H.equip_to_slot_or_store_or_drop(new /obj/item/storage/box/contraband/imp_explosive, slot_in_backpack)
+				H.equip_to_slot_or_store_or_drop(new /obj/item/book/manual/chef_recipes(get_turf(src)))
 		if(current_title == "Bard")
 			to_chat(H,"<span class='danger'><b><font size=4>THE BARD</font></b></span>")
 			to_chat(H, "<span class='notice'><b><font size=2>As the Bard aboard the Demeter, you're a passenger peddling your talents in song and charm. Using your wit and cunning, you spin tales to manipulate and con, seeking to charm your way into opportunities and gain favors from the crew.</font></b></span>")
@@ -371,7 +424,7 @@
 /singleton/hierarchy/outfit/job/demeter/crew
 	name = ("Demeter Crew")
 	id_types = list(/obj/item/card/id/demeter)
-	l_ear = /obj/item/device/radio/headset/headset_service
+	l_ear = /obj/item/device/radio/headset/map_preset/demeter
 	shoes = /obj/item/clothing/shoes/jackboots/pilgrim_boots
 	pda_type = /obj/item/modular_computer/pda
 	l_pocket = /obj/item/device/flashlight/lantern
@@ -396,7 +449,7 @@
 
 #undef DEMETER_OUTFIT_JOB_NAME
 
-/obj/submap_landmark/spawnpoint/captain
+/obj/submap_landmark/spawnpoint/noble
 	name = "Mercenary"
 
 /obj/submap_landmark/spawnpoint/crewman

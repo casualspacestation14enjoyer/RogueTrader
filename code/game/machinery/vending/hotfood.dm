@@ -20,11 +20,11 @@
 		/obj/item/reagent_containers/food/snacks/old/taco = 1
 	)
 	rare_products = list(
-		/obj/item/storage/box/syndie_kit/corpse_cube = 50
+		/obj/item/storage/box/contraband/corpse_cube = 50
 	)
 	antag = list(
 		/obj/item/storage/box/donkpocket_premium = 1,
-		/obj/item/storage/box/syndie_kit/corpse_cube = 0
+		/obj/item/storage/box/contraband/corpse_cube = 0
 	)
 
 

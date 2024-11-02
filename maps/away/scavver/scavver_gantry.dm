@@ -5,9 +5,10 @@
 /datum/map_template/ruin/away_site/scavver_gantry
 	name =  "\improper Salvage Gantry"
 	id = "awaysite_gantry"
-	description = "Salvage Gantry turned Ship"
+	description = "Salvage Gantry"
 	suffixes = list("scavver/scavver_gantry-1.dmm","scavver/scavver_gantry-2.dmm")
-	spawn_cost = 0.3
+	ban_ruins = list(/datum/map_template/ruin/away_site/demeter_wreck)
+	spawn_cost = 0
 	player_cost = 0
 	accessibility_weight = 10
 	shuttles_to_initialise = list(
@@ -34,12 +35,11 @@
 	archetype = /singleton/submap_archetype/derelict/scavver_gantry
 
 /singleton/submap_archetype/derelict/scavver_gantry
-	descriptor = "Salvage Gantry turned Ship."
+	descriptor = "Salvage Gantry."
 	map = "Salvage Gantry"
 	crew_jobs = list(
-		/datum/job/submap/scavver_pilot,
-		/datum/job/submap/scavver_doctor,
-		/datum/job/submap/scavver_engineer
+		/datum/job/submap/scavver_noble,
+		/datum/job/submap/scavver_crew
 	)
 
 /obj/overmap/visitable/ship/scavver_gantry

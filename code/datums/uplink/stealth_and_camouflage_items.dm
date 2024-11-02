@@ -37,7 +37,7 @@
 	name = "Bug Kit"
 	desc = "For when you want to conduct voyeurism from afar. Comes with 6 bugs to plant, and a monitoring device to pair them with."
 	item_cost = 8
-	path = /obj/item/storage/box/syndie_kit/spy
+	path = /obj/item/storage/box/contraband/spy
 
 /datum/uplink_item/item/stealth_items/id
 	name = "Agent ID card"
@@ -63,7 +63,7 @@
 	name = "Fake Corpse Cube"
 	desc = "For when reports of death were greatly exaggerated. Bundled with a DNA sampler for extracting a target's DNA to inject into the cube."
 	item_cost = 20
-	path = /obj/item/storage/box/syndie_kit/corpse_cube
+	path = /obj/item/storage/box/contraband/corpse_cube
 
 /datum/uplink_item/item/stealth_items/voice
 	name = "Modified Gas Mask"

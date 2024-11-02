@@ -45,7 +45,7 @@
 		else
 			factor = 1.4
 	choices[CHOICE_TRANSFER] = round(choices[CHOICE_TRANSFER] * factor)
-	to_world(SPAN_COLOR("purple", "Bluespace Jump Factor: [factor]"))
+	to_world(SPAN_COLOR("purple", "Warp Jump Factor: [factor]"))
 
 /datum/vote/transfer/report_result()
 	if(..())

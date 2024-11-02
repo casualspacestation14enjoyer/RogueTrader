@@ -67,7 +67,7 @@
 	//No need to update all of these procs if the guy is dead.
 	if(stat != DEAD && !InStasis())
 		//Updates the number of stored chemicals for powers
-		handle_changeling()
+		handle_genestealer()
 
 		//Organs and blood
 		handle_organs()
@@ -889,9 +889,9 @@
 	if(stat == UNCONSCIOUS && world.time - l_move_time < 5 && prob(10))
 		to_chat(src,SPAN_NOTICE("You feel like you're [pick("moving","flying","floating","falling","hovering")]."))
 
-/mob/living/carbon/human/proc/handle_changeling()
-	if(mind && mind.changeling)
-		mind.changeling.regenerate()
+/mob/living/carbon/human/proc/handle_genestealer()
+	if(mind && mind.genestealer)
+		mind.genestealer.regenerate()
 
 /mob/living/carbon/human/proc/handle_shock()
 	if(status_flags & GODMODE)	return 0	//godmode

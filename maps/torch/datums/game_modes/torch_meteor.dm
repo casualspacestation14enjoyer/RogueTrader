@@ -14,8 +14,8 @@
 	alert_text = "[GLOB.using_map.full_name] is on a collision course with an ultradense asteroid field. Estimated time until impact is: [meteor_grace_period / 1200] MINUTES. Emegency random jump procedure initiated."
 	start_text = "Asteroid field imminent. All hands brace for multiple impacts. May %DEITY_NAME% be with you."
 
-	GLOB.using_map.shuttle_called_message = "Attention all hands: Emergency Bluespace Drive spool up initiated. It will be ready for jump in %ETA%."
-	GLOB.using_map.shuttle_docked_message = "Attention all hands: Bluespace Drive spooled up. Emergency bluespace jump in %ETD%."
+	GLOB.using_map.shuttle_called_message = "Attention all hands: Emergency Warp Drive spool up initiated. It will be ready for jump in %ETA%."
+	GLOB.using_map.shuttle_docked_message = "Attention all hands: Warp Drive spooled up. Emergency bluespace jump in %ETD%."
 	GLOB.using_map.shuttle_leaving_dock = "Attention all hands: Emergency bluespace jump initiated, emerging in %ETA%."
 
 /datum/game_mode/meteor/on_meteor_warn()
@@ -47,12 +47,12 @@
 	else
 		to_world(SPAN_BAD("The navigation systems were lost on [GLOB.using_map.full_name]."))
 	if(bsd_status)
-		to_world(SPAN_GOOD("Bluespace drive stayed powered."))
+		to_world(SPAN_GOOD("Warp drive stayed powered."))
 	else
-		to_world(SPAN_BAD("Bluespace drive lost power during the jump, causing dangerous anomalies in the local time-space."))
+		to_world(SPAN_BAD("Warp drive lost power during the jump, causing dangerous anomalies in the local time-space."))
 
 
-//Bluespace jump but ignoring cooldowns and done at roundstart basically
+//Warp jump but ignoring cooldowns and done at roundstart basically
 /datum/evacuation_option/meteor_bluespace_jump
 	option_text = "Initiate emergency bluespace jump"
 	option_desc = "initiate automated emergency bluespace jump"

@@ -54,6 +54,6 @@
 		/obj/item/reagent_containers/food/snacks/liquidfood = 6
 	)
 	antag = list(
-		/obj/item/storage/box/syndie_kit/toxin = 1,
+		/obj/item/storage/box/contraband/toxin = 1,
 		/obj/item/pen/reagent/sleepy = 0
 	)

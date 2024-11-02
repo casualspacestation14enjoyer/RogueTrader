@@ -1,42 +1,42 @@
-/obj/item/storage/box/syndie_kit
+/obj/item/storage/box/contraband
 	name = "box"
 	desc = "A sleek, sturdy box."
 	icon_state = "box_of_doom"
 
 //For uplink kits that provide bulkier items
-/obj/item/storage/backpack/satchel/syndie_kit
+/obj/item/storage/backpack/satchel/contraband
 	desc = "A sleek, sturdy satchel."
 	icon_state = "satchel-norm"
 
 //In case an uplink kit provides a lot of gear
-/obj/item/storage/backpack/dufflebag/syndie_kit
+/obj/item/storage/backpack/dufflebag/contraband
 	name = "black dufflebag"
 	desc = "A sleek, sturdy dufflebag."
 	icon_state = "duffle_syndie"
 
-/obj/item/storage/box/syndie_kit/imp_freedom
+/obj/item/storage/box/contraband/imp_freedom
 	startswith = list(/obj/item/implanter/freedom)
 
-/obj/item/storage/box/syndie_kit/imp_uplink
+/obj/item/storage/box/contraband/imp_uplink
 	startswith = list(/obj/item/implanter/uplink)
 
-/obj/item/storage/box/syndie_kit/imp_compress
+/obj/item/storage/box/contraband/imp_compress
 	startswith = list(/obj/item/implanter/compressed)
 
-/obj/item/storage/box/syndie_kit/imp_explosive
+/obj/item/storage/box/contraband/imp_explosive
 	startswith = list(
 		/obj/item/implanter/explosive,
 		/obj/item/implantpad
 		)
 
-/obj/item/storage/box/syndie_kit/imp_imprinting
+/obj/item/storage/box/contraband/imp_imprinting
 	startswith = list(
 		/obj/item/implanter/imprinting,
 		/obj/item/implantpad,
 		/obj/item/reagent_containers/hypospray/autoinjector/mindbreaker
 		)
 
-/obj/item/storage/box/syndie_kit/shuriken
+/obj/item/storage/box/contraband/shuriken
 	startswith = list(
 		/obj/item/material/star/ninja,
 		/obj/item/material/star/ninja,
@@ -52,7 +52,7 @@
 	)
 
 // Space suit uplink kit
-/obj/item/storage/backpack/satchel/syndie_kit/space
+/obj/item/storage/backpack/satchel/contraband/space
 	//name = "\improper EVA gear pack"
 
 	startswith = list(
@@ -68,10 +68,10 @@
 		/obj/item/clothing/under/chameleon,
 		/obj/item/clothing/shoes/chameleon,
 		/obj/item/clothing/mask/chameleon,
-		/obj/item/storage/box/syndie_kit/chameleon,
+		/obj/item/storage/box/contraband/chameleon,
 		)
 
-/obj/item/storage/box/syndie_kit/chameleon
+/obj/item/storage/box/contraband/chameleon
 	startswith = list(
 		/obj/item/clothing/gloves/chameleon,
 		/obj/item/clothing/glasses/chameleon,
@@ -82,7 +82,7 @@
 		)
 
 // Clerical uplink kit
-/obj/item/storage/backpack/satchel/syndie_kit/clerical
+/obj/item/storage/backpack/satchel/contraband/clerical
 	startswith = list(
 		/obj/item/stack/package_wrap/cargo_wrap,
 		/obj/item/hand_labeler,
@@ -91,39 +91,39 @@
 		/obj/item/device/destTagger,
 		)
 
-/obj/item/storage/box/syndie_kit/spy
+/obj/item/storage/box/contraband/spy
 	startswith = list(
 		/obj/item/device/spy_bug = 6,
 		/obj/item/device/spy_monitor
 	)
 
-/obj/item/storage/box/syndie_kit/silenced
+/obj/item/storage/box/contraband/silenced
 	startswith = list(
 		/obj/item/gun/projectile/pistol/holdout,
 		/obj/item/silencer,
 		/obj/item/ammo_magazine/pistol/small
 	)
 
-/obj/item/storage/backpack/satchel/syndie_kit/revolver
+/obj/item/storage/backpack/satchel/contraband/revolver
 	startswith = list(
 		/obj/item/gun/projectile/revolver/imperial,
 		/obj/item/ammo_magazine/speedloader/revolver
 	)
 
-/obj/item/storage/box/syndie_kit/toxin
+/obj/item/storage/box/contraband/toxin
 	startswith = list(
 		/obj/item/reagent_containers/glass/beaker/vial/random/toxin,
 		/obj/item/reagent_containers/syringe
 	)
 
-/obj/item/storage/box/syndie_kit/syringegun
+/obj/item/storage/box/contraband/syringegun
 	startswith = list(
 		/obj/item/gun/launcher/syringe/disguised = 1,
 		/obj/item/syringe_cartridge = 4,
 		/obj/item/reagent_containers/syringe = 4
 	)
 
-/obj/item/storage/box/syndie_kit/cigarette
+/obj/item/storage/box/contraband/cigarette
 	name = "tricky smokes"
 	desc = "Smokes so good, you'd think it was a trick!"
 	startswith = list(
@@ -136,7 +136,7 @@
 
 
 //Rig Electrowarfare and Voice Synthesiser kit
-/obj/item/storage/backpack/satchel/syndie_kit/ewar_voice
+/obj/item/storage/backpack/satchel/contraband/ewar_voice
 	startswith = list(
 		/obj/item/rig_module/electrowarfare_suite,
 		/obj/item/rig_module/voice,
@@ -160,12 +160,12 @@
 
 	startswith = list(/obj/item/spacecash/bundle/c1000 = 5)
 
-/obj/item/storage/backpack/satchel/syndie_kit/armor
+/obj/item/storage/backpack/satchel/contraband/armor
 	startswith = list(
 		/obj/item/clothing/suit/armor/grim/merc,
 		/obj/item/clothing/head/helmet/merc
 	)
-/obj/item/storage/box/syndie_kit/corpse_cube
+/obj/item/storage/box/contraband/corpse_cube
 	startswith = list(
 		/obj/item/device/dna_sampler,
 		/obj/item/reagent_containers/food/snacks/corpse_cube

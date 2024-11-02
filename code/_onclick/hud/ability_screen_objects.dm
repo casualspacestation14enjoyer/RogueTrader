@@ -256,7 +256,7 @@
 		toggle_open(2) //forces the icons to refresh on screen
 
 //Changeling Abilities
-/obj/screen/ability/verb_based/changeling
+/obj/screen/ability/verb_based/genestealer
 	icon_state = "ling_spell_base"
 	background_base_state = "ling"
 
@@ -267,7 +267,7 @@
 		message_admins("ERROR: add_ling_ability() was not given a verb/proc in its arguments.")
 	if(get_ability_by_proc_ref(verb_given))
 		return // Duplicate
-	var/obj/screen/ability/verb_based/changeling/A = new /obj/screen/ability/verb_based/changeling()
+	var/obj/screen/ability/verb_based/genestealer/A = new /obj/screen/ability/verb_based/genestealer()
 	A.ability_master = src
 	A.object_used = object_given
 	A.verb_to_call = verb_given

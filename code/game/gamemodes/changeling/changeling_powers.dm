@@ -1,6 +1,6 @@
-var/global/list/possible_changeling_IDs = list("Alpha","Beta","Gamma","Delta","Epsilon","Zeta","Eta","Theta","Iota","Kappa","Lambda","Mu","Nu","Xi","Omicron","Pi","Rho","Sigma","Tau","Upsilon","Phi","Chi","Psi","Omega")
+var/global/list/possible_genestealer_IDs = list("Alpha","Beta","Gamma","Delta","Epsilon","Zeta","Eta","Theta","Iota","Kappa","Lambda","Mu","Nu","Xi","Omicron","Pi","Rho","Sigma","Tau","Upsilon","Phi","Chi","Psi","Omega")
 
-/datum/changeling //stores changeling powers, changeling recharge thingie, changeling absorbed DNA and changeling ID (for changeling hivemind)
+/datum/genestealer //stores genestealer powers, genestealer recharge thingie, genestealer absorbed DNA and genestealer ID (for genestealer hivemind)
 	var/list/datum/absorbed_dna/absorbed_dna = list()
 	var/list/absorbed_languages = list()
 	var/absorbedcount = 0
@@ -8,59 +8,59 @@ var/global/list/possible_changeling_IDs = list("Alpha","Beta","Gamma","Delta","E
 	var/chem_recharge_rate = 0.5
 	var/chem_storage = 50
 	var/sting_range = 1
-	var/changelingID = "Changeling"
+	var/genestealerID = "Genestealer"
 	var/geneticdamage = 0
 	var/isabsorbing = 0
 	var/geneticpoints = 25
 	var/purchasedpowers = list()
 	var/mimicing = ""
 
-/datum/changeling/Destroy()
+/datum/genestealer/Destroy()
 	purchasedpowers = null
 	absorbed_languages.Cut()
 	absorbed_dna.Cut()
 	. = ..()
 
-/datum/changeling/New()
+/datum/genestealer/New()
 	..()
-	if(length(possible_changeling_IDs))
-		changelingID = pick(possible_changeling_IDs)
-		possible_changeling_IDs -= changelingID
-		changelingID = "[changelingID]"
+	if(length(possible_genestealer_IDs))
+		genestealerID = pick(possible_genestealer_IDs)
+		possible_genestealer_IDs -= genestealerID
+		genestealerID = "[genestealerID]"
 	else
-		changelingID = "[rand(1,999)]"
+		genestealerID = "[rand(1,999)]"
 
-/datum/changeling/proc/regenerate()
+/datum/genestealer/proc/regenerate()
 	chem_charges = min(max(0, chem_charges+chem_recharge_rate), chem_storage)
 	geneticdamage = max(0, geneticdamage-1)
 
-/datum/changeling/proc/GetDNA(dna_owner)
+/datum/genestealer/proc/GetDNA(dna_owner)
 	for(var/datum/absorbed_dna/DNA in absorbed_dna)
 		if(dna_owner == DNA.name)
 			return DNA
 
 /mob/proc/absorbDNA(datum/absorbed_dna/newDNA)
-	var/datum/changeling/changeling = null
-	if(src.mind && src.mind.changeling)
-		changeling = src.mind.changeling
-	if(!changeling)
+	var/datum/genestealer/genestealer = null
+	if(src.mind && src.mind.genestealer)
+		genestealer = src.mind.genestealer
+	if(!genestealer)
 		return
 
 	for(var/language in newDNA.languages)
-		changeling.absorbed_languages |= language
+		genestealer.absorbed_languages |= language
 
-	changeling_update_languages(changeling.absorbed_languages)
+	genestealer_update_languages(genestealer.absorbed_languages)
 
-	if(!changeling.GetDNA(newDNA.name)) // Don't duplicate - I wonder if it's possible for it to still be a different DNA? DNA code could use a rewrite
-		changeling.absorbed_dna += newDNA
+	if(!genestealer.GetDNA(newDNA.name)) // Don't duplicate - I wonder if it's possible for it to still be a different DNA? DNA code could use a rewrite
+		genestealer.absorbed_dna += newDNA
 
 //Restores our verbs. It will only restore verbs allowed during lesser (monkey) form if we are not human
-/mob/proc/make_changeling()
+/mob/proc/make_genestealer()
 
-	if(!mind)				return
-	if(!mind.changeling)	mind.changeling = new /datum/changeling(gender)
+	// if(!mind)				return
+	if(!mind.genestealer)	mind.genestealer = new /datum/genestealer(gender)
 
-	verbs += /datum/changeling/proc/EvolutionMenu
+	verbs += /datum/genestealer/proc/EvolutionMenu
 	add_language(LANGUAGE_CHANGELING_GLOBAL)
 
 	var/lesser_form = !ishuman(src)
@@ -70,19 +70,19 @@ var/global/list/possible_changeling_IDs = list("Alpha","Beta","Gamma","Delta","E
 			powerinstances += new P()
 
 	// Code to auto-purchase free powers.
-	for(var/datum/power/changeling/P in powerinstances)
+	for(var/datum/power/genestealer/P in powerinstances)
 		if(!P.genomecost) // Is it free?
-			if(!(P in mind.changeling.purchasedpowers)) // Do we not have it already?
-				mind.changeling.purchasePower(mind, P.name, 0)// Purchase it. Don't remake our verbs, we're doing it after this.
+			if(!(P in mind.genestealer.purchasedpowers)) // Do we not have it already?
+				mind.genestealer.purchasePower(mind, P.name, 0)// Purchase it. Don't remake our verbs, we're doing it after this.
 
-	for(var/datum/power/changeling/P in mind.changeling.purchasedpowers)
+	for(var/datum/power/genestealer/P in mind.genestealer.purchasedpowers)
 		if(P.isVerb)
 			if(lesser_form && !P.allowduringlesserform)	continue
 			if(!(P in src.verbs))
 				src.verbs += P.verbpath
 
 	for(var/language in languages)
-		mind.changeling.absorbed_languages |= language
+		mind.genestealer.absorbed_languages |= language
 
 	var/mob/living/carbon/human/H = src
 	if(istype(H))
@@ -91,46 +91,46 @@ var/global/list/possible_changeling_IDs = list("Alpha","Beta","Gamma","Delta","E
 
 	return 1
 
-//removes our changeling verbs
-/mob/proc/remove_changeling_powers()
-	if(!mind || !mind.changeling)	return
-	for(var/datum/power/changeling/P in mind.changeling.purchasedpowers)
+//removes our genestealer verbs
+/mob/proc/remove_genestealer_powers()
+	if(!mind || !mind.genestealer)	return
+	for(var/datum/power/genestealer/P in mind.genestealer.purchasedpowers)
 		if(P.isVerb)
 			verbs -= P.verbpath
 
 
 //Helper proc. Does all the checks and stuff for us to avoid copypasta
-/mob/proc/changeling_power(required_chems=0, required_dna=0, max_genetic_damage=100, max_stat=0)
+/mob/proc/genestealer_power(required_chems=0, required_dna=0, max_genetic_damage=100, max_stat=0)
 
 	if(!src.mind)		return
 	if(!iscarbon(src))	return
 
-	var/datum/changeling/changeling = src.mind.changeling
-	if(!changeling)
-		to_world_log("[src] has the changeling_transform() verb but is not a changeling.")
+	var/datum/genestealer/genestealer = src.mind.genestealer
+	if(!genestealer)
+		to_world_log("[src] has the genestealer_transform() verb but is not a genestealer.")
 		return
 
 	if(src.stat > max_stat)
 		to_chat(src, SPAN_WARNING("We are incapacitated."))
 		return
 
-	if(length(changeling.absorbed_dna) < required_dna)
+	if(length(genestealer.absorbed_dna) < required_dna)
 		to_chat(src, SPAN_WARNING("We require at least [required_dna] samples of compatible DNA."))
 		return
 
-	if(changeling.chem_charges < required_chems)
+	if(genestealer.chem_charges < required_chems)
 		to_chat(src, SPAN_WARNING("We require at least [required_chems] units of chemicals to do that!"))
 		return
 
-	if(changeling.geneticdamage > max_genetic_damage)
+	if(genestealer.geneticdamage > max_genetic_damage)
 		to_chat(src, SPAN_WARNING("Our genomes are still reassembling. We need time to recover first."))
 		return
 
-	return changeling
+	return genestealer
 
 
-//Used to dump the languages from the changeling datum into the actual mob.
-/mob/proc/changeling_update_languages(updated_languages)
+//Used to dump the languages from the genestealer datum into the actual mob.
+/mob/proc/genestealer_update_languages(updated_languages)
 
 	languages = list()
 	for(var/language in updated_languages)
@@ -143,12 +143,12 @@ var/global/list/possible_changeling_IDs = list("Alpha","Beta","Gamma","Delta","E
 
 //Absorbs the victim's DNA making them uncloneable. Requires a strong grip on the victim.
 //Doesn't cost anything as it's the most basic ability.
-/mob/proc/changeling_absorb_dna()
-	set category = "Changeling"
+/mob/proc/genestealer_absorb_dna()
+	set category = "Genestealer"
 	set name = "Absorb DNA"
 
-	var/datum/changeling/changeling = changeling_power(0,0,100)
-	if(!changeling)	return
+	var/datum/genestealer/genestealer = genestealer_power(0,0,100)
+	if(!genestealer)	return
 
 	var/obj/item/grab/G = src.get_active_hand()
 	if(!istype(G))
@@ -172,7 +172,7 @@ var/global/list/possible_changeling_IDs = list("Alpha","Beta","Gamma","Delta","E
 		to_chat(src, SPAN_WARNING("We must have a tighter grip to absorb this creature."))
 		return
 
-	if(changeling.isabsorbing)
+	if(genestealer.isabsorbing)
 		to_chat(src, SPAN_WARNING("We are already absorbing!"))
 		return
 
@@ -180,7 +180,7 @@ var/global/list/possible_changeling_IDs = list("Alpha","Beta","Gamma","Delta","E
 	if(!affecting)
 		to_chat(src, SPAN_WARNING("They are missing that body part!"))
 
-	changeling.isabsorbing = 1
+	genestealer.isabsorbing = 1
 	for(var/stage = 1, stage<=3, stage++)
 		switch(stage)
 			if(1)
@@ -195,21 +195,21 @@ var/global/list/possible_changeling_IDs = list("Alpha","Beta","Gamma","Delta","E
 				affecting.take_external_damage(39, 0, DAMAGE_FLAG_SHARP, "large organic needle")
 		if(!do_after(src, 15 SECONDS, T, DO_PUBLIC_UNIQUE))
 			to_chat(src, SPAN_WARNING("Our absorption of [T] has been interrupted!"))
-			changeling.isabsorbing = 0
+			genestealer.isabsorbing = 0
 			return
 
 	to_chat(src, SPAN_NOTICE("We have absorbed [T]!"))
 	src.visible_message(SPAN_DANGER("[src] sucks the fluids from [T]!"))
-	to_chat(T, SPAN_DANGER("You have been absorbed by the changeling!"))
-	changeling.chem_charges += 10
-	changeling.geneticpoints += 2
+	to_chat(T, SPAN_DANGER("You have been absorbed by the genestealer!"))
+	genestealer.chem_charges += 10
+	genestealer.geneticpoints += 2
 
 	//Steal all of their languages!
 	for(var/language in T.languages)
-		if(!(language in changeling.absorbed_languages))
-			changeling.absorbed_languages += language
+		if(!(language in genestealer.absorbed_languages))
+			genestealer.absorbed_languages += language
 
-	changeling_update_languages(changeling.absorbed_languages)
+	genestealer_update_languages(genestealer.absorbed_languages)
 
 	var/datum/absorbed_dna/newDNA = new(T.real_name, T.dna, T.species.name, T.languages, T.pronouns)
 	absorbDNA(newDNA)
@@ -217,35 +217,35 @@ var/global/list/possible_changeling_IDs = list("Alpha","Beta","Gamma","Delta","E
 	if(mind && T.mind)
 		T.mind.CopyMemories(mind)
 
-	if(T.mind && T.mind.changeling)
-		if(T.mind.changeling.absorbed_dna)
-			for(var/datum/absorbed_dna/dna_data in T.mind.changeling.absorbed_dna)	//steal all their loot
-				if(changeling.GetDNA(dna_data.name))
+	if(T.mind && T.mind.genestealer)
+		if(T.mind.genestealer.absorbed_dna)
+			for(var/datum/absorbed_dna/dna_data in T.mind.genestealer.absorbed_dna)	//steal all their loot
+				if(genestealer.GetDNA(dna_data.name))
 					continue
 				absorbDNA(dna_data)
-				changeling.absorbedcount++
-			T.mind.changeling.absorbed_dna.Cut(2)
+				genestealer.absorbedcount++
+			T.mind.genestealer.absorbed_dna.Cut(2)
 
-		if(T.mind.changeling.purchasedpowers)
-			for(var/datum/power/changeling/Tp in T.mind.changeling.purchasedpowers)
-				if(Tp in changeling.purchasedpowers)
+		if(T.mind.genestealer.purchasedpowers)
+			for(var/datum/power/genestealer/Tp in T.mind.genestealer.purchasedpowers)
+				if(Tp in genestealer.purchasedpowers)
 					continue
 				else
-					changeling.purchasedpowers += Tp
+					genestealer.purchasedpowers += Tp
 
 					if(!Tp.isVerb)
 						call(Tp.verbpath)()
 					else
-						src.make_changeling()
+						src.make_genestealer()
 
-		changeling.chem_charges += T.mind.changeling.chem_charges
-		changeling.geneticpoints += T.mind.changeling.geneticpoints
-		T.mind.changeling.chem_charges = 0
-		T.mind.changeling.geneticpoints = 0
-		T.mind.changeling.absorbedcount = 0
+		genestealer.chem_charges += T.mind.genestealer.chem_charges
+		genestealer.geneticpoints += T.mind.genestealer.geneticpoints
+		T.mind.genestealer.chem_charges = 0
+		T.mind.genestealer.geneticpoints = 0
+		T.mind.genestealer.absorbedcount = 0
 
-	changeling.absorbedcount++
-	changeling.isabsorbing = 0
+	genestealer.absorbedcount++
+	genestealer.isabsorbing = 0
 
 	T.death(0)
 	T.ChangeToHusk()
@@ -253,26 +253,26 @@ var/global/list/possible_changeling_IDs = list("Alpha","Beta","Gamma","Delta","E
 
 
 //Change our DNA to that of somebody we've absorbed.
-/mob/proc/changeling_transform()
-	set category = "Changeling"
+/mob/proc/genestealer_transform()
+	set category = "Genestealer"
 	set name = "Transform (5)"
 
-	var/datum/changeling/changeling = changeling_power(5,1,0)
-	if(!changeling)	return
+	var/datum/genestealer/genestealer = genestealer_power(5,1,0)
+	if(!genestealer)	return
 
 	var/list/names = list()
-	for(var/datum/absorbed_dna/DNA in changeling.absorbed_dna)
+	for(var/datum/absorbed_dna/DNA in genestealer.absorbed_dna)
 		names += "[DNA.name]"
 
 	var/S = input("Select the target DNA: ", "Target DNA", null) as null|anything in names
 	if(!S)	return
 
-	var/datum/absorbed_dna/chosen_dna = changeling.GetDNA(S)
+	var/datum/absorbed_dna/chosen_dna = genestealer.GetDNA(S)
 	if(!chosen_dna)
 		return
 
-	changeling.chem_charges -= 5
-	changeling.geneticdamage = 30
+	genestealer.chem_charges -= 5
+	genestealer.geneticdamage = 30
 
 	var/S_name = chosen_dna.speciesName
 	var/datum/species/S_dat = all_species[S_name]
@@ -286,16 +286,16 @@ var/global/list/possible_changeling_IDs = list("Alpha","Beta","Gamma","Delta","E
 	if(!do_after(src, changeTime, do_flags = DO_DEFAULT | DO_USER_UNIQUE_ACT))
 		to_chat(src, SPAN_NOTICE("You fail to change shape."))
 		return
-	handle_changeling_transform(chosen_dna)
+	handle_genestealer_transform(chosen_dna)
 
-	src.verbs -= /mob/proc/changeling_transform
+	src.verbs -= /mob/proc/genestealer_transform
 	spawn(10)
-		src.verbs += /mob/proc/changeling_transform
+		src.verbs += /mob/proc/genestealer_transform
 
-	changeling_update_languages(changeling.absorbed_languages)
+	genestealer_update_languages(genestealer.absorbed_languages)
 	return 1
 
-/mob/proc/handle_changeling_transform(datum/absorbed_dna/chosen_dna)
+/mob/proc/handle_genestealer_transform(datum/absorbed_dna/chosen_dna)
 	src.visible_message(SPAN_WARNING("[src] transforms!"))
 
 	src.dna = chosen_dna.dna
@@ -315,12 +315,12 @@ var/global/list/possible_changeling_IDs = list("Alpha","Beta","Gamma","Delta","E
 
 
 //Transform into a monkey.
-/mob/proc/changeling_lesser_form()
-	set category = "Changeling"
+/mob/proc/genestealer_lesser_form()
+	set category = "Genestealer"
 	set name = "Lesser Form (1)"
 
-	var/datum/changeling/changeling = changeling_power(1,0,0)
-	if(!changeling)	return
+	var/datum/genestealer/genestealer = genestealer_power(1,0,0)
+	if(!genestealer)	return
 
 	if(src.has_brain_worms())
 		to_chat(src, SPAN_WARNING("We cannot perform this ability at the present time!"))
@@ -332,39 +332,39 @@ var/global/list/possible_changeling_IDs = list("Alpha","Beta","Gamma","Delta","E
 		to_chat(src, SPAN_WARNING("We cannot perform this ability in this form!"))
 		return
 
-	changeling.chem_charges--
+	genestealer.chem_charges--
 	H.visible_message(SPAN_WARNING("[H] transforms!"))
-	changeling.geneticdamage = 30
+	genestealer.geneticdamage = 30
 	to_chat(H, SPAN_WARNING("Our genes cry out!"))
 	H = H.monkeyize()
 	return 1
 
 //Transform into a human
-/mob/proc/changeling_lesser_transform()
-	set category = "Changeling"
+/mob/proc/genestealer_lesser_transform()
+	set category = "Genestealer"
 	set name = "Transform (1)"
 
-	var/datum/changeling/changeling = changeling_power(1,1,0)
-	if(!changeling)	return
+	var/datum/genestealer/genestealer = genestealer_power(1,1,0)
+	if(!genestealer)	return
 
 	if(HAS_TRANSFORMATION_MOVEMENT_HANDLER(src))
 		return
 
 	var/list/names = list()
-	for(var/datum/dna/DNA in changeling.absorbed_dna)
+	for(var/datum/dna/DNA in genestealer.absorbed_dna)
 		names += "[DNA.real_name]"
 
 	var/S = input("Select the target DNA: ", "Target DNA", null) as null|anything in names
 	if(!S)	return
 
-	var/datum/dna/chosen_dna = changeling.GetDNA(S)
+	var/datum/dna/chosen_dna = genestealer.GetDNA(S)
 	if(!chosen_dna)
 		return
 
 	var/mob/living/carbon/human/C = src
 
-	changeling.chem_charges--
-	C.remove_changeling_powers()
+	genestealer.chem_charges--
+	C.remove_genestealer_powers()
 	C.visible_message(SPAN_WARNING("[C] transforms!"))
 	C.dna = chosen_dna.Clone()
 
@@ -412,41 +412,41 @@ var/global/list/possible_changeling_IDs = list("Alpha","Beta","Gamma","Delta","E
 		I.implanted = O
 
 	C.mind.transfer_to(O)
-	O.make_changeling()
-	O.changeling_update_languages(changeling.absorbed_languages)
+	O.make_genestealer()
+	O.genestealer_update_languages(genestealer.absorbed_languages)
 	qdel(C)
 	return 1
 
 
 //Fake our own death and fully heal. You will appear to be dead but regenerate fully after a short delay.
-/mob/proc/changeling_fakedeath()
-	set category = "Changeling"
+/mob/proc/genestealer_fakedeath()
+	set category = "Genestealer"
 	set name = "Regenerative Stasis (20)"
 
-	var/datum/changeling/changeling = changeling_power(20,1,100,DEAD)
-	if(!changeling)	return
+	var/datum/genestealer/genestealer = genestealer_power(20,1,100,DEAD)
+	if(!genestealer)	return
 
 	var/mob/living/carbon/C = src
-	if(!C.stat && alert("Are we sure we wish to fake our death?",,"Compliance","No") == "No")//Confirmation for living changelings if they want to fake their death
+	if(!C.stat && alert("Are we sure we wish to fake our death?",,"Compliance","No") == "No")//Confirmation for living genestealers if they want to fake their death
 		return
 	to_chat(C, SPAN_NOTICE("We will attempt to regenerate our form."))
 	C.status_flags |= FAKEDEATH		//play dead
 	C.UpdateLyingBuckledAndVerbStatus()
-	C.remove_changeling_powers()
+	C.remove_genestealer_powers()
 
 	C.emote("gasp")
 
 	spawn(rand(800,2000))
-		if(changeling_power(20,1,100,DEAD))
-			// charge the changeling chemical cost for stasis
-			changeling.chem_charges -= 20
+		if(genestealer_power(20,1,100,DEAD))
+			// charge the genestealer chemical cost for stasis
+			genestealer.chem_charges -= 20
 
 			to_chat(C, SPAN_NOTICE(FONT_GIANT("We are ready to rise.  Use the <b>Revive</b> verb when you are ready.")))
-			C.verbs += /mob/proc/changeling_revive
+			C.verbs += /mob/proc/genestealer_revive
 	return 1
 
-/mob/proc/changeling_revive()
-	set category = "Changeling"
+/mob/proc/genestealer_revive()
+	set category = "Genestealer"
 	set name = "Revive"
 
 	var/mob/living/carbon/C = src
@@ -456,38 +456,38 @@ var/global/list/possible_changeling_IDs = list("Alpha","Beta","Gamma","Delta","E
 	C.status_flags &= ~(FAKEDEATH)
 	// let us move again
 	C.UpdateLyingBuckledAndVerbStatus()
-	// re-add out changeling powers
-	C.make_changeling()
+	// re-add out genestealer powers
+	C.make_genestealer()
 	// sending display messages
 	to_chat(C, SPAN_NOTICE("We have regenerated."))
-	C.verbs -= /mob/proc/changeling_revive
+	C.verbs -= /mob/proc/genestealer_revive
 
 
 //Boosts the range of your next sting attack by 1
-/mob/proc/changeling_boost_range()
-	set category = "Changeling"
+/mob/proc/genestealer_boost_range()
+	set category = "Genestealer"
 	set name = "Ranged Sting (10)"
 	set desc="Your next sting ability can be used against targets 2 squares away."
 
-	var/datum/changeling/changeling = changeling_power(10,0,100)
-	if(!changeling)	return 0
-	changeling.chem_charges -= 10
+	var/datum/genestealer/genestealer = genestealer_power(10,0,100)
+	if(!genestealer)	return 0
+	genestealer.chem_charges -= 10
 	to_chat(src, SPAN_NOTICE("Your throat adjusts to launch the sting."))
-	changeling.sting_range = 2
-	src.verbs -= /mob/proc/changeling_boost_range
-	spawn(5)	src.verbs += /mob/proc/changeling_boost_range
+	genestealer.sting_range = 2
+	src.verbs -= /mob/proc/genestealer_boost_range
+	spawn(5)	src.verbs += /mob/proc/genestealer_boost_range
 	return 1
 
 
 //Recover from stuns.
-/mob/proc/changeling_unstun()
-	set category = "Changeling"
+/mob/proc/genestealer_unstun()
+	set category = "Genestealer"
 	set name = "Epinephrine Sacs (45)"
 	set desc = "Removes all stuns"
 
-	var/datum/changeling/changeling = changeling_power(45,0,100,UNCONSCIOUS)
-	if(!changeling)	return 0
-	changeling.chem_charges -= 45
+	var/datum/genestealer/genestealer = genestealer_power(45,0,100,UNCONSCIOUS)
+	if(!genestealer)	return 0
+	genestealer.chem_charges -= 45
 
 	var/mob/living/carbon/human/C = src
 	C.set_stat(CONSCIOUS)
@@ -497,30 +497,30 @@ var/global/list/possible_changeling_IDs = list("Alpha","Beta","Gamma","Delta","E
 	C.lying = 0
 	C.UpdateLyingBuckledAndVerbStatus()
 
-	src.verbs -= /mob/proc/changeling_unstun
-	spawn(5)	src.verbs += /mob/proc/changeling_unstun
+	src.verbs -= /mob/proc/genestealer_unstun
+	spawn(5)	src.verbs += /mob/proc/genestealer_unstun
 	return 1
 
 
 //Speeds up chemical regeneration
-/mob/proc/changeling_fastchemical()
-	src.mind.changeling.chem_recharge_rate *= 2
+/mob/proc/genestealer_fastchemical()
+	src.mind.genestealer.chem_recharge_rate *= 2
 	return 1
 
 //Increases macimum chemical storage
-/mob/proc/changeling_engorgedglands()
-	src.mind.changeling.chem_storage += 25
+/mob/proc/genestealer_engorgedglands()
+	src.mind.genestealer.chem_storage += 25
 	return 1
 
 
 //Prevents AIs tracking you but makes you easily detectable to the human-eye.
-/mob/proc/changeling_digitalcamo()
-	set category = "Changeling"
+/mob/proc/genestealer_digitalcamo()
+	set category = "Genestealer"
 	set name = "Toggle Digital Camoflague"
 	set desc = "The AI can no longer track us, but we will look different if examined.  Has a constant cost while active."
 
-	var/datum/changeling/changeling = changeling_power()
-	if(!changeling)	return 0
+	var/datum/genestealer/genestealer = genestealer_power()
+	if(!genestealer)	return 0
 
 	var/mob/living/carbon/human/C = src
 	if(C.digitalcamo)	to_chat(C, SPAN_NOTICE("We return to normal."))
@@ -528,24 +528,24 @@ var/global/list/possible_changeling_IDs = list("Alpha","Beta","Gamma","Delta","E
 	C.digitalcamo = !C.digitalcamo
 
 	spawn(0)
-		while(C && C.digitalcamo && C.mind && C.mind.changeling)
-			C.mind.changeling.chem_charges = max(C.mind.changeling.chem_charges - 1, 0)
+		while(C && C.digitalcamo && C.mind && C.mind.genestealer)
+			C.mind.genestealer.chem_charges = max(C.mind.genestealer.chem_charges - 1, 0)
 			sleep(40)
 
-	src.verbs -= /mob/proc/changeling_digitalcamo
-	spawn(5)	src.verbs += /mob/proc/changeling_digitalcamo
+	src.verbs -= /mob/proc/genestealer_digitalcamo
+	spawn(5)	src.verbs += /mob/proc/genestealer_digitalcamo
 	return 1
 
 
 //Starts healing you every second for 10 seconds. Can be used whilst unconscious.
-/mob/proc/changeling_rapidregen()
-	set category = "Changeling"
+/mob/proc/genestealer_rapidregen()
+	set category = "Genestealer"
 	set name = "Rapid Regeneration (30)"
 	set desc = "Begins rapidly regenerating.  Does not effect stuns or chemicals."
 
-	var/datum/changeling/changeling = changeling_power(30,0,100,UNCONSCIOUS)
-	if(!changeling)	return 0
-	src.mind.changeling.chem_charges -= 30
+	var/datum/genestealer/genestealer = genestealer_power(30,0,100,UNCONSCIOUS)
+	if(!genestealer)	return 0
+	src.mind.genestealer.chem_charges -= 30
 
 	var/mob/living/carbon/human/C = src
 	spawn(0)
@@ -557,24 +557,24 @@ var/global/list/possible_changeling_IDs = list("Alpha","Beta","Gamma","Delta","E
 				C.adjustFireLoss(-10)
 				sleep(10)
 
-	src.verbs -= /mob/proc/changeling_rapidregen
-	spawn(5)	src.verbs += /mob/proc/changeling_rapidregen
+	src.verbs -= /mob/proc/genestealer_rapidregen
+	spawn(5)	src.verbs += /mob/proc/genestealer_rapidregen
 	return 1
 
 // HIVE MIND UPLOAD/DOWNLOAD DNA
 
 var/global/list/datum/absorbed_dna/hivemind_bank = list()
 
-/mob/proc/changeling_hiveupload()
-	set category = "Changeling"
+/mob/proc/genestealer_hiveupload()
+	set category = "Genestealer"
 	set name = "Hive Channel (10)"
-	set desc = "Allows you to channel DNA in the airwaves to allow other changelings to absorb it."
+	set desc = "Allows you to channel DNA in the airwaves to allow other genestealers to absorb it."
 
-	var/datum/changeling/changeling = changeling_power(10,1)
-	if(!changeling)	return
+	var/datum/genestealer/genestealer = genestealer_power(10,1)
+	if(!genestealer)	return
 
 	var/list/names = list()
-	for(var/datum/absorbed_dna/DNA in changeling.absorbed_dna)
+	for(var/datum/absorbed_dna/DNA in genestealer.absorbed_dna)
 		var/valid = 1
 		for(var/datum/absorbed_dna/DNB in hivemind_bank)
 			if(DNA.name == DNB.name)
@@ -590,7 +590,7 @@ var/global/list/datum/absorbed_dna/hivemind_bank = list()
 	var/S = input("Select a DNA to channel: ", "Channel DNA", null) as null|anything in names
 	if(!S)	return
 
-	var/datum/absorbed_dna/chosen_dna = changeling.GetDNA(S)
+	var/datum/absorbed_dna/chosen_dna = genestealer.GetDNA(S)
 	if(!chosen_dna)
 		return
 
@@ -600,22 +600,22 @@ var/global/list/datum/absorbed_dna/hivemind_bank = list()
 		to_chat(src, SPAN_NOTICE("That species must be absorbed directly."))
 		return
 
-	changeling.chem_charges -= 10
+	genestealer.chem_charges -= 10
 	hivemind_bank += chosen_dna
 	to_chat(src, SPAN_NOTICE("We channel the DNA of [S] to the air."))
 	return 1
 
-/mob/proc/changeling_hivedownload()
-	set category = "Changeling"
+/mob/proc/genestealer_hivedownload()
+	set category = "Genestealer"
 	set name = "Hive Absorb (20)"
 	set desc = "Allows you to absorb DNA that is being channeled in the airwaves."
 
-	var/datum/changeling/changeling = changeling_power(20,1)
-	if(!changeling)	return
+	var/datum/genestealer/genestealer = genestealer_power(20,1)
+	if(!genestealer)	return
 
 	var/list/names = list()
 	for(var/datum/absorbed_dna/DNA in hivemind_bank)
-		if(!(changeling.GetDNA(DNA.name)))
+		if(!(genestealer.GetDNA(DNA.name)))
 			names[DNA.name] = DNA
 
 	if(length(names) <= 0)
@@ -628,24 +628,24 @@ var/global/list/datum/absorbed_dna/hivemind_bank = list()
 	if(!chosen_dna)
 		return
 
-	changeling.chem_charges -= 20
+	genestealer.chem_charges -= 20
 	absorbDNA(chosen_dna)
 	to_chat(src, SPAN_NOTICE("We absorb the DNA of [S] from the air."))
 	return 1
 
 // Fake Voice
 
-/mob/proc/changeling_mimicvoice()
-	set category = "Changeling"
+/mob/proc/genestealer_mimicvoice()
+	set category = "Genestealer"
 	set name = "Mimic Voice"
 	set desc = "Shape our vocal glands to form a voice of someone we choose. We cannot regenerate chemicals when mimicing."
 
 
-	var/datum/changeling/changeling = changeling_power()
-	if(!changeling)	return
+	var/datum/genestealer/genestealer = genestealer_power()
+	if(!genestealer)	return
 
-	if(changeling.mimicing)
-		changeling.mimicing = ""
+	if(genestealer.mimicing)
+		genestealer.mimicing = ""
 		to_chat(src, SPAN_NOTICE("We return our vocal glands to their original location."))
 		return
 
@@ -653,17 +653,17 @@ var/global/list/datum/absorbed_dna/hivemind_bank = list()
 	if(!mimic_voice)
 		return
 
-	changeling.mimicing = mimic_voice
+	genestealer.mimicing = mimic_voice
 
 	to_chat(src, SPAN_NOTICE("We shape our glands to take the voice of <b>[mimic_voice]</b>, this will stop us from regenerating chemicals while active."))
 	to_chat(src, SPAN_NOTICE("Use this power again to return to our original voice and reproduce chemicals again."))
 
 	spawn(0)
-		while(src && src.mind && src.mind.changeling && src.mind.changeling.mimicing)
-			src.mind.changeling.chem_charges = max(src.mind.changeling.chem_charges - 1, 0)
+		while(src && src.mind && src.mind.genestealer && src.mind.genestealer.mimicing)
+			src.mind.genestealer.chem_charges = max(src.mind.genestealer.chem_charges - 1, 0)
 			sleep(40)
-		if(src && src.mind && src.mind.changeling)
-			src.mind.changeling.mimicing = ""
+		if(src && src.mind && src.mind.genestealer)
+			src.mind.genestealer.mimicing = ""
 	//////////
 	//STINGS//	//They get a pretty header because there's just so fucking many of them ;_;
 	//////////
@@ -681,25 +681,25 @@ var/global/list/datum/absorbed_dna/hivemind_bank = list()
 	return 1
 
 //Handles the general sting code to reduce on copypasta (seeming as somebody decided to make SO MANY dumb abilities)
-/mob/proc/changeling_sting(required_chems=0, verb_path, loud, sting_name = "unnamed sting")
-	var/datum/changeling/changeling = changeling_power(required_chems)
-	if(!changeling)								return
+/mob/proc/genestealer_sting(required_chems=0, verb_path, loud, sting_name = "unnamed sting")
+	var/datum/genestealer/genestealer = genestealer_power(required_chems)
+	if(!genestealer)								return
 
 	var/list/victims = list()
-	for(var/mob/living/carbon/human/C in oview(changeling.sting_range))
+	for(var/mob/living/carbon/human/C in oview(genestealer.sting_range))
 		victims += C
 	var/mob/living/carbon/human/T = input(src, "Who will we sting?") as null|anything in victims
 
 	if(!T) return
-	if(!(T in view(changeling.sting_range))) return
-	if(!sting_can_reach(T, changeling.sting_range)) return
-	if(!changeling_power(required_chems)) return
+	if(!(T in view(genestealer.sting_range))) return
+	if(!sting_can_reach(T, genestealer.sting_range)) return
+	if(!genestealer_power(required_chems)) return
 	var/obj/item/organ/external/target_limb = T.get_organ(src.zone_sel.selecting)
 	if (!target_limb)
 		to_chat(src, SPAN_WARNING("[T] is missing that limb."))
 		return
-	changeling.chem_charges -= required_chems
-	changeling.sting_range = 1
+	genestealer.chem_charges -= required_chems
+	genestealer.sting_range = 1
 	src.verbs -= verb_path
 	spawn(10)	src.verbs += verb_path
 	if(!loud)
@@ -714,38 +714,38 @@ var/global/list/datum/absorbed_dna/hivemind_bank = list()
 			return //thick clothes will protect from the sting
 
 	if(T.isSynthetic() || BP_IS_ROBOTIC(target_limb)) return
-	if(!T.mind || !T.mind.changeling) return T	//T will be affected by the sting
+	if(!T.mind || !T.mind.genestealer) return T	//T will be affected by the sting
 	to_chat(T, SPAN_WARNING("You feel a tiny prick."))
 	return
 
 
-/mob/proc/changeling_lsdsting()
-	set category = "Changeling"
+/mob/proc/genestealer_lsdsting()
+	set category = "Genestealer"
 	set name = "Hallucination Sting (15)"
 	set desc = "Causes terror in the target."
 
-	var/mob/living/carbon/human/T = changeling_sting(15, /mob/proc/changeling_lsdsting, sting_name = "Hallucination Sting")
+	var/mob/living/carbon/human/T = genestealer_sting(15, /mob/proc/genestealer_lsdsting, sting_name = "Hallucination Sting")
 	if(!T)	return 0
 	spawn(rand(300,600))
 		if(T)	T.hallucination(400, 80)
 	return 1
 
-/mob/proc/changeling_silence_sting()
-	set category = "Changeling"
+/mob/proc/genestealer_silence_sting()
+	set category = "Genestealer"
 	set name = "Silence sting (10)"
 	set desc="Sting target"
 
-	var/mob/living/carbon/human/T = changeling_sting(10,/mob/proc/changeling_silence_sting, sting_name = "Silence Sting")
+	var/mob/living/carbon/human/T = genestealer_sting(10,/mob/proc/genestealer_silence_sting, sting_name = "Silence Sting")
 	if(!T)	return 0
 	T.silent += 30
 	return 1
 
-/mob/proc/changeling_blind_sting()
-	set category = "Changeling"
+/mob/proc/genestealer_blind_sting()
+	set category = "Genestealer"
 	set name = "Blind sting (20)"
 	set desc="Sting target"
 
-	var/mob/living/carbon/human/T = changeling_sting(20,/mob/proc/changeling_blind_sting, sting_name = "Blind Sting")
+	var/mob/living/carbon/human/T = genestealer_sting(20,/mob/proc/genestealer_blind_sting, sting_name = "Blind Sting")
 	if(!T)	return 0
 	to_chat(T, SPAN_DANGER("Your eyes burn horrificly!"))
 	T.disabilities |= NEARSIGHTED
@@ -754,42 +754,42 @@ var/global/list/datum/absorbed_dna/hivemind_bank = list()
 	T.eye_blurry = 20
 	return 1
 
-/mob/proc/changeling_deaf_sting()
-	set category = "Changeling"
+/mob/proc/genestealer_deaf_sting()
+	set category = "Genestealer"
 	set name = "Deaf sting (5)"
 	set desc="Sting target:"
 
-	var/mob/living/carbon/human/T = changeling_sting(5,/mob/proc/changeling_deaf_sting, sting_name = "Deaf Sting")
+	var/mob/living/carbon/human/T = genestealer_sting(5,/mob/proc/genestealer_deaf_sting, sting_name = "Deaf Sting")
 	if(!T)	return 0
 	to_chat(T, SPAN_DANGER("Your ears pop and begin ringing loudly!"))
 	T.ear_deaf += 15
 	return 1
 
-/mob/proc/changeling_DEATHsting()
-	set category = "Changeling"
+/mob/proc/genestealer_DEATHsting()
+	set category = "Genestealer"
 	set name = "Death Sting (40)"
 	set desc = "Causes spasms onto death."
 	var/loud = 1
 
-	var/mob/living/carbon/human/T = changeling_sting(40,/mob/proc/changeling_DEATHsting,loud, sting_name = "Death Sting")
+	var/mob/living/carbon/human/T = genestealer_sting(40,/mob/proc/genestealer_DEATHsting,loud, sting_name = "Death Sting")
 	if(!T)	return 0
 	to_chat(T, SPAN_DANGER("You feel a small prick and your chest becomes tight."))
 	T.make_jittery(400)
 	if(T.reagents)	T.reagents.add_reagent(/datum/reagent/lexorin, 10)
 	return 1
 
-/mob/proc/changeling_extract_dna_sting()
-	set category = "Changeling"
+/mob/proc/genestealer_extract_dna_sting()
+	set category = "Genestealer"
 	set name = "Extract DNA Sting (40)"
 	set desc="Stealthily sting a target to extract their DNA."
 
-	var/datum/changeling/changeling = null
-	if(src.mind && src.mind.changeling)
-		changeling = src.mind.changeling
-	if(!changeling)
+	var/datum/genestealer/genestealer = null
+	if(src.mind && src.mind.genestealer)
+		genestealer = src.mind.genestealer
+	if(!genestealer)
 		return 0
 
-	var/mob/living/carbon/human/T = changeling_sting(40, /mob/proc/changeling_extract_dna_sting, sting_name = "Extract DNA Sting")
+	var/mob/living/carbon/human/T = genestealer_sting(40, /mob/proc/genestealer_extract_dna_sting, sting_name = "Extract DNA Sting")
 	if(!T)	return 0
 	if((MUTATION_HUSK in T.mutations) || (T.species.species_flags & SPECIES_FLAG_NO_SCAN))
 		to_chat(src, SPAN_WARNING("We cannot extract DNA from this creature!"))

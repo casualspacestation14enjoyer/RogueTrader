@@ -129,8 +129,8 @@
 		return fake_name
 	if(voice_sub)
 		return voice_sub
-	if(mind && mind.changeling && mind.changeling.mimicing)
-		return mind.changeling.mimicing
+	if(mind && mind.genestealer && mind.genestealer.mimicing)
+		return mind.genestealer.mimicing
 	return real_name
 
 /mob/living/carbon/human/say_quote(message, datum/language/speaking = null)

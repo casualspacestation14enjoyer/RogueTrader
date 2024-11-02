@@ -1518,7 +1518,7 @@
 /obj/structure/bed,
 /obj/item/bedsheet/clown,
 /obj/floor_decal/corner/lightgrey/mono,
-/obj/submap_landmark/spawnpoint/scavver_doctor,
+/obj/submap_landmark/spawnpoint/scavver_noble,
 /turf/simulated/floor/tiled/monotile,
 /area/scavver/hab)
 "mS" = (
@@ -3349,7 +3349,7 @@
 /obj/decal/cleanable/dirt,
 /obj/item/bedsheet/green,
 /obj/floor_decal/corner/lightgrey/mono,
-/obj/submap_landmark/spawnpoint/scavver_pilot,
+/obj/submap_landmark/spawnpoint/scavver_crew,
 /turf/simulated/floor/tiled/monotile,
 /area/scavver/hab)
 "Bd" = (

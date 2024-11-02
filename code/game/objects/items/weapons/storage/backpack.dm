@@ -76,7 +76,7 @@
 
 /obj/item/storage/backpack/holding/use_tool(obj/item/W, mob/living/user, list/click_params)
 	if(istype(W, /obj/item/storage/backpack/holding) || istype(W, /obj/item/storage/bag/trash/bluespace))
-		to_chat(user, SPAN_WARNING("The Bluespace interfaces of the two devices conflict and malfunction."))
+		to_chat(user, SPAN_WARNING("The Warp interfaces of the two devices conflict and malfunction."))
 		qdel(W)
 		return TRUE
 	return ..()
@@ -646,6 +646,30 @@
 		/obj/item/clothing/accessory/armor_plate/bodyglove,
 	)
 
+/obj/item/storage/backpack/satchel/flat/interrogator1
+	startswith = list(
+		/obj/item/card/emag,
+		/obj/item/storage/box/contraband/toxin,
+		/obj/item/device/uplink_service/fake_command_report,
+		/obj/item/card/id/syndicate,
+		/obj/item/device/radio/headset/headset_sec,
+		/obj/item/clothing/suit/armor/grim/agent,
+		/obj/item/clothing/head/helmet/inquisition/acolyte,
+		/obj/item/clothing/head/helmet/inquisition/stealth,
+	)
+
+/obj/item/storage/backpack/satchel/flat/interrogator2
+	startswith = list(
+		/obj/item/card/emag,
+		/obj/item/storage/box/contraband/toxin,
+		/obj/item/device/uplink_service/fake_command_report,
+		/obj/item/card/id/syndicate,
+		/obj/item/device/radio/headset/headset_sec,
+		/obj/item/clothing/suit/armor/grim/witch,
+		/obj/item/clothing/head/helmet/pilgrimhelm/witch,
+		/obj/item/clothing/head/helmet/inquisition/shrouded,
+	)
+
 /obj/item/storage/backpack/satchel/warfare/heavy
 	name = "heavy rucksack"
 	desc = "A heavy rucksack."
@@ -700,6 +724,120 @@
 	max_storage_space = DEFAULT_BACKPACK_STORAGE+6
 	canremove = FALSE
 	// var/can_toggle = 1
+
+
+/obj/item/storage/backpack/satchel/warfare/sisterofbattle
+	name = "Order of the Sacred Rose Powerpack"
+	desc = "A Powerpack belongs to the Battle Sister of the Order Of The Sacred Rose. It bears the Sigil of the Adepta Sororitas.</i>"
+	icon_state = "sister"
+	item_state = "sister"
+	max_storage_space = DEFAULT_BACKPACK_STORAGE+4
+	canremove = 1
+
+/obj/item/storage/backpack/satchel/warfare/sisterofbattle/mlsister
+	name = "Order of Our Martyred Lady Powerpack"
+	desc = "A Powerpack for the consecrated power armor of the Adeptas Sororitas. It has the colors of the Order of Our Martyred Lady.</i>"
+	icon_state = "mlsister"
+	item_state = "mlsister"
+	max_storage_space = DEFAULT_BACKPACK_STORAGE+4
+	canremove = 1
+
+
+/obj/item/storage/backpack/satchel/warfare/sisterofbattle/brsister
+	name = "Order of the Bloody Rose Powerback"
+	desc = "A Powerpack for the consecrated power armor of the Adeptas Sororitas. It has the colors of the Order of the Bloody Rose.</i>"
+	icon_state = "brsister"
+	item_state = "brsister"
+	max_storage_space = DEFAULT_BACKPACK_STORAGE+4
+	canremove = 1
+
+/obj/item/storage/backpack/satchel/astartes
+	name = "Astartes Mark VII Powerpack"
+	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings."
+	item_icons = list(slot_back_str = 'icons/mob/32x40/storage.dmi')
+	icon_state = "ultrapack"
+	item_state = "ultrapack"
+	canremove = 1
+	max_storage_space = DEFAULT_BACKPACK_STORAGE+6
+
+/obj/item/storage/backpack/satchel/astartes/ultramarine
+	name = "Astartes Mark VII Powerpack"
+	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This one bears the marking of the XIIIth Chapter, Ultramarines."
+	icon_state = "ultrapack"
+	item_state = "ultrapack"
+
+/obj/item/storage/backpack/satchel/astartes/ultramarinenew
+	name = "Astartes Mark VII Powerpack"
+	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This one bears the marking of the XIIIth Chapter, Ultramarines."
+	icon_state = "ultrab"
+	item_state = "ultrab"
+
+/obj/item/storage/backpack/satchel/astartes/nightlords
+	name = "Astartes Mark VII Powerpack"
+	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This one bears the marking of the IIIrd Legion, Night Lords."
+	icon_state = "nightlordb"
+	item_state = "nightlordb"
+
+/obj/item/storage/backpack/satchel/astartes/alphalegion
+	name = "Astartes Mark VII Powerpack"
+	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This one bears the marking of the XXth Legion, Alpha Legion."
+	icon_state = "alphalegb"
+	item_state = "alphalegb"
+
+/obj/item/storage/backpack/satchel/astartes/worldbearers
+	name = "Astartes Mark VII Powerpack"
+	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This one bears the marking of the XXth Legion, World Bearers."
+	icon_state = "worldbb"
+	item_state = "worldbb"
+
+/obj/item/storage/backpack/satchel/astartes/plaguemarines
+	name = "Astartes Mark VII Powerpack"
+	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This one bears the marking of the XXth Legion, Alpha Legion."
+	icon_state = "plaguemb"
+	item_state = "plaguemb"
+
+/obj/item/storage/backpack/satchel/astartes/ravenguard
+	name = "Astartes Mark VII Powerpack"
+	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This one bears the marking of the XIXth Chapter, Raven Guards."
+	icon_state = "ravpack"
+	item_state = "ravpack"
+
+/obj/item/storage/backpack/satchel/astartes/bloodangel
+	name = "Astartes Mark VII Powerpack"
+	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This one bears the marking of the IXth Chapter, Blood Angels."
+	icon_state = "bravpack"
+	item_state = "bravpack"
+
+/obj/item/storage/backpack/satchel/astartes/bloodangel/lamenter
+	name = "Astartes Mark VII Powerpack"
+	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This one bears the marking of the IXth Chapter, Blood Angels."
+	icon_state = "lamenterb"
+	item_state = "lamenterb"
+
+/obj/item/storage/backpack/satchel/astartes/salamander
+	name = "Astartes Mark VII Powerpack"
+	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This one bears the marking of the XVIIIth Chapter, Salamanders."
+	icon_state = "salpack"
+	item_state = "salpack"
+
+/obj/item/storage/backpack/satchel/astartes/apothecary
+	name = "Astartes Mark VII Medipack"
+	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This Powerpack has been upgraded with additional spotlight and surgical arms to serve medical purposes."
+	icon_state = "salpack"
+	item_state = "salpack"
+
+/obj/item/storage/backpack/satchel/warfare/techpriest/techmarine //because it uses techpriest stuff.
+	name = "Astartes Mark VII Servo-Harness"
+	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This Powerpack has been equipped with additional Servo-Arms to serve engineering purposes."
+	item_icons = list(slot_back_str = 'icons/mob/32x40/storage.dmi')
+	icon_state = "techpack"
+	item_state = "techpack"
+	max_storage_space = DEFAULT_BACKPACK_STORAGE+7
+
+/obj/item/storage/backpack/satchel/warfare/kroot
+	desc = "Fit for war, and not much else."
+	icon_state = "krootbag"
+
 /*
 /obj/item/storage/backpack/satchel/warfare/techpriest/verb/toggleallen()
 	set name = "Pull Out Allen Wrench"

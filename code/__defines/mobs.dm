@@ -11,7 +11,7 @@
 #define PASSEMOTES  FLAG(4)  // Mob has a cortical borer or holders inside of it that need to see emotes.
 #define LEAPING     FLAG(5)
 #define GODMODE     FLAG(6)
-#define FAKEDEATH   FLAG(7)  // Replaces stuff like changeling.changeling_fakedeath.
+#define FAKEDEATH   FLAG(7)  // Replaces stuff like genestealer.genestealer_fakedeath.
 #define NO_ANTAG    FLAG(8)  // Players are restricted from gaining antag roles when occupying this mob
 #define NOTARGET    FLAG(9)  // Player is invisible to all simple mobs
 

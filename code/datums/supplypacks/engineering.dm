@@ -216,7 +216,7 @@
 	containername = "radiation suit locker"
 
 /singleton/hierarchy/supply_pack/engineering/bluespacerelay
-	name = "Parts - Emergency Bluespace Relay parts"
+	name = "Parts - Emergency Warp Relay parts"
 	contains = list(/obj/item/stock_parts/circuitboard/bluespacerelay,
 					/obj/item/stock_parts/manipulator,
 					/obj/item/stock_parts/manipulator,

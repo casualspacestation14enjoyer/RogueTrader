@@ -710,7 +710,7 @@
 				/obj/item/material/knife/folding/combat/balisong = 2,
 				/obj/item/material/knife/folding/combat/switchblade = 1,
 				/obj/item/storage/secure/briefcase/money = 1,
-				/obj/item/storage/box/syndie_kit/cigarette = 1,
+				/obj/item/storage/box/contraband/cigarette = 1,
 				/obj/item/stack/telecrystal = 1,
 				/obj/item/clothing/under/syndicate = 2,
 				/obj/item/reagent_containers/syringe = 3,

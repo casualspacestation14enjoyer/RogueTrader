@@ -815,7 +815,7 @@
 /area/map_template/ninja_dojo/dojo)
 "bR" = (
 /obj/structure/table/rack,
-/obj/item/storage/box/syndie_kit/chameleon,
+/obj/item/storage/box/contraband/chameleon,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},

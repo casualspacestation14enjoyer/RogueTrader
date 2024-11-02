@@ -622,9 +622,9 @@
 		stat(null, "Suit charge: [cell_status]")
 
 	if(mind)
-		if(mind.changeling)
-			stat("Chemical Storage", mind.changeling.chem_charges)
-			stat("Genetic Damage Time", mind.changeling.geneticdamage)
+		if(mind.genestealer)
+			stat("Chemical Storage", mind.genestealer.chem_charges)
+			stat("Genetic Damage Time", mind.genestealer.geneticdamage)
 
 /mob/living/carbon/human/IsAdvancedToolUser(silent)
 	if(species.has_fine_manipulation(src))

@@ -301,7 +301,7 @@ var/global/list/all_objectives = list()
 				n_p ++
 	else if (GAME_STATE == RUNLEVEL_GAME)
 		for(var/mob/living/carbon/human/P in GLOB.player_list)
-			if(P.client && !(P.mind.changeling) && P.mind!=owner)
+			if(P.client && !(P.mind.genestealer) && P.mind!=owner)
 				n_p ++
 	target_amount = min(target_amount, n_p)
 
@@ -428,10 +428,10 @@ var/global/list/all_objectives = list()
 	explanation_text = "Our knowledge must live on. Make sure at least [target_amount] acolytes escape to spread their work."
 
 /datum/objective/cult/eldergod
-	explanation_text = "Summon Nar-Sie via the use of the appropriate rune (Hell join self). It will only work if nine cultists stand on and around it. The convert rune is join blood self."
+	explanation_text = "Summon the Sovereign via the use of the appropriate rune (Hell join self). It will only work if nine cultists stand on and around it. The convert rune is join blood self."
 
 /datum/objective/cult/sacrifice
-	explanation_text = "Conduct a ritual sacrifice for the glory of Nar-Sie."
+	explanation_text = "Conduct a ritual sacrifice for the glory of the Sovereign."
 
 /datum/objective/cult/sacrifice/find_target()
 	var/list/possible_targets = list()

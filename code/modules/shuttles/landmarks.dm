@@ -137,7 +137,7 @@
 
 
 /obj/shuttle_landmark/automatic/beacon
-	name = "Bluespace Beacon Signal"
+	name = "Warp Beacon Signal"
 	/// The beacon object synced to this landmark. If this is ever null or qdeleted the landmark should delete itself.
 	var/obj/item/shuttle_beacon/beacon
 

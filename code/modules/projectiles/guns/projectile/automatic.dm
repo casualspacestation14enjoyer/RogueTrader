@@ -21,6 +21,7 @@
 	mag_insert_sound = 'sound/weapons/guns/interaction/smg_magin.ogg'
 	mag_remove_sound = 'sound/weapons/guns/interaction/smg_magout.ogg'
 	fire_sound = 'sound/weapons/gunshot/gunshot_4mm.ogg'
+	slowdown_general = 0.1
 
 	//machine pistol, easier to one-hand with
 	firemodes = list(
@@ -39,14 +40,6 @@
 		item_state = "machinepistol"
 		wielded_item_state = "machinepistol-wielded"
 
-/obj/item/gun/projectile/automatic/New()
-	..()
-	slowdown_per_slot[slot_wear_suit] = 0.08
-	slowdown_per_slot[slot_back] = 0.1
-	slowdown_per_slot[slot_belt] = 0.12
-	slowdown_per_slot[slot_r_hand] = 0.12
-	slowdown_per_slot[slot_l_hand] = 0.12
-
 /obj/item/gun/projectile/automatic/machine_pistol
 	name = "Rugged Autogun"
 	desc = "A mass-produced slum forged autogun with a simple folding stock, this design loosely based on standard patterns of autogun lacks the embroidery or reliability of it's militarum sisters."
@@ -57,7 +50,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	one_hand_penalty = 1
 	accuracy = -1
-	fire_delay = 2.5
+	fire_delay = 3.3
 	sales_price = 8
 	caliber = CALIBER_SLUG // before doing all mattguns, we need to dupe all the calibers first -- but merge calibers that fit. then add variants as in Eipharius.
 
@@ -66,8 +59,8 @@
 	magazine_type = /obj/item/ammo_magazine/machine_pistol
 	allowed_magazines = /obj/item/ammo_magazine/machine_pistol
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=3.3, burst_delay=1.5, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3.3, burst_delay=1.5, burst_accuracy=list(-1,-1,-1), dispersion=null)
+		list(mode_name="semi-automatic", burst=1, fire_delay=3.3, burst_delay=1.7, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3.3, burst_delay=1.7, burst_accuracy=list(-1,-1,-1), dispersion=null)
 		)
 
 /obj/item/gun/projectile/automatic/machine_pistol/on_update_icon()
@@ -103,8 +96,8 @@
 
 	//SMG
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=3.4, burst_delay=1.3, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3.4, burst_delay=1.3, burst_accuracy=list(-1,-1,-1), dispersion=null)
+		list(mode_name="semi-automatic", burst=1, fire_delay=3.4, burst_delay=1.8, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3.4, burst_delay=1.8, burst_accuracy=list(-1,-1,-1), dispersion=null)
 		)
 
 /obj/item/gun/projectile/automatic/merc_smg/on_update_icon()
@@ -129,7 +122,7 @@
 	magazine_type = /obj/item/ammo_magazine/autogun
 	one_hand_penalty = 4
 	allowed_magazines = /obj/item/ammo_magazine/autogun
-	accuracy = 0
+	accuracy = -1
 	bulk = GUN_BULK_HEAVY_RIFLE
 	wielded_item_state = "arifle-wielded"
 	mag_insert_sound = 'sound/weapons/guns/interaction/ltrifle_magin.ogg'
@@ -138,8 +131,8 @@
 
 	//Assault rifle, burst fire degrades quicker than SMG, worse one-handing penalty, slightly increased move delay
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=3.6, burst_delay=1.5, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3.6, burst_delay=1.5, burst_accuracy=list(0,-1,-1), dispersion=null)
+		list(mode_name="semi-automatic", burst=1, fire_delay=3.6, burst_delay=1.9, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3.6, burst_delay=1.9, burst_accuracy=list(0,-1,-1), dispersion=null)
 		)
 
 /obj/item/gun/projectile/automatic/assault_rifle/on_update_icon()
@@ -166,13 +159,13 @@
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/smg_top
 	allowed_magazines = /obj/item/ammo_magazine/smg_top
-	one_hand_penalty = 3
+	one_hand_penalty = 2
 	fire_sound = 'sound/warhammer/gunshot/auto2.ogg'
 
 	//machine pistol, like SMG but easier to one-hand with
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=3.3, burst_delay=1.4, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3.3, burst_delay=1.4, burst_accuracy=list(0,-1,-1), dispersion=null)
+		list(mode_name="semi-automatic", burst=1, fire_delay=3.3, burst_delay=1.7, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3.3, burst_delay=1.7, burst_accuracy=list(0,-1,-1), dispersion=null)
 		)
 
 /obj/item/gun/projectile/automatic/sec_smg/on_update_icon()
@@ -291,8 +284,8 @@
 		)
 
 /obj/item/gun/projectile/automatic/l6_saw
-	name = "light autogun"
-	desc = "An unbranded autogun, based off a design made long ago."
+	name = "light stubber"
+	desc = "An unbranded stubber, based off a design made long ago."
 	icon = 'icons/obj/guns/saw.dmi'
 	icon_state = "l6closed50"
 	item_state = "l6closedmag"
@@ -302,6 +295,7 @@
 	force = 10
 	slot_flags = 0
 	max_shells = 50
+	burst_delay = 2
 	caliber = CALIBER_AUTOGUN
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ESOTERIC = 2)
 	slot_flags = 0 //need sprites for SLOT_BACK
@@ -318,8 +312,8 @@
 	//LMG, better sustained fire accuracy than assault rifles (comparable to SMG), higer move delay and one-handing penalty
 	//No single-shot or 3-round-burst modes since using this weapon should come at a cost to flexibility.
 	firemodes = list(
-		list(mode_name="short bursts",	can_autofire=0, burst=5, fire_delay=5, move_delay=12, one_hand_penalty=8, burst_accuracy = list(0,-1,-1,-2,-2),          dispersion = list(0.6, 1.0, 1.0, 1.0, 1.2)),
-		list(mode_name="long bursts",	can_autofire=0, burst=8, fire_delay=5, one_hand_penalty=12, burst_accuracy = list(0,-1,-1,-2,-2,-2,-3,-3), dispersion = list(1.0, 1.0, 1.0, 1.0, 1.2)),
+		list(mode_name="short bursts",	can_autofire=0, burst=5, fire_delay=3.7, move_delay=12, one_hand_penalty=8, burst_accuracy = list(0,-1,-1,-2,-2),          dispersion = list(0.6, 1.0, 1.0, 1.0, 1.2)),
+		list(mode_name="long bursts",	can_autofire=0, burst=8, fire_delay=3.7, one_hand_penalty=12, burst_accuracy = list(0,-1,-1,-2,-2,-2,-3,-3), dispersion = list(1.0, 1.0, 1.0, 1.0, 1.2)),
 		list(mode_name="full auto",		can_autofire=1, burst=1, fire_delay=1, one_hand_penalty=12, burst_accuracy = list(0,-1,-1,-2,-2,-2,-3,-3), dispersion = list(1.0, 1.0, 1.0, 1.0, 1.2)),
 		)
 
@@ -413,7 +407,7 @@
 
 	//Battle Rifle is only accurate in semi-automatic fire.
 	firemodes = list(
-		list(mode_name="semi auto",       burst=1, fire_delay=3,    move_delay=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
+		list(mode_name="semi auto",       burst=1, fire_delay=3.6,    move_delay=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
 		list(mode_name="full auto",		can_autofire=1, burst=1, fire_delay=1, one_hand_penalty=12, burst_accuracy = list(0,-1,-2,-3,-4,-4,-4,-4,-4), dispersion = list(1.0, 1.0, 1.0, 1.0, 1.2)),
 		)
 
@@ -448,8 +442,8 @@
 	can_special_reload = FALSE
 
 	firemodes = list(
-		list(mode_name="full auto",		can_autofire=1, burst=1, fire_delay=0.4, move_delay=1, burst_accuracy = list(0,-1,-2,-3,-4,-4,-4,-4,-4), dispersion = list(1.0, 1.0, 2.0, 2.0, 2.5), burst_delay = 1),
-		list(mode_name="long bursts",	can_autofire=0, burst=10, fire_delay=0.2, burst_accuracy = list(0,-1,-2,-3,-4,-8,-8,-16,-16), dispersion = list(1.0, 2.0, 3.0, 3.0, 4.0), burst_delay = 1)
+		list(mode_name="full auto",		can_autofire=1, burst=1, fire_delay=2, move_delay=1, burst_accuracy = list(0,-1,-2,-3,-4,-4,-4,-4,-4), dispersion = list(1.0, 1.0, 2.0, 2.0, 2.5), burst_delay = 1),
+		list(mode_name="long bursts",	can_autofire=0, burst=10, fire_delay=2, burst_accuracy = list(0,-1,-2,-3,-4,-8,-8,-16,-16), dispersion = list(1.0, 2.0, 3.0, 3.0, 4.0), burst_delay = 1)
 		)
 
 /obj/item/gun/projectile/automatic/autocannon/mounted
@@ -461,8 +455,8 @@
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
 
 	firemodes = list(
-		list(mode_name="long bursts",			can_autofire=0, burst=5, fire_delay=0.2, burst_accuracy = list(0,-1,-2,-3,-4,-4,-4,-4,-4), dispersion = list(1.0, 1.0, 2.0, 2.0, 2.5), burst_delay = 1),
-		list(mode_name="longer bursts",		can_autofire=0, burst=10, fire_delay=0.2, burst_accuracy = list(0,-1,-2,-3,-4,-8,-8,-16,-16), dispersion = list(1.0, 2.0, 3.0, 3.0, 4.0), burst_delay = 1)
+		list(mode_name="long bursts",			can_autofire=0, burst=5, fire_delay=2, burst_accuracy = list(0,-1,-2,-3,-4,-4,-4,-4,-4), dispersion = list(1.0, 1.0, 2.0, 2.0, 2.5), burst_delay = 1),
+		list(mode_name="longer bursts",		can_autofire=0, burst=10, fire_delay=2, burst_accuracy = list(0,-1,-2,-3,-4,-8,-8,-16,-16), dispersion = list(1.0, 2.0, 3.0, 3.0, 4.0), burst_delay = 1)
 		)
 
 /obj/item/gun/projectile/automatic/autocannon/mounted/load_ammo(obj/item/A, mob/user)

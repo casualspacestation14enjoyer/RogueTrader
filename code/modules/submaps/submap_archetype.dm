@@ -10,7 +10,7 @@
 
 // Generic ships to populate the list.
 /singleton/submap_archetype/derelict
-	descriptor = "drifting wreck"
+	descriptor = "the Demeter"
 
 /singleton/submap_archetype/abandoned_ship
 	descriptor = "abandoned ship"

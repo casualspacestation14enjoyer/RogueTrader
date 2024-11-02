@@ -298,7 +298,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/item/gun/projectile/pistol/holdout,
 /obj/structure/bed/padded,
-/obj/submap_landmark/spawnpoint/captain,
+/obj/submap_landmark/spawnpoint/noble,
 /turf/simulated/floor/wood,
 /area/ship/scrap/command/captain)
 "aM" = (

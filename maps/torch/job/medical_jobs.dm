@@ -259,6 +259,15 @@
 	else
 		current_title = title // use default title
 	H.fully_replace_character_name("[current_name]")
+	if(prob(1))
+		H.make_genestealer()
+		to_chat(H, "<span class='notice'><b><font size=2>You are a genestealer bioform, a unique strain of tyranid genestealer capable of rapid transformation. The swarm considers you to be an abomination, but under the guidance of what you believe to be the true hivemind, you will surely succeed where the others have failed. Everything is connected.</font></b></span>")
+	else if(prob(1))
+		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
+		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
+		spawn(65 SECONDS)
+		GLOB.cult.add_antagonist(H.mind, ignore_role = 1, do_not_equip = 0)
+		to_chat(H, "<span class='notice'><b><font size=2>You are a heretical cultist loyal to one or more of the Chaos Gods -- unlike the many pretenders you are truly blessed by the warp and can survive encounters that would boil the brains of most mortal men.</font></b></span>")
 	to_chat(H, "<span class='notice'><b><font size=2>You are a [current_title] aboard the Rogue Trader’s vessel, trained to deal with the harsh and unforgiving conditions of both space and hive cities. Your responsibilities include treating battlefield injuries, performing surgeries, and managing the health of the crew. Whether responding to emergencies or ensuring long-term health, your experience in crowded, under-equipped environments has honed your ability to handle crises with efficiency and precision, making you indispensable in the chaos of the void.</font></b></span>")
 	return ..()
 

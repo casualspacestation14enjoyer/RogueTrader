@@ -133,7 +133,7 @@
 /turf/space/is_open()
 	return TRUE
 
-//Bluespace turfs for shuttles and possible future transit use
+//Warp turfs for shuttles and possible future transit use
 /turf/space/bluespace
 	name = "bluespace"
 	icon_state = "bluespace"

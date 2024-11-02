@@ -11,7 +11,7 @@
 	ammo_type = /obj/item/ammo_casing/pistol
 	fire_sound = 'sound/warhammer/guns/fire/revolver_fire.ogg'
 	accuracy = 0.3
-	fire_delay = 3.3
+	fire_delay = 3.5
 	max_shells = 9
 	one_hand_penalty = 0
 	mag_remove_sound 	= 'sound/warhammer/guns/interact/rev_magout.ogg'
@@ -29,7 +29,7 @@
 	w_class = ITEM_SIZE_SMALL
 	slot_flags = SLOT_BELT|SLOT_HOLSTER|SLOT_POCKET
 	accuracy = 0
-	fire_delay = 3.2
+	fire_delay = 3.4
 	max_shells = 9
 
 /obj/item/gun/projectile/revolver/imperial/heavy
@@ -41,7 +41,7 @@
 	ammo_type = /obj/item/ammo_casing/magnum
 	fire_sound = 'sound/warhammer/guns/fire/revolver_fire.ogg'
 	accuracy = 0
-	fire_delay = 3.5
+	fire_delay = 3.7
 	max_shells = 7
 
 /obj/item/gun/projectile/revolver/imperial/heavy/mateba
@@ -50,7 +50,7 @@
 	icon_state = "goldmateba"
 	sales_price = 10
 	accuracy = 0.3
-	fire_delay= 3.3
+	fire_delay= 3.5
 	max_shells = 8
 
 /obj/item/gun/projectile/revolver/imperial/heavy/bounty
@@ -58,7 +58,7 @@
 	desc = "A necromundan slug revolver -- a favorite among bounty hunters due to it's supreme accuracy at a distance."
 	icon_state = "necros"
 	accuracy = 0.6
-	fire_delay= 3.5
+	fire_delay= 3.7
 	max_shells = 7
 
 /obj/item/gun/projectile/revolver/imperial/heavy/autogun
@@ -66,7 +66,7 @@
 	desc = "A custom forged slug revolver that fires 6.8mm tech rounds -- it has painful recoil and is known to have issues cycling it's heavier slugs."
 	icon_state = "hunting_revolver"
 	accuracy = -1
-	fire_delay= 3.8
+	fire_delay= 4
 	max_shells = 6
 	ammo_type = /obj/item/ammo_casing/autogun/militarum
 	caliber = list(
@@ -85,7 +85,7 @@
 	allowed_magazines = /obj/item/ammo_magazine/magnum
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	one_hand_penalty = 0
-	fire_delay = 3.7
+	fire_delay = 3.9
 	caliber = list(
 	CALIBER_SLUG_MAGNUM
 )
@@ -112,7 +112,7 @@
 	ammo_type = list(/obj/item/ammo_casing/magnum,/obj/item/ammo_casing/pistol)
 	allowed_magazines = list(/obj/item/ammo_magazine/pistol/throwback,/obj/item/ammo_magazine/magnum)
 	magazine_type = /obj/item/ammo_magazine/pistol/throwback
-	fire_delay = 3.6
+	fire_delay = 3.8
 	accuracy = -1 // Fires both Antique and Magnum rounds. Not accurate.
 	sales_price = 15
 	caliber = list(
@@ -139,7 +139,7 @@
 	caliber = "shotgun"
 	force = 15
 	accuracy = -0.5
-	fire_delay= 3.7
+	fire_delay= 3.9
 	allowed_magazines = /obj/item/ammo_magazine/shotholder
 	magazine_type = /obj/item/ammo_magazine/shotholder/flechette
 	ammo_type = /obj/item/ammo_casing/shotgun
@@ -173,7 +173,7 @@
 )
 	sales_price = 8
 	accuracy = 0.3
-	fire_delay = 3
+	fire_delay = 3.3
 
 /obj/item/gun/projectile/pistol/stub/on_update_icon()
 	..()
@@ -194,7 +194,7 @@
 	slot_flags = SLOT_BELT|SLOT_HOLSTER|SLOT_POCKET
 	accuracy = 0
 	sales_price = 8
-	fire_delay = 2.8
+	fire_delay = 3.2
 
 /obj/item/gun/projectile/pistol/stub/snub/on_update_icon()
 	..()
@@ -212,9 +212,9 @@
 	desc = "A custom forged double-barrel stub pistol used infamously by smugglers and gangers in close quarter fighting."
 	icon_state = "stub2"
 	item_state = "pistol"
-	fire_delay = 3
+	fire_delay = 3.3
 	burst = 2
-	burst_delay = 1.5
+	burst_delay = 1.8
 	accuracy = -1
 	sales_price = 25
 
@@ -233,7 +233,7 @@
 	name = "Talon Stub Pistol"
 	desc = "A mechanicus forged black matted stub-pistol that fires specialized 7mm penetrator tech rounds."
 	icon_state = "talon"
-	fire_delay = 2.5
+	fire_delay = 3
 	caliber = list(
 	CALIBER_SLUG_SMALL
 )
@@ -264,7 +264,7 @@
 	force = 12
 	caliber = ".75"
 	accuracy = -1.5
-	fire_delay = 3.8
+	fire_delay = 4.2
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_pistol_magazine
@@ -290,7 +290,7 @@
 	force = 13
 	caliber = ".75"
 	accuracy = -1
-	fire_delay = 3.7
+	fire_delay = 4
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_pistol_magazine
@@ -315,8 +315,8 @@
 	item_state = "bpistol"
 	force = 12
 	caliber = ".75"
-	accuracy = -1
-	fire_delay = 3.7
+	accuracy = -0.5
+	fire_delay = 3.9
 	sales_price = 50
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine/ms
 
@@ -338,7 +338,7 @@
 	item_state = "sisterbpistol"
 	force = 14
 	accuracy = -1
-	fire_delay = 3.6
+	fire_delay = 3.8
 	attack_verb = list ("smited", "struck")
 	sales_price = 70
 

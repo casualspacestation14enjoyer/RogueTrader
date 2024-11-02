@@ -17,7 +17,7 @@
 	..()
 
 /datum/map_template/ruin/away_site/blueriver
-	name = "Bluespace River"
+	name = "Warp River"
 	id = "awaysite_blue"
 	spawn_cost = 1
 	description = "An arctic planet and an alien underground surface"

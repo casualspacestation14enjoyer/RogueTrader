@@ -3156,7 +3156,7 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/door/airlock/highsecurity{
-	name = "Bluespace Drive"
+	name = "Warp Drive"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/bluespacebay)
@@ -13576,7 +13576,7 @@
 /area/assembly/robotics/surgery)
 "IM" = (
 /obj/machinery/camera/network/engineering{
-	c_tag = "Engineering - Bluespace Drive";
+	c_tag = "Engineering - Warp Drive";
 	dir = 4
 	},
 /obj/catwalk_plated,

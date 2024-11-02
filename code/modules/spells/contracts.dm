@@ -126,7 +126,7 @@
 
 /obj/item/contract/boon/wizard/artificer
 	path = /spell/aoe_turf/conjure/construct
-	desc = "This contract has a passage dedicated to an entity known as 'Nar-Sie'."
+	desc = "This contract has a passage dedicated to an entity known as 'the Sovereign'."
 
 /obj/item/contract/boon/wizard/fireball
 	path = /spell/targeted/projectile/dumbfire/fireball

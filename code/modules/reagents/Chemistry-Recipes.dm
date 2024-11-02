@@ -1325,7 +1325,7 @@
 	new /obj/item/device/camera(get_turf(holder.my_atom))
 	..()
 
-//Bluespace
+//Warp
 /singleton/reaction/slime/teleport
 	name = "Slime Teleport"
 	result = null
@@ -2191,9 +2191,9 @@
 	required_reagents = list(/datum/reagent/iron = 1, /datum/reagent/ethanol/wine = 5, /datum/reagent/ethanol/vodka = 5)
 	result_amount = 10
 
-/singleton/reaction/changelingsting
-	name = "Changeling Sting"
-	result = /datum/reagent/ethanol/changelingsting
+/singleton/reaction/genestealersting
+	name = "Genestealer Sting"
+	result = /datum/reagent/ethanol/genestealersting
 	required_reagents = list(/datum/reagent/ethanol/screwdrivercocktail = 1, /datum/reagent/drink/juice/lime = 1, /datum/reagent/drink/juice/lemon = 1)
 	result_amount = 3
 	mix_message = "The solution begins to shift and change colour."

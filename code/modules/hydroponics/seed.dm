@@ -367,7 +367,7 @@
 	do_sting(target,thrown)
 	do_thorns(target,thrown)
 
-	// Bluespace tomato code copied over from grown.dm.
+	// Warp tomato code copied over from grown.dm.
 	if(get_trait(TRAIT_TELEPORTING))
 
 		//Plant potency determines radius of teleport.

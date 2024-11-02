@@ -660,14 +660,14 @@
 	glass_name = "capirinha"
 	glass_desc = "Cachaca and lime. Felicidades!."
 
-/datum/reagent/ethanol/changelingsting
-	name = "Changeling Sting"
+/datum/reagent/ethanol/genestealersting
+	name = "Genestealer Sting"
 	description = "You take a tiny sip and feel a burning sensation..."
 	taste_description = "your brain coming out your nose"
 	color = "#2e6671"
 	strength = 10
 
-	glass_name = "Changeling Sting"
+	glass_name = "Genestealer Sting"
 	glass_desc = "A stingy drink."
 
 /datum/reagent/ethanol/martini

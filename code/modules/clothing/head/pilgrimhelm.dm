@@ -109,18 +109,18 @@
 		bomb = ARMOR_BOMB_TEN+5
 		)
 
-/obj/item/clothing/head/helmet/flak/chaos/heretic
+/obj/item/clothing/head/helmet/flak/chaos/nurgle/alt3
 	name = "mysterious hood"
 	desc = "A filth hood rag"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEFACE|BLOCKHEADHAIR
 	icon_state = "hood1"
 	item_state = "hood1"
 
-/obj/item/clothing/head/helmet/flak/chaos/heretic/alt
+/obj/item/clothing/head/helmet/flak/chaos/nurgle/alt
 	icon_state = "hood2"
 	item_state = "hood2"
 
-/obj/item/clothing/head/helmet/flak/chaos/heretic/alt2
+/obj/item/clothing/head/helmet/flak/chaos/nurgle/alt2
 	icon_state = "hood3"
 	item_state = "hood3"
 

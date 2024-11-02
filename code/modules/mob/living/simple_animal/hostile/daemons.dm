@@ -462,6 +462,7 @@
 	dodgey = 35
 	blocky = 0
 	pass_flags = PASS_FLAG_TABLE
+	natural_weapon = /obj/item/natural_weapon/daemon/infestor
 	natural_armor = list(
 		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_FLAK,
@@ -471,6 +472,14 @@
 		rad = 100,
 		bomb = 15,
 		)
+
+/obj/item/natural_weapon/daemon/infestor
+	force = 25
+	armor_penetration = 5
+	sharp = TRUE
+	edge = TRUE
+	attack_cooldown = 3 SECONDS
+	attack_verb = list("mauled", "bitten")
 
 /mob/living/simple_animal/hostile/daemon/headcrab/large/do_special_attack(atom/A)
 	set waitfor = FALSE
@@ -573,25 +582,36 @@
 
 	set_AI_busy(FALSE)
 
-/*
 
-/mob/living/simple_animal/hostile/giant_spider/flesh
-	name = "Infestor"
+/mob/living/simple_animal/hostile/daemon/headcrab/infestor
+	name = "daemonic infestor"
 	desc = "A disgusting motherly creature with long tentacles protruding from it's mating hole."
 	icon = 'icons/map_project/port/components_large.dmi'
 	icon_state = "example"
 	icon_living = "example"
 	icon_dead = "torso_lying_2"
-	faction = "Demon"
-	health = 325
-	maxHealth = 325
-	melee_damage_lower = 15
-	melee_damage_upper = 25
-	attacktext = "bites"
-	attack_sound = 'sound/weapons/bite.ogg'
-	speed = 1.6
-	poison_per_bite = 3
-	poison_type = /datum/reagent/soporific // Makes you sleepy
+	see_in_dark = 8
+	maxHealth = 155
+	health = 155
+	movement_cooldown = 3
+	move_to_delay = 2
+	speed = 3
+	dodgey = 10
+	blocky = 15
+	pass_flags = null
+	natural_weapon = /obj/item/natural_weapon/daemon
+	natural_armor = list(
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK,
+		energy = 25,
+		bio = 100,
+		rad = 100,
+		bomb = 15,
+		)
+/*
+
+
 
 /mob/living/simple_animal/hostile/flesh/stalker
 	name = "Lurker"

@@ -11,7 +11,7 @@
 	sort_string = "MCAAC"
 
 /datum/design/item/syringe/bluespacesyringe
-	name = "Bluespace Syringe"
+	name = "Warp Syringe"
 	desc = "An advanced syringe that can hold 60 units of chemicals."
 	id = "bluespacesyringe"
 	req_tech = list(TECH_BIO = 3, TECH_MATERIAL = 4, TECH_BLUESPACE = 2)
