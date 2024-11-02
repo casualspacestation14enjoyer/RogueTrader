@@ -1,6 +1,7 @@
 /obj/item/book/manual/chef_recipes
 	name = "Chef Recipes"
-	icon_state = "cooked_book"
+	icon = 'icons/obj/items/books.dmi'
+	icon_state = "IRIT"
 	author = "Victoria Ponsonby"
 	title = "Chef Recipes"
 

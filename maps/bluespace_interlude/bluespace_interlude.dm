@@ -58,14 +58,14 @@
 		return PROCESS_KILL
 
 /area/bluespace_interlude/platform
-	name = "Bluespace Interlude - Platform"
+	name = "Warp Interlude - Platform"
 	requires_power = FALSE
 	base_turf = /turf/simulated/floor/bluespace/interlude
 	forced_ambience = list('sound/ambience/bluespace_interlude_ambience.ogg')
 	sound_env = LARGE_ENCLOSED
 
 /area/bluespace_interlude/surroundings
-	name = "Bluespace Interlude - Surroundings"
+	name = "Warp Interlude - Surroundings"
 	base_turf = /turf/simulated/floor/bluespace/interlude
 	forced_ambience = list('sound/ambience/bluespace_interlude_ambience.ogg')
 	sound_env = LARGE_ENCLOSED

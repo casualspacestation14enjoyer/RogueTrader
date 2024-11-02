@@ -36,7 +36,7 @@
 	icon_state = "coconuts"
 
 /obj/overlay/bluespacify
-	name = "Bluespace"
+	name = "Warp"
 	icon = 'icons/turf/space.dmi'
 	icon_state = "bluespacify"
 	layer = SUPERMATTER_WALL_LAYER

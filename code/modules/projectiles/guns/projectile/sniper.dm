@@ -23,13 +23,7 @@
 	wielded_item_state = "heavysniper-wielded" //sort of placeholder
 	load_sound = 'sound/weapons/guns/interaction/rifle_load.ogg'
 	fire_delay = 10
-
-/obj/item/gun/projectile/heavysniper/New()
-	..()
-	slowdown_per_slot[slot_back] = 0.15
-	slowdown_per_slot[slot_belt] = 0.15
-	slowdown_per_slot[slot_r_hand] = 0.2
-	slowdown_per_slot[slot_l_hand] = 0.2
+	slowdown_general = 0.15
 
 /obj/item/gun/projectile/heavysniper/on_update_icon()
 	..()

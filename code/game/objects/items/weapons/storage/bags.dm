@@ -68,7 +68,7 @@
 
 /obj/item/storage/bag/trash/bluespace/use_tool(obj/item/W, mob/living/user, list/click_params)
 	if(istype(W, /obj/item/storage/backpack/holding) || istype(W, /obj/item/storage/bag/trash/bluespace))
-		to_chat(user, SPAN_WARNING("The Bluespace interfaces of the two devices conflict and malfunction."))
+		to_chat(user, SPAN_WARNING("The Warp interfaces of the two devices conflict and malfunction."))
 		qdel(W)
 		return TRUE
 	return ..()

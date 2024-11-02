@@ -14,7 +14,7 @@
 	name = "Box of shurikens"
 	desc = "A small box with six shuriken, notably dangerous."
 	item_cost = 18
-	path = /obj/item/storage/box/syndie_kit/shuriken
+	path = /obj/item/storage/box/contraband/shuriken
 
 /datum/uplink_item/item/visible_weapons/dartgun
 	name = "Dart Gun"
@@ -53,7 +53,7 @@
 	desc = "A kit with a pocket-sized holdout pistol, silencer, and an extra magazine. \
 			Attaching the silencer will make it too big to conceal in your pocket."
 	item_cost = 32
-	path = /obj/item/storage/box/syndie_kit/silenced
+	path = /obj/item/storage/box/contraband/silenced
 
 /datum/uplink_item/item/visible_weapons/broomstick
 	name = "Broomstick Pistol"
@@ -83,7 +83,7 @@
 	name = "Magnum Revolver"
 	desc = "A high-caliber revolver. Includes an extra speedloader of ammo."
 	item_cost = 56
-	path = /obj/item/storage/backpack/satchel/syndie_kit/revolver
+	path = /obj/item/storage/backpack/satchel/contraband/revolver
 
 /datum/uplink_item/item/visible_weapons/grenade_launcher
 	name = "Grenade Launcher"

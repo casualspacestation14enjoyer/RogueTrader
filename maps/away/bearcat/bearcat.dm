@@ -8,7 +8,7 @@
 	archetype = /singleton/submap_archetype/derelict/demeter
 
 /singleton/submap_archetype/derelict/demeter
-	descriptor = "derelict cargo vessel"
+	descriptor = "The Demeter"
 	map = "Bearcat Wreck"
 	crew_jobs = list(
 		/datum/job/submap/noble,
@@ -16,7 +16,7 @@
 	)
 
 /obj/overmap/visitable/ship/demeter
-	name = "light freighter"
+	name = "The Demeter"
 	color = "#00ffff"
 	vessel_mass = 20000
 	max_speed = 1/(10 SECONDS)
@@ -35,9 +35,10 @@
 	id = "awaysite_bearcat_wreck"
 	description = "A wrecked light freighter."
 	suffixes = list("bearcat/bearcat-1.dmm", "bearcat/bearcat-2.dmm")
-	spawn_cost = 0.3
+	spawn_cost = 0
 	player_cost = 0
 	shuttles_to_initialise = list(/datum/shuttle/autodock/ferry/lift)
+	ban_ruins = list(/datum/map_template/ruin/away_site/scavver_gantry)
 	area_usage_test_exempted_root_areas = list(/area/ship)
 	apc_test_exempt_areas = list(
 		/area/ship/scrap/maintenance/engine/port = NO_SCRUBBER|NO_VENT,

@@ -13,7 +13,7 @@
 	var/obj/item/clothing/shoes/shoes = null	//Undershoes
 	var/mob/living/carbon/human/wearer = null	//For shoe procs
 	randpixel = 0
-	var/online_slowdown = 3
+	var/online_slowdown = 1.5
 	cold_protection = FEET
 	heat_protection = FEET
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE

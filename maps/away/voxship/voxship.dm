@@ -117,7 +117,7 @@
 	id = WEBHOOK_SUBMAP_LOADED_VOX
 
 /singleton/submap_archetype/derelict/voxship
-	descriptor = "Shoal Scavenger Vessel"
+	descriptor = "Xenos Scavenger Vessel"
 	map = "Xenos Scavenger Ship"
 	crew_jobs = list(
 		/datum/job/submap/voxship_vox,

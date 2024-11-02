@@ -272,7 +272,7 @@
 	info = {"A "for official use only" memorandum detailing an officer's options with regards to punishing uniformed servicemembers. In ascending order of severity, the officer can: take no action (after investigation), take administrative action, impose nonjudicial punishment, and court-martial the offender."}
 
 /obj/item/paper/memo/command/realitybreak
-	name = "\improper Bluespace drive apparitions"
+	name = "\improper Warp drive apparitions"
 	info = {"An "internal use only" memo sent from Expeditionary Command, based on a document from Krri'gli Engineering. It states that any humanoid figures seen during a bluespace jump are incorporeal apparitions and no mind should be paid to them, even if they appear familiar. In addition, it notes the existence of a bluespace "double" that living crew may experience and strongly urges them not to touch said double, as tempting as it may be, citing many cases of irrecoverable catatonia in those who have."}
 
 /obj/item/paper/memo/command/njprules
@@ -388,8 +388,8 @@
 	info = {"An "internal use only" report on damages to ship systems following the 5/14 sabotage incident. It suggests that the saboteur exploited a previously-unknown vulnerability in the ship's telecommunications systems to shut down long-range communications - the system will need a full inspection from DAIS management before it can be deemed properly secure again. How the saboteur discovered the exploit is still unknown."}
 
 /obj/item/paper/memo/engineering/bsddamage
-	name = "\improper Bluespace drive safety notice"
-	info = {"A "confidential" memo from Krri'gli Engineering regarding the new Bluespace drive. It explains in very slow and simple language that this is a "Bluespace drive", a very expensive and volatile piece of machinery, and that you should not break this one or remove the exotic particle shielding. The author does not appear to have a very high opinion of human engineering or mental faculties."}
+	name = "\improper Warp drive safety notice"
+	info = {"A "confidential" memo from Krri'gli Engineering regarding the new Warp drive. It explains in very slow and simple language that this is a "Warp drive", a very expensive and volatile piece of machinery, and that you should not break this one or remove the exotic particle shielding. The author does not appear to have a very high opinion of human engineering or mental faculties."}
 
 
 // medical memos

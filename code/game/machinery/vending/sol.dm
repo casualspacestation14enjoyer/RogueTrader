@@ -37,9 +37,9 @@
 		/obj/item/reagent_containers/food/snacks/oort = 8
 	)
 	rare_products = list(
-		/obj/item/storage/backpack/satchel/syndie_kit/clerical = 60
+		/obj/item/storage/backpack/satchel/contraband/clerical = 60
 	)
 	antag = list(
-		/obj/item/storage/box/syndie_kit/toxin = 1,
-		/obj/item/storage/backpack/satchel/syndie_kit/clerical = 0
+		/obj/item/storage/box/contraband/toxin = 1,
+		/obj/item/storage/backpack/satchel/contraband/clerical = 0
 	)

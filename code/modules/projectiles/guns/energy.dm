@@ -6,6 +6,7 @@
 	fire_sound = 'sound/weapons/Taser.ogg'
 	fire_sound_text = "laser blast"
 	accuracy = 1
+	slowdown_general = 0.1
 
 	var/obj/item/cell/power_supply //What type of power cell this uses. Currently used cell.
 	var/charge_cost = 20 //How much energy is needed to fire.
@@ -22,14 +23,6 @@
 	var/use_external_power = 0 //if set, the weapon will look for an external power source to draw from, otherwise it recharges magically
 	var/recharge_time = 9
 	var/charge_tick = 0
-
-/obj/item/gun/energy/New()
-	..()
-	slowdown_per_slot[slot_wear_suit] = 0.1
-	slowdown_per_slot[slot_belt] = 0.1
-	slowdown_per_slot[slot_back] = 0.1
-	slowdown_per_slot[slot_r_hand] = 0.1
-	slowdown_per_slot[slot_l_hand] = 0.1
 
 /obj/item/gun/energy/switch_firemodes()
 	. = ..()

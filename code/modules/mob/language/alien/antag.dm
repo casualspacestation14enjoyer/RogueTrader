@@ -1,8 +1,8 @@
 /datum/language/ling
 	name = LANGUAGE_CHANGELING_GLOBAL
-	desc = "Although they are normally wary and suspicious of each other, changelings can commune over a distance."
+	desc = "Although they are normally wary and suspicious of each other, genestealers can commune over a distance."
 	speech_verb = "says"
-	colour = "changeling"
+	colour = "genestealer"
 	key = "g"
 	flags = RESTRICTED | HIVEMIND
 	shorthand = "N/A"
@@ -10,8 +10,8 @@
 
 /datum/language/ling/broadcast(mob/living/speaker,message,speaker_mask)
 
-	if(speaker.mind && speaker.mind.changeling)
-		..(speaker,message,speaker.mind.changeling.changelingID)
+	if(speaker.mind && speaker.mind.genestealer)
+		..(speaker,message,speaker.mind.genestealer.genestealerID)
 	else
 		..(speaker,message)
 

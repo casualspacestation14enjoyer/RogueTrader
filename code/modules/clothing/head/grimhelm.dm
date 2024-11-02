@@ -481,7 +481,7 @@
 	icon_state = "MordianHat"
 	item_state = "MordianHat"
 
-/obj/item/clothing/head/helmet/guardcap/catachan/catachan
+/obj/item/clothing/head/helmet/guardcap/catachan/commi
 	name = "commissar's peaked cap"
 	desc = "The fearsome and charismatic peaked cap of a Imperial Guard Commissar, Striking dreads to the lowly Guardsmen and the ever-watching heretics."
 	icon_state = "CataCommissarHat"

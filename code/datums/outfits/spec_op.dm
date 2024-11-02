@@ -73,7 +73,7 @@
 	name = "Infardi Militia"
 	suit = /obj/item/clothing/suit/armor/grim/cult/militia
 	mask = /obj/item/clothing/mask/gas/prac_mask
-	head = /obj/item/clothing/head/helmet/flak/chaos/heretic
+	head = /obj/item/clothing/head/helmet/flak/chaos/renegade
 	shoes = /obj/item/clothing/shoes/jackboots/pilgrim_boots
 	id_desc = "Infardi"
 
@@ -81,7 +81,7 @@
 	name = "Infardi Trooper"
 	suit = /obj/item/clothing/suit/armor/grim/cult/sekite
 	mask = /obj/item/clothing/mask/gas/prac_mask
-	head = /obj/item/clothing/head/helmet/flak/chaos/heretic
+	head = /obj/item/clothing/head/helmet/flak/chaos/sekite
 	shoes = /obj/item/clothing/shoes/jackboots/pilgrim_boots
 	l_pocket = /obj/item/tank/oxygen_emergency
 	id_desc = "Infardi Trooper"

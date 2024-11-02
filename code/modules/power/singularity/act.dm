@@ -96,7 +96,7 @@
 	return
 
 /*******************
-* Nar-Sie Act/Pull *
+* the Sovereign Act/Pull *
 *******************/
 /**
  * Whether or not a singularity can consume the atom.

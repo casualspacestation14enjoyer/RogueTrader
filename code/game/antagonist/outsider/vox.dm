@@ -256,7 +256,7 @@ GLOBAL_LIST_EMPTY(vox_artifact_spawners)
 	qdel(src)
 
 /obj/item/bluecrystal
-	name = "Bluespace crystal"
+	name = "Warp crystal"
 	desc = "Unusual looking crystal with eerie deep blue shimmering, holding it in your hand makes you feel like if your hand was sinking in to it."
 	icon = 'icons/obj/stock_parts.dmi'
 	icon_state = "ansible_crystal"

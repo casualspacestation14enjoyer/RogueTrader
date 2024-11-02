@@ -1,5 +1,5 @@
 /datum/universal_state/bluespace_jump
-	name = "Bluespace Jump"
+	name = "Warp Jump"
 	var/list/bluespaced = list()
 	var/list/bluegoasts = list()
 	var/list/affected_levels
@@ -16,7 +16,7 @@
 		return
 
 	if (HAS_FLAGS(drive.state, drive.STATE_BROKEN))
-		var/datum/event_meta/bsd = new(EVENT_LEVEL_MAJOR, "Bluespace Jump Fracture", add_to_queue = 0)
+		var/datum/event_meta/bsd = new(EVENT_LEVEL_MAJOR, "Warp Jump Fracture", add_to_queue = 0)
 		new/datum/event/bsd_instability(bsd) // Destroyed BSD means the ship still jumps, but not without consequences
 
 	var/space_zlevel = GLOB.using_map.get_empty_zlevel() //get a place for stragglers

@@ -19083,14 +19083,14 @@
 	dir = 8
 	},
 /obj/machinery/button/blast_door{
-	desc = "A remote control-switch for the Bluespace Artillery's core.";
+	desc = "A remote control-switch for the Warp Artillery's core.";
 	id_tag = "bsa-core";
 	name = "Artillery Core Blast Doors";
 	pixel_x = -5;
 	pixel_y = 28
 	},
 /obj/machinery/button/blast_door{
-	desc = "A remote control-switch for the Bluespace Artillery observation windows.";
+	desc = "A remote control-switch for the Warp Artillery observation windows.";
 	id_tag = "bsa-window";
 	name = "Observation Blast Doors";
 	pixel_x = 5;

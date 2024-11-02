@@ -286,7 +286,7 @@
 	return list(
 		/obj/item/rig/light/ninja,
 		/obj/item/material/sword/katana,
-		/obj/item/storage/box/syndie_kit/silenced
+		/obj/item/storage/box/contraband/silenced
 	)
 
 ///Ninja equipment loadouts. Overwritten in torch/structures/closets.dm because of away/example check evils

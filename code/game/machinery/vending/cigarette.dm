@@ -112,13 +112,13 @@
 		/obj/item/storage/fancy/smokable/killthroat = 5
 	)
 	rare_products = list(
-		/obj/item/storage/box/syndie_kit/cigarette = 50,
-		/obj/item/storage/box/syndie_kit/syringegun = 40,
+		/obj/item/storage/box/contraband/cigarette = 50,
+		/obj/item/storage/box/contraband/syringegun = 40,
 		/obj/item/clothing/mask/chameleon/voice = 20
 	)
 	antag = list(
 		/obj/item/grenade/smokebomb = 1,
-		/obj/item/storage/box/syndie_kit/cigarette = 0,
-		/obj/item/storage/box/syndie_kit/syringegun = 0,
+		/obj/item/storage/box/contraband/cigarette = 0,
+		/obj/item/storage/box/contraband/syringegun = 0,
 		/obj/item/clothing/mask/chameleon/voice = 0
 	)

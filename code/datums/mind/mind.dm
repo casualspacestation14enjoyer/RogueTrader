@@ -49,7 +49,7 @@
 	var/has_been_rev = 0//Tracks if this mind has been a rev or not
 
 	var/faction 			//associated faction
-	var/datum/changeling/changeling		//changeling holde
+	var/datum/genestealer/genestealer		//genestealer holde
 
 	///String. Last spoken message.
 	var/last_words
@@ -80,9 +80,9 @@
 	if(!istype(new_character))
 		to_world_log("## DEBUG: transfer_to(): Some idiot has tried to transfer_to() a non mob/living mob. Please inform Carn.")
 	if(current)					//remove ourself from our old body's mind variable
-		if(changeling)
-			current.remove_changeling_powers()
-			current.verbs -= /datum/changeling/proc/EvolutionMenu
+		if(genestealer)
+			current.remove_genestealer_powers()
+			current.verbs -= /datum/genestealer/proc/EvolutionMenu
 		current.mind = null
 
 		SSnano.user_transferred(current, new_character) // transfer active NanoUI instances to new user
@@ -97,8 +97,8 @@
 	if(learned_spells && length(learned_spells))
 		restore_spells(new_character)
 
-	if(changeling)
-		new_character.make_changeling()
+	if(genestealer)
+		new_character.make_genestealer()
 
 	if(active)
 		new_character.key = key		//now transfer the key to link the client to our new body
@@ -502,7 +502,7 @@
 	role_alt_title =  null
 	assigned_job =    null
 	faction =		  MOB_FACTION_NEUTRAL
-	changeling =      null
+	genestealer =      null
 	initial_account = null
 	objectives =      list()
 	special_verbs =   list()

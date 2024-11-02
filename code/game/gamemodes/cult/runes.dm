@@ -184,7 +184,7 @@
 	else if(user.loc == get_turf(src))
 		speak_incantation(user, "Sas[pick("'","`")]so c'arta forbici!")
 		if(do_after(user, 3 SECONDS, src, DO_PUBLIC_UNIQUE))
-			user.visible_message(SPAN_WARNING("\The [user] disappears in a flash of red light!"), SPAN_WARNING("You feel as your body gets dragged into the dimension of Nar-Sie!"), "You hear a sickening crunch.")
+			user.visible_message(SPAN_WARNING("\The [user] disappears in a flash of red light!"), SPAN_WARNING("You feel as your body gets dragged into the dimension of the Sovereign!"), "You hear a sickening crunch.")
 			user.forceMove(src)
 			showOptions(user)
 			var/warning = 0
@@ -195,7 +195,7 @@
 					leaveRune(user)
 					return
 				if(warning == 0)
-					to_chat(user, SPAN_WARNING("You feel the immerse heat of the realm of Nar-Sie..."))
+					to_chat(user, SPAN_WARNING("You feel the immerse heat of the realm of the Sovereign..."))
 					++warning
 				if(warning == 1 && user.getFireLoss() > 15)
 					to_chat(user, SPAN_WARNING("Your burns are getting worse. You should return to your realm soon..."))
@@ -233,7 +233,7 @@
 	if(user.loc != src)
 		return
 	user.dropInto(loc)
-	user.visible_message(SPAN_WARNING("\The [user] appears in a flash of red light!"), SPAN_WARNING("You feel as your body gets thrown out of the dimension of Nar-Sie!"), "You hear a pop.")
+	user.visible_message(SPAN_WARNING("\The [user] appears in a flash of red light!"), SPAN_WARNING("You feel as your body gets thrown out of the dimension of the Sovereign!"), "You hear a pop.")
 
 /obj/rune/tome
 	cultname = "summon tome"
@@ -323,7 +323,7 @@
 	qdel (src)
 
 /obj/rune/ajorney
-	cultname = "astral journey"
+	cultname = "astral projection"
 
 /obj/rune/ajorney/cast(mob/living/user)
 	var/tmpkey = user.key
@@ -395,7 +395,7 @@
 
 
 /obj/rune/armor
-	cultname = "summon robes"
+	cultname = "summon tzeentchian wargear"
 	strokes = 3
 
 /obj/rune/armor/cast(mob/living/user)
@@ -403,25 +403,87 @@
 	visible_message(SPAN_WARNING("\The [src] disappears with a flash of red light, and a set of armor appears on \the [user]."), SPAN_WARNING("You are blinded by the flash of red light. After you're able to see again, you see that you are now wearing a set of armor."))
 
 	var/obj/O = user.get_equipped_item(slot_head) // This will most likely kill you if you are wearing a spacesuit, and it's 100% intended
-	if(O && !istype(O, /obj/item/clothing/head/culthood) && user.unEquip(O))
-		user.equip_to_slot_or_del(new /obj/item/clothing/head/culthood/alt(user), slot_head)
+	if(O && istype(O, /obj/item/clothing/head/helmet))
+		qdel(O)
+		if(prob(35))
+			user.equip_to_slot_or_del(new /obj/item/bananapeel(get_turf(user)))
+		else if(prob(25))
+			user.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/flak/chaos/tzeentch(user), slot_head)
+		else if(prob(25))
+			user.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/flak/chaos/tzeentch/two(user), slot_head)
+		else if(prob(25))
+			user.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/flak/chaos/tzeentch/three(user), slot_head)
+		else
+			user.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/flak/chaos/tzeentch/four(user), slot_head)
 	O = user.get_equipped_item(slot_wear_suit)
-	if(O && !istype(O, /obj/item/clothing/suit/cultrobes) && user.unEquip(O))
-		user.equip_to_slot_or_del(new /obj/item/clothing/suit/cultrobes/alt(user), slot_wear_suit)
-	O = user.get_equipped_item(slot_shoes)
-	if(O && !istype(O, /obj/item/clothing/shoes/cult) && user.unEquip(O))
-		user.equip_to_slot_or_del(new /obj/item/clothing/shoes/cult(user), slot_shoes)
+	if(O && istype(O, /obj/item/clothing/suit/armor))
+		qdel(O)
+		if(prob(35))
+			user.equip_to_slot_or_del(new /obj/item/bananapeel(get_turf(user)))
+		else
+			user.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/grim/cult/tzee(user), slot_wear_suit)
 
-	O = user.get_equipped_item(slot_back)
-	if(istype(O, /obj/item/storage) && !istype(O, /obj/item/storage/backpack/cultpack) && user.unEquip(O)) // We don't want to make the vox drop their nitrogen tank, though
-		var/obj/item/storage/backpack/cultpack/C = new /obj/item/storage/backpack/cultpack(user)
-		user.equip_to_slot_or_del(C, slot_back)
-		if(C)
-			for(var/obj/item/I in O)
-				I.forceMove(C)
-	else if(!O)
-		var/obj/item/storage/backpack/cultpack/C = new /obj/item/storage/backpack/cultpack(user)
-		user.equip_to_slot_or_del(C, slot_back)
+	user.update_icons()
+
+	qdel(src)
+
+/obj/rune/armor2
+	cultname = "summon nurglite wargear"
+	strokes = 3
+
+/obj/rune/armor2/cast(mob/living/user)
+	speak_incantation(user, "N'ath reth sh'yro eth d[pick("'","`")]raggathnor!")
+	visible_message(SPAN_WARNING("\The [src] disappears with a flash of red light, and a set of armor appears on \the [user]."), SPAN_WARNING("You are blinded by the flash of red light. After you're able to see again, you see that you are now wearing a set of armor."))
+
+	var/obj/O = user.get_equipped_item(slot_head) // This will most likely kill you if you are wearing a spacesuit, and it's 100% intended
+	if(O && istype(O, /obj/item/clothing/head/helmet))
+		qdel(O)
+		if(prob(25))
+			user.equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/bloodsoup(get_turf(user)))
+		else if(prob(25))
+			user.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/flak/chaos/nurgle(user), slot_head)
+		else if(prob(25))
+			user.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/flak/chaos/nurgle/alt(user), slot_head)
+		else if(prob(25))
+			user.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/flak/chaos/nurgle/alt2(user), slot_head)
+		else
+			user.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/flak/chaos/nurgle/alt3(user), slot_head)
+	O = user.get_equipped_item(slot_wear_suit)
+	if(O && istype(O, /obj/item/clothing/suit/armor))
+		qdel(O)
+		if(prob(25))
+			user.equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/bloodsoup(get_turf(user)))
+		else if(prob(50))
+			user.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/grim/cult/nurgle(user), slot_wear_suit)
+		else
+			user.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/grim/cult/nurgleheavy(user), slot_wear_suit)
+
+	user.update_icons()
+
+	qdel(src)
+
+/obj/rune/armor3
+	cultname = "summon khornate wargear"
+	strokes = 3
+
+/obj/rune/armor3/cast(mob/living/user)
+	speak_incantation(user, "N'ath reth sh'yro eth d[pick("'","`")]raggathnor!")
+	visible_message(SPAN_WARNING("\The [src] disappears with a flash of red light, and a set of armor appears on \the [user]."), SPAN_WARNING("You are blinded by the flash of red light. After you're able to see again, you see that you are now wearing a set of armor."))
+
+	var/obj/O = user.get_equipped_item(slot_head) // This will most likely kill you if you are wearing a spacesuit, and it's 100% intended
+	if(O && istype(O, /obj/item/clothing/head/helmet))
+		qdel(O)
+		if(prob(20))
+			user.equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/applepie(get_turf(user)))
+		else
+			user.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/flak/chaos/bloodpact(user), slot_head)
+	O = user.get_equipped_item(slot_wear_suit)
+	if(O && istype(O, /obj/item/clothing/suit/armor))
+		qdel(O)
+		if(prob(20))
+			user.equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/applepie(get_turf(user)))
+		else
+			user.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/grim/cult/bloodpact(user), slot_wear_suit)
 
 	user.update_icons()
 
@@ -783,11 +845,11 @@
 /obj/rune/tearreality/cast(mob/living/user)
 	if(!GLOB.cult.allow_narsie)
 		return
-	if (GLOB.cult.station_summon_only && !(get_z(user) in GLOB.using_map.station_levels))
-		to_chat(user, SPAN_OCCULT("Nar-Sie cannot be summoned here."))
+	if (GLOB.cult.station_summon_only && (get_z(user) in GLOB.using_map.station_levels))
+		to_chat(user, SPAN_OCCULT("Nar-Sie cannot be summoned on the Dauntless... the artificery of this vessel is shielded from such rituals."))
 		return
 	if (GLOB.cult.no_shuttle_summon && istype(get_area(user), /area/shuttle))
-		to_chat(user, SPAN_OCCULT("Nar-Sie cannot be summoned on a shuttle."))
+		to_chat(user, SPAN_OCCULT("the Sovereign cannot be summoned on a shuttle."))
 		return
 	if(the_end_comes)
 		to_chat(user, SPAN_OCCULT("You are already summoning! Be patient!"))
@@ -824,7 +886,7 @@
 	if(the_end_comes >= the_time_has_come)
 		HECOMES = new /obj/singularity/narsie/large(get_turf(src))
 	else
-		command_announcement.Announce("Bluespace anomaly has ceased.")
+		command_announcement.Announce("Warp anomaly has ceased.")
 		qdel(src)
 
 /obj/rune/tearreality/attack_hand(mob/living/user)

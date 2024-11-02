@@ -1,6 +1,6 @@
 /datum/design/item/bluespace/AssembleDesignName()
 	..()
-	name = "Bluespace device ([item_name])"
+	name = "Warp device ([item_name])"
 
 /datum/design/item/bluespace/gps
 	name = "triangulating device"
@@ -37,4 +37,3 @@
 	materials = list(MATERIAL_GOLD = 3000, MATERIAL_DIAMOND = 1500, MATERIAL_URANIUM = 250, MATERIAL_PLASTIC = 250)
 	build_path = /obj/item/storage/backpack/holding
 	sort_string = "VAFAA"
-

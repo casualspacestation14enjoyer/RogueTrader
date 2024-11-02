@@ -2,7 +2,7 @@ var/global/narsie_behaviour = "CultStation13"
 var/global/narsie_cometh = 0
 var/global/list/narsie_list = list()
 /obj/singularity/narsie //Moving narsie to its own file for the sake of being clearer
-	name = "Nar-Sie"
+	name = "Sovereign"
 	desc = "Your mind begins to bubble and ooze as it tries to comprehend what it sees."
 	icon = 'icons/obj/narsie.dmi'
 	icon_state = "narsie-small"
@@ -25,7 +25,7 @@ var/global/list/narsie_list = list()
 	..()
 
 /obj/singularity/narsie/large
-	name = "Nar-Sie"
+	name = "Sovereign"
 	icon = 'icons/obj/narsie.dmi'
 	icon_state = "narsie"//mobs perceive the geometer of blood through their see_narsie proc
 
@@ -181,13 +181,13 @@ var/global/list/narsie_list = list()
 
 		for (var/atom/movable/AM in A.contents)
 			if (dist <= consume_range)
-				consume(AM)
+				// consume(AM)
 				continue
 
 		if (dist <= consume_range && !istype(A, /turf/space))
 			var/turf/T = A
 			if(T.holy)
-				T.holy = 0 //Nar-Sie doesn't give a shit about sacred grounds.
+				T.holy = 0 //the Sovereign doesn't give a shit about sacred grounds.
 			T.cultify()
 
 /obj/singularity/narsie/proc/old_narsie(atom/A)
@@ -247,7 +247,7 @@ var/global/list/narsie_list = list()
 				continue
 
 			if (dist <= consume_range)
-				consume(AM2)
+				// consume(AM2)
 				continue
 
 			if (dist > consume_range)

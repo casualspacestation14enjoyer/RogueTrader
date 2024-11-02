@@ -22,14 +22,14 @@
 		/obj/item/reagent_containers/food/snacks/pistachios = 7
 	)
 	rare_products = list(
-		/obj/item/storage/box/syndie_kit/imp_imprinting = 50
+		/obj/item/storage/box/contraband/imp_imprinting = 50
 	)
 	contraband = list(
 		/obj/item/reagent_containers/food/snacks/canned/caviar/true = 1
 	)
 	antag = list(
-		/obj/item/storage/box/syndie_kit/toxin = 1,
-		/obj/item/storage/box/syndie_kit/imp_imprinting = 0
+		/obj/item/storage/box/contraband/toxin = 1,
+		/obj/item/storage/box/contraband/imp_imprinting = 0
 	)
 
 

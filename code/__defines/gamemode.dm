@@ -40,7 +40,7 @@
 #define MODE_NINJA         "operatives"
 #define MODE_RAIDER        "raider"
 #define MODE_WIZARD        "wizard"
-#define MODE_CHANGELING    "changeling"
+#define MODE_GENESTEALER    "genestealer"
 #define MODE_CULTIST       "cultist"
 #define MODE_MONKEY        "monkey"
 #define MODE_RENEGADE      "renegade"

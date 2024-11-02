@@ -287,8 +287,8 @@
 							 /datum/computer_file/program/camera_monitor,
 							 /datum/computer_file/program/reports)
 
-/datum/job/guard_captain/get_description_blurb()
-	return "As the Guard Captain, you command the ship's security forces, leading personnel in maintaining order and protecting the vessel. You oversee security training, manage defensive operations, and embark on critical missions alongside the Deck Sergeant and Seneschal. Your leadership keeps the crew ready for any threat, aboard the ship or beyond."
+/datum/job/guardsman/get_description_blurb()
+	return "As the Guardsman, you are the ship’s boots on the ground, an extension of its force beyond the hull. Tasked with protecting the crew and engaging in expeditionary missions, you serve as a versatile asset for any conflict or deployment."
 
 /datum/job/guard_captain/equip(mob/living/carbon/human/H)
 	var/current_name = H.real_name

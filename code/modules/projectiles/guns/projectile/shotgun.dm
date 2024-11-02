@@ -28,13 +28,6 @@
 	wielded_item_state = "shotgun-wielded"
 	load_sound = 'sound/weapons/guns/interaction/shotgun_instert.ogg'
 
-/obj/item/gun/projectile/shotgun/pump/New()
-	..()
-	slowdown_per_slot[slot_back] = 0.11
-	slowdown_per_slot[slot_belt] = 0.11
-	slowdown_per_slot[slot_r_hand] = 0.15
-	slowdown_per_slot[slot_l_hand] = 0.15
-
 /obj/item/gun/projectile/shotgun/on_update_icon()
 	..()
 	if(length(loaded))

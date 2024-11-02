@@ -259,7 +259,7 @@
 	icon_state = "datadisk6"
 	origin_tech = list(TECH_POWER = 10, TECH_PHORON = 10)
 	sales_price = 0
-// Bio + Bluespace For bags/misc items, mainly vanilla SS13 Content
+// Bio + Warp For bags/misc items, mainly vanilla SS13 Content
 
 /obj/item/rnd/biospace3
 	name = "glowing rock"

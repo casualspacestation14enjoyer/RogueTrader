@@ -371,7 +371,7 @@ var/global/list/ai_verbs_default = list(
 	if(check_unable(AI_CHECK_WIRELESS))
 		return
 	if(!is_relay_online())
-		to_chat(usr, SPAN_WARNING("No Emergency Bluespace Relay detected. Unable to transmit message."))
+		to_chat(usr, SPAN_WARNING("No Emergency Warp Relay detected. Unable to transmit message."))
 		return
 	if(emergency_message_cooldown)
 		to_chat(usr, SPAN_WARNING("Arrays recycling. Please stand by."))

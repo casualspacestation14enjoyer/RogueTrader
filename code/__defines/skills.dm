@@ -11,7 +11,7 @@
 /// Min skill value selectable
 #define SKILL_MIN      SKILL_UNSKILLED
 /// Max skill value selectable
-#define SKILL_MAX      SKILL_EXPERIENCED
+#define SKILL_MAX      SKILL_DEMIGOD
 /// Default skill value for mobs
 #define SKILL_DEFAULT  SKILL_EXPERIENCED
 /// Baseline skill level used for determining mechanical skill multipliers.

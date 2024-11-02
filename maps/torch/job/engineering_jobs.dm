@@ -209,6 +209,9 @@
 	title = "Enginseer"
 	total_positions = 3
 	spawn_positions = 3
+	department = "Mechanicus"
+	department_flag = ENG
+	selection_color = "#5b4d20"
 	supervisors = "the Magos Explorator"
 	economic_power = 5
 	minimal_player_age = 1
@@ -351,6 +354,15 @@
 		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
 	else
 		current_title = title // use default title
+	if(prob(1))
+		H.make_genestealer()
+		to_chat(H, "<span class='notice'><b><font size=2>You are a genestealer bioform, a unique strain of tyranid genestealer capable of rapid transformation. The swarm considers you to be an abomination, but under the guidance of what you believe to be the true hivemind, you will surely succeed where the others have failed. Everything is connected.</font></b></span>")
+	else if(prob(1))
+		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
+		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
+		spawn(65 SECONDS)
+		GLOB.cult.add_antagonist(H.mind, ignore_role = 1, do_not_equip = 0)
+		to_chat(H, "<span class='notice'><b><font size=2>You are a heretical cultist loyal to one or more of the Chaos Gods -- unlike the many pretenders you are truly blessed by the warp and can survive encounters that would boil the brains of most mortal men.</font></b></span>")
 	H.fully_replace_character_name("[current_name]")
 	H.say(":e OMVISS1@H &(47*INDENTURED)B(X1HK)... transponder signal active.")
 	to_chat(H, "<span class='notice'><b><font size=2>You are a [current_title] under the service of the Mechanicus aboard the Rogue Trader’s vessel, lifebonded to the Magos Explorator and likely a descendant of gang-pressed families taken from their homeworlds. Tasked with menial yet vital technical work, your duties include maintaining ship systems, assisting with resource extraction, and performing hazardous tasks in the ship's more dangerous zones.</font></b></span>")

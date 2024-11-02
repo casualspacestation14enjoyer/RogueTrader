@@ -1483,8 +1483,8 @@
 			BSACooldown = 0
 
 		to_chat(M, "You've been hit by bluespace artillery!")
-		log_admin("[key_name(M)] has been hit by Bluespace Artillery fired by [src.owner]")
-		message_admins("[key_name(M)] has been hit by Bluespace Artillery fired by [src.owner]")
+		log_admin("[key_name(M)] has been hit by Warp Artillery fired by [src.owner]")
+		message_admins("[key_name(M)] has been hit by Warp Artillery fired by [src.owner]")
 
 		var/obj/stop/S
 		S = new /obj/stop(M.loc)

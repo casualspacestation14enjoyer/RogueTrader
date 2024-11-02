@@ -53,19 +53,19 @@ GLOBAL_LIST_EMPTY(skills)
 	name = "Organizational"
 	ID	 = "1"
 	difficulty = SKILL_EASY
-	default_max = SKILL_MAX
+	default_max = SKILL_MASTER
 
 /singleton/hierarchy/skill/general
 	name = "General"
 	ID	 = "2"
 	difficulty = SKILL_EASY
-	default_max = SKILL_MAX
+	default_max = SKILL_MASTER
 
 /singleton/hierarchy/skill/service
 	name = "Service"
 	ID	 = "service"
 	difficulty = SKILL_EASY
-	default_max = SKILL_MAX
+	default_max = SKILL_MASTER
 
 /singleton/hierarchy/skill/security
 	name = "Security"
