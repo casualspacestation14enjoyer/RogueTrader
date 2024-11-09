@@ -8,9 +8,20 @@
 		/obj/item/weldingtool/finger,
 		/obj/item/crowbar/finger,
 		/obj/item/wirecutters/finger,
+		/obj/item/device/multitool/hacktool/finger,
 		/obj/item/device/multitool/finger
 	)
 
+
+/obj/item/device/multitool/hacktool/finger
+	name = "digital hacktool"
+	desc = "A precise, high quality welding tool."
+	canremove = FALSE
+
+/obj/item/device/multitool/hacktool/finger/Initialize()
+	. = ..()
+	icon_state = initial(icon_state)
+	item_state = initial(item_state)
 
 /obj/item/weldingtool/finger
 	name = "digital welder"

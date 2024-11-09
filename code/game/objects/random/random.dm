@@ -1191,7 +1191,7 @@
 				/obj/item/pizzabox/mushroom,
 				/obj/item/pizzabox/fruit,
 				/obj/item/reagent_containers/food/snacks/plumphelmetbiscuit,
-				/obj/item/reagent_containers/food/snacks/skrellsnacks)
+				/obj/item/reagent_containers/food/snacks/tau)
 
 
 /obj/random/storage

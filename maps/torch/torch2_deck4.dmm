@@ -10537,7 +10537,7 @@
 /area/space)
 "Ko" = (
 /obj/shuttle_landmark/ert/dock,
-/obj/shuttle_landmark/skrellscout/dock,
+/obj/shuttle_landmark/tauscout/dock,
 /turf/space,
 /area/space)
 "Kp" = (
@@ -14079,7 +14079,7 @@
 	name = "Docking Port Airlock"
 	},
 /obj/machinery/shield_diffuser,
-/obj/shuttle_landmark/skrellscoutshuttle/altdock,
+/obj/shuttle_landmark/tauscoutshuttle/altdock,
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/aft)
 "TY" = (

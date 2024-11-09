@@ -237,6 +237,7 @@
 						SKILL_ATMOS = SKILL_MASTER,
 						SKILL_PILOT = SKILL_MASTER,
 						SKILL_COMBAT = SKILL_MASTER,
+						SKILL_GUNS = SKILL_MASTER,
 						SKILL_VIGOR = SKILL_MASTER)
 
 /datum/job/submap/colonist2/equip(mob/living/carbon/human/H)

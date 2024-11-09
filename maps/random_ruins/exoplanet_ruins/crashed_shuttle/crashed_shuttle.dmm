@@ -16,7 +16,7 @@
 "kQ" = (/obj/decal/cleanable/liquid_fuel,/turf/simulated/floor/exoplanet/barren,/area/map_template/crashed_shuttle/crash)
 "kW" = (/obj/machinery/atmospherics/pipe/simple/hidden,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/closet/hydrant{pixel_x = -32},/turf/simulated/floor/plating,/area/map_template/crashed_shuttle/graysontug)
 "la" = (/turf/simulated/floor/exoplanet/barren,/area/map_template/crashed_shuttle/crash)
-"lE" = (/obj/structure/cable,/obj/machinery/power/apc/critical{dir = 4; name = "east bump"; pixel_x = 24; req_access = list("ACCESS_SKRELLSCOUT")},/turf/simulated/floor/plating,/area/map_template/crashed_shuttle/graysontug)
+"lE" = (/obj/structure/cable,/obj/machinery/power/apc/critical{dir = 4; name = "east bump"; pixel_x = 24; req_access = list("ACCESS_TAUSCOUT")},/turf/simulated/floor/plating,/area/map_template/crashed_shuttle/graysontug)
 "ng" = (/obj/machinery/atmospherics/unary/tank/air{start_pressure = 8000; dir = 1},/turf/simulated/floor/plating,/area/map_template/crashed_shuttle/graysontug)
 "np" = (/obj/machinery/power/port_gen/pacman{anchored = 1; sheets = 25},/obj/structure/cable/yellow{d2 = 8; icon_state = "0-8"},/obj/machinery/alarm{req_access = list(); dir = 8; pixel_x = 24},/turf/simulated/floor/plating,/area/map_template/crashed_shuttle/graysontug)
 "nY" = (/obj/machinery/portable_atmospherics/canister/empty/oxygen,/turf/template_noop,/area/map_template/crashed_shuttle/crash)

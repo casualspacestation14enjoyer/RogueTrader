@@ -344,7 +344,7 @@
 
 
 /obj/structure/roller_bed/skrell_oneg
-	iv_bag = /obj/item/reagent_containers/ivbag/blood/skrell/oneg
+	iv_bag = /obj/item/reagent_containers/ivbag/blood/tau/oneg
 
 
 /obj/structure/roller_bed/unathi_oneg

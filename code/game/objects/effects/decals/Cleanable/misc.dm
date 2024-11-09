@@ -32,6 +32,104 @@
 	mouse_opacity = 0
 	persistent = TRUE
 
+/obj/decal/cleanable/poo
+	name = "..."
+	desc = "It's still good. Four second rule!"
+	gender = PLURAL
+	icon = 'icons/effects/pooeffect.dmi'
+	icon_state = "drip1"
+	random_icon_states = list("floor1", "floor2", "floor3", "floor4", "floor5", "floor6", "floor7", "floor8")
+	persistent = TRUE
+	generic_filth = TRUE
+
+/obj/effect/decal/cleanable/poo/Initialize()
+	. = ..()
+	create_reagents(5)
+	reagents.add_reagent(/datum/reagent/toxin/poo,5)
+	for(var/obj/effect/decal/cleanable/poo/shit in src.loc)
+		if(shit != src)
+			qdel(shit)
+
+/obj/effect/decal/cleanable/poo/Crossed(AM as mob|obj)
+	if (istype(AM, /mob/living/carbon))
+		var/mob/living/carbon/M =	AM
+
+		if(prob(3))
+			M.slip("poo")
+
+/obj/item/reagent_containers/food/snacks/poo
+	name = "poo"
+	desc = "A chocolately surprise!"
+	icon = 'icons/obj/poop.dmi'
+	icon_state = "poop2"
+	item_state = "poop"
+
+/obj/item/reagent_containers/food/snacks/poo/New()
+	..()
+	icon_state = pick("poop1", "poop2", "poop3", "poop4", "poop5", "poop6", "poop7")
+	reagents.add_reagent(/datum/reagent/toxin/poo, 10)
+	bitesize = 3
+
+/obj/item/reagent_containers/food/snacks/poo/throw_impact(atom/hit_atom)
+	playsound(src.loc, "sound/effects/squishy.ogg", 40, 1)
+	var/turf/T = src.loc
+	if(!istype(T, /turf/space))
+		new /obj/effect/decal/cleanable/poo(T)
+	qdel(src)
+
+//SHIT
+/datum/reagent/toxin/poo
+	name = "poo"
+	description = "It's poo."
+	reagent_state = LIQUID
+	color = "#643200"
+	taste_description = "literal shit"
+	strength = 0.5
+
+/datum/reagent/toxin/poo/touch_turf(var/turf/T)
+	if(!istype(T, /turf/space))
+		new /obj/effect/decal/cleanable/poo(T)
+	qdel(src)
+
+//URINE
+/datum/reagent/toxin/urine
+	name = "urine"
+	description = "It's pee."
+	reagent_state = LIQUID
+	color = COLOR_YELLOW
+	taste_description = "urine"
+	strength = 0.3
+
+/obj/effect/decal/cleanable/urine/Initialize()
+	. = ..()
+	create_reagents(5)
+	reagents.add_reagent(/datum/reagent/toxin/urine,5)
+	for(var/obj/effect/decal/cleanable/urine/piss in src.loc)
+		if(piss != src)
+			qdel(piss)
+
+/datum/reagent/toxin/urine/touch_turf(var/turf/T)
+	if(!istype(T, /turf/space))
+		new /obj/effect/decal/cleanable/urine(T)
+	qdel(src)
+
+/obj/decal/cleanable/urine
+	name = "..."
+	desc = "It's still good. Four second rule!"
+	gender = PLURAL
+	icon = 'icons/effects/pooeffect.dmi'
+	icon_state = "pee1"
+	random_icon_states = list("pee1", "pee2", "pee3")
+	persistent = TRUE
+	generic_filth = TRUE
+
+/obj/effect/decal/cleanable/urine/Crossed(AM as mob|obj)
+	if (istype(AM, /mob/living/carbon))
+		var/mob/living/carbon/M =	AM
+
+		if(prob(4))
+			M.slip("pee")
+
 /obj/decal/cleanable/flour
 	name = "flour"
 	desc = "It's still good. Four second rule!"
@@ -77,13 +175,13 @@
 	name = "vomit"
 	desc = "Gosh, how unpleasant."
 	gender = PLURAL
-	icon = 'icons/effects/vomit.dmi'
-	icon_state = "vomit_1"
+	icon = 'icons/effects/blood.dmi'
+	icon_state = "vomittox_1"
+	random_icon_states = list("vomittox_1", "vgibup1", "vgibbl1", "vgibbl4")
 	persistent = TRUE
 	generic_filth = TRUE
 
 /obj/decal/cleanable/vomit/New()
-	random_icon_states = icon_states(icon)
 	..()
 	atom_flags |= ATOM_FLAG_OPEN_CONTAINER
 	create_reagents(30, src)
