@@ -4,7 +4,7 @@
 	start_pressure = 4559.63
 	},
 /obj/floor_decal/industrial/outline/blue,
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/atmos)
 "ar" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -18,7 +18,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/skrell/orange,
+/turf/simulated/floor/tiled/tau/orange,
 /area/map_template/biodome/engineering)
 "au" = (
 /obj/structure/cable{
@@ -28,7 +28,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/living)
 "aQ" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
@@ -44,12 +44,12 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/turf/simulated/floor/tiled/skrell/orange,
+/turf/simulated/floor/tiled/tau/orange,
 /area/map_template/biodome/engineering)
 "bg" = (
 /obj/structure/table/glass,
 /obj/item/storage/box/nitrilegloves,
-/turf/simulated/floor/tiled/skrell/white,
+/turf/simulated/floor/tiled/tau/white,
 /area/map_template/biodome/medbay)
 "bB" = (
 /turf/simulated/floor/pool,
@@ -59,20 +59,20 @@
 	dir = 4
 	},
 /obj/structure/closet/crate/hydroponics,
-/turf/simulated/floor/tiled/skrell/green,
+/turf/simulated/floor/tiled/tau/green,
 /area/map_template/biodome/living)
 "cn" = (
 /obj/machinery/button/blast_door{
 	dir = 8;
 	pixel_x = 26;
 	id_tag = "sk_bd_south";
-	req_access = list("ACCESS_SKRELLSCOUT")
+	req_access = list("ACCESS_TAUSCOUT")
 	},
 /obj/structure/flora/pottedplant,
 /turf/simulated/floor/carpet/blue,
 /area/map_template/biodome/living)
 "co" = (
-/turf/simulated/floor/tiled/skrell/green,
+/turf/simulated/floor/tiled/tau/green,
 /area/map_template/biodome/living)
 "cJ" = (
 /obj/paint/black,
@@ -89,17 +89,17 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
-/turf/simulated/floor/tiled/skrell/orange,
+/turf/simulated/floor/tiled/tau/orange,
 /area/map_template/biodome/engineering)
 "dm" = (
-/obj/machinery/light/skrell{
+/obj/machinery/light/tau{
 	dir = 8
 	},
 /obj/machinery/light_switch{
 	pixel_x = -24;
 	pixel_y = -24
 	},
-/turf/simulated/floor/tiled/skrell/green,
+/turf/simulated/floor/tiled/tau/green,
 /area/map_template/biodome/living)
 "dF" = (
 /obj/structure/hygiene/faucet,
@@ -109,13 +109,13 @@
 /obj/machinery/atmospherics/binary/pump/on{
 	dir = 4
 	},
-/obj/machinery/light/skrell,
+/obj/machinery/light/tau,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 4;
 	icon_state = "1-4"
 	},
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/atmos)
 "ee" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
@@ -127,18 +127,18 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/engineering)
 "es" = (
 /obj/machinery/optable,
-/turf/simulated/floor/tiled/skrell/white,
+/turf/simulated/floor/tiled/tau/white,
 /area/map_template/biodome/medbay)
 "eB" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
 	dir = 8;
 	id_tag = "skrellbd_pump_out_external"
 	},
-/turf/simulated/floor/tiled/skrell/red,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/engineering)
 "eD" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
@@ -150,10 +150,10 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/light/skrell{
+/obj/machinery/light/tau{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/skrell/red,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/engineering)
 "fe" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -162,20 +162,20 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/skrell/green,
+/turf/simulated/floor/tiled/tau/green,
 /area/map_template/biodome/living)
 "fz" = (
 /obj/machinery/bodyscanner{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/skrell/white,
+/turf/simulated/floor/tiled/tau/white,
 /area/map_template/biodome/medbay)
 "gj" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/black{
 	dir = 1
 	},
 /obj/machinery/door/airlock/external/bolted{
-	req_access = list("ACCESS_SKRELLSCOUT");
+	req_access = list("ACCESS_TAUSCOUT");
 	id_tag = "skrellbd_outer";
 	autoset_access = 0
 	},
@@ -187,14 +187,14 @@
 /obj/machinery/button/blast_door{
 	pixel_x = 26;
 	id_tag = "sk_bd_north";
-	req_access = list("ACCESS_SKRELLSCOUT")
+	req_access = list("ACCESS_TAUSCOUT")
 	},
 /obj/structure/cable/yellow{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/skrell/red,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/engineering)
 "gl" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/universal{
@@ -206,7 +206,7 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/skrell/orange,
+/turf/simulated/floor/tiled/tau/orange,
 /area/map_template/biodome/engineering)
 "go" = (
 /obj/machinery/door/airlock/multi_tile/glass/atmos{
@@ -222,11 +222,11 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/atmos)
 "gw" = (
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/medbay)
 "gC" = (
 /obj/structure/bed/chair/comfy/red{
@@ -251,35 +251,35 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/skrell/orange,
+/turf/simulated/floor/tiled/tau/orange,
 /area/map_template/biodome/engineering)
 "hn" = (
 /obj/machinery/reagentgrinder,
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/skrell/white,
+/turf/simulated/floor/tiled/tau/white,
 /area/map_template/biodome/medbay)
 "hq" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/living)
 "hQ" = (
 /obj/machinery/sleeper{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/skrell/white,
+/turf/simulated/floor/tiled/tau/white,
 /area/map_template/biodome/medbay)
 "in" = (
 /obj/machinery/atmospherics/portables_connector,
 /obj/floor_decal/industrial/outline/blue,
-/obj/machinery/alarm/skrell{
+/obj/machinery/alarm/tau{
 	pixel_y = 14
 	},
 /obj/machinery/portable_atmospherics/canister/air/airlock,
-/turf/simulated/floor/tiled/skrell/orange,
+/turf/simulated/floor/tiled/tau/orange,
 /area/map_template/biodome/engineering)
 "iG" = (
 /obj/structure/cable/yellow{
@@ -291,33 +291,33 @@
 /area/map_template/biodome/engineering)
 "iL" = (
 /obj/structure/table/standard,
-/turf/simulated/floor/tiled/skrell/green,
+/turf/simulated/floor/tiled/tau/green,
 /area/map_template/biodome/living)
 "jM" = (
 /obj/structure/bed/padded,
 /obj/item/bedsheet/ce,
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/living)
 "ke" = (
 /obj/structure/table/glass,
 /obj/item/bodybag/rescue/loaded,
 /obj/item/bodybag/rescue/loaded,
-/turf/simulated/floor/tiled/skrell/white,
+/turf/simulated/floor/tiled/tau/white,
 /area/map_template/biodome/medbay)
 "kI" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
 	},
-/turf/simulated/floor/tiled/skrell/green,
+/turf/simulated/floor/tiled/tau/green,
 /area/map_template/biodome/living)
 "kK" = (
 /obj/machinery/button/blast_door{
 	dir = 4;
 	pixel_x = -26;
 	id_tag = "sk_bd_east";
-	req_access = list("ACCESS_SKRELLSCOUT")
+	req_access = list("ACCESS_TAUSCOUT")
 	},
-/turf/simulated/floor/tiled/skrell/green,
+/turf/simulated/floor/tiled/tau/green,
 /area/map_template/biodome/living)
 "kM" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
@@ -333,11 +333,11 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/tiled/skrell/orange,
+/turf/simulated/floor/tiled/tau/orange,
 /area/map_template/biodome/engineering)
 "kP" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/skrell/white,
+/turf/simulated/floor/tiled/tau/white,
 /area/map_template/biodome/medbay)
 "lx" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -346,10 +346,10 @@
 	dir = 4;
 	name = "east bump";
 	pixel_x = 24;
-	req_access = list("ACCESS_SKRELLSCOUT")
+	req_access = list("ACCESS_TAUSCOUT")
 	},
 /obj/structure/cable,
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/living)
 "mc" = (
 /obj/structure/table/woodentable/walnut,
@@ -365,34 +365,34 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/skrell/green,
+/turf/simulated/floor/tiled/tau/green,
 /area/map_template/biodome/living)
 "nJ" = (
 /obj/machinery/atmospherics/portables_connector,
 /obj/machinery/portable_atmospherics/canister/empty,
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/atmos)
 "nT" = (
 /obj/item/stool,
 /obj/structure/curtain/open/shower,
-/turf/simulated/floor/tiled/skrell/green,
+/turf/simulated/floor/tiled/tau/green,
 /area/map_template/biodome/living)
 "oa" = (
 /obj/machinery/chemical_dispenser,
-/turf/simulated/floor/tiled/skrell/white,
+/turf/simulated/floor/tiled/tau/white,
 /area/map_template/biodome/medbay)
 "oZ" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
-/obj/machinery/light/skrell{
+/obj/machinery/light/tau{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/living)
 "pa" = (
-/obj/machinery/light/skrell,
-/turf/simulated/floor/tiled/skrell/white,
+/obj/machinery/light/tau,
+/turf/simulated/floor/tiled/tau/white,
 /area/map_template/biodome/medbay)
 "pi" = (
 /obj/machinery/atmospherics/unary/tank/air{
@@ -400,11 +400,11 @@
 	start_pressure = 4559.63
 	},
 /obj/floor_decal/industrial/outline/blue,
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/atmos)
 "pv" = (
-/obj/machinery/space_heater/skrell,
-/turf/simulated/floor/tiled/skrell/orange,
+/obj/machinery/space_heater/tau,
+/turf/simulated/floor/tiled/tau/orange,
 /area/map_template/biodome/engineering)
 "pA" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
@@ -417,16 +417,16 @@
 	pixel_x = -24;
 	pixel_y = -7
 	},
-/turf/simulated/floor/tiled/skrell/red,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/engineering)
 "pE" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
-/obj/machinery/light/skrell{
+/obj/machinery/light/tau{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/skrell/white,
+/turf/simulated/floor/tiled/tau/white,
 /area/map_template/biodome/living)
 "qz" = (
 /obj/paint/black,
@@ -436,13 +436,13 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/skrell/white,
+/turf/simulated/floor/tiled/tau/white,
 /area/map_template/biodome/living)
 "rg" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red{
 	dir = 5
 	},
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/atmos)
 "rh" = (
 /obj/structure/cable{
@@ -454,15 +454,15 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
 	},
-/obj/machinery/light/skrell{
+/obj/machinery/light/tau{
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/living)
 "rw" = (
 /obj/machinery/portable_atmospherics/hydroponics,
-/turf/simulated/floor/tiled/skrell/green,
+/turf/simulated/floor/tiled/tau/green,
 /area/map_template/biodome/living)
 "rE" = (
 /obj/machinery/door/airlock/multi_tile/glass/civilian{
@@ -481,7 +481,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/medbay)
 "rI" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -498,10 +498,10 @@
 	dir = 4;
 	name = "east bump";
 	pixel_x = 24;
-	req_access = list("ACCESS_SKRELLSCOUT")
+	req_access = list("ACCESS_TAUSCOUT")
 	},
 /obj/machinery/portable_atmospherics/canister/oxygen,
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/atmos)
 "rW" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -515,7 +515,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/living)
 "sk" = (
 /obj/machinery/power/solar_control{
@@ -526,19 +526,19 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
-/turf/simulated/floor/tiled/skrell/orange,
+/turf/simulated/floor/tiled/tau/orange,
 /area/map_template/biodome/engineering)
 "so" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/red{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/atmos)
 "ss" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/living)
 "tF" = (
 /obj/wallframe_spawn/reinforced_phoron/hull,
@@ -556,13 +556,13 @@
 	dir = 4;
 	id_tag = "skrellbd_pump_out_external"
 	},
-/turf/simulated/floor/tiled/skrell/red,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/engineering)
 "tU" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/skrell/green,
+/turf/simulated/floor/tiled/tau/green,
 /area/map_template/biodome/living)
 "tW" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -571,7 +571,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
-/turf/simulated/floor/tiled/skrell/white,
+/turf/simulated/floor/tiled/tau/white,
 /area/map_template/biodome/medbay)
 "uK" = (
 /obj/structure/table/glass,
@@ -582,7 +582,7 @@
 /obj/item/reagent_containers/glass/beaker/large{
 	pixel_x = -6
 	},
-/turf/simulated/floor/tiled/skrell/white,
+/turf/simulated/floor/tiled/tau/white,
 /area/map_template/biodome/medbay)
 "uT" = (
 /obj/wallframe_spawn/reinforced_phoron/hull,
@@ -594,7 +594,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
 	dir = 4
 	},
-/obj/machinery/alarm/skrell{
+/obj/machinery/alarm/tau{
 	dir = 1;
 	pixel_y = -22
 	},
@@ -602,7 +602,7 @@
 	pixel_x = -22;
 	pixel_y = -22
 	},
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/atmos)
 "vh" = (
 /obj/structure/cable/yellow{
@@ -622,7 +622,7 @@
 /area/template_noop)
 "vI" = (
 /obj/structure/table/woodentable/walnut,
-/obj/item/tape_roll/skrell,
+/obj/item/tape_roll/tau,
 /turf/simulated/floor/carpet/blue,
 /area/map_template/biodome/living)
 "xj" = (
@@ -637,21 +637,21 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/skrell/orange,
+/turf/simulated/floor/tiled/tau/orange,
 /area/map_template/biodome/engineering)
 "xG" = (
 /obj/machinery/portable_atmospherics/powered/scrubber,
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/skrell/orange,
+/turf/simulated/floor/tiled/tau/orange,
 /area/map_template/biodome/engineering)
 "yc" = (
 /obj/structure/hygiene/sink{
 	dir = 1;
 	pixel_y = 16
 	},
-/turf/simulated/floor/tiled/skrell/green,
+/turf/simulated/floor/tiled/tau/green,
 /area/map_template/biodome/living)
 "yI" = (
 /obj/structure/cable{
@@ -666,11 +666,11 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/living)
 "zq" = (
 /obj/structure/roller_bed,
-/turf/simulated/floor/tiled/skrell/white,
+/turf/simulated/floor/tiled/tau/white,
 /area/map_template/biodome/medbay)
 "AH" = (
 /obj/machinery/power/smes/buildable/max_cap_in_out,
@@ -678,7 +678,7 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
-/turf/simulated/floor/tiled/skrell/orange,
+/turf/simulated/floor/tiled/tau/orange,
 /area/map_template/biodome/engineering)
 "AL" = (
 /obj/structure/cable/yellow{
@@ -700,7 +700,7 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/living)
 "Bv" = (
 /obj/structure/bed/chair/comfy/red{
@@ -713,11 +713,11 @@
 	dir = 1;
 	pixel_y = -26;
 	id_tag = "sk_bd_west";
-	req_access = list("ACCESS_SKRELLSCOUT")
+	req_access = list("ACCESS_TAUSCOUT")
 	},
 /obj/structure/table/glass,
 /obj/item/storage/firstaid/surgery,
-/turf/simulated/floor/tiled/skrell/white,
+/turf/simulated/floor/tiled/tau/white,
 /area/map_template/biodome/medbay)
 "CL" = (
 /obj/structure/cable/yellow,
@@ -731,23 +731,23 @@
 /obj/structure/hygiene/shower{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/skrell/white,
+/turf/simulated/floor/tiled/tau/white,
 /area/map_template/biodome/living)
 "DW" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/civilian,
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/living)
 "EJ" = (
 /obj/machinery/body_scanconsole{
 	dir = 4
 	},
-/obj/machinery/light/skrell{
+/obj/machinery/light/tau{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/skrell/white,
+/turf/simulated/floor/tiled/tau/white,
 /area/map_template/biodome/medbay)
 "Gj" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -761,7 +761,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/skrell/orange,
+/turf/simulated/floor/tiled/tau/orange,
 /area/map_template/biodome/engineering)
 "Gr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -790,18 +790,18 @@
 /turf/simulated/floor/exoplanet/concrete/reinforced,
 /area/map_template/biodome/engineering)
 "Gu" = (
-/obj/machinery/light/skrell{
+/obj/machinery/light/tau{
 	dir = 1
 	},
 /obj/machinery/portable_atmospherics/canister/air,
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/atmos)
 "GB" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
 	},
 /obj/machinery/door/airlock/external/bolted{
-	req_access = list("ACCESS_SKRELLSCOUT");
+	req_access = list("ACCESS_TAUSCOUT");
 	id_tag = "skrellbd_inner";
 	autoset_access = 0
 	},
@@ -810,14 +810,14 @@
 	master_tag = "transshipment_hangar";
 	pixel_x = -25
 	},
-/turf/simulated/floor/tiled/skrell/red,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/engineering)
 "GW" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/universal{
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/atmos)
 "Hy" = (
 /obj/structure/hygiene/sink{
@@ -825,7 +825,7 @@
 	pixel_x = 11;
 	pixel_y = 5
 	},
-/turf/simulated/floor/tiled/skrell/white,
+/turf/simulated/floor/tiled/tau/white,
 /area/map_template/biodome/living)
 "HL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -834,7 +834,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/skrell/white,
+/turf/simulated/floor/tiled/tau/white,
 /area/map_template/biodome/living)
 "HX" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -852,13 +852,13 @@
 /obj/machinery/power/apc/critical{
 	name = "south bump";
 	pixel_y = -24;
-	req_access = list("ACCESS_SKRELLSCOUT")
+	req_access = list("ACCESS_TAUSCOUT")
 	},
 /obj/machinery/light_switch{
 	pixel_x = -22;
 	pixel_y = -22
 	},
-/turf/simulated/floor/tiled/skrell/orange,
+/turf/simulated/floor/tiled/tau/orange,
 /area/map_template/biodome/engineering)
 "Ih" = (
 /obj/wallframe_spawn/reinforced_phoron/hull,
@@ -882,15 +882,15 @@
 /area/map_template/biodome/living)
 "IA" = (
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/living)
 "II" = (
 /obj/machinery/atmospherics/portables_connector,
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/atmos)
 "IP" = (
 /obj/structure/hygiene/drain/bath,
-/obj/machinery/light/skrell,
+/obj/machinery/light/tau,
 /turf/simulated/floor/pool,
 /area/map_template/biodome/living)
 "IV" = (
@@ -900,7 +900,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/engineering)
 "Jg" = (
 /obj/structure/window/reinforced{
@@ -908,10 +908,10 @@
 	},
 /obj/structure/table/standard,
 /obj/item/mop/advanced,
-/turf/simulated/floor/tiled/skrell/green,
+/turf/simulated/floor/tiled/tau/green,
 /area/map_template/biodome/living)
 "Jt" = (
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/living)
 "Jy" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -920,11 +920,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/living)
 "JG" = (
 /obj/machinery/portable_atmospherics/powered/pump/filled,
-/turf/simulated/floor/tiled/skrell/orange,
+/turf/simulated/floor/tiled/tau/orange,
 /area/map_template/biodome/engineering)
 "JM" = (
 /obj/structure/cable/yellow{
@@ -941,7 +941,7 @@
 /area/map_template/biodome/engineering)
 "Ke" = (
 /obj/machinery/vending/medical/skrell,
-/turf/simulated/floor/tiled/skrell/white,
+/turf/simulated/floor/tiled/tau/white,
 /area/map_template/biodome/medbay)
 "Ko" = (
 /obj/structure/table/glass,
@@ -952,7 +952,7 @@
 	pixel_x = -5
 	},
 /obj/item/reagent_containers/spray/sterilizine,
-/turf/simulated/floor/tiled/skrell/white,
+/turf/simulated/floor/tiled/tau/white,
 /area/map_template/biodome/medbay)
 "Ky" = (
 /obj/structure/cable/yellow{
@@ -972,26 +972,26 @@
 	dir = 5
 	},
 /obj/machinery/portable_atmospherics/powered/scrubber,
-/obj/machinery/light/skrell{
+/obj/machinery/light/tau{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/skrell/orange,
+/turf/simulated/floor/tiled/tau/orange,
 /area/map_template/biodome/engineering)
 "KD" = (
-/turf/simulated/floor/tiled/skrell/white,
+/turf/simulated/floor/tiled/tau/white,
 /area/map_template/biodome/medbay)
 "KP" = (
 /obj/structure/hygiene/toilet{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/skrell/white,
+/turf/simulated/floor/tiled/tau/white,
 /area/map_template/biodome/living)
 "Lc" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
 	},
 /obj/machinery/door/airlock/external/bolted{
-	req_access = list("ACCESS_SKRELLSCOUT");
+	req_access = list("ACCESS_TAUSCOUT");
 	id_tag = "skrellbd_inner";
 	autoset_access = 0
 	},
@@ -1000,7 +1000,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/skrell/red,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/engineering)
 "Ln" = (
 /obj/structure/window/reinforced{
@@ -1014,24 +1014,24 @@
 	pixel_x = -9;
 	pixel_y = -2
 	},
-/turf/simulated/floor/tiled/skrell/white,
+/turf/simulated/floor/tiled/tau/white,
 /area/map_template/biodome/medbay)
 "Lr" = (
-/obj/machinery/light/skrell{
+/obj/machinery/light/tau{
 	dir = 4
 	},
 /obj/machinery/vending/engineering{
-	req_access = list("ACCESS_SKRELLSCOUT");
+	req_access = list("ACCESS_TAUSCOUT");
 	dir = 8
 	},
-/turf/simulated/floor/tiled/skrell/orange,
+/turf/simulated/floor/tiled/tau/orange,
 /area/map_template/biodome/engineering)
 "LY" = (
 /obj/structure/table/standard,
-/obj/machinery/light/skrell{
+/obj/machinery/light/tau{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/skrell/green,
+/turf/simulated/floor/tiled/tau/green,
 /area/map_template/biodome/living)
 "Ma" = (
 /obj/structure/cable{
@@ -1043,13 +1043,13 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/civilian,
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/living)
 "Me" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/skrell/green,
+/turf/simulated/floor/tiled/tau/green,
 /area/map_template/biodome/living)
 "Mi" = (
 /obj/structure/closet/crate,
@@ -1067,7 +1067,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/skrell/white,
+/turf/simulated/floor/tiled/tau/white,
 /area/map_template/biodome/medbay)
 "MA" = (
 /obj/machinery/computer/operating{
@@ -1076,7 +1076,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/skrell/white,
+/turf/simulated/floor/tiled/tau/white,
 /area/map_template/biodome/medbay)
 "ML" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -1101,7 +1101,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/engineering)
 "ND" = (
 /obj/machinery/door/airlock/civilian{
@@ -1114,7 +1114,7 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/living)
 "NE" = (
 /obj/structure/table/woodentable/walnut,
@@ -1140,7 +1140,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/atmos)
 "NU" = (
 /obj/structure/closet/cabinet,
@@ -1148,7 +1148,7 @@
 /obj/item/device/radio/hailing,
 /obj/item/gun/energy/tau/pulserifle,
 /obj/item/shuttle_beacon,
-/obj/machinery/light/skrell{
+/obj/machinery/light/tau{
 	dir = 8
 	},
 /turf/simulated/floor/carpet/blue,
@@ -1169,14 +1169,14 @@
 "Oe" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/civilian,
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/living)
 "Ow" = (
 /obj/machinery/chem_master,
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/skrell/white,
+/turf/simulated/floor/tiled/tau/white,
 /area/map_template/biodome/medbay)
 "OM" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -1185,7 +1185,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/machinery/alarm/skrell{
+/obj/machinery/alarm/tau{
 	pixel_y = 14
 	},
 /turf/simulated/floor/carpet/blue,
@@ -1202,14 +1202,14 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/skrell/red,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/engineering)
 "OX" = (
 /obj/machinery/atmospherics/portables_connector{
 	dir = 4
 	},
 /obj/machinery/portable_atmospherics/canister/empty,
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/atmos)
 "Py" = (
 /obj/structure/reagent_dispensers/water_cooler{
@@ -1228,7 +1228,7 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/living)
 "PR" = (
 /obj/structure/cable/yellow,
@@ -1248,7 +1248,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/living)
 "Qv" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -1262,7 +1262,7 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/turf/simulated/floor/tiled/skrell/white,
+/turf/simulated/floor/tiled/tau/white,
 /area/map_template/biodome/medbay)
 "QI" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -1274,14 +1274,14 @@
 /turf/simulated/floor/carpet/blue,
 /area/map_template/biodome/living)
 "QK" = (
-/obj/machinery/alarm/skrell{
+/obj/machinery/alarm/tau{
 	pixel_y = 14
 	},
-/turf/simulated/floor/tiled/skrell/green,
+/turf/simulated/floor/tiled/tau/green,
 /area/map_template/biodome/living)
 "QX" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
-/turf/simulated/floor/tiled/skrell/white,
+/turf/simulated/floor/tiled/tau/white,
 /area/map_template/biodome/medbay)
 "Rg" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -1292,17 +1292,17 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/skrell/orange,
+/turf/simulated/floor/tiled/tau/orange,
 /area/map_template/biodome/engineering)
 "RC" = (
-/obj/item/reagent_containers/food/snacks/skrellsnacks,
-/obj/item/reagent_containers/food/snacks/skrellsnacks,
-/obj/item/reagent_containers/food/snacks/skrellsnacks,
-/obj/item/reagent_containers/food/snacks/skrellsnacks,
-/obj/item/reagent_containers/food/snacks/skrellsnacks,
-/obj/item/reagent_containers/food/snacks/skrellsnacks,
-/obj/item/reagent_containers/food/snacks/skrellsnacks,
-/obj/item/reagent_containers/food/snacks/skrellsnacks,
+/obj/item/reagent_containers/food/snacks/tau,
+/obj/item/reagent_containers/food/snacks/tau,
+/obj/item/reagent_containers/food/snacks/tau,
+/obj/item/reagent_containers/food/snacks/tau,
+/obj/item/reagent_containers/food/snacks/tau,
+/obj/item/reagent_containers/food/snacks/tau,
+/obj/item/reagent_containers/food/snacks/tau,
+/obj/item/reagent_containers/food/snacks/tau,
 /obj/structure/closet/crate/warhammer/freezer,
 /obj/item/reagent_containers/food/drinks/bottle/thoom,
 /obj/item/reagent_containers/food/drinks/bottle/thoom,
@@ -1310,20 +1310,20 @@
 /obj/machinery/power/apc/critical{
 	name = "south bump";
 	pixel_y = -24;
-	req_access = list("ACCESS_SKRELLSCOUT")
+	req_access = list("ACCESS_TAUSCOUT")
 	},
 /obj/structure/cable,
-/turf/simulated/floor/tiled/skrell/white,
+/turf/simulated/floor/tiled/tau/white,
 /area/map_template/biodome/medbay)
 "Tr" = (
-/obj/machinery/light/skrell{
+/obj/machinery/light/tau{
 	dir = 4
 	},
 /turf/simulated/floor/carpet/blue,
 /area/map_template/biodome/living)
 "Uc" = (
 /obj/machinery/smartfridge/chemistry,
-/turf/simulated/floor/tiled/skrell/white,
+/turf/simulated/floor/tiled/tau/white,
 /area/map_template/biodome/medbay)
 "Ut" = (
 /obj/paint/black,
@@ -1334,14 +1334,14 @@
 	start_pressure = 4559.63
 	},
 /obj/floor_decal/industrial/outline/blue,
-/turf/simulated/floor/tiled/skrell/orange,
+/turf/simulated/floor/tiled/tau/orange,
 /area/map_template/biodome/engineering)
 "Vz" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
 /obj/structure/roller_bed,
-/turf/simulated/floor/tiled/skrell/white,
+/turf/simulated/floor/tiled/tau/white,
 /area/map_template/biodome/medbay)
 "Wo" = (
 /obj/structure/cable/yellow{
@@ -1355,11 +1355,11 @@
 /turf/simulated/floor/exoplanet/concrete/reinforced,
 /area/map_template/biodome/engineering)
 "WS" = (
-/obj/machinery/space_heater/skrell,
-/obj/machinery/light/skrell{
+/obj/machinery/space_heater/tau,
+/obj/machinery/light/tau{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/skrell/orange,
+/turf/simulated/floor/tiled/tau/orange,
 /area/map_template/biodome/engineering)
 "WU" = (
 /obj/structure/cable/yellow{
@@ -1376,14 +1376,14 @@
 /area/map_template/biodome/engineering)
 "Xj" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/cyan,
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/atmos)
 "XK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 4
 	},
-/obj/machinery/light/skrell{
+/obj/machinery/light/tau{
 	dir = 4;
 	icon_state = "tube1"
 	},
@@ -1392,14 +1392,14 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/living)
 "Yl" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/black{
 	dir = 1
 	},
 /obj/machinery/door/airlock/external/bolted{
-	req_access = list("ACCESS_SKRELLSCOUT");
+	req_access = list("ACCESS_TAUSCOUT");
 	id_tag = "skrellbd_outer";
 	autoset_access = 0
 	},
@@ -1413,7 +1413,7 @@
 	master_tag = "transshipment_hangar";
 	pixel_x = -25
 	},
-/turf/simulated/floor/tiled/skrell/red,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/engineering)
 "YI" = (
 /obj/paint/black,
@@ -1440,7 +1440,7 @@
 	dir = 4;
 	pixel_x = -24
 	},
-/turf/simulated/floor/tiled/skrell/red,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/engineering)
 "Zo" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -1466,14 +1466,14 @@
 /turf/simulated/floor/carpet/blue,
 /area/map_template/biodome/living)
 "ZR" = (
-/obj/machinery/alarm/skrell{
+/obj/machinery/alarm/tau{
 	pixel_y = 14
 	},
 /obj/machinery/light_switch{
 	pixel_x = -22;
 	pixel_y = 24
 	},
-/turf/simulated/floor/tiled/skrell/white,
+/turf/simulated/floor/tiled/tau/white,
 /area/map_template/biodome/medbay)
 "ZW" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -1484,7 +1484,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/skrell/blue,
+/turf/simulated/floor/tiled/tau/blue,
 /area/map_template/biodome/engineering)
 
 (1,1,1) = {"

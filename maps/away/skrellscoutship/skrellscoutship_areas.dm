@@ -1,122 +1,122 @@
-/area/ship/skrellscoutship
+/area/ship/tauscoutship
 	name = "\improper Tau Ship"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
 	base_turf = /turf/space
-	req_access = list(access_skrellscoutship)
+	req_access = list(access_tauscoutship)
 
-/area/ship/skrellscoutship/solars
+/area/ship/tauscoutship/solars
 	name = "\improper Solar Area"
 
-/area/ship/skrellscoutship/crew/hallway/d1
+/area/ship/tauscoutship/crew/hallway/d1
 	name = "\improper Hallway - Deck 1"
 
-/area/ship/skrellscoutship/crew/hallway/d2
+/area/ship/tauscoutship/crew/hallway/d2
 	name = "\improper Hallway - Deck 2"
 
-/area/ship/skrellscoutship/crew/rec
+/area/ship/tauscoutship/crew/rec
 	name = "\improper Recreational Area"
 	icon_state = "green"
 
-/area/ship/skrellscoutship/crew/fit
+/area/ship/tauscoutship/crew/fit
 	name = "\improper Exercise Area"
 	icon_state = "green"
 
-/area/ship/skrellscoutship/crew/toilets
+/area/ship/tauscoutship/crew/toilets
 	name = "\improper Bathroom"
 	icon_state = "toilet"
 
-/area/ship/skrellscoutship/dock/alt
+/area/ship/tauscoutship/dock/alt
 	name = "\improper Docking Bay 2"
 	icon_state = "entry_1"
 
-/area/ship/skrellscoutship/robotics
+/area/ship/tauscoutship/robotics
 	name = "\improper Maintenance"
 	icon_state = "green"
 
-/area/ship/skrellscoutship/maintenance/power
+/area/ship/tauscoutship/maintenance/power
 	name = "\improper Engineering"
 	icon_state = "engine_smes"
 	ambience = list('sound/ambience/ambigen3.ogg','sound/ambience/ambigen4.ogg','sound/ambience/ambigen5.ogg','sound/ambience/ambigen6.ogg','sound/ambience/ambigen7.ogg','sound/ambience/ambigen8.ogg','sound/ambience/ambigen9.ogg','sound/ambience/ambigen10.ogg','sound/ambience/ambigen11.ogg','sound/ambience/ambieng1.ogg')
 
-/area/ship/skrellscoutship/command/bridge
+/area/ship/tauscoutship/command/bridge
 	name = "\improper Tau Helm"
 	icon_state = "bridge"
 
-/area/ship/skrellscoutship/command/armory
+/area/ship/tauscoutship/command/armory
 	name = "\improper Armory"
 	icon_state = "shuttlered"
 
-/area/ship/skrellscoutshuttle
+/area/ship/tauscoutshuttle
 	name = "\improper Tau Shuttle"
 	icon_state = "bridge"
 	base_turf = /turf/simulated/floor/plating
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
-	req_access = list(access_skrellscoutship)
+	req_access = list(access_tauscoutship)
 
 //New Ship Areas
 
-/area/ship/skrellscoutship/wings/port
+/area/ship/tauscoutship/wings/port
 	name = "\improper Port Corridor"
 	icon_state = "green"
 
-/area/ship/skrellscoutship/wings/starboard
+/area/ship/tauscoutship/wings/starboard
 	name = "\improper Starboard Corridor"
 	icon_state = "green"
 
-/area/ship/skrellscoutship/brig
+/area/ship/tauscoutship/brig
 	name = "\improper Holding Cell"
 	icon_state = "green"
 
-/area/ship/skrellscoutship/portcheckpoint
+/area/ship/tauscoutship/portcheckpoint
 	name = "\improper Port Checkpoint"
 	icon_state = "green"
 
-/area/ship/skrellscoutship/forestorage
+/area/ship/tauscoutship/forestorage
 	name = "\improper Fore Storage"
 	icon_state = "green"
 
-/area/ship/skrellscoutship/externalwing/port
+/area/ship/tauscoutship/externalwing/port
 	name = "\improper External Wing Port"
 	icon_state = "red"
 
-/area/ship/skrellscoutship/externalwing/starboard
+/area/ship/tauscoutship/externalwing/starboard
 	name = "\improper External Wing Starboard"
 	icon_state = "red"
 
-/area/ship/skrellscoutship/corridor
+/area/ship/tauscoutship/corridor
 	name = "\improper Central Corridor"
 	icon_state = "blue"
 
-/area/ship/skrellscoutship/crew/quarters
+/area/ship/tauscoutship/crew/quarters
 	name = "\improper Quarters"
 	icon_state = "crew_quarters"
 
-/area/ship/skrellscoutship/crew/medbay
+/area/ship/tauscoutship/crew/medbay
 	name = "\improper Medical Bay"
 	icon_state = "medbay"
 
-/area/ship/skrellscoutship/crew/labs
+/area/ship/tauscoutship/crew/labs
 	name = "\improper Research Labs"
 	icon_state = "labwing"
 
-/area/ship/skrellscoutship/maintenance/power
+/area/ship/tauscoutship/maintenance/power
 	name = "\improper Engineering"
 	icon_state = "engine_smes"
 	ambience = list('sound/ambience/ambigen3.ogg','sound/ambience/ambigen4.ogg','sound/ambience/ambigen5.ogg','sound/ambience/ambigen6.ogg','sound/ambience/ambigen7.ogg','sound/ambience/ambigen8.ogg','sound/ambience/ambigen9.ogg','sound/ambience/ambigen10.ogg','sound/ambience/ambigen11.ogg','sound/ambience/ambieng1.ogg')
 
-/area/ship/skrellscoutship/hangar
+/area/ship/tauscoutship/hangar
 	name = "\improper Shuttle Dock"
 	icon_state = "auxstorage"
 
-/area/ship/skrellscoutship/command/armory
+/area/ship/tauscoutship/command/armory
 	name = "\improper Armory"
 	icon_state = "shuttlered"
 
-/area/ship/skrellscoutship/dock
+/area/ship/tauscoutship/dock
 	name = "\improper Docking Bay 1"
 	icon_state = "entry_1"
 
-/area/ship/skrellscoutship/maintenance/atmos
+/area/ship/tauscoutship/maintenance/atmos
 	name = "\improper Atmospherics"
 	icon_state = "atmos"
 	ambience = list('sound/ambience/ambigen3.ogg','sound/ambience/ambigen4.ogg','sound/ambience/ambigen5.ogg','sound/ambience/ambigen6.ogg','sound/ambience/ambigen7.ogg','sound/ambience/ambigen8.ogg','sound/ambience/ambigen9.ogg','sound/ambience/ambigen10.ogg','sound/ambience/ambigen11.ogg','sound/ambience/ambiatm1.ogg')

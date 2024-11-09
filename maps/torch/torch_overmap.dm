@@ -15,8 +15,8 @@
 		"Charon" = list("nav_hangar_charon"), 	//can't have random shuttles popping inside the ship
 		"Guppy" = list("nav_hangar_guppy"),
 		"Aquila" = list("nav_hangar_aquila"),
-		"Tau Scout" = list("nav_skrellscout_dock"), //restricts Skrell Scoutship specific docking waypoint on deck 4 portside
-		"Tau Shuttle" = list("nav_skrellscoutsh_altdock"),
+		"Tau Scout" = list("nav_tauscout_dock"), //restricts Skrell Scoutship specific docking waypoint on deck 4 portside
+		"Tau Shuttle" = list("nav_tauscoutsh_altdock"),
 		"Rescue" = list("nav_ert_dock"), //restricts ERT Shuttle specific docking waypoint on deck 4 portside
 		"ITV The Reclaimer" = list("nav_hangar_gantry_torch"), //gantry shuttles
 		"ITV Vulcan" = list("nav_hangar_gantry_torch_two"),

@@ -199,28 +199,28 @@
 	icon_state = "techfloor_grid"
 	initial_flooring = /singleton/flooring/tiling/tech/grid
 
-/turf/simulated/floor/tiled/skrell
+/turf/simulated/floor/tiled/tau
 	icon = 'icons/turf/skrellturf.dmi'
 	icon_state = "skrellblack"
 	initial_flooring = /singleton/flooring/reinforced/shuttle/skrell
 
-/turf/simulated/floor/tiled/skrell/white
+/turf/simulated/floor/tiled/tau/white
 	icon_state = "skrellwhite"
 	initial_flooring = /singleton/flooring/reinforced/shuttle/skrell/white
 
-/turf/simulated/floor/tiled/skrell/red
+/turf/simulated/floor/tiled/tau/red
 	icon_state = "skrellred"
 	initial_flooring = /singleton/flooring/reinforced/shuttle/skrell/red
 
-/turf/simulated/floor/tiled/skrell/blue
+/turf/simulated/floor/tiled/tau/blue
 	icon_state = "skrellblue"
 	initial_flooring = /singleton/flooring/reinforced/shuttle/skrell/blue
 
-/turf/simulated/floor/tiled/skrell/orange
+/turf/simulated/floor/tiled/tau/orange
 	icon_state = "skrellorange"
 	initial_flooring = /singleton/flooring/reinforced/shuttle/skrell/orange
 
-/turf/simulated/floor/tiled/skrell/green
+/turf/simulated/floor/tiled/tau/green
 	icon_state = "skrellgreen"
 	initial_flooring = /singleton/flooring/reinforced/shuttle/skrell/green
 

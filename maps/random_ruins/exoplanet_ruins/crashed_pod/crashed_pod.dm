@@ -45,14 +45,9 @@ GLOBAL_LIST_INIT(crashed_pod_areas, new)
 		SKILL_VIGOR = SKILL_EXPERIENCED,
 	)
 
-	max_skill = list(	SKILL_CONSTRUCTION = SKILL_MASTER,
-						SKILL_DEVICES = SKILL_MASTER,
-						SKILL_COMPUTER = SKILL_MASTER,
-						SKIL_ELECTRICAL = SKILL_MASTER,
-						SKILL_ENGINES = SKILL_MASTER,
-						SKILL_ATMOS = SKILL_MASTER,
-						SKILL_PILOT = SKILL_MASTER,
-						SKILL_COMBAT = SKILL_MASTER,
+	max_skill = list(	SKILL_PILOT = SKILL_MASTER,
+						SKILL_COMBAT = SKILL_PRIMARIS,
+						SKILL_GUNS = SKILL_PRIMARIS,
 						SKILL_VIGOR = SKILL_MASTER)
 
 /datum/job/submap/podnoble/equip(mob/living/carbon/human/H)
@@ -272,6 +267,7 @@ GLOBAL_LIST_INIT(crashed_pod_areas, new)
 						SKILL_ATMOS = SKILL_MASTER,
 						SKILL_PILOT = SKILL_MASTER,
 						SKILL_COMBAT = SKILL_MASTER,
+						SKILL_GUNS = SKILL_MASTER,
 						SKILL_VIGOR = SKILL_MASTER)
 
 /datum/job/submap/pod/equip(mob/living/carbon/human/H)

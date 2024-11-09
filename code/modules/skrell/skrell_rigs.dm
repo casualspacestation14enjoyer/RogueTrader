@@ -64,7 +64,7 @@
 		/obj/item/rig_module/maneuvering_jets,
 		/obj/item/rig_module/device/clustertool/skrell
 	)
-	req_access = list("ACCESS_SKRELLSCOUT")
+	req_access = list("ACCESS_TAUSCOUT")
 
 //Skrell Engineering Suit
 /obj/item/rig/skrell/eng

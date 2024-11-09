@@ -9,7 +9,7 @@ GLOBAL_DATUM_INIT(genestealers, /datum/antagonist/genestealer, new)
 	restricted_jobs = list(/datum/job/enforcer, /datum/job/enforcer_sergeant, /datum/job/guardsman, /datum/job/rogue_trader, /datum/job/guard_captain)
 	welcome_text = "Use say \"%LANGUAGE_PREFIX%g message\" to communicate with your fellow genestealers. Remember: you get all of their absorbed DNA if you absorb them."
 	flags = ANTAG_SUSPICIOUS | ANTAG_RANDSPAWN | ANTAG_VOTABLE
-	antaghud_indicator = "hudgenestealer"
+	antaghud_indicator = "hudchangeling"
 
 	faction = "tyranids"
 

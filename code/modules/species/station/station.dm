@@ -78,7 +78,8 @@
 	burn_mod = 0.8
 	oxy_mod = 0.7
 	siemens_coefficient = 1.3
-	slowdown = -0.5
+	slowdown = -0.3
+	brute_mod = 0.78
 	warning_low_pressure = WARNING_LOW_PRESSURE
 	hazard_low_pressure = HAZARD_LOW_PRESSURE
 	warning_high_pressure = WARNING_HIGH_PRESSURE

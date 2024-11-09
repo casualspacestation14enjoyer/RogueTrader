@@ -34,7 +34,7 @@
 
 	oxy_mod =   0.35
 	toxins_mod =   0.7
-	brute_mod = 0.8
+	brute_mod = 0.78
 	radiation_mod = 0.6
 	darksight_range = 4
 	darksight_tint = DARKTINT_MODERATE

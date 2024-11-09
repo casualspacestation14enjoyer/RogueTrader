@@ -58,7 +58,7 @@
 	)
 	contraband = list(
 		/obj/item/reagent_containers/food/snacks/syndicake = 6,
-		/obj/item/reagent_containers/food/snacks/skrellsnacks = 3
+		/obj/item/reagent_containers/food/snacks/tau = 3
 	)
 	antag = list(
 		/obj/item/beartrap = 3,

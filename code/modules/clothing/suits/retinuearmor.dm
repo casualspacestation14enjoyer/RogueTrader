@@ -151,26 +151,6 @@
 		bomb = ARMOR_BOMB_THIRTY-5
 	)
 
-/obj/item/clothing/suit/armor/grim/noble/prince
-	name = "border prince plate"
-	desc = "The regal plate armor of an heir to the planetary governorship, forged for both battlefield presence and aristocratic authority."
-	icon_state = "prince"
-	item_state = "prince"
-	body_parts_covered = LEGS | ARMS | FULL_TORSO
-	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
-	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +40
-	slowdown_general = 0.06 // Uses cheaper plasteel plates thus heavier.
-	armor = list(
-		melee = ARMOR_MELEE_CARAPACE,
-		bullet = ARMOR_BALLISTIC_CARAPACE,
-		laser = ARMOR_LASER_CARAPACE,
-		energy = ARMOR_ENERGY_TEN+15,
-		bio = ARMOR_BIO_THIRTY+20,
-		rad = ARMOR_RAD_THIRTY+30,
-		bomb = ARMOR_BOMB_THIRTY-5
-	)
-
 /obj/item/clothing/suit/armor/grim/noble/rtcloak
 	name = "rogue trader's heavy mantle"
 	desc = "A mantle of distinction, worn by Rogue Traders as they navigate the stars and broker imperial dominance. Its weight symbolizes both authority and responsibility."

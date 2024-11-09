@@ -42,7 +42,7 @@ var/global/list/lunchables_snacks_ = list(
 									/obj/item/reagent_containers/food/snacks/watermelonslice,
 									/obj/item/reagent_containers/food/snacks/slice/applecake/filled,
 									/obj/item/reagent_containers/food/snacks/slice/pumpkinpie/filled,
-									/obj/item/reagent_containers/food/snacks/skrellsnacks,
+									/obj/item/reagent_containers/food/snacks/tau,
 									/obj/item/reagent_containers/food/snacks/venus,
 									/obj/item/reagent_containers/food/snacks/lunacake,
 									/obj/item/reagent_containers/food/snacks/mars

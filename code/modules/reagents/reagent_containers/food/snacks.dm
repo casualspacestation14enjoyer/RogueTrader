@@ -3653,7 +3653,7 @@
 	nutriment_amt = 6
 	bitesize = 2
 
-/obj/item/reagent_containers/food/snacks/skrellsnacks
+/obj/item/reagent_containers/food/snacks/tau
 	name = "skrellsnax"
 	desc = "Cured fungus shipped all the way from Jargon 4, almost like jerky! Almost."
 	icon_state = "skrellsnacks"

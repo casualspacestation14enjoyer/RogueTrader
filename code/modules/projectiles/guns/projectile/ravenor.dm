@@ -480,6 +480,7 @@
 	accuracy = -1
 	sales_price = 60
 	slowdown_general = 0.3
+	str_requirement = 1
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=4.4, burst_delay=2.5, burst_accuracy=null, dispersion=null),
@@ -567,6 +568,7 @@
 	accuracy = -1.5
 	sales_price = 60
 	slowdown_general = 0.2
+	str_requirement = 0
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=4.3, burst_delay=2.5, burst_accuracy=null, dispersion=null),
 		list(mode_name="3-round bursts", burst=3, fire_delay=4.3, burst_delay=2.5, burst_accuracy=list(-1,-1,-2), dispersion=null)

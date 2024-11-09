@@ -10415,7 +10415,7 @@
 /obj/item/reagent_containers/ivbag/nanoblood,
 /obj/item/reagent_containers/ivbag/blood/human/oneg,
 /obj/item/reagent_containers/ivbag/blood/human/oneg,
-/obj/item/reagent_containers/ivbag/blood/skrell/oneg,
+/obj/item/reagent_containers/ivbag/blood/tau/oneg,
 /obj/item/reagent_containers/ivbag/blood/unathi/oneg,
 /turf/simulated/floor/tiled/white/monotile,
 /area/aquila/medical)

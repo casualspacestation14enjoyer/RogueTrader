@@ -669,7 +669,7 @@
 /obj/item/storage/box/snack
 	name = "box of snack food"
 	desc = "A box full of snack foods."
-	startswith = list(/obj/item/reagent_containers/food/snacks/skrellsnacks = 7)
+	startswith = list(/obj/item/reagent_containers/food/snacks/tau = 7)
 
 /obj/item/storage/box/snack/jerky
 	startswith = list(/obj/item/reagent_containers/food/snacks/sosjerky = 7)
