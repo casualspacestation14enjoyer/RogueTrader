@@ -1,3 +1,26 @@
+/proc/isflamesource(A)
+	if(istype(A, /obj/item/weldingtool))
+		var/obj/item/weldingtool/WT = A
+		return (WT.isOn())
+	else if(istype(A, /obj/item/flame))
+		var/obj/item/flame/F = A
+		return (F.lit)
+	else if(istype(A, /obj/item/clothing/mask/smokable) && !istype(A, /obj/item/clothing/mask/smokable/pipe))
+		var/obj/item/clothing/mask/smokable/S = A
+		return (S.lit)
+	else if(istype(A, /obj/item/device/assembly/igniter))
+		return 1
+	else if(istype(A,/obj/item/torch))
+		var/obj/item/torch/T = A
+		return (T.lit)
+	else if(istype(A,/obj/item/pyre))
+		var/obj/item/pyre/X = A
+		return (X.lit)
+	else if(istype(A,/obj/item/campfire))
+		var/obj/item/campfire/Z = A
+		return (Z.lit)
+	return 0
+
 /obj/item/flame/lighter
 	name = "lighter"
 	desc = "A cheap-as-free lighter."

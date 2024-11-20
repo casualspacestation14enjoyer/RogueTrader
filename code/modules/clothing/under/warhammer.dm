@@ -240,6 +240,7 @@
 	name = "inquisitor's suit"
 	desc = "Heretics beware."
 	icon_state = "uni-church"
+	worn_state = "uni-church"
 	item_state = "uni-church"
 
 /obj/item/clothing/under/rt
@@ -247,6 +248,7 @@
 	desc = "Heretics beware."
 	icon_state = "rtc"
 	item_state = "rtc"
+	worn_state = "rtc"
 
 /obj/item/clothing/under/guard/uniform
 	name = "trooper uniform"
@@ -260,7 +262,7 @@
 	name = "renegade militia uniform"
 	desc = "This standard Munitorum-issue uniform has had all imperial markings removed"
 	icon_state = "rm_uniform"
-	item_state = "rm_uniform_s"
+	item_state = "rm_uniform"
 
 /obj/item/clothing/under/guard/uniform/scion
 	name = "Tempestus Scion Undersuit"

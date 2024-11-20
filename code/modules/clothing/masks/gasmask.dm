@@ -278,6 +278,7 @@
 	icon_state = "ig_halfgas"
 	item_state = "ig_halfgas"
 	flags_inv = HIDEFACE
+	pull_mask = 0
 
 /obj/item/clothing/mask/gas/half/cadianrespirator/rt
 	name = "archeotech respirator"

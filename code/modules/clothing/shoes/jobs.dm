@@ -33,7 +33,6 @@
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	max_pressure_protection = FIRESUIT_MAX_PRESSURE
 	var/magpulse = 0
-	var/icon_base = "magboots"
 	action_button_name = "Toggle Magboots"
 	var/obj/item/clothing/shoes/shoes = null
 	var/mob/living/carbon/human/wearer = null	//For shoe procs
@@ -45,7 +44,7 @@
 		laser = ARMOR_LASER_FLAK-1,
 		energy = ARMOR_ENERGY_TEN,
 		bio = ARMOR_BIO_THIRTY+5,
-		rad = ARMOR_RAD_THIRTY+55,
+		rad = ARMOR_RAD_THIRTY+65,
 		bomb = ARMOR_BOMB_TEN+10
 	)
 
@@ -60,14 +59,12 @@
 		magpulse = 0
 		set_slowdown()
 		force = 3
-		if(icon_base) icon_state = "[icon_base]0"
 		to_chat(user, "You disable the mag-pulse traction system.")
 	else
 		item_flags |= ITEM_FLAG_NOSLIP
 		magpulse = 1
 		set_slowdown()
 		force = 5
-		if(icon_base) icon_state = "[icon_base]1"
 		playsound(get_turf(src), 'sound/effects/magnetclamp.ogg', 20)
 		to_chat(user, "You enable the mag-pulse traction system.")
 	user.update_inv_shoes()	//so our mob-overlays update
