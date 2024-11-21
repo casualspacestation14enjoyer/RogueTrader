@@ -32,6 +32,9 @@
 			os.set_autorun(initial(autorun_program.filename))
 
 /obj/machinery/computer/modular/preset/engineering
+	icon = 'icons/map_project/ship/ship_equipment.dmi'
+	icon_state = "reading"
+	broken = "broken"
 	default_software = list(
 		/datum/computer_file/program/power_monitor,
 		/datum/computer_file/program/supermatter_monitor,

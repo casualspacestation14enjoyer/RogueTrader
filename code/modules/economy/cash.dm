@@ -12,10 +12,18 @@
 	throw_speed = 1
 	throw_range = 2
 	w_class = ITEM_SIZE_TINY
+	sales_price = 0
 	var/access = list()
 	access = access_crate_cash
 	var/worth = 0
 	var/static/denominations = list(1000,500,200,100,50,20,10,1)
+
+/obj/item/spacecash/proc/update_sales_price()
+	sales_price = worth
+
+/obj/item/spacecash/Initialize()
+	. = ..()
+	update_sales_price()
 
 /obj/item/spacecash/use_tool(obj/item/W, mob/living/user, list/click_params)
 	if(istype(W, /obj/item/spacecash))
@@ -36,7 +44,7 @@
 			var/mob/living/carbon/human/h_user = user
 			h_user.drop_from_inventory(bundle)
 			h_user.put_in_hands(bundle)
-		to_chat(user, SPAN_NOTICE("You add [worth] [GLOB.using_map.local_currency_name] worth of money to the bundles.<br>It holds [bundle.worth] [GLOB.using_map.local_currency_name] now."))
+		to_chat(user, SPAN_NOTICE("You add [worth] [GLOB.using_map.local_currency_name] worth of scrip to the bundles.<br>It holds [bundle.worth] [GLOB.using_map.local_currency_name] now."))
 		qdel(src)
 		return TRUE
 
@@ -60,6 +68,7 @@
 /obj/item/spacecash/bundle/Initialize()
 	. = ..()
 	update_icon()
+	update_sales_price()
 
 /obj/item/spacecash/bundle/getMoneyImages()
 	if(icon_state)

@@ -1,6 +1,6 @@
 /obj/item/stack/thrones
 	name = "Thrones"
-	desc = "A golden throne worth ten Scrip. So far from home -- how did you get here little golden coin?"
+	desc = "A golden throne worth 100 Scrip. So far from home -- how did you get here little golden coin?"
 	singular_name = "Throne"
 	icon = 'icons/obj/thrones.dmi'
 	icon_state = "throne"
@@ -13,7 +13,7 @@
 	max_amount = 20
 	center_of_mass = null
 	attack_verb = list("hit", "bludgeoned", "whacked")
-	sales_price = 10
+	sales_price = 100
 
 /obj/item/stack/thrones/New()
 	..()
@@ -49,7 +49,7 @@
 
 /obj/item/stack/thrones2
 	name = "Tau Credit"
-	desc = "A silver tau credit -- it's purity and rareness representative of the Tau Empire"
+	desc = "A silver tau credit -- it's purity and rareness representative of the Tau Empire. Worth 50 scrip."
 	singular_name = "Credit"
 	icon = 'icons/obj/thrones2.dmi'
 	icon_state = "throne"
@@ -62,7 +62,7 @@
 	max_amount = 20
 	center_of_mass = null
 	attack_verb = list("hit", "bludgeoned", "whacked")
-	sales_price = 5
+	sales_price = 50
 
 /obj/item/stack/thrones2/New()
 	..()

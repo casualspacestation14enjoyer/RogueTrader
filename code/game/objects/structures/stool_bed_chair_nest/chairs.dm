@@ -440,3 +440,31 @@
 	base_icon = "Chair"
 	icon = 'icons/map_project/furniture_and_decor.dmi'
 	icon_state = "Chair"
+
+/obj/structure/bed/chair/wood/simple
+	name = "simple wood chair"
+	desc = "A simple wooden chair."
+	base_icon = "cave_wooden_chair"
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "cave_wooden_chair"
+
+/obj/structure/bed/chair/wood/fancy
+	name = "fancy wood chair"
+	desc = "An elegant and well crafted chair."
+	base_icon = "wooden_chair"
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "wooden_chair"
+
+/obj/structure/bed/chair/wood/fancy/comfy1
+	name = "expensive chair"
+	desc = "A chair that was possibly done by imperial war orphans, the materials seem of very high quality though."
+	base_icon = "comfychair_brown"
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "comfychair_brown"
+
+/obj/structure/bed/chair/wood/fancy/comfy2
+	name = "antique chair"
+	desc = "This chairs very old, possibly dating from 100-200 years old with the state of it, seems it's been mantained quite properly."
+	base_icon = "comfychair2"
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "comfychair2"

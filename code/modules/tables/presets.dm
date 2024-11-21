@@ -109,3 +109,58 @@
 /obj/structure/table/woodentable/walnut
 	color = WOOD_COLOR_CHOCOLATE
 	material = MATERIAL_WALNUT
+
+/obj/structure/table/graf
+	name = "table"
+	desc = "..."
+	icon = 'icons/obj/objects.dmi'
+	icon_state = "fancy"
+	can_plate = 0
+	can_reinforce = 0
+	flipped = -1
+
+/obj/structure/table/graf/Initialize()
+	auto_align()
+	. = ..()
+
+/obj/structure/table/graf/update_connections()
+	return
+
+/obj/structure/table/graf/on_update_icon()
+	icon_state = "[icon_state]"
+
+/obj/structure/table/graf/dirty_table
+	icon_state = "wooden"
+
+/obj/structure/table/graf/rusty_table
+	icon_state = "table1"
+
+/obj/structure/table/graf/polished_steel
+	icon_state = "table2"
+
+/obj/structure/table/graf/rich_table
+	icon_state = "table3"
+
+/obj/structure/table/graf/old_table
+	icon_state = "table4"
+
+/obj/structure/table/graf/polished_table
+	icon_state = "table5"
+
+/obj/structure/table/graf/butcher_table
+	icon_state = "table7"
+
+/obj/structure/table/graf/big_wood_table
+	icon_state = "bigtable"
+
+/obj/structure/table/graf/pagan
+	icon_state = "pagan_altar"
+
+/obj/structure/table/graf/shrine
+	icon_state = "minorshrine"
+
+/obj/structure/table/graf/wood_office_table
+	icon_state = "minorshrine"
+
+/obj/structure/table/graf/reinf_table
+	icon_state = "reinf_table2"

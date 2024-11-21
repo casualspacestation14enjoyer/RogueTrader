@@ -25,6 +25,12 @@ var/global/solar_gen_rate = 1500
 	name = "improved solar panel"
 	efficiency = 2
 
+/obj/machinery/power/solar/decal
+	icon = 'icons/turf/flooring/decals.dmi'
+	icon_state = "solarpanel"
+	name = "improved solar panel"
+
+
 /obj/machinery/power/solar/drain_power()
 	return -1
 

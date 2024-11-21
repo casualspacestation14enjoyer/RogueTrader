@@ -131,6 +131,12 @@
 	desc = "Signs drawn in human blood."
 	icon_state = "graffiti"
 
+/obj/structure/sign/ship/manufactorum
+	name = "\improper screen"
+	icon = 'icons/map_project/ship/ship_equipment.dmi'
+	desc = "An small screen, it's constantly transmitting..."
+	icon_state = "off"
+
 // Effects
 
 /obj/effect/floor_decal/turf/sigil

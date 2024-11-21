@@ -51,8 +51,25 @@
 /obj/item/material/Value()
 	return material.value * worth_multiplier
 
+/obj/item/material/twohanded/ravenor/Value(base)
+	return base
+	for(var/a in contents)
+		base += get_value(a)
+
 /obj/item/spacecash/Value()
 	return worth
+
+/obj/item/exploration_loot/Value()
+	return sales_price
+
+/obj/item/rnd/Value()
+	return sales_price
+
+/obj/item/stack/thrones/Value()
+	return sales_price
+
+/obj/item/stack/thrones2/Value()
+	return sales_price
 
 /mob/living/carbon/human/Value(base)
 	. = ..()

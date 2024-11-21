@@ -1,5 +1,5 @@
 /obj/machinery/computer
-	name = "computer"
+	name = "cogitator"
 	icon = 'icons/obj/machines/computer.dmi'
 	icon_state = "computer"
 	density = TRUE
@@ -20,6 +20,7 @@
 	var/light_power_on = 1
 	var/light_range_on = 2
 	var/overlay_layer
+	var/broken = "broken" // Used for warhammer terminal icons only. DW if messing with default ss13 terminals, this is ignored.
 	atom_flags = ATOM_FLAG_NO_TEMP_CHANGE | ATOM_FLAG_CLIMBABLE
 	clicksound = "keyboard"
 
@@ -60,31 +61,37 @@
 		if(RC && RC.dir == dir && initial(RC.icon_state) == "computer")
 			append_string += "_R"
 		icon_state = "computer[append_string]"
+		if(reason_broken & MACHINE_BROKEN_NO_PARTS)
+			icon = 'icons/obj/machines/computer.dmi'
+			icon_state = "wired"
+			var/screen = get_component_of_type(/obj/item/stock_parts/console_screen)
+			var/keyboard = get_component_of_type(/obj/item/stock_parts/keyboard)
+			if(screen)
+				AddOverlays("comp_screen")
+			if(keyboard)
+				AddOverlays(icon_keyboard ? "[icon_keyboard]_off" : "keyboard")
+			return
 
+		if(!is_powered())
+			if(icon_keyboard)
+				AddOverlays(image(icon,"[icon_keyboard]_off", overlay_layer))
+			return
 
-	if(reason_broken & MACHINE_BROKEN_NO_PARTS)
-		icon = 'icons/obj/machines/computer.dmi'
-		icon_state = "wired"
-		var/screen = get_component_of_type(/obj/item/stock_parts/console_screen)
-		var/keyboard = get_component_of_type(/obj/item/stock_parts/keyboard)
-		if(screen)
-			AddOverlays("comp_screen")
-		if(keyboard)
-			AddOverlays(icon_keyboard ? "[icon_keyboard]_off" : "keyboard")
-		return
+		if(MACHINE_IS_BROKEN(src))
+			AddOverlays(image(icon,"[icon_state]_broken", overlay_layer))
+		else
+			AddOverlays(get_screen_overlay())
 
-	if(!is_powered())
-		if(icon_keyboard)
-			AddOverlays(image(icon,"[icon_keyboard]_off", overlay_layer))
-		return
-
-	if(MACHINE_IS_BROKEN(src))
-		AddOverlays(image(icon,"[icon_state]_broken", overlay_layer))
-	else
-		AddOverlays(get_screen_overlay())
-
-	AddOverlays(get_keyboard_overlay())
+		AddOverlays(get_keyboard_overlay())
 	var/screen_is_glowing = update_glow()
+	if(MACHINE_IS_BROKEN(src))
+		icon_state = broken
+		icon_keyboard = null
+		icon_screen = null
+	else
+		icon_state = icon_state
+		icon_keyboard = null
+		icon_screen = null
 	if(screen_is_glowing)
 		AddOverlays(emissive_appearance(icon, icon_screen))
 		if(icon_keyboard)

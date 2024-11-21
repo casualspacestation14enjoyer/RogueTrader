@@ -496,6 +496,32 @@
 	icon = 'icons/map_project/tombs.dmi'
 	icon_state = "floor"
 /*
+/obj/machinery/door/unpowered/necron_door1
+	icon = 'icons/obj/doors/necron_door.dmi'
+	name = "necron door"
+	desc = "An old ancient door, cold to the touch and highly resilient to any attack."
+	icon_state = "door1"
+	opacity = 0
+	req_access = list(access_necron1)
+
+/obj/machinery/door/unpowered/necron_door2
+	icon = 'icons/obj/doors/necron_door.dmi'
+	name = "necron door"
+	desc = "An old ancient door, cold to the touch and highly resilient to any attack."
+	color = "blue"
+	icon_state = "door1"
+	opacity = 0
+	req_access = list(access_necron2)
+
+/obj/machinery/door/unpowered/necron_door3
+	icon = 'icons/obj/doors/necron_door.dmi'
+	name = "necron door"
+	color = "red"
+	desc = "An old ancient door, cold to the touch and highly resilient to any attack."
+	icon_state = "door1"
+	opacity = 0
+	req_access = list(access_necron3)
+
 /mob/living/simple_animal/hostile/necron
 	name = "Necron Warrior"
 	desc = "A souless automaton who's only wish is to see you dead now."
@@ -544,31 +570,6 @@
 	penetrating = 55
 	armor_penetration = 40 // 85 percent pen vs astartes chest
 */
-/obj/machinery/door/unpowered/necron_door1
-	icon = 'icons/obj/doors/necron_door.dmi'
-	name = "necron door"
-	desc = "An old ancient door, cold to the touch and highly resilient to any attack."
-	icon_state = "door1"
-	opacity = 0
-	req_access = list(access_necron1)
-
-/obj/machinery/door/unpowered/necron_door2
-	icon = 'icons/obj/doors/necron_door.dmi'
-	name = "necron door"
-	desc = "An old ancient door, cold to the touch and highly resilient to any attack."
-	color = "blue"
-	icon_state = "door1"
-	opacity = 0
-	req_access = list(access_necron2)
-
-/obj/machinery/door/unpowered/necron_door3
-	icon = 'icons/obj/doors/necron_door.dmi'
-	name = "necron door"
-	color = "red"
-	desc = "An old ancient door, cold to the touch and highly resilient to any attack."
-	icon_state = "door1"
-	opacity = 0
-	req_access = list(access_necron3)
 
 /////
 
