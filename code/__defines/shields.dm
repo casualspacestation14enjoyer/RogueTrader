@@ -6,6 +6,7 @@
 #define ENERGY_UPKEEP_PER_TILE (3 KILOWATTS)	// Base upkeep per tile protected. Multiplied by various enabled shield modes. Without them the field does literally nothing.
 #define ENERGY_UPKEEP_IDLE 40                  // Base upkeep when idle; modified by other factors.
 
+#define SHIELD_OVERLOAD_TIME 100  // Time (in ticks) for shield recovery after an overload
 #define MINOR_BREACH_THRESHOLD 99
 #define MAJOR_BREACH_THRESHOLD 50
 #define CRITICAL_BREACH_THRESHOLD 25

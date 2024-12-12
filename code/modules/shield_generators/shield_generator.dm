@@ -212,7 +212,6 @@
 
 	if(current_energy <= 0)
 		energy_failure()
-
 	if(!overloaded)
 		for(var/obj/shield/S in damaged_segments)
 			S.regenerate()
