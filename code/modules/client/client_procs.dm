@@ -120,13 +120,13 @@
 	var/bad_version = config.minimum_byond_version && byond_version < config.minimum_byond_version
 	var/bad_build = config.minimum_byond_build && byond_build < config.minimum_byond_build
 	if (bad_build || bad_version)
-		to_chat(src, "You are attempting to connect with a out of date version of BYOND. Please update to the latest version at http://www.byond.com/ before trying again.")
+		to_chat(src, "You are attempting to connect with a out of date version of BYOND. Please update to the latest version at https://www.byond.com/download/build/514/514.1589_byond.exe before trying again.")
 		qdel(src)
 		return
 
 	if("[byond_version].[byond_build]" in config.forbidden_versions)
 		_DB_staffwarn_record(ckey, "Tried to connect with broken and possibly exploitable BYOND build.")
-		to_chat(src, "You are attempting to connect with a broken and possibly exploitable BYOND build. Please update to the latest version at http://www.byond.com/ before trying again.")
+		to_chat(src, "You are attempting to connect with a broken and possibly exploitable BYOND build. Please update to the latest version at https://www.byond.com/download/build/514/514.1589_byond.exe before trying again.")
 		qdel(src)
 		return
 

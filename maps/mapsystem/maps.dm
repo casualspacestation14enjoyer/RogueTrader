@@ -260,6 +260,18 @@ var/global/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 	RETURN_TYPE(/list)
 	var/spawn_cost = 0
 	var/player_cost = 0
+
+	// First, handle banned ruins before anything else.
+	for (var/banned_type in site.ban_ruins)
+		var/datum/map_template/ruin/away_site/banned = by_type[banned_type]
+		// Remove banned ruins from available and unavailable
+		if (banned in available)
+			available -= banned
+		if (banned in unavailable)
+			continue
+		unavailable += banned
+
+	// Now proceed with other checks
 	if (site in selected)
 		if (!(site.template_flags & TEMPLATE_FLAG_ALLOW_DUPLICATES))
 			return list(spawn_cost, player_cost)
@@ -269,18 +281,13 @@ var/global/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 	player_cost += site.player_cost
 	selected += site
 
+	// Handle forced ruins
 	for (var/forced_type in site.force_ruins)
 		var/list/costs = resolve_site_selection(by_type[forced_type], selected, available, unavailable, by_type)
 		spawn_cost += costs[1]
 		player_cost += costs[2]
 
-	for (var/banned_type in site.ban_ruins)
-		var/datum/map_template/ruin/away_site/banned = by_type[banned_type]
-		if (banned in unavailable)
-			continue
-		unavailable += banned
-		available -= banned
-
+	// Handle allowed ruins
 	for (var/allowed_type in site.allow_ruins)
 		var/datum/map_template/ruin/away_site/allowed = by_type[allowed_type]
 		if (allowed in available)
@@ -293,6 +300,7 @@ var/global/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 		available[allowed] = allowed.spawn_weight
 
 	return list(spawn_cost, player_cost)
+
 
 
 /datum/map/proc/build_away_sites()

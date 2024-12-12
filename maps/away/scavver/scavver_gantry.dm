@@ -7,10 +7,10 @@
 	id = "awaysite_gantry"
 	description = "Salvage Gantry"
 	suffixes = list("scavver/scavver_gantry-1.dmm","scavver/scavver_gantry-2.dmm")
-	ban_ruins = list(/datum/map_template/ruin/away_site/demeter_wreck)
-	spawn_cost = 0
+	ban_ruins = list()
+	spawn_cost = 3
 	player_cost = 0
-	accessibility_weight = 10
+	accessibility_weight = 0
 	shuttles_to_initialise = list(
 		/datum/shuttle/autodock/overmap/scavver_gantry,
 		/datum/shuttle/autodock/overmap/scavver_gantry/two,
@@ -28,7 +28,7 @@
 		/area/scavver/gantry/lift = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/scavver/harvestpod = NO_SCRUBBER|NO_VENT
 	)
-	spawn_weight = 0.67
+	spawn_weight = 2
 
 /obj/submap_landmark/joinable_submap/scavver_gantry
 	name =  "Salvage Gantry"
@@ -45,9 +45,9 @@
 /obj/overmap/visitable/ship/scavver_gantry
 	name = "Unknown Vessel"
 	desc = "Sensor array detects a medium-sized vessel of irregular shape. Vessel origin is unidentifiable."
-	vessel_mass = 3600
+	vessel_mass = 2600
 	fore_dir = NORTH
-	burn_delay = 2 SECONDS
+	burn_delay = 1 SECONDS
 	hide_from_reports = TRUE
 
 	initial_generic_waypoints = list(
@@ -168,11 +168,14 @@
 
 //smes
 /obj/machinery/power/smes/buildable/preset/scavver/smes
-	uncreated_component_parts = list(/obj/item/stock_parts/smes_coil = 1)
+	uncreated_component_parts = list(
+		/obj/item/stock_parts/smes_coil/super_io = 1,
+		/obj/item/stock_parts/smes_coil = 2)
 	_input_maxed = TRUE
 	_output_maxed = TRUE
 	_input_on = TRUE
 	_output_on = TRUE
+	_fully_charged = TRUE
 
 /obj/machinery/suit_storage_unit/engineering/salvage/gantry
 	name = "Salvage Engineering Voidsuit Storage Unit"

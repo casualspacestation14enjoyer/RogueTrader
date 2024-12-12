@@ -74,9 +74,9 @@
 	machine_desc = "A heavy-duty spaceship thruster that throws gas out of its nozzle to allow propulsion."
 
 	var/datum/ship_engine/gas_thruster/controller
-	var/thrust_limit = 1	//Value between 1 and 0 to limit the resulting thrust
-	var/moles_per_burn = 5.0
-	var/charge_per_burn = 36000 //10Wh for default 2 capacitor, chews through that battery power! Makes a trade off of fuel efficient vs energy efficient
+	var/thrust_limit = 1.5	//Value between 1 and 0 to limit the resulting thrust
+	var/moles_per_burn = 2.0
+	var/charge_per_burn = 12000 //10Wh/2 for default 2 capacitor, chews through that battery power! Makes a trade off of fuel efficient vs energy efficient
 	var/boot_time = 35
 	var/next_on
 	var/blockage

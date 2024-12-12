@@ -10,7 +10,7 @@
 	body_parts_covered = LEGS|ARMS|FULL_TORSO // Remember to make power gloves and booties.
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+600
-	slowdown_general = 0.11
+	slowdown_general = 0.10
 	armor = list(
 		melee = ARMOR_MELEE_POWER_ARM-2,
 		bullet = ARMOR_BALLISTIC_POWER_ARMOUR-1,
@@ -586,7 +586,7 @@
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+50
-	slowdown_general = 0.4 // Make sure to set ork speed to match this slowdown. So it only slows down non-orks wearing it.
+	slowdown_general = 0.3 // Make sure to set ork speed to match this slowdown. So it only slows down non-orks wearing it.
 	armor = list(
 		melee = ARMOR_MELEE_FLAK+2,
 		bullet = ARMOR_BALLISTIC_FLAK+1,
@@ -671,7 +671,7 @@
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+50
-	slowdown_general = 0.4
+	slowdown_general = 0.3
 	armor = list(
 		melee = ARMOR_MELEE_FLAK+2,
 		bullet = ARMOR_BALLISTIC_FLAK+3,
@@ -712,7 +712,7 @@
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+700
-	slowdown_general = 0.125
+	slowdown_general = 0.12
 	armor = list(
 		melee = ARMOR_MELEE_POWER_ARM-1,
 		bullet = ARMOR_BALLISTIC_POWER_ARMOUR-1,
@@ -730,7 +730,7 @@
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+500
-	slowdown_general = 0.09
+	slowdown_general = 0.1
 	armor = list(
 		melee = ARMOR_MELEE_POWER_ARM-3,
 		bullet = ARMOR_BALLISTIC_POWER_ARMOUR-3,

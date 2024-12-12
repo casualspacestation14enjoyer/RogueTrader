@@ -73,6 +73,9 @@
 	allowed = list(
 		/obj/item/device/flashlight,
 		/obj/item/tank,
+		/obj/item/gun,
+		/obj/item/material/twohanded/ravenor,
+		/obj/item/melee,
 		/obj/item/device/suit_cooling_unit,
 		/obj/item/stack/flag,
 		/obj/item/storage/ore,
@@ -265,6 +268,9 @@
 	allowed = list(
 		/obj/item/device/flashlight,
 		/obj/item/tank,
+		/obj/item/gun,
+		/obj/item/material/twohanded/ravenor,
+		/obj/item/melee,
 		/obj/item/device/suit_cooling_unit,
 		/obj/item/stack/flag,
 		/obj/item/storage/excavation,
@@ -385,6 +391,8 @@
 	species_restricted = list(SPECIES_HUMAN,SPECIES_TAU,SPECIES_KROOT, SPECIES_IPC)
 	allowed = list(
 		/obj/item/gun,
+		/obj/item/material/twohanded/ravenor,
+		/obj/item/melee,
 		/obj/item/ammo_magazine,
 		/obj/item/ammo_casing,
 		/obj/item/handcuffs,

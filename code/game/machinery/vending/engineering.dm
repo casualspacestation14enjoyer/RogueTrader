@@ -6,7 +6,7 @@
 	icon_deny = "engi-deny"
 	icon_vend = "engi-vend"
 	base_type = /obj/machinery/vending/engineering
-	req_access = list(list(access_atmospherics, access_engine_equip))
+	req_access = null
 	antag_slogans = {"\
 		Equipping you with the necessary tools to destroy Sol!;\
 		Remember, that catwalk you're trusting your life to was installed by an Imperial Engineer! The horror!;\

@@ -6,7 +6,7 @@
 	icon_state = "sign_off"
 	layer = ABOVE_DOOR_LAYER
 	idle_power_usage = 2
-	active_power_usage = 70
+	active_power_usage = 10
 	anchored = TRUE
 	var/lit = 0
 	var/on_icon = "sign_on"

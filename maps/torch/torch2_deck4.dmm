@@ -8550,6 +8550,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/monotile,
 /area/eva)
+"Dl" = (
+/turf/space,
+/area/space)
 "Dq" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/maintenance{
@@ -31164,7 +31167,7 @@ aa
 aa
 aa
 aa
-aa
+Dl
 aa
 aa
 aa

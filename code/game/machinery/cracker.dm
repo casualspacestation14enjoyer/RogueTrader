@@ -10,7 +10,7 @@
 	volume = 5000
 	use_power = POWER_USE_IDLE
 	idle_power_usage = 100
-	active_power_usage = 10000
+	active_power_usage = 5000
 
 	var/list/reagent_buffer = list()
 	var/fluid_consumption_per_tick = 100

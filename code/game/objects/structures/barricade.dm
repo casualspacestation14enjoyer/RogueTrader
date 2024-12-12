@@ -178,6 +178,15 @@
 	color = null
 	set_max_health(340)
 
+/obj/item/stack/barbwire
+	name = "barbed wire"
+	desc = "Use this to place down barbwire in front of your position."
+	icon = 'icons/obj/warfare.dmi'
+	icon_state = "barbwire_item"
+	amount = 5
+	max_amount = 5
+	w_class = ITEM_SIZE_LARGE //fuck off you're not putting 30 stacks in your satchel
+
 /obj/item/stack/barbwire/attack_self(mob/user)
 	var/mob/living/carbon/human/H = user
 	var/turf/T = get_step(user, user.dir)

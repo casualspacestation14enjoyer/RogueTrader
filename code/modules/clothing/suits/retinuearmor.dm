@@ -75,7 +75,7 @@
 	max_pressure_protection = RIG_MAX_PRESSURE
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +1500
-	slowdown_general = 0.12 // Tiny bit slow. Design wise power armor is more rare then a lemun russ tank, it has no downsides. It simply is superior to all other armor.
+	slowdown_general = 0.11 // Tiny bit slow. Design wise power armor is more rare then a lemun russ tank, it has no downsides. It simply is superior to all other armor.
 	hoodtype = /obj/item/clothing/head/inqhood
 	armor = list(
 		melee = ARMOR_MELEE_POWER_ARM,
@@ -116,7 +116,7 @@
 	max_pressure_protection = RIG_MAX_PRESSURE
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +1500
-	slowdown_general = 0.12
+	slowdown_general = 0.11
 	armor = list(
 		melee = ARMOR_MELEE_POWER_ARM,
 		bullet = ARMOR_BALLISTIC_POWER_ARMOUR,
@@ -181,7 +181,7 @@
 	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +100
-	slowdown_general = 0.07 // Heavy but great protection.
+	slowdown_general = 0.06 // Heavy but great protection.
 	armor = list(
 		melee = ARMOR_MELEE_CARAPACE+1,
 		bullet = ARMOR_BALLISTIC_CARAPACE+2,
@@ -458,7 +458,7 @@
 	body_parts_covered = LEGS | ARMS | FULL_TORSO
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+600
-	slowdown_general = 0.16
+	slowdown_general = 0.12
 	armor = list(
 		melee = ARMOR_MELEE_POWER_ARM-1,
 		bullet = ARMOR_BALLISTIC_POWER_ARMOUR-1,
@@ -477,7 +477,7 @@
 	body_parts_covered = LEGS | ARMS | FULL_TORSO
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+1100
-	slowdown_general = 0.16
+	slowdown_general = 0.11
 	armor = list(
 		melee = ARMOR_MELEE_POWER_ARM,
 		bullet = ARMOR_BALLISTIC_POWER_ARMOUR+1, // Very good because it's instant death for anyone wearing it.
@@ -496,7 +496,7 @@
 	body_parts_covered = LEGS | ARMS | FULL_TORSO
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+900
-	slowdown_general = 0.15
+	slowdown_general = 0.12
 	armor = list(
 		melee = ARMOR_MELEE_POWER_ARM,
 		bullet = ARMOR_BALLISTIC_POWER_ARMOUR,
@@ -536,11 +536,11 @@
 	max_pressure_protection = VOIDSUIT_MAX_PRESSURE
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +100
-	slowdown_general = 0.1
+	slowdown_general = 0.08
 	armor = list(
-		melee = ARMOR_MELEE_CARAPACE,
-		bullet = ARMOR_BALLISTIC_CARAPACE,
-		laser = ARMOR_LASER_CARAPACE+1,
+		melee = ARMOR_MELEE_CARAPACE-2,
+		bullet = ARMOR_BALLISTIC_CARAPACE-1,
+		laser = ARMOR_LASER_CARAPACE,
 		energy = ARMOR_ENERGY_TEN+25,
 		bio = ARMOR_BIO_THIRTY+30,
 		rad = ARMOR_RAD_THIRTY+40,
@@ -556,7 +556,7 @@
 	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +1000
-	slowdown_general = 0.14
+	slowdown_general = 0.12
 	armor = list(
 		melee = ARMOR_MELEE_CARAPACE+1,
 		bullet = ARMOR_BALLISTIC_CARAPACE+2,
@@ -727,7 +727,7 @@
 		bomb = ARMOR_BOMB_TEN
 	)
 
-/obj/item/clothing/suit/armor/grim/scrapforged/dustercarapace
+/obj/item/clothing/suit/armor/grim/scrapforged/ranger
 	name = "armoured duster"
 	desc = "A duster with carapace plate inserts, sewn together with shafra leather."
 	icon_state = "ranger"
@@ -1193,7 +1193,7 @@
 		animation.icon_state = "uncloak"
 		flick("liquify",animation)
 
-/obj/item/storage/backpack/ert
+/obj/item/storage/backpack/tau
 	name = "Archeotech Backpack"
 	desc = "An ancient looking backpack."
 	icon_state = "ert_commander"

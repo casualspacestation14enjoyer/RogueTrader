@@ -10,6 +10,8 @@
 	back = /obj/item/storage/backpack/satchel/warfare/heavy
 	id_types = list(/obj/item/card/id/torch/crew)
 	pda_type = /obj/item/modular_computer/pda
+	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/material/twohanded/ravenor/knife = 1)
+
 
 /singleton/hierarchy/outfit/job/torch/crew/service/guest
 	name = OUTFIT_JOB_NAME("Noble Guest")

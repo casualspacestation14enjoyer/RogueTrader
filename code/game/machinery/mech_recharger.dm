@@ -6,8 +6,8 @@
 	density = FALSE
 	layer = ABOVE_TILE_LAYER
 	anchored = TRUE
-	idle_power_usage = 200	// Some electronics, passive drain.
-	active_power_usage = 60 KILOWATTS // When charging
+	idle_power_usage = 100	// Some electronics, passive drain.
+	active_power_usage = 30 KILOWATTS // When charging
 	base_type = /obj/machinery/mech_recharger
 	construct_state = /singleton/machine_construction/default/panel_closed
 	uncreated_component_parts = null

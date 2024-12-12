@@ -9,7 +9,7 @@
 	density = TRUE
 	anchored = TRUE
 	idle_power_usage = 5
-	active_power_usage = 100
+	active_power_usage = 20
 	atom_flags = ATOM_FLAG_NO_TEMP_CHANGE | ATOM_FLAG_NO_REACT
 	obj_flags = OBJ_FLAG_ANCHORABLE | OBJ_FLAG_ROTATABLE
 	var/static/max_n_of_items = 999 // Sorry but the BYOND infinite loop detector doesn't look things over 1000.

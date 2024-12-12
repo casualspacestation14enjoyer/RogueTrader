@@ -747,11 +747,24 @@ var/global/list/datum/absorbed_dna/hivemind_bank = list()
 
 	var/mob/living/carbon/human/T = genestealer_sting(20,/mob/proc/genestealer_blind_sting, sting_name = "Blind Sting")
 	if(!T)	return 0
-	to_chat(T, SPAN_DANGER("Your eyes burn horrificly!"))
+	//to_chat(T, SPAN_DANGER("Your eyes burn horrificly!"))
 	T.disabilities |= NEARSIGHTED
 	spawn(300)	T.disabilities &= ~NEARSIGHTED
 	T.eye_blind = 10
 	T.eye_blurry = 20
+	return 1
+
+/mob/proc/genestealer_transform_sting()
+	set category = "Genestealer"
+	set name = "Transform sting (20)"
+	set desc="Sting target"
+
+	var/mob/living/carbon/human/T = genestealer_sting(20,/mob/proc/genestealer_transform_sting, sting_name = "Transform Sting")
+	if(!T)	return 0
+	to_chat(T, SPAN_DANGER("You feel your body changing!"))
+	if(!do_after(src, 15 SECONDS, T, DO_PUBLIC_UNIQUE))
+		return
+	T.make_genestealer()
 	return 1
 
 /mob/proc/genestealer_deaf_sting()

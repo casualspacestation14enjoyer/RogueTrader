@@ -423,6 +423,7 @@
 /obj/structure/bed/chair/throne
 	name = "\the rogue throne"
 	desc = "Fit for baron, count, or even duke. Surely fit for your sorry rear end."
+	icon = 'icons/map_project/furniture_and_decor.dmi'
 	base_icon = "throne"
 	icon_state = "throne"
 

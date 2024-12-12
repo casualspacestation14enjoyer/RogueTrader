@@ -9,7 +9,7 @@
 	projectile_type = /obj/item/projectile/bullet/magnetic/slug
 	one_hand_penalty = 4
 	power_cost = 300
-	fire_delay = 25
+	fire_delay = 8
 	w_class = ITEM_SIZE_HUGE
 	slot_flags = SLOT_BACK
 	loaded = /obj/item/rcd_ammo/large // ~30 shots
@@ -112,7 +112,7 @@
 	cell = /obj/item/cell/infinite
 	capacitor = /obj/item/stock_parts/capacitor/super
 
-	fire_delay =  6
+	fire_delay =  5
 
 	slot_flags = SLOT_BACK
 	w_class = ITEM_SIZE_NO_CONTAINER
@@ -141,7 +141,7 @@
 	icon_state = "flechette_gun"
 	item_state = "z8carbine"
 	one_hand_penalty = 2
-	fire_delay = 6
+	fire_delay = 5
 	removable_components = FALSE
 	cell = /obj/item/cell/hyper
 	capacitor = /obj/item/stock_parts/capacitor/adv
@@ -168,7 +168,7 @@
 	icon_state = "skrell_rifle"
 	item_state = "skrell_rifle"
 	one_hand_penalty = 3
-	fire_delay = 10
+	fire_delay = 6
 	slowdown_held = 1
 	removable_components = FALSE
 	cell = /obj/item/cell/hyper

@@ -24,7 +24,7 @@
 	shuttle = "Cyclopes"
 	fore_dir = NORTH
 	vessel_size = SHIP_SIZE_SMALL
-	vessel_mass = 10000
+	vessel_mass = 6000
 
 /datum/shuttle/autodock/overmap/merc_shuttle
 	name = "Cyclopes"

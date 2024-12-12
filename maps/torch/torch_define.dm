@@ -25,10 +25,9 @@
 	company_short = "Imperium"
 
 	map_admin_faxes = list(
-		"Segmentum Command",
-		"Mechanicus - Explorator Fleet",
-		"Administratum - Holy Terra",
-		"Lord Militant General - Militarum",
+		"High Command - General Staff",
+		"Adeptus Mechanicus - Explorator Fleet",
+		"Adeptus Administratum - Holy Terra",
 		"The Holy Ordos - Code Vermillion"
 	)
 
@@ -42,9 +41,9 @@
 
 	default_law_type = /datum/ai_laws/solgov
 	use_overmap = 1
-	num_exoplanets = 0
+	num_exoplanets = 1
 
-	away_site_budget = 1
+	away_site_budget = 20
 	min_offmap_players = 0
 
 	id_hud_icons = 'maps/torch/icons/assignment_hud.dmi'

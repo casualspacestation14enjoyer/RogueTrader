@@ -1,6 +1,6 @@
 /datum/job/submap/scavver_noble
 	title = "Deserter"
-	total_positions = 1
+	total_positions = 2
 	outfit_type = /singleton/hierarchy/outfit/job/scavver
 	supervisors = "yourself"
 	info = "You are one of the last breathing souls aboard the Scavv Gantry, a battered star-hauler adrift in the cold void of \
@@ -12,7 +12,7 @@
 		"Paladin",
 		"Mercenary",
 	)
-	skill_points = 21 // 3 more points then deck scum
+	skill_points = 27 // 3 more points then deck scum
 	whitelisted_species = list(SPECIES_HUMAN,SPECIES_VOX,SPECIES_TAU,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_KROOT)
 	min_skill = list(
 		SKILL_COMBAT = SKILL_BASIC,
@@ -25,7 +25,7 @@
 						SKILL_GUNS = SKILL_LEGEND,
 						SKILL_VIGOR = SKILL_MASTER)
 
-/datum/job/noble/equip(mob/living/carbon/human/H)
+/datum/job/submap/scavver_noble/equip(mob/living/carbon/human/H)
 	var/current_name = H.real_name
 	var/current_title = trimtext(H.mind.role_alt_title)
 	H.voice_in_head(pick(GLOB.lone_thoughts))
@@ -42,9 +42,8 @@
 				H.make_genestealer()
 				to_chat(H, "<span class='notice'><b><font size=2>You are a genestealer bioform, a unique strain of tyranid genestealer capable of rapid transformation. The swarm considers you to be an abomination, but under the guidance of what you believe to be the true hivemind, you will surely succeed where the others have failed. Everything is connected.</font></b></span>")
 			else if(prob(3))
-				to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
-				to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
-				spawn(65 SECONDS)
+				to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN THIRTY SECONDS</font></b></span>")
+				spawn(30 SECONDS)
 				GLOB.cult.add_antagonist(H.mind, ignore_role = 1, do_not_equip = 0)
 				to_chat(H, "<span class='notice'><b><font size=2>You are a heretical cultist loyal to one or more of the Chaos Gods -- unlike the many pretenders you are truly blessed by the warp and can survive encounters that would boil the brains of most mortal men.</font></b></span>")
 			H.species.brute_mod = 0.7
@@ -53,9 +52,12 @@
 			H.species.stun_mod = 0.71
 			H.species.slowdown = -0.15
 			H.species.hunger_factor = DEFAULT_HUNGER_FACTOR * 0.75
-			H.equip_to_slot_or_store_or_drop(new /obj/item/pen/fancy/quill, slot_in_backpack)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife/glaive, slot_belt)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/leather, slot_back)
+			if(prob(50))
+				H.equip_to_slot_or_store_or_drop(new /obj/item/shield/riot/metal, slot_r_hand)
+			else
+				H.equip_to_slot_or_store_or_drop(new /obj/item/shield/buckler, slot_r_hand)
 			if(prob(50))
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/feudal/holyplate, slot_wear_suit)
@@ -81,22 +83,20 @@
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/feudal/cuirass, slot_wear_suit)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/axe/saintie/adamantine, slot_belt)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/pilgrimhelm/hevhelm/feudal, slot_head)
-		if(current_title == "Mercenary")
+		else if(current_title == "Mercenary")
 			to_chat(H,"<span class='danger'><b><font size=4>THE MERCENARY</font></b></span>")
 			to_chat(H, "<span class='notice'><b><font size=2>As the Mercenary aboard the Scavv Gantry, you’re a mercenary seeking fortune in the Ghoul Stars. Once a soldier, you now sell your skills to the highest bidder, always on the lookout for lucrative opportunities that finally lead to an early retirement.</font></b></span>")
 			if(prob(2))
 				H.make_genestealer()
 				to_chat(H, "<span class='notice'><b><font size=2>You are a genestealer bioform, a unique strain of tyranid genestealer capable of rapid transformation. The swarm considers you to be an abomination, but under the guidance of what you believe to be the true hivemind, you will surely succeed where the others have failed. Everything is connected.</font></b></span>")
 			else if(prob(2))
-				to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
-				to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
-				spawn(65 SECONDS)
+				to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN THIRTY SECONDS</font></b></span>")
+				spawn(30 SECONDS)
 				GLOB.cult.add_antagonist(H.mind, ignore_role = 1, do_not_equip = 0)
 				to_chat(H, "<span class='notice'><b><font size=2>You are a heretical cultist loyal to one or more of the Chaos Gods -- unlike the many pretenders you are truly blessed by the warp and can survive encounters that would boil the brains of most mortal men.</font></b></span>")
 			H.species.brute_mod = 0.7
 			H.species.hunger_factor = DEFAULT_HUNGER_FACTOR * 1.15
-			H.equip_to_slot_or_store_or_drop(new /obj/item/pen/fancy/quill, slot_in_backpack)
-			H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife/bowie, slot_belt)
+			H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife/bowie, slot_in_backpack)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/dufflebag, slot_l_hand)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/tactical, slot_w_uniform)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/flat, slot_back)
@@ -122,21 +122,21 @@
 				H.equip_to_slot_or_store_or_drop(new /obj/item/ammo_magazine/heavy/ap, slot_in_backpack)
 			else
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/scrapforged/carapace2, slot_wear_suit)
-				H.equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/heavysniper/boltaction/imperial/crucible, slot_belt)
+				H.equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/heavysniper/boltaction/imperial/crucible, slot_wear_suit)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/ammo_magazine/speedloader/clip/stub/ap, slot_in_backpack)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/ammo_magazine/speedloader/clip/stub/ms, slot_in_backpack)
-		if(current_title == "Bounty Hunter")
+		else if(current_title == "Bounty Hunter")
 			to_chat(H,"<span class='danger'><b><font size=4>THE BOUNTY HUNTER</font></b></span>")
 			to_chat(H, "<span class='notice'><b><font size=2>As the Bounty Hunter aboard the Scavv Gantry, you are adrift after your last client met an untimely demise on the ship. With your skills underutilized, you now navigate the dangerous Ghoul Stars, seeking new bounties and opportunities to reclaim your place in the hunt.</font></b></span>")
 			H.species.brute_mod = 0.7
 			H.species.weaken_mod = 0.71
 			H.species.stun_mod = 0.71
 			H.species.hunger_factor = DEFAULT_HUNGER_FACTOR * 0.75
-			H.equip_to_slot_or_store_or_drop(new /obj/item/pen/fancy/quill, slot_in_backpack)
-			H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife, slot_belt)
+			H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife, slot_in_backpack)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/bountyhunter, slot_wear_suit)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/pilgrimhelm/bountyhead, slot_head)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/leather, slot_back)
+			H.equip_to_slot_or_store_or_drop(new /obj/item/storage/briefcase/crimekit, slot_r_hand)
 			if(prob(50))
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/revolver/imperial, slot_belt)
@@ -148,24 +148,22 @@
 				H.equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/revolver/imperial/heavy/mateba, slot_belt)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/ammo_magazine/speedloader/revolver/ms, slot_in_backpack)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/ammo_magazine/speedloader/revolver/ms, slot_in_backpack)
-		if(current_title == "Deserter")
+		else if(current_title == "Deserter")
 			to_chat(H,"<span class='danger'><b><font size=4>THE DESERTER</font></b></span>")
 			to_chat(H, "<span class='notice'><b><font size=2>As the Deserter aboard the Scavv Gantry, you've abandoned the PDF in search of fortune as a mercenary. Your knowledge of Militarum codes and procedures now serves you as you navigate the dangerous life of a hired gun.</font></b></span>")
 			if(prob(5))
 				H.make_genestealer()
 				to_chat(H, "<span class='notice'><b><font size=2>You are a genestealer bioform, a unique strain of tyranid genestealer capable of rapid transformation. The swarm considers you to be an abomination, but under the guidance of what you believe to be the true hivemind, you will surely succeed where the others have failed. Everything is connected.</font></b></span>")
 			else if(prob(5))
-				to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
-				to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
-				spawn(65 SECONDS)
+				to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN THIRTY SECONDS</font></b></span>")
+				spawn(30 SECONDS)
 				GLOB.cult.add_antagonist(H.mind, ignore_role = 1, do_not_equip = 0)
 				to_chat(H, "<span class='notice'><b><font size=2>You are a heretical cultist loyal to one or more of the Chaos Gods -- unlike the many pretenders you are truly blessed by the warp and can survive encounters that would boil the brains of most mortal men.</font></b></span>")
 			H.species.brute_mod = 0.7
-			H.equip_to_slot_or_store_or_drop(new /obj/item/pen/fancy/quill, slot_in_backpack)
-			H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife, slot_belt)
+			H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife, slot_in_backpack)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/guard/uniform, slot_w_uniform)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/warfare/heavy, slot_back)
-			H.equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/flat/deserter, slot_l_hand) // has gloves, mask, shoes and detpack
+			H.equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/deserter, slot_l_hand) // has gloves, mask, shoes and detpack
 			if(prob(10))
 				H.equip_to_slot_or_store_or_drop(new /obj/item/card/emag, slot_in_backpack)
 			else if(prob(15))
@@ -194,7 +192,7 @@
 /datum/job/submap/scavver_crew
 	title = "Scavver"
 	supervisors = "yourself"
-	total_positions = 3
+	total_positions = 4
 	outfit_type = /singleton/hierarchy/outfit/job/scavver
 	info = "You are a scavver on the Gantry, a battered scavenger vessel drifting far from \
 	Imperial trade routes. It’s time to choose a leader amongst yourselves and start your journey into the void."
@@ -203,7 +201,7 @@
 		"Heretek",
 		"Bard",
 	)
-	skill_points = 20
+	skill_points = 26
 	whitelisted_species = list(SPECIES_HUMAN,SPECIES_VOX,SPECIES_TAU,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_KROOT)
 	min_skill = list(
 		SKILL_PILOT = SKILL_BASIC,
@@ -222,7 +220,7 @@
 						SKILL_GUNS = SKILL_MASTER,
 						SKILL_VIGOR = SKILL_MASTER)
 
-/datum/job/deck_scum/equip(mob/living/carbon/human/H)
+/datum/job/submap/scavver_crew/equip(mob/living/carbon/human/H)
 	var/current_name = H.real_name
 	var/current_title = trimtext(H.mind.role_alt_title)
 	H.voice_in_head(pick(GLOB.lone_thoughts))
@@ -239,17 +237,15 @@
 				H.make_genestealer()
 				to_chat(H, "<span class='notice'><b><font size=2>You are a genestealer bioform, a unique strain of tyranid genestealer capable of rapid transformation. The swarm considers you to be an abomination, but under the guidance of what you believe to be the true hivemind, you will surely succeed where the others have failed. Everything is connected.</font></b></span>")
 			else if(prob(5))
-				to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
-				to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
-				spawn(65 SECONDS)
+				to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN THIRTY SECONDS</font></b></span>")
+				spawn(30 SECONDS)
 				GLOB.cult.add_antagonist(H.mind, ignore_role = 1, do_not_equip = 0)
 				to_chat(H, "<span class='notice'><b><font size=2>You are a heretical cultist loyal to one or more of the Chaos Gods -- unlike the many pretenders you are truly blessed by the warp and can survive encounters that would boil the brains of most mortal men.</font></b></span>")
 			H.species.species_flags = SPECIES_FLAG_LOW_GRAV_ADAPTED
 			H.species.toxins_mod = 0.6
 			H.species.radiation_mod = 0.55
 			H.species.hunger_factor = DEFAULT_HUNGER_FACTOR * 0.65
-			H.equip_to_slot_or_store_or_drop(new /obj/item/pen/fancy/quill, slot_in_backpack)
-			H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife, slot_belt)
+			H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife, slot_in_backpack)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/hypospray/autoinjector/combatpain, slot_in_backpack)
 			H.equip_to_slot_or_store_or_drop(new/obj/item/gun/energy/plasmacutter, slot_l_hand)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/explorer, slot_back)
@@ -264,14 +260,13 @@
 				H.equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/pistol/stub/talon, slot_r_hand)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/ammo_magazine/pistol/small/ap, slot_in_backpack)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/ammo_magazine/pistol/small/ap, slot_in_backpack)
-		if(current_title == "Thief")
+		else if(current_title == "Thief")
 			to_chat(H,"<span class='danger'><b><font size=4>THE THIEF</font></b></span>")
 			to_chat(H, "<span class='notice'><b><font size=2>As the Thief, you travel on the Scavv Gantry, summoned by a shadowy benefactor for a high-stakes job. You should probably... recruit a crack-team to help execute the job, therefoer minimizing the risk to yourself.</font></b></span>")
 			H.species.species_flags = SPECIES_FLAG_LOW_GRAV_ADAPTED
 			H.species.silent_steps = TRUE
 			H.species.slowdown = -0.15
-			H.equip_to_slot_or_store_or_drop(new /obj/item/pen/fancy/quill, slot_in_backpack)
-			H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife, slot_belt)
+			H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife, slot_in_backpack)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/warfare/heavy, slot_back)
 			if(prob(50))
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian/black, slot_w_uniform)
@@ -280,12 +275,12 @@
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian/black, slot_w_uniform)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/hiver/trenchcoat, slot_wear_suit)
 			if(prob(10))
-				H.equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/flat/thief1, slot_r_hand)
+				H.equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/thief1, slot_r_hand)
 			if(prob(20))
-				H.equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/flat/thief2, slot_r_hand)
+				H.equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/thief2, slot_r_hand)
 			else
-				H.equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/flat/thief3, slot_r_hand)
-		if(current_title == "Heretek")
+				H.equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/thief3, slot_r_hand)
+		else if(current_title == "Heretek")
 			to_chat(H,"<span class='danger'><b><font size=4>THE HERETEK</font></b></span>")
 			to_chat(H, "<span class='notice'><b><font size=2>As the Heretek aboard the Scavv Gantry, you are a disgraced Magos stricken with a terminal disease that has given you only months to live, obsessed with unlocking the secrets of the Machine. Cast out by the Mechanicus for your radical theories, you now seek work without the constraints of dogma, eager to conduct your experiments unimpeded.</font></b></span>")
 			H.species.cold_level_1 = SYNTH_COLD_LEVEL_1
@@ -302,8 +297,7 @@
 			H.species.radiation_mod = 0.6
 			H.species.hunger_factor = DEFAULT_HUNGER_FACTOR * 0.5
 			H.species.species_flags = SPECIES_FLAG_LOW_GRAV_ADAPTED | SPECIES_FLAG_NO_EMBED
-			H.equip_to_slot_or_store_or_drop(new /obj/item/pen/fancy/quill, slot_in_backpack)
-			H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife, slot_belt)
+			H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife, slot_in_backpack)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/mechanicus, slot_wear_suit)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/hardhat/techpriest, slot_head)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/mask/gas/techpriest, slot_wear_mask)
@@ -319,15 +313,14 @@
 				H.equip_to_slot_or_store_or_drop(new /obj/item/device/augment_implanter/popout_shotgun, slot_in_backpack)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/organ/internal/augment/active/polytool/engineer, slot_in_backpack)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/implant/translator, slot_in_backpack)
-		if(current_title == "Bard")
+		else if(current_title == "Bard")
 			to_chat(H,"<span class='danger'><b><font size=4>THE BARD</font></b></span>")
 			to_chat(H, "<span class='notice'><b><font size=2>As the Bard aboard the Demeter, you're a con artist gone merc peddling your talents in song and charm. Using your wit and cunning, you spin tales to manipulate and con, seeking to charm your way into opportunities and gain favors from the crew.</font></b></span>")
 			H.species.silent_steps = TRUE
-			H.equip_to_slot_or_store_or_drop(new /obj/item/pen/fancy/quill, slot_in_backpack)
-			H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife, slot_belt)
+			H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife, slot_in_backpack)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/flat, slot_back)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/pilgrim/musician, slot_wear_suit)
-			H.equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/flat/thief3, slot_r_hand)
+			H.equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/thief3, slot_r_hand)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/storage/secure/briefcase/money2, slot_r_hand)
 			if(prob(50))
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian/black, slot_w_uniform)
@@ -379,7 +372,7 @@
 		SKILL_ANATOMY = SKILL_TRAINED,
 		SKILL_CHEMISTRY = SKILL_TRAINED
 	)
-	skill_points = 20
+	c20
 
 /obj/submap_landmark/spawnpoint/scavver_crew
 	name = "Scavver"
@@ -391,7 +384,7 @@
 	name = "Salvage Engineer"
 
 /singleton/hierarchy/outfit/job/scavver
-	name = "Salvager"
+	name = ("Scavver")
 	l_ear = /obj/item/device/radio/headset/map_preset/scavver
 	r_ear = null
 	uniform = null
@@ -400,10 +393,12 @@
 	shoes = /obj/item/clothing/shoes/workboots
 	gloves = /obj/item/clothing/gloves/thick
 	belt = null
-	hierarchy_type = /singleton/hierarchy/outfit/job/scavver
 	id_types = null
+	back = /obj/item/storage/backpack/satchel/warfare
 	pda_type = /obj/item/modular_computer/pda
-	backpack_contents = list(/obj/item/spacecash/bundle/c500 = 1)
+	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/spacecash/bundle/c500 = 1)
+
+/singleton/hierarchy/outfit/j
 
 /singleton/hierarchy/outfit/job/scavver/engineer
 	name = "Salvage Engineer"

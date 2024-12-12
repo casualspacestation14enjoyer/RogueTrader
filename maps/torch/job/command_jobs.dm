@@ -14,7 +14,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 13
+	skill_points = 19
 	min_skill = list(
 		SKILL_BUREAUCRACY = SKILL_EXPERIENCED,
 		SKILL_FINANCE = SKILL_TRAINED,
@@ -61,6 +61,7 @@
 	H.species.radiation_mod = 0.6
 	H.species.hunger_factor = DEFAULT_HUNGER_FACTOR * 0.7
 	H.species.species_flags = SPECIES_FLAG_LOW_GRAV_ADAPTED | SPECIES_FLAG_NO_EMBED
+	H.verbs += /mob/living/proc/set_ambition
 	if(current_title && (H.mind.role_alt_title in alt_titles))
 		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
 	else
@@ -71,9 +72,9 @@
 		H.make_genestealer()
 		to_chat(H, "<span class='notice'><b><font size=2>You are a genestealer bioform, a unique strain of tyranid genestealer capable of rapid transformation. The swarm considers you to be an abomination, but under the guidance of what you believe to be the true hivemind, you will surely succeed where the others have failed. Everything is connected.</font></b></span>")
 	else if(prob(1))
-		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
-		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
-		spawn(65 SECONDS)
+		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN THIRTY SECONDS</font></b></span>")
+		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN THIRTY SECONDS</font></b></span>")
+		spawn(30 SECONDS)
 		GLOB.cult.add_antagonist(H.mind, ignore_role = 1, do_not_equip = 0)
 		to_chat(H, "<span class='notice'><b><font size=2>You are a heretical cultist loyal to one or more of the Chaos Gods -- unlike the many pretenders you are truly blessed by the warp and can survive encounters that would boil the brains of most mortal men.</font></b></span>")
 	to_chat(H, "<span class='notice'><b><font size=2>You are the [current_title], commander of the Dauntless, an Imperial corvette exploratory vessel. Tasked with navigating the uncharted terror -- the Ghoul Stars, you lead a diverse retinue representing many factions, each serving a crucial role aboard your ship. While you hold ultimate authority, you work closely with your Magos Explorator, whose resources and personnel are vital to your survival in this cursed region. Rely on your officers to manage the deck scum, explore forgotten worlds, and broker alliances or hostilities with the human, alien, and worse. The emperor protects...</font></b></span>")
@@ -97,7 +98,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 11
+	skill_points = 17
 	min_skill = list(
 		SKILL_BUREAUCRACY = SKILL_EXPERIENCED,
 		SKILL_FINANCE = SKILL_TRAINED,
@@ -155,7 +156,7 @@
 	H.voice_in_head(pick(GLOB.lone_thoughts))
 	H.species.weaken_mod = 0.7
 	H.species.stun_mod = 0.7
-	H.species.slowdown = -0.2
+	H.species.slowdown = -0.1
 	if(current_title && (H.mind.role_alt_title in alt_titles))
 		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
 	else
@@ -187,7 +188,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 11
+	skill_points = 17
 	min_skill = list(
 		SKILL_BUREAUCRACY = SKILL_TRAINED,
 		SKILL_FINANCE = SKILL_BASIC,
@@ -240,13 +241,14 @@
 	else
 		current_title = title // use default title
 	H.fully_replace_character_name("[current_title] [current_name]")
+	H.verbs += /mob/living/proc/set_ambition
 	if(prob(1))
 		H.make_genestealer()
 		to_chat(H, "<span class='notice'><b><font size=2>You are a genestealer bioform, a unique strain of tyranid genestealer capable of rapid transformation. The swarm considers you to be an abomination, but under the guidance of what you believe to be the true hivemind, you will surely succeed where the others have failed. Everything is connected.</font></b></span>")
 	else if(prob(1))
-		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
-		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
-		spawn(65 SECONDS)
+		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN THIRTY SECONDS</font></b></span>")
+		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN THIRTY SECONDS</font></b></span>")
+		spawn(30 SECONDS)
 		GLOB.cult.add_antagonist(H.mind, ignore_role = 1, do_not_equip = 0)
 		to_chat(H, "<span class='notice'><b><font size=2>You are a heretical cultist loyal to one or more of the Chaos Gods -- unlike the many pretenders you are truly blessed by the warp and can survive encounters that would boil the brains of most mortal men.</font></b></span>")
 	to_chat(H, "<span class='notice'><b><font size=2>As the [current_title], you are a crucial officer aboard the Dauntless, responsible for piloting the ship, managing ship-wide vox communications, and executing the Rogue Trader's commands. Your role involves coordinating with the deck crew and all departments to ensure smooth and efficient operations. </font></b></span>")
@@ -265,9 +267,7 @@
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/krootmerc
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/civ)
-	total_positions = 0
-	spawn_positions = 0
-	skill_points = 11
+	skill_points = 17
 	min_skill = list(SKILL_VIGOR = SKILL_EXPERIENCED,
 					SKILL_COMBAT = SKILL_EXPERIENCED, // Worse skills then imperials. Since they are more primitive bioforms.
 					SKILL_GUNS = SKILL_BASIC,

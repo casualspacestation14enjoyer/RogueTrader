@@ -1,14 +1,14 @@
 /obj/machinery/bluespacedrive
 	name = "bluespace drive"
-	desc = "The Naophoros-pattern jump drive is a machine created by the skrell, mated with countless human devices and apparatuses to make it able to interface with the vastly different technology used in their ships."
+	desc = "The Naophoros-pattern jump drive is a machine created by ancient xenos, mated with countless human devices and apparatuses to make it able to interface with the vastly different technology used in their ships."
 	icon = 'icons/obj/machines/bluespacedrive.dmi'
 	icon_state = "bsd_core"
 	anchored = TRUE
 	density = TRUE
 	pixel_y = -32
 	pixel_x = -32
-	idle_power_usage = 15 KILOWATTS
-	health_max = 3000
+	idle_power_usage = 10 KILOWATTS
+	health_max = 6000
 	damage_hitsound = 'sound/machines/BSD_damaging.ogg'
 	health_min_damage = 10
 

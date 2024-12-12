@@ -134,7 +134,7 @@
 	accessories = list(/obj/item/clothing/accessory/armor_plate/nurgleheavy)
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+150
-	slowdown_general = 0.08
+	slowdown_general = 0.07
 	armor = list(
 		melee = ARMOR_MELEE_FLAK+2,
 		bullet = ARMOR_BALLISTIC_FLAK+2,
@@ -215,14 +215,14 @@
 /obj/item/clothing/suit/armor/sister/sacredrosepower
 	name = "sacred rose power armour"
 	desc = "The Sacred and holy Power Armour adorned by Battle Sister of the Order Of The Sacred Rose, It's illuminate the field with it glorious light, Being near it make you feels safer and secured."
-	icon_state = "sister"
+	icon_state = "ooml_old"
 	item_state = "sister"
 	flags_inv = HIDEJUMPSUIT
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	max_pressure_protection = RIG_MAX_PRESSURE
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +1500
-	slowdown_general = 0.11 // Slightly faster then inqisitorial, these relics are icons to the sisters and treated as extensions of the emperor.
+	slowdown_general = 0.1 // Slightly faster then inqisitorial, these relics are icons to the sisters and treated as extensions of the emperor.
 	armor = list(
 		melee = ARMOR_MELEE_POWER_ARM,
 		bullet = ARMOR_BALLISTIC_POWER_ARMOUR,
@@ -243,7 +243,7 @@
 	max_pressure_protection = RIG_MAX_PRESSURE
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +1500
-	slowdown_general = 0.11
+	slowdown_general = 0.1
 	armor = list(
 		melee = ARMOR_MELEE_POWER_ARM,
 		bullet = ARMOR_BALLISTIC_POWER_ARMOUR,
@@ -264,7 +264,7 @@
 	max_pressure_protection = RIG_MAX_PRESSURE
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +1500
-	slowdown_general = 0.11
+	slowdown_general = 0.1
 	armor = list(
 		melee = ARMOR_MELEE_POWER_ARM,
 		bullet = ARMOR_BALLISTIC_POWER_ARMOUR,
@@ -285,7 +285,7 @@
 	max_pressure_protection = VOIDSUIT_MAX_PRESSURE
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +1100
-	slowdown_general = 0.11 // Same speed as sister but trash stats compared.
+	slowdown_general = 0.1 // Same speed as sister but trash stats compared.
 	armor = list(
 		melee = ARMOR_MELEE_POWER_ARM-1,
 		bullet = ARMOR_BALLISTIC_POWER_ARMOUR-2, // 1 point above carapace
@@ -305,7 +305,7 @@
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
-	slowdown_general = 0.07
+	slowdown_general = 0.065
 	armor = list(
 		melee = ARMOR_MELEE_CARAPACE-1,
 		bullet = ARMOR_BALLISTIC_CARAPACE-1,
@@ -384,7 +384,7 @@
 	accessories = list(/obj/item/clothing/accessory/armor_plate/flak)
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-150
-	slowdown_general = 0.065
+	slowdown_general = 0.055
 	armor = list(
 		melee = ARMOR_MELEE_FLAK-1,
 		bullet = ARMOR_BALLISTIC_FLAK-1,
@@ -501,7 +501,7 @@
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-100
-	slowdown_general = 0.073
+	slowdown_general = 0.07
 	armor = list(
 		melee = ARMOR_MELEE_FLAK+1,
 		bullet = ARMOR_BALLISTIC_FLAK,
@@ -520,7 +520,7 @@
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-100
-	slowdown_general = 0.073
+	slowdown_general = 0.07
 	armor = list(
 		melee = ARMOR_MELEE_FLAK+1,
 		bullet = ARMOR_BALLISTIC_FLAK,
@@ -536,7 +536,7 @@
 	desc = "A heavy set of plated leather overlayn with flak plates to protect against slug rounds and the occasional rock, lighter then standard half-plate but less protective."
 	icon_state = "brigandine"
 	item_state = "brigandine"
-	slowdown_general = 0.065
+	slowdown_general = 0.06
 	armor = list(
 		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_FLAK,

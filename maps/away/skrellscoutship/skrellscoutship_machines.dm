@@ -12,7 +12,7 @@
 	icon_state = "core1"
 	color = COLOR_PURPLE
 	var/on = TRUE
-	var/output_power = 9000 KILOWATTS
+	var/output_power = 15000 KILOWATTS
 	var/image/field_image
 
 /obj/machinery/power/skrell_reactor/attack_hand(mob/user)

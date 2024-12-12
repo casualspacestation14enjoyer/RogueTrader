@@ -10,14 +10,14 @@
 	id = "awaysite_skrell_scout"
 	description = "A Tau scouting vessel."
 	suffixes = list("skrellscoutship/skrellscoutship_revamp.dmm")
-	spawn_cost = 0.3
+	spawn_cost = 2
 	player_cost = 0
 	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/tauscoutship, /datum/shuttle/autodock/overmap/tauscoutshuttle)
 	apc_test_exempt_areas = list(
 		/area/ship/tauscoutship/externalwing/port = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/ship/tauscoutship/externalwing/starboard = NO_SCRUBBER|NO_VENT|NO_APC
 	)
-	spawn_weight = 0.67
+	spawn_weight = 2.5
 
 /obj/overmap/visitable/sector/tauscoutspace
 	name = "Empty Sector"
@@ -35,7 +35,13 @@
 	movable_flags = MOVABLE_FLAG_EFFECTMOVE
 
 /obj/submap_landmark/spawnpoint/tauscoutship/leader
-	name = "Shas'ui"
+	name = "Shas-ui"
+
+/obj/submap_landmark/spawnpoint/tauscoutship/scoutvet
+	name = "Scout Veteran"
+
+/obj/submap_landmark/spawnpoint/tauscoutship/watercaste
+	name = "Kor-vattra Merchant"
 
 /singleton/webhook/submap_loaded/skrell
 	id = WEBHOOK_SUBMAP_LOADED_SKRELL
@@ -44,8 +50,10 @@
 	descriptor = "Tau Scout Ship"
 	map = "Tau Space"
 	crew_jobs = list(
-		/datum/job/submap/tauscoutship_crew,
-		/datum/job/submap/tauscoutship_crew/leader
+		/datum/job/submap/tauscoutship_leader,
+		/datum/job/submap/tauscoutship_watercaste,
+		/datum/job/submap/tauscoutship_scoutvet,
+		/datum/job/submap/tauscoutship_crew
 	)
 	call_webhook = WEBHOOK_SUBMAP_LOADED_SKRELL
 
@@ -63,24 +71,197 @@ var/global/const/access_tauscoutship = "ACCESS_TAUSCOUT"
 	detail_color = "#7331c4"
 	access = list(access_tauscoutship)
 
-/datum/job/submap/tauscoutship_crew/leader
-	title = "Shas'ui"
+/datum/job/submap/tauscoutship_leader
+	title = "Shas-ui"
 	supervisors = "The Greater Good. The Ethereals. Your ambition."
-	total_positions = 5
+	total_positions = 1
 	whitelisted_species = list(SPECIES_TAU)
-	outfit_type = /singleton/hierarchy/outfit/job/firewarrior
+	outfit_type = /singleton/hierarchy/outfit/job/firewarriorleader
 	info = "Your vessel scouts the perilous expanse of the Ghoul Stars, mapping potential threats and identifying unknown forces, all while pursuing the Tau's relentless expansion and the ideals of the Greater Good."
 	branch = /datum/mil_branch/tau_fleet
 	rank = /datum/mil_rank/tau_fleet/shas
 	allowed_branches = list(/datum/mil_branch/tau_fleet)
 	allowed_ranks = list(/datum/mil_rank/tau_fleet/shas)
-	skill_points = 30
+	skill_points = 28
+	is_semi_antagonist = TRUE
+	min_skill = list(
+		SKILL_COMBAT = SKILL_BASIC,
+		SKILL_PILOT = SKILL_TRAINED,
+		SKILL_GUNS = SKILL_TRAINED,
+		SKILL_VIGOR = SKILL_TRAINED,
+	)
+
+	max_skill = list(	SKILL_CONSTRUCTION = SKILL_MASTER,
+						SKILL_DEVICES = SKILL_MASTER,
+						SKILL_COMPUTER = SKILL_MASTER,
+						SKIL_ELECTRICAL = SKILL_MASTER,
+						SKILL_PILOT = SKILL_MASTER,
+						SKILL_COMBAT = SKILL_MASTER,
+						SKILL_GUNS = SKILL_MASTER,
+						SKILL_VIGOR = SKILL_MASTER)
+
+/datum/job/submap/tauscoutship_leader/equip(mob/living/carbon/human/H)
+	var/current_name = H.real_name
+	var/current_title = trimtext(H.mind.role_alt_title)
+	H.voice_in_head(pick(GLOB.lone_thoughts))
+	if(current_title && (H.mind.role_alt_title in alt_titles))
+		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
+	else
+		current_title = title // use default title
+	to_chat(H,"<span class='danger'><b><font size=4>WARRIOR VETERAN</font></b></span>")
+	to_chat(H, "<span class='notice'><b><font size=2>As a seasoned Fire Caste Warrior, you lead with valor and skill, embodying the experience honed from countless engagements. Your tactical acumen and steadfast presence are pivotal in safeguarding the cadre aboard the ship and advancing the Greater Good, especially when foes emerge in unfamiliar territory.</font></b></span>")
+	H.fully_replace_character_name("Shas'ui [current_name]")
+	H.species.brute_mod = 0.7 // Default 0.77
+	H.species.weaken_mod = 0.61
+	H.species.stun_mod = 0.61
+	return ..()
+
+/datum/job/submap/tauscoutship_scoutvet
+	title = "Scout Veteran"
+	supervisors = "The Greater Good. The Ethereals. Your ambition."
+	total_positions = 1
+	whitelisted_species = list(SPECIES_TAU)
+	outfit_type = /singleton/hierarchy/outfit/job/firewarriorscout
+	info = "Your vessel scouts the perilous expanse of the Ghoul Stars, mapping potential threats and identifying unknown forces, all while pursuing the Tau's relentless expansion and the ideals of the Greater Good."
+	branch = /datum/mil_branch/tau_fleet
+	rank = /datum/mil_rank/tau_fleet/shas
+	allowed_branches = list(/datum/mil_branch/tau_fleet)
+	allowed_ranks = list(/datum/mil_rank/tau_fleet/shas)
+	skill_points = 26
+	is_semi_antagonist = TRUE
+	min_skill = list(
+		SKILL_COMBAT = SKILL_TRAINED,
+		SKILL_PILOT = SKILL_TRAINED,
+		SKILL_GUNS = SKILL_EXPERIENCED,
+		SKILL_VIGOR = SKILL_TRAINED,
+	)
+
+	max_skill = list(	SKILL_CONSTRUCTION = SKILL_MASTER,
+						SKILL_DEVICES = SKILL_MASTER,
+						SKILL_PILOT = SKILL_MASTER,
+						SKILL_COMBAT = SKILL_MASTER,
+						SKILL_GUNS = SKILL_MASTER,
+						SKILL_VIGOR = SKILL_MASTER)
+
+/datum/job/submap/tauscoutship_scoutvet/equip(mob/living/carbon/human/H)
+	var/current_name = H.real_name
+	var/current_title = trimtext(H.mind.role_alt_title)
+	H.voice_in_head(pick(GLOB.lone_thoughts))
+	if(current_title && (H.mind.role_alt_title in alt_titles))
+		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
+	else
+		current_title = title // use default title
+	to_chat(H,"<span class='danger'><b><font size=4>SCOUT VETERAN</font></b></span>")
+	to_chat(H, "<span class='notice'><b><font size=2>As a Fire Scout, you are the keen eye of the Tau Empire, trained in advanced stealth and observation to probe the outer reaches of enemy territory. Your role demands a blend of agility and quick adaptability, embodying the teachings of Shadowsun by gathering intelligence unseen, preparing the path for the Tau’s next advance.</font></b></span>")
+	H.fully_replace_character_name("Shas'la [current_name]")
+	H.species.slowdown = -0.2 // default is -0.3
+	return ..()
+
+/datum/job/submap/tauscoutship_watercaste
+	title = "Kor-vattra Merchant"
+	supervisors = "The Greater Good. The Ethereals. Your ambition."
+	total_positions = 1
+	whitelisted_species = list(SPECIES_TAU)
+	outfit_type = /singleton/hierarchy/outfit/job/watercaste
+	info = "Your vessel scouts the perilous expanse of the Ghoul Stars, mapping potential threats and identifying unknown forces, all while pursuing the Tau's relentless expansion and the ideals of the Greater Good."
+	branch = /datum/mil_branch/tau_fleet
+	rank = /datum/mil_rank/tau_fleet/shas
+	allowed_branches = list(/datum/mil_branch/tau_fleet)
+	allowed_ranks = list(/datum/mil_rank/tau_fleet/shas)
+	skill_points = 32
+	is_semi_antagonist = TRUE
+	min_skill = list(
+		SKILL_PILOT = SKILL_TRAINED,
+		SKILL_GUNS = SKILL_TRAINED,
+	)
+
+	max_skill = list(	SKILL_CONSTRUCTION = SKILL_MASTER,
+						SKILL_DEVICES = SKILL_MASTER,
+						SKILL_COMPUTER = SKILL_MASTER,
+						SKIL_ELECTRICAL = SKILL_MASTER,
+						SKILL_ENGINES = SKILL_MASTER,
+						SKILL_ATMOS = SKILL_MASTER,
+						SKILL_PILOT = SKILL_MASTER,
+						SKILL_COMBAT = SKILL_MASTER,
+						SKILL_GUNS = SKILL_MASTER,
+						SKILL_VIGOR = SKILL_MASTER)
+
+/datum/job/submap/tauscoutship_watercaste/equip(mob/living/carbon/human/H)
+	var/current_name = H.real_name
+	var/current_title = trimtext(H.mind.role_alt_title)
+	H.voice_in_head(pick(GLOB.lone_thoughts))
+	if(current_title && (H.mind.role_alt_title in alt_titles))
+		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
+	else
+		current_title = title // use default title
+	to_chat(H,"<span class='danger'><b><font size=4>WATER CASTE</font></b></span>")
+	to_chat(H, "<span class='notice'><b><font size=2>As a distinguished Water Caste representative, you navigate the vast expanse of the Ghoul Stars, orchestrating alliances and fostering the Tau's influence through diplomacy and trade. Your knowledge of the Kor’vattra’s network enables the Empire's expansion, bridging the divide between the Tau and potential allies with calculated, profitable engagements.</font></b></span>")
+	H.fully_replace_character_name("Por'el [current_name]")
+	return ..()
+
+/datum/job/submap/tauscoutship_crew
+	title = "Fire Caste Warrior"
+	supervisors = "your commander and the Greater Good."
+	total_positions = 1
+	whitelisted_species = list(SPECIES_TAU)
+	blacklisted_species = null
+	outfit_type = /singleton/hierarchy/outfit/job/firewarrior
+	info = "Your vessel scouts the perilous expanse of the Ghoul Stars, mapping potential threats and identifying unknown forces, all while pursuing the Tau's relentless expansion and the ideals of the Greater Good."
+	branch = /datum/mil_branch/tau_fleet
+	rank = /datum/mil_rank/tau_fleet
+	allowed_branches = list(/datum/mil_branch/tau_fleet)
+	allowed_ranks = list(/datum/mil_rank/tau_fleet)
+	skill_points = 26
+	is_semi_antagonist = TRUE
+	min_skill = list(
+		SKILL_COMBAT = SKILL_BASIC,
+		SKILL_GUNS = SKILL_TRAINED,
+		SKILL_VIGOR = SKILL_TRAINED,
+		SKILL_PILOT = SKILL_BASIC,
+	)
+
+	max_skill = list(	SKILL_CONSTRUCTION = SKILL_MASTER,
+						SKILL_DEVICES = SKILL_MASTER,
+						SKILL_COMPUTER = SKILL_MASTER,
+						SKIL_ELECTRICAL = SKILL_MASTER,
+						SKILL_ENGINES = SKILL_MASTER,
+						SKILL_ATMOS = SKILL_MASTER,
+						SKILL_PILOT = SKILL_MASTER,
+						SKILL_COMBAT = SKILL_MASTER,
+						SKILL_GUNS = SKILL_MASTER,
+						SKILL_VIGOR = SKILL_MASTER)
+
+/datum/job/submap/tauscoutship_crew/equip(mob/living/carbon/human/H)
+	var/current_name = H.real_name
+	var/current_title = trimtext(H.mind.role_alt_title)
+	H.voice_in_head(pick(GLOB.lone_thoughts))
+	if(current_title && (H.mind.role_alt_title in alt_titles))
+		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
+	else
+		current_title = title // use default title
+	to_chat(H,"<span class='danger'><b><font size=4>FIRE WARRIOR</font></b></span>")
+	to_chat(H, "<span class='notice'><b><font size=2>As a Fire Warrior, you stand as the disciplined heart of the Fire Caste, embodying the Tau'va through fierce commitment to the Greater Good. Your role is to protect the cadre and maintain vigilance, prepared to neutralize threats with precision as the vanguard of the Tau Empire’s exploratory forces.</font></b></span>")
+	H.fully_replace_character_name("Shas'la [current_name]")
+	return ..()
+
+/*
+/datum/job/submap/tauscoutship_leader
+	title = "Shas-ui"
+	supervisors = "The Greater Good. The Ethereals. Your ambition."
+	total_positions = 2
+	whitelisted_species = list(SPECIES_TAU)
+	outfit_type = /singleton/hierarchy/outfit/job/firewarriorleader
+	info = "Your vessel scouts the perilous expanse of the Ghoul Stars, mapping potential threats and identifying unknown forces, all while pursuing the Tau's relentless expansion and the ideals of the Greater Good."
+	branch = /datum/mil_branch/tau_fleet
+	rank = /datum/mil_rank/tau_fleet/shas
+	allowed_branches = list(/datum/mil_branch/tau_fleet)
+	allowed_ranks = list(/datum/mil_rank/tau_fleet/shas)
+	skill_points = 22
 	is_semi_antagonist = TRUE
 	alt_titles = list(
-		"Scout Leader" = /singleton/hierarchy/outfit/job/firewarrior/scout,
-		"Kor'vattra Merchant" = /singleton/hierarchy/outfit/job/watercaste,
+		"Scout Leader" = /singleton/hierarchy/outfit/job/firewarriorscout,
+		"Kor-vattra Merchant" = /singleton/hierarchy/outfit/job/watercaste,
 	)
-	skill_points = 22
 	min_skill = list(
 		SKILL_COMBAT = SKILL_BASIC,
 		SKILL_PILOT = SKILL_TRAINED,
@@ -99,7 +280,7 @@ var/global/const/access_tauscoutship = "ACCESS_TAUSCOUT"
 						SKILL_GUNS = SKILL_MASTER,
 						SKILL_VIGOR = SKILL_MASTER)
 
-/datum/job/submap/tauscoutship_crew/leader/equip(mob/living/carbon/human/H)
+/datum/job/submap/tauscoutship_leader/equip(mob/living/carbon/human/H)
 	var/current_name = H.real_name
 	var/current_title = trimtext(H.mind.role_alt_title)
 	H.voice_in_head(pick(GLOB.lone_thoughts))
@@ -107,15 +288,16 @@ var/global/const/access_tauscoutship = "ACCESS_TAUSCOUT"
 		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
 	else
 		current_title = title // use default title
-	if(current_title == "Shas'ui" || current_title == "Scout Leader" || current_title == "Kor'vattra Merchant")
-		if(current_title == "Shas'ui")
+	to_chat(H, "Assigned title: [current_title]")
+	if(current_title == "Shas-ui" || current_title == "Scout Leader" || current_title == "Kor-vattra Merchant")
+		if(current_title == "Shas-ui")
 			to_chat(H,"<span class='danger'><b><font size=4>WARRIOR VETERAN</font></b></span>")
 			to_chat(H, "<span class='notice'><b><font size=2>As a seasoned Fire Caste Warrior, you lead with valor and skill, embodying the experience honed from countless engagements. Your tactical acumen and steadfast presence are pivotal in safeguarding the cadre aboard the ship and advancing the Greater Good, especially when foes emerge in unfamiliar territory.</font></b></span>")
 			H.fully_replace_character_name("Shas'ui [current_name]")
 			H.species.brute_mod = 0.7 // Default 0.77
 			H.species.weaken_mod = 0.61
 			H.species.stun_mod = 0.61
-		if(current_title == "Scout Leader")
+		else if(current_title == "Scout Leader")
 			to_chat(H,"<span class='danger'><b><font size=4>SCOUT VETERAN</font></b></span>")
 			to_chat(H, "<span class='notice'><b><font size=2>As a veteran of the Fire Caste Scout cadre, you command the forward ranks with precision and expertise. Your keen insight and strategic vision are integral to ensuring your team's survival and the successful navigation of unknown sectors, aligning your actions with the ideals of Shadowsun’s approach to combat.</font></b></span>")
 			H.fully_replace_character_name("Shas'vre [current_name]")
@@ -123,32 +305,33 @@ var/global/const/access_tauscoutship = "ACCESS_TAUSCOUT"
 			H.species.weaken_mod = 0.63
 			H.species.stun_mod = 0.63
 			H.species.slowdown = -0.4 // default is -0.3
-		if(current_title == "Kor'vattra Merchant")
-			to_chat(H,"<span class='danger'><b><font size=4>KOR'VATTRA MERCANTILE</font></b></span>")
+		else if(current_title == "Kor-vattra Merchant")
+			to_chat(H,"<span class='danger'><b><font size=4>Kor-vattra MERCANTILE</font></b></span>")
 			to_chat(H, "<span class='notice'><b><font size=2>As a distinguished Water Caste representative, you navigate the vast expanse of the Ghoul Stars, orchestrating alliances and fostering the Tau's influence through diplomacy and trade. Your knowledge of the Kor’vattra’s network enables the Empire's expansion, bridging the divide between the Tau and potential allies with calculated, profitable engagements.</font></b></span>")
 			H.fully_replace_character_name("Por'el [current_name]")
+	return ..()
 
 /datum/job/submap/tauscoutship_crew
 	title = "Fire Caste Warrior"
 	supervisors = "your commander and the Greater Good."
-	total_positions = 5
+	total_positions = 3
 	whitelisted_species = list(SPECIES_TAU)
+	blacklisted_species = null
 	outfit_type = /singleton/hierarchy/outfit/job/firewarrior
 	info = "Your vessel scouts the perilous expanse of the Ghoul Stars, mapping potential threats and identifying unknown forces, all while pursuing the Tau's relentless expansion and the ideals of the Greater Good."
 	branch = /datum/mil_branch/tau_fleet
 	rank = /datum/mil_rank/tau_fleet
 	allowed_branches = list(/datum/mil_branch/tau_fleet)
 	allowed_ranks = list(/datum/mil_rank/tau_fleet)
-	skill_points = 30
+	skill_points = 20
 	is_semi_antagonist = TRUE
 	alt_titles = list(
-		"Fire Caste Scout" = /singleton/hierarchy/outfit/job/firewarrior/scout,
-		"Fire Caste Breacher" = /singleton/hierarchy/outfit/job/firewarrior/breacher,
+		"Fire Caste Scout" = /singleton/hierarchy/outfit/job/firewarriorscout,
+		"Fire Caste Breacher" = /singleton/hierarchy/outfit/job/firewarriorbreacher,
 	)
-	skill_points = 18
 	min_skill = list(
 		SKILL_COMBAT = SKILL_BASIC,
-		SKILL_GUNS = SKILL_EXPERIENCED,
+		SKILL_GUNS = SKILL_TRAINED,
 		SKILL_VIGOR = SKILL_TRAINED,
 		SKILL_PILOT = SKILL_BASIC,
 	)
@@ -177,16 +360,17 @@ var/global/const/access_tauscoutship = "ACCESS_TAUSCOUT"
 			to_chat(H,"<span class='danger'><b><font size=4>FIRE WARRIOR</font></b></span>")
 			to_chat(H, "<span class='notice'><b><font size=2>As a Fire Warrior, you stand as the disciplined heart of the Fire Caste, embodying the Tau'va through fierce commitment to the Greater Good. Your role is to protect the cadre and maintain vigilance, prepared to neutralize threats with precision as the vanguard of the Tau Empire’s exploratory forces.</font></b></span>")
 			H.fully_replace_character_name("Shas'la [current_name]")
-		if(current_title == "Fire Caste Scout")
+		else if(current_title == "Fire Caste Scout")
 			to_chat(H,"<span class='danger'><b><font size=4>FIRE SCOUT</font></b></span>")
 			to_chat(H, "<span class='notice'><b><font size=2>As a Fire Scout, you are the keen eye of the Tau Empire, trained in advanced stealth and observation to probe the outer reaches of enemy territory. Your role demands a blend of agility and quick adaptability, embodying the teachings of Shadowsun by gathering intelligence unseen, preparing the path for the Tau’s next advance.</font></b></span>")
 			H.fully_replace_character_name("Shas'la [current_name]")
 			H.species.slowdown = -0.4
-		if(current_title == "Fire Caste Breacher")
+		else if(current_title == "Fire Caste Breacher")
 			to_chat(H,"<span class='danger'><b><font size=4>FIRE BREACHER</font></b></span>")
 			to_chat(H, "<span class='notice'><b><font size=2>As a Fire Caste Breacher, your role is to protect the commander and breaching during ship boarding operations. Equipped for close-quarters engagements, you favor the tactics of the Third Sphere, conjured within the mind of Ra'Alai an infamous assault and ambush specialist among the fire cadre.</font></b></span>")
 			H.fully_replace_character_name("Shas'la [current_name]")
-
+	return ..()
+*/
 
 /obj/item/clothing/gloves/thick/swat/tau
 	name = "black gloves"
@@ -202,7 +386,7 @@ var/global/const/access_tauscoutship = "ACCESS_TAUSCOUT"
 /singleton/hierarchy/outfit/job/firewarrior
 	name = "Fire Warrior"
 	uniform = /obj/item/clothing/under/tau
-	shoes = /obj/item/clothing/shoes/jackboots/noble
+	shoes = /obj/item/clothing/shoes/jackboots
 	gloves = /obj/item/clothing/gloves/thick/swat/tau
 	pda_type = /obj/item/modular_computer/pda
 	pda_slot = slot_l_store
@@ -210,20 +394,58 @@ var/global/const/access_tauscoutship = "ACCESS_TAUSCOUT"
 	id_types = list(/obj/item/card/id/tauscoutship)
 	suit = /obj/item/clothing/suit/armor/tau
 	head = null
-	l_pocket = /obj/item/device/flashlight/lantern
+	glasses = /obj/item/clothing/glasses/blacksun
 	belt = /obj/item/gun/energy/tau/pulsepistol
-	back = /obj/item/storage/backpack/rucksack
-	backpack_contents = list(/obj/item/pen/fancy = 1, /obj/item/material/twohanded/ravenor/knife/trench = 1, /obj/item/clothing/head/helmet/tau = 1)
+	back = /obj/item/storage/backpack/tau
+	backpack_contents = list(/obj/item/pen/fancy = 1, /obj/item/material/twohanded/ravenor/knife/tau = 1, /obj/item/clothing/head/helmet/tau = 1)
 
-/singleton/hierarchy/outfit/job/firewarrior/scout
+/singleton/hierarchy/outfit/job/firewarriorleader
+	name = "Shas-ui"
+	uniform = /obj/item/clothing/under/tau
+	shoes = /obj/item/clothing/shoes/jackboots
+	gloves = /obj/item/clothing/gloves/thick/swat/tau
+	pda_type = /obj/item/modular_computer/pda
+	pda_slot = slot_l_store
+	l_ear = /obj/item/device/radio/headset/map_preset/tauscoutship
+	id_types = list(/obj/item/card/id/tauscoutship)
+	suit = /obj/item/clothing/suit/armor/tau
+	head = null
+	glasses = /obj/item/clothing/glasses/blacksun
+	belt = /obj/item/gun/energy/tau/pulsepistol
+	back = /obj/item/storage/backpack/tau
+	backpack_contents = list(/obj/item/pen/fancy = 1, /obj/item/material/twohanded/ravenor/knife/tau = 1, /obj/item/clothing/head/helmet/tau = 1)
+
+/singleton/hierarchy/outfit/job/firewarriorscout
 	name = "Fire Scout"
+	uniform = /obj/item/clothing/under/tau
+	shoes = /obj/item/clothing/shoes/jackboots
+	gloves = /obj/item/clothing/gloves/thick/swat/tau
+	pda_type = /obj/item/modular_computer/pda
+	pda_slot = slot_l_store
+	l_ear = /obj/item/device/radio/headset/map_preset/tauscoutship
+	id_types = list(/obj/item/card/id/tauscoutship)
+	head = null
+	glasses = /obj/item/clothing/glasses/blacksun
+	belt = /obj/item/gun/energy/tau/pulsepistol
+	back = /obj/item/storage/backpack/tau
 	suit = /obj/item/clothing/suit/armor/tau/scout
-	backpack_contents = list(/obj/item/pen/fancy = 1, /obj/item/material/twohanded/ravenor/knife/bowie = 1, /obj/item/clothing/head/helmet/tau/scout = 1)
+	backpack_contents = list(/obj/item/pen/fancy = 1, /obj/item/material/twohanded/ravenor/knife/tau = 1, /obj/item/clothing/head/helmet/tau/scout = 1)
 
-/singleton/hierarchy/outfit/job/firewarrior/breacher
+/singleton/hierarchy/outfit/job/firewarriorbreacher
 	name = "Fire Breacher"
+	uniform = /obj/item/clothing/under/tau
+	shoes = /obj/item/clothing/shoes/jackboots
+	gloves = /obj/item/clothing/gloves/thick/swat/tau
+	pda_type = /obj/item/modular_computer/pda
+	pda_slot = slot_l_store
+	l_ear = /obj/item/device/radio/headset/map_preset/tauscoutship
+	id_types = list(/obj/item/card/id/tauscoutship)
+	head = null
+	glasses = /obj/item/clothing/glasses/blacksun
+	belt = /obj/item/gun/energy/tau/pulsepistol
+	back = /obj/item/storage/backpack/tau
 	suit = /obj/item/clothing/suit/armor/tau/breacher
-	backpack_contents = list(/obj/item/pen/fancy = 1, /obj/item/material/twohanded/ravenor/knife = 1, /obj/item/clothing/head/helmet/tau/breacher = 1)
+	backpack_contents = list(/obj/item/pen/fancy = 1, /obj/item/material/twohanded/ravenor/knife/tau = 1, /obj/item/clothing/head/helmet/tau/breacher = 1)
 
 /singleton/hierarchy/outfit/job/watercaste
 	name = "Water Caste Merchant"
@@ -235,11 +457,12 @@ var/global/const/access_tauscoutship = "ACCESS_TAUSCOUT"
 	l_ear = /obj/item/device/radio/headset/map_preset/tauscoutship
 	id_types = list(/obj/item/card/id/tauscoutship)
 	suit = /obj/item/clothing/suit/armor/grim/noble/watercaste
+	glasses = /obj/item/clothing/glasses/blacksun
 	head = null
-	l_pocket = /obj/item/device/flashlight/lantern
+	l_pocket = /obj/item/device/flashlight/maglight
 	belt = /obj/item/gun/energy/plasma/pistol/xenos
-	back = /obj/item/storage/backpack/rucksack
-	backpack_contents = list(/obj/item/pen/fancy = 1, /obj/item/material/twohanded/ravenor/knife = 1)
+	back = /obj/item/storage/backpack/satchel/leather
+	backpack_contents = list(/obj/item/pen/fancy = 1, /obj/item/material/twohanded/ravenor/knife/tau = 1)
 
 /obj/item/clothing/suit/armor/grim/noble/watercaste
 	name = "noble plate"
@@ -277,9 +500,8 @@ var/global/const/access_tauscoutship = "ACCESS_TAUSCOUT"
 	name = "Tau Empire"
 	name_short = "TAU"
 	email_domain = "sdtf.qb"
-
-	rank_types = list(/datum/mil_rank/tau_fleet)
-	spawn_rank_types = list(/datum/mil_rank/tau_fleet)
+	rank_types = list(/datum/mil_rank/tau_fleet, /datum/mil_rank/tau_fleet/shas)
+	spawn_rank_types = list(/datum/mil_rank/tau_fleet, /datum/mil_rank/tau_fleet/shas)
 
 /datum/mil_rank/tau_fleet
 	name = "Shas'la"
@@ -340,7 +562,7 @@ var/global/const/access_tauscoutship = "ACCESS_TAUSCOUT"
 		/obj/item/handcuffs,
 		/obj/item/device/flash,
 		/obj/item/clothing/glasses,
-		/obj/item/ammo_casing/shotgun,
+		/obj/item/ammo_casing,
 		/obj/item/ammo_magazine,
 		/obj/item/reagent_containers/food/snacks/donut,
 		/obj/item/melee/baton,
@@ -392,11 +614,11 @@ var/global/const/access_tauscoutship = "ACCESS_TAUSCOUT"
 /obj/machinery/suit_storage_unit/skrell
 	boots = /obj/item/clothing/shoes/magboots;
 	color = "#00e1ff";
-	helmet = /obj/item/clothing/head/helmet/space/void/skrell/white;
+	helmet = /obj/item/clothing/head/helmet/tau;
 	islocked = 1;
-	name = "Tau Suit Storage Unit (White)";
+	name = "Tau Battlesuit Storage Unit (Tan)";
 	req_access = list("ACCESS_TAUSCOUT");
-	suit = /obj/item/clothing/suit/space/void/skrell/white
+	suit = /obj/item/clothing/suit/armor/tau
 
 /obj/machinery/suit_storage_unit/skrell/black
 	boots = /obj/item/clothing/shoes/magboots;

@@ -44,7 +44,7 @@ GLOBAL_VAR(planet_repopulation_disabled)
 	var/list/actors = list() //things that appear in engravings on xenoarch finds.
 	var/list/species = list() //list of names to use for simple animals
 
-	var/flora_diversity = 4				// max number of different seeds growing here
+	var/flora_diversity = 6				// max number of different seeds growing here
 	var/has_trees = TRUE				// if large flora should be generated
 	var/list/small_flora_types = list()	// seeds of 'small' flora
 	var/list/big_flora_types = list()	// seeds of tree-tier flora
@@ -55,9 +55,9 @@ GLOBAL_VAR(planet_repopulation_disabled)
 	var/list/possible_themes = list(
 		/datum/exoplanet_theme = 45,
 		/datum/exoplanet_theme/mountains = 65,
-		/datum/exoplanet_theme/radiation_bombing = 10,
+		/datum/exoplanet_theme/radiation_bombing = 5,
 		/datum/exoplanet_theme/ruined_city = 5,
-		/datum/exoplanet_theme/robotic_guardians = 10
+		/datum/exoplanet_theme/robotic_guardians = 5
 		)
 	var/list/themes = list()
 
@@ -66,7 +66,7 @@ GLOBAL_VAR(planet_repopulation_disabled)
 	//Flags deciding what features to pick
 	var/ruin_tags_whitelist
 	var/ruin_tags_blacklist
-	var/features_budget = 5
+	var/features_budget = 30
 	var/list/possible_features = list()
 	var/list/spawned_features
 

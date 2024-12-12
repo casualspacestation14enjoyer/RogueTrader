@@ -9,13 +9,13 @@
 	ideal_character_age = 40
 	economic_power = 6
 	minimal_player_age = 0
-	supervisors = "the Executive Officer"
+	supervisors = "the God Emperor"
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/service/chaplain
 	allowed_branches = list(
 		/datum/mil_branch/civilian)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ)
-	skill_points = 22
+	skill_points = 26
 	min_skill = list(
 		SKILL_COMBAT = SKILL_BASIC,
 		SKILL_MEDICAL = SKILL_BASIC,
@@ -31,13 +31,27 @@
 		access_radio_serv
 	)
 
+/datum/job/chaplain_militant/get_description_blurb()
+	return "The Chaplain Militant, spiritual guide and zealous warrior, leads prayers, upholds the Emperor’s light, and strikes down heresy to keep faith alive amid the void’s perils."
+
+/datum/job/chaplain_militant/equip(mob/living/carbon/human/H)
+	var/current_name = H.real_name
+	var/current_title = trimtext(H.mind.role_alt_title)
+	H.voice_in_head(pick(GLOB.lone_thoughts))
+	H.fully_replace_character_name("Chaplain [current_name]")
+	if(current_title && (H.mind.role_alt_title in alt_titles))
+		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
+	else
+		current_title = title // use default title
+
+
 /datum/job/chamber_assistant
 	title = "Chamber Assistant"
 	department = "Service"
 	department_flag = SRV // alt roles; Agri-worker. Servant.
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Chief Steward"
+	supervisors = "the Chamber Magister"
 	create_record = FALSE
 	minimum_character_age = list(SPECIES_HUMAN = 20)
 	ideal_character_age = 20
@@ -48,7 +62,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 18
+	skill_points = 22
 	min_skill = list(
 		SKILL_COMBAT = SKILL_BASIC,
 		SKILL_MEDICAL = SKILL_BASIC,
@@ -69,7 +83,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	minimum_character_age = list(SPECIES_HUMAN = 20)
-	supervisors = "the Chief Steward"
+	supervisors = "the Rogue Trader"
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/service/magister
 	allowed_branches = list(
 		/datum/mil_branch/civilian
@@ -77,7 +91,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 20
+	skill_points = 26
 	min_skill = list(
 		SKILL_COMBAT = SKILL_BASIC,
 		SKILL_MEDICAL = SKILL_BASIC,
@@ -96,6 +110,20 @@
 		access_solgov_crew,
 		access_o_mess
 	)
+
+/datum/job/chamber_magister/get_description_blurb()
+	return "The Chamber Magister, steward of ceremonies aboard the Dauntless, ensures every gathering and banquet reflects the Rogue Trader's grandeur, balancing diplomacy with impeccable decorum. They also are responsible for managing the ships food stores, agricultural production and training the Chamber Assistants."
+
+/datum/job/chamber_magister/equip(mob/living/carbon/human/H)
+	var/current_name = H.real_name
+	var/current_title = trimtext(H.mind.role_alt_title)
+	H.voice_in_head(pick(GLOB.lone_thoughts))
+	H.fully_replace_character_name("Magister [current_name]")
+	if(current_title && (H.mind.role_alt_title in alt_titles))
+		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
+	else
+		current_title = title // use default title
+	H.verbs += /mob/living/proc/set_ambition
 
 /datum/job/noble_guest
 	title = "Noble Heir" // alt titles; noble heir, planetary governor, xenos ambassador(use the tithe to_world stuff for this)
@@ -117,7 +145,7 @@
 		/datum/mil_rank/fleet/e7,
 		/datum/mil_rank/fleet/e8
 	)
-	skill_points = 22
+	skill_points = 28
 	min_skill = list(
 		SKILL_COMBAT = SKILL_BASIC,
 		SKILL_MEDICAL = SKILL_BASIC,
@@ -142,40 +170,6 @@
 							 /datum/computer_file/program/deck_management,
 							 /datum/computer_file/program/reports)
 
-/datum/job/deck_scum/get_description_blurb()
-	return "As Deck Scum, you’re the bottom rung, drifting through whatever job you’re handed next. Your service may be a punishment for a crime, it may be that you were stolen from your world and enslaved, or worse... that you chose this life for yourself. You are a dredge of society now, an outcast, surviving in the underbelly of the Rogue Trader's corvette."
-
-/datum/job/deck_scum/equip(mob/living/carbon/human/H)
-	var/current_name = H.real_name
-	var/current_title = trimtext(H.mind.role_alt_title)
-	H.voice_in_head(pick(GLOB.lone_thoughts))
-	H.fully_replace_character_name("[current_name]")
-	if(current_title && (H.mind.role_alt_title in alt_titles))
-		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
-	else
-		current_title = title // use default title
-	if(current_title == "Penitent" || current_title == "Deck Scum" || current_title == "Pathfinder" || current_title == "Miner")
-		if(current_title == "Penitent")
-			if(prob(80))
-				to_chat(H,"<span class='danger'><b><font size=4>THE PENITENT</font></b></span>")
-				to_chat(H, "<span class='notice'><b><font size=2>As the Penitent, you are condemned to suffer for your past crimes, undertaking the most dangerous and brutal tasks, hoping to earn absolution through relentless service to the Imperium.</font></b></span>")
-				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/penitent, slot_w_uniform)
-				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/pilgrim/penitent, slot_wear_suit)
-				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/pilgrimcap/pleb, slot_head)
-				H.equip_to_slot_or_store_or_drop(new /obj/item/pen/fancy/quill, slot_in_backpack)
-				H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife/glaive, slot_belt)
-				H.species.hunger_factor = DEFAULT_HUNGER_FACTOR * 0.75
-				H.species.weaken_mod = 0.75
-				H.species.stun_mod = 0.75
-			else
-				to_chat(H,"<span class='danger'><b><font size=4>THE OPERATIVE</font></b></span>")
-				to_chat(H, "<span class='notice'><b><font size=2>As the operative you are here under false pretense, masquerading as a Crewman. In this role you must further the aims of your secret benefactor by whatever means necessary(make something up)</font></b></span>")
-				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
-				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/pilgrimhelm/flak/metal, slot_head)
-				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/scrapforged/duster, slot_wear_suit)
-				H.equip_to_slot_or_store_or_drop(new /obj/item/pen/fancy/quill, slot_in_backpack)
-				H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife, slot_belt)
-
 /datum/job/unexpected_guest
 	title = "Gang Boss"
 	department = "Supply" // Gang Leader, etc.
@@ -184,8 +178,11 @@
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "the Deck Chief"
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/service/crewman
+	allowed_branches = list(/datum/mil_branch/civilian)
+	allowed_ranks = list(/datum/mil_rank/civ/contractor)
 	economic_power = 7
-	skill_points = 24
+	skill_points = 26
 	min_skill = list(
 		SKILL_COMBAT = SKILL_BASIC,
 		SKILL_MEDICAL = SKILL_BASIC,
@@ -202,10 +199,6 @@
 						SKILL_GUNS = SKILL_LEGEND,
 						SKILL_COMBAT = SKILL_LEGEND,
 						SKILL_PILOT = SKILL_MASTER)
-
-	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/service/crewman
-	allowed_branches = list(/datum/mil_branch/civilian)
-	allowed_ranks = list(/datum/mil_rank/civ/contractor)
 
 	access = list(
 		access_mining, access_mining_office, access_mining_station,
@@ -227,17 +220,14 @@
 		current_title = title // use default title
 	to_chat(H,"<span class='danger'><b><font size=4>THE GANG BOSS</font></b></span>")
 	H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
-	H.equip_to_slot_or_store_or_drop(new /obj/item/pen/fancy/quill, slot_in_backpack)
-	H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife, slot_belt)
 	H.equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/dufflebag/gangerloot, slot_l_hand)
-	H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/pilgrimhelm/flak/metal, slot_head)
-	H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/scrapforged/duster, slot_wear_suit)
 	H.species.brute_mod = 0.7
 	H.species.weaken_mod = 0.7
 	H.species.stun_mod = 0.7
 	H.species.burn_mod = 0.7
 	H.species.toxins_mod = 0.75
 	H.species.radiation_mod = 0.65
+	H.verbs += /mob/living/proc/set_ambition
 
 /datum/job/deck_scum
 	title = "Deck Scum"
@@ -266,7 +256,7 @@
 		access_solgov_crew, access_radio_serv
 	)
 
-	skill_points = 18
+	skill_points = 24
 	min_skill = list(
 		SKILL_COMBAT = SKILL_BASIC,
 		SKILL_MEDICAL = SKILL_BASIC,
@@ -298,7 +288,6 @@
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/penitent, slot_w_uniform)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/pilgrim/penitent, slot_wear_suit)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/pilgrimcap/pleb, slot_head)
-				H.equip_to_slot_or_store_or_drop(new /obj/item/pen/fancy/quill, slot_in_backpack)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife/glaive, slot_belt)
 				H.species.hunger_factor = DEFAULT_HUNGER_FACTOR * 0.75
 				H.species.weaken_mod = 0.75
@@ -309,23 +298,20 @@
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/pilgrimhelm/flak/metal, slot_head)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/scrapforged/duster, slot_wear_suit)
-				H.equip_to_slot_or_store_or_drop(new /obj/item/pen/fancy/quill, slot_in_backpack)
-				H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife, slot_belt)
+				H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife, slot_in_backpack)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/pistol/stub/talon, slot_in_backpack)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/ammo_magazine/pistol/small/ap, slot_in_backpack)
-		if(current_title == "Pathfinder")
+		else if(current_title == "Pathfinder")
 			to_chat(H,"<span class='danger'><b><font size=4>THE PATHFINDER</font></b></span>")
 			to_chat(H, "<span class='notice'><b><font size=2>As the Pathfinder, you’re tasked with leading the way on deadly planets and through uncharted terrain, scouring every grim corner for threats and relics.</font></b></span>")
-			H.equip_to_slot_or_store_or_drop(new /obj/item/pen/fancy/quill, slot_in_backpack)
-			H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife/trench, slot_belt)
+			H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife/trench, slot_in_backpack)
 			H.equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/dufflebag, slot_l_hand)
 			if(prob(1))
 				H.make_genestealer()
 				to_chat(H, "<span class='notice'><b><font size=2>You are a genestealer bioform, a unique strain of tyranid genestealer capable of rapid transformation. The swarm considers you to be an abomination, but under the guidance of what you believe to be the true hivemind, you will surely succeed where the others have failed. Everything is connected.</font></b></span>")
 			else if(prob(1))
-				to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
-				to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
-				spawn(65 SECONDS)
+				to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN THIRTY SECONDS</font></b></span>")
+				spawn(30 SECONDS)
 				GLOB.cult.add_antagonist(H.mind, ignore_role = 1, do_not_equip = 0)
 				to_chat(H, "<span class='notice'><b><font size=2>You are a heretical cultist loyal to one or more of the Chaos Gods -- unlike the many pretenders you are truly blessed by the warp and can survive encounters that would boil the brains of most mortal men.</font></b></span>")
 			if(prob(10))
@@ -341,20 +327,18 @@
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/pilgrimhelm/flak/metal, slot_head)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/scrapforged/duster, slot_wear_suit)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian/redbl, slot_w_uniform)
-		if(current_title == "Deck Scum")
+		else if(current_title == "Deck Scum")
 			to_chat(H,"<span class='danger'><b><font size=4>DECK SCUM</font></b></span>")
 			to_chat(H, "<span class='notice'><b><font size=2>As Deck Scum, you’re the bottom rung, drifting through whatever job you’re handed next. Your service may be a punishment for a crime, it may be that you were stolen from your world and enslaved, or worse... that you chose this life for yourself. You are a dredge of society now, an outcast, surviving in the underbelly of the Rogue Trader's corvette.</font></b></span>")
-			H.equip_to_slot_or_store_or_drop(new /obj/item/pen/fancy/quill, slot_in_backpack)
-			H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife, slot_belt)
+			H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife, slot_in_backpack)
 			H.species.weaken_mod = 0.75
 			H.species.stun_mod = 0.75
 			if(prob(1))
 				H.make_genestealer()
 				to_chat(H, "<span class='notice'><b><font size=2>You are a genestealer bioform, a unique strain of tyranid genestealer capable of rapid transformation. The swarm considers you to be an abomination, but under the guidance of what you believe to be the true hivemind, you will surely succeed where the others have failed. Everything is connected.</font></b></span>")
 			else if(prob(1))
-				to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
-				to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
-				spawn(65 SECONDS)
+				to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN THIRTY SECONDS</font></b></span>")
+				spawn(30 SECONDS)
 				GLOB.cult.add_antagonist(H.mind, ignore_role = 1, do_not_equip = 0)
 				to_chat(H, "<span class='notice'><b><font size=2>You are a heretical cultist loyal to one or more of the Chaos Gods -- unlike the many pretenders you are truly blessed by the warp and can survive encounters that would boil the brains of most mortal men.</font></b></span>")
 			if(prob(50))
@@ -388,11 +372,10 @@
 				H.equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/hypospray/autoinjector/mindbreaker, slot_in_backpack)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/hypospray/autoinjector/detox, slot_in_backpack)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/hypospray/autoinjector/pain, slot_in_backpack)
-		if(current_title == "Miner")
+		else if(current_title == "Miner")
 			to_chat(H,"<span class='danger'><b><font size=4>THE MINER</font></b></span>")
 			to_chat(H, "<span class='notice'><b><font size=2>As a Miner on the Dauntless, you’re thrown into asteroid fields and dead worlds, forced to strip them clean for the Rogue Trader’s gain. Whether by debt, punishment, or desperation, you’re here for a reason, and the work is brutal. Dust, darkness, and the constant risk of collapse or worse—it’s all part of survival aboard this ship.</font></b></span>")
-			H.equip_to_slot_or_store_or_drop(new /obj/item/pen/fancy/quill, slot_in_backpack)
-			H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife, slot_belt)
+			H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife, slot_in_backpack)
 			H.species.brute_mod = 0.71
 			H.species.weaken_mod = 0.73
 			H.species.stun_mod = 0.73
@@ -400,9 +383,8 @@
 				H.make_genestealer()
 				to_chat(H, "<span class='notice'><b><font size=2>You are a genestealer bioform, a unique strain of tyranid genestealer capable of rapid transformation. The swarm considers you to be an abomination, but under the guidance of what you believe to be the true hivemind, you will surely succeed where the others have failed. Everything is connected.</font></b></span>")
 			else if(prob(1))
-				to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
-				to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
-				spawn(65 SECONDS)
+				to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN THIRTY SECONDS</font></b></span>")
+				spawn(30 SECONDS)
 				GLOB.cult.add_antagonist(H.mind, ignore_role = 1, do_not_equip = 0)
 				to_chat(H, "<span class='notice'><b><font size=2>You are a heretical cultist loyal to one or more of the Chaos Gods -- unlike the many pretenders you are truly blessed by the warp and can survive encounters that would boil the brains of most mortal men.</font></b></span>")
 			if(prob(50))

@@ -46,7 +46,7 @@
 #define ARMED_ROLES list(/datum/job/rogue_trader, /datum/job/seneschal, /datum/job/rd, /datum/job/magos_biologis, /datum/job/magos_explorator, /datum/job/guard_captain, /datum/job/sea, /datum/job/enforcer, /datum/job/enforcer_sergeant, /datum/job/guardsman, /datum/job/merchant, /datum/job/submap/scavver_noble, /datum/job/submap/scavver_crew, /datum/job/submap/scavver_engineer)
 
 //For jobs that spawn with armor in their lockers
-#define ARMORED_ROLES list(/datum/job/rogue_trader, /datum/job/seneschal, /datum/job/rd, /datum/job/magos_biologis, /datum/job/magos_explorator, /datum/job/guard_captain, /datum/job/noble_guest, /datum/job/sea, /datum/job/enforcer, /datum/job/enforcer_sergeant, /datum/job/guardsman, /datum/job/merchant, /datum/job/submap/tauscoutship_crew, /datum/job/submap/tauscoutship_crew/leader, /datum/job/submap/scavver_noble, /datum/job/submap/scavver_crew, /datum/job/submap/scavver_engineer)
+#define ARMORED_ROLES list(/datum/job/rogue_trader, /datum/job/seneschal, /datum/job/rd, /datum/job/magos_biologis, /datum/job/magos_explorator, /datum/job/guard_captain, /datum/job/noble_guest, /datum/job/sea, /datum/job/enforcer, /datum/job/enforcer_sergeant, /datum/job/guardsman, /datum/job/merchant, /datum/job/submap/tauscoutship_crew, /datum/job/submap/tauscoutship_leader, /datum/job/submap/scavver_noble, /datum/job/submap/scavver_crew, /datum/job/submap/scavver_engineer)
 
 #define UNIFORMED_BRANCHES list(/datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet)
 

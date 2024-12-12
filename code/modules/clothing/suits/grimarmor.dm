@@ -466,7 +466,7 @@
 	item_state = "i-Stormtrooper Armor"
 	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
-	slowdown_general = 0.10
+	slowdown_general = 0.09
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+120
 	armor = list(
@@ -510,7 +510,7 @@
 	item_state = "kasrkinarmor"
 	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
-	slowdown_general = 0.10
+	slowdown_general = 0.09
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+120
 	armor = list(
@@ -553,7 +553,7 @@
 	item_state = "MarshalArmor"
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
-	slowdown_general = 0.11 // Better slowdown then standard modular armors.
+	slowdown_general = 0.10 // Better slowdown then standard modular armors.
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+400
 	armor = list(
@@ -568,14 +568,14 @@
 
 /obj/item/clothing/suit/armor/enforcer2
 	name = "enforcer's patrol armour"
-	desc = "The flak armor worn by a Magistratum Enforcer. Heavy and robust, its distinctive blue design provides superior protection against explosions and small arms fire in urban combat."
+	desc = "The flak armor worn by a Void Enforcer. Heavy and robust, its distinctive blue design provides superior protection against explosions and small arms fire in urban combat."
 	icon_state = "PalaniteArmor"
-	item_state = "PalaniteArmour"
+	item_state = "PalaniteArmor"
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	max_pressure_protection = VOIDSUIT_MAX_PRESSURE
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+300
-	slowdown_general = 0.09
+	slowdown_general = 0.08
 	armor = list(
 		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_FLAK+1,
@@ -588,7 +588,7 @@
 
 /obj/item/clothing/suit/armor/grim/enforcer
 	name = "enforcer patrol jacket"
-	desc = "The lightweight flak jacket worn by a Messina Enforcer. It’s a low-profile, black coat designed to provide moderate protection against blasts and small arms fire while maintaining mobility."
+	desc = "The lightweight flak jacket worn by a Enforcer. It’s a low-profile, black coat designed to provide moderate protection against blasts and small arms fire while maintaining mobility."
 	icon_state = "enforcercoat"
 	item_state = "enforcercoat"
 	body_parts_covered = LEGS|ARMS // Low profile armor but still highly protective.
@@ -608,7 +608,7 @@
 
 /obj/item/clothing/suit/armor/grim/enforcer/sergeant
 	name = "enforcer's patrol jacket"
-	desc = "A flak jacket worn by Messina Enforcer's. Black and streamlined, it provides mobility while offering enhanced protection against blasts and small arms fire."
+	desc = "A flak jacket worn by Enforcer's. Black and streamlined, it provides mobility while offering enhanced protection against blasts and small arms fire."
 	icon_state = "enforcercoat"
 	item_state = "enforcercoat"
 	body_parts_covered = LEGS|ARMS
@@ -633,7 +633,7 @@
 	item_state = "Judge"
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
-	slowdown_general = 0.1 // Hard armor sets get more slowdown for having equalized protection. They are fully superior to traditional armors with no weaknesses.
+	slowdown_general = 0.09 // Hard armor sets get more slowdown for having equalized protection. They are fully superior to traditional armors with no weaknesses.
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+500
 	armor = list(
@@ -985,7 +985,7 @@
 	max_pressure_protection = RIG_MAX_PRESSURE
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +1600 // Really highlights why servitors are used by the mechanicus.
-	slowdown_general = 0.4
+	slowdown_general = 0.21
 	armor = list(
 		melee = ARMOR_MELEE_CARAPACE,
 		bullet = ARMOR_BALLISTIC_POWER_ARMOUR, // In the books killing a servitor is like trying to blow up a chimera.
@@ -1091,7 +1091,7 @@
 		energy = ARMOR_ENERGY_RESISTANT
 		)
 	flags_inv = CLOTHING_BULKY
-	slowdown_general = 0.1
+	slowdown_general = 0.09
 	siemens_coefficient = 0
 
 /obj/item/clothing/suit/armor/laserproof/handle_shield(mob/user, damage, atom/damage_source = null, mob/attacker = null, def_zone = null, attack_text = "the attack")

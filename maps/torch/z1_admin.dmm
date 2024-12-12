@@ -3700,10 +3700,10 @@
 /obj/item/clothing/head/helmet/ert/security,
 /obj/item/clothing/head/helmet/ert/security,
 /obj/item/clothing/head/helmet/ert/security,
-/obj/item/storage/backpack/ert/security,
-/obj/item/storage/backpack/ert/security,
-/obj/item/storage/backpack/ert/security,
-/obj/item/storage/backpack/ert/security,
+/obj/item/storage/backpack/tau/security,
+/obj/item/storage/backpack/tau/security,
+/obj/item/storage/backpack/tau/security,
+/obj/item/storage/backpack/tau/security,
 /turf/unsimulated/floor{
 	dir = 1;
 	icon_state = "vault"

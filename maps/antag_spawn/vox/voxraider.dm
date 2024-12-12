@@ -21,7 +21,6 @@
 	shuttle = "Alien Interceptor"
 	fore_dir = WEST
 	vessel_size = SHIP_SIZE_SMALL
-	vessel_mass = 2500 //Xenos alloys are lightweight or smthn. Idk.
 
 /datum/shuttle/autodock/overmap/vox_raider
 	name = "Alien Interceptor"

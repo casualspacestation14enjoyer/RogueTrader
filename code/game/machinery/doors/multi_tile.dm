@@ -131,7 +131,7 @@
 
 /obj/machinery/door/airlock/multi_tile/virology
 	door_color = COLOR_WHITE
-	stripe_color = COLOR_GREEN
+	stripe_color = COLOR_BEASTY_BROWN
 
 /obj/machinery/door/airlock/multi_tile/mining
 	name = "Mining Airlock"
@@ -158,7 +158,7 @@
 	stripe_color = COLOR_AMBER
 
 /obj/machinery/door/airlock/multi_tile/civilian
-	stripe_color = COLOR_CIVIE_GREEN
+	stripe_color = COLOR_BEASTY_BROWN
 
 /obj/machinery/door/airlock/multi_tile/freezer
 	name = "Freezer Airlock"
@@ -188,7 +188,7 @@
 
 /obj/machinery/door/airlock/multi_tile/glass/virology
 	door_color = COLOR_WHITE
-	stripe_color = COLOR_GREEN
+	stripe_color = COLOR_BEASTY_BROWN
 
 /obj/machinery/door/airlock/multi_tile/glass/mining
 	door_color = COLOR_PALE_ORANGE
@@ -218,4 +218,4 @@
 	stripe_color = COLOR_AMBER
 
 /obj/machinery/door/airlock/multi_tile/glass/civilian
-	stripe_color = COLOR_CIVIE_GREEN
+	stripe_color = COLOR_BEASTY_BROWN

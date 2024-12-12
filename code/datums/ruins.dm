@@ -5,8 +5,8 @@
 	How is there a wooden container filled with 18th century coinage in the middle of a lavawracked hellscape? \
 	It is clearly a mystery."
 
-	var/spawn_weight = 1
-	var/spawn_cost = 0
+	var/spawn_weight = 2
+	var/spawn_cost = 1
 	var/player_cost = 0
 
 	var/prefix = null

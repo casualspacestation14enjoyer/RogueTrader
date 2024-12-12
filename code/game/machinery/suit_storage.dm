@@ -24,7 +24,7 @@
 	anchored = TRUE
 	density = TRUE
 	idle_power_usage = 50
-	active_power_usage = 200
+	active_power_usage = 100
 	interact_offline = 1
 	req_access = list()
 

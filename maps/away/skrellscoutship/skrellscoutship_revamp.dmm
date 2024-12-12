@@ -165,7 +165,8 @@
 /area/ship/tauscoutship/wings/starboard)
 "aJ" = (
 /obj/structure/window/reinforced{
-	dir = 1
+	dir = 1;
+	color = "grey"
 	},
 /turf/simulated/floor/tiled/tau,
 /area/ship/tauscoutship/wings/starboard)
@@ -174,7 +175,7 @@
 /obj/machinery/alarm/tau{
 	pixel_y = 22
 	},
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /obj/machinery/recharger/wallcharger{
 	pixel_x = -26
 	},
@@ -182,7 +183,7 @@
 /area/ship/tauscoutshuttle)
 "aO" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /obj/machinery/recharger/wallcharger{
 	pixel_x = 26
 	},
@@ -210,7 +211,7 @@
 /area/ship/tauscoutshuttle)
 "aU" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /turf/simulated/floor/tiled/tau,
 /area/ship/tauscoutshuttle)
 "aV" = (
@@ -240,6 +241,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/tau,
 /area/ship/tauscoutshuttle)
 "ba" = (
@@ -248,6 +254,11 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/tau,
 /area/ship/tauscoutshuttle)
@@ -436,8 +447,17 @@
 /turf/simulated/floor/plating,
 /area/ship/tauscoutship/maintenance/power)
 "bH" = (
+/obj/machinery/light/tau{
+	dir = 1;
+	icon_state = "tube1"
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/tau/red,
-/area/ship/tauscoutship/externalwing/starboard)
+/area/ship/tauscoutship/command/bridge)
 "bI" = (
 /obj/structure/cable/yellow{
 	d1 = 1;
@@ -454,6 +474,11 @@
 	name = "Shuttle Storage"
 	},
 /obj/machinery/door/firedoor/autoset,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/ship/tauscoutshuttle)
 "bN" = (
@@ -606,7 +631,7 @@
 /obj/machinery/alarm/tau{
 	pixel_y = 14
 	},
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /obj/item/storage/toolbox/electrical{
 	pixel_y = 8
 	},
@@ -701,6 +726,11 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
 	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
 /turf/simulated/floor/tiled/tau,
 /area/ship/tauscoutshuttle)
 "cE" = (
@@ -712,6 +742,11 @@
 	},
 /obj/machinery/door/firedoor/autoset,
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/ship/tauscoutshuttle)
 "cF" = (
@@ -722,6 +757,11 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/universal{
 	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/tiled/tau,
 /area/ship/tauscoutshuttle)
@@ -807,7 +847,6 @@
 /turf/simulated/floor/tiled/tau/white,
 /area/ship/tauscoutship/crew/medbay)
 "da" = (
-/obj/machinery/power/shield_generator,
 /obj/structure/cable{
 	d2 = 4;
 	icon_state = "0-4"
@@ -863,11 +902,11 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
-/obj/submap_landmark/spawnpoint/tauscoutship,
 /obj/item/device/radio/intercom/map_preset/tauscoutship{
 	dir = 4;
 	pixel_x = -24
 	},
+/obj/submap_landmark/spawnpoint/tauscoutship,
 /turf/simulated/floor/tiled/tau/blue,
 /area/ship/tauscoutship/crew/quarters)
 "di" = (
@@ -891,6 +930,7 @@
 /obj/machinery/alarm/tau{
 	pixel_y = 14
 	},
+/obj/submap_landmark/spawnpoint/tauscoutship/scoutvet,
 /turf/simulated/floor/tiled/tau/blue,
 /area/ship/tauscoutship/crew/quarters)
 "dk" = (
@@ -993,7 +1033,7 @@
 /area/ship/tauscoutship/maintenance/power)
 "dy" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /turf/simulated/floor/tiled/tau,
 /area/ship/tauscoutshuttle)
 "dA" = (
@@ -1011,7 +1051,6 @@
 /obj/structure/bed/padded,
 /obj/structure/curtain/open/bed,
 /obj/item/bedsheet/hos,
-/obj/submap_landmark/spawnpoint/tauscoutship,
 /turf/simulated/floor/tiled/tau/blue,
 /area/ship/tauscoutship/crew/quarters)
 "dD" = (
@@ -1115,7 +1154,7 @@
 /obj/machinery/light/tau{
 	dir = 8
 	},
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /obj/item/extinguisher,
 /obj/item/extinguisher,
 /obj/machinery/light/tau{
@@ -1218,7 +1257,6 @@
 	},
 /obj/structure/curtain/open/bed,
 /obj/item/bedsheet/hos,
-/obj/submap_landmark/spawnpoint/tauscoutship,
 /turf/simulated/floor/tiled/tau/blue,
 /area/ship/tauscoutship/crew/quarters)
 "en" = (
@@ -1271,6 +1309,14 @@
 "es" = (
 /obj/machinery/alarm/tau{
 	pixel_y = 14
+	},
+/obj/structure/table/rack/dark,
+/obj/item/clothing/suit/armor/tau/breacher{
+	pixel_y = 4
+	},
+/obj/item/clothing/head/helmet/tau/breacher{
+	pixel_x = 4;
+	pixel_y = -5
 	},
 /turf/simulated/floor/tiled/tau/green,
 /area/ship/tauscoutship/command/armory)
@@ -1347,33 +1393,43 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
+/obj/structure/table/rack/dark,
+/obj/item/gun/energy/tau/pulsepistol,
+/obj/item/gun/energy/tau/pulsepistol,
+/obj/random/loot/raresidearmbundle,
+/obj/structure/window/reinforced{
+	dir = 1;
+	color = "grey"
+	},
 /turf/simulated/floor/tiled/tau/green,
 /area/ship/tauscoutship/command/armory)
 "eD" = (
-/obj/structure/window/boron_reinforced{
-	dir = 1
-	},
-/obj/structure/table/rack,
-/obj/item/device/binoculars,
+/obj/structure/table/rack/dark,
 /obj/item/device/binoculars,
 /obj/item/device/binoculars,
 /obj/structure/window/boron_reinforced{
 	dir = 8
 	},
 /obj/floor_decal/industrial/outline/red,
+/obj/random/loot/randomsupply/engineering,
+/obj/random/loot/randomsupply/tech,
+/obj/random/loot/arminserts,
+/obj/random/loot/leginserts,
+/obj/structure/window/reinforced{
+	dir = 1;
+	color = "grey"
+	},
 /turf/simulated/floor/tiled/tau/green,
 /area/ship/tauscoutship/command/armory)
 "eE" = (
 /obj/machinery/door/window/brigdoor/northleft{
-	name = "War Gear locker"
+	name = "War Gear locker";
+	color = "grey"
 	},
 /turf/simulated/floor/tiled/tau/green,
 /area/ship/tauscoutship/command/armory)
 "eF" = (
-/obj/structure/window/boron_reinforced{
-	dir = 1
-	},
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /obj/floor_decal/industrial/outline/red,
 /obj/item/device/gps,
 /obj/item/device/gps,
@@ -1389,6 +1445,12 @@
 	},
 /obj/item/device/scanner/gas{
 	pixel_x = 8
+	},
+/obj/random/loot/raregunsenergy,
+/obj/random/loot/swordmelee,
+/obj/structure/window/reinforced{
+	dir = 1;
+	color = "grey"
 	},
 /turf/simulated/floor/tiled/tau/green,
 /area/ship/tauscoutship/command/armory)
@@ -1405,17 +1467,20 @@
 /turf/simulated/floor/tiled/tau/green,
 /area/ship/tauscoutship/command/armory)
 "eJ" = (
-/obj/structure/window/boron_reinforced{
-	dir = 1
-	},
-/obj/structure/window/boron_reinforced{
-	dir = 8
+/obj/structure/window/reinforced{
+	dir = 8;
+	color = "grey"
 	},
 /turf/simulated/floor/tiled/tau/green,
 /area/ship/tauscoutship/command/armory)
 "eL" = (
-/obj/structure/window/boron_reinforced{
-	dir = 1
+/obj/structure/table/rack/dark,
+/obj/random/loot/lootartifacts,
+/obj/random/loot/lootcontraband,
+/obj/random/loot/rigloot,
+/obj/structure/window/reinforced{
+	dir = 1;
+	color = "grey"
 	},
 /turf/simulated/floor/tiled/tau/green,
 /area/ship/tauscoutship/command/armory)
@@ -1424,51 +1489,41 @@
 /turf/simulated/floor/tiled/tau/green,
 /area/ship/tauscoutship/command/armory)
 "eP" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /obj/item/tank/jetpack/carbondioxide,
 /obj/item/tank/jetpack/carbondioxide,
 /obj/item/tank/jetpack/carbondioxide,
 /turf/simulated/floor/tiled/tau/green,
 /area/ship/tauscoutship/command/armory)
 "eQ" = (
-/obj/structure/table/rack,
-/obj/item/gun/energy/tau/pulsepistol,
-/obj/item/gun/energy/tau/pulsepistol,
-/obj/item/gun/energy/tau/pulsepistol,
-/obj/item/gun/energy/tau/pulsepistol,
-/obj/item/gun/energy/tau/pulsepistol,
-/obj/item/gun/energy/tau/pulsepistol,
-/obj/structure/window/boron_reinforced{
-	dir = 8
-	},
 /obj/floor_decal/industrial/outline/red,
+/obj/structure/table/warhammer/shrine,
+/obj/item/gun/energy/tau/ionrifle,
+/obj/structure/window/reinforced{
+	dir = 8;
+	color = "grey"
+	},
 /turf/simulated/floor/tiled/tau/green,
 /area/ship/tauscoutship/command/armory)
 "eS" = (
-/obj/structure/table/rack,
-/obj/item/melee/energy/machete,
-/obj/item/melee/energy/machete,
-/obj/item/melee/energy/machete,
-/obj/item/melee/energy/machete,
-/obj/item/melee/energy/machete,
-/obj/item/melee/energy/machete,
 /obj/floor_decal/industrial/outline/red,
+/obj/structure/table/warhammer/shrine,
+/obj/item/gun/energy/tau/pulserifle,
+/obj/item/cell/device/high/xenos,
 /turf/simulated/floor/tiled/tau/green,
 /area/ship/tauscoutship/command/armory)
 "eT" = (
-/obj/structure/table/rack,
-/obj/item/gun/energy/tau/pulserifle,
-/obj/item/gun/energy/tau/pulserifle,
 /obj/item/gun/energy/tau/pulserifle,
 /obj/floor_decal/industrial/outline/red,
+/obj/structure/table/warhammer/shrine,
+/obj/item/cell/device/high/xenos,
 /turf/simulated/floor/tiled/tau/green,
 /area/ship/tauscoutship/command/armory)
 "eU" = (
-/obj/structure/table/rack,
-/obj/item/gun/energy/tau/railgun,
-/obj/item/gun/energy/tau/railgun,
-/obj/item/gun/energy/tau/railgun,
+/obj/structure/table/rack/dark,
 /obj/floor_decal/industrial/outline/red,
+/obj/item/cell/device/high/xenos,
+/obj/item/gun/energy/tau/railgun,
 /turf/simulated/floor/tiled/tau/green,
 /area/ship/tauscoutship/command/armory)
 "eV" = (
@@ -1573,19 +1628,15 @@
 /turf/simulated/floor/tiled/tau,
 /area/ship/tauscoutship/dock)
 "fs" = (
-/obj/structure/table/rack,
-/obj/item/tank/jetpack/carbondioxide,
-/obj/item/tank/jetpack/carbondioxide,
-/obj/item/tank/jetpack/carbondioxide,
-/obj/item/tank/jetpack/carbondioxide,
-/obj/item/tank/jetpack/carbondioxide,
-/turf/simulated/floor/tiled/tau/green,
-/area/ship/tauscoutship/robotics)
+/obj/machinery/door/airlock/command,
+/obj/machinery/door/firedoor/autoset,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/ship/tauscoutship/command/bridge)
 "ft" = (
 /obj/machinery/alarm/tau{
 	pixel_y = 14
 	},
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /obj/item/storage/box/lights/tubes/tau{
 	pixel_x = 8;
 	pixel_y = -5
@@ -1618,7 +1669,7 @@
 /turf/simulated/floor/tiled/tau,
 /area/ship/tauscoutship/dock)
 "fw" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /obj/item/extinguisher,
 /obj/item/extinguisher,
 /obj/item/extinguisher,
@@ -1636,7 +1687,7 @@
 /turf/simulated/floor/tiled/tau/green,
 /area/ship/tauscoutship/robotics)
 "fx" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /obj/item/storage/toolbox/electrical{
 	pixel_y = 5
 	},
@@ -1702,7 +1753,7 @@
 /turf/simulated/floor/reinforced,
 /area/ship/tauscoutship/maintenance/atmos)
 "fH" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /obj/item/rcd,
 /obj/item/rcd_ammo,
 /obj/item/rcd_ammo,
@@ -2154,15 +2205,14 @@
 /turf/simulated/floor/tiled/tau,
 /area/ship/tauscoutship/wings/starboard)
 "gP" = (
-/obj/structure/table/rack,
 /obj/machinery/light/tau,
 /obj/item/storage/belt/holster/tau,
 /obj/item/storage/belt/holster/tau,
 /obj/item/storage/belt/holster/tau,
-/obj/item/storage/belt/holster/tau,
-/obj/item/storage/belt/holster/tau,
-/obj/item/storage/belt/holster/tau,
 /obj/floor_decal/industrial/outline/red,
+/obj/item/material/twohanded/ravenor/knife/tau,
+/obj/item/material/twohanded/ravenor/knife/tau,
+/obj/structure/table/warhammer/shrine,
 /turf/simulated/floor/tiled/tau/green,
 /area/ship/tauscoutship/command/armory)
 "gQ" = (
@@ -2280,7 +2330,8 @@
 /obj/item/device/integrated_circuit_printer,
 /obj/item/stack/cable_coil/yellow,
 /obj/structure/window/reinforced{
-	dir = 1
+	dir = 1;
+	color = "grey"
 	},
 /turf/simulated/floor/tiled/tau/orange,
 /area/ship/tauscoutship/wings/starboard)
@@ -2349,7 +2400,7 @@
 /turf/simulated/floor/tiled/tau/red,
 /area/ship/tauscoutship/crew/labs)
 "hr" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /obj/item/stock_parts/capacitor/super,
 /obj/item/stock_parts/capacitor/super,
 /obj/item/stock_parts/capacitor/super,
@@ -2442,6 +2493,11 @@
 /area/ship/tauscoutship/command/bridge)
 "hF" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled/tau/red,
 /area/ship/tauscoutship/command/bridge)
 "hI" = (
@@ -2477,7 +2533,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /obj/item/device/taperecorder,
 /obj/item/device/camera,
 /obj/item/storage/briefcase/crimekit,
@@ -2487,7 +2543,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /obj/item/storage/belt/archaeology,
 /obj/item/storage/belt/archaeology,
 /obj/item/pickaxe/xeno/drill/plasma,
@@ -2685,6 +2741,11 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
 /turf/simulated/floor/tiled/tau/red,
 /area/ship/tauscoutship/command/bridge)
 "ii" = (
@@ -2715,6 +2776,11 @@
 "ip" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled/tau/red,
 /area/ship/tauscoutship/command/bridge)
@@ -3050,7 +3116,7 @@
 /turf/simulated/floor/tiled/tau/blue,
 /area/ship/tauscoutship/crew/quarters)
 "jo" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /obj/item/tank/oxygen,
 /obj/item/tank/oxygen,
 /obj/item/tank/oxygen,
@@ -3085,7 +3151,8 @@
 	dir = 8
 	},
 /obj/structure/window/reinforced{
-	dir = 1
+	dir = 1;
+	color = "grey"
 	},
 /turf/simulated/floor/tiled/tau/blue,
 /area/ship/tauscoutship/command/bridge)
@@ -3140,7 +3207,7 @@
 /turf/simulated/floor/tiled/tau/green,
 /area/ship/tauscoutship/robotics)
 "jD" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /obj/structure/window/basic{
 	dir = 8
 	},
@@ -3153,7 +3220,7 @@
 /turf/simulated/floor/tiled/tau/green,
 /area/ship/tauscoutship/robotics)
 "jE" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /obj/item/stack/material/steel/fifty,
 /obj/item/stack/material/steel/fifty,
 /obj/item/stack/material/steel/fifty,
@@ -3162,7 +3229,7 @@
 /turf/simulated/floor/tiled/tau/green,
 /area/ship/tauscoutship/robotics)
 "jF" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /obj/structure/window/basic,
 /obj/structure/window/basic{
 	dir = 8
@@ -3173,7 +3240,7 @@
 /turf/simulated/floor/tiled/tau/green,
 /area/ship/tauscoutship/robotics)
 "jG" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /obj/floor_decal/industrial/outline/yellow,
 /obj/item/stack/material/glass/reinforced/fifty,
 /obj/item/stack/material/glass/reinforced/fifty,
@@ -3199,17 +3266,17 @@
 /turf/simulated/floor/tiled/tau/green,
 /area/ship/tauscoutship/robotics)
 "jP" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /obj/machinery/light/tau{
 	dir = 8
 	},
-/obj/item/storage/belt/holster/tau,
-/obj/item/storage/belt/holster/tau,
-/obj/item/storage/belt/holster/tau,
-/obj/item/storage/belt/holster/tau,
-/obj/item/storage/belt/holster/tau,
-/obj/item/storage/belt/holster/tau,
 /obj/floor_decal/industrial/outline/red,
+/obj/item/rig/hazard,
+/obj/item/rig_module/electrowarfare_suite,
+/obj/item/rig_module/personal_shield,
+/obj/item/rig_module/vision/multi,
+/obj/item/rig_module/datajack,
+/obj/item/rig_module/ai_container,
 /turf/simulated/floor/tiled/tau/green,
 /area/ship/tauscoutship/robotics)
 "jQ" = (
@@ -3219,7 +3286,7 @@
 /turf/simulated/floor/tiled/tau/green,
 /area/ship/tauscoutship/robotics)
 "jU" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /obj/structure/window/basic,
 /obj/floor_decal/industrial/outline/yellow,
 /obj/item/stack/material/glass/boron_reinforced/ten,
@@ -3230,7 +3297,7 @@
 /turf/simulated/floor/tiled/tau/green,
 /area/ship/tauscoutship/robotics)
 "jV" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /obj/structure/window/basic,
 /obj/item/stack/material/titanium/fifty,
 /obj/item/stack/material/titanium/fifty,
@@ -3238,18 +3305,13 @@
 /turf/simulated/floor/tiled/tau/green,
 /area/ship/tauscoutship/robotics)
 "jW" = (
-/obj/structure/table/rack,
-/obj/item/magnetic_ammo/skrell/slug,
-/obj/item/magnetic_ammo/skrell/slug,
-/obj/item/magnetic_ammo/skrell/slug,
-/obj/item/magnetic_ammo/skrell/slug,
-/obj/item/magnetic_ammo/skrell/slug,
-/obj/item/magnetic_ammo/skrell/slug,
-/obj/item/magnetic_ammo/skrell/slug,
-/obj/item/magnetic_ammo/skrell/slug,
-/obj/item/magnetic_ammo/skrell/slug,
-/obj/item/magnetic_ammo/skrell/slug,
+/obj/structure/table/rack/dark,
 /obj/floor_decal/industrial/outline/red,
+/obj/item/rig/hazmat,
+/obj/item/rig_module/mounted/energy/energy_blade,
+/obj/item/rig_module/vision/meson,
+/obj/item/rig_module/device/multitool/skrell,
+/obj/item/rig_module/device/clustertool/skrell,
 /turf/simulated/floor/tiled/tau/green,
 /area/ship/tauscoutship/robotics)
 "ka" = (
@@ -3277,38 +3339,27 @@
 /turf/simulated/floor/tiled/tau/white,
 /area/ship/tauscoutship/crew/medbay)
 "kd" = (
-/obj/structure/table/rack,
-/obj/item/gun/energy/tau/railgun,
-/obj/item/gun/energy/tau/railgun,
-/obj/item/gun/energy/tau/railgun,
-/obj/floor_decal/industrial/outline/red,
-/turf/simulated/floor/tiled/tau/green,
-/area/ship/tauscoutship/robotics)
+/obj/paint/black,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/wall/r_wall,
+/area/ship/tauscoutship/command/bridge)
 "ke" = (
-/obj/structure/table/rack,
-/obj/item/magnetic_ammo/skrell,
-/obj/item/magnetic_ammo/skrell,
-/obj/item/magnetic_ammo/skrell,
-/obj/item/magnetic_ammo/skrell,
-/obj/item/magnetic_ammo/skrell,
-/obj/item/magnetic_ammo/skrell,
-/obj/item/magnetic_ammo/skrell,
-/obj/item/magnetic_ammo/skrell,
-/obj/item/magnetic_ammo/skrell,
-/obj/item/magnetic_ammo/skrell,
+/obj/structure/table/rack/dark,
 /obj/floor_decal/industrial/outline/red,
+/obj/item/tank/jetpack/carbondioxide,
 /turf/simulated/floor/tiled/tau/green,
 /area/ship/tauscoutship/robotics)
 "kh" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /obj/structure/window/boron_reinforced{
 	dir = 4
 	},
-/obj/item/melee/energy/machete,
-/obj/item/melee/energy/machete,
-/obj/item/melee/energy/machete,
-/obj/item/melee/energy/machete,
 /obj/floor_decal/industrial/outline/red,
+/obj/item/tank/jetpack/carbondioxide,
 /turf/simulated/floor/tiled/tau/green,
 /area/ship/tauscoutship/robotics)
 "kj" = (
@@ -3317,7 +3368,7 @@
 /turf/simulated/floor/tiled/tau/green,
 /area/ship/tauscoutship/robotics)
 "km" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /turf/simulated/floor/tiled/tau/green,
 /area/ship/tauscoutship/robotics)
 "kn" = (
@@ -3505,8 +3556,15 @@
 /turf/simulated/floor/tiled/tau,
 /area/ship/tauscoutship/corridor)
 "kE" = (
-/turf/simulated/floor/tiled/tau/red,
-/area/ship/tauscoutship/externalwing/port)
+/obj/machinery/pointdefense{
+	initial_id_tag = "Salvage_Gantry"
+	},
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/turf/simulated/floor,
+/area/ship/tauscoutship/command/bridge)
 "kF" = (
 /obj/machinery/ion_engine{
 	dir = 8
@@ -3532,6 +3590,11 @@
 /area/ship/tauscoutship/hangar)
 "kI" = (
 /obj/overmap/visitable/ship/landable/tauscoutshuttle,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/tau,
 /area/ship/tauscoutshuttle)
 "kK" = (
@@ -3568,6 +3631,10 @@
 	pixel_y = 4
 	},
 /obj/item/pen,
+/obj/item/storage/toolbox/emergency,
+/obj/item/device/binoculars{
+	pixel_y = 9
+	},
 /turf/simulated/floor/tiled/tau/red,
 /area/ship/tauscoutship/command/bridge)
 "kZ" = (
@@ -3581,6 +3648,10 @@
 	default_hailing = 1;
 	dir = 1;
 	pixel_y = -32
+	},
+/mob/living/bot/medbot{
+	mob_size = 40;
+	name = "Anchored Medibot"
 	},
 /turf/simulated/floor/tiled/tau,
 /area/ship/tauscoutshuttle)
@@ -3768,7 +3839,7 @@
 /turf/simulated/floor/tiled/tau,
 /area/ship/tauscoutshuttle)
 "nG" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /obj/item/storage/box/lights/tubes/tau,
 /obj/item/storage/box/lights/tubes/tau,
 /turf/simulated/floor/tiled/tau/green,
@@ -3917,6 +3988,9 @@
 	},
 /turf/simulated/floor/tiled/tau,
 /area/ship/tauscoutship/corridor)
+"qe" = (
+/turf/simulated/floor/tiled/tau/red,
+/area/ship/tauscoutship/crew/quarters)
 "qm" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -3956,7 +4030,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/ship/tauscoutship/crew/quarters)
 "qC" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /obj/item/inflatable_dispenser,
 /obj/item/inflatable_dispenser,
 /obj/item/inflatable_dispenser,
@@ -4034,7 +4108,7 @@
 /turf/simulated/floor/tiled/tau/green,
 /area/ship/tauscoutship/robotics)
 "rz" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /obj/structure/window/basic,
 /obj/floor_decal/industrial/outline/yellow,
 /obj/item/stack/material/plastic/fifty,
@@ -4198,7 +4272,7 @@
 /area/ship/tauscoutship/dock)
 "uZ" = (
 /obj/machinery/light/tau,
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /obj/item/rig/skrell/sec{
 	pixel_x = -7
 	},
@@ -4217,23 +4291,13 @@
 /turf/simulated/floor/plating,
 /area/ship/tauscoutship/maintenance/power)
 "vh" = (
-/obj/structure/table/rack,
-/obj/item/magnetic_ammo/skrell,
-/obj/item/magnetic_ammo/skrell,
-/obj/item/magnetic_ammo/skrell,
-/obj/item/magnetic_ammo/skrell,
-/obj/item/magnetic_ammo/skrell,
-/obj/item/magnetic_ammo/skrell,
+/obj/structure/table/rack/dark,
 /obj/machinery/light/tau{
 	dir = 4
 	},
 /obj/floor_decal/industrial/outline/red,
-/obj/item/magnetic_ammo/skrell/slug,
-/obj/item/magnetic_ammo/skrell/slug,
-/obj/item/magnetic_ammo/skrell/slug,
-/obj/item/magnetic_ammo/skrell/slug,
-/obj/item/magnetic_ammo/skrell/slug,
-/obj/item/magnetic_ammo/skrell/slug,
+/obj/item/cell/device/high/xenos,
+/obj/item/gun/energy/tau/railgun,
 /turf/simulated/floor/tiled/tau/green,
 /area/ship/tauscoutship/command/armory)
 "vI" = (
@@ -4320,6 +4384,11 @@
 	dir = 1;
 	pixel_y = -32
 	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
 /turf/simulated/floor/tiled/tau/red,
 /area/ship/tauscoutship/command/bridge)
 "xa" = (
@@ -4381,7 +4450,6 @@
 /area/ship/tauscoutship/hangar)
 "yc" = (
 /obj/floor_decal/industrial/outline/grey,
-/obj/machinery/suit_storage_unit/skrell/black,
 /turf/simulated/floor/tiled/tau/green,
 /area/ship/tauscoutship/robotics)
 "ye" = (
@@ -4418,10 +4486,16 @@
 /turf/simulated/floor/carpet/blue,
 /area/ship/tauscoutship/wings/port)
 "ys" = (
-/obj/structure/table/glass,
-/obj/item/storage/toolbox/emergency,
-/obj/item/device/binoculars{
-	pixel_y = 9
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	desc = "A flexible superconducting cable for heavy-duty power transfer. It's been labeled 'chaos reigns'.";
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/tiled/tau/red,
 /area/ship/tauscoutship/command/bridge)
@@ -4430,29 +4504,26 @@
 /turf/simulated/wall/r_wall,
 /area/ship/tauscoutship/command/bridge)
 "yF" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /obj/structure/window/boron_reinforced{
 	dir = 4
 	},
-/obj/item/gun/energy/tau/pulsepistol,
-/obj/item/gun/energy/tau/pulsepistol,
-/obj/item/gun/energy/tau/pulsepistol,
-/obj/item/gun/energy/tau/pulsepistol,
-/obj/item/gun/energy/tau/pulsepistol,
 /obj/floor_decal/industrial/outline/red,
+/obj/item/rig/skrell,
+/obj/item/rig_module/grenade_launcher,
+/obj/item/rig_module/vision/nvg,
+/obj/item/rig_module/device/defib,
+/obj/item/rig_module/device/cable_coil/skrell,
+/obj/item/rig_module/chem_dispenser/skrell,
 /turf/simulated/floor/tiled/tau/green,
 /area/ship/tauscoutship/robotics)
 "yN" = (
-/obj/structure/table/rack,
-/obj/item/gun/energy/tau/pulserifle,
-/obj/item/gun/energy/tau/pulserifle,
-/obj/item/gun/energy/tau/pulserifle,
-/obj/structure/window/boron_reinforced{
-	dir = 4
+/obj/machinery/pointdefense{
+	initial_id_tag = "Salvage_Gantry"
 	},
-/obj/floor_decal/industrial/outline/red,
-/turf/simulated/floor/tiled/tau/green,
-/area/ship/tauscoutship/robotics)
+/obj/structure/cable,
+/turf/simulated/floor,
+/area/ship/tauscoutship/command/bridge)
 "yV" = (
 /obj/wallframe_spawn/reinforced_phoron/hull,
 /obj/paint/black,
@@ -4504,7 +4575,6 @@
 /obj/machinery/light/tau{
 	dir = 1
 	},
-/obj/submap_landmark/spawnpoint/tauscoutship/leader,
 /turf/simulated/floor/tiled/tau/blue,
 /area/ship/tauscoutship/crew/quarters)
 "zZ" = (
@@ -4585,10 +4655,13 @@
 /turf/simulated/floor/tiled/tau/orange,
 /area/ship/tauscoutship/maintenance/atmos)
 "AQ" = (
-/obj/machinery/door/airlock/command,
-/obj/machinery/door/firedoor/autoset,
-/turf/simulated/floor/tiled/dark/monotile,
-/area/ship/tauscoutship/crew/quarters)
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/tiled/tau/red,
+/area/ship/tauscoutship/command/bridge)
 "AT" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -4754,6 +4827,14 @@
 /obj/structure/flora/pottedplant/large,
 /turf/simulated/floor/tiled/tau,
 /area/ship/tauscoutship/dock)
+"Ee" = (
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/tiled/tau/red,
+/area/ship/tauscoutship/command/bridge)
 "Eg" = (
 /obj/machinery/light/tau{
 	dir = 1;
@@ -4772,6 +4853,7 @@
 	dir = 8;
 	icon_state = "tube1"
 	},
+/obj/submap_landmark/spawnpoint/tauscoutship/leader,
 /turf/simulated/floor/tiled/tau/blue,
 /area/ship/tauscoutship/crew/quarters)
 "Eq" = (
@@ -4801,7 +4883,8 @@
 	dir = 8
 	},
 /obj/structure/window/reinforced{
-	dir = 1
+	dir = 1;
+	color = "grey"
 	},
 /obj/structure/window/reinforced{
 	dir = 4
@@ -5017,7 +5100,8 @@
 	pixel_y = 5
 	},
 /obj/structure/window/reinforced{
-	dir = 1
+	dir = 1;
+	color = "grey"
 	},
 /obj/item/disk/integrated_circuit/upgrade/clone{
 	pixel_x = 7
@@ -5201,7 +5285,8 @@
 "LW" = (
 /obj/structure/flora/pottedplant/stoutbush,
 /obj/structure/window/reinforced{
-	dir = 1
+	dir = 1;
+	color = "grey"
 	},
 /obj/structure/window/reinforced{
 	dir = 8
@@ -5260,7 +5345,7 @@
 /turf/simulated/floor/tiled/tau,
 /area/ship/tauscoutship/dock)
 "MS" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /obj/item/rig/skrell/med{
 	pixel_x = -7
 	},
@@ -5315,6 +5400,15 @@
 	},
 /turf/simulated/floor/tiled/tau/orange,
 /area/ship/tauscoutship/maintenance/power)
+"NI" = (
+/obj/paint/black,
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/wall/r_wall,
+/area/ship/tauscoutship/command/bridge)
 "NK" = (
 /obj/structure/hygiene/sink/kitchen{
 	dir = 8;
@@ -5376,7 +5470,7 @@
 /turf/simulated/floor/tiled/tau,
 /area/ship/tauscoutship/dock)
 "Oh" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /obj/item/stack/material/glass/fifty,
 /obj/item/stack/material/glass/fifty,
 /obj/item/stack/material/glass/fifty,
@@ -5427,6 +5521,14 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/tau/blue,
 /area/ship/tauscoutship/crew/quarters)
+"Or" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/tau/red,
+/area/ship/tauscoutship/command/bridge)
 "OC" = (
 /obj/structure/table/standard,
 /obj/machinery/light/tau{
@@ -5502,6 +5604,14 @@
 	},
 /turf/simulated/floor/tiled/tau/red,
 /area/ship/tauscoutship/hangar)
+"Pn" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/tau,
+/area/ship/tauscoutshuttle)
 "Pr" = (
 /obj/structure/flora/pottedplant/overgrown,
 /turf/simulated/floor/tiled/tau,
@@ -5519,7 +5629,11 @@
 /turf/simulated/floor/tiled/tau/blue,
 /area/ship/tauscoutship/crew/rec)
 "PD" = (
-/obj/structure/bed/chair/comfy/red,
+/obj/machinery/power/shield_generator,
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2"
+	},
 /turf/simulated/floor/tiled/tau/red,
 /area/ship/tauscoutship/command/bridge)
 "PG" = (
@@ -5567,6 +5681,17 @@
 	},
 /turf/simulated/floor/tiled/tau,
 /area/ship/tauscoutship/dock)
+"PS" = (
+/obj/machinery/light/tau{
+	dir = 1
+	},
+/obj/machinery/power/shield_generator,
+/obj/structure/cable/cyan{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/turf/simulated/floor/tiled/tau,
+/area/ship/tauscoutshuttle)
 "PT" = (
 /obj/paint/black,
 /turf/simulated/wall/r_wall,
@@ -5604,6 +5729,7 @@
 /area/ship/tauscoutship/maintenance/power)
 "QA" = (
 /obj/machinery/light/tau,
+/obj/machinery/pointdefense_control,
 /turf/simulated/floor/tiled/tau/red,
 /area/ship/tauscoutship/command/bridge)
 "QP" = (
@@ -5618,9 +5744,14 @@
 /turf/simulated/floor/tiled/tau,
 /area/ship/tauscoutship/corridor)
 "Rb" = (
-/obj/paint/black,
-/turf/simulated/wall/r_wall,
-/area/ship/tauscoutship/externalwing/starboard)
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/tiled/tau/red,
+/area/ship/tauscoutship/command/bridge)
 "Rc" = (
 /obj/machinery/power/apc/critical{
 	dir = 4;
@@ -5656,7 +5787,7 @@
 /turf/simulated/floor/tiled/tau,
 /area/ship/tauscoutshuttle)
 "Rs" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
@@ -5716,7 +5847,6 @@
 /turf/simulated/floor/tiled/tau,
 /area/ship/tauscoutship/dock)
 "Sm" = (
-/obj/machinery/suit_storage_unit/skrell,
 /obj/machinery/light/tau,
 /obj/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/tau/green,
@@ -5761,7 +5891,8 @@
 "Tj" = (
 /obj/structure/flora/pottedplant/large,
 /obj/structure/window/reinforced{
-	dir = 1
+	dir = 1;
+	color = "grey"
 	},
 /turf/simulated/floor/tiled/tau/orange,
 /area/ship/tauscoutship/wings/starboard)
@@ -5887,6 +6018,14 @@
 	},
 /turf/simulated/floor/tiled/tau,
 /area/ship/tauscoutship/corridor)
+"UP" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/tiled/tau/red,
+/area/ship/tauscoutship/command/bridge)
 "UR" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/red{
 	dir = 8
@@ -6059,7 +6198,7 @@
 /turf/simulated/floor/tiled/tau,
 /area/ship/tauscoutshuttle)
 "Wu" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /obj/item/stack/flag/blue{
 	pixel_x = 5
 	},
@@ -6095,6 +6234,25 @@
 	},
 /turf/simulated/floor/tiled/tau/red,
 /area/ship/tauscoutship/command/bridge)
+"Xs" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/table/rack/dark,
+/obj/item/gun/energy/tau/pulserifle,
+/obj/item/cell/device/high/xenos,
+/obj/structure/window/reinforced{
+	dir = 1;
+	color = "grey"
+	},
+/obj/structure/window/reinforced{
+	dir = 8;
+	color = "grey"
+	},
+/turf/simulated/floor/tiled/tau/green,
+/area/ship/tauscoutship/command/armory)
 "Xw" = (
 /obj/machinery/atmospherics/portables_connector{
 	dir = 1
@@ -6134,7 +6292,7 @@
 /turf/simulated/floor/carpet/purple,
 /area/ship/tauscoutship/crew/rec)
 "YA" = (
-/obj/structure/table/rack,
+/obj/structure/table/rack/dark,
 /obj/item/storage/belt/utility/full,
 /obj/item/storage/belt/utility/full,
 /obj/item/storage/belt/utility/full,
@@ -6188,6 +6346,10 @@
 	},
 /turf/simulated/floor/tiled/tau,
 /area/ship/tauscoutship/corridor)
+"ZF" = (
+/obj/submap_landmark/spawnpoint/tauscoutship/watercaste,
+/turf/simulated/floor/tiled/tau/blue,
+/area/ship/tauscoutship/crew/quarters)
 "ZP" = (
 /obj/machinery/door/firedoor/autoset,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -7863,19 +8025,19 @@ Gw
 Gw
 Gw
 Gw
-yx
-yx
-yx
-Eq
-hE
+kE
+kd
+kd
+bH
+AQ
 hE
 hE
 hE
 hE
 QA
-yx
-yx
-yx
+NI
+kd
+yN
 Gw
 Gw
 Gw
@@ -7974,9 +8136,9 @@ jr
 id
 gX
 ij
-ij
+Rb
 ip
-hE
+yx
 yx
 Gw
 Gw
@@ -8071,14 +8233,14 @@ yx
 yx
 yx
 qO
-hE
+Or
 sP
 ie
 sP
-hE
+Ee
 wN
 yx
-AQ
+BR
 BR
 BR
 Gw
@@ -8173,15 +8335,15 @@ PC
 hl
 yx
 Eq
-hE
+Or
 EZ
 if
 pj
-hE
+Or
 kV
 yx
 zV
-dB
+SE
 ug
 Gw
 Gw
@@ -8275,14 +8437,14 @@ gF
 yo
 yx
 PD
-hE
-hE
+ys
+AQ
 GL
 bQ
+Or
 hE
-ys
-yx
-SE
+fs
+qe
 zO
 ug
 Gw
@@ -8378,10 +8540,10 @@ AU
 yx
 yx
 hX
-ib
+ys
 ih
-hE
-hE
+ib
+UP
 yx
 yx
 BR
@@ -9200,7 +9362,7 @@ tZ
 BR
 dj
 dB
-dB
+ZF
 dB
 dB
 dB
@@ -9490,9 +9652,9 @@ Gw
 Gw
 Gw
 Gw
-Rb
-Rb
-bH
+Gw
+Gw
+Gw
 AU
 Zp
 TL
@@ -9510,9 +9672,9 @@ dQ
 kc
 NR
 UM
-kE
-UM
-UM
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -9592,9 +9754,9 @@ Gw
 Gw
 Gw
 Gw
-Rb
-bH
-bH
+Gw
+Gw
+Gw
 AU
 AU
 hf
@@ -9612,9 +9774,9 @@ KD
 ds
 Lv
 UM
-kE
-kE
-UM
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -9693,10 +9855,10 @@ Gw
 Gw
 Gw
 Gw
-Rb
-Rb
-bH
-Rb
+Gw
+Gw
+Gw
+Gw
 AU
 AU
 AU
@@ -9714,10 +9876,10 @@ dS
 uk
 uk
 UM
-UM
-kE
-UM
-UM
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -9795,10 +9957,10 @@ Gw
 Gw
 Gw
 Gw
-Rb
-bH
-bH
-Rb
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 AU
@@ -9816,10 +9978,10 @@ dT
 uk
 Gw
 Gw
-UM
-kE
-kE
-UM
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -9896,11 +10058,11 @@ Gw
 Gw
 Gw
 Gw
-Rb
-Rb
-bH
-Rb
-Rb
+Gw
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 AU
@@ -9918,11 +10080,11 @@ dV
 ET
 Gw
 Gw
-UM
-UM
-kE
-UM
-UM
+Gw
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -9998,10 +10160,10 @@ Gw
 Gw
 Gw
 Gw
-Rb
-bH
-bH
-Rb
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -10021,10 +10183,10 @@ ET
 Gw
 Gw
 Gw
-UM
-kE
-kE
-UM
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -10099,11 +10261,11 @@ Gw
 Gw
 Gw
 Gw
-Rb
-Rb
-bH
-Rb
-Rb
+Gw
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -10123,11 +10285,11 @@ ET
 Gw
 Gw
 Gw
-UM
-UM
-kE
-UM
-UM
+Gw
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -10201,10 +10363,10 @@ Gw
 Gw
 Gw
 Gw
-Rb
-bH
-bH
-Rb
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -10226,10 +10388,10 @@ Gw
 Gw
 Gw
 Gw
-UM
-kE
-kE
-UM
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -10303,10 +10465,10 @@ Gw
 Gw
 Gw
 Gw
-Rb
-bH
-Rb
-Rb
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -10328,10 +10490,10 @@ Gw
 Gw
 Gw
 Gw
-UM
-UM
-kE
-UM
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -10404,10 +10566,10 @@ Gw
 Gw
 Gw
 Gw
-Rb
-Rb
-bH
-Rb
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -10431,10 +10593,10 @@ Gw
 Gw
 Gw
 Gw
-UM
-kE
-UM
-UM
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -10506,10 +10668,10 @@ Gw
 Gw
 Gw
 Gw
-Rb
-bH
-bH
-Rb
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -10533,10 +10695,10 @@ Gw
 Gw
 Gw
 Gw
-UM
-kE
-kE
-UM
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -10608,10 +10770,10 @@ Gw
 Gw
 Gw
 Gw
-Rb
-bH
-Rb
-Rb
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -10635,10 +10797,10 @@ Gw
 Gw
 Gw
 Gw
-UM
-UM
-kE
-UM
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -10709,10 +10871,10 @@ Gw
 Gw
 Gw
 Gw
-Rb
-Rb
-bH
-Rb
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -10738,10 +10900,10 @@ Gw
 Gw
 Gw
 Gw
-UM
-kE
-UM
-UM
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -10811,10 +10973,10 @@ Gw
 Gw
 Gw
 Gw
-Rb
-bH
-bH
-Rb
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -10840,10 +11002,10 @@ Gw
 Gw
 Gw
 Gw
-UM
-kE
-kE
-UM
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -10913,10 +11075,10 @@ Gw
 Gw
 Gw
 Gw
-Rb
-bH
-Rb
-Rb
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -10942,10 +11104,10 @@ Gw
 Gw
 Gw
 Gw
-UM
-UM
-kE
-UM
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -11014,10 +11176,10 @@ Gw
 Gw
 Gw
 Gw
-Rb
-Rb
-bH
-Rb
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -11045,10 +11207,10 @@ Gw
 Gw
 Gw
 Gw
-UM
-kE
-UM
-UM
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -11116,10 +11278,10 @@ Gw
 Gw
 Gw
 Gw
-Rb
-bH
-bH
-Rb
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -11147,10 +11309,10 @@ Gw
 Gw
 Gw
 Gw
-UM
-kE
-kE
-UM
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -11218,10 +11380,10 @@ Gw
 Gw
 Gw
 Gw
-Rb
-bH
-Rb
-Rb
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -11249,10 +11411,10 @@ Gw
 Gw
 Gw
 Gw
-UM
-UM
-kE
-UM
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -11319,10 +11481,10 @@ Gw
 Gw
 Gw
 Gw
-Rb
-Rb
-bH
-Rb
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -11352,10 +11514,10 @@ Gw
 Gw
 Gw
 Gw
-UM
-kE
-UM
-UM
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -11421,10 +11583,10 @@ Gw
 Gw
 Gw
 Gw
-Rb
-bH
-bH
-Rb
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -11454,10 +11616,10 @@ Gw
 Gw
 Gw
 Gw
-UM
-kE
-kE
-UM
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -11523,10 +11685,10 @@ Gw
 Gw
 Gw
 Gw
-Rb
-bH
-Rb
-Rb
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -11556,10 +11718,10 @@ Gw
 Gw
 Gw
 Gw
-UM
-UM
-kE
-UM
+Gw
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -11625,9 +11787,9 @@ Gw
 Gw
 Gw
 Gw
-Rb
-bH
-Rb
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -11659,9 +11821,9 @@ Gw
 Gw
 Gw
 Gw
-UM
-kE
-UM
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -11727,9 +11889,9 @@ Gw
 Gw
 Gw
 Gw
-Rb
-bH
-Rb
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -11761,9 +11923,9 @@ Gw
 Gw
 Gw
 Gw
-UM
-kE
-UM
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -11829,9 +11991,9 @@ Gw
 Gw
 Gw
 Gw
-Rb
-bH
-Rb
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -11863,9 +12025,9 @@ Gw
 Gw
 Gw
 Gw
-UM
-kE
-UM
+Gw
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -11931,9 +12093,9 @@ Gw
 Gw
 QP
 QP
-Rb
-bH
-Rb
+QP
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -11965,9 +12127,9 @@ Gw
 Gw
 Gw
 Gw
-UM
-kE
-UM
+Gw
+Gw
+Gw
 PT
 PT
 Gw
@@ -12033,9 +12195,9 @@ Gw
 QP
 QP
 QP
-Rb
-bH
-Rb
+QP
+Gw
+Gw
 Gw
 Gw
 Gw
@@ -12067,9 +12229,9 @@ Gw
 Gw
 Gw
 Gw
-UM
-kE
-UM
+Gw
+Gw
+Gw
 PT
 PT
 PT
@@ -12135,9 +12297,9 @@ Gw
 QP
 bm
 bm
-Rb
-Rb
-Rb
+QP
+QP
+QP
 Gw
 Gw
 Gw
@@ -12169,10 +12331,10 @@ Gw
 Gw
 Gw
 Gw
-UM
-UM
+Gw
+Gw
 PT
-kd
+ke
 ke
 PT
 Gw
@@ -12475,7 +12637,7 @@ OT
 OT
 OT
 PT
-fs
+km
 jQ
 bC
 bC
@@ -12581,7 +12743,7 @@ bC
 jQ
 yF
 kh
-yN
+kh
 PT
 Gw
 Gw
@@ -13388,7 +13550,7 @@ gq
 Fl
 ep
 eu
-eB
+Xs
 eJ
 eQ
 Fl
@@ -13474,10 +13636,10 @@ aB
 Fk
 fS
 Le
-Tb
-aT
+PS
+Pn
 aZ
-aT
+Pn
 bJ
 kI
 cC
@@ -13491,7 +13653,7 @@ CO
 eq
 ew
 eC
-eL
+eu
 gP
 Fl
 jE
@@ -13592,8 +13754,8 @@ gs
 Fl
 es
 eu
-eu
 eL
+eu
 eS
 Fl
 fb

@@ -48,8 +48,8 @@
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_SHIELDED
 	)
-	online_slowdown = 0.75
-	offline_slowdown = 2
+	online_slowdown = 1
+	offline_slowdown = 1.5
 	equipment_overlay_icon = null
 	air_type = /obj/item/tank/skrell
 	cell_type = /obj/item/cell/skrell
@@ -201,7 +201,6 @@
 	interface_desc = "A limited-sentience integrated multitool capable of interfacing with any number of systems."
 	device = /obj/item/device/multitool/skrell
 	icon = 'icons/obj/tools/multitool.dmi'
-	icon_state = "skrell_multitool"
 	usable = FALSE
 	selectable = TRUE
 
@@ -235,7 +234,7 @@
 	selectable = TRUE
 
 /obj/item/rig_module/device/clustertool/skrell
-	name = "Tau clustertool"
+	name = "Masterwork clustertool"
 	desc = "A complex assembly of self-guiding, modular heads capable of performing most manual tasks."
 	interface_name = "modular clustertool"
 	interface_desc = "A complex assembly of self-guiding, modular heads capable of performing most manual tasks."
@@ -323,4 +322,3 @@
 	name = "Tau multitool"
 	desc = "An extreme sophisticated microcomputer capable of interfacing with practically any system."
 	icon = 'icons/obj/tools/multitool.dmi'
-	icon_state = "skrell_multitool"

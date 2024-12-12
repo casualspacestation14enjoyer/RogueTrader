@@ -109,10 +109,9 @@ War Gear
 	icon = 'maps/torch/icons/obj/uniques.dmi'
 	icon_state = "mosley"
 	desc = "A shiny al-Maliki & Mosley Autococker automatic revolver, with black accents. Marketed as the 'Revolver for the Modern Era'. This one has 'To the Captain of Dauntless' engraved."
-	fire_delay = 4.4 //Autorevolver. Also synced with the animation
+	fire_delay = 4
 	fire_anim = "mosley_fire"
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 2)
-	starts_loaded = 0 //Nobody keeps ballistic weapons loaded
 
 /obj/item/gun/energy/stunrevolver/secure/nanotrasen
 	name = "corporate stun revolver"

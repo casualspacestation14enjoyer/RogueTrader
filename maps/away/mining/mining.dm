@@ -34,7 +34,7 @@
 	description = "A medium-sized asteroid full of minerals."
 	suffixes = list("mining/mining-asteroid.dmm")
 	spawn_cost = 1
-	accessibility_weight = 10
+	accessibility_weight = 0
 	generate_mining_by_z = 1
 	apc_test_exempt_areas = list(
 		/area/outpost/abandoned = NO_SCRUBBER,
@@ -175,7 +175,7 @@
 	description = "A sort of circular asteroid with a bird."
 	suffixes = list("mining/mining-orb.dmm")
 	spawn_cost = 1
-	accessibility_weight = 10
+	accessibility_weight = 0
 	generate_mining_by_z = 1
 	base_turf_for_zs = /turf/simulated/floor/asteroid
 	area_usage_test_exempted_root_areas = list(/area/mine)

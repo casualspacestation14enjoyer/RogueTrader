@@ -33,7 +33,8 @@
 		/obj/item/gun,
 		/obj/item/ammo_magazine,
 		/obj/item/ammo_casing,
-		/obj/item/melee/baton,
+		/obj/item/material/twohanded/ravenor,
+		/obj/item/melee,
 		/obj/item/handcuffs,
 		/obj/item/tank,
 		/obj/item/device/suit_cooling_unit,
@@ -121,16 +122,10 @@
 	req_access = list(access_syndicate)
 
 	initial_modules = list(
-		/obj/item/rig_module/teleporter,
 		/obj/item/rig_module/stealth_field,
-		/obj/item/rig_module/mounted/energy/energy_blade,
 		/obj/item/rig_module/vision,
 		/obj/item/rig_module/voice,
-		/obj/item/rig_module/fabricator/energy_net,
-		/obj/item/rig_module/chem_dispenser/ninja,
-		/obj/item/rig_module/grenade_launcher/ninja,
-		/obj/item/rig_module/ai_container,
-		/obj/item/rig_module/power_sink,
+		/obj/item/rig_module/fabricator,
 		/obj/item/rig_module/datajack,
 		/obj/item/rig_module/self_destruct,
 		/obj/item/rig_module/cooling_unit,

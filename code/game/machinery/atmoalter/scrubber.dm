@@ -160,7 +160,7 @@
 
 	uncreated_component_parts = list(/obj/item/stock_parts/power/apc)
 	maximum_component_parts = list(/obj/item/stock_parts = 15)
-	idle_power_usage = 500		//internal circuitry, friction losses and stuff
+	idle_power_usage = 100		//internal circuitry, friction losses and stuff
 	power_rating = 100000 //100 kW ~ 135 HP
 
 	machine_name = "large portable scrubber"

@@ -6,7 +6,7 @@
 	var/on = 0
 	anchored = TRUE
 	idle_power_usage = 20
-	active_power_usage = 1000
+	active_power_usage = 100
 
 	uncreated_component_parts = list(
 		/obj/item/stock_parts/radio/receiver,
@@ -82,7 +82,7 @@
 	var/base_state = "migniter"
 	anchored = TRUE
 	idle_power_usage = 20
-	active_power_usage = 1000
+	active_power_usage = 100
 
 	uncreated_component_parts = list(
 		/obj/item/stock_parts/radio/receiver,

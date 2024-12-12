@@ -15,38 +15,38 @@
 	origin_tech = list(TECH_MATERIAL = 7, TECH_POWER = 7, TECH_ENGINEERING = 5)
 	base_type = /obj/item/stock_parts/smes_coil
 	part_flags = PART_FLAG_HAND_REMOVE
-	var/ChargeCapacity = 50 KILOWATTS
-	var/IOCapacity = 250 KILOWATTS
+	var/ChargeCapacity = 100 KILOWATTS
+	var/IOCapacity = 550 KILOWATTS
 
 // 20% Charge Capacity, 60% I/O Capacity. Used for substation/outpost SMESs.
 /obj/item/stock_parts/smes_coil/weak
 	name = "basic superconductive magnetic coil"
 	desc = "Cheaper model of standard superconductive magnetic coil. It's capacity and I/O rating are considerably lower."
 	icon_state = "smes_coil_weak"
-	ChargeCapacity = 10 KILOWATTS
-	IOCapacity = 150 KILOWATTS
+	ChargeCapacity = 300 KILOWATTS
+	IOCapacity = 250 KILOWATTS
 
 // 500% Charge Capacity, 40% I/O Capacity. Holds a lot of energy, but charges slowly if not combined with other coils. Ideal for backup storage.
 /obj/item/stock_parts/smes_coil/super_capacity
 	name = "superconductive capacitance coil"
 	desc = "Specialised version of standard superconductive magnetic coil. This one has significantly stronger containment field, allowing for significantly larger power storage. It's IO rating is much lower, however."
 	icon_state = "smes_coil_capacitance"
-	ChargeCapacity = 250 KILOWATTS
-	IOCapacity = 100 KILOWATTS
+	ChargeCapacity = 850 KILOWATTS
+	IOCapacity = 200 KILOWATTS
 
 // 40% Charge Capacity, 500% I/O Capacity. Technically turns SMES into large super capacitor. Ideal for shields.
 /obj/item/stock_parts/smes_coil/super_io
 	name = "superconductive transmission coil"
 	desc = "Specialised version of standard superconductive magnetic coil. While this one won't store almost any power, it rapidly transfers current, making it useful in systems which require large throughput."
 	icon_state = "smes_coil_transmission"
-	ChargeCapacity = 20 KILOWATTS
+	ChargeCapacity = 500 KILOWATTS
 	IOCapacity = 1.25 MEGAWATTS
 
 // A superpowered coil to be used on event SMES units, away sites that run lots of power, and maybe as a rare merchant item.
 /obj/item/stock_parts/smes_coil/advanced
 	name = "advanced magnetic coil"
 	desc = " An advanced magnetic coil made from rare materials. Can store and transfer more power than any previous designs."
-	ChargeCapacity = 500 KILOWATTS
+	ChargeCapacity = 1000 KILOWATTS
 	IOCapacity = 2.5 MEGAWATTS
 
 
@@ -61,7 +61,7 @@
 /obj/machinery/power/smes/buildable/power_shuttle
 	uncreated_component_parts = list(
 		/obj/item/stock_parts/smes_coil/super_io = 2,
-		/obj/item/stock_parts/smes_coil = 1)
+		/obj/item/stock_parts/smes_coil = 2)
 
 // END SMES SUBTYPES
 

@@ -481,7 +481,7 @@
 	attack_cooldown = 3 SECONDS
 	attack_verb = list("mauled", "bitten")
 
-/mob/living/simple_animal/hostile/daemon/headcrab/large/do_special_attack(atom/A)
+/mob/living/simple_animal/hostile/daemon/headcrab/do_special_attack(atom/A)
 	set waitfor = FALSE
 	set_AI_busy(TRUE)
 

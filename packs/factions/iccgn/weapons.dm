@@ -9,7 +9,7 @@
 	allowed_magazines = /obj/item/ammo_magazine/pistol/double
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2, TECH_ESOTERIC = 4)
 	ammo_indicator = TRUE
-	fire_delay = 4
+	fire_delay = 3.5
 
 
 /obj/item/gun/projectile/pistol/bobcat
@@ -27,4 +27,4 @@
 		/obj/item/ammo_magazine/pistol/small
 	)
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3, TECH_ESOTERIC = 4)
-	fire_delay = 4
+	fire_delay = 3.5

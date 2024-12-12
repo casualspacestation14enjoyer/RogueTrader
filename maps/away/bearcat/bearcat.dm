@@ -18,27 +18,56 @@
 /obj/overmap/visitable/ship/demeter
 	name = "The Demeter"
 	color = "#00ffff"
-	vessel_mass = 20000
-	max_speed = 1/(10 SECONDS)
-	burn_delay = 10 SECONDS
+	vessel_mass = 10000
+	burn_delay = 2 SECONDS
+	skill_needed = SKILL_TRAINED
+	vessel_size = SHIP_SIZE_LARGE
 
 /obj/overmap/visitable/ship/demeter/New()
-	name = "[pick("The Demeter", "The Demeter")]"
 	for(var/area/ship/scrap/A)
 		A.name = "\improper [name] - [A.name]"
 		GLOB.using_map.area_purity_test_exempt_areas += A.type
-	name = "[name], \a [initial(name)]"
 	..()
+/*
+/datum/shuttle/autodock/overmap/demeter
+	name = "The Demeter"
+	move_time = 60
+	warmup_time = 5
+	shuttle_area = list(
+	/area/ship/scrap, /area/ship/scrap/crew, /area/ship/scrap/crew/hallway/port, /area/ship/scrap/crew/hallway/starboard,
+	/area/ship/scrap/crew/kitchen, /area/ship/scrap/crew/cryo, /area/ship/scrap/crew/dorms1, /area/ship/scrap/crew/dorms2,
+	/area/ship/scrap/crew/dorms3, /area/ship/scrap/crew/saloon, /area/ship/scrap/crew/toilets, /area/ship/scrap/crew/wash,
+	/area/ship/scrap/crew/medbay, /area/ship/scrap/cargo, /area/ship/scrap/cargo/lower, /area/ship/scrap/dock,
+	/area/ship/scrap/fire, /area/ship/scrap/tcomms, /area/ship/scrap/hidden, /area/ship/scrap/escape_port,
+	/area/ship/scrap/escape_star, /area/ship/scrap/broken1, /area/ship/scrap/broken2, /area/ship/scrap/gambling,
+	/area/ship/scrap/maintenance, /area/ship/scrap/maintenance/hallway, /area/ship/scrap/maintenance/lower,
+	/area/ship/scrap/maintenance/storage, /area/ship/scrap/maintenance/techstorage, /area/ship/scrap/maintenance/eva,
+	/area/ship/scrap/maintenance/engineering, /area/ship/scrap/maintenance/atmos, /area/ship/scrap/maintenance/power,
+	/area/ship/scrap/maintenance/engine, /area/ship/scrap/maintenance/engine/aft, /area/ship/scrap/maintenance/engine/port,
+	/area/ship/scrap/maintenance/engine/starboard, /area/ship/scrap/command/hallway, /area/ship/scrap/command/bridge,
+	/area/ship/scrap/command/captain, /area/ship/scrap/comms, /area/ship/scrap/shuttle/lift
+	)
+	current_location = "nav_demeter_start"
+	range = 2
+	knockdown = FALSE
+	fuel_consumption = 2
+	ceiling_type = /turf/simulated/floor/shuttle_ceiling/torch
+	flags = SHUTTLE_FLAGS_PROCESS
+	defer_initialisation = TRUE
+*/
+/obj/shuttle_landmark/demeter/start
+	landmark_tag = "nav_demeter_start"
+	name = "The Demeter"
 
 /datum/map_template/ruin/away_site/demeter_wreck
 	name = "Demeter Wreck"
 	id = "awaysite_bearcat_wreck"
 	description = "A wrecked light freighter."
 	suffixes = list("bearcat/bearcat-1.dmm", "bearcat/bearcat-2.dmm")
-	spawn_cost = 0
+	spawn_cost = 2
 	player_cost = 0
 	shuttles_to_initialise = list(/datum/shuttle/autodock/ferry/lift)
-	ban_ruins = list(/datum/map_template/ruin/away_site/scavver_gantry)
+	// ban_ruins = list(/datum/map_template/ruin/exoplanet/playablecolony, /datum/map_template/ruin/exoplanet/playablecolony2)
 	area_usage_test_exempted_root_areas = list(/area/ship)
 	apc_test_exempt_areas = list(
 		/area/ship/scrap/maintenance/engine/port = NO_SCRUBBER|NO_VENT,
@@ -53,7 +82,6 @@
 		/area/ship/scrap/shuttle/lift = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/ship/scrap/command/hallway = NO_SCRUBBER|NO_VENT
 	)
-	spawn_weight = 0.67
 
 /datum/shuttle/autodock/ferry/lift
 	name = "Cargo Lift"

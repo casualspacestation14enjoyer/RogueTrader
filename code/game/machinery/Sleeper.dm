@@ -29,7 +29,7 @@
 	var/stasis_power = 5 KILOWATTS
 
 	idle_power_usage = 15
-	active_power_usage = 1 KILOWATTS //builtin health analyzer, dialysis machine, injectors.
+	active_power_usage = 0.5 KILOWATTS //builtin health analyzer, dialysis machine, injectors.
 
 /obj/machinery/sleeper/Initialize(mapload, d = 0, populate_parts = TRUE)
 	. = ..()

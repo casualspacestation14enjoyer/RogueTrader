@@ -22,7 +22,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 9
+	skill_points = 18
 	min_skill = list(SKILL_VIGOR = SKILL_EXPERIENCED,
 					SKILL_MEDICAL = SKILL_BASIC,
 					SKILL_PILOT = SKILL_TRAINED,
@@ -82,13 +82,13 @@
 			H.fully_replace_character_name("Captain [current_name]")
 			H.species.weaken_mod = 0.71
 			H.species.stun_mod = 0.71
-			H.species.slowdown = -0.3
+			H.species.slowdown = -0.15
 			H.species.silent_steps = TRUE
 		else if(current_title == "Maccabian Sergeant")
 			H.fully_replace_character_name("Sergeant [current_name]")
 			H.species.weaken_mod = 0.73
 			H.species.stun_mod = 0.73
-			H.species.slowdown = -0.3
+			H.species.slowdown = -0.15
 		else if(current_title == "Krieg Captain")
 			H.fully_replace_character_name("Captain [current_name]")
 			H.species.toxins_mod = 0.65
@@ -117,6 +117,8 @@
 	spawn_positions = 1
 	supervisors = "the Captain, Seneschal and Rogue Trader"
 	economic_power = 5
+	department = "Security"
+	department_flag = SEC
 	minimal_player_age = 2
 	ideal_character_age = 35
 	minimum_character_age = list(SPECIES_HUMAN = 27)
@@ -127,7 +129,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 12
+	skill_points = 18
 	min_skill = list(SKILL_VIGOR = SKILL_TRAINED,
 					SKILL_MEDICAL = SKILL_BASIC,
 					SKILL_DEVICES = SKILL_BASIC,
@@ -179,8 +181,10 @@
 
 /datum/job/enforcer
 	title = "Deck Enforcer"
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 3
+	spawn_positions = 3
+	department = "Security"
+	department_flag = SEC
 	supervisors = "Anyone with a fancy title..."
 	economic_power = 4
 	minimal_player_age = 0
@@ -194,7 +198,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 12
+	skill_points = 18
 	min_skill = list(SKILL_VIGOR = SKILL_TRAINED,
 					SKILL_MEDICAL = SKILL_BASIC,
 					SKILL_DEVICES = SKILL_BASIC,
@@ -249,6 +253,8 @@
 	minimal_player_age = 1
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	ideal_character_age = 35
+	department = "Security"
+	department_flag = SEC
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/security/cadian
 	alt_titles = list(
 		"Krieg Guardsman" = /singleton/hierarchy/outfit/job/torch/crew/security/krieg,
@@ -262,7 +268,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 10
+	skill_points = 18
 	min_skill = list(SKILL_VIGOR = SKILL_EXPERIENCED,
 					SKILL_MEDICAL = SKILL_BASIC,
 					SKILL_DEVICES = SKILL_BASIC,
@@ -319,13 +325,13 @@
 			H.fully_replace_character_name("[current_name]")
 			H.species.weaken_mod = 0.71
 			H.species.stun_mod = 0.71
-			H.species.slowdown = -0.3
+			H.species.slowdown = -0.1
 			H.species.silent_steps = TRUE
 		else if(current_title == "Maccabian Guardsman")
 			H.fully_replace_character_name("[current_name]")
 			H.species.weaken_mod = 0.73
 			H.species.stun_mod = 0.73
-			H.species.slowdown = -0.3
+			H.species.slowdown = -0.1
 		else if(current_title == "Krieg Guardsman")
 			H.fully_replace_character_name("[current_name]")
 			H.species.toxins_mod = 0.65

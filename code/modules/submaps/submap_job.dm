@@ -5,13 +5,13 @@
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
 	create_record = FALSE
-	total_positions = 4
+	total_positions = 0
 	outfit_type = /singleton/hierarchy/outfit/job/assistant
 	hud_icon = "hudblank"
 	available_by_default = TRUE
 	allowed_ranks = null
 	allowed_branches = null
-	skill_points = 25
+	skill_points = 28
 	give_psionic_implant_on_join = FALSE
 	max_skill = list(   SKILL_BUREAUCRACY = SKILL_MAX,
 	                    SKILL_FINANCE = SKILL_MAX,
@@ -44,10 +44,10 @@
 	var/list/whitelisted_species = UNRESTRICTED_SPECIES
 
 /datum/job/submap/New(datum/submap/_owner, abstract_job = FALSE)
+	..()
 	if(!abstract_job)
 		spawnpoints = list()
 		owner = _owner
-		..()
 
 /datum/job/submap/is_species_allowed(datum/species/S)
 	if(LAZYLEN(whitelisted_species) && !(S.name in whitelisted_species))

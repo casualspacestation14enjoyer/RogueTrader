@@ -4,6 +4,8 @@
 	singular_name = "Throne"
 	icon = 'icons/obj/thrones.dmi'
 	icon_state = "throne"
+	plural_name = "throne"
+	base_state = "throne"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	w_class = ITEM_SIZE_TINY
 	force = 1.0
@@ -14,6 +16,7 @@
 	center_of_mass = null
 	attack_verb = list("hit", "bludgeoned", "whacked")
 	sales_price = 100
+	stacktype = /obj/item/stack/thrones
 
 /obj/item/stack/thrones/New()
 	..()
@@ -53,6 +56,8 @@
 	singular_name = "Credit"
 	icon = 'icons/obj/thrones2.dmi'
 	icon_state = "throne"
+	plural_name = "Tau Credits"
+	base_state = "throne"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	w_class = ITEM_SIZE_TINY
 	force = 1.0
@@ -63,6 +68,7 @@
 	center_of_mass = null
 	attack_verb = list("hit", "bludgeoned", "whacked")
 	sales_price = 50
+	stacktype = /obj/item/stack/thrones2
 
 /obj/item/stack/thrones2/New()
 	..()

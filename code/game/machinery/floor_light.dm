@@ -9,7 +9,7 @@ var/global/list/floor_light_cache = list()
 	anchored = FALSE
 	use_power = POWER_USE_OFF
 	idle_power_usage = 2
-	active_power_usage = 20
+	active_power_usage = 10
 	power_channel = LIGHT
 	matter = list(MATERIAL_STEEL = 250, MATERIAL_GLASS = 250)
 	health_max = 50

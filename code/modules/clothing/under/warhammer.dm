@@ -48,6 +48,8 @@
 	name = "catachan shorts"
 	desc = "Catachan fear no heat, no boltguns, no lasguns. They don't need shirts, They're Catachan Jungle Hunters."
 	icon_state = "camopants"
+	item_state = "camopants"
+	worn_state = "camopants"
 	cold_protection = LOWER_TORSO | LEGS
 
 /obj/item/clothing/under/rank/krieg_uniform/commissar
@@ -56,13 +58,6 @@
 	icon_state = "kriegissar"
 	item_state = "kriegissar"
 	worn_state = "kriegissar"
-
-/obj/item/clothing/under/rank/catachancommissar
-	name = "commissar's Field Pants"
-	desc = "What used to be green tailoring of the uniform given by the Officio Prefectus has been cut down and stripped to be the bare essentials, just like that of the Catachans under you. Around your neck being an emblematic symbol of the Emperor as a necklace."
-	icon_state = "catacomm"
-	item_state = "catacomm"
-	worn_state = "catacomm"
 
 // Astartes
 

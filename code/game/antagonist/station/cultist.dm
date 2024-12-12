@@ -38,7 +38,7 @@ GLOBAL_DATUM_INIT(cult, /datum/antagonist/cultist, new)
 	hard_cap_round = 6
 	initial_spawn_req = 4
 	initial_spawn_target = 6
-	antaghud_indicator = "hudcultist"
+	antaghud_indicator = null // formerly hudcultist
 	skill_setter = /datum/antag_skill_setter/station
 
 	var/allow_narsie = 1
@@ -62,8 +62,8 @@ GLOBAL_DATUM_INIT(cult, /datum/antagonist/cultist, new)
 		return
 
 	global_objectives = list()
-	if(prob(50))
-		global_objectives |= new /datum/objective/cult/survive
+	if(prob(20))
+		global_objectives |= new /datum/objective/cult/sacrifice
 	else
 		global_objectives |= new /datum/objective/cult/eldergod
 
