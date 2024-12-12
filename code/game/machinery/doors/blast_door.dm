@@ -271,6 +271,43 @@
 	health_max = 5000
 	block_air_zones = TRUE
 
+/obj/machinery/door/blast/gates
+	icon = 'icons/obj/doors/gates1.dmi'
+	icon_state = "door1"
+	icon_state_open = "door0"
+	icon_state_opening = "doorc0"
+	icon_state_closed = "door1"
+	icon_state_closing = "doorc1"
+
+	icon_state_open_broken = "mask"
+	icon_state_closed_broken = "door1"
+
+	health_min_damage = 30
+	health_max = 5000
+	block_air_zones = TRUE
+
+/obj/machinery/door/blast/gates/middle
+	icon = 'icons/obj/doors/gates2.dmi'
+	icon_state = "door1"
+	icon_state_open = "door0"
+	icon_state_opening = "doorc0"
+	icon_state_closed = "door1"
+	icon_state_closing = "doorc1"
+
+	icon_state_open_broken = "mask"
+	icon_state_closed_broken = "door1"
+
+/obj/machinery/door/blast/gates/right
+	icon = 'icons/obj/doors/gates3.dmi'
+	icon_state = "door1"
+	icon_state_open = "door0"
+	icon_state_opening = "doorc0"
+	icon_state_closed = "door1"
+	icon_state_closing = "doorc1"
+
+	icon_state_open_broken = "mask"
+	icon_state_closed_broken = "door1"
+
 /obj/machinery/door/blast/regular/escape_pod
 	name = "escape pod release door"
 

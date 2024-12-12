@@ -197,7 +197,6 @@
 		/obj/item/surgicaldrill,
 		/obj/item/bonegel,
 		/obj/item/FixOVein,
-		/obj/item/stack/medical/advanced/bruise_pack
 	)
 
 

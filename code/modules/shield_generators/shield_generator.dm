@@ -1,18 +1,21 @@
 /obj/machinery/power/shield_generator
-	name = "advanced shield generator"
+	name = "void shield generator"
 	desc = "A heavy-duty shield generator and capacitor, capable of generating energy shields at large distances."
-	icon = 'icons/obj/machines/shielding.dmi'
-	icon_state = "generator0"
+	icon = 'icons/map_project/port/props/stationobjs.dmi'
+	icon_state = "relay"
 	density = TRUE
 	base_type = /obj/machinery/power/shield_generator
 	construct_state = /singleton/machine_construction/default/panel_closed
 	wires = /datum/wires/shield_generator
 	uncreated_component_parts = null
 	stat_immune = 0
-	machine_name = "advanced shield generator"
+	machine_name = "void shield generator"
 	machine_desc = "A powerful energy projector that uses huge amounts of power to form a large sheath of shielding force around an area."
 	var/list/field_segments = list()    // List of all shield segments owned by this generator.
 	var/list/damaged_segments = list()  // List of shield segments that have failed and are currently regenerating.
+	var/shield_stress = 0        // Tracks the accumulated stress of the shield.
+	var/shield_stress_max = 100  // Maximum stress before stuttering or shutdown.
+	var/shield_stress_decay = 5  // Stress reduction per process tick during normal operation.
 	var/shield_modes = 0                // Enabled shield mode flags
 	var/mitigation_em = 0               // Current EM mitigation
 	var/mitigation_physical = 0         // Current Physical mitigation
@@ -44,9 +47,9 @@
 
 /obj/machinery/power/shield_generator/on_update_icon()
 	if(running)
-		icon_state = "generator1"
+		icon_state = "relay"
 	else
-		icon_state = "generator0"
+		icon_state = "relay_off"
 
 
 /obj/machinery/power/shield_generator/New()
@@ -168,6 +171,22 @@
 
 	if(running == SHIELD_RUNNING)
 		upkeep_power_usage = round((length(field_segments) - length(damaged_segments)) * ENERGY_UPKEEP_PER_TILE * upkeep_multiplier)
+		shield_stress = max(shield_stress - shield_stress_decay, 0)
+		if(length(damaged_segments) > 0)
+			shield_stress += length(damaged_segments) * 2  // Increase stress based on damaged segments.
+
+		if(upkeep_power_usage > (input_cap * 0.9))  // High power usage adds stress.
+			shield_stress += 10
+		if(shield_stress >= (shield_stress_max * 0.75) && !overloaded)
+			if(prob(10))  // 10% chance to stutter per tick when highly stressed.
+				shutdown_field()
+				running = SHIELD_SPINNING_UP
+				spinup_counter = 8  // Briefly deactivate for a spin-up delay.
+		if(shield_stress >= shield_stress_max)
+			overloaded = 1
+			offline_for = SHIELD_OVERLOAD_TIME  // Overload the shield.
+			current_energy = 0  // Drain energy as part of failure.
+			shutdown_field()
 	else if(running > SHIELD_RUNNING)
 		upkeep_power_usage = round(ENERGY_UPKEEP_IDLE * idle_multiplier * (field_radius * 8) * upkeep_multiplier) // Approximates number of turfs.
 

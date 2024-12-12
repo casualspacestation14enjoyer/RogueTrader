@@ -7,7 +7,7 @@
 	anchored = TRUE
 	density = FALSE
 	idle_power_usage = 75
-	active_power_usage = 300
+	active_power_usage = 200
 	construct_state = /singleton/machine_construction/default/panel_closed
 	uncreated_component_parts = null
 	stat_immune = 0

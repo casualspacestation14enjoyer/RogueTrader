@@ -20,7 +20,7 @@ var/global/list/all_gps_units = list()
 	/// If true, signal is not visible to other GPS devices.
 	var/hide_signal = FALSE
 	/// If it can toggle the above var.
-	var/can_hide_signal = FALSE
+	var/can_hide_signal = TRUE
 	/// How the GPS marker should be handled.
 	var/is_special_gps_marker = FALSE
 

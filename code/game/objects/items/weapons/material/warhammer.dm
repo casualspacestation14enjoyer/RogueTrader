@@ -99,7 +99,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	attack_verb = list("stabbed", "chopped", "cut", "sliced")
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
-	slot_flags = SLOT_BELT|SLOT_BACK
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_HOLSTER
 	w_class = ITEM_SIZE_LARGE
 	max_force = 60
 	force_multiplier = 0.34 // 0.34 = 34 Force damage wielded.
@@ -172,7 +172,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	icon_state = "machete_imp"
 	item_state = "salvagedmachete"
 	w_class = ITEM_SIZE_NORMAL
-	slot_flags = SLOT_BELT|SLOT_BACK
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_HOLSTER
 	attack_cooldown_modifier = 0
 	max_force = 65
 	force_multiplier = 0.39
@@ -260,7 +260,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	hitsound = list('sound/weapons/slash1.ogg','sound/weapons/slash2.ogg','sound/weapons/slash3.ogg')
 	attack_verb = list("bashed", "chopped", "slashed")
 	obj_flags = null // no shock
-	slot_flags = SLOT_BELT|SLOT_BACK
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_HOLSTER
 	w_class = ITEM_SIZE_LARGE
 	max_force = 80
 	force_multiplier = 0.46 // Bad one handed. Stronger than sword two handed.
@@ -286,7 +286,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	wielded_item_state = "bone_spear-w"
 	attack_verb = list("pierced", "stabbed", "slashed")
 	obj_flags = null // no shock
-	slot_flags = SLOT_BELT|SLOT_BACK
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_HOLSTER
 	w_class = ITEM_SIZE_LARGE
 	max_force = 60
 	force_multiplier = 0.42
@@ -407,7 +407,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	attack_verb = list("gored", "chopped", "smashed", "battered")
 	hitsound = 'sound/weapons/chainsword.ogg'
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
-	slot_flags = SLOT_BELT|SLOT_BACK
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_HOLSTER
 	w_class = ITEM_SIZE_HUGE
 	max_force = 100
 	force_multiplier = 0.65
@@ -589,7 +589,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	item_state = "lash"
 	hitsound = 'sound/weapons/whip.ogg'
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
-	slot_flags = SLOT_BELT|SLOT_BACK
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_HOLSTER
 	w_class = ITEM_SIZE_LARGE
 	origin_tech = list(TECH_COMBAT = 5)
 	attack_verb = list("flicked", "whipped", "lashed")
@@ -639,7 +639,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	attack_verb = list("slashed")
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
-	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_POCKET
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_HOLSTER|SLOT_POCKET
 	w_class = ITEM_SIZE_SMALL
 	max_force = 40
 	force_multiplier = 0.22
@@ -678,6 +678,22 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	force_multiplier = 0.26
 	unwielded_force_divisor = 0.25
 	thrown_force_multiplier = 0.18 // Not good at throwing.
+	base_parry_chance = 23
+	wielded_parry_bonus = 5
+	attack_cooldown_modifier = -0.4
+	melee_accuracy_bonus = 3
+	armor_penetration = 5
+	lock_picking_level = 2
+
+/obj/item/material/twohanded/ravenor/knife/tau
+	name = "tau blade"
+	desc = "A blade built for the mud and blood, designed to punch through the chaos of close-quarters combat."
+	icon = 'icons/obj/weapons/knife.dmi'
+	icon_state = "tacknife"
+	max_force = 45
+	force_multiplier = 0.26
+	unwielded_force_divisor = 0.25 // same stats as trench knife until someone decides how tau knives differ from normal ones...
+	thrown_force_multiplier = 0.18
 	base_parry_chance = 23
 	wielded_parry_bonus = 5
 	attack_cooldown_modifier = -0.4
@@ -725,7 +741,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	icon_state = "catachanfang"
 	item_state = "EB-knife"
 	max_force = 55
-	slot_flags = SLOT_BELT|SLOT_BACK
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_HOLSTER
 	w_class = ITEM_SIZE_NORMAL
 	force_multiplier = 0.32
 	unwielded_force_divisor = 0.3
@@ -749,7 +765,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	item_state = "thunder_hammer_old"
 	color = "#292929"
 	max_force = 55
-	slot_flags = SLOT_BELT|SLOT_BACK
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_HOLSTER
 	w_class = ITEM_SIZE_NORMAL
 	force_multiplier = 0.22
 	unwielded_force_divisor = 0.19
@@ -826,7 +842,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	edge = 1
 	sharp = 1
 	w_class = ITEM_SIZE_HUGE
-	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_HOLSTER|SLOT_S_STORE
 	atom_flags = 0
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	origin_tech = list(TECH_MAGNET = 6, TECH_COMBAT = 6)
@@ -862,7 +878,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	throw_speed = 1
 	throw_range = 4
 	sharp = TRUE
-	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE //we have a power sword belt sprite, but im not going to code it in just yet, alright? enough codin' today
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_HOLSTER|SLOT_S_STORE //we have a power sword belt sprite, but im not going to code it in just yet, alright? enough codin' today
 	block_chance = 33
 	sales_price = 0
 	w_class = ITEM_SIZE_HUGE

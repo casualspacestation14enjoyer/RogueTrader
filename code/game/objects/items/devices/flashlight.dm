@@ -206,11 +206,10 @@
 	item_state = "lantern"
 	force = 19
 	attack_verb = list ("bludgeoned", "bashed", "whack")
-	w_class = ITEM_SIZE_NORMAL
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BELT
 	matter = list(MATERIAL_STEEL = 200,MATERIAL_GLASS = 100)
-	flashlight_range = 3
+	flashlight_range = 4
 	light_wedge = LIGHT_OMNI
 	light_color = COLOR_ORANGE
 	flashlight_power = 1

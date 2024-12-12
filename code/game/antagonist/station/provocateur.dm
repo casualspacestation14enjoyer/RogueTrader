@@ -6,7 +6,7 @@ GLOBAL_DATUM_INIT(provocateurs, /datum/antagonist/provocateur, new)
 	role_text_plural = "Deuteragonists"
 	antaghud_indicator = "hud_traitor"
 	flags = ANTAG_RANDOM_EXCEPTED
-	antag_text = "This role means you should feel free to pursue your goals even if they conflict with %WORLD_NAME%, but you aren't an antagonist and shouldn't act like one. Try to be reasonable and avoid killing or blowing things up!"
+	antag_text = "This role grants you the freedom to pursue your own goals, even if they challenge the God Emperor himself. Your path is yours to shape—be it loyal, heretical, or self-serving. Just remember, your actions have consequences!"
 	welcome_text = "You are a character in a side story!"
 	blacklisted_jobs = list()
 	skill_setter = null

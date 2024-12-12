@@ -6,7 +6,8 @@
 	fire_sound = 'sound/weapons/Taser.ogg'
 	fire_sound_text = "laser blast"
 	accuracy = 1
-	slowdown_general = 0.1
+	slowdown_general = 0.03
+	slot_flags = SLOT_BELT|SLOT_HOLSTER
 
 	var/obj/item/cell/power_supply //What type of power cell this uses. Currently used cell.
 	var/charge_cost = 20 //How much energy is needed to fire.
@@ -122,6 +123,7 @@
 		if(!power_supply && user.unEquip(I)) // The powercell currently in the weapon.
 			I.forceMove(src)
 			power_supply = I
+			playsound(src, 'sound/weapons/guns/interaction/pistol_magin.ogg', 70)
 			to_chat(user, SPAN_NOTICE("You install \the cell into \the [src]."))
 			update_icon()
 			return TRUE

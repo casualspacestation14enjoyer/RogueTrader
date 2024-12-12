@@ -15,7 +15,7 @@
 
 	var/on = 0
 	idle_power_usage = 20
-	active_power_usage = 200
+	active_power_usage = 100
 	clicksound = 'sound/machines/buttonbeep.ogg'
 	clickvol = 30
 

@@ -172,8 +172,8 @@
 	name = "processing strata"
 	icon = 'icons/turf/flooring/circuit.dmi'
 	icon_base = "bcircuit"
-	build_type = null
-	flags = TURF_ACID_IMMUNE | TURF_CAN_BREAK | TURF_REMOVE_WRENCH
+	build_type = /obj/item/stack/material/steel
+	flags = TURF_ACID_IMMUNE | TURF_CAN_BREAK | TURF_REMOVE_WRENCH | TURF_REMOVE_CROWBAR
 	can_engrave = FALSE
 
 /singleton/flooring/reinforced/circuit/green
@@ -184,7 +184,7 @@
 
 /singleton/flooring/reinforced/circuit/selfdestruct
 	icon_base = "rcircuit_off"
-	flags = TURF_ACID_IMMUNE
+	flags = TURF_ACID_IMMUNE | TURF_CAN_BREAK | TURF_REMOVE_WRENCH | TURF_REMOVE_CROWBAR
 	can_paint = FALSE
 
 /singleton/flooring/reinforced/cult

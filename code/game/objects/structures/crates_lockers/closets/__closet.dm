@@ -77,11 +77,21 @@
 
 /obj/structure/closet/Initialize()
 	..()
-
 	if((setup & CLOSET_HAS_LOCK))
 		verbs += /obj/structure/closet/proc/togglelock_verb
 
+	if(ispath(closet_appearance))
+		var/singleton/closet_appearance/app = GET_SINGLETON(closet_appearance)
+		if(app)
+			icon = app.icon
+			color = null
+			queue_icon_update()
+
+	material = SSmaterials.get_material_by_name(material)
+
 	return INITIALIZE_HINT_LATELOAD
+
+
 
 /obj/structure/closet/LateInitialize(mapload)
 	var/list/will_contain = WillContain()

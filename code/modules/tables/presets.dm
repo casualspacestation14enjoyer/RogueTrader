@@ -110,7 +110,7 @@
 	color = WOOD_COLOR_CHOCOLATE
 	material = MATERIAL_WALNUT
 
-/obj/structure/table/graf
+/obj/structure/table/warhammer
 	name = "table"
 	desc = "..."
 	icon = 'icons/obj/objects.dmi'
@@ -119,48 +119,48 @@
 	can_reinforce = 0
 	flipped = -1
 
-/obj/structure/table/graf/Initialize()
+/obj/structure/table/warhammer/Initialize()
 	auto_align()
 	. = ..()
 
-/obj/structure/table/graf/update_connections()
+/obj/structure/table/warhammer/update_connections()
 	return
 
-/obj/structure/table/graf/on_update_icon()
+/obj/structure/table/warhammer/on_update_icon()
 	icon_state = "[icon_state]"
 
-/obj/structure/table/graf/dirty_table
+/obj/structure/table/warhammer/dirty_table
 	icon_state = "wooden"
 
-/obj/structure/table/graf/rusty_table
+/obj/structure/table/warhammer/rusty_table
 	icon_state = "table1"
 
-/obj/structure/table/graf/polished_steel
+/obj/structure/table/warhammer/polished_steel
 	icon_state = "table2"
 
-/obj/structure/table/graf/rich_table
+/obj/structure/table/warhammer/rich_table
 	icon_state = "table3"
 
-/obj/structure/table/graf/old_table
+/obj/structure/table/warhammer/old_table
 	icon_state = "table4"
 
-/obj/structure/table/graf/polished_table
+/obj/structure/table/warhammer/polished_table
 	icon_state = "table5"
 
-/obj/structure/table/graf/butcher_table
+/obj/structure/table/warhammer/butcher_table
 	icon_state = "table7"
 
-/obj/structure/table/graf/big_wood_table
+/obj/structure/table/warhammer/big_wood_table
 	icon_state = "bigtable"
 
-/obj/structure/table/graf/pagan
+/obj/structure/table/warhammer/pagan
 	icon_state = "pagan_altar"
 
-/obj/structure/table/graf/shrine
+/obj/structure/table/warhammer/shrine
 	icon_state = "minorshrine"
 
-/obj/structure/table/graf/wood_office_table
+/obj/structure/table/warhammer/wood_office_table
 	icon_state = "minorshrine"
 
-/obj/structure/table/graf/reinf_table
+/obj/structure/table/warhammer/reinf_table
 	icon_state = "reinf_table2"

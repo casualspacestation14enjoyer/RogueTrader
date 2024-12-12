@@ -167,21 +167,21 @@
 	desc = "Standard issue hotshot laspack for more demanding las weapons."
 	icon_state = "hdevice"
 	color = COLOR_GUNMETAL
-	maxcharge = 800
+	maxcharge = 620
 	matter = list(MATERIAL_STEEL = 70, MATERIAL_GLASS = 6)
 
 /obj/item/cell/device/high/mechanicus
 	name = "experimental power pack"
 	desc = "A mechanicus power pack with incredible charge capacity."
 	icon_state = "hpcell"
-	maxcharge = 1100
+	maxcharge = 680
 	matter = list(MATERIAL_STEEL = 70, MATERIAL_GLASS = 6)
 
 /obj/item/cell/device/high/xenos
 	name = "xenos power pack"
 	desc = "A xenos power pack with incredible charge capacity."
 	icon_state = "hpcell"
-	maxcharge = 1200
+	maxcharge = 700
 	matter = list(MATERIAL_STEEL = 70, MATERIAL_GLASS = 6)
 
 /obj/item/cell/device/high/melta

@@ -393,19 +393,104 @@
 
 /* Tier 2 runes */
 
+/*
+/obj/effect/cleanable/heretic_rune/khorne
+	name = "strange marking"
+	icon = 'icons/map_project/eldritch/Zizo_Rite.dmi'
+	icon_state = "1"
+	desc = "..."
+	gender = PLURAL
+	density = 0
+	anchored = 1
+	layer = 2
+	var/list/existing_dirs = list()
+	blood_DNA = list()
+	appearance_flags = NO_CLIENT_COLOR
+	pixel_x = -32
+	pixel_y = -32
 
-/obj/rune/armor
+/obj/effect/cleanable/heretic_rune/khorne/New()
+	..()
+	icon_state = pick("1", "2", "3")
+
+/obj/effect/cleanable/heretic_rune/slaanesh
+	name = "strange marking"
+	icon = 'icons/map_project/eldritch/Zizo_Rite.dmi'
+	icon_state = "7"
+	desc = "..."
+	gender = PLURAL
+	density = 0
+	anchored = 1
+	layer = 2
+	blood_DNA = list()
+	appearance_flags = NO_CLIENT_COLOR
+	pixel_x = -32
+	pixel_y = -32
+
+/obj/effect/cleanable/heretic_rune/slaanesh/New()
+	..()
+	icon_state = pick("7", "8", "9")
+
+/obj/effect/cleanable/heretic_rune/tzeentch
+	name = "strange marking"
+	icon = 'icons/map_project/eldritch/Zizo_Rite.dmi'
+	icon_state = "18"
+	desc = "..."
+	gender = PLURAL
+	density = 0
+	anchored = 1
+	layer = 2
+	blood_DNA = list()
+	appearance_flags = NO_CLIENT_COLOR
+	pixel_x = -32
+	pixel_y = -32
+
+/obj/effect/cleanable/heretic_rune/tzeentch/New()
+	..()
+	icon_state = pick("14", "15", "16", "17", "18")
+
+/obj/effect/cleanable/heretic_rune/nurgle
+	name = "strange marking"
+	icon = 'icons/map_project/eldritch/Zizo_Rite.dmi'
+	icon_state = "5"
+	desc = "..."
+	gender = PLURAL
+	density = 0
+	anchored = 1
+	layer = 2
+	blood_DNA = list()
+	appearance_flags = NO_CLIENT_COLOR
+	pixel_x = -32
+	pixel_y = -32
+
+/obj/effect/cleanable/heretic_rune/nurgle/New()
+	..()
+	icon_state = pick("5", "6", "10")
+*/
+/obj/rune/chaos/on_update_icon()
+	return
+
+/obj/rune/chaos/armor
 	cultname = "summon tzeentchian wargear"
 	strokes = 3
+	icon = 'icons/map_project/eldritch/Zizo_Rite.dmi'
+	icon_state = "18"
+	desc = "..."
+	pixel_x = -32
+	pixel_y = -32
 
-/obj/rune/armor/cast(mob/living/user)
+/obj/rune/chaos/armor/New()
+	..()
+	icon_state = pick("14", "15", "16", "17", "18")
+
+/obj/rune/chaos/armor/cast(mob/living/user)
 	speak_incantation(user, "N'ath reth sh'yro eth d[pick("'","`")]raggathnor!")
-	visible_message(SPAN_WARNING("\The [src] disappears with a flash of red light, and a set of armor appears on \the [user]."), SPAN_WARNING("You are blinded by the flash of red light. After you're able to see again, you see that you are now wearing a set of armor."))
+
 
 	var/obj/O = user.get_equipped_item(slot_head) // This will most likely kill you if you are wearing a spacesuit, and it's 100% intended
 	if(O && istype(O, /obj/item/clothing/head/helmet))
 		qdel(O)
-		if(prob(35))
+		if(prob(10))
 			user.equip_to_slot_or_del(new /obj/item/bananapeel(get_turf(user)))
 		else if(prob(25))
 			user.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/flak/chaos/tzeentch(user), slot_head)
@@ -418,27 +503,36 @@
 	O = user.get_equipped_item(slot_wear_suit)
 	if(O && istype(O, /obj/item/clothing/suit/armor))
 		qdel(O)
-		if(prob(35))
+		if(prob(25))
 			user.equip_to_slot_or_del(new /obj/item/bananapeel(get_turf(user)))
+			visible_message(SPAN_WARNING("\The [src] disappears with a flash of red light, and a banana peel is summoned! Throne damn you tzeentch!"), SPAN_WARNING("You are blinded by the flash of red light. After you're able to see again, you see now that you are... armorless."))
 		else
 			user.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/grim/cult/tzee(user), slot_wear_suit)
+			visible_message(SPAN_WARNING("\The [src] disappears with a flash of red light, and a set of armor appears on \the [user]."), SPAN_WARNING("You are blinded by the flash of red light. After you're able to see again, you see that you are now wearing a set of armor."))
 
-	user.update_icons()
+	user.update_icons() // removed qdel[src] at the end of this code. if it breaks thats why
 
-	qdel(src)
-
-/obj/rune/armor2
+/obj/rune/chaos/armor2
 	cultname = "summon nurglite wargear"
 	strokes = 3
+	icon = 'icons/map_project/eldritch/Zizo_Rite.dmi'
+	icon_state = "5"
+	desc = "..."
+	pixel_x = -32
+	pixel_y = -32
 
-/obj/rune/armor2/cast(mob/living/user)
+/obj/rune/chaos/armor2/New()
+	..()
+	icon_state = pick("5", "6", "10")
+
+/obj/rune/chaos/armor2/cast(mob/living/user)
 	speak_incantation(user, "N'ath reth sh'yro eth d[pick("'","`")]raggathnor!")
 	visible_message(SPAN_WARNING("\The [src] disappears with a flash of red light, and a set of armor appears on \the [user]."), SPAN_WARNING("You are blinded by the flash of red light. After you're able to see again, you see that you are now wearing a set of armor."))
 
 	var/obj/O = user.get_equipped_item(slot_head) // This will most likely kill you if you are wearing a spacesuit, and it's 100% intended
 	if(O && istype(O, /obj/item/clothing/head/helmet))
 		qdel(O)
-		if(prob(25))
+		if(prob(15))
 			user.equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/bloodsoup(get_turf(user)))
 		else if(prob(25))
 			user.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/flak/chaos/nurgle(user), slot_head)
@@ -451,8 +545,9 @@
 	O = user.get_equipped_item(slot_wear_suit)
 	if(O && istype(O, /obj/item/clothing/suit/armor))
 		qdel(O)
-		if(prob(25))
+		if(prob(20))
 			user.equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/bloodsoup(get_turf(user)))
+			visible_message(SPAN_WARNING("\The [src] disappears with a flash of red light, and your armor is turned into soup!"))
 		else if(prob(50))
 			user.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/grim/cult/nurgle(user), slot_wear_suit)
 		else
@@ -460,34 +555,40 @@
 
 	user.update_icons()
 
-	qdel(src)
-
-/obj/rune/armor3
+/obj/rune/chaos/armor3
 	cultname = "summon khornate wargear"
 	strokes = 3
+	icon = 'icons/map_project/eldritch/Zizo_Rite.dmi'
+	icon_state = "1"
+	desc = "..."
+	pixel_x = -32
+	pixel_y = -32
 
-/obj/rune/armor3/cast(mob/living/user)
+/obj/rune/chaos/armor3/New()
+	..()
+	icon_state = pick("1", "2", "3")
+
+/obj/rune/chaos/armor3/cast(mob/living/user)
 	speak_incantation(user, "N'ath reth sh'yro eth d[pick("'","`")]raggathnor!")
 	visible_message(SPAN_WARNING("\The [src] disappears with a flash of red light, and a set of armor appears on \the [user]."), SPAN_WARNING("You are blinded by the flash of red light. After you're able to see again, you see that you are now wearing a set of armor."))
 
 	var/obj/O = user.get_equipped_item(slot_head) // This will most likely kill you if you are wearing a spacesuit, and it's 100% intended
 	if(O && istype(O, /obj/item/clothing/head/helmet))
 		qdel(O)
-		if(prob(20))
+		if(prob(10))
 			user.equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/applepie(get_turf(user)))
 		else
 			user.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/flak/chaos/bloodpact(user), slot_head)
 	O = user.get_equipped_item(slot_wear_suit)
 	if(O && istype(O, /obj/item/clothing/suit/armor))
 		qdel(O)
-		if(prob(20))
+		if(prob(10))
 			user.equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/applepie(get_turf(user)))
+			visible_message(SPAN_WARNING("\The [src] disappears with a flash of red light, and your armor is turned into pie!"))
 		else
 			user.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/grim/cult/bloodpact(user), slot_wear_suit)
 
 	user.update_icons()
-
-	qdel(src)
 
 /obj/rune/offering
 	cultname = "offering"

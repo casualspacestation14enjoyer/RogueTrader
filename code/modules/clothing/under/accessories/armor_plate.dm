@@ -9,7 +9,7 @@
 	max_pressure_protection = VOIDSUIT_MAX_PRESSURE
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+200
-	slowdown = 0.05
+	slowdown = 0.03
 	armor = list(
 		melee = ARMOR_MELEE_FLAK-1,
 		bullet = ARMOR_BALLISTIC_FLAK-2,
@@ -38,7 +38,7 @@
 		rad = ARMOR_RAD_THIRTY+20,
 		bomb = ARMOR_BOMB_TEN+10
 		)
-	slowdown = 0.06
+	slowdown = 0.04
 
 /obj/item/clothing/accessory/armor_plate/nurgle
 	name = "nurgle plates"
@@ -60,7 +60,7 @@
 		rad = ARMOR_RAD_SHIELDED,
 		bomb = ARMOR_BOMB_TEN+10
 		)
-	slowdown = 0.07
+	slowdown = 0.05
 
 /obj/item/clothing/accessory/armor_plate/nurgleheavy
 	name = "heavy nurgle plates"
@@ -82,7 +82,7 @@
 		rad = ARMOR_RAD_SHIELDED,
 		bomb = ARMOR_BOMB_TEN+15
 		)
-	slowdown = 0.085
+	slowdown = 0.065
 
 /obj/item/clothing/accessory/armor_plate/tzeentch
 	name = "exotic plates"
@@ -104,7 +104,7 @@
 		rad = ARMOR_RAD_THIRTY+30,
 		bomb = ARMOR_BOMB_TEN+20
 		)
-	slowdown = 0.07
+	slowdown = 0.05
 
 /obj/item/clothing/accessory/armor_plate/flakheavy
 	name = "heavy flak plates"
@@ -123,7 +123,7 @@
 		rad = ARMOR_RAD_THIRTY+30,
 		bomb = ARMOR_BOMB_TEN+10
 		)
-	slowdown = 0.08
+	slowdown = 0.06
 
 /obj/item/clothing/accessory/armor_plate/flaklamellar
 	name = "lamellar flak plates"
@@ -141,7 +141,7 @@
 		rad = ARMOR_RAD_THIRTY+20,
 		bomb = ARMOR_BOMB_TEN+5
 	)
-	slowdown = 0.04 // Lighter weight, allows for better mobility
+	slowdown = 0.02 // Lighter weight, allows for better mobility
 
 /obj/item/clothing/accessory/armor_plate/flaktribal
 	name = "tribal flak lamellar"
@@ -151,7 +151,7 @@
 	item_flags = ITEM_FLAG_THICKMATERIAL
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+450
-	slowdown = 0.04
+	slowdown = 0.02
 	armor = list(
 		melee = ARMOR_MELEE_FLAK-1,
 		bullet = ARMOR_BALLISTIC_FLAK-1,
@@ -180,7 +180,7 @@
 		bomb = ARMOR_BOMB_THIRTY
 		)
 
-	slowdown = 0.07
+	slowdown = 0.05
 
 /obj/item/clothing/accessory/armor_plate/carapacemaster
 	name = "masterwork carapace plates"
@@ -200,7 +200,7 @@
 		bomb = ARMOR_BOMB_THIRTY+10
 		)
 
-	slowdown = 0.07
+	slowdown = 0.05
 
 /obj/item/clothing/accessory/armor_plate/carapaceheavy
 	name = "heavy carapace plates"
@@ -219,7 +219,7 @@
 		bio = ARMOR_BIO_THIRTY+20,
 		bomb = ARMOR_BOMB_THIRTY
 		)
-	slowdown = 0.09
+	slowdown = 0.065
 
 /obj/item/clothing/accessory/armor_plate/padding
 	name = "light padding"
@@ -231,7 +231,7 @@
 	max_pressure_protection = null
 	color = COLOR_BEASTY_BROWN
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
-	slowdown = 0.02
+	slowdown = 0
 	armor = list(
 		melee = ARMOR_MELEE_PRIMAL-1,
 		bullet = ARMOR_BALLISTIC_PRIMAL,
@@ -253,7 +253,7 @@
 	max_pressure_protection = SPACE_SUIT_MAX_PRESSURE
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+350
-	slowdown = 0.03
+	slowdown = 0.01
 	armor = list(
 		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_PRIMAL+1, // Heavy padding is better for bullets then las.
@@ -275,7 +275,7 @@
 	item_flags = ITEM_FLAG_THICKMATERIAL
 	color = COLOR_BEASTY_BROWN
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
-	slowdown = 0.03
+	slowdown = 0.01
 	armor = list(
 		melee = ARMOR_MELEE_PRIMAL-1,
 		bullet = ARMOR_BALLISTIC_PRIMAL,
@@ -297,7 +297,7 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+550
-	slowdown = 0.05
+	slowdown = 0.02
 	armor = list(
 		melee = ARMOR_MELEE_PRIMAL,
 		bullet = ARMOR_BALLISTIC_PRIMAL+1,
@@ -319,7 +319,7 @@
 	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+700
-	slowdown = 0.08
+	slowdown = 0.06
 	armor = list(
 		melee = ARMOR_MELEE_FLAK+1,
 		bullet = ARMOR_BALLISTIC_CARAPACE+1,
@@ -341,7 +341,7 @@
 	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+700
-	slowdown = 0.095
+	slowdown = 0.07
 	armor = list(
 		melee = ARMOR_MELEE_FLAK+1,
 		bullet = ARMOR_BALLISTIC_CARAPACE+2,
@@ -372,7 +372,7 @@
 	blood_overlay_type = "armor" // Bodygloves use base armor_plate temp protection.
 	icon_state = "robotics"
 	item_state = "robotics_s"
-	slowdown = 0.03
+	slowdown = 0.02
 	flags_inv = null
 	armor = list(
 		melee = 0,
@@ -405,7 +405,7 @@
 	blood_overlay_type = "armor"
 	icon_state = "robotics"
 	item_state = "robotics_s"
-	slowdown = 0.04
+	slowdown = 0.03
 	flags_inv = null
 	armor = list(
 		melee = 0,
@@ -435,7 +435,7 @@
 	blood_overlay_type = "armor"
 	icon_state = "jensen_s"
 	item_state = "jensen_s"
-	slowdown = 0.03 // Almost the same as Mech but lighter and offers no decent bio/rad prot.
+	slowdown = 0.02 // Almost the same as Mech but lighter and offers no decent bio/rad prot.
 	flags_inv = null
 	armor = list(
 		melee = 0,
@@ -466,7 +466,7 @@
 	blood_overlay_type = "armor"
 	icon_state = "robotics"
 	item_state = "robotics_s"
-	slowdown = 0.07 // This item is super OP if stacked with power armor. It can be the difference between a lasgun critting you or just causing an injury.
+	slowdown = 0.04 // This item is super OP if stacked with power armor. It can be the difference between a lasgun critting you or just causing an injury.
 	flags_inv = null
 	armor = list(
 		melee = 1,
@@ -496,7 +496,7 @@
 	blood_overlay_type = "armor"
 	icon_state = "catacomm" // Bulletproof pants and shirt.
 	item_state = "catacomm_s"
-	slowdown = 0.06
+	slowdown = 0.02
 	flags_inv = null
 	armor = list(
 		melee = 0,

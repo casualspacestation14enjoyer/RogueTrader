@@ -85,10 +85,10 @@
 	var/static/empty_round_timeout = 0
 
 	/// Time in minutes before the first autotransfer vote
-	var/static/vote_autotransfer_initial = 120
+	var/static/vote_autotransfer_initial = 140
 
 	/// Time in minutes before each following autotransfer vote
-	var/static/vote_autotransfer_interval = 30
+	var/static/vote_autotransfer_interval = 40
 
 	/// Time in minutes before transfer votes where antagonists cannot be added
 	var/static/transfer_vote_block_antag_time = 20
@@ -97,7 +97,7 @@
 	var/static/vote_autogamemode_timeleft = 100
 
 	/// Length of time before round start (in seconds)
-	var/static/pre_game_time = 180
+	var/static/pre_game_time = 220
 
 	/// vote does not default to nochange/norestart (tbi)
 	var/static/vote_no_default = FALSE
@@ -143,7 +143,7 @@
 	var/static/hostedby
 
 	/// An observer must wait this many minutes before being able to return to the main menu
-	var/static/respawn_delay = 10
+	var/static/respawn_delay = 7
 
 	/// An observer that has returned to the main menu must wait this many minutes before rejoining
 	var/static/respawn_menu_delay = FALSE
@@ -187,9 +187,9 @@
 
 	var/static/usealienwhitelistSQL = FALSE
 
-	var/static/allow_extra_antags = FALSE
+	var/static/allow_extra_antags = TRUE
 
-	var/static/guests_allowed = TRUE
+	var/static/guests_allowed = FALSE
 
 	var/static/debugparanoid = FALSE
 
@@ -251,13 +251,13 @@
 	var/static/no_click_cooldown = FALSE
 
 	/// Modifier for ticks between moves while running
-	var/static/run_delay = 1.7
+	var/static/run_delay = 2.1
 
 	/// Modifier for ticks between moves while walking
 	var/static/walk_delay = 3
 
 	/// Modifier for ticks between moves while creeping
-	var/static/creep_delay = 4.5
+	var/static/creep_delay = 3.2
 
 	/// Modifier for base stamina cost while sprinting
 	var/static/minimum_sprint_cost = 0.8
@@ -430,7 +430,7 @@
 	var/static/warn_autoban_threshold = 3
 
 	/// The length in minutes of an automatic ban created by passing the warning threshold
-	var/static/warn_autoban_duration = 30
+	var/static/warn_autoban_duration = 60
 
 	var/static/hub_entry = "<b>$SERVER</b> by <b>$HOST</b> &#8212; $ACTIVES of $PLAYERS alive"
 

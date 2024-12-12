@@ -450,6 +450,7 @@
 /obj/item/ammo_magazine/heavy
 	name = "magazine (10mm AR)"
 	max_ammo = 25
+	icon_state = "5556"
 	ammo_type = /obj/item/ammo_casing/heavy
 
 /obj/item/ammo_magazine/heavy/ap

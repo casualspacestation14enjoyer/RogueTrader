@@ -358,6 +358,8 @@
 	allowed = list(
 		/obj/item/gun,
 		/obj/item/ammo_magazine,
+		/obj/item/material/twohanded/ravenor,
+		/obj/item/melee,
 		/obj/item/device/flashlight,
 		/obj/item/tank,
 		/obj/item/device/suit_cooling_unit,

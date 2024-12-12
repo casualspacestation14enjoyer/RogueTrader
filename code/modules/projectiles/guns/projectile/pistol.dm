@@ -33,7 +33,7 @@
 	safety_icon = "safety"
 	magazine_type = /obj/item/ammo_magazine/pistol/rubber
 	accuracy = 0
-	fire_delay = 4
+	fire_delay = 3.5
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 
 /obj/item/gun/projectile/pistol/sec/empty
@@ -51,7 +51,7 @@
 	safety_icon = "safety"
 	force = 9
 	caliber = CALIBER_SLUG_MAGNUM
-	fire_delay = 4.4
+	fire_delay = 3.8
 	screen_shake = 2
 	magazine_type = /obj/item/ammo_magazine/magnum
 	allowed_magazines = /obj/item/ammo_magazine/magnum
@@ -73,7 +73,7 @@
 	magazine_type = /obj/item/ammo_magazine/gyrojet
 	allowed_magazines = /obj/item/ammo_magazine/gyrojet
 	handle_casings = CLEAR_CASINGS	//the projectile is the casing
-	fire_delay = 4.5
+	fire_delay = 4.2
 	auto_eject = 1
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
 	mag_insert_sound = 'sound/weapons/guns/interaction/hpistol_magin.ogg'
@@ -95,7 +95,7 @@
 	item_state = null
 	w_class = ITEM_SIZE_SMALL
 	caliber = CALIBER_SLUG_SMALL
-	fire_delay = 4
+	fire_delay = 3.4
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2, TECH_ESOTERIC = 2)
 	magazine_type = /obj/item/ammo_magazine/pistol/small
 	allowed_magazines = /obj/item/ammo_magazine/pistol/small

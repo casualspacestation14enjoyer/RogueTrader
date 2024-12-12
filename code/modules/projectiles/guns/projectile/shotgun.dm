@@ -214,6 +214,7 @@
 	max_shells = 3
 	w_class = ITEM_SIZE_HUGE
 	force = 10
+	fire_delay = 2.5
 	accuracy = -1
 	obj_flags =  OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BACK
@@ -224,10 +225,6 @@
 	wielded_item_state = "gun_wielded"
 
 	burst_delay = 0
-	firemodes = list(
-		list(mode_name="single", burst=1),
-		list(mode_name="double", burst=2)
-		)
 
 /obj/item/gun/projectile/shotgun/doublebarrel/pellet
 	ammo_type = /obj/item/ammo_casing/shotgun/pellet
@@ -308,6 +305,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	accuracy = -1.5
 	one_hand_penalty = 0
+	fire_delay = 2.2
 
 
 /obj/item/gun/projectile/shotgun/doublebarrel/sawn/empty

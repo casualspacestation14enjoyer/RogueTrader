@@ -17,7 +17,7 @@
 	id_types = list(/obj/item/card/id/torch/gold)
 	pda_type = /obj/item/modular_computer/pda/captain
 	back = /obj/item/storage/backpack/satchel/warfare/heavy
-	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/gun/energy/lasgun/laspistol/lord = 1, /obj/item/implant/translator = 1)
+	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/material/twohanded/ravenor/knife/trench = 1, /obj/item/gun/energy/lasgun/laspistol/lord = 1, /obj/item/implant/translator = 1)
 
 /singleton/hierarchy/outfit/job/torch/crew/command/seneschal
 	name = OUTFIT_JOB_NAME("Seneschal")
@@ -45,7 +45,7 @@
 	id_types = list(/obj/item/card/id/torch/silver)
 	pda_type = /obj/item/modular_computer/pda/heads
 	back = /obj/item/storage/backpack/satchel/warfare/heavy
-	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/gun/energy/lasgun/laspistol/militarum = 1, /obj/item/cell/device/high/mechanicus = 1)
+	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/material/twohanded/ravenor/knife/trench = 1, /obj/item/gun/energy/lasgun/laspistol/militarum = 1, /obj/item/cell/device/high/mechanicus = 1)
 
 /singleton/hierarchy/outfit/job/torch/crew/krootmerc
 	name = OUTFIT_JOB_NAME("Kroot Tracker")
@@ -60,7 +60,7 @@
 	pda_type = /obj/item/modular_computer/pda/heads
 	back = /obj/item/storage/backpack/satchel/explorer
 	l_pocket = /obj/item/device/flashlight/maglight
-	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/gun/projectile/pistol/slug/old = 1, /obj/item/ammo_magazine/speedloader/clip/sniper/xenos = 4)
+	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/material/twohanded/ravenor/knife/trench = 1, /obj/item/gun/projectile/pistol/slug/old = 1, /obj/item/ammo_magazine/speedloader/clip/sniper/xenos = 4)
 
 /singleton/hierarchy/outfit/job/torch/crew/command/biologis
 	name = OUTFIT_JOB_NAME("Magos Biologis")
@@ -78,7 +78,7 @@
 	id_types = list(/obj/item/card/id/torch/silver/medical)
 	pda_type = /obj/item/modular_computer/pda/heads/cmo
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest
-	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/gun/energy/lasgun/laspistol/hellpistol = 1, /obj/item/implant/translator = 1)
+	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/material/twohanded/ravenor/knife = 1, /obj/item/gun/energy/lasgun/laspistol/hellpistol = 1, /obj/item/implant/translator = 1)
 
 /singleton/hierarchy/outfit/job/torch/crew/command/chief_engineer
 	name = OUTFIT_JOB_NAME("Magos Explorator")
@@ -96,7 +96,7 @@
 	id_types = list(/obj/item/card/id/torch/silver/engineering)
 	pda_type = /obj/item/modular_computer/pda/heads/ce
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest
-	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/gun/energy/plasma/pistol/mechanicus = 1)
+	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/material/twohanded/ravenor/knife = 1, /obj/item/gun/energy/plasma/pistol/mechanicus = 1)
 
 /singleton/hierarchy/outfit/job/torch/crew/command/cadian_captain
 	name = OUTFIT_JOB_NAME("Cadian Captain")

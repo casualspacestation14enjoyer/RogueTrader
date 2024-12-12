@@ -4,8 +4,8 @@
 	name = "private yacht"
 	desc = "Sensor array is detecting a small vessel with unknown lifeforms on board."
 	color = "#ffc966"
-	vessel_mass = 3000
-	max_speed = 1/(2 SECONDS)
+	vessel_mass = 2000
+	max_speed = 1/(1 SECOND)
 	initial_generic_waypoints = list(
 		"nav_yacht_1",
 		"nav_yacht_2",
@@ -22,7 +22,7 @@
 	id = "awaysite_yach"
 	description = "Tiny movable ship with spiders."
 	suffixes = list("yacht/yacht.dmm")
-	spawn_cost = 0.5
+	spawn_cost = 1
 	area_usage_test_exempted_root_areas = list(/area/yacht)
 
 /obj/shuttle_landmark/nav_yacht/nav1

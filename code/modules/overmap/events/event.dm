@@ -277,15 +277,15 @@ var/global/singleton/overmap_event_handler/overmap_event_handler = new()
 
 /datum/overmap_event/meteor
 	name = "asteroid field"
-	count = 15
+	count = 10
 	radius = 4
 	continuous = FALSE
 	hazards = /obj/overmap/event/meteor
 
 /datum/overmap_event/electric
 	name = "electrical storm"
-	count = 11
-	radius = 3
+	count = 2
+	radius = 2
 	opacity = 0
 	hazards = /obj/overmap/event/electric
 
@@ -297,8 +297,8 @@ var/global/singleton/overmap_event_handler/overmap_event_handler = new()
 
 /datum/overmap_event/ion
 	name = "ion cloud"
-	count = 8
-	radius = 3
+	count = 2
+	radius = 2
 	opacity = 0
 	hazards = /obj/overmap/event/ion
 
@@ -318,7 +318,7 @@ var/global/singleton/overmap_event_handler/overmap_event_handler = new()
 
 /datum/overmap_event/gravity
 	name = "dark matter influx"
-	count = 12
-	radius = 4
+	count = 1
+	radius = 1
 	opacity = 0
 	hazards = /obj/overmap/event/gravity

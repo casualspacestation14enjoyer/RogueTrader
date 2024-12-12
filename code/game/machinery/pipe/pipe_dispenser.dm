@@ -10,7 +10,7 @@
 	construct_state = /singleton/machine_construction/default/panel_closed
 	uncreated_component_parts = null
 
-	idle_power_usage = 500
+	idle_power_usage = 100
 	power_channel = EQUIP
 	use_power = POWER_USE_OFF
 

@@ -3,7 +3,7 @@
 	id = "crashed_shuttle"
 	description = "Crushed imperial shuttle."
 	suffixes = list("crashed_shuttle/crashed_shuttle.dmm")
-	spawn_cost = 0.5
+	spawn_cost = 1
 	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/graysontug)
 	apc_test_exempt_areas = list(/area/map_template/crashed_shuttle/crash = NO_SCRUBBER|NO_VENT|NO_APC)
 	ruin_tags = RUIN_HUMAN|RUIN_WRECK
@@ -26,7 +26,7 @@
 	current_location = "nav_graysontug_start"
 	range = 1
 	shuttle_area = /area/map_template/crashed_shuttle/graysontug
-	fuel_consumption = 4
+	fuel_consumption = 2
 	defer_initialisation = TRUE
 	flags = SHUTTLE_FLAGS_PROCESS
 	skill_needed = SKILL_MIN

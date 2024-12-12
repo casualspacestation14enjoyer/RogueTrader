@@ -11,7 +11,7 @@
 	ammo_type = /obj/item/ammo_casing/pistol
 	fire_sound = 'sound/warhammer/guns/fire/revolver_fire.ogg'
 	accuracy = 0.3
-	fire_delay = 3.5
+	fire_delay = 3
 	max_shells = 9
 	one_hand_penalty = 0
 	mag_remove_sound 	= 'sound/warhammer/guns/interact/rev_magout.ogg'
@@ -29,7 +29,7 @@
 	w_class = ITEM_SIZE_SMALL
 	slot_flags = SLOT_BELT|SLOT_HOLSTER|SLOT_POCKET
 	accuracy = 0
-	fire_delay = 3.4
+	fire_delay = 2.9
 	max_shells = 9
 
 /obj/item/gun/projectile/revolver/imperial/heavy
@@ -41,7 +41,7 @@
 	ammo_type = /obj/item/ammo_casing/magnum
 	fire_sound = 'sound/warhammer/guns/fire/revolver_fire.ogg'
 	accuracy = 0
-	fire_delay = 3.7
+	fire_delay = 3.2
 	max_shells = 7
 
 /obj/item/gun/projectile/revolver/imperial/heavy/mateba
@@ -50,7 +50,7 @@
 	icon_state = "goldmateba"
 	sales_price = 10
 	accuracy = 0.3
-	fire_delay= 3.5
+	fire_delay = 3
 	max_shells = 8
 
 /obj/item/gun/projectile/revolver/imperial/heavy/bounty
@@ -58,7 +58,7 @@
 	desc = "A necromundan slug revolver -- a favorite among bounty hunters due to it's supreme accuracy at a distance."
 	icon_state = "necros"
 	accuracy = 0.6
-	fire_delay= 3.7
+	fire_delay = 3.2
 	max_shells = 7
 
 /obj/item/gun/projectile/revolver/imperial/heavy/autogun
@@ -69,9 +69,7 @@
 	fire_delay= 4
 	max_shells = 6
 	ammo_type = /obj/item/ammo_casing/autogun/militarum
-	caliber = list(
-	CALIBER_AUTOGUN
-)
+	caliber = CALIBER_AUTOGUN
 
 /obj/item/gun/projectile/pistol/slug // Do not get the calibers mixed up. Slug pistols use caliber_slug_magnum.
 	name = "Slug Pistol"
@@ -85,10 +83,8 @@
 	allowed_magazines = /obj/item/ammo_magazine/magnum
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	one_hand_penalty = 0
-	fire_delay = 3.9
-	caliber = list(
-	CALIBER_SLUG_MAGNUM
-)
+	fire_delay = 3.4
+	caliber = CALIBER_SLUG_MAGNUM
 	accuracy = -0.5
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	sales_price = 11
@@ -106,18 +102,13 @@
 
 /obj/item/gun/projectile/pistol/slug/old
 	name = "Grim Slug Pistol"
-	desc = "A commonly produced slug pistol, one of many thousands of variations of manufactured slug weapons -- this imitation clearly has been made in less then ideal conditions. It seems retrofitted to take slug and stub rounds."
+	desc = "A commonly produced slug pistol, one of many thousands of variations of manufactured slug weapons -- this imitation clearly has been made in less then ideal conditions. It seems retrofitted to fire two rounds at a time..."
 	icon_state = "tacpistol"
 	item_state = "pistol"
-	ammo_type = list(/obj/item/ammo_casing/magnum,/obj/item/ammo_casing/pistol)
-	allowed_magazines = list(/obj/item/ammo_magazine/pistol/throwback,/obj/item/ammo_magazine/magnum)
-	magazine_type = /obj/item/ammo_magazine/pistol/throwback
-	fire_delay = 3.8
-	accuracy = -1 // Fires both Antique and Magnum rounds. Not accurate.
+	fire_delay = 3.3
+	accuracy = -2 // This pistol is only ideal for shooting at simple mobs or in CQB.
 	sales_price = 15
-	caliber = list(
-	CALIBER_SLUG_MAGNUM
-)
+	caliber = CALIBER_SLUG_MAGNUM
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 
 /obj/item/gun/projectile/pistol/slug/old/on_update_icon()
@@ -139,13 +130,11 @@
 	caliber = "shotgun"
 	force = 15
 	accuracy = -0.5
-	fire_delay= 3.9
+	fire_delay = 3.4
 	allowed_magazines = /obj/item/ammo_magazine/shotholder
 	magazine_type = /obj/item/ammo_magazine/shotholder/flechette
 	ammo_type = /obj/item/ammo_casing/shotgun
-	caliber = list(
-	CALIBER_SHOTGUN
-)
+	caliber = CALIBER_SHOTGUN
 	fire_sound = 'sound/warhammer/guns/fire/revolver_fire.ogg'
 
 /obj/item/gun/projectile/pistol/slug/shotgun/on_update_icon()
@@ -168,12 +157,10 @@
 	magazine_type = /obj/item/ammo_magazine/pistol
 	allowed_magazines = /obj/item/ammo_magazine/pistol
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
-	caliber = list(
-	CALIBER_SLUG
-)
+	caliber = CALIBER_SLUG
 	sales_price = 8
 	accuracy = 0.3
-	fire_delay = 3.3
+	fire_delay = 2.8
 
 /obj/item/gun/projectile/pistol/stub/on_update_icon()
 	..()
@@ -194,7 +181,7 @@
 	slot_flags = SLOT_BELT|SLOT_HOLSTER|SLOT_POCKET
 	accuracy = 0
 	sales_price = 8
-	fire_delay = 3.2
+	fire_delay = 2.7
 
 /obj/item/gun/projectile/pistol/stub/snub/on_update_icon()
 	..()
@@ -212,7 +199,7 @@
 	desc = "A custom forged double-barrel stub pistol used infamously by smugglers and gangers in close quarter fighting."
 	icon_state = "stub2"
 	item_state = "pistol"
-	fire_delay = 3.3
+	fire_delay = 2.8
 	burst = 2
 	burst_delay = 1.8
 	accuracy = -1
@@ -233,10 +220,8 @@
 	name = "Talon Stub Pistol"
 	desc = "A mechanicus forged black matted stub-pistol that fires specialized 7mm penetrator tech rounds."
 	icon_state = "talon"
-	fire_delay = 3
-	caliber = list(
-	CALIBER_SLUG_SMALL
-)
+	fire_delay = 2.5
+	caliber = CALIBER_SLUG_SMALL
 	magazine_type = /obj/item/ammo_magazine/pistol/small/ap
 	allowed_magazines = /obj/item/ammo_magazine/pistol/small
 	auto_eject = 1
@@ -264,7 +249,7 @@
 	force = 12
 	caliber = ".75"
 	accuracy = -1.5
-	fire_delay = 4.2
+	fire_delay = 3.7
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_pistol_magazine
@@ -290,7 +275,7 @@
 	force = 13
 	caliber = ".75"
 	accuracy = -1
-	fire_delay = 4
+	fire_delay = 3.5
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_pistol_magazine
@@ -316,7 +301,7 @@
 	force = 12
 	caliber = ".75"
 	accuracy = -0.5
-	fire_delay = 3.9
+	fire_delay = 3.4
 	sales_price = 50
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine/ms
 
@@ -338,7 +323,7 @@
 	item_state = "sisterbpistol"
 	force = 14
 	accuracy = -1
-	fire_delay = 3.8
+	fire_delay = 3.3
 	attack_verb = list ("smited", "struck")
 	sales_price = 70
 

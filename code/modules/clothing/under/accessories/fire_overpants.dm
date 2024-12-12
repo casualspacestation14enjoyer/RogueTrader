@@ -8,7 +8,7 @@
 	armor = list(laser = ARMOR_LASER_BASIC, energy = ARMOR_ENERGY_TEN, bomb = ARMOR_BOMB_TEN)
 	body_parts_covered = LOWER_TORSO | LEGS
 	body_location = LOWER_TORSO | LEGS
-	slowdown = 0.5
+	slowdown = 0.05
 
 	heat_protection = LOWER_TORSO | LEGS
 	cold_protection = LOWER_TORSO | LEGS

@@ -24,7 +24,7 @@
 	max_storage_space = DEFAULT_BACKPACK_STORAGE
 	open_sound = 'sound/effects/storage/unzip.ogg'
 	allow_slow_dump = TRUE
-	slowdown_general = 0.025
+	slowdown_general = 0.015
 
 	/// Can this backpack be opened while worn on the back?
 	var/worn_access = TRUE
@@ -465,9 +465,9 @@
 
 
 //ERT backpacks.
-/obj/item/storage/backpack/ert
-	name = "emergency response team backpack"
-	desc = "A spacious backpack with lots of pockets, used by members of the Emergency Response Team."
+/obj/item/storage/backpack/tau
+	name = "xenos backpack"
+	desc = "A spacious backpack with lots of pockets, used by members of the tau empire."
 	icon_state = "ert_commander"
 	item_state_slots = list(
 		slot_l_hand_str = "securitypack",
@@ -475,26 +475,26 @@
 		)
 
 //Commander
-/obj/item/storage/backpack/ert/commander
-	name = "emergency response team commander backpack"
-	desc = "A spacious backpack with lots of pockets, worn by the commander of an Emergency Response Team."
+/obj/item/storage/backpack/tau/commander
+	name = "xenos backpack"
+	desc = "A spacious backpack with lots of pockets, worn by the veterans of the tau empire."
 
 //Security
-/obj/item/storage/backpack/ert/security
-	name = "emergency response team militarum backpack"
-	desc = "A spacious backpack with lots of pockets, worn by militarum members of an Emergency Response Team."
+/obj/item/storage/backpack/tau/security
+	name = "xenos backpack"
+	desc = "A spacious backpack with lots of pockets, worn by militarum members of the tau empire."
 	icon_state = "ert_security"
 
 //Engineering
-/obj/item/storage/backpack/ert/engineer
-	name = "emergency response team engineer backpack"
-	desc = "A spacious backpack with lots of pockets, worn by engineering members of an Emergency Response Team."
+/obj/item/storage/backpack/tau/engineer
+	name = "xenos backpack"
+	desc = "A spacious backpack with lots of pockets, worn by engineering members of the tau empire."
 	icon_state = "ert_engineering"
 
 //Medical
-/obj/item/storage/backpack/ert/medical
-	name = "emergency response team corpsman backpack"
-	desc = "A spacious backpack with lots of pockets, worn by the corpsmen of an Emergency Response Team."
+/obj/item/storage/backpack/tau/medical
+	name = "xenos backpack"
+	desc = "A spacious backpack with lots of pockets, worn by the corpsmen of the tau empire."
 	icon_state = "ert_medical"
 
 /*
@@ -598,14 +598,7 @@
 	anchored = i ? TRUE : FALSE
 	alpha = i ? 128 : initial(alpha)
 
-/obj/item/storage/backpack/satchel/flat/use_tool(obj/item/tool, mob/living/user, list/click_params)
-	var/turf/T = get_turf(src)
-	if(hides_under_flooring() && isturf(T) && !T.is_plating())
-		to_chat(user, SPAN_WARNING("You must remove the plating first."))
-		return TRUE
-	return ..()
-
-/obj/item/storage/backpack/satchel/flat/deserter
+/obj/item/storage/backpack/satchel/deserter
 	startswith = list(
 		/obj/item/clothing/mask/gas/half/cadianrespirator,
 		/obj/item/clothing/shoes/jackboots/cadian,
@@ -613,7 +606,7 @@
 		/obj/item/clothing/gloves/thick/swat/cadian,
 	)
 
-/obj/item/storage/backpack/satchel/flat/thief1
+/obj/item/storage/backpack/satchel/thief1
 	startswith = list(
 		/obj/item/device/multitool/hacktool,
 		/obj/item/device/radio_jammer,
@@ -625,7 +618,7 @@
 		/obj/item/device/radio/headset/headset_service,
 	)
 
-/obj/item/storage/backpack/satchel/flat/thief2
+/obj/item/storage/backpack/satchel/thief2
 	startswith = list(
 		/obj/item/card/emag,
 		/obj/item/clothing/mask/chameleon/voice,
@@ -636,7 +629,7 @@
 		/obj/item/clothing/shoes/jackboots/pilgrim_boots,
 	)
 
-/obj/item/storage/backpack/satchel/flat/thief3
+/obj/item/storage/backpack/satchel/thief3
 	startswith = list(
 		/obj/item/device/multitool/hacktool,
 		/obj/item/device/cosmetic_surgery_kit,
@@ -646,7 +639,7 @@
 		/obj/item/clothing/accessory/armor_plate/bodyglove,
 	)
 
-/obj/item/storage/backpack/satchel/flat/interrogator1
+/obj/item/storage/backpack/satchel/interrogator1
 	startswith = list(
 		/obj/item/card/emag,
 		/obj/item/storage/box/contraband/toxin,
@@ -658,7 +651,7 @@
 		/obj/item/clothing/head/helmet/inquisition/stealth,
 	)
 
-/obj/item/storage/backpack/satchel/flat/interrogator2
+/obj/item/storage/backpack/satchel/interrogator2
 	startswith = list(
 		/obj/item/card/emag,
 		/obj/item/storage/box/contraband/toxin,
@@ -674,8 +667,8 @@
 	name = "heavy rucksack"
 	desc = "A heavy rucksack."
 	icon_state = "warfare_satchel"
-	max_storage_space = DEFAULT_BACKPACK_STORAGE+3
-	slowdown_general = 0.04
+	max_storage_space = DEFAULT_BACKPACK_STORAGE+2
+	slowdown_general = 0.03
 
 /obj/item/storage/backpack/satchel/warfare
 	name = "light satchel"
@@ -688,8 +681,8 @@
 	desc = "Field ready kit, tried and tested through countless encounters."
 	icon_state = "kriegpack"
 	item_state = "kriegpack"
-	max_storage_space = DEFAULT_BACKPACK_STORAGE+2
-	slowdown_general = 0.035
+	max_storage_space = DEFAULT_BACKPACK_STORAGE+1
+	slowdown_general = 0.023
 
 /obj/item/storage/backpack/satchel/krieger/grenadier
 	desc = "An assembled kit for air filtration, weapon power supply, and basic storage. Perfect to bring with you into no man's land."
@@ -721,7 +714,7 @@
 /obj/item/storage/backpack/satchel/warfare/techpriest
 	desc = "BZZZRRRRT."
 	icon_state = "warfare_satchel"
-	max_storage_space = DEFAULT_BACKPACK_STORAGE+6
+	max_storage_space = DEFAULT_BACKPACK_STORAGE+2
 	canremove = FALSE
 	// var/can_toggle = 1
 
@@ -731,7 +724,7 @@
 	desc = "A Powerpack belongs to the Battle Sister of the Order Of The Sacred Rose. It bears the Sigil of the Adepta Sororitas.</i>"
 	icon_state = "sister"
 	item_state = "sister"
-	max_storage_space = DEFAULT_BACKPACK_STORAGE+4
+	max_storage_space = DEFAULT_BACKPACK_STORAGE
 	canremove = 1
 
 /obj/item/storage/backpack/satchel/warfare/sisterofbattle/mlsister
@@ -739,7 +732,7 @@
 	desc = "A Powerpack for the consecrated power armor of the Adeptas Sororitas. It has the colors of the Order of Our Martyred Lady.</i>"
 	icon_state = "mlsister"
 	item_state = "mlsister"
-	max_storage_space = DEFAULT_BACKPACK_STORAGE+4
+	max_storage_space = DEFAULT_BACKPACK_STORAGE
 	canremove = 1
 
 
@@ -748,7 +741,7 @@
 	desc = "A Powerpack for the consecrated power armor of the Adeptas Sororitas. It has the colors of the Order of the Bloody Rose.</i>"
 	icon_state = "brsister"
 	item_state = "brsister"
-	max_storage_space = DEFAULT_BACKPACK_STORAGE+4
+	max_storage_space = DEFAULT_BACKPACK_STORAGE
 	canremove = 1
 
 /obj/item/storage/backpack/satchel/astartes
@@ -758,7 +751,7 @@
 	icon_state = "ultrapack"
 	item_state = "ultrapack"
 	canremove = 1
-	max_storage_space = DEFAULT_BACKPACK_STORAGE+6
+	max_storage_space = DEFAULT_BACKPACK_STORAGE+2
 
 /obj/item/storage/backpack/satchel/astartes/ultramarine
 	name = "Astartes Mark VII Powerpack"
@@ -832,7 +825,7 @@
 	item_icons = list(slot_back_str = 'icons/mob/32x40/storage.dmi')
 	icon_state = "techpack"
 	item_state = "techpack"
-	max_storage_space = DEFAULT_BACKPACK_STORAGE+7
+	max_storage_space = DEFAULT_BACKPACK_STORAGE+3
 
 /obj/item/storage/backpack/satchel/warfare/kroot
 	desc = "Fit for war, and not much else."

@@ -12,9 +12,11 @@
 /obj/machinery/door/airlock
 	name = "airlock"
 	icon = 'icons/obj/doors/station/door.dmi'
-	icon_state = "closed"
+	icon_state = "door_closed"
 	power_channel = ENVIRON
 	interact_offline = FALSE
+	health_max = 3000
+	health_min_damage = 25
 
 	health_flags = HEALTH_FLAG_BREAKABLE
 
@@ -141,7 +143,7 @@
 
 /obj/machinery/door/airlock/virology
 	door_color = COLOR_WHITE
-	stripe_color = COLOR_GREEN
+	stripe_color = COLOR_BEASTY_BROWN
 
 /obj/machinery/door/airlock/mining
 	name = "Mining Airlock"
@@ -168,7 +170,7 @@
 	door_color = COLOR_BLUE_GRAY
 
 /obj/machinery/door/airlock/civilian
-	stripe_color = COLOR_CIVIE_GREEN
+	stripe_color = COLOR_BEASTY_BROWN
 
 /obj/machinery/door/airlock/chaplain
 	stripe_color = COLOR_GRAY20
@@ -180,6 +182,69 @@
 /obj/machinery/door/airlock/maintenance
 	name = "Maintenance Access"
 	stripe_color = COLOR_AMBER
+
+/obj/machinery/door/airlock/warhammer
+	name = "Imperium Airlock" // If the warhammer airlocks have bolts or welded. Just add welded/panel = the same dmi as the airlock.
+	icon = 'icons/obj/doors/imperiumdoor.dmi'
+	fill_file = null
+	color_file = null
+	color_fill_file = null
+	stripe_file = null
+	stripe_fill_file = null
+	glass_file = null
+	lights_file = null // If you want to add lights, make sure to add the correct .dmi with lights opening in the same dir.
+	explosion_resistance = 15
+	opacity = 1
+	health_max = 3500
+	health_min_damage = 27
+
+/obj/machinery/door/airlock/warhammer/glass
+	name = "Glass Airlock"
+	icon = 'icons/obj/doors/doorcomglass.dmi'
+	health_max = 3000
+	health_min_damage = 25
+	opacity = 0
+
+/obj/machinery/door/airlock/warhammer/glass/engineering
+	name = "Reinforced Glass Airlock"
+	icon = 'icons/obj/doors/doorcomglass.dmi'
+	health_max = 3500
+	health_min_damage = 28
+	opacity = 0
+
+/obj/machinery/door/airlock/warhammer/engineering
+	name = "Reinforced Airlock"
+	icon = 'icons/obj/doors/Dooreng.dmi'
+	health_max = 4000
+	health_min_damage = 33
+
+/obj/machinery/door/airlock/warhammer/command
+	name = "Reinforced Airlock"
+	icon = 'icons/obj/doors/command_door.dmi'
+	explosion_resistance = 18
+	health_max = 4200
+	health_min_damage = 33 // Most guns will do some damage, but not pistols or basic melee.
+
+/obj/machinery/door/airlock/warhammer/command/ancient
+	name = "Ancient Airlock"
+	icon = 'icons/obj/doors/doorcomalt.dmi'
+	health_max = 4000 // It's really old.
+
+/obj/machinery/door/airlock/warhammer/vaultold
+	name = "Reinforced Vault Door"
+	icon = 'icons/obj/doors/door_tnc.dmi'
+	health_max = 5500
+	health_min_damage = 38 // Hotshots and Plasma guns only to penetrate. Explosions should effect the same.
+
+/obj/machinery/door/airlock/warhammer/chapel_left
+	name = "Reinforced Vault Door"
+	icon = 'icons/obj/doors/doorchapel_left.dmi'
+	health_max = 5000
+
+/obj/machinery/door/airlock/warhammer/chapel_right
+	name = "Reinforced Vault Door"
+	icon = 'icons/obj/doors/doorchapel_right.dmi'
+	health_max = 5000
 
 //Glass airlock presets
 
@@ -209,7 +274,7 @@
 
 /obj/machinery/door/airlock/glass/virology
 	door_color = COLOR_WHITE
-	stripe_color = COLOR_GREEN
+	stripe_color = COLOR_BEASTY_BROWN
 
 /obj/machinery/door/airlock/glass/mining
 	door_color = COLOR_PALE_ORANGE
@@ -239,7 +304,6 @@
 	stripe_color = COLOR_AMBER
 
 /obj/machinery/door/airlock/glass/civilian
-	stripe_color = COLOR_CIVIE_GREEN
 
 /obj/machinery/door/airlock/external
 	airlock_type = "External"
@@ -633,15 +697,15 @@ About the new airlock wires panel:
 	switch(state)
 		if(0)
 			if(density)
-				icon_state = "closed"
+				icon_state = "door_closed"
 				state = AIRLOCK_CLOSED
 			else
-				icon_state = "open"
+				icon_state = "door_open"
 				state = AIRLOCK_OPEN
 		if(AIRLOCK_OPEN)
-			icon_state = "open"
+			icon_state = "door_open"
 		if(AIRLOCK_CLOSED)
-			icon_state = "closed"
+			icon_state = "door_closed"
 		if(AIRLOCK_OPENING, AIRLOCK_CLOSING, AIRLOCK_EMAG, AIRLOCK_DENY)
 			icon_state = "blank"
 
@@ -765,16 +829,16 @@ About the new airlock wires panel:
 	switch(animation)
 		if("opening")
 			set_airlock_overlays(AIRLOCK_OPENING)
-			flick("opening", src)//[stat ? "_stat":]
+			flick("door_opening", src)//[stat ? "_stat":]
 			update_icon(AIRLOCK_OPEN)
 		if("closing")
 			set_airlock_overlays(AIRLOCK_CLOSING)
-			flick("closing", src)
+			flick("door_closing", src)
 			update_icon(AIRLOCK_CLOSED)
 		if("deny")
 			set_airlock_overlays(AIRLOCK_DENY)
 			if(density && arePowerSystemsOn())
-				flick("deny", src)
+				flick("door_deny", src)
 				if(world.time > next_clicksound)
 					next_clicksound = world.time + CLICKSOUND_INTERVAL
 					playsound(src, open_failure_access_denied, 40)
@@ -782,7 +846,7 @@ About the new airlock wires panel:
 		if("emag")
 			set_airlock_overlays(AIRLOCK_EMAG)
 			if(density && arePowerSystemsOn())
-				flick("deny", src)
+				flick("door_deny", src)
 		else
 			update_icon()
 

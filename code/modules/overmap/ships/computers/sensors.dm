@@ -9,7 +9,7 @@
 	silicon_restriction = STATUS_UPDATE
 	machine_name = "sensors console"
 	machine_desc = "Used to activate, monitor, and configure a spaceship's sensors. Higher range means higher temperature; dangerously high temperatures may fry the delicate equipment."
-	health_max = 400
+	health_max = 1400
 	var/weakref/sensor_ref
 	var/list/last_scan
 	var/muted = FALSE
@@ -251,13 +251,13 @@
 	anchored = TRUE
 	density = TRUE
 	construct_state = /singleton/machine_construction/default/panel_closed
-	health_max = 200
-	var/critical_heat = 50 // sparks and takes damage when active & above this heat
+	health_max = 2000
+	var/critical_heat = 100 // sparks and takes damage when active & above this heat
 	var/heat_reduction = 1.5 // mitigates this much heat per tick
 	var/sensor_strength //used for detecting ships via contacts
 	var/heat = 0
 	var/range = 1
-	idle_power_usage = 5000
+	idle_power_usage = 1000
 	base_type = /obj/machinery/shipsensors
 	maximum_component_parts = list(/obj/item/stock_parts = 10) // Circuit, 5 manipulators, 3 subspace shit and 1 tesla coil
 

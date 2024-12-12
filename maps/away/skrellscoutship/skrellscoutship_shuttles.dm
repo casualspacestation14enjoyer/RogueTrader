@@ -16,7 +16,7 @@
 	moving_state = "ship_moving"
 	fore_dir = WEST
 	color = "#ff00ff"
-	vessel_mass = 1000
+	vessel_mass = 800
 	vessel_size = SHIP_SIZE_SMALL
 	initial_restricted_waypoints = list(
 		"Tau Shuttle" = list("nav_tauscoutsh_dock")
@@ -32,7 +32,7 @@
 	shuttle = "Tau Shuttle"
 	fore_dir = WEST
 	color = "#880088"
-	vessel_mass = 750
+	vessel_mass = 450
 	vessel_size = SHIP_SIZE_TINY
 
 /datum/shuttle/autodock/overmap/tauscoutship

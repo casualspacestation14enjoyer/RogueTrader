@@ -5,7 +5,7 @@
 	desc = "Sensors detect civilian vessel with unusual signs of life aboard."
 	color = "#bd6100"
 	max_speed = 1/(3 SECONDS)
-	burn_delay = 15 SECONDS
+	burn_delay = 5 SECONDS
 	fore_dir = SOUTH
 
 /datum/map_template/ruin/away_site/errant_pisces

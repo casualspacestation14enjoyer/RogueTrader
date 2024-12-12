@@ -16,7 +16,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 10
+	skill_points = 18
 	min_skill = list(
 		SKILL_BUREAUCRACY = SKILL_TRAINED,
 		SKILL_MEDICAL = SKILL_MASTER,
@@ -107,7 +107,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 14
+	skill_points = 18
 	min_skill = list(
 		SKILL_VIGOR = SKILL_TRAINED,
 		SKILL_MEDICAL = SKILL_EXPERIENCED,
@@ -143,7 +143,7 @@
 	H.voice_in_head(pick(GLOB.lone_thoughts))
 	H.species.weaken_mod = 0.71
 	H.species.stun_mod = 0.71
-	H.species.slowdown = -0.2
+	H.species.slowdown = -0.1
 	if(current_title && (H.mind.role_alt_title in alt_titles))
 		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
 	else
@@ -171,7 +171,7 @@
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/medical/pharmacologis
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/civ)
-	skill_points = 18
+	skill_points = 20
 	min_skill = list(
 		SKILL_MEDICAL = SKILL_TRAINED,
 		SKILL_ANATOMY = SKILL_EXPERIENCED,
@@ -222,7 +222,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 18
+	skill_points = 22
 	min_skill = list(
 		SKILL_VIGOR = SKILL_BASIC,
 		SKILL_MEDICAL = SKILL_TRAINED,
@@ -263,9 +263,9 @@
 		H.make_genestealer()
 		to_chat(H, "<span class='notice'><b><font size=2>You are a genestealer bioform, a unique strain of tyranid genestealer capable of rapid transformation. The swarm considers you to be an abomination, but under the guidance of what you believe to be the true hivemind, you will surely succeed where the others have failed. Everything is connected.</font></b></span>")
 	else if(prob(1))
-		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
-		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
-		spawn(65 SECONDS)
+		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN THIRTY SECONDS</font></b></span>")
+		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN THIRTY SECONDS</font></b></span>")
+		spawn(30 SECONDS)
 		GLOB.cult.add_antagonist(H.mind, ignore_role = 1, do_not_equip = 0)
 		to_chat(H, "<span class='notice'><b><font size=2>You are a heretical cultist loyal to one or more of the Chaos Gods -- unlike the many pretenders you are truly blessed by the warp and can survive encounters that would boil the brains of most mortal men.</font></b></span>")
 	to_chat(H, "<span class='notice'><b><font size=2>You are a [current_title] aboard the Rogue Trader’s vessel, trained to deal with the harsh and unforgiving conditions of both space and hive cities. Your responsibilities include treating battlefield injuries, performing surgeries, and managing the health of the crew. Whether responding to emergencies or ensuring long-term health, your experience in crowded, under-equipped environments has honed your ability to handle crises with efficiency and precision, making you indispensable in the chaos of the void.</font></b></span>")
@@ -291,7 +291,7 @@
 		/datum/mil_rank/civ/civ
 	)
 
-	skill_points = 18
+	skill_points = 20
 	min_skill = list(
 		SKILL_VIGOR = SKILL_BASIC,
 		SKILL_MEDICAL = SKILL_BASIC,
@@ -390,7 +390,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 26
+	skill_points = 18
 	min_skill = list( // 41 points
 		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point
 		SKILL_MEDICAL = SKILL_EXPERIENCED, // 16 points

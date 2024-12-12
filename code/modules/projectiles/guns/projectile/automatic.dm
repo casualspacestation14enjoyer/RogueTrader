@@ -10,7 +10,7 @@
 	load_method = MAGAZINE
 	caliber = CALIBER_SLUG_FLECHETTE
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 3)
-	slot_flags = SLOT_BELT
+	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	ammo_type = /obj/item/ammo_casing/flechette
 	magazine_type = /obj/item/ammo_magazine/proto_smg
 	allowed_magazines = /obj/item/ammo_magazine/proto_smg
@@ -21,7 +21,7 @@
 	mag_insert_sound = 'sound/weapons/guns/interaction/smg_magin.ogg'
 	mag_remove_sound = 'sound/weapons/guns/interaction/smg_magout.ogg'
 	fire_sound = 'sound/weapons/gunshot/gunshot_4mm.ogg'
-	slowdown_general = 0.1
+	slowdown_general = 0.04
 
 	//machine pistol, easier to one-hand with
 	firemodes = list(
@@ -46,11 +46,11 @@
 	icon_state = "machinepistol"
 	item_state = "machinepistol"
 	wielded_item_state = "machinepistol-wielded"
-	slot_flags = SLOT_BACK|SLOT_BELT
+	slot_flags = SLOT_BACK|SLOT_BELT|SLOT_HOLSTER
 	w_class = ITEM_SIZE_NORMAL
 	one_hand_penalty = 1
 	accuracy = -1
-	fire_delay = 3.3
+	fire_delay = 2.8
 	sales_price = 8
 	caliber = CALIBER_SLUG // before doing all mattguns, we need to dupe all the calibers first -- but merge calibers that fit. then add variants as in Eipharius.
 
@@ -59,8 +59,8 @@
 	magazine_type = /obj/item/ammo_magazine/machine_pistol
 	allowed_magazines = /obj/item/ammo_magazine/machine_pistol
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=3.3, burst_delay=1.7, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3.3, burst_delay=1.7, burst_accuracy=list(-1,-1,-1), dispersion=null)
+		list(mode_name="semi-automatic", burst=1, fire_delay=3.3, burst_delay=1.8, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3.3, burst_delay=1.8, burst_accuracy=list(-1,-1,-1), dispersion=null)
 		)
 
 /obj/item/gun/projectile/automatic/machine_pistol/on_update_icon()
@@ -85,7 +85,7 @@
 	force = 10
 	caliber = CALIBER_SLUG
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2, TECH_ESOTERIC = 8)
-	slot_flags = SLOT_BELT|SLOT_BACK
+	slot_flags = SLOT_BELT|SLOT_HOLSTER|SLOT_BACK
 	magazine_type = /obj/item/ammo_magazine/smg
 	allowed_magazines = /obj/item/ammo_magazine/smg
 	fire_sound = 'sound/warhammer/gunshot/auto2.ogg'
@@ -96,8 +96,8 @@
 
 	//SMG
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=3.4, burst_delay=1.8, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3.4, burst_delay=1.8, burst_accuracy=list(-1,-1,-1), dispersion=null)
+		list(mode_name="semi-automatic", burst=1, fire_delay=3, burst_delay=2, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3, burst_delay=2, burst_accuracy=list(-1,-1,-1), dispersion=null)
 		)
 
 /obj/item/gun/projectile/automatic/merc_smg/on_update_icon()
@@ -131,8 +131,8 @@
 
 	//Assault rifle, burst fire degrades quicker than SMG, worse one-handing penalty, slightly increased move delay
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=3.6, burst_delay=1.9, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3.6, burst_delay=1.9, burst_accuracy=list(0,-1,-1), dispersion=null)
+		list(mode_name="semi-automatic", burst=1, fire_delay=3.2, burst_delay=2.2, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3.2, burst_delay=2.2, burst_accuracy=list(0,-1,-1), dispersion=null)
 		)
 
 /obj/item/gun/projectile/automatic/assault_rifle/on_update_icon()
@@ -154,7 +154,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	caliber = CALIBER_SLUG_SMALL
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
-	slot_flags = SLOT_BELT
+	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	ammo_type = /obj/item/ammo_casing/pistol/tech
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/smg_top
@@ -164,8 +164,8 @@
 
 	//machine pistol, like SMG but easier to one-hand with
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=3.3, burst_delay=1.7, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3.3, burst_delay=1.7, burst_accuracy=list(0,-1,-1), dispersion=null)
+		list(mode_name="semi-automatic", burst=1, fire_delay=3, burst_delay=2.2, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3, burst_delay=2.2, burst_accuracy=list(0,-1,-1), dispersion=null)
 		)
 
 /obj/item/gun/projectile/automatic/sec_smg/on_update_icon()
@@ -199,15 +199,15 @@
 	accuracy = 2
 	one_hand_penalty = 4
 	bulk = GUN_BULK_RIFLE
-	burst_delay = 2
+	burst_delay = 2.3
 	wielded_item_state = "z8carbine-wielded"
 	mag_insert_sound = 'sound/weapons/guns/interaction/batrifle_magin.ogg'
 	mag_remove_sound = 'sound/weapons/guns/interaction/batrifle_magout.ogg'
 	fire_sound = 'sound/warhammer/gunshot/auto3.ogg'
 	firemodes = list(
-		list(mode_name="semi auto",       burst=1,    fire_delay=3.5,    move_delay=null, use_launcher=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", burst=3,    fire_delay=3.5, move_delay=6,    use_launcher=null, one_hand_penalty=9, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.6, 1.0)),
-		list(mode_name="fire grenades",  burst=null, fire_delay=3.5, move_delay=null, use_launcher=1,    one_hand_penalty=10, burst_accuracy=null, dispersion=null)
+		list(mode_name="semi auto",       burst=1,    fire_delay=3.3,    move_delay=null, use_launcher=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3,    fire_delay=3.3, move_delay=6,    use_launcher=null, one_hand_penalty=9, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.6, 1.0)),
+		list(mode_name="fire grenades",  burst=null, fire_delay=3.3, move_delay=null, use_launcher=1,    one_hand_penalty=10, burst_accuracy=null, dispersion=null)
 		)
 
 	var/use_launcher = 0
@@ -294,7 +294,6 @@
 	bulk = 3
 	force = 10
 	slot_flags = 0
-	max_shells = 50
 	burst_delay = 2
 	caliber = CALIBER_AUTOGUN
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ESOTERIC = 2)

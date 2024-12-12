@@ -80,7 +80,7 @@
 
 /obj/item/grenade/frag/proc/on_explosion(turf/O)
 	if(explosion_size)
-		explosion(O, explosion_size, EX_ACT_LIGHT, 0)
+		explosion(O, explosion_size, EX_ACT_LIGHT)
 
 /obj/item/grenade/frag/shell
 	name = "fragmentation grenade"
@@ -116,6 +116,18 @@
 	num_fragments = 30
 	w_class = ITEM_SIZE_SMALL
 
+/obj/item/grenade/frag/high_yield/krak/detpack
+	name = "Det Pack"
+	desc = "A standard issue imperial detpack, while simple these explosives when combined with grenades or further detpacks are capable of destroying even baneblades. Stand well clear!"
+	explosion_size = 10
+	num_fragments = 40
+	throw_range = 3
+	throw_speed = 2
+	w_class = ITEM_SIZE_NORMAL
+	icon = 'icons/obj/assemblies.dmi'
+	icon_state = "plastic-explosive0"
+	item_state = "plasticx"
+
 /obj/item/grenade/frag/high_yield/krak2
 	name = "Mechanicus Krak Grenade"
 	desc = "An incredibly dangerous and unstable plasma-enchanced Krak Grenade. Stand well clear!"
@@ -146,17 +158,7 @@
 	throw_range = 6
 	w_class = ITEM_SIZE_SMALL
 
-/obj/item/grenade/frag/high_yield/krak/detpack
-	name = "Det Pack"
-	desc = "A standard issue imperial detpack, while simple these explosives when combined with grenades or further detpacks are capable of destroying even baneblades. Stand well clear!"
-	explosion_size = 10
-	num_fragments = 40
-	throw_range = 3
-	throw_speed = 2
-	w_class = ITEM_SIZE_NORMAL
-	icon = 'icons/obj/assemblies.dmi'
-	icon_state = "plastic-explosive0"
-	item_state = "plasticx"
+
 
 /obj/item/grenade/frag/makeshift
 	name = "improvised explosive device"

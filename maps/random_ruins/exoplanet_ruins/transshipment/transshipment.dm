@@ -3,7 +3,7 @@
 	id = "transshipment"
 	description = "An abandoned warehouse and damaged CCG-produced shuttle."
 	suffixes = list("transshipment/transshipment.dmm")
-	spawn_cost = 0.5
+	spawn_cost = 1
 	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/old_snz)
 	apc_test_exempt_areas = list(
 		/area/map_template/transshipment/airstrip = NO_SCRUBBER|NO_VENT|NO_APC,
@@ -47,7 +47,7 @@
 	current_location = "nav_oldsnz_start"
 	range = 1
 	shuttle_area = /area/map_template/transshipment/old_snz
-	fuel_consumption = 4
+	fuel_consumption = 2
 	defer_initialisation = TRUE
 	flags = SHUTTLE_FLAGS_PROCESS
 	skill_needed = SKILL_MIN

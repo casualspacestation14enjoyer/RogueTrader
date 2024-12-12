@@ -1,4 +1,5 @@
 /obj/machinery/power/apc/shuttle
+	cell_type = /obj/item/cell/hyper
 	req_access = list(access_engine_equip)
 
 /obj/machinery/power/apc/high/shuttle
