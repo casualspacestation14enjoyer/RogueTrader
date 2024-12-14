@@ -225,11 +225,11 @@
 
 	//game_options.txt configs
 
-	var/static/health_threshold_dead = -70
+	var/static/health_threshold_dead = -80
 
 	var/static/organ_health_multiplier = 0.85
 
-	var/static/organ_regeneration_multiplier = 0.25
+	var/static/organ_regeneration_multiplier = 0.30
 
 	var/static/organs_decay
 
@@ -251,13 +251,13 @@
 	var/static/no_click_cooldown = FALSE
 
 	/// Modifier for ticks between moves while running
-	var/static/run_delay = 2.1
+	var/static/run_delay = 2.3
 
 	/// Modifier for ticks between moves while walking
-	var/static/walk_delay = 3
+	var/static/walk_delay = 3.5
 
 	/// Modifier for ticks between moves while creeping
-	var/static/creep_delay = 3.2
+	var/static/creep_delay = 3.8
 
 	/// Modifier for base stamina cost while sprinting
 	var/static/minimum_sprint_cost = 0.8
@@ -295,7 +295,7 @@
 
 	var/static/minimum_byond_version = 514
 
-	var/static/minimum_byond_build = 1568
+	var/static/minimum_byond_build = 1488
 
 	var/static/login_export_addr
 
@@ -424,7 +424,7 @@
 	var/static/maximum_round_length
 
 	/// The delay in deciseconds between stat() updates.
-	var/static/stat_delay = 5
+	var/static/stat_delay = 6
 
 	/// The maximum number of times someone can be warned in a round before they are automatically banned
 	var/static/warn_autoban_threshold = 3

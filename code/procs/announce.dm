@@ -26,8 +26,8 @@ var/global/datum/announcement/minor/minor_announcement = new(new_sound = 'sound/
 
 /datum/announcement/priority/command/New(do_log = 1, new_sound = 'sound/misc/notice2.ogg', do_newscast = 0)
 	..(do_log, new_sound, do_newscast)
-	title = "[GLOB.using_map.boss_name] Update"
-	announcement_type = "[GLOB.using_map.boss_name] Update"
+	title = "Vox Transmission"
+	announcement_type = "Vox Transmission"
 
 /datum/announcement/proc/Announce(message as text, new_title = "", new_sound = null, do_newscast = newscast, msg_sanitized = 0, zlevels = GLOB.using_map.contact_levels)
 	if(!message)
@@ -70,7 +70,7 @@ var/global/datum/announcement/minor/minor_announcement = new(new_sound = 'sound/
 	. += "<br>"
 
 /datum/announcement/priority/command/FormMessage(message as text, message_title as text)
-	. = "<h1 class='alert'>[GLOB.using_map.boss_name] Update</h1>"
+	. = "<h1 class='alert'>Vox Transmission</h1>"
 	if (message_title)
 		. += "<br><h2 class='alert'>[message_title]</h2>"
 

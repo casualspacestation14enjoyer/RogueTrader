@@ -17,7 +17,7 @@ GLOBAL_LIST_EMPTY(skills)
 						"Demigod"			= "Demigod Description")
 
 	var/difficulty = SKILL_AVERAGE         //Used to compute how expensive the skill is
-	var/default_max = SKILL_MASTER          //Makes the skill capped at this value in selection unless overriden at job level.
+	var/default_max = SKILL_EXPERIENCED          //Makes the skill capped at this value in selection unless overriden at job level.
 	var/prerequisites                      // A list of skill prerequisites, if needed.
 
 /singleton/hierarchy/skill/proc/get_cost(level)
@@ -90,6 +90,7 @@ GLOBAL_LIST_EMPTY(skills)
 						"Experienced"		= "With your experience, you can generate clear and detailed reports, and you know how to navigate even complex bureaucratic processes. Your knowledge of Imperial law may be backed by formal legal training, allowing you to manage legal affairs effectively.",
 						"Master"		= "You are a master of Imperial bureaucracy, capable of wielding paperwork as a tool to achieve your goals. Byzantine legal structures and red tape are no match for you. Your knowledge of Imperial law and regulations is vast, and you may even have the authority to represent noble houses or Imperial institutions in legal matters.")
 	difficulty = SKILL_EASY
+	default_max = SKILL_MASTER
 
 /singleton/hierarchy/skill/organizational/finance
 	ID = "finance"
@@ -101,6 +102,7 @@ GLOBAL_LIST_EMPTY(skills)
 						"Experienced"		= "You are familiar with most financial systems and entities, able to assess the value of assets with accuracy. Your investments are typically successful, and your judgment is trusted in financial dealings.",
 						"Master"		= "You are a financial master, capable of managing vast sums of Thrones with ease. Interstellar trade and complex financial instruments are like second nature to you. You make shrewd investments, often yielding significant returns, and likely have considerable experience managing the wealth of noble houses or Imperial institutions.")
 	difficulty = SKILL_AVERAGE
+	default_max = SKILL_MASTER
 
 // Category: General
 
@@ -114,6 +116,7 @@ GLOBAL_LIST_EMPTY(skills)
 						"Experienced"		= "You’ve mastered the use of various space suits, including specialized models. Years of void experience have made you resistant to disorientation, and you maneuver expertly with a jetpack.<br>- You cannot slip anymore.",
 						"Master"		= "You are as comfortable in the void as you are in atmosphere. Zero-gravity operations are second nature to you.<br>- You no longer get floored when re-entering gravity.<br>- You gain bonus speed in zero-G.")
 	difficulty = SKILL_EASY
+	default_max = SKILL_MASTER
 
 /singleton/hierarchy/skill/general/EVA/mech
 	ID = "exosuit"
@@ -147,6 +150,7 @@ GLOBAL_LIST_EMPTY(skills)
 						"Experienced"		= "You’re accustomed to physically demanding work and are in excellent shape. You may regularly engage in physical training or work in extreme conditions.",
 						"Master"		= "You are in peak physical condition, highly adapted to heavy labor or combat. Extended periods of intense physical work are no challenge for you.")
 	difficulty = SKILL_AVERAGE
+	default_max = SKILL_MASTER
 
 /singleton/hierarchy/skill/general/computer
 	ID = "computer"
@@ -170,6 +174,7 @@ GLOBAL_LIST_EMPTY(skills)
 						"Experienced"		= "You are a botanist or agri-worker responsible for hydroponics systems or botanical research. You excel at hybridizing plants and creating custom strains for specialized purposes.",
 						"Master"		= "You are a master botanist, able to cultivate even the most exotic or dangerous flora. You can manipulate plant genes with precision, avoiding sample degradation, and grow life-sustaining crops for the Imperium's worlds.")
 	difficulty = SKILL_EASY
+	default_max = SKILL_MASTER
 
 /singleton/hierarchy/skill/service/cooking
 	ID = "cooking"
@@ -181,6 +186,7 @@ GLOBAL_LIST_EMPTY(skills)
 						"Experienced"		= "You are a professional cook, capable of feeding entire starship crews or garrisons. You can handle complicated recipes and drinks without issue, and your meals keep morale high.",
 						"Master"		= "You are a master chef, skilled at preparing exotic foods and drinks, even those that would be hazardous if done incorrectly. You can manage a large kitchen staff and cater for high-ranking Imperial officials or special events.")
 	difficulty = SKILL_EASY
+	default_max = SKILL_MASTER
 // Category: Security
 
 /singleton/hierarchy/skill/security/combat
@@ -259,6 +265,7 @@ GLOBAL_LIST_EMPTY(skills)
 						"Experienced"		= "With significant experience in investigations, you can uncover obscure evidence like partial prints, xenos spore traces, or ballistic residues. Your eye for detail is honed to a razor’s edge.",
 						"Master"		= "Your expertise in forensics is unmatched. Whether in the field or working for a major investigatory body, you leave no stone unturned. Forensic trails yield to your skill, even hidden blood stains cannot escape your scrutiny.")
 	difficulty = SKILL_AVERAGE
+	default_max = SKILL_MASTER
 // Category: Engineering
 
 /singleton/hierarchy/skill/engineering/construction
@@ -347,6 +354,7 @@ GLOBAL_LIST_EMPTY(skills)
 						"Experienced"		= "You can perform most surgeries reliably, including complex operations. While highly skilled in human anatomy, you are also proficient with several xenos species. You excel in handling organ damage and repairing delicate systems.<br>- You can perform all surgery steps safely if you also have Experienced Medicine.",
 						"Master"		= "You are a master surgeon, able to handle any case, no matter how severe. From brain surgery to organ transplants, nothing escapes your expertise. Your understanding of anatomy is so refined that even disguised xenos would struggle to evade your detection.<br>- The penalty for operating in less-than-ideal environments is reduced.")
 	difficulty = SKILL_AVERAGE
+	default_max = SKILL_MASTER
 /singleton/hierarchy/skill/medical/chemistry
 	ID = "chemistry"
 	name = "Biologis-Chemica"
@@ -357,3 +365,4 @@ GLOBAL_LIST_EMPTY(skills)
 						"Experienced"		= "You’re proficient in creating complex chemicals, either for medical purposes or weaponization. Whether producing grenades or refining medicines, you work efficiently.<br>- You can examine containers to detect reagents.",
 						"Master"		= "You are a master chemist, able to produce custom mixes and rare compounds with ease. Your understanding of chemistry allows for creative innovation, and your work is likely known across the Imperium.<br>- You can examine containers for all reagent details.")
 	difficulty = SKILL_AVERAGE
+	default_max = SKILL_MASTER

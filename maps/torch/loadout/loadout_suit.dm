@@ -15,7 +15,7 @@
 		/datum/job/submap/noble,
 		/datum/job/submap/demeter_crew,
 		/datum/job/submap/colonist,
-		/datum/job/submap/pod
+		/datum/job/submap/captive
 	)
 	allowed_branches = UNIFORMED_BRANCHES
 

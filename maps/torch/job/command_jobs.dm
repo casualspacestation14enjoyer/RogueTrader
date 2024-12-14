@@ -14,7 +14,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 19
+	skill_points = 18
 	min_skill = list(
 		SKILL_BUREAUCRACY = SKILL_EXPERIENCED,
 		SKILL_FINANCE = SKILL_TRAINED,
@@ -98,7 +98,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 17
+	skill_points = 16
 	min_skill = list(
 		SKILL_BUREAUCRACY = SKILL_EXPERIENCED,
 		SKILL_FINANCE = SKILL_TRAINED,
@@ -267,7 +267,7 @@
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/krootmerc
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/civ)
-	skill_points = 17
+	skill_points = 18
 	min_skill = list(SKILL_VIGOR = SKILL_EXPERIENCED,
 					SKILL_COMBAT = SKILL_EXPERIENCED, // Worse skills then imperials. Since they are more primitive bioforms.
 					SKILL_GUNS = SKILL_BASIC,

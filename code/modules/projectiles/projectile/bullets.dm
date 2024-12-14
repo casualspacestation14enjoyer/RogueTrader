@@ -283,19 +283,19 @@
 	damage = 51
 	armor_penetration = 26
 
-/obj/item/projectile/bullet/rifle/militarum // 6.8 Militarum. Higher AP, less damage to 8mm.
-	damage = 36
+/obj/item/projectile/bullet/rifle/militarum // 6.8 Militarum. Higher AP.
+	damage = 38
 	armor_penetration = 26
 
 /obj/item/projectile/bullet/rifle/militarum/ap
 	armor_penetration = 28
 
 /obj/item/projectile/bullet/rifle/militarum/kp
-	damage = 39
+	damage = 41
 	armor_penetration = 30
 
 /obj/item/projectile/bullet/rifle/militarum/ms
-	damage = 41
+	damage = 43
 	armor_penetration = 24
 
 /obj/item/projectile/bullet/rifle/sniper // 12.7mm Battle Round

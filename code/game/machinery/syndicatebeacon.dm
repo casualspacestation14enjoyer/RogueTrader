@@ -9,9 +9,8 @@
 /obj/machinery/syndicate_beacon
 	name = "ominous beacon"
 	desc = "This looks suspicious..."
-	icon = 'icons/obj/structures/syndicate_beacon.dmi'
-	icon_state = "syndbeacon"
-
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "lifeweb-bath"
 	anchored = TRUE
 	density = TRUE
 
@@ -83,15 +82,14 @@
 /obj/machinery/power/singularity_beacon
 	name = "ominous beacon"
 	desc = "This looks suspicious..."
-	icon = 'icons/obj/machines/power/singularity.dmi'
-	icon_state = "beacon"
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "lifeweb-bath"
 
 	anchored = FALSE
 	density = TRUE
 	layer = BASE_ABOVE_OBJ_LAYER //so people can't hide it and it's REALLY OBVIOUS
 
 	var/active = 0
-	var/icontype = "beacon"
 
 /obj/machinery/power/singularity_beacon/proc/Activate(mob/user = null)
 	if(surplus() < 1500)
@@ -100,7 +98,6 @@
 	for(var/obj/singularity/singulo in world)
 		if(singulo.z == z)
 			singulo.target = src
-	icon_state = "[icontype]1"
 	active = 1
 
 	START_PROCESSING_MACHINE(src, MACHINERY_PROCESS_SELF)
@@ -112,7 +109,6 @@
 	for(var/obj/singularity/singulo in world)
 		if(singulo.target == src)
 			singulo.target = null
-	icon_state = "[icontype]0"
 	active = 0
 	if(user)
 		to_chat(user, SPAN_NOTICE("You deactivate the beacon."))
@@ -163,5 +159,4 @@
 		Deactivate()
 
 /obj/machinery/power/singularity_beacon/syndicate
-	icontype = "beaconsynd"
-	icon_state = "beaconsynd0"
+	icon_state = "lifeweb-bath"

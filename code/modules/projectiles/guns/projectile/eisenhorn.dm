@@ -65,9 +65,9 @@
 	name = "Custom Slug Revolver"
 	desc = "A custom forged slug revolver that fires 6.8mm tech rounds -- it has painful recoil and is known to have issues cycling it's heavier slugs."
 	icon_state = "hunting_revolver"
-	accuracy = -1
-	fire_delay= 4
-	max_shells = 6
+	accuracy = 0.3
+	fire_delay= 3.4
+	max_shells = 7
 	ammo_type = /obj/item/ammo_casing/autogun/militarum
 	caliber = CALIBER_AUTOGUN
 

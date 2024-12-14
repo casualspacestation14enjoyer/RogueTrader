@@ -89,7 +89,7 @@
 	burn_delay = 0.5 SECONDS
 	vessel_mass = 2000
 	fore_dir = NORTH
-	skill_needed = SKILL_BASIC
+	skill_needed = SKILL_TRAINED
 	vessel_size = SHIP_SIZE_SMALL
 	known_ships = list(
 		/obj/overmap/visitable/ship/torch,
