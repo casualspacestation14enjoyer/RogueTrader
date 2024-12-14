@@ -8,7 +8,7 @@
 	. +=  "You're aboard the " + replacetext("<b>[station_name]</b>", "\improper", "") + ", a heavy corvette commanded by the Rogue Trader. Its primary objective in the coming years is the exploration and exploitation of uncharted space, seeking knowledge, power, and anything of value for the Rogue Trader and their benefactors..."
 	. +=  "The sub-sector, known as the Eminent Domain, lies beyond Imperial territory on the fringes of a new colonial conquest spearheaded by the Tau Empire. You may encounter remote Imperial outposts, xenos, or even heretical factions, but no recognized power can truly claim ownership of The Ghoul Stars. By the will of the Emperor, the Rogue Trader's household seeks to claim dominion over this territory, though only time will reveal the potential of this ambition."
 	. +=  "<hr><b>Current Location:</b><br /><b>Segmentum Ultima | Region: Ghoul Stars | Sub-Sector: The Eminent Domain</b><br /><br>"
-	. +=  "Distance to Holy Terra: 741,986 light years</b><br /><br>"
+	. +=  "Distance to Holy Terra: [pick(741,986,740,472,745,780)] light years</b><br /><br>"
 	. +=  "<br /><b>It has been [pick(21,18,17)] months since the Dauntless was last in dry dock for repairs</b><br /><hr>"
 	return jointext(., "<br>")
 

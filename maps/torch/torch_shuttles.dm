@@ -402,7 +402,7 @@ TORCH_ESCAPE_POD(17)
 	fuel_consumption = 2
 	logging_home_tag = "nav_hangar_guppy"
 	logging_access = access_guppy_helm
-	skill_needed = SKILL_UNSKILLED
+	skill_needed = SKILL_BASIC
 	ceiling_type = /turf/simulated/floor/shuttle_ceiling/torch
 
 /obj/shuttle_landmark/torch/hangar/guppy
@@ -442,7 +442,7 @@ TORCH_ESCAPE_POD(17)
 	current_location = "nav_hangar_aquila"
 	landmark_transition = "nav_transit_aquila"
 	dock_target = "aquila_shuttle"
-	range = 2
+	range = 1
 	logging_home_tag = "nav_hangar_aquila"
 	logging_access = access_aquila_helm
 	ceiling_type = /turf/simulated/floor/shuttle_ceiling/torch

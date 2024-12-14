@@ -2,7 +2,7 @@
 	name = "broken airlock"
 	desc = "An airlock that's been completely and forcefully broken open. There's barely anything left to salvage."
 	icon = 'icons/obj/doors/station/door.dmi'
-	icon_state = "open"
+	icon_state = "door_open"
 	anchored = TRUE
 	obj_flags = OBJ_FLAG_NOFALL
 

@@ -39,6 +39,9 @@
 	map = "Salvage Gantry"
 	crew_jobs = list(
 		/datum/job/submap/scavver_noble,
+		/datum/job/submap/scavver_merc,
+		/datum/job/submap/scavver_priest,
+		/datum/job/submap/scavver_bard,
 		/datum/job/submap/scavver_crew
 	)
 

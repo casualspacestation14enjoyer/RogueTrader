@@ -257,23 +257,25 @@ avoid code duplication. This includes items that may sometimes act as a standard
 		user.do_attack_animation(src)
 
 		// Determine the multiplier (X) based on skill levels
-		var/X = 1.5  // Default multiplier for no skill
+		var/X = 1.2 // Default multiplier for no skill
 		if (user.skill_check(SKILL_COMBAT, SKILL_DEMIGOD))
-			X = 6.3
+			X = 4.5
 		else if (user.skill_check(SKILL_COMBAT, SKILL_PRIMARIS))
-			X = 5.3
+			X = 3.5
 		else if (user.skill_check(SKILL_COMBAT, SKILL_LEGEND))
-			X = 3.1
-		else if (user.skill_check(SKILL_COMBAT, SKILL_MASTER))
 			X = 2.5
-		else if (user.skill_check(SKILL_COMBAT, SKILL_EXPERIENCED))
-			X = 2
-		else if (user.skill_check(SKILL_COMBAT, SKILL_TRAINED)) // At baseline levels damage increase is smaller.
+		else if (user.skill_check(SKILL_COMBAT, SKILL_MASTER))
 			X = 1.7
+		else if (user.skill_check(SKILL_COMBAT, SKILL_EXPERIENCED))
+			X = 1.2
+		else if (user.skill_check(SKILL_COMBAT, SKILL_TRAINED)) // At baseline levels damage increase is smaller.
+			X = 0.9
 		else if (user.skill_check(SKILL_COMBAT, SKILL_BASIC))
-			X = 1.5
+			X = 0.7
+		else if (user.skill_check(SKILL_COMBAT, SKILL_UNSKILLED))
+			X = 0.6
 		else
-			X = 1.5  // Default multiplier if no skill is found
+			X = 1.2  // Default multiplier if no skill is found
 
 		// Calculate the adjusted force based on the skill level
 		var/adjusted_force = weapon.force + 2 * ((0.2 * weapon.force) + (0.1 * X * weapon.force))

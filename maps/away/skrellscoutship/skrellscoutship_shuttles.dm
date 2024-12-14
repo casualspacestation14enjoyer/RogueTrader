@@ -52,7 +52,7 @@
 	defer_initialisation = TRUE
 	knockdown = FALSE
 	flags = SHUTTLE_FLAGS_PROCESS
-	skill_needed = SKILL_UNSKILLED
+	skill_needed = SKILL_TRAINED
 	ceiling_type = /turf/simulated/floor/shuttle_ceiling/skrell
 
 /obj/shuttle_landmark/tauscoutship/start
@@ -63,11 +63,11 @@
 	name = "Tau Shuttle"
 	warmup_time = 5
 	current_location = "nav_tauscoutsh_dock"
-	range = 2
+	range = 1
 	shuttle_area = /area/ship/tauscoutshuttle
 	defer_initialisation = TRUE
 	flags = SHUTTLE_FLAGS_PROCESS
-	skill_needed = SKILL_UNSKILLED
+	skill_needed = SKILL_BASIC
 	ceiling_type = /turf/simulated/floor/shuttle_ceiling/skrell
 	mothershuttle = "Tau Scout"
 

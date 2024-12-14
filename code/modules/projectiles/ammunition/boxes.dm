@@ -254,7 +254,7 @@
 	caliber = CALIBER_AUTOGUN
 	ammo_type = /obj/item/ammo_casing/autogun/militarum
 	matter = list(MATERIAL_STEEL = 1440)
-	max_ammo = 6
+	max_ammo = 7
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/speedloader/militarum/ap

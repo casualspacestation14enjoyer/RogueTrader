@@ -22,7 +22,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 18
+	skill_points = 16
 	min_skill = list(SKILL_VIGOR = SKILL_EXPERIENCED,
 					SKILL_MEDICAL = SKILL_BASIC,
 					SKILL_PILOT = SKILL_TRAINED,

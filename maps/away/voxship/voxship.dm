@@ -78,12 +78,21 @@
 	fuel_consumption = 2
 	ceiling_type = /turf/simulated/floor/shuttle_ceiling
 	defer_initialisation = TRUE
+	flags = SHUTTLE_FLAGS_PROCESS
 	mothershuttle = "Xenos Scavenger Ship"
 
 /obj/shuttle_landmark/vox_base/hangar/vox_scavshuttle
 	name = "Dock"
 	landmark_tag = "nav_hangar_scavshuttle"
+	base_turf = /turf/space
 	base_area = /area/voxship/scavship
+	movable_flags = MOVABLE_FLAG_EFFECTMOVE
+
+/obj/shuttle_landmark/vox_base/hangar/vox_scavshuttle/start
+	name = "Dock"
+	landmark_tag = "nav_hangar_scavshuttle_start"
+	base_area = /area/voxship/scavship
+	base_turf = /turf/space
 	movable_flags = MOVABLE_FLAG_EFFECTMOVE
 
 /obj/machinery/computer/shuttle_control/explore/vox_lander
@@ -120,9 +129,10 @@
 	descriptor = "Xenos Scavenger Vessel"
 	map = "Xenos Scavenger Ship"
 	crew_jobs = list(
-		/datum/job/submap/podkasrkin,
-		/datum/job/submap/podcatachan,
-		/datum/job/submap/pod
+		/datum/job/submap/captivesisterm,
+		/datum/job/submap/captivecatachan,
+		/datum/job/submap/captiveheretek,
+		/datum/job/submap/captive
 	)
 	whitelisted_species = list(SPECIES_HUMAN,SPECIES_VOX,SPECIES_TAU,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_KROOT)
 	call_webhook = WEBHOOK_SUBMAP_LOADED_VOX
@@ -176,22 +186,25 @@
 
 // THE AMUN'RA GUNCUTTER
 
-/obj/submap_landmark/spawnpoint/podkasrkin
-	name = "Kasrkin"
+/obj/submap_landmark/spawnpoint/captivesisterm
+	name = "Adeptus Sororitas"
 
-/obj/submap_landmark/spawnpoint/podcatachan
+/obj/submap_landmark/spawnpoint/captivecatachan
 	name = "Catachan Devil"
 
-/obj/submap_landmark/spawnpoint/pod
+/obj/submap_landmark/spawnpoint/captiveheretek
+	name = "Heretek Priest"
+
+/obj/submap_landmark/spawnpoint/captive
 	name = "Mercenary"
 
-/datum/job/submap/podkasrkin
-	title = "Kasrkin"
-	info = "The ship you booked transit on has been destroyed by a terrible disaster, you survived by escaping on the infamous Amun-Ra once used by the vessels deceased Rogue Trader..."
+/datum/job/submap/captivekasrkin // move this to another away-site. dont delete this since it works fine just needs renaming. then put one of the sister roles in here.
+	title = "Kasrkin" // also make the scavenger station a little dangerous so it's not just free loot and good roles. alien captors are dead so spawn chaos monsters.
+	info = "Abducted during transit, you awaken on a xenos space station. Your captors lie dead, their cause of death unknown, leaving you alone in the silent, alien corridors of an abandoned space station."
 	outfit_type = /singleton/hierarchy/outfit/job/survivor/kasrkin
 	whitelisted_species = list(SPECIES_HUMAN,SPECIES_VOX,SPECIES_TAU,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_KROOT)
 	total_positions = 0
-	skill_points = 22
+	skill_points = 20 // lastly test out warp terrain. so we need purple space tiles. when you traverse them you hallucinate and go crazy. on examine as well.
 	min_skill = list(
 		SKILL_COMBAT = SKILL_EXPERIENCED,
 		SKILL_GUNS = SKILL_EXPERIENCED,
@@ -203,42 +216,41 @@
 						SKILL_GUNS = SKILL_PRIMARIS,
 						SKILL_VIGOR = SKILL_MASTER)
 
-/datum/job/submap/podkasrkin/equip(mob/living/carbon/human/H)
+/datum/job/submap/captivekasrkin/equip(mob/living/carbon/human/H)
 	var/current_name = H.real_name
 	var/current_title = trimtext(H.mind.role_alt_title)
 	H.voice_in_head(pick(GLOB.lone_thoughts))
-	H.fully_replace_character_name("[current_name]")
 	if(current_title && (H.mind.role_alt_title in alt_titles))
 		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
 	else
 		current_title = title // use default title
-		to_chat(H,"<span class='danger'><b><font size=4>THE KASRKIN</font></b></span>")
-		to_chat(H, "<span class='notice'><b><font size=2>The Astra Militarum, also known as the Imperial Guard in colloquial Low Gothic, is the largest coherent fighting force in the galaxy. They serve as the Imperium of Man's primary combat force and first line of defence from the myriad threats which endanger the existence of the Human race in the 41st Millennium. </font></b></span>")
-		to_chat(H, "<span class='notice'><b><font size=2>Elite stormtroopers of Cadia, expertly trained to confront the most formidable threats. They operate with precision and discipline, using superior tactics and advanced equipment. As the vanguard against Chaos, they exemplify bravery and unwavering commitment to the Emperor’s cause.</font></b></span>")
-		if(prob(2))
-			H.make_genestealer()
-			to_chat(H, "<span class='notice'><b><font size=2>You are a genestealer bioform, a unique strain of tyranid genestealer capable of rapid transformation. The swarm considers you to be an abomination, but under the guidance of what you believe to be the true hivemind, you will surely succeed where the others have failed. Everything is connected.</font></b></span>")
-		else if(prob(2))
-			to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDEW. SUMMONING IN THIRTY SECONDS</font></b></span>")
-			spawn(30 SECONDS)
-			GLOB.cult.add_antagonist(H.mind, ignore_role = 1, do_not_equip = 0)
-			to_chat(H, "<span class='notice'><b><font size=2>You are a heretical cultist loyal to one or more of the Chaos Gods -- unlike the many pretenders you are truly blessed by the warp and can survive encounters that would boil the brains of most mortal men.</font></b></span>")
-		H.fully_replace_character_name("Lieutenant [current_name]")
-		H.species.brute_mod = 0.7
-		H.species.burn_mod = 0.7
-		H.species.weaken_mod = 0.61
-		H.species.stun_mod = 0.61
-		H.species.slowdown = -0.2 // Kasrkin are renowned for incredible speed and the ability to scale any terrain, even mountains.
-		H.species.silent_steps = TRUE
+	to_chat(H,"<span class='danger'><b><font size=4>THE KASRKIN</font></b></span>")
+	to_chat(H, "<span class='notice'><b><font size=2>The Astra Militarum, also known as the Imperial Guard in colloquial Low Gothic, is the largest coherent fighting force in the galaxy. They serve as the Imperium of Man's primary combat force and first line of defence from the myriad threats which endanger the existence of the Human race in the 41st Millennium. </font></b></span>")
+	to_chat(H, "<span class='notice'><b><font size=2>Elite stormtroopers of Cadia, expertly trained to confront the most formidable threats. They operate with precision and discipline, using superior tactics and advanced equipment. As the vanguard against Chaos, they exemplify bravery and unwavering commitment to the Emperor’s cause.</font></b></span>")
+	if(prob(2))
+		H.make_genestealer()
+		to_chat(H, "<span class='notice'><b><font size=2>You are a genestealer bioform, a unique strain of tyranid genestealer capable of rapid transformation. The swarm considers you to be an abomination, but under the guidance of what you believe to be the true hivemind, you will surely succeed where the others have failed. Everything is connected.</font></b></span>")
+	else if(prob(2))
+		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDEW. SUMMONING IN THIRTY SECONDS</font></b></span>")
+		spawn(30 SECONDS)
+		GLOB.cult.add_antagonist(H.mind, ignore_role = 1, do_not_equip = 0)
+		to_chat(H, "<span class='notice'><b><font size=2>You are a heretical cultist loyal to one or more of the Chaos Gods -- unlike the many pretenders you are truly blessed by the warp and can survive encounters that would boil the brains of most mortal men.</font></b></span>")
+	H.fully_replace_character_name("Lieutenant [current_name]")
+	H.species.brute_mod = 0.7
+	H.species.burn_mod = 0.7
+	H.species.weaken_mod = 0.61
+	H.species.stun_mod = 0.61
+	H.species.slowdown = -0.2 // Kasrkin are renowned for incredible speed and the ability to scale any terrain, even mountains.
+	H.species.silent_steps = TRUE
 	return ..()
 
-/datum/job/submap/podcatachan
-	title = "Catachan Devil"
-	info = "The ship you booked transit on has been destroyed by a terrible disaster, you survived by escaping on the infamous Amun-Ra once used by the vessels deceased Rogue Trader..."
-	outfit_type = /singleton/hierarchy/outfit/job/survivor/devil
+/datum/job/submap/captivesisterm
+	title = "Adeptus Sororitas"
+	info = "Abducted during transit, you awaken on a xenos space station. Your captors lie dead, their cause of death unknown, leaving you alone in the silent, alien corridors of an abandoned space station."
+	outfit_type = /singleton/hierarchy/outfit/job/survivor/sister/martyr
 	whitelisted_species = list(SPECIES_HUMAN,SPECIES_VOX,SPECIES_TAU,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_KROOT)
 	total_positions = 0
-	skill_points = 22
+	skill_points = 20
 	min_skill = list(
 		SKILL_COMBAT = SKILL_EXPERIENCED,
 		SKILL_GUNS = SKILL_EXPERIENCED,
@@ -250,11 +262,53 @@
 						SKILL_GUNS = SKILL_PRIMARIS,
 						SKILL_VIGOR = SKILL_MASTER)
 
-/datum/job/submap/podcatachan/equip(mob/living/carbon/human/H)
+/datum/job/submap/captivesisterm/equip(mob/living/carbon/human/H)
 	var/current_name = H.real_name
 	var/current_title = trimtext(H.mind.role_alt_title)
 	H.voice_in_head(pick(GLOB.lone_thoughts))
-	H.fully_replace_character_name("[current_name]")
+	if(current_title && (H.mind.role_alt_title in alt_titles))
+		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
+	else
+		current_title = title // use default title
+	to_chat(H,"<span class='danger'><b><font size=4>THE SISTER OF BATTLE</font></b></span>") // add order variants
+	to_chat(H, "<span class='notice'><b><font size=2>A Sister of Our Martyred Lady, you follow in the footsteps of saints fallen in service, wielding their memory as a weapon. Your order finds strength in sacrifice, growing fierce where others would falter. In battle, you honor their memory through merciless fury, defending the Imperium's faithful with relentless resolve, no matter the cost.</font></b></span>")
+	if(prob(1))
+		H.make_genestealer()
+		to_chat(H, "<span class='notice'><b><font size=2>You are a genestealer bioform, a unique strain of tyranid genestealer capable of rapid transformation. The swarm considers you to be an abomination, but under the guidance of what you believe to be the true hivemind, you will surely succeed where the others have failed. Everything is connected.</font></b></span>")
+	else if(prob(1))
+		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN THIRTY SECONDS</font></b></span>")
+		spawn(30 SECONDS)
+		GLOB.cult.add_antagonist(H.mind, ignore_role = 1, do_not_equip = 0)
+		to_chat(H, "<span class='notice'><b><font size=2>You are a heretical cultist loyal to one or more of the Chaos Gods -- unlike the many pretenders you are truly blessed by the warp and can survive encounters that would boil the brains of most mortal men.</font></b></span>")
+	H.fully_replace_character_name("Palatine [current_name]")
+	H.species.brute_mod = 0.7
+	H.species.burn_mod = 0.7
+	H.species.weaken_mod = 0.61
+	H.species.stun_mod = 0.61
+	H.species.slowdown = -0.2
+
+/datum/job/submap/captivecatachan
+	title = "Catachan Devil"
+	info = "Abducted during transit, you awaken on a xenos space station. Your captors lie dead, their cause of death unknown, leaving you alone in the silent, alien corridors of an abandoned space station."
+	outfit_type = /singleton/hierarchy/outfit/job/survivor/devil
+	whitelisted_species = list(SPECIES_HUMAN,SPECIES_VOX,SPECIES_TAU,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_KROOT)
+	total_positions = 0
+	skill_points = 16
+	min_skill = list(
+		SKILL_COMBAT = SKILL_MASTER,
+		SKILL_GUNS = SKILL_EXPERIENCED,
+		SKILL_VIGOR = SKILL_EXPERIENCED,
+	)
+
+	max_skill = list(	SKILL_PILOT = SKILL_MASTER,
+						SKILL_COMBAT = SKILL_PRIMARIS,
+						SKILL_GUNS = SKILL_PRIMARIS,
+						SKILL_VIGOR = SKILL_MASTER)
+
+/datum/job/submap/captivecatachan/equip(mob/living/carbon/human/H)
+	var/current_name = H.real_name
+	var/current_title = trimtext(H.mind.role_alt_title)
+	H.voice_in_head(pick(GLOB.lone_thoughts))
 	if(current_title && (H.mind.role_alt_title in alt_titles))
 		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
 	else
@@ -282,8 +336,152 @@
 		H.species.silent_steps = TRUE
 	return ..()
 
+/datum/job/submap/captive
+	title = "Mercenary"
+	info = "Abducted during transit, you awaken on a xenos space station. Your captors lie dead, their cause of death unknown, leaving you alone in the silent, alien corridors of an abandoned space station."
+	outfit_type = /singleton/hierarchy/outfit/job/survivor
+	whitelisted_species = list(SPECIES_HUMAN,SPECIES_VOX,SPECIES_TAU,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_KROOT)
+	total_positions = 2
+	skill_points = 22
+	min_skill = list(
+		SKILL_PILOT = SKILL_BASIC,
+		SKILL_COMBAT = SKILL_TRAINED,
+		SKILL_GUNS = SKILL_TRAINED,
+		SKILL_MEDICAL = SKILL_BASIC,
+		SKILL_ELECTRICAL = SKILL_BASIC,
+	)
+
+	max_skill = list(	SKILL_CONSTRUCTION = SKILL_MASTER,
+						SKILL_DEVICES = SKILL_MASTER,
+						SKILL_COMPUTER = SKILL_MASTER,
+						SKIL_ELECTRICAL = SKILL_MASTER,
+						SKILL_ENGINES = SKILL_MASTER,
+						SKILL_ATMOS = SKILL_MASTER,
+						SKILL_PILOT = SKILL_MASTER,
+						SKILL_COMBAT = SKILL_MASTER,
+						SKILL_GUNS = SKILL_MASTER,
+						SKILL_VIGOR = SKILL_MASTER)
+
+/datum/job/submap/captive/equip(mob/living/carbon/human/H)
+	var/current_name = H.real_name
+	var/current_title = trimtext(H.mind.role_alt_title)
+	H.voice_in_head(pick(GLOB.lone_thoughts))
+	H.fully_replace_character_name("[current_name]")
+	if(current_title && (H.mind.role_alt_title in alt_titles))
+		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
+	else
+		current_title = title // use default title
+	to_chat(H,"<span class='danger'><b><font size=4>THE MERCENARY</font></b></span>")
+	to_chat(H, "<span class='notice'><b><font size=2>Abducted during transit, you awaken aboard a xenos station. Your captors are dead, and the station is silent—your next move is survival.</font></b></span>")
+	if(prob(8))
+		H.make_genestealer()
+		to_chat(H, "<span class='notice'><b><font size=2>You are a genestealer bioform, a unique strain of tyranid genestealer capable of rapid transformation. The swarm considers you to be an abomination, but under the guidance of what you believe to be the true hivemind, you will surely succeed where the others have failed. Everything is connected.</font></b></span>")
+	else if(prob(8))
+		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN THIRTY SECONDS</font></b></span>")
+		spawn(30 SECONDS)
+		GLOB.cult.add_antagonist(H.mind, ignore_role = 1, do_not_equip = 0)
+		to_chat(H, "<span class='notice'><b><font size=2>You are a heretical cultist loyal to one or more of the Chaos Gods -- unlike the many pretenders you are truly blessed by the warp and can survive encounters that would boil the brains of most mortal men.</font></b></span>")
+	H.species.brute_mod = 0.7
+	H.species.hunger_factor = DEFAULT_HUNGER_FACTOR * 1.15
+	H.equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/explorer, slot_back)
+	H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife/bowie, slot_in_backpack)
+	H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/tactical, slot_w_uniform)
+	if(prob(20))
+		if(prob(50))
+			H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/scrapforged/flakcuirass, slot_wear_suit)
+		else
+			H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/scrapforged/heavyflak, slot_wear_suit)
+		H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/pilgrimhelm/flak/ranger, slot_head)
+		H.equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/automatic/autogun/krieg, slot_belt)
+		H.equip_to_slot_or_store_or_drop(new /obj/item/ammo_magazine/autogun/ap, slot_in_backpack)
+	else if(prob(25))
+		if(prob(50))
+			H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/scrapforged/carapacecuirass, slot_wear_suit)
+		else
+			H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/scrapforged/carapace, slot_wear_suit)
+		H.equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/automatic/autogun/stubber, slot_belt)
+		H.equip_to_slot_or_store_or_drop(new /obj/item/ammo_magazine/autogunheavy, slot_in_backpack)
+	else if(prob(20))
+		H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/pilgrimhelm/flak/ranger/alt, slot_head)
+		H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/scrapforged/carapace3, slot_wear_suit)
+		H.equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/automatic/slugrifle, slot_belt)
+		H.equip_to_slot_or_store_or_drop(new /obj/item/ammo_magazine/heavy/ap, slot_in_backpack)
+	else
+		H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/scrapforged/carapace2, slot_wear_suit)
+		H.equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/heavysniper/boltaction/imperial/crucible, slot_wear_suit)
+		H.equip_to_slot_or_store_or_drop(new /obj/item/ammo_magazine/speedloader/clip/stub/ap, slot_in_backpack)
+		H.equip_to_slot_or_store_or_drop(new /obj/item/ammo_magazine/speedloader/clip/stub/ms, slot_in_backpack)
+	return ..()
+
+/datum/job/submap/captiveheretek
+	title = "Heretek Priest"
+	info = "Abducted during transit, you awaken on a xenos space station. Your captors lie dead, their cause of death unknown, leaving you alone in the silent, alien corridors of an abandoned space station."
+	outfit_type = /singleton/hierarchy/outfit/job/survivor
+	whitelisted_species = list(SPECIES_HUMAN,SPECIES_VOX,SPECIES_TAU,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_KROOT)
+	total_positions = 1
+	skill_points = 28
+	min_skill = list(
+		SKILL_PILOT = SKILL_BASIC,
+		SKILL_MEDICAL = SKILL_BASIC,
+		SKILL_ELECTRICAL = SKILL_BASIC,
+	)
+
+	max_skill = list(	SKILL_CONSTRUCTION = SKILL_MASTER,
+						SKILL_DEVICES = SKILL_MASTER,
+						SKILL_COMPUTER = SKILL_MASTER,
+						SKIL_ELECTRICAL = SKILL_MASTER,
+						SKILL_ENGINES = SKILL_MASTER,
+						SKILL_ATMOS = SKILL_MASTER,
+						SKILL_PILOT = SKILL_MASTER,
+						SKILL_COMBAT = SKILL_MASTER,
+						SKILL_GUNS = SKILL_MASTER,
+						SKILL_VIGOR = SKILL_MASTER)
+
+/datum/job/submap/captiveheretek/equip(mob/living/carbon/human/H)
+	var/current_name = H.real_name
+	var/current_title = trimtext(H.mind.role_alt_title)
+	H.voice_in_head(pick(GLOB.lone_thoughts))
+	H.fully_replace_character_name("[current_name]")
+	if(current_title && (H.mind.role_alt_title in alt_titles))
+		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
+	else
+		current_title = title // use default title
+	to_chat(H,"<span class='danger'><b><font size=4>THE HERETEK</font></b></span>")
+	to_chat(H, "<span class='notice'><b><font size=2>As a Heretek Tech-Priest, you’ve cast off the dogma of the Mechanicus in pursuit of forbidden innovation. Aboard this xenos station, you see untold opportunities hidden within its alien architecture.</font></b></span>")
+	H.species.cold_level_1 = SYNTH_COLD_LEVEL_1
+	H.species.cold_level_2 = SYNTH_COLD_LEVEL_2
+	H.species.cold_level_3 = SYNTH_COLD_LEVEL_3
+	H.species.heat_level_1 = 600
+	H.species.heat_level_2 = 700
+	H.species.heat_level_3 = 2000
+	H.species.hazard_high_pressure = HAZARD_HIGH_PRESSURE * 0.4
+	H.species.hazard_low_pressure = -1
+	H.species.brute_mod = 0.8 // This particular tech priest is weaker then most humans.
+	H.species.burn_mod = 0.8
+	H.species.toxins_mod = 0.8
+	H.species.radiation_mod = 0.6
+	H.species.hunger_factor = DEFAULT_HUNGER_FACTOR * 0.5
+	H.species.species_flags = SPECIES_FLAG_LOW_GRAV_ADAPTED | SPECIES_FLAG_NO_EMBED
+	H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife, slot_in_backpack)
+	H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/mechanicus, slot_wear_suit)
+	H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/hardhat/techpriest, slot_head)
+	H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/mask/gas/techpriest, slot_wear_mask)
+	H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/shoes/jackboots/skitshoes/techpriest, slot_shoes)
+	H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/engineer, slot_w_uniform)
+	H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/gloves/thick/swat/techpriest, slot_gloves)
+	H.equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/warfare/techpriest, slot_back)
+	if(prob(50))
+		H.equip_to_slot_or_store_or_drop(new /obj/item/device/augment_implanter/wrist_blade, slot_in_backpack)
+		H.equip_to_slot_or_store_or_drop(new /obj/item/organ/internal/augment/active/iatric_monitor, slot_in_backpack)
+		H.equip_to_slot_or_store_or_drop(new /obj/item/organ/internal/augment/active/internal_air_system, slot_in_backpack)
+	else
+		H.equip_to_slot_or_store_or_drop(new /obj/item/device/augment_implanter/popout_shotgun, slot_in_backpack)
+		H.equip_to_slot_or_store_or_drop(new /obj/item/organ/internal/augment/active/polytool/engineer, slot_in_backpack)
+		H.equip_to_slot_or_store_or_drop(new /obj/item/implant/translator, slot_in_backpack)
+	return ..()
+
 /*
-/datum/job/submap/podnoble
+/datum/job/submap/captivenoble
 	title = "Kasrkin"
 	info = "The ship you booked transit on has been destroyed by a terrible disaster, you survived by escaping on the infamous Amun-Ra once used by the vessels deceased Rogue Trader..."
 	outfit_type = /singleton/hierarchy/outfit/job/survivor/kasrkin
@@ -312,7 +510,7 @@
 						SKILL_GUNS = SKILL_PRIMARIS,
 						SKILL_VIGOR = SKILL_MASTER)
 
-/datum/job/submap/podnoble/equip(mob/living/carbon/human/H)
+/datum/job/submap/captivenoble/equip(mob/living/carbon/human/H)
 	var/current_name = H.real_name
 	var/current_title = trimtext(H.mind.role_alt_title)
 	H.voice_in_head(pick(GLOB.lone_thoughts))
@@ -495,8 +693,8 @@
 			H.species.hunger_factor = DEFAULT_HUNGER_FACTOR * 0.75
 			H.species.species_flags = SPECIES_FLAG_NO_PAIN
 	return ..()
-*/
-/datum/job/submap/pod
+
+/datum/job/submap/captive
 	title = "Mercenary"
 	info = "The ship you booked transit on has been destroyed by a terrible disaster, you survived by escaping on the infamous Amun-Ra once used by the vessels deceased Rogue Trader..."
 	outfit_type = /singleton/hierarchy/outfit/job/survivor
@@ -525,7 +723,7 @@
 						SKILL_GUNS = SKILL_MASTER,
 						SKILL_VIGOR = SKILL_MASTER)
 
-/datum/job/submap/pod/equip(mob/living/carbon/human/H)
+/datum/job/submap/captive/equip(mob/living/carbon/human/H)
 	var/current_name = H.real_name
 	var/current_title = trimtext(H.mind.role_alt_title)
 	H.voice_in_head(pick(GLOB.lone_thoughts))
@@ -693,7 +891,7 @@
 				H.equip_to_slot_or_store_or_drop(new /obj/item/organ/internal/augment/active/polytool/engineer, slot_in_backpack)
 				H.equip_to_slot_or_store_or_drop(new /obj/item/implant/translator, slot_in_backpack)
 	return ..()
-
+*/
 
 /singleton/hierarchy/outfit/job/survivor
 	name = ("Mercenary")
@@ -867,7 +1065,7 @@
 
 
 
-/datum/job/submap/pod/New(datum/submap/_owner, abstract_job = FALSE)
+/datum/job/submap/captive/New(datum/submap/_owner, abstract_job = FALSE)
 	..()
 	if(_owner) // Might be called from admin tools, etc
 		info = "Your ship a large heavy freighter, has been destroyed by a terrible disaster, \
