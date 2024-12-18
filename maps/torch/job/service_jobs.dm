@@ -26,7 +26,7 @@
 						SKILL_COMBAT = SKILL_LEGEND)
 
 	access = list(
-		access_morgue, access_chapel_office,
+		access_medical_command, access_chapel_office,
 		access_crematorium, access_solgov_crew,
 		access_radio_serv
 	)
@@ -74,7 +74,7 @@
 						SKILL_GUNS = SKILL_MASTER,
 						SKILL_COMBAT = SKILL_MASTER)
 	access = list(
-		access_maint_tunnels, access_emergency_storage,
+		access_maint_tunnels, access_magos,
 		access_janitor, access_solgov_crew,
 		access_radio_serv
 	)
@@ -162,7 +162,7 @@
 						SKILL_COMBAT = SKILL_MASTER)
 
 	access = list(
-		access_maint_tunnels, access_bridge, access_emergency_storage, access_tech_storage,  access_cargo, access_guppy_helm,
+		access_maint_tunnels, access_bridge, access_magos, access_tech_storage,  access_cargo, access_guppy_helm,
 		access_cargo_bot, access_qm, access_mailsorting, access_solgov_crew, access_expedition_shuttle, access_guppy, access_hangar,
 		access_mining, access_mining_office, access_mining_station, access_commissary, access_teleporter, access_eva, access_torch_fax,
 		access_radio_sup, access_radio_exp, access_radio_comm
@@ -254,7 +254,7 @@
 	)
 
 	access = list(
-		access_maint_tunnels, access_emergency_storage,
+		access_maint_tunnels, access_magos,
 		access_solgov_crew, access_radio_serv
 	)
 
@@ -455,7 +455,7 @@
 		access_solgov_crew,
 		access_radio_comm,
 		access_radio_serv,
-		access_emergency_storage,
+		access_magos,
 		access_janitor,
 		access_commissary,
 		access_hydroponics,

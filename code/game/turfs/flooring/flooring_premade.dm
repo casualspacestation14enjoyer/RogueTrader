@@ -893,20 +893,40 @@
 
 /turf/simulated/floor/warhammer/metal
 	initial_flooring = /singleton/flooring/warhammer/metal
-	icon_state = "metal1"
+	icon_state = "metal5"
 
-/turf/simulated/floor/warhammer/metal/two
+/turf/simulated/floor/warhammer/metal/east
 	initial_flooring = /singleton/flooring/warhammer/metal/two
 	icon_state = "metal2"
 
-/turf/simulated/floor/warhammer/metal/three
+/turf/simulated/floor/warhammer/metal/south
 	initial_flooring = /singleton/flooring/warhammer/metal/three
 	icon_state = "metal3"
 
-/turf/simulated/floor/warhammer/metal/four
+/turf/simulated/floor/warhammer/metal/north
 	initial_flooring = /singleton/flooring/warhammer/metal/four
 	icon_state = "metal4"
 
-/turf/simulated/floor/warhammer/metal/five
+/turf/simulated/floor/warhammer/metal/west
 	initial_flooring = /singleton/flooring/warhammer/metal/five
-	icon_state = "metal5"
+	icon_state = "metal1"
+
+/turf/simulated/floor/warhammer/metal/alt
+	initial_flooring = /singleton/flooring/warhammer/metal/six
+	icon_state = "metal6"
+
+/turf/simulated/floor/warhammer/metal/southeast
+	initial_flooring = /singleton/flooring/warhammer/metal/seven
+	icon_state = "metal7"
+
+/turf/simulated/floor/warhammer/metal/southwest
+	initial_flooring = /singleton/flooring/warhammer/metal/eight
+	icon_state = "metal8"
+
+/turf/simulated/floor/warhammer/metal/northwest
+	initial_flooring = /singleton/flooring/warhammer/metal/nine
+	icon_state = "metal9"
+
+/turf/simulated/floor/warhammer/metal/northeast
+	initial_flooring = /singleton/flooring/warhammer/metal/ten
+	icon_state = "metal10"

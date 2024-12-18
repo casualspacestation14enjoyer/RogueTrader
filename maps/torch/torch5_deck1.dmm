@@ -2557,7 +2557,7 @@
 /obj/machinery/door/airlock/glass/medical{
 	autoset_access = 0;
 	name = "Medical Foyer";
-	req_access = list(list("ACCESS_MEDICAL","ACCESS_MORGUE","ACCESS_FORENSICS"))
+	req_access = list(list("ACCESS_MEDICAL","ACCESS_MEDICAL_COMMAND","ACCESS_FORENSICS"))
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden{
@@ -6117,7 +6117,7 @@
 "ape" = (
 /obj/structure/closet/secure_closet{
 	name = "Secure Evidence Locker";
-	req_access = list("ACCESS_SECURITY")
+	req_access = list("access_restricted")
 	},
 /obj/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/dark,
@@ -10789,7 +10789,7 @@
 /obj/machinery/alarm{
 	dir = 8;
 	pixel_x = 25;
-	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
+	req_access = list(list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS"))
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo/aux)
@@ -13654,7 +13654,7 @@
 "aVf" = (
 /obj/machinery/alarm/monitor{
 	alarm_id = "xenobio1_alarm";
-	req_access = list(list("ACCESS_RESEARCH","ACCESS_ATMOS","ACCESS_ENGINE_EQUIP"))
+	req_access = list(list("ACCESS_RESEARCH","ACCESS_ATMOS","ACCESS_MECHANICUS_COMMAND"))
 	},
 /turf/simulated/floor/reinforced,
 /area/rnd/xenobiology/cell_1)
@@ -15844,7 +15844,7 @@
 /obj/floor_decal/industrial/outline/grey,
 /obj/structure/closet/secure_closet{
 	name = "Secure Evidence Locker";
-	req_access = list("ACCESS_SECURITY")
+	req_access = list("access_restricted")
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
@@ -17580,7 +17580,7 @@
 "ghU" = (
 /obj/machinery/alarm/monitor{
 	alarm_id = "xenobio4_alarm";
-	req_access = list(list("ACCESS_RESEARCH","ACCESS_ATMOS","ACCESS_ENGINE_EQUIP"))
+	req_access = list(list("ACCESS_RESEARCH","ACCESS_ATMOS","ACCESS_MECHANICUS_COMMAND"))
 	},
 /turf/simulated/floor/reinforced,
 /area/rnd/xenobiology/cell_4)
@@ -21774,7 +21774,7 @@
 /obj/machinery/alarm{
 	dir = 8;
 	pixel_x = 25;
-	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
+	req_access = list(list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS"))
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/tiled/white,
@@ -23290,7 +23290,7 @@
 	},
 /obj/structure/closet/secure_closet{
 	name = "Security Equipment Locker";
-	req_access = list("ACCESS_SECURITY")
+	req_access = list("access_restricted")
 	},
 /obj/item/storage/mre/menu7,
 /turf/simulated/floor/tiled/dark,
@@ -24989,7 +24989,7 @@
 /obj/machinery/alarm{
 	dir = 8;
 	pixel_x = 25;
-	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
+	req_access = list(list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS"))
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
@@ -28259,7 +28259,7 @@
 /obj/machinery/alarm/monitor{
 	alarm_id = "xenobio3_alarm";
 	dir = 8;
-	req_access = list(list("ACCESS_RESEARCH","ACCESS_ATMOS","ACCESS_ENGINE_EQUIP"))
+	req_access = list(list("ACCESS_RESEARCH","ACCESS_ATMOS","ACCESS_MECHANICUS_COMMAND"))
 	},
 /turf/simulated/floor/reinforced,
 /area/rnd/xenobiology/cell_3)
@@ -28886,7 +28886,7 @@
 /obj/machinery/alarm/monitor{
 	alarm_id = "xenobio2_alarm";
 	dir = 4;
-	req_access = list(list("ACCESS_RESEARCH","ACCESS_ATMOS","ACCESS_ENGINE_EQUIP"))
+	req_access = list(list("ACCESS_RESEARCH","ACCESS_ATMOS","ACCESS_MECHANICUS_COMMAND"))
 	},
 /turf/simulated/floor/reinforced,
 /area/rnd/xenobiology/cell_2)

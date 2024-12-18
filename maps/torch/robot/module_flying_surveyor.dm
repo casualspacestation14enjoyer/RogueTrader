@@ -51,7 +51,7 @@
 		/obj/item/gun/energy/gun
 	)
 	access = list(
-		access_emergency_storage,
+		access_magos,
 		access_eva,
 		access_expedition_shuttle,
 		access_explorer,

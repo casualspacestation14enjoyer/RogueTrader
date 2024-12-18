@@ -22,7 +22,7 @@
 	suit = /obj/item/clothing/suit/armor/grim/toggle/labcoat
 	l_hand = /obj/item/storage/firstaid/adv
 	r_pocket = /obj/item/device/flashlight/pen
-	id_types = list(/obj/item/card/id/medical)
+	id_types = null
 
 /singleton/hierarchy/outfit/job/medical/doctor/emergency_physician
 	name = OUTFIT_JOB_NAME("Emergency physician")

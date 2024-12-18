@@ -14,7 +14,7 @@
 
 /turf/simulated/wall/r_wall/hull
 	name = "hull"
-	color = COLOR_SOL
+	color = COLOR_DARK_BLUE_GRAY
 
 /turf/simulated/wall/r_wall/hull/vox
 	initial_gas = list("nitrogen" = 101.38)

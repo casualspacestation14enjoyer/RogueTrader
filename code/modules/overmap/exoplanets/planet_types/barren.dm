@@ -6,7 +6,7 @@
 	rock_colors = list(COLOR_BEIGE, COLOR_GRAY80, COLOR_BROWN)
 	map_generators = list(/datum/random_map/noise/exoplanet/barren, /datum/random_map/noise/ore/rich)
 	ruin_tags_blacklist = RUIN_WATER
-	features_budget = 25
+	features_budget = 15
 	surface_color = "#807d7a"
 	water_color = null
 	habitability_weight = HABITABILITY_LOCKED

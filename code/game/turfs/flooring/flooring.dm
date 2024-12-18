@@ -716,7 +716,7 @@
 	build_type = null
 
 /singleton/flooring/warhammer/metal
-	icon_base = "metal1"
+	icon_base = "metal5"
 	color = null
 	build_type = null
 
@@ -736,6 +736,31 @@
 	build_type = null
 
 /singleton/flooring/warhammer/metal/five
-	icon_base = "metal5"
+	icon_base = "metal1"
+	color = null
+	build_type = null
+
+/singleton/flooring/warhammer/metal/six
+	icon_base = "metal6"
+	color = null
+	build_type = null
+
+/singleton/flooring/warhammer/metal/seven
+	icon_base = "metal7"
+	color = null
+	build_type = null
+
+/singleton/flooring/warhammer/metal/eight
+	icon_base = "metal8"
+	color = null
+	build_type = null
+
+/singleton/flooring/warhammer/metal/nine
+	icon_base = "metal9"
+	color = null
+	build_type = null
+
+/singleton/flooring/warhammer/metal/ten
+	icon_base = "metal10"
 	color = null
 	build_type = null

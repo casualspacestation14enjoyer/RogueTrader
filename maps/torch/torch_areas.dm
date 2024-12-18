@@ -398,11 +398,11 @@
 
 /area/aquila/power
 	name = "\improper Aquila - Engineering Compartment"
-	req_access = list(access_solgov_crew)
+	req_access = list(access_dauntless)
 
 /area/aquila/storage
 	name = "\improper Aquila - Storage Bay"
-	req_access = list(access_solgov_crew)
+	req_access = list(access_dauntless)
 
 /area/aquila/suits
 	name = "\improper Aquila - Suit Storage Compartment"
@@ -420,7 +420,7 @@
 
 /area/aquila/airlock
 	name = "\improper Aquila - Airlock Compartment"
-	req_access = list(access_solgov_crew)
+	req_access = list(access_dauntless)
 
 //Guppy
 
@@ -666,14 +666,14 @@
 	icon_state = "heads_cap"
 	name = "\improper Command - CO's Quarters"
 	sound_env = MEDIUM_SOFTFLOOR
-	req_access = list(access_captain)
+	req_access = list(access_roguetrader)
 	lighting_tone = AREA_LIGHTING_WARM
 
 /area/crew_quarters/heads/office/co
 	icon_state = "heads_cap"
 	name = "\improper Command - CO's Office"
 	sound_env = MEDIUM_SOFTFLOOR
-	req_access = list(access_captain)
+	req_access = list(access_roguetrader)
 	lighting_tone = AREA_LIGHTING_WARM
 
 /area/crew_quarters/heads/office/xo
@@ -691,13 +691,13 @@
 /area/crew_quarters/heads/office/cmo
 	icon_state = "heads_cmo"
 	name = "\improper Command - CMO's Office"
-	req_access = list(access_cmo)
+	req_access = list(access_medical_command)
 	lighting_tone = AREA_LIGHTING_COOL
 
 /area/crew_quarters/heads/office/ce
 	icon_state = "heads_ce"
 	name = "\improper Engineering - CE's Office"
-	req_access = list(access_ce)
+	req_access = list(access_mechanicus_command)
 
 /area/crew_quarters/heads/office/cos
 	icon_state = "heads_hos"
@@ -730,39 +730,39 @@
 /area/engineering/shieldbay
 	name = "Shield Bay"
 	icon_state = "engineering"
-	req_access = list(access_engine, access_engine_equip)
+	req_access = list(access_mechanicus, access_mechanicus_command)
 
 /area/engineering/bluespace
 	name = "Warp Drive Containment"
 	icon_state = "engineering"
 	color = COLOR_BLUE_LIGHT
 	sound_env = LARGE_ENCLOSED
-	req_access = list(list(access_engine_equip, access_heads), access_engine, access_maint_tunnels)
+	req_access = list(list(access_mechanicus_command, access_heads), access_mechanicus, access_maint_tunnels)
 
 /area/engineering/bluespacebay
 	name = "Warp Drive Containment Control Room"
 	icon_state = "engineering"
 	color = COLOR_LUMINOL
 	sound_env = SMALL_ENCLOSED
-	req_access = list(list(access_engine_equip, access_heads), access_engine, access_maint_tunnels)
+	req_access = list(list(access_mechanicus_command, access_heads), access_mechanicus, access_maint_tunnels)
 
 /area/engineering/atmos/aux
 	name = "\improper Auxiliary Atmospherics"
 	icon_state = "atmos"
 	sound_env = SMALL_ENCLOSED
-	req_access = list(access_atmospherics)
+	req_access = list(access_dauntless)
 
 /area/engineering/auxpower
 	name = "\improper Auxiliary Power Storage"
 	icon_state = "engine_smes"
 	sound_env = SMALL_ENCLOSED
-	req_access = list(access_engine_equip)
+	req_access = list(access_mechanicus_command)
 
 /area/engineering/hardstorage
 	name = "\improper Engineering Hard Storage"
 	icon_state = "engineering_storage"
 	sound_env = SMALL_ENCLOSED
-	req_access = list(access_engine_equip)
+	req_access = list(access_mechanicus_command)
 
 /area/engineering/hardstorage/aux
 	name = "\improper Auxiliary Engineering Hard Storage"
@@ -817,7 +817,7 @@
 
 // Storage
 /area/storage/auxillary
-	req_access = list(access_cargo)
+	req_access = list(access_dauntless)
 
 /area/storage/auxillary/port
 	name = "Port Auxillary Storage"
@@ -831,7 +831,7 @@
 	name = "Cargo Storage"
 	icon_state = "quartstorage"
 	sound_env = SMALL_ENCLOSED
-	req_access = list(access_cargo)
+	req_access = list(access_dauntless)
 	holomap_color = HOLOMAP_AREACOLOR_CARGO
 
 /area/storage/medical
@@ -846,14 +846,14 @@
 	name = "Research Storage"
 	icon_state = "toxstorage"
 	sound_env = SMALL_ENCLOSED
-	req_access = list(access_research)
+	req_access = list(access_mechanicus)
 	lighting_tone = AREA_LIGHTING_COOL
 	holomap_color = HOLOMAP_AREACOLOR_SCIENCE
 
 // Supply
 
 /area/quartermaster
-	req_access = list(access_cargo)
+	req_access = list(access_dauntless)
 	holomap_color = HOLOMAP_AREACOLOR_CARGO
 
 /area/quartermaster/office
@@ -875,7 +875,7 @@
 /area/quartermaster/deckchief
 	name = "\improper Deck Chief's Office"
 	icon_state = "quart"
-	req_access = list(access_qm)
+	req_access = list(access_dauntless)
 
 /area/quartermaster/expedition
 	name = "\improper Expedition Preparation"
@@ -996,13 +996,13 @@
 /area/crew_quarters/galley
 	name = "\improper Galley"
 	icon_state = "kitchen"
-	req_access = list(access_kitchen)
+	req_access = list(access_dauntless)
 	lighting_tone = AREA_LIGHTING_COOL
 
 /area/crew_quarters/galleybackroom
 	name = "\improper Galley Cold Storage"
 	icon_state = "kitchen"
-	req_access = list(access_kitchen)
+	req_access = list(access_dauntless)
 	lighting_tone = AREA_LIGHTING_COOL
 
 /area/crew_quarters/commissary
@@ -1070,24 +1070,24 @@
 	name = "\improper Cyborg Upload Chamber"
 	icon_state = "ai_upload"
 	ambience = list('sound/ambience/ambimalf.ogg')
-	req_access = list(access_ai_upload)
+	req_access = list(access_mechanicus)
 
 // Security
 
 /area/security/bo
 	name = "\improper Security - Brig Chief"
 	icon_state = "Warden"
-	req_access = list(access_armory)
+	req_access = list(access_restricted_command)
 
 /area/security/storage
 	name = "\improper Security - Equipment Storage"
 	icon_state = "security"
-	req_access = list(access_brig)
+	req_access = list(access_restricted)
 
 /area/security/secure_storage
 	name = "\improper Security - Secure Storage"
 	icon_state = "security"
-	req_access = list(access_armory)
+	req_access = list(access_restricted_command)
 
 /area/security/armoury
 	name = "\improper Security - Armory"
@@ -1152,7 +1152,7 @@
 /area/medical/foyer
 	name = "\improper Medical Foyer"
 	icon_state = "medbay"
-	req_access = list(list(access_medical,access_morgue,access_forensics_lockers))
+	req_access = list(list(access_medical,access_medical_command,access_forensics_lockers))
 
 /area/medical/foyer/storeroom
 	name = "\improper Medical Storeroom"
@@ -1178,7 +1178,6 @@
 	name = "\improper Counselor's Office"
 	icon_state = "medbay3"
 	ambience = list('sound/ambience/signal.ogg')
-	req_access = list(access_psychiatrist)
 	sound_env = SMALL_SOFTFLOOR
 
 /area/medical/counselor/therapy
@@ -1193,12 +1192,12 @@
 /area/medical/surgery
 	name = "\improper Operating Theatre 1"
 	icon_state = "surgery"
-	req_access = list(access_surgery)
+	req_access = list(access_medical)
 
 /area/medical/surgery2
 	name = "\improper Operating Theatre 2"
 	icon_state = "surgery"
-	req_access = list(access_surgery)
+	req_access = list(access_medical)
 
 /area/medical/staging
 	name = "\improper Infirmary Staging"
@@ -1208,7 +1207,7 @@
 /area/medical/chemistry
 	name = "\improper Chemistry"
 	icon_state = "chem"
-	req_access = list(access_chemistry)
+	req_access = list(access_medical)
 
 /area/medical/exam_room
 	name = "\improper Exam Room"
@@ -1218,7 +1217,7 @@
 	name = "\improper Morgue"
 	icon_state = "morgue"
 	ambience = list('sound/ambience/ambimo1.ogg','sound/ambience/ambimo2.ogg','sound/music/main.ogg')
-	req_access = list(list(access_morgue,access_forensics_lockers))
+	req_access = list(list(access_medical_command,access_forensics_lockers))
 
 /area/medical/morgue/autopsy
 	name = "\improper Autopsy"
@@ -1230,7 +1229,7 @@
 	name = "\improper Shield Generator"
 	icon_state = "engineering"
 	sound_env = SMALL_ENCLOSED
-	req_access = list(access_engine_equip)
+	req_access = list(access_mechanicus_command)
 	holomap_color = HOLOMAP_AREACOLOR_ENGINEERING
 
 /area/shield/bridge
@@ -1257,18 +1256,18 @@
 /area/eva
 	name = "\improper EVA Storage"
 	icon_state = "eva"
-	req_access = list(access_eva)
+	req_access = list(access_dauntless)
 	holomap_color = HOLOMAP_AREACOLOR_AIRLOCK
 
 /area/aux_eva
 	name = "\improper Command EVA Storage"
 	icon_state = "eva"
-	req_access = list(access_eva)
+	req_access = list(access_dauntless)
 	holomap_color = HOLOMAP_AREACOLOR_AIRLOCK
 
 /area/thruster
 	icon_state = "thruster"
-	req_access = list(access_engine)
+	req_access = list(access_mechanicus)
 	holomap_color = HOLOMAP_AREACOLOR_ENGINEERING
 
 /area/thruster/d1port
@@ -1286,17 +1285,17 @@
 /area/engineering/fuelbay
 	name = "\improper Fuel Bay"
 	icon_state = "engineering"
-	req_access = list(access_construction)
+	req_access = list(access_dauntless)
 
 /area/engineering/fuelbay/aux
 	name = "\improper Auxiliary Fuel Bay"
 	icon_state = "engineering"
-	req_access = list(access_construction)
+	req_access = list(access_dauntless)
 
 /area/engineering/wastetank
 	name = "\improper Waste Tank"
 	icon_state = "engineering"
-	req_access = list(access_atmospherics)
+	req_access = list(access_dauntless)
 
 // Command
 
@@ -1309,7 +1308,7 @@
 /area/bridge/hallway
 	name = "\improper Bridge Access Hallway"
 	icon_state = "bridge_hallway"
-	req_access = list(access_solgov_crew)
+	req_access = list(access_dauntless)
 
 /area/bridge/hallway/port
 	name = "\improper Bridge Port Access Hallway"
@@ -1339,7 +1338,7 @@
 	name = "Substation"
 	icon_state = "substation"
 	sound_env = SMALL_ENCLOSED
-	req_access = list(access_engine_equip)
+	req_access = list(access_mechanicus_command)
 	holomap_color = HOLOMAP_AREACOLOR_ENGINEERING
 
 /area/torchexterior
@@ -1379,14 +1378,14 @@
 	name = "Solar Maintenance - Port"
 	icon_state = "SolarcontrolP"
 	sound_env = SMALL_ENCLOSED
-	req_access = list(access_engine_equip, access_maint_tunnels)
+	req_access = list(access_mechanicus_command, access_maint_tunnels)
 	holomap_color = HOLOMAP_AREACOLOR_AIRLOCK
 
 /area/maintenance/auxsolarstarboard
 	name = "Solar Maintenance - Starboard"
 	icon_state = "SolarcontrolS"
 	sound_env = SMALL_ENCLOSED
-	req_access = list(access_engine_equip, access_maint_tunnels)
+	req_access = list(access_mechanicus_command, access_maint_tunnels)
 	holomap_color = HOLOMAP_AREACOLOR_AIRLOCK
 
 /area/solar
@@ -1395,7 +1394,7 @@
 	always_unpowered = 1
 	has_gravity = FALSE
 	base_turf = /turf/space
-	req_access = list(access_engine_equip)
+	req_access = list(access_mechanicus_command)
 	turfs_airless = TRUE
 
 /area/solar/auxstarboard
@@ -1415,7 +1414,7 @@
 /area/maintenance/incinerator
 	name = "\improper Incinerator"
 	icon_state = "disposal"
-	req_access = list(list(access_engine, access_medical, access_cargo))
+	req_access = list(list(access_mechanicus, access_medical, access_cargo))
 
 /area/maintenance/waterstore
 	name = "\improper Cistern"
@@ -1525,21 +1524,21 @@
 	name = "\improper Atmospherics Storage"
 	icon_state = "atmos_storage"
 	sound_env = SMALL_ENCLOSED
-	req_access = list(access_atmospherics)
+	req_access = list(access_dauntless)
 
 /area/engineering/engine_room
 	name = "\improper Engine Room"
 	icon_state = "engine"
 	sound_env = LARGE_ENCLOSED
-	req_access = list(access_engine, access_engine_equip)
+	req_access = list(access_mechanicus, access_mechanicus_command)
 
 /area/engineering/engine_monitoring
 	name = "\improper Engine Monitoring Room"
 	icon_state = "engine_monitoring"
-	req_access = list(access_engine, access_engine_equip)
+	req_access = list(access_mechanicus, access_mechanicus_command)
 
 /area/engineering/prototype
-	req_access = list(access_engine)
+	req_access = list(access_mechanicus)
 
 /area/engineering/prototype/control
 	name = "\improper Prototype Fusion Reactor Control Room"
@@ -1553,7 +1552,7 @@
 	name = "\improper Engineering SMES"
 	icon_state = "engine_smes"
 	sound_env = SMALL_ENCLOSED
-	req_access = list(access_engine, access_engine_equip)
+	req_access = list(access_mechanicus, access_mechanicus_command)
 
 /area/engineering/foyer
 	name = "\improper Engineering Foyer"
@@ -1563,7 +1562,7 @@
 /area/engineering/engineering_bay
 	name = "\improper Engineering Bay"
 	icon_state = "engineering_locker"
-	req_access = list(access_engine)
+	req_access = list(access_mechanicus)
 
 /area/engineering/storage
 	name = "\improper Engineering Storage"
@@ -1574,11 +1573,11 @@
 	name = "\improper Atmospherics"
 	icon_state = "atmos"
 	sound_env = LARGE_ENCLOSED
-	req_access = list(access_atmospherics)
+	req_access = list(access_dauntless)
 
 // Research
 /area/assembly
-	req_access = list(access_robotics)
+	req_access = list(access_mechanicus)
 
 /area/assembly/chargebay
 	name = "\improper Mech Bay"
@@ -1641,7 +1640,7 @@
 /area/prison/solitary
 	name = "Solitary Confinement"
 	icon_state = "brig"
-	req_access = list(access_brig)
+	req_access = list(access_restricted)
 
 /area/security/nuke_storage
 	name = "\improper Vault"
@@ -1672,7 +1671,7 @@
 // Tcomm
 /area/tcommsat
 	ambience = list('sound/ambience/ambisin2.ogg', 'sound/ambience/signal.ogg', 'sound/ambience/signal.ogg', 'sound/ambience/ambigen10.ogg')
-	req_access = list(access_tcomsat)
+	req_access = list(access_mechanicus_command)
 
 /area/tcommsat/chamber
 	name = "\improper Telecoms Central Compartment"

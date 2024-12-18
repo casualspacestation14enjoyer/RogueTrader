@@ -31,7 +31,7 @@
 
 /obj/structure/closet/secure_closet/security_torch
 	name = "militarum' locker"
-	req_access = list(access_brig)
+	req_access = list(access_restricted)
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/security
 
 /obj/structure/closet/secure_closet/security_torch/WillContain()
@@ -91,7 +91,7 @@
 
 /obj/structure/closet/secure_closet/brigchief
 	name = "brig chief's locker"
-	req_access = list(access_armory)
+	req_access = list(access_restricted_command)
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/security/warden
 
 /obj/structure/closet/secure_closet/brigchief/WillContain()

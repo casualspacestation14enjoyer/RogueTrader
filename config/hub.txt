@@ -20,5 +20,5 @@
 # A more fully populated example is provided below.
 # Note that the final entry will be truncated to 255 bytes long by BYOND.
 
-<b>$SERVER</b> by <b>$HOST</b> &#8212; playing <b>$MODE</b> on <b>$STATION</b> with $ACTIVES of $PLAYERS alive
-[<a href="$WIKI">Wiki</a>] [<a href="$DISCORD">Discord</a>] [<a href="$SOURCE">Source</a>]
+<b>$SERVER</b> by <b>$HOST</b> &#8212; on <b>$STATION</b>
+[<a href="$WIKI">Wiki</a>] [<a href="$DISCORD">Discord</a>]

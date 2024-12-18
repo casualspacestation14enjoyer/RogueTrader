@@ -122,11 +122,11 @@
 						SKILL_PILOT = SKILL_MASTER)
 
 	access = list(
-		access_security, access_brig, access_armory, access_forensics_lockers, access_heads, access_medical, access_morgue, access_tox, access_tox_storage,
-		access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage, access_change_ids,
+		access_restricted, access_brig, access_restricted_command, access_forensics_lockers, access_heads, access_medical, access_medical_command, access_tox, access_tox_storage,
+		access_mechanicus, access_mechanicus_command, access_maint_tunnels, access_external_airlocks, access_magos, access_change_ids,
 		access_ai_upload, access_teleporter, access_eva, access_bridge, access_all_personal_lockers, access_chapel_office, access_tech_storage,
 		access_atmospherics, access_janitor, access_crematorium, access_kitchen, access_robotics, access_cargo, access_construction,
-		access_chemistry, access_cargo_bot, access_hydroponics, access_manufacturing, access_library, access_lawyer, access_virology, access_cmo,
+		access_chemistry, access_cargo_bot, access_hydroponics, access_manufacturing, access_dauntless, access_lawyer, access_virology, access_cmo,
 		access_qm, access_network, access_network_admin, access_surgery, access_research, access_mining, access_mining_office, access_mailsorting, access_heads_vault,
 		access_mining_station, access_xenobiology, access_ce, access_hop, access_hos, access_RC_announce, access_keycard_auth, access_tcomsat,
 		access_gateway, access_sec_doors, access_psychiatrist, access_xenoarch, access_medical_equip, access_heads, access_hangar, access_guppy_helm,
@@ -213,7 +213,7 @@
 
 
 	access = list(
-		access_security, access_medical, access_engine, access_maint_tunnels, access_emergency_storage,
+		access_restricted, access_medical, access_mechanicus, access_maint_tunnels, access_magos,
 		access_bridge, access_janitor, access_kitchen, access_cargo, access_mailsorting, access_RC_announce, access_keycard_auth,
 		access_solgov_crew, access_aquila, access_aquila_helm, access_guppy, access_guppy_helm, access_external_airlocks,
 		access_eva, access_hangar, access_cent_creed, access_explorer, access_expedition_shuttle, access_expedition_shuttle_helm, access_teleporter,
@@ -277,8 +277,8 @@
 
 
 	access = list(
-		access_security, access_brig, access_armory, access_forensics_lockers,
-		access_maint_tunnels, access_external_airlocks, access_emergency_storage,
+		access_restricted, access_brig, access_restricted_command, access_forensics_lockers,
+		access_maint_tunnels, access_external_airlocks, access_magos,
 		access_eva, access_sec_doors, access_solgov_crew, access_gun, access_torch_fax,
 		access_radio_sec
 	)
@@ -336,7 +336,7 @@
 	                    SKILL_SCIENCE     = SKILL_MAX)
 
 	access = list(
-		access_tox, access_tox_storage, access_emergency_storage, access_teleporter, access_bridge, access_rd,
+		access_tox, access_tox_storage, access_magos, access_teleporter, access_bridge, access_rd,
 		access_research, access_mining, access_mining_office, access_mining_station, access_xenobiology, access_aquila,
 		access_RC_announce, access_keycard_auth, access_xenoarch, access_nanotrasen, access_sec_guard, access_heads,
 		access_expedition_shuttle, access_guppy, access_hangar, access_petrov, access_petrov_helm, access_guppy_helm,
@@ -391,7 +391,7 @@
 
 
 	access = list(
-		access_security, access_medical, access_engine, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
+		access_restricted, access_medical, access_mechanicus, access_maint_tunnels, access_external_airlocks, access_magos,
 		access_teleporter, access_eva, access_bridge, access_all_personal_lockers, access_janitor,
 		access_kitchen, access_cargo, access_RC_announce, access_keycard_auth, access_aquila, access_guppy_helm,
 		access_solgov_crew, access_gun, access_expedition_shuttle, access_guppy, access_senadv, access_hangar, access_torch_fax,

@@ -54,7 +54,7 @@ GLOBAL_VAR(planet_repopulation_disabled)
 
 	var/list/possible_themes = list(
 		/datum/exoplanet_theme = 45,
-		/datum/exoplanet_theme/mountains = 65,
+		/datum/exoplanet_theme/mountains = 45,
 		/datum/exoplanet_theme/radiation_bombing = 5,
 		/datum/exoplanet_theme/ruined_city = 5,
 		/datum/exoplanet_theme/robotic_guardians = 5
@@ -66,7 +66,7 @@ GLOBAL_VAR(planet_repopulation_disabled)
 	//Flags deciding what features to pick
 	var/ruin_tags_whitelist
 	var/ruin_tags_blacklist
-	var/features_budget = 30
+	var/features_budget = 20
 	var/list/possible_features = list()
 	var/list/spawned_features
 

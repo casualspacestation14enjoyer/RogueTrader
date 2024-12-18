@@ -1,5 +1,5 @@
 ## Server name: This appears at the top of the screen in-game and on hub listings.
-# SERVER_NAME Space Station 13
+# SERVER_NAME Forge-World Eipharius | WARHAMMER 40,000
 
 ## Game Version: The archetype of the server for topic status requests. Unless significantly deviated, avoid changing this. Default Baystation12
 # GAME_VERSION Baystation12
@@ -183,7 +183,7 @@ NO_DEAD_VOTE_CREW_TRANSFER
 # NORESPAWN
 
 ## set a hosted by name for unix platforms
-HOSTEDBY yournamehere
+HOSTEDBY Alanii
 
 ## Set to jobban "Guest-" accounts from Captain, HoS, HoP, CE, RD, CMO, Warden, Security, Detective, and AI positions.
 ## Set to 1 to jobban them from those positions, set to 0 to allow them.

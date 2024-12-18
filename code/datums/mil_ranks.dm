@@ -109,7 +109,7 @@ GLOBAL_DATUM_INIT(mil_branches, /datum/mil_branches, new)
 	var/assistant_job = DEFAULT_JOB_TYPE
 
 	// Email addresses will be created under this domain name. Mostly for the looks.
-	var/email_domain = "freemail.net"
+	var/email_domain = "astropathica.net"
 
 	var/allow_custom_email = FALSE
 

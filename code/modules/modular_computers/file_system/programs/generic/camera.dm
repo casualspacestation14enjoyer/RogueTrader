@@ -9,7 +9,7 @@
 
 	switch(network)
 		if(NETWORK_ENGINEERING, NETWORK_ALARM_ATMOS, NETWORK_ALARM_CAMERA, NETWORK_ALARM_FIRE, NETWORK_ALARM_POWER)
-			return access_engine
+			return access_mechanicus
 		if(NETWORK_CRESCENT, NETWORK_ERT)
 			return access_cent_specops
 		if(NETWORK_MEDICAL)
@@ -23,7 +23,7 @@
 		if(NETWORK_HELMETS)
 			return access_eva
 
-	return access_security // Default for all other networks
+	return access_restricted // Default for all other networks
 
 /datum/computer_file/program/camera_monitor
 	filename = "cammon"
@@ -91,7 +91,7 @@
 	if(!network_access)
 		return 1
 
-	return check_access(user, access_security) || check_access(user, network_access)
+	return check_access(user, access_restricted) || check_access(user, network_access)
 
 /datum/nano_module/camera_monitor/Topic(href, href_list)
 	if(..())

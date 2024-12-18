@@ -46,7 +46,7 @@
 						SKILL_CHEMISTRY = SKILL_MASTER)
 
 	access = list(
-		access_medical, access_morgue, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
+		access_medical, access_medical_command, access_maint_tunnels, access_external_airlocks, access_magos,
 		access_teleporter, access_eva, access_bridge, access_heads,
 		access_chapel_office, access_crematorium, access_chemistry, access_virology, access_aquila,
 		access_cmo, access_surgery, access_RC_announce, access_keycard_auth, access_psychiatrist,
@@ -127,7 +127,7 @@
 						SKILL_CHEMISTRY = SKILL_MASTER)
 
 	access = list(
-		access_medical, access_morgue, access_virology, access_maint_tunnels, access_emergency_storage,
+		access_medical, access_medical_command, access_virology, access_maint_tunnels, access_magos,
 		access_crematorium, access_chemistry, access_surgery,
 		access_medical_equip, access_solgov_crew, access_senmed, access_radio_med
 	)
@@ -185,9 +185,9 @@
 						SKILL_CHEMISTRY = SKILL_MASTER)
 
 	access = list(
-		access_medical, access_maint_tunnels, access_emergency_storage,
+		access_medical, access_maint_tunnels, access_magos,
 		access_medical_equip, access_solgov_crew, access_chemistry,
-	 	access_virology, access_morgue, access_crematorium, access_radio_med
+	 	access_virology, access_medical_command, access_crematorium, access_radio_med
 	)
 
 /datum/job/pharmacologis/get_description_blurb()
@@ -238,8 +238,8 @@
 						SKILL_CHEMISTRY = SKILL_MASTER)
 
 	access = list(
-		access_medical, access_morgue, access_maint_tunnels,
-		access_external_airlocks, access_emergency_storage,
+		access_medical, access_medical_command, access_maint_tunnels,
+		access_external_airlocks, access_magos,
 		access_eva, access_surgery, access_medical_equip,
 		access_solgov_crew, access_hangar, access_radio_med
 	)
@@ -303,8 +303,8 @@
 	) // max skill list is currently wip
 
 	access = list(
-		access_medical, access_morgue, access_maint_tunnels,
-		access_external_airlocks, access_emergency_storage,
+		access_medical, access_medical_command, access_maint_tunnels,
+		access_external_airlocks, access_magos,
 		access_surgery, access_medical_equip, access_solgov_crew,
 		access_radio_med
 	)
@@ -400,7 +400,7 @@
 	)
 
 	access = list(
-		access_medical, access_morgue, access_virology, access_maint_tunnels, access_emergency_storage,
+		access_medical, access_medical_command, access_virology, access_maint_tunnels, access_magos,
 		access_crematorium, access_chemistry, access_surgery,
 		access_medical_equip, access_solgov_crew, access_senmed, access_radio_med
 	)

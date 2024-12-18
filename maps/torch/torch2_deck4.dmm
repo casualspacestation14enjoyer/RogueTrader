@@ -481,7 +481,7 @@
 /obj/machinery/alarm{
 	dir = 8;
 	pixel_x = 25;
-	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
+	req_access = list(list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS"))
 	},
 /turf/simulated/floor/lino,
 /area/tcommsat/computer)
@@ -9903,7 +9903,7 @@
 "Ie" = (
 /obj/machinery/alarm{
 	pixel_y = 23;
-	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
+	req_access = list(list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS"))
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fourthdeck/port)
@@ -13943,7 +13943,7 @@
 /obj/machinery/light,
 /obj/structure/closet/secure_closet{
 	name = "Security Equipment Locker";
-	req_access = list("ACCESS_SECURITY")
+	req_access = list("access_restricted")
 	},
 /obj/machinery/alarm{
 	dir = 4;
@@ -15197,7 +15197,7 @@
 /obj/machinery/alarm{
 	dir = 8;
 	pixel_x = 25;
-	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
+	req_access = list(list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS"))
 	},
 /obj/structure/cable/green{
 	d1 = 1;

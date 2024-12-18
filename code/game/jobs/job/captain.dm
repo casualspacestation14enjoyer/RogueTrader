@@ -39,10 +39,10 @@ var/global/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	minimal_player_age = 14
 	economic_power = 10
 	ideal_character_age = 50
-	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_heads,
-			            access_medical, access_engine, access_change_ids, access_ai_upload, access_eva, access_bridge,
-			            access_all_personal_lockers, access_maint_tunnels, access_janitor, access_construction, access_morgue,
+	access = list(access_restricted, access_sec_doors, access_brig, access_forensics_lockers, access_heads,
+			            access_medical, access_mechanicus, access_change_ids, access_ai_upload, access_eva, access_bridge,
+			            access_all_personal_lockers, access_maint_tunnels, access_janitor, access_construction, access_medical_command,
 			            access_crematorium, access_kitchen, access_cargo, access_cargo_bot, access_mailsorting, access_qm, access_hydroponics, access_lawyer,
-			            access_chapel_office, access_library, access_research, access_mining, access_heads_vault, access_mining_station,
+			            access_chapel_office, access_dauntless, access_research, access_mining, access_heads_vault, access_mining_station,
 			            access_hop, access_RC_announce, access_keycard_auth, access_gateway, access_research_storage)
 	outfit_type = /singleton/hierarchy/outfit/job/hop

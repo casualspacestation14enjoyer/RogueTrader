@@ -3,7 +3,7 @@
 	helmet = /obj/item/clothing/head/helmet/space/fishbowl
 	tank = /obj/item/tank/oxygen
 	mask = /obj/item/clothing/mask/breath
-	req_access = list(access_eva)
+	req_access = list(access_dauntless)
 
 /obj/machinery/suit_storage_unit/atmos
 	name = "atmospherics voidsuit storage unit"
@@ -12,7 +12,7 @@
 	boots = /obj/item/clothing/shoes/magboots
 	tank = /obj/item/tank/oxygen
 	mask = /obj/item/clothing/mask/breath
-	req_access = list(access_atmospherics)
+	req_access = list(access_dauntless)
 	islocked = 1
 
 /obj/machinery/suit_storage_unit/atmos/alt
@@ -26,7 +26,7 @@
 	boots = /obj/item/clothing/shoes/magboots
 	tank = /obj/item/tank/oxygen
 	mask = /obj/item/clothing/mask/breath
-	req_access = list(access_construction)
+	req_access = list(access_dauntless)
 	islocked = 1
 
 /obj/machinery/suit_storage_unit/engineering/unishi
@@ -65,7 +65,7 @@
 	boots = /obj/item/clothing/shoes/magboots
 	tank = /obj/item/tank/oxygen
 	mask = /obj/item/clothing/mask/breath
-	req_access = list(access_mining)
+	req_access = list(access_dauntless)
 	islocked = 1
 
 /obj/machinery/suit_storage_unit/mining/alt
@@ -80,7 +80,7 @@
 	boots = /obj/item/clothing/shoes/magboots
 	tank = /obj/item/tank/oxygen
 	mask = /obj/item/clothing/mask/breath
-	req_access = list(access_xenoarch)
+	req_access = list(access_mechanicus_command)
 	islocked = 1
 
 /obj/machinery/suit_storage_unit/security
@@ -90,7 +90,7 @@
 	boots = /obj/item/clothing/shoes/magboots
 	tank = /obj/item/tank/oxygen
 	mask = /obj/item/clothing/mask/breath
-	req_access = list(access_security)
+	req_access = list(access_restricted)
 	islocked = 1
 
 /obj/machinery/suit_storage_unit/security/alt
