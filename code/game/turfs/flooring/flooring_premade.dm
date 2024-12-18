@@ -401,11 +401,10 @@
 
 /turf/simulated/floor/stone/chapel
 	name = "monastic stone floor"
-	icon_state = "1"
 	holy = 1
 
 /turf/simulated/floor/stone/New()
-	icon_state = pick("main","1","2","3","extra","extra1","extra2","extra3")
+	icon_state = pick("MAIN","extra","extra1","extra2","extra3")
 	..()
 
 
