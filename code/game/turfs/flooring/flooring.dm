@@ -28,7 +28,7 @@
 	var/build_time = 0  // BYOND ticks.
 
 	var/descriptor = "tiles"
-	var/flags = TURF_CAN_BREAK | TURF_REMOVE_WRENCH | TURF_REMOVE_CROWBAR
+	var/flags
 	var/remove_timer
 	var/can_paint
 	var/can_engrave = TRUE
