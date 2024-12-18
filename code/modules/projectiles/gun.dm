@@ -118,7 +118,7 @@
 	var/told_cant_shoot = 0
 	var/lock_time = -100
 	var/last_safety_check = -INFINITY
-	var/safety_state = 1
+	var/safety_state = 0
 	var/has_safety = TRUE
 	/// Overlay to apply to gun based on safety state, if any.
 	var/safety_icon
@@ -126,7 +126,7 @@
 	/// What skill governs safe handling of this gun. Basic skill level and higher will also show the safety overlay to the player.
 	var/gun_skill = SKILL_GUNS
 	/// What skill level is needed in the gun's skill to completely negate the chance of an accident.
-	var/safety_skill = SKILL_EXPERIENCED
+	var/safety_skill = SKILL_TRAINED
 
 /obj/item/gun/Initialize()
 	. = ..()

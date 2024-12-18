@@ -411,7 +411,7 @@
 
 	var/static/max_explosion_range = 14
 
-	var/static/hub_visible = FALSE
+	var/static/hub_visible = TRUE
 
 	var/static/motd = ""
 

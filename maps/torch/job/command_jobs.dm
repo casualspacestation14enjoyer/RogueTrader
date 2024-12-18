@@ -197,7 +197,7 @@
 		SKILL_MEDICAL = SKILL_BASIC,
 		SKILL_DEVICES = SKILL_BASIC,
 		SKILL_COMBAT = SKILL_BASIC,
-		SKILL_GUNS = SKILL_BASIC,
+		SKILL_GUNS = SKILL_TRAINED,
 		SKILL_MECH = SKILL_TRAINED,
 		SKILL_COMPUTER = SKILL_TRAINED,
 		SKILL_EVA = SKILL_TRAINED
@@ -268,9 +268,9 @@
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/civ)
 	skill_points = 18
-	min_skill = list(SKILL_VIGOR = SKILL_EXPERIENCED,
-					SKILL_COMBAT = SKILL_EXPERIENCED, // Worse skills then imperials. Since they are more primitive bioforms.
-					SKILL_GUNS = SKILL_BASIC,
+	min_skill = list(SKILL_VIGOR = SKILL_MASTER,
+					SKILL_COMBAT = SKILL_MASTER, // Worse skills then imperials. Since they are more primitive bioforms.
+					SKILL_GUNS = SKILL_EXPERIENCED,
 				)
 	max_skill = list(	SKILL_VIGOR = SKILL_MASTER,
 						SKILL_COMBAT = SKILL_LEGEND)

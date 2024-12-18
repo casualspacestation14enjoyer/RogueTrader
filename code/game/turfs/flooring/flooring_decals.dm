@@ -1553,12 +1553,6 @@ var/global/list/floor_decals = list()
 	icon = 'icons/map_project/eldritch/Flesh_Ground.dmi'
 	icon_state = "flesh_floor-3"
 
-/*
-/obj/effect/floor_decal/turf/necro2
-	name = "horrific infestation"
-	desc = "You notice sharp teeth beneath it's flesh."
-	icon_state = "necro2" */
-
 /obj/effect/floor_decal/turf/oldsmoothdirt
 	name = "dirt floor"
 	icon_state = "oldsmoothdirt"

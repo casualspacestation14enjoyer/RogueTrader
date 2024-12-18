@@ -5,7 +5,7 @@
 	icon_state = "ionrifle"
 	item_state = "ionrifle"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 4)
-	w_class = ITEM_SIZE_HUGE
+	w_class = ITEM_SIZE_GARGANTUAN
 	force = 10
 	obj_flags =  OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BACK

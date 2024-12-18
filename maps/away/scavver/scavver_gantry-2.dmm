@@ -1453,7 +1453,6 @@
 /obj/structure/bed,
 /obj/item/bedsheet/rd,
 /obj/floor_decal/corner/lightgrey/mono,
-/obj/submap_landmark/spawnpoint/scavver_engineer,
 /turf/simulated/floor/tiled/monotile,
 /area/scavver/hab)
 "mq" = (
@@ -4601,6 +4600,7 @@
 	dir = 8
 	},
 /obj/decal/cleanable/vomit,
+/obj/submap_landmark/spawnpoint/scavver_bard,
 /turf/simulated/floor/tiled/freezer,
 /area/scavver/hab)
 "Nw" = (
@@ -5369,7 +5369,7 @@
 /obj/structure/bed,
 /obj/item/bedsheet/yellow,
 /obj/floor_decal/corner/lightgrey/mono,
-/obj/submap_landmark/spawnpoint/scavver_engineer,
+/obj/submap_landmark/spawnpoint/scavver_merc,
 /turf/simulated/floor/tiled/monotile,
 /area/scavver/hab)
 "Wl" = (
@@ -5550,6 +5550,29 @@
 /obj/floor_decal/corner/grey/diagonal,
 /turf/simulated/floor/tiled/white,
 /area/scavver/escapepod)
+"XD" = (
+/obj/item/gun/energy/plasmacutter,
+/obj/structure/closet/wardrobe,
+/obj/random/clothing,
+/obj/random/clothing,
+/obj/random/clothing,
+/obj/random/clothing,
+/obj/random/gloves,
+/obj/random/hat,
+/obj/random/hat,
+/obj/random/shoes,
+/obj/random/shoes,
+/obj/item/device/binoculars,
+/obj/floor_decal/corner/lightgrey/mono,
+/obj/item/storage/belt/utility/full,
+/obj/item/storage/backpack/industrial,
+/obj/random/accessory,
+/obj/machinery/light_switch{
+	pixel_x = 21
+	},
+/obj/submap_landmark/spawnpoint/scavver_priest,
+/turf/simulated/floor/tiled/monotile,
+/area/scavver/hab)
 "XF" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -20290,7 +20313,7 @@ Nw
 Wf
 Qn
 ml
-Nw
+XD
 VY
 eN
 eN

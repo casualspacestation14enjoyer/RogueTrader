@@ -3,10 +3,10 @@
 /turf/template_noop,
 /area/template_noop)
 "ab" = (
-/turf/simulated/wall/r_wall,
+/turf/simulated/wall/r_titanium,
 /area/template_noop)
 "ac" = (
-/turf/simulated/wall/r_wall,
+/turf/simulated/wall/r_titanium,
 /area/map_template/colony/command)
 "ad" = (
 /obj/machinery/door/firedoor,
@@ -14,7 +14,7 @@
 /turf/simulated/floor/plating,
 /area/map_template/colony/command)
 "ae" = (
-/turf/simulated/wall/r_wall,
+/turf/simulated/wall/r_titanium,
 /area/map_template/colony/tcomms)
 "af" = (
 /obj/structure/grille,
@@ -59,8 +59,17 @@
 /turf/simulated/floor/exoplanet/concrete,
 /area/template_noop)
 "ak" = (
-/turf/simulated/wall,
-/area/map_template/colony/tcomms)
+/obj/structure/catwalk,
+/obj/decal/cleanable/dirt,
+/obj/decal/cleanable/dirt,
+/obj/machinery/door/airlock/warhammer/command,
+/obj/machinery/door/blast/shutters{
+	id_tag = "colsen";
+	name = "Hard Storage Shutter"
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/exoplanet/concrete,
+/area/map_template/colony/command)
 "al" = (
 /obj/machinery/power/solar,
 /obj/structure/cable{
@@ -100,18 +109,15 @@
 /obj/submap_landmark/joinable_submap/colony,
 /turf/template_noop,
 /area/template_noop)
-"ar" = (
-/turf/simulated/wall/r_wall,
-/area/map_template/colony/engineering)
 "as" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/tiled/techfloor,
 /area/map_template/colony/tcomms)
 "at" = (
-/turf/simulated/wall/r_wall,
+/turf/simulated/wall/r_titanium,
 /area/map_template/colony/dorms)
 "au" = (
-/turf/simulated/wall/r_wall,
+/turf/simulated/wall/r_titanium,
 /area/map_template/colony/medbay)
 "av" = (
 /obj/structure/table/steel_reinforced,
@@ -131,7 +137,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/map_template/colony/command)
 "aw" = (
-/turf/simulated/wall/r_wall,
+/turf/simulated/wall/r_titanium,
 /area/map_template/colony/surgery)
 "ax" = (
 /obj/structure/filingcabinet/chestdrawer,
@@ -142,14 +148,26 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/map_template/colony/command)
 "az" = (
-/turf/simulated/wall,
-/area/map_template/colony/dorms)
+/obj/machinery/door/firedoor,
+/obj/machinery/button/blast_door{
+	id_tag = "colsen2";
+	name = "Exterior Doors";
+	pixel_y = 28
+	},
+/obj/machinery/door/blast/shutters{
+	id_tag = "colsen";
+	name = "Hard Storage Shutter"
+	},
+/obj/machinery/door/airlock/warhammer/command,
+/turf/simulated/floor/tiled/techfloor,
+/area/map_template/colony)
 "aA" = (
 /obj/machinery/merchant_pad,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/map_template/colony/command)
 "aB" = (
-/turf/simulated/wall,
+/obj/structure/sign/double/map/left,
+/turf/simulated/wall/r_titanium,
 /area/map_template/colony/medbay)
 "aC" = (
 /obj/item/gun/energy/lasgun/laspistol/grim,
@@ -199,11 +217,8 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/map_template/colony/tcomms)
 "aF" = (
-/turf/simulated/wall/r_wall,
+/turf/simulated/wall/r_titanium,
 /area/map_template/colony/atmospherics)
-"aG" = (
-/turf/simulated/wall,
-/area/map_template/colony/surgery)
 "aH" = (
 /obj/structure/closet/crate,
 /obj/item/stock_parts/circuitboard/fusion/core_control,
@@ -245,18 +260,15 @@
 /obj/item/stock_parts/capacitor/super,
 /obj/item/stock_parts/capacitor/super,
 /obj/item/stock_parts/capacitor/super,
-/turf/simulated/floor,
+/turf/simulated/floor/tiled/techfloor,
 /area/map_template/colony/command)
-"aI" = (
-/turf/simulated/wall,
-/area/map_template/colony/messhall)
 "aJ" = (
 /obj/machinery/door/firedoor,
 /obj/wallframe_spawn/reinforced_phoron,
 /turf/simulated/floor/plating,
 /area/map_template/colony)
 "aK" = (
-/turf/simulated/wall/r_wall,
+/turf/simulated/wall/r_titanium,
 /area/map_template/colony/messhall)
 "aL" = (
 /obj/machinery/door/firedoor,
@@ -273,16 +285,16 @@
 /turf/simulated/floor/exoplanet/concrete,
 /area/template_noop)
 "aN" = (
-/turf/simulated/wall,
+/turf/simulated/wall/r_titanium,
 /area/map_template/colony/engineering)
 "aO" = (
-/turf/simulated/wall/r_wall,
+/turf/simulated/wall/r_titanium,
 /area/map_template/colony/jail)
 "aP" = (
-/turf/simulated/wall,
+/turf/simulated/wall/r_titanium,
 /area/map_template/colony/bathroom)
 "aQ" = (
-/turf/simulated/wall,
+/turf/simulated/wall/r_titanium,
 /area/map_template/colony/commons)
 "aR" = (
 /obj/floor_decal/techfloor{
@@ -294,13 +306,14 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/map_template/colony/command)
 "aS" = (
-/turf/simulated/wall/r_wall,
-/area/map_template/colony/commons)
+/obj/structure/sign/double/map/right,
+/turf/simulated/wall/r_titanium,
+/area/map_template/colony/medbay)
 "aT" = (
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/map_template/colony/engineering)
 "aU" = (
-/turf/simulated/wall/r_wall,
+/turf/simulated/wall/r_titanium,
 /area/map_template/colony/armory)
 "aV" = (
 /obj/floor_decal/techfloor{
@@ -364,7 +377,7 @@
 /turf/simulated/floor/exoplanet/concrete,
 /area/template_noop)
 "ba" = (
-/turf/simulated/wall/r_wall,
+/turf/simulated/wall/r_titanium,
 /area/map_template/colony/hydroponics)
 "bb" = (
 /obj/floor_decal/techfloor{
@@ -386,9 +399,6 @@
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/template_noop)
-"bd" = (
-/turf/simulated/wall/r_wall,
-/area/map_template/colony)
 "be" = (
 /obj/structure/catwalk,
 /obj/structure/cable{
@@ -424,7 +434,7 @@
 /turf/simulated/floor/carpet,
 /area/map_template/colony/command)
 "bh" = (
-/turf/simulated/wall/r_wall,
+/turf/simulated/wall/r_titanium,
 /area/map_template/colony/airlock)
 "bi" = (
 /obj/structure/closet/crate/warhammer/freezer/rations,
@@ -529,7 +539,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/map_template/colony/atmospherics)
 "br" = (
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor/darkwood,
 /area/map_template/colony/messhall)
 "bs" = (
 /obj/structure/closet/crate,
@@ -736,7 +746,7 @@
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/turf/simulated/wall/r_titanium,
 /area/map_template/colony/atmospherics)
 "bK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -963,7 +973,7 @@
 	req_lock_access = list()
 	},
 /turf/simulated/floor/exoplanet/concrete,
-/area/template_noop)
+/area/map_template/colony/command)
 "cg" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -1033,7 +1043,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/door/airlock/glass/command,
+/obj/machinery/door/airlock/warhammer/command,
 /turf/simulated/floor/tiled/techfloor,
 /area/map_template/colony/command)
 "cl" = (
@@ -1166,7 +1176,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/map_template/colony/atmospherics)
 "cC" = (
-/obj/machinery/door/airlock/hatch,
+/obj/machinery/door/airlock/warhammer/command,
 /turf/simulated/floor/tiled/techfloor,
 /area/map_template/colony)
 "cD" = (
@@ -1455,7 +1465,7 @@
 /obj/machinery/power/rad_collector,
 /obj/decal/cleanable/dirt,
 /turf/simulated/floor/exoplanet/concrete,
-/area/template_noop)
+/area/map_template/colony/command)
 "do" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -1840,6 +1850,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
 	},
+/obj/submap_landmark/spawnpoint/colonist_spawn_sister,
 /turf/simulated/floor/fancyfloor/carpet/middle,
 /area/map_template/colony/dorms)
 "ee" = (
@@ -1950,7 +1961,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor/darkwood,
 /area/map_template/colony/messhall)
 "en" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -1959,7 +1970,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor/darkwood,
 /area/map_template/colony/messhall)
 "eo" = (
 /obj/structure/catwalk,
@@ -1981,7 +1992,7 @@
 /area/template_noop)
 "ep" = (
 /obj/machinery/atmospherics/pipe/cap/hidden,
-/turf/simulated/wall/r_wall,
+/turf/simulated/wall/r_titanium,
 /area/template_noop)
 "eq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -2042,7 +2053,7 @@
 /area/map_template/colony/atmospherics)
 "ev" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor/darkwood,
 /area/map_template/colony/messhall)
 "ew" = (
 /obj/structure/railing/mapped{
@@ -2162,10 +2173,10 @@
 /area/map_template/colony/surgery)
 "eG" = (
 /obj/machinery/door/blast/shutters{
-	id_tag = "colsen";
+	id_tag = "colsen2";
 	name = "Hard Storage Shutter"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techfloor,
 /area/map_template/colony/command)
 "eH" = (
 /obj/structure/cable{
@@ -2354,9 +2365,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/door/airlock/civilian{
-	name = "Bunk Room"
-	},
+/obj/machinery/door/airlock/warhammer,
 /turf/simulated/floor/tiled/techfloor,
 /area/map_template/colony/dorms)
 "eX" = (
@@ -2434,7 +2443,7 @@
 /obj/item/reagent_containers/food/condiment/small/peppermill,
 /obj/item/reagent_containers/food/condiment/small/saltshaker,
 /obj/item/reagent_containers/food/condiment/small/sugar,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/darkwood,
 /area/map_template/colony/messhall)
 "ff" = (
 /obj/machinery/atmospherics/portables_connector{
@@ -2477,7 +2486,7 @@
 /obj/floor_decal/spline/fancy/wood{
 	dir = 9
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor/darkwood,
 /area/map_template/colony/messhall)
 "fl" = (
 /obj/machinery/meter,
@@ -2514,20 +2523,14 @@
 /obj/floor_decal/spline/fancy/wood{
 	dir = 1
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor/darkwood,
 /area/map_template/colony/messhall)
 "fo" = (
-/obj/structure/bed/chair/comfy/brown{
-	dir = 4
-	},
-/obj/structure/sign/double/maltesefalcon/right{
-	pixel_y = 32
-	},
-/obj/floor_decal/spline/fancy/wood{
-	dir = 1
-	},
-/turf/simulated/floor/wood,
-/area/map_template/colony/messhall)
+/obj/structure/catwalk,
+/obj/decal/cleanable/dirt,
+/obj/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/techfloor,
+/area/map_template/colony/command)
 "fp" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -2598,13 +2601,10 @@
 /obj/structure/bed/chair/comfy/brown{
 	dir = 8
 	},
-/obj/structure/sign/double/maltesefalcon/left{
-	pixel_y = 32
-	},
 /obj/floor_decal/spline/fancy/wood{
 	dir = 1
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor/darkwood,
 /area/map_template/colony/messhall)
 "fv" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -2753,7 +2753,7 @@
 /obj/floor_decal/spline/fancy/wood{
 	dir = 4
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor/darkwood,
 /area/map_template/colony/messhall)
 "fI" = (
 /obj/structure/table/woodentable_reinforced,
@@ -2764,7 +2764,7 @@
 /obj/item/reagent_containers/food/condiment/small/peppermill,
 /obj/item/reagent_containers/food/condiment/small/saltshaker,
 /obj/item/reagent_containers/food/condiment/small/sugar,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/darkwood,
 /area/map_template/colony/messhall)
 "fJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -2780,7 +2780,7 @@
 /obj/floor_decal/spline/fancy/wood{
 	dir = 5
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor/darkwood,
 /area/map_template/colony/messhall)
 "fL" = (
 /obj/machinery/door/firedoor,
@@ -2791,7 +2791,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/door/airlock/engineering,
+/obj/machinery/door/airlock/warhammer/glass/engineering,
 /turf/simulated/floor/tiled/techfloor,
 /area/map_template/colony/engineering)
 "fM" = (
@@ -2850,7 +2850,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/door/airlock/atmos,
+/obj/machinery/door/airlock/warhammer/vaultold,
 /turf/simulated/floor/tiled/techfloor,
 /area/map_template/colony/atmospherics)
 "fQ" = (
@@ -3021,7 +3021,7 @@
 	dir = 8
 	},
 /obj/item/reagent_containers/food/drinks/pitcher,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/darkwood,
 /area/map_template/colony/messhall)
 "gc" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -3274,7 +3274,7 @@
 	dir = 4
 	},
 /obj/decal/cleanable/dirt,
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor/darkwood,
 /area/map_template/colony/messhall)
 "gt" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -3348,7 +3348,7 @@
 /obj/floor_decal/spline/fancy/wood{
 	dir = 4
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor/darkwood,
 /area/map_template/colony/messhall)
 "gB" = (
 /obj/floor_decal/techfloor{
@@ -3420,7 +3420,7 @@
 /obj/floor_decal/spline/fancy/wood{
 	dir = 8
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor/darkwood,
 /area/map_template/colony/messhall)
 "gJ" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -3481,7 +3481,7 @@
 /area/map_template/colony/atmospherics)
 "gP" = (
 /obj/decal/cleanable/dirt,
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor/darkwood,
 /area/map_template/colony/messhall)
 "gQ" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -3537,10 +3537,10 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/map_template/colony/atmospherics)
 "gW" = (
-/obj/wallframe_spawn/reinforced,
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/plating,
-/area/map_template/colony/engineering)
+/obj/structure/catwalk,
+/obj/decal/cleanable/dirt,
+/turf/simulated/floor/exoplanet/concrete,
+/area/map_template/colony/command)
 "gX" = (
 /obj/machinery/atmospherics/portables_connector{
 	dir = 4
@@ -3560,7 +3560,7 @@
 	icon_state = "0-8"
 	},
 /obj/floor_decal/spline/fancy/wood,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/darkwood,
 /area/map_template/colony/messhall)
 "gZ" = (
 /obj/machinery/atmospherics/unary/heat_exchanger{
@@ -3761,12 +3761,12 @@
 /turf/simulated/floor/exoplanet/concrete,
 /area/map_template/colony/atmospherics)
 "hr" = (
-/turf/simulated/wall,
+/turf/simulated/wall/r_titanium,
 /area/map_template/colony)
 "hs" = (
 /obj/item/stool/bar/padded,
 /obj/floor_decal/spline/fancy/wood,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/darkwood,
 /area/map_template/colony/messhall)
 "ht" = (
 /obj/floor_decal/techfloor,
@@ -3826,7 +3826,7 @@
 	dir = 1;
 	pixel_y = -28
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor/darkwood,
 /area/map_template/colony/messhall)
 "hy" = (
 /obj/machinery/alarm{
@@ -3844,7 +3844,7 @@
 	prices = list()
 	},
 /obj/floor_decal/spline/fancy/wood,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/darkwood,
 /area/map_template/colony/messhall)
 "hA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -3895,7 +3895,7 @@
 	prices = list()
 	},
 /obj/floor_decal/spline/fancy/wood,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/darkwood,
 /area/map_template/colony/messhall)
 "hE" = (
 /obj/machinery/vending/fitness{
@@ -3948,7 +3948,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/item/stool/bar/padded,
 /obj/floor_decal/spline/fancy/wood,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/darkwood,
 /area/map_template/colony/messhall)
 "hL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -4016,9 +4016,6 @@
 /obj/item/storage/box/donut,
 /turf/simulated/floor/tiled/techfloor,
 /area/map_template/colony/jail)
-"hR" = (
-/turf/simulated/wall,
-/area/map_template/colony/jail)
 "hS" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -4042,7 +4039,7 @@
 /obj/floor_decal/spline/fancy/wood{
 	dir = 6
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor/darkwood,
 /area/map_template/colony/messhall)
 "hV" = (
 /obj/machinery/door/firedoor,
@@ -4180,7 +4177,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/door/airlock/glass/civilian,
+/obj/machinery/door/airlock/warhammer/glass,
 /turf/simulated/floor/wood,
 /area/map_template/colony/commons)
 "ih" = (
@@ -4384,7 +4381,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/door/airlock/glass/security,
+/obj/machinery/door/airlock/warhammer/command,
 /turf/simulated/floor/tiled/techfloor,
 /area/map_template/colony/jail)
 "iA" = (
@@ -4673,7 +4670,10 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/map_template/colony/jail)
 "iV" = (
-/turf/simulated/wall/r_wall,
+/obj/machinery/pointdefense{
+	initial_id_tag = "Colony"
+	},
+/turf/simulated/wall/r_titanium,
 /area/map_template/colony/mineralprocessing)
 "iW" = (
 /obj/machinery/atmospherics/pipe/manifold/visible{
@@ -4882,7 +4882,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/door/airlock/civilian,
+/obj/machinery/door/airlock/warhammer,
 /turf/simulated/floor/tiled/white,
 /area/map_template/colony/bathroom)
 "jo" = (
@@ -5022,7 +5022,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/door/airlock/glass/security,
+/obj/machinery/door/airlock/warhammer/glass/engineering,
 /turf/simulated/floor/tiled/techfloor,
 /area/map_template/colony/jail)
 "jB" = (
@@ -5074,7 +5074,7 @@
 /turf/simulated/floor/wood,
 /area/map_template/colony/commons)
 "jF" = (
-/obj/machinery/door/airlock/civilian,
+/obj/machinery/door/airlock/warhammer,
 /turf/simulated/floor/tiled/white,
 /area/map_template/colony/bathroom)
 "jG" = (
@@ -5265,7 +5265,7 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/hatch,
+/obj/machinery/door/airlock/warhammer/glass/engineering,
 /turf/simulated/floor/tiled/techfloor,
 /area/map_template/colony)
 "jU" = (
@@ -5401,7 +5401,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/door/airlock/glass/security,
+/obj/machinery/door/airlock/warhammer/command,
 /turf/simulated/floor/lino,
 /area/map_template/colony)
 "kh" = (
@@ -5413,11 +5413,6 @@
 	dir = 5
 	},
 /turf/simulated/floor/tiled/techfloor,
-/area/map_template/colony/atmospherics)
-"ki" = (
-/obj/wallframe_spawn/reinforced,
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/plating,
 /area/map_template/colony/atmospherics)
 "kj" = (
 /turf/simulated/floor/grass,
@@ -5685,11 +5680,11 @@
 /turf/simulated/floor/fancyfloor/carpet,
 /area/map_template/colony/dorms)
 "kI" = (
-/obj/machinery/door/airlock/hatch,
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/binary/pump{
 	dir = 1
 	},
+/obj/machinery/door/airlock/warhammer/glass/engineering,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/map_template/colony)
 "kJ" = (
@@ -5752,7 +5747,9 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
-/obj/machinery/vending/snix,
+/obj/machinery/pointdefense_control{
+	initial_id_tag = "Colony"
+	},
 /turf/simulated/floor/lino,
 /area/map_template/colony)
 "kQ" = (
@@ -6137,9 +6134,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/door/airlock/glass/security{
-	id_tag = "colj"
-	},
+/obj/machinery/door/airlock/warhammer/command,
 /turf/simulated/floor/tiled/techfloor,
 /area/map_template/colony/jail)
 "lH" = (
@@ -6225,9 +6220,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/door/airlock/glass/security{
-	id_tag = "colj"
-	},
+/obj/machinery/door/airlock/warhammer/command,
 /turf/simulated/floor/tiled/techfloor,
 /area/map_template/colony/jail)
 "lO" = (
@@ -6671,7 +6664,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/door/airlock/command,
+/obj/machinery/door/airlock/warhammer/command,
 /turf/simulated/floor/tiled/techfloor,
 /area/map_template/colony/tcomms)
 "mA" = (
@@ -6703,7 +6696,7 @@
 	},
 /obj/decal/cleanable/dirt,
 /obj/decal/cleanable/dirt,
-/turf/simulated/floor/exoplanet/concrete,
+/turf/simulated/floor/tiled/techfloor,
 /area/map_template/colony/command)
 "mD" = (
 /obj/structure/table/rack,
@@ -7181,7 +7174,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/turf/simulated/wall/r_titanium,
 /area/map_template/colony/airlock)
 "nu" = (
 /obj/structure/bed,
@@ -7226,7 +7219,7 @@
 /obj/structure/sign/warning/moving_parts{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/turf/simulated/wall/r_titanium,
 /area/map_template/colony/jail)
 "ny" = (
 /obj/structure/grille,
@@ -7526,7 +7519,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 9
 	},
-/turf/simulated/wall/r_wall,
+/turf/simulated/wall/r_titanium,
 /area/map_template/colony/airlock)
 "nW" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
@@ -8250,8 +8243,7 @@
 "KH" = (
 /obj/structure/bed/padded,
 /obj/item/bedsheet/hos,
-/obj/submap_landmark/spawnpoint/colonist_spawn_noble,
-/obj/submap_landmark/spawnpoint/colonist_spawn_noble,
+/obj/submap_landmark/spawnpoint/colonist_spawn_pathfinder,
 /turf/simulated/floor/fancyfloor/carpet,
 /area/map_template/colony/dorms)
 "KK" = (
@@ -8627,13 +8619,13 @@ cV
 hX
 il
 aF
-hR
+aO
 iz
-hR
-hR
-hR
-hR
-hR
+aO
+aO
+aO
+aO
+aO
 aO
 aO
 mm
@@ -8671,11 +8663,11 @@ aF
 hC
 iU
 jh
-hR
+aO
 jZ
 lW
 mM
-bd
+hr
 nx
 mn
 mn
@@ -8712,11 +8704,11 @@ aF
 hQ
 iH
 ji
-hR
+aO
 ku
 du
 mN
-bd
+hr
 jC
 jC
 jC
@@ -8753,11 +8745,11 @@ aF
 in
 iI
 jm
-hR
+aO
 kO
 lO
 kv
-bd
+hr
 nT
 kZ
 li
@@ -8794,11 +8786,11 @@ aF
 iu
 iX
 jo
-hR
+aO
 hr
 jT
 hr
-bd
+hr
 kK
 la
 la
@@ -8839,7 +8831,7 @@ jA
 lf
 lP
 mA
-bd
+hr
 kL
 kL
 kL
@@ -8876,11 +8868,11 @@ aF
 ix
 kF
 jy
-hR
+aO
 lj
 oE
 oI
-bd
+hr
 kM
 lg
 ln
@@ -8900,10 +8892,10 @@ aZ
 aZ
 aZ
 bI
-ar
-ar
-ar
-ar
+aN
+aN
+aN
+aN
 aF
 aF
 aF
@@ -8911,17 +8903,17 @@ aF
 aF
 aF
 fP
-ki
+aF
 aF
 aF
 hM
 iZ
 jz
-hR
+aO
 oD
 oF
 lr
-bd
+hr
 kN
 kL
 lt
@@ -8941,7 +8933,7 @@ al
 al
 al
 bM
-ar
+aN
 bA
 cg
 dy
@@ -8956,13 +8948,13 @@ gJ
 hE
 aO
 ls
-hR
+aO
 ls
-hR
+aO
 lj
 gD
 ho
-bd
+hr
 mP
 kL
 lu
@@ -9073,7 +9065,7 @@ dZ
 aT
 eR
 fA
-gW
+aN
 fZ
 gj
 hk
@@ -9085,7 +9077,7 @@ aP
 aP
 iC
 kb
-bd
+hr
 kY
 bh
 bh
@@ -9105,7 +9097,7 @@ al
 al
 al
 bM
-ar
+aN
 ca
 he
 dA
@@ -9114,7 +9106,7 @@ eM
 gH
 me
 fB
-gW
+aN
 fC
 gD
 hn
@@ -9126,7 +9118,7 @@ io
 aP
 dq
 ho
-bd
+hr
 kn
 kw
 lw
@@ -9147,16 +9139,16 @@ aZ
 aZ
 ci
 at
-az
-az
-az
-az
-az
-az
-az
-az
-az
-az
+at
+at
+at
+at
+at
+at
+at
+at
+at
+at
 fT
 hf
 aP
@@ -9185,19 +9177,19 @@ ad
 ac
 ac
 ac
-bd
-bd
+hr
+hr
 at
 dB
 XO
 dj
-az
+at
 eX
-az
+at
 Dj
 XO
 KH
-az
+at
 fX
 hp
 aP
@@ -9208,7 +9200,7 @@ ip
 aP
 fX
 hu
-bd
+hr
 kt
 nr
 mw
@@ -9229,16 +9221,16 @@ ac
 bi
 cn
 at
-az
+at
 jV
-az
-az
+at
+at
 dM
-az
-az
+at
+at
 jV
-az
-az
+at
+at
 gm
 hh
 aP
@@ -9249,10 +9241,10 @@ jD
 aP
 oG
 oI
-bd
-bd
-bd
-bd
+hr
+hr
+hr
+hr
 lJ
 mb
 nS
@@ -9279,7 +9271,7 @@ fj
 Ek
 ds
 kH
-az
+at
 gn
 ht
 aP
@@ -9290,7 +9282,7 @@ lI
 aP
 oH
 oJ
-bd
+hr
 kz
 kP
 aJ
@@ -9311,16 +9303,16 @@ ac
 bs
 cx
 at
-az
+at
 jV
-az
-az
+at
+at
 eQ
-az
-az
+at
+at
 jV
-az
-az
+at
+at
 gp
 hv
 aP
@@ -9334,7 +9326,7 @@ iF
 kg
 go
 nk
-bd
+hr
 bh
 mh
 mu
@@ -9349,19 +9341,19 @@ aV
 bn
 bD
 ac
-bd
+hr
 cC
 at
 dB
 ux
 ib
-az
+at
 eT
-az
+at
 fM
 ux
 Gh
-az
+at
 gE
 hN
 jR
@@ -9372,7 +9364,7 @@ jQ
 lm
 my
 mT
-bd
+hr
 kA
 kQ
 mq
@@ -9393,16 +9385,16 @@ ac
 bx
 cF
 at
-az
-az
-az
-az
+at
+at
+at
+at
 eW
-az
-az
-az
-az
-az
+at
+at
+at
+at
+at
 hc
 fa
 ao
@@ -9413,10 +9405,10 @@ lk
 ao
 du
 mU
-bd
+hr
 kB
 lb
-bd
+hr
 lR
 ms
 oa
@@ -9514,23 +9506,23 @@ bo
 ac
 ac
 ac
-aJ
+az
 au
 cc
 ec
 cc
-aB
+au
 cZ
 do
 cZ
 fG
-aI
-aI
-aI
-aI
-lq
+aK
+aK
+aK
+aK
+aQ
 ig
-lq
+aQ
 lq
 aQ
 ng
@@ -9555,20 +9547,20 @@ bp
 ac
 aH
 eG
-eD
+fo
 au
 dR
 ee
 eS
-aB
+au
 fk
 gb
 gI
 hx
-aI
+aK
 ge
 dk
-aI
+aK
 iR
 jl
 ju
@@ -9591,7 +9583,7 @@ os
 (31,1,1) = {"
 ae
 ae
-ak
+ae
 mz
 ae
 ae
@@ -9601,15 +9593,15 @@ bz
 dU
 ef
 eO
-aB
+au
 fn
 em
 gP
 gY
-aI
+aK
 fJ
 gz
-aI
+aK
 ja
 js
 iO
@@ -9637,20 +9629,20 @@ bu
 bX
 ae
 cf
-eZ
+eD
 bz
 dV
 eg
 eY
-aB
+au
 fe
 em
 br
 hz
-aI
+aK
 gc
 gr
-aI
+aK
 hy
 im
 iP
@@ -9678,7 +9670,7 @@ bv
 bG
 ae
 dn
-eZ
+eD
 au
 dW
 ez
@@ -9688,10 +9680,10 @@ fu
 em
 br
 hD
-aI
+aK
 gd
-aI
-aI
+aK
+aK
 je
 hS
 hI
@@ -9719,20 +9711,20 @@ uK
 YD
 ae
 dn
-fc
+gW
 au
-aB
+au
 ex
-aB
-aB
-fo
+au
+aS
+fn
 en
 ev
 hK
 eC
 eP
 gC
-aI
+aK
 jj
 jt
 jv
@@ -9760,12 +9752,12 @@ uK
 Fz
 ae
 dn
-fc
+gW
 aw
 eb
 eF
 ej
-aG
+aw
 fI
 gs
 br
@@ -9774,11 +9766,11 @@ eN
 fg
 iw
 aK
-aS
+aQ
 ly
 ly
-aS
-aS
+aQ
+aQ
 Bc
 RR
 YV
@@ -9801,12 +9793,12 @@ tG
 NN
 ae
 dn
-eZ
+eD
 bZ
 dK
 dC
 dQ
-aG
+aw
 fK
 gA
 fH
@@ -9841,8 +9833,8 @@ ae
 ae
 ae
 ae
-eh
-eZ
+ac
+ak
 aw
 dL
 dN

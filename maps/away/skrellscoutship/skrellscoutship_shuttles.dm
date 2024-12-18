@@ -16,7 +16,7 @@
 	moving_state = "ship_moving"
 	fore_dir = WEST
 	color = "#ff00ff"
-	vessel_mass = 800
+	vessel_mass = 1500
 	vessel_size = SHIP_SIZE_SMALL
 	initial_restricted_waypoints = list(
 		"Tau Shuttle" = list("nav_tauscoutsh_dock")

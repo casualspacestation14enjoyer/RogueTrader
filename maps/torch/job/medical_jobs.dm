@@ -16,7 +16,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 18
+	skill_points = 16
 	min_skill = list(
 		SKILL_BUREAUCRACY = SKILL_TRAINED,
 		SKILL_MEDICAL = SKILL_MASTER,
@@ -107,15 +107,15 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 18
+	skill_points = 10
 	min_skill = list(
-		SKILL_VIGOR = SKILL_TRAINED,
+		SKILL_VIGOR = SKILL_EXPERIENCED,
 		SKILL_MEDICAL = SKILL_EXPERIENCED,
 		SKILL_ANATOMY = SKILL_EXPERIENCED,
 		SKILL_CHEMISTRY = SKILL_EXPERIENCED,
-		SKILL_COMBAT = SKILL_TRAINED,
-		SKILL_GUNS = SKILL_TRAINED,
-		SKILL_FORENSICS = SKILL_TRAINED,
+		SKILL_COMBAT = SKILL_EXPERIENCED,
+		SKILL_GUNS = SKILL_EXPERIENCED,
+		SKILL_FORENSICS = SKILL_EXPERIENCED,
 		SKILL_EVA = SKILL_TRAINED
 	)
 
@@ -171,9 +171,9 @@
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/medical/pharmacologis
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/civ)
-	skill_points = 20
+	skill_points = 16
 	min_skill = list(
-		SKILL_MEDICAL = SKILL_TRAINED,
+		SKILL_MEDICAL = SKILL_EXPERIENCED,
 		SKILL_ANATOMY = SKILL_EXPERIENCED,
 		SKILL_CHEMISTRY = SKILL_EXPERIENCED,
 		SKILL_FORENSICS = SKILL_EXPERIENCED,
@@ -222,14 +222,14 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 22
+	skill_points = 12
 	min_skill = list(
-		SKILL_VIGOR = SKILL_BASIC,
-		SKILL_MEDICAL = SKILL_TRAINED,
-		SKILL_ANATOMY = SKILL_TRAINED,
+		SKILL_VIGOR = SKILL_TRAINED,
+		SKILL_MEDICAL = SKILL_EXPERIENCED,
+		SKILL_ANATOMY = SKILL_EXPERIENCED,
 		SKILL_CHEMISTRY = SKILL_TRAINED,
 		SKILL_COMBAT = SKILL_BASIC, // Surgery skill overlap
-		SKILL_FORENSICS = SKILL_TRAINED,
+		SKILL_FORENSICS = SKILL_EXPERIENCED,
 	)
 
 	max_skill = list(	SKILL_MEDICAL = SKILL_MASTER,
@@ -291,7 +291,7 @@
 		/datum/mil_rank/civ/civ
 	)
 
-	skill_points = 20
+	skill_points = 16
 	min_skill = list(
 		SKILL_VIGOR = SKILL_BASIC,
 		SKILL_MEDICAL = SKILL_BASIC,
@@ -300,7 +300,7 @@
 		SKILL_GUNS = SKILL_BASIC, // Training from hospitaller
 		SKILL_COMBAT = SKILL_BASIC,
 		SKILL_FORENSICS = SKILL_BASIC,
-	) // No max skill list, they cap at experienced.
+	) // max skill list is currently wip
 
 	access = list(
 		access_medical, access_morgue, access_maint_tunnels,

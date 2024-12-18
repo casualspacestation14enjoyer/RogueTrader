@@ -459,7 +459,7 @@
 	qdel(src)
 
 /obj/machinery/power/port_gen/pacman/super/potato
-	name = "nuclear reactor"
+	name = "imperial nuclear reactor"
 	desc = "PTTO-3, an industrial all-in-one nuclear power plant by Neo-Chernobyl GmbH. It uses uranium and vodka as a fuel source. Rated for 150 kW max safe output."
 	power_gen = 40000		//Watts output per power_output level
 	icon_state = "potato"
@@ -527,7 +527,7 @@
 	return TRUE
 
 /obj/machinery/power/port_gen/pacman/super/potato/reactor
-	name = "nuclear reactor"
+	name = "archeotech nuclear reactor"
 	desc = "ICRER-2, an industrial-yet-compact nuclear fusion reactor powered by sheets of uranium and liquid coolant. Rated for 180 KW maximum safe output on a full coolant tank for one hour. Exceeding this is likely to result in nuclear detonation and is not recommended."
 	icon_state = "potato"
 	max_safe_output = 5

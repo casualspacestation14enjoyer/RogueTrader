@@ -5,9 +5,9 @@
 	fore_dir = SOUTH
 	vessel_size = SHIP_SIZE_SMALL
 	moving_state = "ship_moving"
-	max_speed = 1/(3 SECONDS)
+	max_speed = 1/(2 SECONDS)
 	burn_delay = 2 SECONDS
-	vessel_mass = 4000
+	vessel_mass = 3000
 	fore_dir = SOUTH
 	skill_needed = SKILL_BASIC
 	vessel_size = SHIP_SIZE_SMALL
@@ -20,9 +20,9 @@
 	skill_needed = SKILL_BASIC
 	vessel_size = SHIP_SIZE_TINY
 	moving_state = "ship_moving"
-	max_speed = 1/(4 SECONDS)
+	max_speed = 1/(3 SECONDS)
 	burn_delay = 1.5 SECONDS
-	vessel_mass = 2500 //more inefficient than GUP
+	vessel_mass = 2000 //more inefficient than GUP
 
 /obj/overmap/visitable/ship/landable/scavver_gantry/three
 	name = "Unmarked shuttle"

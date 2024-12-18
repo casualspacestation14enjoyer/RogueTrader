@@ -16,7 +16,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 20
+	skill_points = 18
 	min_skill = list(
 		SKILL_BUREAUCRACY  = SKILL_TRAINED,
 		SKILL_COMBAT = SKILL_TRAINED,
@@ -129,7 +129,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 19
+	skill_points = 17
 	min_skill = list(
 		SKILL_GUNS = SKILL_TRAINED,
 		SKILL_SCIENCE = SKILL_EXPERIENCED,
@@ -230,7 +230,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 21
+	skill_points = 19
 	min_skill = list(
 		SKILL_GUNS = SKILL_BASIC,
 		SKILL_SCIENCE = SKILL_BASIC,
@@ -318,7 +318,7 @@
 		/datum/mil_rank/civ/civ
 	)
 
-	skill_points = 20
+	skill_points = 16
 	min_skill = list(
 		SKILL_GUNS = SKILL_BASIC,
 		SKILL_COMBAT = SKILL_TRAINED,

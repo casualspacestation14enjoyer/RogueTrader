@@ -919,6 +919,7 @@
 /obj/machinery/power/apc/derelict{
 	dir = 1
 	},
+/obj/gibspawner/human,
 /turf/simulated/floor,
 /area/ship/scrap/broken2)
 "bZ" = (
@@ -952,7 +953,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/cargo/lower)
 "ce" = (
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/scrap/shuttle/lift)
 "cf" = (
 /obj/floor_decal/industrial/warning{
@@ -1096,7 +1097,7 @@
 /area/ship/scrap/cargo/lower)
 "cu" = (
 /obj/shuttle_landmark/lift/bottom,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/scrap/shuttle/lift)
 "cx" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -1170,10 +1171,12 @@
 /turf/simulated/floor,
 /area/ship/scrap/crew/dorms2)
 "cD" = (
-/turf/simulated/floor{
-	map_airless = 1
+/obj/structure/railing/mapped{
+	dir = 8
 	},
-/area/ship/scrap/broken2)
+/obj/structure/railing/mapped,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/scrap/shuttle/lift)
 "cE" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1;
@@ -1223,8 +1226,14 @@
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/crew/dorms2)
 "cK" = (
-/turf/space,
-/area/ship/scrap/broken1)
+/obj/structure/railing/mapped{
+	dir = 1
+	},
+/obj/structure/railing/mapped{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/scrap/shuttle/lift)
 "cL" = (
 /obj/structure/lattice,
 /obj/item/remains/mouse,
@@ -1280,11 +1289,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/cargo/lower)
-"cU" = (
-/obj/structure/lattice,
-/obj/item/stack/nanopaste,
-/turf/space,
-/area/ship/scrap/broken1)
 "cV" = (
 /obj/structure/inflatable/wall,
 /turf/simulated/floor/tiled/dark,
@@ -1328,24 +1332,21 @@
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/cargo/lower)
 "db" = (
-/obj/floor_decal/industrial/warning{
-	dir = 1;
-	icon_state = "warning"
+/obj/structure/railing/mapped{
+	dir = 1
 	},
-/obj/floor_decal/industrial/warning{
-	dir = 1;
-	icon_state = "warning"
+/obj/structure/railing/mapped{
+	dir = 8
 	},
-/turf/simulated/floor/tiled/dark,
-/area/ship/scrap/cargo/lower)
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/scrap/shuttle/lift)
 "dc" = (
-/obj/structure/stairs/east,
-/obj/floor_decal/industrial/warning{
-	dir = 1;
-	icon_state = "warning"
+/obj/structure/railing/mapped{
+	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
-/area/ship/scrap/cargo/lower)
+/obj/structure/railing/mapped,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/scrap/shuttle/lift)
 "dd" = (
 /obj/floor_decal/industrial/warning{
 	dir = 1;
@@ -1382,6 +1383,10 @@
 /turf/simulated/floor,
 /area/ship/scrap/maintenance/lower)
 "dg" = (
+/obj/paint/sfv_arbiter,
+/obj/machinery/pointdefense{
+	initial_id_tag = "Demeter"
+	},
 /turf/simulated/wall/r_titanium,
 /area/ship/scrap/crew/dorms3)
 "dh" = (
@@ -1874,6 +1879,7 @@
 	req_access = newlist()
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/random/loot/randomsupply/engineering,
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/maintenance/techstorage)
 "ed" = (
@@ -2300,6 +2306,7 @@
 	dir = 1;
 	level = 2
 	},
+/obj/random/loot/randomsupply/tech,
 /turf/simulated/floor,
 /area/ship/scrap/maintenance/techstorage)
 "eG" = (
@@ -2338,6 +2345,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/maintenance/storage)
 "eJ" = (
+/obj/submap_landmark/spawnpoint/kasrkin,
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/maintenance/storage)
 "eK" = (
@@ -2505,6 +2513,10 @@
 	map_airless = 1
 	},
 /area/ship/scrap/crew/dorms1)
+"tp" = (
+/obj/submap_landmark/spawnpoint/pdf,
+/turf/simulated/floor/tiled/dark,
+/area/ship/scrap/cargo/lower)
 "tW" = (
 /obj/floor_decal/industrial/warning{
 	dir = 1
@@ -2593,6 +2605,15 @@
 	},
 /turf/simulated/floor,
 /area/ship/scrap/maintenance/lower)
+"QD" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/submap_landmark/spawnpoint/detective,
+/turf/simulated/floor/tiled/dark,
+/area/ship/scrap/cargo/lower)
 "Ro" = (
 /obj/floor_decal/industrial/warning{
 	dir = 1
@@ -8543,9 +8564,9 @@ UZ
 UZ
 bZ
 cm
-cD
-cK
-cU
+bZ
+cN
+cN
 dk
 cN
 cN
@@ -9517,11 +9538,11 @@ gb
 br
 bG
 bP
-ce
-ce
-ce
-ce
 db
+ce
+ce
+cD
+ao
 dp
 ao
 dN
@@ -9636,14 +9657,14 @@ au
 aE
 aP
 aQ
-br
+QD
 aQ
 bQ
 ce
 cu
 ce
 ce
-dc
+ao
 dq
 ao
 dO
@@ -9878,15 +9899,15 @@ aa
 am
 av
 aK
-aQ
+tp
 bc
 bt
 bI
 bS
+cK
 ce
 ce
-ce
-ce
+dc
 dd
 dp
 ao
@@ -10865,7 +10886,7 @@ LF
 LF
 xc
 dw
-dg
+xc
 xc
 aa
 aa
@@ -10988,7 +11009,7 @@ LF
 xc
 En
 xc
-xc
+dg
 aa
 aa
 aa

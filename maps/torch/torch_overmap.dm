@@ -2,7 +2,7 @@
 	name = "Dauntless"
 	desc = "A frankensteined imperial corvette-class explorer vessel, broadcasting Imperial codes and the designation \"Dauntless, HSC-4-13-X\"."
 	fore_dir = WEST
-	vessel_mass = 80000
+	vessel_mass = 10000
 	burn_delay = 1 SECONDS
 	sector_flags = OVERMAP_SECTOR_KNOWN|OVERMAP_SECTOR_IN_SPACE|OVERMAP_SECTOR_BASE
 	known_ships = list(
@@ -101,7 +101,7 @@
 	name = "Aquila"
 	desc = "A PM-24 modular transport, broadcasting ImperialEC codes and the callsign \"Dauntless-1 Aquila\"."
 	shuttle = "Aquila"
-	vessel_mass = 5000
+	vessel_mass = 3000
 	max_speed = 1/(1 SECONDS)
 	burn_delay = 0.5 SECONDS //spammable, but expensive
 	fore_dir = NORTH
@@ -118,7 +118,7 @@
 	shuttle = "Guppy"
 	max_speed = 1/(3 SECONDS)
 	burn_delay = 0.2 SECONDS
-	vessel_mass = 1200
+	vessel_mass = 900
 	fore_dir = SOUTH
 	skill_needed = SKILL_BASIC
 	vessel_size = SHIP_SIZE_TINY

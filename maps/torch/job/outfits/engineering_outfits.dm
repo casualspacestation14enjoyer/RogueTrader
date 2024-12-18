@@ -50,7 +50,7 @@
 
 /singleton/hierarchy/outfit/job/torch/crew/engineering/bondsman
 	name = OUTFIT_JOB_NAME("Bondsman")
-	head = /obj/item/clothing/head/hardhat/bondsman
+	head = null
 	mask = /obj/item/clothing/mask/gas/explorer
 	glasses = /obj/item/clothing/glasses/night
 	belt = /obj/item/storage/belt/utility/full

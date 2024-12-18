@@ -6,6 +6,7 @@
 	item_state = "laser"
 	slot_flags = SLOT_BELT|SLOT_HOLSTER|SLOT_BACK
 	w_class = ITEM_SIZE_LARGE
+	safety_state = 1 // Lasguns are on safe by default.
 	force = 10
 	fire_delay = 4
 	one_hand_penalty = 2
@@ -548,7 +549,7 @@
 	slot_flags = null // Must be held at all times or properly stored.
 	force = 12 // Heavy and slow to hit.
 	max_shots = 5
-	w_class = ITEM_SIZE_HUGE
+	w_class = ITEM_SIZE_GARGANTUAN
 	fire_delay = 13
 	charge_cost = 20
 	ammotype = /obj/item/cell/device/high/melta
@@ -568,7 +569,7 @@
 	force = 12 // Heavy and slow to hit.
 	max_shots = 5
 	burst = 2
-	w_class = ITEM_SIZE_HUGE
+	w_class = ITEM_SIZE_GARGANTUAN
 	fire_delay = 17
 	charge_cost = 20
 	slowdown_general = 0.07
@@ -579,7 +580,7 @@
 	icon_state = "prifle"
 	item_state = "plasmarifle"
 	slot_flags = SLOT_BACK
-	w_class = ITEM_SIZE_HUGE
+	w_class = ITEM_SIZE_GARGANTUAN
 	force = 12
 	one_hand_penalty = 3 //heavy af fam
 	accuracy = 0.5
@@ -688,7 +689,7 @@
 	icon_state = "ionriflet"
 	item_state = "ionriflet"
 	slot_flags = SLOT_BACK|SLOT_BELT|SLOT_HOLSTER
-	w_class = ITEM_SIZE_HUGE
+	w_class = ITEM_SIZE_GARGANTUAN
 	charge_meter = FALSE
 	force = 10
 	one_hand_penalty = 3
@@ -715,7 +716,7 @@
 	icon_state = "railgun"
 	item_state = "railgun"
 	slot_flags = SLOT_BACK|SLOT_BELT|SLOT_HOLSTER
-	w_class = ITEM_SIZE_HUGE
+	w_class = ITEM_SIZE_GARGANTUAN
 	charge_meter = FALSE
 	force = 10
 	one_hand_penalty = 3

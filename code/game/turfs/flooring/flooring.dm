@@ -28,7 +28,7 @@
 	var/build_time = 0  // BYOND ticks.
 
 	var/descriptor = "tiles"
-	var/flags
+	var/flags = TURF_CAN_BREAK | TURF_REMOVE_WRENCH | TURF_REMOVE_CROWBAR
 	var/remove_timer
 	var/can_paint
 	var/can_engrave = TRUE
@@ -533,11 +533,209 @@
 /singleton/flooring/reinforced/ramp/bottom
 	icon_base = "rampbot"
 
-/singleton/flooring/snow
-	name = "snow"
-	desc = "Mixed snow"
-	icon = 'icons/turf/flooring/stonefloor.dmi'
-	icon_base = "MAIN"
-	has_damage_range = 6
-	descriptor = "snow"
-	flags = TURF_CAN_BREAK | TURF_IS_FRAGILE |TURF_ACID_IMMUNE|TURF_HAS_CORNERS|TURF_REMOVE_SHOVEL
+// DECALS SINGLETONES
+
+/singleton/flooring/newsteel
+	name = "steel floor"
+	icon_base = "steel"
+	color = null
+	build_type = /obj/item/stack/tile/floor_dark
+	has_damage_range = null
+	damage_temperature = T0C+1400
+	flags = TURF_REMOVE_CROWBAR | TURF_CAN_BREAK | TURF_CAN_BURN
+	can_paint = 1
+	footstep_type = /singleton/footsteps/tiles
+
+/singleton/flooring/newsteel/light
+	name = "light steel floor"
+	icon_base = "steelold"
+	color = null
+	build_type = /obj/item/stack/tile/floor_dark
+
+/singleton/flooring/newsteel/dark
+	name = "dark steel floor"
+	icon_base = "dark"
+	color = null
+	build_type = /obj/item/stack/tile/floor_dark
+
+/singleton/flooring/newsteel/dark2
+	name = "dark steel floor variant"
+	icon_base = "dark1"
+	color = null
+	build_type = /obj/item/stack/tile/floor_dark
+
+/singleton/flooring/warhammer
+	name = "grimy floor"
+	icon_base = "grimy"
+	color = null
+	build_type = null
+	has_damage_range = null
+	damage_temperature = T0C+800
+	flags = TURF_REMOVE_CROWBAR | TURF_CAN_BREAK
+	can_paint = null
+	footstep_type = /singleton/footsteps/tiles
+
+/singleton/flooring/warhammer/nf2
+	name = "stone floor"
+	icon_base = "nf2"
+	color = null
+	damage_temperature = T0C+1400
+	flags = TURF_CAN_BREAK
+	build_type = null
+	footstep_type = /singleton/footsteps/asteroid
+
+/singleton/flooring/warhammer/lfloorscorched1
+	name = "scorched floor"
+	icon_base = "lfloorscorched1"
+	color = null
+	build_type = null
+
+/singleton/flooring/warhammer/oldsmoothdirt
+	name = "dirt floor"
+	icon_base = "oldsmoothdirt"
+	color = null
+	build_type = null
+	footstep_type = /singleton/footsteps/asteroid
+
+/singleton/flooring/warhammer/tunneldirty
+	name = "tunnel floor"
+	icon_base = "tunneldirty"
+	color = null
+	build_type = null
+
+/singleton/flooring/warhammer/tunnelchess
+	name = "chessboard tunnel floor"
+	icon_base = "tunnelchess"
+	color = null
+	build_type = null
+
+/singleton/flooring/warhammer/carpetn00
+	name = "carpet floor"
+	icon_base = "n00"
+	color = null
+	damage_temperature = T0C+100
+	flags = TURF_REMOVE_CROWBAR | TURF_CAN_BREAK | TURF_CAN_BURN
+	build_type = null
+	footstep_type = /singleton/footsteps/carpet
+
+/singleton/flooring/warhammer/surgerynew
+	name = "surgery floor"
+	icon_base = "surgery2"
+	color = null
+	build_type = null
+
+/singleton/flooring/warhammer/brothel
+	name = "brothel floor"
+	icon_base = "brothel"
+	color = null
+	build_type = null
+
+/singleton/flooring/warhammer/clockwork
+	name = "alien floor"
+	icon_base = "clockwork"
+	damage_temperature = T0C+1800
+	flags = TURF_REMOVE_SCREWDRIVER | TURF_CAN_BREAK | TURF_ACID_IMMUNE
+	color = null
+	build_type = null
+	footstep_type = /singleton/footsteps/hull
+
+/singleton/flooring/warhammer/aesculapius
+	name = "aesculapius floor"
+	damage_temperature = T0C+800
+	flags = TURF_REMOVE_SCREWDRIVER | TURF_CAN_BREAK | TURF_ACID_IMMUNE
+	icon_base = "aesculapius"
+	color = null
+	build_type = null
+
+/singleton/flooring/warhammer/aesculapius/mem
+	icon_base = "mem"
+	color = null
+	build_type = null
+
+/singleton/flooring/warhammer/aesculapius/mento
+	icon_base = "mento"
+	color = null
+	build_type = null
+
+/singleton/flooring/warhammer/aesculapius/mori
+	icon_base = "mori"
+	color = null
+	build_type = null
+
+/singleton/flooring/warhammer/plating
+	name = "plating floor"
+	icon_base = "platingfull"
+	color = null
+	build_type = null
+
+/singleton/flooring/warhammer/plate
+	name = "plate floor"
+	icon_base = "plate"
+	color = null
+	build_type = null
+
+/singleton/flooring/warhammer/barnew
+	name = "bar floor"
+	icon_base = "barnew"
+	color = null
+	build_type = null
+
+/singleton/flooring/warhammer/splate
+	icon_base = "shaftplating"
+	color = null
+	build_type = null
+
+/singleton/flooring/warhammer/checkers
+	icon_base = "checkers1"
+	color = null
+	build_type = null
+
+/singleton/flooring/warhammer/checkers/two
+	icon_base = "checkers2"
+	color = null
+	build_type = null
+
+/singleton/flooring/warhammer/rectangles
+	icon_base = "rectangles1"
+	color = null
+	build_type = null
+
+/singleton/flooring/warhammer/rectangles/two
+	icon_base = "rectangles2"
+	color = null
+	build_type = null
+
+/singleton/flooring/warhammer/brick
+	icon_base = "brick1"
+	color = null
+	build_type = null
+
+/singleton/flooring/warhammer/brick/two
+	icon_base = "brick2"
+	color = null
+	build_type = null
+
+/singleton/flooring/warhammer/metal
+	icon_base = "metal1"
+	color = null
+	build_type = null
+
+/singleton/flooring/warhammer/metal/two
+	icon_base = "metal2"
+	color = null
+	build_type = null
+
+/singleton/flooring/warhammer/metal/three
+	icon_base = "metal3"
+	color = null
+	build_type = null
+
+/singleton/flooring/warhammer/metal/four
+	icon_base = "metal4"
+	color = null
+	build_type = null
+
+/singleton/flooring/warhammer/metal/five
+	icon_base = "metal5"
+	color = null
+	build_type = null
