@@ -2,7 +2,7 @@
 	var/static/atom/movable/clickable_stat/statLine
 
 	/// server name (for world name / status)
-	var/static/server_name = "Space Station 13"
+	var/static/server_name = "Forge-World Eipharius | WARHAMMER 40,000"
 
 	/// generate numeric suffix based on server port
 	var/static/server_suffix = FALSE
