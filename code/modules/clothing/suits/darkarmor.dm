@@ -6,6 +6,7 @@
 	desc = "The sturdy armour, issued to Adeptus Astartes Scouts for their service until they prove themselves worthy to become full-fledged Battlebrothers."
 	icon_state = "fharmor"
 	item_state = "fharmor"
+	w_class = ITEM_SIZE_GARGANTUAN
 	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
 	body_parts_covered = LEGS|ARMS|FULL_TORSO // Remember to make power gloves and booties.
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
@@ -581,6 +582,7 @@
 /obj/item/clothing/suit/armor/orkarmor
 	name = "'Eavy Metal Ork Armor"
 	desc = "Scavenged 'eavy bitz to keep ya' krumpin' longa'!"
+	w_class = ITEM_SIZE_GARGANTUAN
 	icon_state = "ork_m_armor"
 	item_state = "ork_m_armor" // Make sure orks ignore cold, heat, pressure and vacuum.
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
@@ -688,6 +690,7 @@
 	desc = "The impeccable yellow and brown armor of the Tau warrior caste"
 	icon_state = "fw_armor"
 	item_state = "fw_armor"
+	w_class = ITEM_SIZE_GARGANTUAN
 	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
@@ -747,6 +750,7 @@
 	desc = "A ancient armor. It looks like it's made from Thermoplas in a scale like pattern."
 	icon_state = "eldarmor"
 	item_state = "eldarmor"
+	w_class = ITEM_SIZE_GARGANTUAN
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
 	slowdown_general = 0.1 // Marshal's carapace is 0.11

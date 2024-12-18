@@ -49,16 +49,7 @@
 			src.updateUsrDialog()
 			return
 		var/mob/M = locate(href_list["traitormob"])
-		if(M.mind.special_role || jobban_isbanned(M, MODE_TRAITOR))
-			temptext = "<i>We have no need for you at this time. Have a pleasant day.</i><br>"
-			src.updateUsrDialog()
-			return
 		charges -= 1
-		if (rand(0, 1))
-			temptext = "[SPAN_COLOR("red", "<i><b>Double-crosser. You planned to betray us from the start. Allow us to repay the favor in kind.</b></i>")]"
-			src.updateUsrDialog()
-			spawn(rand(50,200)) selfdestruct()
-			return
 		if(istype(M, /mob/living/carbon/human))
 			var/mob/living/carbon/human/N = M
 			to_chat(M, "<B>You have joined the ranks of the Heretic and become a traitor to the station!</B>")

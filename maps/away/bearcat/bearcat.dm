@@ -30,7 +30,7 @@
 /obj/overmap/visitable/ship/demeter
 	name = "The Demeter"
 	color = "#00ffff"
-	vessel_mass = 10000
+	vessel_mass = 5500
 	burn_delay = 2 SECONDS
 	fore_dir = NORTH
 	skill_needed = SKILL_TRAINED
@@ -62,7 +62,6 @@
 	)
 	current_location = "nav_demeter_start"
 	landmark_transition = "nav_transit_demeter"
-	dock_target = "vox_ship"
 	range = 1
 	knockdown = FALSE
 	fuel_consumption = 2
@@ -81,6 +80,7 @@
 		/datum/job/submap/kasrkin,
 		/datum/job/submap/merchant,
 		/datum/job/submap/noble,
+		/datum/job/submap/pdf,
 		/datum/job/submap/demeter_crew,
 		/datum/job/submap/demeter_detective
 	)

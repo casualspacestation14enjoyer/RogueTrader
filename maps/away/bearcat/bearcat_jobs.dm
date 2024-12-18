@@ -1,5 +1,5 @@
 /obj/submap_landmark/spawnpoint/noble
-	name = "Mercenary"
+	name = "Witch Hunter"
 
 /obj/submap_landmark/spawnpoint/crewman
 	name = "Crewman"
@@ -10,8 +10,8 @@
 /obj/submap_landmark/spawnpoint/merchant
 	name = "Merchant"
 
-/obj/submap_landmark/spawnpoint/witchhunter
-	name = "Witch Hunter"
+/obj/submap_landmark/spawnpoint/pdf
+	name = "Demeter Deserter"
 
 /obj/submap_landmark/spawnpoint/detective
 	name = "Detective"
@@ -43,14 +43,17 @@ else if(current_title == "Bounty Hunter")
 
 /datum/job/submap/kasrkin
 	title = "Kasrkin"
-	info = "You are part of an established colony on the edge of the Ghoul Stars, far from the Imperium's reach. The outpost stands as a solitary bastion amidst the unknown, its purpose and survival intertwined with the mysteries of this distant frontier."
+	info = "You are one of the last breathing souls aboard the Demeter, a battered star-hauler adrift in the cold void of \
+	unexplored space. With the captain lost and most of the crew dead, the burden of survival now rests on you and the \
+	few remaining souls. It’s time to choose an acting captain and salvage what little remains—before the darkness claims \
+	the rest."
 	outfit_type = /singleton/hierarchy/outfit/job/survivor/kasrkin
 	whitelisted_species = list(SPECIES_HUMAN,SPECIES_VOX,SPECIES_TAU,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_KROOT)
 	total_positions = 0
-	skill_points = 20 // lastly test out warp terrain. so we need purple space tiles. when you traverse them you hallucinate and go crazy. on examine as well.
+	skill_points = 16
 	min_skill = list(
-		SKILL_COMBAT = SKILL_EXPERIENCED,
-		SKILL_GUNS = SKILL_EXPERIENCED,
+		SKILL_COMBAT = SKILL_MASTER,
+		SKILL_GUNS = SKILL_MASTER,
 		SKILL_VIGOR = SKILL_EXPERIENCED,
 	)
 
@@ -87,6 +90,77 @@ else if(current_title == "Bounty Hunter")
 	H.species.silent_steps = TRUE
 	return ..()
 
+/datum/job/submap/pdf
+	title = "Demeter Deserter"
+	supervisors = "the trust of your fellow Colonists"
+	info = "You are one of the last breathing souls aboard the Demeter, a battered star-hauler adrift in the cold void of \
+	unexplored space. With the captain lost and most of the crew dead, the burden of survival now rests on you and the \
+	few remaining souls. It’s time to choose an acting captain and salvage what little remains—before the darkness claims \
+	the rest."
+	total_positions = 0
+	outfit_type = /singleton/hierarchy/outfit/job/colonist2
+	whitelisted_species = list(SPECIES_HUMAN,SPECIES_VOX,SPECIES_TAU,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_KROOT)
+	skill_points = 17 // PDF do a lot of drills so physically fit but not much practical combat experience.
+	min_skill = list(
+		SKILL_VIGOR = SKILL_EXPERIENCED,
+		SKILL_GUNS = SKILL_TRAINED,
+		SKILL_COMBAT = SKILL_TRAINED,
+	)
+
+	max_skill = list(	SKILL_CONSTRUCTION = SKILL_MASTER,
+						SKILL_COMBAT = SKILL_LEGEND,
+						SKILL_GUNS = SKILL_LEGEND,
+						SKILL_VIGOR = SKILL_MASTER)
+
+/datum/job/submap/pdf/equip(mob/living/carbon/human/H)
+	var/current_name = H.real_name
+	var/current_title = trimtext(H.mind.role_alt_title)
+	H.voice_in_head(pick(GLOB.lone_thoughts))
+	H.fully_replace_character_name("[current_name]")
+	if(current_title && (H.mind.role_alt_title in alt_titles))
+		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
+	else
+		current_title = title // use default title
+	to_chat(H,"<span class='danger'><b><font size=4>THE DESERTER</font></b></span>")
+	to_chat(H, "<span class='notice'><b><font size=2>As the Deserter, you've abandoned the PDF in search of fortune as a mercenary. Your knowledge of Militarum codes and procedures now serves you as you navigate the dangerous life of a hired gun.</font></b></span>")
+	if(prob(3))
+		H.make_genestealer()
+		to_chat(H, "<span class='notice'><b><font size=2>You are a genestealer bioform, a unique strain of tyranid genestealer capable of rapid transformation. The swarm considers you to be an abomination, but under the guidance of what you believe to be the true hivemind, you will surely succeed where the others have failed. Everything is connected.</font></b></span>")
+	else if(prob(3))
+		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN THIRTY SECONDS</font></b></span>")
+		spawn(30 SECONDS)
+		GLOB.cult.add_antagonist(H.mind, ignore_role = 1, do_not_equip = 0)
+		to_chat(H, "<span class='notice'><b><font size=2>You are a heretical cultist loyal to one or more of the Chaos Gods -- unlike the many pretenders you are truly blessed by the warp and can survive encounters that would boil the brains of most mortal men.</font></b></span>")
+	H.fully_replace_character_name("[current_name]")
+	H.species.brute_mod = 0.7
+	H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/knife, slot_in_backpack)
+	H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/guard/uniform, slot_w_uniform)
+	H.equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/warfare/heavy, slot_back)
+	H.equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/deserter, slot_l_hand) // has gloves, mask, shoes and detpack
+	if(prob(15))
+		H.equip_to_slot_or_store_or_drop(new /obj/item/card/emag, slot_in_backpack)
+	else if(prob(30))
+		H.equip_to_slot_or_store_or_drop(new /obj/item/device/radio_jammer, slot_in_backpack)
+	if(prob(10))
+		H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/flak/conscript/pdf, slot_head)
+		H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/cadian/conscript/pdf, slot_wear_suit)
+		H.equip_to_slot_or_store_or_drop(new /obj/item/gun/energy/lasgun/kantrael, slot_belt)
+	else if(prob(25))
+		H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/flak/conscript/pdf/medic, slot_head)
+		H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/cadian/conscript/medic, slot_wear_suit)
+		H.equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/automatic/assault_rifle, slot_belt)
+		H.equip_to_slot_or_store_or_drop(new /obj/item/storage/firstaid/adv, slot_in_backpack)
+	else if(prob(15))
+		H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/flak/conscript/pdf/heavy, slot_head)
+		H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/cadian/conscript/heavy, slot_wear_suit)
+		H.equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/automatic/autogun/stubber, slot_belt)
+	else
+		H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/flak/conscript/pdf/capt, slot_head)
+		H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/cadian/conscript/captain, slot_wear_suit)
+		H.equip_to_slot_or_store_or_drop(new /obj/item/gun/energy/lasgun/laspistol/hellpistol, slot_belt)
+		H.equip_to_slot_or_store_or_drop(new /obj/item/gun/energy/lasgun/laspistol/lucius, slot_belt)
+		H.equip_to_slot_or_store_or_drop(new /obj/item/cell/device/high/laspack, slot_in_backpack)
+	return ..()
 
 /datum/job/submap/merchant
 	title = "Merchant" // The only semi-free roles left to assign to Demeter is Witch Hunter and Deserter. Also something else somewhere maybe?
@@ -98,16 +172,23 @@ else if(current_title == "Bounty Hunter")
 	few remaining souls. It’s time to choose an acting captain and salvage what little remains—before the darkness claims \
 	the rest."
 	whitelisted_species = list(SPECIES_HUMAN,SPECIES_VOX,SPECIES_TAU,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_KROOT)
-	skill_points = 27
+	skill_points = 20
 	min_skill = list(
-		SKILL_FINANCE = SKILL_BASIC,
+		SKILL_FINANCE = SKILL_EXPERIENCED,
+		SKILL_BUREAUCRACY = SKILL_EXPERIENCED,
 		SKILL_MEDICAL = SKILL_BASIC,
 		SKILL_VIGOR = SKILL_BASIC,
 	)
 
 	max_skill = list(	SKILL_CONSTRUCTION = SKILL_MASTER,
-						SKILL_COMBAT = SKILL_LEGEND,
-						SKILL_GUNS = SKILL_LEGEND,
+						SKILL_DEVICES = SKILL_MASTER,
+						SKILL_COMPUTER = SKILL_MASTER,
+						SKIL_ELECTRICAL = SKILL_MASTER,
+						SKILL_ENGINES = SKILL_MASTER,
+						SKILL_ATMOS = SKILL_MASTER,
+						SKILL_PILOT = SKILL_MASTER,
+						SKILL_COMBAT = SKILL_MASTER,
+						SKILL_GUNS = SKILL_MASTER,
 						SKILL_VIGOR = SKILL_MASTER)
 
 /datum/job/submap/merchant/equip(mob/living/carbon/human/H)
@@ -155,11 +236,11 @@ else if(current_title == "Bounty Hunter")
 	few remaining souls. It’s time to choose an acting captain and salvage what little remains—before the darkness claims \
 	the rest."
 	whitelisted_species = list(SPECIES_HUMAN,SPECIES_VOX,SPECIES_TAU,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_KROOT)
-	skill_points = 26
+	skill_points = 16
 	min_skill = list(
-		SKILL_VIGOR = SKILL_BASIC,
-		SKILL_GUNS = SKILL_BASIC,
-		SKILL_COMBAT = SKILL_BASIC,
+		SKILL_VIGOR = SKILL_TRAINED,
+		SKILL_GUNS = SKILL_TRAINED,
+		SKILL_COMBAT = SKILL_EXPERIENCED,
 	)
 
 	max_skill = list(	SKILL_CONSTRUCTION = SKILL_MASTER,
@@ -209,11 +290,11 @@ else if(current_title == "Bounty Hunter")
 	Imperial trade routes. With the captain lost and the true crew mostly dead, the task of holding this broken ship \
 	together falls on you and the few survivors. It’s time to choose an acting captain and salvage what little remains \
 	—before the dark claims the rest."
-	skill_points = 26
+	skill_points = 20
 	min_skill = list(
-		SKILL_PILOT = SKILL_BASIC,
-		SKILL_CONSTRUCTION = SKILL_BASIC,
-		SKILL_ELECTRICAL = SKILL_BASIC,
+		SKILL_PILOT = SKILL_TRAINED,
+		SKILL_CONSTRUCTION = SKILL_TRAINED,
+		SKILL_ELECTRICAL = SKILL_TRAINED,
 	)
 
 	max_skill = list(	SKILL_CONSTRUCTION = SKILL_MASTER,
@@ -284,11 +365,11 @@ else if(current_title == "Bounty Hunter")
 	Imperial trade routes. With the captain lost and the true crew mostly dead, the task of holding this broken ship \
 	together falls on you and the few survivors. It’s time to choose an acting captain and salvage what little remains \
 	—before the dark claims the rest."
-	skill_points = 26
+	skill_points = 20
 	min_skill = list(
-		SKILL_PILOT = SKILL_BASIC,
-		SKILL_MEDICAL = SKILL_BASIC,
-		SKILL_FORENSICS = SKILL_BASIC,
+		SKILL_GUNS = SKILL_BASIC,
+		SKILL_MEDICAL = SKILL_TRAINED,
+		SKILL_FORENSICS = SKILL_EXPERIENCED,
 	)
 
 	max_skill = list(	SKILL_CONSTRUCTION = SKILL_MASTER,
@@ -302,7 +383,7 @@ else if(current_title == "Bounty Hunter")
 						SKILL_GUNS = SKILL_MASTER,
 						SKILL_VIGOR = SKILL_MASTER)
 
-/datum/job/submap/demeter_crew/equip(mob/living/carbon/human/H)
+/datum/job/submap/demeter_detective/equip(mob/living/carbon/human/H)
 	var/current_name = H.real_name
 	var/current_title = trimtext(H.mind.role_alt_title)
 	H.voice_in_head(pick(GLOB.lone_thoughts))
@@ -404,7 +485,7 @@ else if(current_title == "Bounty Hunter")
 
 /singleton/hierarchy/outfit/job/demeter/bondsman
 	name = ("Demeter Bondsman")
-	head = /obj/item/clothing/head/hardhat/bondsman
+	head = null
 	mask = /obj/item/clothing/mask/gas/explorer
 	glasses = /obj/item/clothing/glasses/night
 	belt = /obj/item/storage/belt/utility/full

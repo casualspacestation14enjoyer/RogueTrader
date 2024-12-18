@@ -86,3 +86,25 @@
 		'sound/effects/footstep/sand2.ogg',
 		'sound/effects/footstep/sand3.ogg',
 		'sound/effects/footstep/sand4.ogg')
+
+/singleton/footsteps/dirt
+	footstep_sounds = list(
+		'sound/effects/footstep/dirt1.ogg',
+		'sound/effects/footstep/dirt2.ogg',
+		'sound/effects/footstep/dirt3.ogg')
+
+/singleton/footsteps/hull
+	footstep_sounds = list(
+		'sound/effects/footstep/hull1.ogg',
+		'sound/effects/footstep/hull2.ogg',
+		'sound/effects/footstep/hull3.ogg',
+		'sound/effects/footstep/hull4.ogg',
+		'sound/effects/footstep/hull5.ogg')
+
+/singleton/footsteps/mud
+	footstep_sounds = list(
+		'sound/effects/footstep/mud1.ogg',
+		'sound/effects/footstep/mud2.ogg',
+		'sound/effects/footstep/mud3.ogg',
+		'sound/effects/footstep/mud4.ogg',
+		'sound/effects/footstep/mud5.ogg')

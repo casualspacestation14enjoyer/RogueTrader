@@ -64,6 +64,7 @@
 	desc = "A backpack that opens into a localized pocket of Blue Space."
 	origin_tech = list(TECH_BLUESPACE = 4)
 	icon_state = "holdingpack"
+	max_w_class = ITEM_SIZE_HUGE
 	item_state_slots = list(
 		slot_l_hand_str = "holdingpack",
 		slot_r_hand_str = "holdingpack"
@@ -669,6 +670,7 @@
 	icon_state = "warfare_satchel"
 	max_storage_space = DEFAULT_BACKPACK_STORAGE+2
 	slowdown_general = 0.03
+	max_w_class = ITEM_SIZE_HUGE
 
 /obj/item/storage/backpack/satchel/warfare
 	name = "light satchel"
@@ -683,6 +685,7 @@
 	item_state = "kriegpack"
 	max_storage_space = DEFAULT_BACKPACK_STORAGE+1
 	slowdown_general = 0.023
+	max_w_class = ITEM_SIZE_HUGE
 
 /obj/item/storage/backpack/satchel/krieger/grenadier
 	desc = "An assembled kit for air filtration, weapon power supply, and basic storage. Perfect to bring with you into no man's land."
@@ -716,6 +719,7 @@
 	icon_state = "warfare_satchel"
 	max_storage_space = DEFAULT_BACKPACK_STORAGE+2
 	canremove = FALSE
+	max_w_class = ITEM_SIZE_HUGE
 	// var/can_toggle = 1
 
 
@@ -725,6 +729,7 @@
 	icon_state = "sister"
 	item_state = "sister"
 	max_storage_space = DEFAULT_BACKPACK_STORAGE
+	max_w_class = ITEM_SIZE_HUGE
 	canremove = 1
 
 /obj/item/storage/backpack/satchel/warfare/sisterofbattle/mlsister
@@ -751,7 +756,8 @@
 	icon_state = "ultrapack"
 	item_state = "ultrapack"
 	canremove = 1
-	max_storage_space = DEFAULT_BACKPACK_STORAGE+2
+	max_w_class = ITEM_SIZE_HUGE
+	max_storage_space = DEFAULT_BACKPACK_STORAGE+1
 
 /obj/item/storage/backpack/satchel/astartes/ultramarine
 	name = "Astartes Mark VII Powerpack"
@@ -825,7 +831,7 @@
 	item_icons = list(slot_back_str = 'icons/mob/32x40/storage.dmi')
 	icon_state = "techpack"
 	item_state = "techpack"
-	max_storage_space = DEFAULT_BACKPACK_STORAGE+3
+	max_storage_space = DEFAULT_BACKPACK_STORAGE+2
 
 /obj/item/storage/backpack/satchel/warfare/kroot
 	desc = "Fit for war, and not much else."

@@ -46,7 +46,7 @@
 	)
 
 /obj/overmap/visitable/ship/scavver_gantry
-	name = "Unknown Vessel"
+	name = "\improper Carrion Swarm"
 	desc = "Sensor array detects a medium-sized vessel of irregular shape. Vessel origin is unidentifiable."
 	vessel_mass = 2600
 	fore_dir = NORTH

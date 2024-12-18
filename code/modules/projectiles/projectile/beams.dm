@@ -472,7 +472,7 @@
 	name = "plasma arc"
 	icon_state = "omnilaser"
 	fire_sound = 'sound/weapons/plasma_cutter.ogg'
-	damage = 35
+	damage = 30
 	armor_penetration = 28
 	edge = TRUE
 	damage_type = DAMAGE_BURN

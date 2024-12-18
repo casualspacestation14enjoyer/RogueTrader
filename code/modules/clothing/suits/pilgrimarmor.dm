@@ -47,6 +47,7 @@
 	desc = "A durable and heavy overcoat designed to protect against indirect blast and small arms fire."
 	icon_state = "bluecoat"
 	item_state = "bluecoat"
+	w_class = ITEM_SIZE_LARGE
 	body_parts_covered = LEGS|ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/flak)
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
@@ -67,6 +68,7 @@
 	desc = "A rugged black cloak, crafted from durable animal hide. Its origins and wearer’s intentions remain shrouded in mystery."
 	icon_state = "bluecoat_sniper"
 	item_state = "bluecoat_sniper"
+	w_class = ITEM_SIZE_LARGE
 	body_parts_covered = LEGS|ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/flaklamellar)
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
@@ -217,6 +219,7 @@
 	desc = "The Sacred and holy Power Armour adorned by Battle Sister of the Order Of The Sacred Rose, It's illuminate the field with it glorious light, Being near it make you feels safer and secured."
 	icon_state = "ooml_old"
 	item_state = "sister"
+	w_class = ITEM_SIZE_GARGANTUAN
 	flags_inv = HIDEJUMPSUIT
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	max_pressure_protection = RIG_MAX_PRESSURE
@@ -238,6 +241,7 @@
 	desc = "The Sacred and holy Power Armour adorned by Battle Sister of the Order Of Our Martyred Lady. Being near it make you feels safer and secured."
 	icon_state = "mlsister"
 	item_state = "mlsister"
+	w_class = ITEM_SIZE_GARGANTUAN
 	flags_inv = HIDEJUMPSUIT
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	max_pressure_protection = RIG_MAX_PRESSURE
@@ -259,6 +263,7 @@
 	desc = "The blood red power armor of The Order of the Bloody Rose."
 	icon_state = "brsister"
 	item_state = "brsister"
+	w_class = ITEM_SIZE_GARGANTUAN
 	flags_inv = HIDEJUMPSUIT
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	max_pressure_protection = RIG_MAX_PRESSURE
@@ -280,6 +285,7 @@
 	desc = "The Ancient and Deconsecrated Ceramite Armour adorned by Novice Militants during their training in an ecclesiarchal' Monastarium. Stripped of almost all iconography and with damaged plating. It has scriptures across it's surface, recounting the triumph and martyrdom of countless saints."
 	icon_state = "ooml"
 	item_state = "ooml"
+	w_class = ITEM_SIZE_GARGANTUAN
 	flags_inv = HIDEJUMPSUIT
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	max_pressure_protection = VOIDSUIT_MAX_PRESSURE
@@ -498,6 +504,7 @@
 	desc = "An plasteel-alloy half-plate cuirass forged by local hands, it's craftsmanship is remarkable and benefits from the exotic alloy unique to the ghoul stars."
 	icon_state = "templar"
 	item_state = "templar"
+	w_class = ITEM_SIZE_GARGANTUAN
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-100
@@ -517,6 +524,7 @@
 	desc = "An plasteel-alloy heavy plate cuirass forged by local hands, it's craftsmanship is remarkable and benefits from the exotic alloy unique to the ghoul stars."
 	icon_state = "knight_hospitaller"
 	item_state = "knight_hospitaller"
+	w_class = ITEM_SIZE_GARGANTUAN
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-100
@@ -586,11 +594,31 @@
 		bomb = ARMOR_BOMB_TEN+10
 	)
 
+/obj/item/clothing/suit/armor/grim/tribal/carapace
+	name = "tribal armor"
+	desc = "Ritual combat armor worn by the nomadic clansmen predating the colony. This has been forged from carapace..."
+	icon_state = "exile"
+	item_state = "exile"
+	accessories = list(/obj/item/clothing/accessory/armor_plate/carapace)
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-150
+	slowdown_general = 0.045
+	armor = list(
+		melee = ARMOR_MELEE_FLAK+1,
+		bullet = ARMOR_BALLISTIC_FLAK+1,
+		laser = ARMOR_LASER_FLAK+2,
+		energy = ARMOR_ENERGY_TEN+1,
+		bio = ARMOR_BIO_THIRTY+5,
+		rad = ARMOR_RAD_THIRTY+25,
+		bomb = ARMOR_BOMB_TEN+20
+	)
+
 /obj/item/clothing/suit/armor/grim/tribal/plate
 	name = "bone-carapace armor"
 	desc = "Crafted from the bones of a massive local beast forged together with scavenged plasteel, this primitive yet sturdy armor offers surprising resilience against the dangers of the wild."
 	icon_state = "bonearmor"
 	item_state = "bonearmor"
+	w_class = ITEM_SIZE_GARGANTUAN
 	body_parts_covered = LEGS|ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/flaktribal)
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
@@ -615,6 +643,7 @@
 	desc = "Tattered, filthy robes worn by the lowest dregs of society, offering little more than shame and the stink of squalor."
 	icon_state = "slaverobe"
 	item_state = "slaverobe"
+	w_class = ITEM_SIZE_LARGE
 	body_parts_covered = LEGS|ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/paddingheavy)
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
@@ -814,6 +843,7 @@
 	desc = "The carapace patrol jacket was once worn by some frontier marshal of an unnamed world... it looks centuries old."
 	icon_state = "towntrench_heavy"
 	item_state = "towntrench_heavy"
+	w_class = ITEM_SIZE_HUGE
 	body_parts_covered = LEGS|ARMS
 	slowdown_general = 0.035 // Light due to missing parts of the armor.
 	accessories = list(/obj/item/clothing/accessory/armor_plate/carapace)

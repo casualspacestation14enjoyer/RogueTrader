@@ -20,13 +20,13 @@
 	crew_jobs = list(/datum/job/submap/colonist2repentia, /datum/job/submap/colonist2_pdf, /datum/job/submap/colonist2)
 
 /obj/submap_landmark/spawnpoint/colonist_spawn2
-	name = "Colonist"
+	name = "Ship Colonist"
 
 /obj/submap_landmark/spawnpoint/colonist_spawn2_noble
 	name = "Deserter"
 
 /obj/submap_landmark/spawnpoint/colonist_spawn2_heretek
-	name = "Heretek"
+	name = "Ship Heretek"
 
 /obj/submap_landmark/spawnpoint/colonist_spawn2_repentia
 	name = "Sister Repentia"
@@ -41,10 +41,10 @@
 	outfit_type = /singleton/hierarchy/outfit/job/survivor/sister/repentia
 	whitelisted_species = list(SPECIES_HUMAN,SPECIES_VOX,SPECIES_TAU,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_KROOT)
 	total_positions = 0
-	skill_points = 22
+	skill_points = 15
 	min_skill = list(
-		SKILL_COMBAT = SKILL_EXPERIENCED,
-		SKILL_GUNS = SKILL_EXPERIENCED,
+		SKILL_COMBAT = SKILL_MASTER,
+		SKILL_GUNS = SKILL_MASTER,
 		SKILL_VIGOR = SKILL_EXPERIENCED,
 	)
 
@@ -84,12 +84,12 @@
 	info = "Once bound for a new world, your colony ship was torn from the warp and crashed on an uncharted planet. Now stranded in the Ghoul Stars, you face an unforgiving wilderness and the unknown horrors that await."
 	total_positions = 1
 	outfit_type = /singleton/hierarchy/outfit/job/colonist2
-	skill_points = 27 // 3 more points then deck scum
 	whitelisted_species = list(SPECIES_HUMAN,SPECIES_VOX,SPECIES_TAU,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_KROOT)
+	skill_points = 17 // PDF do a lot of drills so physically fit but not much practical combat experience.
 	min_skill = list(
-		SKILL_COMBAT = SKILL_BASIC,
-		SKILL_MEDICAL = SKILL_BASIC,
-		SKILL_VIGOR = SKILL_BASIC,
+		SKILL_VIGOR = SKILL_EXPERIENCED,
+		SKILL_GUNS = SKILL_TRAINED,
+		SKILL_COMBAT = SKILL_TRAINED,
 	)
 
 	max_skill = list(	SKILL_CONSTRUCTION = SKILL_MASTER,
@@ -154,24 +154,31 @@
 	info = "Once bound for a new world, your colony ship was torn from the warp and crashed on an uncharted planet. Now stranded in the Ghoul Stars, you face an unforgiving wilderness and the unknown horrors that await."
 	total_positions = 1
 	outfit_type = /singleton/hierarchy/outfit/job/colonist2
-	skill_points = 26
 	whitelisted_species = list(SPECIES_HUMAN,SPECIES_VOX,SPECIES_TAU,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_KROOT)
+	skill_points = 21
 	min_skill = list(
-		SKILL_PILOT = SKILL_BASIC,
+		SKILL_GUNS = SKILL_BASIC,
+		SKILL_SCIENCE = SKILL_BASIC,
+		SKILL_DEVICES = SKILL_TRAINED,
+		SKILL_MECH = SKILL_TRAINED,
+		SKILL_COMPUTER = SKILL_TRAINED,
+		SKILL_EVA = SKILL_TRAINED,
+		SKILL_CONSTRUCTION = SKILL_TRAINED,
+		SKILL_ELECTRICAL = SKILL_TRAINED,
+		SKILL_ATMOS = SKILL_BASIC,
 		SKILL_MEDICAL = SKILL_BASIC,
-		SKILL_ELECTRICAL = SKILL_BASIC,
+		SKILL_ENGINES = SKILL_TRAINED
 	)
 
-	max_skill = list(	SKILL_CONSTRUCTION = SKILL_MASTER,
-						SKILL_DEVICES = SKILL_MASTER,
+	max_skill = list(	SKILL_DEVICES = SKILL_MASTER,
 						SKILL_COMPUTER = SKILL_MASTER,
 						SKIL_ELECTRICAL = SKILL_MASTER,
+						SKILL_CONSTRUCTION = SKILL_MASTER,
+						SKILL_GUNS = SKILL_MASTER,
+						SKILL_COMBAT = SKILL_MASTER,
 						SKILL_ENGINES = SKILL_MASTER,
 						SKILL_ATMOS = SKILL_MASTER,
-						SKILL_PILOT = SKILL_MASTER,
-						SKILL_COMBAT = SKILL_MASTER,
-						SKILL_GUNS = SKILL_MASTER,
-						SKILL_VIGOR = SKILL_MASTER)
+						SKILL_PILOT = SKILL_MASTER)
 
 /datum/job/submap/colonistheretek2/equip(mob/living/carbon/human/H)
 	var/current_name = H.real_name
@@ -221,12 +228,12 @@
 	info = "Once bound for a new world, your colony ship was torn from the warp and crashed on an uncharted planet. Now stranded in the Ghoul Stars, you face an unforgiving wilderness and the unknown horrors that await."
 	total_positions = 2
 	outfit_type = /singleton/hierarchy/outfit/job/colonist2
-	skill_points = 26
 	whitelisted_species = list(SPECIES_HUMAN,SPECIES_VOX,SPECIES_TAU,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_KROOT)
+	skill_points = 18
 	min_skill = list(
-		SKILL_PILOT = SKILL_BASIC,
-		SKILL_MEDICAL = SKILL_BASIC,
-		SKILL_ELECTRICAL = SKILL_BASIC,
+		SKILL_VIGOR = SKILL_TRAINED,
+		SKILL_CONSTRUCTION = SKILL_EXPERIENCED,
+		SKILL_ELECTRICAL = SKILL_TRAINED,
 	)
 
 	max_skill = list(	SKILL_CONSTRUCTION = SKILL_MASTER,

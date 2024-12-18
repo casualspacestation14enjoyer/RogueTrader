@@ -82,13 +82,13 @@ var/global/const/access_tauscoutship = "ACCESS_TAUSCOUT"
 	rank = /datum/mil_rank/tau_fleet/shas
 	allowed_branches = list(/datum/mil_branch/tau_fleet)
 	allowed_ranks = list(/datum/mil_rank/tau_fleet/shas)
-	skill_points = 28
+	skill_points = 20
 	is_semi_antagonist = TRUE
 	min_skill = list(
-		SKILL_COMBAT = SKILL_BASIC,
+		SKILL_COMBAT = SKILL_EXPERIENCED,
 		SKILL_PILOT = SKILL_TRAINED,
-		SKILL_GUNS = SKILL_TRAINED,
-		SKILL_VIGOR = SKILL_TRAINED,
+		SKILL_GUNS = SKILL_MASTER,
+		SKILL_VIGOR = SKILL_EXPERIENCED
 	)
 
 	max_skill = list(	SKILL_CONSTRUCTION = SKILL_MASTER,
@@ -127,13 +127,13 @@ var/global/const/access_tauscoutship = "ACCESS_TAUSCOUT"
 	rank = /datum/mil_rank/tau_fleet/shas
 	allowed_branches = list(/datum/mil_branch/tau_fleet)
 	allowed_ranks = list(/datum/mil_rank/tau_fleet/shas)
-	skill_points = 26
+	skill_points = 20
 	is_semi_antagonist = TRUE
 	min_skill = list(
-		SKILL_COMBAT = SKILL_TRAINED,
+		SKILL_COMBAT = SKILL_EXPERIENCED,
 		SKILL_PILOT = SKILL_TRAINED,
 		SKILL_GUNS = SKILL_EXPERIENCED,
-		SKILL_VIGOR = SKILL_TRAINED,
+		SKILL_VIGOR = SKILL_EXPERIENCED,
 	)
 
 	max_skill = list(	SKILL_CONSTRUCTION = SKILL_MASTER,
@@ -168,7 +168,7 @@ var/global/const/access_tauscoutship = "ACCESS_TAUSCOUT"
 	rank = /datum/mil_rank/tau_fleet/shas
 	allowed_branches = list(/datum/mil_branch/tau_fleet)
 	allowed_ranks = list(/datum/mil_rank/tau_fleet/shas)
-	skill_points = 32
+	skill_points = 29
 	is_semi_antagonist = TRUE
 	min_skill = list(
 		SKILL_PILOT = SKILL_TRAINED,
@@ -182,9 +182,9 @@ var/global/const/access_tauscoutship = "ACCESS_TAUSCOUT"
 						SKILL_ENGINES = SKILL_MASTER,
 						SKILL_ATMOS = SKILL_MASTER,
 						SKILL_PILOT = SKILL_MASTER,
-						SKILL_COMBAT = SKILL_MASTER,
-						SKILL_GUNS = SKILL_MASTER,
-						SKILL_VIGOR = SKILL_MASTER)
+						SKILL_COMBAT = SKILL_EXPERIENCED,
+						SKILL_GUNS = SKILL_EXPERIENCED,
+						SKILL_VIGOR = SKILL_EXPERIENCED)
 
 /datum/job/submap/tauscoutship_watercaste/equip(mob/living/carbon/human/H)
 	var/current_name = H.real_name
@@ -211,12 +211,12 @@ var/global/const/access_tauscoutship = "ACCESS_TAUSCOUT"
 	rank = /datum/mil_rank/tau_fleet
 	allowed_branches = list(/datum/mil_branch/tau_fleet)
 	allowed_ranks = list(/datum/mil_rank/tau_fleet)
-	skill_points = 26
+	skill_points = 18
 	is_semi_antagonist = TRUE
 	min_skill = list(
-		SKILL_COMBAT = SKILL_BASIC,
-		SKILL_GUNS = SKILL_TRAINED,
-		SKILL_VIGOR = SKILL_TRAINED,
+		SKILL_COMBAT = SKILL_TRAINED,
+		SKILL_GUNS = SKILL_EXPERIENCED,
+		SKILL_VIGOR = SKILL_EXPERIENCED,
 		SKILL_PILOT = SKILL_BASIC,
 	)
 

@@ -204,10 +204,10 @@
 	outfit_type = /singleton/hierarchy/outfit/job/survivor/kasrkin
 	whitelisted_species = list(SPECIES_HUMAN,SPECIES_VOX,SPECIES_TAU,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_KROOT)
 	total_positions = 0
-	skill_points = 20 // lastly test out warp terrain. so we need purple space tiles. when you traverse them you hallucinate and go crazy. on examine as well.
+	skill_points = 16
 	min_skill = list(
-		SKILL_COMBAT = SKILL_EXPERIENCED,
-		SKILL_GUNS = SKILL_EXPERIENCED,
+		SKILL_COMBAT = SKILL_MASTER,
+		SKILL_GUNS = SKILL_MASTER,
 		SKILL_VIGOR = SKILL_EXPERIENCED,
 	)
 
@@ -249,11 +249,11 @@
 	info = "Abducted during transit, you awaken on a xenos space station. Your captors lie dead, their cause of death unknown, leaving you alone in the silent, alien corridors of an abandoned space station."
 	outfit_type = /singleton/hierarchy/outfit/job/survivor/sister/martyr
 	whitelisted_species = list(SPECIES_HUMAN,SPECIES_VOX,SPECIES_TAU,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_KROOT)
-	total_positions = 0
-	skill_points = 20
+	total_positions = 1
+	skill_points = 15
 	min_skill = list(
-		SKILL_COMBAT = SKILL_EXPERIENCED,
-		SKILL_GUNS = SKILL_EXPERIENCED,
+		SKILL_COMBAT = SKILL_MASTER,
+		SKILL_GUNS = SKILL_MASTER,
 		SKILL_VIGOR = SKILL_EXPERIENCED,
 	)
 
@@ -293,11 +293,11 @@
 	outfit_type = /singleton/hierarchy/outfit/job/survivor/devil
 	whitelisted_species = list(SPECIES_HUMAN,SPECIES_VOX,SPECIES_TAU,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_KROOT)
 	total_positions = 0
-	skill_points = 16
+	skill_points = 14
 	min_skill = list(
 		SKILL_COMBAT = SKILL_MASTER,
-		SKILL_GUNS = SKILL_EXPERIENCED,
-		SKILL_VIGOR = SKILL_EXPERIENCED,
+		SKILL_GUNS = SKILL_MASTER,
+		SKILL_VIGOR = SKILL_MASTER,
 	)
 
 	max_skill = list(	SKILL_PILOT = SKILL_MASTER,
@@ -341,25 +341,17 @@
 	info = "Abducted during transit, you awaken on a xenos space station. Your captors lie dead, their cause of death unknown, leaving you alone in the silent, alien corridors of an abandoned space station."
 	outfit_type = /singleton/hierarchy/outfit/job/survivor
 	whitelisted_species = list(SPECIES_HUMAN,SPECIES_VOX,SPECIES_TAU,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_KROOT)
-	total_positions = 2
-	skill_points = 22
+	total_positions = 1
+	skill_points = 19
 	min_skill = list(
-		SKILL_PILOT = SKILL_BASIC,
-		SKILL_COMBAT = SKILL_TRAINED,
+		SKILL_VIGOR = SKILL_TRAINED,
 		SKILL_GUNS = SKILL_TRAINED,
-		SKILL_MEDICAL = SKILL_BASIC,
-		SKILL_ELECTRICAL = SKILL_BASIC,
+		SKILL_COMBAT = SKILL_TRAINED,
 	)
 
 	max_skill = list(	SKILL_CONSTRUCTION = SKILL_MASTER,
-						SKILL_DEVICES = SKILL_MASTER,
-						SKILL_COMPUTER = SKILL_MASTER,
-						SKIL_ELECTRICAL = SKILL_MASTER,
-						SKILL_ENGINES = SKILL_MASTER,
-						SKILL_ATMOS = SKILL_MASTER,
-						SKILL_PILOT = SKILL_MASTER,
-						SKILL_COMBAT = SKILL_MASTER,
-						SKILL_GUNS = SKILL_MASTER,
+						SKILL_COMBAT = SKILL_LEGEND,
+						SKILL_GUNS = SKILL_LEGEND,
 						SKILL_VIGOR = SKILL_MASTER)
 
 /datum/job/submap/captive/equip(mob/living/carbon/human/H)
@@ -419,23 +411,30 @@
 	outfit_type = /singleton/hierarchy/outfit/job/survivor
 	whitelisted_species = list(SPECIES_HUMAN,SPECIES_VOX,SPECIES_TAU,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_KROOT)
 	total_positions = 1
-	skill_points = 28
+	skill_points = 21
 	min_skill = list(
-		SKILL_PILOT = SKILL_BASIC,
+		SKILL_GUNS = SKILL_BASIC,
+		SKILL_SCIENCE = SKILL_BASIC,
+		SKILL_DEVICES = SKILL_TRAINED,
+		SKILL_MECH = SKILL_TRAINED,
+		SKILL_COMPUTER = SKILL_TRAINED,
+		SKILL_EVA = SKILL_TRAINED,
+		SKILL_CONSTRUCTION = SKILL_TRAINED,
+		SKILL_ELECTRICAL = SKILL_TRAINED,
+		SKILL_ATMOS = SKILL_BASIC,
 		SKILL_MEDICAL = SKILL_BASIC,
-		SKILL_ELECTRICAL = SKILL_BASIC,
+		SKILL_ENGINES = SKILL_TRAINED
 	)
 
-	max_skill = list(	SKILL_CONSTRUCTION = SKILL_MASTER,
-						SKILL_DEVICES = SKILL_MASTER,
+	max_skill = list(	SKILL_DEVICES = SKILL_MASTER,
 						SKILL_COMPUTER = SKILL_MASTER,
 						SKIL_ELECTRICAL = SKILL_MASTER,
+						SKILL_CONSTRUCTION = SKILL_MASTER,
+						SKILL_GUNS = SKILL_MASTER,
+						SKILL_COMBAT = SKILL_MASTER,
 						SKILL_ENGINES = SKILL_MASTER,
 						SKILL_ATMOS = SKILL_MASTER,
-						SKILL_PILOT = SKILL_MASTER,
-						SKILL_COMBAT = SKILL_MASTER,
-						SKILL_GUNS = SKILL_MASTER,
-						SKILL_VIGOR = SKILL_MASTER)
+						SKILL_PILOT = SKILL_MASTER)
 
 /datum/job/submap/captiveheretek/equip(mob/living/carbon/human/H)
 	var/current_name = H.real_name

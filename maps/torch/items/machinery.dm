@@ -42,12 +42,12 @@
 
 // Suit cyclers and storage
 /obj/machinery/suit_storage_unit/explorer
-	name = "exploration voidsuit storage unit"
-	suit = /obj/item/clothing/suit/space/void/exploration
-	helmet = /obj/item/clothing/head/helmet/space/void/exploration
-	boots = /obj/item/clothing/shoes/magboots
+	name = "hazard suit storage unit"
+	suit = /obj/item/clothing/suit/armor/grim/storage/hooded/mechanicus/bondsman
+	helmet = null
+	boots = /obj/item/clothing/shoes/jackboots
 	tank = /obj/item/tank/oxygen
-	mask = /obj/item/clothing/mask/breath
+	mask = /obj/item/clothing/mask/gas/explorer
 	req_access = list(access_explorer)
 	islocked = 1
 

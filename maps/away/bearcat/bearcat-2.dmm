@@ -70,6 +70,7 @@
 /obj/structure/bed/chair/comfy/brown{
 	dir = 1
 	},
+/obj/submap_landmark/spawnpoint/merchant,
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/command/bridge)
 "ak" = (
@@ -163,7 +164,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/command/bridge)
 "ax" = (
-/obj/machinery/shipsensors,
+/obj/machinery/shipsensors/upgraded,
 /turf/simulated/floor{
 	map_airless = 1
 	},
@@ -188,9 +189,6 @@
 /area/ship/scrap/command/bridge)
 "aA" = (
 /obj/machinery/light,
-/obj/machinery/computer/modular/preset/cardslot/command{
-	dir = 1
-	},
 /obj/machinery/alarm{
 	dir = 8;
 	pixel_x = 24;
@@ -198,6 +196,9 @@
 	},
 /obj/machinery/light_switch{
 	pixel_y = -25
+	},
+/obj/machinery/pointdefense_control{
+	initial_id_tag = "Demeter"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/command/bridge)
@@ -271,7 +272,6 @@
 	dir = 8;
 	icon_state = "tube1"
 	},
-/obj/item/gun/energy/stunrevolver,
 /obj/structure/closet/cabinet,
 /obj/item/storage/secure/briefcase,
 /obj/item/device/taperecorder,
@@ -282,6 +282,8 @@
 /obj/machinery/light_switch{
 	pixel_y = 25
 	},
+/obj/random/loot/rigloot,
+/obj/random/loot/raresidearmbundle,
 /turf/simulated/floor/wood,
 /area/ship/scrap/command/captain)
 "aL" = (
@@ -303,6 +305,11 @@
 	pixel_x = 24;
 	req_access = newlist()
 	},
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
 /turf/simulated/floor/wood,
 /area/ship/scrap/command/captain)
 "aN" = (
@@ -321,6 +328,11 @@
 /area/ship/scrap/comms)
 "aO" = (
 /obj/machinery/message_server,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
 /turf/simulated/floor/bluegrid,
 /area/ship/scrap/comms)
 "aP" = (
@@ -335,6 +347,11 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/comms)
@@ -423,6 +440,11 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
 /turf/simulated/floor/wood,
 /area/ship/scrap/command/captain)
 "aW" = (
@@ -482,12 +504,7 @@
 /obj/item/device/radio/intercom/map_preset/demeter{
 	pixel_x = -32
 	},
-/obj/item/gun/projectile/shotgun/pump/combat{
-	desc = "When words don't strike hard enough.";
-	name = "Solid Argument"
-	},
-/obj/structure/window/reinforced/full,
-/obj/structure/table/marble,
+/obj/random/loot/lootstructureartifact,
 /turf/simulated/floor/wood,
 /area/ship/scrap/command/captain)
 "bb" = (
@@ -1220,7 +1237,6 @@
 	},
 /obj/structure/hygiene/toilet,
 /obj/decal/cleanable/dirt,
-/obj/floor_decal/corner/white/diagonal,
 /obj/structure/window/reinforced{
 	dir = 4
 	},
@@ -1340,7 +1356,6 @@
 	icon_state = "bulb1"
 	},
 /obj/item/towel,
-/obj/floor_decal/corner/white/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/crew/toilets)
 "cS" = (
@@ -1351,7 +1366,6 @@
 	name = "Reception Window";
 	opacity = 1
 	},
-/obj/floor_decal/corner/white/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/crew/toilets)
 "cT" = (
@@ -1366,7 +1380,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
-/obj/floor_decal/corner/white/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/crew/toilets)
 "cU" = (
@@ -1535,7 +1548,6 @@
 	dir = 4
 	},
 /obj/structure/curtain/open/shower,
-/obj/floor_decal/corner/white/diagonal,
 /obj/structure/window/reinforced{
 	dir = 4
 	},
@@ -1546,7 +1558,6 @@
 	dir = 1
 	},
 /obj/decal/cleanable/dirt,
-/obj/floor_decal/corner/white/diagonal,
 /obj/structure/window/reinforced{
 	dir = 4
 	},
@@ -1568,7 +1579,6 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
-/obj/floor_decal/corner/white/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/crew/toilets)
 "dl" = (
@@ -1737,6 +1747,7 @@
 	},
 /obj/floor_decal/corner/red/diagonal,
 /obj/random/drinkbottle,
+/obj/random/loot/randomsupply,
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/crew/kitchen)
 "dH" = (
@@ -2544,6 +2555,10 @@
 	map_airless = 1
 	},
 /area/ship/scrap/maintenance/engine/starboard)
+"fn" = (
+/obj/structure/lattice,
+/turf/space,
+/area/ship/scrap/crew/hallway/port)
 "fo" = (
 /obj/machinery/alarm{
 	dir = 4;
@@ -2557,7 +2572,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
-/obj/floor_decal/corner/white/diagonal,
+/obj/random/loot/randomcolonyitems,
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/crew/wash)
 "fp" = (
@@ -2577,7 +2592,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 4
 	},
-/obj/floor_decal/corner/white/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/crew/wash)
 "fq" = (
@@ -2602,7 +2616,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 4
 	},
-/obj/floor_decal/corner/white/diagonal,
 /obj/structure/cable/green{
 	d1 = 2;
 	d2 = 4;
@@ -2776,7 +2789,6 @@
 	dir = 9
 	},
 /obj/item/storage/backpack/dufflebag,
-/obj/floor_decal/corner/white/diagonal,
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
@@ -2786,7 +2798,6 @@
 /area/ship/scrap/crew/wash)
 "fJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/floor_decal/corner/white/diagonal,
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
@@ -2802,7 +2813,6 @@
 /obj/machinery/light_switch{
 	pixel_x = 28
 	},
-/obj/floor_decal/corner/white/diagonal,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 8;
@@ -2844,6 +2854,9 @@
 	},
 /obj/machinery/light/small{
 	dir = 4
+	},
+/obj/structure/railing/mapped{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/cargo)
@@ -2962,7 +2975,6 @@
 /obj/random/clothing,
 /obj/item/reagent_containers/glass/rag,
 /obj/item/clothingbag/rubbermask,
-/obj/floor_decal/corner/white/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/crew/wash)
 "fW" = (
@@ -2971,7 +2983,6 @@
 	dir = 1;
 	level = 2
 	},
-/obj/floor_decal/corner/white/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/crew/wash)
 "fX" = (
@@ -2979,7 +2990,6 @@
 /obj/machinery/light/small,
 /obj/item/reagent_containers/spray/cleaner,
 /obj/item/storage/laundry_basket,
-/obj/floor_decal/corner/white/diagonal,
 /obj/item/cell/high,
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/crew/wash)
@@ -3009,6 +3019,9 @@
 	},
 /obj/structure/sign/deck/first{
 	pixel_x = 32
+	},
+/obj/structure/railing/mapped{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/cargo)
@@ -3159,6 +3172,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
+/obj/structure/railing/mapped{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/cargo)
 "gr" = (
@@ -3219,13 +3235,14 @@
 	pixel_y = 25
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
-/obj/item/storage/backpack/dufflebag/syndie,
+/obj/machinery/power/port_gen/pacman/super,
 /turf/simulated/floor,
 /area/ship/scrap/hidden)
 "gw" = (
 /obj/structure/closet/crate,
 /obj/random/coin,
-/obj/item/spacecash/bundle/c1000,
+/obj/random/loot/basicarmorbundle,
+/obj/random/loot/valuableloot,
 /turf/simulated/floor,
 /area/ship/scrap/hidden)
 "gx" = (
@@ -3377,8 +3394,8 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/paint/sfv_arbiter,
-/turf/simulated/wall/r_titanium,
+/obj/machinery/door/airlock/external,
+/turf/simulated/floor,
 /area/ship/scrap/hidden)
 "gG" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -3644,8 +3661,8 @@
 /obj/random/loot,
 /obj/random/loot,
 /obj/random/loot,
-/obj/random/projectile,
-/obj/random/projectile,
+/obj/random/loot/gunbundle,
+/obj/random/loot/gunbundle,
 /turf/simulated/floor,
 /area/ship/scrap/hidden)
 "gY" = (
@@ -3712,6 +3729,8 @@
 /obj/floor_decal/corner/blue{
 	dir = 10
 	},
+/obj/gibspawner/human,
+/obj/random/loot/armorinserts,
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/maintenance/atmos)
 "hk" = (
@@ -3751,7 +3770,6 @@
 /obj/structure/sign/warning/compressed_gas{
 	pixel_x = -32
 	},
-/obj/structure/bed/padded,
 /obj/structure/cable/green{
 	d2 = 2;
 	icon_state = "0-2"
@@ -3787,6 +3805,8 @@
 /obj/item/storage/backpack/dufflebag/eng,
 /obj/item/stack/material/glass/reinforced/fifty,
 /obj/item/stack/material/steel/fifty,
+/obj/random/loot/randomsupply/tech,
+/obj/random/loot/randomsupply/engineering,
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/maintenance/engineering)
 "hp" = (
@@ -3823,6 +3843,7 @@
 	name = "coffee canister";
 	pixel_y = 6
 	},
+/obj/machinery/recharger,
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/maintenance/engineering)
 "hr" = (
@@ -3856,11 +3877,11 @@
 "hv" = (
 /obj/structure/table/standard,
 /obj/machinery/cell_charger,
-/obj/item/defibrillator/compact/loaded,
 /obj/item/device/flashlight{
 	pixel_x = -13;
 	pixel_y = 3
 	},
+/obj/random/loot/randomsupply/engineering,
 /turf/simulated/floor,
 /area/ship/scrap/maintenance/power)
 "hw" = (
@@ -4396,7 +4417,6 @@
 	id = "n2_in";
 	use_power = 1
 	},
-/obj/floor_decal/corner/white/diagonal,
 /obj/floor_decal/corner/white/diagonal{
 	dir = 4
 	},
@@ -5054,7 +5074,6 @@
 	level = 2
 	},
 /obj/item/hemostat,
-/obj/floor_decal/corner/white/diagonal,
 /obj/machinery/alarm{
 	dir = 8;
 	pixel_x = 24;
@@ -5063,11 +5082,14 @@
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/crew/toilets)
 "km" = (
-/obj/machinery/computer/modular/preset/engineering{
-	dir = 1
-	},
+/obj/machinery/computer/ship/navigation,
 /turf/simulated/floor/bluegrid,
 /area/ship/scrap/command/bridge)
+"ly" = (
+/obj/structure/lattice,
+/obj/gibspawner/human,
+/turf/space,
+/area/ship/scrap/crew/hallway/starboard)
 "lC" = (
 /turf/simulated/floor/reinforced{
 	map_airless = 1
@@ -5078,6 +5100,11 @@
 /obj/structure/lattice,
 /turf/space,
 /area/ship/scrap/maintenance/power)
+"nj" = (
+/obj/structure/lattice,
+/obj/gibspawner/human,
+/turf/space,
+/area/ship/scrap/crew/hallway/port)
 "nS" = (
 /obj/paint/sfv_arbiter,
 /turf/simulated/wall/r_titanium,
@@ -5094,6 +5121,20 @@
 /obj/paint/sfv_arbiter,
 /turf/simulated/wall/r_titanium,
 /area/ship/scrap/crew/hallway/port)
+"oD" = (
+/obj/item/stack/material/steel,
+/obj/landmark/corpse/bloodpact,
+/turf/simulated/floor,
+/area/ship/scrap/maintenance/atmos)
+"pV" = (
+/obj/paint/sfv_arbiter,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/wall/r_titanium,
+/area/ship/scrap/command/captain)
 "so" = (
 /obj/paint/sfv_arbiter,
 /turf/simulated/wall/r_titanium,
@@ -5102,6 +5143,13 @@
 /obj/structure/lattice,
 /turf/simulated/floor,
 /area/ship/scrap/maintenance/atmos)
+"sM" = (
+/obj/paint/sfv_arbiter,
+/obj/machinery/pointdefense{
+	initial_id_tag = "Demeter"
+	},
+/turf/simulated/wall/r_titanium,
+/area/ship/scrap/command/captain)
 "ts" = (
 /obj/structure/lattice,
 /turf/space,
@@ -5122,6 +5170,34 @@
 /obj/paint/red,
 /turf/simulated/wall/r_titanium,
 /area/ship/scrap/maintenance/engine/aft)
+"wt" = (
+/obj/paint/sfv_arbiter,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/turf/simulated/wall/r_titanium,
+/area/ship/scrap/comms)
+"wB" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/bluegrid,
+/area/ship/scrap/comms)
+"zG" = (
+/obj/paint/sfv_arbiter,
+/obj/machinery/pointdefense{
+	initial_id_tag = "Demeter"
+	},
+/obj/structure/cable/green{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/turf/simulated/wall/r_titanium,
+/area/ship/scrap/comms)
 "zT" = (
 /obj/floor_decal/corner/blue/diagonal{
 	dir = 4
@@ -5172,14 +5248,34 @@
 /obj/structure/lattice,
 /turf/space,
 /area/ship/scrap/maintenance/atmos)
+"Fl" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/bluegrid,
+/area/ship/scrap/comms)
 "FI" = (
 /obj/paint/sfv_arbiter,
 /turf/simulated/wall/r_titanium,
 /area/ship/scrap/fire)
+"FP" = (
+/obj/paint/sfv_arbiter,
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/turf/simulated/wall/r_titanium,
+/area/ship/scrap/comms)
 "GG" = (
 /obj/paint/sfv_arbiter,
 /turf/simulated/wall/r_titanium,
 /area/ship/scrap/crew/kitchen)
+"Hc" = (
+/turf/space,
+/area/ship/scrap/dock)
 "HQ" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/simulated/floor/reinforced,
@@ -5193,6 +5289,7 @@
 	id = "n2_in";
 	use_power = 1
 	},
+/obj/landmark/corpse/bloodpact,
 /turf/simulated/floor,
 /area/ship/scrap/maintenance/atmos)
 "IL" = (
@@ -5229,12 +5326,11 @@
 /obj/structure/sign/warning/high_voltage{
 	pixel_x = 32
 	},
-/obj/structure/table/standard,
-/obj/item/toy/prize/powerloader,
-/obj/item/material/ashtray/plastic,
-/obj/machinery/recharger,
 /obj/structure/sign/poster{
 	pixel_y = 32
+	},
+/obj/machinery/computer/modular/preset/engineering{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/maintenance/engineering)
@@ -5279,8 +5375,27 @@
 	pixel_x = -24;
 	req_access = newlist()
 	},
+/obj/item/storage/backpack/dufflebag/syndie,
+/obj/random/loot/tech2,
 /turf/simulated/floor,
 /area/ship/scrap/hidden)
+"Mt" = (
+/obj/structure/lattice,
+/turf/space,
+/area/ship/scrap/crew/hallway/starboard)
+"ND" = (
+/obj/structure/lattice,
+/turf/space,
+/area/ship/scrap/dock)
+"NO" = (
+/obj/paint/sfv_arbiter,
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/wall/r_titanium,
+/area/ship/scrap/command/captain)
 "Od" = (
 /obj/floor_decal/corner/blue,
 /obj/floor_decal/corner/yellow{
@@ -5362,6 +5477,12 @@
 /obj/paint/sfv_arbiter,
 /turf/simulated/wall/r_titanium,
 /area/ship/scrap/crew/cryo)
+"Up" = (
+/obj/structure/lattice,
+/obj/random/loot/lootcontraband,
+/obj/landmark/corpse/bloodpact/commando,
+/turf/space,
+/area/ship/scrap/dock)
 "Ur" = (
 /obj/paint/sfv_arbiter,
 /obj/structure/sign/warning/hot_exhaust,
@@ -5391,6 +5512,25 @@
 /obj/decal/cleanable/molten_item,
 /turf/simulated/floor,
 /area/ship/scrap/maintenance/engine/aft)
+"WY" = (
+/obj/paint/sfv_arbiter,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/wall/r_titanium,
+/area/ship/scrap/comms)
+"XL" = (
+/obj/floor_decal/industrial/warning{
+	dir = 1;
+	icon_state = "warning"
+	},
+/obj/structure/railing/mapped{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark,
+/area/ship/scrap/cargo)
 "Yv" = (
 /obj/paint/sfv_arbiter,
 /turf/simulated/wall/r_titanium,
@@ -11338,7 +11478,7 @@ gY
 gY
 hx
 hx
-ie
+oD
 iQ
 hw
 iP
@@ -11790,8 +11930,8 @@ aa
 aa
 aa
 aa
-Yv
-Yv
+zG
+wt
 Yv
 Lp
 Yv
@@ -11802,8 +11942,8 @@ be
 bw
 be
 bT
-bY
-bY
+nj
+fn
 cq
 cq
 kb
@@ -11913,12 +12053,12 @@ aa
 Yv
 Yv
 Yv
-Yv
+WY
 Yv
 aN
 Yv
 Yv
-bY
+ND
 be
 be
 bx
@@ -12035,12 +12175,12 @@ aa
 Yv
 Yv
 ed
-Yv
-aH
+FP
+wB
 aO
 aX
 Yv
-bY
+ND
 bh
 bn
 by
@@ -12159,16 +12299,16 @@ as
 ax
 aN
 aH
-aH
+Fl
 aH
 VA
-aa
+Hc
 bh
 bo
 bz
 bN
 be
-bZ
+cc
 ch
 ch
 ch
@@ -12290,7 +12430,7 @@ bp
 be
 be
 be
-aa
+Up
 ch
 cl
 cu
@@ -12307,7 +12447,7 @@ ft
 ft
 ft
 ft
-ft
+XL
 dy
 gO
 hc
@@ -12429,7 +12569,7 @@ ft
 fM
 ft
 ft
-ft
+XL
 dy
 gP
 hb
@@ -12778,7 +12918,7 @@ IL
 be
 be
 be
-aa
+ND
 ch
 cp
 cy
@@ -12894,13 +13034,13 @@ aL
 aU
 bb
 bd
-aa
+Hc
 bh
 bs
 bD
 bP
 be
-ce
+cc
 ch
 ch
 ch
@@ -13016,7 +13156,7 @@ aM
 aV
 bc
 nS
-bY
+ND
 bh
 bt
 bE
@@ -13133,12 +13273,12 @@ aa
 nS
 nS
 nS
-nS
-nS
+NO
+pV
 aW
 nS
 nS
-bY
+ND
 be
 be
 bF
@@ -13254,8 +13394,8 @@ aa
 aa
 aa
 aa
-nS
-nS
+sM
+pV
 nS
 fE
 nS
@@ -13266,8 +13406,8 @@ be
 bG
 be
 bT
-bY
-bY
+ly
+Mt
 Ul
 Ul
 cN

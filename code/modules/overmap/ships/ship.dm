@@ -19,7 +19,7 @@ var/global/const/OVERMAP_SPEED_CONSTANT = (1 SECOND)
 	var/list/consoles
 	var/list/sensors
 
-	var/vessel_mass = 8000             // tonnes, arbitrary number, affects acceleration provided by engines
+	var/vessel_mass = 7000             // tonnes, arbitrary number, affects acceleration provided by engines
 	var/vessel_size = SHIP_SIZE_LARGE	// arbitrary number, affects how likely are we to evade meteors
 	var/max_speed = 1/(1 SECOND)        // "speed of light" for the ship, in turfs/tick. Looks like changing this can fuck up the ships.
 	var/min_speed = 1/(2 MINUTES)       // Below this, we round speed to 0 to avoid math errors.

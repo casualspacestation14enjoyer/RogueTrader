@@ -197,10 +197,9 @@
 /obj/item/rig_module/device/multitool/skrell
 	name = "Tau integrated multitool"
 	desc = "A limited-sentience integrated multitool capable of interfacing with any number of systems."
-	interface_name = "multitool"
+	interface_name = "integrated multitool"
 	interface_desc = "A limited-sentience integrated multitool capable of interfacing with any number of systems."
 	device = /obj/item/device/multitool/skrell
-	icon = 'icons/obj/tools/multitool.dmi'
 	usable = FALSE
 	selectable = TRUE
 

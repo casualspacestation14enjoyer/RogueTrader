@@ -25,12 +25,12 @@
 	unexplored space. With the captain lost and most of the crew dead, the burden of survival now rests on you and the \
 	few remaining souls. It’s time to choose an acting captain and salvage what little remains—before the darkness claims \
 	the rest."
-	skill_points = 27 // 3 more points then deck scum
 	whitelisted_species = list(SPECIES_HUMAN,SPECIES_VOX,SPECIES_TAU,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_KROOT)
+	skill_points = 19
 	min_skill = list(
-		SKILL_COMBAT = SKILL_BASIC,
-		SKILL_MEDICAL = SKILL_BASIC,
-		SKILL_VIGOR = SKILL_BASIC,
+		SKILL_VIGOR = SKILL_TRAINED,
+		SKILL_GUNS = SKILL_TRAINED,
+		SKILL_COMBAT = SKILL_TRAINED,
 	)
 
 	max_skill = list(	SKILL_CONSTRUCTION = SKILL_MASTER,
@@ -99,12 +99,12 @@
 	unexplored space. With the captain lost and most of the crew dead, the burden of survival now rests on you and the \
 	few remaining souls. It’s time to choose an acting captain and salvage what little remains—before the darkness claims \
 	the rest."
-	skill_points = 27 // 3 more points then deck scum
 	whitelisted_species = list(SPECIES_HUMAN,SPECIES_VOX,SPECIES_TAU,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_KROOT)
+	skill_points = 21 // Superior to merc for skills due to worse gear.
 	min_skill = list(
-		SKILL_COMBAT = SKILL_BASIC,
-		SKILL_MEDICAL = SKILL_BASIC,
-		SKILL_VIGOR = SKILL_BASIC,
+		SKILL_VIGOR = SKILL_TRAINED,
+		SKILL_GUNS = SKILL_TRAINED,
+		SKILL_COMBAT = SKILL_TRAINED,
 	)
 
 	max_skill = list(	SKILL_CONSTRUCTION = SKILL_MASTER,
@@ -152,10 +152,10 @@
 	outfit_type = /singleton/hierarchy/outfit/scavver/bondsman
 	info = "You are a scavver on the Gantry, a battered scavenger vessel drifting far from \
 	Imperial trade routes. It’s time to choose a leader amongst yourselves and start your journey into the void."
-	skill_points = 26
+	skill_points = 20 // Superior skills to average crew since Scavvers need to be capable of piloting ships + maintaining them in groups of 2-3.
 	min_skill = list(
-		SKILL_PILOT = SKILL_BASIC,
-		SKILL_MEDICAL = SKILL_BASIC,
+		SKILL_PILOT = SKILL_EXPERIENCED,
+		SKILL_CONSTRUCTION = SKILL_TRAINED,
 		SKILL_ELECTRICAL = SKILL_BASIC,
 	)
 
@@ -230,23 +230,30 @@
 	outfit_type = /singleton/hierarchy/outfit/job/scavver
 	info = "You are a scavver on the Gantry, a battered scavenger vessel drifting far from \
 	Imperial trade routes. It’s time to choose a leader amongst yourselves and start your journey into the void."
-	skill_points = 26
+	skill_points = 21
 	min_skill = list(
-		SKILL_PILOT = SKILL_BASIC,
+		SKILL_GUNS = SKILL_BASIC,
+		SKILL_SCIENCE = SKILL_BASIC,
+		SKILL_DEVICES = SKILL_TRAINED,
+		SKILL_MECH = SKILL_TRAINED,
+		SKILL_COMPUTER = SKILL_TRAINED,
+		SKILL_EVA = SKILL_TRAINED,
+		SKILL_CONSTRUCTION = SKILL_TRAINED,
+		SKILL_ELECTRICAL = SKILL_TRAINED,
+		SKILL_ATMOS = SKILL_BASIC,
 		SKILL_MEDICAL = SKILL_BASIC,
-		SKILL_ELECTRICAL = SKILL_BASIC,
+		SKILL_ENGINES = SKILL_TRAINED
 	)
 
-	max_skill = list(	SKILL_CONSTRUCTION = SKILL_MASTER,
-						SKILL_DEVICES = SKILL_MASTER,
+	max_skill = list(	SKILL_DEVICES = SKILL_MASTER,
 						SKILL_COMPUTER = SKILL_MASTER,
 						SKIL_ELECTRICAL = SKILL_MASTER,
+						SKILL_CONSTRUCTION = SKILL_MASTER,
+						SKILL_GUNS = SKILL_MASTER,
+						SKILL_COMBAT = SKILL_MASTER,
 						SKILL_ENGINES = SKILL_MASTER,
 						SKILL_ATMOS = SKILL_MASTER,
-						SKILL_PILOT = SKILL_MASTER,
-						SKILL_COMBAT = SKILL_MASTER,
-						SKILL_GUNS = SKILL_MASTER,
-						SKILL_VIGOR = SKILL_MASTER)
+						SKILL_PILOT = SKILL_MASTER)
 
 /datum/job/submap/scavver_priest/equip(mob/living/carbon/human/H)
 	var/current_name = H.real_name
@@ -298,11 +305,10 @@
 	outfit_type = /singleton/hierarchy/outfit/job/scavver
 	info = "You are a scavver on the Gantry, a battered scavenger vessel drifting far from \
 	Imperial trade routes. It’s time to choose a leader amongst yourselves and start your journey into the void."
-	skill_points = 26
+	skill_points = 25
 	min_skill = list(
-		SKILL_PILOT = SKILL_BASIC,
-		SKILL_MEDICAL = SKILL_BASIC,
-		SKILL_ELECTRICAL = SKILL_BASIC,
+		SKILL_COMBAT = SKILL_BASIC,
+		SKILL_VIGOR = SKILL_EXPERIENCED,
 	)
 
 	max_skill = list(	SKILL_CONSTRUCTION = SKILL_MASTER,
@@ -401,7 +407,7 @@
 
 /singleton/hierarchy/outfit/scavver/bondsman
 	name = ("Scavver Bondsman")
-	head = /obj/item/clothing/head/hardhat/bondsman
+	head = null
 	mask = /obj/item/clothing/mask/gas/explorer
 	glasses = /obj/item/clothing/glasses/night
 	belt = /obj/item/storage/belt/utility/full

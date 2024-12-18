@@ -11,6 +11,7 @@
 	siemens_coefficient = 0.6
 	equip_delay = 2 SECONDS
 	slowdown_general = 0.09
+	w_class = ITEM_SIZE_HUGE
 
 /obj/item/clothing/suit/armor/equip_delay_before(mob/user, slot, equip_flags)
 	user.setClickCooldown(1 SECOND)

@@ -303,7 +303,7 @@
 	desc = "A crate of emergency rations."
 
 /obj/structure/closet/crate/warhammer/freezer/rations/WillContain()
-	return list(/obj/random/mre = 6, /obj/item/reagent_containers/food/drinks/cans/waterbottle = 12)
+	return list(/obj/random/mre = 3, /obj/item/reagent_containers/food/drinks/cans/waterbottle = 4)
 
 /obj/structure/closet/crate/warhammer/freezer/meat
 	name = "meat crate"
@@ -311,9 +311,9 @@
 
 /obj/structure/closet/crate/warhammer/freezer/meat/WillContain()
 	return list(
-		/obj/item/reagent_containers/food/snacks/meat/beef = 4,
-		/obj/item/reagent_containers/food/snacks/meat/syntiflesh = 4,
-		/obj/random/fish = 8
+		/obj/item/reagent_containers/food/snacks/meat/beef = 3,
+		/obj/item/reagent_containers/food/snacks/meat/syntiflesh = 2,
+		/obj/random/fish = 3
 	)
 
 

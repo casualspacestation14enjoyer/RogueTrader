@@ -397,7 +397,7 @@
 	desc = "Belt-fed 6.8mm heavy stubber, the weapon was fitted with both backsight and foresight, carrying handle, and perforated outer barrel to aid in cooling."
 	icon_state = "hmg"
 	slot_flags = SLOT_BACK
-	w_class = ITEM_SIZE_HUGE
+	w_class = ITEM_SIZE_GARGANTUAN
 	one_hand_penalty = 2
 	accuracy = 0
 	fire_delay = 3.2
@@ -462,7 +462,7 @@
 	icon_state = "ultrabolter"
 	item_state = "hbolter"
 	wielded_item_state = "hbolter"
-	w_class = ITEM_SIZE_HUGE
+	w_class = ITEM_SIZE_GARGANTUAN
 	force = 30
 	slot_flags = SLOT_BACK
 	caliber = ".95"
@@ -693,7 +693,7 @@
 	slot_flags = SLOT_BACK
 	magazine_type = /obj/item/ammo_magazine/pulsemag
 	allowed_magazines = list(/obj/item/ammo_magazine/pulsemag)
-	w_class = ITEM_SIZE_HUGE
+	w_class = ITEM_SIZE_GARGANTUAN
 	slowdown_general = 0.07
 
 	firemodes = list(

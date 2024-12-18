@@ -25,10 +25,10 @@
 /obj/submap_landmark/spawnpoint/colonist_spawn_noble
 	name = "Paladin"
 
-/obj/submap_landmark/spawnpoint/colonist_spawn_noble
+/obj/submap_landmark/spawnpoint/colonist_spawn_pathfinder
 	name = "Pathfinder"
 
-/obj/submap_landmark/spawnpoint/colonist_spawn_noble
+/obj/submap_landmark/spawnpoint/colonist_spawn_sister
 	name = "Sister Seraphim"
 
 /obj/submap_landmark/joinable_submap/colony
@@ -41,10 +41,10 @@
 	outfit_type = /singleton/hierarchy/outfit/job/survivor/sister
 	whitelisted_species = list(SPECIES_HUMAN,SPECIES_VOX,SPECIES_TAU,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_KROOT)
 	total_positions = 0
-	skill_points = 22 // lastly test out warp terrain. so we need purple space tiles. when you traverse them you hallucinate and go crazy. on examine as well.
+	skill_points = 15
 	min_skill = list(
-		SKILL_COMBAT = SKILL_EXPERIENCED,
-		SKILL_GUNS = SKILL_EXPERIENCED,
+		SKILL_COMBAT = SKILL_MASTER,
+		SKILL_GUNS = SKILL_MASTER,
 		SKILL_VIGOR = SKILL_EXPERIENCED,
 	)
 
@@ -87,10 +87,10 @@
 	outfit_type = /singleton/hierarchy/outfit/job/colonist
 	skill_points = 27 // 3 more points then deck scum
 	whitelisted_species = list(SPECIES_HUMAN,SPECIES_VOX,SPECIES_TAU,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_KROOT)
+	skill_points = 16
 	min_skill = list(
-		SKILL_COMBAT = SKILL_BASIC,
-		SKILL_MEDICAL = SKILL_BASIC,
-		SKILL_VIGOR = SKILL_BASIC,
+		SKILL_VIGOR = SKILL_EXPERIENCED,
+		SKILL_COMBAT = SKILL_EXPERIENCED,
 	)
 
 	max_skill = list(	SKILL_CONSTRUCTION = SKILL_MASTER,
@@ -162,12 +162,12 @@
 	info = "You are part of an established colony on the edge of the Ghoul Stars, far from the Imperium's reach. The outpost stands as a solitary bastion amidst the unknown, its purpose and survival intertwined with the mysteries of this distant frontier."
 	total_positions = 1
 	outfit_type = /singleton/hierarchy/outfit/job/colonist
-	skill_points = 26
 	whitelisted_species = list(SPECIES_HUMAN,SPECIES_VOX,SPECIES_TAU,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_KROOT)
+	skill_points = 20
 	min_skill = list(
-		SKILL_PILOT = SKILL_BASIC,
-		SKILL_MEDICAL = SKILL_BASIC,
-		SKILL_ELECTRICAL = SKILL_BASIC,
+		SKILL_PILOT = SKILL_TRAINED,
+		SKILL_VIGOR = SKILL_EXPERIENCED,
+		SKILL_GUNS = SKILL_TRAINED,
 	)
 
 	max_skill = list(	SKILL_CONSTRUCTION = SKILL_MASTER,
@@ -222,11 +222,12 @@
 	info = "You are part of an established colony on the edge of the Ghoul Stars, far from the Imperium's reach. The outpost stands as a solitary bastion amidst the unknown, its purpose and survival intertwined with the mysteries of this distant frontier."
 	total_positions = 1
 	outfit_type = /singleton/hierarchy/outfit/job/colonist
-	skill_points = 26
 	whitelisted_species = list(SPECIES_HUMAN,SPECIES_VOX,SPECIES_TAU,SPECIES_SPACER,SPECIES_GRAVWORLDER,SPECIES_KROOT)
+	skill_points = 17
 	min_skill = list(
-		SKILL_PILOT = SKILL_BASIC,
-		SKILL_MEDICAL = SKILL_BASIC,
+		SKILL_CONSTRUCTION = SKILL_TRAINED,
+		SKILL_VIGOR = SKILL_EXPERIENCED,
+		SKILL_COMBAT = SKILL_TRAINED,
 		SKILL_ELECTRICAL = SKILL_BASIC,
 	)
 

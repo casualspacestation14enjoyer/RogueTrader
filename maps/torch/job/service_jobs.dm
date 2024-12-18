@@ -15,11 +15,11 @@
 		/datum/mil_branch/civilian)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ)
-	skill_points = 26
+	skill_points = 20
 	min_skill = list(
-		SKILL_COMBAT = SKILL_BASIC,
+		SKILL_COMBAT = SKILL_EXPERIENCED,
 		SKILL_MEDICAL = SKILL_BASIC,
-		SKILL_VIGOR = SKILL_BASIC,
+		SKILL_VIGOR = SKILL_EXPERIENCED,
 	)
 
 	max_skill = list(	SKILL_VIGOR = SKILL_MASTER,
@@ -69,6 +69,10 @@
 		SKILL_VIGOR = SKILL_BASIC,
 	)
 
+	max_skill = list(	SKILL_DEVICES = SKILL_MASTER,
+						SKILL_VIGOR = SKILL_MASTER,
+						SKILL_GUNS = SKILL_MASTER,
+						SKILL_COMBAT = SKILL_MASTER)
 	access = list(
 		access_maint_tunnels, access_emergency_storage,
 		access_janitor, access_solgov_crew,
@@ -145,19 +149,17 @@
 		/datum/mil_rank/fleet/e7,
 		/datum/mil_rank/fleet/e8
 	)
-	skill_points = 28
+	skill_points = 26
 	min_skill = list(
 		SKILL_COMBAT = SKILL_BASIC,
 		SKILL_MEDICAL = SKILL_BASIC,
 		SKILL_VIGOR = SKILL_BASIC,
 	)
 
-	max_skill = list(	SKILL_CONSTRUCTION = SKILL_MASTER,
-						SKILL_COMBAT = SKILL_MASTER,
+	max_skill = list(	SKILL_DEVICES = SKILL_MASTER,
+						SKILL_VIGOR = SKILL_MASTER,
 						SKILL_GUNS = SKILL_MASTER,
-						SKILL_VIGOR = SKILL_MASTER)
-
-	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
+						SKILL_COMBAT = SKILL_MASTER)
 
 	access = list(
 		access_maint_tunnels, access_bridge, access_emergency_storage, access_tech_storage,  access_cargo, access_guppy_helm,
@@ -182,11 +184,11 @@
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/contractor)
 	economic_power = 7
-	skill_points = 26
+	skill_points = 20
 	min_skill = list(
-		SKILL_COMBAT = SKILL_BASIC,
-		SKILL_MEDICAL = SKILL_BASIC,
-		SKILL_VIGOR = SKILL_BASIC,
+		SKILL_COMBAT = SKILL_EXPERIENCED,
+		SKILL_GUNS = SKILL_EXPERIENCED,
+		SKILL_VIGOR = SKILL_EXPERIENCED,
 	)
 
 	max_skill = list(	SKILL_DEVICES = SKILL_MASTER,
@@ -233,8 +235,8 @@
 	title = "Deck Scum"
 	department = "Supply"
 	department_flag = SUP
-	total_positions = 14
-	spawn_positions = 14
+	total_positions = 10
+	spawn_positions = 10
 	create_record = FALSE
 	supervisors = "..."
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/service/crewman
@@ -256,14 +258,21 @@
 		access_solgov_crew, access_radio_serv
 	)
 
-	skill_points = 24
+	skill_points = 18
 	min_skill = list(
-		SKILL_COMBAT = SKILL_BASIC,
-		SKILL_MEDICAL = SKILL_BASIC,
-		SKILL_VIGOR = SKILL_BASIC,
+		SKILL_VIGOR = SKILL_TRAINED,
+		SKILL_CONSTRUCTION = SKILL_TRAINED,
+		SKILL_EVA = SKILL_TRAINED,
+		SKILL_ELECTRICAL = SKILL_TRAINED
 	)
 
 	max_skill = list(	SKILL_CONSTRUCTION = SKILL_MASTER,
+						SKILL_DEVICES = SKILL_MASTER,
+						SKILL_COMPUTER = SKILL_MASTER,
+						SKIL_ELECTRICAL = SKILL_MASTER,
+						SKILL_ENGINES = SKILL_MASTER,
+						SKILL_ATMOS = SKILL_MASTER,
+						SKILL_PILOT = SKILL_MASTER,
 						SKILL_COMBAT = SKILL_MASTER,
 						SKILL_GUNS = SKILL_MASTER,
 						SKILL_VIGOR = SKILL_MASTER)
