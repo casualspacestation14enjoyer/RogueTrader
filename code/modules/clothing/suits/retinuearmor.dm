@@ -68,6 +68,7 @@
 	desc = "An ancient relic of the Mechanicus, sanctified for the Inquisition’s holy war. The engraved Rosette and gleaming surface reflect the Emperor’s divine will, guiding the wearer to annihilate His enemies."
 	icon_state = "inqarmor"
 	item_state = "inqarmor"
+	w_class = ITEM_SIZE_GARGANTUAN
 	valid_accessory_slots = null // So you can't remove or attach armor acceesories.
 	restricted_accessory_slots = null
 	accessories = null
@@ -112,6 +113,7 @@
 	desc = "Mechanicus power armour, forged by the Tech-priest of Mars and blessed with runes of blankness, a potent tool against the great enemy."
 	icon_state = "knight_grey"
 	item_state = "knight_grey"
+	w_class = ITEM_SIZE_GARGANTUAN
 	body_parts_covered = LEGS|ARMS|FULL_TORSO // Mirror of inq p-armor until I have time to code daemon tech.
 	max_pressure_protection = RIG_MAX_PRESSURE
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
@@ -176,6 +178,7 @@
 	desc = "A symbol of the Rogue Trader's command, this carapace armor offers both protection and prestige, marking its wearer as a force to be reckoned with."
 	icon_state = "rtarm"
 	item_state = "rtarm"
+	w_class = ITEM_SIZE_GARGANTUAN
 	body_parts_covered = LEGS | ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/carapacemaster)
 	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
@@ -218,6 +221,7 @@
 	desc = "A finely crafted set of golden ceramite half-plate, forged by the hands of a master artisan. Some might consider using ceramite for an entire suit excessive, but we don't listen to the hive-scum now do we."
 	icon_state = "royalgc"
 	item_state = "royalgc"
+	w_class = ITEM_SIZE_GARGANTUAN
 	body_parts_covered = LEGS | ARMS | FULL_TORSO
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+600
@@ -416,6 +420,7 @@
 	desc = "Custom-made for brutal close-quarters combat, this heavy flak suit compensates for its restrictive nature with exceptional protection against small arms and explosions."
 	icon_state = "meister"
 	item_state = "meister"
+	w_class = ITEM_SIZE_GARGANTUAN
 	accessories = list(/obj/item/clothing/accessory/armor_plate/flakheavy)
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+150
@@ -455,6 +460,7 @@
 	desc = "Heavy power armor forged in the lower-hives of some distant forge-world, likely by an aspiring tech priest. Despite its poor craftsmanship, it offers the raw protective might of technical power armor."
 	icon_state = "lightpa2"
 	item_state = "lightpa2"
+	w_class = ITEM_SIZE_GARGANTUAN
 	body_parts_covered = LEGS | ARMS | FULL_TORSO
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+600
@@ -474,6 +480,7 @@
 	desc = "A brutal set of Berserker Power Armor, forged in the depths of an ancient xenos city millenia ago. It radiates raw rage and power, immune to the touch of fire, and stirs the soul with relentless fury. A living metal of twisted alien malice."
 	icon_state = "berserker"
 	item_state = "berserker"
+	w_class = ITEM_SIZE_GARGANTUAN
 	body_parts_covered = LEGS | ARMS | FULL_TORSO
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+1100
@@ -493,6 +500,7 @@
 	desc = "Masterwork power armor forged and used by the renegade navigator houses."
 	icon_state = "t51bgs"
 	item_state = "t51bgs"
+	w_class = ITEM_SIZE_GARGANTUAN
 	body_parts_covered = LEGS | ARMS | FULL_TORSO
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+900
@@ -512,6 +520,7 @@
 	desc = "An oddly ineffective ghillie suit, designed without regard for the harsh, reflective environment of an ice world."
 	icon_state = "fox"
 	item_state = "fox"
+	w_class = ITEM_SIZE_GARGANTUAN
 	body_parts_covered = LEGS | ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/carapace)
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
@@ -552,6 +561,7 @@
 	desc = "Forged by the strange xenos of this barren ice-world, it seeems to have an advanced protective field wrapping around it."
 	icon_state = "spacer"
 	item_state = "spacer"
+	w_class = ITEM_SIZE_GARGANTUAN
 	body_parts_covered = LEGS | ARMS | FULL_TORSO | HEAD
 	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
@@ -846,19 +856,7 @@
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	sales_price = 40
 
-/obj/item/clothing/suit/armor/exile
-	name = "Vessorine Armor"
-	desc = "Ritual combat armor worn by the natives of Vessor."
-	icon_state = "exile"
-	item_state = "exile"
-	armor = list(melee = 11, bullet = 28, laser = 28, energy = 30, bomb = 40, bio = 30, rad = 30)
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/lasgun/)
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-/obj/item/clothing/suit/armor/exile/New()
-	..()
-	slowdown_per_slot[slot_wear_suit] = -0.3
+
 
 // admeme only
 

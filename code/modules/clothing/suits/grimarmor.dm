@@ -110,6 +110,7 @@
 	icon_state = "PDF-CaptainT"
 	item_state = "PDF-CaptainT"
 	body_parts_covered = LEGS|ARMS
+	w_class = ITEM_SIZE_GARGANTUAN
 	accessories = list(/obj/item/clothing/accessory/armor_plate/carapaceheavy)
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-100
@@ -137,6 +138,7 @@
 	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, It is so common that it became symbol of the Astra Militarum as a whole. This one is in it heavy configuration"
 	icon_state = "fharmor"
 	item_state = "fharmor"
+	w_class = ITEM_SIZE_GARGANTUAN
 	max_pressure_protection = VOIDSUIT_MAX_PRESSURE
 	body_parts_covered = LEGS|ARMS // Same as regular Cadian but provides better leg/arm protection.
 	accessories = list(/obj/item/clothing/accessory/armor_plate/flakheavy)
@@ -245,6 +247,7 @@
 	item_state = "grencoat"
 	body_parts_covered = LEGS|ARMS
 	max_pressure_protection = VOIDSUIT_MAX_PRESSURE
+	w_class = ITEM_SIZE_GARGANTUAN
 	accessories = list(/obj/item/clothing/accessory/armor_plate/carapaceheavy)
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+120
@@ -346,6 +349,7 @@
 	desc = "The standard carapace armor worn by Maccabian Jannisaries, designed for resilience in the field."
 	icon_state = "M_Armor-Icon"
 	item_state = "M_Armor-Icon"
+	w_class = ITEM_SIZE_GARGANTUAN
 	body_parts_covered = LEGS|ARMS
 	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
 	accessories = list(/obj/item/clothing/accessory/armor_plate/carapace)
@@ -464,6 +468,7 @@
 	desc = "The carapace armor worn by Inquisitorial Stormtroopers, designed for heavy frontline combat. Shows signs of extensive use."
 	icon_state = "i-Stormtrooper Armor"
 	item_state = "i-Stormtrooper Armor"
+	w_class = ITEM_SIZE_GARGANTUAN
 	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	slowdown_general = 0.09
@@ -508,6 +513,7 @@
 	desc = "The Carapace Armor of an Elite Kasrkin, a reliable stormtrooper armor."
 	icon_state = "kasrkinarmor"
 	item_state = "kasrkinarmor"
+	w_class = ITEM_SIZE_GARGANTUAN
 	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	slowdown_general = 0.09
@@ -551,6 +557,7 @@
 	desc = "The carapace armor worn by Enforcers, reinforced to provide superior protection against explosions and small arms fire. Lighter than standard carapace suits but still robust."
 	icon_state = "MarshalArmor"
 	item_state = "MarshalArmor"
+	w_class = ITEM_SIZE_GARGANTUAN
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
 	slowdown_general = 0.10 // Better slowdown then standard modular armors.
@@ -571,6 +578,7 @@
 	desc = "The flak armor worn by a Void Enforcer. Heavy and robust, its distinctive blue design provides superior protection against explosions and small arms fire in urban combat."
 	icon_state = "PalaniteArmor"
 	item_state = "PalaniteArmor"
+	w_class = ITEM_SIZE_GARGANTUAN
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	max_pressure_protection = VOIDSUIT_MAX_PRESSURE
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
@@ -631,6 +639,7 @@
 	desc = "Worn by Magistratum Arbitrators, this carapace armor offers exceptional protection against explosives and small arms fire, balancing mobility with heavy-duty defense."
 	icon_state = "Judge"
 	item_state = "Judge"
+	w_class = ITEM_SIZE_GARGANTUAN
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
 	slowdown_general = 0.09 // Hard armor sets get more slowdown for having equalized protection. They are fully superior to traditional armors with no weaknesses.
@@ -652,6 +661,7 @@
 	desc = "A heavy protective suit made from chemically treated fabrics that protect the wearer from toxic death world environment, this particular set is fitted with carapace pauldrons and plate to protect it's wearer from dangers only the Cogboys seem wise enough to prepare for."
 	icon_state = "MineWorkerS"
 	item_state = "MineWorkerS"
+	w_class = ITEM_SIZE_GARGANTUAN
 	body_parts_covered = LEGS|ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/mechplate)
 	max_pressure_protection = VOIDSUIT_MAX_PRESSURE
@@ -694,6 +704,7 @@
 	item_state = "Mars_Engineseer"
 	canremove = 0
 	unacidable = 1
+	w_class = ITEM_SIZE_GARGANTUAN
 	body_parts_covered = LEGS | ARMS | HEAD
 	accessories = list(/obj/item/clothing/accessory/armor_plate/mechplate)
 	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
@@ -846,6 +857,7 @@
 	desc = "Tailored and reinforced by the Adeptus Mechanicus, these sturdy and protective robes are being issued to Skitarii warriors."
 	icon_state = "skitsuit"
 	item_state = "skitsuit"
+	w_class = ITEM_SIZE_GARGANTUAN
 	canremove = 0
 	unacidable = 1
 	body_parts_covered = LEGS | ARMS
@@ -980,6 +992,7 @@
 	icon_state = "servitor_robe"
 	item_state = "servitor_robe" // to-do. make some servitor guns and a heavier combat version of this plating.
 	canremove = 0
+	w_class = ITEM_SIZE_GARGANTUAN
 	unacidable = 1
 	body_parts_covered = FULL_BODY
 	max_pressure_protection = RIG_MAX_PRESSURE
@@ -1037,6 +1050,7 @@
 	icon_state = "riotcarrier"
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_ARMOR_ARMS, ACCESSORY_SLOT_ARMOR_LEGS)
 	restricted_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_ARMOR_ARMS, ACCESSORY_SLOT_ARMOR_LEGS)
+	w_class = ITEM_SIZE_GARGANTUAN
 	armor = list(
 		melee = ARMOR_MELEE_FLAK+1,
 		bullet = ARMOR_BALLISTIC_FLAK-3,
@@ -1057,6 +1071,7 @@
 	icon_state = "ballisticcarrier"
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_ARMOR_ARMS, ACCESSORY_SLOT_ARMOR_LEGS)
 	restricted_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_ARMOR_ARMS, ACCESSORY_SLOT_ARMOR_LEGS)
+	w_class = ITEM_SIZE_GARGANTUAN
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	armor = list(
 		melee = ARMOR_MELEE_FLAK,
