@@ -126,7 +126,7 @@
 	boot_type = /obj/item/clothing/shoes/magboots/rig/eva
 	glove_type = /obj/item/clothing/gloves/rig/eva
 
-	req_access = list(access_engine_equip)
+	req_access = list(access_mechanicus_command)
 
 
 
@@ -189,7 +189,7 @@
 	helm_type = /obj/item/clothing/head/helmet/space/rig/ce
 	glove_type = /obj/item/clothing/gloves/rig/ce
 
-	req_access = list(access_ce)
+	req_access = list(access_mechanicus_command)
 	max_pressure_protection = FIRESUIT_MAX_PRESSURE
 	min_pressure_protection = 0
 

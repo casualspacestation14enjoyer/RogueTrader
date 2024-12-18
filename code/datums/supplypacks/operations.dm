@@ -21,7 +21,7 @@
 	cost = 120
 	containertype = /obj/structure/closet/crate/secure
 	containername = "plasma cutter crate"
-	access = list(list(access_mining,access_engine))
+	access = list(list(access_mining,access_mechanicus))
 
 /singleton/hierarchy/supply_pack/operations/orebox
 	name = "Equipment - Ore box"
@@ -51,7 +51,7 @@
 	cost = 120
 	containername = "engineering voidsuit crate"
 	containertype = /obj/structure/closet/crate/secure/large
-	access = access_engine
+	access = access_mechanicus
 
 /singleton/hierarchy/supply_pack/operations/voidsuit_medical
 	name = "EVA - Medical voidsuit"

@@ -54,7 +54,7 @@
 						SKILL_CHEMISTRY = SKILL_MASTER)
 
 	access = list(
-		access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
+		access_mechanicus, access_mechanicus_command, access_maint_tunnels, access_external_airlocks, access_magos,
 		access_ai_upload, access_teleporter, access_eva, access_bridge, access_heads,
 		access_tech_storage, access_robotics, access_atmospherics, access_janitor, access_construction,
 		access_network, access_network_admin, access_ce, access_RC_announce, access_keycard_auth, access_tcomsat,
@@ -163,7 +163,7 @@
 						SKILL_CHEMISTRY = SKILL_MASTER)
 
 	access = list(
-		access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
+		access_mechanicus, access_mechanicus_command, access_maint_tunnels, access_external_airlocks, access_magos,
 		access_teleporter, access_eva, access_tech_storage, access_atmospherics, access_janitor, access_construction,
 		access_tcomsat, access_solgov_crew, access_seneng, access_hangar, access_network, access_network_admin, access_radio_eng
 	)
@@ -256,7 +256,7 @@
 						SKILL_PILOT = SKILL_MASTER)
 
 	access = list(
-		access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
+		access_mechanicus, access_mechanicus_command, access_maint_tunnels, access_external_airlocks, access_magos,
 		access_teleporter, access_eva, access_tech_storage, access_atmospherics, access_janitor, access_construction,
 		access_solgov_crew, access_hangar, access_network, access_radio_eng
 	)
@@ -336,7 +336,7 @@
 						SKILL_VIGOR = SKILL_MASTER)
 
 	access = list(
-		access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
+		access_mechanicus_command, access_maint_tunnels, access_external_airlocks, access_magos,
 		access_eva, access_tech_storage, access_janitor, access_construction,
 		access_solgov_crew, access_hangar, access_radio_eng
 	)
@@ -411,7 +411,7 @@
 	                    SKILL_ANATOMY      = SKILL_EXPERIENCED)
 
 	access = list(
-		access_robotics, access_engine, access_solgov_crew, access_network, access_radio_eng
+		access_robotics, access_mechanicus, access_solgov_crew, access_network, access_radio_eng
 	)
 
 /datum/job/roboticist/get_description_blurb()

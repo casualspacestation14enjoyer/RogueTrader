@@ -708,7 +708,7 @@ var/global/const/NO_EMAG_ACT = -50
 
 /obj/item/card/id/dog_tag/guardsman
 	icon_state = "tagred"
-	access = list(access_village, access_security)
+	access = list(access_village, access_restricted)
 
 /obj/item/card/id/dog_tag/guardsman/update_name()
 	var/final_name = "[registered_name]"
@@ -724,7 +724,7 @@ var/global/const/NO_EMAG_ACT = -50
 	assignment = "Commissar"
 	icon_state = "tagred"
 	item_state = "tagred"
-	access = list(access_security, access_guard_common, access_magi, access_armory,
+	access = list(access_restricted, access_guard_common, access_magi, access_restricted_command,
 			            access_village, access_all_personal_lockers,
 			            access_mechanicus, access_mining, access_medical,
 			            access_heads, access_hos, access_RC_announce, access_keycard_auth, access_gateway)
@@ -744,7 +744,7 @@ var/global/const/NO_EMAG_ACT = -50
 	assignment = "Sanctioned Psyker"
 	icon_state = "tagred"
 	item_state = "tagred"
-	access = list(access_security, access_guard_common, access_magi, access_armory,
+	access = list(access_restricted, access_guard_common, access_magi, access_restricted_command,
 			            access_village, access_all_personal_lockers,
 			            access_mechanicus, access_mining, access_medical,
 			            access_heads, access_hos, access_RC_announce, access_keycard_auth, access_gateway)

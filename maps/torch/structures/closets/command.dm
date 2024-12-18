@@ -29,7 +29,7 @@
 
 /obj/structure/closet/secure_closet/CO
 	name = "commanding officer's locker"
-	req_access = list(access_captain)
+	req_access = list(access_roguetrader)
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/command/co
 
 /obj/structure/closet/secure_closet/CO/WillContain()

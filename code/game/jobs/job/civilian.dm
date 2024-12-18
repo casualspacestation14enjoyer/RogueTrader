@@ -63,7 +63,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the head of personnel"
-	access = list(access_janitor, access_maint_tunnels, access_engine, access_research, access_sec_doors, access_medical)
+	access = list(access_janitor, access_maint_tunnels, access_mechanicus, access_research, access_sec_doors, access_medical)
 	alt_titles = list("Custodian","Sanitation Technician")
 	outfit_type = /singleton/hierarchy/outfit/job/service/janitor
 
@@ -75,7 +75,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the head of personnel"
-	access = list(access_library, access_maint_tunnels)
+	access = list(access_dauntless, access_maint_tunnels)
 	alt_titles = list("Journalist")
 	outfit_type = /singleton/hierarchy/outfit/job/librarian
 

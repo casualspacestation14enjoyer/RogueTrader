@@ -32,7 +32,7 @@
 
 /obj/structure/closet/secure_closet/engineering_chief_torch
 	name = "magos explorator's locker"
-	req_access = list(access_ce)
+	req_access = list(access_mechanicus_command)
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/engineering/ce
 
 /obj/structure/closet/secure_closet/engineering_chief_torch/WillContain()
@@ -66,7 +66,7 @@
 
 /obj/structure/closet/secure_closet/engineering_torch
 	name = "tech priest's locker"
-	req_access = list(access_engine_equip)
+	req_access = list(access_mechanicus_command)
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/engineering
 
 /obj/structure/closet/secure_closet/engineering_torch/WillContain()
@@ -111,7 +111,7 @@
 
 /obj/structure/closet/secure_closet/atmos_torch
 	name = "atmospherics equipment locker"
-	req_access = list(access_atmospherics)
+	req_access = list(access_dauntless)
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/engineering/atmos
 
 /obj/structure/closet/secure_closet/atmos_torch/WillContain()

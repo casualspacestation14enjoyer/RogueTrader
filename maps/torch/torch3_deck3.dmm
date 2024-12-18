@@ -1641,7 +1641,7 @@
 /obj/machinery/alarm{
 	dir = 8;
 	pixel_x = 25;
-	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
+	req_access = list(list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS"))
 	},
 /obj/floor_decal/industrial/warning{
 	dir = 8;
@@ -12599,7 +12599,7 @@
 /obj/machinery/alarm{
 	dir = 8;
 	pixel_x = 25;
-	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
+	req_access = list(list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS"))
 	},
 /obj/structure/bed/chair/wood/maple{
 	dir = 1

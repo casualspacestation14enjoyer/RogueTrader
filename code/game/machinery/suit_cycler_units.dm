@@ -1,14 +1,14 @@
 /obj/machinery/suit_cycler/engineering
 	name = "engineering suit cycler"
 	model_text = "Engineering"
-	req_access = list(access_construction)
+	req_access = list(access_dauntless)
 	available_modifications = list(/singleton/item_modifier/space_suit/engineering, /singleton/item_modifier/space_suit/atmos)
 	species = list(SPECIES_HUMAN, SPECIES_TAU, SPECIES_KROOT)
 
 /obj/machinery/suit_cycler/mining
 	name = "mining suit cycler"
 	model_text = "Mining"
-	req_access = list(access_mining)
+	req_access = list(access_dauntless)
 	available_modifications = list(/singleton/item_modifier/space_suit/mining)
 	species = list(SPECIES_HUMAN,SPECIES_TAU,SPECIES_KROOT)
 
@@ -21,14 +21,14 @@
 /obj/machinery/suit_cycler/science
 	name = "excavation suit cycler"
 	model_text = "Excavation"
-	req_access = list(access_xenoarch)
+	req_access = list(access_mechanicus_command)
 	available_modifications = list(/singleton/item_modifier/space_suit/science)
 	species = list(SPECIES_HUMAN,SPECIES_TAU,SPECIES_KROOT)
 
 /obj/machinery/suit_cycler/security
 	name = "militarum suit cycler"
 	model_text = "Security"
-	req_access = list(access_security)
+	req_access = list(access_restricted)
 	available_modifications = list(/singleton/item_modifier/space_suit/security)
 	species = list(SPECIES_HUMAN,SPECIES_TAU,SPECIES_KROOT)
 

@@ -148,7 +148,7 @@
 /obj/catwalk_plated
 	name = "plated catwalk spawner"
 	icon = 'icons/obj/structures/catwalks.dmi'
-	icon_state = "catwalk_plated"
+	icon_state = "catwalk_plateddark"
 	density = TRUE
 	anchored = TRUE
 	var/activated = FALSE

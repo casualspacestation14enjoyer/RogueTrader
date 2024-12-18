@@ -67,7 +67,7 @@
 	name = "\improper Slime Extract Storage"
 	desc = "A refrigerated storage unit for slime extracts."
 	icon_contents = "slime"
-	req_access = list(access_research)
+	req_access = list(access_mechanicus)
 	accepted_types = list(
 		/obj/item/slime_extract
 	)
@@ -87,7 +87,7 @@
 /obj/machinery/smartfridge/secure/virology
 	name = "\improper Refrigerated Virus Storage"
 	desc = "A refrigerated storage unit for storing viral material."
-	req_access = list(access_virology)
+	req_access = list(access_mechanicus)
 	icon_contents = "chem"
 	accepted_types = list(
 		/obj/item/reagent_containers/glass/beaker/vial

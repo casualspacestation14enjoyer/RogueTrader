@@ -219,10 +219,10 @@ FIELD_LONG("Medical Record", medRecord, access_medical, access_medical)
 FIELD_LONG("Known Implants", implants, access_medical, access_medical)
 
 // SECURITY RECORDS
-FIELD_LIST("Criminal Status", criminalStatus, GLOB.security_statuses, access_security, access_security)
-FIELD_LONG("Security Record", secRecord, access_security, access_security)
-FIELD_SHORT("DNA", dna, access_security, access_security)
-FIELD_SHORT("Fingerprint", fingerprint, access_security, access_security)
+FIELD_LIST("Criminal Status", criminalStatus, GLOB.security_statuses, access_restricted, access_restricted)
+FIELD_LONG("Security Record", secRecord, access_restricted, access_restricted)
+FIELD_SHORT("DNA", dna, access_restricted, access_restricted)
+FIELD_SHORT("Fingerprint", fingerprint, access_restricted, access_restricted)
 
 // EMPLOYMENT RECORDS
 FIELD_LONG("Employment Record", emplRecord, access_bridge, access_bridge)

@@ -4,7 +4,7 @@
 	icon = 'icons/mob/robots_drones.dmi'
 	icon_state = "repairbot"
 	req_access = list(list(access_medical, access_robotics))
-	botcard_access = list(access_medical, access_morgue, access_surgery, access_chemistry, access_virology)
+	botcard_access = list(access_medical, access_medical_command, access_surgery, access_chemistry, access_virology)
 	var/skin = null //Set to "tox", "ointment" or "o2" for the other two firstaid kits.
 
 	//AI vars

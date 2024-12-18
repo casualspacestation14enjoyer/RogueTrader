@@ -72,7 +72,7 @@
 
 /obj/structure/closet/secure_closet/crew
 	name = "crew equipment locker"
-	req_access = list(access_solgov_crew)
+	req_access = list(access_dauntless)
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/sol
 
 /obj/structure/closet/secure_closet/crew/WillContain()
@@ -91,7 +91,7 @@
 
 /obj/structure/closet/secure_closet/guncabinet/sidearm
 	name = "sidearm cabinet"
-	req_access = list(list(access_armory,access_emergency_armory,access_hos,access_hop,access_ce,access_cmo,access_rd,access_senadv))
+	req_access = list(list(access_restricted_command,access_emergency_armory,access_hos,access_hop,access_ce,access_cmo,access_rd,access_senadv))
 
 /obj/structure/closet/secure_closet/guncabinet/sidearm/WillContain()
 	return list(
@@ -102,7 +102,7 @@
 
 /obj/structure/closet/secure_closet/guncabinet/PPE
 	name = "bridge PPE cabinet"
-	req_access = list(list(access_armory,access_emergency_armory,access_hos,access_hop,access_ce,access_cmo,access_rd,access_senadv))
+	req_access = list(list(access_restricted_command,access_emergency_armory,access_hos,access_hop,access_ce,access_cmo,access_rd,access_senadv))
 
 /obj/structure/closet/secure_closet/guncabinet/PPE/WillContain()
 	return list(

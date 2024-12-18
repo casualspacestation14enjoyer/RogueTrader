@@ -187,9 +187,9 @@
 
 
 /datum/mil_branch/civilian
-	name = "Civilian"
-	name_short = "Civ"
-	email_domain = "freemail.net"
+	name = "Terran"
+	name_short = "GEN"
+	email_domain = "astropathica.net"
 	allow_custom_email = TRUE
 
 	rank_types = list(

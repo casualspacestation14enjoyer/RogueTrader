@@ -34,7 +34,7 @@
 /obj/structure/closet/secure_closet/medical2
 	name = "anesthetics closet"
 	desc = "Used to knock people out."
-	req_access = list(access_surgery)
+	req_access = list(access_medical)
 
 /obj/structure/closet/secure_closet/medical2/WillContain()
 	return list(
@@ -97,7 +97,7 @@
 
 /obj/structure/closet/secure_closet/CMO
 	name = "chief medical officer's locker"
-	req_access = list(access_cmo)
+	req_access = list(access_medical_command)
 	closet_appearance = /singleton/closet_appearance/secure_closet/cmo
 
 /obj/structure/closet/secure_closet/CMO/WillContain()
@@ -122,7 +122,7 @@
 	name = "chemical closet"
 	desc = "Store dangerous chemicals in here."
 	closet_appearance = /singleton/closet_appearance/secure_closet/medical
-	req_access = list(access_chemistry)
+	req_access = list(access_medical)
 
 /obj/structure/closet/secure_closet/chemical/WillContain()
 	return list(
@@ -144,7 +144,6 @@
 /obj/structure/closet/secure_closet/counselor
 	name = "counselor's locker"
 	closet_appearance = /singleton/closet_appearance/secure_closet/medical
-	req_access = list(access_psychiatrist)
 
 /obj/structure/closet/secure_closet/counselor/WillContain()
 	return list(
@@ -168,7 +167,7 @@
 	name = "virologist's locker"
 	closet_appearance = /singleton/closet_appearance/secure_closet/medical/virology
 
-	req_access = list(access_virology)
+	req_access = list(access_mechanicus)
 
 /obj/structure/closet/secure_closet/virology/WillContain()
 	return list(
@@ -194,7 +193,6 @@
 	name = "Psychiatrist's locker"
 	desc = "Everything you need to keep the lunatics at bay."
 	closet_appearance = /singleton/closet_appearance/secure_closet/medical/alt
-	req_access = list(access_psychiatrist)
 
 /obj/structure/closet/secure_closet/psychiatry/WillContain()
 	return list(

@@ -10,22 +10,28 @@
 /*****************
 * Station access *
 *****************/
-var/global/const/access_security = "ACCESS_SECURITY" //1
-/datum/access/security
-	id = access_security
-	desc = "Security Equipment"
+var/global/const/access_dauntless = "ACCESS_DAUNTLESS" //37
+/datum/access/library
+	id = access_dauntless
+	desc = "Dauntless Access"
+	region = ACCESS_REGION_GENERAL
+
+var/global/const/access_restricted = "ACCESS_RESTRICTED" //1
+/datum/access/restricted
+	id = access_restricted
+	desc = "Militarum Access"
 	region = ACCESS_REGION_SECURITY
 
-var/global/const/access_brig = "ACCESS_BRIG" // Brig timers and permabrig 2
+var/global/const/access_restricted_command = "ACCESS_RESTRICTED_COMMAND" //2
+/datum/access/restricted_command
+	id = access_restricted_command
+	desc = "Militarum Command"
+	region = ACCESS_REGION_SECURITY
+
+var/global/const/access_brig = "ACCESS_BRIG" // Brig timers and permabrig 3
 /datum/access/holding
 	id = access_brig
 	desc = "Holding Cells"
-	region = ACCESS_REGION_SECURITY
-
-var/global/const/access_armory = "ACCESS_ARMORY" //3
-/datum/access/armory
-	id = access_armory
-	desc = "Armory"
 	region = ACCESS_REGION_SECURITY
 
 var/global/const/access_forensics_lockers = "ACCESS_FORENSICS" //4
@@ -37,13 +43,13 @@ var/global/const/access_forensics_lockers = "ACCESS_FORENSICS" //4
 var/global/const/access_medical = "ACCESS_MEDICAL" //5
 /datum/access/medical
 	id = access_medical
-	desc = "Medical"
+	desc = "Medicae"
 	region = ACCESS_REGION_MEDBAY
 
-var/global/const/access_morgue = "ACCESS_MORGUE" //6
-/datum/access/morgue
-	id = access_morgue
-	desc = "Morgue"
+var/global/const/access_medical_command = "ACCESS_MEDICAL_COMMAND" //6
+/datum/access/medical_command
+	id = access_medical_command
+	desc = "Medicae Command"
 	region = ACCESS_REGION_MEDBAY
 
 var/global/const/access_tox = "ACCESS_TOXINS" //7
@@ -58,17 +64,35 @@ var/global/const/access_tox_storage = "ACCESS_TOX_STORAGE" //8
 	desc = "Toxins Lab"
 	region = ACCESS_REGION_RESEARCH
 
-var/global/const/access_engine = "ACCESS_ENGINEERING" //10
-/datum/access/engine
-	id = access_engine
-	desc = "Engineering"
+var/global/const/access_mechanicus = "ACCESS_MECHANICUS" //10
+/datum/access/mechanicus
+	id = access_mechanicus
+	desc = "Mechanicus"
 	region = ACCESS_REGION_ENGINEERING
 
-var/global/const/access_engine_equip = "ACCESS_ENGINE_EQUIP" //11
-/datum/access/engine_equip
-	id = access_engine_equip
-	desc = "Engine Room"
+var/global/const/access_mechanicus_command = "ACCESS_MECHANICUS_COMMAND" //11
+/datum/access/mechanicus_command
+	id = access_mechanicus_command
+	desc = "Mechanicus Command"
 	region = ACCESS_REGION_ENGINEERING
+
+var/global/const/access_magos = "ACCESS_MAGOS" //14
+/datum/access/magos
+	id = access_magos
+	desc = "Magos Access"
+	region = ACCESS_REGION_ENGINEERING
+
+var/global/const/access_bridge = "ACCESS_BRIDGE" //19
+/datum/access/bridge
+	id = access_bridge
+	desc = "Bridge"
+	region = ACCESS_REGION_COMMAND
+
+var/global/const/access_roguetrader = "ACCESS_ROGUETRADER" //20
+/datum/access/roguetrader
+	id = access_roguetrader
+	desc = "Rogue Trader"
+	region = ACCESS_REGION_COMMAND
 
 var/global/const/access_maint_tunnels = "ACCESS_MAINT" //12
 /datum/access/maint_tunnels
@@ -80,12 +104,6 @@ var/global/const/access_external_airlocks = "ACCESS_EXTERNAL" //13
 /datum/access/external_airlocks
 	id = access_external_airlocks
 	desc = "External Airlocks"
-	region = ACCESS_REGION_ENGINEERING
-
-var/global/const/access_emergency_storage = "ACCESS_EMERGENCY_STORAGE" //14
-/datum/access/emergency_storage
-	id = access_emergency_storage
-	desc = "Emergency Storage"
 	region = ACCESS_REGION_ENGINEERING
 
 var/global/const/access_change_ids = "ACCESS_CHANGE_ID" //15
@@ -110,18 +128,6 @@ var/global/const/access_eva = "ACCESS_EVA" //18
 /datum/access/eva
 	id = access_eva
 	desc = "EVA"
-	region = ACCESS_REGION_COMMAND
-
-var/global/const/access_bridge = "ACCESS_BRIDGE" //19
-/datum/access/bridge
-	id = access_bridge
-	desc = "Bridge"
-	region = ACCESS_REGION_COMMAND
-
-var/global/const/access_captain = "ACCESS_CAPTAIN" //20
-/datum/access/captain
-	id = access_captain
-	desc = "Captain"
 	region = ACCESS_REGION_COMMAND
 
 var/global/const/access_all_personal_lockers = "ACCESS_PERSONAL_LOCKERS" //21
@@ -213,12 +219,6 @@ var/global/const/access_manufacturing = "ACCESS_MANUFACTURING" //36
 	id = access_manufacturing
 	desc = "Manufacturing"
 	access_type = ACCESS_TYPE_NONE
-
-var/global/const/access_library = "ACCESS_LIBRARY" //37
-/datum/access/library
-	id = access_library
-	desc = "Library"
-	region = ACCESS_REGION_GENERAL
 
 var/global/const/access_lawyer = "ACCESS_LAWYER" //38
 /datum/access/lawyer

@@ -445,7 +445,7 @@ SUBSYSTEM_DEF(jobs)
 				if (H.char_branch.allow_custom_email && H.client.prefs.email_addr)
 					addr = H.client.prefs.email_addr
 			else
-				domain = "freemail.net"
+				domain = "astropathica.net"
 			if (H.client.prefs.email_pass)
 				pass = H.client.prefs.email_pass
 			if(domain)

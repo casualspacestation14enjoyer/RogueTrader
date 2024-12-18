@@ -71,7 +71,7 @@
 	cost = 10
 	containertype = /obj/structure/closet/crate/secure/large
 	containername = "emitter crate"
-	access = access_engine_equip
+	access = access_mechanicus_command
 
 /singleton/hierarchy/supply_pack/engineering/field_gen
 	name = "Equipment - Field generator"
@@ -95,7 +95,7 @@
 	cost = 8
 	containertype = /obj/structure/closet/crate/secure/large
 	containername = "collector crate"
-	access = access_engine_equip
+	access = access_mechanicus_command
 
 /singleton/hierarchy/supply_pack/engineering/PA
 	name = "Equipment - Particle accelerator"
@@ -139,7 +139,7 @@
 	cost = 75
 	containertype = /obj/structure/closet/crate/secure/large
 	containername = "\improper Mk1 TEG crate"
-	access = access_engine_equip
+	access = access_mechanicus_command
 
 /singleton/hierarchy/supply_pack/engineering/circulator
 	name = "Equipment - Binary atmospheric circulator"
@@ -171,7 +171,7 @@
 	cost = 50
 	containertype = /obj/structure/closet/crate/secure
 	containername = "shield generator construction kit crate"
-	access = access_engine
+	access = access_mechanicus
 
 /singleton/hierarchy/supply_pack/engineering/smbig
 	name = "Power - Volkite core"
@@ -247,7 +247,7 @@
 	cost = 120
 	containername = "engineering voidsuit crate"
 	containertype = /obj/structure/closet/crate/secure/large
-	access = access_engine
+	access = access_mechanicus
 
 /singleton/hierarchy/supply_pack/engineering/robotics
 	name = "Parts - Robotics"

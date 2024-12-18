@@ -865,6 +865,7 @@
 	new /obj/item/cell/device/high/melta(src.loc)
 	new /obj/item/cell/device/high/mechanicus(src.loc)
 	new /obj/item/device/scanner/spectrometer(src.loc)
+	new /obj/item/shuttle_beacon(src.loc)
 	qdel(src)
 
 /obj/landmark/rav/engitems7/New()

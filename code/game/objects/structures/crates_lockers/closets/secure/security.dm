@@ -1,6 +1,6 @@
 /obj/structure/closet/secure_closet/captains
 	name = "captain's locker"
-	req_access = list(access_captain)
+	req_access = list(access_roguetrader)
 	closet_appearance = /singleton/closet_appearance/secure_closet/command
 
 /obj/structure/closet/secure_closet/captains/WillContain()
@@ -95,7 +95,7 @@
 
 /obj/structure/closet/secure_closet/warden
 	name = "warden's locker"
-	req_access = list(access_armory)
+	req_access = list(access_restricted_command)
 	closet_appearance = /singleton/closet_appearance/secure_closet/security/warden
 
 /obj/structure/closet/secure_closet/warden/WillContain()
@@ -125,7 +125,7 @@
 
 /obj/structure/closet/secure_closet/security
 	name = "militarum officer's locker"
-	req_access = list(access_brig)
+	req_access = list(access_restricted)
 	closet_appearance = /singleton/closet_appearance/secure_closet/security
 
 /obj/structure/closet/secure_closet/security/WillContain()
@@ -202,14 +202,14 @@
 
 /obj/structure/closet/secure_closet/injection
 	name = "lethal injections locker"
-	req_access = list(access_captain)
+	req_access = list(access_roguetrader)
 
 /obj/structure/closet/secure_closet/injection/WillContain()
 	return list(/obj/item/reagent_containers/syringe/ld50_syringe/choral = 2)
 
 /obj/structure/closet/secure_closet/brig
 	name = "brig locker"
-	req_access = list(access_brig)
+	req_access = list(access_restricted)
 	anchored = TRUE
 	var/id = null
 
@@ -235,7 +235,7 @@
 
 /obj/structure/closet/secure_closet/wall
 	name = "wall locker"
-	req_access = list(access_security)
+	req_access = list(access_restricted)
 	closet_appearance = /singleton/closet_appearance/wall
 
 	//too small to put a man in

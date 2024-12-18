@@ -39,8 +39,8 @@
 						SKILL_VIGOR = SKILL_MASTER)
 
 	access = list(
-		access_security, access_brig, access_armory, access_forensics_lockers,
-		access_maint_tunnels, access_external_airlocks, access_emergency_storage,
+		access_restricted, access_brig, access_restricted_command, access_forensics_lockers,
+		access_maint_tunnels, access_external_airlocks, access_magos,
 		access_teleporter, access_eva, access_bridge, access_heads, access_aquila,
 		access_hos, access_RC_announce, access_keycard_auth, access_sec_doors,
 		access_solgov_crew, access_gun, access_emergency_armory, access_hangar, access_torch_fax,
@@ -146,8 +146,8 @@
 						SKILL_COMBAT = SKILL_LEGEND)
 
 	access = list(
-		access_security, access_brig, access_armory, access_forensics_lockers,
-		access_maint_tunnels, access_external_airlocks, access_emergency_storage,
+		access_restricted, access_brig, access_restricted_command, access_forensics_lockers,
+		access_maint_tunnels, access_external_airlocks, access_magos,
 		access_eva, access_sec_doors, access_solgov_crew, access_gun, access_torch_fax,
 		access_radio_sec
 	)
@@ -215,8 +215,8 @@
 						SKILL_COMBAT = SKILL_MASTER)
 
 	access = list(
-		access_security, access_brig, access_maint_tunnels,
-		access_external_airlocks, access_emergency_storage,
+		access_restricted, access_brig, access_maint_tunnels,
+		access_external_airlocks, access_magos,
 		access_eva, access_sec_doors, access_solgov_crew,
 		access_radio_sec
 	)
@@ -283,8 +283,8 @@
 						SKILL_COMBAT = SKILL_LEGEND)
 
 	access = list(
-		access_security, access_brig, access_armory, access_forensics_lockers,
-		access_maint_tunnels, access_external_airlocks, access_emergency_storage,
+		access_restricted, access_brig, access_restricted_command, access_forensics_lockers,
+		access_maint_tunnels, access_external_airlocks, access_magos,
 		access_teleporter, access_eva, access_bridge, access_heads, access_aquila,
 		access_hos, access_RC_announce, access_keycard_auth, access_sec_doors,
 		access_solgov_crew, access_gun, access_emergency_armory, access_hangar, access_torch_fax,
