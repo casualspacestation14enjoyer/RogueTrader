@@ -13,7 +13,7 @@
 	meat_type = /obj/item/reagent_containers/food/snacks/fish/space_pike
 	pixel_x = -16
 	health = 150
-	maxHealth = 150
+	maxhealth = 150
 	harm_intent_damage = 5
 	natural_weapon = /obj/item/natural_weapon/bite/strong
 	can_escape = TRUE

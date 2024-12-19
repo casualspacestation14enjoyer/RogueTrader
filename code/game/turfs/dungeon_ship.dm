@@ -171,7 +171,7 @@
 	icon_state = "angel"
 	icon_living = "angel"
 	icon_dead = "tzantz2"
-	maxHealth = 2200 // Strong enemy, should be taken down by multiple enemies, has High HP to hold the
+	maxhealth = 2200 // Strong enemy, should be taken down by multiple enemies, has High HP to hold the
 	health = 2200
 	speed = 3 // Slow to give players a chance, although they're fucked honestly if they try to attack it without a proper team
 	emote_see = list("whimpers uncontrollably", "peels his own face", "furiously scratches his skin off", "rips his own flesh", "whispers in an unknown language")

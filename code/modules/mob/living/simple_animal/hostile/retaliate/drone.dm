@@ -11,7 +11,7 @@
 	response_harm = "hits"
 	a_intent = I_HURT
 	health = 300
-	maxHealth = 300
+	maxhealth = 300
 	speed = 8
 	base_attack_cooldown = 2 SECONDS
 	move_to_delay = 6
@@ -96,16 +96,16 @@
 			visible_message(SPAN_WARNING("\The [src] suddenly lights up with activity, searching for targets."))
 		else
 			visible_message(SPAN_WARNING("\The [src] dulls its running lights, becoming passive."))
-	if (health / maxHealth > 0.9)
+	if (health / maxhealth > 0.9)
 		icon_state = "[initial(icon_state)]"
 		explode_chance = 0
-	else if (health / maxHealth > 0.7)
+	else if (health / maxhealth > 0.7)
 		icon_state = "[initial(icon_state)]2"
 		explode_chance = 0
-	else if (health / maxHealth > 0.5)
+	else if (health / maxhealth > 0.5)
 		icon_state = "[initial(icon_state)]1"
 		explode_chance = 0.5
-	else if (health / maxHealth > 0.3)
+	else if (health / maxhealth > 0.3)
 		icon_state = "[initial(icon_state)]0"
 		explode_chance = 5
 	else if (health > 0)

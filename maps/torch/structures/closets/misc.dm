@@ -25,8 +25,7 @@
 	)
 
 /obj/structure/closet/secure_closet/liaison
-	name = "corporate liaison's locker"
-	req_access = list(access_liaison)
+	name = "corporate forbidden locker"
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/corporate/liaison
 
 /obj/structure/closet/secure_closet/liaison/WillContain()
@@ -47,8 +46,7 @@
 	)
 
 /obj/structure/closet/secure_closet/representative
-	name = "\improper Sol Central Government representative's locker"
-	req_access = list(access_representative)
+	name = "\improper Sol Central forbidden locker"
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/sol/rep
 
 /obj/structure/closet/secure_closet/representative/WillContain()
@@ -72,7 +70,6 @@
 
 /obj/structure/closet/secure_closet/crew
 	name = "crew equipment locker"
-	req_access = list(access_dauntless)
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/sol
 
 /obj/structure/closet/secure_closet/crew/WillContain()
@@ -85,30 +82,23 @@
 
 /obj/structure/closet/secure_closet/crew/research
 	name = "research equipment locker"
-	req_access = list(access_nanotrasen)
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/corporate
 
 
 /obj/structure/closet/secure_closet/guncabinet/sidearm
 	name = "sidearm cabinet"
-	req_access = list(list(access_restricted_command,access_emergency_armory,access_hos,access_hop,access_ce,access_cmo,access_rd,access_senadv))
 
 /obj/structure/closet/secure_closet/guncabinet/sidearm/WillContain()
 	return list(
 		/obj/item/clothing/accessory/storage/holster/thigh = 3,
-		/obj/item/gun/projectile/pistol/m19/empty = 3,
-		/obj/item/storage/box/ammo/pistol = 2
+		/obj/item/gun/projectile/pistol/slug = 2,
 	)
 
 /obj/structure/closet/secure_closet/guncabinet/PPE
 	name = "bridge PPE cabinet"
-	req_access = list(list(access_restricted_command,access_emergency_armory,access_hos,access_hop,access_ce,access_cmo,access_rd,access_senadv))
 
 /obj/structure/closet/secure_closet/guncabinet/PPE/WillContain()
 	return list(
-		/obj/item/gun/projectile/pistol/m19/empty = 3,
-		/obj/item/storage/box/ammo/pistol = 2,
-		/obj/item/clothing/suit/armor/grim/medium/command = 3,
-		/obj/item/clothing/head/helmet/solgov/command = 3,
-		/obj/item/clothing/accessory/storage/holster/thigh = 3
+		/obj/item/gun/projectile/revolver/imperial/heavy = 2,
+		/obj/item/clothing/accessory/storage/holster/thigh = 2
 	)

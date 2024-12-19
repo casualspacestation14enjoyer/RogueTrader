@@ -8,8 +8,6 @@
 	icon = 'icons/obj/machines/suitstorage.dmi'
 	icon_state = "close"
 
-	req_access = list(access_roguetrader, access_bridge)
-
 	var/active = 0          // PLEASE HOLD.
 	var/safeties = 1        // The cycler won't start with a living thing inside it unless safeties are off.
 	var/irradiating = 0     // If this is > 0, the cycler is decontaminating whatever is inside it.

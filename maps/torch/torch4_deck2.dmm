@@ -330,7 +330,7 @@
 "aE" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1379;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "solar_starboard_outer";
 	locked = 1;
 	name = "Engineering External Access"
@@ -616,7 +616,7 @@
 "bk" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1379;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "solar_starboard_inner";
 	locked = 1;
 	name = "Engineering External Access"
@@ -694,7 +694,7 @@
 "bt" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/highsecurity{
-	icon_state = "closed";
+	icon_state = "door_closed";
 	locked = 1;
 	name = "Auxiliary Armory"
 	},
@@ -794,7 +794,7 @@
 "bF" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1379;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "auxdock_outer";
 	locked = 1;
 	name = "Auxiliary Docking Port Exterior"
@@ -1769,7 +1769,7 @@
 "du" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1379;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "auxdock_inner";
 	locked = 1;
 	name = "Auxiliary Docking Port Interior"
@@ -1796,7 +1796,7 @@
 "dy" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/door/airlock/engineering{
-	icon_state = "closed";
+	icon_state = "door_closed";
 	name = "Starboard Solar Access"
 	},
 /obj/machinery/door/firedoor,
@@ -3440,20 +3440,6 @@
 "gV" = (
 /turf/simulated/wall/prepainted,
 /area/engineering/bluespacebay)
-"gW" = (
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/door/airlock/hatch{
-	frequency = 1379;
-	id_tag = "";
-	name = "Engine Airlock Exterior"
-	},
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/engineering/engine_room)
 "gX" = (
 /obj/shuttle_landmark/merc/deck3{
 	name = "2nd Deck, Aft"
@@ -3710,7 +3696,7 @@
 /obj/machinery/alarm{
 	dir = 8;
 	pixel_x = 25;
-	req_access = list(list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS"))
+	req_access = list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS")
 	},
 /turf/simulated/floor/tiled,
 /area/engineering/engineering_bay)
@@ -4257,7 +4243,7 @@
 "jk" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "escape_pod_11_hatch";
 	locked = 1;
 	name = "Escape Pod Six Hatch"
@@ -4394,12 +4380,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/bluespacebay)
 "jH" = (
-/obj/machinery/door/airlock/hatch{
-	icon_state = "closed";
-	id_tag = "engine_electrical_maintenance";
-	locked = 1;
-	name = "SMES Access"
-	},
+/obj/machinery/door/airlock/hatch,
 /obj/structure/cable/yellow{
 	d1 = 4;
 	d2 = 8;
@@ -4477,7 +4458,7 @@
 /area/engineering/foyer)
 "jQ" = (
 /obj/machinery/door/airlock/external/escapepod{
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "escape_pod_11_berth_hatch";
 	name = "Escape Pod Six"
 	},
@@ -4535,7 +4516,7 @@
 /obj/machinery/alarm{
 	dir = 8;
 	pixel_x = 25;
-	req_access = list(list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS"))
+	req_access = list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS")
 	},
 /obj/structure/cable/green{
 	d2 = 8;
@@ -5315,11 +5296,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/door/airlock/hatch{
-	frequency = 1379;
-	id_tag = "";
-	name = "Engine Airlock Interior"
-	},
+/obj/machinery/door/airlock/hatch,
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engine_room)
@@ -8948,7 +8925,7 @@
 "vv" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "escape_pod_10_hatch";
 	locked = 1;
 	name = "Escape Pod Five Hatch"
@@ -10777,7 +10754,7 @@
 	autoclose = 0;
 	frequency = 1379;
 	heat_proof = 1;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "incinerator_airlock_interior";
 	locked = 1;
 	name = "Mixing Room Interior Airlock"
@@ -11114,7 +11091,7 @@
 "Ca" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/door/airlock/engineering{
-	icon_state = "closed";
+	icon_state = "door_closed";
 	name = "Port Solar Access"
 	},
 /obj/machinery/door/firedoor,
@@ -11156,7 +11133,7 @@
 	},
 /obj/machinery/alarm{
 	pixel_y = 23;
-	req_access = list(list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS"))
+	req_access = list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS")
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/cargo)
@@ -11225,7 +11202,7 @@
 	autoclose = 0;
 	frequency = 1379;
 	heat_proof = 1;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "incinerator_airlock_exterior";
 	locked = 1;
 	name = "Mixing Room Exterior Airlock"
@@ -11877,7 +11854,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/machinery/door/airlock/external{
 	frequency = 1379;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "solar_port_inner";
 	locked = 1;
 	name = "Engineering External Access"
@@ -12056,7 +12033,7 @@
 	},
 /obj/machinery/door/airlock/external{
 	frequency = 1379;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "solar_port_outer";
 	locked = 1;
 	name = "Engineering External Access"
@@ -14810,7 +14787,7 @@
 /obj/machinery/alarm{
 	dir = 8;
 	pixel_x = 25;
-	req_access = list(list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS"))
+	req_access = list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS")
 	},
 /obj/structure/cable,
 /obj/machinery/power/smes/buildable/preset/torch/engine_empty{
@@ -15298,7 +15275,7 @@
 "OL" = (
 /obj/machinery/alarm{
 	pixel_y = 23;
-	req_access = list(list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS"))
+	req_access = list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS")
 	},
 /obj/structure/sign/warning/secure_area{
 	dir = 4;
@@ -17130,12 +17107,8 @@
 /turf/simulated/floor/tiled/monotile,
 /area/engineering/prototype/control)
 "Vg" = (
-/obj/machinery/door/airlock/hatch{
-	icon_state = "closed";
-	id_tag = "prototype_access_hatch";
-	locked = 1
-	},
 /obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/warhammer/engineering,
 /turf/simulated/floor/reinforced,
 /area/engineering/prototype/engine)
 "Vh" = (
@@ -43307,7 +43280,7 @@ iX
 jH
 hp
 nx
-gW
+lP
 dp
 Zf
 oi

@@ -148,7 +148,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	lighting_tone = AREA_LIGHTING_COOL
 
 /area/security
-	req_access = list(access_sec_doors)
+	req_access = list(access_restricted)
 
 /area/security/brig
 	name = "\improper Security - Brig"

@@ -16,7 +16,7 @@
 	response_help  = "placates"
 	response_harm   = "assaults"
 	health = 500
-	maxHealth = 500
+	maxhealth = 500
 	mob_size = MOB_LARGE
 	mob_bump_flag = HEAVY
 	can_escape = TRUE
@@ -147,7 +147,7 @@
 	icon_living = "king_goat2"
 	meat_amount = 36
 	health = 750
-	maxHealth = 750
+	maxhealth = 750
 	natural_weapon = /obj/item/natural_weapon/goatking/unleashed
 	elemental_weapons = list(
 		BURN = /obj/item/natural_weapon/goatking/fire/unleashed,
@@ -187,7 +187,7 @@
 	icon_living = "goat_guard"
 	icon_dead = "goat_guard_dead"
 	health = 125
-	maxHealth = 125
+	maxhealth = 125
 	natural_weapon = /obj/item/natural_weapon/goathorns
 
 /obj/item/natural_weapon/goathorns
@@ -204,7 +204,7 @@
 	icon_living = "goat_guard_m"
 	icon_dead = "goat_guard_m_dead"
 	health = 200
-	maxHealth = 200
+	maxhealth = 200
 	natural_weapon = /obj/item/natural_weapon/goathorns
 	move_to_delay = 3
 

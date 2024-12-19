@@ -11,7 +11,7 @@
 	icon_living = "tunneler"
 	icon_dead = "tunneler_dead"
 
-	maxHealth = 60
+	maxhealth = 60
 	health = 60
 
 	poison_chance = 15

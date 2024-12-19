@@ -6,7 +6,7 @@
 	desc = "Sensors detect an undamaged vessel without any signs of activity."
 	color = "#bd6100"
 	vessel_mass = 5000
-	max_speed = 1/(1 SECOND)
+	max_speed = 1/(1 SECONDS)
 	burn_delay = 1 SECOND
 	initial_generic_waypoints = list(
 		"nav_casino_1",

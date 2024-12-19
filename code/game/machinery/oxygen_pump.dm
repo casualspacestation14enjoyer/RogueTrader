@@ -6,6 +6,7 @@
 	icon = 'icons/obj/structures/walllocker.dmi'
 	desc = "A wall mounted oxygen pump with a retractable face mask that you can pull over your face in case of emergencies."
 	icon_state = "emerg"
+	color = COMMS_COLOR_SKRELL
 
 	anchored = TRUE
 

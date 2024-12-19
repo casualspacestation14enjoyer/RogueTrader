@@ -18,7 +18,7 @@
 	l_ear = /obj/item/device/radio/headset/headset_med
 	l_hand = /obj/item/gun/projectile/pistol/bolt_pistol/sob
 	gloves = /obj/item/clothing/gloves/prac_gloves
-	id_types = list(/obj/item/card/id/torch/crew/medical/senior)
+	id_types = list(/obj/item/card/id/torch/crew/medical/senior/hosp)
 	pda_type = /obj/item/modular_computer/pda/medical
 	back = /obj/item/storage/backpack/satchel/leather
 	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/ammo_magazine/bolt_pistol_magazine = 1, /obj/item/reagent_containers/hypospray/vial = 1, /obj/item/defibrillator/compact/combat/loaded = 1)
@@ -54,7 +54,7 @@
 	l_ear = /obj/item/device/radio/headset/headset_med
 	l_hand = /obj/item/storage/firstaid/regular
 	gloves = /obj/item/clothing/gloves/prac_gloves
-	id_types = list(/obj/item/card/id/torch/crew/medical/senior)
+	id_types = list(/obj/item/card/id/torch/crew/medical)
 	pda_type = /obj/item/modular_computer/pda/medical
 	back = /obj/item/storage/backpack/satchel/leather
 	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/reagent_containers/hypospray/vial = 1, /obj/item/reagent_containers/hypospray/autoinjector/combatstim = 1, /obj/item/reagent_containers/hypospray/autoinjector/coagulant = 1)

@@ -9,8 +9,6 @@
 	offline_vision_restriction = 0
 	hides_uniform = 0
 
-	req_access = list(access_lawyer)
-
 	glove_type = null
 	helm_type = null
 	boot_type = null
@@ -256,7 +254,6 @@
 	boot_type = /obj/item/clothing/shoes/magboots/rig/hazmat
 	glove_type = /obj/item/clothing/gloves/rig/hazmat
 
-	req_access = list(access_tox)
 
 /obj/item/clothing/head/helmet/space/rig/hazmat
 	light_overlay = "helmet_light_dual"
@@ -323,7 +320,7 @@
 	boot_type = /obj/item/clothing/shoes/magboots/rig/medical
 	glove_type = /obj/item/clothing/gloves/rig/medical
 
-	req_access = list(access_medical_equip)
+	req_access = list(access_medical_command)
 
 /obj/item/clothing/head/helmet/space/rig/medical
 	light_overlay = "helmet_light_wide"

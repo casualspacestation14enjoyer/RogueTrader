@@ -537,7 +537,7 @@
 	response_harm = "hits"
 	speed = 5 // Slower but deadilier
 	stop_automated_movement_when_pulled = 0
-	maxHealth = 550
+	maxhealth = 550
 	health = 550
 	harm_intent_damage = 45
 	melee_damage_lower = 55

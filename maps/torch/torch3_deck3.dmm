@@ -1641,7 +1641,7 @@
 /obj/machinery/alarm{
 	dir = 8;
 	pixel_x = 25;
-	req_access = list(list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS"))
+	req_access = list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS")
 	},
 /obj/floor_decal/industrial/warning{
 	dir = 8;
@@ -11840,7 +11840,7 @@
 /obj/machinery/button/blast_door{
 	id_tag = "shop_shutters";
 	name = "Counter Shutters";
-	req_access = list(list("ACCESS_HEADS","ACCESS_TORCH_SHOP"))
+	req_access = list("ACCESS_HEADS","ACCESS_TORCH_SHOP")
 	},
 /obj/machinery/light{
 	dir = 4
@@ -12525,6 +12525,10 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo)
+"EW" = (
+/obj/structure/sign/warning/fall,
+/turf/simulated/wall/prepainted,
+/area/maintenance/thirddeck/port)
 "Fa" = (
 /obj/structure/catwalk,
 /obj/structure/cable{
@@ -12599,7 +12603,7 @@
 /obj/machinery/alarm{
 	dir = 8;
 	pixel_x = 25;
-	req_access = list(list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS"))
+	req_access = list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS")
 	},
 /obj/structure/bed/chair/wood/maple{
 	dir = 1
@@ -13527,7 +13531,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/door/airlock/highsecurity{
-	icon_state = "closed";
+	icon_state = "door_closed";
 	name = "Fire Control"
 	},
 /turf/simulated/floor/tiled/steel_ridged,
@@ -13541,7 +13545,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/door/airlock/highsecurity{
-	icon_state = "closed";
+	icon_state = "door_closed";
 	name = "Fire Control"
 	},
 /turf/simulated/floor/tiled/steel_ridged,
@@ -13610,7 +13614,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/door/airlock/highsecurity{
-	icon_state = "closed";
+	icon_state = "door_closed";
 	name = "Fire Control"
 	},
 /turf/simulated/floor/tiled/steel_ridged,
@@ -15081,6 +15085,10 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d3port)
+"Ld" = (
+/obj/structure/sign/warning/fall,
+/turf/simulated/wall/r_wall/hull,
+/area/maintenance/thirddeck/aftport)
 "Le" = (
 /obj/machinery/atmospherics/unary/vent_pump/siphon/on/atmos{
 	dir = 4;
@@ -39509,7 +39517,7 @@ hL
 hL
 UZ
 Vf
-Ez
+EW
 Ez
 DD
 KW
@@ -46982,7 +46990,7 @@ jZ
 jZ
 jZ
 jZ
-jZ
+Ld
 jZ
 jZ
 jZ

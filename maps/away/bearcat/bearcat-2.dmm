@@ -49,7 +49,7 @@
 /area/ship/scrap/command/bridge)
 "ah" = (
 /obj/machinery/computer/ship/helm{
-	req_access = list(list("access_demeter"))
+	req_access = list("access_demeter")
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/bluegrid,

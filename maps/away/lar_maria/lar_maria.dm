@@ -57,7 +57,7 @@
 	icon_state = "test_subject"
 	icon_living = "test_subject"
 	icon_dead = "test_subject_dead"
-	maxHealth = 40
+	maxhealth = 40
 	health = 40
 	harm_intent_damage = 5
 	corpse = /obj/landmark/corpse/lar_maria/test_subject
@@ -92,7 +92,7 @@
 	name = "\improper security"
 	desc = "Guard dressed at Zeng-Hu Pharmaceuticals uniform."
 	icon_state = "guard_light"
-	maxHealth = 60
+	maxhealth = 60
 	health = 60
 	harm_intent_damage = 5
 	natural_weapon = /obj/item/melee/baton
@@ -126,7 +126,7 @@
 	name = "\improper virologist"
 	desc = "Virologist dressed at Zeng-Hu Pharmaceuticals uniform."
 	icon_state = "virologist_m"
-	maxHealth = 50
+	maxhealth = 50
 	health = 50
 	harm_intent_damage = 5
 	corpse = /obj/landmark/corpse/lar_maria/virologist

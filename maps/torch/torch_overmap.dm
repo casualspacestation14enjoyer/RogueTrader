@@ -85,7 +85,7 @@
 	name = "Charon"
 	desc = "An SSE-U11 long range shuttle, broadcasting ImperialEC codes and the callsign \"Dauntless-2 Charon\"."
 	shuttle = "Charon"
-	max_speed = 1/(1 SECOND)
+	max_speed = 1/(1 SECONDS)
 	burn_delay = 0.5 SECONDS
 	vessel_mass = 2000
 	fore_dir = NORTH
@@ -131,14 +131,14 @@
 /obj/machinery/computer/shuttle_control/explore/aquila
 	name = "aquila control console"
 	shuttle_tag = "Aquila"
-	req_access = list(access_aquila_helm)
+	req_access = list(access_restricted)
 
 /obj/machinery/computer/shuttle_control/explore/exploration_shuttle
 	name = "shuttle control console"
 	shuttle_tag = "Charon"
-	req_access = list(access_expedition_shuttle_helm)
+	req_access = list(access_dauntless)
 
 /obj/machinery/computer/shuttle_control/explore/guppy
 	name = "guppy control console"
 	shuttle_tag = "Guppy"
-	req_access = list(access_guppy_helm)
+	req_access = null

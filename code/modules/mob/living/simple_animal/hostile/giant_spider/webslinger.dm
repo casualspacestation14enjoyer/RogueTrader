@@ -5,7 +5,7 @@
 	icon_state = "webslinger"
 	icon_living = "webslinger"
 	icon_dead = "webslinger_dead"
-	maxHealth = 50
+	maxhealth = 50
 	health = 50
 
 	projectile_dispersion = 1

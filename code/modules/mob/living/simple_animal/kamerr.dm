@@ -9,7 +9,7 @@
 	icon_state = "kamerr"
 	icon_living = "kamerr"
 	icon_dead = "kamerrdead"
-	maxHealth = 100
+	maxhealth = 100
 	health = 100
 	ai_holder = /datum/ai_holder/simple_animal/melee
 	natural_weapon = /obj/item/natural_weapon/claws/strong

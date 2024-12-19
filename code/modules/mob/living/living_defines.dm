@@ -6,7 +6,7 @@
 	var/can_be_buckled = TRUE
 
 	//Health and life related vars
-	var/maxHealth = 100 //Maximum health that should be possible.
+	var/maxhealth = 100 //Maximum health that should be possible.
 	var/health = 100 	//A mob's health
 
 	var/mob_class =  null	// A mob's "class", e.g. human, mechanical, animal, etc. Used for certain projectile effects. See __defines/mob.dm for available classes.

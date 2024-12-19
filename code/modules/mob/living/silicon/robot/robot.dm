@@ -5,7 +5,7 @@
 	real_name = "Cyborg"
 	icon = 'icons/mob/robots.dmi'
 	icon_state = "robot"
-	maxHealth = 300
+	maxhealth = 300
 	health = 300
 
 	mob_bump_flag = ROBOT

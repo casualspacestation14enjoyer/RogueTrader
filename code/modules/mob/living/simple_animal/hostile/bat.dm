@@ -9,7 +9,7 @@
 
 	faction = "scarybat"
 
-	maxHealth = 20
+	maxhealth = 20
 	health = 20
 
 	attacktext = list("bitten")
@@ -47,5 +47,5 @@
 	return
 
 /mob/living/simple_animal/hostile/scarybat/cult/strong
-	maxHealth = 60
+	maxhealth = 60
 	health = 60

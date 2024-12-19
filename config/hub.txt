@@ -20,5 +20,5 @@
 # A more fully populated example is provided below.
 # Note that the final entry will be truncated to 255 bytes long by BYOND.
 
-<a href="$DISCORD"><b>Rogue Trader | The Ghoul Stars | Warhammer 40,000</b></a>] 
+<a href="$DISCORD"><b>Rogue Trader - The Ghoul Stars | Warhammer 40,000</b></a>] 
 by <b>$HOST</b> [<a href="$WIKI">Wiki</a>] [<a href="$DISCORD">Discord</a>]

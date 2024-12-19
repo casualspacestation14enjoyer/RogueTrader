@@ -26,10 +26,8 @@
 						SKILL_COMBAT = SKILL_LEGEND)
 
 	access = list(
-		access_medical_command, access_chapel_office,
-		access_crematorium, access_solgov_crew,
-		access_radio_serv
-	)
+		access_dauntless, access_restricted, access_medical,
+		access_medical_command, access_bridge)
 
 /datum/job/chaplain_militant/get_description_blurb()
 	return "The Chaplain Militant, spiritual guide and zealous warrior, leads prayers, upholds the Emperor’s light, and strikes down heresy to keep faith alive amid the void’s perils."
@@ -74,10 +72,7 @@
 						SKILL_GUNS = SKILL_MASTER,
 						SKILL_COMBAT = SKILL_MASTER)
 	access = list(
-		access_maint_tunnels, access_magos,
-		access_janitor, access_solgov_crew,
-		access_radio_serv
-	)
+		access_dauntless, access_restricted, access_medical)
 
 
 /datum/job/chamber_magister
@@ -107,13 +102,8 @@
 						SKILL_GUNS = SKILL_MASTER,
 						SKILL_COMBAT = SKILL_MASTER)
 	access = list(
-		access_commissary,
-		access_hydroponics,
-		access_kitchen,
-		access_radio_serv,
-		access_solgov_crew,
-		access_o_mess
-	)
+		access_dauntless, access_restricted, access_mechanicus, access_medical,
+		access_medical_command, access_bridge)
 
 /datum/job/chamber_magister/get_description_blurb()
 	return "The Chamber Magister, steward of ceremonies aboard the Dauntless, ensures every gathering and banquet reflects the Rogue Trader's grandeur, balancing diplomacy with impeccable decorum. They also are responsible for managing the ships food stores, agricultural production and training the Chamber Assistants."
@@ -162,11 +152,8 @@
 						SKILL_COMBAT = SKILL_MASTER)
 
 	access = list(
-		access_maint_tunnels, access_bridge, access_magos, access_tech_storage,  access_cargo, access_guppy_helm,
-		access_cargo_bot, access_qm, access_mailsorting, access_solgov_crew, access_expedition_shuttle, access_guppy, access_hangar,
-		access_mining, access_mining_office, access_mining_station, access_commissary, access_teleporter, access_eva, access_torch_fax,
-		access_radio_sup, access_radio_exp, access_radio_comm
-	)
+		access_dauntless, access_restricted, access_restricted_command, access_mechanicus, access_medical,
+		access_medical_command, access_bridge)
 
 	software_on_spawn = list(/datum/computer_file/program/supply,
 							 /datum/computer_file/program/deck_management,
@@ -203,10 +190,7 @@
 						SKILL_PILOT = SKILL_MASTER)
 
 	access = list(
-		access_mining, access_mining_office, access_mining_station,
-		access_expedition_shuttle, access_guppy, access_hangar,
-		access_guppy_helm, access_solgov_crew, access_eva, access_radio_sup
-	)
+		access_dauntless, access_mechanicus)
 
 /datum/job/unexpected_guest/get_description_blurb()
 	return "An Unexpected Guest, you’re an outsider here on the Dauntless. Whether a stowaway or here on legitamete business, you’re here with your own purpose unknown to the rest of the crew."
@@ -254,9 +238,7 @@
 	)
 
 	access = list(
-		access_maint_tunnels, access_magos,
-		access_solgov_crew, access_radio_serv
-	)
+		access_dauntless, access_mechanicus)
 
 	skill_points = 18
 	min_skill = list(

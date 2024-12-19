@@ -54,13 +54,8 @@
 						SKILL_CHEMISTRY = SKILL_MASTER)
 
 	access = list(
-		access_mechanicus, access_mechanicus_command, access_maint_tunnels, access_external_airlocks, access_magos,
-		access_ai_upload, access_teleporter, access_eva, access_bridge, access_heads,
-		access_tech_storage, access_robotics, access_atmospherics, access_janitor, access_construction,
-		access_network, access_network_admin, access_ce, access_RC_announce, access_keycard_auth, access_tcomsat,
-		access_solgov_crew, access_aquila, access_seneng, access_hangar, access_torch_fax, access_torch_helm, access_radio_comm,
-		access_radio_eng
-		)
+		access_dauntless, access_restricted, access_restricted_command, access_mechanicus, access_mechanicus_command, access_medical,
+		access_medical_command, access_magos, access_bridge)
 
 	software_on_spawn = list(/datum/computer_file/program/comm,
 							 /datum/computer_file/program/ntnetmonitor,
@@ -163,10 +158,8 @@
 						SKILL_CHEMISTRY = SKILL_MASTER)
 
 	access = list(
-		access_mechanicus, access_mechanicus_command, access_maint_tunnels, access_external_airlocks, access_magos,
-		access_teleporter, access_eva, access_tech_storage, access_atmospherics, access_janitor, access_construction,
-		access_tcomsat, access_solgov_crew, access_seneng, access_hangar, access_network, access_network_admin, access_radio_eng
-	)
+		access_dauntless, access_restricted, access_restricted_command, access_mechanicus, access_mechanicus_command, access_medical,
+		access_medical_command, access_bridge)
 
 	software_on_spawn = list(/datum/computer_file/program/power_monitor,
 							 /datum/computer_file/program/supermatter_monitor,
@@ -256,10 +249,8 @@
 						SKILL_PILOT = SKILL_MASTER)
 
 	access = list(
-		access_mechanicus, access_mechanicus_command, access_maint_tunnels, access_external_airlocks, access_magos,
-		access_teleporter, access_eva, access_tech_storage, access_atmospherics, access_janitor, access_construction,
-		access_solgov_crew, access_hangar, access_network, access_radio_eng
-	)
+		access_dauntless, access_restricted, access_restricted_command, access_mechanicus, access_mechanicus_command, access_medical,
+		access_medical_command)
 
 	software_on_spawn = list(/datum/computer_file/program/power_monitor,
 							 /datum/computer_file/program/supermatter_monitor,
@@ -336,10 +327,7 @@
 						SKILL_VIGOR = SKILL_MASTER)
 
 	access = list(
-		access_mechanicus_command, access_maint_tunnels, access_external_airlocks, access_magos,
-		access_eva, access_tech_storage, access_janitor, access_construction,
-		access_solgov_crew, access_hangar, access_radio_eng
-	)
+		access_dauntless, access_restricted, access_mechanicus, access_medical)
 
 	software_on_spawn = list(/datum/computer_file/program/power_monitor,
 							 /datum/computer_file/program/alarm_monitor,

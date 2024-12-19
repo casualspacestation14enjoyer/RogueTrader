@@ -4,7 +4,7 @@
 	icon_state = "dron"
 	icon_dead = "dron_dead"
 	health = 50
-	maxHealth = 50
+	maxhealth = 50
 	natural_weapon = /obj/item/natural_weapon/drone_slicer
 	speak_emote = list("blares","buzzes","beeps")
 	faction = "silicon"
@@ -99,7 +99,7 @@ Say List
 	icon_state = "constructiondrone"
 	icon_dead = "dron_dead"
 	health = 80
-	maxHealth = 80
+	maxhealth = 80
 	natural_weapon = /obj/item/natural_weapon/drone_slicer/construction
 	var/image/eye_layer
 

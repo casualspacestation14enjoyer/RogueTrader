@@ -151,7 +151,7 @@
 				process_med_hud(src, FALSE)
 	if (healths)
 		if (stat != DEAD)
-			var/health_fraction = health / maxHealth
+			var/health_fraction = health / maxhealth
 			if (health_fraction < 0 && !istype(src, /mob/living/silicon/robot/drone))
 				health_fraction = health / -config.health_threshold_dead
 			switch (health_fraction)

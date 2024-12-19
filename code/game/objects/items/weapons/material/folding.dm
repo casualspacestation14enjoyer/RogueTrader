@@ -53,7 +53,7 @@
 		hitsound = 'sound/weapons/bladeslice.ogg'
 		w_class = ITEM_SIZE_NORMAL
 		attack_verb = list("slashed", "stabbed")
-		attack_cooldown_modifier = -0.5
+		attack_cooldown_modifier = 0.5
 		base_parry_chance = 15
 		..()
 	else

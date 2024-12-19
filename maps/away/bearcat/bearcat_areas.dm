@@ -166,7 +166,7 @@
 /area/ship/scrap/command/captain
 	name = "Captain's Quarters"
 	icon_state = "captain"
-	req_access = list(access_demeter_captain)
+	req_access = list(access_demeter)
 
 /area/ship/scrap/comms
 	name = "Communications Relay"

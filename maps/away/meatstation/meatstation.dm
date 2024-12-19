@@ -84,7 +84,7 @@
 	icon_dead = "meatworm_dead"
 	turns_per_move = 3
 	speed = -2
-	maxHealth = 20
+	maxhealth = 20
 	health = 20
 	natural_weapon = /obj/item/natural_weapon/bite/weak
 	mob_size = MOB_SMALL
@@ -100,7 +100,7 @@
 	icon_living = "meatball"
 	icon_dead = "meatball_dead"
 	speed = 2
-	maxHealth = 50
+	maxhealth = 50
 	health = 50
 	natural_weapon = /obj/item/natural_weapon/meatball
 	meat_amount = 2
@@ -119,7 +119,7 @@
 	icon_living = "wormscientist"
 	icon_dead = "wormscientist_dead"
 	speed = 7
-	maxHealth = 90
+	maxhealth = 90
 	health = 90
 	natural_weapon = /obj/item/natural_weapon/wormscience
 	meat_amount = 3
@@ -137,7 +137,7 @@
 	icon_living = "wormguard"
 	icon_dead = "wormguard_dead"
 	speed = 7
-	maxHealth = 60
+	maxhealth = 60
 	health = 60
 	natural_weapon = /obj/item/natural_weapon/wormguard
 	meat_amount = 3
@@ -158,7 +158,7 @@
 	icon_dead = "meatmound_dead"
 	flash_vulnerability = 1
 	speed = 10
-	maxHealth = 160
+	maxhealth = 160
 	health = 160
 	natural_weapon = /obj/item/natural_weapon/meatmound
 	meat_amount = 4

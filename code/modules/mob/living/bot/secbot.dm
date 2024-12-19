@@ -9,10 +9,10 @@
 	icon_state = "secbot0"
 	var/attack_state = "secbot-c"
 	layer = MOB_LAYER
-	maxHealth = 50
+	maxhealth = 50
 	health = 50
-	req_access = list(list(access_restricted, access_forensics_lockers))
-	botcard_access = list(access_restricted, access_sec_doors, access_forensics_lockers, access_medical_command, access_maint_tunnels)
+	req_access = list(access_restricted_command)
+	botcard_access = list(access_restricted, access_dauntless, access_restricted_command, access_mechanicus, access_bridge)
 
 	patrol_speed = 2
 	target_speed = 3

@@ -1,6 +1,5 @@
 /obj/structure/closet/secure_closet/hydroponics
 	name = "botanist's locker"
-	req_access = list(access_hydroponics)
 	closet_appearance = /singleton/closet_appearance/secure_closet/hydroponics
 
 /obj/structure/closet/secure_closet/hydroponics/WillContain()

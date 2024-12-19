@@ -58,7 +58,5 @@
 	new /obj/item/taperoll/research(src)
 
 /obj/machinery/alarm/isolation
-	req_access = list(list(access_research, access_atmospherics, access_mechanicus_command))
 
 /obj/machinery/alarm/monitor/isolation
-	req_access = list(list(access_research, access_atmospherics, access_mechanicus_command))

@@ -14,7 +14,7 @@
 	meat_type = /obj/item/reagent_containers/food/snacks/meat/roachmeat
 	meat_amount = 3
 	speed = 4
-	maxHealth = 50
+	maxhealth = 50
 	health = 50
 
 	mob_size = MOB_SMALL
@@ -50,7 +50,7 @@
 	icon_dead = "panzer_dead"
 	meat_amount = 4
 	turns_per_move = 2
-	maxHealth = 100
+	maxhealth = 100
 	health = 100
 
 	mob_size = MOB_MEDIUM
@@ -75,7 +75,7 @@
 	icon_dead = "fuhrer_dead"
 	meat_amount = 5
 	turns_per_move = 4
-	maxHealth = 60
+	maxhealth = 60
 	health = 60
 
 	melee_damage_lower = 3
@@ -89,7 +89,7 @@
 	icon_dead = "seuche_dead"
 	meat_amount = 3
 	turns_per_move = 4
-	maxHealth = 20
+	maxhealth = 20
 	health = 20
 
 	melee_damage_upper = 3
@@ -132,7 +132,7 @@
 	icon_living = "firefly_roach"
 	icon_dead = "firefly_dead"
 	health = 250
-	maxHealth = 250
+	maxhealth = 250
 	melee_damage_lower = 2
 	melee_damage_upper = 3
 	attacktext = "clawed"
@@ -150,5 +150,5 @@
 	icon_dead = "roach_dead"
 	faction = "neutral"
 	health = 50
-	maxHealth = 50
+	maxhealth = 50
 	*/

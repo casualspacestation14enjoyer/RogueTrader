@@ -21,7 +21,7 @@
 	var/force_multiplier = 0.2	// multiplier to material's generic damage value for this specific type of weapon
 	var/thrown_force_multiplier = 0.2
 
-	var/attack_cooldown_modifier = 0
+	var/attack_cooldown_modifier = 0.5
 	var/unbreakable
 	var/drops_debris = 1
 	var/worth_multiplier = 1

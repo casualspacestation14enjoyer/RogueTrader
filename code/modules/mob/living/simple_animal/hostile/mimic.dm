@@ -26,7 +26,7 @@ GLOBAL_LIST_INIT(mimic_protected, list(
 	response_disarm = "pushes"
 	response_harm = "hits"
 	speed = 4
-	maxHealth = 100
+	maxhealth = 100
 	health = 100
 
 	harm_intent_damage = 5
@@ -91,7 +91,7 @@ GLOBAL_LIST_INIT(mimic_protected, list(
 			W.force = 2 + initial(I.force)
 			move_to_delay = 2 * I.w_class
 
-		maxHealth = health
+		maxhealth = health
 		if(creator)
 			src.creator = weakref(creator)
 			faction = "\ref[creator]" // very unique

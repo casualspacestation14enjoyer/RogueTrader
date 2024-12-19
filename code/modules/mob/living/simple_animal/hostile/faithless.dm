@@ -9,7 +9,7 @@
 
 	mob_class = MOB_CLASS_DEMONIC
 
-	maxHealth = 50
+	maxhealth = 50
 	health = 50
 
 	response_help = "passes through"
@@ -46,7 +46,7 @@
 
 // Strong Variant
 /mob/living/simple_animal/hostile/faithless/strong
-	maxHealth = 100
+	maxhealth = 100
 	health = 100
 
 // Cult Variant
@@ -59,5 +59,5 @@
 
 // Strong Cult Variant
 /mob/living/simple_animal/hostile/faithless/cult/strong
-	maxHealth = 100
+	maxhealth = 100
 	health = 100

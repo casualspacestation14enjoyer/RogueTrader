@@ -10,7 +10,7 @@
 	force = 25
 	force_multiplier = 0.29
 	unwielded_force_divisor = 0.27
-	attack_cooldown_modifier = 0.1
+	attack_cooldown_modifier = 1
 	base_parry_chance = 30
 	applies_material_colour = FALSE
 

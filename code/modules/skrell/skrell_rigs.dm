@@ -199,6 +199,8 @@
 	desc = "A limited-sentience integrated multitool capable of interfacing with any number of systems."
 	interface_name = "integrated multitool"
 	interface_desc = "A limited-sentience integrated multitool capable of interfacing with any number of systems."
+	icon = 'icons/obj/tools/welder.dmi'
+	icon_state = "welder_arc"
 	device = /obj/item/device/multitool/skrell
 	usable = FALSE
 	selectable = TRUE
