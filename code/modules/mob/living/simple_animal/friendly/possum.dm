@@ -11,7 +11,7 @@
 	pass_flags = PASS_FLAG_TABLE
 	turns_per_move = 3
 	see_in_dark = 6
-	maxHealth = 50
+	maxhealth = 50
 	health = 50
 	response_help = "pets"
 	response_disarm = "gently pushes aside"

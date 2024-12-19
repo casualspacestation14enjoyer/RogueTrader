@@ -1,6 +1,5 @@
 /obj/structure/closet/secure_closet/scientist
 	name = "scientist's locker"
-	req_access = list(list(access_tox,access_tox_storage))
 	closet_appearance = /singleton/closet_appearance/secure_closet/expedition/science
 
 /obj/structure/closet/secure_closet/scientist/WillContain()
@@ -34,7 +33,7 @@
 
 /obj/structure/closet/secure_closet/RD
 	name = "chief science officer's locker"
-	req_access = list(access_rd)
+	req_access = list(access_mechanicus)
 	closet_appearance = /singleton/closet_appearance/secure_closet/rd
 
 /obj/structure/closet/secure_closet/RD/WillContain()

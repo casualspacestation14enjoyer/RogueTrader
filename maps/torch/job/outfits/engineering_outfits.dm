@@ -42,7 +42,7 @@
 	l_ear = /obj/item/device/radio/headset/headset_mechanicus
 	l_hand = null
 	gloves = /obj/item/clothing/gloves/thick/swat/techpriest
-	id_types = list(/obj/item/card/id/torch/crew/engineering)
+	id_types = list(/obj/item/card/id/torch/crew/engineering/priest)
 	pda_type = /obj/item/modular_computer/pda/engineering
 	pda_slot = slot_l_store
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest

@@ -10,7 +10,7 @@
 	pass_flags = PASS_FLAG_TABLE
 	turns_per_move = 5
 	see_in_dark = 6
-	maxHealth = 5
+	maxhealth = 5
 	health = 5
 	response_help  = "pets"
 	response_disarm = "gently pushes aside"
@@ -109,15 +109,21 @@
 
 
 /mob/living/simple_animal/passive/mouse/brown/Tom
-	name = "Tom"
-	desc = "Jerry the cat is not amused."
+	name = "Little Kitten"
+	desc = "Captain General. King of card games."
+	maxhealth = 300
+	health = 300
+	blocky = 35
+	dodgey = 40
+	natural_weapon = /obj/item/natural_weapon/claws/strong
+	ai_holder = /datum/ai_holder/simple_animal/melee/champion
 
 /mob/living/simple_animal/passive/mouse/rat
 	name = "rat"
 	desc = "A large rodent, often seen in maintenance areas."
 	body_color = "rat"
 	icon_state = "mouse_rat"
-	maxHealth = 20
+	maxhealth = 20
 	health = 20
 
 	ai_holder = /datum/ai_holder/simple_animal/melee/evasive

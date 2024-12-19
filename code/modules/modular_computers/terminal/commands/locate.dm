@@ -7,7 +7,7 @@
 		"NOTICE: Requires network operator or admin access. Use by non-admins is logged."
 	)
 	pattern = "locate"
-	req_access = list(list(access_network, access_network_admin))
+	req_access = list(access_mechanicus_command)
 	skill_needed = SKILL_MASTER
 
 /datum/terminal_command/locate/proper_input_entered(text, mob/user, datum/terminal/terminal)

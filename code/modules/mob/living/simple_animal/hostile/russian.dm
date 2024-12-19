@@ -10,7 +10,7 @@
 	response_disarm = "shoves"
 	response_harm = "hits"
 	speed = 4
-	maxHealth = 100
+	maxhealth = 100
 	health = 100
 	harm_intent_damage = 5
 	can_escape = TRUE

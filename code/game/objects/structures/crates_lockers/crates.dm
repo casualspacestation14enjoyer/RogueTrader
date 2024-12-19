@@ -140,7 +140,7 @@
 
 /obj/structure/closet/crate/solar/WillContain()
 	return list(
-		/obj/item/solar_assembly = 14,
+		/obj/item/solar_assembly = 10,
 		/obj/item/stock_parts/circuitboard/solar_control,
 		/obj/item/tracker_electronics,
 		/obj/item/paper/solar
@@ -150,7 +150,7 @@
 	name = "solar assembly crate"
 
 /obj/structure/closet/crate/solar_assembly/WillContain()
-	return list(/obj/item/solar_assembly = 16)
+	return list(/obj/item/solar_assembly = 10)
 
 /obj/structure/closet/crate/bin
 	name = "large bin"
@@ -167,7 +167,7 @@
 	closet_appearance = /singleton/closet_appearance/crate/radiation
 
 /obj/structure/closet/crate/radiation_gear/WillContain()
-	return list(/obj/item/clothing/suit/radiation = 8)
+	return list(/obj/item/clothing/suit/radiation = 4)
 
 /obj/structure/closet/crate/secure/weapon
 	name = "weapons crate"
@@ -264,7 +264,7 @@
 	material = MATERIAL_PLASTIC
 
 /obj/structure/closet/crate/paper_refill/WillContain()
-	return list(/obj/item/paper = 30)
+	return list(/obj/item/paper = 20)
 
 /obj/structure/closet/crate/uranium
 	name = "fissibles crate"
@@ -272,7 +272,7 @@
 	closet_appearance = /singleton/closet_appearance/crate/radiation
 
 /obj/structure/closet/crate/uranium/WillContain()
-	return list(/obj/item/stack/material/uranium/ten = 5)
+	return list(/obj/item/stack/material/uranium/ten = 2)
 
 ///Base ninja equipment
 /obj/structure/closet/crate/ninja

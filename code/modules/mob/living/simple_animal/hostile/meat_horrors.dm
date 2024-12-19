@@ -11,7 +11,7 @@
 	response_help  = "pets"
 	response_disarm = "gently pushes aside"
 	response_harm   = "pokes"
-	maxHealth = 250
+	maxhealth = 250
 	health = 250
 	movement_cooldown = 7
 	natural_weapon = /obj/item/natural_weapon/meatbits
@@ -55,7 +55,7 @@
 	response_help  = "pets"
 	response_disarm = "gently pushes aside"
 	response_harm   = "pokes"
-	maxHealth = 250
+	maxhealth = 250
 	health = 250
 	movement_cooldown = 8
 	natural_weapon = /obj/item/natural_weapon/meatbits
@@ -89,7 +89,7 @@
 	response_help  = "pets"
 	response_disarm = "gently pushes aside"
 	response_harm   = "pokes"
-	maxHealth = 150
+	maxhealth = 150
 	health = 150
 	natural_weapon = /obj/item/natural_weapon/claws
 	heat_damage_per_tick = 100
@@ -122,7 +122,7 @@
 	response_help  = "pets"
 	response_disarm = "gently pushes aside"
 	response_harm   = "pokes"
-	maxHealth = 100
+	maxhealth = 100
 	health = 100
 	movement_cooldown = 5
 	natural_weapon = /obj/item/natural_weapon/claws/weak
@@ -158,7 +158,7 @@
 	response_help  = "pets"
 	response_disarm = "gently pushes aside"
 	response_harm   = "pokes"
-	maxHealth = 200
+	maxhealth = 200
 	health = 200
 	movement_cooldown = 5
 	natural_weapon = /obj/item/natural_weapon/claws
@@ -192,7 +192,7 @@
 	response_help  = "pets"
 	response_disarm = "gently pushes aside"
 	response_harm   = "pokes"
-	maxHealth = 150
+	maxhealth = 150
 	health = 150
 	movement_cooldown = 5
 	natural_weapon = /obj/item/natural_weapon/claws
@@ -226,7 +226,7 @@
 	response_help  = "pets"
 	response_disarm = "gently pushes aside"
 	response_harm   = "pokes"
-	maxHealth = 50
+	maxhealth = 50
 	health = 50
 	movement_cooldown = 2
 	natural_weapon = /obj/item/natural_weapon/claws

@@ -59,7 +59,7 @@
 
 /obj/structure/closet/secure_closet/cos
 	name = "chief of security's locker"
-	req_access = list(access_hos)
+	req_access = list(access_restricted_command)
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/security/hos
 
 /obj/structure/closet/secure_closet/cos/WillContain()
@@ -119,7 +119,6 @@
 
 /obj/structure/closet/secure_closet/forensics
 	name = "forensics technician's locker"
-	req_access = list(access_forensics_lockers)
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/security/forensics
 
 /obj/structure/closet/secure_closet/forensics/WillContain()

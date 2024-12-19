@@ -65,8 +65,8 @@
 
 /mob/living/simple_animal/construct/examine(mob/user)
 	. = ..()
-	if (health < maxHealth)
-		if (health >= maxHealth / 2)
+	if (health < maxhealth)
+		if (health >= maxhealth / 2)
 			to_chat(user, SPAN_WARNING("It looks slightly dented."))
 		else
 			to_chat(user, SPAN_WARNING(SPAN_BOLD("It looks severely dented!")))
@@ -89,7 +89,7 @@
 	icon = 'icons/mob/mob.dmi'
 	icon_state = "behemoth"
 	icon_living = "behemoth"
-	maxHealth = 250
+	maxhealth = 250
 	health = 250
 	speak_emote = list("rumbles")
 	response_harm   = "harmlessly punches"
@@ -152,7 +152,7 @@
 	icon_state = "floating"
 	icon_living = "floating"
 	icon_dead = "floating_dead"
-	maxHealth = 75
+	maxhealth = 75
 	health = 75
 	natural_weapon = /obj/item/natural_weapon/wraith
 	speed = -1
@@ -185,7 +185,7 @@
 	icon = 'icons/mob/mob.dmi'
 	icon_state = "artificer"
 	icon_living = "artificer"
-	maxHealth = 50
+	maxhealth = 50
 	health = 50
 	response_harm = "viciously beaten"
 	harm_intent_damage = 5
@@ -207,7 +207,7 @@
 /obj/item/natural_weapon/cult_builder/use_before(mob/living/M, mob/living/user)
 	. = FALSE
 	if (istype(M, /mob/living/simple_animal/construct))
-		if (M.health < M.maxHealth)
+		if (M.health < M.maxhealth)
 			M.adjustBruteLoss(-5)
 			user.visible_message(SPAN_NOTICE("\The [user] mends some of \the [M]'s wounds."))
 		else
@@ -224,7 +224,7 @@
 	icon = 'icons/mob/mob.dmi'
 	icon_state = "behemoth"
 	icon_living = "behemoth"
-	maxHealth = 750
+	maxhealth = 750
 	health = 750
 	speak_emote = list("rumbles")
 	response_harm   = "harmlessly punched"
@@ -254,7 +254,7 @@
 	icon_state = "harvester"
 	icon_living = "harvester"
 	icon_dead = "harvester_dead"
-	maxHealth = 150
+	maxhealth = 150
 	health = 150
 	natural_weapon = /obj/item/natural_weapon/harvester
 	speed = -1

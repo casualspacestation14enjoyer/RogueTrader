@@ -3,8 +3,8 @@
 	desc = "A little medical robot. He looks somewhat underwhelmed."
 	icon = 'icons/mob/robots_drones.dmi'
 	icon_state = "repairbot"
-	req_access = list(list(access_medical, access_robotics))
-	botcard_access = list(access_medical, access_medical_command, access_surgery, access_chemistry, access_virology)
+	req_access = list(access_medical_command, access_mechanicus)
+	botcard_access = list(access_medical, access_medical_command, access_dauntless, access_mechanicus, access_bridge)
 	var/skin = null //Set to "tox", "ointment" or "o2" for the other two firstaid kits.
 
 	//AI vars

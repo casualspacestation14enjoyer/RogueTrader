@@ -26,7 +26,7 @@
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/medical
 
 /obj/structure/closet/secure_closet/CMO_torch
-	name = "chief medical officer's locker"
+	name = "magos biologis locker"
 	req_access = list(access_medical_command)
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/medical/cmo
 
@@ -39,7 +39,6 @@
 		/obj/item/device/radio/headset/heads/cmo,
 		/obj/item/device/radio/headset/heads/cmo/alt,
 		/obj/item/device/flash,
-		/obj/item/device/megaphone,
 		/obj/item/reagent_containers/hypospray/vial,
 		/obj/item/storage/fancy/vials,
 		/obj/item/device/scanner/health,
@@ -49,7 +48,6 @@
 		/obj/item/clothing/suit/armor/grim/medium/command,
 		/obj/item/clothing/head/helmet/solgov/command,
 		/obj/item/device/holowarrant,
-		/obj/item/storage/firstaid/adv,
 		/obj/item/storage/box/armband/med,
 		/obj/item/material/knife/folding/swiss/officer,
 		/obj/item/storage/backpack/dufflebag/med,
@@ -57,8 +55,8 @@
 	)
 
 /obj/structure/closet/secure_closet/medical_torchsenior
-	name = "physician's locker"
-	req_access = list(access_senmed)
+	name = "physician's forbidden locker"
+	req_access = list(access_medical_command)
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/medical/physician
 
 /obj/structure/closet/secure_closet/medical_torchsenior/WillContain()
@@ -75,15 +73,14 @@
 		/obj/item/device/flashlight/pen,
 		/obj/item/clothing/glasses/hud/health,
 		/obj/item/device/megaphone,
-		/obj/item/storage/firstaid/adv,
 		/obj/item/material/knife/folding/swiss/medic,
 		/obj/item/storage/backpack/dufflebag/med,
 		RANDOM_SCRUBS = 2
 	)
 
 /obj/structure/closet/secure_closet/medical_torch
-	name = "medical technician's locker"
-	req_access = list(access_medical_equip)
+	name = "medicae locker"
+	req_access = list(access_medical_command)
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/medical
 
 /obj/structure/closet/secure_closet/medical_torch/WillContain()
@@ -99,7 +96,6 @@
 		/obj/item/storage/box/autoinjectors,
 		/obj/item/device/scanner/health,
 		/obj/item/clothing/glasses/hud/health,
-		/obj/item/storage/firstaid/adv,
 		/obj/item/clothing/suit/armor/grim/storage/medical_chest_rig,
 		/obj/item/clothing/head/hardhat/light/medic,
 		/obj/item/material/knife/folding/swiss/medic,
@@ -107,7 +103,7 @@
 	)
 
 /obj/structure/closet/wardrobe/medic_torch
-	name = "medical wardrobe"
+	name = "medicae wardrobe"
 	closet_appearance = /singleton/closet_appearance/wardrobe/white
 
 /obj/structure/closet/wardrobe/medic_torch/WillContain()

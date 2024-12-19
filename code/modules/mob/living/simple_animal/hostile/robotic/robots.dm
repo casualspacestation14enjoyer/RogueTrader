@@ -34,7 +34,7 @@
 	var/explosion_radius = 3
 	var/explosion_max_power = EX_ACT_HEAVY
 
-	maxHealth = 100
+	maxhealth = 100
 	health = 100
 
 /mob/living/simple_animal/hostile/hivebot/ranged_damage/fleet_robot/Process_Spacemove()
@@ -160,7 +160,7 @@
 	skin_material = null
 	skin_amount =   0
 
-	maxHealth = 150
+	maxhealth = 150
 	health = 150
 	can_escape = TRUE
 

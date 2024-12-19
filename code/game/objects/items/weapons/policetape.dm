@@ -90,7 +90,6 @@ var/global/list/tape_roll_applications = list()
 /obj/item/tape/engineering
 	name = "engineering tape"
 	desc = "A length of engineering tape. Better not cross it."
-	req_access = list(list(access_mechanicus,access_atmospherics))
 	color = COLOR_ORANGE
 
 /obj/item/taperoll/atmos
@@ -102,7 +101,6 @@ var/global/list/tape_roll_applications = list()
 /obj/item/tape/atmos
 	name = "atmospherics tape"
 	desc = "A length of atmospherics tape. Better not cross it."
-	req_access = list(list(access_mechanicus,access_atmospherics))
 	color = COLOR_BLUE_LIGHT
 	icon_base = "stripetape"
 	detail_overlay = "stripes"
@@ -117,7 +115,6 @@ var/global/list/tape_roll_applications = list()
 /obj/item/tape/research
 	name = "research tape"
 	desc = "A length of research tape. Better not cross it."
-	req_access = list(access_mechanicus)
 	color = COLOR_RESEARCH
 
 /obj/item/taperoll/medical
@@ -129,7 +126,6 @@ var/global/list/tape_roll_applications = list()
 /obj/item/tape/medical
 	name = "medical tape"
 	desc = "A length of medical tape. Better not cross it."
-	req_access = list(access_medical)
 	icon_base = "stripetape"
 	detail_overlay = "stripes"
 	detail_color = COLOR_PALE_BLUE_GRAY

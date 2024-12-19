@@ -37,7 +37,7 @@
 	l_hand = /obj/item/gun/projectile/pistol/slug
 	r_hand = /obj/item/material/twohanded/ravenor/sword/chopper/heavy
 	gloves = /obj/item/clothing/gloves/thick/swat/cadian
-	id_types = list(/obj/item/card/id/torch/crew/security)
+	id_types = list(/obj/item/card/id/torch/crew/security/forensic)
 	pda_type = /obj/item/modular_computer/pda/security
 	back = /obj/item/storage/backpack/satchel/warfare
 	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/material/twohanded/ravenor/knife = 1, /obj/item/ammo_magazine/magnum/ms = 2, /obj/item/device/flashlight/flare = 1)

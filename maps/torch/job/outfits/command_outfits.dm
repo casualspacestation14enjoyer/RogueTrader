@@ -42,7 +42,7 @@
 	l_ear = /obj/item/device/radio/headset/headset_com
 	head = null
 	shoes = /obj/item/clothing/shoes/jackboots/noble
-	id_types = list(/obj/item/card/id/torch/silver)
+	id_types = list(/obj/item/card/id/torch/silver/bridge)
 	pda_type = /obj/item/modular_computer/pda/heads
 	back = /obj/item/storage/backpack/satchel/warfare/heavy
 	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/material/twohanded/ravenor/knife/trench = 1, /obj/item/gun/energy/lasgun/laspistol/militarum = 1, /obj/item/cell/device/high/mechanicus = 1)
@@ -56,7 +56,7 @@
 	r_hand = /obj/item/material/twohanded/ravenor/axe/spear/adamantine
 	head = null
 	shoes = null
-	id_types = list(/obj/item/card/id/torch/silver)
+	id_types = list(/obj/item/card/id/torch/silver/kroot)
 	pda_type = /obj/item/modular_computer/pda/heads
 	back = /obj/item/storage/backpack/satchel/explorer
 	l_pocket = /obj/item/device/flashlight/maglight

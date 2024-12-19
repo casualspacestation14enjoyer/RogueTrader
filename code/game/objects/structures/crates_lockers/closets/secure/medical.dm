@@ -16,7 +16,7 @@
 	name = "medical equipment closet"
 	desc = "Filled with medical junk."
 	closet_appearance = /singleton/closet_appearance/secure_closet/medical
-	req_access = list(access_medical_equip)
+	req_access = list(access_medical_command)
 
 /obj/structure/closet/secure_closet/medical1/WillContain()
 	return list(
@@ -26,7 +26,6 @@
 		/obj/item/reagent_containers/glass/beaker = 2,
 		/obj/item/reagent_containers/glass/bottle/inaprovaline = 2,
 		/obj/item/reagent_containers/glass/bottle/antitoxin = 2,
-		/obj/random/firstaid,
 		/obj/item/storage/box/masks,
 		/obj/item/storage/box/latexgloves
 	)
@@ -43,14 +42,13 @@
 	)
 
 /obj/structure/closet/secure_closet/medical3
-	name = "medical doctor's locker"
-	req_access = list(access_medical_equip)
+	name = "medicae locker"
+	req_access = list(access_medical_command)
 	closet_appearance = /singleton/closet_appearance/secure_closet/medical/alt
 
 /obj/structure/closet/secure_closet/medical3/WillContain()
 	return list(
 		new/datum/atom_creator/weighted(list(/obj/item/storage/backpack/medic, /obj/item/storage/backpack/satchel/med)),
-		new/datum/atom_creator/simple(/obj/item/storage/backpack/dufflebag/med, 50),
 		/obj/item/clothing/under/rank/nursesuit,
 		/obj/item/clothing/head/nursehat,
 		/obj/item/clothing/under/rank/medical,
@@ -67,10 +65,10 @@
 	)
 
 /obj/structure/closet/secure_closet/paramedic
-	name = "paramedic locker"
+	name = "medicae locker"
 	desc = "Supplies for a first responder."
 	closet_appearance = /singleton/closet_appearance/secure_closet/medical
-	req_access = list(access_medical_equip)
+	req_access = list(access_medical_command)
 
 /obj/structure/closet/secure_closet/paramedic/WillContain()
 	return list(
@@ -96,7 +94,7 @@
 	)
 
 /obj/structure/closet/secure_closet/CMO
-	name = "chief medical officer's locker"
+	name = "biologis locker"
 	req_access = list(access_medical_command)
 	closet_appearance = /singleton/closet_appearance/secure_closet/cmo
 
@@ -106,14 +104,11 @@
 		new/datum/atom_creator/simple(/obj/item/storage/backpack/dufflebag/med, 50),
 		/obj/item/clothing/suit/armor/grim/bio_suit/cmo,
 		/obj/item/clothing/head/bio_hood/cmo,
-		/obj/item/clothing/shoes/white,
-		/obj/item/clothing/under/rank/chief_medical_officer,
 		/obj/item/clothing/suit/armor/grim/toggle/labcoat/cmo,
 		/obj/item/clothing/suit/armor/grim/toggle/labcoat/cmoalt,
 		/obj/item/clothing/gloves/latex,
 		/obj/item/clothing/shoes/brown,
 		/obj/item/device/radio/headset/heads/cmo,
-		/obj/item/device/flash,
 		/obj/item/reagent_containers/hypospray/vial,
 		RANDOM_SCRUBS
 	)
@@ -128,7 +123,7 @@
 	return list(
 		/obj/item/storage/box/pillbottles = 2,
 		/obj/item/reagent_containers/glass/beaker/cryoxadone,
-		/obj/random/medical = 12
+		/obj/random/medical = 2
 	)
 
 /obj/structure/closet/secure_closet/medical_wall
@@ -139,7 +134,7 @@
 	density = FALSE
 	wall_mounted = TRUE
 	storage_types = CLOSET_STORAGE_ITEMS
-	req_access = list(access_medical_equip)
+	req_access = list(access_medical_command)
 
 /obj/structure/closet/secure_closet/counselor
 	name = "counselor's locker"
@@ -157,7 +152,7 @@
 		/obj/item/material/clipboard,
 		/obj/item/folder/white,
 		/obj/item/device/taperecorder,
-		/obj/item/device/tape/random = 3,
+		/obj/item/device/tape/random = 2,
 		/obj/item/device/camera,
 		/obj/item/toy/therapy_blue,
 		/obj/item/storage/belt/general
@@ -171,7 +166,6 @@
 
 /obj/structure/closet/secure_closet/virology/WillContain()
 	return list(
-		/obj/item/storage/box/autoinjectors,
 		/obj/item/storage/box/syringes,
 		/obj/item/reagent_containers/dropper = 2,
 		/obj/item/reagent_containers/glass/beaker = 2,

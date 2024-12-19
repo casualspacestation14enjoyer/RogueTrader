@@ -152,7 +152,6 @@
 	area_flags = AREA_FLAG_IS_NOT_PERSISTENT
 	sound_env = STANDARD_STATION
 	base_turf = /turf/simulated/floor/asteroid
-	req_access = list(list(access_mining, access_xenoarch))
 
 /area/outpost/mining/hangar
 	name = "Mining Outpost Hangar"

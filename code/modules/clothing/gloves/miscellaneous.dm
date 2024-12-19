@@ -65,6 +65,7 @@
 	desc = "These tactical gloves are somewhat fire and impact-resistant."
 	name = "\improper SWAT Gloves"
 	item_state = "swat_gl"
+	siemens_coefficient = 0
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+300
 	armor = list(
 		melee = ARMOR_MELEE_FLAK-2,

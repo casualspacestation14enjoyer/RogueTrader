@@ -1528,7 +1528,7 @@
 		src.visible_message(SPAN_WARNING("[src] transforms, the dummy body's features twisting and cracking as it imitates the provided blood!"))
 		H.dropInto(src.loc)
 		H.setBrainLoss(200)
-		H.adjustOxyLoss(H.maxHealth)
+		H.adjustOxyLoss(H.maxhealth)
 		domutcheck(H, null)
 		H.UpdateAppearance()
 		qdel(src)

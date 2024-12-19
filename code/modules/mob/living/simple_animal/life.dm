@@ -17,8 +17,8 @@
 		death()
 		return
 
-	if(health > maxHealth)
-		health = maxHealth
+	if(health > maxhealth)
+		health = maxhealth
 
 	handle_stunned()
 	handle_weakened()

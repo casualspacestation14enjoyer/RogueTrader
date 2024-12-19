@@ -105,7 +105,7 @@
 	desc = "Sensor array detects a small, unmarked vessel."
 	fore_dir = WEST
 	vessel_size = SHIP_SIZE_SMALL
-	max_speed = 1/(1 SECOND)
+	max_speed = 1/(1 SECONDS)
 	burn_delay = 1 SECONDS
 	vessel_mass = 2500
 
@@ -178,7 +178,7 @@
 
 
 /obj/structure/closet/crate/vox_uranium/WillContain()
-	return list(/obj/item/stack/material/uranium/fifty = 4)
+	return list(/obj/item/stack/material/uranium/ten = 2)
 
 
 #undef WEBHOOK_SUBMAP_LOADED_VOX
@@ -286,6 +286,7 @@
 	H.species.weaken_mod = 0.61
 	H.species.stun_mod = 0.61
 	H.species.slowdown = -0.2
+	return ..()
 
 /datum/job/submap/captivecatachan
 	title = "Catachan Devil"

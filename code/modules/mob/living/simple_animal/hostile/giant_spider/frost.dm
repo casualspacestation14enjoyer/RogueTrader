@@ -7,7 +7,7 @@
 	icon_living = "frost"
 	icon_dead = "frost_dead"
 
-	maxHealth = 80
+	maxhealth = 80
 	health = 80
 
 	poison_per_bite = 1

@@ -22,7 +22,7 @@
 
 /mob/living/silicon/ai/adjustOxyLoss(amount)
 	if(status_flags & GODMODE) return
-	oxyloss = max(0, oxyloss + min(amount, maxHealth - oxyloss))
+	oxyloss = max(0, oxyloss + min(amount, maxhealth - oxyloss))
 
 /mob/living/silicon/ai/setFireLoss(amount)
 	if(status_flags & GODMODE)
@@ -38,11 +38,11 @@
 
 /mob/living/silicon/ai/updatehealth()
 	if(status_flags & GODMODE)
-		health = maxHealth
+		health = maxhealth
 		set_stat(CONSCIOUS)
 		setOxyLoss(0)
 	else
-		health = maxHealth - getFireLoss() - getBruteLoss() // Oxyloss is not part of health as it represents AIs backup power. AI is immune against ToxLoss as it is machine.
+		health = maxhealth - getFireLoss() - getBruteLoss() // Oxyloss is not part of health as it represents AIs backup power. AI is immune against ToxLoss as it is machine.
 
 /mob/living/silicon/ai/rejuvenate()
 	..()
@@ -50,8 +50,8 @@
 
 // Returns percentage of AI's remaining backup capacitor charge (maxhealth - oxyloss).
 /mob/living/silicon/ai/proc/backup_capacitor()
-	return ((getOxyLoss() - maxHealth) / maxHealth) * (-100)
+	return ((getOxyLoss() - maxhealth) / maxhealth) * (-100)
 
 // Returns percentage of AI's remaining hardware integrity (maxhealth - (bruteloss + fireloss))
 /mob/living/silicon/ai/proc/hardware_integrity()
-	return (health / maxHealth) * 100
+	return (health / maxhealth) * 100

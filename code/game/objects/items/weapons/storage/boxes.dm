@@ -459,7 +459,7 @@
 	desc = "Contains autoinjectors."
 	icon_state = "syringe"
 
-	startswith = list(/obj/item/reagent_containers/hypospray/autoinjector = 7)
+	startswith = list(/obj/item/reagent_containers/hypospray/autoinjector = 4)
 
 /obj/item/storage/box/lights
 	name = "box of replacement bulbs"

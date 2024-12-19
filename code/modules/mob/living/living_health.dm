@@ -5,13 +5,13 @@
 
 
 /mob/living/get_current_health()
-	if (maxHealth)
+	if (maxhealth)
 		return health
 	return ..()
 
 
 /mob/living/get_max_health()
-	if (maxHealth)
+	if (maxhealth)
 		return getMaxHealth()
 	return ..()
 
@@ -23,14 +23,14 @@
 
 
 /mob/living/mod_health(health_mod, damage_type, skip_death_state_change)
-	if (maxHealth)
+	if (maxhealth)
 		crash_with("Living mob using legacy health attempted to call mod_health. This is not currently supported and should not be possible.")
 		return FALSE
 	return ..()
 
 
 /mob/living/set_health(new_health, skip_death_state_change)
-	if (maxHealth)
+	if (maxhealth)
 		crash_with("Living mob using legacy health attempted to call set_health. This is not currently supported and should not be possible.")
 		return FALSE
 	return ..()
@@ -65,7 +65,7 @@
 
 
 /mob/living/restore_health(damage, damage_type, skip_death_state_change, skip_can_restore_check)
-	if (maxHealth)
+	if (maxhealth)
 		if (!can_restore_health(damage, damage_type))
 			return FALSE
 		return general_health_adjustment(-damage, damage_type)
@@ -73,7 +73,7 @@
 
 
 /mob/living/damage_health(damage, damage_type, damage_flags, severity, skip_can_damage_check)
-	if (maxHealth)
+	if (maxhealth)
 		if (!can_damage_health(damage, damage_type, damage_flags))
 			return FALSE
 		return general_health_adjustment(damage, damage_type, damage_flags)
@@ -81,7 +81,7 @@
 
 
 /mob/living/kill_health()
-	if (maxHealth)
+	if (maxhealth)
 		if (health_dead())
 			return FALSE
 		death()
@@ -90,7 +90,7 @@
 
 
 /mob/living/revive_health()
-	if (maxHealth)
+	if (maxhealth)
 		var/prior_death_state = health_dead()
 		rejuvenate()
 		return prior_death_state != health_dead()
@@ -99,8 +99,8 @@
 
 /mob/living/set_max_health(new_max_health, set_current_health, use_standardized_health = FALSE)
 	if (use_standardized_health)
-		if (maxHealth)
-			maxHealth = 0
+		if (maxhealth)
+			maxhealth = 0
 			health_current = health
 			health = 0
 		..()
@@ -113,24 +113,24 @@
 
 
 /mob/living/set_damage_resistance(damage_type, resistance_value)
-	if (maxHealth)
+	if (maxhealth)
 		return
 	..()
 
 
 /mob/living/remove_damage_resistance(damage_type)
-	if (maxHealth)
+	if (maxhealth)
 		return
 	..()
 
 
 /mob/living/get_damage_resistance(damage_type)
-	if (maxHealth)
+	if (maxhealth)
 		return 1
 	return ..()
 
 
 /mob/living/is_damage_immune(damage_type)
-	if (maxHealth)
+	if (maxhealth)
 		return FALSE
 	return ..()

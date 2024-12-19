@@ -3,7 +3,7 @@
 	desc = "What IS that?"
 	pass_flags = PASS_FLAG_TABLE
 	health = 100
-	maxHealth = 100
+	maxhealth = 100
 	mob_size = 4
 	var/dead_icon
 	var/language

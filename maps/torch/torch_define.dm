@@ -1,6 +1,6 @@
 /datum/map/torch
 	name = "Dauntless"
-	full_name = "Dauntless"
+	full_name = "The Dauntless"
 	path = "torch"
 	flags = MAP_HAS_BRANCH | MAP_HAS_RANK
 	config_path = "config/torch_config.txt"

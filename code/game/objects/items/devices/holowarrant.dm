@@ -10,7 +10,7 @@
 	throw_range = 10
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BELT
-	req_access = list(list(access_heads, access_restricted))
+	req_access = list(access_restricted)
 	var/datum/computer_file/data/warrant/active
 
 //look at it

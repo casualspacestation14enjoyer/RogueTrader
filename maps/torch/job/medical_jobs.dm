@@ -46,13 +46,8 @@
 						SKILL_CHEMISTRY = SKILL_MASTER)
 
 	access = list(
-		access_medical, access_medical_command, access_maint_tunnels, access_external_airlocks, access_magos,
-		access_teleporter, access_eva, access_bridge, access_heads,
-		access_chapel_office, access_crematorium, access_chemistry, access_virology, access_aquila,
-		access_cmo, access_surgery, access_RC_announce, access_keycard_auth, access_psychiatrist,
-		access_medical_equip, access_solgov_crew, access_senmed, access_hangar, access_torch_fax, access_radio_comm,
-		access_radio_med
-	)
+		access_dauntless, access_restricted, access_restricted_command, access_mechanicus, access_mechanicus_command, access_medical,
+		access_medical_command, access_magos, access_bridge)
 
 	software_on_spawn = list(/datum/computer_file/program/comm,
 							 /datum/computer_file/program/camera_monitor,
@@ -127,10 +122,8 @@
 						SKILL_CHEMISTRY = SKILL_MASTER)
 
 	access = list(
-		access_medical, access_medical_command, access_virology, access_maint_tunnels, access_magos,
-		access_crematorium, access_chemistry, access_surgery,
-		access_medical_equip, access_solgov_crew, access_senmed, access_radio_med
-	)
+		access_dauntless, access_restricted, access_mechanicus, access_medical,
+		access_medical_command, access_bridge)
 
 	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
 							 /datum/computer_file/program/camera_monitor)
@@ -185,10 +178,8 @@
 						SKILL_CHEMISTRY = SKILL_MASTER)
 
 	access = list(
-		access_medical, access_maint_tunnels, access_magos,
-		access_medical_equip, access_solgov_crew, access_chemistry,
-	 	access_virology, access_medical_command, access_crematorium, access_radio_med
-	)
+		access_dauntless, access_restricted, access_mechanicus, access_medical,
+		access_medical_command)
 
 /datum/job/pharmacologis/get_description_blurb()
 	return "As the Pharmacologis, you serve alongside the Medicae and Sister Hospitaller, wielding your knowledge of chemistry and biological science to support their sacred work. You are responsible for the formulation of complex medicines, compounds, and stimulants, as well as assisting in advanced surgical procedures when required. Though you are not tasked with direct patient care, your role is critical—ensuring the crew can fight, endure, and survive in the Emperor’s name. Your work stands at the intersection of science and duty, safeguarding the vitality of those who serve the Imperium."
@@ -238,11 +229,8 @@
 						SKILL_CHEMISTRY = SKILL_MASTER)
 
 	access = list(
-		access_medical, access_medical_command, access_maint_tunnels,
-		access_external_airlocks, access_magos,
-		access_eva, access_surgery, access_medical_equip,
-		access_solgov_crew, access_hangar, access_radio_med
-	)
+		access_dauntless, access_restricted, access_medical,
+		access_medical_command)
 
 	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
 							 /datum/computer_file/program/camera_monitor)
@@ -303,11 +291,7 @@
 	) // max skill list is currently wip
 
 	access = list(
-		access_medical, access_medical_command, access_maint_tunnels,
-		access_external_airlocks, access_magos,
-		access_surgery, access_medical_equip, access_solgov_crew,
-		access_radio_med
-	)
+		access_dauntless, access_medical)
 
 	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
 							 /datum/computer_file/program/camera_monitor)

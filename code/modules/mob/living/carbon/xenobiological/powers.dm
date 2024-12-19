@@ -28,7 +28,7 @@
 		var/mob/living/carbon/carbon = living
 		if (carbon.species?.species_flags & (SPECIES_FLAG_NO_POISON | SPECIES_FLAG_NO_SCAN))
 			return "This subject does not have an edible life energy..."
-		if (carbon.getCloneLoss() >= carbon.maxHealth * 1.5)
+		if (carbon.getCloneLoss() >= carbon.maxhealth * 1.5)
 			return "This subject does not have an edible life energy..."
 		if (istype(carbon, /mob/living/carbon/slime))
 			return "I cannot feed on other slimes..."
@@ -134,7 +134,7 @@
 	if(!is_adult)
 		if(amount_grown >= SLIME_EVOLUTION_THRESHOLD)
 			is_adult = 1
-			maxHealth = 200
+			maxhealth = 200
 			amount_grown = 0
 			regenerate_icons()
 			SetName(text("[colour] [is_adult ? "adult" : "baby"] slime ([number])"))

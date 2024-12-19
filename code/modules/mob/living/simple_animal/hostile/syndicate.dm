@@ -11,7 +11,7 @@
 	response_disarm = "shoves"
 	response_harm = "hits"
 	speed = 2
-	maxHealth = 100
+	maxhealth = 100
 	health = 100
 	harm_intent_damage = 5
 	natural_weapon = /obj/item/natural_weapon/punch
@@ -241,7 +241,7 @@
 	icon_living = "viscerator_attack"
 	pass_flags = PASS_FLAG_TABLE
 	health = 15
-	maxHealth = 15
+	maxhealth = 15
 	natural_weapon = /obj/item/natural_weapon/rotating_blade
 	faction = "syndicate"
 	min_gas = null

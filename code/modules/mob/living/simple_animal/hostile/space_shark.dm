@@ -9,7 +9,7 @@
 	turns_per_move = 5
 	meat_type = /obj/item/reagent_containers/food/snacks/fish/space_shark
 	speed = 2
-	maxHealth = 100
+	maxhealth = 100
 	health = 100
 	harm_intent_damage = 5
 	natural_weapon = /obj/item/natural_weapon/bite/strong

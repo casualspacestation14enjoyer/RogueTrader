@@ -74,8 +74,8 @@
 	machine_desc = "A heavy-duty spaceship thruster that throws gas out of its nozzle to allow propulsion."
 
 	var/datum/ship_engine/gas_thruster/controller
-	var/thrust_limit = 1.5	//Value between 1 and 0 to limit the resulting thrust
-	var/moles_per_burn = 2.0
+	var/thrust_limit = 1	//Value between 1 and 0 to limit the resulting thrust
+	var/moles_per_burn = 5.0
 	var/charge_per_burn = 12000 //10Wh/2 for default 2 capacitor, chews through that battery power! Makes a trade off of fuel efficient vs energy efficient
 	var/boot_time = 35
 	var/next_on
@@ -137,7 +137,7 @@
 	return use_power && operable() && (next_on < world.time)
 
 /obj/machinery/atmospherics/unary/engine/proc/check_fuel()
-	return air_contents.total_moles > moles_per_burn * thrust_limit
+	return air_contents.total_moles > (moles_per_burn * 0.4) * thrust_limit
 
 /obj/machinery/atmospherics/unary/engine/proc/get_thrust()
 	if(!is_on() || !check_fuel())
@@ -159,6 +159,7 @@
 		A = get_step(A, exhaust_dir)
 	return blockage
 
+
 /obj/machinery/atmospherics/unary/engine/proc/burn()
 	if(!is_on())
 		return 0
@@ -167,7 +168,7 @@
 		update_use_power(POWER_USE_OFF)
 		return 0
 
-	var/datum/gas_mixture/removed = air_contents.remove(moles_per_burn * thrust_limit)
+	var/datum/gas_mixture/removed = air_contents.remove((moles_per_burn * 0.4) * thrust_limit) // Apply 60% reduction here
 	if(!removed)
 		return 0
 	. = calculate_thrust(removed)
@@ -176,7 +177,7 @@
 		network.update = 1
 
 	var/exhaust_dir = reverse_direction(dir)
-	var/turf/T = get_step(src,exhaust_dir)
+	var/turf/T = get_step(src, exhaust_dir)
 	if(T)
 		T.assume_air(removed)
 		new/obj/engine_exhaust(T, dir)
@@ -185,12 +186,12 @@
 	return round(sqrt(propellant.get_mass() * used_part * air_contents.return_pressure()/100),0.1)
 
 /obj/machinery/atmospherics/unary/engine/RefreshParts()
-	..()
-	//allows them to upgrade the max limit of fuel intake (which only gives diminishing returns) for increase in max thrust but massive reduction in fuel economy
+	..
+	// allows them to upgrade the max limit of fuel intake (which only gives diminishing returns) for increase in max thrust but massive reduction in fuel economy
 	var/bin_upgrade = 0.5 * clamp(total_component_rating_of_type(/obj/item/stock_parts/matter_bin), 0, 0.6)//5 litre per rank
-	moles_per_burn = bin_upgrade ? initial(moles_per_burn) + bin_upgrade : 0.5 //Penalty missing part: 10% fuel use, no thrust
+	moles_per_burn = bin_upgrade ? (initial(moles_per_burn) + bin_upgrade) * 0.4 : 0.5 * 0.4 // Penalty missing part: 10% fuel use, no thrust, apply 60% reduction
 	boot_time = bin_upgrade ? initial(boot_time) - bin_upgrade : initial(boot_time) * 2
-	//energy cost - thb all of this is to limit the use of back up batteries
+	// energy cost - thb all of this is to limit the use of back up batteries
 	var/energy_upgrade = clamp(total_component_rating_of_type(/obj/item/stock_parts/capacitor), 0.1, 6)
 	charge_per_burn = initial(charge_per_burn) / energy_upgrade
 	change_power_consumption(initial(idle_power_usage) / energy_upgrade, POWER_USE_IDLE)

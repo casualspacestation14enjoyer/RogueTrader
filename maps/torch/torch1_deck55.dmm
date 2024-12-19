@@ -63,7 +63,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "petrov_shuttle_dock_inner";
 	name = "Docking Port Airlock"
 	},
@@ -391,7 +391,7 @@
 /area/quartermaster/expedition/atmos)
 "aR" = (
 /obj/machinery/computer/ship/helm{
-	req_access = list(list("ACCESS_EXPLO_HELM"))
+	req_access = list("ACCESS_EXPLO_HELM")
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /obj/machinery/light{
@@ -906,7 +906,7 @@
 	},
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "petrov_shuttle_outer";
 	name = "Petrov Exterior Access"
 	},
@@ -1716,7 +1716,7 @@
 "dM" = (
 /obj/machinery/computer/ship/helm{
 	dir = 1;
-	req_access = list(list("ACCESS_TORCH_GUP_HELM"))
+	req_access = list("ACCESS_TORCH_GUP_HELM")
 	},
 /turf/simulated/floor/ship_floor/brown,
 /area/guppy_hangar/start)
@@ -2880,7 +2880,7 @@
 /obj/structure/catwalk,
 /obj/machinery/alarm{
 	pixel_y = 23;
-	req_access = list(list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS"))
+	req_access = list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS")
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
@@ -3636,7 +3636,7 @@
 /obj/machinery/door/airlock/mining{
 	autoset_access = 0;
 	name = "Warehouse";
-	req_access = list(list("ACCESS_CARGO","ACCESS_MINING"))
+	req_access = list("ACCESS_CARGO","ACCESS_MINING")
 	},
 /obj/structure/cable/green{
 	d1 = 1;
@@ -4168,7 +4168,6 @@
 	frequency = 1380;
 	id_tag = "petrov_shuttle_dock_airlock";
 	pixel_x = 24;
-	req_access = list(list("access_restricted","ACCESS_EXTERNAL","ACCESS_TORCH_PETROV"));
 	tag_airpump = "petrov_shuttle_dock_pump";
 	tag_chamber_sensor = "petrov_shuttle_dock_sensor";
 	tag_exterior_door = "petrov_shuttle_dock_outer";
@@ -5232,7 +5231,7 @@
 /obj/structure/catwalk,
 /obj/machinery/alarm{
 	pixel_y = 23;
-	req_access = list(list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS"))
+	req_access = list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS")
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
@@ -6579,7 +6578,7 @@
 	name = "Warehouse Door Control";
 	pixel_x = 24;
 	pixel_y = 6;
-	req_access = list(list("ACCESS_CARGO","ACCESS_MINING"))
+	req_access = list("ACCESS_CARGO","ACCESS_MINING")
 	},
 /obj/structure/closet/crate/radiation,
 /obj/structure/catwalk,
@@ -7089,7 +7088,7 @@
 	dir = 1;
 	name = "north bump";
 	pixel_y = 24;
-	req_access = list(list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS"))
+	req_access = list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS")
 	},
 /obj/structure/cable/green{
 	d2 = 2;
@@ -7298,7 +7297,7 @@
 "qv" = (
 /obj/machinery/alarm{
 	pixel_y = 23;
-	req_access = list(list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS"))
+	req_access = list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS")
 	},
 /obj/floor_decal/corner/brown{
 	dir = 4
@@ -7323,7 +7322,7 @@
 	},
 /obj/machinery/alarm{
 	pixel_y = 23;
-	req_access = list(list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS"))
+	req_access = list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS")
 	},
 /obj/structure/sign/deck/fifth{
 	pixel_y = 32
@@ -7355,7 +7354,7 @@
 "qC" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "petrov_shuttle_dock_inner";
 	name = "Docking Port Airlock"
 	},
@@ -8777,7 +8776,7 @@
 "tF" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "petrov_shuttle_dock_inner";
 	name = "Docking Port Airlock"
 	},
@@ -8786,7 +8785,7 @@
 "tG" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "petrov_shuttle_dock_outer";
 	name = "Docking Port Airlock"
 	},
@@ -10244,7 +10243,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/machinery/alarm{
 	pixel_y = 23;
-	req_access = list(list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS"))
+	req_access = list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS")
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/petrov/custodial)
@@ -10848,7 +10847,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "petrov_shuttle_outer";
 	name = "Petrov Exterior Access"
 	},
@@ -11081,7 +11080,7 @@
 "Bf" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "petrov_shuttle_inner";
 	name = "Petrov Interior Access"
 	},
@@ -11388,7 +11387,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "petrov_shuttle_inner";
 	name = "Petrov Interior Access"
 	},
@@ -11531,7 +11530,7 @@
 /obj/structure/catwalk,
 /obj/machinery/alarm{
 	pixel_y = 23;
-	req_access = list(list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS"))
+	req_access = list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS")
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
@@ -11705,7 +11704,7 @@
 "Dz" = (
 /obj/machinery/door/airlock/multi_tile/glass/research{
 	dir = 8;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "PetrovAccess";
 	name = "Petrov Access"
 	},
@@ -12557,7 +12556,7 @@
 "Hf" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "petrov_shuttle_inner";
 	name = "Petrov Interior Access"
 	},
@@ -13990,7 +13989,7 @@
 "ML" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "petrov_shuttle_outer";
 	name = "Petrov Exterior Access"
 	},
@@ -14235,7 +14234,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "petrov_shuttle_dock_inner";
 	name = "Docking Port Airlock"
 	},
@@ -14497,7 +14496,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/universal,
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "petrov_shuttle_inner";
 	name = "Petrov Interior Access"
 	},
@@ -14724,7 +14723,7 @@
 /obj/floor_decal/industrial/outline/red,
 /obj/machinery/alarm{
 	pixel_y = 23;
-	req_access = list(list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS"))
+	req_access = list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS")
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/toxins)
@@ -15538,7 +15537,7 @@
 "Tr" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "petrov_shuttle_outer";
 	name = "Petrov Exterior Access"
 	},
@@ -15780,7 +15779,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "petrov_shuttle_dock_outer";
 	name = "Docking Port Airlock"
 	},
@@ -16005,7 +16004,7 @@
 	},
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "petrov_shuttle_dock_outer";
 	name = "Docking Port Airlock"
 	},
@@ -17103,7 +17102,7 @@
 /obj/machinery/portable_atmospherics/canister,
 /obj/machinery/alarm{
 	pixel_y = 23;
-	req_access = list(list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS"))
+	req_access = list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS")
 	},
 /obj/structure/cable/cyan{
 	d1 = 2;

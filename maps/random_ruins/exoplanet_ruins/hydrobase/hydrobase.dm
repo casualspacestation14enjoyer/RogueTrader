@@ -86,7 +86,7 @@
 	name = "goat"
 	desc = "An impressive goat, in size and coat. His horns look pretty serious!"
 	health = 100
-	maxHealth = 100
+	maxhealth = 100
 	natural_weapon = /obj/item/natural_weapon/hooves/strong
 	faction = "farmbots"
 
@@ -103,7 +103,7 @@
 	icon_dead = "farmbot_dead"
 	faction = "farmbots"
 	health = 225
-	maxHealth = 225
+	maxhealth = 225
 	malfunctioning = FALSE
 	say_list_type = /datum/say_list/malf_drone/hydro
 	trail = null

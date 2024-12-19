@@ -272,13 +272,13 @@ else if(current_title == "Bounty Hunter")
 		H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/grim/witch, slot_wear_suit)
 		H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
 		H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/sword/broadsword, slot_belt)
-		H.equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/pistol/stub/snub, slot_belt)
+		H.equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/pistol/stub/snub, slot_in_backpack)
 	else
 		H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/pilgrimhelm/witch, slot_head)
 		H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/feudal/fullplate, slot_wear_suit)
 		H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian/redbl, slot_w_uniform)
 		H.equip_to_slot_or_store_or_drop(new /obj/item/material/twohanded/ravenor/axe, slot_belt)
-		H.equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/pistol/slug/old, slot_belt)
+		H.equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/pistol/slug/old, slot_in_backpack)
 	return ..()
 
 /datum/job/submap/demeter_crew
@@ -481,6 +481,7 @@ else if(current_title == "Bounty Hunter")
 	r_pocket = /obj/item/device/radio/map_preset/demeter
 	l_ear = /obj/item/device/radio/headset/map_preset/demeter
 	r_ear = null
+	l_pocket = /obj/item/device/flashlight/lantern
 	backpack_contents = list(/obj/item/spacecash/bundle/c1000 = 1)
 
 /singleton/hierarchy/outfit/job/demeter/bondsman
@@ -499,6 +500,7 @@ else if(current_title == "Bounty Hunter")
 	id_types = list(/obj/item/card/id/demeter)
 	pda_type = /obj/item/modular_computer/pda
 	pda_slot = slot_l_store
+	l_pocket = /obj/item/device/flashlight/lantern
 	back = /obj/item/storage/backpack/satchel/warfare/heavy
 	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/material/twohanded/ravenor/knife/trench = 1)
 

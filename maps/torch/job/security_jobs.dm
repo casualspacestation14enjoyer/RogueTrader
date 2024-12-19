@@ -39,13 +39,8 @@
 						SKILL_VIGOR = SKILL_MASTER)
 
 	access = list(
-		access_restricted, access_brig, access_restricted_command, access_forensics_lockers,
-		access_maint_tunnels, access_external_airlocks, access_magos,
-		access_teleporter, access_eva, access_bridge, access_heads, access_aquila,
-		access_hos, access_RC_announce, access_keycard_auth, access_sec_doors,
-		access_solgov_crew, access_gun, access_emergency_armory, access_hangar, access_torch_fax,
-		access_radio_comm, access_radio_sec
-	)
+		access_dauntless, access_restricted, access_restricted_command, access_mechanicus, access_medical,
+		access_medical_command, access_bridge)
 
 	software_on_spawn = list(/datum/computer_file/program/comm,
 							 /datum/computer_file/program/digitalwarrant,
@@ -146,11 +141,8 @@
 						SKILL_COMBAT = SKILL_LEGEND)
 
 	access = list(
-		access_restricted, access_brig, access_restricted_command, access_forensics_lockers,
-		access_maint_tunnels, access_external_airlocks, access_magos,
-		access_eva, access_sec_doors, access_solgov_crew, access_gun, access_torch_fax,
-		access_radio_sec
-	)
+		access_dauntless, access_restricted, access_restricted_command, access_mechanicus, access_medical,
+		access_medical_command, access_bridge)
 
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
 							 /datum/computer_file/program/camera_monitor,
@@ -215,11 +207,8 @@
 						SKILL_COMBAT = SKILL_MASTER)
 
 	access = list(
-		access_restricted, access_brig, access_maint_tunnels,
-		access_external_airlocks, access_magos,
-		access_eva, access_sec_doors, access_solgov_crew,
-		access_radio_sec
-	)
+		access_dauntless, access_restricted, access_mechanicus, access_medical,
+		access_medical_command)
 
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
 							 /datum/computer_file/program/camera_monitor)
@@ -283,13 +272,8 @@
 						SKILL_COMBAT = SKILL_LEGEND)
 
 	access = list(
-		access_restricted, access_brig, access_restricted_command, access_forensics_lockers,
-		access_maint_tunnels, access_external_airlocks, access_magos,
-		access_teleporter, access_eva, access_bridge, access_heads, access_aquila,
-		access_hos, access_RC_announce, access_keycard_auth, access_sec_doors,
-		access_solgov_crew, access_gun, access_emergency_armory, access_hangar, access_torch_fax,
-		access_radio_comm, access_radio_sec
-	)
+		access_dauntless, access_restricted, access_mechanicus, access_medical,
+		access_medical_command, access_bridge)
 
 	software_on_spawn = list(/datum/computer_file/program/comm,
 							 /datum/computer_file/program/digitalwarrant,

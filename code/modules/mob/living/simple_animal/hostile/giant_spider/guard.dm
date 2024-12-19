@@ -4,7 +4,7 @@
 	icon_living = "guard"
 	icon_dead = "guard_dead"
 	meat_amount = 4
-	maxHealth = 105
+	maxhealth = 105
 	health = 105
 	natural_weapon = /obj/item/natural_weapon/bite/spider/strong
 	poison_per_bite = 5

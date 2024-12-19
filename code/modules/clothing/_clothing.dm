@@ -945,7 +945,7 @@ BLIND     // can't see anything
 	item_flags = ITEM_FLAG_WASHER_ALLOWED
 	w_class = ITEM_SIZE_NORMAL
 	force = 0
-	var/has_sensor = SUIT_HAS_SENSORS //For the crew cogitator 2 = unable to change mode
+	var/has_sensor = SUIT_NO_SENSORS //For the crew cogitator 2 = unable to change mode
 	var/sensor_mode = SUIT_SENSOR_OFF
 		/*
 		1 = Report living/dead
@@ -1197,6 +1197,7 @@ BLIND     // can't see anything
 
 /obj/item/clothing/under/rank/New()
 	sensor_mode = SUIT_SENSOR_OFF
+	has_sensor = 1
 	..()
 
 /obj/item/clothing/under/AltClick(mob/user)

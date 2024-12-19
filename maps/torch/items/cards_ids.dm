@@ -12,6 +12,20 @@
 	extra_details = list("goldstripe")
 	color = "#ccecff"
 
+/obj/item/card/id/torch/silver/bridge
+	desc = "A silver identification card belonging to heads of staff."
+	item_state = "silver_id"
+	job_access_type = /datum/job/void_officer
+	extra_details = list("goldstripe")
+	color = "#ccecff"
+
+/obj/item/card/id/torch/silver/kroot
+	desc = "A silver identification card belonging to heads of staff."
+	item_state = "silver_id"
+	job_access_type = /datum/job/mercenary
+	extra_details = list("goldstripe")
+	color = "#ccecff"
+
 /obj/item/card/id/torch/gold
 	desc = "A golden identification card belonging to the Commanding Officer."
 	item_state = "gold_id"
@@ -42,7 +56,10 @@
 	detail_color = COLOR_PALE_BLUE_GRAY
 
 /obj/item/card/id/torch/crew/medical/senior
-	job_access_type = /datum/job/juniormedicae
+	job_access_type = /datum/job/pharmacologis
+
+/obj/item/card/id/torch/crew/medical/senior/hosp
+	job_access_type = /datum/job/sister_hospitaller
 
 /obj/item/card/id/torch/contractor/medical
 	job_access_type = /datum/job/medicae
@@ -66,7 +83,7 @@
 	detail_color = "#e00000"
 
 /obj/item/card/id/torch/crew/security
-	job_access_type = /datum/job/enforcer
+	job_access_type = /datum/job/guardsman
 	detail_color = "#e00000"
 
 /obj/item/card/id/torch/crew/security/enforcer_sgt
@@ -74,7 +91,7 @@
 	extra_details = list("onegoldstripe")
 
 /obj/item/card/id/torch/crew/security/forensic
-	job_access_type = /datum/job/guardsman
+	job_access_type = /datum/job/enforcer
 
 
 /obj/item/card/id/torch/silver/engineering
@@ -82,8 +99,12 @@
 	detail_color = COLOR_SUN
 
 /obj/item/card/id/torch/crew/engineering
-	job_access_type = /datum/job/tech_priest
+	job_access_type = /datum/job/bondsman
 	detail_color = COLOR_SUN
+
+/obj/item/card/id/torch/crew/engineering/priest
+	job_access_type = /datum/job/tech_priest
+	extra_details = list("onegoldstripe")
 
 /obj/item/card/id/torch/crew/engineering/senior
 	job_access_type = /datum/job/data_smith

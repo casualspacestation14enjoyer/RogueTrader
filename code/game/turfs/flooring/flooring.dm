@@ -537,6 +537,7 @@
 
 /singleton/flooring/newsteel
 	name = "steel floor"
+	icon = 'icons/turf/flooring/tiles.dmi'
 	icon_base = "steel"
 	color = null
 	build_type = /obj/item/stack/tile/floor_dark
@@ -566,6 +567,7 @@
 
 /singleton/flooring/warhammer
 	name = "grimy floor"
+	icon = 'icons/turf/flooring/floors.dmi'
 	icon_base = "grimy"
 	color = null
 	build_type = null
@@ -599,18 +601,21 @@
 
 /singleton/flooring/warhammer/tunneldirty
 	name = "tunnel floor"
+	icon = 'icons/turf/flooring/decals.dmi'
 	icon_base = "tunneldirty"
 	color = null
 	build_type = null
 
 /singleton/flooring/warhammer/tunnelchess
 	name = "chessboard tunnel floor"
+	icon = 'icons/turf/flooring/decals.dmi'
 	icon_base = "tunnelchess"
 	color = null
 	build_type = null
 
 /singleton/flooring/warhammer/carpetn00
 	name = "carpet floor"
+	icon = 'icons/turf/flooring/decals.dmi'
 	icon_base = "n00"
 	color = null
 	damage_temperature = T0C+100
@@ -620,18 +625,21 @@
 
 /singleton/flooring/warhammer/surgerynew
 	name = "surgery floor"
+	icon = 'icons/turf/flooring/decals.dmi'
 	icon_base = "surgery2"
 	color = null
 	build_type = null
 
 /singleton/flooring/warhammer/brothel
 	name = "brothel floor"
+	icon = 'icons/turf/flooring/decals.dmi'
 	icon_base = "brothel"
 	color = null
 	build_type = null
 
 /singleton/flooring/warhammer/clockwork
 	name = "alien floor"
+	icon = 'icons/turf/flooring/decals.dmi'
 	icon_base = "clockwork"
 	damage_temperature = T0C+1800
 	flags = TURF_REMOVE_SCREWDRIVER | TURF_CAN_BREAK | TURF_ACID_IMMUNE
@@ -641,6 +649,7 @@
 
 /singleton/flooring/warhammer/aesculapius
 	name = "aesculapius floor"
+	icon = 'icons/turf/flooring/decals.dmi'
 	damage_temperature = T0C+800
 	flags = TURF_REMOVE_SCREWDRIVER | TURF_CAN_BREAK | TURF_ACID_IMMUNE
 	icon_base = "aesculapius"
@@ -664,23 +673,27 @@
 
 /singleton/flooring/warhammer/plating
 	name = "plating floor"
+	icon = 'icons/turf/flooring/decals.dmi'
 	icon_base = "platingfull"
 	color = null
 	build_type = null
 
 /singleton/flooring/warhammer/plate
 	name = "plate floor"
+	icon = 'icons/turf/flooring/decals.dmi'
 	icon_base = "plate"
 	color = null
 	build_type = null
 
 /singleton/flooring/warhammer/barnew
 	name = "bar floor"
+	icon = 'icons/turf/flooring/decals.dmi'
 	icon_base = "barnew"
 	color = null
 	build_type = null
 
 /singleton/flooring/warhammer/splate
+	icon = 'icons/turf/flooring/decals.dmi'
 	icon_base = "shaftplating"
 	color = null
 	build_type = null

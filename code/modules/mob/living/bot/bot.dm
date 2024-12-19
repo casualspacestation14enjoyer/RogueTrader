@@ -1,7 +1,7 @@
 /mob/living/bot
 	name = "Bot"
 	health = 20
-	maxHealth = 20
+	maxhealth = 20
 	icon = 'icons/mob/bot/placeholder.dmi'
 	universal_speak = TRUE
 	density = FALSE
@@ -127,7 +127,7 @@
 
 	// Welder - Repairs damage
 	if (isWelder(tool))
-		if (health >= maxHealth)
+		if (health >= maxhealth)
 			USE_FEEDBACK_FAILURE("\The [src] doesn't need any repairs.")
 			return TRUE
 		if (!open)
@@ -137,7 +137,7 @@
 		if (!welder.can_use(5, user, "to repair \the [src]."))
 			return TRUE
 		welder.remove_fuel(5, user)
-		health = min(maxHealth, health + 10)
+		health = min(maxhealth, health + 10)
 		update_icon()
 		user.visible_message(
 			SPAN_NOTICE("\The [user] repairs some of \the [src]'s damage with \a [tool]."),

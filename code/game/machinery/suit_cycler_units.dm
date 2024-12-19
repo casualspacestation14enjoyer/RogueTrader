@@ -21,7 +21,6 @@
 /obj/machinery/suit_cycler/science
 	name = "excavation suit cycler"
 	model_text = "Excavation"
-	req_access = list(access_mechanicus_command)
 	available_modifications = list(/singleton/item_modifier/space_suit/science)
 	species = list(SPECIES_HUMAN,SPECIES_TAU,SPECIES_KROOT)
 
@@ -38,7 +37,6 @@
 /obj/machinery/suit_cycler/medical
 	name = "medical suit cycler"
 	model_text = "Medical"
-	req_access = list(access_medical)
 	available_modifications = list(/singleton/item_modifier/space_suit/medical)
 	species = list(SPECIES_HUMAN,SPECIES_TAU,SPECIES_KROOT)
 
@@ -53,6 +51,5 @@
 /obj/machinery/suit_cycler/pilot
 	name = "pilot suit cycler"
 	model_text = "Pilot"
-	req_access = list(access_mining_office)
 	available_modifications = list(/singleton/item_modifier/space_suit/pilot)
 	species = list(SPECIES_HUMAN,SPECIES_TAU,SPECIES_KROOT)
