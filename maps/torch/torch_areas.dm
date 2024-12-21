@@ -435,7 +435,7 @@
 //Petrov
 
 /area/shuttle/petrov
-	name = "\improper Petrov"
+	name = "\improper Mowteng"
 	requires_power = 1
 	dynamic_lighting = 1
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
@@ -443,68 +443,68 @@
 	lighting_tone = AREA_LIGHTING_COOL
 
 /area/shuttle/petrov/cell1
-	name = "\improper Petrov - Isolation Cell 1"
+	name = "\improper Mowteng - Isolation Cell 1"
 	icon_state = "shuttle"
 /area/shuttle/petrov/cell2
-	name = "\improper Petrov - Isolation Cell 2"
+	name = "\improper Mowteng - Isolation Cell 2"
 	icon_state = "shuttlegrn"
 /area/shuttle/petrov/cell3
-	name = "\improper Petrov - Isolation Cell 3"
+	name = "\improper Mowteng - Isolation Cell 3"
 	icon_state = "shuttle"
 
 /area/shuttle/petrov/hallwaya
-	name = "\improper Petrov - Lower Hallway"
+	name = "\improper Mowteng - Lower Hallway"
 	icon_state = "hallA"
 
 /area/shuttle/petrov/control
-	name = "\improper Petrov - Control Room"
+	name = "\improper Mowteng - Control Room"
 	icon_state = "checkpoint1"
 
 /area/shuttle/petrov/rd
 	icon_state = "heads_rd"
-	name = "\improper Petrov - CSO's Office"
+	name = "\improper Mowteng - CSO's Office"
 	icon_state = "head_quarters"
 
 /area/shuttle/petrov/cockpit
-	name = "\improper Petrov - Cockpit"
+	name = "\improper Mowteng - Cockpit"
 	icon_state = "shuttlered"
 
 /area/shuttle/petrov/maint
-	name = "\improper Petrov - Maintenance"
+	name = "\improper Mowteng - Maintenance"
 	icon_state = "engine"
 	lighting_tone = AREA_LIGHTING_DEFAULT
 
 /area/shuttle/petrov/analysis
-	name = "\improper Petrov - Analysis Lab"
+	name = "\improper Mowteng - Analysis Lab"
 	icon_state = "devlab"
 
 /area/shuttle/petrov/toxins
-	name = "\improper Petrov - Toxins Lab"
+	name = "\improper Mowteng - Toxins Lab"
 	icon_state = "toxstorage"
 
 /area/shuttle/petrov/rnd
-	name = "\improper Petrov - Fabricator Lab"
+	name = "\improper Mowteng - Fabricator Lab"
 	icon_state = "devlab"
 
 /area/shuttle/petrov/isolation
-	name = "\improper Petrov - Isolation Lab"
+	name = "\improper Mowteng - Isolation Lab"
 	icon_state = "xeno_lab"
 
 /area/shuttle/petrov/phoron
-	name = "\improper Petrov - Sublimation Lab"
+	name = "\improper Mowteng - Sublimation Lab"
 	icon_state = "toxstorage"
 
 /area/shuttle/petrov/custodial
-	name = "\improper Petrov - Custodial"
+	name = "\improper Mowteng - Custodial"
 	icon_state = "decontamination"
 	lighting_tone = AREA_LIGHTING_DEFAULT
 
 /area/shuttle/petrov/equipment
-	name = "\improper Petrov - Equipment Storage"
+	name = "\improper Mowteng - Equipment Storage"
 	icon_state = "locker"
 
 /area/shuttle/petrov/eva
-	name = "\improper Petrov - EVA Storage"
+	name = "\improper Mowteng - EVA Storage"
 	icon_state = "locker"
 
 //Turbolift

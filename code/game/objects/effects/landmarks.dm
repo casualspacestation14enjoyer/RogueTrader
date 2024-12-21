@@ -702,6 +702,7 @@
 				/obj/landmark/rav/medstuff3 = 1,
 				/obj/landmark/rav/medstuff4 = 1,
 				/obj/landmark/rav/medstuff5 = 2,
+				/obj/landmark/rav/food1 = 4,
 				/obj/item/storage/firstaid/radiation = 1,
 				/obj/item/storage/firstaid/trauma = 2,
 				/obj/item/storage/firstaid/toxin = 1,

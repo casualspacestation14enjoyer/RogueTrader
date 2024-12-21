@@ -46,7 +46,7 @@
 	/// List. Objects to blend sprite connections with.
 	var/list/blend_objects = list(/obj/structure/wall_frame, /obj/structure/window, /obj/structure/grille)
 	/// Boolean. Determines whether the door will automatically set its access from the areas surrounding it during init. Can be used for mapping.
-	var/autoset_access = TRUE
+	var/autoset_access = FALSE
 
 	/// Integer. Width of the door in tiles.
 	var/width = 1
@@ -90,9 +90,10 @@
 #endif
 		return INITIALIZE_HINT_LATELOAD
 
+/*
 /obj/machinery/door/LateInitialize(mapload)
 	if(autoset_access) // Delayed because apparently the dir is not set by mapping and we need to wait for nearby walls to init and turn us.
-		inherit_access_from_area()
+		inherit_access_from_area() */
 
 /obj/machinery/door/Destroy()
 	set_density(0)

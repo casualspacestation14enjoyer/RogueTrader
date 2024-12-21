@@ -406,7 +406,7 @@
 	icon_opened = "techpod_open"
 	icon_closed = "techpod_closed"
 
-/obj/structure/closet/crate/warhammer/secure_closet/personal/safe
+/obj/structure/closet/crate/warhammer/safe
 	name = "secure safe"
 	desc = "A secure safe."
 	icon = 'icons/map_project/port/structures.dmi'
@@ -415,7 +415,7 @@
 	icon_closed = "safe"
 	anchored = 1
 
-/obj/structure/closet/crate/warhammer/secure_closet/personal/floorsafe
+/obj/structure/closet/crate/warhammer/floorsafe
 	name = "secure safe"
 	desc = "A secure safe."
 	icon = 'icons/map_project/port/structures.dmi'

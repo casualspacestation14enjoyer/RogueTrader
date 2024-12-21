@@ -173,7 +173,6 @@
 /obj/machinery/alarm{
 	dir = 1;
 	pixel_y = -22;
-	req_access = list("ACCESS_TORCH_CREW")
 	},
 /turf/simulated/floor/selfestructgrid{
 	name = "xenos plating"
@@ -631,7 +630,6 @@
 /obj/machinery/alarm{
 	dir = 4;
 	pixel_x = -21;
-	req_access = list("ACCESS_TORCH_CREW")
 	},
 /turf/simulated/floor/selfestructgrid{
 	name = "xenos plating"
@@ -811,7 +809,6 @@
 	},
 /obj/machinery/alarm{
 	pixel_y = 24;
-	req_access = list("ACCESS_TORCH_CREW")
 	},
 /turf/simulated/floor/selfestructgrid{
 	name = "xenos plating"
@@ -834,7 +831,6 @@
 /obj/machinery/alarm{
 	dir = 4;
 	pixel_x = -21;
-	req_access = list("ACCESS_TORCH_CREW")
 	},
 /obj/item/clothing/suit/space/syndicate/black,
 /obj/item/clothing/head/helmet/space/void,
@@ -897,7 +893,6 @@
 	},
 /obj/machinery/alarm{
 	pixel_y = 24;
-	req_access = list("ACCESS_TORCH_CREW")
 	},
 /turf/simulated/floor/selfestructgrid{
 	name = "xenos plating"
@@ -1674,7 +1669,6 @@
 /obj/machinery/alarm{
 	dir = 1;
 	pixel_y = -22;
-	req_access = list("ACCESS_TORCH_CREW")
 	},
 /turf/simulated/floor/selfestructgrid{
 	name = "xenos plating"

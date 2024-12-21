@@ -332,7 +332,7 @@
 	id_tag = "admin_shuttle_dock_airlock";
 	pixel_x = -24;
 	pixel_y = 32;
-	req_access = list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW");
+	req_access = list("ACCESS_MECHANICUS");
 	tag_airpump = "admin_shuttle_dock_pump";
 	tag_chamber_sensor = "admin_shuttle_dock_sensor";
 	tag_exterior_door = "admin_shuttle_dock_outer";
@@ -478,7 +478,7 @@
 /obj/machinery/alarm{
 	dir = 8;
 	pixel_x = 25;
-	req_access = list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS")
+	req_access = list("ACCESS_MECHANICUS")
 	},
 /turf/simulated/floor/lino,
 /area/tcommsat/computer)
@@ -535,7 +535,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/forestarboard)
 "bP" = (
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod6/station)
 "bS" = (
 /obj/machinery/atmospherics/portables_connector{
@@ -558,7 +558,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/forestarboard)
 "bU" = (
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod7/station)
 "bV" = (
 /obj/structure/cable/green{
@@ -743,7 +743,7 @@
 	dir = 4;
 	id_tag = "escape_pod_6_pump"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod6/station)
 "cy" = (
 /obj/machinery/light/small{
@@ -756,7 +756,7 @@
 	dir = 8;
 	id_tag = "escape_pod_6_pump"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod6/station)
 "cA" = (
 /obj/machinery/atmospherics/portables_connector{
@@ -779,7 +779,7 @@
 	dir = 4;
 	id_tag = "escape_pod_9_pump"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod7/station)
 "cC" = (
 /obj/machinery/light/small{
@@ -792,7 +792,7 @@
 	dir = 8;
 	id_tag = "escape_pod_7_pump"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod7/station)
 "cE" = (
 /obj/machinery/newscaster{
@@ -922,7 +922,7 @@
 /obj/machinery/computer/cryopod{
 	pixel_x = -32
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod6/station)
 "dd" = (
 /obj/machinery/door/airlock/external/escapepod{
@@ -963,7 +963,7 @@
 /obj/structure/bed/chair/shuttle{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod6/station)
 "dk" = (
 /obj/machinery/status_display{
@@ -972,7 +972,7 @@
 /obj/structure/bed/chair/shuttle{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod6/station)
 "dl" = (
 /obj/machinery/status_display{
@@ -981,13 +981,13 @@
 /obj/structure/bed/chair/shuttle{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod7/station)
 "dm" = (
 /obj/structure/bed/chair/shuttle{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod7/station)
 "dp" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -1079,10 +1079,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/starboard)
-"dH" = (
-/obj/machinery/computer/modular/preset/security,
-/turf/space,
-/area/space)
 "dI" = (
 /obj/structure/bed/chair/shuttle{
 	dir = 8
@@ -1091,7 +1087,7 @@
 	dir = 8;
 	id_tag = "escape_pod_9_pump"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod7/station)
 "dJ" = (
 /obj/random/trash,
@@ -1116,7 +1112,7 @@
 	dir = 8;
 	id_tag = "escape_pod_6_pump"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod6/station)
 "dP" = (
 /obj/structure/bed/chair/shuttle{
@@ -1126,7 +1122,7 @@
 	dir = 4;
 	id_tag = "escape_pod_9_pump"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod7/station)
 "dR" = (
 /obj/machinery/firealarm{
@@ -1257,7 +1253,7 @@
 	id_tag = "merchant_shuttle_station_dock";
 	pixel_x = 24;
 	pixel_y = 24;
-	req_access = list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW");
+	req_access = list("ACCESS_MECHANICUS");
 	tag_airpump = "merchant_shuttle_station_pump";
 	tag_chamber_sensor = "merchant_shuttle_station_sensor";
 	tag_exterior_door = "merchant_shuttle_station_exterior";
@@ -1445,7 +1441,7 @@
 /area/maintenance/fourthdeck/starboard)
 "eO" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod8/station)
 "eP" = (
 /obj/structure/cable/green{
@@ -1586,7 +1582,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod6/station)
 "fs" = (
 /obj/floor_decal/industrial/warning{
@@ -1594,7 +1590,7 @@
 	icon_state = "warning"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden,
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod6/station)
 "ft" = (
 /obj/floor_decal/industrial/warning{
@@ -1608,7 +1604,7 @@
 	dir = 4
 	},
 /obj/random/firstaid,
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod6/station)
 "fu" = (
 /obj/structure/catwalk,
@@ -1644,7 +1640,7 @@
 	dir = 8
 	},
 /obj/random/firstaid,
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod7/station)
 "fx" = (
 /obj/floor_decal/industrial/warning{
@@ -1652,7 +1648,7 @@
 	icon_state = "warning"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden,
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod7/station)
 "fy" = (
 /obj/floor_decal/industrial/warning{
@@ -1662,7 +1658,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod7/station)
 "fA" = (
 /obj/machinery/door/blast/shutters{
@@ -1833,13 +1829,13 @@
 /obj/machinery/atmospherics/unary/tank/air{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod6/station)
 "gj" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 9
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod6/station)
 "gk" = (
 /obj/machinery/sleeper{
@@ -1850,7 +1846,7 @@
 	name = "Emergency NanoMed";
 	pixel_x = 28
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod6/station)
 "gm" = (
 /obj/structure/railing/mapped,
@@ -1872,19 +1868,19 @@
 	name = "Emergency NanoMed";
 	pixel_x = -30
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod7/station)
 "go" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 5
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod7/station)
 "gp" = (
 /obj/machinery/atmospherics/unary/tank/air{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod7/station)
 "gq" = (
 /obj/machinery/alarm{
@@ -2038,7 +2034,7 @@
 	name = "Warehouse Door Control";
 	pixel_x = -24;
 	pixel_y = 6;
-	req_access = list("ACCESS_CARGO")
+	req_access = list("ACCESS_DAUNTLESS")
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/fourthdeck/fore)
@@ -2221,7 +2217,7 @@
 	dir = 4;
 	id_tag = "escape_pod_6_pump"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod6/station)
 "ht" = (
 /obj/structure/table/steel,
@@ -3208,7 +3204,7 @@
 /area/quartermaster/hangar/catwalks_port)
 "lo" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod9/station)
 "lt" = (
 /obj/floor_decal/corner/brown{
@@ -3262,7 +3258,7 @@
 /obj/machinery/computer/cryopod{
 	pixel_x = 32
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod7/station)
 "lD" = (
 /obj/machinery/vending/snix,
@@ -4194,7 +4190,7 @@
 /obj/machinery/computer/cryopod{
 	pixel_x = 32
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod9/station)
 "oO" = (
 /obj/floor_decal/corner/mauve/mono,
@@ -4948,7 +4944,7 @@
 	name = "interior access button";
 	pixel_x = -24;
 	pixel_y = 24;
-	req_access = list("ACCESS_EVA")
+	req_access = list("ACCESS_MECHANICUS")
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
@@ -5425,9 +5421,6 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/door/airlock/crystal{
-	name = "Adherent Maintenance"
-	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -5435,6 +5428,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/machinery/door/airlock/warhammer/command,
 /turf/simulated/floor/crystal,
 /area/crew_quarters/adherent)
 "tl" = (
@@ -6114,7 +6108,7 @@
 	name = "Warehouse Door Control";
 	pixel_x = 26;
 	pixel_y = -25;
-	req_access = list("ACCESS_CARGO","ACCESS_MINING")
+	req_access = list("ACCESS_DAUNTLESS")
 	},
 /obj/machinery/alarm{
 	dir = 8;
@@ -6431,7 +6425,7 @@
 /area/hallway/primary/fourthdeck/aft)
 "wg" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod9/station)
 "wh" = (
 /obj/machinery/status_display,
@@ -6687,7 +6681,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod7/station)
 "wS" = (
 /obj/structure/railing/mapped{
@@ -6817,7 +6811,7 @@
 /area/hallway/primary/fourthdeck/center)
 "xy" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod9/station)
 "xA" = (
 /obj/structure/cable/green{
@@ -7592,7 +7586,7 @@
 	dir = 8;
 	id_tag = "escape_pod_9_pump"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod9/station)
 "Ab" = (
 /obj/structure/ladder,
@@ -8043,7 +8037,7 @@
 	name = "Warehouse Door Control";
 	pixel_x = -24;
 	pixel_y = -6;
-	req_access = list("ACCESS_CARGO")
+	req_access = list("ACCESS_DAUNTLESS")
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -8225,7 +8219,7 @@
 /area/crew_quarters/lounge)
 "CK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod7/station)
 "CL" = (
 /turf/simulated/floor/tiled/monotile,
@@ -8654,7 +8648,7 @@
 /area/quartermaster/storage/upper)
 "Et" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod6/station)
 "Ew" = (
 /obj/structure/railing/mapped,
@@ -8980,13 +8974,13 @@
 /obj/machinery/atmospherics/unary/tank/air{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod8/station)
 "Fw" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 10
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod8/station)
 "Fx" = (
 /obj/machinery/sleeper{
@@ -8997,7 +8991,7 @@
 	name = "Emergency NanoMed";
 	pixel_x = 28
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod8/station)
 "Fy" = (
 /obj/machinery/sleeper{
@@ -9008,19 +9002,19 @@
 	name = "Emergency NanoMed";
 	pixel_x = -30
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod9/station)
 "Fz" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 6
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod9/station)
 "FA" = (
 /obj/machinery/atmospherics/unary/tank/air{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod9/station)
 "FB" = (
 /obj/structure/bed/chair/comfy/brown{
@@ -9186,12 +9180,12 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod8/station)
 "Gi" = (
 /obj/floor_decal/industrial/warning,
 /obj/machinery/atmospherics/pipe/simple/hidden,
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod8/station)
 "Gj" = (
 /obj/floor_decal/industrial/warning,
@@ -9202,7 +9196,7 @@
 	dir = 4
 	},
 /obj/random/firstaid,
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod8/station)
 "Gl" = (
 /obj/structure/catwalk,
@@ -9224,19 +9218,19 @@
 	dir = 8
 	},
 /obj/random/firstaid,
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod9/station)
 "Gn" = (
 /obj/floor_decal/industrial/warning,
 /obj/machinery/atmospherics/pipe/simple/hidden,
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod9/station)
 "Go" = (
 /obj/floor_decal/industrial/warning,
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod9/station)
 "Gp" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -9319,7 +9313,7 @@
 	dir = 4;
 	id_tag = "escape_pod_8_pump"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod8/station)
 "GB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
@@ -9329,7 +9323,7 @@
 	frequency = 1380;
 	id_tag = "skipjack_shuttle_dock_airlock";
 	pixel_x = 24;
-	req_access = list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW");
+	req_access = list("ACCESS_MECHANICUS");
 	tag_airpump = "skipjack_shuttle_dock_pump";
 	tag_chamber_sensor = "skipjack_shuttle_dock_sensor";
 	tag_exterior_door = "skipjack_shuttle_dock_outer";
@@ -9374,10 +9368,10 @@
 /obj/structure/bed/chair/shuttle{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod8/station)
 "GK" = (
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod8/station)
 "GL" = (
 /obj/machinery/door/airlock/external{
@@ -9400,13 +9394,13 @@
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod9/station)
 "GR" = (
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod9/station)
 "GS" = (
 /obj/structure/bed/chair/shuttle{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod9/station)
 "GT" = (
 /turf/simulated/wall/r_wall/hull,
@@ -9432,7 +9426,7 @@
 /area/maintenance/fourthdeck/port)
 "GX" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod8/station)
 "GY" = (
 /obj/floor_decal/spline/fancy/wood{
@@ -9532,7 +9526,7 @@
 	dir = 8;
 	id_tag = "escape_pod_8_pump"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod8/station)
 "Hu" = (
 /obj/structure/bed/chair/shuttle{
@@ -9542,7 +9536,7 @@
 	dir = 4;
 	id_tag = "escape_pod_9_pump"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod9/station)
 "Hv" = (
 /obj/structure/stairs/north,
@@ -9661,7 +9655,7 @@
 /obj/structure/bed/chair/shuttle{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod8/station)
 "HV" = (
 /obj/structure/catwalk,
@@ -9678,7 +9672,7 @@
 /obj/structure/bed/chair/shuttle{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod9/station)
 "Ib" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -9736,7 +9730,7 @@
 "Ie" = (
 /obj/machinery/alarm{
 	pixel_y = 23;
-	req_access = list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS")
+	req_access = list("ACCESS_MECHANICUS_COMMAND")
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fourthdeck/port)
@@ -9757,7 +9751,7 @@
 /area/maintenance/fourthdeck/port)
 "Ii" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod6/station)
 "Im" = (
 /obj/structure/hygiene/sink{
@@ -9809,7 +9803,7 @@
 	dir = 4;
 	id_tag = "escape_pod_8_pump"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod8/station)
 "Is" = (
 /obj/machinery/light/small{
@@ -9822,7 +9816,7 @@
 	dir = 8;
 	id_tag = "escape_pod_8_pump"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod8/station)
 "It" = (
 /obj/machinery/light/small{
@@ -9835,7 +9829,7 @@
 	dir = 4;
 	id_tag = "escape_pod_9_pump"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod9/station)
 "Iu" = (
 /obj/machinery/light/small{
@@ -9848,7 +9842,7 @@
 	dir = 8;
 	id_tag = "escape_pod_9_pump"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod9/station)
 "Iv" = (
 /obj/structure/catwalk,
@@ -9890,7 +9884,7 @@
 /obj/machinery/computer/cryopod{
 	pixel_x = -32
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod8/station)
 "IB" = (
 /obj/catwalk_plated/dark,
@@ -10201,7 +10195,7 @@
 	id_tag = "rescue_shuttle_dock_airlock";
 	pixel_x = -24;
 	pixel_y = -32;
-	req_access = list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW");
+	req_access = list("ACCESS_MECHANICUS");
 	tag_airpump = "rescue_shuttle_dock_pump";
 	tag_chamber_sensor = "rescue_shuttle_dock_sensor";
 	tag_exterior_door = "rescue_shuttle_dock_outer";
@@ -11008,11 +11002,6 @@
 /obj/machinery/light/small,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/lounge)
-"Mo" = (
-/obj/wallframe_spawn/no_grille,
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/plating,
-/area/crew_quarters/adherent)
 "Mp" = (
 /turf/simulated/wall/prepainted,
 /area/command/captainmess)
@@ -11644,7 +11633,7 @@
 	pixel_y = -32;
 	tag_door = "escape_pod_8_hatch"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod8/station)
 "NU" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -11727,7 +11716,7 @@
 /area/eva)
 "Oe" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod7/station)
 "Og" = (
 /obj/structure/railing/mapped{
@@ -12534,7 +12523,7 @@
 	name = "exterior access button";
 	pixel_x = -5;
 	pixel_y = -22;
-	req_access = list("ACCESS_MAINT")
+	req_access = list("ACCESS_RESTRICTED")
 	},
 /turf/space,
 /area/space)
@@ -13204,7 +13193,7 @@
 	dir = 4;
 	pixel_x = -21
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod9/station)
 "Sr" = (
 /obj/machinery/light/small,
@@ -13217,7 +13206,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod6/station)
 "Su" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -13699,7 +13688,7 @@
 	dir = 8;
 	pixel_x = 21
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod6/station)
 "Tv" = (
 /obj/structure/sign/directions/science{
@@ -13743,7 +13732,7 @@
 /obj/machinery/light,
 /obj/structure/closet/secure_closet{
 	name = "Security Equipment Locker";
-	req_access = list("access_restricted")
+	req_access = list("ACCESS_RESTRICTED")
 	},
 /obj/machinery/alarm{
 	dir = 4;
@@ -14633,7 +14622,7 @@
 /area/quartermaster/sorting)
 "Wj" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod8/station)
 "Wk" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -14988,7 +14977,7 @@
 /obj/machinery/alarm{
 	dir = 8;
 	pixel_x = 25;
-	req_access = list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS")
+	req_access = list("ACCESS_MECHANICUS_COMMAND")
 	},
 /obj/structure/cable/green{
 	d1 = 1;
@@ -15191,7 +15180,7 @@
 /obj/machinery/alarm{
 	dir = 4;
 	pixel_x = -21;
-	req_access = list("ACCESS_TORCH_CREW")
+	req_access = list("ACCESS_DAUNTLESS")
 	},
 /obj/floor_decal/corner/paleblue{
 	dir = 9
@@ -15993,7 +15982,7 @@
 	dir = 4;
 	pixel_x = -21
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod7/station)
 "ZL" = (
 /obj/structure/catwalk,
@@ -19143,7 +19132,7 @@ Dl
 Dl
 Dl
 Dl
-dH
+Dl
 Dl
 Dl
 Dl
@@ -33209,11 +33198,11 @@ WI
 vH
 aY
 aY
-ro
+rp
 za
 Yn
 QC
-ro
+rp
 CG
 CG
 CG
@@ -33411,11 +33400,11 @@ Pt
 vH
 aY
 aY
-ro
+rp
 za
 Yn
 QC
-ro
+rp
 CG
 CG
 CG
@@ -33613,11 +33602,11 @@ WI
 vH
 aY
 aY
-ro
+rp
 za
 Yn
 QC
-ro
+rp
 CG
 CG
 CG
@@ -33815,11 +33804,11 @@ Pn
 aY
 aY
 aY
-ro
+rp
 za
 sK
 QC
-ro
+rp
 CG
 CG
 CG
@@ -35835,11 +35824,11 @@ NM
 VW
 WI
 vH
-ro
+rp
 za
 SA
 QC
-ro
+rp
 pI
 pI
 mG
@@ -36037,11 +36026,11 @@ Zy
 VW
 WI
 vH
-ro
+rp
 za
 Yn
 QC
-ro
+rp
 pI
 pI
 mG
@@ -36239,11 +36228,11 @@ YC
 VW
 WI
 vH
-ro
+rp
 za
 Yn
 QC
-ro
+rp
 pI
 pI
 mG
@@ -36441,11 +36430,11 @@ oG
 mJ
 WI
 vH
-ro
+rp
 za
 Yn
 QC
-ro
+rp
 pI
 pI
 mG
@@ -40684,9 +40673,9 @@ Xn
 Xn
 QW
 QW
-Mo
+QW
 tk
-Mo
+QW
 QW
 QW
 Xn

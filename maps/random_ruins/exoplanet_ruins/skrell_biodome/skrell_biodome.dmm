@@ -49,10 +49,10 @@
 "bg" = (
 /obj/structure/table/glass,
 /obj/item/storage/box/nitrilegloves,
-/turf/simulated/floor/tiled/tau/white,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/medbay)
 "bB" = (
-/turf/simulated/floor/pool,
+/turf/simulated/floor/warhammer/brothel,
 /area/map_template/biodome/living)
 "ci" = (
 /obj/structure/window/reinforced{
@@ -103,7 +103,7 @@
 /area/map_template/biodome/living)
 "dF" = (
 /obj/structure/hygiene/faucet,
-/turf/simulated/floor/pool,
+/turf/simulated/floor/warhammer/brothel,
 /area/map_template/biodome/living)
 "dK" = (
 /obj/machinery/atmospherics/binary/pump/on{
@@ -131,7 +131,7 @@
 /area/map_template/biodome/engineering)
 "es" = (
 /obj/machinery/optable,
-/turf/simulated/floor/tiled/tau/white,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/medbay)
 "eB" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
@@ -168,26 +168,21 @@
 /obj/machinery/bodyscanner{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/tau/white,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/medbay)
 "gj" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/black{
 	dir = 1
 	},
 /obj/machinery/door/airlock/external/bolted{
-	req_access = list("ACCESS_TAUSCOUT");
 	id_tag = "skrellbd_outer";
 	autoset_access = 0
 	},
 /obj/machinery/door/blast/regular{
 	id_tag = "sk_bd_north";
 	name = "Biodome protective shutters";
-	dir = 2
-	},
-/obj/machinery/button/blast_door{
-	pixel_x = 26;
-	id_tag = "sk_bd_north";
-	req_access = list("ACCESS_TAUSCOUT")
+	dir = 2;
+	begins_closed = 0
 	},
 /obj/structure/cable/yellow{
 	d1 = 1;
@@ -226,7 +221,7 @@
 /area/map_template/biodome/atmos)
 "gw" = (
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/tau/blue,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/medbay)
 "gC" = (
 /obj/structure/bed/chair/comfy/red{
@@ -258,7 +253,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/tau/white,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/medbay)
 "hq" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -270,7 +265,7 @@
 /obj/machinery/sleeper{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/tau/white,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/medbay)
 "in" = (
 /obj/machinery/atmospherics/portables_connector,
@@ -302,7 +297,7 @@
 /obj/structure/table/glass,
 /obj/item/bodybag/rescue/loaded,
 /obj/item/bodybag/rescue/loaded,
-/turf/simulated/floor/tiled/tau/white,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/medbay)
 "kI" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -337,7 +332,7 @@
 /area/map_template/biodome/engineering)
 "kP" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/tau/white,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/medbay)
 "lx" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -379,7 +374,7 @@
 /area/map_template/biodome/living)
 "oa" = (
 /obj/machinery/chemical_dispenser,
-/turf/simulated/floor/tiled/tau/white,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/medbay)
 "oZ" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -392,7 +387,7 @@
 /area/map_template/biodome/living)
 "pa" = (
 /obj/machinery/light/tau,
-/turf/simulated/floor/tiled/tau/white,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/medbay)
 "pi" = (
 /obj/machinery/atmospherics/unary/tank/air{
@@ -481,7 +476,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/tau/blue,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/medbay)
 "rI" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -571,7 +566,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
-/turf/simulated/floor/tiled/tau/white,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/medbay)
 "uK" = (
 /obj/structure/table/glass,
@@ -582,7 +577,7 @@
 /obj/item/reagent_containers/glass/beaker/large{
 	pixel_x = -6
 	},
-/turf/simulated/floor/tiled/tau/white,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/medbay)
 "uT" = (
 /obj/wallframe_spawn/reinforced_phoron/hull,
@@ -670,7 +665,7 @@
 /area/map_template/biodome/living)
 "zq" = (
 /obj/structure/roller_bed,
-/turf/simulated/floor/tiled/tau/white,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/medbay)
 "AH" = (
 /obj/machinery/power/smes/buildable/max_cap_in_out,
@@ -717,7 +712,7 @@
 	},
 /obj/structure/table/glass,
 /obj/item/storage/firstaid/surgery,
-/turf/simulated/floor/tiled/tau/white,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/medbay)
 "CL" = (
 /obj/structure/cable/yellow,
@@ -747,7 +742,7 @@
 /obj/machinery/light/tau{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/tau/white,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/medbay)
 "Gj" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -801,7 +796,6 @@
 	dir = 8
 	},
 /obj/machinery/door/airlock/external/bolted{
-	req_access = list("ACCESS_TAUSCOUT");
 	id_tag = "skrellbd_inner";
 	autoset_access = 0
 	},
@@ -891,7 +885,7 @@
 "IP" = (
 /obj/structure/hygiene/drain/bath,
 /obj/machinery/light/tau,
-/turf/simulated/floor/pool,
+/turf/simulated/floor/warhammer/brothel,
 /area/map_template/biodome/living)
 "IV" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -941,7 +935,7 @@
 /area/map_template/biodome/engineering)
 "Ke" = (
 /obj/machinery/vending/medical/skrell,
-/turf/simulated/floor/tiled/tau/white,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/medbay)
 "Ko" = (
 /obj/structure/table/glass,
@@ -952,7 +946,7 @@
 	pixel_x = -5
 	},
 /obj/item/reagent_containers/spray/sterilizine,
-/turf/simulated/floor/tiled/tau/white,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/medbay)
 "Ky" = (
 /obj/structure/cable/yellow{
@@ -978,7 +972,7 @@
 /turf/simulated/floor/tiled/tau/orange,
 /area/map_template/biodome/engineering)
 "KD" = (
-/turf/simulated/floor/tiled/tau/white,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/medbay)
 "KP" = (
 /obj/structure/hygiene/toilet{
@@ -991,7 +985,6 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/external/bolted{
-	req_access = list("ACCESS_TAUSCOUT");
 	id_tag = "skrellbd_inner";
 	autoset_access = 0
 	},
@@ -1014,7 +1007,7 @@
 	pixel_x = -9;
 	pixel_y = -2
 	},
-/turf/simulated/floor/tiled/tau/white,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/medbay)
 "Lr" = (
 /obj/machinery/light/tau{
@@ -1067,7 +1060,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/tau/white,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/medbay)
 "MA" = (
 /obj/machinery/computer/operating{
@@ -1076,7 +1069,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/tau/white,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/medbay)
 "ML" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -1176,7 +1169,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/tau/white,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/medbay)
 "OM" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -1262,7 +1255,7 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/turf/simulated/floor/tiled/tau/white,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/medbay)
 "QI" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -1281,7 +1274,7 @@
 /area/map_template/biodome/living)
 "QX" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
-/turf/simulated/floor/tiled/tau/white,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/medbay)
 "Rg" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -1313,7 +1306,7 @@
 	req_access = list("ACCESS_TAUSCOUT")
 	},
 /obj/structure/cable,
-/turf/simulated/floor/tiled/tau/white,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/medbay)
 "Tr" = (
 /obj/machinery/light/tau{
@@ -1323,7 +1316,7 @@
 /area/map_template/biodome/living)
 "Uc" = (
 /obj/machinery/smartfridge/chemistry,
-/turf/simulated/floor/tiled/tau/white,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/medbay)
 "Ut" = (
 /obj/paint/black,
@@ -1341,7 +1334,7 @@
 	dir = 1
 	},
 /obj/structure/roller_bed,
-/turf/simulated/floor/tiled/tau/white,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/medbay)
 "Wo" = (
 /obj/structure/cable/yellow{
@@ -1374,6 +1367,21 @@
 	},
 /turf/simulated/floor/exoplanet/concrete/reinforced,
 /area/map_template/biodome/engineering)
+"Xb" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/button/blast_door{
+	pixel_x = 26;
+	id_tag = "sk_bd_north";
+	req_access = list("ACCESS_TAUSCOUT")
+	},
+/turf/simulated/floor/tiled/tau/blue,
+/area/map_template/biodome/living)
 "Xj" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/cyan,
 /turf/simulated/floor/tiled/tau/blue,
@@ -1399,14 +1407,14 @@
 	dir = 1
 	},
 /obj/machinery/door/airlock/external/bolted{
-	req_access = list("ACCESS_TAUSCOUT");
 	id_tag = "skrellbd_outer";
 	autoset_access = 0
 	},
 /obj/machinery/door/blast/regular{
 	id_tag = "sk_bd_north";
 	name = "Biodome protective shutters";
-	dir = 2
+	dir = 2;
+	begins_closed = 0
 	},
 /obj/machinery/access_button/airlock_exterior{
 	frequency = 1380;
@@ -1473,7 +1481,7 @@
 	pixel_x = -22;
 	pixel_y = 24
 	},
-/turf/simulated/floor/tiled/tau/white,
+/turf/simulated/floor/tiled/tau/red,
 /area/map_template/biodome/medbay)
 "ZW" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -1980,7 +1988,7 @@ Lc
 ee
 Nn
 Ma
-au
+Xb
 rh
 au
 yI
