@@ -301,7 +301,7 @@
 	name = "exterior access button";
 	pixel_x = -24;
 	pixel_y = -24;
-	req_access = list("ACCESS_MECHANICUS_COMMAND","ACCESS_EXTERNAL")
+	req_access = list("ACCESS_MECHANICUS")
 	},
 /obj/structure/cable/yellow{
 	d1 = 1;
@@ -408,7 +408,7 @@
 	dir = 8;
 	id_tag = "solar_starboard_airlock";
 	pixel_x = 24;
-	req_access = list("ACCESS_EXTERNAL");
+	req_access = list("ACCESS_MECHANICUS");
 	tag_airpump = "solar_starboard_pump";
 	tag_chamber_sensor = "solar_starboard_sensor";
 	tag_exterior_door = "solar_starboard_outer";
@@ -681,7 +681,7 @@
 /obj/machinery/door/airlock/highsecurity{
 	autoset_access = 0;
 	name = "Secure Tech Storage";
-	req_access = list("ACCESS_TORCH_SENIOR_ENG","ACCESS_TECH_STORAGE")
+	req_access = list("ACCESS_MECHANICUS_COMMAND")
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -863,7 +863,7 @@
 	name = "interior access button";
 	pixel_x = 24;
 	pixel_y = 24;
-	req_access = list("ACCESS_MECHANICUS_COMMAND","ACCESS_EXTERNAL")
+	req_access = list("ACCESS_MECHANICUS")
 	},
 /obj/structure/cable/yellow{
 	d1 = 1;
@@ -1103,7 +1103,7 @@
 "cd" = (
 /obj/machinery/embedded_controller/radio/airlock/airlock_controller{
 	id_tag = "auxdock_airlock";
-	req_access = list("ACCESS_EXTERNAL");
+	req_access = list("ACCESS_MECHANICUS");
 	tag_airpump = "auxdock_pump";
 	tag_chamber_sensor = "auxdock_sensor";
 	tag_exterior_door = "auxdock_outer";
@@ -3696,7 +3696,7 @@
 /obj/machinery/alarm{
 	dir = 8;
 	pixel_x = 25;
-	req_access = list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS")
+	req_access = list("ACCESS_MECHANICUS")
 	},
 /turf/simulated/floor/tiled,
 /area/engineering/engineering_bay)
@@ -4516,7 +4516,7 @@
 /obj/machinery/alarm{
 	dir = 8;
 	pixel_x = 25;
-	req_access = list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS")
+	req_access = list("ACCESS_MECHANICUS")
 	},
 /obj/structure/cable/green{
 	d2 = 8;
@@ -11133,7 +11133,7 @@
 	},
 /obj/machinery/alarm{
 	pixel_y = 23;
-	req_access = list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS")
+	req_access = list("ACCESS_MECHANICUS")
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/cargo)
@@ -11684,7 +11684,7 @@
 	name = "interior access button";
 	pixel_x = 24;
 	pixel_y = -24;
-	req_access = list("ACCESS_MECHANICUS_COMMAND","ACCESS_MAINT")
+	req_access = list("ACCESS_MECHANICUS")
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 8
@@ -11940,7 +11940,7 @@
 	dir = 8;
 	id_tag = "solar_port_airlock";
 	pixel_x = 24;
-	req_access = list("ACCESS_EXTERNAL");
+	req_access = list("ACCESS_MECHANICUS");
 	tag_airpump = "solar_port_pump";
 	tag_chamber_sensor = "solar_port_sensor";
 	tag_exterior_door = "solar_port_outer";
@@ -12101,7 +12101,7 @@
 	name = "exterior access button";
 	pixel_x = -24;
 	pixel_y = 24;
-	req_access = list("ACCESS_MECHANICUS_COMMAND","ACCESS_EXTERNAL")
+	req_access = list("ACCESS_MECHANICUS")
 	},
 /turf/simulated/floor,
 /area/solar/port)
@@ -13657,7 +13657,7 @@
 	id_tag = "borg";
 	name = "Cyborg Upload Blast Doors";
 	pixel_x = 25;
-	req_access = list("ACCESS_AI_UPLOAD")
+	req_access = list("ACCESS_MECHANICUS_COMMAND")
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/shieldbay)
@@ -14787,7 +14787,7 @@
 /obj/machinery/alarm{
 	dir = 8;
 	pixel_x = 25;
-	req_access = list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS")
+	req_access = list("ACCESS_MECHANICUS_COMMAND")
 	},
 /obj/structure/cable,
 /obj/machinery/power/smes/buildable/preset/torch/engine_empty{
@@ -15153,6 +15153,13 @@
 /area/engineering/storage)
 "Om" = (
 /obj/item/stool,
+/obj/machinery/button/blast_door{
+	id_tag = "elevatoreng";
+	name = "Lockdown";
+	pixel_x = 6;
+	pixel_y = 26;
+	req_access = list("ACCESS_MECHANICUS_COMMAND")
+	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck/elevator)
 "On" = (
@@ -15275,7 +15282,7 @@
 "OL" = (
 /obj/machinery/alarm{
 	pixel_y = 23;
-	req_access = list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS")
+	req_access = list("ACCESS_MECHANICUS")
 	},
 /obj/structure/sign/warning/secure_area{
 	dir = 4;
@@ -16238,7 +16245,7 @@
 	name = "Drive Lockdown";
 	pixel_x = 6;
 	pixel_y = 26;
-	req_access = list("ACCESS_AI_UPLOAD")
+	req_access = list("ACCESS_MECHANICUS_COMMAND")
 	},
 /obj/machinery/button/blast_door{
 	desc = "A remote control-switch for the observation shutters.";
@@ -16463,6 +16470,11 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/engineering/engineering_bay)
 "Ss" = (
+/obj/machinery/door/blast/regular/open{
+	dir = 4;
+	id_tag = "elevatoreng";
+	name = "Restricted Lockdown"
+	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/hallway/primary/seconddeck/elevator)
 "St" = (
@@ -17657,7 +17669,7 @@
 	dir = 4
 	},
 /obj/structure/closet/crate/secure/biohazard/alt{
-	req_access = list("ACCESS_ROBOTICS")
+	req_access = list("ACCESS_RESTRICTED")
 	},
 /obj/machinery/light_switch{
 	pixel_y = -24

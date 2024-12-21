@@ -837,7 +837,6 @@
 /obj/machinery/alarm{
 	dir = 1;
 	pixel_y = -28;
-	req_access = list("ACCESS_MECHANICUS_COMMAND"")
 	},
 /obj/structure/table/reinforced,
 /obj/machinery/recharger,

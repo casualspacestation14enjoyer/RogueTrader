@@ -52,7 +52,7 @@ TORCH_ESCAPE_POD(17)
 //Petrov
 
 /datum/shuttle/autodock/ferry/petrov
-	name = "Petrov"
+	name = "Mowteng"
 	warmup_time = 10
 	dock_target = "petrov_shuttle_airlock"
 	waypoint_station = "nav_petrov_start"

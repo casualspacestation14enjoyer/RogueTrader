@@ -947,7 +947,7 @@
 /obj/machinery/door/airlock/command{
 	autoset_access = 0;
 	name = "Officer's Mess";
-	req_access = list("ACCESS_TORCH_O_MESS","ACCESS_TORCH_CREW")
+	req_access = list("ACCESS_RESTRICTED_COMMAND")
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/mess)
@@ -983,7 +983,7 @@
 /obj/machinery/alarm{
 	dir = 4;
 	pixel_x = -21;
-	req_access = list("ACCESS_TORCH_CREW")
+	req_access = list("ACCESS_DAUNTLESS")
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/janitor/storage)
@@ -1641,7 +1641,7 @@
 /obj/machinery/alarm{
 	dir = 8;
 	pixel_x = 25;
-	req_access = list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS")
+	req_access = list("ACCESS_MECHANICUS")
 	},
 /obj/floor_decal/industrial/warning{
 	dir = 8;
@@ -11840,7 +11840,7 @@
 /obj/machinery/button/blast_door{
 	id_tag = "shop_shutters";
 	name = "Counter Shutters";
-	req_access = list("ACCESS_HEADS","ACCESS_TORCH_SHOP")
+	req_access = list("ACCESS_RESTRICTED")
 	},
 /obj/machinery/light{
 	dir = 4
@@ -12572,7 +12572,7 @@
 /obj/machinery/door/airlock/maintenance{
 	autoset_access = 0;
 	name = "Cargo Storage Maintenance";
-	req_access = list("ACCESS_MAINT","ACCESS_CARGO")
+	req_access = list("ACCESS_RESTRICTED")
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel_ridged,
@@ -12603,7 +12603,7 @@
 /obj/machinery/alarm{
 	dir = 8;
 	pixel_x = 25;
-	req_access = list("ACCESS_MECHANICUS_COMMAND","ACCESS_ATMOS")
+	req_access = list("ACCESS_MECHANICUS")
 	},
 /obj/structure/bed/chair/wood/maple{
 	dir = 1
@@ -17304,7 +17304,7 @@
 /obj/machinery/alarm{
 	dir = 8;
 	pixel_x = 24;
-	req_access = list("ACCESS_TORCH_CREW")
+	req_access = list("ACCESS_DAUNTLESS")
 	},
 /obj/structure/bed/chair{
 	dir = 8
@@ -17873,11 +17873,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftport)
-"SE" = (
-/obj/wallframe_spawn/no_grille,
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/plating,
-/area/hallway/primary/thirddeck/fore)
 "SH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -33643,7 +33638,7 @@ Zo
 oa
 oT
 pO
-SE
+mj
 Of
 ow
 Tq
@@ -33845,7 +33840,7 @@ MD
 VU
 hK
 pO
-SE
+mj
 sc
 tp
 VU
