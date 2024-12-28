@@ -1,7 +1,6 @@
 /obj/structure/closet/secure_closet/guncabinet
 	name = "gun cabinet"
-	req_access = list(access_restricted_command)
-	icon = 'icons/obj/structures/guncabinet.dmi'
+	icon = 'icons/obj/structures/guncabinet.dmi' // 'icons/map_project/gunrack.dmi' do later
 	closet_appearance = null
 
 /obj/structure/closet/secure_closet/guncabinet/Initialize()

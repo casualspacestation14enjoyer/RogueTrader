@@ -1,5 +1,5 @@
 /obj/machinery/bluespacedrive
-	name = "bluespace drive"
+	name = "archeotech warp engine"
 	desc = "The Naophoros-pattern jump drive is a machine created by ancient xenos, mated with countless human devices and apparatuses to make it able to interface with the vastly different technology used in their ships."
 	icon = 'icons/obj/machines/bluespacedrive.dmi'
 	icon_state = "bsd_core"

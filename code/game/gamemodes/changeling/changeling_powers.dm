@@ -193,7 +193,7 @@ var/global/list/possible_genestealer_IDs = list("Alpha","Beta","Gamma","Delta","
 				src.visible_message(SPAN_DANGER("[src] stabs [T] with the proboscis!"))
 				to_chat(T, SPAN_DANGER("You feel a sharp stabbing pain!"))
 				affecting.take_external_damage(39, 0, DAMAGE_FLAG_SHARP, "large organic needle")
-		if(!do_after(src, 15 SECONDS, T, DO_PUBLIC_UNIQUE))
+		if(!do_after(src, 10 SECONDS, T, DO_PUBLIC_UNIQUE))
 			to_chat(src, SPAN_WARNING("Our absorption of [T] has been interrupted!"))
 			genestealer.isabsorbing = 0
 			return

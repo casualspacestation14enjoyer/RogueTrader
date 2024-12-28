@@ -225,3 +225,31 @@
 /obj/item/trash/usedplatter
 	name = "dirty platter"
 	icon_state = "usedplatter"
+
+
+/obj/item/trash/warfare_can
+	icon = 'icons/obj/food.dmi'
+	name = "used can"
+	icon_state = "cbeans_empty"
+	var/drop_sound = 'sound/items/handle/can_drop.ogg'
+
+/obj/item/trash/warfare_can/throw_impact(atom/hit_atom)
+	..()
+	if(drop_sound)
+		playsound(src, drop_sound, 50, 0)
+
+/obj/item/trash/warfare_can/flower
+	icon_state = "flowersgrub_empty"
+
+/obj/item/trash/warfare_can/sardine
+	icon_state = "pisssardine_empty"
+
+/obj/item/trash/warfare_can/rat
+	icon_state = "ratmeat_empty"
+
+/obj/item/trash/warfare_can/nim
+	icon_state = "nim_empty"
+
+/obj/item/trash/corpsestarch
+	name = "protein bar"
+	icon_state = "proteinbar"

@@ -618,6 +618,13 @@
 	icon = 'icons/map_project/furniture_and_decor.dmi'
 	icon_state = "well"
 
+/obj/structure/hygiene/sink/puddle/well
+	name = "fountain water"
+	icon = 'icons/obj/structures/fountain.dmi'
+	icon_state = "water"
+	desc = "Fresh water streams from the fountain. Fresh is debatable."
+	layer = 4
+
 /obj/item/taperoll/bog
 	name = "toilet paper roll"
 	icon = 'icons/obj/bog.dmi'

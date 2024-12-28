@@ -57,6 +57,8 @@
 	update_icon()
 
 /obj/item/gun/projectile/consume_next_projectile()
+	if(calibrated == 0) // If not calibrated, adjust jam chance
+		jam_chance = calibration_penalty
 	if(!is_jammed && prob(jam_chance))
 		src.visible_message(SPAN_DANGER("\The [src] jams!"))
 		is_jammed = 1

@@ -192,7 +192,7 @@ var/global/const/access_torch_fax = "ACCESS_TORCH_FAX"
 var/global/const/access_petrov = "ACCESS_TORCH_PETROV" //200
 /datum/access/petrov
 	id = access_petrov
-	desc = "Petrov"
+	desc = "Mowteng"
 	region = ACCESS_REGION_GENERAL
 
 var/global/const/access_petrov_helm = "ACCESS_TORCH_PETROV_HELM" //201

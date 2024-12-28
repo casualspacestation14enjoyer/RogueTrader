@@ -230,15 +230,6 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/forestarboard)
-"aB" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 5
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/turf/simulated/floor/carpet,
-/area/crew_quarters/heads/office/xo)
 "aC" = (
 /obj/machinery/door/firedoor,
 /obj/structure/cable/green{
@@ -524,11 +515,11 @@
 /obj/structure/bed/chair/comfy/blue{
 	dir = 4
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "be" = (
 /obj/machinery/computer/modular/preset/cardslot/command,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "bf" = (
 /obj/structure/closet/secure_closet/bridgeofficer,
@@ -845,14 +836,14 @@
 /obj/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/hallway/starboard)
-"bN" = (
-/obj/floor_decal/spline/plain/beige{
-	dir = 4
-	},
-/turf/simulated/floor/carpet,
-/area/crew_quarters/heads/office/xo)
 "bO" = (
-/turf/simulated/floor/wood/walnut,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/bed/chair/comfy/blue,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "bP" = (
 /obj/wallframe_spawn/reinforced/polarized{
@@ -1090,28 +1081,23 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge/hallway/starboard)
 "co" = (
-/turf/simulated/floor/carpet,
-/area/crew_quarters/heads/office/xo)
-"cp" = (
 /obj/structure/table/woodentable/walnut,
 /obj/item/reagent_containers/food/drinks/glass2/coffeecup/SCG{
 	pixel_x = -5;
 	pixel_y = 5
 	},
-/obj/item/reagent_containers/food/drinks/glass2/coffeecup/SCG{
-	pixel_x = 8;
-	pixel_y = -3
+/turf/simulated/floor/warhammer/rectangles,
+/area/crew_quarters/heads/office/xo)
+"cp" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
-/turf/simulated/floor/carpet,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "cq" = (
-/obj/floor_decal/spline/plain/beige{
-	dir = 4
-	},
-/obj/structure/bed/chair/comfy/blue{
-	dir = 8
-	},
-/turf/simulated/floor/carpet,
+/turf/simulated/wall/ocp_wall,
 /area/crew_quarters/heads/office/xo)
 "cr" = (
 /obj/structure/disposalpipe/segment{
@@ -1235,7 +1221,7 @@
 	pixel_x = -8;
 	pixel_y = 20
 	},
-/obj/structure/table/glass,
+/obj/structure/table/steel,
 /obj/item/paper_bin{
 	pixel_x = -3;
 	pixel_y = 7
@@ -1246,7 +1232,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
 "cz" = (
-/obj/structure/table/glass,
+/obj/structure/table/steel,
 /obj/structure/noticeboard{
 	pixel_y = 30
 	},
@@ -1579,14 +1565,8 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
-"cX" = (
-/obj/structure/table/woodentable/walnut,
-/obj/item/book/manual/solgov_law,
-/turf/simulated/floor/tiled/dark,
-/area/bridge/meeting_room)
 "cY" = (
 /obj/structure/table/woodentable/walnut,
-/obj/item/book/manual/sol_sop,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
 "cZ" = (
@@ -1644,7 +1624,7 @@
 /obj/random_multi/single_item/memo_supply,
 /obj/item/folder/envelope/dcorder,
 /obj/item/folder/envelope/csorder,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "de" = (
 /obj/structure/cable/green{
@@ -1688,7 +1668,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
 "dh" = (
-/obj/structure/table/glass,
+/obj/structure/table/steel,
 /obj/machinery/light{
 	dir = 4;
 	icon_state = "tube1"
@@ -1914,22 +1894,18 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
 "dI" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on,
-/obj/machinery/firealarm{
-	dir = 4;
-	pixel_x = 21
-	},
-/turf/simulated/floor/carpet,
-/area/crew_quarters/heads/office/xo)
-"dJ" = (
-/obj/machinery/atmospherics/unary/vent_pump/on{
+/obj/structure/bed/chair/comfy/blue{
 	dir = 4
 	},
-/obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+/turf/simulated/floor/warhammer/rectangles,
+/area/crew_quarters/heads/office/xo)
+"dJ" = (
+/obj/structure/table/woodentable/walnut,
+/obj/item/reagent_containers/food/drinks/glass2/coffeecup/SCG{
+	pixel_x = 8;
+	pixel_y = -3
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "dK" = (
 /obj/structure/table/woodentable/walnut,
@@ -1994,14 +1970,14 @@
 "dR" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
-/obj/floor_decal/spline/plain/beige{
-	dir = 1
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "dS" = (
 /obj/machinery/requests_console{
@@ -2014,7 +1990,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
 "dT" = (
-/obj/structure/table/glass,
+/obj/structure/table/steel,
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
@@ -2026,7 +2002,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
 "dU" = (
-/obj/structure/table/glass,
+/obj/structure/table/steel,
 /obj/machinery/button/blast_door{
 	id_tag = "bridge blast";
 	name = "Bridge Window Lockdown Control";
@@ -2042,7 +2018,7 @@
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/auxsolarbridge)
 "dW" = (
-/obj/structure/table/glass,
+/obj/structure/table/steel,
 /obj/machinery/camera/network/bridge{
 	c_tag = "Bridge";
 	dir = 1
@@ -2064,7 +2040,7 @@
 /turf/simulated/floor/reinforced,
 /area/space)
 "ec" = (
-/obj/paint/hull,
+/obj/paint/meatstation,
 /turf/simulated/wall/titanium,
 /area/aquila/cockpit)
 "ed" = (
@@ -2144,7 +2120,8 @@
 	dir = 4
 	},
 /obj/structure/flora/pottedplant/fern,
-/turf/simulated/floor/wood/walnut,
+/obj/random_multi/single_item/runtime,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "eo" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -2162,19 +2139,8 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
 "eq" = (
-/obj/machinery/door/airlock/sol{
-	name = "XO's Quarters";
-	secured_wires = 1
-	},
-/obj/machinery/door/firedoor,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark,
-/area/crew_quarters/heads/office/xo)
+/turf/simulated/wall/ocp_wall,
+/area/maintenance/bridge/forestarboard)
 "er" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -2242,13 +2208,11 @@
 	dir = 1;
 	pixel_y = -24
 	},
-/obj/structure/table/glass,
-/obj/item/book/manual/solgov_law,
-/obj/item/book/manual/sol_sop,
+/obj/structure/table/steel,
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
 "ew" = (
-/obj/structure/table/glass,
+/obj/structure/table/steel,
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
 "ex" = (
@@ -2409,13 +2373,9 @@
 	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "eR" = (
 /obj/structure/disposalpipe/trunk{
@@ -2450,7 +2410,7 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/photocopier,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "eU" = (
 /obj/machinery/light{
@@ -2644,7 +2604,7 @@
 /turf/simulated/floor/reinforced,
 /area/space)
 "fl" = (
-/obj/structure/table/glass,
+/obj/structure/table/steel,
 /obj/random_multi/single_item/memo_research,
 /obj/random_multi/single_item/memo_exploration,
 /turf/simulated/floor/tiled,
@@ -2692,7 +2652,7 @@
 /obj/structure/sign/warning/high_voltage{
 	dir = 8
 	},
-/turf/simulated/wall/r_wall/hull,
+/turf/simulated/wall/ocp_wall,
 /area/maintenance/bridge/forestarboard)
 "fv" = (
 /obj/floor_decal/spline/fancy/wood{
@@ -2735,9 +2695,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge/hallway/port)
 "fz" = (
-/obj/floor_decal/spline/plain/beige{
-	dir = 4
-	},
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk{
 	dir = 4
@@ -2749,7 +2706,7 @@
 	name = "XO Request Console";
 	pixel_y = 30
 	},
-/turf/simulated/floor/carpet,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "fA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -2989,7 +2946,6 @@
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/office/cmo)
 "fX" = (
-/obj/paint/red,
 /obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
 	dir = 1
 	},
@@ -3205,7 +3161,7 @@
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/sgr)
 "gw" = (
-/obj/paint/hull,
+/obj/paint/meatstation,
 /turf/simulated/wall/titanium,
 /area/aquila/storage)
 "gz" = (
@@ -3805,7 +3761,7 @@
 	opacity = 0
 	},
 /obj/wallframe_spawn/reinforced/titanium,
-/obj/paint/hull,
+/obj/paint/meatstation,
 /turf/simulated/floor/plating,
 /area/aquila/air)
 "iA" = (
@@ -3813,35 +3769,17 @@
 /turf/simulated/floor/plating,
 /area/aquila/air)
 "iB" = (
-/obj/floor_decal/spline/plain/beige{
-	dir = 1
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 8
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "iI" = (
-/obj/structure/cable/green{
-	d2 = 2;
-	icon_state = "0-2"
-	},
-/obj/structure/cable/green{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/obj/wallframe_spawn/reinforced/polarized{
-	id = "bridge_starboard"
-	},
-/turf/simulated/floor/plating,
-/area/bridge)
+/turf/simulated/wall/r_wall/hull,
+/area/space)
 "iJ" = (
-/obj/structure/cable/green{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/obj/wallframe_spawn/reinforced/polarized{
-	id = "bridge_starboard"
-	},
-/turf/simulated/floor/plating,
-/area/bridge)
+/turf/simulated/floor/reinforced,
+/area/solar/bridge)
 "iP" = (
 /obj/machinery/recharger/wallcharger{
 	dir = 4;
@@ -4490,7 +4428,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/office/cos)
 "lt" = (
-/obj/structure/table/glass,
+/obj/structure/table/steel,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -4636,20 +4574,15 @@
 /turf/simulated/floor/plating,
 /area/hallway/primary/bridge/aft)
 "lL" = (
-/obj/wallframe_spawn/reinforced,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/structure/cable/green{
-	d2 = 2;
-	icon_state = "0-2"
-	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/plating,
+/turf/simulated/wall/ocp_wall,
 /area/bridge)
 "lN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -4814,7 +4747,6 @@
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/sgr)
 "mx" = (
-/obj/paint/red,
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 5
 	},
@@ -4902,7 +4834,6 @@
 "mI" = (
 /obj/structure/closet/secure_closet/cos,
 /obj/floor_decal/industrial/outline/grey,
-/obj/item/book/manual/sol_sop,
 /obj/machinery/light{
 	dir = 1
 	},
@@ -5195,7 +5126,7 @@
 /turf/simulated/floor/carpet/green,
 /area/crew_quarters/heads/office/cl)
 "nu" = (
-/obj/structure/table/glass,
+/obj/structure/table/steel,
 /obj/item/device/binoculars,
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
@@ -5352,7 +5283,7 @@
 /obj/structure/cable/yellow,
 /obj/machinery/power/tracker,
 /turf/simulated/floor/reinforced,
-/area/space)
+/area/solar/bridge)
 "ob" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -5440,31 +5371,17 @@
 /turf/simulated/wall/prepainted,
 /area/aux_eva)
 "ox" = (
-/obj/structure/cable/green,
-/obj/structure/cable/green{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/obj/wallframe_spawn/reinforced/polarized{
-	id = "bridge_port"
-	},
-/turf/simulated/floor/plating,
+/turf/simulated/wall/ocp_wall,
 /area/bridge)
 "oy" = (
-/obj/structure/cable/green{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/obj/wallframe_spawn/reinforced/polarized{
-	id = "bridge_port"
-	},
-/turf/simulated/floor/plating,
-/area/bridge)
+/obj/structure/sign/warning/lethal_turrets,
+/turf/simulated/wall/r_wall/hull,
+/area/maintenance/bridge/forestarboard)
 "oz" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "oB" = (
 /turf/simulated/floor/tiled/techfloor,
@@ -5494,7 +5411,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "oJ" = (
 /obj/machinery/door/blast/shutters{
@@ -5639,7 +5556,7 @@
 	name = "Protective Shutters";
 	opacity = 0
 	},
-/obj/paint/hull,
+/obj/paint/meatstation,
 /obj/machinery/atmospherics/pipe/simple/hidden/universal{
 	dir = 4
 	},
@@ -5978,10 +5895,16 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/aquila/medical)
 "qa" = (
-/obj/structure/bed/chair/comfy/blue{
-	dir = 4
+/obj/machinery/power/apc{
+	dir = 8;
+	name = "west bump";
+	pixel_x = -24
 	},
-/turf/simulated/floor/carpet,
+/obj/structure/cable/green{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "qb" = (
 /obj/machinery/recharger/wallcharger{
@@ -6178,7 +6101,7 @@
 /area/crew_quarters/heads/office/cmo)
 "qv" = (
 /obj/floor_decal/corner/paleblue/diagonal,
-/obj/structure/table/glass,
+/obj/structure/table/steel,
 /obj/item/paper_bin,
 /obj/item/pen,
 /obj/item/pen/blue,
@@ -6198,7 +6121,7 @@
 /area/security/bridgecheck)
 "qx" = (
 /obj/floor_decal/corner/paleblue/diagonal,
-/obj/structure/table/glass,
+/obj/structure/table/steel,
 /obj/item/reagent_containers/food/snacks/cookie,
 /obj/item/reagent_containers/food/snacks/cookie,
 /obj/item/reagent_containers/food/snacks/cookie,
@@ -6262,7 +6185,7 @@
 /turf/space,
 /area/space)
 "qO" = (
-/turf/simulated/wall/r_wall/prepainted,
+/turf/simulated/wall/ocp_wall,
 /area/bridge/storage)
 "qP" = (
 /obj/floor_decal/spline/fancy/wood{
@@ -6600,10 +6523,8 @@
 /obj/item/device/radio/intercom{
 	pixel_y = 23
 	},
-/obj/item/toy/torchmodel,
-/obj/structure/table/woodentable_reinforced/walnut,
-/obj/random_multi/single_item/runtime,
-/turf/simulated/floor/wood/walnut,
+/obj/machinery/computer/account_database,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "rI" = (
 /obj/structure/bed/chair/comfy/blue{
@@ -6798,27 +6719,18 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
 "si" = (
-/obj/structure/bed/padded,
-/obj/item/bedsheet/hop,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 5
-	},
 /obj/item/device/radio/intercom{
 	dir = 4;
 	pixel_x = -21
 	},
-/turf/simulated/floor/carpet,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "sl" = (
 /obj/structure/flora/pottedplant/shoot,
-/obj/machinery/alarm{
-	pixel_y = 24
-	},
-/obj/machinery/atmospherics/unary/vent_pump/on,
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/carpet,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "sm" = (
 /obj/machinery/shipsensors/upgraded,
@@ -6852,12 +6764,6 @@
 /obj/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/dark,
 /area/aquila/storage)
-"sx" = (
-/obj/structure/sign/warning/high_voltage{
-	dir = 8
-	},
-/turf/simulated/wall/r_wall/hull,
-/area/maintenance/bridge/foreport)
 "sy" = (
 /obj/structure/cable/green{
 	d2 = 8;
@@ -6899,10 +6805,7 @@
 /area/crew_quarters/heads/office/sea)
 "sC" = (
 /obj/structure/bookcase,
-/obj/item/book/manual/solgov_law,
-/obj/item/book/manual/sol_sop,
-/obj/item/book/manual/military_law,
-/turf/simulated/floor/carpet,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "sF" = (
 /obj/structure/cable/green{
@@ -7169,9 +7072,6 @@
 /area/crew_quarters/heads/office/sgr)
 "tx" = (
 /obj/structure/bookcase,
-/obj/item/book/manual/solgov_law,
-/obj/item/book/manual/sol_sop,
-/obj/item/book/manual/military_law,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
@@ -7856,7 +7756,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/wall/r_wall/hull,
 /area/space)
 "vE" = (
 /obj/structure/lattice,
@@ -8055,7 +7955,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
 "wh" = (
-/obj/item/book/manual/military_law,
 /obj/item/reagent_containers/food/drinks/glass2/square,
 /obj/structure/table/woodentable_reinforced/walnut,
 /turf/simulated/floor/tiled/dark,
@@ -8838,6 +8737,19 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
+"xV" = (
+/obj/floor_decal/corner/blue/half{
+	dir = 1
+	},
+/obj/machinery/button/blast_door{
+	id_tag = "elevatorcmd";
+	name = "Lockdown";
+	pixel_x = 6;
+	pixel_y = 26;
+	req_access = list("ACCESS_BRIDGE")
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/hallway/primary/bridge/aft)
 "xW" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -8906,17 +8818,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/bridge/meeting_room)
-"yf" = (
-/obj/wallframe_spawn/reinforced/polarized{
-	id = "bridge_starboard"
-	},
-/obj/structure/cable/green,
-/obj/structure/cable/green{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/turf/simulated/floor/plating,
-/area/bridge)
 "yg" = (
 /obj/machinery/status_display,
 /turf/simulated/wall/prepainted,
@@ -8928,7 +8829,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/aux_eva)
 "yk" = (
-/obj/paint/red,
 /turf/simulated/wall/titanium,
 /area/aquila/medical)
 "yl" = (
@@ -8945,7 +8845,7 @@
 /area/crew_quarters/heads/office/sea)
 "yw" = (
 /obj/floor_decal/corner/paleblue/diagonal,
-/obj/structure/table/glass,
+/obj/structure/table/steel,
 /obj/item/sticky_pad/random,
 /obj/item/storage/box/cups,
 /obj/item/reagent_containers/food/drinks/bottle/orangejuice,
@@ -9001,17 +8901,15 @@
 /turf/simulated/floor/carpet/green,
 /area/crew_quarters/heads/office/cl)
 "yL" = (
-/obj/machinery/suit_storage_unit/standard_unit{
-	req_access = newlist()
-	},
 /obj/floor_decal/industrial/outline/yellow,
+/obj/structure/closet/firecloset,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/crew_quarters/safe_room/bridge)
 "yM" = (
 /obj/structure/sign/dedicationplaque{
 	desc = " Dauntless - Mako Class - Sol Explorator Registry 95519 - Shiva Imperial Navy Yards, Sancor - First Vessel To Bear The Name - Launched 2302 - Sol Central Government - 'Never was anything great achieved without danger.'"
 	},
-/turf/simulated/wall/r_wall/prepainted,
+/turf/simulated/wall/ocp_wall,
 /area/bridge/storage)
 "yR" = (
 /obj/machinery/door/airlock/security{
@@ -9042,7 +8940,6 @@
 "yU" = (
 /obj/structure/table/woodentable_reinforced/walnut,
 /obj/item/sticky_pad/random,
-/obj/item/book/manual/nt_regs,
 /turf/simulated/floor/carpet/green,
 /area/crew_quarters/heads/office/cl)
 "yV" = (
@@ -9058,7 +8955,7 @@
 "za" = (
 /obj/structure/closet/secure_closet/XO,
 /obj/random/drinkbottle,
-/turf/simulated/floor/carpet,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "zb" = (
 /obj/shuttle_landmark/merc/deck1{
@@ -9094,12 +8991,12 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
 "zh" = (
-/obj/structure/cable/green,
-/obj/wallframe_spawn/reinforced/polarized{
-	id = "bridge_port"
+/obj/machinery/door/airlock/warhammer/command/ancient{
+	name = "Maintenance Hatch";
+	req_access = list("ACCESS_MECHANICUS")
 	},
-/turf/simulated/floor/plating,
-/area/bridge)
+/turf/simulated/floor/reinforced,
+/area/solar/bridge)
 "zo" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -9231,7 +9128,7 @@
 /turf/simulated/open,
 /area/maintenance/bridge/aftport)
 "zT" = (
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "zV" = (
 /obj/wallframe_spawn/reinforced,
@@ -9284,7 +9181,7 @@
 /obj/structure/bed/chair/office/comfy/blue{
 	dir = 8
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "Ae" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -9294,7 +9191,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/aquila/storage)
 "Ag" = (
-/obj/paint/hull,
+/obj/paint/meatstation,
 /obj/wallframe_spawn/reinforced/titanium,
 /obj/machinery/door/blast/regular/open{
 	density = 0;
@@ -9454,15 +9351,19 @@
 /turf/simulated/floor/tiled,
 /area/crew_quarters/heads/office/rd)
 "AH" = (
-/obj/wallframe_spawn/reinforced/polarized{
-	id = "bridge_starboard"
+/obj/structure/catwalk,
+/obj/machinery/power/terminal{
+	dir = 4
 	},
 /obj/structure/cable/green{
-	d2 = 2;
-	icon_state = "0-2"
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/obj/machinery/pointdefense{
+	initial_id_tag = "torch_primary_pd"
 	},
 /turf/simulated/floor/plating,
-/area/bridge)
+/area/space)
 "AI" = (
 /obj/structure/cable/green,
 /obj/structure/cable/green{
@@ -9601,7 +9502,7 @@
 	dir = 8;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/carpet,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "Bw" = (
 /obj/structure/disposalpipe/segment{
@@ -9621,7 +9522,7 @@
 /turf/simulated/floor/plating,
 /area/hallway/primary/bridge/fore)
 "BE" = (
-/obj/structure/table/glass,
+/obj/structure/table/steel,
 /obj/machinery/button/blast_door{
 	id_tag = "bridge blast";
 	name = "Bridge Window Lockdown Control";
@@ -9657,20 +9558,6 @@
 /obj/structure/lattice,
 /turf/simulated/open,
 /area/maintenance/bridge/foreport)
-"BI" = (
-/obj/structure/cable/green{
-	d2 = 2;
-	icon_state = "0-2"
-	},
-/obj/machinery/door/firedoor,
-/obj/wallframe_spawn/reinforced/hull,
-/obj/machinery/door/blast/regular/open{
-	dir = 4;
-	id_tag = "cap_window";
-	name = "CO's Quarters Shutters"
-	},
-/turf/simulated/floor/plating,
-/area/crew_quarters/heads/office/co)
 "BO" = (
 /obj/machinery/atmospherics/unary/tank/carbon_dioxide{
 	dir = 4;
@@ -9680,7 +9567,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/aquila/power)
 "BR" = (
-/obj/structure/table/glass,
+/obj/structure/table/steel,
 /obj/item/paper_bin{
 	pixel_x = 1;
 	pixel_y = 9
@@ -9762,15 +9649,6 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/cl)
-"Ce" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark,
-/area/crew_quarters/heads/office/xo)
 "Cf" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -9924,11 +9802,11 @@
 	name = "Protective Shutters";
 	opacity = 0
 	},
-/obj/paint/hull,
+/obj/paint/meatstation,
 /turf/simulated/floor/plating,
 /area/aquila/airlock)
 "CE" = (
-/obj/structure/table/glass,
+/obj/structure/table/steel,
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
@@ -10091,14 +9969,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/aquila/airlock)
 "Dx" = (
-/obj/structure/cable/green{
-	d2 = 2;
-	icon_state = "0-2"
-	},
-/obj/wallframe_spawn/reinforced/polarized{
-	id = "co_windows"
-	},
-/turf/simulated/floor/plating,
+/turf/simulated/wall/ocp_wall,
 /area/crew_quarters/heads/office/co)
 "DE" = (
 /obj/structure/cable/green,
@@ -10243,7 +10114,6 @@
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/aft)
 "Ez" = (
-/obj/paint/red,
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 6
 	},
@@ -10270,7 +10140,6 @@
 /obj/floor_decal/corner/paleblue/diagonal,
 /obj/structure/closet/secure_closet/CMO_torch,
 /obj/item/storage/belt/medical,
-/obj/item/book/manual/sol_sop,
 /obj/floor_decal/industrial/outline/yellow,
 /obj/machinery/firealarm{
 	dir = 4;
@@ -10403,8 +10272,9 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
 "Fp" = (
+/obj/structure/sign/warning/lethal_turrets,
 /turf/simulated/wall/r_wall/hull,
-/area/bridge/storage)
+/area/maintenance/bridge/foreport)
 "Fz" = (
 /turf/simulated/open,
 /area/maintenance/bridge/foreport)
@@ -10429,10 +10299,10 @@
 /obj/machinery/newscaster{
 	pixel_x = 32
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "FK" = (
-/obj/paint/hull,
+/obj/paint/meatstation,
 /turf/simulated/wall/titanium,
 /area/aquila/airlock)
 "FL" = (
@@ -10494,7 +10364,7 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
 "Gc" = (
-/obj/paint/hull,
+/obj/paint/meatstation,
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
 	},
@@ -10776,7 +10646,7 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "Hi" = (
 /obj/random/obstruction,
@@ -10978,8 +10848,9 @@
 /area/crew_quarters/heads/office/cl)
 "HI" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/glass/command{
-	name = "Bridge Storage"
+/obj/machinery/door/airlock/warhammer/vaultold{
+	req_access = list("ACCESS_BRIDGE");
+	name = "Bridge - Saferoom"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
@@ -11074,15 +10945,10 @@
 	opacity = 0
 	},
 /obj/wallframe_spawn/reinforced/titanium,
-/obj/paint/hull,
+/obj/paint/meatstation,
 /turf/simulated/floor/plating,
 /area/aquila/cockpit)
 "Id" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters/heads/office/co)
 "Ie" = (
@@ -11187,9 +11053,6 @@
 /area/crew_quarters/heads/office/sea)
 "Iq" = (
 /obj/structure/bookcase,
-/obj/item/book/manual/solgov_law,
-/obj/item/book/manual/sol_sop,
-/obj/item/book/manual/military_law,
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/office/sea)
 "Is" = (
@@ -11252,9 +11115,6 @@
 /area/crew_quarters/heads/cobed)
 "IB" = (
 /obj/structure/bookcase,
-/obj/item/book/manual/solgov_law,
-/obj/item/book/manual/sol_sop,
-/obj/item/book/manual/military_law,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/cobed)
 "ID" = (
@@ -11313,7 +11173,6 @@
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/cobed)
 "IJ" = (
-/obj/paint/red,
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 9
 	},
@@ -11333,12 +11192,11 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/hallway/primary/bridge/fore)
 "IL" = (
-/obj/paint/red,
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/fuel,
 /turf/simulated/wall/titanium,
 /area/aquila/power)
 "IT" = (
-/obj/structure/table/glass,
+/obj/structure/table/steel,
 /obj/machinery/keycard_auth/torch{
 	pixel_x = 26
 	},
@@ -11372,7 +11230,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/aux_eva)
 "IY" = (
-/obj/structure/table/glass,
+/obj/structure/table/steel,
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
@@ -11530,7 +11388,7 @@
 /area/bridge/storage)
 "Kf" = (
 /obj/floor_decal/corner/paleblue/diagonal,
-/obj/structure/table/glass,
+/obj/structure/table/steel,
 /obj/random_multi/single_item/memo_medical,
 /obj/item/folder/envelope/cmoorder,
 /turf/simulated/floor/tiled/white,
@@ -11691,7 +11549,7 @@
 /area/aquila/medical)
 "KP" = (
 /obj/floor_decal/corner/paleblue/diagonal,
-/obj/structure/table/glass,
+/obj/structure/table/steel,
 /obj/machinery/photocopier/faxmachine{
 	department = "Dauntless - Chief Medical Officer"
 	},
@@ -11818,7 +11676,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/foreport)
 "Lv" = (
-/obj/structure/table/glass,
+/obj/structure/table/steel,
 /obj/item/stamp/rd,
 /obj/floor_decal/corner/research{
 	dir = 5
@@ -11892,7 +11750,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
 "LQ" = (
-/obj/paint/red,
 /obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
 	dir = 1
 	},
@@ -12030,7 +11887,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/aftstarboard)
 "MK" = (
-/obj/paint/hull,
+/obj/paint/meatstation,
 /turf/simulated/wall/titanium,
 /area/aquila/air)
 "MU" = (
@@ -12244,7 +12101,7 @@
 /obj/structure/bed/chair/comfy/beige{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "NL" = (
 /obj/floor_decal/industrial/outline/yellow,
@@ -12305,19 +12162,8 @@
 /turf/simulated/floor/reinforced,
 /area/space)
 "Od" = (
-/obj/machinery/power/apc{
-	dir = 8;
-	name = "west bump";
-	pixel_x = -24
-	},
-/obj/structure/cable/green{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/obj/floor_decal/spline/plain/beige{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/dark,
+/obj/structure/table/woodentable/walnut,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "Oe" = (
 /obj/machinery/requests_console{
@@ -12425,7 +12271,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/security/bridgecheck)
 "Oq" = (
-/obj/paint/red,
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 4
 	},
@@ -12574,13 +12419,13 @@
 /obj/structure/closet/medical_wall/filled{
 	pixel_x = -32
 	},
-/obj/random/firstaid,
-/obj/random/firstaid,
 /obj/random/medical,
 /obj/random/drinkbottle,
 /obj/floor_decal/techfloor{
 	dir = 10
 	},
+/obj/random/loot/randomsupply,
+/obj/random/loot/sidearmbundle,
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/bridge)
 "Pg" = (
@@ -12626,7 +12471,6 @@
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/co)
 "PA" = (
-/obj/paint/red,
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 4
 	},
@@ -12753,10 +12597,7 @@
 	pixel_y = 6;
 	req_access = list("ACCESS_BRIDGE")
 	},
-/obj/floor_decal/spline/plain/beige{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "Qe" = (
 /obj/structure/cable/green{
@@ -12848,6 +12689,14 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
+"Qq" = (
+/obj/machinery/door/blast/regular/open{
+	dir = 4;
+	id_tag = "elevatorcmd";
+	name = "Restricted Lockdown"
+	},
+/turf/simulated/floor/tiled,
+/area/hallway/primary/bridge/aft)
 "Qv" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -12860,7 +12709,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
 "Qw" = (
-/obj/structure/table/glass,
+/obj/structure/table/steel,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -12896,7 +12745,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/aux_eva)
 "QF" = (
-/obj/paint/hull,
+/obj/paint/meatstation,
 /turf/simulated/wall/titanium,
 /area/aquila/suits)
 "QK" = (
@@ -12912,7 +12761,7 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/hallway/primary/bridge/fore)
 "QL" = (
-/obj/paint/hull,
+/obj/paint/meatstation,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -12937,7 +12786,6 @@
 	pixel_x = 25;
 	req_access = list("ACCESS_BRIDGE")
 	},
-/obj/item/stool/padded,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
 "QS" = (
@@ -12955,7 +12803,6 @@
 	pixel_x = -5;
 	pixel_y = -1
 	},
-/obj/item/book/manual/solgov_law,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/sgr)
 "QW" = (
@@ -12987,7 +12834,7 @@
 	pixel_x = -3;
 	pixel_y = 7
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "QY" = (
 /obj/structure/railing/mapped{
@@ -13201,7 +13048,6 @@
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
 "RH" = (
-/obj/paint/red,
 /turf/simulated/wall/titanium,
 /area/aquila/storage)
 "RK" = (
@@ -13215,7 +13061,7 @@
 /obj/structure/bed/chair/comfy/blue{
 	dir = 4
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "RQ" = (
 /obj/machinery/firealarm{
@@ -13247,20 +13093,9 @@
 /turf/simulated/floor/plating,
 /area/hallway/primary/bridge/fore)
 "RV" = (
-/obj/structure/cable/green{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/obj/structure/cable/green,
-/obj/machinery/door/firedoor,
-/obj/wallframe_spawn/reinforced/hull,
-/obj/machinery/door/blast/regular/open{
-	dir = 4;
-	id_tag = "cap_window";
-	name = "CO's Quarters Shutters"
-	},
-/turf/simulated/floor/plating,
-/area/crew_quarters/heads/office/co)
+/obj/machinery/status_display,
+/turf/simulated/wall/ocp_wall,
+/area/bridge)
 "RX" = (
 /obj/structure/sign/warning/fall,
 /turf/simulated/wall/r_wall/hull,
@@ -13367,7 +13202,7 @@
 	name = "Protective Shutters";
 	opacity = 0
 	},
-/obj/paint/hull,
+/obj/paint/meatstation,
 /turf/simulated/floor/plating,
 /area/aquila/cockpit)
 "SB" = (
@@ -13675,8 +13510,11 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
 "TP" = (
-/obj/structure/curtain/open/bed,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/airlock/warhammer/vaultold{
+	req_access = list("ACCESS_BRIDGE");
+	name = "Bridge - Saferoom"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
 "TQ" = (
@@ -13808,7 +13646,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/aquila/crew)
 "Uy" = (
-/obj/structure/table/glass,
+/obj/structure/table/steel,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -13863,7 +13701,6 @@
 /turf/space,
 /area/space)
 "UW" = (
-/obj/paint/red,
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 10
 	},
@@ -13883,7 +13720,12 @@
 /area/aquila/medical)
 "Vc" = (
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/wood/walnut,
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "Vf" = (
 /obj/structure/cable/green{
@@ -14046,26 +13888,16 @@
 	},
 /obj/structure/table/woodentable/walnut,
 /obj/item/sticky_pad/random,
-/turf/simulated/floor/carpet,
+/obj/item/toy/torchmodel,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "VL" = (
 /obj/floor_decal/corner/red/half,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
 "VN" = (
-/obj/wallframe_spawn/reinforced/polarized{
-	id = "bridge_port"
-	},
-/obj/structure/cable/green{
-	d2 = 2;
-	icon_state = "0-2"
-	},
-/obj/structure/cable/green{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/turf/simulated/floor/plating,
-/area/bridge)
+/turf/simulated/wall/r_wall/hull,
+/area/solar/bridge)
 "VP" = (
 /obj/floor_decal/corner/paleblue{
 	dir = 10
@@ -14133,7 +13965,7 @@
 /area/bridge/meeting_room)
 "Wg" = (
 /obj/wallframe_spawn/reinforced/titanium,
-/obj/paint/hull,
+/obj/paint/meatstation,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
@@ -14153,7 +13985,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/security/bridgecheck)
 "Wi" = (
-/obj/structure/table/glass,
+/obj/structure/table/steel,
 /obj/machinery/photocopier/faxmachine{
 	department = "Dauntless - Chief Science Officer"
 	},
@@ -14178,7 +14010,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/forestarboard)
 "Ws" = (
-/obj/paint/red,
 /turf/simulated/wall/titanium,
 /area/aquila/power)
 "Wt" = (
@@ -14196,7 +14027,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
 "Ww" = (
-/obj/paint/hull,
+/obj/paint/meatstation,
 /turf/simulated/wall/titanium,
 /area/aquila/power)
 "WL" = (
@@ -14204,10 +14035,10 @@
 	dir = 8;
 	icon_state = "console"
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "WW" = (
-/obj/structure/table/glass,
+/obj/structure/table/steel,
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
@@ -14237,7 +14068,6 @@
 /area/bridge/meeting_room)
 "Xa" = (
 /obj/structure/closet/firecloset,
-/obj/item/storage/briefcase/inflatable,
 /obj/floor_decal/industrial/outline/yellow,
 /obj/machinery/power/apc/high{
 	dir = 8;
@@ -14306,7 +14136,7 @@
 /area/hallway/primary/bridge/fore)
 "Xp" = (
 /obj/structure/sign/solgov,
-/obj/paint/hull,
+/obj/paint/meatstation,
 /turf/simulated/wall/titanium,
 /area/aquila/airlock)
 "Xq" = (
@@ -14350,7 +14180,7 @@
 /area/crew_quarters/heads/office/cmo)
 "Xz" = (
 /obj/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/secure_closet/guncabinet/PPE,
+/obj/structure/closet/secure_closet/guncabinet/lasgun,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
 "XB" = (
@@ -14430,7 +14260,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/foreport)
 "Yb" = (
-/obj/paint/hull,
+/obj/paint/meatstation,
 /turf/simulated/wall/titanium,
 /area/aquila/medical)
 "Yd" = (
@@ -14440,13 +14270,11 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 10
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
-/turf/simulated/floor/tiled/dark,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "Ye" = (
 /obj/machinery/button/blast_door{
@@ -14548,7 +14376,7 @@
 	icon_state = "console"
 	},
 /obj/item/modular_computer/tablet/lease/preset/command,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "YC" = (
 /obj/machinery/door/airlock/sol{
@@ -14719,18 +14547,19 @@
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/heads/office/rd)
 "Zj" = (
-/obj/paint/hull,
+/obj/paint/meatstation,
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 10
 	},
 /turf/simulated/wall/titanium,
 /area/aquila/suits)
 "Zs" = (
-/obj/machinery/computer/account_database,
 /obj/machinery/recharger/wallcharger{
 	pixel_y = 24
 	},
-/turf/simulated/floor/carpet,
+/obj/structure/bed/padded,
+/obj/item/bedsheet/brown,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "Zt" = (
 /obj/floor_decal/corner/red{
@@ -14774,7 +14603,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/aquila/airlock)
 "ZB" = (
-/obj/paint/red,
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 4
 	},
@@ -14834,7 +14662,7 @@
 /obj/structure/dogbed,
 /obj/random/plushie,
 /mob/living/simple_animal/passive/corgi/Ian,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/rectangles,
 /area/crew_quarters/heads/office/xo)
 "ZX" = (
 /obj/floor_decal/corner/paleblue/diagonal,
@@ -21789,6 +21617,7 @@ aa
 aa
 aa
 aa
+oy
 af
 af
 af
@@ -21798,7 +21627,16 @@ af
 af
 af
 af
-af
+aa
+aa
+aa
+aa
+AH
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -21808,16 +21646,6 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-zx
-aa
-aa
-aa
-aa
 tg
 tg
 tg
@@ -21827,7 +21655,7 @@ tg
 tg
 tg
 tg
-tg
+Fp
 aa
 aa
 aa
@@ -22004,8 +21832,9 @@ af
 af
 aa
 aa
-aa
+iI
 vA
+iI
 aa
 aa
 aa
@@ -22013,10 +21842,9 @@ aa
 aa
 aa
 aa
-aa
-aa
+iI
 vA
-aa
+iI
 aa
 aa
 tg
@@ -22198,12 +22026,12 @@ af
 af
 af
 af
-af
-af
-af
-af
-af
-af
+eq
+eq
+eq
+eq
+eq
+eq
 fu
 XQ
 XQ
@@ -22218,9 +22046,9 @@ Aw
 KG
 Hz
 Es
-aa
-aa
-sx
+iI
+iI
+tg
 tg
 tg
 tg
@@ -22409,7 +22237,7 @@ NL
 DE
 TB
 sm
-HE
+RV
 Ra
 CE
 BE
@@ -22420,8 +22248,8 @@ dU
 WW
 FE
 HE
-BI
-RV
+Mz
+Mz
 Mz
 Yz
 Pt
@@ -22608,10 +22436,10 @@ qO
 Gr
 rz
 Xz
-Fp
+qO
 eM
 DE
-Ie
+ox
 nf
 If
 lt
@@ -22813,7 +22641,7 @@ Hf
 bf
 ee
 Wv
-eP
+ox
 cy
 HC
 hn
@@ -23015,7 +22843,7 @@ eN
 Ke
 Ks
 TI
-eP
+ox
 cz
 HC
 hn
@@ -23429,7 +23257,7 @@ Kt
 Lw
 fN
 HW
-ck
+ox
 qQ
 rJ
 Ii
@@ -23621,20 +23449,20 @@ Du
 qO
 qO
 yM
-eP
+ox
 hV
-eP
+ox
 nu
 hn
 HC
 hn
 dW
-eP
+ox
 HX
-eP
+ox
 Dx
 rK
-bq
+Dx
 bq
 bq
 bq
@@ -23815,17 +23643,17 @@ al
 aO
 aO
 aO
-aO
-aO
-aO
-aO
-aO
-aO
+cq
+cq
+cq
+cq
+cq
+cq
 bM
 ci
 ct
 cA
-iI
+ox
 HF
 qf
 Zg
@@ -24018,7 +23846,7 @@ aO
 sC
 Bs
 qa
-aO
+zT
 sl
 si
 VF
@@ -24027,13 +23855,13 @@ bR
 cl
 cu
 cB
-iJ
+ox
 jz
 dT
 dh
 IY
 nJ
-oy
+ox
 eD
 eW
 fw
@@ -24218,24 +24046,24 @@ VB
 JF
 aO
 Zs
-co
+zT
 cp
-aO
 dI
-aB
+dI
+zT
 za
 fx
 bS
 cl
 cv
 cC
+ox
+ox
+ox
 eP
-AH
-yf
-eP
-VN
-zh
-eP
+ox
+ox
+ox
 eC
 eX
 fy
@@ -24420,12 +24248,12 @@ VB
 xN
 aO
 fz
-bN
-cq
-aO
-aO
-eq
-aO
+zT
+bO
+co
+Od
+zT
+zT
 yg
 cl
 cl
@@ -24622,11 +24450,11 @@ VB
 xN
 aO
 en
-bO
+zT
 bO
 Od
 dJ
-Ce
+zT
 ZT
 bQ
 cl
@@ -25027,7 +24855,7 @@ xN
 aO
 QX
 dd
-bO
+zT
 iB
 oz
 zT
@@ -25229,7 +25057,7 @@ YL
 aO
 rC
 Ad
-bO
+zT
 Qd
 be
 NH
@@ -25440,7 +25268,7 @@ aO
 eU
 qg
 Vn
-cX
+cY
 dl
 Xe
 dK
@@ -29280,7 +29108,7 @@ gm
 gm
 gm
 gm
-jV
+Qq
 jV
 YS
 VP
@@ -29482,7 +29310,7 @@ gm
 gm
 gm
 gm
-jV
+Qq
 jV
 YS
 VP
@@ -29684,7 +29512,7 @@ gm
 gm
 gm
 gm
-jV
+Qq
 kN
 lH
 mV
@@ -29887,7 +29715,7 @@ gm
 gm
 gm
 fI
-kM
+xV
 El
 mW
 kJ
@@ -30112,7 +29940,7 @@ xD
 CN
 CN
 CN
-ad
+iI
 aa
 aa
 aa
@@ -30314,7 +30142,7 @@ CN
 CN
 CN
 CN
-ad
+iI
 aa
 aa
 aa
@@ -30515,8 +30343,8 @@ CN
 CN
 CN
 ad
-ad
-ad
+iI
+iI
 aa
 aa
 aa
@@ -30717,8 +30545,8 @@ CN
 ad
 ad
 ad
-ad
-ad
+iI
+iI
 aa
 aa
 aa
@@ -30919,8 +30747,8 @@ ad
 ad
 ad
 ad
-ad
-ad
+iI
+iI
 aa
 aa
 aa
@@ -31121,8 +30949,8 @@ ad
 ad
 ad
 ad
+iI
 ad
-aa
 aa
 aa
 aa
@@ -31323,8 +31151,8 @@ ad
 ad
 ad
 ad
+iI
 ad
-aa
 aa
 aa
 aa
@@ -31484,12 +31312,12 @@ aa
 aa
 aa
 ad
-ad
-ad
-ad
-ad
-ad
-ad
+VN
+VN
+VN
+VN
+zh
+VN
 bD
 bD
 bD
@@ -31519,14 +31347,14 @@ dV
 dV
 ws
 dV
+iJ
+iJ
+iJ
+iJ
+iJ
+iJ
+zh
 ad
-ad
-ad
-ad
-ad
-ad
-ad
-aa
 aa
 aa
 aa
@@ -31686,7 +31514,7 @@ aa
 aa
 ad
 ad
-ad
+VN
 au
 aH
 aH
@@ -31727,7 +31555,7 @@ aH
 aH
 xR
 oa
-ad
+VN
 ad
 aa
 aa
@@ -31929,8 +31757,8 @@ ad
 ah
 av
 aI
+VN
 ad
-aa
 aa
 aa
 aa
