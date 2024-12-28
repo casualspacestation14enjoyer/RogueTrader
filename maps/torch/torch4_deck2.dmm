@@ -31,7 +31,7 @@
 	pixel_x = -32;
 	tag_door = "escape_pod_11_hatch"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod11/station)
 "ad" = (
 /obj/machinery/fusion_fuel_injector/mapped{
@@ -1194,12 +1194,6 @@
 "ck" = (
 /obj/structure/closet/crate/medical,
 /obj/item/bodybag,
-/obj/random/firstaid,
-/obj/random/medical,
-/obj/random/medical,
-/obj/random/medical,
-/obj/random/medical,
-/obj/random/medical,
 /obj/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/central)
@@ -2332,7 +2326,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod11/station)
 "eC" = (
 /obj/structure/cable/green{
@@ -2612,9 +2606,6 @@
 	},
 /obj/structure/table/steel,
 /obj/machinery/cell_charger,
-/obj/random/powercell,
-/obj/random/powercell,
-/obj/item/cell/high,
 /obj/floor_decal/industrial/warning/corner{
 	dir = 4
 	},
@@ -2623,10 +2614,7 @@
 "fc" = (
 /obj/structure/table/steel,
 /obj/machinery/cell_charger,
-/obj/random/powercell,
-/obj/random/powercell,
 /obj/floor_decal/corner/yellow/half,
-/obj/random/powercell,
 /turf/simulated/floor/tiled/monotile,
 /area/engineering/storage)
 "fd" = (
@@ -2692,7 +2680,7 @@
 /area/maintenance/seconddeck/forestarboard)
 "fn" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod11/station)
 "fp" = (
 /turf/simulated/wall/r_wall/prepainted,
@@ -3339,11 +3327,11 @@
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
 	id_tag = "escape_pod_11_pump"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod11/station)
 "gH" = (
 /obj/structure/bed/chair/shuttle,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod11/station)
 "gI" = (
 /obj/floor_decal/industrial/warning{
@@ -3352,11 +3340,11 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod11/station)
 "gJ" = (
 /obj/machinery/atmospherics/unary/tank/air,
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod11/station)
 "gK" = (
 /obj/structure/shuttle/engine/heater{
@@ -3621,7 +3609,7 @@
 	dir = 1;
 	id_tag = "escape_pod_10_pump"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod10/station)
 "hy" = (
 /obj/structure/railing/mapped{
@@ -3636,7 +3624,7 @@
 /turf/simulated/floor/bluegrid,
 /area/engineering/bluespace)
 "hz" = (
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod11/station)
 "hA" = (
 /obj/floor_decal/industrial/warning{
@@ -3645,13 +3633,13 @@
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod11/station)
 "hB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 9
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod11/station)
 "hC" = (
 /obj/structure/table/rack,
@@ -3889,7 +3877,7 @@
 	dir = 1;
 	id_tag = "escape_pod_11_pump"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod11/station)
 "ip" = (
 /obj/machinery/status_display{
@@ -3898,7 +3886,7 @@
 /obj/structure/bed/chair/shuttle{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod11/station)
 "iq" = (
 /obj/structure/bed/chair/shuttle{
@@ -3908,7 +3896,7 @@
 	dir = 1;
 	id_tag = "escape_pod_11_pump"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod11/station)
 "ir" = (
 /obj/floor_decal/industrial/warning{
@@ -3918,8 +3906,7 @@
 /obj/structure/table/standard{
 	name = "plastic table frame"
 	},
-/obj/random/firstaid,
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod11/station)
 "is" = (
 /obj/machinery/sleeper{
@@ -3930,7 +3917,7 @@
 	name = "Emergency NanoMed";
 	pixel_y = -32
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod11/station)
 "it" = (
 /obj/machinery/portable_atmospherics/powered/pump/filled,
@@ -5539,8 +5526,6 @@
 /area/engineering/engineering_bay)
 "mC" = (
 /obj/structure/table/steel,
-/obj/random/tech_supply,
-/obj/random/tech_supply,
 /obj/structure/fireaxecabinet{
 	pixel_y = -32
 	},
@@ -6152,7 +6137,7 @@
 	pixel_x = -32;
 	tag_door = "escape_pod_10_hatch"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod10/station)
 "on" = (
 /obj/structure/catwalk,
@@ -9122,24 +9107,24 @@
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
 	id_tag = "escape_pod_10_pump"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod10/station)
 "wj" = (
 /obj/machinery/status_display{
 	pixel_y = 32
 	},
 /obj/structure/bed/chair/shuttle,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod10/station)
 "wk" = (
 /obj/structure/bed/chair/shuttle,
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
 	id_tag = "escape_pod_10_pump"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod10/station)
 "wl" = (
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod10/station)
 "wm" = (
 /obj/floor_decal/industrial/warning{
@@ -9151,8 +9136,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/random/firstaid,
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod10/station)
 "wn" = (
 /obj/machinery/sleeper,
@@ -9160,7 +9144,7 @@
 	name = "Emergency NanoMed";
 	pixel_y = 32
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod10/station)
 "wo" = (
 /obj/structure/shuttle/engine/heater{
@@ -9451,7 +9435,7 @@
 /obj/machinery/computer/cryopod{
 	pixel_y = 32
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod11/station)
 "xf" = (
 /obj/floor_decal/industrial/warning{
@@ -9460,13 +9444,13 @@
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod10/station)
 "xg" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 10
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod10/station)
 "xh" = (
 /obj/machinery/portable_atmospherics/powered/scrubber,
@@ -9677,26 +9661,26 @@
 	dir = 1;
 	id_tag = "escape_pod_10_pump"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod10/station)
 "xX" = (
 /obj/structure/bed/chair/shuttle{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod10/station)
 "xY" = (
 /obj/floor_decal/industrial/warning{
 	dir = 8
 	},
 /obj/machinery/light/small,
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod10/station)
 "xZ" = (
 /obj/machinery/atmospherics/unary/tank/air{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/warhammer/splate,
 /area/shuttle/escape_pod10/station)
 "ya" = (
 /obj/random/torchcloset,
@@ -11546,9 +11530,6 @@
 "Dd" = (
 /obj/structure/table/steel,
 /obj/machinery/cell_charger,
-/obj/item/cell/high,
-/obj/random/powercell,
-/obj/random/powercell,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/cargo)
 "De" = (
@@ -15311,7 +15292,7 @@
 /area/maintenance/incinerator)
 "OO" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod10/station)
 "OR" = (
 /obj/machinery/camera/network/second_deck{
@@ -15510,7 +15491,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod10/station)
 "Pr" = (
 /obj/structure/disposalpipe/segment,
@@ -16275,7 +16256,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod10/station)
 "RR" = (
 /obj/structure/window/reinforced{
@@ -16414,7 +16395,7 @@
 /obj/machinery/computer/cryopod{
 	pixel_y = -32
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod10/station)
 "Sn" = (
 /obj/machinery/meter,
@@ -16994,7 +16975,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod11/station)
 "Uz" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -17316,7 +17297,8 @@
 /area/maintenance/seconddeck/central)
 "Wa" = (
 /obj/floor_decal/industrial/outline/grey,
-/obj/structure/closet/crate/warhammer/freezer/rations,
+/obj/structure/closet/crate/warhammer/freezer,
+/obj/random/loot/randomsupply,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/central)
 "Wb" = (
@@ -17580,7 +17562,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
 	id_tag = "escape_pod_11_pump"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/brothel,
 /area/shuttle/escape_pod11/station)
 "WF" = (
 /obj/structure/cable{

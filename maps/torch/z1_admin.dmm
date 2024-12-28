@@ -1275,7 +1275,7 @@
 /turf/simulated/floor/holofloor/tiled/dark,
 /area/holodeck/source_boxingcourt)
 "agp" = (
-/obj/structure/closet/secure_closet/personal/patient,
+/obj/structure/closet/warhammer/secure_closet/personal/patient,
 /turf/unsimulated/floor{
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "floor3"
@@ -2258,7 +2258,7 @@
 	},
 /area/centcom/living)
 "atv" = (
-/obj/structure/closet/secure_closet/personal,
+/obj/structure/closet/warhammer/secure_closet/personal,
 /turf/unsimulated/floor{
 	icon_state = "carpet"
 	},

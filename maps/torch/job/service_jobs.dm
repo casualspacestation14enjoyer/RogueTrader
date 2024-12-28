@@ -273,7 +273,7 @@
 		current_title = title // use default title
 	if(current_title == "Penitent" || current_title == "Deck Scum" || current_title == "Pathfinder" || current_title == "Miner")
 		if(current_title == "Penitent")
-			if(prob(80))
+			if(prob(85))
 				to_chat(H,"<span class='danger'><b><font size=4>THE PENITENT</font></b></span>")
 				to_chat(H, "<span class='notice'><b><font size=2>As the Penitent, you are condemned to suffer for your past crimes, undertaking the most dangerous and brutal tasks, hoping to earn absolution through relentless service to the Imperium.</font></b></span>")
 				H.equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/penitent, slot_w_uniform)

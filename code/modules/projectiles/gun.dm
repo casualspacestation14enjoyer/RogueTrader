@@ -119,6 +119,8 @@
 	var/lock_time = -100
 	var/last_safety_check = -INFINITY
 	var/safety_state = 0
+	var/calibrated = 0
+	var/calibration_penalty = 1
 	var/has_safety = TRUE
 	/// Overlay to apply to gun based on safety state, if any.
 	var/safety_icon
@@ -665,6 +667,36 @@
 			to_chat(usr, SPAN_WARNING("You need a gun in your hands to do that."))
 			return
 	gun.toggle_safety(usr)
+
+
+/obj/item/gun/proc/toggle_calib(mob/user)
+	if (user?.is_physically_disabled())
+		to_chat(user, SPAN_WARNING("You can't do this right now!"))
+		return
+
+	if(user)
+		user.visible_message(SPAN_WARNING("[user] finishes calibrating the \the [src]."), SPAN_NOTICE("You calibrate \the [src] it should be more reliable now."), range = 4)
+		calibrated = 1
+		playsound(src, 'sound/weapons/guns/interaction/rifle_boltforward.ogg', 25, 1)
+
+
+/obj/item/gun/verb/toggle_calib_verb()
+	set name = "Calibrate Weapon"
+	set category = "Object"
+	set src in usr
+	if (usr.incapacitated())
+		to_chat(usr, SPAN_WARNING("You're in no condition to do that."))
+		return
+	var/obj/item/gun/gun = usr.get_active_hand()
+	if (!istype(gun))
+		gun = usr.get_inactive_hand()
+		if (!istype(gun))
+			to_chat(usr, SPAN_WARNING("You need a gun in your hands to do that."))
+			return
+	playsound(src, 'sound/weapons/guns/interaction/rifle_load.ogg', 25, 1)
+	if(!do_after(src, 10 SECONDS, DO_PUBLIC_UNIQUE))
+		return
+	gun.toggle_calib(usr)
 
 
 /obj/item/gun/CtrlClick(mob/user)

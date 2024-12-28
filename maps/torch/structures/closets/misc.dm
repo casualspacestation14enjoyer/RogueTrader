@@ -90,15 +90,14 @@
 
 /obj/structure/closet/secure_closet/guncabinet/sidearm/WillContain()
 	return list(
-		/obj/item/clothing/accessory/storage/holster/thigh = 3,
-		/obj/item/gun/projectile/pistol/slug = 2,
-	)
-
-/obj/structure/closet/secure_closet/guncabinet/PPE
-	name = "bridge PPE cabinet"
-
-/obj/structure/closet/secure_closet/guncabinet/PPE/WillContain()
-	return list(
 		/obj/item/gun/projectile/revolver/imperial/heavy = 2,
 		/obj/item/clothing/accessory/storage/holster/thigh = 2
+	)
+
+/obj/structure/closet/secure_closet/guncabinet/lasgun
+	name = "lasgun cabinet"
+
+/obj/structure/closet/secure_closet/guncabinet/lasgun/WillContain()
+	return list(
+		/obj/item/gun/energy/lasgun/triplex = 2
 	)

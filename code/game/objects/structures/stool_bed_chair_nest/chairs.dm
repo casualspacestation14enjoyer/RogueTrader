@@ -424,16 +424,22 @@
 	name = "\the rogue throne"
 	desc = "Fit for baron, count, or even duke. Surely fit for your sorry rear end."
 	icon = 'icons/map_project/furniture_and_decor.dmi'
-	base_icon = "throne"
-	icon_state = "throne"
+	base_icon = "cave_throne"
+	icon_state = "cave_throne"
 
-/obj/structure/bed/chair/governor_throne
-	name = "planetary Governor Throne"
+/obj/structure/bed/chair/throne/two
+	name = "imperial throne"
 	desc = "An expensive and serious looking chair to use on an office."
 	base_icon = "comm"
 	icon = 'icons/map_project/furniture_and_decor.dmi'
 	icon_state = "comm"
 
+/obj/structure/bed/chair/throne/three
+	name = "imperial throne"
+	desc = "An expensive and serious looking chair to use on an office."
+	base_icon = "chair"
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "chair"
 
 /obj/structure/bed/chair/ancient_throne
 	name = "ancient throne"
