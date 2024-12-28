@@ -618,7 +618,7 @@
 	icon = 'icons/map_project/furniture_and_decor.dmi'
 	icon_state = "well"
 
-/obj/structure/hygiene/sink/puddle/well
+/obj/structure/hygiene/sink/puddle/fountain
 	name = "fountain water"
 	icon = 'icons/obj/structures/fountain.dmi'
 	icon_state = "water"
