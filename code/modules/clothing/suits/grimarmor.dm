@@ -780,7 +780,7 @@
 	name = "biologis robes"
 	desc = "Plain robes adorned with various wriggling mechanical appendages. These robes belong to a Magos Biologis, devoted to unlocking the biological mysteries of the universe with a machine-like precision."
 	icon_state = "genetor"
-	item_state = "genetor_hooded"
+	item_state = "genetor"
 	canremove = 0
 	unacidable = 1
 	body_parts_covered = LEGS | ARMS

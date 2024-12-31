@@ -277,7 +277,7 @@
 
 
 /obj/item/reagent_containers/food/drinks/bottle/kahlua
-	name = "Robert Robust's Coffee Liqueur"
+	name = "Robert Robust's Recaf Liqueur"
 	desc = "A widely known, Mexican coffee-flavoured liqueur. In production since M41, HONK!"
 	icon_state = "kahluabottle"
 	center_of_mass = "x=17;y=3"
@@ -775,7 +775,7 @@
 
 
 /obj/item/reagent_containers/food/drinks/bottle/small/beer
-	name = "space beer"
+	name = "Gothic Ale"
 	desc = "Contains only water, malt and hops."
 	icon_state = "beer"
 	center_of_mass = "x=16;y=12"

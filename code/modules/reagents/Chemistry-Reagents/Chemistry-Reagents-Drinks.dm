@@ -315,7 +315,7 @@
 
 /datum/reagent/drink/coffee
 	name = "Coffee"
-	description = "Coffee is a brewed drink prepared from roasted seeds, commonly called coffee beans, of the coffee plant."
+	description = "Recaf is a brewed drink prepared from roasted seeds, commonly called coffee beans, of the coffee plant."
 	taste_description = "bitterness"
 	taste_mult = 1.3
 	color = "#482000"
@@ -352,8 +352,8 @@
 	M.add_chemical_effect(CE_PULSE, 1)
 
 /datum/reagent/drink/coffee/icecoffee
-	name = "Iced Coffee"
-	description = "Coffee and ice, refreshing and cool."
+	name = "Iced Recaf"
+	description = "Recaf and ice, refreshing and cool."
 	taste_description = "bitter coldness"
 	color = "#102838"
 	adj_temp = -5
@@ -420,11 +420,11 @@
 
 /datum/reagent/drink/coffee/cafe_latte/mocha
 	name = "Mocha Latte"
-	description = "Coffee and chocolate, smooth and creamy."
+	description = "Recaf and chocolate, smooth and creamy."
 	taste_description = "bitter creamy chocolate"
 	protein_amount = 0.3
 	glass_name = "mocha latte"
-	glass_desc = "Coffee and chocolate, smooth and creamy."
+	glass_desc = "Recaf and chocolate, smooth and creamy."
 
 /datum/reagent/drink/coffee/soy_latte/mocha
 	name = "Mocha Soy Latte"
@@ -436,12 +436,12 @@
 
 /datum/reagent/drink/coffee/icecoffee/cafe_latte/mocha
 	name = "Iced Mocha Latte"
-	description = "Coffee and chocolate, smooth and creamy. This one's cold."
+	description = "Recaf and chocolate, smooth and creamy. This one's cold."
 	taste_description = "cold bitter creamy chocolate"
 	protein_amount = 0.3
 
 	glass_name = "iced mocha latte"
-	glass_desc = "Coffee and chocolate, smooth and creamy. This one's cold."
+	glass_desc = "Recaf and chocolate, smooth and creamy. This one's cold."
 
 /datum/reagent/drink/coffee/icecoffee/soy_latte/mocha
 	name = "Iced Soy Mocha Latte"
@@ -1028,7 +1028,7 @@
 	glass_special = list(DRINK_FIZZ)
 
 /datum/reagent/drink/coffee/coffee_cola
-	name = "Coffee Cola"
+	name = "Recaf Cola"
 	description = "There are people in town, man, crazy people in town."
 	taste_description = "coffee and cola"
 	reagent_state = LIQUID
@@ -1036,7 +1036,7 @@
 	adj_drowsy = -3
 	adj_temp = -5
 
-	glass_name = "Coffee Cola"
+	glass_name = "Recaf Cola"
 	glass_desc = "All you need is some bread and butter and honey"
 	glass_special = list(DRINK_FIZZ)
 
@@ -1372,8 +1372,8 @@
 	glass_desc = "Thick spiced pumpkin syrup used to flavor drinks."
 
 /datum/reagent/drink/decafcoffee
-	name = "Decaffeinated Coffee"
-	description = "Coffee but without the caffeine."
+	name = "Decaffeinated Recaf"
+	description = "Recaf but without the caffeine."
 	taste_description = "decaffeinated bitterness"
 	color = "#482000"
 
@@ -1400,12 +1400,12 @@
 
 /datum/reagent/drink/coffee/yuenyeung
 	name = "Yuenyeung"
-	description = "Also known as Coffee with Tea."
+	description = "Also known as Recaf with Tea."
 	taste_description = "refreshing and energising"
 	color = "#482000"
 
 	glass_name = "yeunyeung"
-	glass_desc = "Coffee with tea. Delicious."
+	glass_desc = "Recaf with tea. Delicious."
 
 /datum/reagent/drink/coffee/iced/frappe
 	name = "Iced Frappe"

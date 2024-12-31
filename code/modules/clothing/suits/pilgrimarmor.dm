@@ -679,24 +679,24 @@
 		bomb = ARMOR_BOMB_TEN-4
 		)
 
-/obj/item/clothing/suit/armor/grim/pilgrim/servant
+/obj/item/clothing/suit/armor/grim/pilgrim/magister
 	name = "ornate robes"
 	desc = "Elegant clothing for a servant of the imperium..."
 	icon_state = "robes"
-	item_state = "robes_item"
+	item_state = "robes"
 	body_parts_covered = LEGS|ARMS
-	accessories = list(/obj/item/clothing/accessory/armor_plate/paddingheavy)
+	accessories = list(/obj/item/clothing/accessory/armor_plate/flaklamellar)
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
-	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-300
-	slowdown_general = 0.03 // High quality cloth
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-150
+	slowdown_general = 0.04
 	armor = list(
-		melee = ARMOR_MELEE_FLAK-1,
-		bullet = ARMOR_BALLISTIC_FLAK-1,
-		laser = ARMOR_LASER_FLAK-2,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK-1,
 		energy = ARMOR_ENERGY_TEN-3,
-		bio = ARMOR_BIO_THIRTY-15,
-		rad = ARMOR_RAD_THIRTY,
-		bomb = ARMOR_BOMB_TEN
+		bio = ARMOR_BIO_THIRTY,
+		rad = ARMOR_RAD_THIRTY+20,
+		bomb = ARMOR_BOMB_TEN+10
 		)
 
 
@@ -706,7 +706,7 @@
 	icon_state = "male2"
 	item_state = "male2"
 	body_parts_covered = LEGS|ARMS
-	accessories = list(/obj/item/clothing/accessory/armor_plate/flak) // Trader's got monei
+	accessories = list(/obj/item/clothing/accessory/armor_plate/flaklamellar) // Trader's got monei
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-300
 	slowdown_general = 0.02

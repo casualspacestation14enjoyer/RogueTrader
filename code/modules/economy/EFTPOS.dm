@@ -4,7 +4,7 @@
 	icon = 'icons/obj/tools/eftpos.dmi'
 	icon_state = "eftpos"
 	var/machine_id = ""
-	var/eftpos_name = "Default EFTPOS scanner"
+	var/eftpos_name = "Default Creditorium scanner"
 	var/transaction_locked = 0
 	var/transaction_paid = 0
 	var/transaction_amount = 0
@@ -14,36 +14,36 @@
 
 /obj/item/device/eftpos/New()
 	..()
-	machine_id = "[station_name()] EFTPOS #[num_financial_terminals++]"
+	machine_id = "[station_name()] Creditorium #[num_financial_terminals++]"
 	access_code = rand(1111,111111)
 	spawn(0)
 		print_reference()
 
 		//create a short manual as well
 		var/obj/item/paper/R = new(src.loc)
-		R.SetName("Steps to success: Correct EFTPOS Usage")
+		R.SetName("Steps to success: Correct Creditorium Usage")
 		/*
-		R.info += "<b>When first setting up your EFTPOS device:</b>"
-		R.info += "1. Memorise your EFTPOS command code (provided with all EFTPOS devices).<br>"
-		R.info += "2. Confirm that your EFTPOS device is connected to your local accounts database. For additional assistance with this step, contact Necromundan IT Support<br>"
-		R.info += "3. Confirm that your EFTPOS device has been linked to the account that you wish to recieve funds for all transactions processed on this device.<br>"
-		R.info += "<b>When starting a new transaction with your EFTPOS device:</b>"
+		R.info += "<b>When first setting up your Creditorium device:</b>"
+		R.info += "1. Memorise your Creditorium command code (provided with all Creditorium devices).<br>"
+		R.info += "2. Confirm that your Creditorium device is connected to your local accounts database. For additional assistance with this step, contact Necromundan IT Support<br>"
+		R.info += "3. Confirm that your Creditorium device has been linked to the account that you wish to recieve funds for all transactions processed on this device.<br>"
+		R.info += "<b>When starting a new transaction with your Creditorium device:</b>"
 		R.info += "1. Ensure the device is UNLOCKED so that new data may be entered.<br>"
 		R.info += "2. Enter a sum of money and reference message for the new transaction.<br>"
 		R.info += "3. Lock the transaction, it is now ready for your customer.<br>"
-		R.info += "4. If at this stage you wish to modify or cancel your transaction, you may simply reset (unlock) your EFTPOS device.<br>"
-		R.info += "5. Give your EFTPOS device to the customer, they must authenticate the transaction by swiping their ID card and entering their PIN number.<br>"
-		R.info += "6. If done correctly, the transaction will be logged to both accounts with the reference you have entered, the terminal ID of your EFTPOS device and the money transferred across accounts.<br>"
+		R.info += "4. If at this stage you wish to modify or cancel your transaction, you may simply reset (unlock) your Creditorium device.<br>"
+		R.info += "5. Give your Creditorium device to the customer, they must authenticate the transaction by swiping their ID card and entering their PIN number.<br>"
+		R.info += "6. If done correctly, the transaction will be logged to both accounts with the reference you have entered, the terminal ID of your Creditorium device and the money transferred across accounts.<br>"
 		*/
 		//Temptative new manual:
-		R.info += "<b>First EFTPOS setup:</b><br>"
-		R.info += "1. Memorise your EFTPOS command code (provided with all EFTPOS devices).<br>"
-		R.info += "2. Connect the EFTPOS to the account in which you want to receive the funds.<br><br>"
+		R.info += "<b>First Creditorium setup:</b><br>"
+		R.info += "1. Memorise your Creditorium command code (provided with all Creditorium devices).<br>"
+		R.info += "2. Connect the Creditorium to the account in which you want to receive the funds.<br><br>"
 		R.info += "<b>When starting a new transaction:</b><br>"
 		R.info += "1. Enter the amount of money you want to charge and a purpose message for the new transaction.<br>"
-		R.info += "2. Lock the new transaction. If you want to modify or cancel the transaction, you simply have to reset your EFTPOS device.<br>"
-		R.info += "3. Give the EFTPOS device to your customer, he/she must finish the transaction by swiping their ID card or a charge card with enough funds.<br>"
-		R.info += "4. If everything is done correctly, the money will be transferred. To unlock the device you will have to reset the EFTPOS device.<br>"
+		R.info += "2. Lock the new transaction. If you want to modify or cancel the transaction, you simply have to reset your Creditorium device.<br>"
+		R.info += "3. Give the Creditorium device to your customer, he/she must finish the transaction by swiping their ID card or a charge card with enough funds.<br>"
+		R.info += "4. If everything is done correctly, the money will be transferred. To unlock the device you will have to reset the Creditorium device.<br>"
 
 
 		//stamp the paper
@@ -56,10 +56,10 @@
 		R.ico += "paper_stamp-boss"
 		R.stamped += /obj/item/stamp
 		R.AddOverlays(stampoverlay)
-		R.stamps += "<HR><i>This paper has been stamped by the EFTPOS device.</i>"
+		R.stamps += "<HR><i>This paper has been stamped by the Creditorium device.</i>"
 
 	//by default, connect to the station account
-	//the user of the EFTPOS device can change the target account though, and no-one will be the wiser (except whoever's being charged)
+	//the user of the Creditorium device can change the target account though, and no-one will be the wiser (except whoever's being charged)
 	linked_account = station_account
 
 /obj/item/device/eftpos/proc/print_reference()
@@ -76,11 +76,11 @@
 		R.stamped = new
 	R.stamped += /obj/item/stamp
 	R.AddOverlays(stampoverlay)
-	R.stamps += "<HR><i>This paper has been stamped by the EFTPOS device.</i>"
+	R.stamps += "<HR><i>This paper has been stamped by the Creditorium device.</i>"
 	var/obj/item/smallDelivery/D = new(R.loc)
 	R.forceMove(D)
 	D.wrapped = R
-	D.SetName("small parcel - 'EFTPOS access code'")
+	D.SetName("small parcel - 'Creditorium access code'")
 
 /obj/item/device/eftpos/attack_self(mob/user as mob)
 	if(get_dist(src,user) <= 1)
@@ -104,7 +104,7 @@
 			dat += "Value: <a href='?src=\ref[src];choice=trans_value'>[GLOB.using_map.local_currency_name_short][transaction_amount]</a><br>"
 			dat += "Linked account: <a href='?src=\ref[src];choice=link_account'>[linked_account ? linked_account.owner_name : "None"]</a><hr>"
 			dat += "<a href='?src=\ref[src];choice=change_code'>Change access code</a><br>"
-			dat += "<a href='?src=\ref[src];choice=change_id'>Change EFTPOS ID</a><br>"
+			dat += "<a href='?src=\ref[src];choice=change_id'>Change Creditorium ID</a><br>"
 			dat += "Scan card to reset access code <a href='?src=\ref[src];choice=reset'>\[------\]</a>"
 		show_browser(user, dat,"window=eftpos")
 	else
@@ -175,9 +175,9 @@
 	if(href_list["choice"])
 		switch(href_list["choice"])
 			if("change_code")
-				var/attempt_code = input("Re-enter the current EFTPOS access code", "Confirm old EFTPOS code") as num
+				var/attempt_code = input("Re-enter the current Creditorium access code", "Confirm old Creditorium code") as num
 				if(attempt_code == access_code)
-					var/trycode = input("Enter a new access code for this device (4-6 digits, numbers only)", "Enter new EFTPOS code") as num
+					var/trycode = input("Enter a new access code for this device (4-6 digits, numbers only)", "Enter new Creditorium code") as num
 					if(trycode >= 1000 && trycode <= 999999)
 						access_code = trycode
 					else
@@ -186,14 +186,14 @@
 				else
 					to_chat(usr, "[icon2html(src, usr)][SPAN_WARNING("Incorrect code entered.")]")
 			if("change_id")
-				var/attempt_code = text2num(input("Re-enter the current EFTPOS access code", "Confirm EFTPOS code"))
+				var/attempt_code = text2num(input("Re-enter the current Creditorium access code", "Confirm Creditorium code"))
 				if(attempt_code == access_code)
-					eftpos_name = sanitize(input("Enter a new terminal ID for this device", "Enter new EFTPOS ID"), MAX_NAME_LEN) + " EFTPOS scanner"
+					eftpos_name = sanitize(input("Enter a new terminal ID for this device", "Enter new Creditorium ID"), MAX_NAME_LEN) + " Creditorium scanner"
 					print_reference()
 				else
 					to_chat(usr, "[icon2html(src, usr)][SPAN_WARNING("Incorrect code entered.")]")
 			if("link_account")
-				var/attempt_account_num = input("Enter account number to pay EFTPOS charges into", "New account number") as num
+				var/attempt_account_num = input("Enter account number to pay Creditorium charges into", "New account number") as num
 				var/attempt_pin = input("Enter pin code", "Account pin") as num
 				linked_account = attempt_account_access(attempt_account_num, attempt_pin, 1)
 				if(linked_account)
@@ -203,10 +203,10 @@
 				else
 					to_chat(usr, "[icon2html(src, usr)][SPAN_WARNING("Account not found.")]")
 			if("trans_purpose")
-				var/choice = sanitize(input("Enter reason for EFTPOS transaction", "Transaction purpose"))
+				var/choice = sanitize(input("Enter reason for Creditorium transaction", "Transaction purpose"))
 				if(choice) transaction_purpose = choice
 			if("trans_value")
-				var/try_num = input("Enter amount for EFTPOS transaction", "Transaction amount") as num
+				var/try_num = input("Enter amount for Creditorium transaction", "Transaction amount") as num
 				if(try_num < 0)
 					alert("That is not a valid amount!")
 				else
@@ -217,7 +217,7 @@
 						transaction_locked = 0
 						transaction_paid = 0
 					else
-						var/attempt_code = input("Enter EFTPOS access code", "Reset Transaction") as num
+						var/attempt_code = input("Enter Creditorium access code", "Reset Transaction") as num
 						if(attempt_code == access_code)
 							transaction_locked = 0
 							transaction_paid = 0
@@ -259,7 +259,7 @@
 					var/attempt_pin = ""
 					var/datum/money_account/D = get_account(C.associated_account_number)
 					if(D && D.security_level)
-						attempt_pin = input("Enter pin code", "EFTPOS transaction") as num
+						attempt_pin = input("Enter pin code", "Creditorium transaction") as num
 						D = null
 					D = attempt_account_access(C.associated_account_number, attempt_pin, 2)
 					if(D)
@@ -275,7 +275,7 @@
 				else
 					to_chat(usr, "[icon2html(src, usr)][SPAN_WARNING("Connected account has been suspended.")]")
 			else
-				to_chat(usr, "[icon2html(src, usr)][SPAN_WARNING("EFTPOS is not connected to an account.")]")
+				to_chat(usr, "[icon2html(src, usr)][SPAN_WARNING("Creditorium is not connected to an account.")]")
 	else if (istype(I, /obj/item/card/emag))
 		if(transaction_locked)
 			if(transaction_paid)

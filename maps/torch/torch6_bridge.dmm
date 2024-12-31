@@ -54,7 +54,7 @@
 	},
 /obj/structure/disposalpipe/trunk,
 /obj/machinery/disposal,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/cl)
 "aj" = (
 /turf/simulated/floor/plating,
@@ -73,7 +73,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/cl)
 "al" = (
 /turf/simulated/wall/prepainted,
@@ -107,7 +107,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/forestarboard)
 "aq" = (
-/obj/structure/ladder,
 /obj/floor_decal/industrial/hatch/yellow,
 /obj/structure/catwalk,
 /turf/simulated/floor/tiled/techfloor,
@@ -185,12 +184,12 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/catwalk_plated,
+/obj/structure/catwalk,
 /obj/structure/disposalpipe/segment{
 	dir = 4;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "ay" = (
 /obj/structure/catwalk,
@@ -218,16 +217,19 @@
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 5
 	},
-/obj/catwalk_plated,
+/obj/structure/catwalk,
 /obj/structure/disposalpipe/segment{
 	dir = 2;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/aft)
 "aA" = (
 /obj/structure/catwalk,
 /obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/warhammer/vaultold{
+	req_access = list("ACCESS_BRIDGE")
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/forestarboard)
 "aC" = (
@@ -338,7 +340,7 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/cl)
 "aK" = (
 /turf/simulated/wall/prepainted,
@@ -357,7 +359,7 @@
 "aM" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/storage)
 "aN" = (
 /obj/structure/cable/green{
@@ -371,10 +373,10 @@
 	icon_state = "2-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/catwalk_plated,
+/obj/structure/catwalk,
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "aO" = (
 /turf/simulated/wall/prepainted,
@@ -424,8 +426,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
 	},
-/obj/catwalk_plated,
-/turf/simulated/floor/plating,
+/obj/structure/catwalk,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/aft)
 "aV" = (
 /obj/structure/cable/green{
@@ -442,7 +444,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/aft)
 "aW" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -462,8 +464,8 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/catwalk_plated,
-/turf/simulated/floor/plating,
+/obj/structure/catwalk,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/aft)
 "aX" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -473,7 +475,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/aft)
 "aY" = (
 /obj/floor_decal/industrial/outline/yellow,
@@ -481,13 +483,13 @@
 /obj/machinery/recharger/wallcharger{
 	pixel_y = 24
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "aZ" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "ba" = (
 /obj/structure/sign/warning/high_voltage{
@@ -498,7 +500,7 @@
 "bb" = (
 /obj/structure/closet/emcloset,
 /obj/floor_decal/industrial/outline/yellow,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "bc" = (
 /obj/machinery/newscaster{
@@ -508,18 +510,18 @@
 	pixel_x = 26
 	},
 /obj/machinery/photocopier,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/cl)
 "bd" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/bed/chair/comfy/blue{
 	dir = 4
 	},
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "be" = (
 /obj/machinery/computer/modular/preset/cardslot/command,
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "bf" = (
 /obj/structure/closet/secure_closet/bridgeofficer,
@@ -530,7 +532,7 @@
 	pixel_x = -28;
 	req_access = list("ACCESS_BRIDGE")
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "bg" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -579,7 +581,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/door/airlock/maintenance,
+/obj/machinery/door/airlock/warhammer/vaultold{
+	req_access = list("ACCESS_BRIDGE")
+	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/maintenance/bridge/forestarboard)
 "bj" = (
@@ -591,7 +595,7 @@
 /obj/floor_decal/corner/research{
 	dir = 5
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/rd)
 "bk" = (
 /obj/floor_decal/corner/white/full,
@@ -630,7 +634,7 @@
 /obj/machinery/rotating_alarm/security_alarm{
 	dir = 8
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "bt" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden{
@@ -655,7 +659,7 @@
 	name = "Corporate Liaison";
 	secured_wires = 1
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/fancyfloor/carpet/middle,
 /area/crew_quarters/heads/office/cl)
 "bv" = (
 /obj/structure/cable/green{
@@ -669,10 +673,10 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/catwalk_plated,
+/obj/structure/catwalk,
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "bw" = (
 /obj/structure/cable/green{
@@ -682,9 +686,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/catwalk_plated,
+/obj/structure/catwalk,
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "bx" = (
 /obj/structure/cable/green{
@@ -703,7 +707,7 @@
 /area/maintenance/bridge/aftstarboard)
 "by" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/cl)
 "bB" = (
 /obj/structure/cable/green{
@@ -750,13 +754,13 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
 	},
-/obj/catwalk_plated,
+/obj/structure/catwalk,
 /obj/machinery/light{
 	dir = 4;
 	icon_state = "tube1"
 	},
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "bG" = (
 /obj/machinery/light{
@@ -764,7 +768,7 @@
 	icon_state = "tube1"
 	},
 /obj/structure/flora/pottedplant/large,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/cl)
 "bH" = (
 /obj/structure/hygiene/toilet{
@@ -796,9 +800,8 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
-/obj/floor_decal/industrial/warning/fulltile,
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "bK" = (
 /obj/structure/cable/green{
@@ -809,7 +812,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "bL" = (
 /obj/machinery/door/firedoor,
@@ -834,7 +837,7 @@
 	pixel_y = 32
 	},
 /obj/floor_decal/industrial/hatch/yellow,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/starboard)
 "bO" = (
 /obj/structure/cable/green{
@@ -843,7 +846,7 @@
 	icon_state = "4-8"
 	},
 /obj/structure/bed/chair/comfy/blue,
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "bP" = (
 /obj/wallframe_spawn/reinforced/polarized{
@@ -885,7 +888,7 @@
 	name = "plastic table frame"
 	},
 /obj/item/storage/box/cups,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/starboard)
 "bS" = (
 /obj/machinery/light{
@@ -895,10 +898,10 @@
 /obj/machinery/camera/network/bridge{
 	c_tag = "Command Hallway - Fore  Starboard"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/starboard)
 "bT" = (
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "bV" = (
 /obj/wallframe_spawn/reinforced/polarized{
@@ -943,7 +946,7 @@
 	icon_state = "1-4"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/starboard)
 "ca" = (
 /obj/structure/cable/green{
@@ -951,7 +954,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/starboard)
 "cb" = (
 /obj/machinery/power/port_gen/pacman,
@@ -1010,7 +1013,7 @@
 	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "ch" = (
 /obj/machinery/power/breakerbox/activated{
@@ -1022,7 +1025,7 @@
 /obj/structure/closet/emcloset,
 /obj/floor_decal/industrial/outline/grey,
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/starboard)
 "cj" = (
 /obj/structure/cable/green{
@@ -1035,13 +1038,13 @@
 	},
 /obj/floor_decal/industrial/outline/yellow,
 /obj/machinery/hologram/holopad/longrange,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/rd)
 "ck" = (
 /turf/simulated/wall/prepainted,
 /area/bridge)
 "cl" = (
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/starboard)
 "cm" = (
 /obj/structure/disposalpipe/segment{
@@ -1059,7 +1062,7 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/starboard)
 "cn" = (
 /obj/structure/disposalpipe/junction{
@@ -1078,7 +1081,7 @@
 	icon_state = "1-8"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/starboard)
 "co" = (
 /obj/structure/table/woodentable/walnut,
@@ -1086,7 +1089,7 @@
 	pixel_x = -5;
 	pixel_y = 5
 	},
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "cp" = (
 /obj/structure/cable/green{
@@ -1094,7 +1097,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "cq" = (
 /turf/simulated/wall/ocp_wall,
@@ -1115,7 +1118,7 @@
 /obj/machinery/rotating_alarm/security_alarm{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/starboard)
 "cs" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
@@ -1129,7 +1132,7 @@
 	dir = 4;
 	icon_state = "pipe-j2"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "ct" = (
 /obj/structure/bed/chair/padded/blue{
@@ -1148,7 +1151,7 @@
 	dir = 1;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/starboard)
 "cu" = (
 /obj/structure/cable/green{
@@ -1159,7 +1162,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/starboard)
 "cv" = (
 /obj/structure/cable/green{
@@ -1171,7 +1174,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/starboard)
 "cw" = (
 /obj/structure/cable/green{
@@ -1184,7 +1187,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/starboard)
 "cx" = (
 /obj/structure/disposalpipe/junction{
@@ -1207,7 +1210,7 @@
 	dir = 4;
 	pixel_x = 26
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/starboard)
 "cy" = (
 /obj/machinery/keycard_auth/torch{
@@ -1229,16 +1232,18 @@
 /obj/item/pen,
 /obj/item/pen/red,
 /obj/item/pen/blue,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "cz" = (
-/obj/structure/table/steel,
 /obj/structure/noticeboard{
 	pixel_y = 30
 	},
-/obj/item/storage/toolbox/emergency,
-/obj/item/device/flashlight,
-/turf/simulated/floor/tiled/dark,
+/obj/machinery/power/shield_generator,
+/obj/structure/cable/green{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "cA" = (
 /obj/structure/cable/green{
@@ -1255,7 +1260,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/starboard)
 "cB" = (
 /obj/structure/disposalpipe/segment{
@@ -1267,7 +1272,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/starboard)
 "cC" = (
 /obj/structure/disposalpipe/segment{
@@ -1282,7 +1287,7 @@
 	pixel_x = 2;
 	pixel_y = -34
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/starboard)
 "cE" = (
 /obj/structure/cable/green{
@@ -1305,7 +1310,7 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/starboard)
 "cF" = (
 /obj/structure/cable/green{
@@ -1314,7 +1319,7 @@
 	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
-/obj/catwalk_plated,
+/obj/structure/catwalk,
 /obj/machinery/camera/network/bridge{
 	c_tag = "Command Hallway - Center Port";
 	dir = 8
@@ -1341,7 +1346,7 @@
 	name = "Chief of Security";
 	sort_type = "Chief of Security"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "cH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
@@ -1521,7 +1526,7 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/rd)
 "cT" = (
 /obj/structure/table/standard{
@@ -1536,7 +1541,7 @@
 	icon_state = "4-8"
 	},
 /obj/item/hand_labeler,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "cU" = (
 /obj/machinery/light{
@@ -1545,7 +1550,7 @@
 /obj/machinery/firealarm{
 	pixel_y = 24
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/meeting_room)
 "cV" = (
 /obj/machinery/computer/modular/preset/aislot/sysadmin{
@@ -1557,17 +1562,17 @@
 	pixel_y = -24
 	},
 /obj/structure/cable/green,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "cW" = (
 /obj/item/device/radio/intercom{
 	pixel_y = 23
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/meeting_room)
 "cY" = (
 /obj/structure/table/woodentable/walnut,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/meeting_room)
 "cZ" = (
 /obj/structure/table/woodentable/walnut,
@@ -1581,7 +1586,7 @@
 /obj/structure/sign/warning/smoking{
 	pixel_x = 26
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/meeting_room)
 "da" = (
 /obj/machinery/alarm{
@@ -1595,13 +1600,13 @@
 /obj/structure/flora/pottedplant/smallcactus{
 	desc = "This is a small cactus. Its needles are sharp. It seems neglected, as if no one loves it."
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/ce)
 "db" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/starboard)
 "dc" = (
 /obj/structure/cable/green{
@@ -1614,7 +1619,7 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/starboard)
 "dd" = (
 /obj/item/pen,
@@ -1624,7 +1629,7 @@
 /obj/random_multi/single_item/memo_supply,
 /obj/item/folder/envelope/dcorder,
 /obj/item/folder/envelope/csorder,
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "de" = (
 /obj/structure/cable/green{
@@ -1647,14 +1652,14 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/meeting_room)
 "df" = (
 /obj/machinery/camera/network/bridge{
 	c_tag = "Command Hallway - Center Starboard";
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "dg" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -1665,7 +1670,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/meeting_room)
 "dh" = (
 /obj/structure/table/steel,
@@ -1694,7 +1699,7 @@
 	dir = 8;
 	pixel_x = 24
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "di" = (
 /obj/floor_decal/industrial/outline/grey,
@@ -1714,10 +1719,6 @@
 	name = "CMO's suit storage";
 	req_access = list("ACCESS_MEDICAL_COMMAND")
 	},
-/obj/floor_decal/corner/paleblue/diagonal,
-/obj/floor_decal/corner/paleblue/diagonal{
-	dir = 4
-	},
 /obj/item/tank/oxygen_emergency_double,
 /obj/item/rig/command/medical/equipped,
 /turf/simulated/floor/tiled/dark,
@@ -1734,7 +1735,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/meeting_room)
 "do" = (
 /obj/structure/cable/green{
@@ -1742,7 +1743,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/meeting_room)
 "dp" = (
 /obj/structure/cable/green{
@@ -1768,7 +1769,7 @@
 	name = "east bump";
 	pixel_x = 24
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/meeting_room)
 "dr" = (
 /obj/machinery/atmospherics/binary/pump/on{
@@ -1850,7 +1851,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "dF" = (
 /obj/structure/table/rack,
@@ -1874,10 +1875,10 @@
 /obj/item/aiModule/solgov,
 /obj/item/aiModule/reset,
 /obj/item/aiModule/purge,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/ce)
 "dG" = (
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/cobed)
 "dH" = (
 /obj/machinery/light{
@@ -1891,13 +1892,13 @@
 /obj/machinery/vending/cola{
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "dI" = (
 /obj/structure/bed/chair/comfy/blue{
 	dir = 4
 	},
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "dJ" = (
 /obj/structure/table/woodentable/walnut,
@@ -1905,7 +1906,7 @@
 	pixel_x = 8;
 	pixel_y = -3
 	},
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "dK" = (
 /obj/structure/table/woodentable/walnut,
@@ -1916,7 +1917,7 @@
 "dL" = (
 /obj/structure/closet/secure_closet/engineering_chief_torch,
 /obj/floor_decal/industrial/outline/yellow,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/ce)
 "dM" = (
 /obj/machinery/power/apc{
@@ -1928,7 +1929,7 @@
 	dir = 8;
 	icon_state = "warning"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/ce)
 "dN" = (
 /obj/machinery/button/alternate/door{
@@ -1941,7 +1942,7 @@
 /obj/floor_decal/industrial/outline/grey,
 /obj/machinery/light,
 /obj/machinery/papershredder,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/ce)
 "dO" = (
 /obj/structure/cable/green{
@@ -1950,8 +1951,7 @@
 	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
-/obj/floor_decal/corner/red/half,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "dP" = (
 /obj/structure/table/woodentable/walnut,
@@ -1965,7 +1965,7 @@
 /obj/structure/noticeboard{
 	pixel_x = 32
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/meeting_room)
 "dR" = (
 /obj/structure/disposalpipe/segment,
@@ -1977,7 +1977,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "dS" = (
 /obj/machinery/requests_console{
@@ -1987,7 +1987,7 @@
 	name = "Bridge Conference Room";
 	pixel_x = 32
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/meeting_room)
 "dT" = (
 /obj/structure/table/steel,
@@ -1999,7 +1999,7 @@
 /obj/item/flora/pottedplantsmall/leaf{
 	desc = "A tiny waxy leafed plant specimen. It has 'Green's replacement' scribbled onto the pot."
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "dU" = (
 /obj/structure/table/steel,
@@ -2012,7 +2012,7 @@
 	dir = 8
 	},
 /obj/item/storage/box/donut,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "dV" = (
 /turf/simulated/wall/r_wall/hull,
@@ -2023,7 +2023,7 @@
 	c_tag = "Bridge";
 	dir = 1
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "dY" = (
 /turf/simulated/wall/r_wall/hull,
@@ -2047,7 +2047,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/port)
 "ee" = (
 /obj/structure/closet/secure_closet/bridgeofficer,
@@ -2057,7 +2057,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "ef" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -2069,7 +2069,7 @@
 	sort_type = "Bridge Conference Room"
 	},
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/port)
 "eg" = (
 /obj/floor_decal/industrial/warning{
@@ -2092,7 +2092,7 @@
 	pixel_x = -23;
 	pixel_y = -25
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/meeting_room)
 "el" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -2101,7 +2101,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/meeting_room)
 "em" = (
 /obj/structure/table/standard{
@@ -2110,7 +2110,7 @@
 /obj/item/device/flashlight/lamp{
 	pixel_y = 3
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/cos)
 "en" = (
 /obj/machinery/alarm{
@@ -2121,7 +2121,7 @@
 	},
 /obj/structure/flora/pottedplant/fern,
 /obj/random_multi/single_item/runtime,
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "eo" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -2130,13 +2130,13 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/meeting_room)
 "ep" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/meeting_room)
 "eq" = (
 /turf/simulated/wall/ocp_wall,
@@ -2160,7 +2160,7 @@
 	dir = 8;
 	pixel_x = 24
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/meeting_room)
 "et" = (
 /obj/structure/table/steel_reinforced,
@@ -2185,7 +2185,6 @@
 /obj/structure/table/standard{
 	name = "plastic table frame"
 	},
-/obj/floor_decal/corner/red/mono,
 /obj/machinery/keycard_auth/torch{
 	pixel_x = 26
 	},
@@ -2198,7 +2197,7 @@
 	desc = "A 'Space Life' brand Security Officer action figure. This one seems rather old. A small heart is sewn into the armor vest."
 	},
 /obj/item/sticky_pad/random,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/cos)
 "ev" = (
 /obj/machinery/keycard_auth/torch{
@@ -2209,11 +2208,11 @@
 	pixel_y = -24
 	},
 /obj/structure/table/steel,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "ew" = (
 /obj/structure/table/steel,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "ex" = (
 /obj/structure/cable/green{
@@ -2231,13 +2230,13 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/port)
 "ey" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/cl)
 "ez" = (
 /obj/structure/bed/chair/padded/green{
@@ -2247,7 +2246,7 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/cl)
 "eC" = (
 /obj/structure/disposalpipe/segment{
@@ -2263,7 +2262,7 @@
 	pixel_x = 2;
 	pixel_y = 24
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/port)
 "eD" = (
 /obj/structure/disposalpipe/segment{
@@ -2275,7 +2274,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/port)
 "eE" = (
 /obj/structure/disposalpipe/junction{
@@ -2292,50 +2291,49 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/port)
 "eF" = (
 /obj/machinery/firealarm{
 	dir = 8;
 	pixel_x = -24
 	},
-/obj/floor_decal/corner/red/mono,
 /obj/structure/closet/secure_closet{
 	name = "Security Equipment Locker";
 	req_access = list("ACCESS_RESTRICTED")
 	},
 /obj/floor_decal/industrial/outline/grey,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/security/bridgecheck)
 "eG" = (
 /obj/machinery/light,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/meeting_room)
 "eH" = (
 /obj/machinery/computer/ship/helm{
 	req_access = list("ACCESS_RESTRICTED_COMMAND")
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/cockpit)
 "eI" = (
 /obj/machinery/computer/shuttle_control/explore/aquila,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/cockpit)
 "eJ" = (
 /obj/machinery/computer/ship/sensors,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/cockpit)
 "eK" = (
 /obj/item/device/radio/intercom{
 	dir = 1;
 	pixel_y = -28
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/meeting_room)
 "eL" = (
 /obj/machinery/photocopier,
 /obj/floor_decal/industrial/outline/grey,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/meeting_room)
 "eM" = (
 /obj/structure/cable/green{
@@ -2354,12 +2352,12 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "eO" = (
 /obj/machinery/papershredder,
 /obj/floor_decal/industrial/outline/grey,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/meeting_room)
 "eP" = (
 /turf/simulated/wall/r_wall/prepainted,
@@ -2375,7 +2373,7 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "eR" = (
 /obj/structure/disposalpipe/trunk{
@@ -2386,7 +2384,7 @@
 /obj/structure/sign/ecplaque{
 	pixel_x = 29
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/meeting_room)
 "eS" = (
 /obj/structure/cable/green{
@@ -2410,7 +2408,7 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/photocopier,
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "eU" = (
 /obj/machinery/light{
@@ -2426,7 +2424,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "eV" = (
 /obj/structure/cable/green{
@@ -2447,7 +2445,7 @@
 /obj/structure/bed/chair/padded/blue{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/port)
 "eW" = (
 /obj/structure/cable/green{
@@ -2455,7 +2453,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/port)
 "eX" = (
 /obj/structure/cable/green{
@@ -2475,18 +2473,18 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/port)
 "eY" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/cl)
 "eZ" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/cl)
 "fa" = (
 /obj/structure/cable/green{
@@ -2499,7 +2497,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/port)
 "fc" = (
 /obj/structure/disposalpipe/junction{
@@ -2517,7 +2515,7 @@
 	dir = 4;
 	pixel_x = 26
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/port)
 "fd" = (
 /obj/machinery/power/apc{
@@ -2607,11 +2605,11 @@
 /obj/structure/table/steel,
 /obj/random_multi/single_item/memo_research,
 /obj/random_multi/single_item/memo_exploration,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/rd)
 "fm" = (
 /obj/structure/table/steel_reinforced,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/cockpit)
 "fn" = (
 /obj/machinery/button/blast_door{
@@ -2628,7 +2626,7 @@
 /obj/structure/bed/chair/shuttle/blue{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/cockpit)
 "fo" = (
 /obj/structure/cable/green{
@@ -2639,7 +2637,7 @@
 /obj/structure/disposalpipe/segment,
 /obj/structure/closet/emcloset,
 /obj/floor_decal/industrial/outline/grey,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/port)
 "fp" = (
 /obj/floor_decal/industrial/warning/corner{
@@ -2668,10 +2666,10 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/co)
 "fw" = (
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/port)
 "fx" = (
 /obj/structure/sign/warning/secure_area{
@@ -2692,7 +2690,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/port)
 "fz" = (
 /obj/machinery/disposal,
@@ -2706,7 +2704,7 @@
 	name = "XO Request Console";
 	pixel_y = 30
 	},
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "fA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -2715,7 +2713,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/port)
 "fB" = (
 /turf/simulated/wall/prepainted,
@@ -2732,7 +2730,7 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/port)
 "fE" = (
 /obj/structure/disposalpipe/segment{
@@ -2758,18 +2756,17 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/port)
 "fF" = (
 /obj/structure/flora/pottedplant/smelly{
 	desc = "This is some kind of tropical plant. It reeks of rotten eggs. This one has a hand-painted Nametag on the rim. It reads 'Steve'"
 	},
-/obj/floor_decal/corner/red/mono,
 /obj/machinery/alarm{
 	dir = 8;
 	pixel_x = 24
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/cos)
 "fG" = (
 /obj/structure/disposalpipe/segment{
@@ -2792,7 +2789,7 @@
 /obj/machinery/atmospherics/valve/shutoff/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/port)
 "fH" = (
 /obj/structure/table/rack,
@@ -2812,7 +2809,7 @@
 /obj/item/tank/oxygen_emergency_double,
 /obj/floor_decal/corner/yellow/full,
 /obj/item/rig/ce/equipped,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aux_eva)
 "fI" = (
 /turf/simulated/wall/prepainted,
@@ -2823,12 +2820,12 @@
 	icon_state = "tube1"
 	},
 /obj/machinery/computer/ship/engines,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/cockpit)
 "fK" = (
 /obj/machinery/hologram/holopad/longrange,
 /obj/floor_decal/industrial/outline/yellow,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/cockpit)
 "fL" = (
 /obj/machinery/computer/modular/preset/cardslot/command,
@@ -2836,7 +2833,7 @@
 	dir = 8;
 	pixel_x = 24
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/cockpit)
 "fM" = (
 /obj/structure/cable/green{
@@ -2854,7 +2851,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/port)
 "fN" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
@@ -2868,7 +2865,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "fO" = (
 /obj/structure/disposalpipe/segment,
@@ -2898,11 +2895,11 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/port)
 "fR" = (
 /obj/machinery/light,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/port)
 "fS" = (
 /obj/machinery/alarm{
@@ -2910,7 +2907,7 @@
 	pixel_y = -28;
 	req_access = list("ACCESS_MECHANICUS_COMMAND")
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/port)
 "fT" = (
 /obj/machinery/rotating_alarm/security_alarm{
@@ -2920,7 +2917,7 @@
 	c_tag = "Command Hallway - Fore Port";
 	dir = 1
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/port)
 "fV" = (
 /obj/floor_decal/spline/fancy/wood{
@@ -2933,17 +2930,13 @@
 	},
 /obj/prefab/hand_teleporter,
 /obj/item/toy/torchmodel,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/cobed)
 "fW" = (
-/obj/structure/cable/green{
-	d2 = 2;
-	icon_state = "0-2"
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
-/obj/wallframe_spawn/reinforced/polarized{
-	id = "cmo_windows"
-	},
-/turf/simulated/floor/plating,
+/turf/simulated/wall/prepainted,
 /area/crew_quarters/heads/office/cmo)
 "fX" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
@@ -2952,7 +2945,6 @@
 /turf/simulated/wall/titanium,
 /area/aquila/storage)
 "fY" = (
-/obj/floor_decal/corner/red/half,
 /obj/machinery/vending/coffee{
 	dir = 4
 	},
@@ -2960,7 +2952,7 @@
 	dir = 8;
 	pixel_x = -24
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "ga" = (
 /obj/structure/cable/green{
@@ -2971,7 +2963,7 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_y = -28
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "gc" = (
 /obj/structure/cable/green{
@@ -2979,7 +2971,7 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/cl)
 "gd" = (
 /obj/structure/cable/green{
@@ -2992,7 +2984,7 @@
 /obj/floor_decal/corner/b_green{
 	dir = 5
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "gg" = (
 /obj/machinery/power/apc{
@@ -3000,7 +2992,7 @@
 	pixel_y = -24
 	},
 /obj/structure/cable/green,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room)
 "gh" = (
 /obj/structure/cable/green{
@@ -3042,7 +3034,7 @@
 	dir = 5
 	},
 /obj/floor_decal/corner/research,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "gl" = (
 /obj/shuttle_landmark/torch/deck1/exploration_shuttle{
@@ -3078,7 +3070,7 @@
 	dir = 1;
 	pixel_y = -26
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/cockpit)
 "gp" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -3091,7 +3083,7 @@
 	c_tag = "Aquila - Cockpit";
 	dir = 1
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/cockpit)
 "gq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -3105,7 +3097,7 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/cockpit)
 "gr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -3119,7 +3111,7 @@
 /obj/structure/bed/chair/shuttle/blue{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/cockpit)
 "gs" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -3137,7 +3129,7 @@
 	},
 /obj/item/device/radio,
 /obj/machinery/recharger,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/cockpit)
 "gv" = (
 /obj/machinery/computer/modular/preset/cardslot/command{
@@ -3158,7 +3150,7 @@
 	pixel_y = -6;
 	range = 11
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/sgr)
 "gw" = (
 /obj/paint/meatstation,
@@ -3174,9 +3166,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/catwalk_plated,
+/obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "gL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -3188,7 +3180,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "gM" = (
 /obj/structure/disposalpipe/segment{
@@ -3198,12 +3190,12 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "gN" = (
 /obj/structure/bed/chair/office/comfy/green,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor/warhammer/fancyfloor/carpet/middle,
 /area/crew_quarters/heads/office/cl)
 "gO" = (
 /obj/structure/disposalpipe/segment{
@@ -3214,7 +3206,7 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "gP" = (
 /obj/structure/cable/green{
@@ -3252,13 +3244,13 @@
 	dir = 1;
 	pixel_y = -24
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "gT" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/security/bridgecheck)
 "gV" = (
 /obj/machinery/shield_diffuser,
@@ -3308,7 +3300,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/steel_ridged,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/cockpit)
 "hc" = (
 /obj/floor_decal/industrial/outline/yellow,
@@ -3338,10 +3330,10 @@
 	dir = 8;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/rd)
 "hn" = (
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "hq" = (
 /turf/simulated/wall/prepainted,
@@ -3375,7 +3367,7 @@
 	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/ce)
 "hA" = (
 /obj/structure/cable/green{
@@ -3395,7 +3387,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/floor_decal/industrial/warning/fulltile,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "hF" = (
 /obj/structure/cable/green{
@@ -3412,7 +3404,7 @@
 	opacity = 0
 	},
 /obj/floor_decal/corner/red/mono,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "hI" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden{
@@ -3459,7 +3451,7 @@
 /obj/floor_decal/techfloor{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/crew)
 "hN" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -3478,7 +3470,7 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/crew)
 "hO" = (
 /obj/machinery/power/apc/shuttle/aquila{
@@ -3529,7 +3521,9 @@
 /obj/structure/bed/chair/padded/green{
 	dir = 8
 	},
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor/warhammer/fancyfloor/carpet{
+	dir = 6
+	},
 /area/crew_quarters/heads/office/cl/backroom)
 "id" = (
 /obj/machinery/door/blast/shutters{
@@ -3576,7 +3570,7 @@
 /obj/machinery/firealarm{
 	pixel_y = 24
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/ce)
 "ih" = (
 /obj/structure/cable/green{
@@ -3589,20 +3583,20 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/ce)
 "ii" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/ce)
 "ij" = (
 /obj/structure/bed/chair/padded/yellow,
 /obj/floor_decal/corner/yellow{
 	dir = 6
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/ce)
 "ik" = (
 /obj/machinery/photocopier/faxmachine{
@@ -3630,27 +3624,19 @@
 	pixel_x = 1;
 	pixel_y = 37
 	},
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor/warhammer/fancyfloor/carpet{
+	dir = 1
+	},
 /area/crew_quarters/heads/office/cl)
 "il" = (
 /obj/floor_decal/industrial/warning{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "im" = (
 /obj/structure/railing/mapped,
 /turf/simulated/open,
-/area/hallway/primary/bridge/fore)
-"in" = (
-/obj/structure/sign/directions/engineering{
-	pixel_z = 10
-	},
-/obj/structure/sign/directions/evac,
-/obj/structure/sign/directions/supply{
-	pixel_z = -10
-	},
-/turf/simulated/wall/prepainted,
 /area/hallway/primary/bridge/fore)
 "io" = (
 /obj/structure/cable/green{
@@ -3663,7 +3649,7 @@
 	pixel_x = 24
 	},
 /obj/floor_decal/industrial/warning/fulltile,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "ip" = (
 /obj/machinery/embedded_controller/radio/airlock/airlock_controller{
@@ -3722,7 +3708,7 @@
 	pixel_y = 24
 	},
 /obj/floor_decal/techfloor/corner,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/suits)
 "iv" = (
 /obj/structure/bed/chair/shuttle/blue{
@@ -3741,7 +3727,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/crew)
 "iy" = (
 /obj/structure/bed/chair/shuttle/blue{
@@ -3772,7 +3758,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
 	},
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "iI" = (
 /turf/simulated/wall/r_wall/hull,
@@ -3792,12 +3778,12 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/ce)
 "iR" = (
 /obj/machinery/hologram/holopad,
 /obj/floor_decal/industrial/outline/yellow,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/ce)
 "iS" = (
 /obj/structure/table/standard{
@@ -3808,7 +3794,7 @@
 	},
 /obj/random_multi/single_item/memo_engineering,
 /obj/item/folder/envelope/ceorder,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/ce)
 "iU" = (
 /obj/floor_decal/industrial/warning/corner{
@@ -3827,7 +3813,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "iV" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -3845,7 +3831,7 @@
 	dir = 1;
 	icon_state = "warning"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "iX" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -3859,7 +3845,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "iY" = (
 /obj/structure/disposalpipe/segment,
@@ -3872,7 +3858,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "iZ" = (
 /obj/structure/cable/green{
@@ -3888,7 +3874,7 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "ja" = (
 /obj/machinery/oxygen_pump{
@@ -3909,7 +3895,7 @@
 /area/crew_quarters/heads/cobed)
 "je" = (
 /obj/machinery/suit_storage_unit/standard_unit,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/suits)
 "jf" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -3922,7 +3908,7 @@
 /obj/structure/handrail{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/suits)
 "jg" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -3940,7 +3926,7 @@
 /obj/floor_decal/techfloor{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/suits)
 "jk" = (
 /obj/structure/bed/chair/shuttle/blue{
@@ -3976,13 +3962,13 @@
 	pixel_x = 24;
 	pixel_y = 34
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "jA" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "jB" = (
 /obj/machinery/door/blast/shutters{
@@ -3998,7 +3984,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/floor_decal/industrial/hatch/yellow,
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/port)
 "jD" = (
 /obj/machinery/power/apc{
@@ -4011,9 +3997,8 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/papershredder,
-/obj/floor_decal/corner/paleblue/diagonal,
 /obj/floor_decal/industrial/outline/yellow,
-/turf/simulated/floor/tiled/white,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/crew_quarters/heads/office/cmo)
 "jF" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -4033,14 +4018,14 @@
 /obj/floor_decal/techfloor/corner{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/crew)
 "jH" = (
 /obj/machinery/light{
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/meeting_room)
 "jM" = (
 /obj/floor_decal/corner/yellow{
@@ -4049,7 +4034,7 @@
 /obj/structure/bed/chair/comfy/yellow{
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/ce)
 "jO" = (
 /obj/machinery/door/blast/shutters{
@@ -4073,16 +4058,13 @@
 	},
 /turf/simulated/floor/plating,
 /area/bridge/meeting_room)
-"jR" = (
-/turf/simulated/floor/tiled/monotile,
-/area/hallway/primary/bridge/fore)
 "jS" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
 	},
 /obj/structure/disposalpipe/junction,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "jT" = (
 /obj/structure/cable/green{
@@ -4100,30 +4082,18 @@
 	c_tag = "Command Hallway - Stairs";
 	dir = 8
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
-"jU" = (
-/obj/structure/sign/directions/bridge{
-	dir = 8;
-	pixel_y = 3
-	},
-/obj/structure/sign/directions/security{
-	pixel_y = -4
-	},
-/turf/simulated/wall/prepainted,
-/area/hallway/primary/bridge/aft)
 "jV" = (
-/turf/simulated/floor/tiled,
-/area/hallway/primary/bridge/aft)
-"jW" = (
-/obj/structure/sign/directions/infirmary{
-	pixel_y = -4
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
-/obj/structure/sign/directions/science{
-	pixel_y = 3
+/turf/simulated/floor/warhammer/fancyfloor/carpet{
+	dir = 8
 	},
-/turf/simulated/wall/prepainted,
-/area/hallway/primary/bridge/aft)
+/area/crew_quarters/heads/office/cl)
 "jX" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -4179,7 +4149,7 @@
 /obj/floor_decal/techfloor{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/crew)
 "kg" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -4196,7 +4166,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/crew)
 "kh" = (
 /obj/machinery/firealarm{
@@ -4231,13 +4201,13 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/sea)
 "kx" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/port)
 "kA" = (
 /obj/structure/cable/green{
@@ -4284,7 +4254,7 @@
 	name = "plastic table frame"
 	},
 /obj/item/toy/desk/newtoncradle,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/ce)
 "kJ" = (
 /turf/simulated/wall/prepainted,
@@ -4295,7 +4265,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "kL" = (
 /obj/machinery/door/firedoor,
@@ -4303,14 +4273,11 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/hallway/primary/bridge/fore)
 "kM" = (
-/obj/floor_decal/corner/blue/half{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/aft)
 "kN" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/aft)
 "kO" = (
 /obj/structure/cable/green{
@@ -4321,22 +4288,19 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/aft)
 "kP" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 32
 	},
-/obj/floor_decal/corner/blue/half{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/aft)
 "kQ" = (
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/aft)
 "kR" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
@@ -4349,12 +4313,11 @@
 	pixel_y = 24;
 	req_access = list("ACCESS_RESTRICTED")
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/aft)
 "kS" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on,
-/turf/simulated/floor/tiled/monotile,
-/area/hallway/primary/bridge/aft)
+/turf/simulated/floor/warhammer/fancyfloor/carpet/middle,
+/area/crew_quarters/heads/office/cl)
 "kT" = (
 /obj/wallframe_spawn/reinforced,
 /obj/structure/cable/green{
@@ -4369,7 +4332,7 @@
 	},
 /obj/structure/closet/emcloset,
 /obj/floor_decal/industrial/outline/yellow,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/aft)
 "kV" = (
 /obj/structure/cable/green,
@@ -4397,7 +4360,6 @@
 	pixel_x = -23;
 	pixel_y = 25
 	},
-/obj/floor_decal/corner/red/mono,
 /obj/machinery/newscaster/security_unit{
 	pixel_x = -32
 	},
@@ -4409,7 +4371,7 @@
 /obj/machinery/rotating_alarm/security_alarm{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/security/bridgecheck)
 "lm" = (
 /obj/machinery/hologram/holopad/longrange,
@@ -4417,7 +4379,7 @@
 	name = "lightsout"
 	},
 /obj/floor_decal/industrial/outline/yellow,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "lq" = (
 /obj/machinery/disposal,
@@ -4425,7 +4387,7 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/cos)
 "lt" = (
 /obj/structure/table/steel,
@@ -4443,7 +4405,7 @@
 /obj/random_multi/single_item/memo_medical,
 /obj/item/folder/envelope/ndaorder,
 /obj/item/paper/immediateorder,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "lu" = (
 /obj/floor_decal/spline/fancy/wood{
@@ -4451,16 +4413,15 @@
 	},
 /obj/structure/table/woodentable/walnut,
 /obj/item/device/flashlight/lamp/green,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/cobed)
 "ly" = (
-/obj/floor_decal/corner/paleblue/diagonal,
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/white,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/crew_quarters/heads/office/cmo)
 "lA" = (
 /obj/structure/sign/warning/high_voltage{
@@ -4475,7 +4436,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
 	},
-/obj/catwalk_plated,
+/obj/structure/catwalk,
 /obj/landmark{
 	name = "lightsout"
 	},
@@ -4487,7 +4448,7 @@
 	dir = 8;
 	pixel_x = -24
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "lC" = (
 /obj/structure/cable/green{
@@ -4512,7 +4473,7 @@
 	sort_type = "Chief Medical Officer"
 	},
 /obj/machinery/tele_beacon,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "lD" = (
 /obj/structure/cable/green{
@@ -4555,7 +4516,7 @@
 /obj/machinery/atmospherics/valve/shutoff/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/aft)
 "lH" = (
 /obj/structure/cable/green{
@@ -4567,11 +4528,11 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
-/obj/catwalk_plated,
+/obj/structure/catwalk,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/aft)
 "lL" = (
 /obj/structure/cable/green{
@@ -4599,10 +4560,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/floor_decal/corner/blue/half{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/aft)
 "lO" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
@@ -4689,7 +4647,7 @@
 	dir = 8;
 	icon_state = "warning"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/airlock)
 "lZ" = (
 /obj/machinery/door/airlock/hatch{
@@ -4708,7 +4666,7 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/steel_ridged,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/airlock)
 "mb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -4744,7 +4702,7 @@
 	pixel_x = 3;
 	pixel_y = -4
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/sgr)
 "mx" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
@@ -4769,7 +4727,7 @@
 	pixel_x = 9;
 	pixel_y = -24
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/sea)
 "mA" = (
 /obj/structure/cable/green{
@@ -4815,7 +4773,7 @@
 	pixel_y = -3
 	},
 /obj/floor_decal/industrial/outline/grey,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/cos)
 "mH" = (
 /obj/machinery/power/apc{
@@ -4829,7 +4787,7 @@
 	},
 /obj/machinery/photocopier,
 /obj/floor_decal/industrial/outline/grey,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/cos)
 "mI" = (
 /obj/structure/closet/secure_closet/cos,
@@ -4844,13 +4802,12 @@
 	pixel_y = 27;
 	req_access = list("ACCESS_RESTRICTED_COMMAND")
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/cos)
 "mJ" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
 	},
-/obj/floor_decal/corner/red/mono,
 /obj/machinery/newscaster/security_unit{
 	pixel_y = 32
 	},
@@ -4861,7 +4818,7 @@
 /obj/machinery/photocopier/faxmachine{
 	department = "Dauntless - Chief of Security"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/cos)
 "mN" = (
 /obj/structure/cable/green{
@@ -4885,30 +4842,18 @@
 	},
 /turf/simulated/wall/prepainted,
 /area/security/bridgecheck)
-"mQ" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled,
-/area/hallway/primary/bridge/fore)
 "mS" = (
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/floor_decal/corner/paleblue{
-	dir = 10
-	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/aft)
 "mT" = (
 /obj/structure/table/woodentable/walnut,
 /obj/item/folder/envelope/cmdorder,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/cobed)
 "mV" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -4918,10 +4863,7 @@
 	dir = 1;
 	pixel_y = -28
 	},
-/obj/floor_decal/corner/paleblue{
-	dir = 10
-	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/aft)
 "mW" = (
 /obj/machinery/power/apc{
@@ -4929,12 +4871,11 @@
 	pixel_y = -28
 	},
 /obj/structure/cable/green,
-/obj/floor_decal/corner/blue/half,
 /obj/machinery/camera/network/bridge{
 	c_tag = "Bridge Hallway - Aft";
 	dir = 1
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/aft)
 "mY" = (
 /obj/structure/disposalpipe/segment,
@@ -4945,24 +4886,23 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/aft)
 "mZ" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_y = -32
 	},
-/obj/floor_decal/corner/blue/half,
 /obj/machinery/rotating_alarm/security_alarm{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/aft)
 "na" = (
 /obj/machinery/firealarm{
 	dir = 1;
 	pixel_y = -24
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/aft)
 "nb" = (
 /obj/structure/cable/green{
@@ -4976,11 +4916,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/catwalk_plated,
+/obj/structure/catwalk,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/aft)
 "nc" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -4988,7 +4928,7 @@
 	},
 /obj/structure/closet/emcloset,
 /obj/floor_decal/industrial/outline/yellow,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/aft)
 "nd" = (
 /obj/wallframe_spawn/reinforced,
@@ -5009,14 +4949,14 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/aft)
 "nf" = (
 /obj/machinery/alarm{
 	pixel_y = 24
 	},
 /obj/machinery/computer/ship/sensors,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "ni" = (
 /obj/structure/handrail{
@@ -5032,7 +4972,7 @@
 /area/aquila/airlock)
 "nj" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/rd)
 "nk" = (
 /obj/machinery/access_button{
@@ -5050,13 +4990,13 @@
 /obj/floor_decal/industrial/warning/corner{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/airlock)
 "nl" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/airlock)
 "nm" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -5069,7 +5009,7 @@
 	icon_state = "1-2"
 	},
 /obj/overmap/visitable/ship/landable/aquila,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/airlock)
 "nn" = (
 /obj/machinery/light{
@@ -5078,14 +5018,14 @@
 /obj/structure/handrail{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/airlock)
 "no" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
 /obj/structure/handrail,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/suits)
 "np" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -5098,7 +5038,7 @@
 	dir = 1;
 	pixel_y = -26
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/air)
 "nq" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
@@ -5107,7 +5047,7 @@
 	},
 /obj/structure/table/rack,
 /obj/random/toolbox,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/air)
 "nr" = (
 /obj/floor_decal/industrial/warning{
@@ -5123,18 +5063,18 @@
 	pixel_x = 24
 	},
 /obj/item/storage/box/donut,
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor/warhammer/fancyfloor/carpet/middle,
 /area/crew_quarters/heads/office/cl)
 "nu" = (
 /obj/structure/table/steel,
 /obj/item/device/binoculars,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "nv" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor/warhammer/fancyfloor/carpet,
 /area/crew_quarters/heads/office/cl/backroom)
 "nE" = (
 /obj/floor_decal/industrial/warning/corner{
@@ -5144,21 +5084,15 @@
 /turf/simulated/floor/reinforced,
 /area/space)
 "nG" = (
-/obj/structure/filingcabinet/chestdrawer{
-	dir = 1
-	},
-/obj/item/folder/blue,
-/obj/item/folder/red,
-/obj/item/folder,
-/obj/item/folder/nt,
-/obj/item/folder/yellow,
-/obj/item/folder/white,
-/obj/floor_decal/corner/paleblue/diagonal,
 /obj/structure/noticeboard{
 	pixel_y = -30
 	},
-/obj/floor_decal/industrial/outline/yellow,
-/turf/simulated/floor/tiled/white,
+/obj/structure/table/steel,
+/obj/item/reagent_containers/food/drinks/ice,
+/obj/item/reagent_containers/food/drinks/bottle/orangejuice,
+/obj/item/storage/box/cups,
+/obj/item/sticky_pad/random,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/crew_quarters/heads/office/cmo)
 "nI" = (
 /obj/machinery/door/firedoor,
@@ -5176,7 +5110,7 @@
 /obj/machinery/door/airlock/sol{
 	name = "Deliberation Room"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room/deliberation)
 "nJ" = (
 /obj/machinery/button/alternate/door{
@@ -5202,7 +5136,7 @@
 	dir = 1;
 	icon_state = "console"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "nK" = (
 /obj/machinery/atmospherics/binary/pump/on{
@@ -5230,7 +5164,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "nU" = (
 /obj/structure/cable/green{
@@ -5243,14 +5177,11 @@
 	dir = 2;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/cos)
 "nV" = (
-/obj/floor_decal/corner/red{
-	dir = 6
-	},
 /obj/structure/bed/chair/comfy/red,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/cos)
 "nZ" = (
 /obj/structure/table/standard{
@@ -5273,10 +5204,7 @@
 	pixel_x = 26;
 	pixel_y = 37
 	},
-/obj/floor_decal/corner/red/half{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/security/bridgecheck)
 "oa" = (
 /obj/floor_decal/industrial/hatch/yellow,
@@ -5292,7 +5220,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "oc" = (
 /obj/structure/cable/green{
@@ -5306,7 +5234,7 @@
 	icon_state = "1-8"
 	},
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "oe" = (
 /obj/structure/cable/green{
@@ -5381,7 +5309,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "oB" = (
 /turf/simulated/floor/tiled/techfloor,
@@ -5393,12 +5321,14 @@
 	dir = 8;
 	pixel_x = 20
 	},
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor/warhammer/fancyfloor/carpet{
+	dir = 4
+	},
 /area/crew_quarters/heads/office/cl/backroom)
 "oF" = (
 /obj/machinery/hologram/holopad,
 /obj/floor_decal/industrial/outline/yellow,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/cos)
 "oI" = (
 /obj/machinery/light_switch{
@@ -5411,7 +5341,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "oJ" = (
 /obj/machinery/door/blast/shutters{
@@ -5452,7 +5382,6 @@
 /turf/simulated/floor/plating,
 /area/security/bridgecheck)
 "oO" = (
-/obj/floor_decal/corner/paleblue/diagonal,
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
@@ -5468,10 +5397,9 @@
 	pixel_x = -23;
 	pixel_y = 25
 	},
-/turf/simulated/floor/tiled/white,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/crew_quarters/heads/office/cmo)
 "oP" = (
-/obj/floor_decal/corner/paleblue/diagonal,
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
@@ -5480,10 +5408,9 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/white,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/crew_quarters/heads/office/cmo)
 "oR" = (
-/obj/floor_decal/corner/paleblue/diagonal,
 /obj/structure/flora/pottedplant/overgrown,
 /obj/structure/cable/green{
 	d1 = 2;
@@ -5497,7 +5424,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/white,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/crew_quarters/heads/office/cmo)
 "oS" = (
 /obj/machinery/portable_atmospherics/powered/scrubber,
@@ -5534,7 +5461,7 @@
 /obj/floor_decal/corner/brown/half{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/storage)
 "oW" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -5565,7 +5492,7 @@
 "oZ" = (
 /obj/machinery/recharge_station,
 /obj/floor_decal/industrial/outline/red,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/power)
 "pa" = (
 /obj/machinery/alarm{
@@ -5579,7 +5506,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/power)
 "pb" = (
 /obj/structure/cable/cyan{
@@ -5594,7 +5521,7 @@
 	dir = 6
 	},
 /obj/structure/handrail,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/power)
 "pc" = (
 /obj/structure/cable/cyan{
@@ -5612,7 +5539,7 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/steel_ridged,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/power)
 "pd" = (
 /obj/machinery/power/apc/shuttle/aquila{
@@ -5624,7 +5551,7 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/airlock)
 "pe" = (
 /obj/structure/lattice,
@@ -5649,7 +5576,7 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/airlock)
 "ph" = (
 /obj/machinery/door/airlock/hatch,
@@ -5665,7 +5592,7 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/steel_ridged,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/airlock)
 "pi" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -5686,7 +5613,7 @@
 	pixel_x = -10;
 	pixel_y = 22
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/storage)
 "pj" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -5700,7 +5627,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/storage)
 "pk" = (
 /obj/structure/table/standard{
@@ -5715,14 +5642,14 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/storage)
 "pl" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
 	},
 /obj/machinery/microwave,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/storage)
 "py" = (
 /obj/structure/filingcabinet/chestdrawer{
@@ -5748,7 +5675,7 @@
 	dir = 1;
 	pixel_y = -24
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/cos)
 "pz" = (
 /obj/structure/cable/green{
@@ -5761,72 +5688,67 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/cos)
 "pA" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/cos)
 "pB" = (
 /obj/structure/bed/chair/padded/red{
 	dir = 1
 	},
-/obj/floor_decal/corner/red{
-	dir = 6
-	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/cos)
 "pE" = (
 /obj/machinery/computer/modular/preset/cardslot/command_sec{
 	dir = 1;
 	icon_state = "console"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/security/bridgecheck)
 "pF" = (
-/obj/floor_decal/corner/red/half{
+/turf/simulated/floor/warhammer/fancyfloor/carpet{
 	dir = 4
 	},
-/obj/machinery/computer/modular/preset/cardslot/command_sec{
-	dir = 1;
-	icon_state = "console"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/bridgecheck)
+/area/crew_quarters/heads/office/cl/backroom)
 "pG" = (
 /obj/machinery/status_display,
 /turf/simulated/wall/prepainted,
 /area/security/bridgecheck)
 "pI" = (
-/obj/structure/cable/green,
-/obj/wallframe_spawn/reinforced/polarized{
-	id = "cmo_windows"
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
-/turf/simulated/floor/plating,
-/area/crew_quarters/heads/office/cmo)
-"pJ" = (
-/obj/floor_decal/corner/paleblue/diagonal,
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/white,
-/area/crew_quarters/heads/office/cmo)
-"pL" = (
-/obj/floor_decal/corner/paleblue/diagonal,
-/obj/machinery/hologram/holopad,
-/obj/floor_decal/industrial/outline/yellow,
-/turf/simulated/floor/tiled/white,
-/area/crew_quarters/heads/office/cmo)
-"pM" = (
-/obj/floor_decal/corner/paleblue/diagonal,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 4;
 	icon_state = "1-4"
 	},
-/turf/simulated/floor/tiled/white,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
+/area/bridge)
+"pJ" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 1
+	},
+/turf/simulated/floor/warhammer/ceramic/blackstone,
+/area/crew_quarters/heads/office/cmo)
+"pL" = (
+/obj/machinery/hologram/holopad,
+/obj/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
+/area/crew_quarters/heads/office/cmo)
+"pM" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/crew_quarters/heads/office/cmo)
 "pQ" = (
 /obj/floor_decal/industrial/warning{
@@ -5847,7 +5769,7 @@
 "pS" = (
 /obj/machinery/mech_recharger,
 /obj/floor_decal/industrial/outline/red,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/power)
 "pT" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -5858,7 +5780,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/power)
 "pU" = (
 /obj/structure/cable/cyan{
@@ -5869,7 +5791,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/power)
 "pX" = (
 /obj/machinery/light{
@@ -5904,7 +5826,7 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "qb" = (
 /obj/machinery/recharger/wallcharger{
@@ -5914,7 +5836,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/storage)
 "qc" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -5923,14 +5845,14 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/storage)
 "qd" = (
 /obj/machinery/recharger/wallcharger{
 	dir = 4;
 	pixel_x = -23
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/storage)
 "qe" = (
 /obj/structure/table/standard{
@@ -5940,7 +5862,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/storage)
 "qf" = (
 /obj/structure/cable/green{
@@ -5956,7 +5878,7 @@
 /obj/structure/bed/chair/comfy/blue{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "qg" = (
 /obj/structure/disposalpipe/segment{
@@ -5973,7 +5895,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "qh" = (
 /obj/structure/cable/green{
@@ -5989,7 +5911,7 @@
 /obj/structure/bed/chair/comfy/blue{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "qi" = (
 /obj/floor_decal/industrial/outline/grey,
@@ -6023,7 +5945,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor/warhammer/fancyfloor/carpet/middle,
 /area/crew_quarters/heads/office/cl/backroom)
 "qo" = (
 /obj/machinery/door/firedoor,
@@ -6081,7 +6003,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/floor_decal/industrial/warning/fulltile,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "qu" = (
 /obj/machinery/requests_console{
@@ -6091,36 +6013,30 @@
 	name = "Chief Medical Officer RC";
 	pixel_x = 32
 	},
-/obj/floor_decal/corner/paleblue/diagonal,
 /obj/floor_decal/industrial/hatch/yellow,
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/white,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/crew_quarters/heads/office/cmo)
 "qv" = (
-/obj/floor_decal/corner/paleblue/diagonal,
 /obj/structure/table/steel,
 /obj/item/paper_bin,
 /obj/item/pen,
 /obj/item/pen/blue,
 /obj/random/clipboard,
 /obj/item/storage/medical_lolli_jar,
-/turf/simulated/floor/tiled/white,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/crew_quarters/heads/office/cmo)
 "qw" = (
-/obj/floor_decal/corner/red/half{
-	dir = 8
-	},
 /obj/structure/disposalpipe/segment{
 	dir = 8;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/security/bridgecheck)
 "qx" = (
-/obj/floor_decal/corner/paleblue/diagonal,
 /obj/structure/table/steel,
 /obj/item/reagent_containers/food/snacks/cookie,
 /obj/item/reagent_containers/food/snacks/cookie,
@@ -6128,7 +6044,9 @@
 /obj/item/reagent_containers/food/snacks/cookie,
 /obj/item/reagent_containers/food/snacks/cookie,
 /obj/item/storage/lunchbox/cat,
-/turf/simulated/floor/tiled/white,
+/obj/item/folder/envelope/cmoorder,
+/obj/random_multi/single_item/memo_medical,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/crew_quarters/heads/office/cmo)
 "qB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -6137,7 +6055,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/sgr)
 "qD" = (
 /obj/floor_decal/industrial/warning{
@@ -6177,7 +6095,7 @@
 	name = "plastic table frame"
 	},
 /obj/machinery/recharger,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/storage)
 "qN" = (
 /obj/structure/lattice,
@@ -6192,7 +6110,7 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/co)
 "qQ" = (
 /obj/machinery/light_switch{
@@ -6200,7 +6118,7 @@
 	pixel_y = 24
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/co)
 "qR" = (
 /obj/structure/flora/pottedplant/large,
@@ -6212,7 +6130,7 @@
 	dir = 8;
 	pixel_x = 20
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/cl)
 "qT" = (
 /obj/structure/cable/cyan{
@@ -6238,7 +6156,7 @@
 /obj/floor_decal/corner/orange/half{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/airlock)
 "qU" = (
 /obj/structure/table/woodentable_reinforced/walnut,
@@ -6247,7 +6165,9 @@
 	pixel_y = 7
 	},
 /obj/item/pen,
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor/warhammer/fancyfloor/carpet{
+	dir = 8
+	},
 /area/crew_quarters/heads/office/cl)
 "qY" = (
 /obj/machinery/door/firedoor,
@@ -6274,7 +6194,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel_ridged,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/port)
 "ra" = (
 /obj/structure/disposalpipe/segment{
@@ -6284,8 +6204,8 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
-/obj/catwalk_plated,
-/turf/simulated/floor/plating,
+/obj/structure/catwalk,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "rb" = (
 /obj/structure/disposalpipe/segment{
@@ -6294,7 +6214,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/catwalk_plated,
+/obj/structure/catwalk,
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
@@ -6303,7 +6223,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "rc" = (
 /obj/structure/disposalpipe/segment{
@@ -6324,7 +6244,7 @@
 /obj/machinery/alarm{
 	pixel_y = 24
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "rd" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -6333,12 +6253,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "re" = (
-/obj/floor_decal/corner/red{
-	dir = 5
-	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/structure/cable/green{
 	d1 = 1;
@@ -6347,7 +6264,7 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "rf" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -6356,10 +6273,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/floor_decal/corner/red{
-	dir = 1
-	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "rg" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -6368,8 +6282,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/catwalk_plated,
-/turf/simulated/floor/plating,
+/obj/structure/catwalk,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "rk" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -6378,16 +6292,21 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/catwalk_plated,
+/obj/structure/catwalk,
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 32
 	},
-/turf/simulated/floor/plating,
+/obj/structure/cable/green{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/obj/machinery/shieldwallgen/online,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "rl" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "rm" = (
 /obj/structure/cable/green{
@@ -6410,10 +6329,9 @@
 	dir = 1;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "rn" = (
-/obj/floor_decal/corner/paleblue/diagonal,
 /obj/machinery/computer/modular/preset/cardslot/command{
 	dir = 4;
 	icon_state = "console"
@@ -6422,11 +6340,11 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/white,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/crew_quarters/heads/office/cmo)
 "rp" = (
-/obj/floor_decal/corner/paleblue/diagonal,
-/turf/simulated/floor/tiled/white,
+/obj/random_multi/single_item/runtime,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/crew_quarters/heads/office/cmo)
 "rr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -6450,7 +6368,7 @@
 /obj/structure/handrail{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/storage)
 "rt" = (
 /obj/machinery/door/firedoor,
@@ -6508,13 +6426,13 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "rA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room)
 "rC" = (
 /obj/machinery/light{
@@ -6524,7 +6442,7 @@
 	pixel_y = 23
 	},
 /obj/machinery/computer/account_database,
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "rI" = (
 /obj/structure/bed/chair/comfy/blue{
@@ -6553,7 +6471,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/co)
 "rJ" = (
 /obj/structure/cable/green{
@@ -6568,7 +6486,7 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/co)
 "rK" = (
 /obj/machinery/door/airlock/sol{
@@ -6643,7 +6561,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "rY" = (
 /obj/structure/cable/green{
@@ -6663,7 +6581,7 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "sa" = (
 /obj/structure/cable/green{
@@ -6678,7 +6596,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "se" = (
 /obj/structure/cable/green{
@@ -6690,7 +6608,7 @@
 	dir = 1;
 	pixel_y = -28
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "sf" = (
 /obj/structure/cable/green{
@@ -6701,7 +6619,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "sh" = (
 /obj/structure/cable/green{
@@ -6716,21 +6634,21 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "si" = (
 /obj/item/device/radio/intercom{
 	dir = 4;
 	pixel_x = -21
 	},
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "sl" = (
 /obj/structure/flora/pottedplant/shoot,
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "sm" = (
 /obj/machinery/shipsensors/upgraded,
@@ -6762,7 +6680,7 @@
 	dir = 5
 	},
 /obj/floor_decal/industrial/warning,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/storage)
 "sy" = (
 /obj/structure/cable/green{
@@ -6805,7 +6723,7 @@
 /area/crew_quarters/heads/office/sea)
 "sC" = (
 /obj/structure/bookcase,
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "sF" = (
 /obj/structure/cable/green{
@@ -6932,7 +6850,7 @@
 	id_tag = "meetingport";
 	name = "Conference Room"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/meeting_room)
 "tb" = (
 /obj/structure/cable/green{
@@ -6969,7 +6887,7 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/aquila/medical)
 "tf" = (
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/storage)
 "tg" = (
 /turf/simulated/wall/r_wall/hull,
@@ -6979,7 +6897,7 @@
 	dir = 8;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/carpet/blue,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/co)
 "ti" = (
 /turf/simulated/wall/r_wall/prepainted,
@@ -6994,7 +6912,7 @@
 	dir = 8;
 	pixel_x = 20
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/rd)
 "tl" = (
 /obj/floor_decal/industrial/warning/corner{
@@ -7012,11 +6930,11 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/air)
 "tm" = (
 /obj/structure/flora/pottedplant/unusual,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/sea)
 "to" = (
 /obj/structure/sign/warning/nosmoking_1{
@@ -7052,11 +6970,11 @@
 "tt" = (
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/sgr)
 "tu" = (
 /obj/machinery/hologram/holopad,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/sgr)
 "tv" = (
 /obj/structure/cable/green{
@@ -7068,7 +6986,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/sgr)
 "tx" = (
 /obj/structure/bookcase,
@@ -7078,7 +6996,7 @@
 /obj/item/device/radio/intercom{
 	pixel_y = 23
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/sgr)
 "ty" = (
 /obj/structure/closet/secure_closet/representative,
@@ -7090,7 +7008,7 @@
 	desc = "A warning sign which reads 'NO SMOKING'. Someone has scratched a variety of crude words in gutter across the entire sign.";
 	pixel_y = 26
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/sgr)
 "tz" = (
 /obj/structure/table/woodentable/walnut,
@@ -7100,7 +7018,7 @@
 	pixel_x = 32
 	},
 /obj/item/folder/envelope/cmdorder,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/sgr)
 "tC" = (
 /obj/machinery/hologram/holopad,
@@ -7112,7 +7030,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room)
 "tH" = (
 /obj/structure/cable/green{
@@ -7185,7 +7103,7 @@
 /area/aquila/storage)
 "tR" = (
 /obj/machinery/hologram/holopad,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/co)
 "tT" = (
 /obj/structure/cable/green{
@@ -7196,7 +7114,7 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/co)
 "tW" = (
 /obj/machinery/disposal,
@@ -7208,27 +7126,27 @@
 	dir = 8;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/sea)
 "tX" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/sea)
 "tZ" = (
 /obj/machinery/light{
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/sea)
 "ua" = (
 /obj/machinery/firealarm{
 	dir = 1;
 	pixel_y = -24
 	},
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor/warhammer/fancyfloor/carpet,
 /area/crew_quarters/heads/office/cl/backroom)
 "ub" = (
 /obj/structure/bed/chair/padded/blue{
@@ -7283,13 +7201,13 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/sgr)
 "ui" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/sgr)
 "uj" = (
 /obj/structure/bed/chair/padded/blue,
@@ -7302,7 +7220,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/sgr)
 "uk" = (
 /obj/machinery/door/firedoor,
@@ -7316,7 +7234,7 @@
 	name = "SolGov Representative";
 	secured_wires = 1
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/sgr)
 "ul" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -7329,7 +7247,7 @@
 	dir = 1;
 	pixel_y = -24
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/sgr)
 "um" = (
 /obj/item/stool/padded,
@@ -7341,7 +7259,7 @@
 	pixel_y = -28;
 	req_access = list("ACCESS_MECHANICUS_COMMAND")
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/sgr)
 "un" = (
 /obj/structure/table/woodentable/walnut,
@@ -7350,16 +7268,16 @@
 	},
 /obj/item/folder/envelope/rep,
 /obj/item/documents/scgr,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/sgr)
 "uo" = (
 /obj/structure/bed/chair/padded/red{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room)
 "up" = (
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room)
 "uq" = (
 /obj/structure/cable/green{
@@ -7369,7 +7287,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room)
 "us" = (
 /obj/structure/disposalpipe/segment,
@@ -7451,7 +7369,7 @@
 /obj/structure/noticeboard{
 	pixel_x = 32
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/sgr)
 "uB" = (
 /obj/structure/cable/green{
@@ -7467,7 +7385,7 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/co)
 "uC" = (
 /obj/item/reagent_containers/food/drinks/flask{
@@ -7484,11 +7402,11 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/co)
 "uG" = (
 /obj/structure/bed/chair/padded/blue,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/sea)
 "uH" = (
 /turf/simulated/floor/tiled/techfloor,
@@ -7519,7 +7437,7 @@
 	dir = 4;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "uK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -7531,7 +7449,7 @@
 /obj/machinery/firealarm{
 	pixel_y = 24
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "uN" = (
 /obj/structure/table/woodentable_reinforced/walnut,
@@ -7543,7 +7461,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/sgr)
 "uO" = (
 /obj/structure/table/woodentable_reinforced/walnut,
@@ -7557,7 +7475,7 @@
 	pixel_y = 1
 	},
 /obj/item/tableflag,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/sgr)
 "uS" = (
 /obj/structure/table/steel_reinforced,
@@ -7567,7 +7485,7 @@
 	dir = 4;
 	pixel_x = -37
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room)
 "uT" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -7577,7 +7495,7 @@
 	dir = 8;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room)
 "uV" = (
 /obj/structure/sign/deck/bridge{
@@ -7593,7 +7511,7 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room)
 "uX" = (
 /turf/simulated/wall/prepainted,
@@ -7620,7 +7538,6 @@
 /turf/simulated/floor/reinforced,
 /area/space)
 "vd" = (
-/obj/machinery/power/shield_generator,
 /obj/structure/cable/green{
 	d2 = 4;
 	icon_state = "0-4"
@@ -7641,7 +7558,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/sea)
 "vk" = (
 /obj/structure/table/standard{
@@ -7660,7 +7577,7 @@
 	pixel_y = 7
 	},
 /obj/item/pen,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/sea)
 "vm" = (
 /obj/structure/filingcabinet/chestdrawer{
@@ -7674,7 +7591,7 @@
 /obj/item/folder/white,
 /obj/floor_decal/industrial/outline/yellow,
 /obj/item/material/clipboard,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/sea)
 "vn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -7686,7 +7603,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/air)
 "vp" = (
 /obj/structure/bed/chair/padded/blue{
@@ -7718,7 +7635,7 @@
 /obj/structure/bed/chair/comfy/blue{
 	dir = 4
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/sgr)
 "vv" = (
 /turf/simulated/wall/prepainted,
@@ -7730,8 +7647,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
 	},
-/obj/floor_decal/industrial/warning/fulltile,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "vy" = (
 /obj/structure/table/woodentable_reinforced/walnut/maple,
@@ -7747,7 +7663,7 @@
 /obj/machinery/keycard_auth/torch{
 	pixel_y = 24
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room/deliberation)
 "vA" = (
 /obj/structure/catwalk,
@@ -7819,7 +7735,7 @@
 	dir = 4;
 	pixel_x = -23
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/sea)
 "vQ" = (
 /obj/machinery/computer/modular/preset/cardslot/command{
@@ -7831,7 +7747,7 @@
 	dir = 8;
 	pixel_x = 20
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/sea)
 "vS" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -7871,22 +7787,22 @@
 /obj/machinery/newscaster/security_unit{
 	pixel_x = -32
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/sgr)
 "vY" = (
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/sgr)
 "vZ" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/sea)
 "wb" = (
 /obj/structure/bed/chair/padded/beige{
 	dir = 4
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room/deliberation)
 "wc" = (
 /obj/structure/cable/green{
@@ -7900,7 +7816,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room/deliberation)
 "wd" = (
 /obj/structure/cable/green{
@@ -7912,7 +7828,7 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room/deliberation)
 "wf" = (
 /obj/item/paper_bin{
@@ -7934,7 +7850,7 @@
 /obj/item/reagent_containers/food/drinks/glass2/square,
 /obj/item/reagent_containers/food/drinks/glass2/square,
 /obj/structure/table/woodentable_reinforced/walnut,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room)
 "wg" = (
 /obj/item/tableflag{
@@ -7952,12 +7868,12 @@
 	dir = 9
 	},
 /obj/structure/table/woodentable_reinforced/walnut,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room)
 "wh" = (
 /obj/item/reagent_containers/food/drinks/glass2/square,
 /obj/structure/table/woodentable_reinforced/walnut,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room)
 "wj" = (
 /obj/structure/disposalpipe/segment,
@@ -8177,7 +8093,7 @@
 /obj/machinery/keycard_auth/torch{
 	pixel_y = -24
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/sea)
 "wx" = (
 /obj/structure/table/standard{
@@ -8189,7 +8105,7 @@
 	pixel_x = 32
 	},
 /obj/machinery/light,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/sea)
 "wz" = (
 /obj/random/maintenance/solgov,
@@ -8210,13 +8126,10 @@
 /obj/structure/table/standard{
 	name = "plastic table frame"
 	},
-/obj/floor_decal/corner/red{
-	dir = 6
-	},
 /obj/item/stamp/cos,
 /obj/random_multi/single_item/memo_security,
 /obj/item/folder/envelope/cosorder,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/cos)
 "wD" = (
 /obj/structure/table/woodentable/walnut,
@@ -8228,7 +8141,7 @@
 	pixel_x = -21
 	},
 /obj/machinery/light,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/sgr)
 "wH" = (
 /obj/structure/bed/chair/padded/beige{
@@ -8239,7 +8152,7 @@
 	pixel_x = -21
 	},
 /obj/machinery/light/small,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room/deliberation)
 "wI" = (
 /obj/machinery/power/apc{
@@ -8250,7 +8163,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room/deliberation)
 "wJ" = (
 /obj/machinery/firealarm{
@@ -8260,13 +8173,13 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room/deliberation)
 "wL" = (
 /obj/structure/bed/chair/comfy/blue{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room)
 "wM" = (
 /obj/structure/cable/green{
@@ -8290,7 +8203,7 @@
 	c_tag = "Bridge - Disciplinary Board";
 	dir = 1
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room)
 "wP" = (
 /turf/simulated/open,
@@ -8595,7 +8508,7 @@
 	dir = 1;
 	icon_state = "console"
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/cobed)
 "xy" = (
 /obj/structure/catwalk,
@@ -8735,12 +8648,9 @@
 /obj/floor_decal/corner/b_green{
 	dir = 1
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "xV" = (
-/obj/floor_decal/corner/blue/half{
-	dir = 1
-	},
 /obj/machinery/button/blast_door{
 	id_tag = "elevatorcmd";
 	name = "Lockdown";
@@ -8748,7 +8658,7 @@
 	pixel_y = 26;
 	req_access = list("ACCESS_BRIDGE")
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/aft)
 "xW" = (
 /obj/structure/cable/green{
@@ -8759,7 +8669,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "xX" = (
 /obj/structure/disposalpipe/segment{
@@ -8771,8 +8681,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/catwalk_plated,
-/turf/simulated/floor/plating,
+/obj/structure/catwalk,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "xY" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -8781,8 +8691,8 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
 	},
-/obj/catwalk_plated,
-/turf/simulated/floor/plating,
+/obj/structure/catwalk,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "xZ" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -8791,8 +8701,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/catwalk_plated,
-/turf/simulated/floor/plating,
+/obj/structure/catwalk,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "yb" = (
 /obj/structure/cable/green{
@@ -8801,7 +8711,7 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/light,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "yc" = (
 /obj/structure/catwalk,
@@ -8834,22 +8744,16 @@
 "yl" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/storage)
 "yp" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
 	},
 /obj/item/reagent_containers/food/drinks/cans/waterbottle,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/sea)
 "yw" = (
-/obj/floor_decal/corner/paleblue/diagonal,
-/obj/structure/table/steel,
-/obj/item/sticky_pad/random,
-/obj/item/storage/box/cups,
-/obj/item/reagent_containers/food/drinks/bottle/orangejuice,
-/obj/item/reagent_containers/food/drinks/ice,
 /obj/machinery/light,
 /obj/machinery/keycard_auth/torch{
 	pixel_y = -24
@@ -8868,7 +8772,16 @@
 	pixel_y = -34;
 	range = 11
 	},
-/turf/simulated/floor/tiled/white,
+/obj/structure/table/steel,
+/obj/item/device/radio{
+	frequency = 1487;
+	name = "medbay emergency radio link"
+	},
+/obj/item/stamp/cmo,
+/obj/machinery/photocopier/faxmachine{
+	department = "Dauntless - Chief Medical Officer"
+	},
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/crew_quarters/heads/office/cmo)
 "yy" = (
 /obj/structure/railing/mapped{
@@ -8898,7 +8811,7 @@
 /obj/item/material/ashtray/plastic,
 /obj/random/smokes,
 /obj/item/flame/lighter/random,
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor/warhammer/fancyfloor/carpet/middle,
 /area/crew_quarters/heads/office/cl)
 "yL" = (
 /obj/floor_decal/industrial/outline/yellow,
@@ -8935,12 +8848,14 @@
 /obj/structure/bed/chair/comfy/blue{
 	dir = 4
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/co)
 "yU" = (
 /obj/structure/table/woodentable_reinforced/walnut,
 /obj/item/sticky_pad/random,
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor/warhammer/fancyfloor/carpet{
+	dir = 9
+	},
 /area/crew_quarters/heads/office/cl)
 "yV" = (
 /obj/random/closet,
@@ -8955,7 +8870,7 @@
 "za" = (
 /obj/structure/closet/secure_closet/XO,
 /obj/random/drinkbottle,
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "zb" = (
 /obj/shuttle_landmark/merc/deck1{
@@ -8988,7 +8903,7 @@
 /obj/structure/bed/chair/comfy/blue{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "zh" = (
 /obj/machinery/door/airlock/warhammer/command/ancient{
@@ -9004,7 +8919,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/catwalk_plated,
+/obj/structure/catwalk,
 /obj/structure/extinguisher_cabinet{
 	pixel_y = -32
 	},
@@ -9013,7 +8928,7 @@
 	name = "Chief Science Officer";
 	sort_type = "Chief Science Officer"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "zq" = (
 /obj/structure/railing/mapped{
@@ -9068,7 +8983,7 @@
 	pixel_x = 2;
 	pixel_y = 24
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "zF" = (
 /obj/structure/cable/green{
@@ -9079,7 +8994,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "zM" = (
 /obj/structure/table/steel_reinforced,
@@ -9118,7 +9033,7 @@
 /obj/item/folder/white,
 /obj/item/folder/blue,
 /obj/machinery/light,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/cobed)
 "zQ" = (
 /obj/structure/railing/mapped{
@@ -9128,7 +9043,7 @@
 /turf/simulated/open,
 /area/maintenance/bridge/aftport)
 "zT" = (
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "zV" = (
 /obj/wallframe_spawn/reinforced,
@@ -9160,8 +9075,7 @@
 	name = "Bridge Deck Hallway Shutters";
 	opacity = 0
 	},
-/obj/floor_decal/corner/red/mono,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "Ab" = (
 /obj/shuttle_landmark/ninja/deck1{
@@ -9181,14 +9095,14 @@
 /obj/structure/bed/chair/office/comfy/blue{
 	dir = 8
 	},
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "Ae" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
 /obj/floor_decal/industrial/warning/corner,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/storage)
 "Ag" = (
 /obj/paint/meatstation,
@@ -9219,7 +9133,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/rd)
 "Am" = (
 /obj/structure/window/reinforced{
@@ -9228,7 +9142,7 @@
 /obj/machinery/computer/ship/navigation{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "An" = (
 /obj/item/device/radio/intercom{
@@ -9236,7 +9150,7 @@
 	pixel_x = -21
 	},
 /obj/machinery/light,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/co)
 "Ao" = (
 /obj/structure/cable/green{
@@ -9249,14 +9163,14 @@
 /obj/structure/bed/chair/padded/purple{
 	dir = 1
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/rd)
 "Ap" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
 /obj/machinery/light,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "Aq" = (
 /obj/structure/cable/green{
@@ -9272,7 +9186,7 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "Av" = (
 /obj/machinery/newscaster/security_unit{
@@ -9283,7 +9197,7 @@
 /obj/item/reagent_containers/food/drinks/glass2/rocks,
 /obj/item/reagent_containers/food/drinks/glass2/rocks,
 /obj/random/drinkbottle,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/cobed)
 "Aw" = (
 /obj/structure/sign/warning/high_voltage{
@@ -9296,22 +9210,18 @@
 	dir = 8;
 	pixel_x = 24
 	},
-/obj/floor_decal/corner/red/half,
 /obj/floor_decal/industrial/outline/yellow,
 /obj/machinery/hologram/holopad,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "AA" = (
-/obj/floor_decal/corner/red/half{
-	dir = 4
-	},
 /obj/structure/table/standard{
 	name = "plastic table frame"
 	},
 /obj/machinery/recharger{
 	pixel_y = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/security/bridgecheck)
 "AB" = (
 /obj/structure/cable/green,
@@ -9344,11 +9254,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/airlock)
 "AE" = (
 /obj/structure/bed/chair/comfy/purple,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/rd)
 "AH" = (
 /obj/structure/catwalk,
@@ -9404,19 +9314,19 @@
 	name = "Bridge Access";
 	req_access = list("ACCESS_BRIDGE")
 	},
-/turf/simulated/floor/tiled/steel_ridged,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/port)
 "AN" = (
 /obj/floor_decal/techfloor{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/crew)
 "AR" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "AX" = (
 /obj/structure/cable/green{
@@ -9429,7 +9339,7 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/catwalk_plated,
+/obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/hallway/primary/bridge/fore)
 "AZ" = (
@@ -9445,7 +9355,7 @@
 /obj/machinery/computer/modular/preset/cardslot/command_eng{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/ce)
 "Bc" = (
 /obj/item/reagent_containers/glass/bottle/stoxin,
@@ -9485,7 +9395,7 @@
 	dir = 1;
 	pixel_y = -28
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/airlock)
 "Bp" = (
 /obj/floor_decal/corner/red/full,
@@ -9502,7 +9412,7 @@
 	dir = 8;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "Bw" = (
 /obj/structure/disposalpipe/segment{
@@ -9514,12 +9424,12 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/catwalk_plated,
+/obj/structure/catwalk,
 /obj/machinery/camera/network/bridge{
 	c_tag = "Command Hallway - Aft Starboard";
 	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "BE" = (
 /obj/structure/table/steel,
@@ -9534,7 +9444,7 @@
 /obj/machinery/rotating_alarm/security_alarm{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "BG" = (
 /obj/structure/cable/green{
@@ -9577,7 +9487,7 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/rd)
 "BW" = (
 /obj/structure/disposalpipe/segment,
@@ -9607,7 +9517,7 @@
 /obj/structure/closet/emcloset,
 /obj/floor_decal/industrial/outline/yellow,
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "BY" = (
 /obj/structure/cable/green{
@@ -9616,7 +9526,7 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "Cb" = (
 /obj/shuttle_landmark/torch/deck1/aquila{
@@ -9647,7 +9557,7 @@
 	dir = 8;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/cl)
 "Cf" = (
 /obj/structure/cable/green{
@@ -9659,7 +9569,7 @@
 	dir = 8;
 	icon_state = "warning"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/ce)
 "Cg" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -9680,7 +9590,7 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/crew)
 "Ch" = (
 /obj/structure/bed/chair/comfy/captain{
@@ -9701,13 +9611,9 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "Ci" = (
-/obj/floor_decal/corner/paleblue/diagonal{
-	dir = 4
-	},
-/obj/floor_decal/corner/paleblue/diagonal,
 /obj/floor_decal/industrial/outline/yellow,
 /obj/machinery/suit_storage_unit/medical/alt/sol,
 /turf/simulated/floor/tiled/dark,
@@ -9716,7 +9622,7 @@
 /obj/structure/bed/chair/comfy/blue{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/sea)
 "Cl" = (
 /obj/machinery/requests_console{
@@ -9755,7 +9661,7 @@
 /obj/floor_decal/spline/fancy/wood/corner{
 	dir = 4
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/cobed)
 "Cs" = (
 /obj/structure/noticeboard{
@@ -9766,7 +9672,7 @@
 	},
 /obj/floor_decal/corner/yellow/mono,
 /obj/machinery/photocopier,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/ce)
 "Cv" = (
 /obj/structure/cable/green{
@@ -9777,20 +9683,18 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
-/obj/wallframe_spawn/reinforced/polarized{
-	id = "cmo_windows"
-	},
 /obj/structure/cable/green,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/machinery/shieldwallgen/online,
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/office/cmo)
 "Cx" = (
 /obj/machinery/uniform_vendor{
 	dir = 1
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/cobed)
 "CD" = (
 /obj/wallframe_spawn/reinforced/titanium,
@@ -9813,18 +9717,8 @@
 	icon_state = "4-8"
 	},
 /obj/item/device/radio,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
-"CH" = (
-/obj/structure/sign/directions/bridge{
-	dir = 8;
-	pixel_y = 3
-	},
-/obj/structure/sign/directions/security{
-	pixel_y = -4
-	},
-/turf/simulated/wall/r_wall/prepainted,
-/area/hallway/primary/bridge/fore)
 "CN" = (
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/bridge/aftport)
@@ -9848,7 +9742,7 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/ce)
 "CU" = (
 /obj/structure/cable/green{
@@ -9859,11 +9753,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/disposalpipe/junction,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/aft)
 "CV" = (
 /obj/machinery/hologram/holopad,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/cobed)
 "CW" = (
 /obj/structure/table/woodentable_reinforced/walnut/maple,
@@ -9872,7 +9766,7 @@
 	pixel_y = -32
 	},
 /obj/item/material/ashtray/bronze,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/co)
 "CZ" = (
 /obj/machinery/door/blast/shutters{
@@ -9885,7 +9779,7 @@
 	},
 /obj/floor_decal/industrial/hatch/yellow,
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/port)
 "De" = (
 /obj/structure/disposalpipe/segment,
@@ -9894,7 +9788,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "Dg" = (
 /obj/structure/cable/green{
@@ -9902,16 +9796,18 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/cl)
 "Dh" = (
 /obj/structure/table/woodentable_reinforced/walnut,
 /obj/random_multi/single_item/memo_corporate,
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor/warhammer/fancyfloor/carpet{
+	dir = 1
+	},
 /area/crew_quarters/heads/office/cl)
 "Dj" = (
 /obj/structure/bed/chair/comfy/green,
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor/warhammer/fancyfloor/carpet/middle,
 /area/crew_quarters/heads/office/cl/backroom)
 "Dq" = (
 /obj/floor_decal/industrial/outline/grey,
@@ -9942,7 +9838,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "Dt" = (
 /obj/structure/dispenser/oxygen,
@@ -9963,10 +9859,10 @@
 /obj/floor_decal/industrial/outline/grey,
 /obj/item/device/destTagger,
 /obj/item/stack/package_wrap/cargo_wrap,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "Dw" = (
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/airlock)
 "Dx" = (
 /turf/simulated/wall/ocp_wall,
@@ -9979,7 +9875,7 @@
 /area/bridge/storage)
 "DH" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/meeting_room)
 "DI" = (
 /obj/structure/table/rack,
@@ -9994,7 +9890,7 @@
 /obj/structure/bed/chair/comfy/captain{
 	dir = 4
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/cobed)
 "DY" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -10005,7 +9901,7 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/cobed)
 "DZ" = (
 /obj/structure/flora/pottedplant/tall,
@@ -10023,7 +9919,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/sgr)
 "Eb" = (
 /obj/machinery/alarm{
@@ -10061,10 +9957,10 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/aft)
 "En" = (
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/sea)
 "Eq" = (
 /obj/machinery/power/apc{
@@ -10072,7 +9968,6 @@
 	name = "west bump";
 	pixel_x = -24
 	},
-/obj/floor_decal/corner/red/mono,
 /obj/structure/cable/green{
 	d2 = 4;
 	icon_state = "0-4"
@@ -10086,7 +9981,7 @@
 	departmentType = 5;
 	pixel_y = -32
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/security/bridgecheck)
 "Es" = (
 /obj/structure/cable/green,
@@ -10111,7 +10006,7 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/aft)
 "Ez" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
@@ -10123,21 +10018,28 @@
 /obj/floor_decal/spline/fancy/wood{
 	dir = 1
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/cobed)
 "EM" = (
 /obj/structure/sign/warning/detailed,
 /turf/simulated/wall/prepainted,
 /area/crew_quarters/heads/office/xo)
 "EN" = (
-/obj/floor_decal/corner/paleblue/diagonal,
 /obj/structure/sign/goldenplaque/medical{
 	pixel_y = -32
 	},
-/turf/simulated/floor/tiled/white,
+/obj/floor_decal/industrial/outline/yellow,
+/obj/structure/filingcabinet/chestdrawer{
+	dir = 1
+	},
+/obj/item/folder/white,
+/obj/item/folder/yellow,
+/obj/item/folder/nt,
+/obj/item/folder,
+/obj/item/folder/red,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/crew_quarters/heads/office/cmo)
 "EP" = (
-/obj/floor_decal/corner/paleblue/diagonal,
 /obj/structure/closet/secure_closet/CMO_torch,
 /obj/item/storage/belt/medical,
 /obj/floor_decal/industrial/outline/yellow,
@@ -10145,7 +10047,7 @@
 	dir = 4;
 	pixel_x = 21
 	},
-/turf/simulated/floor/tiled/white,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/crew_quarters/heads/office/cmo)
 "EV" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -10161,7 +10063,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "EW" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/fuel{
@@ -10187,8 +10089,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/catwalk_plated,
-/turf/simulated/floor/plating,
+/obj/structure/catwalk,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "Fc" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
@@ -10223,7 +10125,7 @@
 /obj/item/device/radio,
 /obj/item/crowbar/prybar,
 /obj/item/device/binoculars,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/cos)
 "Fg" = (
 /obj/structure/bed/chair/comfy/captain{
@@ -10234,7 +10136,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/carpet/blue,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/co)
 "Fi" = (
 /obj/floor_decal/industrial/outline/grey,
@@ -10245,7 +10147,7 @@
 /obj/machinery/computer/rdservercontrol{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/rd)
 "Fl" = (
 /obj/structure/cable/green{
@@ -10263,13 +10165,13 @@
 	icon_state = "1-4"
 	},
 /obj/item/folder/envelope/lauletter1,
-/turf/simulated/floor/carpet/blue,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/co)
 "Fn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room)
 "Fp" = (
 /obj/structure/sign/warning/lethal_turrets,
@@ -10280,13 +10182,13 @@
 /area/maintenance/bridge/foreport)
 "FA" = (
 /obj/floor_decal/industrial/warning,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/storage)
 "FE" = (
 /obj/machinery/computer/modular/preset/engineering{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "FG" = (
 /obj/machinery/photocopier/faxmachine{
@@ -10299,7 +10201,7 @@
 /obj/machinery/newscaster{
 	pixel_x = 32
 	},
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "FK" = (
 /obj/paint/meatstation,
@@ -10321,14 +10223,11 @@
 /obj/machinery/camera/network/bridge{
 	c_tag = "Command Hallway - Aft Port"
 	},
-/obj/floor_decal/corner/red{
-	dir = 4
-	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "FX" = (
 /obj/structure/bed/chair/padded/blue,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room)
 "Ga" = (
 /obj/floor_decal/corner/yellow{
@@ -10348,20 +10247,17 @@
 	name = "Chief Engineer";
 	sort_type = "Chief Engineer"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "Gb" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
-/obj/floor_decal/corner/red{
-	dir = 5
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "Gc" = (
 /obj/paint/meatstation,
@@ -10376,7 +10272,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/cos)
 "Gg" = (
 /obj/structure/window/reinforced{
@@ -10386,7 +10282,7 @@
 	dir = 4;
 	icon_state = "console"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "Gi" = (
 /obj/random/closet,
@@ -10395,7 +10291,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/bridge/aftport)
 "Gj" = (
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/rd)
 "Gn" = (
 /obj/structure/cable/green{
@@ -10412,7 +10308,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
 	},
-/obj/catwalk_plated,
+/obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/plating,
 /area/hallway/primary/bridge/fore)
@@ -10431,7 +10327,7 @@
 	name = "north bump";
 	pixel_y = 24
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "Gs" = (
 /obj/structure/cable/green{
@@ -10442,7 +10338,7 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 28
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "Gy" = (
 /obj/structure/cable/green{
@@ -10473,7 +10369,9 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor/warhammer/fancyfloor/carpet{
+	dir = 1
+	},
 /area/crew_quarters/heads/office/cl/backroom)
 "GB" = (
 /obj/machinery/computer/modular/preset/cardslot/command{
@@ -10493,7 +10391,7 @@
 	pixel_x = 25;
 	pixel_y = 7
 	},
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor/warhammer/fancyfloor/carpet/middle,
 /area/crew_quarters/heads/office/cl)
 "GD" = (
 /obj/structure/disposalpipe/segment{
@@ -10502,7 +10400,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/catwalk_plated,
+/obj/structure/catwalk,
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
@@ -10511,13 +10409,13 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "GG" = (
 /obj/floor_decal/techfloor{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/crew)
 "GI" = (
 /obj/structure/railing/mapped{
@@ -10542,14 +10440,14 @@
 /obj/structure/sign/warning/smoking{
 	pixel_y = -26
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/co)
 "GV" = (
 /obj/machinery/computer/modular/preset/cardslot/command{
 	dir = 4;
 	icon_state = "console"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "GW" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden,
@@ -10565,14 +10463,14 @@
 	initial_id_tag = "torch_primary_pd";
 	name = "Point Defense Controller"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "GY" = (
 /obj/machinery/newscaster/security_unit{
 	pixel_y = 32
 	},
 /obj/machinery/radio_beacon,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "GZ" = (
 /obj/machinery/firealarm{
@@ -10582,7 +10480,7 @@
 	pixel_x = 32
 	},
 /obj/machinery/computer/modular/preset/aislot/sysadmin,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "Hc" = (
 /obj/structure/bed/chair/padded/blue{
@@ -10593,7 +10491,7 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "He" = (
 /obj/structure/cable/green{
@@ -10618,7 +10516,7 @@
 /obj/item/folder/white,
 /obj/floor_decal/industrial/outline/yellow,
 /obj/item/paper/dclassreport1,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "Hg" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
@@ -10646,7 +10544,7 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "Hi" = (
 /obj/random/obstruction,
@@ -10735,7 +10633,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel_ridged,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/starboard)
 "Ht" = (
 /obj/item/soap,
@@ -10763,7 +10661,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor/warhammer/fancyfloor/carpet/middle,
 /area/crew_quarters/heads/office/cl)
 "Hx" = (
 /obj/structure/cable/green{
@@ -10788,7 +10686,7 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "Hz" = (
 /obj/structure/cable/green,
@@ -10816,7 +10714,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "HE" = (
 /obj/machinery/status_display,
@@ -10829,7 +10727,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/computer/modular/preset/medical,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "HG" = (
 /obj/machinery/door/firedoor,
@@ -10862,11 +10760,11 @@
 	pixel_y = -2
 	},
 /obj/random_multi/single_item/memo_scgr,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/sgr)
 "HK" = (
 /obj/overmap/visitable/ship/torch,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "HP" = (
 /obj/machinery/computer/modular/preset/supply_public{
@@ -10878,7 +10776,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "HW" = (
 /obj/structure/cable/green{
@@ -10895,7 +10793,7 @@
 /obj/machinery/newscaster/security_unit{
 	pixel_y = -32
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "HX" = (
 /obj/machinery/door/firedoor,
@@ -10921,7 +10819,7 @@
 /obj/structure/handrail{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/storage)
 "Ia" = (
 /obj/structure/table/standard{
@@ -10934,7 +10832,7 @@
 /obj/item/pen,
 /obj/item/stamp/ce,
 /obj/item/sticky_pad/random,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/ce)
 "Ib" = (
 /obj/machinery/door/blast/regular/open{
@@ -10948,9 +10846,6 @@
 /obj/paint/meatstation,
 /turf/simulated/floor/plating,
 /area/aquila/cockpit)
-"Id" = (
-/turf/simulated/floor/carpet/blue,
-/area/crew_quarters/heads/office/co)
 "Ie" = (
 /turf/simulated/wall/r_wall/hull,
 /area/bridge)
@@ -10968,7 +10863,7 @@
 /obj/structure/bed/chair/comfy/blue{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "Ig" = (
 /obj/item/paper_bin{
@@ -10977,12 +10872,12 @@
 	},
 /obj/item/pen,
 /obj/structure/table/woodentable_reinforced/ebony/walnut,
-/turf/simulated/floor/carpet/blue,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/co)
 "Ih" = (
 /obj/item/stamp/co,
 /obj/structure/table/woodentable_reinforced/ebony/walnut,
-/turf/simulated/floor/carpet/blue,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/co)
 "Ii" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -10992,7 +10887,7 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/co)
 "Ik" = (
 /obj/machinery/button/alternate/door/bolts{
@@ -11024,7 +10919,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/co)
 "Io" = (
 /obj/floor_decal/spline/fancy/wood,
@@ -11038,7 +10933,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/co)
 "Ip" = (
 /obj/structure/cable/green{
@@ -11049,11 +10944,11 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/sea)
 "Iq" = (
 /obj/structure/bookcase,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/sea)
 "Is" = (
 /obj/structure/bed/chair/padded/blue,
@@ -11063,7 +10958,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/sea)
 "Iv" = (
 /obj/machinery/door/airlock/sol{
@@ -11087,7 +10982,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor/warhammer/fancyfloor/carpet/middle,
 /area/crew_quarters/heads/office/cl)
 "Iz" = (
 /obj/floor_decal/spline/fancy/wood{
@@ -11096,7 +10991,7 @@
 /obj/machinery/recharger/wallcharger{
 	pixel_y = 24
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/cobed)
 "IA" = (
 /obj/structure/cable/green{
@@ -11111,11 +11006,11 @@
 	pixel_x = 23;
 	pixel_y = 24
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/cobed)
 "IB" = (
 /obj/structure/bookcase,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/cobed)
 "ID" = (
 /obj/machinery/atmospherics/binary/pump/high_power{
@@ -11137,7 +11032,7 @@
 	name = "Senior Enlisted Advisor RC";
 	pixel_y = -34
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/sea)
 "IF" = (
 /obj/machinery/atmospherics/unary/tank/air{
@@ -11154,7 +11049,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/cobed)
 "IH" = (
 /obj/structure/cable/green{
@@ -11170,7 +11065,7 @@
 	dir = 9
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/cobed)
 "IJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
@@ -11221,7 +11116,7 @@
 	pixel_y = 18;
 	range = 11
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/rd)
 "IW" = (
 /obj/floor_decal/corner/yellow/full,
@@ -11237,7 +11132,7 @@
 	icon_state = "4-8"
 	},
 /obj/item/flora/pottedplantsmall/fern,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "Jc" = (
 /obj/machinery/power/apc{
@@ -11259,7 +11154,7 @@
 /area/shield/bridge)
 "Je" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "Jg" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
@@ -11271,7 +11166,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "Ji" = (
 /obj/random/obstruction,
@@ -11281,7 +11176,7 @@
 /obj/structure/bed/chair/padded/purple{
 	dir = 1
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/rd)
 "Jp" = (
 /obj/machinery/atmospherics/unary/tank/air{
@@ -11306,7 +11201,7 @@
 	dir = 1;
 	icon_state = "warning"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "JA" = (
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
@@ -11323,7 +11218,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/storage)
 "JF" = (
 /obj/structure/grille,
@@ -11384,15 +11279,21 @@
 /area/aquila/air)
 "Ke" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "Kf" = (
-/obj/floor_decal/corner/paleblue/diagonal,
-/obj/structure/table/steel,
-/obj/random_multi/single_item/memo_medical,
-/obj/item/folder/envelope/cmoorder,
-/turf/simulated/floor/tiled/white,
-/area/crew_quarters/heads/office/cmo)
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/warhammer/metal/alt,
+/area/hallway/primary/bridge/fore)
 "Kh" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -11403,11 +11304,11 @@
 	},
 /obj/item/storage/fancy/matches/matchbox,
 /obj/random/smokes,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/co)
 "Kj" = (
 /obj/machinery/papershredder,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/rd)
 "Km" = (
 /obj/structure/disposalpipe/segment{
@@ -11438,7 +11339,7 @@
 	name = "Aquila External Access";
 	req_access = list("ACCESS_DAUNTLESS")
 	},
-/turf/simulated/floor/tiled/steel_ridged,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/airlock)
 "Kq" = (
 /obj/structure/closet/secure_closet/CO,
@@ -11455,7 +11356,7 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "Kt" = (
 /obj/structure/cable/green{
@@ -11463,7 +11364,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "Kv" = (
 /obj/machinery/alarm{
@@ -11475,7 +11376,7 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "Kx" = (
 /obj/structure/filingcabinet/chestdrawer{
@@ -11493,7 +11394,9 @@
 /obj/machinery/newscaster{
 	pixel_y = 32
 	},
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor/warhammer/fancyfloor/carpet{
+	dir = 5
+	},
 /area/crew_quarters/heads/office/cl/backroom)
 "KB" = (
 /obj/structure/largecrate,
@@ -11510,7 +11413,7 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/cobed)
 "KG" = (
 /obj/structure/cable/green{
@@ -11547,32 +11450,10 @@
 /obj/item/defibrillator/loaded,
 /turf/simulated/floor/tiled/white/monotile,
 /area/aquila/medical)
-"KP" = (
-/obj/floor_decal/corner/paleblue/diagonal,
-/obj/structure/table/steel,
-/obj/machinery/photocopier/faxmachine{
-	department = "Dauntless - Chief Medical Officer"
-	},
-/obj/item/stamp/cmo,
-/obj/item/device/radio{
-	frequency = 1487;
-	name = "medbay emergency radio link"
-	},
-/turf/simulated/floor/tiled/white,
-/area/crew_quarters/heads/office/cmo)
 "KZ" = (
 /obj/random/plushie/large,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/foreport)
-"La" = (
-/obj/structure/sign/directions/supply{
-	pixel_y = -4
-	},
-/obj/structure/sign/directions/engineering{
-	pixel_y = 3
-	},
-/turf/simulated/wall/r_wall/prepainted,
-/area/hallway/primary/bridge/fore)
 "Lb" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
@@ -11581,7 +11462,7 @@
 	dir = 8;
 	pixel_x = 20
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room)
 "Le" = (
 /obj/structure/sign/warning/high_voltage,
@@ -11594,7 +11475,7 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "Lg" = (
 /obj/machinery/light/small,
@@ -11617,7 +11498,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room)
 "Li" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -11638,7 +11519,7 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/airlock)
 "Lj" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -11648,11 +11529,10 @@
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/aftstarboard)
 "Ll" = (
-/obj/floor_decal/corner/paleblue/diagonal,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/white,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/crew_quarters/heads/office/cmo)
 "Lr" = (
 /obj/structure/cable/green{
@@ -11682,7 +11562,7 @@
 	dir = 5
 	},
 /obj/item/folder/envelope/exploorder,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/rd)
 "Lw" = (
 /obj/machinery/button/blast_door{
@@ -11718,7 +11598,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "LJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -11726,7 +11606,7 @@
 	dir = 8;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "LM" = (
 /obj/structure/catwalk,
@@ -11747,7 +11627,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "LQ" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
@@ -11776,7 +11656,9 @@
 	},
 /obj/item/reagent_containers/food/drinks/glass2/coffeecup/corp,
 /obj/item/storage/box/large/union_cards,
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor/warhammer/fancyfloor/carpet{
+	dir = 1
+	},
 /area/crew_quarters/heads/office/cl/backroom)
 "Ma" = (
 /obj/structure/railing/mapped{
@@ -11790,7 +11672,7 @@
 	dir = 4;
 	pixel_x = 21
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room)
 "Mc" = (
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -11799,7 +11681,7 @@
 /obj/structure/table/woodentable_reinforced/walnut/maple,
 /obj/item/folder/envelope/captain,
 /obj/random_multi/single_item/runtime,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/co)
 "Mi" = (
 /obj/structure/sign/ecplaque{
@@ -11811,7 +11693,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "Mj" = (
 /obj/structure/cable/green{
@@ -11828,7 +11710,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/aftstarboard)
 "Mn" = (
-/obj/floor_decal/corner/red/mono,
 /obj/machinery/requests_console{
 	announcementConsole = 1;
 	department = "Chief of Security's Desk";
@@ -11841,22 +11722,13 @@
 	dir = 8;
 	icon_state = "console"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/cos)
-"Mq" = (
-/obj/structure/sign/directions/infirmary{
-	pixel_y = -4
-	},
-/obj/structure/sign/directions/science{
-	pixel_y = 3
-	},
-/turf/simulated/wall/r_wall/prepainted,
-/area/hallway/primary/bridge/fore)
 "Mr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/catwalk_plated,
-/turf/simulated/floor/plating,
+/obj/structure/catwalk,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "Mw" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -11910,13 +11782,13 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "Nb" = (
 /obj/structure/bed/chair/comfy/captain{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room)
 "Nc" = (
 /obj/structure/handrail{
@@ -11953,13 +11825,13 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "Nf" = (
 /obj/structure/bed/chair/comfy/blue{
 	dir = 8
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/co)
 "Ng" = (
 /obj/machinery/button/alternate/door{
@@ -11991,7 +11863,7 @@
 	pixel_y = 33
 	},
 /obj/structure/table/woodentable_reinforced/ebony/walnut,
-/turf/simulated/floor/carpet/blue,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/co)
 "Ni" = (
 /obj/machinery/door/airlock/engineering{
@@ -12018,7 +11890,7 @@
 /obj/machinery/atmospherics/valve/shutoff/scrubbers,
 /obj/machinery/atmospherics/valve/shutoff/supply,
 /obj/floor_decal/industrial/shutoff,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "Nn" = (
 /obj/structure/table/standard{
@@ -12026,7 +11898,7 @@
 	},
 /obj/item/reagent_containers/food/drinks/glass2/coffeecup/pawn,
 /obj/item/reagent_containers/food/condiment/small/packet/coffee,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/sea)
 "Np" = (
 /obj/structure/railing/mapped,
@@ -12060,7 +11932,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/rd)
 "Nw" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -12069,10 +11941,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/cl)
 "NC" = (
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor/warhammer/fancyfloor/carpet/middle,
 /area/crew_quarters/heads/office/cl/backroom)
 "ND" = (
 /obj/structure/table/woodentable/walnut,
@@ -12082,7 +11954,7 @@
 	req_access = list("ACCESS_MECHANICUS")
 	},
 /obj/item/storage/secure/briefcase/nukedisk,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/cobed)
 "NE" = (
 /obj/machinery/door/airlock/security{
@@ -12101,7 +11973,7 @@
 /obj/structure/bed/chair/comfy/beige{
 	dir = 4
 	},
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "NL" = (
 /obj/floor_decal/industrial/outline/yellow,
@@ -12115,7 +11987,7 @@
 	dir = 4;
 	pixel_x = -37
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "NM" = (
 /obj/machinery/atmospherics/binary/pump{
@@ -12131,7 +12003,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/carpet/blue,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/co)
 "NW" = (
 /obj/floor_decal/industrial/warning{
@@ -12152,7 +12024,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/steel_ridged,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/airlock)
 "Oc" = (
 /obj/structure/sign/solgov{
@@ -12163,7 +12035,7 @@
 /area/space)
 "Od" = (
 /obj/structure/table/woodentable/walnut,
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "Oe" = (
 /obj/machinery/requests_console{
@@ -12187,7 +12059,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "Of" = (
 /obj/structure/cable/green{
@@ -12203,9 +12075,8 @@
 	name = "Bridge Deck Hallway Shutters";
 	opacity = 0
 	},
-/obj/floor_decal/corner/red/mono,
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "Og" = (
 /obj/structure/disposalpipe/segment{
@@ -12227,7 +12098,7 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "Oh" = (
 /obj/item/stool/padded,
@@ -12236,7 +12107,7 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor/warhammer/fancyfloor/carpet/middle,
 /area/crew_quarters/heads/office/cl/backroom)
 "Oi" = (
 /obj/structure/hygiene/sink{
@@ -12252,7 +12123,7 @@
 /obj/machinery/computer/rdconsole{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/rd)
 "Ok" = (
 /obj/machinery/bodyscanner{
@@ -12265,10 +12136,7 @@
 	dir = 6
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/floor_decal/corner/red/half{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/security/bridgecheck)
 "Oq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
@@ -12284,7 +12152,7 @@
 	},
 /obj/item/hand_labeler,
 /obj/item/folder/envelope/clorder,
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor/warhammer/fancyfloor/carpet/middle,
 /area/crew_quarters/heads/office/cl/backroom)
 "Ox" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
@@ -12299,7 +12167,7 @@
 	pixel_x = -24;
 	pixel_y = 6
 	},
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor/warhammer/fancyfloor/carpet/middle,
 /area/crew_quarters/heads/office/cl/backroom)
 "Oy" = (
 /obj/structure/table/woodentable_reinforced/walnut,
@@ -12307,7 +12175,9 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor/warhammer/fancyfloor/carpet{
+	dir = 8
+	},
 /area/crew_quarters/heads/office/cl)
 "OE" = (
 /obj/structure/cable/green{
@@ -12327,20 +12197,18 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/bridge/aftport)
 "OM" = (
-/obj/floor_decal/spline/fancy/wood{
+/turf/simulated/floor/warhammer/fancyfloor/carpet{
 	dir = 1
 	},
-/turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/co)
+/area/crew_quarters/heads/office/cl)
 "OO" = (
-/obj/floor_decal/corner/paleblue/diagonal,
 /obj/structure/bed/chair/comfy/teal{
 	dir = 1
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/white,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/crew_quarters/heads/office/cmo)
 "OS" = (
 /obj/structure/railing/mapped{
@@ -12379,7 +12247,7 @@
 	pixel_y = 23;
 	req_access = list("ACCESS_MECHANICUS_COMMAND")
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/air)
 "Pc" = (
 /obj/structure/cable{
@@ -12402,7 +12270,7 @@
 /obj/floor_decal/industrial/hatch/yellow,
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "Pe" = (
 /obj/structure/cable/green{
@@ -12410,7 +12278,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "Pf" = (
 /obj/structure/bed/chair/padded/blue{
@@ -12443,7 +12311,9 @@
 /area/hallway/primary/bridge/fore)
 "Pl" = (
 /obj/structure/closet/secure_closet/liaison,
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor/warhammer/fancyfloor/carpet{
+	dir = 4
+	},
 /area/crew_quarters/heads/office/cl/backroom)
 "Pn" = (
 /obj/item/device/taperecorder{
@@ -12455,10 +12325,12 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor/warhammer/fancyfloor/carpet{
+	dir = 4
+	},
 /area/crew_quarters/heads/office/cl/backroom)
 "Pt" = (
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/co)
 "Py" = (
 /obj/structure/bed/chair/comfy/blue{
@@ -12468,7 +12340,7 @@
 	dir = 1;
 	pixel_y = -24
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/co)
 "PA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
@@ -12527,7 +12399,7 @@
 	pixel_x = 10;
 	pixel_y = 22
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/power)
 "PW" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -12536,7 +12408,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
-/turf/simulated/floor/carpet/green,
+/turf/simulated/floor/warhammer/fancyfloor/carpet/middle,
 /area/crew_quarters/heads/office/cl/backroom)
 "Qb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -12549,7 +12421,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/airlock)
 "Qc" = (
 /obj/machinery/door/airlock/glass/command{
@@ -12597,7 +12469,7 @@
 	pixel_y = 6;
 	req_access = list("ACCESS_BRIDGE")
 	},
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "Qe" = (
 /obj/structure/cable/green{
@@ -12619,7 +12491,7 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "Qf" = (
 /obj/floor_decal/techfloor,
@@ -12635,7 +12507,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
 /obj/random_multi/single_item/punitelli,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room)
 "Qh" = (
 /obj/floor_decal/industrial/outline/grey,
@@ -12678,7 +12550,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/rd)
 "Qp" = (
 /obj/machinery/door/airlock/sol{
@@ -12687,7 +12559,7 @@
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "Qq" = (
 /obj/machinery/door/blast/regular/open{
@@ -12695,7 +12567,7 @@
 	id_tag = "elevatorcmd";
 	name = "Restricted Lockdown"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/aft)
 "Qv" = (
 /obj/structure/cable/green{
@@ -12706,7 +12578,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/meeting_room)
 "Qw" = (
 /obj/structure/table/steel,
@@ -12719,7 +12591,7 @@
 /obj/random_multi/single_item/memo_engineering,
 /obj/random_multi/single_item/memo_research,
 /obj/random_multi/single_item/memo_exploration,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "Qz" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -12733,7 +12605,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/airlock)
 "QE" = (
 /obj/floor_decal/industrial/warning{
@@ -12750,7 +12622,6 @@
 /area/aquila/suits)
 "QK" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/hatch/maintenance,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -12758,6 +12629,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/airlock/warhammer/vaultold{
+	req_access = list("ACCESS_BRIDGE")
+	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/hallway/primary/bridge/fore)
 "QL" = (
@@ -12773,7 +12647,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "QQ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -12786,7 +12660,7 @@
 	pixel_x = 25;
 	req_access = list("ACCESS_BRIDGE")
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "QS" = (
 /obj/structure/table/woodentable/walnut,
@@ -12803,13 +12677,13 @@
 	pixel_x = -5;
 	pixel_y = -1
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/sgr)
 "QW" = (
 /obj/machinery/computer/ship/engines{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "QX" = (
 /obj/item/device/flashlight/lamp/green,
@@ -12834,7 +12708,7 @@
 	pixel_x = -3;
 	pixel_y = 7
 	},
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "QY" = (
 /obj/structure/railing/mapped{
@@ -12845,21 +12719,21 @@
 /area/maintenance/bridge/forestarboard)
 "Ra" = (
 /obj/machinery/computer/modular/preset/security,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "Rb" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Infirmary"
 	},
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/steel_ridged,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/storage)
 "Rd" = (
 /obj/machinery/hologram/holopad,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/cl)
 "Re" = (
 /obj/structure/cable/green{
@@ -12870,7 +12744,7 @@
 /obj/item/device/radio/intercom{
 	pixel_y = 23
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "Rf" = (
 /obj/machinery/power/apc{
@@ -12882,7 +12756,7 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/sgr)
 "Rg" = (
 /obj/floor_decal/industrial/hatch/yellow,
@@ -12949,7 +12823,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/rd)
 "Rl" = (
 /obj/machinery/light/small{
@@ -12967,7 +12841,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "Rq" = (
 /obj/machinery/computer/ship/helm{
@@ -12979,7 +12853,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "Rs" = (
 /obj/machinery/light{
@@ -12997,7 +12871,7 @@
 	pixel_y = 4
 	},
 /obj/item/storage/secure/briefcase,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "Rz" = (
 /obj/floor_decal/industrial/warning{
@@ -13019,7 +12893,7 @@
 	},
 /obj/floor_decal/industrial/warning/fulltile,
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "RD" = (
 /obj/machinery/alarm{
@@ -13030,7 +12904,7 @@
 	dir = 8
 	},
 /obj/floor_decal/industrial/outline/grey,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room)
 "RE" = (
 /obj/structure/cable/green{
@@ -13045,7 +12919,7 @@
 	dir = 8;
 	pixel_x = 20
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "RH" = (
 /turf/simulated/wall/titanium,
@@ -13061,7 +12935,7 @@
 /obj/structure/bed/chair/comfy/blue{
 	dir = 4
 	},
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "RQ" = (
 /obj/machinery/firealarm{
@@ -13069,7 +12943,7 @@
 	pixel_x = -24
 	},
 /obj/structure/flora/pottedplant/unusual,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/rd)
 "RT" = (
 /obj/structure/cable/green{
@@ -13084,13 +12958,13 @@
 "RU" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/catwalk_plated,
+/obj/structure/catwalk,
 /obj/machinery/light{
 	dir = 8;
 	icon_state = "tube1"
 	},
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "RV" = (
 /obj/machinery/status_display,
@@ -13106,7 +12980,7 @@
 	pixel_x = 28
 	},
 /obj/structure/cable/cyan,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/power)
 "Se" = (
 /obj/structure/cable/green{
@@ -13123,7 +12997,7 @@
 	pixel_x = 23;
 	pixel_y = -23
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "Sf" = (
 /obj/structure/cable/green{
@@ -13131,7 +13005,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/sgr)
 "Sg" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
@@ -13155,7 +13029,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel_grid,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/aft)
 "Sh" = (
 /obj/floor_decal/industrial/warning{
@@ -13176,7 +13050,7 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/rd)
 "Sn" = (
 /obj/machinery/newscaster/security_unit{
@@ -13185,7 +13059,7 @@
 /obj/machinery/rotating_alarm/security_alarm{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/meeting_room)
 "So" = (
 /obj/machinery/atmospherics/unary/tank/air,
@@ -13211,7 +13085,7 @@
 /obj/item/device/tape/random,
 /obj/item/device/tape/random,
 /obj/item/device/taperecorder,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room)
 "SE" = (
 /obj/structure/cable/green,
@@ -13239,7 +13113,7 @@
 	dir = 1;
 	pixel_y = -24
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/cobed)
 "SL" = (
 /obj/structure/table/woodentable_reinforced/walnut,
@@ -13252,7 +13126,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/sgr)
 "SQ" = (
 /obj/machinery/atmospherics/unary/engine{
@@ -13299,7 +13173,7 @@
 /obj/structure/noticeboard{
 	pixel_x = -32
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "Tb" = (
 /obj/floor_decal/techfloor{
@@ -13358,7 +13232,7 @@
 /obj/structure/sign/warning/smoking{
 	pixel_y = 26
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room/deliberation)
 "Tg" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
@@ -13402,7 +13276,7 @@
 /obj/floor_decal/industrial/outline/grey,
 /obj/floor_decal/corner/research/mono,
 /obj/structure/closet/secure_closet/RD_torch,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/rd)
 "Tj" = (
 /obj/floor_decal/industrial/warning{
@@ -13411,10 +13285,10 @@
 /obj/structure/table/rack,
 /obj/random/solgov,
 /obj/random/solgov,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/storage)
 "Tl" = (
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "Tn" = (
 /obj/structure/bed/chair/padded/blue{
@@ -13437,7 +13311,7 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/cobed)
 "Tx" = (
 /obj/machinery/atmospherics/tvalve/mirrored/bypass{
@@ -13458,7 +13332,7 @@
 	opacity = 0
 	},
 /obj/floor_decal/corner/red/mono,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "TA" = (
 /obj/machinery/portable_atmospherics/powered/scrubber,
@@ -13475,7 +13349,7 @@
 	dir = 5
 	},
 /obj/machinery/light,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "TK" = (
 /obj/structure/cable/green{
@@ -13496,7 +13370,7 @@
 /obj/structure/bed/chair/comfy/blue{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "TM" = (
 /obj/structure/disposalpipe/junction{
@@ -13507,7 +13381,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "TP" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -13515,7 +13389,7 @@
 	req_access = list("ACCESS_BRIDGE");
 	name = "Bridge - Saferoom"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "TQ" = (
 /obj/floor_decal/industrial/warning{
@@ -13553,7 +13427,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room/deliberation)
 "Ug" = (
 /obj/machinery/shield_diffuser,
@@ -13603,7 +13477,7 @@
 	},
 /obj/machinery/photocopier,
 /obj/floor_decal/corner/research/mono,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/rd)
 "Uk" = (
 /obj/floor_decal/industrial/hatch/yellow,
@@ -13621,7 +13495,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel_ridged,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/starboard)
 "Um" = (
 /obj/structure/sign/poster/torch,
@@ -13629,12 +13503,12 @@
 /area/crew_quarters/heads/office/cos)
 "Uo" = (
 /obj/structure/bed/chair/padded/green,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/cl)
 "Uu" = (
 /obj/machinery/hologram/holopad,
 /obj/floor_decal/industrial/outline/yellow,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/security/bridgecheck)
 "Ux" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -13643,7 +13517,7 @@
 /obj/floor_decal/techfloor{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/crew)
 "Uy" = (
 /obj/structure/table/steel,
@@ -13657,10 +13531,10 @@
 	dir = 10
 	},
 /obj/item/device/paicard,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/rd)
 "UA" = (
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/security/bridgecheck)
 "UC" = (
 /obj/structure/closet/firecloset,
@@ -13692,7 +13566,7 @@
 	dir = 8;
 	pixel_x = 20
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "UU" = (
 /obj/shuttle_landmark/ert/deck1{
@@ -13713,7 +13587,7 @@
 "UY" = (
 /obj/machinery/computer/modular/preset/cardslot/command,
 /obj/item/modular_computer/tablet/lease/preset/command,
-/turf/simulated/floor/carpet/blue,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/co)
 "Vb" = (
 /turf/simulated/floor/tiled/white,
@@ -13725,7 +13599,7 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "Vf" = (
 /obj/structure/cable/green{
@@ -13735,7 +13609,7 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room)
 "Vg" = (
 /obj/machinery/door/airlock/external{
@@ -13753,16 +13627,8 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel_ridged,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/airlock)
-"Vh" = (
-/obj/floor_decal/corner/paleblue/diagonal,
-/obj/random_multi/single_item/runtime,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/white,
-/area/crew_quarters/heads/office/cmo)
 "Vi" = (
 /obj/structure/filingcabinet/chestdrawer{
 	dir = 1
@@ -13782,7 +13648,7 @@
 	},
 /obj/item/folder/nt,
 /obj/floor_decal/corner/research/mono,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/rd)
 "Vj" = (
 /obj/structure/cable/green{
@@ -13798,11 +13664,11 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "Vl" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "Vn" = (
 /obj/machinery/door/blast/shutters{
@@ -13865,7 +13731,7 @@
 	pixel_y = 22;
 	req_access = list("ACCESS_BRIDGE")
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "VB" = (
 /obj/structure/catwalk,
@@ -13889,21 +13755,11 @@
 /obj/structure/table/woodentable/walnut,
 /obj/item/sticky_pad/random,
 /obj/item/toy/torchmodel,
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
-"VL" = (
-/obj/floor_decal/corner/red/half,
-/turf/simulated/floor/tiled/monotile,
-/area/hallway/primary/bridge/fore)
 "VN" = (
 /turf/simulated/wall/r_wall/hull,
 /area/solar/bridge)
-"VP" = (
-/obj/floor_decal/corner/paleblue{
-	dir = 10
-	},
-/turf/simulated/floor/tiled,
-/area/hallway/primary/bridge/aft)
 "VW" = (
 /obj/structure/bed/padded,
 /obj/item/bedsheet/captain,
@@ -13928,10 +13784,7 @@
 /obj/structure/bed/chair/padded/red{
 	dir = 4
 	},
-/obj/floor_decal/corner/red/half{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/security/bridgecheck)
 "Wb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -13948,7 +13801,7 @@
 	dir = 8
 	},
 /obj/floor_decal/industrial/warning,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/storage)
 "We" = (
 /obj/structure/cable/green{
@@ -13961,7 +13814,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/meeting_room)
 "Wg" = (
 /obj/wallframe_spawn/reinforced/titanium,
@@ -13974,15 +13827,12 @@
 "Wh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/floor_decal/corner/red/half{
-	dir = 8
-	},
 /obj/structure/cable/green{
 	d1 = 2;
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/security/bridgecheck)
 "Wi" = (
 /obj/structure/table/steel,
@@ -13993,15 +13843,14 @@
 	pixel_y = 32
 	},
 /obj/floor_decal/corner/research/mono,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/rd)
 "Wj" = (
 /obj/machinery/alarm{
 	dir = 4;
 	pixel_x = -23
 	},
-/obj/floor_decal/corner/red/mono,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/security/bridgecheck)
 "Wr" = (
 /obj/machinery/atmospherics/binary/pump{
@@ -14019,12 +13868,12 @@
 /obj/structure/handrail{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/airlock)
 "Wv" = (
 /obj/structure/closet/secure_closet/bridgeofficer,
 /obj/floor_decal/industrial/outline/grey,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "Ww" = (
 /obj/paint/meatstation,
@@ -14035,7 +13884,7 @@
 	dir = 8;
 	icon_state = "console"
 	},
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "WW" = (
 /obj/structure/table/steel,
@@ -14044,7 +13893,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "WX" = (
 /obj/structure/catwalk,
@@ -14132,7 +13981,7 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
 /obj/floor_decal/industrial/warning/fulltile,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "Xp" = (
 /obj/structure/sign/solgov,
@@ -14158,7 +14007,6 @@
 /turf/simulated/open,
 /area/maintenance/bridge/foreport)
 "Xx" = (
-/obj/floor_decal/corner/paleblue/diagonal,
 /obj/machinery/door/airlock/medical{
 	id_tag = "cmodoor";
 	name = "Chief Medical Officer";
@@ -14176,12 +14024,12 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/white,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/crew_quarters/heads/office/cmo)
 "Xz" = (
 /obj/floor_decal/industrial/outline/yellow,
 /obj/structure/closet/secure_closet/guncabinet/lasgun,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "XB" = (
 /obj/structure/bed/chair/comfy/captain,
@@ -14209,13 +14057,13 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "XO" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "XQ" = (
 /obj/machinery/door/blast/regular/open{
@@ -14274,7 +14122,7 @@
 	dir = 6
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "Ye" = (
 /obj/machinery/button/blast_door{
@@ -14303,7 +14151,7 @@
 	},
 /obj/floor_decal/industrial/outline/yellow,
 /obj/machinery/hologram/holopad/longrange,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/meeting_room)
 "Yf" = (
 /obj/structure/cable/green{
@@ -14322,7 +14170,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room)
 "Yh" = (
 /obj/floor_decal/industrial/warning{
@@ -14353,7 +14201,7 @@
 /obj/machinery/atm{
 	pixel_x = 32
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/fore)
 "Ys" = (
 /obj/random_multi/single_item/poppy,
@@ -14361,14 +14209,11 @@
 /area/maintenance/bridge/forestarboard)
 "Yz" = (
 /obj/structure/flora/pottedplant/orientaltree,
-/obj/floor_decal/spline/fancy/wood/corner{
-	dir = 1
-	},
 /obj/machinery/alarm{
 	dir = 4;
 	pixel_x = -23
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/co)
 "YA" = (
 /obj/machinery/computer/modular/preset/cardslot/command{
@@ -14376,7 +14221,7 @@
 	icon_state = "console"
 	},
 /obj/item/modular_computer/tablet/lease/preset/command,
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "YC" = (
 /obj/machinery/door/airlock/sol{
@@ -14397,23 +14242,20 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/sgr)
 "YI" = (
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/bridge/forestarboard)
 "YJ" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
-/obj/floor_decal/corner/red/half{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/security/bridgecheck)
 "YK" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/bridge/hallway/starboard)
 "YL" = (
 /obj/structure/railing/mapped{
@@ -14431,7 +14273,7 @@
 	name = "Disciplinary Board Room Maintenance Access"
 	},
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/bridge/disciplinary_board_room)
 "YS" = (
 /obj/structure/cable/green{
@@ -14442,14 +14284,14 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/catwalk_plated,
+/obj/structure/catwalk,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/hallway/primary/bridge/aft)
 "YW" = (
 /obj/floor_decal/industrial/warning{
@@ -14475,7 +14317,7 @@
 /obj/item/airlock_brace{
 	req_access = list("ACCESS_BRIDGE")
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/storage)
 "YY" = (
 /obj/structure/cable/cyan{
@@ -14492,7 +14334,7 @@
 /obj/machinery/camera/network/aquila{
 	c_tag = "Aquila - Crew Compartment"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/crew)
 "Zb" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -14511,7 +14353,7 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge/meeting_room)
 "Zg" = (
 /obj/structure/cable/green{
@@ -14524,7 +14366,7 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/bridge)
 "Zh" = (
 /obj/floor_decal/industrial/outline/grey,
@@ -14544,7 +14386,7 @@
 /obj/floor_decal/corner/research/half{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/rd)
 "Zj" = (
 /obj/paint/meatstation,
@@ -14559,16 +14401,13 @@
 	},
 /obj/structure/bed/padded,
 /obj/item/bedsheet/brown,
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "Zt" = (
-/obj/floor_decal/corner/red{
-	dir = 6
-	},
 /obj/structure/noticeboard{
 	pixel_y = 30
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/cos)
 "Zx" = (
 /obj/structure/table/standard{
@@ -14581,7 +14420,7 @@
 /obj/machinery/photocopier/faxmachine{
 	department = "Dauntless - Chief Engineer"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/ce)
 "Zy" = (
 /obj/floor_decal/industrial/warning{
@@ -14600,7 +14439,7 @@
 /obj/machinery/alarm{
 	pixel_y = 24
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/aquila/airlock)
 "ZB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
@@ -14613,7 +14452,7 @@
 	dir = 4;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/metal/alt,
 /area/crew_quarters/heads/office/rd)
 "ZI" = (
 /obj/machinery/alarm{
@@ -14621,9 +14460,8 @@
 	pixel_x = 24
 	},
 /obj/machinery/photocopier,
-/obj/floor_decal/corner/paleblue/diagonal,
 /obj/floor_decal/industrial/outline/yellow,
-/turf/simulated/floor/tiled/white,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/crew_quarters/heads/office/cmo)
 "ZJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -14632,7 +14470,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/warhammer/darkwood,
 /area/crew_quarters/heads/office/cl)
 "ZM" = (
 /obj/structure/cable/green{
@@ -14640,7 +14478,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/catwalk_plated,
+/obj/structure/catwalk,
 /obj/structure/disposalpipe/junction{
 	dir = 1
 	},
@@ -14656,18 +14494,17 @@
 	pixel_x = 23;
 	pixel_y = 24
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/warhammer/fancyfloor/coralg,
 /area/crew_quarters/heads/office/sea)
 "ZT" = (
 /obj/structure/dogbed,
 /obj/random/plushie,
 /mob/living/simple_animal/passive/corgi/Ian,
-/turf/simulated/floor/warhammer/rectangles,
+/turf/simulated/floor/warhammer/ceramic/old,
 /area/crew_quarters/heads/office/xo)
 "ZX" = (
-/obj/floor_decal/corner/paleblue/diagonal,
 /obj/structure/bed/chair/padded/teal,
-/turf/simulated/floor/tiled/white,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/crew_quarters/heads/office/cmo)
 
 (1,1,1) = {"
@@ -22451,9 +22288,9 @@ TK
 cV
 Ie
 Ng
-Id
+Pt
 th
-OM
+Pt
 Pt
 yS
 Py
@@ -22655,7 +22492,7 @@ ck
 UY
 Fg
 Ig
-OM
+Pt
 tR
 Mf
 CW
@@ -22845,7 +22682,7 @@ Ks
 TI
 ox
 cz
-HC
+pI
 hn
 hn
 lm
@@ -22857,7 +22694,7 @@ XR
 NN
 Fl
 Ih
-OM
+Pt
 Pt
 Nf
 Nf
@@ -25684,7 +25521,7 @@ eR
 id
 rb
 rV
-jR
+bT
 QN
 bT
 bT
@@ -26471,7 +26308,7 @@ sJ
 ak
 gc
 yU
-Ix
+jV
 Oy
 qU
 Nw
@@ -27076,10 +26913,10 @@ aE
 VB
 VB
 sJ
-sJ
+OM
 bu
-sJ
-sJ
+kS
+kS
 HG
 sJ
 sJ
@@ -27683,7 +27520,7 @@ al
 bi
 dk
 Kx
-NC
+pF
 Pl
 Pn
 oE
@@ -27691,11 +27528,11 @@ hW
 dk
 Re
 Bw
-CH
+hC
 im
 iV
 nM
-VL
+bT
 NE
 UA
 Uu
@@ -27893,7 +27730,7 @@ sT
 Kb
 xW
 xX
-Mq
+hC
 im
 Jt
 Dr
@@ -27902,7 +27739,7 @@ mN
 AA
 nZ
 Wa
-pF
+pE
 mN
 rg
 yb
@@ -28096,7 +27933,7 @@ sT
 uJ
 zo
 hC
-La
+hC
 iX
 Dr
 fB
@@ -28107,7 +27944,7 @@ zM
 pG
 yW
 rk
-Pe
+Kf
 TX
 uS
 uo
@@ -28505,7 +28342,7 @@ iZ
 jT
 kK
 lC
-mQ
+dO
 oc
 bJ
 Of
@@ -28704,16 +28541,16 @@ fB
 fB
 fB
 uV
-in
+fB
 kL
 lD
 kL
 lA
 Xx
 kJ
-fW
+kJ
 Cv
-pI
+kJ
 kJ
 FX
 up
@@ -28906,16 +28743,16 @@ gm
 gm
 gm
 gm
-jU
+fI
 kM
 lE
 mS
 oe
 oO
 pJ
-qv
-rn
-KP
+kJ
+fW
+kJ
 kJ
 FX
 up
@@ -29109,14 +28946,14 @@ gm
 gm
 gm
 Qq
-jV
+kM
 YS
-VP
+kM
 of
 oP
 ZX
-Kf
-OO
+qv
+rn
 yw
 kJ
 SB
@@ -29311,14 +29148,14 @@ gm
 gm
 gm
 Qq
-jV
+kM
 YS
-VP
+kM
 og
 ly
 pL
 qx
-Ll
+OO
 nG
 kJ
 TX
@@ -29520,7 +29357,7 @@ kJ
 oR
 pM
 rp
-Vh
+Ll
 EN
 kJ
 oS
@@ -29916,10 +29753,10 @@ fI
 fI
 fI
 fI
-jW
-jV
+fI
+kM
 nb
-jV
+kM
 Ey
 oh
 oh
@@ -30927,7 +30764,7 @@ hJ
 hJ
 hJ
 jZ
-kS
+kN
 lN
 nc
 ol

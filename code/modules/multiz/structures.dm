@@ -232,6 +232,7 @@
 	desc = "Stairs leading to another deck.  Not too useful if the gravity goes out."
 	icon = 'icons/obj/structures/stairs.dmi'
 	icon_state = "above"
+	color = COLOR_DARK_GUNMETAL
 	density = FALSE
 	opacity = 0
 	anchored = TRUE

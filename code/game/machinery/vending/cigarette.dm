@@ -1,9 +1,10 @@
 /obj/machinery/vending/cigarette
 	name = "\improper Cigarette Machine"
 	desc = "A specialized vending machine designed to contribute to your slow and uncomfortable death."
+	icon = 'icons/obj/vending.dmi'
 	icon_state = "cigs"
 	icon_vend = "cigs-vend"
-	icon_deny = "cigs-deny"
+	icon_deny = "cigs-off"
 	base_type = /obj/machinery/vending/cigarette
 	product_slogans = {"\
 		There's no better time to start smokin'.;\

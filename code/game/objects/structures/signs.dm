@@ -186,7 +186,7 @@
 	icon_state = "nosmoking"
 
 /obj/structure/sign/warning/nosmoking_2
-	name = "\improper NO SMOKING"
+	name = "\improper FEAR THE ALIEN"
 	icon_state = "nosmoking2"
 
 /obj/structure/sign/warning/nosmoking_burned
@@ -678,6 +678,24 @@
 	icon = 'icons/map_project/furniture_and_decor.dmi'
 	desc = "The banner of some possible important house in Elipharius.'"
 	icon_state = "flag_count"
+
+
+/obj/structure/sign/banner_count/warhammer
+	name = "Banner"
+	icon = 'icons/obj/stationobjs.dmi'
+
+/obj/structure/sign/banner_count/warhammer/red
+	icon_state = "red"
+
+/obj/structure/sign/banner_count/warhammer/red/small
+	icon_state = "redsmall"
+
+/obj/structure/sign/banner_count/warhammer/blue
+	icon_state = "blue"
+
+/obj/structure/sign/banner_count/warhammer/blue/small
+	icon_state = "bluesmall"
+
 
 // Library Signs
 

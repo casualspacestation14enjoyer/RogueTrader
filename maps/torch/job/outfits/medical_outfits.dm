@@ -27,7 +27,7 @@
 	name = OUTFIT_JOB_NAME("Pharmacologis")
 	head = /obj/item/clothing/head/helmet/pilgrimcap/medicae
 	mask = /obj/item/clothing/mask/gas/prac_mask
-	glasses = /obj/item/clothing/glasses/night/aviators
+	glasses = /obj/item/clothing/glasses/eyepatch/hud/medical
 	belt = /obj/item/storage/belt/medical
 	suit = /obj/item/clothing/suit/armor/grim/medicae
 	shoes = /obj/item/clothing/shoes/jackboots/prac_boots
@@ -45,7 +45,7 @@
 	name = OUTFIT_JOB_NAME("Medicae")
 	head = /obj/item/clothing/head/helmet/pilgrimcap/medicae
 	mask = /obj/item/clothing/mask/gas/prac_mask
-	glasses = /obj/item/clothing/glasses/night/aviators
+	glasses = /obj/item/clothing/glasses/eyepatch/hud/medical
 	belt = /obj/item/storage/belt/medical
 	suit = /obj/item/clothing/suit/armor/grim/medicae
 	shoes = /obj/item/clothing/shoes/jackboots/prac_boots

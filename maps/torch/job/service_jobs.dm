@@ -49,9 +49,9 @@
 	department_flag = SRV // alt roles; Agri-worker. Servant.
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Chamber Magister"
+	supervisors = "the Chaplain Militant or Tavern Keeper"
 	create_record = FALSE
-	minimum_character_age = list(SPECIES_HUMAN = 20)
+	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 20
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/service/janitor
 	allowed_branches = list(
@@ -74,9 +74,22 @@
 	access = list(
 		access_dauntless, access_restricted, access_medical)
 
+/datum/job/chamber_assistant/get_description_blurb()
+	return "The Chamber Assistant, one of many shipbound drudges, seeks employment wherever their labor can be tolerated. Whether scrubbing quarters, hauling provisions, or serving the needs of officers and crew, they toil in obscurity, hoping their service earns them a measure of survival aboard the Dauntless."
+
+/datum/job/chamber_assistant/equip(mob/living/carbon/human/H)
+	var/current_name = H.real_name
+	var/current_title = trimtext(H.mind.role_alt_title)
+	H.voice_in_head(pick(GLOB.lone_thoughts))
+	H.fully_replace_character_name("[current_name]")
+	if(current_title && (H.mind.role_alt_title in alt_titles))
+		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
+	else
+		current_title = title // use default title
+	H.verbs += /mob/living/proc/set_ambition
 
 /datum/job/chamber_magister
-	title = "Chamber Magister" // alt_titles; innkeeper. gets shotgun. magister has a las pistol.
+	title = "Tavern Keeper" // alt_titles; innkeeper. gets shotgun. magister has a las pistol.
 	department = "Service"
 	department_flag = SRV
 	total_positions = 1
@@ -106,13 +119,13 @@
 		access_medical_command, access_bridge)
 
 /datum/job/chamber_magister/get_description_blurb()
-	return "The Chamber Magister, steward of ceremonies aboard the Dauntless, ensures every gathering and banquet reflects the Rogue Trader's grandeur, balancing diplomacy with impeccable decorum. They also are responsible for managing the ships food stores, agricultural production and training the Chamber Assistants."
+	return "The Tavern Keeper, master of the ship’s notorious two-level hab bar and motel, ensures the establishment thrives as a haven for revelry, intrigue, and shady dealings. Responsible for managing the flow of drinks, maintaining order among the unruly patrons, and overseeing the hab quarters, they balance the demands of the crew’s indulgences with a firm grip on the chaos."
 
 /datum/job/chamber_magister/equip(mob/living/carbon/human/H)
 	var/current_name = H.real_name
 	var/current_title = trimtext(H.mind.role_alt_title)
 	H.voice_in_head(pick(GLOB.lone_thoughts))
-	H.fully_replace_character_name("Magister [current_name]")
+	H.fully_replace_character_name("[current_name]")
 	if(current_title && (H.mind.role_alt_title in alt_titles))
 		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
 	else
@@ -166,7 +179,7 @@
 	create_record = FALSE
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Deck Chief"
+	supervisors = "the Deck Boss"
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/service/crewman
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/contractor)

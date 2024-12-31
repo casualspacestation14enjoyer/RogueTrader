@@ -1,21 +1,21 @@
 /obj/machinery/vending/hydroseeds
-	name = "\improper MegaSeed Servitor"
+	name = "\improper Seed Rack"
 	desc = "When you need seeds fast!"
+	icon = 'icons/obj/vending.dmi'
 	icon_state = "seeds"
 	icon_vend = "seeds-vend"
 	max_overlays = 3
-	icon_deny = "seeds-deny"
+	icon_deny = "seeds-off"
 	base_type = /obj/machinery/vending/hydroseeds
 	product_slogans = {"\
-		THIS'S WHERE TH' SEEDS LIVE! GIT YOU SOME!;\
-		Hands down the best seed selection this half of the galaxy!;\
-		Also certain mushroom varieties available, more for experts! Get certified today!\
+		...;\
+		...;\
+		...\
 	"}
 	product_ads = {"\
-		We like plants!;\
-		Grow some crops!;\
-		Grow, baby, growww!;\
-		Aw h'yeah son!
+		...;\
+		...;\
+		...!
 	"}
 	products = list(
 		/obj/item/seeds/bananaseed = 3,

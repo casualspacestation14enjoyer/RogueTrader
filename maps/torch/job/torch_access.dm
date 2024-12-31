@@ -148,7 +148,7 @@ var/global/const/access_o_mess = "ACCESS_TORCH_O_MESS"
 	desc = "Executive Officer"
 
 /datum/access/qm
-	desc = "Deck Chief"
+	desc = "Deck Boss"
 
 var/global/const/access_torch_fax = "ACCESS_TORCH_FAX"
 /datum/access/torch_fax

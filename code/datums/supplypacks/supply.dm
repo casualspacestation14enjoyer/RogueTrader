@@ -64,9 +64,9 @@
 
 /singleton/hierarchy/supply_pack/supply/eftpos
 	contains = list(/obj/item/device/eftpos)
-	name = "Electronics - EFTPOS scanner"
+	name = "Electronics - Creditorium scanner"
 	cost = 10
-	containername = "\improper EFTPOS crate"
+	containername = "\improper Creditorium crate"
 
 /singleton/hierarchy/supply_pack/supply/water
 	name = "Refills - Bottled water"
@@ -232,7 +232,7 @@
 	containername = "\improper Vending Machine"
 
 /singleton/hierarchy/supply_pack/supply/coffeevendor
-	name = "Vendor - Coffee - Hot Drinks LCD"
+	name = "Vendor - Recaf - Hot Drinks LCD"
 	contains = list(/obj/machinery/vending/coffee{anchored = FALSE})
 	cost = 150
 	containertype = /obj/structure/largecrate

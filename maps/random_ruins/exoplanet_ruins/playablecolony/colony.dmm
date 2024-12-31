@@ -539,7 +539,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/map_template/colony/atmospherics)
 "br" = (
-/turf/simulated/floor/darkwood,
+/turf/simulated/floor/warhammer/darkwood,
 /area/map_template/colony/messhall)
 "bs" = (
 /obj/structure/closet/crate,
@@ -1430,7 +1430,7 @@
 /obj/item/clothing/under/hazard,
 /obj/item/device/radio/map_preset/playablecolony,
 /obj/item/clothing/suit/armor/grim/hiver,
-/turf/simulated/floor/fancyfloor/carpet,
+/turf/simulated/floor/warhammer/fancyfloor/carpet,
 /area/map_template/colony/dorms)
 "dk" = (
 /obj/machinery/gibber,
@@ -1511,7 +1511,7 @@
 /area/map_template/colony)
 "ds" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/fancyfloor/carpet/middle,
+/turf/simulated/floor/warhammer/fancyfloor/carpet/middle,
 /area/map_template/colony/dorms)
 "dt" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -1573,7 +1573,7 @@
 /obj/submap_landmark/spawnpoint/colonist_spawn,
 /obj/structure/bed/padded,
 /obj/item/bedsheet/hos,
-/turf/simulated/floor/fancyfloor/carpet{
+/turf/simulated/floor/warhammer/fancyfloor/carpet{
 	dir = 1
 	},
 /area/map_template/colony/dorms)
@@ -1602,7 +1602,7 @@
 /obj/item/clothing/head/cowboy_hat,
 /obj/item/clothing/suit/armor/grim/storage/det_trench/ft,
 /obj/structure/closet/crate/warhammer/xenos/chest3,
-/turf/simulated/floor/fancyfloor/carpet{
+/turf/simulated/floor/warhammer/fancyfloor/carpet{
 	dir = 1
 	},
 /area/map_template/colony/dorms)
@@ -1851,7 +1851,7 @@
 	dir = 8
 	},
 /obj/submap_landmark/spawnpoint/colonist_spawn_sister,
-/turf/simulated/floor/fancyfloor/carpet/middle,
+/turf/simulated/floor/warhammer/fancyfloor/carpet/middle,
 /area/map_template/colony/dorms)
 "ee" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -1961,7 +1961,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/darkwood,
+/turf/simulated/floor/warhammer/darkwood,
 /area/map_template/colony/messhall)
 "en" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -1970,7 +1970,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
-/turf/simulated/floor/darkwood,
+/turf/simulated/floor/warhammer/darkwood,
 /area/map_template/colony/messhall)
 "eo" = (
 /obj/structure/catwalk,
@@ -1999,7 +1999,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	level = 2
 	},
-/turf/simulated/floor/fancyfloor/carpet/middle,
+/turf/simulated/floor/warhammer/fancyfloor/carpet/middle,
 /area/map_template/colony/dorms)
 "er" = (
 /obj/machinery/atmospherics/pipe/simple/visible,
@@ -2053,7 +2053,7 @@
 /area/map_template/colony/atmospherics)
 "ev" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/darkwood,
+/turf/simulated/floor/warhammer/darkwood,
 /area/map_template/colony/messhall)
 "ew" = (
 /obj/structure/railing/mapped{
@@ -2296,7 +2296,7 @@
 	icon_state = "0-4"
 	},
 /obj/item/tank/phoron,
-/turf/simulated/floor/fancyfloor/carpet/middle,
+/turf/simulated/floor/warhammer/fancyfloor/carpet/middle,
 /area/map_template/colony/dorms)
 "eR" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -2328,7 +2328,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/fancyfloor/carpet{
+/turf/simulated/floor/warhammer/fancyfloor/carpet{
 	dir = 4
 	},
 /area/map_template/colony/dorms)
@@ -2385,7 +2385,7 @@
 /obj/item/clothing/mask/gas/prac_mask,
 /obj/item/clothing/shoes/jackboots/prac_boots,
 /obj/item/clothing/shoes/jackboots/prac_boots,
-/turf/simulated/floor/fancyfloor/carpet/middle,
+/turf/simulated/floor/warhammer/fancyfloor/carpet/middle,
 /area/map_template/colony/dorms)
 "eY" = (
 /obj/machinery/sleeper{
@@ -2443,7 +2443,7 @@
 /obj/item/reagent_containers/food/condiment/small/peppermill,
 /obj/item/reagent_containers/food/condiment/small/saltshaker,
 /obj/item/reagent_containers/food/condiment/small/sugar,
-/turf/simulated/floor/darkwood,
+/turf/simulated/floor/warhammer/darkwood,
 /area/map_template/colony/messhall)
 "ff" = (
 /obj/machinery/atmospherics/portables_connector{
@@ -2473,7 +2473,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
-/turf/simulated/floor/fancyfloor/carpet/middle,
+/turf/simulated/floor/warhammer/fancyfloor/carpet/middle,
 /area/map_template/colony/dorms)
 "fk" = (
 /obj/machinery/alarm{
@@ -2486,7 +2486,7 @@
 /obj/floor_decal/spline/fancy/wood{
 	dir = 9
 	},
-/turf/simulated/floor/darkwood,
+/turf/simulated/floor/warhammer/darkwood,
 /area/map_template/colony/messhall)
 "fl" = (
 /obj/machinery/meter,
@@ -2523,7 +2523,7 @@
 /obj/floor_decal/spline/fancy/wood{
 	dir = 1
 	},
-/turf/simulated/floor/darkwood,
+/turf/simulated/floor/warhammer/darkwood,
 /area/map_template/colony/messhall)
 "fo" = (
 /obj/structure/catwalk,
@@ -2604,7 +2604,7 @@
 /obj/floor_decal/spline/fancy/wood{
 	dir = 1
 	},
-/turf/simulated/floor/darkwood,
+/turf/simulated/floor/warhammer/darkwood,
 /area/map_template/colony/messhall)
 "fv" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -2753,7 +2753,7 @@
 /obj/floor_decal/spline/fancy/wood{
 	dir = 4
 	},
-/turf/simulated/floor/darkwood,
+/turf/simulated/floor/warhammer/darkwood,
 /area/map_template/colony/messhall)
 "fI" = (
 /obj/structure/table/woodentable_reinforced,
@@ -2764,7 +2764,7 @@
 /obj/item/reagent_containers/food/condiment/small/peppermill,
 /obj/item/reagent_containers/food/condiment/small/saltshaker,
 /obj/item/reagent_containers/food/condiment/small/sugar,
-/turf/simulated/floor/darkwood,
+/turf/simulated/floor/warhammer/darkwood,
 /area/map_template/colony/messhall)
 "fJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -2780,7 +2780,7 @@
 /obj/floor_decal/spline/fancy/wood{
 	dir = 5
 	},
-/turf/simulated/floor/darkwood,
+/turf/simulated/floor/warhammer/darkwood,
 /area/map_template/colony/messhall)
 "fL" = (
 /obj/machinery/door/firedoor,
@@ -2802,7 +2802,7 @@
 /obj/item/clothing/under/hazard,
 /obj/item/device/radio/map_preset/playablecolony,
 /obj/item/clothing/suit/armor/grim/hiver/smuggler,
-/turf/simulated/floor/fancyfloor/carpet{
+/turf/simulated/floor/warhammer/fancyfloor/carpet{
 	dir = 1
 	},
 /area/map_template/colony/dorms)
@@ -3021,7 +3021,7 @@
 	dir = 8
 	},
 /obj/item/reagent_containers/food/drinks/pitcher,
-/turf/simulated/floor/darkwood,
+/turf/simulated/floor/warhammer/darkwood,
 /area/map_template/colony/messhall)
 "gc" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -3274,7 +3274,7 @@
 	dir = 4
 	},
 /obj/decal/cleanable/dirt,
-/turf/simulated/floor/darkwood,
+/turf/simulated/floor/warhammer/darkwood,
 /area/map_template/colony/messhall)
 "gt" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -3348,7 +3348,7 @@
 /obj/floor_decal/spline/fancy/wood{
 	dir = 4
 	},
-/turf/simulated/floor/darkwood,
+/turf/simulated/floor/warhammer/darkwood,
 /area/map_template/colony/messhall)
 "gB" = (
 /obj/floor_decal/techfloor{
@@ -3420,7 +3420,7 @@
 /obj/floor_decal/spline/fancy/wood{
 	dir = 8
 	},
-/turf/simulated/floor/darkwood,
+/turf/simulated/floor/warhammer/darkwood,
 /area/map_template/colony/messhall)
 "gJ" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -3481,7 +3481,7 @@
 /area/map_template/colony/atmospherics)
 "gP" = (
 /obj/decal/cleanable/dirt,
-/turf/simulated/floor/darkwood,
+/turf/simulated/floor/warhammer/darkwood,
 /area/map_template/colony/messhall)
 "gQ" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -3560,7 +3560,7 @@
 	icon_state = "0-8"
 	},
 /obj/floor_decal/spline/fancy/wood,
-/turf/simulated/floor/darkwood,
+/turf/simulated/floor/warhammer/darkwood,
 /area/map_template/colony/messhall)
 "gZ" = (
 /obj/machinery/atmospherics/unary/heat_exchanger{
@@ -3766,7 +3766,7 @@
 "hs" = (
 /obj/item/stool/bar/padded,
 /obj/floor_decal/spline/fancy/wood,
-/turf/simulated/floor/darkwood,
+/turf/simulated/floor/warhammer/darkwood,
 /area/map_template/colony/messhall)
 "ht" = (
 /obj/floor_decal/techfloor,
@@ -3826,7 +3826,7 @@
 	dir = 1;
 	pixel_y = -28
 	},
-/turf/simulated/floor/darkwood,
+/turf/simulated/floor/warhammer/darkwood,
 /area/map_template/colony/messhall)
 "hy" = (
 /obj/machinery/alarm{
@@ -3844,7 +3844,7 @@
 	prices = list()
 	},
 /obj/floor_decal/spline/fancy/wood,
-/turf/simulated/floor/darkwood,
+/turf/simulated/floor/warhammer/darkwood,
 /area/map_template/colony/messhall)
 "hA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -3895,7 +3895,7 @@
 	prices = list()
 	},
 /obj/floor_decal/spline/fancy/wood,
-/turf/simulated/floor/darkwood,
+/turf/simulated/floor/warhammer/darkwood,
 /area/map_template/colony/messhall)
 "hE" = (
 /obj/machinery/vending/fitness{
@@ -3948,7 +3948,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/item/stool/bar/padded,
 /obj/floor_decal/spline/fancy/wood,
-/turf/simulated/floor/darkwood,
+/turf/simulated/floor/warhammer/darkwood,
 /area/map_template/colony/messhall)
 "hL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -4039,7 +4039,7 @@
 /obj/floor_decal/spline/fancy/wood{
 	dir = 6
 	},
-/turf/simulated/floor/darkwood,
+/turf/simulated/floor/warhammer/darkwood,
 /area/map_template/colony/messhall)
 "hV" = (
 /obj/machinery/door/firedoor,
@@ -4119,7 +4119,7 @@
 /obj/item/clothing/under/hazard,
 /obj/item/device/radio/map_preset/playablecolony,
 /obj/item/clothing/suit/armor/grim/hiver/leather,
-/turf/simulated/floor/fancyfloor/carpet,
+/turf/simulated/floor/warhammer/fancyfloor/carpet,
 /area/map_template/colony/dorms)
 "ic" = (
 /obj/floor_decal/techfloor{
@@ -5286,7 +5286,7 @@
 /area/map_template/colony/hydroponics)
 "jV" = (
 /obj/structure/curtain/black,
-/turf/simulated/floor/fancyfloor/carpet/middle,
+/turf/simulated/floor/warhammer/fancyfloor/carpet/middle,
 /area/map_template/colony/dorms)
 "jW" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -5677,7 +5677,7 @@
 /obj/item/clothing/accessory/storage/white_drop,
 /obj/item/clothing/accessory/storage/white_drop,
 /obj/structure/closet/crate/warhammer/xenos/chest3,
-/turf/simulated/floor/fancyfloor/carpet,
+/turf/simulated/floor/warhammer/fancyfloor/carpet,
 /area/map_template/colony/dorms)
 "kI" = (
 /obj/machinery/door/firedoor,
@@ -8024,7 +8024,7 @@
 	pixel_x = -21
 	},
 /obj/item/tank/phoron,
-/turf/simulated/floor/fancyfloor/carpet/middle,
+/turf/simulated/floor/warhammer/fancyfloor/carpet/middle,
 /area/map_template/colony/dorms)
 "tz" = (
 /obj/machinery/portable_atmospherics/hydroponics,
@@ -8071,7 +8071,7 @@
 /obj/structure/torchwall{
 	dir = 8
 	},
-/turf/simulated/floor/fancyfloor/carpet/middle,
+/turf/simulated/floor/warhammer/fancyfloor/carpet/middle,
 /area/map_template/colony/dorms)
 "uK" = (
 /turf/simulated/floor/tiled/techfloor,
@@ -8136,7 +8136,7 @@
 /obj/item/clothing/under/hazard,
 /obj/item/device/radio/map_preset/playablecolony,
 /obj/item/clothing/suit/armor/grim/hiver/leather,
-/turf/simulated/floor/fancyfloor/carpet{
+/turf/simulated/floor/warhammer/fancyfloor/carpet{
 	dir = 1
 	},
 /area/map_template/colony/dorms)
@@ -8146,7 +8146,7 @@
 	dir = 4;
 	pixel_x = -21
 	},
-/turf/simulated/floor/fancyfloor/carpet/middle,
+/turf/simulated/floor/warhammer/fancyfloor/carpet/middle,
 /area/map_template/colony/dorms)
 "Fz" = (
 /obj/machinery/telecomms/processor/map_preset/playablecolony,
@@ -8156,7 +8156,7 @@
 /obj/structure/bed/padded,
 /obj/item/bedsheet/hos,
 /obj/submap_landmark/spawnpoint/colonist_spawn_noble,
-/turf/simulated/floor/fancyfloor/carpet,
+/turf/simulated/floor/warhammer/fancyfloor/carpet,
 /area/map_template/colony/dorms)
 "GU" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -8244,7 +8244,7 @@
 /obj/structure/bed/padded,
 /obj/item/bedsheet/hos,
 /obj/submap_landmark/spawnpoint/colonist_spawn_pathfinder,
-/turf/simulated/floor/fancyfloor/carpet,
+/turf/simulated/floor/warhammer/fancyfloor/carpet,
 /area/map_template/colony/dorms)
 "KK" = (
 /obj/machinery/portable_atmospherics/hydroponics,
@@ -8337,7 +8337,7 @@
 /obj/structure/torchwall{
 	dir = 4
 	},
-/turf/simulated/floor/fancyfloor/carpet/middle,
+/turf/simulated/floor/warhammer/fancyfloor/carpet/middle,
 /area/map_template/colony/dorms)
 "YD" = (
 /obj/machinery/telecomms/hub/map_preset/playablecolony,
