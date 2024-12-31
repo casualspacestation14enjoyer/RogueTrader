@@ -46,7 +46,7 @@
 /mob/living/simple_animal/passive/crab/Coffee
 	name = "Coffee"
 	real_name = "Coffee"
-	desc = "It's Recaf, the other pet!"
+	desc = "It's cawfee, the other pet!"
 
 
 /datum/ai_holder/simple_animal/passive/crab
