@@ -28,6 +28,15 @@
 	status_flags = CANPUSH
 	say_list_type = /datum/say_list/heretic
 	ai_holder = /datum/ai_holder/simple_animal/humanoid/hostile/infardi
+	natural_armor = list(
+		melee = ARMOR_MELEE_FLAK-2, // Almost equiv of power armor
+		bullet = ARMOR_BALLISTIC_FLAK-2,
+		laser = ARMOR_LASER_FLAK-2, // Almost immune to heat.
+		energy = 20,
+		bio = 40,
+		rad = 40,
+		bomb = 10,
+		)
 
 /datum/ai_holder/simple_animal/humanoid/hostile/infardi
 	threaten_delay = 2 SECOND
@@ -161,6 +170,8 @@
 	status_flags = 0
 	blocky = 35
 	dodgey = 15
+	health = 150
+	maxhealth = 150
 
 /mob/living/simple_animal/hostile/human/heretic/trooper
 	min_gas = null
@@ -185,6 +196,17 @@
 	dodgey = 25
 	weapon1 = /obj/item/gun/projectile/automatic/autogun
 	projectiletype = /obj/item/projectile/bullet/pistol/ap
+	health = 120
+	maxhealth = 120
+	natural_armor = list(
+		melee = ARMOR_MELEE_FLAK-1, // Almost equiv of power armor
+		bullet = ARMOR_BALLISTIC_FLAK-1,
+		laser = ARMOR_LASER_FLAK-1, // Almost immune to heat.
+		energy = 20,
+		bio = 50,
+		rad = 50,
+		bomb = 10,
+		)
 
 /mob/living/simple_animal/hostile/human/heretic/trooper/Process_Spacemove()
 	return 1
@@ -211,7 +233,18 @@
 	minbodytemp = 0
 	speed = 0
 	blocky = 15
-	dodgey = 35
+	dodgey = 27
+	health = 130
+	maxhealth = 130
+	natural_armor = list(
+		melee = ARMOR_MELEE_FLAK, // Almost equiv of power armor
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK, // Almost immune to heat.
+		energy = 30,
+		bio = 60,
+		rad = 80,
+		bomb = 15,
+		)
 
 /mob/living/simple_animal/hostile/human/heretic/bloodpact/Process_Spacemove()
 	return 1
@@ -230,8 +263,19 @@
 	weapon1 = /obj/item/gun/projectile/automatic/autogun/stubber
 	projectiletype = /obj/item/projectile/bullet/rifle/heavy/ap
 	natural_weapon = /obj/item/material/twohanded/ravenor/knife/bowie
-	blocky = 25
-	dodgey = 39
+	blocky = 19
+	dodgey = 29
+	health = 150
+	maxhealth = 150
+	natural_armor = list(
+		melee = ARMOR_MELEE_FLAK+1, // Almost equiv of power armor
+		bullet = ARMOR_BALLISTIC_FLAK+2,
+		laser = ARMOR_LASER_FLAK+2, // Almost immune to heat.
+		energy = 30,
+		bio = 60,
+		rad = 80,
+		bomb = 15,
+		)
 
 /mob/living/simple_animal/hostile/viscerator
 	name = "viscerator"

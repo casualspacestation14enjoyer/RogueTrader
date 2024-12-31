@@ -1,5 +1,5 @@
 /obj/item/device/paicard
-	name = "personal AI device"
+	name = "deranged archeotech"
 	icon = 'icons/obj/tools/aicards.dmi'
 	icon_state = "pai"
 	item_state = "electronic"

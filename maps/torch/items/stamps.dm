@@ -27,7 +27,7 @@
 	icon_state = "stamp-corp"
 
 /obj/item/stamp/deckoff
-	name = "deck chief's rubber stamp"
+	name = "deck boss's rubber stamp"
 	icon_state = "stamp-deckchief"
 
 /obj/item/stamp/supply

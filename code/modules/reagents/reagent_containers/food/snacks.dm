@@ -3797,7 +3797,7 @@
 
 /obj/item/reagent_containers/food/snacks/donut
 	name = "donut"
-	desc = "Goes great with Robust Coffee."
+	desc = "Goes great with Recaf."
 	icon_state = "donut1"
 	filling_color = "#b87b12"
 	var/overlay_state = "box-donut1"
@@ -3806,7 +3806,7 @@
 
 /obj/item/reagent_containers/food/snacks/donut/normal
 	name = "donut"
-	desc = "Goes great with Robust Coffee."
+	desc = "Goes great with Recaf."
 	icon_state = "donut1"
 	nutriment_amt = 3
 	bitesize = 3

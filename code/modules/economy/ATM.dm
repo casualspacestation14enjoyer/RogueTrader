@@ -6,10 +6,10 @@
 /obj/item/card/id/var/money = 2000
 
 /obj/machinery/atm
-	name = "automatic teller machine"
+	name = "creditorium terminal"
 	desc = "For all your monetary needs!"
-	icon = 'icons/obj/machines/terminals.dmi'
-	icon_state = "atm"
+	icon = 'icons/map_project/ship/ship_equipment.dmi'
+	icon_state = "trading"
 	anchored = TRUE
 	idle_power_usage = 10
 	var/datum/money_account/authenticated_account
@@ -27,7 +27,7 @@
 
 /obj/machinery/atm/New()
 	..()
-	machine_id = "[station_name()] ATM #[num_financial_terminals++]"
+	machine_id = "[station_name()] Creditorium #[num_financial_terminals++]"
 	spark_system = new /datum/effect/spark_spread
 	spark_system.set_up(5, 0, src)
 	spark_system.attach(src)
@@ -48,9 +48,9 @@
 	for(var/obj/item/spacecash/S in src)
 		S.dropInto(loc)
 		if(prob(50))
-			playsound(loc, 'sound/items/polaroid1.ogg', 50, 1)
+			playsound(loc, 'sound/items/metalboots_drop.ogg', 50, 1)
 		else
-			playsound(loc, 'sound/items/polaroid2.ogg', 50, 1)
+			playsound(loc, 'sound/items/metalshield_drop.ogg', 50, 1)
 		break
 
 /obj/machinery/atm/emag_act(remaining_charges, mob/user)
@@ -59,18 +59,18 @@
 		emagged = TRUE
 		spark_system.start()
 		spawn_money(rand(100,500),src.loc)
-		//we don't want to grief people by locking their id in an emagged ATM
+		//we don't want to grief people by locking their id in an emagged Creditorium
 		release_held_id(user)
 
 		//display a message to the user
-		var/response = pick("Initiating withdraw. Have a nice day!", "CRITICAL ERROR: Activating cash chamber panic siphon.","PIN Code accepted! Emptying account balance.", "Jackpot!")
+		var/response = pick("Initiating withdraw...", "CRITICAL ERROR: Activating cash chamber panic siphon.","PIN Code accepted! Emptying account balance.", "Jackpot!")
 		to_chat(user, "[icon2html(src, user)] [SPAN_WARNING("[src] beeps: \"[response]\"")]")
 		return 1
 
 /obj/machinery/atm/use_tool(obj/item/I, mob/living/user, list/click_params)
 	if(isid(I))
 		if (emagged)
-			to_chat(user, "[icon2html(src, user)] [SPAN_WARNING("CARD READER ERROR. This system has been compromised!")]")
+			to_chat(user, "[icon2html(src, user)] [SPAN_WARNING("CARD READER ERROR. This cogitator has been compromised!")]")
 			return TRUE
 		if(!is_powered())
 			to_chat(user, "You try to insert your card into [src], but nothing happens.")
@@ -93,9 +93,9 @@
 			var/obj/item/spacecash/dolla = I
 			if(authenticated_account.deposit(dolla.worth, "Credit deposit", machine_id))
 				if(prob(50))
-					playsound(loc, 'sound/items/polaroid1.ogg', 50, 1)
+					playsound(loc, 'sound/items/metalboots_drop.ogg', 50, 1)
 				else
-					playsound(loc, 'sound/items/polaroid2.ogg', 50, 1)
+					playsound(loc, 'sound/items/metalshield_drop.ogg', 50, 1)
 
 				to_chat(user, SPAN_INFO("You insert \the [I] into \the [src]."))
 				attack_hand(user)
@@ -125,12 +125,12 @@
 
 		t += "<div class='statusDisplay'>[SPAN_CLASS("highlight", "<b>Card: </b>")]"
 		if(emagged > 0)
-			t += "[SPAN_BAD("<b>LOCKED</b><br>Unauthorized terminal access detected!<br>This ATM has been locked down.")]</div><BR>"
+			t += "[SPAN_BAD("<b>LOCKED</b><br>Unauthorized terminal access detected!<br>This Creditorium has been locked down.")]</div><BR>"
 		else
 			t += "<a href='?src=\ref[src];choice=insert_card'>[held_card ? held_card.name : "No card inserted"]</a></div><BR>"
 			t += "<div class='statusDisplay'>"
 			if(ticks_left_locked_down > 0)
-				t += "[SPAN_BAD("Maximum number of pin attempts exceeded! Access to this ATM has been temporarily disabled.")]</div>"
+				t += "[SPAN_BAD("Maximum number of pin attempts exceeded! Access to this Creditorium has been temporarily disabled.")]</div>"
 			else if(authenticated_account)
 				if(authenticated_account.suspended)
 					t += "[SPAN_BAD("<b>Access to this account has been suspended, and the funds within frozen.</b>")]</div>"
@@ -142,7 +142,7 @@
 								t += "<A href='?src=\ref[src];choice=change_security_level;new_security_level=0'>Select Minimum Security</a><BR>"
 							else
 								t += "[SPAN_GOOD("<b>Minimum security set: </b>")]<BR>"
-							t += "Either the account number or card is required to access this account. EFTPOS transactions will require a card and ask for a pin, but not verify the pin is correct.<hr>"
+							t += "Either the account number or card is required to access this account. Creditorium transactions will require a card and ask for a pin, but not verify the pin is correct.<hr>"
 							if(authenticated_account.security_level != 1)
 								t += "<A href='?src=\ref[src];choice=change_security_level;new_security_level=1'>Select Moderate Security</a><BR>"
 							else
@@ -206,7 +206,7 @@
 			else
 				//change our display depending on account security levels
 				if(!account_security_level)
-					t += "To log in to your savings account, press 'submit' with ID clearly displayed. If you wish to log into another account, please enter the account number into the field below or insert a registered ID card into the slot above and then press 'submit'.<BR>"
+					t += "To log in to your munitorum account, press 'submit' with ID clearly displayed. If you wish to log into another account, please enter the account number into the field below or insert a registered ID card into the slot above and then press 'submit'.<BR>"
 				else if (account_security_level == 1)
 					t += "This account requires a PIN to access. For security reasons the account # will need re-entered or ID bound to this account re-scanned."
 				else
@@ -222,7 +222,7 @@
 				t += "</div></form>"
 
 
-		var/datum/browser/popup = new(user, "ATM", machine_id)
+		var/datum/browser/popup = new(user, "Creditorium", machine_id)
 		popup.set_content(jointext(t,null))
 		popup.open()
 	else
@@ -356,7 +356,7 @@
 						R.stamped = new
 					R.stamped += /obj/item/stamp
 					R.AddOverlays(stampoverlay)
-					R.stamps += "<HR><i>This paper has been stamped by the Automatic Teller Machine.</i>"
+					R.stamps += "<HR><i>This paper has been stamped by the creditorium terminal.</i>"
 
 				if(prob(50))
 					playsound(loc, 'sound/items/polaroid1.ogg', 50, 1)
@@ -398,7 +398,7 @@
 						R.stamped = new
 					R.stamped += /obj/item/stamp
 					R.AddOverlays(stampoverlay)
-					R.stamps += "<HR><i>This paper has been stamped by the Automatic Teller Machine.</i>"
+					R.stamps += "<HR><i>This paper has been stamped by the creditorium terminal.</i>"
 
 				if(prob(50))
 					playsound(loc, 'sound/items/polaroid1.ogg', 50, 1)
@@ -409,7 +409,7 @@
 				if(!held_card)
 					//this might happen if the user had the browser window open when somebody emagged it
 					if(emagged > 0)
-						to_chat(usr, "[icon2html(src, usr)] [SPAN_WARNING("The ATM card reader rejected your ID because this machine has been sabotaged!")]")
+						to_chat(usr, "[icon2html(src, usr)] [SPAN_WARNING("The Creditorium card reader rejected your ID because this machine has been sabotaged!")]")
 					else
 						var/obj/item/I = usr.get_active_hand()
 						if (istype(I, /obj/item/card/id))

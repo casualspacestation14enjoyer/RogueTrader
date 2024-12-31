@@ -236,7 +236,7 @@
 /obj/item/stool/stone/New(newloc)
 	..(newloc,"sandstone")
 
-/turf/simulated/floor/stone
+/turf/simulated/floor/warhammer/stone
 	name = "temple floor"
 	desc = "You can only imagine what once took place in these halls."
 	icon = 'icons/turf/flooring/cult.dmi'

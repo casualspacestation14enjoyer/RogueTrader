@@ -64,6 +64,10 @@
 	..()
 	hierarchy_type = type
 
+
+var/global/const/access_slavercult = "ACCESS_SLAVERCULT"
+
+
 /singleton/hierarchy/outfit/corpse/slavers_base
 	name = "Basic slaver output"
 

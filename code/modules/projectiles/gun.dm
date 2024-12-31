@@ -675,6 +675,8 @@
 		return
 
 	if(user)
+		if(!do_after(user, 10 SECONDS, DO_PUBLIC_UNIQUE))
+			return
 		user.visible_message(SPAN_WARNING("[user] finishes calibrating the \the [src]."), SPAN_NOTICE("You calibrate \the [src] it should be more reliable now."), range = 4)
 		calibrated = 1
 		playsound(src, 'sound/weapons/guns/interaction/rifle_boltforward.ogg', 25, 1)
@@ -694,8 +696,6 @@
 			to_chat(usr, SPAN_WARNING("You need a gun in your hands to do that."))
 			return
 	playsound(src, 'sound/weapons/guns/interaction/rifle_load.ogg', 25, 1)
-	if(!do_after(src, 10 SECONDS, DO_PUBLIC_UNIQUE))
-		return
 	gun.toggle_calib(usr)
 
 

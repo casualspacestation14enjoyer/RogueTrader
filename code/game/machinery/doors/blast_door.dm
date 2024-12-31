@@ -308,6 +308,31 @@
 	icon_state_open_broken = "mask"
 	icon_state_closed_broken = "door1"
 
+/obj/machinery/door/blast/gates/grates
+	icon = 'icons/obj/doors/rapid_pdoor2.dmi'
+	icon_state_open = "gshutter0"
+	icon_state_opening = "gshutterc0"
+	icon_state_closed = "gshutter1"
+	icon_state_closing = "gshutterc1"
+	icon_state = "gshutter1"
+	name = "grate"
+	icon_state_open_broken = "mask"
+	icon_state_closed_broken = "gshutter0"
+	block_air_zones = 0
+	opacity = 0
+
+/obj/machinery/door/blast/gates/secure
+	icon = 'icons/obj/doors/rapid_pdoor2.dmi'
+	icon_state_open = "iddoor_open"
+	icon_state_opening = "iddoor_opening"
+	icon_state_closed = "iddoor_close"
+	icon_state_closing = "iddoor_closing"
+	icon_state = "iddoor_close"
+	name = "grate"
+	icon_state_open_broken = "mask"
+	icon_state_closed_broken = "iddoor_open"
+
+
 /obj/machinery/door/blast/regular/escape_pod
 	name = "escape pod release door"
 

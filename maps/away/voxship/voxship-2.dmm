@@ -13,7 +13,7 @@
 /area/voxship/engineering)
 "ad" = (
 /obj/machinery/telecomms/processor/map_preset/voxship,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "ae" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
@@ -39,14 +39,14 @@
 	},
 /area/voxship/engineering)
 "ah" = (
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "ai" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 6
 	},
 /obj/random/junk,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "aj" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/fuel,
@@ -115,7 +115,7 @@
 /area/voxship/scavship)
 "an" = (
 /obj/shuttle_landmark/vox_base/hangar/vox_scavshuttle,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "ao" = (
 /obj/machinery/telecomms/bus/map_preset/voxship,
@@ -123,12 +123,12 @@
 /area/voxship/thrusters)
 "ap" = (
 /obj/decal/cleanable/filth,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "aq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel,
 /obj/machinery/telecomms/server/map_preset/voxship,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "ar" = (
 /obj/paint/vox,
@@ -153,20 +153,20 @@
 /obj/machinery/cryopod{
 	dir = 2
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "av" = (
 /obj/machinery/cryopod{
 	dir = 2
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "aw" = (
 /obj/decal/cleanable/filth,
 /obj/machinery/cryopod{
 	dir = 2
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "ax" = (
 /obj/machinery/ion_engine{
@@ -176,40 +176,40 @@
 /turf/simulated/wall/r_wall/hull/vox,
 /area/voxship/fore)
 "aA" = (
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "aB" = (
 /obj/machinery/telecomms/hub/map_preset/voxship,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "aC" = (
 /obj/machinery/atmospherics/portables_connector{
 	dir = 4
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "aD" = (
 /obj/machinery/atmospherics/binary/pump{
 	dir = 8
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "aE" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
 	dir = 4
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "aF" = (
 /obj/machinery/alarm/vox{
 	pixel_y = 24
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "aG" = (
 /obj/decal/cleanable/cobweb2,
 /obj/random/loot/randomsupply/engineering,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "aI" = (
 /obj/item/reagent_containers/food/drinks/glass2/flute,
@@ -217,20 +217,20 @@
 /obj/random/advdevice,
 /obj/random/powercell,
 /obj/item/device/gps,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "aJ" = (
 /obj/structure/table/rack,
 /obj/item/gun/energy/darkmatter,
 /obj/item/gun/launcher/alien/spikethrower,
 /obj/item/gun/launcher/alien/slugsling,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "aK" = (
 /obj/structure/table/rack,
 /obj/item/slugegg,
 /obj/item/slugegg,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "aL" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
@@ -239,15 +239,15 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "aM" = (
 /obj/decal/cleanable/filth,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "aN" = (
 /obj/random/contraband,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "aO" = (
 /turf/simulated/floor/reinforced/nitrogen,
@@ -281,21 +281,21 @@
 	dir = 4;
 	target_pressure = 150
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "aS" = (
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "aT" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "aU" = (
 /turf/simulated/floor/reinforced/carbon_dioxide,
 /area/voxship/engineering)
 "aV" = (
 /obj/decal/cleanable/filth,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "aW" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -309,7 +309,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "aX" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -323,7 +323,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "aY" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -334,7 +334,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "aZ" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -346,7 +346,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "ba" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
@@ -359,7 +359,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "bb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
@@ -372,7 +372,7 @@
 	icon_state = "4-8"
 	},
 /obj/random/junk,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "bc" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
@@ -389,7 +389,7 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/portable_atmospherics/canister/empty,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "bd" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/fuel,
@@ -407,7 +407,7 @@
 /obj/random/closet,
 /obj/item/reagent_containers/food/snacks/meat/human,
 /obj/item/reagent_containers/food/snacks/meat/human,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "bg" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
@@ -416,31 +416,31 @@
 /obj/random/drinkbottle,
 /obj/random/action_figure,
 /obj/random/smokes,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "bh" = (
 /obj/random/hat,
 /obj/random/clothing,
 /obj/decal/cleanable/filth,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "bi" = (
 /obj/structure/table/rack,
 /obj/item/clothing/head/helmet/space/vox/pressure,
 /obj/item/clothing/mask/gas/swat/vox,
 /obj/item/clothing/suit/space/vox/pressure,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "bj" = (
 /obj/random/junk,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "bk" = (
 /obj/structure/table/rack,
 /obj/item/clothing/head/helmet/space/vox/carapace,
 /obj/item/clothing/mask/gas/swat/vox,
 /obj/item/clothing/suit/space/vox/carapace,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "bl" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -453,12 +453,12 @@
 	dir = 4;
 	pixel_x = -16
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "bm" = (
 /obj/decal/cleanable/filth,
 /obj/submap_landmark/spawnpoint/captive,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "bn" = (
 /obj/decal/cleanable/filth,
@@ -468,12 +468,12 @@
 	pixel_x = -6;
 	pixel_y = -26
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "bo" = (
 /obj/decal/cleanable/filth,
 /obj/submap_landmark/spawnpoint/captivecatachan,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "bp" = (
 /obj/wallframe_spawn/reinforced_phoron/hull,
@@ -484,20 +484,20 @@
 	dir = 4
 	},
 /obj/machinery/portable_atmospherics/canister/nitrogen,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "br" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/blue,
 /obj/machinery/meter,
 /obj/gibspawner/robot,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "bs" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
 /obj/decal/cleanable/cobweb2,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "bt" = (
 /obj/machinery/atmospherics/unary/vent_pump/tank{
@@ -521,20 +521,20 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/black{
 	dir = 4
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "bv" = (
 /obj/machinery/atmospherics/binary/pump/high_power{
 	dir = 4
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "bw" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/black{
 	dir = 1
 	},
 /obj/machinery/meter,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "bx" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -547,21 +547,21 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/black{
 	dir = 4
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "by" = (
 /obj/decal/cleanable/blood/oil,
 /obj/machinery/atmospherics/pipe/simple/hidden/universal{
 	dir = 4
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "bz" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
 	dir = 1
 	},
 /obj/machinery/meter,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "bA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
@@ -569,23 +569,23 @@
 	},
 /obj/random/mre,
 /obj/random/snack,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "bB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 9
 	},
 /obj/machinery/portable_atmospherics/canister/empty,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "bC" = (
 /obj/decal/cleanable/filth,
 /obj/machinery/portable_atmospherics/canister/empty,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "bD" = (
 /obj/machinery/portable_atmospherics/canister/empty,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "bE" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
@@ -606,7 +606,7 @@
 /obj/random/clothing,
 /obj/random/energy,
 /obj/item/clothing/accessory/stethoscope,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "bH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -616,7 +616,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "bI" = (
 /obj/item/reagent_containers/food/drinks/glass2/flute,
@@ -625,7 +625,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "bJ" = (
 /obj/structure/table/rack,
@@ -636,57 +636,57 @@
 	dir = 4;
 	pixel_x = -16
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "bK" = (
 /obj/decal/cleanable/filth,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "bL" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "bM" = (
 /obj/structure/table/rack,
 /obj/item/clothing/head/helmet/space/vox/medic,
 /obj/item/clothing/mask/gas/swat/vox,
 /obj/item/clothing/suit/space/vox/medic,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "bN" = (
 /obj/decal/cleanable/filth,
 /obj/submap_landmark/spawnpoint/captivesisterm,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "bO" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "bP" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/blue,
 /obj/decal/cleanable/filth,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "bQ" = (
 /obj/machinery/atmospherics/unary/tank/oxygen,
 /obj/floor_decal/borderfloorblack{
 	dir = 4
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "bR" = (
 /obj/machinery/atmospherics/portables_connector{
 	dir = 4
 	},
 /obj/machinery/portable_atmospherics/canister/carbon_dioxide,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "bS" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/black{
 	dir = 9
 	},
 /obj/random/junk,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "bT" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -696,7 +696,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "bU" = (
 /turf/simulated/wall/ocp_wall,
@@ -710,17 +710,17 @@
 /obj/structure/curtain/black,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "bX" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/random/junk,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "bY" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/decal/cleanable/filth,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "ca" = (
 /obj/overmap/visitable/sector/vox_scav_ship,
@@ -734,7 +734,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/door/airlock/warhammer/command/ancient,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "cc" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -772,11 +772,11 @@
 /obj/item/inflatable_dispenser,
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /obj/floor_decal/borderfloorblack,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "ci" = (
 /obj/floor_decal/borderfloorblack,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "cj" = (
 /obj/machinery/atmospherics/binary/passive_gate/on{
@@ -784,24 +784,24 @@
 	target_pressure = 280
 	},
 /obj/floor_decal/borderfloorblack,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "ck" = (
 /obj/random/junk,
 /obj/floor_decal/borderfloorblack{
 	dir = 6
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "cl" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "cm" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "cn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -813,7 +813,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "co" = (
 /obj/submap_landmark/joinable_submap/voxship/scavship,
@@ -839,19 +839,19 @@
 "cs" = (
 /obj/machinery/computer/ship/engines{
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "ct" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/machinery/computer/shuttle_control/explore/vox_ship,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "cu" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/decal/cleanable/filth,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/gibspawner/robot,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "cv" = (
 /obj/random/junk,
@@ -865,11 +865,11 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "cw" = (
 /obj/machinery/radio_beacon,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "cx" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -879,7 +879,7 @@
 "cy" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/door/airlock/warhammer/command/ancient,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "cz" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -1175,7 +1175,7 @@
 	},
 /obj/machinery/computer/ship/engines{
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "cV" = (
 /obj/structure/bed/chair/comfy/captain{
@@ -1191,7 +1191,7 @@
 	},
 /obj/random/drinkbottle,
 /obj/item/reagent_containers/food/drinks/glass2/flute,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "cW" = (
 /obj/structure/cable{
@@ -1204,7 +1204,7 @@
 	dir = 4;
 	level = 2
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "cX" = (
 /obj/structure/cable{
@@ -1216,7 +1216,7 @@
 /obj/shuttle_landmark/vox_base/hangar/vox_ship,
 /obj/machinery/hologram/holopad/longrange,
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "cY" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -1298,7 +1298,7 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "de" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -1320,20 +1320,20 @@
 /obj/floor_decal/borderfloorblack{
 	dir = 9
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dg" = (
 /obj/floor_decal/borderfloorblack{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dh" = (
 /obj/floor_decal/borderfloorblack{
 	dir = 1
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "di" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -1344,7 +1344,7 @@
 /obj/floor_decal/borderfloorblack{
 	dir = 5
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dj" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -1360,7 +1360,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/door/airlock/warhammer/engineering,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dl" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -1408,14 +1408,14 @@
 	dir = 4;
 	pixel_x = -16
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "dr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/curtain/black,
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "ds" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -1464,25 +1464,25 @@
 /obj/floor_decal/borderfloorblack{
 	dir = 8
 	},
-/obj/effect/floor_decal/turf/sigil{
+/obj/effect/floor_decal/warhammer/sigil{
 	icon_state = "NW"
 	},
 /obj/item/remains/xeno,
 /obj/decal/cleanable/blood/xeno,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dw" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/effect/floor_decal/turf/sigil{
+/obj/effect/floor_decal/warhammer/sigil{
 	icon_state = "N"
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dx" = (
-/obj/effect/floor_decal/turf/sigil{
+/obj/effect/floor_decal/warhammer/sigil{
 	icon_state = "SE"
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dy" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -1493,11 +1493,11 @@
 	dir = 4
 	},
 /obj/random/snack,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dz" = (
 /obj/machinery/portable_atmospherics/canister/hydrogen,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -1506,7 +1506,7 @@
 /obj/machinery/vending/engivend{
 	req_access = list()
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dB" = (
 /obj/structure/cable{
@@ -1514,26 +1514,26 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dC" = (
 /obj/machinery/alarm/vox{
 	pixel_y = 24
 	},
 /obj/random/contraband,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dD" = (
 /obj/machinery/vending/tool,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dE" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "dG" = (
 /obj/machinery/portable_atmospherics/canister/hydrogen,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "dJ" = (
 /obj/structure/closet/crate,
@@ -1541,7 +1541,7 @@
 /obj/item/stack/material/steel/ten,
 /obj/item/stack/material/steel/ten,
 /obj/item/reagent_containers/food/snacks/poo,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/black,
@@ -1587,13 +1587,13 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/decal/cleanable/filth,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "dS" = (
 /obj/structure/bed,
 /obj/item/bedsheet/mime,
 /obj/structure/curtain/open/bed,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "dT" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -1602,16 +1602,16 @@
 /obj/floor_decal/borderfloorblack{
 	dir = 1
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dU" = (
 /obj/floor_decal/borderfloorblack/corner{
 	dir = 1
 	},
-/obj/effect/floor_decal/turf/sigil{
+/obj/effect/floor_decal/warhammer/sigil{
 	icon_state = "W"
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dV" = (
 /obj/machinery/atmospherics/pipe/vent/high_volume{
@@ -1623,7 +1623,7 @@
 /area/voxship/scavship)
 "dW" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/effect/floor_decal/turf/sigil,
+/obj/effect/floor_decal/warhammer/sigil,
 /obj/item/remains/xeno,
 /obj/decal/cleanable/blood/xeno,
 /obj/fake_fire/bluespace{
@@ -1631,21 +1631,21 @@
 	pressure = 500;
 	name = "chaos fire"
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dX" = (
 /obj/random/loot/randomsupply/engineering,
-/obj/effect/floor_decal/turf/sigil{
+/obj/effect/floor_decal/warhammer/sigil{
 	icon_state = "E"
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dY" = (
 /obj/decal/cleanable/filth,
 /obj/floor_decal/borderfloorblack{
 	dir = 4
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dZ" = (
 /obj/structure/closet/crate,
@@ -1653,7 +1653,7 @@
 /obj/item/stack/material/tritium/ten,
 /obj/item/stack/material/tritium/ten,
 /obj/item/reagent_containers/food/snacks/poo,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "ea" = (
 /obj/random/junk,
@@ -1663,7 +1663,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "eb" = (
 /obj/decal/cleanable/filth,
@@ -1679,17 +1679,17 @@
 	icon_state = "1-2"
 	},
 /mob/living/simple_animal/passive/mouse/rat,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "ec" = (
 /obj/item/tank/oxygen,
 /obj/item/pickaxe,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "ed" = (
 /obj/random/snack,
 /obj/item/reagent_containers/food/snacks/poo,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "ee" = (
 /obj/structure/cable{
@@ -1713,7 +1713,7 @@
 	name = "chamber viewing port control";
 	pixel_y = 32
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "eg" = (
 /obj/machinery/button/blast_door{
@@ -1722,18 +1722,18 @@
 	pixel_y = 32
 	},
 /obj/gibspawner/robot,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "eh" = (
 /obj/machinery/atmospherics/valve,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "ei" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
 	dir = 8
 	},
 /obj/machinery/meter,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "ej" = (
 /obj/machinery/atmospherics/binary/pump{
@@ -1745,7 +1745,7 @@
 	name = "Chamber Hatch Control";
 	pixel_y = 32
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "ek" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
@@ -1759,7 +1759,7 @@
 /obj/structure/bed,
 /obj/item/bedsheet/hos,
 /obj/structure/curtain/open/bed,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "em" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -1769,7 +1769,7 @@
 /obj/item/storage/box/vox,
 /obj/item/storage/box/vox,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "eo" = (
 /obj/decal/cleanable/cobweb,
@@ -1777,11 +1777,11 @@
 /obj/structure/kitchenspike,
 /obj/decal/cleanable/blood,
 /obj/gibspawner/human,
-/turf/simulated/floor/ceramic/surgery2,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "ep" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/ceramic/surgery2,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "eq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -1789,36 +1789,36 @@
 	dir = 4;
 	pixel_x = -16
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "er" = (
 /obj/machinery/chem_master,
-/turf/simulated/floor/ceramic/surgery2,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "es" = (
 /obj/random/junk,
 /obj/decal/cleanable/blood/oil,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "et" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
-/obj/effect/floor_decal/turf/sigil{
+/obj/effect/floor_decal/warhammer/sigil{
 	icon_state = "S"
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "eu" = (
 /obj/random/junk,
 /obj/floor_decal/borderfloorblack{
 	dir = 4
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "ev" = (
 /obj/machinery/power/port_gen/pacman/mrs,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "ew" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -1826,7 +1826,7 @@
 	level = 2
 	},
 /obj/item/storage/toolbox/mechanical,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "ex" = (
 /obj/item/tank/oxygen,
@@ -1836,17 +1836,17 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "ey" = (
 /obj/random/junk,
 /mob/living/simple_animal/passive/mouse/rat,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "ez" = (
 /obj/decal/cleanable/filth,
 /obj/machinery/portable_atmospherics/canister/nitrogen,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "eA" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -1856,11 +1856,11 @@
 /obj/structure/bed/chair{
 	dir = 4
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "eB" = (
 /obj/item/storage/toolbox/syndicate,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "eD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -1869,7 +1869,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "eE" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -1878,7 +1878,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "eF" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
@@ -1921,7 +1921,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "eJ" = (
 /obj/machinery/atmospherics/omni/mixer,
@@ -1932,7 +1932,7 @@
 	id_tag = "Voxship_igniter";
 	pixel_y = -25
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "eK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel,
@@ -1942,13 +1942,13 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "eL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "eM" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
@@ -1970,7 +1970,7 @@
 	dir = 5
 	},
 /obj/item/tank/oxygen_emergency_double,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "eP" = (
 /obj/decal/cleanable/filth,
@@ -1978,7 +1978,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "eQ" = (
 /obj/machinery/bodyscanner,
@@ -1986,7 +1986,7 @@
 	dir = 4;
 	pixel_x = -16
 	},
-/turf/simulated/floor/ceramic/surgery2,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "eR" = (
 /obj/decal/cleanable/filth,
@@ -1994,28 +1994,28 @@
 	dir = 1
 	},
 /obj/item/defibrillator,
-/turf/simulated/floor/ceramic/surgery2,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "eS" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/item/clothing/glasses/hud/health,
-/turf/simulated/floor/ceramic/surgery2,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "eT" = (
 /obj/machinery/chemical_dispenser/full,
 /obj/item/reagent_containers/glass/beaker/large,
-/turf/simulated/floor/ceramic/surgery2,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "eU" = (
 /obj/structure/table/steel,
 /obj/random/junk,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "eV" = (
 /obj/decal/cleanable/filth,
 /obj/structure/table/steel,
 /obj/random/loot/lootcontraband,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "eW" = (
 /obj/floor_decal/borderfloorblack{
@@ -2024,23 +2024,23 @@
 /obj/structure/bed/chair{
 	dir = 8
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "eX" = (
 /obj/random/junk,
 /obj/random/snack,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "eY" = (
 /obj/floor_decal/borderfloorblack,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "eZ" = (
 /obj/machinery/portable_atmospherics/powered/scrubber,
 /obj/machinery/atmospherics/portables_connector{
 	dir = 4
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "fa" = (
 /obj/machinery/atmospherics/binary/pump/high_power/on{
@@ -2050,7 +2050,7 @@
 /obj/machinery/vending/engineering{
 	req_access = list()
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "fb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/black{
@@ -2066,14 +2066,14 @@
 /obj/random/advdevice,
 /obj/item/storage/briefcase/inflatable,
 /obj/item/device/lightreplacer,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "fc" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/black{
 	dir = 10
 	},
 /obj/machinery/pipedispenser,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "fd" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -2092,7 +2092,7 @@
 /obj/structure/bed/chair{
 	dir = 1
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "ff" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
@@ -2101,35 +2101,35 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/item/remains/xeno,
 /obj/decal/cleanable/blood/xeno,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "fg" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 4
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "fh" = (
 /obj/structure/bed,
 /obj/item/bedsheet/rd,
 /obj/structure/curtain/open/bed,
 /obj/item/bikehorn/rubberducky,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "fi" = (
 /obj/floor_decal/corner_steel_grid/diagonal,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "fk" = (
 /obj/machinery/body_scanconsole{
 	dir = 1
 	},
 /mob/living/simple_animal/hostile/daemon/zygote,
-/turf/simulated/floor/ceramic/surgery2,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "fl" = (
 /obj/item/clothing/suit/armor/grim/toggle/labcoat,
-/turf/simulated/floor/ceramic/surgery2,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "fm" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -2137,7 +2137,7 @@
 	level = 2
 	},
 /obj/machinery/reagent_temperature,
-/turf/simulated/floor/ceramic/surgery2,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "fn" = (
 /obj/structure/table/reinforced,
@@ -2145,13 +2145,13 @@
 /obj/item/storage/box/syringes,
 /obj/random/firstaid,
 /obj/random/firstaid,
-/turf/simulated/floor/ceramic/surgery2,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "fo" = (
 /obj/floor_decal/borderfloorblack{
 	dir = 6
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "fp" = (
 /obj/structure/table/reinforced,
@@ -2159,14 +2159,14 @@
 	dir = 4
 	},
 /obj/random/loot/randomcolonyitems,
-/turf/simulated/floor/ceramic/surgery2,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "fq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/blue{
 	dir = 5
 	},
 /obj/machinery/door/airlock/warhammer/command,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "fr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/black,
@@ -2181,7 +2181,7 @@
 	},
 /obj/structure/table/steel,
 /obj/item/reagent_containers/food/snacks/soylentgreen,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "ft" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -2216,26 +2216,26 @@
 /obj/structure/table/rack,
 /obj/item/reagent_containers/chem_disp_cartridge/vodka,
 /obj/item/reagent_containers/glass/beaker,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "fv" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "fw" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "fx" = (
 /obj/structure/bed,
 /obj/item/bedsheet/rd,
 /obj/structure/curtain/open/bed,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "fy" = (
 /obj/item/roller_bed,
@@ -2243,17 +2243,17 @@
 /obj/structure/hygiene/sink/kitchen{
 	pixel_x = -32
 	},
-/turf/simulated/floor/ceramic/surgery2,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "fz" = (
 /obj/decal/cleanable/blood/xeno,
 /obj/item/remains/xeno,
-/turf/simulated/floor/ceramic/surgery2,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "fA" = (
 /obj/decal/cleanable/filth,
 /mob/living/simple_animal/hostile/daemon/zygote,
-/turf/simulated/floor/ceramic/surgery2,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "fB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/blue{
@@ -2267,7 +2267,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/blue{
 	dir = 4
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "fD" = (
 /obj/wallframe_spawn/reinforced/hull/vox,
@@ -2276,7 +2276,7 @@
 "fF" = (
 /obj/structure/cable,
 /obj/machinery/power/smes/buildable/preset/voxship/ship,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "fG" = (
 /turf/simulated/mineral/random,
@@ -2306,20 +2306,20 @@
 /area/voxship/engineering)
 "fK" = (
 /obj/structure/closet/crate/vox_uranium,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "fL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel,
 /obj/structure/grille,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "fM" = (
 /obj/machinery/organ_printer/robot/mapped,
-/turf/simulated/floor/ceramic/surgery2,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "fN" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "fO" = (
 /obj/item/material/shard,
@@ -2352,12 +2352,12 @@
 /obj/structure/table/reinforced,
 /obj/item/storage/firstaid/surgery,
 /obj/item/stack/nanopaste,
-/turf/simulated/floor/ceramic/surgery2,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "fV" = (
 /obj/machinery/optable,
 /obj/item/device/scanner/health,
-/turf/simulated/floor/ceramic/surgery2,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "fW" = (
 /obj/random/advdevice,
@@ -2384,7 +2384,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "ga" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
@@ -2435,7 +2435,7 @@
 /obj/machinery/computer/ship/helm{
 	dir = 4;
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "gg" = (
 /obj/machinery/portable_atmospherics/canister/carbon_dioxide/engine_setup{
@@ -2461,7 +2461,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "gj" = (
 /obj/floor_decal/industrial/hatch/yellow,
@@ -2472,7 +2472,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/door/airlock/warhammer/command,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "gk" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -2484,7 +2484,7 @@
 	icon_state = "1-2"
 	},
 /mob/living/simple_animal/passive/mouse/rat,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "gl" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -2495,7 +2495,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "gm" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/universal{
@@ -2522,7 +2522,7 @@
 	dir = 8
 	},
 /obj/machinery/door/airlock/warhammer/command,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "gp" = (
 /obj/wallframe_spawn/reinforced/hull/vox,
@@ -2539,7 +2539,7 @@
 /area/voxship/engineering)
 "gr" = (
 /obj/submap_landmark/spawnpoint/captiveheretek,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "gs" = (
 /obj/random/loot,
@@ -2547,7 +2547,7 @@
 /area/space)
 "gt" = (
 /obj/random/hat,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "gu" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -2557,7 +2557,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "gx" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/universal{
@@ -2617,7 +2617,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/door/airlock/warhammer/command,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "gC" = (
 /obj/structure/handrail{
@@ -3111,7 +3111,7 @@
 	dir = 8
 	},
 /obj/decal/cleanable/blood/gibs,
-/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/effect/floor_decal/warhammer/lfloorscorched1,
 /obj/random/loot/heavymelee,
 /turf/simulated/floor/selfestructgrid{
 	name = "xenos plating"
@@ -3352,7 +3352,7 @@
 /area/voxship/shuttle)
 "pB" = (
 /obj/machinery/gibber,
-/turf/simulated/floor/ceramic/surgery2,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "pD" = (
 /turf/simulated/floor/seolite,
@@ -3550,7 +3550,7 @@
 "ua" = (
 /obj/structure/table/steel,
 /obj/item/storage/box/ammo/flashshells,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "wj" = (
 /obj/machinery/light,
@@ -3612,7 +3612,7 @@
 	dir = 4;
 	level = 2
 	},
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "wQ" = (
 /obj/item/storage/backpack/dufflebag/eng,
@@ -3800,11 +3800,11 @@
 	},
 /area/voxship/shuttle)
 "AG" = (
-/obj/effect/floor_decal/turf/sigil{
+/obj/effect/floor_decal/warhammer/sigil{
 	icon_state = "NE"
 	},
 /obj/decal/cleanable/blood/xeno,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "AQ" = (
 /obj/structure/table/rack,
@@ -3884,7 +3884,7 @@
 /area/voxship/shuttle)
 "Dc" = (
 /obj/machinery/telecomms/broadcaster/map_preset/voxship,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "DX" = (
 /obj/machinery/door/firedoor,
@@ -4356,7 +4356,7 @@
 "PN" = (
 /obj/machinery/telecomms/receiver/map_preset/voxship,
 /mob/living/simple_animal/hostile/daemon/zygote,
-/turf/simulated/floor/ceramic/blackstone,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "PR" = (
 /obj/structure/closet/crate/warhammer/xenos,

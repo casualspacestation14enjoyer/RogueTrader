@@ -1442,7 +1442,7 @@
 	mix_message = "The solution thickens into a steaming dark brown beverage."
 
 /singleton/reaction/coffee/instant
-	name = "Instant Coffee"
+	name = "Instant Recaf"
 	required_reagents = list(/datum/reagent/water = 5, /datum/reagent/nutriment/coffee/instant = 1)
 	maximum_temperature = INFINITY
 	minimum_temperature = 0
@@ -1693,7 +1693,7 @@
 	mix_message = "The solution takes on an unpleasant, thick, brown appearance."
 
 /singleton/reaction/icecoffee
-	name = "Iced Coffee"
+	name = "Iced Recaf"
 	result = /datum/reagent/drink/coffee/icecoffee
 	required_reagents = list(/datum/reagent/drink/ice = 1, /datum/reagent/drink/coffee = 2)
 	result_amount = 3
@@ -1946,7 +1946,7 @@
 	result_amount = 3
 
 /singleton/reaction/irish_coffee
-	name = "Irish Coffee"
+	name = "Irish Recaf"
 	result = /datum/reagent/ethanol/coffee/irishcoffee
 	required_reagents = list(/datum/reagent/ethanol/irish_cream = 1, /datum/reagent/drink/coffee = 1)
 	result_amount = 2
@@ -2959,7 +2959,7 @@
 	mix_message = "The mixture swirls into a deep crimson"
 
 /singleton/reaction/coffee_cola
-	name = "Coffee Cola"
+	name = "Recaf Cola"
 	result = /datum/reagent/drink/coffee/coffee_cola
 	required_reagents = list(/datum/reagent/drink/space_cola = 2, /datum/reagent/drink/coffee = 1)
 	result_amount = 3

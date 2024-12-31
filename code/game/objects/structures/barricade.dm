@@ -120,7 +120,7 @@
 /obj/structure/barricade/Initialize(mapload, material_name)
 	. = ..(mapload)
 	color = null
-	set_max_health(100)
+	set_max_health(140)
 
 /obj/structure/barricade/barrels
 	name = "metal barrel"
@@ -134,7 +134,7 @@
 /obj/structure/barricade/barrels/Initialize(mapload, material_name)
 	. = ..(mapload)
 	color = null
-	set_max_health(100)
+	set_max_health(140)
 
 /obj/structure/barricade/barrels/two
 	name = "metal barrels"
@@ -148,7 +148,7 @@
 /obj/structure/barricade/barrels/two/Initialize(mapload, material_name)
 	. = ..(mapload)
 	color = null
-	set_max_health(180)
+	set_max_health(190)
 
 /obj/structure/barricade/barrels/three
 	name = "metal barrels"
@@ -177,6 +177,63 @@
 	. = ..(mapload)
 	color = null
 	set_max_health(340)
+
+
+/obj/structure/barricade/sandbag
+	name = "heavy duty sandbag"
+	desc = "Effective at blocking bullets, but it gets in the way."
+	icon = 'icons/map_project/sandbags.dmi'
+	icon_state = "sandbag"
+	atom_flags = ATOM_FLAG_NO_TEMP_CHANGE
+	spiky = TRUE
+	material = MATERIAL_STEEL
+
+/obj/structure/barricade/sandbag/Initialize(mapload, material_name)
+	. = ..(mapload)
+	color = null
+	set_max_health(240)
+
+/obj/structure/barricade/sandbag/CanPass(atom/movable/mover, turf/target, height=0, air_group=0)
+	if (!istype(mover) || mover.checkpass(PASS_FLAG_TABLE))
+		return TRUE
+	if (get_dir(loc, target) == dir)
+		return !density
+	return TRUE
+
+/obj/structure/barricade/sandbagwall
+	name = "sandbag wall"
+	desc = "A big sandbag that serves as a barricade of sorts."
+	icon = 'icons/map_project/sandbag_wall.dmi'
+	icon_state = "solo"
+	atom_flags = ATOM_FLAG_NO_TEMP_CHANGE
+	spiky = TRUE
+	material = MATERIAL_STEEL
+
+/obj/structure/barricade/sandbagwall/Initialize(mapload, material_name)
+	. = ..(mapload)
+	color = null
+	set_max_health(440)
+
+/obj/structure/barricade/concrete
+	name = "concrete barrier"
+	desc = "Very effective at blocking bullets, but it gets in the way."
+	icon = 'icons/obj/warfare.dmi'
+	icon_state = "concrete_block"
+	atom_flags = ATOM_FLAG_NO_TEMP_CHANGE
+	spiky = TRUE
+	material = MATERIAL_STEEL
+
+/obj/structure/barricade/concrete/Initialize(mapload, material_name)
+	. = ..(mapload)
+	color = null
+	set_max_health(640)
+
+/obj/structure/barricade/concrete/CanPass(atom/movable/mover, turf/target, height=0, air_group=0)
+	if (!istype(mover) || mover.checkpass(PASS_FLAG_TABLE))
+		return TRUE
+	if (get_dir(loc, target) == dir)
+		return !density
+	return TRUE
 
 /obj/item/stack/barbwire
 	name = "barbed wire"
@@ -225,6 +282,11 @@
 	spiky = TRUE
 	material = MATERIAL_STEEL
 	var/damage = 22
+
+/obj/structure/barricade/barbed/Initialize(mapload, material_name)
+	. = ..(mapload)
+	color = null
+	set_max_health(240)
 
 /obj/structure/barricade/barbed/Crossed(mob/living/victim)
 	. = ..()

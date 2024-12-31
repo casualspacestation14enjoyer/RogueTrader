@@ -49,7 +49,7 @@
 	)
 
 /obj/structure/closet/secure_closet/deckofficer
-	name = "deck chief's locker"
+	name = "deck boss's locker"
 	req_access = list(access_dauntless)
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/cargo/deck_officer
 

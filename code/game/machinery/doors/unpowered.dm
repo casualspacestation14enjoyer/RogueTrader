@@ -24,16 +24,21 @@
 	opacity = 1
 	density = TRUE
 
+var/global/const/access_tavern1 = "ACCESS_TAVERN1"
+var/global/const/access_tavern2 = "ACCESS_TAVERN2"
+var/global/const/access_tavern3 = "ACCESS_TAVERN3"
+var/global/const/access_tavern4 = "ACCESS_TAVERN4"
+
 /obj/machinery/door/unpowered/inn
 	name = "wooden door"
 	icon = 'icons/obj/doors/door_cave2.dmi'
 	icon_state = "door1"
+	health_max = 1000
 	autoclose = 0
 	normalspeed = 0
 
 /obj/machinery/door/unpowered/inn/berryfarm
 	name = "goodberry farm"
-	health_max = 2500
 
 /obj/machinery/door/unpowered/necron_door1
 	icon = 'icons/obj/doors/necron_door.dmi'

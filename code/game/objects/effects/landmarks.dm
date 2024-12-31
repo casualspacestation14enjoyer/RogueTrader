@@ -672,24 +672,26 @@
 				/obj/item/clothing/accessory/armor_plate/bodyglovemech = 1)
 
 /obj/random/loot/arminserts
-	name = "Arm accessories"
-	desc = "This is a loot spawner that spawns arm accessories."
+	name = "Arm accessories(not working)" // Currently arm/leg inserts have no icon. zero clue why.
+	desc = "This is a loot spawner that spawns body gloves."
 	icon_state = "armoraccessory"
 
 /obj/random/loot/arminserts/spawn_choices()
-	return list(/obj/item/clothing/accessory/arm_guards = 4,
-				/obj/item/clothing/accessory/arm_guards/merc = 6,
-				/obj/item/clothing/accessory/arm_guards/flak = 12)
+	return list(/obj/item/clothing/accessory/armor_plate/paddingmech = 3,
+				/obj/item/clothing/accessory/armor_plate/bodyglove = 3,
+				/obj/item/clothing/accessory/armor_plate/bodyglove2 = 2,
+				/obj/item/clothing/accessory/armor_plate/bodyglovebio = 2)
 
 /obj/random/loot/leginserts
-	name = "Leg accessories"
-	desc = "This is a loot spawner that spawns leg accessories."
+	name = "Leg accessories(not working)"
+	desc = "This is a loot spawner that spawns body gloves."
 	icon_state = "armoraccessory"
 
 /obj/random/loot/leginserts/spawn_choices()
-	return list(/obj/item/clothing/accessory/leg_guards = 6,
-				/obj/item/clothing/accessory/leg_guards/merc = 6,
-				/obj/item/clothing/accessory/leg_guards/flak = 10)
+	return list(/obj/item/clothing/accessory/armor_plate/paddingmech = 3,
+				/obj/item/clothing/accessory/armor_plate/bodyglove = 3,
+				/obj/item/clothing/accessory/armor_plate/bodyglove2 = 2,
+				/obj/item/clothing/accessory/armor_plate/bodyglovebio = 2)
 
 /obj/random/loot/randomsupply
 	name = "Random Food & Meds"

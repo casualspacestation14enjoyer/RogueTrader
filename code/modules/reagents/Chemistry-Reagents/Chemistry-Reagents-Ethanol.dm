@@ -827,13 +827,13 @@
 
 /datum/reagent/ethanol/coffee/gargled
 	name = "Gargled"
-	description = "A blend of Blackstrap and Coffee. An ideal pick-me-up for any rancher."
+	description = "A blend of Blackstrap and Recaf. An ideal pick-me-up for any rancher."
 	taste_description = "comforting warmth"
 	color = "#e8dfc1"
 	strength = 50
 
 	glass_name = "gargled"
-	glass_desc = "A blend of Blackstrap and Coffee. An ideal pick-me-up for any rancher."
+	glass_desc = "A blend of Blackstrap and Recaf. An ideal pick-me-up for any rancher."
 
 /datum/reagent/ethanol/gintonic
 	name = "Gin and Tonic"
@@ -913,14 +913,14 @@
 	glass_desc = "An Irish slammer, mixed with cream, whiskey, and ale."
 
 /datum/reagent/ethanol/coffee/irishcoffee
-	name = "Irish Coffee"
+	name = "Irish Recaf"
 	description = "Coffee, and alcohol. More fun than a Mimosa to drink in the morning."
 	taste_description = "giving up on the day"
 	color = "#4c3100"
 	strength = 15
 
 	glass_name = "Irish coffee"
-	glass_desc = "Coffee and alcohol. More fun than a Mimosa to drink in the morning."
+	glass_desc = "Recaf and alcohol. More fun than a Mimosa to drink in the morning."
 
 /datum/reagent/ethanol/irish_cream
 	name = "Irish Cream"

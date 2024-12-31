@@ -6,7 +6,7 @@ var/global/list/possible_genestealer_IDs = list("Alpha","Beta","Gamma","Delta","
 	var/absorbedcount = 0
 	var/chem_charges = 20
 	var/chem_recharge_rate = 0.5
-	var/chem_storage = 50
+	var/chem_storage = 45
 	var/sting_range = 1
 	var/genestealerID = "Genestealer"
 	var/geneticdamage = 0
@@ -148,6 +148,7 @@ var/global/list/possible_genestealer_IDs = list("Alpha","Beta","Gamma","Delta","
 	set name = "Absorb DNA"
 
 	var/datum/genestealer/genestealer = genestealer_power(0,0,100)
+	var/mob/living/carbon/C = src
 	if(!genestealer)	return
 
 	var/obj/item/grab/G = src.get_active_hand()
@@ -203,6 +204,13 @@ var/global/list/possible_genestealer_IDs = list("Alpha","Beta","Gamma","Delta","
 	to_chat(T, SPAN_DANGER("You have been absorbed by the genestealer!"))
 	genestealer.chem_charges += 10
 	genestealer.geneticpoints += 2
+	C.species.brute_mod -= 0.05
+	C.species.burn_mod -= 0.03
+	C.species.toxins_mod -= 0.02
+	C.species.radiation_mod -= 0.02
+	C.species.stun_mod -= 0.03
+	C.species.weaken_mod -= 0.02
+	to_chat(src, SPAN_WARNING("We feel slightly stronger..."))
 
 	//Steal all of their languages!
 	for(var/language in T.languages)
@@ -317,9 +325,9 @@ var/global/list/possible_genestealer_IDs = list("Alpha","Beta","Gamma","Delta","
 //Transform into a monkey.
 /mob/proc/genestealer_lesser_form()
 	set category = "Genestealer"
-	set name = "Lesser Form (1)"
+	set name = "Lesser Form (60)"
 
-	var/datum/genestealer/genestealer = genestealer_power(1,0,0)
+	var/datum/genestealer/genestealer = genestealer_power(60,0,0)
 	if(!genestealer)	return
 
 	if(src.has_brain_worms())
@@ -342,9 +350,9 @@ var/global/list/possible_genestealer_IDs = list("Alpha","Beta","Gamma","Delta","
 //Transform into a human
 /mob/proc/genestealer_lesser_transform()
 	set category = "Genestealer"
-	set name = "Transform (1)"
+	set name = "Transform (60)"
 
-	var/datum/genestealer/genestealer = genestealer_power(1,1,0)
+	var/datum/genestealer/genestealer = genestealer_power(60,1,0)
 	if(!genestealer)	return
 
 	if(HAS_TRANSFORMATION_MOVEMENT_HANDLER(src))
@@ -421,13 +429,13 @@ var/global/list/possible_genestealer_IDs = list("Alpha","Beta","Gamma","Delta","
 //Fake our own death and fully heal. You will appear to be dead but regenerate fully after a short delay.
 /mob/proc/genestealer_fakedeath()
 	set category = "Genestealer"
-	set name = "Regenerative Stasis (20)"
+	set name = "Regenerative Stasis (40)"
 
-	var/datum/genestealer/genestealer = genestealer_power(20,1,100,DEAD)
+	var/datum/genestealer/genestealer = genestealer_power(40,1,100,DEAD)
 	if(!genestealer)	return
 
 	var/mob/living/carbon/C = src
-	if(!C.stat && alert("Are we sure we wish to fake our death?",,"Compliance","No") == "No")//Confirmation for living genestealers if they want to fake their death
+	if(!C.stat && alert("Are we sure we wish to enter regenerative stasis? There is a small chance we may not revive...",,"Compliance","No") == "No")//Confirmation for living genestealers if they want to fake their death
 		return
 	to_chat(C, SPAN_NOTICE("We will attempt to regenerate our form."))
 	C.status_flags |= FAKEDEATH		//play dead
@@ -436,13 +444,17 @@ var/global/list/possible_genestealer_IDs = list("Alpha","Beta","Gamma","Delta","
 
 	C.emote("gasp")
 
-	spawn(rand(800,2000))
-		if(genestealer_power(20,1,100,DEAD))
+	spawn(rand(800,1000))
+		if(genestealer_power(40,1,100,DEAD) && prob(75))
 			// charge the genestealer chemical cost for stasis
-			genestealer.chem_charges -= 20
+			genestealer.chem_charges -= 40
 
 			to_chat(C, SPAN_NOTICE(FONT_GIANT("We are ready to rise.  Use the <b>Revive</b> verb when you are ready.")))
 			C.verbs += /mob/proc/genestealer_revive
+		else
+			to_chat(C, SPAN_NOTICE(FONT_GIANT("Something is wrong! Our DNA mutants and convulses!")))
+			spawn(100)
+			C.gib()
 	return 1
 
 /mob/proc/genestealer_revive()
@@ -466,12 +478,12 @@ var/global/list/possible_genestealer_IDs = list("Alpha","Beta","Gamma","Delta","
 //Boosts the range of your next sting attack by 1
 /mob/proc/genestealer_boost_range()
 	set category = "Genestealer"
-	set name = "Ranged Sting (10)"
+	set name = "Ranged Sting (20)"
 	set desc="Your next sting ability can be used against targets 2 squares away."
 
-	var/datum/genestealer/genestealer = genestealer_power(10,0,100)
+	var/datum/genestealer/genestealer = genestealer_power(20,0,100)
 	if(!genestealer)	return 0
-	genestealer.chem_charges -= 10
+	genestealer.chem_charges -= 20
 	to_chat(src, SPAN_NOTICE("Your throat adjusts to launch the sting."))
 	genestealer.sting_range = 2
 	src.verbs -= /mob/proc/genestealer_boost_range
@@ -482,12 +494,12 @@ var/global/list/possible_genestealer_IDs = list("Alpha","Beta","Gamma","Delta","
 //Recover from stuns.
 /mob/proc/genestealer_unstun()
 	set category = "Genestealer"
-	set name = "Epinephrine Sacs (45)"
+	set name = "Epinephrine Sacs (40)"
 	set desc = "Removes all stuns"
 
-	var/datum/genestealer/genestealer = genestealer_power(45,0,100,UNCONSCIOUS)
+	var/datum/genestealer/genestealer = genestealer_power(40,0,100,UNCONSCIOUS)
 	if(!genestealer)	return 0
-	genestealer.chem_charges -= 45
+	genestealer.chem_charges -= 40
 
 	var/mob/living/carbon/human/C = src
 	C.set_stat(CONSCIOUS)
@@ -509,7 +521,7 @@ var/global/list/possible_genestealer_IDs = list("Alpha","Beta","Gamma","Delta","
 
 //Increases macimum chemical storage
 /mob/proc/genestealer_engorgedglands()
-	src.mind.genestealer.chem_storage += 25
+	src.mind.genestealer.chem_storage += 5
 	return 1
 
 
@@ -517,7 +529,7 @@ var/global/list/possible_genestealer_IDs = list("Alpha","Beta","Gamma","Delta","
 /mob/proc/genestealer_digitalcamo()
 	set category = "Genestealer"
 	set name = "Toggle Digital Camoflague"
-	set desc = "The AI can no longer track us, but we will look different if examined.  Has a constant cost while active."
+	set desc = "The machine spirit can no longer track us, but we will look different if examined.  Has a constant cost while active."
 
 	var/datum/genestealer/genestealer = genestealer_power()
 	if(!genestealer)	return 0
@@ -540,21 +552,21 @@ var/global/list/possible_genestealer_IDs = list("Alpha","Beta","Gamma","Delta","
 //Starts healing you every second for 10 seconds. Can be used whilst unconscious.
 /mob/proc/genestealer_rapidregen()
 	set category = "Genestealer"
-	set name = "Rapid Regeneration (30)"
+	set name = "Rapid Regeneration (40)"
 	set desc = "Begins rapidly regenerating.  Does not effect stuns or chemicals."
 
-	var/datum/genestealer/genestealer = genestealer_power(30,0,100,UNCONSCIOUS)
+	var/datum/genestealer/genestealer = genestealer_power(40,0,100,UNCONSCIOUS)
 	if(!genestealer)	return 0
-	src.mind.genestealer.chem_charges -= 30
+	src.mind.genestealer.chem_charges -= 40
 
 	var/mob/living/carbon/human/C = src
 	spawn(0)
 		for(var/i = 0, i<10,i++)
 			if(C)
-				C.adjustBruteLoss(-10)
-				C.adjustToxLoss(-10)
-				C.adjustOxyLoss(-10)
-				C.adjustFireLoss(-10)
+				C.adjustBruteLoss(-4)
+				C.adjustToxLoss(-2)
+				C.adjustOxyLoss(-2)
+				C.adjustFireLoss(-2)
 				sleep(10)
 
 	src.verbs -= /mob/proc/genestealer_rapidregen
@@ -567,10 +579,10 @@ var/global/list/datum/absorbed_dna/hivemind_bank = list()
 
 /mob/proc/genestealer_hiveupload()
 	set category = "Genestealer"
-	set name = "Hive Channel (10)"
+	set name = "Hive Channel (40)"
 	set desc = "Allows you to channel DNA in the airwaves to allow other genestealers to absorb it."
 
-	var/datum/genestealer/genestealer = genestealer_power(10,1)
+	var/datum/genestealer/genestealer = genestealer_power(40,1)
 	if(!genestealer)	return
 
 	var/list/names = list()
@@ -600,17 +612,17 @@ var/global/list/datum/absorbed_dna/hivemind_bank = list()
 		to_chat(src, SPAN_NOTICE("That species must be absorbed directly."))
 		return
 
-	genestealer.chem_charges -= 10
+	genestealer.chem_charges -= 40
 	hivemind_bank += chosen_dna
 	to_chat(src, SPAN_NOTICE("We channel the DNA of [S] to the air."))
 	return 1
 
 /mob/proc/genestealer_hivedownload()
 	set category = "Genestealer"
-	set name = "Hive Absorb (20)"
+	set name = "Hive Absorb (60)"
 	set desc = "Allows you to absorb DNA that is being channeled in the airwaves."
 
-	var/datum/genestealer/genestealer = genestealer_power(20,1)
+	var/datum/genestealer/genestealer = genestealer_power(60,1)
 	if(!genestealer)	return
 
 	var/list/names = list()
@@ -628,7 +640,7 @@ var/global/list/datum/absorbed_dna/hivemind_bank = list()
 	if(!chosen_dna)
 		return
 
-	genestealer.chem_charges -= 20
+	genestealer.chem_charges -= 60
 	absorbDNA(chosen_dna)
 	to_chat(src, SPAN_NOTICE("We absorb the DNA of [S] from the air."))
 	return 1
@@ -654,7 +666,7 @@ var/global/list/datum/absorbed_dna/hivemind_bank = list()
 		return
 
 	genestealer.mimicing = mimic_voice
-
+	src.visible_message(SPAN_WARNING("[src]'s throat quivers inhumanly before returning to normal..."))
 	to_chat(src, SPAN_NOTICE("We shape our glands to take the voice of <b>[mimic_voice]</b>, this will stop us from regenerating chemicals while active."))
 	to_chat(src, SPAN_NOTICE("Use this power again to return to our original voice and reproduce chemicals again."))
 
@@ -742,10 +754,10 @@ var/global/list/datum/absorbed_dna/hivemind_bank = list()
 
 /mob/proc/genestealer_blind_sting()
 	set category = "Genestealer"
-	set name = "Blind sting (20)"
+	set name = "Blind sting (60)"
 	set desc="Sting target"
 
-	var/mob/living/carbon/human/T = genestealer_sting(20,/mob/proc/genestealer_blind_sting, sting_name = "Blind Sting")
+	var/mob/living/carbon/human/T = genestealer_sting(60,/mob/proc/genestealer_blind_sting, sting_name = "Blind Sting")
 	if(!T)	return 0
 	//to_chat(T, SPAN_DANGER("Your eyes burn horrificly!"))
 	T.disabilities |= NEARSIGHTED
@@ -756,10 +768,10 @@ var/global/list/datum/absorbed_dna/hivemind_bank = list()
 
 /mob/proc/genestealer_transform_sting()
 	set category = "Genestealer"
-	set name = "Transform sting (20)"
+	set name = "Transform sting (60)"
 	set desc="Sting target"
 
-	var/mob/living/carbon/human/T = genestealer_sting(20,/mob/proc/genestealer_transform_sting, sting_name = "Transform Sting")
+	var/mob/living/carbon/human/T = genestealer_sting(60,/mob/proc/genestealer_transform_sting, sting_name = "Transform Sting")
 	if(!T)	return 0
 	to_chat(T, SPAN_DANGER("You feel your body changing!"))
 	if(!do_after(src, 15 SECONDS, T, DO_PUBLIC_UNIQUE))
@@ -780,20 +792,20 @@ var/global/list/datum/absorbed_dna/hivemind_bank = list()
 
 /mob/proc/genestealer_DEATHsting()
 	set category = "Genestealer"
-	set name = "Death Sting (40)"
-	set desc = "Causes spasms onto death."
+	set name = "Death Sting (35)"
+	set desc = "Inject your victim with lethal acid."
 	var/loud = 1
 
-	var/mob/living/carbon/human/T = genestealer_sting(40,/mob/proc/genestealer_DEATHsting,loud, sting_name = "Death Sting")
+	var/mob/living/carbon/human/T = genestealer_sting(35,/mob/proc/genestealer_DEATHsting,loud, sting_name = "Death Sting")
 	if(!T)	return 0
-	to_chat(T, SPAN_DANGER("You feel a small prick and your chest becomes tight."))
+	to_chat(T, SPAN_DANGER("You feel a small prick and your chest begins to burn..."))
 	T.make_jittery(400)
-	if(T.reagents)	T.reagents.add_reagent(/datum/reagent/lexorin, 10)
+	if(T.reagents)	T.reagents.add_reagent(/datum/reagent/acid/polyacid, 10)
 	return 1
 
 /mob/proc/genestealer_extract_dna_sting()
 	set category = "Genestealer"
-	set name = "Extract DNA Sting (40)"
+	set name = "Extract DNA Sting (60)"
 	set desc="Stealthily sting a target to extract their DNA."
 
 	var/datum/genestealer/genestealer = null
@@ -802,7 +814,7 @@ var/global/list/datum/absorbed_dna/hivemind_bank = list()
 	if(!genestealer)
 		return 0
 
-	var/mob/living/carbon/human/T = genestealer_sting(40, /mob/proc/genestealer_extract_dna_sting, sting_name = "Extract DNA Sting")
+	var/mob/living/carbon/human/T = genestealer_sting(60, /mob/proc/genestealer_extract_dna_sting, sting_name = "Extract DNA Sting")
 	if(!T)	return 0
 	if((MUTATION_HUSK in T.mutations) || (T.species.species_flags & SPECIES_FLAG_NO_SCAN))
 		to_chat(src, SPAN_WARNING("We cannot extract DNA from this creature!"))

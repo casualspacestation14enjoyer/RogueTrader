@@ -139,12 +139,12 @@
 
 // Effects
 
-/obj/effect/floor_decal/turf/sigil
+/obj/effect/floor_decal/warhammer/sigil
 	name = "demonic sigil"
 	icon = 'icons/map_project/ship/sigils.dmi'
 	icon_state = "center"
 
-/obj/effect/floor_decal/turf/sun
+/obj/effect/floor_decal/warhammer/sun
 	name = "SUN OF ETERNAL NIGHT"
 	icon = 'icons/map_project/ship/sun_of_eternal_night.dmi'
 	icon_state = "sun"

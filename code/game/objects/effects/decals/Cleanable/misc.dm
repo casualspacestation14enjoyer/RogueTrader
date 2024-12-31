@@ -175,9 +175,9 @@
 	name = "vomit"
 	desc = "Gosh, how unpleasant."
 	gender = PLURAL
-	icon = 'icons/effects/pooeffect.dmi'
-	icon_state = "vomit1"
-	random_icon_states = list("vomit1", "vomit2", "vomit3")
+	icon = 'icons/effects/blood2.dmi'
+	icon_state = "vomittox_1"
+	random_icon_states = list("vomittox_1", "vgibup1", "vgibbl1", "vgibbl4")
 	persistent = TRUE
 	generic_filth = TRUE
 
@@ -190,6 +190,16 @@
 
 /obj/decal/cleanable/vomit/on_update_icon()
 	color = reagents.get_color()
+
+/obj/decal/cleanable/vomitold
+	name = "vomit"
+	desc = "Gosh, how unpleasant."
+	gender = PLURAL
+	icon = 'icons/effects/pooeffect.dmi'
+	icon_state = "vomit1"
+	random_icon_states = list("vomit1", "vomit2", "vomit3")
+	persistent = TRUE
+	generic_filth = TRUE
 
 /obj/decal/cleanable/tomato_smudge
 	name = "tomato smudge"

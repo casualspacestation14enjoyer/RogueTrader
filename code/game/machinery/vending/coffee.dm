@@ -18,7 +18,7 @@
 		Only the finest brew for you.;\
 		Mmmm. Nothing like a coffee.;\
 		I like coffee, don't you?;\
-		Coffee helps you work!;\
+		Recaf helps you work!;\
 		Try some tea.;\
 		We hope you like the best!;\
 		Try our new chocolate!\

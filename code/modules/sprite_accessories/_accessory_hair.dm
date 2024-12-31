@@ -513,7 +513,7 @@
 	flags = VERY_SHORT | HAIR_TIEABLE
 
 /datum/sprite_accessory/hair/coffeehouse
-	name = "Coffee House Cut"
+	name = "Recaf House Cut"
 	icon_state = "hair_coffeehouse"
 	flags = VERY_SHORT
 

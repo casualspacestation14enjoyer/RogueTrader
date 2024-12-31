@@ -206,12 +206,6 @@
 	desc = "..."
 	icon_state = "bsd_c_s"
 
-/obj/structure/hivedecor/xenos/artifact/supermatter
-	name = "???"
-	desc = "..."
-	icon = 'icons/map_project/port/supermatter.dmi'
-	icon_state = "supermatter_glow"
-
 /obj/structure/hivedecor/xenos/artifact/gateway // top part of gateway. starts off.
 	name = "???"
 	desc = "..."

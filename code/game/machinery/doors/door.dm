@@ -12,7 +12,7 @@
 	layer = CLOSED_DOOR_LAYER
 	interact_offline = TRUE
 
-	health_max = 2000
+	health_max = 1800
 	health_min_damage = 15
 	damage_hitsound = 'sound/weapons/smash.ogg'
 

@@ -424,3 +424,43 @@
 	volume = 20
 	atom_flags = ATOM_FLAG_NO_TEMP_CHANGE | ATOM_FLAG_NO_REACT
 	icon_state = "cs"
+
+/obj/item/reagent_containers/syringe/warhammer
+	name = "syringe"
+	desc = "A syringe."
+	icon = 'icons/obj/syringe.dmi'
+	icon_state = "0"
+	matter = list(MATERIAL_GLASS = 150)
+	amount_per_transfer_from_this = 10
+	possible_transfer_amounts = "5;10;15"
+	volume = 20
+
+/obj/item/reagent_containers/syringe/on_update_icon()
+	ClearOverlays()
+	underlays.Cut()
+
+	if(mode == SYRINGE_BROKEN)
+		icon_state = "broken"
+		return
+
+	var/rounded_vol = clamp(round((reagents.total_volume / volume * 15),5), 5, 15)
+	if (reagents.total_volume == 0)
+		rounded_vol = 0
+	if(ismob(loc))
+		var/injoverlay
+		switch(mode)
+			if (SYRINGE_DRAW)
+				injoverlay = "draw"
+			if (SYRINGE_INJECT)
+				injoverlay = "inject"
+		AddOverlays(injoverlay)
+	icon_state = "[rounded_vol]"
+	item_state = "syringe_[rounded_vol]"
+
+	if(reagents.total_volume)
+		filling = image('icons/obj/reagentfillings.dmi', src, "syringe10")
+
+		filling.icon_state = "syringe[rounded_vol]"
+
+		filling.color = reagents.get_color()
+		underlays += filling

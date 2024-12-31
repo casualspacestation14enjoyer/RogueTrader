@@ -1094,7 +1094,7 @@
 	dir = 8
 	},
 /obj/decal/cleanable/blood/gibs,
-/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/effect/floor_decal/warhammer/lfloorscorched1,
 /obj/random/loot/heavymelee,
 /turf/simulated/floor/selfestructgrid{
 	name = "xenos plating"
