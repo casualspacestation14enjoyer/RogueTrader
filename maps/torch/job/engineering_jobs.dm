@@ -16,7 +16,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 8
+	skill_points = 18
 	min_skill = list(
 		SKILL_BUREAUCRACY  = SKILL_TRAINED,
 		SKILL_COMBAT = SKILL_TRAINED,
@@ -54,13 +54,8 @@
 						SKILL_CHEMISTRY = SKILL_MASTER)
 
 	access = list(
-		access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
-		access_ai_upload, access_teleporter, access_eva, access_bridge, access_heads,
-		access_tech_storage, access_robotics, access_atmospherics, access_janitor, access_construction,
-		access_network, access_network_admin, access_ce, access_RC_announce, access_keycard_auth, access_tcomsat,
-		access_solgov_crew, access_aquila, access_seneng, access_hangar, access_torch_fax, access_torch_helm, access_radio_comm,
-		access_radio_eng
-		)
+		access_dauntless, access_restricted, access_restricted_command, access_mechanicus, access_mechanicus_command, access_medical,
+		access_medical_command, access_magos, access_bridge)
 
 	software_on_spawn = list(/datum/computer_file/program/comm,
 							 /datum/computer_file/program/ntnetmonitor,
@@ -91,6 +86,7 @@
 	H.species.radiation_mod = 0.3
 	H.species.hunger_factor = DEFAULT_HUNGER_FACTOR * 0.35
 	H.species.species_flags = SPECIES_FLAG_LOW_GRAV_ADAPTED | SPECIES_FLAG_NO_EMBED
+	H.verbs += /mob/living/proc/set_ambition
 	if(current_title && (H.mind.role_alt_title in alt_titles))
 		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
 	else
@@ -128,7 +124,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 12
+	skill_points = 17
 	min_skill = list(
 		SKILL_GUNS = SKILL_TRAINED,
 		SKILL_SCIENCE = SKILL_EXPERIENCED,
@@ -162,10 +158,8 @@
 						SKILL_CHEMISTRY = SKILL_MASTER)
 
 	access = list(
-		access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
-		access_teleporter, access_eva, access_tech_storage, access_atmospherics, access_janitor, access_construction,
-		access_tcomsat, access_solgov_crew, access_seneng, access_hangar, access_network, access_network_admin, access_radio_eng
-	)
+		access_dauntless, access_restricted, access_restricted_command, access_mechanicus, access_mechanicus_command, access_medical,
+		access_medical_command, access_bridge)
 
 	software_on_spawn = list(/datum/computer_file/program/power_monitor,
 							 /datum/computer_file/program/supermatter_monitor,
@@ -196,6 +190,7 @@
 	H.species.radiation_mod = 0.4
 	H.species.hunger_factor = DEFAULT_HUNGER_FACTOR * 0.5
 	H.species.species_flags = SPECIES_FLAG_LOW_GRAV_ADAPTED | SPECIES_FLAG_NO_EMBED
+	H.verbs += /mob/living/proc/set_ambition
 	if(current_title && (H.mind.role_alt_title in alt_titles))
 		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
 	else
@@ -228,7 +223,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 15
+	skill_points = 19
 	min_skill = list(
 		SKILL_GUNS = SKILL_BASIC,
 		SKILL_SCIENCE = SKILL_BASIC,
@@ -254,10 +249,8 @@
 						SKILL_PILOT = SKILL_MASTER)
 
 	access = list(
-		access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
-		access_teleporter, access_eva, access_tech_storage, access_atmospherics, access_janitor, access_construction,
-		access_solgov_crew, access_hangar, access_network, access_radio_eng
-	)
+		access_dauntless, access_restricted, access_restricted_command, access_mechanicus, access_mechanicus_command, access_medical,
+		access_medical_command)
 
 	software_on_spawn = list(/datum/computer_file/program/power_monitor,
 							 /datum/computer_file/program/supermatter_monitor,
@@ -316,7 +309,7 @@
 		/datum/mil_rank/civ/civ
 	)
 
-	skill_points = 14
+	skill_points = 16
 	min_skill = list(
 		SKILL_GUNS = SKILL_BASIC,
 		SKILL_COMBAT = SKILL_TRAINED,
@@ -334,10 +327,7 @@
 						SKILL_VIGOR = SKILL_MASTER)
 
 	access = list(
-		access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
-		access_eva, access_tech_storage, access_janitor, access_construction,
-		access_solgov_crew, access_hangar, access_radio_eng
-	)
+		access_dauntless, access_restricted, access_mechanicus, access_medical)
 
 	software_on_spawn = list(/datum/computer_file/program/power_monitor,
 							 /datum/computer_file/program/alarm_monitor,
@@ -358,9 +348,9 @@
 		H.make_genestealer()
 		to_chat(H, "<span class='notice'><b><font size=2>You are a genestealer bioform, a unique strain of tyranid genestealer capable of rapid transformation. The swarm considers you to be an abomination, but under the guidance of what you believe to be the true hivemind, you will surely succeed where the others have failed. Everything is connected.</font></b></span>")
 	else if(prob(1))
-		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
-		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
-		spawn(65 SECONDS)
+		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN THIRTY SECONDS</font></b></span>")
+		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN THIRTY SECONDS</font></b></span>")
+		spawn(30 SECONDS)
 		GLOB.cult.add_antagonist(H.mind, ignore_role = 1, do_not_equip = 0)
 		to_chat(H, "<span class='notice'><b><font size=2>You are a heretical cultist loyal to one or more of the Chaos Gods -- unlike the many pretenders you are truly blessed by the warp and can survive encounters that would boil the brains of most mortal men.</font></b></span>")
 	H.fully_replace_character_name("[current_name]")
@@ -409,7 +399,7 @@
 	                    SKILL_ANATOMY      = SKILL_EXPERIENCED)
 
 	access = list(
-		access_robotics, access_engine, access_solgov_crew, access_network, access_radio_eng
+		access_robotics, access_mechanicus, access_solgov_crew, access_network, access_radio_eng
 	)
 
 /datum/job/roboticist/get_description_blurb()

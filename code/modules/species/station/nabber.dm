@@ -42,7 +42,7 @@
 
 	darksight_range = 8
 	darksight_tint = DARKTINT_GOOD
-	slowdown = -0.5
+	slowdown = -0.25
 	rarity_value = 4
 	hud_type = /datum/hud_data/nabber
 

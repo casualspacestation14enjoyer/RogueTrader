@@ -10,7 +10,8 @@
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
 	siemens_coefficient = 0.6
 	equip_delay = 2 SECONDS
-	slowdown_general = 0.1
+	slowdown_general = 0.09
+	w_class = ITEM_SIZE_HUGE
 
 /obj/item/clothing/suit/armor/equip_delay_before(mob/user, slot, equip_flags)
 	user.setClickCooldown(1 SECOND)
@@ -291,7 +292,7 @@
 		rad = ARMOR_RAD_THIRTY-8,
 		bomb = ARMOR_BOMB_TEN
 		)
-	slowdown_general = 0.4
+	slowdown_general = 0.1
 	siemens_coefficient = 1.3 // This /is/ a pair of exposed metal sheets and cable coil.
 
 
@@ -307,7 +308,8 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	allowed = list(
 		/obj/item/gun/energy,
-		/obj/item/melee/baton,
+		/obj/item/material/twohanded/ravenor,
+		/obj/item/melee,
 		/obj/item/handcuffs,
 		/obj/item/tank/oxygen_emergency,
 		/obj/item/tank/oxygen_emergency_extended,

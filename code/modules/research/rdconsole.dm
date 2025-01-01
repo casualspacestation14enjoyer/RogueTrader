@@ -72,7 +72,7 @@ won't update every console in existence) but it's more of a hassle to do. Also, 
 	var/imprinter_search = ""
 	var/quick_deconstruct = FALSE
 
-	req_access = list(access_research)	//Data and setting manipulation requires researcher access.
+	req_access = list(access_mechanicus)	//Data and setting manipulation requires researcher access.
 
 /obj/machinery/computer/rdconsole/proc/CallMaterialName(ID)
 	var/return_name = ID
@@ -988,7 +988,7 @@ won't update every console in existence) but it's more of a hassle to do. Also, 
 /obj/machinery/computer/rdconsole/robotics
 	name = "robotics fabrication console"
 	id = 2
-	req_access = list(access_robotics)
+	req_access = list(access_mechanicus)
 	can_analyze = FALSE
 
 /obj/machinery/computer/rdconsole/core

@@ -47,6 +47,7 @@
 	desc = "A durable and heavy overcoat designed to protect against indirect blast and small arms fire."
 	icon_state = "bluecoat"
 	item_state = "bluecoat"
+	w_class = ITEM_SIZE_LARGE
 	body_parts_covered = LEGS|ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/flak)
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
@@ -67,6 +68,7 @@
 	desc = "A rugged black cloak, crafted from durable animal hide. Its origins and wearer’s intentions remain shrouded in mystery."
 	icon_state = "bluecoat_sniper"
 	item_state = "bluecoat_sniper"
+	w_class = ITEM_SIZE_LARGE
 	body_parts_covered = LEGS|ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/flaklamellar)
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
@@ -134,7 +136,7 @@
 	accessories = list(/obj/item/clothing/accessory/armor_plate/nurgleheavy)
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+150
-	slowdown_general = 0.08
+	slowdown_general = 0.07
 	armor = list(
 		melee = ARMOR_MELEE_FLAK+2,
 		bullet = ARMOR_BALLISTIC_FLAK+2,
@@ -215,14 +217,15 @@
 /obj/item/clothing/suit/armor/sister/sacredrosepower
 	name = "sacred rose power armour"
 	desc = "The Sacred and holy Power Armour adorned by Battle Sister of the Order Of The Sacred Rose, It's illuminate the field with it glorious light, Being near it make you feels safer and secured."
-	icon_state = "sister"
+	icon_state = "ooml_old"
 	item_state = "sister"
+	w_class = ITEM_SIZE_GARGANTUAN
 	flags_inv = HIDEJUMPSUIT
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	max_pressure_protection = RIG_MAX_PRESSURE
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +1500
-	slowdown_general = 0.11 // Slightly faster then inqisitorial, these relics are icons to the sisters and treated as extensions of the emperor.
+	slowdown_general = 0.1 // Slightly faster then inqisitorial, these relics are icons to the sisters and treated as extensions of the emperor.
 	armor = list(
 		melee = ARMOR_MELEE_POWER_ARM,
 		bullet = ARMOR_BALLISTIC_POWER_ARMOUR,
@@ -238,12 +241,13 @@
 	desc = "The Sacred and holy Power Armour adorned by Battle Sister of the Order Of Our Martyred Lady. Being near it make you feels safer and secured."
 	icon_state = "mlsister"
 	item_state = "mlsister"
+	w_class = ITEM_SIZE_GARGANTUAN
 	flags_inv = HIDEJUMPSUIT
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	max_pressure_protection = RIG_MAX_PRESSURE
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +1500
-	slowdown_general = 0.11
+	slowdown_general = 0.1
 	armor = list(
 		melee = ARMOR_MELEE_POWER_ARM,
 		bullet = ARMOR_BALLISTIC_POWER_ARMOUR,
@@ -259,12 +263,13 @@
 	desc = "The blood red power armor of The Order of the Bloody Rose."
 	icon_state = "brsister"
 	item_state = "brsister"
+	w_class = ITEM_SIZE_GARGANTUAN
 	flags_inv = HIDEJUMPSUIT
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	max_pressure_protection = RIG_MAX_PRESSURE
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +1500
-	slowdown_general = 0.11
+	slowdown_general = 0.1
 	armor = list(
 		melee = ARMOR_MELEE_POWER_ARM,
 		bullet = ARMOR_BALLISTIC_POWER_ARMOUR,
@@ -280,12 +285,13 @@
 	desc = "The Ancient and Deconsecrated Ceramite Armour adorned by Novice Militants during their training in an ecclesiarchal' Monastarium. Stripped of almost all iconography and with damaged plating. It has scriptures across it's surface, recounting the triumph and martyrdom of countless saints."
 	icon_state = "ooml"
 	item_state = "ooml"
+	w_class = ITEM_SIZE_GARGANTUAN
 	flags_inv = HIDEJUMPSUIT
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	max_pressure_protection = VOIDSUIT_MAX_PRESSURE
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE +1100
-	slowdown_general = 0.11 // Same speed as sister but trash stats compared.
+	slowdown_general = 0.1 // Same speed as sister but trash stats compared.
 	armor = list(
 		melee = ARMOR_MELEE_POWER_ARM-1,
 		bullet = ARMOR_BALLISTIC_POWER_ARMOUR-2, // 1 point above carapace
@@ -305,7 +311,7 @@
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
-	slowdown_general = 0.07
+	slowdown_general = 0.065
 	armor = list(
 		melee = ARMOR_MELEE_CARAPACE-1,
 		bullet = ARMOR_BALLISTIC_CARAPACE-1,
@@ -384,7 +390,7 @@
 	accessories = list(/obj/item/clothing/accessory/armor_plate/flak)
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-150
-	slowdown_general = 0.065
+	slowdown_general = 0.055
 	armor = list(
 		melee = ARMOR_MELEE_FLAK-1,
 		bullet = ARMOR_BALLISTIC_FLAK-1,
@@ -498,10 +504,11 @@
 	desc = "An plasteel-alloy half-plate cuirass forged by local hands, it's craftsmanship is remarkable and benefits from the exotic alloy unique to the ghoul stars."
 	icon_state = "templar"
 	item_state = "templar"
+	w_class = ITEM_SIZE_GARGANTUAN
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-100
-	slowdown_general = 0.073
+	slowdown_general = 0.07
 	armor = list(
 		melee = ARMOR_MELEE_FLAK+1,
 		bullet = ARMOR_BALLISTIC_FLAK,
@@ -517,10 +524,11 @@
 	desc = "An plasteel-alloy heavy plate cuirass forged by local hands, it's craftsmanship is remarkable and benefits from the exotic alloy unique to the ghoul stars."
 	icon_state = "knight_hospitaller"
 	item_state = "knight_hospitaller"
+	w_class = ITEM_SIZE_GARGANTUAN
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-100
-	slowdown_general = 0.073
+	slowdown_general = 0.07
 	armor = list(
 		melee = ARMOR_MELEE_FLAK+1,
 		bullet = ARMOR_BALLISTIC_FLAK,
@@ -536,7 +544,7 @@
 	desc = "A heavy set of plated leather overlayn with flak plates to protect against slug rounds and the occasional rock, lighter then standard half-plate but less protective."
 	icon_state = "brigandine"
 	item_state = "brigandine"
-	slowdown_general = 0.065
+	slowdown_general = 0.06
 	armor = list(
 		melee = ARMOR_MELEE_FLAK,
 		bullet = ARMOR_BALLISTIC_FLAK,
@@ -586,11 +594,31 @@
 		bomb = ARMOR_BOMB_TEN+10
 	)
 
+/obj/item/clothing/suit/armor/grim/tribal/carapace
+	name = "tribal armor"
+	desc = "Ritual combat armor worn by the nomadic clansmen predating the colony. This has been forged from carapace..."
+	icon_state = "exile"
+	item_state = "exile"
+	accessories = list(/obj/item/clothing/accessory/armor_plate/carapace)
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-150
+	slowdown_general = 0.045
+	armor = list(
+		melee = ARMOR_MELEE_FLAK+1,
+		bullet = ARMOR_BALLISTIC_FLAK+1,
+		laser = ARMOR_LASER_FLAK+2,
+		energy = ARMOR_ENERGY_TEN+1,
+		bio = ARMOR_BIO_THIRTY+5,
+		rad = ARMOR_RAD_THIRTY+25,
+		bomb = ARMOR_BOMB_TEN+20
+	)
+
 /obj/item/clothing/suit/armor/grim/tribal/plate
 	name = "bone-carapace armor"
 	desc = "Crafted from the bones of a massive local beast forged together with scavenged plasteel, this primitive yet sturdy armor offers surprising resilience against the dangers of the wild."
 	icon_state = "bonearmor"
 	item_state = "bonearmor"
+	w_class = ITEM_SIZE_GARGANTUAN
 	body_parts_covered = LEGS|ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/flaktribal)
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
@@ -615,6 +643,7 @@
 	desc = "Tattered, filthy robes worn by the lowest dregs of society, offering little more than shame and the stink of squalor."
 	icon_state = "slaverobe"
 	item_state = "slaverobe"
+	w_class = ITEM_SIZE_LARGE
 	body_parts_covered = LEGS|ARMS
 	accessories = list(/obj/item/clothing/accessory/armor_plate/paddingheavy)
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
@@ -650,24 +679,24 @@
 		bomb = ARMOR_BOMB_TEN-4
 		)
 
-/obj/item/clothing/suit/armor/grim/pilgrim/servant
+/obj/item/clothing/suit/armor/grim/pilgrim/magister
 	name = "ornate robes"
 	desc = "Elegant clothing for a servant of the imperium..."
 	icon_state = "robes"
-	item_state = "robes_item"
+	item_state = "robes"
 	body_parts_covered = LEGS|ARMS
-	accessories = list(/obj/item/clothing/accessory/armor_plate/paddingheavy)
+	accessories = list(/obj/item/clothing/accessory/armor_plate/flaklamellar)
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
-	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-300
-	slowdown_general = 0.03 // High quality cloth
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-150
+	slowdown_general = 0.04
 	armor = list(
-		melee = ARMOR_MELEE_FLAK-1,
-		bullet = ARMOR_BALLISTIC_FLAK-1,
-		laser = ARMOR_LASER_FLAK-2,
+		melee = ARMOR_MELEE_FLAK,
+		bullet = ARMOR_BALLISTIC_FLAK,
+		laser = ARMOR_LASER_FLAK-1,
 		energy = ARMOR_ENERGY_TEN-3,
-		bio = ARMOR_BIO_THIRTY-15,
-		rad = ARMOR_RAD_THIRTY,
-		bomb = ARMOR_BOMB_TEN
+		bio = ARMOR_BIO_THIRTY,
+		rad = ARMOR_RAD_THIRTY+20,
+		bomb = ARMOR_BOMB_TEN+10
 		)
 
 
@@ -677,7 +706,7 @@
 	icon_state = "male2"
 	item_state = "male2"
 	body_parts_covered = LEGS|ARMS
-	accessories = list(/obj/item/clothing/accessory/armor_plate/flak) // Trader's got monei
+	accessories = list(/obj/item/clothing/accessory/armor_plate/flaklamellar) // Trader's got monei
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE-300
 	slowdown_general = 0.02
@@ -814,6 +843,7 @@
 	desc = "The carapace patrol jacket was once worn by some frontier marshal of an unnamed world... it looks centuries old."
 	icon_state = "towntrench_heavy"
 	item_state = "towntrench_heavy"
+	w_class = ITEM_SIZE_HUGE
 	body_parts_covered = LEGS|ARMS
 	slowdown_general = 0.035 // Light due to missing parts of the armor.
 	accessories = list(/obj/item/clothing/accessory/armor_plate/carapace)

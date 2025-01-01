@@ -80,14 +80,14 @@
 	desc = "An ancient model of a zero-gravity propulsion unit, used by the first pioneers of human space travel. Surprisingly reliable."
 	icon_state = "jetpack-void"
 	item_state =  "jetpack-void"
-	starting_pressure = list(GAS_OXYGEN = 6*ONE_ATMOSPHERE)
+	starting_pressure = list(GAS_OXYGEN = 7*ONE_ATMOSPHERE)
 
 /obj/item/tank/jetpack/oxygen
 	name = "jetpack (oxygen)"
 	desc = "The O'Neill Manufacturing VMU-15-O is a tank-based propulsion unit that uses compressed oxygen for moving in zero-gravity areas. Use with caution."
 	icon_state = "jetpack"
 	item_state = "jetpack"
-	starting_pressure = list(GAS_OXYGEN = 6*ONE_ATMOSPHERE)
+	starting_pressure = list(GAS_OXYGEN = 7*ONE_ATMOSPHERE)
 
 /obj/item/tank/jetpack/carbondioxide
 	name = "jetpack (carbon dioxide)"
@@ -95,7 +95,7 @@
 	distribute_pressure = 0
 	icon_state = "jetpack-black"
 	item_state =  "jetpack-black"
-	starting_pressure = list(GAS_CO2 = 6*ONE_ATMOSPHERE)
+	starting_pressure = list(GAS_CO2 = 7*ONE_ATMOSPHERE)
 
 /obj/item/tank/jetpack/rig
 	name = "jetpack"

@@ -336,7 +336,7 @@
 	name = "lasertag beam"
 	icon_state = "bluelaser"
 	pass_flags = PASS_FLAG_TABLE | PASS_FLAG_GLASS | PASS_FLAG_GRILLE
-	damage = 0
+	damage = 5
 	no_attack_log = TRUE
 	damage_type = DAMAGE_BURN
 
@@ -355,7 +355,7 @@
 	name = "lasertag beam"
 	icon_state = "laser"
 	pass_flags = PASS_FLAG_TABLE | PASS_FLAG_GLASS | PASS_FLAG_GRILLE
-	damage = 0
+	damage = 5
 	no_attack_log = TRUE
 	damage_type = DAMAGE_BURN
 
@@ -472,7 +472,7 @@
 	name = "plasma arc"
 	icon_state = "omnilaser"
 	fire_sound = 'sound/weapons/plasma_cutter.ogg'
-	damage = 35
+	damage = 30
 	armor_penetration = 28
 	edge = TRUE
 	damage_type = DAMAGE_BURN

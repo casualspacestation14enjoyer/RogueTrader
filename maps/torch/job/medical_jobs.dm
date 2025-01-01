@@ -16,7 +16,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 10
+	skill_points = 16
 	min_skill = list(
 		SKILL_BUREAUCRACY = SKILL_TRAINED,
 		SKILL_MEDICAL = SKILL_MASTER,
@@ -46,13 +46,8 @@
 						SKILL_CHEMISTRY = SKILL_MASTER)
 
 	access = list(
-		access_medical, access_morgue, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
-		access_teleporter, access_eva, access_bridge, access_heads,
-		access_chapel_office, access_crematorium, access_chemistry, access_virology, access_aquila,
-		access_cmo, access_surgery, access_RC_announce, access_keycard_auth, access_psychiatrist,
-		access_medical_equip, access_solgov_crew, access_senmed, access_hangar, access_torch_fax, access_radio_comm,
-		access_radio_med
-	)
+		access_dauntless, access_restricted, access_restricted_command, access_mechanicus, access_mechanicus_command, access_medical,
+		access_medical_command, access_magos, access_bridge)
 
 	software_on_spawn = list(/datum/computer_file/program/comm,
 							 /datum/computer_file/program/camera_monitor,
@@ -107,15 +102,15 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 14
+	skill_points = 10
 	min_skill = list(
-		SKILL_VIGOR = SKILL_TRAINED,
+		SKILL_VIGOR = SKILL_EXPERIENCED,
 		SKILL_MEDICAL = SKILL_EXPERIENCED,
 		SKILL_ANATOMY = SKILL_EXPERIENCED,
 		SKILL_CHEMISTRY = SKILL_EXPERIENCED,
-		SKILL_COMBAT = SKILL_TRAINED,
-		SKILL_GUNS = SKILL_TRAINED,
-		SKILL_FORENSICS = SKILL_TRAINED,
+		SKILL_COMBAT = SKILL_EXPERIENCED,
+		SKILL_GUNS = SKILL_EXPERIENCED,
+		SKILL_FORENSICS = SKILL_EXPERIENCED,
 		SKILL_EVA = SKILL_TRAINED
 	)
 
@@ -127,10 +122,8 @@
 						SKILL_CHEMISTRY = SKILL_MASTER)
 
 	access = list(
-		access_medical, access_morgue, access_virology, access_maint_tunnels, access_emergency_storage,
-		access_crematorium, access_chemistry, access_surgery,
-		access_medical_equip, access_solgov_crew, access_senmed, access_radio_med
-	)
+		access_dauntless, access_restricted, access_mechanicus, access_medical,
+		access_medical_command, access_bridge)
 
 	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
 							 /datum/computer_file/program/camera_monitor)
@@ -143,7 +136,7 @@
 	H.voice_in_head(pick(GLOB.lone_thoughts))
 	H.species.weaken_mod = 0.71
 	H.species.stun_mod = 0.71
-	H.species.slowdown = -0.2
+	H.species.slowdown = -0.1
 	if(current_title && (H.mind.role_alt_title in alt_titles))
 		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
 	else
@@ -171,9 +164,9 @@
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/medical/pharmacologis
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/civ)
-	skill_points = 18
+	skill_points = 16
 	min_skill = list(
-		SKILL_MEDICAL = SKILL_TRAINED,
+		SKILL_MEDICAL = SKILL_EXPERIENCED,
 		SKILL_ANATOMY = SKILL_EXPERIENCED,
 		SKILL_CHEMISTRY = SKILL_EXPERIENCED,
 		SKILL_FORENSICS = SKILL_EXPERIENCED,
@@ -185,10 +178,8 @@
 						SKILL_CHEMISTRY = SKILL_MASTER)
 
 	access = list(
-		access_medical, access_maint_tunnels, access_emergency_storage,
-		access_medical_equip, access_solgov_crew, access_chemistry,
-	 	access_virology, access_morgue, access_crematorium, access_radio_med
-	)
+		access_dauntless, access_restricted, access_mechanicus, access_medical,
+		access_medical_command)
 
 /datum/job/pharmacologis/get_description_blurb()
 	return "As the Pharmacologis, you serve alongside the Medicae and Sister Hospitaller, wielding your knowledge of chemistry and biological science to support their sacred work. You are responsible for the formulation of complex medicines, compounds, and stimulants, as well as assisting in advanced surgical procedures when required. Though you are not tasked with direct patient care, your role is critical—ensuring the crew can fight, endure, and survive in the Emperor’s name. Your work stands at the intersection of science and duty, safeguarding the vitality of those who serve the Imperium."
@@ -222,14 +213,14 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 18
+	skill_points = 12
 	min_skill = list(
-		SKILL_VIGOR = SKILL_BASIC,
-		SKILL_MEDICAL = SKILL_TRAINED,
-		SKILL_ANATOMY = SKILL_TRAINED,
+		SKILL_VIGOR = SKILL_TRAINED,
+		SKILL_MEDICAL = SKILL_EXPERIENCED,
+		SKILL_ANATOMY = SKILL_EXPERIENCED,
 		SKILL_CHEMISTRY = SKILL_TRAINED,
 		SKILL_COMBAT = SKILL_BASIC, // Surgery skill overlap
-		SKILL_FORENSICS = SKILL_TRAINED,
+		SKILL_FORENSICS = SKILL_EXPERIENCED,
 	)
 
 	max_skill = list(	SKILL_MEDICAL = SKILL_MASTER,
@@ -238,11 +229,8 @@
 						SKILL_CHEMISTRY = SKILL_MASTER)
 
 	access = list(
-		access_medical, access_morgue, access_maint_tunnels,
-		access_external_airlocks, access_emergency_storage,
-		access_eva, access_surgery, access_medical_equip,
-		access_solgov_crew, access_hangar, access_radio_med
-	)
+		access_dauntless, access_restricted, access_medical,
+		access_medical_command)
 
 	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
 							 /datum/computer_file/program/camera_monitor)
@@ -263,9 +251,9 @@
 		H.make_genestealer()
 		to_chat(H, "<span class='notice'><b><font size=2>You are a genestealer bioform, a unique strain of tyranid genestealer capable of rapid transformation. The swarm considers you to be an abomination, but under the guidance of what you believe to be the true hivemind, you will surely succeed where the others have failed. Everything is connected.</font></b></span>")
 	else if(prob(1))
-		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
-		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
-		spawn(65 SECONDS)
+		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN THIRTY SECONDS</font></b></span>")
+		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN THIRTY SECONDS</font></b></span>")
+		spawn(30 SECONDS)
 		GLOB.cult.add_antagonist(H.mind, ignore_role = 1, do_not_equip = 0)
 		to_chat(H, "<span class='notice'><b><font size=2>You are a heretical cultist loyal to one or more of the Chaos Gods -- unlike the many pretenders you are truly blessed by the warp and can survive encounters that would boil the brains of most mortal men.</font></b></span>")
 	to_chat(H, "<span class='notice'><b><font size=2>You are a [current_title] aboard the Rogue Trader’s vessel, trained to deal with the harsh and unforgiving conditions of both space and hive cities. Your responsibilities include treating battlefield injuries, performing surgeries, and managing the health of the crew. Whether responding to emergencies or ensuring long-term health, your experience in crowded, under-equipped environments has honed your ability to handle crises with efficiency and precision, making you indispensable in the chaos of the void.</font></b></span>")
@@ -291,7 +279,7 @@
 		/datum/mil_rank/civ/civ
 	)
 
-	skill_points = 18
+	skill_points = 16
 	min_skill = list(
 		SKILL_VIGOR = SKILL_BASIC,
 		SKILL_MEDICAL = SKILL_BASIC,
@@ -300,14 +288,10 @@
 		SKILL_GUNS = SKILL_BASIC, // Training from hospitaller
 		SKILL_COMBAT = SKILL_BASIC,
 		SKILL_FORENSICS = SKILL_BASIC,
-	) // No max skill list, they cap at experienced.
+	) // max skill list is currently wip
 
 	access = list(
-		access_medical, access_morgue, access_maint_tunnels,
-		access_external_airlocks, access_emergency_storage,
-		access_surgery, access_medical_equip, access_solgov_crew,
-		access_radio_med
-	)
+		access_dauntless, access_medical)
 
 	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
 							 /datum/computer_file/program/camera_monitor)
@@ -390,7 +374,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 26
+	skill_points = 18
 	min_skill = list( // 41 points
 		SKILL_BUREAUCRACY = SKILL_BASIC, // 1 point
 		SKILL_MEDICAL = SKILL_EXPERIENCED, // 16 points
@@ -400,7 +384,7 @@
 	)
 
 	access = list(
-		access_medical, access_morgue, access_virology, access_maint_tunnels, access_emergency_storage,
+		access_medical, access_medical_command, access_virology, access_maint_tunnels, access_magos,
 		access_crematorium, access_chemistry, access_surgery,
 		access_medical_equip, access_solgov_crew, access_senmed, access_radio_med
 	)

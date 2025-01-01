@@ -1,0 +1,2124 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ag" = (
+/obj/floor_decal/industrial/warning/dust{
+	dir = 4
+	},
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"aH" = (
+/obj/machinery/door/airlock/warhammer/engineering,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"aM" = (
+/obj/floor_decal/corner/black/border{
+	dir = 8
+	},
+/obj/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/techfloor,
+/area/space)
+"aO" = (
+/obj/item/extinguisher/empty,
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"cF" = (
+/obj/structure/grille/warhammer/fence,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/plating,
+/area/space)
+"dE" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"ec" = (
+/obj/structure/bed/chair{
+	dir = 8
+	},
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"eo" = (
+/obj/machinery/atmospherics/pipe/simple/visible/fuel,
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"ew" = (
+/obj/decal/cleanable/liquid_fuel,
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"ey" = (
+/obj/item/clothing/head/helmet/flak/conscript/pdf,
+/obj/item/cell/device/high/laspack,
+/obj/decal/cleanable/cobweb2,
+/obj/structure/closet/warhammer/metal,
+/obj/random/loot/lasbundle,
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"eN" = (
+/obj/structure/grille/warhammer/fence,
+/obj/structure/cable,
+/turf/simulated/floor/plating,
+/area/space)
+"fh" = (
+/obj/structure/grille/warhammer/fence,
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/plating,
+/area/space)
+"fn" = (
+/turf/simulated/floor/tiled/techfloor,
+/area/space)
+"fr" = (
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/fuel{
+	dir = 8
+	},
+/obj/machinery/cell_charger,
+/obj/item/device/flashlight{
+	pixel_x = -13;
+	pixel_y = 3
+	},
+/obj/structure/table/warhammer/rusty_table,
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"gb" = (
+/turf/simulated/floor/warhammer/concrete,
+/area/space)
+"gl" = (
+/obj/machinery/light/small,
+/turf/simulated/floor/warhammer/concrete,
+/area/space)
+"gy" = (
+/obj/structure/barricade/barrels/three,
+/obj/decal/cleanable/dirt,
+/obj/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"hu" = (
+/obj/wallframe_spawn/reinforced,
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"ix" = (
+/obj/floor_decal/corner/black/border,
+/turf/simulated/floor/tiled/techfloor,
+/area/space)
+"iE" = (
+/obj/decal/cleanable/dirt,
+/obj/decal/cleanable/dirt,
+/obj/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"mF" = (
+/obj/machinery/door/blast/gates/right{
+	name = "Main Gate";
+	id_tag = "gate_main"
+	},
+/obj/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/warhammer/concrete,
+/area/space)
+"ne" = (
+/obj/structure/barricade/barrels/three,
+/obj/floor_decal/industrial/hatch/yellow,
+/obj/floor_decal/industrial/warning/dust{
+	dir = 8
+	},
+/obj/decal/cleanable/dirt,
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"nC" = (
+/obj/decal/cleanable/dirt,
+/turf/simulated/floor/warhammer/concrete,
+/area/space)
+"nI" = (
+/obj/decal/cleanable/dirt,
+/obj/item/broken_bottle,
+/turf/simulated/floor/warhammer/concrete,
+/area/space)
+"oG" = (
+/obj/machinery/atmospherics/pipe/simple/visible/fuel{
+	dir = 8
+	},
+/obj/floor_decal/industrial/warning/dust,
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"px" = (
+/obj/floor_decal/corner/black/bordercorner{
+	dir = 8
+	},
+/obj/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/techfloor,
+/area/space)
+"pD" = (
+/obj/floor_decal/corner/black/border{
+	dir = 4
+	},
+/obj/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/techfloor,
+/area/space)
+"pI" = (
+/turf/simulated/wall,
+/area/space)
+"qk" = (
+/obj/floor_decal/corner/black/border{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/space)
+"qH" = (
+/obj/structure/sign/warning/secure_area{
+	pixel_y = 32
+	},
+/turf/simulated/floor/asteroid,
+/area/space)
+"rY" = (
+/obj/structure/hivedecor/floodlight,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/space)
+"sd" = (
+/obj/floor_decal/corner/black/bordercorner,
+/turf/simulated/floor/tiled/techfloor,
+/area/space)
+"sZ" = (
+/obj/floor_decal/industrial/warning/dust{
+	dir = 5
+	},
+/obj/decal/cleanable/liquid_fuel,
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"tf" = (
+/obj/structure/barricade/barrels/four,
+/obj/decal/cleanable/dirt,
+/obj/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"uF" = (
+/obj/structure/sign/warning/high_voltage{
+	pixel_x = -32
+	},
+/turf/simulated/floor/asteroid,
+/area/space)
+"uY" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"vB" = (
+/obj/floor_decal/industrial/warning/dust{
+	dir = 1
+	},
+/obj/decal/cleanable/dirt,
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"wa" = (
+/obj/machinery/atmospherics/pipe/simple/visible/fuel,
+/obj/floor_decal/industrial/warning/dust{
+	dir = 1
+	},
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"wi" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/fuel{
+	dir = 5
+	},
+/obj/machinery/light/small,
+/obj/item/storage/toolbox/electrical{
+	pixel_x = 7;
+	pixel_y = 4
+	},
+/obj/item/cell/high,
+/obj/structure/table/warhammer/rusty_table,
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"wt" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/button/switch{
+	pixel_x = -32;
+	name = "Gate Switch";
+	id_tag = "gate_main"
+	},
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"wN" = (
+/obj/decal/cleanable/dirt,
+/obj/decal/cleanable/dirt,
+/turf/simulated/floor/warhammer/concrete,
+/area/space)
+"xj" = (
+/obj/structure/reagent_dispensers/fueltank,
+/obj/floor_decal/industrial/hatch/yellow,
+/obj/floor_decal/industrial/warning/dust{
+	dir = 4
+	},
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"xz" = (
+/turf/simulated/mineral,
+/area/space)
+"xE" = (
+/obj/machinery/atmospherics/pipe/simple/visible/fuel,
+/turf/simulated/wall,
+/area/space)
+"xK" = (
+/obj/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/space)
+"xQ" = (
+/turf/simulated/floor/asteroid,
+/area/space)
+"zj" = (
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"zD" = (
+/obj/structure/barricade/barrels,
+/obj/decal/cleanable/dirt,
+/obj/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"zK" = (
+/obj/machinery/light/small{
+	dir = 1;
+	icon_state = "bulb1"
+	},
+/turf/simulated/floor/warhammer/concrete,
+/area/space)
+"zY" = (
+/obj/machinery/atmospherics/pipe/simple/visible/fuel,
+/turf/simulated/wall/r_wall,
+/area/space)
+"Af" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/wallframe_spawn/reinforced,
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"Aw" = (
+/obj/machinery/atmospherics/pipe/simple/visible/fuel,
+/obj/floor_decal/industrial/warning/dust{
+	dir = 4
+	},
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"AI" = (
+/obj/decal/cleanable/dirt,
+/obj/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/techfloor,
+/area/space)
+"AW" = (
+/turf/unsimulated/mineral,
+/area/space)
+"Ba" = (
+/obj/machinery/power/port_gen/pacman/super,
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"Bj" = (
+/obj/structure/grille/warhammer/fence,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/plating,
+/area/space)
+"Bz" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"CO" = (
+/obj/machinery/atmospherics/pipe/simple/visible/fuel{
+	dir = 10
+	},
+/obj/floor_decal/industrial/warning/dust{
+	dir = 4
+	},
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"Dn" = (
+/obj/structure/grille/warhammer/fence,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/plating,
+/area/space)
+"DJ" = (
+/obj/structure/hivedecor/vehicle{
+	dir = 1
+	},
+/turf/simulated/floor/warhammer/concrete,
+/area/space)
+"DW" = (
+/obj/machinery/atmospherics/pipe/simple/visible/fuel,
+/turf/simulated/floor/asteroid,
+/area/space)
+"ED" = (
+/obj/structure/hivedecor/xenos/artifact/fuelpump,
+/obj/machinery/atmospherics/pipe/simple/visible/fuel{
+	dir = 5
+	},
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"Fq" = (
+/obj/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/techfloor,
+/area/space)
+"Fr" = (
+/obj/floor_decal/industrial/warning/dust{
+	dir = 8
+	},
+/obj/decal/cleanable/dirt,
+/obj/decal/cleanable/dirt,
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"FB" = (
+/obj/machinery/atmospherics/pipe/simple/visible/fuel{
+	dir = 10
+	},
+/turf/simulated/wall,
+/area/space)
+"FK" = (
+/obj/structure/sign/warning/docking_area{
+	pixel_y = 31
+	},
+/turf/simulated/floor/asteroid,
+/area/space)
+"FR" = (
+/obj/machinery/door/blast/gates{
+	name = "Main Gate";
+	id_tag = "gate_main"
+	},
+/obj/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/warhammer/concrete,
+/area/space)
+"GA" = (
+/obj/decal/cleanable/dirt,
+/obj/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"Hi" = (
+/obj/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/ramp/bottom,
+/area/space)
+"Hk" = (
+/obj/decal/cleanable/dirt,
+/obj/floor_decal/industrial/hatch/yellow,
+/obj/structure/closet/crate/warhammer/freezer,
+/obj/item/reagent_containers/food/snacks/meat,
+/obj/item/reagent_containers/food/snacks/meat,
+/obj/item/reagent_containers/food/snacks/meat,
+/obj/item/reagent_containers/food/snacks/meat,
+/obj/item/reagent_containers/food/snacks/meat,
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"HH" = (
+/obj/floor_decal/industrial/warning/dust{
+	dir = 9
+	},
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"HV" = (
+/obj/decal/cleanable/blood/oil,
+/turf/simulated/floor/warhammer/concrete,
+/area/space)
+"Ik" = (
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"IF" = (
+/obj/machinery/door/airlock/warhammer/engineering,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"Ks" = (
+/obj/floor_decal/industrial/hatch/yellow,
+/obj/structure/closet/crate/warhammer/cargo,
+/obj/item/stack/material/platinum/ten,
+/obj/item/stack/material/platinum/ten,
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"KG" = (
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"MB" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"NG" = (
+/obj/structure/reagent_dispensers/fueltank,
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"Oi" = (
+/obj/structure/grille/warhammer/fence,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/plating,
+/area/space)
+"On" = (
+/obj/item/stack/material/gold/ten,
+/obj/floor_decal/industrial/warning/dust{
+	dir = 9
+	},
+/obj/structure/closet/crate/warhammer/cargo,
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"Ow" = (
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/space)
+"Pp" = (
+/obj/floor_decal/corner/black/border{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/space)
+"Py" = (
+/obj/machinery/recharge_station,
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"PP" = (
+/turf/simulated/wall/r_wall,
+/area/space)
+"Rh" = (
+/obj/floor_decal/industrial/hatch/yellow,
+/obj/floor_decal/industrial/warning/dust{
+	dir = 4
+	},
+/obj/random/loot/lootartifacts,
+/obj/structure/closet/crate/warhammer/biohazard,
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"Rj" = (
+/obj/floor_decal/corner/black/border{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/space)
+"RQ" = (
+/obj/floor_decal/corner/black/border{
+	dir = 1
+	},
+/obj/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/techfloor,
+/area/space)
+"RR" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/warhammer/concrete,
+/area/space)
+"RW" = (
+/obj/floor_decal/industrial/warning/dust{
+	dir = 5
+	},
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"Sk" = (
+/obj/machinery/atmospherics/pipe/simple/visible/fuel{
+	dir = 9
+	},
+/obj/floor_decal/industrial/warning/dust{
+	dir = 6
+	},
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"Sm" = (
+/obj/structure/table/warhammer/rusty_table,
+/obj/item/paper_bin,
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"Sr" = (
+/obj/machinery/light/small{
+	dir = 4;
+	icon_state = "bulb1"
+	},
+/obj/structure/filingcabinet/chestdrawer,
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"Su" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/floor_decal/industrial/warning/dust,
+/obj/floor_decal/industrial/warning/dust{
+	dir = 1
+	},
+/turf/simulated/floor/warhammer/concrete,
+/area/space)
+"Sz" = (
+/obj/structure/sign/warning/high_voltage{
+	pixel_x = -32
+	},
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"To" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"TM" = (
+/obj/machinery/atmospherics/portables_connector,
+/obj/machinery/portable_atmospherics/canister/empty,
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"Us" = (
+/obj/decal/cleanable/dirt,
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"Ux" = (
+/obj/structure/table/warhammer/rusty_table,
+/obj/item/paperwork,
+/obj/item/pen,
+/obj/machinery/door/window/westright,
+/obj/machinery/door/window/eastleft,
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"Vk" = (
+/obj/floor_decal/industrial/warning/dust{
+	dir = 4
+	},
+/obj/decal/cleanable/dirt,
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"Vn" = (
+/obj/decal/cleanable/dirt,
+/obj/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/space)
+"We" = (
+/obj/machinery/door/blast/gates/middle{
+	name = "Main Gate";
+	id_tag = "gate_main"
+	},
+/obj/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/warhammer/concrete,
+/area/space)
+"Wx" = (
+/obj/floor_decal/industrial/warning/dust{
+	dir = 1
+	},
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"WZ" = (
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/obj/machinery/power/apc/high{
+	dir = 8;
+	pixel_x = -18
+	},
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"XO" = (
+/turf/simulated/floor/tiled/ramp/bottom,
+/area/space)
+"Zk" = (
+/obj/floor_decal/industrial/warning/dust{
+	dir = 8
+	},
+/obj/structure/hivedecor/vehicle,
+/obj/decal/cleanable/dirt,
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+"ZJ" = (
+/obj/structure/barricade/barrels/four,
+/obj/floor_decal/industrial/hatch/yellow,
+/obj/floor_decal/industrial/warning/dust{
+	dir = 8
+	},
+/obj/decal/cleanable/dirt,
+/turf/simulated/floor/exoplanet/concrete,
+/area/space)
+
+(1,1,1) = {"
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xz
+AW
+"}
+(2,1,1) = {"
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xz
+xz
+AW
+"}
+(3,1,1) = {"
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+Ik
+Bz
+To
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+Ik
+Bz
+To
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xz
+xz
+xz
+AW
+"}
+(4,1,1) = {"
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+uY
+PP
+fh
+Bj
+Bj
+Bj
+Bj
+Bj
+Bj
+Bj
+Bj
+Bj
+Bj
+Bj
+Bj
+Oi
+PP
+fh
+Bj
+Bj
+Bj
+Bj
+Bj
+Bj
+Bj
+Bj
+Bj
+Bj
+Bj
+Bj
+eN
+PP
+xz
+xz
+xz
+AW
+"}
+(5,1,1) = {"
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+zj
+cF
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+uF
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xz
+xz
+xz
+AW
+"}
+(6,1,1) = {"
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+Dn
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xz
+xz
+xz
+AW
+"}
+(7,1,1) = {"
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+Dn
+xQ
+xQ
+xQ
+xQ
+rY
+aM
+aM
+aM
+qk
+qk
+aM
+aM
+aM
+aM
+aM
+aM
+qk
+qk
+qk
+rY
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xz
+xz
+AW
+"}
+(8,1,1) = {"
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+Dn
+xQ
+xQ
+xQ
+xQ
+RQ
+xK
+Ow
+xK
+xK
+xK
+xK
+xK
+xK
+xK
+Ow
+xK
+xK
+Ow
+xK
+ix
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xz
+xz
+xz
+AW
+"}
+(9,1,1) = {"
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+Dn
+xQ
+xQ
+xQ
+xQ
+RQ
+xK
+fn
+Fq
+fn
+fn
+fn
+fn
+fn
+fn
+Fq
+Fq
+Fq
+Fq
+xK
+ix
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xz
+xz
+AW
+"}
+(10,1,1) = {"
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+Dn
+xQ
+xQ
+xQ
+xQ
+Pp
+Ow
+Fq
+fn
+fn
+fn
+fn
+Fq
+AI
+AI
+AI
+fn
+Fq
+Fq
+Ow
+px
+XO
+nC
+gb
+gb
+nC
+nC
+xQ
+xQ
+xQ
+xQ
+xQ
+xz
+xz
+AW
+"}
+(11,1,1) = {"
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+Dn
+xQ
+xQ
+xQ
+xQ
+RQ
+Ow
+Fq
+fn
+fn
+Fq
+Fq
+fn
+fn
+fn
+fn
+Fq
+fn
+Fq
+Ow
+AI
+Hi
+nC
+nC
+nC
+gb
+gb
+HH
+Fr
+Zk
+xQ
+xz
+xz
+xz
+AW
+"}
+(12,1,1) = {"
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+Dn
+xQ
+xQ
+xQ
+xQ
+RQ
+xK
+fn
+fn
+Fq
+Fq
+Fq
+Fq
+Fq
+Fq
+Fq
+Fq
+fn
+Fq
+Ow
+AI
+Hi
+nC
+gb
+nC
+nC
+nC
+Wx
+Us
+Us
+xQ
+xQ
+xz
+xz
+AW
+"}
+(13,1,1) = {"
+xQ
+xQ
+xQ
+pI
+pI
+pI
+pI
+pI
+xQ
+xQ
+Dn
+xQ
+xQ
+xQ
+xQ
+RQ
+xK
+Fq
+fn
+Fq
+fn
+Fq
+fn
+fn
+fn
+fn
+AI
+fn
+fn
+xK
+Fq
+Hi
+nC
+gb
+gb
+gb
+nC
+Wx
+Us
+KG
+xQ
+xz
+xz
+xz
+AW
+"}
+(14,1,1) = {"
+xQ
+xQ
+xQ
+pI
+Ba
+KG
+WZ
+pI
+xQ
+xQ
+Dn
+xQ
+xQ
+xQ
+xQ
+RQ
+xK
+Fq
+Fq
+Fq
+fn
+Fq
+AI
+Fq
+Fq
+Fq
+AI
+AI
+fn
+xK
+sd
+XO
+nC
+nI
+gb
+gb
+wN
+vB
+tf
+zD
+xQ
+xz
+xz
+xz
+AW
+"}
+(15,1,1) = {"
+xQ
+xQ
+xQ
+pI
+NG
+KG
+uY
+pI
+xQ
+xQ
+Dn
+xQ
+xQ
+xQ
+xQ
+Pp
+xK
+Fq
+Fq
+AI
+fn
+fn
+fn
+Fq
+Fq
+fn
+fn
+AI
+AI
+xK
+ix
+xQ
+pI
+FK
+gb
+nC
+nC
+vB
+Us
+Us
+xQ
+xQ
+xz
+xz
+AW
+"}
+(16,1,1) = {"
+xQ
+xQ
+xQ
+pI
+TM
+eo
+wi
+pI
+xQ
+xQ
+Dn
+xQ
+xQ
+xQ
+xQ
+Pp
+xK
+xK
+xK
+xK
+xK
+Ow
+Ow
+Ow
+Ow
+Ow
+Ow
+xK
+Vn
+xK
+ix
+xQ
+xQ
+xQ
+gb
+gb
+gb
+RW
+xj
+Rh
+xQ
+xQ
+xQ
+xz
+AW
+"}
+(17,1,1) = {"
+xQ
+xQ
+xQ
+pI
+Py
+MB
+fr
+Af
+Bz
+Bz
+Oi
+xQ
+xQ
+xQ
+xQ
+rY
+Rj
+pD
+pD
+pD
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+Rj
+pD
+pD
+Rj
+rY
+xQ
+xQ
+xQ
+gb
+gb
+gb
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xz
+AW
+"}
+(18,1,1) = {"
+xQ
+xQ
+xQ
+pI
+pI
+aH
+FB
+xE
+DW
+zY
+zY
+zY
+DW
+DW
+DW
+DW
+DW
+DW
+DW
+DW
+DW
+wa
+eo
+ED
+KG
+oG
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+gb
+nC
+nC
+xQ
+xQ
+xQ
+xQ
+xz
+xz
+xz
+AW
+"}
+(19,1,1) = {"
+xQ
+xQ
+xQ
+xQ
+KG
+uY
+Sz
+xQ
+gb
+gb
+PP
+gb
+gb
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+Wx
+ew
+KG
+KG
+oG
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+nC
+nC
+nC
+On
+ne
+ZJ
+xz
+xz
+xz
+xz
+AW
+"}
+(20,1,1) = {"
+xQ
+xQ
+xQ
+xQ
+xQ
+uY
+xQ
+xQ
+gb
+gb
+PP
+gb
+gb
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+Wx
+ew
+ew
+aO
+oG
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+nC
+gb
+nC
+vB
+GA
+gy
+xz
+xz
+xz
+xz
+AW
+"}
+(21,1,1) = {"
+xQ
+xQ
+xQ
+xQ
+xQ
+uY
+xQ
+gb
+gb
+gl
+PP
+zK
+gb
+gb
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+sZ
+ag
+CO
+Aw
+Sk
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+gb
+gb
+nC
+Wx
+KG
+Us
+xz
+xz
+xz
+xz
+AW
+"}
+(22,1,1) = {"
+gb
+gb
+gb
+gb
+gb
+Su
+gb
+gb
+gb
+gb
+FR
+gb
+gb
+gb
+gb
+gb
+gb
+gb
+gb
+gb
+DJ
+gb
+gb
+gb
+gb
+gb
+gb
+gb
+gb
+gb
+gb
+gb
+gb
+nC
+nC
+gb
+nC
+vB
+GA
+Ks
+xz
+xz
+xz
+xz
+AW
+"}
+(23,1,1) = {"
+gb
+gb
+gb
+gb
+gb
+Su
+gb
+gb
+gb
+gb
+We
+gb
+gb
+gb
+gb
+gb
+gb
+gb
+gb
+HV
+gb
+gb
+gb
+gb
+gb
+gb
+gb
+gb
+gb
+gb
+nC
+nC
+nC
+nC
+nC
+nC
+nC
+Wx
+Hk
+iE
+xQ
+xz
+xz
+xz
+AW
+"}
+(24,1,1) = {"
+gb
+gb
+gb
+gb
+gb
+Su
+gb
+gb
+gb
+gb
+mF
+gb
+gb
+gb
+gb
+gb
+gb
+gb
+gb
+HV
+HV
+gb
+gb
+gb
+gb
+gb
+gb
+gb
+gb
+gb
+gb
+nC
+nC
+nC
+nC
+nC
+gb
+RW
+ag
+Vk
+xQ
+xz
+xz
+xz
+AW
+"}
+(25,1,1) = {"
+xQ
+xQ
+xQ
+xQ
+xQ
+uY
+xQ
+gb
+gb
+gb
+PP
+PP
+hu
+Ux
+PP
+qH
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xz
+xz
+xz
+AW
+"}
+(26,1,1) = {"
+xQ
+xQ
+xQ
+xQ
+xQ
+zj
+Bz
+Bz
+RR
+RR
+IF
+wt
+dE
+ec
+PP
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xz
+xz
+AW
+"}
+(27,1,1) = {"
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+xQ
+gb
+gb
+PP
+ey
+Sr
+Sm
+PP
+xQ
+xQ
+xQ
+xz
+xz
+xQ
+xQ
+xQ
+xz
+xz
+xz
+xQ
+xz
+xz
+xz
+xz
+xQ
+xQ
+xQ
+xz
+xz
+xz
+xQ
+xQ
+xQ
+xQ
+xz
+xz
+xz
+AW
+"}
+(28,1,1) = {"
+xQ
+xz
+xQ
+xQ
+xQ
+xQ
+xz
+xz
+xz
+PP
+PP
+PP
+PP
+PP
+PP
+xQ
+xz
+xQ
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xQ
+xQ
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+AW
+"}
+(29,1,1) = {"
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+xz
+AW
+"}
+(30,1,1) = {"
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+"}

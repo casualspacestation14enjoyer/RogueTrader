@@ -42,15 +42,15 @@
 	persistent = TRUE
 	generic_filth = TRUE
 
-/obj/effect/decal/cleanable/poo/Initialize()
+/obj/decal/cleanable/poo/Initialize()
 	. = ..()
 	create_reagents(5)
 	reagents.add_reagent(/datum/reagent/toxin/poo,5)
-	for(var/obj/effect/decal/cleanable/poo/shit in src.loc)
+	for(var/obj/decal/cleanable/poo/shit in src.loc)
 		if(shit != src)
 			qdel(shit)
 
-/obj/effect/decal/cleanable/poo/Crossed(AM as mob|obj)
+/obj/decal/cleanable/poo/Crossed(AM as mob|obj)
 	if (istype(AM, /mob/living/carbon))
 		var/mob/living/carbon/M =	AM
 
@@ -74,7 +74,7 @@
 	playsound(src.loc, "sound/effects/squishy.ogg", 40, 1)
 	var/turf/T = src.loc
 	if(!istype(T, /turf/space))
-		new /obj/effect/decal/cleanable/poo(T)
+		new /obj/decal/cleanable/poo(T)
 	qdel(src)
 
 //SHIT
@@ -88,7 +88,7 @@
 
 /datum/reagent/toxin/poo/touch_turf(turf/T)
 	if(!istype(T, /turf/space))
-		new /obj/effect/decal/cleanable/poo(T)
+		new /obj/decal/cleanable/poo(T)
 	qdel(src)
 
 //URINE
@@ -175,7 +175,7 @@
 	name = "vomit"
 	desc = "Gosh, how unpleasant."
 	gender = PLURAL
-	icon = 'icons/effects/blood.dmi'
+	icon = 'icons/effects/blood2.dmi'
 	icon_state = "vomittox_1"
 	random_icon_states = list("vomittox_1", "vgibup1", "vgibbl1", "vgibbl4")
 	persistent = TRUE
@@ -190,6 +190,16 @@
 
 /obj/decal/cleanable/vomit/on_update_icon()
 	color = reagents.get_color()
+
+/obj/decal/cleanable/vomitold
+	name = "vomit"
+	desc = "Gosh, how unpleasant."
+	gender = PLURAL
+	icon = 'icons/effects/pooeffect.dmi'
+	icon_state = "vomit1"
+	random_icon_states = list("vomit1", "vomit2", "vomit3")
+	persistent = TRUE
+	generic_filth = TRUE
 
 /obj/decal/cleanable/tomato_smudge
 	name = "tomato smudge"

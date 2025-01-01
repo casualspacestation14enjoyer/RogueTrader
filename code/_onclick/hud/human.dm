@@ -251,6 +251,9 @@
 	mymob.pain = new /obj/screen/fullscreen/pain( null )
 	hud_elements |= mymob.pain
 
+	mymob.noise2 = new /obj/screen/fullscreen/noise2( null )
+	hud_elements |= mymob.noise2
+
 	mymob.zone_sel = new /obj/screen/zone_sel( null )
 	mymob.zone_sel.icon = ui_style
 	mymob.zone_sel.color = ui_color

@@ -23,9 +23,9 @@
 	return list(/obj/item/tank/oxygen_emergency = 2,
 				/obj/item/clothing/mask/breath = 2,
 				/obj/item/storage/toolbox/emergency,
-				/obj/item/inflatable/wall = 2,
+				/obj/item/inflatable/wall = 1,
 				/obj/item/device/oxycandle,
-				/obj/item/storage/med_pouch/oxyloss = 2,
+				/obj/item/storage/med_pouch/oxyloss = 1,
 				/obj/item/clothing/suit/space/emergency,
 				/obj/item/clothing/head/helmet/space/emergency
 	)
@@ -112,7 +112,6 @@
 
 /obj/structure/closet/radiation/WillContain()
 	return list(
-		/obj/item/storage/med_pouch/radiation = 2,
 		/obj/item/clothing/suit/radiation,
 		/obj/item/clothing/head/radiation,
 		/obj/item/clothing/suit/radiation,
@@ -163,7 +162,6 @@
 /obj/structure/closet/hydrant/WillContain()
 	return list(
 		/obj/item/inflatable/door = 2,
-		/obj/item/storage/med_pouch/burn = 2,
 		/obj/item/clothing/mask/gas/half,
 		/obj/item/storage/backpack/dufflebag/firefighter
 		)
@@ -183,8 +181,7 @@
 
 /obj/structure/closet/medical_wall/filled/WillContain()
 	return list(
-		/obj/random/firstaid,
-		/obj/random/medical/lite = 12)
+		/obj/random/medical/lite = 4)
 
 /obj/structure/closet/toolcloset/excavation/awaysite //no teleport beacons
 	name = "excavation equipment closet"

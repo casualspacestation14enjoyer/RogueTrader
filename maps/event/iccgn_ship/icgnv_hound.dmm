@@ -125,7 +125,6 @@
 	check_arrest = 0;
 	check_records = 0;
 	enabled = 0;
-	req_access = list("ACCESS_SYNDICATE")
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/map_template/icgnv_hound)
@@ -159,7 +158,6 @@
 /area/map_template/icgnv_hound)
 "lj" = (
 /obj/machinery/porta_turret{
-	req_access = list("ACCESS_SYNDICATE")
 	},
 /turf/simulated/floor/plating{
 	map_airless = 1
@@ -414,7 +412,6 @@
 /obj/machinery/door/window/eastleft{
 	autoset_access = 0;
 	dir = 1;
-	req_access = list("ACCESS_SYNDICATE")
 	},
 /obj/floor_decal/techfloor,
 /turf/simulated/floor/tiled/techfloor,
@@ -631,8 +628,7 @@
 	frequency = 1380;
 	id_tag = "icgnv_hound_shuttle";
 	pixel_x = -24;
-	pixel_y = 32;
-	req_access = list("ACCESS_SYNDICATE");
+	pixel_y = 32;;
 	tag_exterior_sensor = "icgnv_hound_shuttle_exterior_sensor"
 	},
 /obj/floor_decal/techfloor{
@@ -894,7 +890,6 @@
 	master_tag = "rescue_shuttle";
 	name = "interior access button";
 	pixel_x = 24;
-	req_access = list("ACCESS_CENT_SPECOPS")
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1

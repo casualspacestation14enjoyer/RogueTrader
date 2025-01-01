@@ -67,10 +67,10 @@
 
 /obj/structure/closet/l3closet/scientist/multi/WillContain()
 	return MERGE_ASSOCS_WITH_NUM_VALUES(..(), list(
-		/obj/item/clothing/head/bio_hood/scientist = 5,
-		/obj/item/clothing/suit/armor/grim/bio_suit/scientist = 5,
-		/obj/item/clothing/mask/gas = 5,
-		/obj/item/tank/oxygen_emergency_double = 5,
+		/obj/item/clothing/head/bio_hood/scientist = 4,
+		/obj/item/clothing/suit/armor/grim/bio_suit/scientist = 4,
+		/obj/item/clothing/mask/gas = 4,
+		/obj/item/tank/oxygen_emergency_double = 2,
 	))
 
 /obj/structure/closet/l3closet/command

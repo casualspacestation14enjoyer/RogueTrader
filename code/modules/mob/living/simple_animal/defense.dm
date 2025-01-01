@@ -99,7 +99,7 @@
 		if (stat == DEAD)
 			USE_FEEDBACK_FAILURE("\The [src] is dead, medical items won't bring \him back to life.")
 			return TRUE
-		if (health >= maxHealth)
+		if (health >= maxhealth)
 			USE_FEEDBACK_FAILURE("\The [src] doesn't need any healing.")
 			return TRUE
 		var/obj/item/stack/medical/medical = tool

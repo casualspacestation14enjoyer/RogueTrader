@@ -197,6 +197,7 @@
 
 /obj/structure/flora/ausbushes/meatshroom
 	name = "meatshroom"
+	icon = 'icons/obj/flora/ausflora2.dmi'
 	icon_state = "meatshroom1"
 
 /obj/structure/flora/ausbushes/meatshroom/New()
@@ -205,6 +206,7 @@
 
 /obj/structure/flora/ausbushes/lrock
 	name = "rock"
+	icon = 'icons/obj/flora/ausflora2.dmi'
 	icon_state = "lrock1"
 
 /obj/structure/flora/ausbushes/lrock/New()
@@ -213,6 +215,7 @@
 
 /obj/structure/flora/ausbushes/rock
 	name = "rock"
+	icon = 'icons/obj/flora/ausflora2.dmi'
 	icon_state = "rock1"
 
 /obj/structure/flora/ausbushes/rock/New()
@@ -220,6 +223,7 @@
 	icon_state = "rock[rand(1, 5)]"
 
 /obj/structure/flora/ausbushes/busha
+	icon = 'icons/obj/flora/ausflora2.dmi'
 	icon_state = "busha1"
 
 /obj/structure/flora/ausbushes/busha/New()
@@ -227,6 +231,7 @@
 	icon_state = "busha[rand(1, 3)]"
 
 /obj/structure/flora/ausbushes/bushab
+	icon = 'icons/obj/flora/ausflora2.dmi'
 	icon_state = "bushab1"
 
 /obj/structure/flora/ausbushes/bushab/New()
@@ -234,6 +239,7 @@
 	icon_state = "bushab[rand(1, 3)]"
 
 /obj/structure/flora/ausbushes/minishroom
+	icon = 'icons/obj/flora/ausflora2.dmi'
 	icon_state = "minishroom"
 
 /obj/structure/flora/ausbushes/minishroom/New()

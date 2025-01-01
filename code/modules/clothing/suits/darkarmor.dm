@@ -6,11 +6,12 @@
 	desc = "The sturdy armour, issued to Adeptus Astartes Scouts for their service until they prove themselves worthy to become full-fledged Battlebrothers."
 	icon_state = "fharmor"
 	item_state = "fharmor"
+	w_class = ITEM_SIZE_GARGANTUAN
 	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
 	body_parts_covered = LEGS|ARMS|FULL_TORSO // Remember to make power gloves and booties.
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+600
-	slowdown_general = 0.11
+	slowdown_general = 0.10
 	armor = list(
 		melee = ARMOR_MELEE_POWER_ARM-2,
 		bullet = ARMOR_BALLISTIC_POWER_ARMOUR-1,
@@ -581,12 +582,13 @@
 /obj/item/clothing/suit/armor/orkarmor
 	name = "'Eavy Metal Ork Armor"
 	desc = "Scavenged 'eavy bitz to keep ya' krumpin' longa'!"
+	w_class = ITEM_SIZE_GARGANTUAN
 	icon_state = "ork_m_armor"
 	item_state = "ork_m_armor" // Make sure orks ignore cold, heat, pressure and vacuum.
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+50
-	slowdown_general = 0.4 // Make sure to set ork speed to match this slowdown. So it only slows down non-orks wearing it.
+	slowdown_general = 0.3 // Make sure to set ork speed to match this slowdown. So it only slows down non-orks wearing it.
 	armor = list(
 		melee = ARMOR_MELEE_FLAK+2,
 		bullet = ARMOR_BALLISTIC_FLAK+1,
@@ -671,7 +673,7 @@
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+50
-	slowdown_general = 0.4
+	slowdown_general = 0.3
 	armor = list(
 		melee = ARMOR_MELEE_FLAK+2,
 		bullet = ARMOR_BALLISTIC_FLAK+3,
@@ -688,6 +690,7 @@
 	desc = "The impeccable yellow and brown armor of the Tau warrior caste"
 	icon_state = "fw_armor"
 	item_state = "fw_armor"
+	w_class = ITEM_SIZE_GARGANTUAN
 	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
@@ -712,7 +715,7 @@
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+700
-	slowdown_general = 0.125
+	slowdown_general = 0.12
 	armor = list(
 		melee = ARMOR_MELEE_POWER_ARM-1,
 		bullet = ARMOR_BALLISTIC_POWER_ARMOUR-1,
@@ -730,7 +733,7 @@
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE+500
-	slowdown_general = 0.09
+	slowdown_general = 0.1
 	armor = list(
 		melee = ARMOR_MELEE_POWER_ARM-3,
 		bullet = ARMOR_BALLISTIC_POWER_ARMOUR-3,
@@ -747,6 +750,7 @@
 	desc = "A ancient armor. It looks like it's made from Thermoplas in a scale like pattern."
 	icon_state = "eldarmor"
 	item_state = "eldarmor"
+	w_class = ITEM_SIZE_GARGANTUAN
 	body_parts_covered = LEGS|ARMS|FULL_TORSO
 	max_pressure_protection = LIGHT_RIG_MAX_PRESSURE
 	slowdown_general = 0.1 // Marshal's carapace is 0.11

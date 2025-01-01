@@ -2,14 +2,14 @@
 /mob/living/carbon/human/updatehealth()
 
 	if(status_flags & GODMODE)
-		health = maxHealth
+		health = maxhealth
 		set_stat(CONSCIOUS)
 		return
 
-	health = maxHealth - getBrainLoss()
+	health = maxhealth - getBrainLoss()
 
 	//TODO: fix husking
-	if(((maxHealth - getFireLoss()) < config.health_threshold_dead) && stat == DEAD)
+	if(((maxhealth - getFireLoss()) < config.health_threshold_dead) && stat == DEAD)
 		ChangeToHusk()
 	return
 

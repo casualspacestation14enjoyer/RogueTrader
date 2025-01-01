@@ -52,7 +52,7 @@ TORCH_ESCAPE_POD(17)
 //Petrov
 
 /datum/shuttle/autodock/ferry/petrov
-	name = "Petrov"
+	name = "Mowteng"
 	warmup_time = 10
 	dock_target = "petrov_shuttle_airlock"
 	waypoint_station = "nav_petrov_start"
@@ -348,13 +348,13 @@ TORCH_ESCAPE_POD(17)
 
 /datum/shuttle/autodock/overmap/exploration_shuttle
 	name = "Charon"
-	move_time = 60
+	move_time = 30
 	shuttle_area = list(/area/exploration_shuttle/cockpit, /area/exploration_shuttle/atmos, /area/exploration_shuttle/power, /area/exploration_shuttle/crew, /area/exploration_shuttle/cargo, /area/exploration_shuttle/airlock, /area/exploration_shuttle/medical, /area/exploration_shuttle/fuel)
 	dock_target = "charon_shuttle"
 	current_location = "nav_hangar_charon"
 	landmark_transition = "nav_transit_charon"
 	range = 1
-	fuel_consumption = 4
+	fuel_consumption = 3
 	logging_home_tag = "nav_hangar_charon"
 	logging_access = access_expedition_shuttle_helm
 	ceiling_type = /turf/simulated/floor/shuttle_ceiling/torch
@@ -392,7 +392,7 @@ TORCH_ESCAPE_POD(17)
 /datum/shuttle/autodock/overmap/guppy
 	name = "Guppy"
 	warmup_time = 5
-	move_time = 20
+	move_time = 10
 	shuttle_area = /area/guppy_hangar/start
 	dock_target ="guppy_shuttle"
 	current_location = "nav_hangar_guppy"
@@ -402,7 +402,7 @@ TORCH_ESCAPE_POD(17)
 	fuel_consumption = 2
 	logging_home_tag = "nav_hangar_guppy"
 	logging_access = access_guppy_helm
-	skill_needed = SKILL_UNSKILLED
+	skill_needed = SKILL_BASIC
 	ceiling_type = /turf/simulated/floor/shuttle_ceiling/torch
 
 /obj/shuttle_landmark/torch/hangar/guppy
@@ -437,12 +437,12 @@ TORCH_ESCAPE_POD(17)
 
 /datum/shuttle/autodock/overmap/aquila
 	name = "Aquila"
-	move_time = 50
+	move_time = 30
 	shuttle_area = list(/area/aquila/cockpit, /area/aquila/power, /area/aquila/storage, /area/aquila/suits, /area/aquila/air, /area/aquila/crew, /area/aquila/medical, /area/aquila/airlock)
 	current_location = "nav_hangar_aquila"
 	landmark_transition = "nav_transit_aquila"
 	dock_target = "aquila_shuttle"
-	range = 2
+	range = 1
 	logging_home_tag = "nav_hangar_aquila"
 	logging_access = access_aquila_helm
 	ceiling_type = /turf/simulated/floor/shuttle_ceiling/torch

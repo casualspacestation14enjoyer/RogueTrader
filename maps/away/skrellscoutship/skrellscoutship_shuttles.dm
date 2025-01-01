@@ -16,7 +16,7 @@
 	moving_state = "ship_moving"
 	fore_dir = WEST
 	color = "#ff00ff"
-	vessel_mass = 1000
+	vessel_mass = 1500
 	vessel_size = SHIP_SIZE_SMALL
 	initial_restricted_waypoints = list(
 		"Tau Shuttle" = list("nav_tauscoutsh_dock")
@@ -32,7 +32,7 @@
 	shuttle = "Tau Shuttle"
 	fore_dir = WEST
 	color = "#880088"
-	vessel_mass = 750
+	vessel_mass = 450
 	vessel_size = SHIP_SIZE_TINY
 
 /datum/shuttle/autodock/overmap/tauscoutship
@@ -52,7 +52,7 @@
 	defer_initialisation = TRUE
 	knockdown = FALSE
 	flags = SHUTTLE_FLAGS_PROCESS
-	skill_needed = SKILL_UNSKILLED
+	skill_needed = SKILL_TRAINED
 	ceiling_type = /turf/simulated/floor/shuttle_ceiling/skrell
 
 /obj/shuttle_landmark/tauscoutship/start
@@ -63,11 +63,11 @@
 	name = "Tau Shuttle"
 	warmup_time = 5
 	current_location = "nav_tauscoutsh_dock"
-	range = 2
+	range = 1
 	shuttle_area = /area/ship/tauscoutshuttle
 	defer_initialisation = TRUE
 	flags = SHUTTLE_FLAGS_PROCESS
-	skill_needed = SKILL_UNSKILLED
+	skill_needed = SKILL_BASIC
 	ceiling_type = /turf/simulated/floor/shuttle_ceiling/skrell
 	mothershuttle = "Tau Scout"
 

@@ -30,7 +30,7 @@ var/global/list/datum/power/genestealer/powerinstances = list()
 	name = "Regenerative Stasis"
 	desc = "We become weakened to a death-like state, where we will rise again from death."
 	helptext = "Can be used before or after death. Duration varies greatly."
-	genomecost = 3
+	genomecost = 1
 	allowduringlesserform = 1
 	verbpath = /mob/proc/genestealer_fakedeath
 
@@ -50,12 +50,6 @@ var/global/list/datum/power/genestealer/powerinstances = list()
 	genomecost = 1
 	verbpath = /mob/proc/genestealer_hivedownload
 
-/datum/power/genestealer/lesser_form
-	name = "Lesser Form"
-	desc = "We debase ourselves and become lesser.  We become a monkey."
-	genomecost = 2
-	verbpath = /mob/proc/genestealer_lesser_form
-
 /datum/power/genestealer/deaf_sting
 	name = "Deaf Sting"
 	desc = "We silently sting a human, completely deafening them for a short time."
@@ -69,6 +63,13 @@ var/global/list/datum/power/genestealer/powerinstances = list()
 	genomecost = 2
 	allowduringlesserform = 1
 	verbpath = /mob/proc/genestealer_blind_sting
+
+/datum/power/genestealer/transform_sting
+	name = "Transform Sting"
+	desc = "We silently transform a human, they must remain still for 15 seconds to complete the injection of our DNA. This can be done silently..."
+	genomecost = 1
+	allowduringlesserform = 0
+	verbpath = /mob/proc/genestealer_transform_sting
 
 /datum/power/genestealer/silence_sting
 	name = "Silence Sting"
@@ -99,14 +100,14 @@ var/global/list/datum/power/genestealer/powerinstances = list()
 	helptext = "The target does not notice they have been stung.  The effect occurs after 30 to 60 seconds."
 	genomecost = 2
 	verbpath = /mob/proc/genestealer_lsdsting
-
+/*
 /datum/power/genestealer/DeathSting
 	name = "Death Sting"
 	desc = "We sting a human, filling them with potent chemicals. Their rapid death is all but assured, but our crime will be obvious."
 	helptext = "It will be clear to any surrounding witnesses if you use this power."
 	genomecost = 12
 	verbpath = /mob/proc/genestealer_DEATHsting
-
+*/
 
 /datum/power/genestealer/boost_range
 	name = "Boost Range"
@@ -119,14 +120,14 @@ var/global/list/datum/power/genestealer/powerinstances = list()
 	name = "Epinephrine sacs"
 	desc = "We evolve additional sacs of adrenaline throughout our body."
 	helptext = "Gives the ability to instantly recover from stuns.  High chemical cost."
-	genomecost = 3
+	genomecost = 2
 	verbpath = /mob/proc/genestealer_unstun
 
 /datum/power/genestealer/ChemicalSynth
 	name = "Rapid Chemical-Synthesis"
 	desc = "We evolve new pathways for producing our necessary chemicals, permitting us to naturally create them faster."
 	helptext = "Doubles the rate at which we naturally recharge chemicals."
-	genomecost = 3
+	genomecost = 2
 	isVerb = 0
 	verbpath = /mob/proc/genestealer_fastchemical
 /*
@@ -142,7 +143,7 @@ var/global/list/datum/power/genestealer/powerinstances = list()
 	name = "Engorged Chemical Glands"
 	desc = "Our chemical glands swell, permitting us to store more chemicals inside of them."
 	helptext = "Allows us to store an extra 25 units of chemicals."
-	genomecost = 2
+	genomecost = 1
 	isVerb = 0
 	verbpath = /mob/proc/genestealer_engorgedglands
 

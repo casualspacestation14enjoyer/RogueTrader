@@ -37,7 +37,7 @@ var/global/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 	var/list/map_levels              // Z-levels available to various consoles, such as the crew monitor. Defaults to station_levels if unset.
 
 	var/list/base_turf_by_z = list() // Custom base turf by Z-level. Defaults to world.turf for unlisted Z-levels
-	var/list/usable_email_tlds = list("freemail.net")
+	var/list/usable_email_tlds = list("astropathica.net")
 	var/base_floor_type = /turf/simulated/floor/airless // The turf type used when generating floors between Z-levels at startup.
 	var/base_floor_area                                 // Replacement area, if a base_floor_type is generated. Leave blank to skip.
 
@@ -260,6 +260,18 @@ var/global/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 	RETURN_TYPE(/list)
 	var/spawn_cost = 0
 	var/player_cost = 0
+
+	// First, handle banned ruins before anything else.
+	for (var/banned_type in site.ban_ruins)
+		var/datum/map_template/ruin/away_site/banned = by_type[banned_type]
+		// Remove banned ruins from available and unavailable
+		if (banned in available)
+			available -= banned
+		if (banned in unavailable)
+			continue
+		unavailable += banned
+
+	// Now proceed with other checks
 	if (site in selected)
 		if (!(site.template_flags & TEMPLATE_FLAG_ALLOW_DUPLICATES))
 			return list(spawn_cost, player_cost)
@@ -269,18 +281,13 @@ var/global/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 	player_cost += site.player_cost
 	selected += site
 
+	// Handle forced ruins
 	for (var/forced_type in site.force_ruins)
 		var/list/costs = resolve_site_selection(by_type[forced_type], selected, available, unavailable, by_type)
 		spawn_cost += costs[1]
 		player_cost += costs[2]
 
-	for (var/banned_type in site.ban_ruins)
-		var/datum/map_template/ruin/away_site/banned = by_type[banned_type]
-		if (banned in unavailable)
-			continue
-		unavailable += banned
-		available -= banned
-
+	// Handle allowed ruins
 	for (var/allowed_type in site.allow_ruins)
 		var/datum/map_template/ruin/away_site/allowed = by_type[allowed_type]
 		if (allowed in available)
@@ -293,6 +300,7 @@ var/global/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 		available[allowed] = allowed.spawn_weight
 
 	return list(spawn_cost, player_cost)
+
 
 
 /datum/map/proc/build_away_sites()
@@ -443,11 +451,11 @@ var/global/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 		num2text(ENT_FREQ)   = list(),
 		num2text(ERT_FREQ)   = list(access_cent_specops),
 		num2text(COMM_FREQ)  = list(access_bridge),
-		num2text(ENG_FREQ)   = list(access_engine_equip, access_atmospherics),
+		num2text(ENG_FREQ)   = list(access_mechanicus_command, access_atmospherics),
 		num2text(MED_FREQ)   = list(access_medical_equip),
 		num2text(MED_I_FREQ) = list(access_medical_equip),
-		num2text(SEC_FREQ)   = list(access_security),
-		num2text(SEC_I_FREQ) = list(access_security),
+		num2text(SEC_FREQ)   = list(access_restricted),
+		num2text(SEC_I_FREQ) = list(access_restricted),
 		num2text(SCI_FREQ)   = list(access_tox,access_robotics,access_xenobiology),
 		num2text(SUP_FREQ)   = list(access_cargo),
 		num2text(SRV_FREQ)   = list(access_janitor, access_hydroponics),

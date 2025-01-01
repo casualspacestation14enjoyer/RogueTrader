@@ -1,13 +1,13 @@
 // New shields
 /obj/item/stock_parts/circuitboard/shield_generator
-	name = "circuit board (advanced shield generator)"
+	name = "circuit board (void shield generator)"
 	board_type = "machine"
 	build_path = /obj/machinery/power/shield_generator
 	origin_tech = list(TECH_MAGNET = 3, TECH_POWER = 4)
 	req_components = list(
 							/obj/item/stock_parts/capacitor = 1,
 							/obj/item/stock_parts/micro_laser = 1,
-							/obj/item/stock_parts/smes_coil = 1)
+							/obj/item/stock_parts/smes_coil = 2)
 	additional_spawn_components = list(
 		/obj/item/stock_parts/console_screen = 1,
 		/obj/item/stock_parts/keyboard = 1,

@@ -4,7 +4,6 @@
 	icon = 'maps/torch/icons/obj/explshotgun.dmi'
 	icon_state = "expshotgun0"
 	starts_loaded = 0
-	req_access = list(access_hop)
 	authorized_modes = list(UNAUTHORIZED)
 	firemodes = list(
 		list(mode_name="fire"),
@@ -135,7 +134,6 @@
 /obj/structure/closet/secure_closet/explo_gun
 	name = "gun locker"
 	desc = "Wall locker holding the boomstick."
-	req_access = list(access_expedition_shuttle_helm)
 	closet_appearance = /singleton/closet_appearance/wall/explo_gun
 	density = FALSE
 	anchored = TRUE
@@ -144,8 +142,8 @@
 
 /obj/structure/closet/secure_closet/explo_gun/WillContain()
 	return list(
-		/obj/item/storage/box/ammo/explo_shells = 3,
-		/obj/item/gun/projectile/shotgun/pump/exploration
+		/obj/item/ammo_magazine/shotholder/shell = 1,
+		/obj/item/gun/projectile/shotgun/doublebarrel = 1
 	)
 
 /singleton/closet_appearance/wall/explo_gun

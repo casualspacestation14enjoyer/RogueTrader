@@ -22,8 +22,8 @@
 	var/bolt_open = 0
 	wielded_item_state = "heavysniper-wielded" //sort of placeholder
 	load_sound = 'sound/weapons/guns/interaction/rifle_load.ogg'
-	fire_delay = 10
-	slowdown_general = 0.15
+	fire_delay = 6
+	slowdown_general = 0.05
 
 /obj/item/gun/projectile/heavysniper/on_update_icon()
 	..()
@@ -124,7 +124,7 @@
 	icon = 'icons/obj/guns/terran_rifle.dmi'
 	icon_state = "dmr"
 	item_state = "dmr"
-	fire_delay = 6.5
+	fire_delay = 5
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 4, TECH_ESOTERIC = 5)
 	w_class = ITEM_SIZE_HUGE
 	force = 10
@@ -196,7 +196,7 @@
 	caliber = CALIBER_SLUG_MAGNUM
 	ammo_type = /obj/item/ammo_casing/magnum
 	load_method = SINGLE_CASING|SPEEDLOADER
-	fire_delay = 3.5
+	fire_delay = 3.3
 	one_hand_penalty = 4
 	max_shells = 10
 	accuracy = 1

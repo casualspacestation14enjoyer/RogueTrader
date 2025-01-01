@@ -113,8 +113,8 @@
 	appearance_flags = DEFAULT_APPEARANCE_FLAGS | PIXEL_SCALE
 	machine_name = "point defense battery"
 	machine_desc = "A mounted turret that locks onto and destroys incoming meteors. Aim away from vessel."
-	var/active = TRUE
-	var/charge_cooldown = 1 SECOND  //time between it can fire at different targets
+	var/active = FALSE
+	var/charge_cooldown = 2 SECOND  //time between it can fire at different targets
 	var/last_shot = 0
 	var/kill_range = 18
 	var/rotation_speed = 0.25 SECONDS  //How quickly we turn to face threats

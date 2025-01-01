@@ -1,448 +1,1160 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "ab" = (
+/obj/paint/meatstation/lab,
 /turf/simulated/wall/r_wall,
-/area/map_template/crashed_pod)
+/area/map_template/oldpod)
 "ac" = (
-/obj/machinery/atmospherics/omni/filter{
-	tag_east = 2;
-	tag_north = 4;
-	tag_south = 1
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"ad" = (
-/obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/techfloor,
-/area/map_template/crashed_pod)
-"ay" = (
-/turf/simulated/wall,
-/area/map_template/crashed_pod)
-"bb" = (
-/obj/machinery/airlock_sensor/airlock_exterior{
-	frequency = 1380;
-	id_tag = "crashedpodWest_sensor_external";
-	pixel_y = 32
+/obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 8
 	},
-/obj/machinery/access_button/airlock_exterior{
-	frequency = 1380;
-	master_tag = "crashedpodWest";
-	pixel_y = 20;
-	pixel_z = 1
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
 	},
-/turf/simulated/floor/reinforced{
-	map_airless = 1
-	},
-/area/map_template/crashed_pod)
-"bk" = (
-/obj/machinery/atmospherics/pipe/manifold/visible/fuel{
-	dir = 4
-	},
-/turf/simulated/wall/r_wall,
-/area/map_template/crashed_pod)
-"bl" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
-	dir = 8;
-	id_tag = "crashedpodEast_pump_out_internal";
-	power_rating = 25000
-	},
-/obj/machinery/embedded_controller/radio/airlock/airlock_controller{
-	cycle_to_external_air = 1;
-	frequency = 1380;
-	id_tag = "crashedpodEast";
-	pixel_y = 26;
-	tag_airpump = "crashedpodEast_pump";
-	tag_chamber_sensor = "crashedpodEast_sensor_chamber";
-	tag_exterior_door = "crashedpodEast_exterior_door";
-	tag_exterior_sensor = "crashedpodEast_sensor_external";
-	tag_interior_door = "crashedpodEast_interior_door"
-	},
-/obj/machinery/airlock_sensor{
-	frequency = 1380;
-	id_tag = "crashedpodEast_sensor_chamber";
-	pixel_x = -22
-	},
-/turf/simulated/floor/reinforced,
-/area/map_template/crashed_pod)
-"bm" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1380;
-	id_tag = "crashedpodEast_exterior_door";
-	locked = 1
-	},
-/turf/simulated/floor/reinforced{
-	map_airless = 1
-	},
-/area/map_template/crashed_pod)
-"bn" = (
-/obj/machinery/airlock_sensor/airlock_exterior{
-	frequency = 1380;
-	id_tag = "crashedpodEast_sensor_external";
-	pixel_y = 32
-	},
-/obj/machinery/access_button/airlock_exterior{
-	frequency = 1380;
-	master_tag = "crashedpodEast";
-	pixel_y = 20;
-	pixel_z = 1
-	},
-/turf/simulated/floor/reinforced{
-	map_airless = 1
-	},
-/area/map_template/crashed_pod)
-"bo" = (
-/obj/machinery/atmospherics/pipe/simple/visible/fuel{
-	dir = 9
-	},
-/obj/machinery/atmospherics/unary/tank/air,
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"bp" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
-	id_tag = "crashedpodEast_pump";
-	power_rating = 25000
-	},
-/obj/item/device/radio/intercom/hailing{
-	dir = 8;
-	pixel_x = 24
-	},
-/turf/simulated/floor/reinforced,
-/area/map_template/crashed_pod)
-"bq" = (
-/obj/machinery/atmospherics/portables_connector{
-	dir = 4
-	},
-/obj/machinery/portable_atmospherics/canister/air,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"bs" = (
-/obj/machinery/atmospherics/pipe/simple/visible/blue,
-/obj/machinery/door/airlock/external{
-	frequency = 1380;
-	id_tag = "crashedpodEast_interior_door"
-	},
-/turf/simulated/floor/reinforced,
-/area/map_template/crashed_pod)
-"bt" = (
 /obj/machinery/access_button/airlock_interior{
-	frequency = 1380;
-	master_tag = "crashedpodEast";
-	pixel_x = 22;
-	pixel_y = 22
+	frequency = 1331;
+	master_tag = "charon_shuttle";
+	pixel_x = 21;
+	pixel_y = 21
 	},
-/obj/machinery/atmospherics/pipe/manifold/visible/blue{
+/turf/simulated/floor/seolite,
+/area/map_template/oldpod)
+"ad" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
+	id_tag = "charon_cargo_pump_out_internal"
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/structure/handrail{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"bu" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
-	dir = 4;
-	id_tag = "crashedpodWest_pump_out_external";
-	power_rating = 25000
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
 	},
-/turf/simulated/floor/reinforced{
-	map_airless = 1
-	},
-/area/map_template/crashed_pod)
-"bE" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1380;
-	id_tag = "crashedpodWest_exterior_door";
-	locked = 1
-	},
-/turf/simulated/floor/reinforced{
-	map_airless = 1
-	},
-/area/map_template/crashed_pod)
-"bF" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
-	dir = 4;
-	id_tag = "crashedpodWest_pump_out_internal";
-	power_rating = 25000
-	},
-/obj/machinery/embedded_controller/radio/airlock/airlock_controller{
-	cycle_to_external_air = 1;
-	frequency = 1380;
-	id_tag = "crashedpodWest";
-	pixel_y = 26;
-	tag_airpump = "crashedpodWest_pump";
-	tag_chamber_sensor = "crashedpodWest_sensor_chamber";
-	tag_exterior_door = "crashedpodWest_exterior_door";
-	tag_exterior_sensor = "crashedpodWest_sensor_external";
-	tag_interior_door = "crashedpodWest_interior_door"
-	},
-/turf/simulated/floor/reinforced,
-/area/map_template/crashed_pod)
-"bG" = (
-/obj/machinery/airlock_sensor{
-	frequency = 1380;
-	id_tag = "crashedpodWest_sensor_chamber";
-	pixel_x = 22
-	},
-/obj/machinery/atmospherics/pipe/simple/visible/red{
-	dir = 4
-	},
-/turf/simulated/floor/reinforced,
-/area/map_template/crashed_pod)
-"bH" = (
-/obj/machinery/atmospherics/pipe/simple/visible/red{
-	dir = 10
-	},
-/turf/simulated/wall/r_wall,
-/area/map_template/crashed_pod)
-"bI" = (
-/obj/machinery/portable_atmospherics/canister/empty,
-/obj/machinery/atmospherics/portables_connector,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"bJ" = (
-/obj/structure/fuel_port,
-/turf/simulated/wall/r_wall,
-/area/map_template/crashed_pod)
-"bK" = (
-/obj/machinery/atmospherics/pipe/simple/visible/fuel{
-	dir = 5
-	},
-/obj/machinery/meter,
-/turf/simulated/wall/r_wall,
-/area/map_template/crashed_pod)
-"bL" = (
-/obj/machinery/atmospherics/pipe/simple/visible/red{
+/area/map_template/oldpod)
+"ay" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 6
 	},
-/turf/simulated/wall/r_wall,
-/area/map_template/crashed_pod)
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/obj/random/loot/lightmelee,
+/obj/decal/cleanable/blood,
+/obj/landmark/corpse/bloodpact/commando,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"bb" = (
+/obj/wallframe_spawn/reinforced/titanium,
+/obj/machinery/door/blast/regular/open{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id_tag = "col_shutters";
+	name = "Protective Shutters";
+	opacity = 0
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"bk" = (
+/obj/structure/closet/crate,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/item/stock_parts/micro_laser/ultra,
+/obj/item/stock_parts/matter_bin/adv,
+/obj/item/stock_parts/circuitboard/biogenerator,
+/obj/item/stock_parts/matter_bin/super,
+/obj/item/stack/material/uranium/ten,
+/obj/item/stock_parts/circuitboard/oxyregenerator,
+/obj/item/stock_parts/circuitboard/unary_atmos/heater,
+/obj/item/stock_parts/circuitboard/unary_atmos/cooler,
+/obj/item/device/scanner/gas,
+/obj/item/solar_assembly,
+/obj/item/solar_assembly,
+/obj/item/solar_assembly,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"bn" = (
+/obj/floor_decal/industrial/hatch/orange,
+/obj/machinery/light/spot,
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/obj/machinery/power/smes/batteryrack,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"bo" = (
+/obj/floor_decal/techfloor{
+	dir = 10
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 8
+	},
+/obj/structure/handrail{
+	dir = 1
+	},
+/obj/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"bq" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/glass{
+	name = "Medical Compartment"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"bs" = (
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"bt" = (
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/floor_decal/industrial/warning{
+	dir = 4;
+	icon_state = "warning"
+	},
+/obj/machinery/firealarm{
+	pixel_y = 24
+	},
+/obj/machinery/radio_beacon,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"by" = (
+/obj/machinery/alarm{
+	dir = 1;
+	pixel_y = -22;
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"bE" = (
+/obj/structure/table/rack,
+/obj/item/device/radio,
+/obj/item/device/radio,
+/obj/item/device/radio,
+/obj/item/shuttle_beacon,
+/obj/item/shuttle_beacon,
+/obj/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"bG" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 1
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"bH" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/floor_decal/industrial/outline/yellow,
+/obj/structure/handrail{
+	dir = 8
+	},
+/obj/item/device/radio/intercom{
+	dir = 8;
+	pixel_x = 21
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"bI" = (
+/obj/structure/bed/padded,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"bJ" = (
+/obj/structure/handrail{
+	dir = 4
+	},
+/turf/simulated/floor/seolite,
+/area/map_template/oldpod)
+"bK" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/floor_decal/industrial/warning{
+	dir = 4
+	},
+/turf/simulated/floor/seolite,
+/area/map_template/oldpod)
 "bW" = (
 /obj/landmark/clear,
 /turf/template_noop,
 /area/template_noop)
 "bX" = (
-/obj/machinery/atmospherics/pipe/simple/visible/blue,
-/obj/item/pen,
-/obj/machinery/atmospherics/pipe/simple/visible/red{
+/obj/floor_decal/industrial/warning/corner{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/landmark/corpse/engineer/rig,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
 "bY" = (
-/obj/item/device/radio/intercom/hailing{
+/obj/structure/table/steel_reinforced,
+/obj/structure/closet/secure_closet/explo_gun{
+	pixel_x = -32
+	},
+/obj/machinery/recharger,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"cb" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4;
+	level = 2
+	},
+/obj/machinery/firealarm{
+	dir = 8;
 	pixel_x = -24
 	},
-/turf/simulated/floor/reinforced,
-/area/map_template/crashed_pod)
-"ca" = (
-/obj/machinery/atmospherics/pipe/manifold/visible/fuel{
+/turf/simulated/floor/seolite,
+/area/map_template/oldpod)
+"cc" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 4
+	},
+/obj/floor_decal/industrial/warning{
+	dir = 4
+	},
+/turf/simulated/floor/seolite,
+/area/map_template/oldpod)
+"cT" = (
+/obj/machinery/portable_atmospherics/canister/air,
+/obj/machinery/atmospherics/portables_connector,
+/obj/floor_decal/industrial/outline/blue,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"cU" = (
+/obj/machinery/computer/air_control{
+	dir = 8;
+	name = "Atmospheric Sensors";
+	sensor_tag = "charon_out"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"dJ" = (
+/obj/floor_decal/industrial/outline/yellow,
+/obj/machinery/power/apc/shuttle/charon{
+	name = "shuttle"
+	},
+/obj/structure/cable/cyan,
+/obj/machinery/camera/network/exploration_shuttle{
+	c_tag = "Charon - Cockpit";
+	dir = 1
+	},
+/obj/structure/handrail{
+	dir = 1
+	},
+/obj/machinery/hologram/holopad/longrange/remoteship,
+/obj/landmark/corpse/doctor,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"dL" = (
+/obj/structure/bed/chair/shuttle/blue,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"dV" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 4
+	},
+/turf/simulated/floor/seolite,
+/area/map_template/oldpod)
+"el" = (
+/obj/machinery/light,
+/obj/structure/table/steel_reinforced,
+/obj/machinery/recharger,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"em" = (
+/obj/wallframe_spawn/reinforced/titanium,
+/obj/machinery/door/blast/regular/open{
+	density = 0;
+	icon_state = "pdoor0";
+	id_tag = "col_shutters";
+	name = "Protective Shutters";
+	opacity = 0
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"en" = (
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/floor_decal/corner/blue{
+	dir = 9
+	},
+/turf/simulated/floor/seolite,
+/area/map_template/oldpod)
+"eo" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/glass{
+	name = "Medical Compartment"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"ep" = (
+/obj/machinery/recharge_station,
+/obj/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"eq" = (
+/obj/structure/cable/cyan,
+/obj/structure/table/steel_reinforced,
+/obj/machinery/power/apc/shuttle/charon{
+	name = "south bump";
+	pixel_y = -28
+	},
+/obj/item/storage/firstaid/radiation,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"eC" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 4
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"eD" = (
+/obj/decal/cleanable/dirt,
+/obj/item/reagent_containers/food/drinks/cans/speer,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10
+	},
+/obj/machinery/portable_atmospherics/powered/scrubber,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"eE" = (
+/obj/decal/cleanable/dirt,
+/obj/structure/closet/crate,
+/obj/item/storage/briefcase/inflatable,
+/obj/item/storage/briefcase/inflatable,
+/obj/item/storage/briefcase/inflatable,
+/obj/item/storage/briefcase/inflatable,
+/obj/item/storage/briefcase/inflatable,
+/obj/item/device/geiger,
+/obj/item/device/geiger,
+/obj/random/powercell,
+/obj/random/powercell,
+/obj/random/powercell,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"eH" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/turf/simulated/floor/seolite,
+/area/map_template/oldpod)
+"eJ" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/structure/table/steel_reinforced,
+/obj/machinery/power/apc/shuttle/charon{
+	dir = 1;
+	name = "north bump";
+	pixel_y = 24
+	},
+/obj/structure/cable/cyan{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/obj/machinery/cell_charger,
+/obj/machinery/light_switch{
+	dir = 4;
+	pixel_x = -22;
+	pixel_y = -10
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"eU" = (
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/obj/floor_decal/industrial/warning{
+	dir = 1;
+	icon_state = "warning"
+	},
+/obj/structure/cable/cyan{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/structure/cable/cyan{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"eY" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 4
+	},
+/obj/item/storage/briefcase/inflatable,
+/obj/item/tank/oxygen_emergency_double,
+/turf/simulated/floor/seolite,
+/area/map_template/oldpod)
+"eZ" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/turf/simulated/floor/seolite,
+/area/map_template/oldpod)
+"fb" = (
+/obj/machinery/door/airlock/hatch,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/seolite,
+/area/map_template/oldpod)
+"fg" = (
+/obj/decal/cleanable/dirt,
+/obj/item/toy/figure/engineer,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"fh" = (
+/obj/structure/closet/emcloset,
+/obj/item/clothing/suit/space/emergency,
+/obj/item/tank/oxygen_emergency_double,
+/obj/item/clothing/head/helmet/space/emergency,
+/obj/item/storage/briefcase/inflatable,
+/obj/item/device/suit_cooling_unit,
+/obj/item/crowbar,
+/obj/item/tank/oxygen_emergency_double,
+/obj/item/tank/oxygen_emergency_extended,
+/obj/item/tank/oxygen_emergency_extended,
+/obj/random/drinkbottle,
+/obj/random/exploration,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"fk" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"fl" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/handrail{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = 26
+	},
+/turf/simulated/floor/seolite,
+/area/map_template/oldpod)
+"fn" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 1;
+	level = 2
+	},
+/obj/machinery/light,
+/obj/machinery/alarm{
+	dir = 4;
+	pixel_x = -21;
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"fx" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"fy" = (
+/obj/machinery/portable_atmospherics/canister/carbon_dioxide/engine_setup{
+	start_pressure = 7498
+	},
+/obj/machinery/atmospherics/portables_connector{
+	dir = 8
+	},
+/obj/floor_decal/industrial/outline/orange,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"fz" = (
+/obj/landmark/clear,
+/turf/template_noop,
+/area/map_template/oldpod)
+"fC" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 4
+	},
+/obj/structure/sign/ecplaque{
+	pixel_x = 30
+	},
+/obj/item/clothing/suit/space/syndicate/black,
+/obj/item/clothing/head/helmet/space/void,
+/turf/simulated/floor/seolite,
+/area/map_template/oldpod)
+"fD" = (
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"fE" = (
+/obj/structure/table/rack,
+/obj/item/storage/belt/utility/full,
+/obj/item/storage/box/glowsticks,
+/obj/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"fP" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
+	dir = 6
 	},
 /obj/machinery/meter,
-/obj/machinery/light/small{
+/obj/item/inflatable/door,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"fQ" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 1
+	},
+/obj/floor_decal/industrial/warning{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/light_switch{
+	pixel_x = 10;
+	pixel_y = 22
+	},
+/obj/decal/cleanable/blood/drip,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"fR" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/door/airlock/hatch,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"fS" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/seolite,
+/area/map_template/oldpod)
+"fT" = (
+/obj/floor_decal/industrial/warning{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
+	dir = 1
+	},
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/light_switch{
+	pixel_x = -10;
+	pixel_y = 22
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"gd" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/universal{
+	dir = 4
+	},
+/obj/floor_decal/industrial/warning/corner{
+	dir = 4
+	},
+/obj/machinery/alarm{
+	pixel_y = 24;
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"ge" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan,
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 4
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"gg" = (
+/obj/floor_decal/industrial/warning,
+/obj/structure/handrail{
+	dir = 4
+	},
+/obj/machinery/alarm{
+	dir = 4;
+	pixel_x = -21;
+	},
+/obj/item/clothing/suit/space/syndicate/black,
+/obj/item/clothing/head/helmet/space/void,
+/turf/simulated/floor/seolite,
+/area/map_template/oldpod)
+"gh" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/seolite,
+/area/map_template/oldpod)
+"gi" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	dir = 4
+	},
+/obj/machinery/door/airlock/hatch,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/seolite,
+/area/map_template/oldpod)
+"gt" = (
+/obj/structure/bed/chair/shuttle/blue,
+/obj/structure/cable/cyan{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/obj/random/loot/lootstructureartifact,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"gv" = (
+/obj/machinery/atmospherics/binary/pump{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"cb" = (
-/obj/machinery/atmospherics/binary/pump{
+/obj/floor_decal/industrial/warning/corner{
+	dir = 1
+	},
+/obj/machinery/alarm{
+	pixel_y = 24;
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"gw" = (
+/obj/floor_decal/industrial/warning,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/handrail{
+	dir = 8
+	},
+/obj/machinery/access_button/airlock_interior{
+	frequency = 1380;
+	master_tag = "crashedpodEast";
+	pixel_x = 22;
+	pixel_y = -20
+	},
+/turf/simulated/floor/seolite,
+/area/map_template/oldpod)
+"gx" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/seolite,
+/area/map_template/oldpod)
+"gy" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"cc" = (
-/obj/machinery/atmospherics/pipe/simple/visible/fuel{
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/machinery/atmospherics/unary/tank/air,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"ej" = (
-/turf/simulated/floor/reinforced{
-	map_airless = 1
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
 	},
-/area/map_template/crashed_pod)
-"ek" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
-	dir = 8;
-	id_tag = "crashedpodEast_pump_out_external";
-	power_rating = 25000
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
 	},
-/turf/simulated/floor/reinforced{
-	map_airless = 1
+/area/map_template/oldpod)
+"gz" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
+	dir = 8
 	},
-/area/map_template/crashed_pod)
-"el" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
-	id_tag = "crashedpodWest_pump";
-	power_rating = 25000
+/obj/structure/handrail{
+	dir = 4
 	},
-/turf/simulated/floor/reinforced,
-/area/map_template/crashed_pod)
-"em" = (
+/obj/machinery/meter,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"gC" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/cyan{
+	dir = 4
+	},
+/obj/item/inflatable/door,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"gD" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	dir = 6
+	},
+/obj/machinery/atmospherics/unary/tank/air{
+	dir = 1;
+	start_pressure = 4559.63
+	},
+/obj/floor_decal/industrial/outline/blue,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"gE" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	dir = 9
+	},
+/obj/machinery/pipedispenser{
+	anchored = 1
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"gF" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
+	},
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
 	id_tag = "crashedpodWest_interior_door"
 	},
-/obj/machinery/atmospherics/pipe/simple/visible/blue,
-/turf/simulated/floor/reinforced,
-/area/map_template/crashed_pod)
-"en" = (
-/obj/machinery/atmospherics/binary/pump{
-	dir = 1
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
 	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"eo" = (
-/obj/machinery/atmospherics/pipe/manifold/visible/blue,
-/obj/machinery/meter,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"ep" = (
-/obj/machinery/atmospherics/pipe/manifold/visible/blue{
+/area/map_template/oldpod)
+"gG" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"eq" = (
-/obj/machinery/atmospherics/pipe/simple/visible/red,
-/obj/wallframe_spawn/reinforced/hull,
-/turf/simulated/floor/plating,
-/area/map_template/crashed_pod)
-"eC" = (
-/obj/machinery/computer/air_control{
-	dir = 4;
-	name = "Atmospheric Sensors";
-	sensor_tag = "crashed_pod_out"
+/obj/machinery/door/airlock/external{
+	frequency = 1380;
+	id_tag = "crashedpodWest_interior_door"
 	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"eD" = (
-/obj/machinery/atmospherics/pipe/simple/visible/blue{
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"gH" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
+	dir = 1;
+	id_tag = "charon_cargo_pump"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"gI" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
-/obj/machinery/access_button/airlock_interior{
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"gJ" = (
+/obj/floor_decal/industrial/outline/orange,
+/obj/machinery/atmospherics/unary/tank/carbon_dioxide{
+	dir = 1;
+	start_pressure = 1013.25
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"gK" = (
+/obj/machinery/atmospherics/unary/tank/carbon_dioxide{
+	dir = 1;
+	start_pressure = 1013.25
+	},
+/obj/floor_decal/industrial/outline/orange,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"gV" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/glass{
+	name = "Medical Compartment"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"hi" = (
+/obj/paint/meatstation/lab,
+/turf/simulated/wall/titanium,
+/area/map_template/oldpod)
+"hm" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
+	id_tag = "charon_cargo_pump_out_internal"
+	},
+/obj/structure/handrail{
+	dir = 8
+	},
+/obj/machinery/airlock_sensor{
 	frequency = 1380;
-	master_tag = "crashedpodWest";
-	pixel_x = -22;
-	pixel_y = 22
+	id_tag = "crashedpodWest_sensor_chamber";
+	pixel_x = 22
 	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"eE" = (
-/obj/machinery/atmospherics/unary/engine,
-/turf/simulated/floor/reinforced{
-	map_airless = 1
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
 	},
-/area/map_template/crashed_pod)
-"eG" = (
-/obj/machinery/atmospherics/pipe/simple/visible/blue{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/visible/red,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"eH" = (
-/obj/machinery/atmospherics/pipe/manifold/visible/blue{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"eI" = (
-/obj/machinery/atmospherics/pipe/manifold/visible/blue,
-/obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"eJ" = (
-/obj/machinery/atmospherics/pipe/simple/visible/blue{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/visible/red,
-/obj/item/wrench,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"eU" = (
-/obj/wallframe_spawn/reinforced/hull,
-/obj/machinery/atmospherics/pipe/simple/visible/red{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
-/area/map_template/crashed_pod)
-"eW" = (
-/obj/machinery/atmospherics/pipe/simple/visible/red{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"eY" = (
-/obj/machinery/atmospherics/pipe/manifold4w/visible/red,
-/obj/machinery/meter,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"eZ" = (
-/obj/machinery/atmospherics/omni/filter{
-	tag_north = 3;
-	tag_south = 1;
-	tag_west = 2
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"fb" = (
-/obj/machinery/atmospherics/pipe/manifold/visible/red{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"ff" = (
-/obj/machinery/atmospherics/pipe/simple/visible/blue,
-/obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"fg" = (
-/obj/machinery/atmospherics/pipe/manifold/visible/red{
+/area/map_template/oldpod)
+"hy" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/cyan{
 	dir = 8
 	},
-/obj/structure/closet/hydrant{
-	pixel_x = -27
+/obj/decal/cleanable/blood/gibs,
+/obj/effect/floor_decal/warhammer/lfloorscorched1,
+/obj/random/loot/heavymelee,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
 	},
-/obj/item/screwdriver,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"fh" = (
+/area/map_template/oldpod)
+"hG" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 8
+	},
+/obj/floor_decal/industrial/warning,
+/turf/simulated/floor/seolite,
+/area/map_template/oldpod)
+"hN" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 8
+	dir = 4
 	},
-/obj/decal/cleanable/dirt,
-/obj/item/solar_assembly,
-/obj/item/solar_assembly,
-/obj/item/solar_assembly,
-/obj/item/solar_assembly,
-/obj/item/solar_assembly,
-/obj/item/solar_assembly,
-/obj/item/solar_assembly,
-/obj/item/solar_assembly,
-/obj/item/solar_assembly,
-/obj/item/solar_assembly,
-/obj/item/solar_assembly,
-/obj/item/solar_assembly,
-/obj/item/solar_assembly,
-/obj/floor_decal/industrial/hatch/orange,
+/turf/simulated/floor/seolite,
+/area/map_template/oldpod)
+"kY" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"lG" = (
+/obj/floor_decal/industrial/hatch/yellow,
+/obj/machinery/power/smes/buildable/preset/scavver/smes,
 /obj/structure/cable{
 	d2 = 2;
-	icon_state = "0-2";
-	pixel_y = 1
+	icon_state = "0-2"
 	},
-/obj/structure/railing/mapped{
+/obj/structure/cable/cyan{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"np" = (
+/obj/machinery/light,
+/obj/machinery/computer/modular/preset/dock{
 	dir = 8;
-	icon_state = "railing0-1"
+	icon_state = "console"
 	},
-/obj/structure/railing/mapped{
-	dir = 1;
-	icon_state = "railing0-1"
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
 	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"fi" = (
+/area/map_template/oldpod)
+"nw" = (
 /obj/item/device/multitool,
 /obj/item/screwdriver,
 /obj/item/cell/device/high,
@@ -460,7 +1172,6 @@
 /obj/item/pen/blue,
 /obj/item/pen/green,
 /obj/item/pen/red,
-/obj/floor_decal/industrial/hatch/orange,
 /obj/random/single/color/cable_coil,
 /obj/random/single/color/cable_coil,
 /obj/structure/closet/crate,
@@ -469,868 +1180,1046 @@
 /obj/random/powercell,
 /obj/random/powercell,
 /obj/random/powercell,
-/obj/structure/railing/mapped{
-	dir = 1;
-	icon_state = "railing0-1"
-	},
 /obj/item/taperoll/engineering,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"fj" = (
-/obj/floor_decal/industrial/hatch/orange,
-/obj/machinery/atmospherics/pipe/simple/visible/red{
-	dir = 5
+/obj/random/exploration,
+/obj/item/stock_parts/smes_coil/advanced,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
 	},
-/obj/structure/railing/mapped{
-	dir = 1;
-	icon_state = "railing0-1"
-	},
-/obj/structure/railing/mapped{
-	dir = 4;
-	icon_state = "railing0-1"
-	},
-/obj/machinery/portable_atmospherics/canister/oxygen,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"fk" = (
-/obj/machinery/atmospherics/pipe/manifold/visible/red,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"fl" = (
-/obj/floor_decal/industrial/hatch/orange,
-/obj/machinery/atmospherics/pipe/manifold/visible/red,
-/obj/structure/railing/mapped{
-	dir = 8;
-	icon_state = "railing0-1"
-	},
-/obj/structure/railing/mapped{
-	dir = 1;
-	icon_state = "railing0-1"
-	},
-/obj/machinery/space_heater,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"fm" = (
-/obj/structure/closet/crate/medical,
-/obj/random/firstaid,
-/obj/random/firstaid,
-/obj/random/firstaid,
-/obj/random/firstaid,
-/obj/random/firstaid,
-/obj/item/storage/firstaid/surgery,
-/obj/item/storage/firstaid/stab,
-/obj/item/storage/pill_bottle/antidexafen,
-/obj/item/storage/pill_bottle/antidexafen,
-/obj/item/storage/med_pouch/radiation,
-/obj/item/storage/med_pouch/radiation,
-/obj/item/storage/med_pouch/radiation,
-/obj/item/storage/med_pouch/radiation,
-/obj/item/storage/pill_bottle/assorted,
-/obj/machinery/atmospherics/pipe/simple/visible/red{
-	dir = 9
-	},
-/obj/floor_decal/industrial/hatch/orange,
-/obj/structure/railing/mapped{
-	dir = 1;
-	icon_state = "railing0-1"
-	},
-/mob/living/simple_animal/passive/mouse/brown/Tom,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"fn" = (
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 4
-	},
-/obj/floor_decal/industrial/hatch/orange,
-/obj/structure/railing/mapped{
-	dir = 1;
-	icon_state = "railing0-1"
-	},
-/obj/structure/railing/mapped{
-	dir = 4;
-	icon_state = "railing0-1"
-	},
-/obj/machinery/fabricator/hacked,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"fx" = (
-/obj/machinery/atmospherics/pipe/simple/visible/red,
-/obj/machinery/alarm{
-	dir = 4;
-	locked = 0;
-	pixel_x = -25;
-	req_access = list()
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"fy" = (
-/obj/decal/cleanable/dirt,
-/obj/machinery/pipedispenser,
-/obj/floor_decal/industrial/hatch/orange,
-/obj/structure/cable,
-/obj/machinery/power/terminal,
-/obj/structure/railing/mapped{
-	dir = 8;
-	icon_state = "railing0-1"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"fz" = (
-/obj/decal/cleanable/dirt,
-/obj/floor_decal/industrial/hatch/orange,
-/obj/machinery/power/port_gen/pacman/super,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"fA" = (
-/obj/decal/cleanable/dirt,
-/obj/floor_decal/industrial/hatch/orange,
-/obj/structure/closet/crate,
-/obj/item/storage/briefcase/inflatable,
-/obj/item/storage/briefcase/inflatable,
-/obj/item/storage/briefcase/inflatable,
-/obj/item/storage/briefcase/inflatable,
-/obj/item/storage/briefcase/inflatable,
-/obj/item/device/geiger,
-/obj/item/device/geiger,
-/obj/random/powercell,
-/obj/random/powercell,
-/obj/random/powercell,
-/obj/structure/railing/mapped{
-	dir = 4;
-	icon_state = "railing0-1"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"fC" = (
-/obj/item/device/oxycandle,
-/obj/item/device/oxycandle,
-/obj/item/device/oxycandle,
-/obj/item/device/oxycandle,
-/obj/item/device/oxycandle,
-/obj/item/device/oxycandle,
-/obj/item/device/oxycandle,
-/obj/item/device/oxycandle,
-/obj/item/device/oxycandle,
-/obj/item/device/oxycandle,
-/obj/item/device/oxycandle,
-/obj/item/device/oxycandle,
-/obj/item/device/oxycandle,
-/obj/item/device/oxycandle,
-/obj/item/device/oxycandle,
-/obj/item/device/oxycandle,
-/obj/item/device/oxycandle,
-/obj/item/device/oxycandle,
-/obj/structure/closet/crate,
-/obj/floor_decal/industrial/hatch/orange,
-/obj/item/reagent_containers/glass/paint/random,
-/obj/random/powercell,
-/obj/random/powercell,
-/obj/structure/railing/mapped{
-	dir = 8;
-	icon_state = "railing0-1"
-	},
-/obj/item/book/manual/engineering_construction,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"fD" = (
-/obj/structure/closet/crate/warhammer/freezer/rations,
-/obj/floor_decal/industrial/hatch/orange,
-/obj/machinery/power/terminal,
-/obj/structure/cable{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"fE" = (
-/obj/structure/closet/crate,
-/obj/random/handgun,
-/obj/random/handgun,
-/obj/random/handgun,
-/obj/item/pickaxe,
-/obj/item/pickaxe,
-/obj/item/pickaxe,
-/obj/item/stack/material/glass/fifty,
-/obj/item/stack/material/glass/fifty,
-/obj/item/stack/material/plasteel/fifty,
-/obj/item/stack/material/plastic/fifty,
-/obj/item/device/flashlight/lantern,
-/obj/item/device/flashlight/lantern,
-/obj/item/storage/box/glowsticks,
-/obj/item/storage/box/glowsticks,
-/obj/item/storage/box/glowsticks,
-/obj/item/stack/material/steel/fifty,
-/obj/item/stack/material/steel/fifty,
-/obj/item/stack/material/steel/fifty,
-/obj/random/toolbox,
-/obj/random/toolbox,
-/obj/random/toolbox,
-/obj/random/toolbox,
-/obj/floor_decal/industrial/hatch/orange,
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/obj/structure/railing/mapped{
-	dir = 4;
-	icon_state = "railing0-1"
-	},
-/obj/item/stock_parts/circuitboard/solar_control,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"fP" = (
-/obj/machinery/atmospherics/pipe/simple/visible/red,
-/obj/structure/sign/warning/nosmoking_burned{
-	dir = 1;
-	pixel_x = -32
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"fQ" = (
-/obj/machinery/power/apc{
-	locked = 0;
-	name = "south bump";
-	pixel_y = -28;
-	req_access = list()
-	},
-/obj/structure/cable{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/obj/machinery/portable_atmospherics/canister/carbon_dioxide,
-/obj/floor_decal/industrial/hatch/orange,
-/obj/structure/cable{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"fR" = (
-/obj/structure/closet/crate,
-/obj/floor_decal/industrial/hatch/orange,
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/railing/mapped{
-	dir = 4;
-	icon_state = "railing0-1"
-	},
-/obj/item/stock_parts/micro_laser/ultra,
-/obj/item/stock_parts/matter_bin/adv,
-/obj/item/stock_parts/circuitboard/biogenerator,
-/obj/item/stock_parts/matter_bin/super,
-/obj/item/stack/material/uranium/ten,
-/obj/item/stock_parts/circuitboard/oxyregenerator,
-/obj/item/stock_parts/circuitboard/unary_atmos/heater,
-/obj/item/stock_parts/circuitboard/unary_atmos/cooler,
-/obj/item/device/scanner/gas,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"fS" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"fT" = (
-/obj/structure/cable,
-/obj/floor_decal/industrial/hatch/orange,
-/obj/structure/reagent_dispensers/watertank,
-/obj/machinery/light/spot,
-/obj/structure/railing/mapped{
-	dir = 4;
-	icon_state = "railing0-1"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"gd" = (
-/obj/floor_decal/industrial/hatch/orange,
-/obj/machinery/light/spot,
-/obj/structure/cable{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/obj/machinery/power/smes/batteryrack,
-/obj/structure/railing/mapped{
-	dir = 8;
-	icon_state = "railing0-1"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"ge" = (
-/obj/machinery/atmospherics/pipe/simple/visible/red,
-/obj/machinery/door/airlock/civilian,
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/techfloor,
-/area/map_template/crashed_pod)
-"gg" = (
-/obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"gh" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/floor_decal/industrial/hatch/orange,
-/obj/structure/railing/mapped{
-	dir = 8;
-	icon_state = "railing0-1"
-	},
-/obj/structure/reagent_dispensers/fueltank,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"gi" = (
-/obj/machinery/power/smes/buildable{
-	charge = 10000;
-	inputting = 1;
-	outputting = 1
-	},
-/obj/structure/cable{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/obj/floor_decal/industrial/hatch/orange,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"gv" = (
-/obj/machinery/atmospherics/pipe/simple/visible/blue,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"gw" = (
-/obj/structure/closet,
-/obj/random/clothing,
-/obj/random/clothing,
-/obj/random/clothing,
-/obj/random/clothing,
-/obj/random/clothing,
-/obj/random/clothing,
-/obj/random/clothing,
-/obj/random/clothing,
-/obj/random/gloves,
-/obj/random/hat,
-/obj/random/hat,
-/obj/random/hat,
-/obj/item/clothing/under/color/orange,
-/obj/item/clothing/under/color/orange,
-/obj/item/clothing/under/color/blackjumpshorts,
-/obj/item/clothing/under/color/black,
-/obj/decal/cleanable/dirt,
-/obj/floor_decal/industrial/hatch/orange,
-/obj/structure/railing/mapped{
-	dir = 8;
-	icon_state = "railing0-1"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"gx" = (
-/obj/structure/closet,
-/obj/random/clothing,
-/obj/random/clothing,
-/obj/random/clothing,
-/obj/random/clothing,
-/obj/random/clothing,
-/obj/random/clothing,
-/obj/random/clothing,
-/obj/random/clothing,
-/obj/random/gloves,
-/obj/random/hat,
-/obj/random/hat,
-/obj/random/hat,
-/obj/item/clothing/under/color/orange,
-/obj/item/clothing/under/color/orange,
-/obj/item/clothing/under/color/blackjumpshorts,
-/obj/item/clothing/under/color/black,
-/obj/decal/cleanable/dirt,
-/obj/floor_decal/industrial/hatch/orange,
-/obj/structure/railing/mapped{
-	dir = 4;
-	icon_state = "railing0-1"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"gy" = (
-/obj/machinery/atmospherics/pipe/simple/visible/blue,
-/obj/machinery/door/airlock/civilian,
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/techfloor,
-/area/map_template/crashed_pod)
-"gz" = (
-/obj/structure/bed/chair/shuttle/black{
-	dir = 4
-	},
-/obj/submap_landmark/spawnpoint/crashed_pod_survivor,
-/obj/item/device/radio/intercom/hailing{
-	dir = 4;
-	pixel_x = -24
-	},
-/turf/simulated/floor/tiled/dark/monotile,
-/area/map_template/crashed_pod)
-"gC" = (
-/obj/machinery/atmospherics/pipe/simple/visible/red,
-/obj/structure/closet/hydrant{
-	pixel_x = -27
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/map_template/crashed_pod)
-"gD" = (
-/obj/machinery/atmospherics/pipe/simple/visible/red,
-/obj/decal/cleanable/filth,
-/obj/item/device/binoculars,
-/obj/machinery/alarm{
-	dir = 4;
-	locked = 0;
-	pixel_x = -25;
-	req_access = list()
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/map_template/crashed_pod)
-"gE" = (
-/obj/machinery/sleeper{
-	dir = 8
-	},
-/obj/floor_decal/industrial/outline/blue,
-/turf/simulated/floor/tiled/dark/monotile,
-/area/map_template/crashed_pod)
-"gF" = (
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"gG" = (
-/obj/structure/closet,
-/obj/random/clothing,
-/obj/random/clothing,
-/obj/random/clothing,
-/obj/random/clothing,
-/obj/random/clothing,
-/obj/random/clothing,
-/obj/random/clothing,
-/obj/random/clothing,
-/obj/random/gloves,
-/obj/random/hat,
-/obj/random/hat,
-/obj/random/hat,
-/obj/item/clothing/under/color/orange,
-/obj/item/clothing/under/color/orange,
-/obj/item/clothing/under/color/blackjumpshorts,
-/obj/item/clothing/under/color/black,
-/obj/floor_decal/industrial/hatch/orange,
-/obj/structure/railing/mapped{
-	dir = 8;
-	icon_state = "railing0-1"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/map_template/crashed_pod)
-"gH" = (
-/obj/machinery/door/airlock/civilian,
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/techfloor,
-/area/map_template/crashed_pod)
-"gI" = (
-/obj/machinery/atmospherics/pipe/simple/visible/blue,
-/obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/techfloor,
-/area/map_template/crashed_pod)
-"gJ" = (
-/obj/machinery/atmospherics/pipe/simple/visible/blue,
-/obj/decal/cleanable/dirt,
-/obj/item/toy/figure/engineer,
-/turf/simulated/floor/tiled/techfloor,
-/area/map_template/crashed_pod)
-"gK" = (
+/area/map_template/oldpod)
+"oF" = (
 /obj/structure/bed/chair/shuttle/black{
 	dir = 4
 	},
 /obj/decal/cleanable/vomit,
-/obj/submap_landmark/spawnpoint/crashed_pod_survivor,
-/turf/simulated/floor/tiled/dark/monotile,
-/area/map_template/crashed_pod)
-"gT" = (
-/obj/item/trash/liquidfood,
-/obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/techfloor,
-/area/map_template/crashed_pod)
-"gU" = (
-/obj/machinery/atmospherics/pipe/simple/visible/red{
-	dir = 5
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
 	},
-/obj/decal/cleanable/dirt,
+/area/map_template/oldpod)
+"pt" = (
+/obj/floor_decal/industrial/hatch/yellow,
+/obj/structure/cable/cyan,
+/obj/machinery/power/port_gen/pacman/super/potato,
+/obj/structure/cable/cyan{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"pO" = (
 /obj/machinery/light/spot{
+	dir = 1
+	},
+/obj/structure/table/steel,
+/obj/item/device/drone_designator{
+	network = "torch_transport"
+	},
+/turf/simulated/floor/seolite,
+/area/map_template/oldpod)
+"qd" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 4
+	},
+/obj/floor_decal/industrial/warning/corner{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9
+	},
+/obj/machinery/power/apc/hyper/shuttle/charon{
+	dir = 4;
+	pixel_x = 26
+	},
+/obj/structure/cable/cyan,
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	dir = 9
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"rz" = (
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/floor_decal/corner/blue{
+	dir = 6
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"rZ" = (
+/obj/structure/bed/chair/shuttle/blue,
+/obj/landmark/corpse/bloodpact,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"ui" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/techfloor,
-/area/map_template/crashed_pod)
-"gV" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 4
+	},
+/obj/floor_decal/industrial/warning/corner,
+/turf/simulated/floor/seolite,
+/area/map_template/oldpod)
+"vm" = (
+/turf/template_noop,
+/area/template_noop)
+"vv" = (
+/obj/structure/bed/chair/shuttle/blue,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/techfloor,
-/area/map_template/crashed_pod)
-"gW" = (
-/obj/decal/cleanable/dirt,
-/obj/item/reagent_containers/food/drinks/cans/speer,
-/turf/simulated/floor/tiled/techfloor,
-/area/map_template/crashed_pod)
-"gX" = (
-/obj/item/storage/backpack/dufflebag/eng,
-/turf/simulated/floor/tiled/techfloor,
-/area/map_template/crashed_pod)
-"gZ" = (
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"vE" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/machinery/tele_beacon,
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 4
+	},
+/obj/floor_decal/industrial/warning{
+	dir = 4
+	},
+/turf/simulated/floor/seolite,
+/area/map_template/oldpod)
+"vG" = (
+/obj/machinery/door/firedoor,
+/obj/wallframe_spawn/reinforced/titanium,
+/turf/simulated/floor/plating,
+/area/map_template/oldpod)
+"xe" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 8
+	},
+/obj/structure/bed/chair/shuttle/blue{
+	dir = 1
+	},
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -24
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"xK" = (
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/glass{
+	name = "Medical Compartment"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"yh" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"zZ" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"AO" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/machinery/door/window/brigdoor/eastright{
+	autoset_access = 0
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"BG" = (
+/obj/structure/bed/chair/shuttle/blue{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"BX" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"CB" = (
+/obj/structure/table/rack,
+/obj/random/tech_supply,
+/obj/random/tech_supply,
+/obj/random/tech_supply,
+/obj/random/tech_supply,
+/obj/random/tech_supply,
+/obj/random/tech_supply,
+/obj/item/module/power_control,
+/obj/random/powercell,
+/obj/item/device/radio/intercom{
+	dir = 8;
+	pixel_x = 20
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 8
+	},
+/obj/item/storage/toolbox/mechanical,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"CN" = (
+/obj/machinery/mech_recharger,
+/obj/floor_decal/industrial/warning/fulltile,
+/obj/structure/mech_wreckage/powerloader,
+/obj/landmark/corpse/bloodpact,
+/turf/simulated/floor/seolite,
+/area/map_template/oldpod)
+"CS" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"Ds" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
+	dir = 1;
+	id_tag = "charon_cargo_pump"
+	},
+/obj/machinery/embedded_controller/radio/airlock/airlock_controller{
+	cycle_to_external_air = 1;
+	frequency = 1380;
+	id_tag = "crashedpodWest";
+	tag_airpump = "crashedpodWest_pump";
+	tag_chamber_sensor = "crashedpodWest_sensor_chamber";
+	tag_exterior_door = "crashedpodWest_exterior_door";
+	tag_exterior_sensor = "crashedpodWest_sensor_external";
+	tag_interior_door = "crashedpodWest_interior_door";
+	dir = 8;
+	pixel_x = 19
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"Dv" = (
+/obj/floor_decal/industrial/warning,
+/turf/simulated/floor/seolite,
+/area/map_template/oldpod)
+"ED" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden,
+/obj/machinery/shield_diffuser,
+/obj/machinery/door/airlock/external{
+	frequency = 1380;
+	id_tag = "crashedpodWest_exterior_door";
+	locked = 1
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"Hp" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/obj/machinery/atmospherics/binary/pump/on{
+	name = "port thrust pump"
+	},
+/obj/item/inflatable/door,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"Hx" = (
+/obj/floor_decal/industrial/warning{
+	dir = 8
+	},
+/obj/machinery/portable_atmospherics/canister/empty/phoron,
+/turf/simulated/floor/seolite,
+/area/map_template/oldpod)
+"Ib" = (
+/obj/structure/closet/medical_wall/filled{
+	pixel_x = 32
+	},
+/obj/random/firstaid,
+/obj/random/medical,
+/obj/random/medical,
+/obj/random/medical,
+/obj/random/medical,
+/obj/random/medical,
+/obj/random/medical,
+/obj/structure/table/steel_reinforced,
+/obj/item/bodybag/cryobag,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"IY" = (
+/obj/structure/bed/chair/shuttle/black{
+	dir = 4
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"Je" = (
+/obj/structure/sign/solgov,
+/obj/paint/meatstation/lab,
+/turf/simulated/wall/titanium,
+/area/map_template/oldpod)
+"JM" = (
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"KZ" = (
+/obj/machinery/computer/ship/navigation/telescreen{
+	pixel_y = -32
+	},
+/obj/structure/closet/crate/warhammer/freezer/rations,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"Lb" = (
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"LN" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/techfloor,
-/area/map_template/crashed_pod)
-"hh" = (
 /obj/decal/cleanable/dirt,
-/obj/structure/closet/emcloset,
-/obj/item/crowbar,
-/obj/item/crowbar,
-/obj/floor_decal/industrial/outline/blue,
-/obj/item/clothing/suit/space/emergency,
-/obj/item/tank/oxygen_emergency_double,
-/obj/item/clothing/head/helmet/space/emergency,
-/obj/item/device/suit_cooling_unit,
-/turf/simulated/floor/tiled/dark,
-/area/map_template/crashed_pod)
-"hi" = (
-/obj/structure/closet/emcloset,
-/obj/floor_decal/industrial/outline/blue,
-/obj/item/clothing/suit/space/emergency,
-/obj/item/tank/oxygen_emergency_double,
-/obj/item/clothing/head/helmet/space/emergency,
-/obj/item/storage/briefcase/inflatable,
-/obj/item/device/suit_cooling_unit,
-/turf/simulated/floor/tiled/dark,
-/area/map_template/crashed_pod)
-"hj" = (
-/obj/machinery/atmospherics/pipe/simple/visible/blue{
-	dir = 9
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
 	},
-/obj/machinery/light/spot{
+/area/map_template/oldpod)
+"Ms" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/techfloor,
-/area/map_template/crashed_pod)
-"hk" = (
-/obj/structure/table/steel_reinforced,
-/obj/machinery/recharger,
-/obj/item/reagent_containers/food/drinks/glass2/coffeecup/metal,
-/turf/simulated/floor/tiled/dark,
-/area/map_template/crashed_pod)
-"hm" = (
-/obj/structure/sign/kiddieplaque{
-	desc = "A plaque with information regarding this particular lifepod. It reads: 'Armalev Industries Skyfin-E, Exoplanetary Suvival Pod' there's a registry number, and an assigned mothership, but they've both been scratched to illegiblity.";
-	name = "\improper Lifepod Plaque";
-	pixel_y = 30
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
 	},
-/turf/simulated/floor/tiled/techfloor,
-/area/map_template/crashed_pod)
-"lG" = (
-/obj/wallframe_spawn/reinforced/hull,
-/turf/simulated/floor/plating,
-/area/map_template/crashed_pod)
-"pO" = (
-/obj/decal/cleanable/dirt,
-/obj/machinery/radio_beacon,
-/turf/simulated/floor/tiled/dark,
-/area/map_template/crashed_pod)
-"vG" = (
-/obj/decal/cleanable/dirt,
-/obj/floor_decal/industrial/outline/blue,
-/obj/machinery/portable_atmospherics/powered/pump/filled,
-/turf/simulated/floor/tiled/dark,
-/area/map_template/crashed_pod)
-"ED" = (
-/obj/submap_landmark/joinable_submap/crashed_pod,
-/turf/simulated/floor/tiled/dark/monotile,
-/area/map_template/crashed_pod)
-"Gp" = (
-/obj/decal/cleanable/dirt,
-/obj/floor_decal/industrial/outline/blue,
-/obj/machinery/portable_atmospherics/powered/scrubber,
-/turf/simulated/floor/tiled/dark,
-/area/map_template/crashed_pod)
-"Hp" = (
-/obj/machinery/sleeper{
+/obj/machinery/button/blast_door{
+	id_tag = "col_shutters";
+	name = "Protective Shutters Control";
+	pixel_y = -25
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"MJ" = (
+/obj/machinery/portable_atmospherics/canister/empty,
+/obj/machinery/atmospherics/portables_connector{
+	dir = 1
+	},
+/obj/floor_decal/industrial/outline/red,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"MU" = (
+/obj/structure/table/steel_reinforced,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"Nv" = (
+/obj/machinery/computer/ship/helm,
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/machinery/light{
 	dir = 8
 	},
-/obj/floor_decal/industrial/outline/blue,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"NW" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"Qk" = (
+/obj/machinery/computer/ship/engines{
+	dir = 4
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 4
+	},
 /obj/item/device/radio/intercom/hailing{
-	dir = 8;
-	pixel_x = 24
+	pixel_y = 22
 	},
-/turf/simulated/floor/tiled/dark/monotile,
-/area/map_template/crashed_pod)
-"Hx" = (
-/obj/machinery/air_sensor{
-	id_tag = "crashed_pod_out"
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
 	},
-/turf/simulated/floor/reinforced{
-	map_airless = 1
+/area/map_template/oldpod)
+"Qo" = (
+/obj/floor_decal/techfloor{
+	dir = 6
 	},
-/area/map_template/crashed_pod)
+/obj/floor_decal/industrial/outline/yellow,
+/obj/machinery/floodlight,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"Qq" = (
+/obj/machinery/computer/ship/sensors{
+	dir = 4
+	},
+/obj/machinery/alarm{
+	dir = 1;
+	pixel_y = -22;
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
 "RN" = (
-/obj/structure/table/steel_reinforced,
-/obj/item/device/radio/hailing,
-/obj/item/device/radio/hailing,
-/obj/item/device/radio/hailing,
-/obj/item/device/radio/hailing,
-/obj/item/device/radio/hailing,
-/obj/random/plushie,
-/obj/item/paper_bin,
-/turf/simulated/floor/tiled/dark,
-/area/map_template/crashed_pod)
-"ZI" = (
+/obj/structure/hivedecor/chimera_wreck,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"RQ" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/glass{
+	name = "Cockpit"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"Ud" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/handrail{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/cyan,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/seolite,
+/area/map_template/oldpod)
+"UZ" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/universal,
+/obj/structure/handrail{
+	dir = 8
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"WF" = (
+/obj/machinery/atmospherics/unary/tank/air{
+	dir = 1;
+	start_pressure = 4559.63
+	},
 /obj/floor_decal/industrial/outline/blue,
-/obj/machinery/portable_atmospherics/powered/scrubber,
-/turf/simulated/floor/tiled/dark/monotile,
-/area/map_template/crashed_pod)
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"Xp" = (
+/obj/structure/bed/chair/shuttle/black{
+	dir = 4
+	},
+/obj/item/device/radio/intercom/hailing{
+	dir = 4;
+	pixel_x = -24
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"XK" = (
+/obj/structure/cable/cyan{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/turf/simulated/floor/seolite,
+/area/map_template/oldpod)
+"Zs" = (
+/obj/structure/bed/chair/shuttle/blue,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
+"ZI" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
+	dir = 8
+	},
+/obj/floor_decal/industrial/warning/corner{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
+	},
+/obj/machinery/power/apc/hyper/shuttle/charon{
+	dir = 8;
+	pixel_x = -27
+	},
+/obj/structure/cable/cyan,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/map_template/oldpod)
 
 (1,1,1) = {"
-bW
-bW
-bW
-bW
-bW
-bW
-bW
-bW
-bW
-bW
-bW
-bW
-bW
-bW
-bW
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
 "}
 (2,1,1) = {"
-ab
-bb
-ej
-ej
-Hx
-bu
-ej
-ej
-ej
-ej
-ej
-ej
-ej
-ej
-ej
+vm
+vm
+vm
+vm
+bW
+bW
+bW
+bW
+bW
+bW
+bW
+bW
+bW
+bW
+bW
+bW
+bW
+bW
+bW
+bW
+bW
+bW
+bW
+bW
+vm
 "}
 (3,1,1) = {"
-ab
-bE
-ab
-ab
-lG
-eU
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
+vm
+vm
+vm
+vm
+bW
+fz
+Je
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+Je
+hi
+fD
+RN
+fz
+fz
+bW
+vm
 "}
 (4,1,1) = {"
+vm
+vm
+vm
+hi
+bb
+bb
+hi
+fz
+fD
+fE
+bE
+hi
+hi
+Xp
+IY
+oF
+hi
+hi
+cT
+hy
+WF
+fz
+fz
+bW
+vm
+"}
+(5,1,1) = {"
+vm
+vm
+hi
+hi
+Qk
+Qq
 ab
-bF
+fz
+fz
+fD
+fD
 bY
-ab
+hi
 eC
-fb
+LN
 fg
-fx
+hi
 fP
 ge
 gC
 gD
-gU
-hk
-ab
+fz
+fz
+bW
+vm
 "}
-(5,1,1) = {"
-ab
+(6,1,1) = {"
+vm
+vm
+fz
+Nv
+BG
+dJ
+hi
+fz
+Lb
+fx
 bG
 el
-em
+hi
 eD
-eW
+fz
 fh
-fy
+hi
 gd
 ay
 Hp
 gE
-gV
-RN
-ab
-"}
-(6,1,1) = {"
-ab
-bH
-eq
-eq
-eG
-fk
-fi
-fz
-fQ
-ay
-ay
-ay
-gW
-hh
-ab
+hi
+hi
+bW
+vm
 "}
 (7,1,1) = {"
-ab
-bI
-ca
-en
-eG
-eY
-fj
-fA
-fR
-gx
-gx
-ay
-gX
+vm
+vm
+fz
+fz
+Ms
+MU
 hi
-lG
+Ib
+bI
+rz
+bH
+eq
+hi
+fz
+zZ
+fz
+hi
+fQ
+qd
+UZ
+MJ
+hi
+fz
+bW
+vm
 "}
 (8,1,1) = {"
-ab
+vm
+vm
+fz
+hi
+RQ
+hi
+hi
+hi
+vG
+xK
+hi
+hi
+hi
+hi
+xK
+hi
+hi
+fR
+hi
+hi
+hi
+hi
+hi
+bW
+vm
+"}
+(9,1,1) = {"
+vm
+vm
+em
+Zs
+kY
+CS
+bq
+XK
+hN
+en
 bJ
 cb
 bq
 eH
 eZ
-fk
-gg
+eY
+dV
 fS
 gg
 gF
 gH
 ad
 ED
-lG
+bW
+vm
 "}
-(9,1,1) = {"
-eE
+(10,1,1) = {"
+vm
+vm
+em
+dL
+bs
+NW
+gV
+gx
+ui
+vE
 bK
 cc
 eo
-eH
+Ud
 ac
 fl
 fC
 gh
 gw
 gG
-ay
+Ds
 hm
-pO
-lG
+ED
+bW
+vm
 "}
-(10,1,1) = {"
+(11,1,1) = {"
+vm
+vm
+em
+vv
+JM
+xe
+hi
+CN
+hG
 eE
 bk
 bo
-ep
-eI
+hi
+hi
 fb
-fm
-fD
+hi
+hi
 gi
-ay
-ay
-ay
-gT
-vG
-ab
+hi
+hi
+hi
+hi
+hi
+bW
+vm
 "}
-(11,1,1) = {"
-ab
-bL
-eq
-eq
+(12,1,1) = {"
+vm
+vm
+em
+rZ
+JM
+KZ
+hi
+pO
+Dv
+bn
+fz
+fz
+hi
 eJ
 fk
 fn
-fE
+hi
 fT
-ay
+ZI
 gz
 gK
-gZ
-Gp
-ab
+hi
+fz
+bW
+vm
 "}
-(12,1,1) = {"
-ab
-bl
-bp
-bs
+(13,1,1) = {"
+vm
+vm
+em
+gt
+yh
+by
+hi
+fz
+Dv
+nw
+fz
+fz
+hi
 bt
 bX
 ep
-ff
+hi
 gv
 gy
 gI
 gJ
-hj
-ZI
-ab
-"}
-(13,1,1) = {"
-ab
-bm
-ab
-ab
-lG
-eU
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
+hi
+fz
+bW
+vm
 "}
 (14,1,1) = {"
-ab
-bn
-ej
-ej
-ej
-ek
-ej
-ej
-ej
-ej
-ej
-ej
-ej
-ej
-ej
+vm
+vm
+hi
+hi
+cU
+np
+hi
+fz
+fz
+fz
+fz
+Qo
+hi
+lG
+eU
+AO
+hi
+fy
+BX
+fz
+fz
+fz
+fz
+bW
+vm
 "}
 (15,1,1) = {"
+vm
+vm
+hi
+hi
+hi
+hi
+hi
+fz
+fz
+fz
+Hx
+hi
+hi
+hi
+hi
+pt
+hi
+hi
+CB
+fz
+fz
+fz
+fz
+bW
+vm
+"}
+(16,1,1) = {"
+vm
+vm
+bW
+hi
+hi
+hi
+fz
+fz
+fz
+fz
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+Je
+hi
+fz
+fz
+fz
+fz
+bW
+vm
+"}
+(17,1,1) = {"
+vm
+vm
 bW
 bW
 bW
@@ -1346,4 +2235,39 @@ bW
 bW
 bW
 bW
+bW
+bW
+bW
+bW
+bW
+bW
+bW
+vm
+"}
+(18,1,1) = {"
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
+vm
 "}

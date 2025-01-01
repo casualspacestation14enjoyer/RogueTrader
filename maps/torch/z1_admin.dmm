@@ -366,7 +366,7 @@
 "ace" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "escape_pod_1_recovery_hatch";
 	locked = 1;
 	name = "Recovery Shuttle Dock"
@@ -379,7 +379,7 @@
 "acf" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "escape_pod_2_recovery_hatch";
 	locked = 1;
 	name = "Recovery Shuttle Dock"
@@ -492,7 +492,7 @@
 	id_tag = "escape_pod_1_recovery";
 	pixel_x = 25;
 	pixel_y = 30;
-	req_access = list(list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW"));
+	req_access = list("ACCESS_MECHANICUS");
 	tag_door = "escape_pod_1_recovery_hatch"
 	},
 /turf/unsimulated/floor{
@@ -544,7 +544,7 @@
 	id_tag = "escape_pod_2_recovery";
 	pixel_x = -25;
 	pixel_y = 30;
-	req_access = list(list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW"));
+	req_access = list("ACCESS_MECHANICUS");
 	tag_door = "escape_pod_2_recovery_hatch"
 	},
 /turf/unsimulated/floor{
@@ -934,7 +934,7 @@
 "aeI" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "escape_pod_5_recovery_hatch";
 	locked = 1;
 	name = "Recovery Shuttle Dock"
@@ -950,7 +950,7 @@
 	id_tag = "escape_pod_5_recovery";
 	pixel_x = -25;
 	pixel_y = 25;
-	req_access = list(list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW"));
+	req_access = list("ACCESS_MECHANICUS");
 	tag_door = "escape_pod_5_recovery_hatch"
 	},
 /turf/unsimulated/floor{
@@ -973,7 +973,7 @@
 	id_tag = "escape_pod_3_recovery";
 	pixel_x = 25;
 	pixel_y = -25;
-	req_access = list(list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW"));
+	req_access = list("ACCESS_MECHANICUS");
 	tag_door = "escape_pod_3_recovery_hatch"
 	},
 /turf/unsimulated/floor{
@@ -984,7 +984,7 @@
 "aeM" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "escape_pod_3_recovery_hatch";
 	locked = 1;
 	name = "Recovery Shuttle Dock"
@@ -1275,7 +1275,7 @@
 /turf/simulated/floor/holofloor/tiled/dark,
 /area/holodeck/source_boxingcourt)
 "agp" = (
-/obj/structure/closet/secure_closet/personal/patient,
+/obj/structure/closet/warhammer/secure_closet/personal/patient,
 /turf/unsimulated/floor{
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "floor3"
@@ -2258,7 +2258,7 @@
 	},
 /area/centcom/living)
 "atv" = (
-/obj/structure/closet/secure_closet/personal,
+/obj/structure/closet/warhammer/secure_closet/personal,
 /turf/unsimulated/floor{
 	icon_state = "carpet"
 	},
@@ -2490,7 +2490,7 @@
 "aun" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "admin_shuttle_bay_door";
 	locked = 1
 	},
@@ -2941,7 +2941,7 @@
 "avS" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "admin_shuttle_hatch";
 	locked = 1;
 	name = "Shuttle Hatch"
@@ -3700,10 +3700,10 @@
 /obj/item/clothing/head/helmet/ert/security,
 /obj/item/clothing/head/helmet/ert/security,
 /obj/item/clothing/head/helmet/ert/security,
-/obj/item/storage/backpack/ert/security,
-/obj/item/storage/backpack/ert/security,
-/obj/item/storage/backpack/ert/security,
-/obj/item/storage/backpack/ert/security,
+/obj/item/storage/backpack/tau/security,
+/obj/item/storage/backpack/tau/security,
+/obj/item/storage/backpack/tau/security,
+/obj/item/storage/backpack/tau/security,
 /turf/unsimulated/floor{
 	dir = 1;
 	icon_state = "vault"
@@ -5523,7 +5523,7 @@
 "aEW" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "specops_shuttle_port_hatch";
 	locked = 1;
 	name = "Port Docking Hatch"
@@ -5535,7 +5535,7 @@
 "aEX" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "specops_centcom_dock_door";
 	locked = 1
 	},
@@ -5684,7 +5684,7 @@
 /area/centcom/holding)
 "aFN" = (
 /obj/machinery/door/airlock/external{
-	icon_state = "closed";
+	icon_state = "door_closed";
 	locked = 1
 	},
 /turf/unsimulated/floor{
@@ -5772,7 +5772,7 @@
 "aGq" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "specops_shuttle_fore_hatch";
 	locked = 1;
 	name = "Forward Docking Hatch"
@@ -6144,7 +6144,7 @@
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
 	glass = 1380;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "centcom_shuttle_bay_door";
 	locked = 1;
 	name = "Transport Airlock"
@@ -6241,7 +6241,7 @@
 "aHR" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "centcom_shuttle_hatch";
 	locked = 1;
 	name = "Shuttle Hatch"
@@ -9582,7 +9582,7 @@
 	},
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "merchant_ship_interior";
 	locked = 1;
 	name = "Ship Exterior"
@@ -9802,7 +9802,7 @@
 "aTY" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "merchant_ship_exterior";
 	locked = 1;
 	name = "Ship Exterior"
@@ -9906,7 +9906,7 @@
 "aUh" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "merchant_station_exterior";
 	locked = 1;
 	name = "Station Exterior"
@@ -9981,7 +9981,7 @@
 "aUy" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
-	icon_state = "closed";
+	icon_state = "door_closed";
 	id_tag = "merchant_station_interior";
 	locked = 1;
 	name = "Station Exterior"

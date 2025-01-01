@@ -206,12 +206,6 @@
 	desc = "..."
 	icon_state = "bsd_c_s"
 
-/obj/structure/hivedecor/xenos/artifact/supermatter
-	name = "???"
-	desc = "..."
-	icon = 'icons/map_project/port/supermatter.dmi'
-	icon_state = "supermatter_glow"
-
 /obj/structure/hivedecor/xenos/artifact/gateway // top part of gateway. starts off.
 	name = "???"
 	desc = "..."
@@ -303,7 +297,7 @@
 	desc = "A crate of emergency rations."
 
 /obj/structure/closet/crate/warhammer/freezer/rations/WillContain()
-	return list(/obj/random/mre = 6, /obj/item/reagent_containers/food/drinks/cans/waterbottle = 12)
+	return list(/obj/random/mre = 3, /obj/item/reagent_containers/food/drinks/cans/waterbottle = 4)
 
 /obj/structure/closet/crate/warhammer/freezer/meat
 	name = "meat crate"
@@ -311,9 +305,9 @@
 
 /obj/structure/closet/crate/warhammer/freezer/meat/WillContain()
 	return list(
-		/obj/item/reagent_containers/food/snacks/meat/beef = 4,
-		/obj/item/reagent_containers/food/snacks/meat/syntiflesh = 4,
-		/obj/random/fish = 8
+		/obj/item/reagent_containers/food/snacks/meat/beef = 3,
+		/obj/item/reagent_containers/food/snacks/meat/syntiflesh = 2,
+		/obj/random/fish = 3
 	)
 
 
@@ -406,7 +400,7 @@
 	icon_opened = "techpod_open"
 	icon_closed = "techpod_closed"
 
-/obj/structure/closet/crate/warhammer/secure_closet/personal/safe
+/obj/structure/closet/crate/warhammer/safe
 	name = "secure safe"
 	desc = "A secure safe."
 	icon = 'icons/map_project/port/structures.dmi'
@@ -415,7 +409,7 @@
 	icon_closed = "safe"
 	anchored = 1
 
-/obj/structure/closet/crate/warhammer/secure_closet/personal/floorsafe
+/obj/structure/closet/crate/warhammer/floorsafe
 	name = "secure safe"
 	desc = "A secure safe."
 	icon = 'icons/map_project/port/structures.dmi'
@@ -537,7 +531,7 @@
 	response_harm = "hits"
 	speed = 5 // Slower but deadilier
 	stop_automated_movement_when_pulled = 0
-	maxHealth = 550
+	maxhealth = 550
 	health = 550
 	harm_intent_damage = 45
 	melee_damage_lower = 55

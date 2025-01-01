@@ -1,7 +1,7 @@
 /obj/item/material/shard
 	name = "shard"
 	icon = 'icons/obj/materials/shards.dmi'
-	icon_state = ""
+	icon_state = "small"
 	randpixel = 8
 	sharp = TRUE
 	edge = TRUE

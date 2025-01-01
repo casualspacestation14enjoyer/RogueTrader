@@ -9,7 +9,7 @@
 	density = TRUE
 	anchored = TRUE
 	idle_power_usage = 5
-	active_power_usage = 100
+	active_power_usage = 20
 	atom_flags = ATOM_FLAG_NO_TEMP_CHANGE | ATOM_FLAG_NO_REACT
 	obj_flags = OBJ_FLAG_ANCHORABLE | OBJ_FLAG_ROTATABLE
 	var/static/max_n_of_items = 999 // Sorry but the BYOND infinite loop detector doesn't look things over 1000.
@@ -67,7 +67,7 @@
 	name = "\improper Slime Extract Storage"
 	desc = "A refrigerated storage unit for slime extracts."
 	icon_contents = "slime"
-	req_access = list(access_research)
+	req_access = list(access_mechanicus)
 	accepted_types = list(
 		/obj/item/slime_extract
 	)
@@ -76,7 +76,7 @@
 	name = "\improper Refrigerated Medicine Storage"
 	desc = "A refrigerated storage unit for storing medicine and chemicals."
 	icon_contents = "chem"
-	req_access = list(list(access_medical,access_chemistry))
+	req_access = list(access_dauntless)
 	accepted_types = list(
 		/obj/item/reagent_containers/glass,
 		/obj/item/storage/pill_bottle,
@@ -87,7 +87,7 @@
 /obj/machinery/smartfridge/secure/virology
 	name = "\improper Refrigerated Virus Storage"
 	desc = "A refrigerated storage unit for storing viral material."
-	req_access = list(access_virology)
+	req_access = list(access_mechanicus)
 	icon_contents = "chem"
 	accepted_types = list(
 		/obj/item/reagent_containers/glass/beaker/vial

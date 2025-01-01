@@ -71,7 +71,7 @@
 	item_state = "wristblade"
 	base_parry_chance = 0
 	force_multiplier = 0.3
-	attack_cooldown_modifier = -0.5
+	attack_cooldown_modifier = 0.5
 	default_material = MATERIAL_PLASTEEL
 
 	/// SMALL prevents dismembering limbs - only hands & feet

@@ -6,12 +6,12 @@
 	rock_colors = list(COLOR_DARK_GRAY)
 	plant_colors = list("#a23c05","#3f1f0d","#662929","#ba6222","#7a5b3a","#120309")
 	map_generators = list(/datum/random_map/automata/cave_system/mountains/volcanic, /datum/random_map/noise/exoplanet/volcanic, /datum/random_map/noise/ore/filthy_rich)
-	ruin_tags_blacklist = RUIN_HABITAT|RUIN_WATER
+	ruin_tags_blacklist = RUIN_WATER
 	surface_color = "#261e19"
 	water_color = "#c74d00"
 	habitability_weight = HABITABILITY_EXTREME
 	has_trees = FALSE
-	flora_diversity = 3
+	flora_diversity = 4
 	fauna_types = list(/mob/living/simple_animal/thinbug, /mob/living/simple_animal/hostile/retaliate/beast/shantak/lava, /mob/living/simple_animal/hostile/retaliate/beast/charbaby)
 	megafauna_types = list(/mob/living/simple_animal/hostile/drake)
 

@@ -55,7 +55,7 @@
 	density = TRUE
 	opacity = 0
 	anchored = FALSE
-	req_access = list(access_engine)
+	req_access = list(access_mechanicus)
 	health_max = 400
 	var/active = 0
 	var/malfunction = 0 //Malfunction causes parts of the shield to slowly dissapate

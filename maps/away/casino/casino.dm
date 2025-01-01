@@ -6,7 +6,7 @@
 	desc = "Sensors detect an undamaged vessel without any signs of activity."
 	color = "#bd6100"
 	vessel_mass = 5000
-	max_speed = 1/(2 SECONDS)
+	max_speed = 1/(1 SECONDS)
 	burn_delay = 1 SECOND
 	initial_generic_waypoints = list(
 		"nav_casino_1",
@@ -62,7 +62,7 @@
 /datum/shuttle/autodock/overmap/casino_cutter
 	name = "Casino Cutter"
 	warmup_time = 15
-	move_time = 60
+	move_time = 30
 	shuttle_area = /area/casino/casino_cutter
 	current_location = "nav_casino_hangar"
 	landmark_transition = "nav_casino_transit"

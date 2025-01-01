@@ -1528,7 +1528,7 @@
 		src.visible_message(SPAN_WARNING("[src] transforms, the dummy body's features twisting and cracking as it imitates the provided blood!"))
 		H.dropInto(src.loc)
 		H.setBrainLoss(200)
-		H.adjustOxyLoss(H.maxHealth)
+		H.adjustOxyLoss(H.maxhealth)
 		domutcheck(H, null)
 		H.UpdateAppearance()
 		qdel(src)
@@ -3372,6 +3372,26 @@
 
 //Just a short line of Canned Consumables, great for treasure in faraway abandoned outposts
 
+/obj/item/reagent_containers/food/snacks/canned/warfare
+	name = "\improper canned beans"
+	desc = "Supposedly what's in there is edible."
+	icon_state = "cbeans"
+	icon = 'icons/obj/food.dmi'
+	trash = /obj/item/trash/warfare_can
+	nutriment_desc = list("meat" = 1)
+	nutriment_amt = 5
+	var/drop_sound = 'sound/items/handle/can_drop.ogg'
+
+/obj/item/reagent_containers/food/snacks/canned/warfare/throw_impact(atom/hit_atom)
+	..()
+	if(drop_sound)
+		playsound(src, drop_sound, 50, 0)
+
+/obj/item/reagent_containers/food/snacks/canned/warfare/on_update_icon()
+	if(!sealed)
+		icon_state = "[initial(icon_state)]_open"
+
+
 /obj/item/reagent_containers/food/snacks/canned/beef
 	name = "quadrangled beefium"
 	icon_state = "beef"
@@ -3777,7 +3797,7 @@
 
 /obj/item/reagent_containers/food/snacks/donut
 	name = "donut"
-	desc = "Goes great with Robust Coffee."
+	desc = "Goes great with Recaf."
 	icon_state = "donut1"
 	filling_color = "#b87b12"
 	var/overlay_state = "box-donut1"
@@ -3786,7 +3806,7 @@
 
 /obj/item/reagent_containers/food/snacks/donut/normal
 	name = "donut"
-	desc = "Goes great with Robust Coffee."
+	desc = "Goes great with Recaf."
 	icon_state = "donut1"
 	nutriment_amt = 3
 	bitesize = 3

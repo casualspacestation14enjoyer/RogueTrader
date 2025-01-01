@@ -6,7 +6,7 @@
 	icon_state = "shade"
 	icon_living = "shade"
 	icon_dead = "shade_dead"
-	maxHealth = 50
+	maxhealth = 50
 	health = 50
 	universal_speak = TRUE
 	speak_emote = list("hisses")

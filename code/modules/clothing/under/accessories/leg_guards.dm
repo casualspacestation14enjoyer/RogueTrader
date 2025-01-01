@@ -10,7 +10,7 @@
 	icon_state = "legguards"
 	gender = PLURAL
 	body_parts_covered = LEGS // Don't assign melee defense to leg_guards unless absolutely necessary. Can break the meta.
-	slowdown = 0.04
+	slowdown = 0.02
 	armor = list(
 		melee = 0,
 		bullet = 1,
@@ -44,7 +44,7 @@
 	name = "carapace legplates"
 	desc = "A pair of extra light red-trimmed black carapace legplates."
 	icon_state = "legguards_merc"
-	slowdown = 0.03
+	slowdown = 0.015
 	armor = list(
 		melee = 1,
 		bullet = 1,
@@ -59,7 +59,7 @@
 	name = "flak legplates"
 	desc = "A pair of heavy armored flak legplates."
 	icon_state = "legguards_riot"
-	slowdown = 0.04
+	slowdown = 0.02
 	armor = list(
 		melee = 1,
 		bullet = 1,
@@ -75,7 +75,7 @@
 	name = "heavy legplates"
 	desc = "A pair of reactive armor tech legplates. Designed to stop slug rounds."
 	icon_state = "legguards_ballistic"
-	slowdown = 0.06
+	slowdown = 0.025
 	armor = list(
 		melee = 1,
 		bullet = 2,
@@ -91,7 +91,7 @@
 	name = "heavy legplates"
 	desc = "A pair of reactive armor tech legplates. Designed to stop energy weapons."
 	icon_state = "legguards_ablative"
-	slowdown = 0.06
+	slowdown = 0.025
 	armor = list(
 		melee = 1,
 		bullet = 1,

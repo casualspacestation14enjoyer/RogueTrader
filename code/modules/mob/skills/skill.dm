@@ -17,7 +17,7 @@ GLOBAL_LIST_EMPTY(skills)
 						"Demigod"			= "Demigod Description")
 
 	var/difficulty = SKILL_AVERAGE         //Used to compute how expensive the skill is
-	var/default_max = SKILL_MASTER          //Makes the skill capped at this value in selection unless overriden at job level.
+	var/default_max = SKILL_EXPERIENCED          //Makes the skill capped at this value in selection unless overriden at job level.
 	var/prerequisites                      // A list of skill prerequisites, if needed.
 
 /singleton/hierarchy/skill/proc/get_cost(level)
@@ -52,20 +52,14 @@ GLOBAL_LIST_EMPTY(skills)
 /singleton/hierarchy/skill/organizational
 	name = "Organizational"
 	ID	 = "1"
-	difficulty = SKILL_EASY
-	default_max = SKILL_MASTER
 
 /singleton/hierarchy/skill/general
 	name = "General"
 	ID	 = "2"
-	difficulty = SKILL_EASY
-	default_max = SKILL_MASTER
 
 /singleton/hierarchy/skill/service
 	name = "Service"
 	ID	 = "service"
-	difficulty = SKILL_EASY
-	default_max = SKILL_MASTER
 
 /singleton/hierarchy/skill/security
 	name = "Security"
@@ -82,7 +76,6 @@ GLOBAL_LIST_EMPTY(skills)
 /singleton/hierarchy/skill/medical
 	name = "Medical"
 	ID	 = "medical"
-	difficulty = SKILL_HARD
 
 // ONLY SKILL DEFINITIONS BELOW THIS LINE
 // Category: Organizational
@@ -96,6 +89,8 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "You can handle unfamiliar paperwork with ease and have a strong grasp of the laws and regulations pertinent to your role. You know how to navigate the cogitator-filled labyrinths of the Administratum.",
 						"Experienced"		= "With your experience, you can generate clear and detailed reports, and you know how to navigate even complex bureaucratic processes. Your knowledge of Imperial law may be backed by formal legal training, allowing you to manage legal affairs effectively.",
 						"Master"		= "You are a master of Imperial bureaucracy, capable of wielding paperwork as a tool to achieve your goals. Byzantine legal structures and red tape are no match for you. Your knowledge of Imperial law and regulations is vast, and you may even have the authority to represent noble houses or Imperial institutions in legal matters.")
+	difficulty = SKILL_EASY
+	default_max = SKILL_MASTER
 
 /singleton/hierarchy/skill/organizational/finance
 	ID = "finance"
@@ -106,6 +101,8 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "You are competent in managing accounts, handling ledgers, and processing transactions. You have a working knowledge of bonds, loans, and trade deals, though advanced financial schemes may still trip you up.",
 						"Experienced"		= "You are familiar with most financial systems and entities, able to assess the value of assets with accuracy. Your investments are typically successful, and your judgment is trusted in financial dealings.",
 						"Master"		= "You are a financial master, capable of managing vast sums of Thrones with ease. Interstellar trade and complex financial instruments are like second nature to you. You make shrewd investments, often yielding significant returns, and likely have considerable experience managing the wealth of noble houses or Imperial institutions.")
+	difficulty = SKILL_AVERAGE
+	default_max = SKILL_MASTER
 
 // Category: General
 
@@ -118,6 +115,8 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "You’re comfortable using a space suit regularly and don’t panic in emergencies. Checking internals is instinctive, and you can navigate void environments with ease.<br>- You can fully operate jetpacks.",
 						"Experienced"		= "You’ve mastered the use of various space suits, including specialized models. Years of void experience have made you resistant to disorientation, and you maneuver expertly with a jetpack.<br>- You cannot slip anymore.",
 						"Master"		= "You are as comfortable in the void as you are in atmosphere. Zero-gravity operations are second nature to you.<br>- You no longer get floored when re-entering gravity.<br>- You gain bonus speed in zero-G.")
+	difficulty = SKILL_EASY
+	default_max = SKILL_MASTER
 
 /singleton/hierarchy/skill/general/EVA/mech
 	ID = "exosuit"
@@ -127,7 +126,7 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "You are proficient with exosuit operation, able to control them without penalties. Safety protocols and proper use are second nature.")
 	prerequisites = list(SKILL_EVA = SKILL_TRAINED)
 	default_max = SKILL_TRAINED
-	difficulty = SKILL_TRAINED
+	difficulty = SKILL_EASY
 
 /singleton/hierarchy/skill/general/pilot
 	ID = "pilot"
@@ -150,6 +149,8 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "You have the strength and dexterity for strenuous tasks, capable of performing manual labor for extended periods without tiring.",
 						"Experienced"		= "You’re accustomed to physically demanding work and are in excellent shape. You may regularly engage in physical training or work in extreme conditions.",
 						"Master"		= "You are in peak physical condition, highly adapted to heavy labor or combat. Extended periods of intense physical work are no challenge for you.")
+	difficulty = SKILL_AVERAGE
+	default_max = SKILL_MASTER
 
 /singleton/hierarchy/skill/general/computer
 	ID = "computer"
@@ -160,7 +161,7 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "You regularly maintain cogitators and repair telecommunication systems, performing necessary rites to calm their machine-spirits. While knowledge of AI programming is dangerous, you understand enough to cautiously interact with them in extreme cases.<br>- You can fully operate Network Monitors, E-mail Administration, and system management programs.",
 						"Experienced"		= "You are adept with cogitator systems and have a deep understanding of telecommunication networks. Despite the Adeptus Mechanicus’ strictures, your knowledge of AI subversion and manipulation could be put to use in dire circumstances, though at great risk.<br>- Antagonist access programs can generate false logs to hide your activities.<br>- You can use advanced command lines on modular cogitators.",
 						"Master"		= "You are a master of machine-lore and can manipulate cogitators with ease, handling systems most dare not approach. You can work with forbidden AI systems, though such activities are tech-heresy and must be hidden from the Mechanicus. Your skill with cogitators allows you to design and construct entire networks from scratch, or breach the most guarded systems.<br>- Your ability to manipulate AI systems is unparalleled, though highly dangerous.")
-
+	difficulty = SKILL_AVERAGE
 // Category: Service
 
 /singleton/hierarchy/skill/service/botany
@@ -172,6 +173,8 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "You are skilled in botany, capable of growing food crops and oxygen-producing flora. You can work with more exotic plant species and manipulate their genes.<br>- You can safely plant and weed xenoflora.<br>- You can operate xenoflora machines. Sample degradation decreases with skill.",
 						"Experienced"		= "You are a botanist or agri-worker responsible for hydroponics systems or botanical research. You excel at hybridizing plants and creating custom strains for specialized purposes.",
 						"Master"		= "You are a master botanist, able to cultivate even the most exotic or dangerous flora. You can manipulate plant genes with precision, avoiding sample degradation, and grow life-sustaining crops for the Imperium's worlds.")
+	difficulty = SKILL_EASY
+	default_max = SKILL_MASTER
 
 /singleton/hierarchy/skill/service/cooking
 	ID = "cooking"
@@ -182,7 +185,8 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "You can follow most recipes and prepare standard meals for a crew or group. Your cooking is dependable, and you have some experience serving in mess halls or small gatherings.<br>- You can operate drink dispensers efficiently.",
 						"Experienced"		= "You are a professional cook, capable of feeding entire starship crews or garrisons. You can handle complicated recipes and drinks without issue, and your meals keep morale high.",
 						"Master"		= "You are a master chef, skilled at preparing exotic foods and drinks, even those that would be hazardous if done incorrectly. You can manage a large kitchen staff and cater for high-ranking Imperial officials or special events.")
-
+	difficulty = SKILL_EASY
+	default_max = SKILL_MASTER
 // Category: Security
 
 /singleton/hierarchy/skill/security/combat
@@ -198,7 +202,7 @@ GLOBAL_LIST_EMPTY(skills)
 						"Legend"			= "Few can match your prowess in close combat. Your name is known in the Imperium, feared by your enemies. You parry and counterstrike with ruthless efficiency, facing down multiple foes with ease.",
 						"Primaris"			= "You are beyond the capability of most mortals. Whether due to genetic augmentation or extraordinary skill, your reflexes and combat ability are nearly superhuman.",
 						"Demigod"			= "You are a living legend, a force of destruction on the battlefield. Be it Astartes, Eldar Exarch, or the finest of the Adeptus Custodes, only the greatest champions reach this level. Your power in combat is enough to turn the tide of a war.<br>- You are nearly unstoppable, with unmatched speed, strength, and ferocity.")
-
+	difficulty = SKILL_AVERAGE
 /singleton/hierarchy/skill/security/combat/get_cost(level)
 	switch(level)
 		if(SKILL_BASIC)
@@ -206,15 +210,15 @@ GLOBAL_LIST_EMPTY(skills)
 		if(SKILL_TRAINED)
 			return 2*difficulty
 		if(SKILL_EXPERIENCED)
-			return 3*difficulty
+			return 2*difficulty
 		if(SKILL_MASTER)
 			return 4*difficulty
 		if(SKILL_LEGEND)
-			return 6*difficulty
+			return 4*difficulty
 		if(SKILL_PRIMARIS)
-			return 9*difficulty
+			return 6*difficulty
 		if(SKILL_DEMIGOD)
-			return 16*difficulty
+			return 6*difficulty
 		else
 			return 0
 
@@ -231,7 +235,7 @@ GLOBAL_LIST_EMPTY(skills)
 						"Legend"			= "Your proficiency with firearms is legendary. Every shot you take is calculated and hits with lethal precision, even under the most difficult conditions. Few can match your combat prowess.<br>- You have pinpoint accuracy with all ranged weapons.",
 						"Primaris"			= "You have ascended beyond mortal limits, either through genetic augmentation or countless years of combat. Your aim is flawless, and your understanding of firearms is unrivaled across the Imperium.<br>- Your shots never miss, and you can master any weapon placed in your hands.",
 						"Demigod"			= "Your mastery of ranged combat is mythic, bending the will of battle itself. You control the battlefield with surgical precision, capable of shifting the outcome of entire engagements with your skill.<br>- Your shots are near-perfect, and your presence in combat is overwhelming.")
-
+	difficulty = SKILL_AVERAGE
 /singleton/hierarchy/skill/security/guns/get_cost(level)
 	switch(level)
 		if(SKILL_BASIC)
@@ -239,15 +243,15 @@ GLOBAL_LIST_EMPTY(skills)
 		if(SKILL_TRAINED)
 			return 2*difficulty
 		if(SKILL_EXPERIENCED)
-			return 3*difficulty
+			return 2*difficulty
 		if(SKILL_MASTER)
 			return 4*difficulty
 		if(SKILL_LEGEND)
-			return 6*difficulty
+			return 4*difficulty
 		if(SKILL_PRIMARIS)
-			return 7*difficulty
+			return 6*difficulty
 		if(SKILL_DEMIGOD)
-			return 14*difficulty
+			return 6*difficulty
 		else
 			return 0
 
@@ -260,7 +264,8 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "You are adept at identifying key forensic details—fibers, fingerprints, and blood spatter. You've worked in high-pressure environments, examining scenes under duress.<br>- You can easily detect fingerprints.<br>- You no longer risk contaminating evidence.",
 						"Experienced"		= "With significant experience in investigations, you can uncover obscure evidence like partial prints, xenos spore traces, or ballistic residues. Your eye for detail is honed to a razor’s edge.",
 						"Master"		= "Your expertise in forensics is unmatched. Whether in the field or working for a major investigatory body, you leave no stone unturned. Forensic trails yield to your skill, even hidden blood stains cannot escape your scrutiny.")
-
+	difficulty = SKILL_AVERAGE
+	default_max = SKILL_MASTER
 // Category: Engineering
 
 /singleton/hierarchy/skill/engineering/construction
@@ -272,7 +277,7 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "You can reliably build, repair, and dismantle standard Imperial structures, though occasional errors may occur. You handle more advanced materials and tasks.<br>- You can construct items from Ceramite, Plasteel, and Adamantium.<br>- You can safely use a melta-cutter to deconstruct reinforced structures.<br>- You can inspect complex circuit boards to understand necessary components.",
 						"Experienced"		= "You can repair starship hull breaches, reroute power conduits, and manage structural repairs in hives or spires. You are proficient with advanced materials.<br>- You can fabricate complex parts such as weapon assemblies and components housing machine spirits.",
 						"Master"		= "You are a master Imperial engineer or Tech-Priest, capable of rebuilding entire installations or voidships with remarkable precision. Your ability to repair battle damage and rebuild critical systems is unrivaled.")
-	difficulty = SKILL_EASY
+	difficulty = SKILL_AVERAGE
 
 /singleton/hierarchy/skill/engineering/electrical
 	ID = "electrical"
@@ -283,7 +288,7 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "You can confidently build and repair electrical systems, troubleshooting engine issues and managing power grids. Machine spirits respond well to your touch.<br>- You can hack machines safely.",
 						"Experienced"		= "You handle complex electrical systems and advanced tech like APCs and monitoring systems. Diagnosing electrical issues is second nature.<br>- You can place remote signaling devices.",
 						"Master"		= "You are a master of arcane electronics, capable of designing and modifying systems. You handle even singularities and high-tech devices like void shields with ease.<br>- You can examine most wires in hacking panels.")
-
+	difficulty = SKILL_AVERAGE
 /singleton/hierarchy/skill/engineering/atmos
 	ID = "atmos"
 	name = "Aethiric Systems"
@@ -293,7 +298,7 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "You manage atmospheric systems efficiently, able to detect and resolve issues like gas leaks and breaches. Your skill keeps installations running smoothly.<br>- You can use the RPD safely.",
 						"Experienced"		= "You can handle complex atmospherics, diagnosing issues quickly. Breaches, fires, and gas leaks are resolved with speed and precision.<br>- You can dispense a larger selection of pipes from the RPD.",
 						"Master"		= "You can modify and optimize atmospheric systems to suit any environment. Emergencies like fires or depressurization are no match for your expertise, and you're known for preventing disasters before they occur.")
-
+	difficulty = SKILL_EASY
 /singleton/hierarchy/skill/engineering/engines
 	ID = "engines"
 	name = "Astro Engineering"
@@ -303,7 +308,7 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "You can manage engines confidently, ensuring they operate smoothly. You're familiar with radiation shielding and can handle minor malfunctions on your own.<br>- You can fully read plasma reactor and gravitic singularity monitors.",
 						"Experienced"		= "You’ve honed your skills across various engines and systems, setting them up quickly and reliably. You can troubleshoot advanced problems without oversight.<br>- You can assess the integrity of singularities directly.",
 						"Master"		= "The engine is your domain, and you understand every nuance of its operation. You can optimize or rebuild engines from scratch, handling even singularities and warp cores with ease.")
-	difficulty = SKILL_HARD
+	difficulty = SKILL_AVERAGE
 
 // Category: Research
 
@@ -316,7 +321,7 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "You are skilled in constructing or repairing servitors and exosuits. You can handle advanced tech like augmetics and mind-machine interfacing (MMI) safely.<br>- You can attach robotic limbs and perform basic cybernetics if trained in Anatomy.",
 						"Experienced"		= "You’ve built and reverse-engineered complex machines. You’re proficient with advanced lathes and analyzers, designing custom devices for specific needs.",
 						"Master"		= "You are a master of techcraft, able to design, build, and modify machinery to your will. No machine spirit is beyond your understanding, and you can repair even the most advanced devices with ease.")
-
+	difficulty = SKILL_EASY
 /singleton/hierarchy/skill/research/science
 	ID = "science"
 	name = "Data Scrutiny"
@@ -326,7 +331,7 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "You are skilled in research, designing experiments, and analyzing data. You can work with Mechanicus technologies and dissect xenofauna with care.<br>- You can determine atmospheric composition and detect artificial structures on exoplanets.<br>- You can perform surgery on xeno slimes.",
 						"Experienced"		= "Your experience allows you to formulate research questions and investigate unknown phenomena. You consistently publish valuable findings.",
 						"Master"		= "You are a recognized authority in your field, coordinating research teams and making significant discoveries. Your research attracts attention from influential Imperial figures.")
-
+	difficulty = SKILL_AVERAGE
 // Category: Medical
 
 /singleton/hierarchy/skill/medical/medical
@@ -338,7 +343,7 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "You are an experienced Medicae, capable of treating most battlefield injuries and illnesses. Your quick thinking in emergencies keeps patients alive. You can use complex medical devices and recognize alien infections.<br>- You can operate Sleepers and Body Scanners with confidence.<br>- You can perform basic surgery if you also have Trained Anatomy.",
 						"Experienced"		= "As a senior Medicae, you can diagnose and treat a wide range of injuries and illnesses. You’re adept at using all medical equipment, and no scanner reading escapes your notice.<br>- You can safely perform all surgical steps with Experienced Anatomy.",
 						"Master"		= "You are an expert Medicae, having seen nearly every injury and illness imaginable. Your skill with medicine is unparalleled, and in emergencies, you can handle nearly any medical task—even under extreme pressure.")
-
+	difficulty = SKILL_AVERAGE
 /singleton/hierarchy/skill/medical/anatomy
 	ID = "anatomy"
 	name = "Biologis-Vitalis"
@@ -348,7 +353,8 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "You can diagnose broken bones, shrapnel wounds, and internal damage with ease. You handle basic surgeries competently and know how to treat common injuries. Cybernetic procedures are also within your grasp if trained.<br>- You can perform cybernetic surgeries if you have Trained Complex Devices.",
 						"Experienced"		= "You can perform most surgeries reliably, including complex operations. While highly skilled in human anatomy, you are also proficient with several xenos species. You excel in handling organ damage and repairing delicate systems.<br>- You can perform all surgery steps safely if you also have Experienced Medicine.",
 						"Master"		= "You are a master surgeon, able to handle any case, no matter how severe. From brain surgery to organ transplants, nothing escapes your expertise. Your understanding of anatomy is so refined that even disguised xenos would struggle to evade your detection.<br>- The penalty for operating in less-than-ideal environments is reduced.")
-
+	difficulty = SKILL_AVERAGE
+	default_max = SKILL_MASTER
 /singleton/hierarchy/skill/medical/chemistry
 	ID = "chemistry"
 	name = "Biologis-Chemica"
@@ -358,3 +364,5 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "You can measure reagents and mix chemicals accurately. You can produce most common compounds without much loss. Complex chemical reactions are within your ability.<br>- You can fully operate the chem dispenser.",
 						"Experienced"		= "You’re proficient in creating complex chemicals, either for medical purposes or weaponization. Whether producing grenades or refining medicines, you work efficiently.<br>- You can examine containers to detect reagents.",
 						"Master"		= "You are a master chemist, able to produce custom mixes and rare compounds with ease. Your understanding of chemistry allows for creative innovation, and your work is likely known across the Imperium.<br>- You can examine containers for all reagent details.")
+	difficulty = SKILL_AVERAGE
+	default_max = SKILL_MASTER

@@ -24,9 +24,9 @@
 	channels = list("Service" = 1, "Hailing" = 1)
 
 /obj/item/device/encryptionkey/headset_deckofficer
-	name = "deck chief's encryption key"
+	name = "deck boss's encryption key"
 	icon_state = "qm_cypherkey"
-	channels = list("Medicae" = 1, "Militarum" = 1, "Hailing" = 1)
+	channels = list("Machinarum" = 1, "Militarum" = 1, "Hailing" = 1)
 
 /obj/item/device/encryptionkey/headset_deck
 	name = "deck technician's encryption key"

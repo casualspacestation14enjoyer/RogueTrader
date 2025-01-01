@@ -161,7 +161,7 @@
 
 /obj/item/device/uplink_service/fake_command_report/Initialize()
 	. = ..()
-	title = "[GLOB.using_map.boss_name] Update"
+	title = "Astropathic Communiqué"
 
 
 /obj/item/device/uplink_service/fake_command_report/get_antag_info()

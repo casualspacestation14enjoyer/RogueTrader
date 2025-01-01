@@ -1,6 +1,6 @@
 /obj/structure/curtain
 	name = "curtain"
-	icon = 'icons/obj/structures/curtain.dmi'
+	icon = 'icons/obj/curtain.dmi'
 	icon_state = "closed"
 	layer = ABOVE_WINDOW_LAYER
 	opacity = 1
@@ -51,7 +51,7 @@
 
 /obj/structure/curtain/open/privacy
 	name = "privacy curtain"
-	color = "#b8f5e3"
+	color = "#1e2692"
 
 /obj/structure/curtain/open/shower
 	name = "shower curtain"

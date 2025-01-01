@@ -1,7 +1,6 @@
 /obj/structure/closet/secure_closet/chaplain
 	name = "chaplain's locker"
 	closet_appearance = /singleton/closet_appearance/secure_closet/chaplain
-	req_access = list(access_chapel_office)
 
 /obj/structure/closet/secure_closet/chaplain/WillContain()
 	return list(

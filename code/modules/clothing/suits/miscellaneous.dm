@@ -9,9 +9,10 @@
  * Lasertag
  */
 /obj/item/clothing/suit/bluetag
-	name = "blue laser tag armour"
+	name = "PDF training armour(blue team)"
 	desc = "Blue Pride, Galaxy Wide."
-	icon_state = "bluetag"
+	icon_state = "PDF-T"
+	item_state = "PDF-T"
 	blood_overlay_type = "armor"
 	item_flags = null
 	body_parts_covered = UPPER_TORSO
@@ -19,9 +20,10 @@
 	siemens_coefficient = 3.0
 
 /obj/item/clothing/suit/redtag
-	name = "red laser tag armour"
+	name = "PDF training armour(red team)"
 	desc = "Reputed to go faster."
-	icon_state = "redtag"
+	icon_state = "PDF-SpecialT"
+	item_state = "PDF-SpecialT"
 	blood_overlay_type = "armor"
 	item_flags = null
 	body_parts_covered = UPPER_TORSO
@@ -40,7 +42,8 @@
 		/obj/item/gun,
 		/obj/item/ammo_magazine,
 		/obj/item/ammo_casing,
-		/obj/item/melee/baton,
+		/obj/item/material/twohanded/ravenor,
+		/obj/item/melee,
 		/obj/item/handcuffs,
 		/obj/item/tank/oxygen_emergency,
 		/obj/item/tank/oxygen_emergency_extended,

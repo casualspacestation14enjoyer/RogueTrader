@@ -5,9 +5,9 @@
 	fore_dir = SOUTH
 	vessel_size = SHIP_SIZE_SMALL
 	moving_state = "ship_moving"
-	max_speed = 1/(3 SECONDS)
+	max_speed = 1/(2 SECONDS)
 	burn_delay = 2 SECONDS
-	vessel_mass = 6000
+	vessel_mass = 3000
 	fore_dir = SOUTH
 	skill_needed = SKILL_BASIC
 	vessel_size = SHIP_SIZE_SMALL
@@ -20,9 +20,9 @@
 	skill_needed = SKILL_BASIC
 	vessel_size = SHIP_SIZE_TINY
 	moving_state = "ship_moving"
-	max_speed = 1/(4 SECONDS)
-	burn_delay = 2.5 SECONDS
-	vessel_mass = 3500 //more inefficient than GUP
+	max_speed = 1/(3 SECONDS)
+	burn_delay = 1.5 SECONDS
+	vessel_mass = 2000 //more inefficient than GUP
 
 /obj/overmap/visitable/ship/landable/scavver_gantry/three
 	name = "Unmarked shuttle"
@@ -47,12 +47,12 @@
 /datum/shuttle/autodock/overmap/scavver_gantry
 	name = "ITV The Reclaimer"
 	warmup_time = 5
-	move_time = 95
+	move_time = 25
 	shuttle_area = list(/area/scavver/lifepod)
 	current_location = "nav_hangar_gantry_one"
 	landmark_transition = "nav_transit_gantry_one"
 	range = 1
-	fuel_consumption = 5
+	fuel_consumption = 3
 	ceiling_type = /turf/simulated/floor/shuttle_ceiling
 	flags = SHUTTLE_FLAGS_PROCESS
 	defer_initialisation = TRUE
@@ -60,12 +60,12 @@
 /datum/shuttle/autodock/overmap/scavver_gantry/two
 	name = "ITV Vulcan"
 	warmup_time = 5
-	move_time = 35
+	move_time = 15
 	shuttle_area = list(/area/scavver/escapepod)
 	current_location = "nav_hangar_gantry_two"
 	landmark_transition = "nav_transit_gantry_two"
 	range = 1
-	fuel_consumption = 3
+	fuel_consumption = 2
 	ceiling_type = /turf/simulated/floor/shuttle_ceiling
 	flags = SHUTTLE_FLAGS_PROCESS
 	defer_initialisation = TRUE
@@ -73,12 +73,12 @@
 /datum/shuttle/autodock/overmap/scavver_gantry/three
 	name = "ITV Spiritus"
 	warmup_time = 5
-	move_time = 35
+	move_time = 15
 	shuttle_area = list(/area/scavver/harvestpod)
 	current_location = "nav_hangar_gantry_three"
 	landmark_transition = "nav_transit_gantry_three"
 	range = 1
-	fuel_consumption = 5
+	fuel_consumption = 3
 	ceiling_type = /turf/simulated/floor/shuttle_ceiling
 	flags = SHUTTLE_FLAGS_PROCESS
 	defer_initialisation = TRUE

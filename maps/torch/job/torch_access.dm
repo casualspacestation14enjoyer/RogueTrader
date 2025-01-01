@@ -141,14 +141,14 @@ var/global/const/access_o_mess = "ACCESS_TORCH_O_MESS"
 /datum/access/hos
 	desc = "Chief of Security"
 
-/datum/access/armory
+/datum/access/restricted_command
 	desc = "Brig Chief"
 
 /datum/access/hop
 	desc = "Executive Officer"
 
 /datum/access/qm
-	desc = "Deck Chief"
+	desc = "Deck Boss"
 
 var/global/const/access_torch_fax = "ACCESS_TORCH_FAX"
 /datum/access/torch_fax
@@ -187,60 +187,60 @@ var/global/const/access_torch_fax = "ACCESS_TORCH_FAX"
 	desc = "Cyborg Upload"
 
 /*************
-* NRV Petrov *
+* NRV Mowteng *
 *************/
 var/global/const/access_petrov = "ACCESS_TORCH_PETROV" //200
 /datum/access/petrov
 	id = access_petrov
-	desc = "Petrov"
+	desc = "Mowteng"
 	region = ACCESS_REGION_GENERAL
 
 var/global/const/access_petrov_helm = "ACCESS_TORCH_PETROV_HELM" //201
 /datum/access/petrov_helm
 	id = access_petrov_helm
-	desc = "Petrov Helm"
+	desc = "Mowteng Helm"
 	region = ACCESS_REGION_GENERAL
 
 var/global/const/access_petrov_analysis = "ACCESS_TORCH_PETROV_ANALYSIS" //202
 /datum/access/petrov_analysis
 	id = access_petrov_analysis
-	desc = "Petrov Analysis Lab"
+	desc = "Mowteng Analysis Lab"
 	region = ACCESS_REGION_RESEARCH
 
 var/global/const/access_petrov_phoron = "ACCESS_TORCH_PETROV_PHORON" //203
 /datum/access/petrov_phoron
 	id = access_petrov_phoron
-	desc = "Petrov Phoron Sublimation Lab"
+	desc = "Mowteng Phoron Sublimation Lab"
 	region = ACCESS_REGION_RESEARCH
 
 var/global/const/access_petrov_toxins = "ACCESS_TORCH_PETROV_TOXINS" //204
 /datum/access/petrov_toxins
 	id = access_petrov_toxins
-	desc = "Petrov Toxins Lab"
+	desc = "Mowteng Toxins Lab"
 	region = ACCESS_REGION_RESEARCH
 
 var/global/const/access_petrov_chemistry = "ACCESS_TORCH_PETROV_CHEMISTRY" //205
 /datum/access/petrov_chemistry
 	id = access_petrov_chemistry
-	desc = "Petrov Chemistry Lab"
+	desc = "Mowteng Chemistry Lab"
 	region = ACCESS_REGION_RESEARCH
 
 var/global/const/access_petrov_rd = "ACCESS_TORCH_PETROV_RD" //206
 /datum/access/petrov_rd
 	id = access_petrov_rd
-	desc = "Petrov Chief Science Officer's Office"
+	desc = "Mowteng Chief Science Officer's Office"
 	region = ACCESS_REGION_COMMAND
 
 var/global/const/access_petrov_control = "ACCESS_TORCH_PETROV_CONTROL" //207
 /datum/access/petrov_control
 	id = access_petrov_control
-	desc = "Petrov Control Room"
+	desc = "Mowteng Control Room"
 	region = ACCESS_REGION_RESEARCH
 
 var/global/const/access_petrov_maint = "ACCESS_TORCH_PETROV_MAINT" //208
 /datum/access/petrov_maint
 	id = access_petrov_maint
-	desc = "Petrov Maintenance"
+	desc = "Mowteng Maintenance"
 	region = ACCESS_REGION_GENERAL
 
 var/global/const/access_torch_helm = "ACCESS_TORCH_HELM"

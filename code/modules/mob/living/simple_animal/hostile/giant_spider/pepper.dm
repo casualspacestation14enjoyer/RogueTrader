@@ -7,7 +7,7 @@
 	icon_living = "pepper"
 	icon_dead = "pepper_dead"
 
-	maxHealth = 70
+	maxhealth = 70
 	health = 70
 
 	poison_chance = 20

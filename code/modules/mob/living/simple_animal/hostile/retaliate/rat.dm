@@ -15,7 +15,7 @@
 	meat_type = /obj/item/reagent_containers/food/snacks/meat/rat_meat
 	meat_amount = 1
 	speed = 4
-	maxHealth = 20
+	maxhealth = 20
 	health = 20
 	min_gas = null
 	max_gas = null

@@ -6,7 +6,7 @@
 	icon_dead = "mushroom_dead"
 	mob_size = MOB_SMALL
 	turns_per_move = 1
-	maxHealth = 5
+	maxhealth = 5
 	health = 5
 	response_help  = "pets"
 	response_disarm = "gently pushes aside"

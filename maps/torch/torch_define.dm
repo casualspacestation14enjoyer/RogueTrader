@@ -1,6 +1,6 @@
 /datum/map/torch
-	name = "\improper Dauntless"
-	full_name = "\improper Dauntless"
+	name = "Dauntless"
+	full_name = "The Dauntless"
 	path = "torch"
 	flags = MAP_HAS_BRANCH | MAP_HAS_RANK
 	config_path = "config/torch_config.txt"
@@ -11,24 +11,23 @@
 	accessible_z_levels = list("1"=1,"2"=3,"3"=1,"4"=1,"5"=1,"6"=1,"9"=30)
 	overmap_size = 35
 	overmap_event_areas = 34
-	usable_email_tlds = list("torch.ec.scg", "torch.fleet.mil", "freemail.net", "torch.scg")
+	usable_email_tlds = list("torch.ec.scg", "torch.fleet.mil", "astropathica.net", "torch.scg")
 
 	allowed_spawns = list("Cryogenic Storage", "Cyborg Storage")
 	default_spawn = "Cryogenic Storage"
 
-	station_name  = "\improper The Dauntless"
-	station_short = "\improper Dauntless"
+	station_name  = "The Dauntless"
+	station_short = "Dauntless"
 	dock_name     = "TBD"
-	boss_name     = "Lord Trader"
+	boss_name     = "Administratum"
 	boss_short    = "RT"
 	company_name  = "Imperium Of Man"
 	company_short = "Imperium"
 
 	map_admin_faxes = list(
-		"Segmentum Command",
-		"Mechanicus - Explorator Fleet",
-		"Administratum - Holy Terra",
-		"Lord Militant General - Militarum",
+		"High Command - General Staff",
+		"Adeptus Mechanicus - Explorator Fleet",
+		"Adeptus Administratum - Holy Terra",
 		"The Holy Ordos - Code Vermillion"
 	)
 
@@ -42,9 +41,9 @@
 
 	default_law_type = /datum/ai_laws/solgov
 	use_overmap = 1
-	num_exoplanets = 0
+	num_exoplanets = 1
 
-	away_site_budget = 1
+	away_site_budget = 15
 	min_offmap_players = 0
 
 	id_hud_icons = 'maps/torch/icons/assignment_hud.dmi'

@@ -91,7 +91,7 @@
 	boot_type = /obj/item/clothing/shoes/magboots/rig/command
 	glove_type = /obj/item/clothing/gloves/rig/command
 
-	req_access = list(access_hop)
+	req_access = list(access_dauntless)
 
 /obj/item/clothing/head/helmet/space/rig/command/xo
 	icon_state = "command_XO_rig"
@@ -132,7 +132,7 @@
 	boot_type = /obj/item/clothing/shoes/magboots/rig/command
 	glove_type = /obj/item/clothing/gloves/rig/command
 
-	req_access = list(access_captain)
+	req_access = list(access_roguetrader)
 
 /obj/item/clothing/head/helmet/space/rig/command/co
 	icon_state = "command_CO_rig"
@@ -172,7 +172,7 @@
 	chest_type = /obj/item/clothing/suit/space/rig/command/medical
 	helm_type = /obj/item/clothing/head/helmet/space/rig/command/medical
 
-	req_access = list(access_cmo)
+	req_access = list(access_medical_command)
 
 /obj/item/clothing/head/helmet/space/rig/command/medical
 	icon_state = "command_med_rig"
@@ -225,7 +225,7 @@
 	chest_type = /obj/item/clothing/suit/space/rig/command/security
 	helm_type = /obj/item/clothing/head/helmet/space/rig/command/security
 
-	req_access = list(access_hos)
+	req_access = list(access_restricted_command)
 
 /obj/item/clothing/head/helmet/space/rig/command/security
 	icon_state = "command_sec_rig"
@@ -275,7 +275,7 @@
 	chest_type = /obj/item/clothing/suit/space/rig/command/science
 	helm_type = /obj/item/clothing/head/helmet/space/rig/command/science
 
-	req_access = list(access_rd)
+	req_access = list(access_mechanicus)
 
 /obj/item/clothing/head/helmet/space/rig/command/science
 	icon_state = "command_sci_rig"
@@ -342,7 +342,7 @@
 
 	offline_vision_restriction = TINT_BLIND
 
-	req_access = list(access_pathfinder)
+	req_access = list(access_dauntless)
 
 /obj/item/clothing/gloves/rig/command/exploration
 	siemens_coefficient = 0
@@ -358,6 +358,8 @@
 	allowed = list(
 		/obj/item/gun,
 		/obj/item/ammo_magazine,
+		/obj/item/material/twohanded/ravenor,
+		/obj/item/melee,
 		/obj/item/device/flashlight,
 		/obj/item/tank,
 		/obj/item/device/suit_cooling_unit,

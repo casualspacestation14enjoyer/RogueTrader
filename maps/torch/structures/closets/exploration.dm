@@ -25,13 +25,11 @@
 
 /obj/structure/closet/secure_closet/pathfinder
 	name = "pathfinder's locker"
-	req_access = list(access_pathfinder)
+	req_access = list(access_restricted)
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/exploration/pathfinder
 
 /obj/structure/closet/secure_closet/pathfinder/WillContain()
 	return list(
-		/obj/item/solbanner,
-		/obj/item/solbanner,
 		/obj/item/device/radio,
 		/obj/item/device/tape/random,
 		/obj/item/device/gps,
@@ -50,14 +48,13 @@
 		/obj/item/device/binoculars,
 		/obj/item/material/knife/folding/swiss/explorer,
 		/obj/item/clothing/accessory/buddy_tag,
-		/obj/item/storage/firstaid/light,
 		/obj/item/storage/backpack/dufflebag,
 		/obj/item/device/flashlight/flare
 	)
 
 /obj/structure/closet/secure_closet/explorer
 	name = "explorer's locker"
-	req_access = list(access_explorer)
+	req_access = list(access_dauntless)
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/exploration
 
 /obj/structure/closet/secure_closet/explorer/WillContain()
@@ -73,7 +70,6 @@
 		/obj/item/device/radio/headset/exploration/alt,
 		/obj/item/device/binoculars,
 		/obj/item/clothing/accessory/buddy_tag,
-		/obj/item/storage/firstaid/light,
 		/obj/item/material/knife/folding/swiss/explorer,
 		/obj/item/device/camera,
 		/obj/item/storage/backpack/dufflebag,
@@ -82,7 +78,7 @@
 
 /obj/structure/closet/secure_closet/pilot
 	name = "pilot's locker"
-	req_access = list(access_pilot)
+	req_access = list(access_restricted)
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/exploration/pilot
 
 /obj/structure/closet/secure_closet/pilot/WillContain()
@@ -99,7 +95,6 @@
 		/obj/item/clothing/gloves/thick,
 		/obj/item/clothing/suit/armor/grim/storage/hazardvest/blue,
 		/obj/item/selection/pilot_helmet,
-		/obj/item/storage/firstaid/light,
 		/obj/item/material/knife/folding/swiss/explorer,
 		/obj/item/storage/backpack/dufflebag,
 		/obj/item/device/flashlight/flare

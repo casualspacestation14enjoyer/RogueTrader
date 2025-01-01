@@ -2,7 +2,7 @@
 #define MIN_FIELD_STR 1
 
 /obj/machinery/power/fusion_core
-	name = "\improper R-UST Mk. 8 Tokamak core"
+	name = "\improper Void Fusion Core"
 	desc = "An enormous solenoid for generating extremely high power electromagnetic fields. It includes a kinetic energy harvester."
 	icon = 'icons/obj/machines/power/fusion_core.dmi'
 	icon_state = "core0"

@@ -21,8 +21,8 @@
 
 /obj/structure/closet/gimmick/russian/WillContain()
 	return list(
-		/obj/item/clothing/head/ushanka = 5,
-		/obj/item/clothing/under/soviet = 5)
+		/obj/item/clothing/head/ushanka = 3,
+		/obj/item/clothing/under/soviet = 3)
 
 /obj/structure/closet/gimmick/tacticool
 	name = "tacticool gear closet"
@@ -35,10 +35,10 @@
 		/obj/item/clothing/glasses/eyepatch,
 		/obj/item/clothing/glasses/sunglasses,
 		/obj/item/clothing/gloves/thick/swat = 2,
-		/obj/item/clothing/head/helmet/swat = 2,
+		/obj/item/clothing/head/helmet/swat = 1,
 		/obj/item/clothing/mask/gas = 2,
 		/obj/item/clothing/shoes/swat = 2,
-		/obj/item/clothing/suit/space/void/swat = 2,
+		/obj/item/clothing/suit/space/void/swat = 1,
 		/obj/item/clothing/under/syndicate/tacticool = 2)
 
 /obj/structure/closet/thunderdome

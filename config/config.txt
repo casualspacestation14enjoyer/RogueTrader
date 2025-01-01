@@ -1,5 +1,5 @@
 ## Server name: This appears at the top of the screen in-game and on hub listings.
-# SERVER_NAME Space Station 13
+# SERVER_NAME Forge-World Eipharius | WARHAMMER 40,000
 
 ## Game Version: The archetype of the server for topic status requests. Unless significantly deviated, avoid changing this. Default Baystation12
 # GAME_VERSION Baystation12
@@ -32,10 +32,10 @@ BAN_LEGACY_SYSTEM
 #USE_AGE_RESTRICTION_FOR_ANTAGS
 
 ## Radiation weakens with distance from the source; stop calculating when the strength falls below this value.   Lower values mean radiation reaches smaller (with increasingly trivial damage) at the cost of more CPU usage.  Max range =  DISTANCE^2 * POWER / RADIATION_LOWER_LIMIT
-# RADIATION_LOWER_LIMIT	0.35
+RADIATION_LOWER_LIMIT	0.35
 
 ## log OOC channel
-LOG_OOC
+#LOG_OOC
 
 ## log client Say
 LOG_SAY
@@ -53,7 +53,7 @@ WARN_IF_STAFF_SAME_IP
 LOG_GAME
 
 ## log player votes
-LOG_VOTE
+#LOG_VOTE
 
 ## log client Whisper
 LOG_WHISPER
@@ -92,12 +92,12 @@ PROBABILITY EXTENDED 0
 PROBABILITY BORER 1
 PROBABILITY REVOLUTIONARY 1
 PROBABILITY VOXRAIDER 1
-PROBABILITY TRAITOR 1
-PROBABILITY SPYVSPY 1
+PROBABILITY TRAITOR 2
+PROBABILITY SPYVSPY 2
 PROBABILITY MERCENARY 1
 PROBABILITY HEIST 1
-PROBABILITY CULT 1
-PROBABILITY CHANGELING 1
+PROBABILITY CULT 3
+PROBABILITY CHANGELING 3
 
 ## if possible round types will be hidden from players for secret rounds
 SECRET_HIDE_POSSIBILITIES
@@ -115,7 +115,7 @@ TRAITOR_SCALING
 #ERT_ADMIN_ONLY
 
 ## If uncommented, votes can be called to add extra antags to the round.
-#ALLOW_EXTRA_ANTAGS
+ALLOW_EXTRA_ANTAGS
 
 ## If security is prohibited from being most antagonists
 #PROTECT_ROLES_FROM_ANTAGONIST
@@ -140,7 +140,7 @@ VOTE_PERIOD 600
 
 ## Maximum time a round can last for (in minutes). If this time is exceeded, the round
 # will autotransfer without a vote at the next continue vote. Leave disabled for no limit.
-#MAXIMUM_ROUND_LENGTH 120
+#MAXIMUM_ROUND_LENGTH 150
 
 ## The time in minutes after no living players remain at which the round will end. Defaults off.
 #EMPTY_ROUND_TIMEOUT 5
@@ -162,7 +162,7 @@ VOTE_AUTOGAMEMODE_TIMELEFT 160
 
 ## Time (seconds) before the server will attempt to start a round.
 # Should be bigger than VOTE_AUTOGAMEMODE_TIMELEFT + VOTE_PERIOD.
-PRE_GAME_TIME 180
+PRE_GAME_TIME 200
 
 ## prevents dead players from voting or starting votes
 #NO_DEAD_VOTE
@@ -171,7 +171,7 @@ PRE_GAME_TIME 180
 NO_DEAD_VOTE_CREW_TRANSFER
 
 ## players' votes default to "No vote" (otherwise,  default to "No change")
-DEFAULT_NO_VOTE
+#DEFAULT_NO_VOTE
 
 ## Allow ghosts to see antagonist through AntagHUD
 #ALLOW_ANTAG_HUD
@@ -183,7 +183,7 @@ DEFAULT_NO_VOTE
 # NORESPAWN
 
 ## set a hosted by name for unix platforms
-HOSTEDBY yournamehere
+HOSTEDBY Alanii
 
 ## Set to jobban "Guest-" accounts from Captain, HoS, HoP, CE, RD, CMO, Warden, Security, Detective, and AI positions.
 ## Set to 1 to jobban them from those positions, set to 0 to allow them.
@@ -208,7 +208,7 @@ GUEST_BAN
 
 ## Rules address
 ## Where your server's rules can be found
-RULES_URL https://discord.gg/dUy4d8ua
+RULES_URL https://discord.gg/Kd8FVrcC
 
 ## Lore address
 ## Where your server's scintillating background material can be read
@@ -228,11 +228,11 @@ RULES_URL https://discord.gg/dUy4d8ua
 
 ## Discord address
 ## Where your users can go to complain at each other in real time
-DISCORD_URL https://discord.gg/dUy4d8ua
+DISCORD_URL https://discord.gg/Kd8FVrcC
 
 ## Ban appeals URL
 ## Where your users can go to tell you they've changed
-BANAPPEALS https://discord.gg/dUy4d8ua
+BANAPPEALS https://discord.gg/Kd8FVrcC
 
 ## Comment this out to disable automuting
 #AUTOMUTE_ON
@@ -352,10 +352,10 @@ STARLIGHT 1
 
 
 ## Enable asteroid tunnel/cave generation. Will behave strangely if turned off with a map that expects it on.
-# GENERATE_ASTEROID
+GENERATE_ASTEROID
 
 ## Set a value for the maximum range in tiles of an explosion from its center. Default 14
-# MAX_EXPLOSION_RANGE 14
+MAX_EXPLOSION_RANGE 14
 
 ## Uncomment to enable organ decay outside of a body or storage item.
 #ORGANS_CAN_DECAY
@@ -383,7 +383,7 @@ STARLIGHT 1
 # AUTOSTEALTH 30
 
 ## How many loadout points are available. Use 0 to disable loadout, and any negative number to indicate infinite points.
-MAX_GEAR_COST 3
+MAX_GEAR_COST 0
 
 ## How much radiation levels self-reduce by each tick.
 RADIATION_DECAY_RATE 1
@@ -413,7 +413,7 @@ RADIATION_LOWER_LIMIT 0.15
 #MAX_ACTS_PER_INTERVAL 140
 
 ##Clients will be unable to connect unless their version is equal to or higher than this (a number, e.g. 511)
-#MINIMUM_BYOND_VERSION 512
+#MINIMUM_BYOND_VERSION 514
 
 ## Clients will be unable to connect unless their build is equal to or higher than this (a number, e.g. 1000)
 #MINIMUM_BYOND_BUILD 1488
@@ -455,14 +455,14 @@ DISALLOW_VOTABLE_MODE revolutionary
 DISALLOW_VOTABLE_MODE malfunction
 
 ## The delay in deciseconds between stat() updates.
-## Lower can be more responsive to scene changes and updates but has a higher client/server overhead.
-# STAT_DELAY 5
+## Lower can be more responsive to scene changes and updates but has a higher client/server overhead. Default is 5.
+STAT_DELAY 6
 
 ## The maximum number of times someone can be warned in a round before they are automatically banned.
-# WARN_AUTOBAN_THRESHOLD 3
+WARN_AUTOBAN_THRESHOLD 3
 
 ## The length in minutes of an automatic ban created by passing the warning threshold.
-# WARN_AUTOBAN_DURATION 30
+WARN_AUTOBAN_DURATION 60
 
 ## Uncomment this to bypass empty z-level checks in certain subsystems. For testing and development purposes only.
 ## Not recommended for live use.

@@ -21,7 +21,6 @@
 	shuttle = "Alien Interceptor"
 	fore_dir = WEST
 	vessel_size = SHIP_SIZE_SMALL
-	vessel_mass = 2500 //Xenos alloys are lightweight or smthn. Idk.
 
 /datum/shuttle/autodock/overmap/vox_raider
 	name = "Alien Interceptor"
@@ -31,9 +30,9 @@
 	defer_initialisation = TRUE
 	ceiling_type = /turf/simulated/floor/shuttle_ceiling/vox
 	warmup_time = 5
-	range = 2
+	range = 1
 	fuel_consumption = 0
-	skill_needed = SKILL_UNSKILLED
+	skill_needed = SKILL_BASIC
 	knockdown = FALSE
 
 /turf/simulated/floor/tiled/dark/vox

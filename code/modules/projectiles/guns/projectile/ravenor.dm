@@ -12,10 +12,10 @@
 	accuracy = 1
 	scope_zoom = 1
 	scoped_accuracy = 2
-	fire_delay = 4.1
+	fire_delay = 4
 	wielded_item_state = "boltaction-wielded"
 	fire_sound = 'sound/warhammer/gunshot/auto5.ogg'
-	slowdown_general = 0.1
+	slowdown_general = 0.03
 
 /obj/item/gun/projectile/heavysniper/boltaction/imperial/on_update_icon()
 	..()
@@ -32,7 +32,7 @@
 	name = "Triangong 4-46"
 	desc = "An old custom made bolt action stub rifle chambered in 12mm stub rounds. It has a scope attached."
 	icon_state = "boltactionsharp"
-	item_state = "boltactionsharp"
+	item_state = "boltaction"
 	w_class = ITEM_SIZE_LARGE
 	caliber = CALIBER_STUB
 	ammo_type = /obj/item/ammo_casing/sniper
@@ -40,7 +40,7 @@
 	accuracy = 0.5
 	scope_zoom = 2
 	scoped_accuracy = 1
-	fire_delay = 3.9
+	fire_delay = 3.8
 	wielded_item_state = "boltaction-wielded"
 	fire_sound = 'sound/warhammer/gunshot/loudbolt2.ogg'
 
@@ -59,15 +59,15 @@
 	name = "Crucible Stub Rifle"
 	desc = "A militarum pattern bolt action stub rifle chambered in 12mm stub rounds."
 	icon_state = "boltactionsharp"
-	item_state = "boltactionsharp"
-	w_class = ITEM_SIZE_LARGE
+	item_state = "boltaction"
+	w_class = ITEM_SIZE_HUGE
 	caliber = CALIBER_STUB
 	ammo_type = /obj/item/ammo_casing/sniper
 	max_shells = 7
 	accuracy = 1
 	scope_zoom = 1
 	scoped_accuracy = 2
-	fire_delay = 3.7
+	fire_delay = 3.6
 	wielded_item_state = "boltaction-wielded"
 	fire_sound = 'sound/warhammer/gunshot/loudbolt2.ogg'
 
@@ -78,7 +78,7 @@
 		item_state = "boltaction"
 		wielded_item_state = "boltaction-wielded"
 	else
-		icon_state = "oldglory-e"
+		icon_state = "oldglory"
 		item_state = "boltaction"
 		wielded_item_state = "boltaction-wielded"
 
@@ -89,14 +89,14 @@
 	item_state = "musket"
 	w_class = ITEM_SIZE_LARGE
 	force = 10
-	slot_flags = SLOT_BACK|SLOT_BELT
+	slot_flags = SLOT_BACK|SLOT_BELT|SLOT_HOLSTER
 	caliber = CALIBER_SNIPER
 	screen_shake = 1
 	max_shells = 2
 	ammo_type = /obj/item/ammo_casing/xenos/bos
 	one_hand_penalty = 1.5
 	accuracy = 1.5
-	fire_delay = 4.2
+	fire_delay = 4.1
 	wielded_item_state = "musket-wielded"
 	fire_sound = 'sound/warhammer/ds/divet_fire.ogg'
 	sales_price = 30
@@ -121,10 +121,10 @@
 	ammo_type = /obj/item/ammo_casing/shotgun
 	one_hand_penalty = 1.4
 	accuracy = -0.5
-	fire_delay= 3.7
+	fire_delay = 3.7
 	sales_price = 10
 	max_shells = 6
-	slowdown_general = 0.1
+	slowdown_general = 0.04
 
 /obj/item/gun/projectile/shotgun/pump/voxlegis/on_update_icon()
 	..()
@@ -150,14 +150,14 @@
 	desc = "A sawn off version of a common shotgun used in the trenches."
 	icon_state = "hunting-sawn"
 	item_state = "sawnchester"
-	slot_flags = SLOT_BELT|SLOT_BACK
+	slot_flags = SLOT_BELT|SLOT_HOLSTER|SLOT_BACK
 	w_class = ITEM_SIZE_NORMAL
 	max_shells = 4
 	one_hand_penalty = 0.4
 	fire_delay = 3.6
 	accuracy = -1
 	sales_price = 8
-	slowdown_general = 0.05
+	slowdown_general = 0.03
 
 /obj/item/gun/projectile/shotgun/pump/voxlegis/sawn/on_update_icon()
 	..()
@@ -176,23 +176,21 @@
 	icon_state = "machinepistol"
 	item_state = "machinepistol"
 	wielded_item_state = "machinepistol-wielded"
-	slot_flags = SLOT_BACK|SLOT_BELT
+	slot_flags = SLOT_BACK|SLOT_BELT|SLOT_HOLSTER
 	w_class = ITEM_SIZE_LARGE
 	one_hand_penalty = 1
 	accuracy = -1
-	fire_delay = 3.7
+	fire_delay = 3.2
 	sales_price = 8
-	slowdown_general = 0.08
-	caliber = list(
-	CALIBER_AUTOGUN
-)
+	slowdown_general = 0.03
+	caliber = CALIBER_AUTOGUN
 	fire_sound = 'sound/warhammer/gunshot/auto3.ogg'
 	ammo_type = /obj/item/ammo_casing/autogun
 	magazine_type = /obj/item/ammo_magazine/autogun
-	allowed_magazines = /obj/item/ammo_magazine/autogun
+	allowed_magazines = list(/obj/item/ammo_magazine/autogun)
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=3.7, burst_delay=1.9, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3.7, burst_delay=1.9, burst_accuracy=list(-1,-1,-2), dispersion=null)
+		list(mode_name="semi-automatic", burst=1, fire_delay=3.2, burst_delay=2.2, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3.2, burst_delay=2.2, burst_accuracy=list(-1,-1,-2), dispersion=null)
 		)
 
 /obj/item/gun/projectile/automatic/autogun/on_update_icon()
@@ -212,15 +210,15 @@
 	icon_state = "autorifle"
 	item_state = "autorifle"
 	wielded_item_state = "autorifle-wielded"
-	slot_flags = SLOT_BACK|SLOT_BELT
+	slot_flags = SLOT_BACK|SLOT_BELT|SLOT_HOLSTER
 	w_class = ITEM_SIZE_LARGE
 	one_hand_penalty = 1
 	accuracy = -0.5
-	fire_delay = 3.6
+	fire_delay = 3.1
 	sales_price = 8
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=3.6, burst_delay=1.8, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3.6, burst_delay=1.8, burst_accuracy=list(0,-1,-1), dispersion=null)
+		list(mode_name="semi-automatic", burst=1, fire_delay=3.1, burst_delay=2.1, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3.1, burst_delay=2.1, burst_accuracy=list(0,-1,-1), dispersion=null)
 		)
 
 /obj/item/gun/projectile/automatic/machine_pistol/on_update_icon()
@@ -241,15 +239,15 @@
 	item_state = "auto_grim"
 	wielded_item_state = "auto_grim_wielded"
 	magazine_type = /obj/item/ammo_magazine/autogun/militarum
-	slot_flags = SLOT_BACK|SLOT_BELT
+	slot_flags = SLOT_BACK|SLOT_BELT|SLOT_HOLSTER
 	w_class = ITEM_SIZE_LARGE
 	one_hand_penalty = 1
 	accuracy = 0
-	fire_delay = 3.8
+	fire_delay = 3.1
 	sales_price = 8
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=3.8, burst_delay=1.9, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3.8, burst_delay=1.9, burst_accuracy=list(0,-1,-1), dispersion=null)
+		list(mode_name="semi-automatic", burst=1, fire_delay=3.1, burst_delay=2.1, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3.1, burst_delay=2.1, burst_accuracy=list(0,-1,-1), dispersion=null)
 		)
 
 /obj/item/gun/projectile/automatic/machine_pistol/on_update_icon()
@@ -269,17 +267,20 @@
 	icon_state = "kriegstubber"
 	item_state = "auto_grim"
 	wielded_item_state = "auto_grim_wielded"
-	magazine_type = /obj/item/ammo_magazine/heavy
-	slot_flags = SLOT_BACK|SLOT_BELT
+	ammo_type = /obj/item/ammo_casing/heavy
+	magazine_type = /obj/item/ammo_magazine/heavy/ap
+	allowed_magazines = list(/obj/item/ammo_magazine/heavy) // This is inbetween 5.56 and 12.77mm in terms of power.
+	caliber = CALIBER_AUTOGUN_HEAVY
+	slot_flags = SLOT_BACK|SLOT_BELT|SLOT_HOLSTER
 	w_class = ITEM_SIZE_LARGE
 	one_hand_penalty = 1
 	accuracy = 0
-	fire_delay = 4.2
+	fire_delay = 3.5
 	sales_price = 8
-	slowdown_general = 0.11
+	slowdown_general = 0.045
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=4.2, burst_delay=2.2, burst_accuracy=null, dispersion=null),
-		list(mode_name="2-round bursts", burst=2, fire_delay=4.2, burst_delay=2.2, burst_accuracy=list(0,-1), dispersion=null)
+		list(mode_name="semi-automatic", burst=1, fire_delay=3.5, burst_delay=2.1, burst_accuracy=null, dispersion=null), // Lower burst time since 2 shot.
+		list(mode_name="2-round bursts", burst=2, fire_delay=3.5, burst_delay=2.1, burst_accuracy=list(0,-1), dispersion=null)
 		)
 
 /obj/item/gun/projectile/automatic/machine_pistol/on_update_icon()
@@ -304,16 +305,16 @@
 	fire_sound = 'sound/warhammer/guns/fire/ltrifle_fire.ogg'
 	mag_remove_sound = 'sound/warhammer/guns/interact/arm_magout.ogg'
 	mag_insert_sound = 'sound/warhammer/guns/interact/arm_magin.ogg'
-	fire_delay = 4
+	fire_delay = 3.5
 	burst = 1
 	one_hand_penalty = 2
 	accuracy = 1
 	sales_price = 16
-	slowdown_general = 0.12
+	slowdown_general = 0.045
 	caliber = CALIBER_AUTOGUN_HEAVY
 	ammo_type = /obj/item/ammo_casing/heavy
 	magazine_type = /obj/item/ammo_magazine/heavy/ap
-	allowed_magazines = /obj/item/ammo_magazine/heavy
+	allowed_magazines = list(/obj/item/ammo_magazine/heavy)
 
 /obj/item/gun/projectile/automatic/slugrifle/on_update_icon()
 	..()
@@ -330,12 +331,12 @@
 	name = "Scipio Pattern Rifle"
 	desc = "An Scipio Pattern Rifle, commonly used by agri-farmers and hunters to deal with the occasional vermin who cross their path, chambered with 7mm handgun rounds. It has a scope attached."
 	icon_state = "scopecommando"
-	slot_flags = SLOT_BACK|SLOT_BELT
+	slot_flags = SLOT_BACK|SLOT_BELT|SLOT_HOLSTER
 	w_class = ITEM_SIZE_LARGE
 	fire_sound = 'sound/warhammer/guns/fire/combatrifle_fire.ogg'
 	mag_remove_sound = 'sound/warhammer/guns/interact/combatrifle_magout.ogg'
 	mag_insert_sound = 'sound/warhammer/guns/interact/combatrifle_magin.ogg'
-	fire_delay = 3.6
+	fire_delay = 3.1
 	burst = 1
 	one_hand_penalty = 1.6
 	accuracy = 1.5
@@ -346,7 +347,7 @@
 	ammo_type = /obj/item/ammo_casing/pistol/tech
 	magazine_type = /obj/item/ammo_magazine/pistol/small/ap
 	allowed_magazines = /obj/item/ammo_magazine/pistol/small
-	slowdown_general = 0.1
+	slowdown_general = 0.03
 
 /obj/item/gun/projectile/automatic/slugrifle/scipio/on_update_icon()
 	..()
@@ -363,10 +364,10 @@
 	name = "Agripinaa Slug rifle"
 	desc = "A rugged slug rifle of imperial design, the Agripinaa is a highly accurate battle rifle for the hardened frontiersman. Chambered in 15mm handgun rounds."
 	icon_state = "agripinaa"
-	slot_flags = SLOT_BACK|SLOT_BELT
+	slot_flags = SLOT_BACK|SLOT_BELT|SLOT_HOLSTER
 	w_class = ITEM_SIZE_LARGE
 	fire_sound = 'sound/warhammer/guns/fire/revolver_fire.ogg'
-	fire_delay = 3.7
+	fire_delay = 3.2
 	burst = 1
 	one_hand_penalty = 1.6
 	accuracy = 1.5
@@ -377,7 +378,7 @@
 	ammo_type = /obj/item/ammo_casing/magnum
 	magazine_type = /obj/item/ammo_magazine/magnum
 	allowed_magazines = /obj/item/ammo_magazine/magnum
-	slowdown_general = 0.1
+	slowdown_general = 0.04
 
 /obj/item/gun/projectile/automatic/slugrifle/agri/on_update_icon()
 	..()
@@ -396,20 +397,20 @@
 	desc = "Belt-fed 6.8mm heavy stubber, the weapon was fitted with both backsight and foresight, carrying handle, and perforated outer barrel to aid in cooling."
 	icon_state = "hmg"
 	slot_flags = SLOT_BACK
-	w_class = ITEM_SIZE_HUGE
+	w_class = ITEM_SIZE_GARGANTUAN
 	one_hand_penalty = 2
 	accuracy = 0
-	fire_delay = 3.7
+	fire_delay = 3.2
 	sales_price = 20
 	caliber = CALIBER_AUTOGUN
 	fire_sound = 'sound/warhammer/gunshot/auto3.ogg'
 	ammo_type = /obj/item/ammo_casing/autogun/militarum
 	magazine_type = /obj/item/ammo_magazine/autogunheavy
 	allowed_magazines = /obj/item/ammo_magazine/autogunheavy
-	slowdown_general = 0.2
+	slowdown_general = 0.05
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=3.7, burst_delay=1.9, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", burst=4, fire_delay=3.7, burst_delay=1.9, burst_accuracy=list(0,-1,-2), dispersion=null)
+		list(mode_name="semi-automatic", burst=1, fire_delay=3.2, burst_delay=2.2, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=4, fire_delay=3.2, burst_delay=2.2, burst_accuracy=list(0,-1,-2), dispersion=null)
 		)
 
 /obj/item/gun/projectile/automatic/autogun/stubber/on_update_icon()
@@ -431,7 +432,7 @@
 	w_class = ITEM_SIZE_HUGE
 	one_hand_penalty = 2.2
 	accuracy = 0.5
-	fire_delay = 3.6
+	fire_delay = 3.1
 	sales_price = 25
 	caliber = CALIBER_AUTOGUN
 	fire_sound = 'sound/warhammer/gunshot/auto3.ogg'
@@ -439,9 +440,9 @@
 	magazine_type = /obj/item/ammo_magazine/autogunheavy/ap
 	allowed_magazines = /obj/item/ammo_magazine/autogunheavy
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=3.6, burst_delay=1.8, burst_accuracy=null, dispersion=null),
-		list(mode_name="2-round bursts", burst=2, fire_delay=3.6, burst_delay=1.8, burst_accuracy=list(0,0), dispersion=null),
-		list(mode_name="4-round bursts", burst=4, fire_delay=3.6, burst_delay=1.8, burst_accuracy=list(0,0,-1,-2), dispersion=null)
+		list(mode_name="semi-automatic", burst=1, fire_delay=3.1, burst_delay=2.1, burst_accuracy=null, dispersion=null),
+		list(mode_name="2-round bursts", burst=2, fire_delay=3.1, burst_delay=2.1, burst_accuracy=list(0,0), dispersion=null),
+		list(mode_name="4-round bursts", burst=4, fire_delay=3.1, burst_delay=2.1, burst_accuracy=list(0,0,-1,-2), dispersion=null)
 		)
 
 /obj/item/gun/projectile/automatic/autogun/stubber/cognis/on_update_icon()
@@ -461,10 +462,9 @@
 	icon_state = "ultrabolter"
 	item_state = "hbolter"
 	wielded_item_state = "hbolter"
-	w_class = ITEM_SIZE_HUGE
+	w_class = ITEM_SIZE_GARGANTUAN
 	force = 30
 	slot_flags = SLOT_BACK
-	max_shells = 35 // SM2.
 	caliber = ".95"
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 2, TECH_ILLEGAL = 2)
 	ammo_type = /obj/item/ammo_casing/bolter/astartes
@@ -475,16 +475,16 @@
 	mag_remove_sound = 'sound/warhammer/guns/interact/ltrifle_magout.ogg'
 	mag_insert_sound = 'sound/warhammer/guns/interact/ltrifle_magin.ogg'
 	load_sound = 'sound/warhammer/guns/interact/ltrifle_cock.ogg'
-	fire_delay = 4.4
+	fire_delay = 3.7
 	one_hand_penalty = 2
-	accuracy = -1
+	accuracy = -1.5
 	sales_price = 60
-	slowdown_general = 0.3
+	slowdown_general = 0.075
 	str_requirement = 1
 
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=4.4, burst_delay=2.5, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", burst=3, fire_delay=4.4, burst_delay=2.5, burst_accuracy=list(0,-1,-1), dispersion=null)
+		list(mode_name="semi-automatic", burst=1, fire_delay=3.7, burst_delay=2.7, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3.7, burst_delay=2.7, burst_accuracy=list(-1,-2,-2), dispersion=null)
 		)
 
 /obj/item/gun/projectile/automatic/boltrifle/on_update_icon()
@@ -555,23 +555,22 @@
 	w_class = ITEM_SIZE_HUGE
 	force = 15
 	slot_flags = SLOT_BACK
-	max_shells = 25
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
 	load_method = MAGAZINE
-	one_hand_penalty = 2
+	one_hand_penalty = 1.7
 	caliber = ".75"
 	ammo_type = /obj/item/ammo_casing/bolter
 	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
 	allowed_magazines = list(/obj/item/ammo_magazine/bolt_rifle_magazine)
-	fire_delay = 4.3
+	fire_delay = 3.6
 	burst = 1
-	accuracy = -1.5
+	accuracy = -1.25
 	sales_price = 60
-	slowdown_general = 0.2
+	slowdown_general = 0.05
 	str_requirement = 0
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=4.3, burst_delay=2.5, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", burst=3, fire_delay=4.3, burst_delay=2.5, burst_accuracy=list(-1,-1,-2), dispersion=null)
+		list(mode_name="semi-automatic", burst=1, fire_delay=3.8, burst_delay=2.8, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3.8, burst_delay=2.8, burst_accuracy=list(-1,-2,-2), dispersion=null)
 		)
 /obj/item/gun/projectile/automatic/boltrifle/lockebolter/update_icon()
 	..()
@@ -588,29 +587,27 @@
 	name = "Drusian Pattern bolter"
 	desc = "The Drusian Pattern Bolter, designed initially for Adeptus Arbites personnel when heavier firepower are required -- this Pattern is a variant with higher factorum standards and is produced by the Priests of Mars under the greatest of machine scrutiny."
 	icon_state = "lockebolter"
-	max_shells = 25
-	one_hand_penalty = 1.8
-	fire_delay = 4.1
+	one_hand_penalty = 1.3
+	fire_delay = 3.5
 	accuracy = -1
 	sales_price = 75
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=4.1, burst_delay=2.3, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", burst=3, fire_delay=4.1, burst_delay=2.3, burst_accuracy=list(0,-1,-1), dispersion=null)
+		list(mode_name="semi-automatic", burst=1, fire_delay=3.5, burst_delay=2.5, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3.5, burst_delay=2.5, burst_accuracy=list(-1,-1,-2), dispersion=null)
 		)
 
 /obj/item/gun/projectile/automatic/boltrifle/lockebolter/sister
 	name = "Godwyn-De'az Pattern Bolter Rifle"
 	desc = "The standard issue pattern for the Adeptus Sororitas, this pattern is millenia old and largely is no longer produced, save for the orders of the sisterhood -- despite it's ancients designs the make and quality makes this ancient design surpass more modern bolters."
 	icon_state = "sisterbolter-30"
-	max_shells = 25
-	one_hand_penalty = 1.5
-	slot_flags = SLOT_BACK|SLOT_BELT
-	fire_delay = 3.9 // Faster firing compared to Drusian, but less accurate. Designed for one handed use while wielding a chainsword.
+	one_hand_penalty = 1
+	slot_flags = SLOT_BACK|SLOT_BELT|SLOT_HOLSTER
+	fire_delay = 3.4 // Faster firing compared to Drusian, but less accurate. Designed for one handed use while wielding a chainsword.
 	accuracy = -1
 	sales_price = 75
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=3.9, burst_delay=2.1, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3.9, burst_delay=2.1, burst_accuracy=list(-1,-1,-2), dispersion=null)
+		list(mode_name="semi-automatic", burst=1, fire_delay=3.4, burst_delay=2.4, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3.4, burst_delay=2.4, burst_accuracy=list(-1,-1,-2), dispersion=null)
 		)
 
 /obj/item/gun/projectile/automatic/boltrifle/lockebolter/sister/update_icon()
@@ -633,11 +630,10 @@
 	icon_state = "emitter_carbine"
 	fire_sound = 'sound/warhammer/ds/jav_fire.ogg'
 	caliber = "rad"
-	max_shells = 20
 	one_hand_penalty = 1.5
 	accuracy = 0
-	fire_delay = 3.7
-	slot_flags = SLOT_BACK|SLOT_BELT
+	fire_delay = 3.2
+	slot_flags = SLOT_BACK|SLOT_BELT|SLOT_HOLSTER
 	magazine_type = /obj/item/ammo_magazine/radcarbine
 	allowed_magazines = list(/obj/item/ammo_magazine/radcarbine)
 	firemodes = list()
@@ -661,12 +657,11 @@
 	icon_state = "teslar"
 	fire_sound = 'sound/warhammer/ds/jav_fire.ogg'
 	caliber = "rad"
-	max_shells = 10
 	one_hand_penalty = 1
 	accuracy = -0.5
-	fire_delay = 3.4
+	fire_delay = 2.9
 	slowdown_general = 0
-	slot_flags = SLOT_BELT|SLOT_BACK
+	slot_flags = SLOT_BELT|SLOT_HOLSTER|SLOT_BACK
 	magazine_type = /obj/item/ammo_magazine/radcarbine/radpistol
 	allowed_magazines = list(/obj/item/ammo_magazine/radcarbine/radpistol)
 	firemodes = list()
@@ -691,20 +686,19 @@
 	icon = 'icons/map_project/port/ds13.dmi'
 	fire_sound = 'sound/warhammer/ds/pulse_shot.ogg'
 	caliber = "pmag"
-	max_shells = 40
 	one_hand_penalty = 3.5
-	burst_delay = 2.3
+	burst_delay = 1.8
 	accuracy = 0
-	fire_delay = 3
+	fire_delay = 2.8
 	slot_flags = SLOT_BACK
 	magazine_type = /obj/item/ammo_magazine/pulsemag
 	allowed_magazines = list(/obj/item/ammo_magazine/pulsemag)
-	w_class = ITEM_SIZE_HUGE
-	slowdown_general = 0.25
+	w_class = ITEM_SIZE_GARGANTUAN
+	slowdown_general = 0.07
 
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=3, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="5-round bursts", burst=5, fire_delay=3, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
+		list(mode_name="semi-automatic", burst=1, fire_delay=2.8, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
 		)
 
 /obj/item/gun/projectile/automatic/gaussrifle/update_icon()

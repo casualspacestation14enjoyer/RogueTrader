@@ -129,7 +129,7 @@
 		temperature_gain and max_temperature are set so that the max safe power level is 4.
 		Setting to 5 or higher can only be done temporarily before the generator overheats.
 	*/
-	power_gen = 20000			//Watts output per power_output level
+	power_gen = 30000			//Watts output per power_output level
 	working_sound = 'sound/machines/engine.ogg'
 	construct_state = /singleton/machine_construction/default/panel_closed
 	uncreated_component_parts = null
@@ -139,14 +139,14 @@
 	var/max_safe_output = 4		// For UI use, maximal output that won't cause overheat.
 	var/time_per_sheet = 96		//fuel efficiency - how long 1 sheet lasts at power level 1
 	var/max_sheets = 100 		//max capacity of the hopper
-	var/max_temperature = 300	//max temperature before overheating increases
+	var/max_temperature = 350	//max temperature before overheating increases
 	var/temperature_gain = 50	//how much the temperature increases per power output level, in degrees per level
 
 	var/sheets = 0			//How many sheets of material are loaded in the generator
 	var/sheet_left = 0		//How much is left of the current sheet
 	var/operating_temperature = 0		//The current temperature
 	var/overheating = 0		//if this gets high enough the generator explodes
-	var/max_overheat = 150
+	var/max_overheat = 250
 
 /obj/machinery/power/port_gen/pacman/Initialize()
 	. = ..()
@@ -423,7 +423,7 @@
 	time_per_sheet = 576 //same power output, but a 50 sheet stack will last 2 hours at max safe power
 	machine_name = "\improper SUPERPACMAN-type generator"
 	machine_desc = "A portable generator used for providing backup power for extended periods. Efficiently runs on uranium sheets; rated for 80 kW max safe output."
-	var/rad_power = 4
+	var/rad_power = 2
 
 //nuclear energy is green energy!
 /obj/machinery/power/port_gen/pacman/super/process_exhaust()
@@ -459,16 +459,16 @@
 	qdel(src)
 
 /obj/machinery/power/port_gen/pacman/super/potato
-	name = "nuclear reactor"
+	name = "imperial nuclear reactor"
 	desc = "PTTO-3, an industrial all-in-one nuclear power plant by Neo-Chernobyl GmbH. It uses uranium and vodka as a fuel source. Rated for 150 kW max safe output."
-	power_gen = 30000		//Watts output per power_output level
+	power_gen = 40000		//Watts output per power_output level
 	icon_state = "potato"
 	max_safe_output = 4
 	max_power_output = 8	//The maximum power setting without emagging.
 	temperature_gain = 80	//how much the temperature increases per power output level, in degrees per level
-	max_temperature = 450
+	max_temperature = 550
 	time_per_sheet = 400
-	rad_power = 12
+	rad_power = 4
 	atom_flags = ATOM_FLAG_OPEN_CONTAINER
 	anchored = TRUE
 	machine_name = "\improper PTTO-3 nuclear generator"
@@ -527,14 +527,14 @@
 	return TRUE
 
 /obj/machinery/power/port_gen/pacman/super/potato/reactor
-	name = "nuclear reactor"
+	name = "archeotech nuclear reactor"
 	desc = "ICRER-2, an industrial-yet-compact nuclear fusion reactor powered by sheets of uranium and liquid coolant. Rated for 180 KW maximum safe output on a full coolant tank for one hour. Exceeding this is likely to result in nuclear detonation and is not recommended."
 	icon_state = "potato"
 	max_safe_output = 5
 	max_power_output = 8
 	temperature_gain = 70
-	max_temperature = 500
-	rad_power = 8
+	max_temperature = 1000
+	rad_power = 4
 	coolant_use = 0.2
 	coolant_volume = 360
 	coolant_reagent = /datum/reagent/coolant
@@ -550,7 +550,7 @@
 
 	//I don't think tritium has any other use, so we might as well make this rewarding for players
 	//max safe power output (power level = 8) is 200 kW and lasts for 1 hour - 3 or 4 of these could power the station
-	power_gen = 25000 //watts
+	power_gen = 35000 //watts
 	max_power_output = 10
 	max_safe_output = 8
 	time_per_sheet = 576

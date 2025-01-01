@@ -127,7 +127,7 @@
 	name = "coffee dispenser"
 	desc = "Driving crack dealers out of employment since 2280."
 	icon_state = "coffee_dispenser"
-	ui_title = "Coffee Dispenser"
+	ui_title = "Recaf Dispenser"
 	accept_drinking = 1
 	core_skill = SKILL_COOKING
 	can_contaminate = FALSE //See above.

@@ -62,8 +62,8 @@
 /obj/item/gun/launcher/rocket/krak
 	name = "Krak Missile Launcher"
 	desc = "A simple krak missile launcher, a robust and man-portable anti-tank weapon primarily in use by PDF forces."
+	icon = 'icons/obj/weapons/gun/other.dmi'
 	icon_state = "rcl_rifle"
-	item_state = "rcl_rifle"
 	slot_flags = SLOT_BACK
 	w_class = ITEM_SIZE_HUGE
 	fire_sound = 'sound/warhammer/gunshot/tank.ogg'
@@ -71,8 +71,8 @@
 /obj/item/gun/launcher/rocket/ork
 	name = "Ork Rokit Launcha"
 	desc = "De rockity bit iz to be pointed at da umies. Charge in wid ya choppa when ya shoot it, innit."
+	icon = 'icons/obj/weapons/gun/other.dmi'
 	icon_state = "rokkit_launcha"
-	item_state = "rcl_rifle"
 	slot_flags = SLOT_BACK
 	w_class = ITEM_SIZE_HUGE
 	fire_sound = 'sound/warhammer/gunshot/tank.ogg'

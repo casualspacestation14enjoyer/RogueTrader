@@ -64,6 +64,10 @@
 	..()
 	hierarchy_type = type
 
+
+var/global/const/access_slavercult = "ACCESS_SLAVERCULT"
+
+
 /singleton/hierarchy/outfit/corpse/slavers_base
 	name = "Basic slaver output"
 
@@ -144,7 +148,7 @@
 	response_disarm = "shoves"
 	response_harm = "hits"
 	speed = 4
-	maxHealth = 100
+	maxhealth = 100
 	health = 100
 	natural_weapon = /obj/item/natural_weapon/punch
 	can_escape = TRUE

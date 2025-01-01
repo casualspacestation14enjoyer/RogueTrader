@@ -1,21 +1,25 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
+/obj/paint/vox,
 /turf/simulated/wall/r_wall/hull/vox,
 /area/voxship/scavship)
 "ab" = (
+/obj/paint/vox,
 /turf/simulated/wall/r_wall/hull/vox,
 /area/voxship/thrusters)
 "ac" = (
+/obj/paint/vox,
 /turf/simulated/wall/r_wall/hull/vox,
 /area/voxship/engineering)
 "ad" = (
 /obj/machinery/telecomms/processor/map_preset/voxship,
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "ae" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 6
 	},
+/obj/paint/vox,
 /turf/simulated/wall/r_wall/hull/vox,
 /area/voxship/thrusters)
 "af" = (
@@ -35,21 +39,18 @@
 	},
 /area/voxship/engineering)
 "ah" = (
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "ai" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 6
 	},
-/obj/machinery/light/small{
-	dir = 4;
-	icon_state = "bulb1"
-	},
 /obj/random/junk,
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "aj" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/fuel,
+/obj/paint/vox,
 /turf/simulated/wall/r_wall/hull/vox,
 /area/voxship/thrusters)
 "ak" = (
@@ -113,8 +114,8 @@
 /turf/simulated/floor/plating/vox,
 /area/voxship/scavship)
 "an" = (
-/obj/machinery/door/airlock/hatch/voxship,
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/shuttle_landmark/vox_base/hangar/vox_scavshuttle,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "ao" = (
 /obj/machinery/telecomms/bus/map_preset/voxship,
@@ -122,131 +123,114 @@
 /area/voxship/thrusters)
 "ap" = (
 /obj/decal/cleanable/filth,
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "aq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel,
 /obj/machinery/telecomms/server/map_preset/voxship,
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "ar" = (
-/turf/simulated/wall/prepainted,
+/obj/paint/vox,
+/turf/simulated/wall/r_wall/hull/vox,
 /area/voxship/fore)
 "as" = (
-/turf/simulated/wall/prepainted,
-/area/voxship/scavship)
+/obj/paint/meatstation/lab,
+/obj/machinery/pointdefense{
+	initial_id_tag = "Xenos"
+	},
+/turf/simulated/wall/ocp_wall,
+/area/voxship/shuttle)
 "at" = (
 /turf/simulated/wall/r_wall/hull/vox,
 /area/voxship/fore)
 "au" = (
-/obj/machinery/portable_atmospherics/hydroponics,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/light{
-	dir = 8
+/obj/machinery/cryopod{
+	dir = 2
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "av" = (
-/obj/machinery/portable_atmospherics/hydroponics,
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/machinery/cryopod{
+	dir = 2
+	},
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "aw" = (
-/obj/machinery/portable_atmospherics/hydroponics,
 /obj/decal/cleanable/filth,
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/machinery/cryopod{
+	dir = 2
+	},
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "ax" = (
-/obj/machinery/portable_atmospherics/hydroponics,
-/obj/machinery/light{
-	dir = 4
+/obj/machinery/ion_engine{
+	dir = 8
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/scavship)
-"ay" = (
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/engineering)
-"az" = (
-/obj/random/snack,
-/turf/simulated/floor/plating/vox,
-/area/voxship/engineering)
+/obj/paint/vox,
+/turf/simulated/wall/r_wall/hull/vox,
+/area/voxship/fore)
 "aA" = (
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "aB" = (
-/obj/machinery/light/small{
-	dir = 1
-	},
 /obj/machinery/telecomms/hub/map_preset/voxship,
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "aC" = (
 /obj/machinery/atmospherics/portables_connector{
 	dir = 4
 	},
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "aD" = (
 /obj/machinery/atmospherics/binary/pump{
 	dir = 8
 	},
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "aE" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
 	dir = 4
 	},
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "aF" = (
 /obj/machinery/alarm/vox{
 	pixel_y = 24
 	},
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "aG" = (
 /obj/decal/cleanable/cobweb2,
-/obj/machinery/light/small{
-	dir = 1
-	},
-/obj/random/junk,
-/turf/simulated/floor/plating/vox,
+/obj/random/loot/randomsupply/engineering,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
-"aH" = (
-/obj/random/loot,
-/obj/random/hat,
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/fore)
 "aI" = (
 /obj/item/reagent_containers/food/drinks/glass2/flute,
 /obj/random/junk,
 /obj/random/advdevice,
 /obj/random/powercell,
 /obj/item/device/gps,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "aJ" = (
 /obj/structure/table/rack,
 /obj/item/gun/energy/darkmatter,
-/obj/item/gun/energy/sonic,
 /obj/item/gun/launcher/alien/spikethrower,
 /obj/item/gun/launcher/alien/slugsling,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "aK" = (
 /obj/structure/table/rack,
-/obj/item/rig/vox,
-/obj/item/rig/vox,
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/item/slugegg,
+/obj/item/slugegg,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "aL" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
@@ -255,16 +239,15 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "aM" = (
 /obj/decal/cleanable/filth,
-/obj/random/snack,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "aN" = (
 /obj/random/contraband,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "aO" = (
 /turf/simulated/floor/reinforced/nitrogen,
@@ -298,25 +281,21 @@
 	dir = 4;
 	target_pressure = 150
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "aS" = (
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "aT" = (
-/obj/machinery/light/small{
-	dir = 4;
-	icon_state = "bulb1"
-	},
 /obj/machinery/atmospherics/unary/vent_pump/on,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "aU" = (
 /turf/simulated/floor/reinforced/carbon_dioxide,
 /area/voxship/engineering)
 "aV" = (
 /obj/decal/cleanable/filth,
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "aW" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -330,7 +309,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "aX" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -344,7 +323,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "aY" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -355,7 +334,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "aZ" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -367,7 +346,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "ba" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
@@ -380,7 +359,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "bb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
@@ -393,7 +372,7 @@
 	icon_state = "4-8"
 	},
 /obj/random/junk,
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "bc" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
@@ -410,10 +389,11 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/portable_atmospherics/canister/empty,
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "bd" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/fuel,
+/obj/paint/vox,
 /turf/simulated/wall/r_wall/hull/vox,
 /area/voxship/thrusters)
 "be" = (
@@ -425,7 +405,9 @@
 /obj/item/reagent_containers/food/drinks/glass2/flute,
 /obj/random/hat,
 /obj/random/closet,
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/item/reagent_containers/food/snacks/meat/human,
+/obj/item/reagent_containers/food/snacks/meat/human,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "bg" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
@@ -434,36 +416,31 @@
 /obj/random/drinkbottle,
 /obj/random/action_figure,
 /obj/random/smokes,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "bh" = (
 /obj/random/hat,
-/obj/random/loot,
 /obj/random/clothing,
 /obj/decal/cleanable/filth,
-/obj/random/energy,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "bi" = (
 /obj/structure/table/rack,
 /obj/item/clothing/head/helmet/space/vox/pressure,
 /obj/item/clothing/mask/gas/swat/vox,
 /obj/item/clothing/suit/space/vox/pressure,
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "bj" = (
 /obj/random/junk,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "bk" = (
 /obj/structure/table/rack,
 /obj/item/clothing/head/helmet/space/vox/carapace,
 /obj/item/clothing/mask/gas/swat/vox,
 /obj/item/clothing/suit/space/vox/carapace,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "bl" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -476,12 +453,12 @@
 	dir = 4;
 	pixel_x = -16
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "bm" = (
 /obj/decal/cleanable/filth,
-/obj/item/seeds/breather,
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/submap_landmark/spawnpoint/captive,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "bn" = (
 /obj/decal/cleanable/filth,
@@ -491,13 +468,12 @@
 	pixel_x = -6;
 	pixel_y = -26
 	},
-/obj/machinery/seed_storage/random,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "bo" = (
-/obj/item/seeds/breather,
-/obj/item/seeds/breather,
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/decal/cleanable/filth,
+/obj/submap_landmark/spawnpoint/captivecatachan,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "bp" = (
 /obj/wallframe_spawn/reinforced_phoron/hull,
@@ -508,19 +484,20 @@
 	dir = 4
 	},
 /obj/machinery/portable_atmospherics/canister/nitrogen,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "br" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/blue,
 /obj/machinery/meter,
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/gibspawner/robot,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "bs" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
 /obj/decal/cleanable/cobweb2,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "bt" = (
 /obj/machinery/atmospherics/unary/vent_pump/tank{
@@ -544,20 +521,20 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/black{
 	dir = 4
 	},
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "bv" = (
 /obj/machinery/atmospherics/binary/pump/high_power{
 	dir = 4
 	},
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "bw" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/black{
 	dir = 1
 	},
 /obj/machinery/meter,
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "bx" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -570,21 +547,21 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/black{
 	dir = 4
 	},
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "by" = (
 /obj/decal/cleanable/blood/oil,
 /obj/machinery/atmospherics/pipe/simple/hidden/universal{
 	dir = 4
 	},
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "bz" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
 	dir = 1
 	},
 /obj/machinery/meter,
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "bA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
@@ -592,32 +569,29 @@
 	},
 /obj/random/mre,
 /obj/random/snack,
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "bB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 9
 	},
 /obj/machinery/portable_atmospherics/canister/empty,
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "bC" = (
 /obj/decal/cleanable/filth,
 /obj/machinery/portable_atmospherics/canister/empty,
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "bD" = (
-/obj/machinery/light/small{
-	dir = 4;
-	icon_state = "bulb1"
-	},
 /obj/machinery/portable_atmospherics/canister/empty,
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "bE" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 5
 	},
+/obj/paint/vox,
 /turf/simulated/wall/r_wall/hull/vox,
 /area/voxship/thrusters)
 "bF" = (
@@ -632,18 +606,17 @@
 /obj/random/clothing,
 /obj/random/energy,
 /obj/item/clothing/accessory/stethoscope,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "bH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/random/hat,
-/obj/random/loot,
 /obj/decal/cleanable/filth,
 /obj/random/snack,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "bI" = (
 /obj/item/reagent_containers/food/drinks/glass2/flute,
@@ -652,7 +625,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "bJ" = (
 /obj/structure/table/rack,
@@ -663,76 +636,67 @@
 	dir = 4;
 	pixel_x = -16
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "bK" = (
 /obj/decal/cleanable/filth,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "bL" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "bM" = (
 /obj/structure/table/rack,
 /obj/item/clothing/head/helmet/space/vox/medic,
 /obj/item/clothing/mask/gas/swat/vox,
 /obj/item/clothing/suit/space/vox/medic,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "bN" = (
-/obj/item/seeds/breather,
-/obj/item/seeds/breather,
-/obj/item/seeds/resin,
-/obj/item/seeds/resin,
-/obj/item/seeds/resin,
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/decal/cleanable/filth,
+/obj/submap_landmark/spawnpoint/captivesisterm,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "bO" = (
-/obj/structure/reagent_dispensers/watertank,
-/obj/item/reagent_containers/glass/bucket,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "bP" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/blue,
 /obj/decal/cleanable/filth,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "bQ" = (
 /obj/machinery/atmospherics/unary/tank/oxygen,
 /obj/floor_decal/borderfloorblack{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "bR" = (
 /obj/machinery/atmospherics/portables_connector{
 	dir = 4
 	},
 /obj/machinery/portable_atmospherics/canister/carbon_dioxide,
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "bS" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/black{
 	dir = 9
 	},
 /obj/random/junk,
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "bT" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/light/small{
-	dir = 4;
-	icon_state = "bulb1"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "bU" = (
 /turf/simulated/wall/ocp_wall,
@@ -746,47 +710,17 @@
 /obj/structure/curtain/black,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "bX" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/random/junk,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "bY" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/decal/cleanable/filth,
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/fore)
-"bZ" = (
-/obj/structure/table/rack,
-/obj/item/clothing/gloves/vox,
-/obj/item/clothing/gloves/vox,
-/obj/item/clothing/gloves/vox,
-/obj/item/clothing/gloves/vox,
-/obj/item/clothing/gloves/vox,
-/obj/item/clothing/mask/gas/vox,
-/obj/item/clothing/mask/gas/vox,
-/obj/item/clothing/mask/gas/vox,
-/obj/item/clothing/shoes/magboots/vox,
-/obj/item/clothing/shoes/magboots/vox,
-/obj/item/clothing/shoes/magboots/vox,
-/obj/item/clothing/suit/armor/vox_scrap,
-/obj/item/clothing/suit/armor/vox_scrap,
-/obj/item/clothing/suit/armor/vox_scrap,
-/obj/item/clothing/suit/armor/vox_scrap,
-/obj/item/clothing/suit/armor/vox_scrap,
-/obj/item/clothing/under/vox/vox_casual,
-/obj/item/clothing/under/vox/vox_casual,
-/obj/item/clothing/under/vox/vox_casual,
-/obj/item/clothing/under/vox/vox_robes,
-/obj/item/clothing/under/vox/vox_robes,
-/obj/item/clothing/under/vox/vox_robes,
-/obj/machinery/light/small{
-	dir = 4;
-	icon_state = "bulb1"
-	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "ca" = (
 /obj/overmap/visitable/sector/vox_scav_ship,
@@ -799,12 +733,13 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/door/airlock/hatch/voxship,
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/machinery/door/airlock/warhammer/command/ancient,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "cc" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall/prepainted,
+/obj/paint/vox,
+/turf/simulated/wall/r_wall/hull/vox,
 /area/voxship/scavship)
 "cd" = (
 /obj/structure/table/reinforced,
@@ -812,6 +747,7 @@
 /obj/item/crowbar,
 /obj/machinery/recharger,
 /obj/decal/cleanable/cobweb,
+/obj/gibspawner/robot,
 /turf/simulated/floor/plating/vox,
 /area/voxship/scavship)
 "ce" = (
@@ -829,24 +765,18 @@
 /area/voxship/scavship)
 "cf" = (
 /obj/machinery/recharge_station,
-/obj/machinery/light/small{
-	dir = 1
-	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/scavship)
-"cg" = (
-/turf/simulated/wall/prepainted,
-/area/voxship/engineering)
 "ch" = (
 /obj/structure/table/reinforced,
 /obj/item/inflatable_dispenser,
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /obj/floor_decal/borderfloorblack,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "ci" = (
 /obj/floor_decal/borderfloorblack,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "cj" = (
 /obj/machinery/atmospherics/binary/passive_gate/on{
@@ -854,24 +784,24 @@
 	target_pressure = 280
 	},
 /obj/floor_decal/borderfloorblack,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "ck" = (
 /obj/random/junk,
 /obj/floor_decal/borderfloorblack{
 	dir = 6
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "cl" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "cm" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "cn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -883,7 +813,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "co" = (
 /obj/submap_landmark/joinable_submap/voxship/scavship,
@@ -891,42 +821,37 @@
 /area/space)
 "cp" = (
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging/junction,
-/turf/simulated/floor/reinforced{
-	map_airless = 1
-	},
+/obj/item/clothing/head/helmet/space/vox/carapace,
+/turf/simulated/floor/warhammer/necro1,
 /area/voxship/thrusters)
 "cq" = (
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging{
 	dir = 6
 	},
-/turf/simulated/floor/reinforced{
-	map_airless = 1
-	},
+/turf/simulated/floor/warhammer/necro1,
 /area/voxship/thrusters)
 "cr" = (
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging{
 	dir = 10
 	},
-/turf/simulated/floor/reinforced{
-	map_airless = 1
-	},
+/turf/simulated/floor/warhammer/necro1,
 /area/voxship/thrusters)
 "cs" = (
 /obj/machinery/computer/ship/engines{
-	req_access = list("ACCESS_VOXSHIP")
 	},
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "ct" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/machinery/computer/shuttle_control/explore/vox_ship,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "cu" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/decal/cleanable/filth,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/gibspawner/robot,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "cv" = (
 /obj/random/junk,
@@ -940,24 +865,21 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "cw" = (
-/obj/machinery/light/small{
-	dir = 4;
-	icon_state = "bulb1"
-	},
 /obj/machinery/radio_beacon,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "cx" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall/prepainted,
+/obj/paint/vox,
+/turf/simulated/wall/r_wall/hull/vox,
 /area/voxship/fore)
 "cy" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/door/airlock/hatch/voxship,
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/machinery/door/airlock/warhammer/command/ancient,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "cz" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -978,6 +900,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
+/obj/item/gun/projectile/flare/loaded,
 /turf/simulated/floor/plating/vox,
 /area/voxship/scavship)
 "cA" = (
@@ -1051,7 +974,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/machinery/door/airlock/hatch/voxship,
+/obj/machinery/door/airlock/warhammer/engineering,
 /turf/simulated/floor/plating/vox,
 /area/voxship/scavship)
 "cF" = (
@@ -1093,7 +1016,6 @@
 	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
-/obj/machinery/light/small,
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
 "cI" = (
@@ -1118,7 +1040,8 @@
 	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
-/obj/machinery/door/airlock/hatch/voxship,
+/obj/machinery/door/airlock/warhammer/engineering,
+/obj/structure/barricade/boards,
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
 "cK" = (
@@ -1144,9 +1067,6 @@
 	},
 /obj/decal/cleanable/filth,
 /obj/structure/catwalk,
-/obj/machinery/light/small{
-	dir = 1
-	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
 "cM" = (
@@ -1198,18 +1118,15 @@
 /area/voxship/thrusters)
 "cP" = (
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging,
-/turf/simulated/floor/reinforced{
-	map_airless = 1
-	},
+/turf/simulated/floor/warhammer/necro1,
 /area/voxship/thrusters)
 "cQ" = (
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging,
 /obj/machinery/igniter{
 	id_tag = "Voxship_igniter"
 	},
-/turf/simulated/floor/reinforced{
-	map_airless = 1
-	},
+/mob/living/simple_animal/hostile/daemon/minion,
+/turf/simulated/floor/warhammer/necro1,
 /area/voxship/thrusters)
 "cR" = (
 /obj/machinery/door/blast/regular{
@@ -1257,9 +1174,8 @@
 	pixel_y = -8
 	},
 /obj/machinery/computer/ship/engines{
-	req_access = list("ACCESS_VOXSHIP")
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "cV" = (
 /obj/structure/bed/chair/comfy/captain{
@@ -1275,7 +1191,7 @@
 	},
 /obj/random/drinkbottle,
 /obj/item/reagent_containers/food/drinks/glass2/flute,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "cW" = (
 /obj/structure/cable{
@@ -1284,12 +1200,11 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
-/obj/machinery/light/small,
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4;
 	level = 2
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "cX" = (
 /obj/structure/cable{
@@ -1301,7 +1216,7 @@
 /obj/shuttle_landmark/vox_base/hangar/vox_ship,
 /obj/machinery/hologram/holopad/longrange,
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "cY" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -1351,7 +1266,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/machinery/door/airlock/hatch/voxship,
+/obj/machinery/door/airlock/warhammer/command/ancient,
 /turf/simulated/floor/plating/vox,
 /area/voxship/fore)
 "db" = (
@@ -1373,9 +1288,6 @@
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/fore)
 "dd" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
 /obj/machinery/power/apc{
 	dir = 1;
 	name = "north bump";
@@ -1386,7 +1298,7 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "de" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -1405,30 +1317,23 @@
 /turf/simulated/floor/plating/vox,
 /area/voxship/scavship)
 "df" = (
-/obj/structure/window/reinforced{
-	dir = 4
-	},
 /obj/floor_decal/borderfloorblack{
 	dir = 9
 	},
-/obj/floor_decal/corner_techfloor_gray,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dg" = (
-/obj/machinery/fabricator,
 /obj/floor_decal/borderfloorblack{
 	dir = 1
 	},
-/obj/floor_decal/corner_techfloor_gray,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dh" = (
 /obj/floor_decal/borderfloorblack{
 	dir = 1
 	},
-/obj/floor_decal/corner_techfloor_gray,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "di" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -1439,26 +1344,28 @@
 /obj/floor_decal/borderfloorblack{
 	dir = 5
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dj" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/wall/prepainted,
+/obj/paint/vox,
+/turf/simulated/wall/r_wall/hull/vox,
 /area/voxship/scavship)
 "dk" = (
 /obj/floor_decal/industrial/hatch/yellow,
-/obj/machinery/door/airlock/hatch/voxship,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/machinery/door/airlock/warhammer/engineering,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dl" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/wall/prepainted,
+/obj/paint/vox,
+/turf/simulated/wall/r_wall/hull/vox,
 /area/voxship/engineering)
 "dm" = (
 /obj/structure/cable{
@@ -1474,26 +1381,24 @@
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging{
 	dir = 5
 	},
-/turf/simulated/floor/reinforced{
-	map_airless = 1
-	},
+/turf/simulated/floor/warhammer/necro1,
 /area/voxship/thrusters)
 "do" = (
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging{
 	dir = 9
 	},
 /obj/machinery/atmospherics/pipe/vent/high_volume,
-/turf/simulated/floor/reinforced{
-	map_airless = 1
-	},
+/turf/simulated/floor/warhammer/necro1,
 /area/voxship/thrusters)
 "dp" = (
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging/junction{
 	dir = 1
 	},
-/turf/simulated/floor/reinforced{
-	map_airless = 1
-	},
+/obj/item/archaeological_find/remains/xeno,
+/obj/item/gun/energy/sonic,
+/obj/decal/cleanable/blood/xeno,
+/obj/item/clothing/gloves/vox,
+/turf/simulated/floor/warhammer/necro1,
 /area/voxship/thrusters)
 "dq" = (
 /obj/machinery/computer/ship/sensors/vox{
@@ -1503,14 +1408,14 @@
 	dir = 4;
 	pixel_x = -16
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "dr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/curtain/black,
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "ds" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -1523,9 +1428,6 @@
 	},
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	dir = 8
-	},
-/obj/machinery/light/small{
 	dir = 8
 	},
 /turf/simulated/floor/plating/vox,
@@ -1559,24 +1461,28 @@
 /turf/simulated/floor/plating/vox,
 /area/voxship/scavship)
 "dv" = (
-/obj/structure/window/reinforced{
-	dir = 4
-	},
 /obj/floor_decal/borderfloorblack{
 	dir = 8
 	},
-/obj/floor_decal/corner_techfloor_gray,
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/effect/floor_decal/warhammer/sigil{
+	icon_state = "NW"
+	},
+/obj/item/remains/xeno,
+/obj/decal/cleanable/blood/xeno,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dw" = (
-/obj/machinery/vending/tool,
-/obj/floor_decal/corner_techfloor_gray/diagonal,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/effect/floor_decal/warhammer/sigil{
+	icon_state = "N"
+	},
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dx" = (
-/obj/floor_decal/corner_techfloor_gray/diagonal,
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/effect/floor_decal/warhammer/sigil{
+	icon_state = "SE"
+	},
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dy" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -1586,24 +1492,21 @@
 /obj/floor_decal/borderfloorblack{
 	dir = 4
 	},
-/obj/floor_decal/corner_techfloor_gray{
-	dir = 1
-	},
-/obj/machinery/light/small{
-	dir = 4;
-	icon_state = "bulb1"
-	},
 /obj/random/snack,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dz" = (
 /obj/machinery/portable_atmospherics/canister/hydrogen,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/item/reagent_containers/food/snacks/poo,
+/obj/machinery/vending/engivend{
+	req_access = list()
+	},
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dB" = (
 /obj/structure/cable{
@@ -1611,56 +1514,34 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dC" = (
 /obj/machinery/alarm/vox{
 	pixel_y = 24
 	},
 /obj/random/contraband,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dD" = (
-/obj/random/snack,
-/obj/random/snack,
-/obj/random/snack,
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/machinery/vending/tool,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dE" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/engineering)
-"dF" = (
-/obj/machinery/portable_atmospherics/canister/hydrogen,
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "dG" = (
 /obj/machinery/portable_atmospherics/canister/hydrogen,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
-"dH" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/structure/catwalk,
-/obj/machinery/light/small{
-	dir = 4;
-	icon_state = "bulb1"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/plating/vox,
-/area/voxship/thrusters)
 "dJ" = (
 /obj/structure/closet/crate,
 /obj/item/stack/material/steel/ten,
 /obj/item/stack/material/steel/ten,
 /obj/item/stack/material/steel/ten,
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/item/reagent_containers/food/snacks/poo,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/black,
@@ -1678,18 +1559,14 @@
 /area/voxship/thrusters)
 "dL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel,
-/obj/machinery/door/airlock/hatch/voxship{
-	id_tag = "voxengine";
-	locked = 1
-	},
-/turf/simulated/floor/reinforced{
-	map_airless = 1
-	},
+/obj/machinery/door/airlock/warhammer/command/ancient,
+/turf/simulated/floor/warhammer/necro1,
 /area/voxship/thrusters)
 "dN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
+/obj/paint/vox,
 /turf/simulated/wall/r_wall/hull/vox,
 /area/voxship/thrusters)
 "dO" = (
@@ -1709,23 +1586,14 @@
 "dQ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/decal/cleanable/filth,
-/obj/floor_decal/corner_steel_grid/diagonal,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/fore)
-"dR" = (
-/obj/floor_decal/corner_steel_grid/diagonal,
-/obj/item/tank/oxygen,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "dS" = (
 /obj/structure/bed,
 /obj/item/bedsheet/mime,
 /obj/structure/curtain/open/bed,
-/obj/item/clothing/suit/pirate,
-/obj/floor_decal/corner_steel_grid/diagonal,
-/obj/submap_landmark/spawnpoint/voxship_crew/engineer,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "dT" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -1734,18 +1602,16 @@
 /obj/floor_decal/borderfloorblack{
 	dir = 1
 	},
-/obj/floor_decal/corner_techfloor_gray,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dU" = (
-/obj/structure/window/reinforced{
-	dir = 4
-	},
 /obj/floor_decal/borderfloorblack/corner{
 	dir = 1
 	},
-/obj/floor_decal/corner_techfloor_gray,
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/effect/floor_decal/warhammer/sigil{
+	icon_state = "W"
+	},
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dV" = (
 /obj/machinery/atmospherics/pipe/vent/high_volume{
@@ -1756,37 +1622,38 @@
 	},
 /area/voxship/scavship)
 "dW" = (
-/obj/machinery/vending/engivend{
-	req_access = list()
-	},
-/obj/floor_decal/corner_techfloor_gray/diagonal,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/effect/floor_decal/warhammer/sigil,
+/obj/item/remains/xeno,
+/obj/decal/cleanable/blood/xeno,
+/obj/fake_fire/bluespace{
+	lifetime = 1000;
+	pressure = 500;
+	name = "chaos fire"
+	},
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dX" = (
-/obj/item/storage/toolbox,
-/obj/floor_decal/corner_techfloor_gray/diagonal,
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/random/loot/randomsupply/engineering,
+/obj/effect/floor_decal/warhammer/sigil{
+	icon_state = "E"
+	},
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dY" = (
 /obj/decal/cleanable/filth,
 /obj/floor_decal/borderfloorblack{
 	dir = 4
 	},
-/obj/floor_decal/corner_techfloor_gray{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "dZ" = (
 /obj/structure/closet/crate,
 /obj/item/stack/material/tritium/ten,
 /obj/item/stack/material/tritium/ten,
 /obj/item/stack/material/tritium/ten,
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/item/reagent_containers/food/snacks/poo,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "ea" = (
 /obj/random/junk,
@@ -1796,7 +1663,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "eb" = (
 /obj/decal/cleanable/filth,
@@ -1811,20 +1678,18 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/mob/living/simple_animal/passive/mouse/rat,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "ec" = (
 /obj/item/tank/oxygen,
 /obj/item/pickaxe,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "ed" = (
-/obj/machinery/light/small{
-	dir = 4;
-	icon_state = "bulb1"
-	},
 /obj/random/snack,
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/item/reagent_containers/food/snacks/poo,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "ee" = (
 /obj/structure/cable{
@@ -1848,7 +1713,7 @@
 	name = "chamber viewing port control";
 	pixel_y = 32
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "eg" = (
 /obj/machinery/button/blast_door{
@@ -1856,18 +1721,19 @@
 	name = "Chamber Vent Control";
 	pixel_y = 32
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/gibspawner/robot,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "eh" = (
 /obj/machinery/atmospherics/valve,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "ei" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
 	dir = 8
 	},
 /obj/machinery/meter,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "ej" = (
 /obj/machinery/atmospherics/binary/pump{
@@ -1879,22 +1745,21 @@
 	name = "Chamber Hatch Control";
 	pixel_y = 32
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "ek" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/paint/vox,
 /turf/simulated/wall/r_wall/hull/vox,
 /area/voxship/thrusters)
 "el" = (
 /obj/structure/bed,
 /obj/item/bedsheet/hos,
 /obj/structure/curtain/open/bed,
-/obj/floor_decal/corner_steel_grid/diagonal,
-/obj/submap_landmark/spawnpoint/voxship_crew/quill,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "em" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -1903,79 +1768,57 @@
 	},
 /obj/item/storage/box/vox,
 /obj/item/storage/box/vox,
-/obj/floor_decal/corner_steel_grid/diagonal,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/fore)
-"en" = (
-/obj/item/inflatable_duck,
-/obj/floor_decal/corner_steel_grid/diagonal,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "eo" = (
 /obj/decal/cleanable/cobweb,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/kitchenspike,
 /obj/decal/cleanable/blood,
-/turf/simulated/floor/tiled/freezer{
-	initial_gas = list("nitrogen"=101.383)
-	},
+/obj/gibspawner/human,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "ep" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/freezer{
-	initial_gas = list("nitrogen"=101.383)
-	},
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "eq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/floor_decal/corner_techfloor_gray/diagonal,
 /obj/machinery/alarm/vox{
 	dir = 4;
 	pixel_x = -16
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "er" = (
-/obj/machinery/light/small{
-	dir = 4;
-	icon_state = "bulb1"
-	},
 /obj/machinery/chem_master,
-/turf/simulated/floor/tiled/freezer{
-	initial_gas = list("nitrogen"=101.383)
-	},
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "es" = (
 /obj/random/junk,
 /obj/decal/cleanable/blood/oil,
-/obj/floor_decal/corner_techfloor_gray/diagonal,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "et" = (
-/obj/floor_decal/corner_techfloor_gray/diagonal,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/effect/floor_decal/warhammer/sigil{
+	icon_state = "S"
+	},
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "eu" = (
 /obj/random/junk,
 /obj/floor_decal/borderfloorblack{
 	dir = 4
 	},
-/obj/floor_decal/corner_techfloor_gray{
-	dir = 1
-	},
-/obj/machinery/light/small{
-	dir = 4;
-	icon_state = "bulb1"
-	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "ev" = (
 /obj/machinery/power/port_gen/pacman/mrs,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "ew" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -1983,7 +1826,7 @@
 	level = 2
 	},
 /obj/item/storage/toolbox/mechanical,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "ex" = (
 /obj/item/tank/oxygen,
@@ -1993,41 +1836,31 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "ey" = (
 /obj/random/junk,
-/turf/simulated/floor/tiled/techmaint/vox,
+/mob/living/simple_animal/passive/mouse/rat,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "ez" = (
 /obj/decal/cleanable/filth,
 /obj/machinery/portable_atmospherics/canister/nitrogen,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "eA" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1;
 	level = 2
 	},
-/obj/machinery/light/small{
-	dir = 8
-	},
-/obj/floor_decal/corner_techfloor_gray/diagonal,
 /obj/structure/bed/chair{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "eB" = (
 /obj/item/storage/toolbox/syndicate,
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/engineering)
-"eC" = (
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 4;
-	level = 2
-	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "eD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -2036,7 +1869,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "eE" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -2045,7 +1878,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "eF" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
@@ -2088,7 +1921,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "eJ" = (
 /obj/machinery/atmospherics/omni/mixer,
@@ -2099,7 +1932,7 @@
 	id_tag = "Voxship_igniter";
 	pixel_y = -25
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "eK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel,
@@ -2109,17 +1942,13 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "eL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/machinery/light/small{
-	dir = 4;
-	icon_state = "bulb1"
-	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "eM" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
@@ -2128,33 +1957,28 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
 	},
+/obj/paint/vox,
 /turf/simulated/wall/r_wall/hull/vox,
 /area/voxship/thrusters)
 "eN" = (
 /obj/structure/extinguisher_cabinet,
-/turf/simulated/wall/prepainted,
+/obj/paint/vox,
+/turf/simulated/wall/r_wall/hull/vox,
 /area/voxship/fore)
 "eO" = (
-/obj/item/pizzabox/meat,
-/obj/floor_decal/corner_steel_grid/diagonal,
-/obj/item/tank/oxygen,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/item/tank/oxygen_emergency_double,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "eP" = (
 /obj/decal/cleanable/filth,
-/obj/floor_decal/corner_steel_grid/diagonal,
 /obj/random/snack,
-/obj/machinery/light/small{
-	dir = 4;
-	icon_state = "bulb1"
-	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "eQ" = (
 /obj/machinery/bodyscanner,
@@ -2162,9 +1986,7 @@
 	dir = 4;
 	pixel_x = -16
 	},
-/turf/simulated/floor/tiled/freezer{
-	initial_gas = list("nitrogen"=101.383)
-	},
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "eR" = (
 /obj/decal/cleanable/filth,
@@ -2172,67 +1994,53 @@
 	dir = 1
 	},
 /obj/item/defibrillator,
-/turf/simulated/floor/tiled/freezer{
-	initial_gas = list("nitrogen"=101.383)
-	},
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "eS" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/item/clothing/glasses/hud/health,
-/turf/simulated/floor/tiled/freezer{
-	initial_gas = list("nitrogen"=101.383)
-	},
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "eT" = (
 /obj/machinery/chemical_dispenser/full,
 /obj/item/reagent_containers/glass/beaker/large,
-/turf/simulated/floor/tiled/freezer{
-	initial_gas = list("nitrogen"=101.383)
-	},
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "eU" = (
-/obj/floor_decal/corner_techfloor_gray/diagonal,
 /obj/structure/table/steel,
 /obj/random/junk,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "eV" = (
 /obj/decal/cleanable/filth,
-/obj/floor_decal/corner_techfloor_gray/diagonal,
 /obj/structure/table/steel,
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/random/loot/lootcontraband,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "eW" = (
-/obj/floor_decal/corner_techfloor_gray{
-	dir = 1
-	},
 /obj/floor_decal/borderfloorblack{
 	dir = 4
 	},
 /obj/structure/bed/chair{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "eX" = (
 /obj/random/junk,
 /obj/random/snack,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "eY" = (
-/obj/floor_decal/corner_techfloor_gray{
-	dir = 1
-	},
 /obj/floor_decal/borderfloorblack,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "eZ" = (
 /obj/machinery/portable_atmospherics/powered/scrubber,
 /obj/machinery/atmospherics/portables_connector{
 	dir = 4
 	},
-/obj/machinery/light/small,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "fa" = (
 /obj/machinery/atmospherics/binary/pump/high_power/on{
@@ -2242,7 +2050,7 @@
 /obj/machinery/vending/engineering{
 	req_access = list()
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "fb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/black{
@@ -2258,14 +2066,14 @@
 /obj/random/advdevice,
 /obj/item/storage/briefcase/inflatable,
 /obj/item/device/lightreplacer,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "fc" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/black{
 	dir = 10
 	},
 /obj/machinery/pipedispenser,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "fd" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -2280,111 +2088,90 @@
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
 "fe" = (
-/obj/floor_decal/corner_techfloor_gray{
-	dir = 1
-	},
 /obj/floor_decal/borderfloorblack,
 /obj/structure/bed/chair{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "ff" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
 	dir = 8
 	},
-/obj/decal/cleanable/blood/oil,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/item/remains/xeno,
+/obj/decal/cleanable/blood/xeno,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "fg" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "fh" = (
 /obj/structure/bed,
 /obj/item/bedsheet/rd,
 /obj/structure/curtain/open/bed,
-/obj/floor_decal/corner_steel_grid/diagonal,
-/obj/submap_landmark/spawnpoint/voxship_crew,
 /obj/item/bikehorn/rubberducky,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "fi" = (
 /obj/floor_decal/corner_steel_grid/diagonal,
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/fore)
-"fj" = (
-/obj/floor_decal/corner_steel_grid/diagonal,
-/obj/decal/cleanable/filth,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "fk" = (
 /obj/machinery/body_scanconsole{
 	dir = 1
 	},
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/freezer{
-	initial_gas = list("nitrogen"=101.383)
-	},
+/mob/living/simple_animal/hostile/daemon/zygote,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "fl" = (
 /obj/item/clothing/suit/armor/grim/toggle/labcoat,
-/turf/simulated/floor/tiled/freezer{
-	initial_gas = list("nitrogen"=101.383)
-	},
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "fm" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1;
 	level = 2
 	},
-/turf/simulated/floor/tiled/freezer{
-	initial_gas = list("nitrogen"=101.383)
-	},
+/obj/machinery/reagent_temperature,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "fn" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/firstaid/adv,
-/obj/item/storage/firstaid/combat,
 /obj/item/storage/box/detergent,
 /obj/item/storage/box/syringes,
-/turf/simulated/floor/tiled/freezer{
-	initial_gas = list("nitrogen"=101.383)
-	},
+/obj/random/firstaid,
+/obj/random/firstaid,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "fo" = (
 /obj/floor_decal/borderfloorblack{
 	dir = 6
 	},
-/obj/floor_decal/corner_techfloor_gray{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "fp" = (
 /obj/structure/table/reinforced,
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/freezer{
-	initial_gas = list("nitrogen"=101.383)
-	},
+/obj/random/loot/randomcolonyitems,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "fq" = (
-/obj/machinery/door/airlock/hatch/voxship,
 /obj/machinery/atmospherics/pipe/simple/hidden/blue{
 	dir = 5
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/machinery/door/airlock/warhammer/command,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "fr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/black,
-/turf/simulated/wall/prepainted,
+/obj/paint/vox,
+/turf/simulated/wall/r_wall/hull/vox,
 /area/voxship/engineering)
 "fs" = (
 /obj/structure/cable{
@@ -2392,15 +2179,9 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/obj/machinery/light/small{
-	dir = 8
-	},
 /obj/structure/table/steel,
-/obj/item/storage/firstaid/radiation{
-	pixel_y = 8
-	},
-/obj/item/storage/firstaid/toxin,
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/item/reagent_containers/food/snacks/soylentgreen,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "ft" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -2435,28 +2216,26 @@
 /obj/structure/table/rack,
 /obj/item/reagent_containers/chem_disp_cartridge/vodka,
 /obj/item/reagent_containers/glass/beaker,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "fv" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "fw" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "fx" = (
 /obj/structure/bed,
 /obj/item/bedsheet/rd,
 /obj/structure/curtain/open/bed,
-/obj/floor_decal/corner_steel_grid/diagonal,
-/obj/submap_landmark/spawnpoint/voxship_crew/doc,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "fy" = (
 /obj/item/roller_bed,
@@ -2464,49 +2243,40 @@
 /obj/structure/hygiene/sink/kitchen{
 	pixel_x = -32
 	},
-/turf/simulated/floor/tiled/freezer{
-	initial_gas = list("nitrogen"=101.383)
-	},
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "fz" = (
-/turf/simulated/floor/tiled/freezer{
-	initial_gas = list("nitrogen"=101.383)
-	},
+/obj/decal/cleanable/blood/xeno,
+/obj/item/remains/xeno,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "fA" = (
 /obj/decal/cleanable/filth,
-/turf/simulated/floor/tiled/freezer{
-	initial_gas = list("nitrogen"=101.383)
-	},
+/mob/living/simple_animal/hostile/daemon/zygote,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "fB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/blue{
 	dir = 10
 	},
+/obj/paint/vox,
 /turf/simulated/wall/r_wall/hull/vox,
 /area/voxship/engineering)
 "fC" = (
-/obj/machinery/light/small{
-	dir = 1
-	},
 /obj/machinery/alarm/vox,
 /obj/machinery/atmospherics/pipe/manifold/hidden/blue{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "fD" = (
 /obj/wallframe_spawn/reinforced/hull/vox,
 /turf/simulated/floor,
 /area/voxship/scavship)
-"fE" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/black,
-/turf/simulated/wall/r_wall/hull/vox,
-/area/voxship/engineering)
 "fF" = (
 /obj/structure/cable,
 /obj/machinery/power/smes/buildable/preset/voxship/ship,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "fG" = (
 /turf/simulated/mineral/random,
@@ -2536,23 +2306,20 @@
 /area/voxship/engineering)
 "fK" = (
 /obj/structure/closet/crate/vox_uranium,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "fL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel,
 /obj/structure/grille,
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
 "fM" = (
 /obj/machinery/organ_printer/robot/mapped,
-/turf/simulated/floor/tiled/freezer{
-	initial_gas = list("nitrogen"=101.383)
-	},
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "fN" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
-/obj/structure/closet/crate/hydroponics/prespawned,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "fO" = (
 /obj/item/material/shard,
@@ -2585,16 +2352,12 @@
 /obj/structure/table/reinforced,
 /obj/item/storage/firstaid/surgery,
 /obj/item/stack/nanopaste,
-/turf/simulated/floor/tiled/freezer{
-	initial_gas = list("nitrogen"=101.383)
-	},
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "fV" = (
 /obj/machinery/optable,
 /obj/item/device/scanner/health,
-/turf/simulated/floor/tiled/freezer{
-	initial_gas = list("nitrogen"=101.383)
-	},
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
 "fW" = (
 /obj/random/advdevice,
@@ -2613,10 +2376,6 @@
 /area/voxship/engineering)
 "fZ" = (
 /obj/machinery/door/window,
-/obj/machinery/light/small{
-	dir = 4;
-	icon_state = "bulb1"
-	},
 /obj/machinery/door/window{
 	dir = 1
 	},
@@ -2625,7 +2384,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "ga" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
@@ -2639,6 +2398,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
 	dir = 1
 	},
+/obj/paint/vox,
 /turf/simulated/wall/r_wall/hull/vox,
 /area/voxship/thrusters)
 "gc" = (
@@ -2660,6 +2420,7 @@
 /area/space)
 "ge" = (
 /obj/structure/fuel_port,
+/obj/paint/vox,
 /turf/simulated/wall/r_wall/hull/vox,
 /area/voxship/engineering)
 "gf" = (
@@ -2673,16 +2434,19 @@
 	},
 /obj/machinery/computer/ship/helm{
 	dir = 4;
-	req_access = list("ACCESS_VOXSHIP")
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "gg" = (
-/obj/machinery/atmospherics/pipe/vent/high_volume{
-	dir = 4
+/obj/machinery/portable_atmospherics/canister/carbon_dioxide/engine_setup{
+	start_pressure = 7498
 	},
-/turf/simulated/floor/reinforced{
-	map_airless = 1
+/obj/machinery/atmospherics/portables_connector{
+	dir = 8
+	},
+/obj/floor_decal/industrial/outline/orange,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
 	},
 /area/voxship/shuttle)
 "gh" = (
@@ -2697,24 +2461,20 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "gj" = (
 /obj/floor_decal/industrial/hatch/yellow,
-/obj/machinery/door/airlock/hatch/voxship,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/machinery/door/airlock/warhammer/command,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "gk" = (
-/obj/machinery/light/small{
-	dir = 4;
-	icon_state = "bulb1"
-	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
@@ -2723,7 +2483,8 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/mob/living/simple_animal/passive/mouse/rat,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "gl" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -2734,12 +2495,13 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "gm" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/universal{
 	dir = 4
 	},
+/obj/paint/vox,
 /turf/simulated/wall/r_wall/hull/vox,
 /area/voxship/engineering)
 "gn" = (
@@ -2759,7 +2521,8 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/machinery/door/airlock/warhammer/command,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/engineering)
 "gp" = (
 /obj/wallframe_spawn/reinforced/hull/vox,
@@ -2775,8 +2538,8 @@
 	},
 /area/voxship/engineering)
 "gr" = (
-/obj/machinery/seed_extractor,
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/submap_landmark/spawnpoint/captiveheretek,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "gs" = (
 /obj/random/loot,
@@ -2784,8 +2547,7 @@
 /area/space)
 "gt" = (
 /obj/random/hat,
-/obj/random/loot,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/fore)
 "gu" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -2795,325 +2557,1073 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/light/small{
-	dir = 8
-	},
-/obj/item/seeds/resin,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/scavship)
 "gx" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/universal{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall/hull/vox,
+/obj/floor_decal/industrial/warning/corner{
+	dir = 4
+	},
+/obj/machinery/alarm{
+	pixel_y = 24;
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
 /area/voxship/shuttle)
 "gy" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 10
+/obj/machinery/door/airlock/hatch,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
 	},
-/turf/simulated/wall/r_wall/hull/vox,
-/area/voxship/shuttle)
-"gz" = (
-/turf/simulated/wall/r_wall/hull/vox,
-/area/voxship/shuttle)
-"gA" = (
-/obj/machinery/door/airlock/hatch/voxship,
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/shuttle)
-"gB" = (
-/obj/machinery/door/airlock/hatch/voxship,
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/shuttle_landmark/vox_base/hangar/vox_scavshuttle,
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/scavship)
-"gC" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 5
-	},
-/obj/machinery/computer/shuttle_control/explore/vox_lander,
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/shuttle)
-"gD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/seolite,
+/area/voxship/shuttle)
+"gz" = (
+/obj/structure/handrail{
+	dir = 4
+	},
+/turf/simulated/floor/seolite,
+/area/voxship/shuttle)
+"gA" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/seolite,
+/area/voxship/shuttle)
+"gB" = (
 /obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/warhammer/command,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
+/area/voxship/scavship)
+"gC" = (
+/obj/structure/handrail{
+	dir = 4
+	},
+/obj/machinery/alarm{
+	dir = 4;
+	pixel_x = -21;
+	},
+/obj/item/clothing/suit/space/syndicate/black,
+/obj/item/clothing/head/helmet/space/void,
+/turf/simulated/floor/seolite,
+/area/voxship/shuttle)
+"gD" = (
+/obj/structure/cable/cyan{
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/obj/decal/cleanable/filth,
-/obj/machinery/power/apc/debug/vox{
-	dir = 1;
-	pixel_y = 24
-	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/seolite,
 /area/voxship/shuttle)
 "gE" = (
-/obj/structure/window/reinforced{
-	dir = 4
+/obj/machinery/atmospherics/pipe/manifold/hidden,
+/obj/machinery/shield_diffuser,
+/obj/machinery/door/airlock/external{
+	frequency = 1380;
+	id_tag = "crashedpodWest_exterior_door";
+	locked = 1
 	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	dir = 1
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
 	},
-/obj/machinery/alarm/vox,
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/shuttle)
 "gF" = (
-/obj/machinery/door/window/brigdoor,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/shuttle)
-"gG" = (
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/random/junk,
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/shuttle)
-"gH" = (
-/obj/machinery/power/smes/buildable/preset/voxship/ship,
-/obj/structure/cable{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/shuttle)
-"gI" = (
-/obj/structure/table/reinforced,
-/obj/machinery/recharger,
-/obj/machinery/light/small{
+/obj/structure/handrail{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
 /area/voxship/shuttle)
-"gJ" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+"gG" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
-/obj/machinery/recharge_station,
-/obj/structure/window/reinforced{
+/obj/machinery/door/airlock/external{
+	frequency = 1380;
+	id_tag = "crashedpodWest_interior_door"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"gH" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
+	dir = 6
+	},
+/obj/machinery/meter,
+/obj/item/inflatable/door,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"gI" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/glass{
+	name = "Cockpit"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
 /area/voxship/shuttle)
-"gK" = (
-/obj/machinery/atmospherics/unary/engine{
+"gJ" = (
+/obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/reinforced{
-	map_airless = 1
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"gK" = (
+/obj/machinery/sleeper,
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/alarm{
+	pixel_y = 24;
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
 	},
 /area/voxship/shuttle)
 "gL" = (
-/obj/machinery/computer/ship/helm{
-	dir = 4;
-	req_access = list("ACCESS_VOXSHIP")
-	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/paint/meatstation/lab,
+/turf/simulated/wall/ocp_wall,
 /area/voxship/shuttle)
 "gM" = (
-/obj/structure/bed/chair/shuttle/black{
-	dir = 8
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
+	id_tag = "charon_cargo_pump_out_internal"
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/shuttle)
-"gN" = (
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/shuttle)
-"gO" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/shuttle)
-"gP" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/shuttle)
-"gQ" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/decal/cleanable/filth,
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/shuttle)
-"gR" = (
-/obj/machinery/power/terminal{
-	dir = 1
-	},
-/obj/structure/cable{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/shuttle)
-"gS" = (
-/obj/random/junk,
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/shuttle)
-"gT" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
-	dir = 8
-	},
-/obj/structure/window/reinforced{
+/obj/structure/handrail{
 	dir = 4
 	},
-/obj/decal/cleanable/filth,
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/shuttle)
-"gU" = (
-/obj/machinery/computer/ship/engines{
-	dir = 4;
-	req_access = list("ACCESS_VOXSHIP")
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/shuttle)
-"gV" = (
-/obj/decal/cleanable/filth,
-/turf/simulated/floor/tiled/techmaint/vox,
+"gN" = (
+/obj/machinery/portable_atmospherics/canister/air,
+/obj/machinery/atmospherics/portables_connector,
+/obj/floor_decal/industrial/outline/blue,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
 /area/voxship/shuttle)
-"gW" = (
-/obj/overmap/visitable/ship/landable/vox_scavshuttle,
+"gO" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4;
 	level = 2
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/shuttle)
-"gX" = (
-/obj/machinery/atmospherics/binary/passive_gate/on{
-	dir = 8
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = -24
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/overmap/visitable/ship/landable/vox_scavshuttle,
+/turf/simulated/floor/seolite,
 /area/voxship/shuttle)
-"gY" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/blue{
-	dir = 10
+"gP" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/item/stock_parts/micro_laser/ultra,
+/obj/item/stock_parts/matter_bin/adv,
+/obj/item/stock_parts/circuitboard/biogenerator,
+/obj/item/stock_parts/matter_bin/super,
+/obj/item/stack/material/uranium/ten,
+/obj/item/stock_parts/circuitboard/oxyregenerator,
+/obj/item/stock_parts/circuitboard/unary_atmos/heater,
+/obj/item/stock_parts/circuitboard/unary_atmos/cooler,
+/obj/item/device/scanner/gas,
+/obj/item/solar_assembly,
+/obj/item/solar_assembly,
+/obj/item/solar_assembly,
+/obj/structure/closet/crate/warhammer/xenos,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
 /area/voxship/shuttle)
-"gZ" = (
+"gQ" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
+/obj/floor_decal/industrial/warning/corner{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
+	},
+/obj/structure/cable/cyan,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"gR" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	dir = 9
+	},
+/obj/machinery/pipedispenser{
+	anchored = 1
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"gS" = (
+/obj/floor_decal/industrial/hatch/yellow,
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/obj/structure/cable/cyan{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/obj/machinery/power/smes/buildable/preset/voxship/ship,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"gT" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 8
+	},
+/turf/simulated/floor/seolite,
+/area/voxship/shuttle)
+"gU" = (
+/obj/machinery/computer/ship/navigation/telescreen{
+	pixel_y = -32
+	},
+/obj/structure/closet/crate/warhammer/freezer/rations,
+/obj/item/tank/oxygen_emergency_double,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"gV" = (
+/obj/structure/bed/chair/shuttle/blue,
+/obj/machinery/computer/cryopod{
+	pixel_y = 25
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"gW" = (
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"gX" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/obj/decal/cleanable/blood,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"gY" = (
+/obj/machinery/computer/ship/sensors{
+	dir = 4
+	},
+/obj/machinery/alarm{
+	dir = 1;
+	pixel_y = -22;
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"gZ" = (
+/obj/machinery/cryopod{
+	dir = 2
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
 /area/voxship/shuttle)
 "ha" = (
-/obj/machinery/computer/ship/sensors/vox{
-	dir = 1
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
 	},
-/obj/machinery/light/small,
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
 /area/voxship/shuttle)
 "hb" = (
-/obj/structure/bed/chair/shuttle/black{
-	dir = 1
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/machinery/tele_beacon,
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/seolite,
 /area/voxship/shuttle)
 "hc" = (
-/obj/structure/bed/chair/shuttle/black{
-	dir = 1
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
+	dir = 8;
+	id_tag = "charon_cargo_pump_out_external"
 	},
-/obj/random/junk,
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/structure/handrail{
+	dir = 4
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
 /area/voxship/shuttle)
 "hd" = (
-/obj/structure/bed/chair/shuttle/black{
-	dir = 1
+/obj/machinery/light{
+	dir = 8
 	},
-/obj/machinery/light/small,
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 4
+	},
+/turf/simulated/floor/seolite,
 /area/voxship/shuttle)
 "he" = (
-/obj/machinery/atmospherics/portables_connector{
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 8
+	},
+/obj/structure/bed/chair/shuttle/blue{
 	dir = 1
 	},
-/obj/machinery/portable_atmospherics/canister/nitrogen,
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -24
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
 /area/voxship/shuttle)
 "hf" = (
-/obj/machinery/shipsensors,
-/turf/simulated/floor/reinforced{
-	map_airless = 1
+/obj/floor_decal/industrial/outline/yellow,
+/obj/machinery/light/spot,
+/obj/random/loot/sidearmbundle,
+/obj/random/clothing,
+/obj/random/clothing,
+/obj/random/loot/tech2,
+/obj/item/clothing/suit/armor/seolarmor,
+/obj/structure/closet/crate/warhammer/xenos,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
 	},
 /area/voxship/shuttle)
 "hg" = (
-/obj/machinery/atmospherics/portables_connector{
+/obj/structure/bed/chair/shuttle/blue{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/machinery/portable_atmospherics/canister/carbon_dioxide,
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
 /area/voxship/shuttle)
 "hh" = (
-/obj/machinery/atmospherics/binary/pump{
-	dir = 4;
-	name = "fuel input"
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
 	},
-/obj/machinery/light/small,
-/turf/simulated/floor/tiled/techmaint/vox,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
 /area/voxship/shuttle)
 "hi" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/fuel,
-/obj/structure/fuel_port{
-	pixel_y = -32
+/obj/wallframe_spawn/reinforced_phoron/ocp,
+/obj/machinery/door/blast/regular/open{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id_tag = "col_shutters";
+	name = "Protective Shutters";
+	opacity = 0
 	},
-/obj/structure/window/reinforced{
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"hk" = (
+/obj/machinery/mech_recharger,
+/obj/floor_decal/industrial/warning/fulltile,
+/turf/simulated/floor/seolite,
+/area/voxship/shuttle)
+"hl" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/seolite,
+/area/voxship/shuttle)
+"hN" = (
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/mob/living/simple_animal/passive/mouse/brown/Tom,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"hS" = (
+/obj/decal/cleanable/dirt,
+/obj/item/toy/figure/engineer,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"ib" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	dir = 6
+	},
+/obj/machinery/atmospherics/unary/tank/air{
+	dir = 1;
+	start_pressure = 4559.63
+	},
+/obj/floor_decal/industrial/outline/blue,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"ip" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
+	dir = 1
+	},
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/light_switch{
+	pixel_x = -10;
+	pixel_y = 22
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"ir" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/cyan{
+	dir = 8
+	},
+/obj/decal/cleanable/blood/gibs,
+/obj/effect/floor_decal/warhammer/lfloorscorched1,
+/obj/random/loot/heavymelee,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"iK" = (
+/obj/structure/table/steel_reinforced,
+/obj/item/device/radio/hailing,
+/obj/item/device/radio/hailing,
+/obj/item/device/radio/hailing,
+/obj/item/device/radio/hailing,
+/obj/item/device/radio/hailing,
+/obj/item/paper_bin,
+/obj/machinery/alarm{
+	pixel_y = 24;
+	},
+/turf/simulated/floor/seolite,
+/area/voxship/shuttle)
+"iM" = (
+/obj/paint/meatstation/lab,
+/obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
 	},
-/obj/random/snack,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/wall/ocp_wall,
+/area/voxship/shuttle)
+"iN" = (
+/obj/machinery/computer/ship/helm,
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"iS" = (
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"jt" = (
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/seolite,
+/area/voxship/shuttle)
+"jW" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/seolite,
+/area/voxship/shuttle)
+"ke" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/handrail{
+	dir = 8
+	},
+/obj/machinery/access_button/airlock_interior{
+	frequency = 1380;
+	master_tag = "crashedpodEast";
+	pixel_x = 22;
+	pixel_y = -20
+	},
+/turf/simulated/floor/seolite,
+/area/voxship/shuttle)
+"kg" = (
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/obj/structure/cable/cyan{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/structure/cable/cyan{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"kh" = (
+/obj/item/device/multitool,
+/obj/item/screwdriver,
+/obj/item/cell/device/high,
+/obj/item/cell/device/high,
+/obj/item/cell/crap,
+/obj/item/storage/box/lights,
+/obj/item/device/scanner/gas,
+/obj/item/storage/box/monkeycubes,
+/obj/item/reagent_containers/food/drinks/bottle/specialwhiskey,
+/obj/item/tracker_electronics,
+/obj/item/pen/blue,
+/obj/item/pen/green,
+/obj/item/pen/red,
+/obj/random/single/color/cable_coil,
+/obj/random/single/color/cable_coil,
+/obj/item/flame/lighter/random,
+/obj/item/storage/box/lights/tubes,
+/obj/random/powercell,
+/obj/random/powercell,
+/obj/random/powercell,
+/obj/item/taperoll/engineering,
+/obj/random/exploration,
+/obj/item/stock_parts/smes_coil/advanced,
+/obj/structure/closet/crate/warhammer/xenos,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"kL" = (
+/obj/floor_decal/industrial/outline/yellow,
+/obj/structure/cable/cyan,
+/obj/machinery/camera/network/exploration_shuttle{
+	c_tag = "Charon - Cockpit";
+	dir = 1
+	},
+/obj/structure/handrail{
+	dir = 1
+	},
+/obj/machinery/hologram/holopad/longrange/remoteship,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"lU" = (
+/obj/structure/bed/chair/shuttle/blue,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"mi" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/seolite,
+/area/voxship/shuttle)
+"mF" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/structure/table/steel_reinforced,
+/obj/structure/cable/cyan{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/obj/machinery/cell_charger,
+/obj/machinery/light_switch{
+	dir = 4;
+	pixel_x = -22;
+	pixel_y = -10
+	},
+/obj/machinery/power/apc/debug/vox{
+	dir = 1;
+	pixel_y = 24
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"mI" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/glass{
+	name = "Medical Compartment"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"ny" = (
+/obj/structure/table/rack,
+/obj/item/storage/belt/utility/full,
+/obj/item/storage/box/glowsticks,
+/obj/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"oc" = (
+/obj/machinery/door/firedoor,
+/obj/wallframe_spawn/reinforced_phoron/ocp,
+/turf/simulated/floor/plating,
+/area/voxship/shuttle)
+"pz" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
 /area/voxship/shuttle)
 "pB" = (
-/obj/structure/table/reinforced,
-/obj/machinery/reagent_temperature,
-/turf/simulated/floor/tiled/freezer{
-	initial_gas = list("nitrogen"=101.383)
-	},
+/obj/machinery/gibber,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/voxship/fore)
+"pD" = (
+/turf/simulated/floor/seolite,
+/area/voxship/shuttle)
+"pE" = (
+/obj/structure/bed/chair/shuttle/blue,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"pN" = (
+/obj/machinery/computer/shuttle_control/explore/vox_lander,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"qe" = (
+/obj/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"qw" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/universal,
+/obj/structure/handrail{
+	dir = 8
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"ri" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/door/airlock/hatch,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"rl" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
+	dir = 1;
+	id_tag = "charon_cargo_pump"
+	},
+/obj/machinery/embedded_controller/radio/airlock/airlock_controller{
+	cycle_to_external_air = 1;
+	frequency = 1380;
+	id_tag = "crashedpodWest";
+	tag_airpump = "crashedpodWest_pump";
+	tag_chamber_sensor = "crashedpodWest_sensor_chamber";
+	tag_exterior_door = "crashedpodWest_exterior_door";
+	tag_exterior_sensor = "crashedpodWest_sensor_external";
+	tag_interior_door = "crashedpodWest_interior_door";
+	dir = 8;
+	pixel_x = 19
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"ro" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/item/crowbar,
+/turf/simulated/floor/plating/vox,
+/area/voxship/scavship)
+"rs" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 4
+	},
+/obj/decal/cleanable/dirt,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"sm" = (
+/obj/decal/cleanable/dirt,
+/obj/item/storage/briefcase/inflatable,
+/obj/item/storage/briefcase/inflatable,
+/obj/item/device/geiger,
+/obj/item/device/geiger,
+/obj/random/powercell,
+/obj/random/powercell,
+/obj/random/powercell,
+/obj/structure/closet/crate/warhammer/xenos,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"sp" = (
+/obj/structure/bed/chair/shuttle/blue,
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 8
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"sT" = (
+/obj/floor_decal/industrial/hatch/orange,
+/obj/machinery/light/spot,
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/obj/machinery/power/smes/batteryrack,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"tm" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 1;
+	level = 2
+	},
+/obj/machinery/light,
+/obj/machinery/alarm{
+	dir = 4;
+	pixel_x = -21;
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"tM" = (
+/obj/item/device/oxycandle,
+/obj/item/device/oxycandle,
+/obj/item/device/oxycandle,
+/obj/item/device/oxycandle,
+/obj/item/device/oxycandle,
+/obj/item/device/oxycandle,
+/obj/item/device/oxycandle,
+/obj/item/device/oxycandle,
+/obj/item/device/oxycandle,
+/obj/item/device/oxycandle,
+/obj/item/device/oxycandle,
+/obj/item/device/oxycandle,
+/obj/item/device/oxycandle,
+/obj/item/device/oxycandle,
+/obj/item/device/oxycandle,
+/obj/item/device/oxycandle,
+/obj/item/device/oxycandle,
+/obj/item/device/oxycandle,
+/obj/item/reagent_containers/glass/paint/random,
+/obj/random/powercell,
+/obj/random/powercell,
+/obj/item/book/manual/engineering_construction,
+/obj/item/stack/material/steel/ten,
+/obj/structure/closet/crate/warhammer/xenos,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"tS" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
+	dir = 1;
+	id_tag = "charon_cargo_pump"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"ua" = (
+/obj/structure/table/steel,
+/obj/item/storage/box/ammo/flashshells,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
+/area/voxship/scavship)
+"wj" = (
+/obj/machinery/light,
+/obj/machinery/computer/modular/preset/dock{
+	dir = 8;
+	icon_state = "console"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"wp" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
+	dir = 4;
+	id_tag = "charon_cargo_pump_out_external"
+	},
+/obj/structure/handrail{
+	dir = 8
+	},
+/obj/machinery/airlock_sensor{
+	frequency = 1331;
+	id_tag = "charon_cargo_exterior";
+	pixel_x = 24;
+	pixel_y = 8
+	},
+/obj/machinery/access_button/airlock_interior{
+	frequency = 1380;
+	master_tag = "crashedpodEast";
+	pixel_x = 22;
+	pixel_y = -10
+	},
+/turf/simulated/floor/plating,
+/area/voxship/shuttle)
+"wy" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/machinery/door/window/brigdoor/eastright{
+	autoset_access = 0
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"wH" = (
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"wP" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 4;
+	level = 2
+	},
+/turf/simulated/floor/warhammer/ceramic/blackstone,
+/area/voxship/engineering)
+"wQ" = (
+/obj/item/storage/backpack/dufflebag/eng,
+/obj/machinery/portable_atmospherics/powered/pump/filled,
+/obj/random/cash,
+/obj/random/cash,
+/obj/random/cash,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
 "xa" = (
 /obj/machinery/power/port_gen/pacman/super/potato,
 /obj/structure/cable{
@@ -3122,10 +3632,310 @@
 	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
+"xh" = (
+/obj/structure/bed/chair/shuttle/black{
+	dir = 4
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"xj" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/cyan{
+	dir = 4
+	},
+/obj/item/inflatable/door,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"xu" = (
+/obj/item/storage/pill_bottle/antidexafen,
+/obj/item/storage/med_pouch/radiation,
+/obj/item/storage/med_pouch/radiation,
+/obj/item/storage/pill_bottle/assorted,
+/obj/structure/closet/crate/warhammer/xenos,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"xC" = (
+/obj/machinery/alarm{
+	dir = 1;
+	pixel_y = -22;
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"yA" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	dir = 4
+	},
+/obj/machinery/door/airlock/hatch,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/seolite,
+/area/voxship/shuttle)
+"yN" = (
+/obj/structure/bed/chair/shuttle/blue,
+/obj/random/loot/lootstructureartifact,
+/obj/structure/cable/cyan{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"yR" = (
+/obj/machinery/light,
+/obj/structure/table/steel_reinforced,
+/obj/machinery/recharger,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"zd" = (
+/obj/machinery/atmospherics/binary/pump{
+	dir = 8
+	},
+/obj/floor_decal/industrial/warning/corner{
+	dir = 1
+	},
+/obj/machinery/alarm{
+	pixel_y = 24;
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"ze" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 4
+	},
+/obj/floor_decal/industrial/warning/corner{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9
+	},
+/obj/structure/cable/cyan,
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	dir = 9
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"zr" = (
+/obj/machinery/computer/ship/engines{
+	dir = 4
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 4
+	},
+/obj/item/device/radio/intercom/hailing{
+	pixel_y = 22
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"zH" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/turf/simulated/floor/seolite,
+/area/voxship/shuttle)
+"zP" = (
+/obj/structure/table/steel_reinforced,
+/obj/machinery/cell_charger,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"zV" = (
+/obj/structure/closet/emcloset,
+/obj/item/clothing/suit/space/emergency,
+/obj/item/tank/oxygen_emergency_double,
+/obj/item/clothing/head/helmet/space/emergency,
+/obj/item/storage/briefcase/inflatable,
+/obj/item/device/suit_cooling_unit,
+/obj/item/crowbar,
+/obj/item/tank/oxygen_emergency_double,
+/obj/item/tank/oxygen_emergency_extended,
+/obj/item/tank/oxygen_emergency_extended,
+/obj/random/drinkbottle,
+/obj/random/exploration,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"Ae" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/binary/pump/on{
+	name = "starboard thrust pump"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"AG" = (
+/obj/effect/floor_decal/warhammer/sigil{
+	icon_state = "NE"
+	},
+/obj/decal/cleanable/blood/xeno,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
+/area/voxship/scavship)
+"AQ" = (
+/obj/structure/table/rack,
+/obj/item/device/radio,
+/obj/item/device/radio,
+/obj/item/device/radio,
+/obj/item/shuttle_beacon,
+/obj/item/shuttle_beacon,
+/obj/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"AS" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/handrail{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/cyan,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/seolite,
+/area/voxship/shuttle)
+"AV" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 4
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"Bf" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"Bk" = (
+/obj/floor_decal/industrial/outline/orange,
+/obj/machinery/atmospherics/unary/tank/carbon_dioxide{
+	dir = 1;
+	start_pressure = 1013.25
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"BL" = (
+/obj/structure/bed/chair/shuttle/black{
+	dir = 4
+	},
+/obj/decal/cleanable/vomit,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"Cc" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
 "Dc" = (
 /obj/machinery/telecomms/broadcaster/map_preset/voxship,
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
+"DX" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/glass{
+	name = "Medical Compartment"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"DY" = (
+/obj/floor_decal/industrial/outline/yellow,
+/obj/random/loot/tech1,
+/obj/random/loot/basicarmorbundle,
+/obj/random/loot/raresidearmbundle,
+/obj/random/clothing,
+/obj/random/clothing,
+/obj/item/clothing/suit/armor/seolarmor,
+/obj/random/loot/randomsupply,
+/obj/structure/closet/crate/warhammer/xenos,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"Fm" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"Fq" = (
+/obj/machinery/ion_engine{
+	dir = 8
+	},
+/turf/simulated/wall/r_wall/hull/vox,
+/area/voxship/fore)
+"Gd" = (
+/obj/structure/shuttle/engine/heater,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/fuel{
+	dir = 6
+	},
+/turf/simulated/floor/plating,
+/area/voxship/shuttle)
 "Gf" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -3141,13 +3951,542 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating/vox,
 /area/voxship/fore)
+"Gz" = (
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"GQ" = (
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/machinery/firealarm{
+	pixel_y = 24
+	},
+/obj/machinery/radio_beacon,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"Hg" = (
+/obj/machinery/shipsensors/upgraded,
+/turf/simulated/floor/plating,
+/area/voxship/shuttle)
+"Hh" = (
+/obj/structure/bed/chair/shuttle/black{
+	dir = 4
+	},
+/obj/item/device/radio/intercom/hailing{
+	dir = 4;
+	pixel_x = -24
+	},
+/obj/machinery/pointdefense_control{
+	initial_id_tag = "Xenos"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"Hn" = (
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/glass{
+	name = "Medical Compartment"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"Hq" = (
+/obj/random/tech_supply,
+/obj/random/tech_supply,
+/obj/random/tech_supply,
+/obj/random/tech_supply,
+/obj/random/tech_supply,
+/obj/random/tech_supply,
+/obj/item/module/power_control,
+/obj/random/powercell,
+/obj/item/device/radio/intercom{
+	dir = 8;
+	pixel_x = 20
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 8
+	},
+/obj/item/storage/toolbox/mechanical,
+/obj/item/weldingtool/mini,
+/obj/machinery/fabricator/hacked,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"Ia" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/button/blast_door{
+	id_tag = "col_shutters";
+	name = "Protective Shutters Control";
+	pixel_y = -25
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"Ie" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/floor_decal/industrial/outline/yellow,
+/obj/structure/handrail{
+	dir = 8
+	},
+/obj/item/device/radio/intercom{
+	dir = 8;
+	pixel_x = 21
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"Ii" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"Ji" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"Jw" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/door/airlock/external{
+	frequency = 1380;
+	id_tag = "crashedpodWest_interior_door"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"JW" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 1
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"JY" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 8
+	},
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/machinery/access_button/airlock_interior{
+	frequency = 1331;
+	master_tag = "charon_shuttle";
+	pixel_x = 21;
+	pixel_y = 21
+	},
+/turf/simulated/floor/seolite,
+/area/voxship/shuttle)
+"Kf" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/obj/machinery/atmospherics/binary/pump/on{
+	name = "port thrust pump"
+	},
+/obj/item/inflatable/door,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"Kh" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan,
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 4
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"KM" = (
+/obj/structure/bed/chair/shuttle/blue,
+/obj/structure/cable/cyan{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/obj/random/loot/lootstructureartifact,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"KY" = (
+/obj/machinery/portable_atmospherics/canister/empty,
+/obj/machinery/atmospherics/portables_connector{
+	dir = 1
+	},
+/obj/floor_decal/industrial/outline/red,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
 "Lj" = (
 /turf/simulated/wall/r_titanium,
 /area/space)
+"Ln" = (
+/obj/machinery/recharge_station,
+/obj/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"Lx" = (
+/obj/floor_decal/industrial/outline/yellow,
+/obj/machinery/floodlight,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"LF" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/turf/simulated/floor/seolite,
+/area/voxship/shuttle)
+"Mh" = (
+/obj/floor_decal/industrial/hatch/yellow,
+/obj/item/stack/material/uranium/ten,
+/obj/item/stack/material/uranium/ten,
+/obj/item/stack/material/uranium/ten,
+/obj/structure/cable/cyan,
+/obj/machinery/power/port_gen/pacman/super/potato,
+/obj/structure/cable/cyan{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"Mn" = (
+/obj/machinery/portable_atmospherics/canister/empty/phoron,
+/turf/simulated/floor/seolite,
+/area/voxship/shuttle)
+"Mp" = (
+/obj/machinery/ion_engine{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/voxship/shuttle)
+"Mv" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel,
+/obj/machinery/meter,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"Nm" = (
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"NM" = (
+/obj/floor_decal/industrial/outline{
+	color = "#55007f";
+	name = "purple outline"
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/structure/reagent_dispensers/watertank,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"Oi" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
+	dir = 8
+	},
+/obj/structure/handrail{
+	dir = 4
+	},
+/obj/machinery/meter,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"OP" = (
+/obj/structure/bed/padded,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"Ps" = (
+/obj/paint/vox,
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
+	},
+/turf/simulated/wall/r_wall/hull/vox,
+/area/voxship/engineering)
+"Pu" = (
+/obj/machinery/atmospherics/unary/tank/carbon_dioxide{
+	dir = 1;
+	start_pressure = 1013.25
+	},
+/obj/floor_decal/industrial/outline/orange,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"PG" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/handrail{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = 26
+	},
+/turf/simulated/floor/seolite,
+/area/voxship/shuttle)
+"PH" = (
+/obj/structure/closet/medical_wall/filled{
+	pixel_x = 32
+	},
+/obj/random/firstaid,
+/obj/random/medical,
+/obj/random/medical,
+/obj/random/medical,
+/obj/random/medical,
+/obj/random/medical,
+/obj/random/medical,
+/obj/structure/table/steel_reinforced,
+/obj/item/bodybag/cryobag,
+/obj/item/storage/firstaid/surgery,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
 "PN" = (
 /obj/machinery/telecomms/receiver/map_preset/voxship,
-/turf/simulated/floor/plating/vox,
+/mob/living/simple_animal/hostile/daemon/zygote,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/voxship/thrusters)
+"PR" = (
+/obj/structure/closet/crate/warhammer/xenos,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"PW" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/seolite,
+/area/voxship/shuttle)
+"Qj" = (
+/obj/decal/cleanable/dirt,
+/obj/item/reagent_containers/food/drinks/cans/speer,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10
+	},
+/obj/machinery/portable_atmospherics/powered/scrubber,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"Ql" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
+	id_tag = "charon_cargo_pump_out_internal"
+	},
+/obj/structure/handrail{
+	dir = 8
+	},
+/obj/machinery/airlock_sensor{
+	frequency = 1380;
+	id_tag = "crashedpodWest_sensor_chamber";
+	pixel_x = 22
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"Qn" = (
+/obj/floor_decal/industrial/warning/corner{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"Qt" = (
+/obj/wallframe_spawn/reinforced_phoron/ocp,
+/obj/machinery/door/blast/regular/open{
+	density = 0;
+	icon_state = "pdoor0";
+	id_tag = "col_shutters";
+	name = "Protective Shutters";
+	opacity = 0
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"QK" = (
+/obj/machinery/light/spot{
+	dir = 1
+	},
+/obj/structure/table/steel,
+/obj/item/device/drone_designator{
+	network = "torch_transport"
+	},
+/turf/simulated/floor/seolite,
+/area/voxship/shuttle)
+"Rh" = (
+/obj/machinery/power/port_gen/pacman/super,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"Ru" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 4
+	},
+/obj/item/clothing/suit/space/syndicate/black,
+/obj/item/clothing/head/helmet/space/void,
+/turf/simulated/floor/seolite,
+/area/voxship/shuttle)
+"Rz" = (
+/obj/structure/shuttle/engine/heater,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/visible/fuel{
+	dir = 8
+	},
+/turf/simulated/floor/plating,
+/area/voxship/shuttle)
+"Sz" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 4
+	},
+/obj/item/storage/briefcase/inflatable,
+/obj/item/tank/oxygen_emergency_double,
+/turf/simulated/floor/seolite,
+/area/voxship/shuttle)
 "SN" = (
 /obj/machinery/power/port_gen/pacman/super/potato,
 /obj/structure/cable{
@@ -3156,6 +4495,193 @@
 	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
+"Ta" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/light_switch{
+	pixel_x = 10;
+	pixel_y = 22
+	},
+/obj/decal/cleanable/blood/drip,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"Tt" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 4
+	},
+/obj/floor_decal/industrial/warning/corner,
+/turf/simulated/floor/seolite,
+/area/voxship/shuttle)
+"Ul" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"Ut" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 8
+	},
+/obj/structure/fuel_port{
+	pixel_x = 32
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"Uw" = (
+/obj/structure/cable/cyan,
+/obj/structure/table/steel_reinforced,
+/obj/item/storage/firstaid/radiation,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"Uz" = (
+/obj/structure/table/steel_reinforced,
+/obj/structure/closet/secure_closet/explo_gun{
+	pixel_x = -32
+	},
+/obj/machinery/recharger,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"UM" = (
+/obj/machinery/atmospherics/unary/tank/air{
+	dir = 1;
+	start_pressure = 4559.63
+	},
+/obj/floor_decal/industrial/outline/blue,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"VH" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/airlock/warhammer/command/ancient,
+/obj/structure/barricade/boards,
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/fore)
+"VL" = (
+/obj/machinery/button/blast_door{
+	id_tag = "col_shutters";
+	name = "Protective Shutters Control";
+	pixel_y = 25
+	},
+/obj/structure/handrail,
+/obj/machinery/firealarm{
+	pixel_y = 24
+	},
+/obj/structure/reagent_dispensers/fueltank,
+/turf/simulated/floor/seolite,
+/area/voxship/shuttle)
+"Wc" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/glass{
+	name = "Medical Compartment"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"WT" = (
+/obj/structure/shuttle/engine/heater,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/fuel{
+	dir = 10
+	},
+/turf/simulated/floor/plating,
+/area/voxship/shuttle)
+"XE" = (
+/obj/machinery/computer/air_control{
+	dir = 8;
+	name = "Atmospheric Sensors";
+	sensor_tag = "charon_out"
+	},
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"XY" = (
+/obj/structure/shuttle/engine/heater,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/visible/fuel{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/voxship/shuttle)
+"Yi" = (
+/obj/structure/closet/emcloset,
+/obj/item/clothing/suit/space/emergency,
+/obj/item/tank/oxygen_emergency_double,
+/obj/item/clothing/head/helmet/space/emergency,
+/obj/item/device/suit_cooling_unit,
+/obj/item/crowbar,
+/obj/item/tank/oxygen_emergency_double,
+/obj/item/tank/oxygen_emergency_extended,
+/obj/random/drinkbottle,
+/turf/simulated/floor/selfestructgrid{
+	name = "xenos plating"
+	},
+/area/voxship/shuttle)
+"Zg" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 4
+	},
+/turf/simulated/floor/seolite,
+/area/voxship/shuttle)
+"ZD" = (
+/obj/machinery/radio_beacon,
+/turf/simulated/floor/seolite,
+/area/voxship/shuttle)
 
 (1,1,1) = {"
 fX
@@ -5750,7 +7276,7 @@ fX
 fX
 fX
 fX
-at
+ar
 fX
 fX
 fX
@@ -5851,7 +7377,7 @@ fX
 fX
 fX
 fX
-at
+ar
 be
 fX
 fX
@@ -5953,14 +7479,14 @@ fX
 fX
 fX
 fX
-at
+ar
 be
 fX
 fX
 fX
 fX
 fX
-at
+ar
 fX
 fX
 fX
@@ -6054,7 +7580,7 @@ fX
 fX
 fX
 fX
-at
+ar
 be
 fX
 fX
@@ -6063,7 +7589,7 @@ fX
 fX
 fX
 be
-at
+ar
 fX
 fX
 fX
@@ -6156,7 +7682,7 @@ fX
 fX
 fX
 fX
-at
+ar
 be
 fX
 fX
@@ -6165,7 +7691,7 @@ fX
 fX
 fX
 be
-at
+ar
 fX
 fX
 fX
@@ -6258,7 +7784,7 @@ fX
 fX
 fX
 fX
-at
+ar
 be
 fX
 fX
@@ -6268,7 +7794,7 @@ gd
 fX
 fX
 be
-at
+ar
 fX
 fX
 fX
@@ -6360,17 +7886,17 @@ fX
 fX
 fX
 fX
-at
+ar
 be
 fX
 fX
-at
+ar
 cS
-at
+ar
 fX
 fX
 be
-at
+ar
 fX
 fX
 fX
@@ -6462,17 +7988,17 @@ fX
 fX
 fX
 fX
-at
+ar
 be
 bF
-at
-at
+ar
+ar
 cT
-at
-at
+ar
+ar
 fX
 be
-at
+ar
 fX
 fX
 fX
@@ -6564,17 +8090,17 @@ fX
 fX
 fX
 fX
-at
-at
-at
-at
+ar
+ar
+ar
+ar
 ar
 gf
 ar
-at
-at
-at
-at
+ar
+ar
+ar
+ar
 fX
 fX
 fX
@@ -6665,8 +8191,8 @@ fX
 fX
 fX
 fX
-at
-at
+ar
+ar
 ar
 ar
 ar
@@ -6676,8 +8202,8 @@ dq
 ar
 ar
 ar
-at
-at
+ar
+ar
 fX
 fX
 fX
@@ -6767,7 +8293,7 @@ fX
 fX
 fX
 fX
-at
+ar
 gt
 bf
 bG
@@ -6779,8 +8305,8 @@ ar
 el
 eN
 fh
-at
-at
+ar
+ar
 fX
 fX
 fX
@@ -6868,9 +8394,9 @@ fX
 fX
 fX
 fX
-at
-at
-aH
+ar
+ar
+aS
 bg
 bH
 bW
@@ -6880,9 +8406,9 @@ dr
 dQ
 em
 eO
-fi
-at
-at
+aS
+ar
+ar
 fX
 fX
 fX
@@ -6970,7 +8496,7 @@ fX
 fX
 fX
 fX
-at
+ar
 ar
 aI
 bh
@@ -6979,12 +8505,12 @@ ar
 cv
 cY
 ar
-dR
-en
+fi
+aS
 eP
-fj
+bK
 fx
-at
+ar
 at
 fX
 fX
@@ -7071,8 +8597,8 @@ fG
 fX
 fX
 fX
-at
-at
+ar
+ar
 ar
 ar
 ar
@@ -7087,8 +8613,8 @@ ar
 ar
 ar
 ar
-at
-at
+ar
+ar
 fX
 fX
 fX
@@ -7174,7 +8700,7 @@ fX
 fX
 fX
 fX
-at
+ar
 ar
 ar
 bi
@@ -7189,7 +8715,7 @@ eQ
 fk
 fy
 fM
-at
+ar
 fX
 fX
 fX
@@ -7273,10 +8799,10 @@ fG
 fG
 fX
 fX
-at
-at
-at
-at
+Fq
+ar
+ar
+ar
 ar
 aJ
 aS
@@ -7291,10 +8817,10 @@ eR
 fl
 fz
 fU
-at
-at
-at
-at
+ar
+ar
+ar
+ax
 fX
 fX
 fX
@@ -7378,7 +8904,7 @@ fX
 fX
 fX
 fX
-at
+ar
 ar
 aK
 bj
@@ -7387,13 +8913,13 @@ bY
 cy
 dc
 dt
-cy
+VH
 ep
 eS
 fm
 fA
 fV
-at
+ar
 fX
 fX
 fX
@@ -7457,9 +8983,8 @@ fX
 fX
 fX
 fX
-fG
-fG
-fG
+fX
+fX
 fG
 fG
 fG
@@ -7479,13 +9004,14 @@ fX
 fX
 fX
 fX
-at
-at
+fX
+ar
+ar
 ar
 ar
 bk
 bM
-bZ
+bJ
 ar
 ar
 cZ
@@ -7495,8 +9021,8 @@ eT
 fn
 pB
 fp
-at
-at
+ar
+ar
 fX
 fX
 fX
@@ -7560,42 +9086,42 @@ fX
 fX
 fX
 fX
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
 fX
 fX
 fX
 fX
 fX
 aa
-as
-as
-as
-as
-as
-as
+aa
+aa
+aa
+aa
+aa
+aa
 dd
 cC
-as
-as
-as
-as
-as
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 fX
@@ -7662,24 +9188,24 @@ fX
 fX
 fX
 fX
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
 fX
 fX
 fX
@@ -7697,7 +9223,7 @@ dT
 eq
 eA
 eY
-as
+aa
 aa
 fX
 fX
@@ -7764,24 +9290,24 @@ fX
 fX
 fX
 fX
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
 fX
-fG
-fG
-fG
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
+fX
 fX
 fX
 fX
@@ -7797,9 +9323,9 @@ df
 dv
 dU
 es
-eU
+ua
 fe
-as
+aa
 aa
 fX
 fX
@@ -7866,34 +9392,34 @@ fX
 fX
 fX
 fX
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fG
-fX
-fG
-fG
-fG
 fX
 fX
+Hg
+gL
+gL
+gL
+gL
+gL
+gL
+gL
+gL
+gL
+gL
+gL
+gL
+gL
+gL
+gL
+gL
+Mp
 fX
 fX
 al
 aw
 bo
 bn
-as
-as
+aa
+aa
 cB
 dg
 dw
@@ -7968,37 +9494,37 @@ fX
 fX
 fX
 fX
-fH
-fX
-fX
-fX
-fG
-fX
-fX
-fH
-fG
-fG
-fG
-fG
-fG
-fX
-fX
-fG
-fG
-fG
-fX
-fX
+gL
+hi
+hi
+gL
+gZ
+gW
+ny
+AQ
+gL
+gL
+Hh
+xh
+BL
+gL
+gL
+gN
+ir
+UM
+Gd
+Mp
 fX
 fX
 am
-ax
+av
 bN
 gr
-as
+aa
 cd
 cC
 dh
-dx
+AG
 dX
 dx
 eU
@@ -8006,12 +9532,12 @@ fe
 aa
 fX
 fX
-gg
-gz
-gz
-gz
-gz
-hf
+fX
+fX
+fX
+fX
+fX
+fX
 fX
 fX
 fG
@@ -8069,27 +9595,27 @@ fX
 fX
 fX
 fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fH
-fX
-fG
-fG
-fX
-fX
-fX
-fX
-fG
-fG
-fX
-fX
+as
+gL
+zr
+gY
+gL
+gV
+gW
+gW
+gW
+Uz
+gL
+AV
+rs
+hS
+gL
+gH
+Kh
+xj
+ib
+XY
+Mp
 fX
 fX
 aa
@@ -8108,12 +9634,12 @@ fo
 aa
 fX
 fX
-gx
-gz
-gL
-gU
-gz
-gz
+fX
+fX
+fX
+fX
+fX
+fX
 fX
 fX
 fG
@@ -8171,51 +9697,51 @@ fX
 fX
 fX
 fX
+Qt
+iN
+hg
+kL
+gL
+gK
+iS
+Fm
+JW
+yR
+gL
+Qj
+qe
+zV
+gL
+gx
+gX
+Kf
+gR
+gL
+gL
 fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fG
-fX
-fX
-fX
-fX
-fG
-fX
-fX
-fX
-fX
-fX
+ag
 ac
 ac
 aO
 aO
 ac
 cf
-cC
-as
-as
-as
-as
-as
-as
+ro
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 fX
 fX
-gy
-gC
-gM
-gM
-ha
-gz
+fX
+fX
+fX
+fX
+fX
+fX
 fX
 fX
 fG
@@ -8273,37 +9799,37 @@ fX
 fX
 fX
 fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-ag
+Qt
+pN
+Ia
+zP
+gL
+PH
+OP
+Gz
+Ie
+Uw
+gL
+wQ
+Ji
+Yi
+gL
+Ta
+ze
+qw
+KY
+gL
+wp
+ac
+gm
 ac
 ac
 aP
 aO
 ac
-cg
+ac
 cE
-as
+aa
 dz
 dZ
 ev
@@ -8312,12 +9838,12 @@ aa
 aa
 fX
 fX
-gz
-gD
-gN
-gV
-hb
-gz
+fX
+fX
+fX
+fX
+fX
+fX
 fX
 fX
 fG
@@ -8375,29 +9901,29 @@ fX
 fX
 fX
 fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-ac
-gm
+gL
+gL
+gI
+gL
+gL
+gL
+oc
+Hn
+gL
+gL
+gL
+gL
+Hn
+gL
+gL
+ri
+gL
+gL
+gL
+gL
+iM
+aA
+Ps
 ac
 ac
 aQ
@@ -8414,12 +9940,12 @@ aa
 aa
 fD
 fD
-gz
-gE
-gO
-gW
-hc
-gz
+fX
+fX
+fX
+fX
+fX
+fX
 fX
 fX
 fX
@@ -8477,34 +10003,34 @@ fX
 fX
 fX
 fX
-fX
-fX
-fI
-fP
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
+Qt
+yN
+ha
+gJ
+DX
+gD
+Zg
+jt
+gz
+gO
+DX
+LF
+zH
+Sz
+hd
+PW
+gC
+gG
+tS
+gM
+gE
 an
 go
 aT
 fq
 aR
 bq
-eC
+wP
 ci
 cG
 dk
@@ -8516,12 +10042,12 @@ gj
 gk
 gl
 gB
-gA
-gF
-gP
-gX
-hd
-gz
+fX
+fX
+fX
+fX
+fX
+fX
 fX
 fX
 fX
@@ -8579,28 +10105,28 @@ fX
 fX
 fX
 fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-ac
+Qt
+pE
+Nm
+Ul
+Wc
+gA
+Tt
+hb
+hl
+mi
+mI
+AS
+JY
+PG
+Ru
+jW
+ke
+Jw
+rl
+Ql
+gE
+aA
 ac
 ac
 fB
@@ -8609,7 +10135,7 @@ br
 bP
 cj
 cH
-as
+aa
 dC
 ec
 ey
@@ -8618,12 +10144,12 @@ aa
 aa
 gp
 fD
-gz
-gG
-gQ
-gY
-he
-gz
+fX
+fX
+fX
+fX
+fX
+fX
 fX
 fX
 fX
@@ -8681,37 +10207,37 @@ fX
 fX
 fX
 fX
-fX
-fX
-fG
-fG
-fG
-fH
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
+Qt
+sp
+hN
+he
+gL
+hk
+gT
+sm
+gP
+gF
+gL
+gL
+gy
+gL
+gL
+yA
+gL
+gL
+gL
+gL
+iM
+ac
 gq
 gn
 bs
-ay
+aA
 bQ
 bQ
 ck
 cI
-as
+aa
 dD
 ed
 ez
@@ -8720,12 +10246,12 @@ aa
 aa
 dV
 fX
-gz
-gH
-gR
-gN
-hg
-gz
+fX
+fX
+fX
+fX
+fX
+fX
 fX
 fX
 fX
@@ -8783,27 +10309,27 @@ fX
 fX
 fX
 fX
-fX
-fX
-fG
-fG
-fG
-fG
-fH
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
+Qt
+lU
+wH
+gU
+gL
+QK
+pD
+sT
+tM
+hf
+gL
+mF
+hh
+tm
+gL
+ip
+gQ
+Oi
+Pu
+gL
+hc
 fX
 fX
 ac
@@ -8813,21 +10339,21 @@ ac
 ac
 ac
 cJ
-as
-as
-as
-as
-as
-as
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 fX
 fX
-gz
-gI
-gS
-gN
-hh
-gz
+fX
+fX
+fX
+fX
+fX
+fX
 fX
 fX
 fX
@@ -8885,27 +10411,27 @@ fX
 fX
 fX
 fX
-fX
-fX
-fG
-fG
-fG
-fG
-fG
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
+Qt
+KM
+Bf
+xC
+gL
+VL
+pD
+kh
+PR
+DY
+gL
+GQ
+Qn
+Ln
+gL
+zd
+Ii
+Cc
+Bk
+gL
+gL
 fX
 fX
 ac
@@ -8915,21 +10441,21 @@ aU
 aU
 ac
 cK
-cg
+ac
 dE
-dE
+aA
 eB
 eZ
-cg
+ac
 aa
 fX
 fX
-gz
-gJ
-gT
-gZ
-hi
-gz
+fX
+fX
+fX
+fX
+fX
+fX
 fX
 fX
 fX
@@ -8987,27 +10513,27 @@ fX
 fX
 fX
 fX
-fX
-fX
-fX
-fG
-fG
-fG
-fG
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
+gL
+gL
+XE
+wj
+gL
+iK
+pD
+Rh
+xu
+Lx
+gL
+gS
+kg
+wy
+gL
+gg
+pz
+Ae
+Mv
+Rz
+Mp
 fX
 fX
 ac
@@ -9017,21 +10543,21 @@ bt
 aU
 ac
 cL
-cg
+ac
 dE
-dE
-eC
+aA
+wP
 fa
-cg
+ac
 ac
 fX
 fX
-gz
-gK
-gK
-gK
-gK
-gz
+fX
+fX
+fX
+fX
+fX
+fX
 fX
 fX
 fX
@@ -9089,27 +10615,27 @@ fX
 fX
 fX
 fX
-fX
-fX
-fX
-fX
-fG
-fG
-fG
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
+as
+gL
+gL
+gL
+gL
+ZD
+pD
+pD
+Mn
+gL
+gL
+gL
+gL
+Mh
+gL
+gL
+Hq
+Ut
+NM
+WT
+Mp
 fX
 fX
 ac
@@ -9118,13 +10644,13 @@ ac
 bu
 ac
 ac
-cJ
-cg
-dF
+cK
+ac
 dG
+aA
 eD
 fb
-cg
+ac
 ac
 fX
 fX
@@ -9192,42 +10718,42 @@ fX
 fX
 fX
 fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
-fX
+gL
+gL
+gL
+gL
+gL
+gL
+gL
+gL
+gL
+gL
+gL
+gL
+gL
+gL
+gL
+gL
+gL
+gL
+gL
+Mp
 fX
 fX
 ac
-az
+aA
 aA
 bv
 bR
 cl
 cM
-cg
+ac
 dG
-dG
+aA
 eE
 fc
 fr
-fE
+fr
 fY
 fX
 fX
@@ -9301,7 +10827,7 @@ fX
 fX
 fX
 fX
-fP
+fX
 fX
 fX
 fX
@@ -9327,8 +10853,8 @@ dl
 dl
 dl
 eF
-cg
-cg
+ac
+ac
 ac
 ac
 ac
@@ -9403,7 +10929,7 @@ fX
 fX
 fX
 fX
-fI
+fX
 fX
 fX
 fX
@@ -9426,13 +10952,13 @@ bT
 cn
 cO
 dm
-dH
+dm
 ee
 eG
-cg
+ac
 fs
 fF
-cg
+ac
 xa
 ac
 fX
@@ -9633,10 +11159,10 @@ dn
 bU
 eg
 eI
-cg
+ac
 fu
 fK
-cg
+ac
 SN
 ac
 fX
@@ -9735,10 +11261,10 @@ do
 dK
 eh
 eJ
-cg
-cg
-cg
-cg
+ac
+ac
+ac
+ac
 ac
 ac
 fX

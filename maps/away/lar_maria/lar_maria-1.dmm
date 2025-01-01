@@ -258,7 +258,7 @@
 /turf/simulated/floor/tiled/white,
 /area/lar_maria/vir_main)
 "aL" = (
-/obj/structure/closet/secure_closet/personal/patient,
+/obj/structure/closet/warhammer/secure_closet/personal/patient,
 /turf/simulated/floor/tiled/white,
 /area/lar_maria/vir_main)
 "aM" = (
@@ -1252,7 +1252,7 @@
 /turf/simulated/wall/r_wall,
 /area/lar_maria/vir_aux)
 "dt" = (
-/obj/structure/closet/secure_closet/personal/patient,
+/obj/structure/closet/warhammer/secure_closet/personal/patient,
 /obj/machinery/light{
 	dir = 1
 	},
@@ -1263,7 +1263,7 @@
 /turf/simulated/floor/tiled/white,
 /area/lar_maria/vir_aux)
 "dv" = (
-/obj/structure/closet/secure_closet/personal/patient,
+/obj/structure/closet/warhammer/secure_closet/personal/patient,
 /turf/simulated/floor/tiled/white,
 /area/lar_maria/vir_aux)
 "dw" = (

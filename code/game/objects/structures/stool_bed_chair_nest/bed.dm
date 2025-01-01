@@ -1,7 +1,7 @@
 /obj/structure/bed
 	name = "bed"
 	desc = "This is used to lie in, sleep in or strap on."
-	icon = 'icons/obj/structures/furniture.dmi'
+	icon = 'icons/obj/furniture.dmi'
 	icon_state = "bed"
 	anchored = TRUE
 	can_buckle = TRUE

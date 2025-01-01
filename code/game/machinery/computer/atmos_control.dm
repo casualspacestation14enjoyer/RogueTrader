@@ -10,7 +10,7 @@
 	light_color = "#00b000"
 	density = TRUE
 	anchored = TRUE
-	req_access = list(access_ce)
+	req_access = list(access_mechanicus_command)
 	var/list/monitored_alarm_ids = null
 	var/datum/nano_module/atmos_control/atmos_control
 	base_type = /obj/machinery/computer/atmoscontrol
@@ -24,7 +24,7 @@
 	density = FALSE
 
 /obj/machinery/computer/atmoscontrol/laptop/research
-	req_access = list(list(access_research, access_atmospherics, access_engine_equip))
+	req_access = list(access_mechanicus)
 
 /obj/machinery/computer/atmoscontrol/interface_interact(user)
 	ui_interact(user)

@@ -88,7 +88,7 @@
 		/obj/item/stock_parts/power/apc,
 		/obj/item/stock_parts/power/battery
 		)
-	req_access = list(access_engine_equip)
+	req_access = list(access_mechanicus_command)
 	clicksound = "switch"
 	layer = ABOVE_WINDOW_LAYER
 	health_max = 250
@@ -97,7 +97,7 @@
 	var/needs_powerdown_sound
 	var/area/area
 	var/areastring = null
-	var/cell_type = /obj/item/cell/standard
+	var/cell_type = /obj/item/cell/high
 	var/opened = 0 //0=closed, 1=opened, 2=cover removed
 	var/shorted = 0
 	var/lighting = POWERCHAN_ON_AUTO
@@ -432,6 +432,10 @@
 			if (has_electronics == 1)
 				if (terminal())
 					to_chat(user, SPAN_WARNING("Disconnect the wires first."))
+					return TRUE
+				var/obj/item/cell/current_cell = get_cell()
+				if (current_cell && istype(current_cell, /obj/item/cell/infinite))
+					to_chat(user, SPAN_WARNING("The infinite power cell cannot be removed without destroying the APC."))
 					return TRUE
 				playsound(src.loc, 'sound/items/Crowbar.ogg', 50, 1)
 				to_chat(user, "You are trying to remove the power control board...")//lpeters - fixed grammar issues

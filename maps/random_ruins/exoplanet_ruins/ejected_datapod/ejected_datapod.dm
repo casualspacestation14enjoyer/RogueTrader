@@ -3,7 +3,7 @@
 	id = "ejected_datapod"
 	description = "A damaged capsule with some strange contents."
 	suffixes = list("ejected_datapod/ejected_datapod.dmm")
-	spawn_cost = 0.5
+	spawn_cost = 1
 	template_flags = TEMPLATE_FLAG_CLEAR_CONTENTS | TEMPLATE_FLAG_NO_RUINS
 	ruin_tags = RUIN_HUMAN|RUIN_WRECK
 	apc_test_exempt_areas = list(

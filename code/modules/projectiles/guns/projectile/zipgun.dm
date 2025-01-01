@@ -14,7 +14,6 @@
 	var/static/list/ammo_types = list(
 		/obj/item/ammo_casing/pistol,
 		/obj/item/ammo_casing/shotgun,
-		/obj/item/ammo_casing/shotgun,
 		/obj/item/ammo_casing/shotgun/pellet,
 		/obj/item/ammo_casing/shotgun/pellet,
 		/obj/item/ammo_casing/shotgun/pellet,

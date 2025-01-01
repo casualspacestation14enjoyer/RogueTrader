@@ -20,7 +20,7 @@
 	response_help  = "licks"
 	response_disarm = "struggles against the mass of"
 	response_harm   = "slaps"
-	maxHealth = 2500
+	maxhealth = 2500
 	health = 2500
 	stop_automated_movement_when_pulled = 1 //lets you pull and release your new friend
 	melee_damage_lower = 60 // This value does nothing

@@ -6,7 +6,7 @@
 	icon_living = "skeletor"
 	icon_dead = "skeletor"
 	health = 65
-	maxHealth = 65
+	maxhealth = 65
 	speed = 1
 	pry_time = 10 SECONDS
 	harm_intent_damage = 10

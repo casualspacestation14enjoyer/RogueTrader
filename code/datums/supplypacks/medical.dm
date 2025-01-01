@@ -299,7 +299,7 @@
 	cost = 20
 	containertype = /obj/structure/closet/crate/secure
 	containername = "autopsy equipment crate"
-	access = access_morgue
+	access = access_medical_command
 
 /singleton/hierarchy/supply_pack/medical/medicaluniforms
 	name = "Gear - Medical uniforms"

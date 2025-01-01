@@ -5,7 +5,7 @@
 	id = "crashed_probe"
 	description = "An abandoned ancient STL automated survey drone."
 	suffixes = list("crashed_probe/crashed_probe.dmm")
-	spawn_cost = 0.5
+	spawn_cost = 1
 	apc_test_exempt_areas = list(
 		/area/map_template/ecprobe/solarsp = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/map_template/ecprobe/solarss = NO_SCRUBBER|NO_VENT|NO_APC,

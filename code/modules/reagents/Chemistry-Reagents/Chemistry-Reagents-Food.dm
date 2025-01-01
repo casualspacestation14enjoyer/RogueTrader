@@ -160,7 +160,7 @@
 	condiment_name = "cake batter mix"
 
 /datum/reagent/nutriment/coffee
-	name = "Coffee Powder"
+	name = "Recaf Powder"
 	description = "A bitter powder made by grinding coffee beans."
 	taste_description = "bitterness"
 	taste_mult = 1.3
@@ -171,7 +171,7 @@
 	condiment_name = "coffee powder"
 
 /datum/reagent/nutriment/coffee/instant
-	name = "Instant Coffee Powder"
+	name = "Instant Recaf Powder"
 	description = "A bitter powder made by processing coffee beans."
 
 	condiment_name = "instant coffee powder"

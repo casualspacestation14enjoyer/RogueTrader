@@ -334,6 +334,9 @@
 /obj/item/stack/material/steel/ten
 	amount = 10
 
+/obj/item/stack/material/steel/twenty
+	amount = 20
+
 /obj/item/stack/material/steel/fifty
 	amount = 50
 

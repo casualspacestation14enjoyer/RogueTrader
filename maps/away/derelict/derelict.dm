@@ -22,7 +22,7 @@
 	description = "An abandoned construction project."
 	suffixes = list("derelict/derelict-station.dmm")
 	spawn_cost = 1
-	accessibility_weight = 10
+	accessibility_weight = 0
 	area_usage_test_exempted_areas = list(/area/constructionsite/AIsattele)
 	area_usage_test_exempted_root_areas = list(/area/constructionsite, /area/derelict)
 	apc_test_exempt_areas = list(

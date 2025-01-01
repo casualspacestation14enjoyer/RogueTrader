@@ -7,7 +7,7 @@
 	icon_dead = "dead"
 
 	health = 250
-	maxHealth = 250
+	maxhealth = 250
 	meat_amount = 60
 	skin_amount = 15
 
@@ -65,7 +65,7 @@
 			bound_width = 128
 
 // /mob/living/simple_animal/hostile/retaliate/space_whale/Retaliate() //So they dont become hostile when spawned and thrown in migration event.
-// 	if(!(health < (maxHealth - 5)))
+// 	if(!(health < (maxhealth - 5)))
 // 		return
 // 	..()
 

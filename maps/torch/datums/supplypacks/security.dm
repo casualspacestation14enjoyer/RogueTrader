@@ -8,7 +8,7 @@
 	cost = 30
 	containertype = /obj/structure/closet/crate/secure
 	containername = "\improper SolGov light armor crate"
-	access = access_security
+	access = access_restricted
 
 /singleton/hierarchy/supply_pack/security/secarmor
 	name = "Armor - Security"
@@ -17,7 +17,7 @@
 	cost = 20
 	containertype = /obj/structure/closet/crate/secure
 	containername = "security armor crate"
-	access = access_security
+	access = access_restricted
 
 /singleton/hierarchy/supply_pack/security/comarmor
 	name = "Armor - Command"
@@ -39,7 +39,7 @@
 	cost = 50
 	containertype = /obj/structure/closet/crate/secure/weapon
 	containername = "ballistic sidearms crate"
-	access = access_armory
+	access = access_restricted_command
 	security_level = SUPPLY_SECURITY_ELEVATED
 
 /singleton/hierarchy/supply_pack/security/laser
@@ -126,7 +126,7 @@
 	cost = 20
 	containertype = /obj/structure/closet/crate/secure/weapon
 	containername = "pistol rubber ammunition crate"
-	access = access_security
+	access = access_restricted
 
 /singleton/hierarchy/supply_pack/security/pistolammopractice
 	name = "Ammunition - pistol practice ammo"
@@ -134,7 +134,7 @@
 	cost = 20
 	containertype = /obj/structure/closet/crate/secure/weapon
 	containername = "pistol practice ammunition crate"
-	access = access_security
+	access = access_restricted
 
 /singleton/hierarchy/supply_pack/security/holster
 	name = "Gear - Holster crate"
@@ -166,7 +166,7 @@
 	cost = 60
 	containertype = /obj/structure/closet/crate/secure
 	containername = "\improper Master at Arms equipment crate"
-	access = access_security
+	access = access_restricted
 
 /singleton/hierarchy/supply_pack/security/cosextragear
 	name = "Gear - Chief of Security equipment"

@@ -1042,7 +1042,6 @@
 /turf/simulated/floor,
 /area/scavver/yachtdown/thrusters)
 "rb" = (
-/obj/machinery/hologram/holopad/longrange,
 /obj/machinery/atmospherics/pipe/simple/hidden/blue{
 	dir = 10
 	},
@@ -1050,6 +1049,7 @@
 	dir = 10
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/hologram/holopad/longrange/remoteship,
 /turf/simulated/floor/tiled,
 /area/scavver/calypso)
 "rr" = (

@@ -98,7 +98,8 @@
 		/obj/item/gun/projectile,
 		/obj/item/ammo_magazine,
 		/obj/item/ammo_casing,
-		/obj/item/melee/baton,
+		/obj/item/material/twohanded/ravenor,
+		/obj/item/melee,
 		/obj/item/handcuffs,
 		/obj/item/storage/fancy/smokable,
 		/obj/item/flame/lighter,
@@ -134,7 +135,8 @@
 		/obj/item/gun/projectile,
 		/obj/item/ammo_magazine,
 		/obj/item/ammo_casing,
-		/obj/item/melee/baton,
+		/obj/item/material/twohanded/ravenor,
+		/obj/item/melee,
 		/obj/item/handcuffs,
 		/obj/item/device/taperecorder
 	)
@@ -303,7 +305,8 @@
 		/obj/item/taperoll,
 		/obj/item/clothing/head/hardhat,
 		/obj/item/handcuffs,
-		/obj/item/melee/baton,
+		/obj/item/material/twohanded/ravenor,
+		/obj/item/melee,
 		/obj/item/grenade,
 		/obj/item/gun
 	)

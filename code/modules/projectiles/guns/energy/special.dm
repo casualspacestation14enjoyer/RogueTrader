@@ -5,14 +5,14 @@
 	icon_state = "ionrifle"
 	item_state = "ionrifle"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 4)
-	w_class = ITEM_SIZE_HUGE
+	w_class = ITEM_SIZE_GARGANTUAN
 	force = 10
 	obj_flags =  OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BACK
 	one_hand_penalty = 4
 	charge_cost = 60
 	max_shots = 5
-	fire_delay = 20
+	fire_delay = 15
 	projectile_type = /obj/item/projectile/ion
 	wielded_item_state = "ionrifle-wielded"
 	combustion = 0
@@ -30,13 +30,13 @@
 	one_hand_penalty = 0
 	charge_cost = 40
 	max_shots = 3
-	fire_delay = 10
+	fire_delay = 8
 	projectile_type = /obj/item/projectile/ion/small
 
 /obj/item/gun/energy/ionrifle/mounted
 	name = "mounted ion gun"
 	desc = "You should not see this. Call a developer."
-	fire_delay = 20
+	fire_delay = 10
 	one_hand_penalty = 0
 	self_recharge = TRUE
 	use_external_power = TRUE

@@ -40,7 +40,7 @@ GLOBAL_LIST_INIT(possible_say_verbs, list(
 	var/network = "SS13"
 	var/obj/machinery/camera/current = null
 
-	var/ram = 100	// Used as currency to purchase different abilities
+	var/ram = 200	// Used as currency to purchase different abilities
 	var/list/software = list()
 	var/userDNA		// The DNA string of our assigned user
 	var/obj/item/device/paicard/card	// The card we inhabit

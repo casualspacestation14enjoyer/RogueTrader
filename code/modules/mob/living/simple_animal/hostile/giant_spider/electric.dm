@@ -7,7 +7,7 @@
 	icon_living = "spark"
 	icon_dead = "spark_dead"
 
-	maxHealth = 65
+	maxhealth = 65
 	health = 65
 
 

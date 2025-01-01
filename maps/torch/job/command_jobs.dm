@@ -14,7 +14,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 13
+	skill_points = 18
 	min_skill = list(
 		SKILL_BUREAUCRACY = SKILL_EXPERIENCED,
 		SKILL_FINANCE = SKILL_TRAINED,
@@ -28,6 +28,9 @@
 		SKILL_COMPUTER = SKILL_TRAINED,
 		SKILL_EVA = SKILL_TRAINED
 	)
+	access = list(
+		access_dauntless, access_restricted, access_restricted_command, access_mechanicus, access_mechanicus_command, access_medical,
+		access_medical_command, access_magos, access_bridge, access_roguetrader)
 
 	max_skill = list(	SKILL_BUREAUCRACY = SKILL_MASTER,
 						SKILL_FINANCE = SKILL_MASTER,
@@ -47,7 +50,7 @@
 							 /datum/computer_file/program/reports,
 							 /datum/computer_file/program/deck_management)
 /datum/job/rogue_trader/get_description_blurb()
-	return "You are the Rogue Trader, commander of the Dauntless, an Imperial corvette exploratory vessel. Tasked with navigating the uncharted terror -- the Ghoul Stars, you lead a diverse retinue representing many factions, each serving a crucial role aboard your ship. While you hold ultimate authority, you work closely with your Magos Explorator, whose resources and personnel are vital to your survival in this cursed region. Rely on your officers to manage the deck scum, explore forgotten worlds, and broker alliances or hostilities with the human, alien, and worse. The emperor protects..."
+	return "You are the Rogue Trader, an infamous member of the Landsraad, where noble houses vie for dominance over the Ghoul Stars. Through shared bonds and rivalries, they control the flow of power and resources. As one of their number, you forge your path amidst alliances, intrigue, and the perils of the void."
 
 /datum/job/rogue_trader/equip(mob/living/carbon/human/H)
 	var/current_name = H.real_name
@@ -61,22 +64,20 @@
 	H.species.radiation_mod = 0.6
 	H.species.hunger_factor = DEFAULT_HUNGER_FACTOR * 0.7
 	H.species.species_flags = SPECIES_FLAG_LOW_GRAV_ADAPTED | SPECIES_FLAG_NO_EMBED
+	H.verbs += /mob/living/proc/set_ambition
 	if(current_title && (H.mind.role_alt_title in alt_titles))
 		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
 	else
 		current_title = title // use default title
 	H.fully_replace_character_name("[current_title] [current_name]")
 	captain_announcement.Announce("All crew, [current_title] [current_name] has arrived...")
-	if(prob(1))
-		H.make_genestealer()
-		to_chat(H, "<span class='notice'><b><font size=2>You are a genestealer bioform, a unique strain of tyranid genestealer capable of rapid transformation. The swarm considers you to be an abomination, but under the guidance of what you believe to be the true hivemind, you will surely succeed where the others have failed. Everything is connected.</font></b></span>")
-	else if(prob(1))
-		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
-		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
-		spawn(65 SECONDS)
+	if(prob(2))
+		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN THIRTY SECONDS</font></b></span>")
+		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN THIRTY SECONDS</font></b></span>")
+		spawn(30 SECONDS)
 		GLOB.cult.add_antagonist(H.mind, ignore_role = 1, do_not_equip = 0)
 		to_chat(H, "<span class='notice'><b><font size=2>You are a heretical cultist loyal to one or more of the Chaos Gods -- unlike the many pretenders you are truly blessed by the warp and can survive encounters that would boil the brains of most mortal men.</font></b></span>")
-	to_chat(H, "<span class='notice'><b><font size=2>You are the [current_title], commander of the Dauntless, an Imperial corvette exploratory vessel. Tasked with navigating the uncharted terror -- the Ghoul Stars, you lead a diverse retinue representing many factions, each serving a crucial role aboard your ship. While you hold ultimate authority, you work closely with your Magos Explorator, whose resources and personnel are vital to your survival in this cursed region. Rely on your officers to manage the deck scum, explore forgotten worlds, and broker alliances or hostilities with the human, alien, and worse. The emperor protects...</font></b></span>")
+	to_chat(H, "<span class='notice'><b><font size=2>You are the [current_title], an infamous member of the Landsraad, where noble houses vie for dominance over the Ghoul Stars. Through shared bonds and rivalries, they control the flow of power and resources. As one of their number, you forge your path amidst alliances, intrigue, and the perils of the void.</font></b></span>")
 	return ..()
 
 /datum/job/seneschal
@@ -97,7 +98,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 11
+	skill_points = 16
 	min_skill = list(
 		SKILL_BUREAUCRACY = SKILL_EXPERIENCED,
 		SKILL_FINANCE = SKILL_TRAINED,
@@ -121,20 +122,8 @@
 						SKILL_PILOT = SKILL_MASTER)
 
 	access = list(
-		access_security, access_brig, access_armory, access_forensics_lockers, access_heads, access_medical, access_morgue, access_tox, access_tox_storage,
-		access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage, access_change_ids,
-		access_ai_upload, access_teleporter, access_eva, access_bridge, access_all_personal_lockers, access_chapel_office, access_tech_storage,
-		access_atmospherics, access_janitor, access_crematorium, access_kitchen, access_robotics, access_cargo, access_construction,
-		access_chemistry, access_cargo_bot, access_hydroponics, access_manufacturing, access_library, access_lawyer, access_virology, access_cmo,
-		access_qm, access_network, access_network_admin, access_surgery, access_research, access_mining, access_mining_office, access_mailsorting, access_heads_vault,
-		access_mining_station, access_xenobiology, access_ce, access_hop, access_hos, access_RC_announce, access_keycard_auth, access_tcomsat,
-		access_gateway, access_sec_doors, access_psychiatrist, access_xenoarch, access_medical_equip, access_heads, access_hangar, access_guppy_helm,
-		access_expedition_shuttle_helm, access_aquila, access_aquila_helm, access_solgov_crew, access_nanotrasen, access_chief_steward,
-		access_emergency_armory, access_sec_guard, access_gun, access_expedition_shuttle, access_guppy, access_seneng, access_senmed, access_senadv,
-		access_explorer, access_pathfinder, access_pilot, access_commissary, access_petrov, access_petrov_helm, access_petrov_analysis, access_petrov_phoron,
-		access_petrov_toxins, access_petrov_chemistry, access_petrov_control, access_petrov_maint, access_rd, access_petrov_rd, access_torch_fax, access_torch_helm,
-		access_radio_comm, access_radio_eng, access_radio_med, access_radio_sec, access_radio_sup, access_radio_serv, access_radio_exp, access_radio_sci, access_research_storage
-	)
+		access_dauntless, access_restricted, access_restricted_command, access_mechanicus, access_mechanicus_command, access_medical,
+		access_medical_command, access_bridge, access_roguetrader)
 
 	software_on_spawn = list(/datum/computer_file/program/comm,
 							 /datum/computer_file/program/card_mod,
@@ -155,7 +144,7 @@
 	H.voice_in_head(pick(GLOB.lone_thoughts))
 	H.species.weaken_mod = 0.7
 	H.species.stun_mod = 0.7
-	H.species.slowdown = -0.2
+	H.species.slowdown = -0.1
 	if(current_title && (H.mind.role_alt_title in alt_titles))
 		current_title = trimtext(H.mind.role_alt_title) // Use alt_title if selected
 	else
@@ -187,7 +176,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 11
+	skill_points = 17
 	min_skill = list(
 		SKILL_BUREAUCRACY = SKILL_TRAINED,
 		SKILL_FINANCE = SKILL_BASIC,
@@ -196,7 +185,7 @@
 		SKILL_MEDICAL = SKILL_BASIC,
 		SKILL_DEVICES = SKILL_BASIC,
 		SKILL_COMBAT = SKILL_BASIC,
-		SKILL_GUNS = SKILL_BASIC,
+		SKILL_GUNS = SKILL_TRAINED,
 		SKILL_MECH = SKILL_TRAINED,
 		SKILL_COMPUTER = SKILL_TRAINED,
 		SKILL_EVA = SKILL_TRAINED
@@ -212,12 +201,8 @@
 
 
 	access = list(
-		access_security, access_medical, access_engine, access_maint_tunnels, access_emergency_storage,
-		access_bridge, access_janitor, access_kitchen, access_cargo, access_mailsorting, access_RC_announce, access_keycard_auth,
-		access_solgov_crew, access_aquila, access_aquila_helm, access_guppy, access_guppy_helm, access_external_airlocks,
-		access_eva, access_hangar, access_cent_creed, access_explorer, access_expedition_shuttle, access_expedition_shuttle_helm, access_teleporter,
-		access_torch_fax, access_torch_helm, access_radio_comm, access_radio_eng, access_radio_exp, access_radio_serv, access_radio_sci, access_radio_sup
-	)
+		access_dauntless, access_restricted, access_restricted_command, access_mechanicus, access_mechanicus_command, access_medical,
+		access_medical_command, access_bridge)
 
 	software_on_spawn = list(/datum/computer_file/program/comm,
 							 /datum/computer_file/program/power_monitor,
@@ -229,7 +214,7 @@
 							 /datum/computer_file/program/deck_management)
 
 /datum/job/void_officer/get_description_blurb()
-	return "As the Voidmaster, you are a crucial officer aboard the Dauntless, responsible for piloting the ship, managing ship-wide vox communications, and executing the Rogue Trader's commands. Your role involves coordinating with the deck crew and all departments to ensure smooth and efficient operations. "
+	return "As the Voidmaster, you are a crucial officer aboard the Dauntless, responsible for piloting the ship, managing ship-wide vox communications, and executing the Rogue Trader's commands. Your role involves coordinating with the deck crew and all departments to ensure smooth and efficient operation of the voidship."
 
 /datum/job/void_officer/equip(mob/living/carbon/human/H)
 	var/current_name = H.real_name
@@ -240,13 +225,14 @@
 	else
 		current_title = title // use default title
 	H.fully_replace_character_name("[current_title] [current_name]")
+	H.verbs += /mob/living/proc/set_ambition
 	if(prob(1))
 		H.make_genestealer()
 		to_chat(H, "<span class='notice'><b><font size=2>You are a genestealer bioform, a unique strain of tyranid genestealer capable of rapid transformation. The swarm considers you to be an abomination, but under the guidance of what you believe to be the true hivemind, you will surely succeed where the others have failed. Everything is connected.</font></b></span>")
 	else if(prob(1))
-		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
-		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN SIXTY SECONDS</font></b></span>")
-		spawn(65 SECONDS)
+		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN THIRTY SECONDS</font></b></span>")
+		to_chat(H,"<span class='danger'><b><font size=4>YOUR CULT ITEMS ARE BEING SUMMONED. FIND SOMEWHERE PRIVATE TO HIDE. SUMMONING IN THIRTY SECONDS</font></b></span>")
+		spawn(30 SECONDS)
 		GLOB.cult.add_antagonist(H.mind, ignore_role = 1, do_not_equip = 0)
 		to_chat(H, "<span class='notice'><b><font size=2>You are a heretical cultist loyal to one or more of the Chaos Gods -- unlike the many pretenders you are truly blessed by the warp and can survive encounters that would boil the brains of most mortal men.</font></b></span>")
 	to_chat(H, "<span class='notice'><b><font size=2>As the [current_title], you are a crucial officer aboard the Dauntless, responsible for piloting the ship, managing ship-wide vox communications, and executing the Rogue Trader's commands. Your role involves coordinating with the deck crew and all departments to ensure smooth and efficient operations. </font></b></span>")
@@ -265,23 +251,18 @@
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/krootmerc
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/civ)
-	total_positions = 0
-	spawn_positions = 0
-	skill_points = 11
-	min_skill = list(SKILL_VIGOR = SKILL_EXPERIENCED,
-					SKILL_COMBAT = SKILL_EXPERIENCED, // Worse skills then imperials. Since they are more primitive bioforms.
-					SKILL_GUNS = SKILL_BASIC,
+	skill_points = 18
+	min_skill = list(SKILL_VIGOR = SKILL_MASTER,
+					SKILL_COMBAT = SKILL_MASTER, // Worse skills then imperials. Since they are more primitive bioforms.
+					SKILL_GUNS = SKILL_EXPERIENCED,
 				)
 	max_skill = list(	SKILL_VIGOR = SKILL_MASTER,
 						SKILL_COMBAT = SKILL_LEGEND)
 
 
 	access = list(
-		access_security, access_brig, access_armory, access_forensics_lockers,
-		access_maint_tunnels, access_external_airlocks, access_emergency_storage,
-		access_eva, access_sec_doors, access_solgov_crew, access_gun, access_torch_fax,
-		access_radio_sec
-	)
+		access_dauntless, access_restricted, access_restricted_command, access_mechanicus, access_medical,
+		access_medical_command, access_bridge)
 
 	software_on_spawn = list(/datum/computer_file/program/camera_monitor)
 
@@ -336,7 +317,7 @@
 	                    SKILL_SCIENCE     = SKILL_MAX)
 
 	access = list(
-		access_tox, access_tox_storage, access_emergency_storage, access_teleporter, access_bridge, access_rd,
+		access_tox, access_tox_storage, access_magos, access_teleporter, access_bridge, access_rd,
 		access_research, access_mining, access_mining_office, access_mining_station, access_xenobiology, access_aquila,
 		access_RC_announce, access_keycard_auth, access_xenoarch, access_nanotrasen, access_sec_guard, access_heads,
 		access_expedition_shuttle, access_guppy, access_hangar, access_petrov, access_petrov_helm, access_guppy_helm,
@@ -391,7 +372,7 @@
 
 
 	access = list(
-		access_security, access_medical, access_engine, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
+		access_restricted, access_medical, access_mechanicus, access_maint_tunnels, access_external_airlocks, access_magos,
 		access_teleporter, access_eva, access_bridge, access_all_personal_lockers, access_janitor,
 		access_kitchen, access_cargo, access_RC_announce, access_keycard_auth, access_aquila, access_guppy_helm,
 		access_solgov_crew, access_gun, access_expedition_shuttle, access_guppy, access_senadv, access_hangar, access_torch_fax,

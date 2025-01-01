@@ -9,8 +9,6 @@
 	offline_vision_restriction = 0
 	hides_uniform = 0
 
-	req_access = list(access_lawyer)
-
 	glove_type = null
 	helm_type = null
 	boot_type = null
@@ -73,6 +71,9 @@
 	allowed = list(
 		/obj/item/device/flashlight,
 		/obj/item/tank,
+		/obj/item/gun,
+		/obj/item/material/twohanded/ravenor,
+		/obj/item/melee,
 		/obj/item/device/suit_cooling_unit,
 		/obj/item/stack/flag,
 		/obj/item/storage/ore,
@@ -123,7 +124,7 @@
 	boot_type = /obj/item/clothing/shoes/magboots/rig/eva
 	glove_type = /obj/item/clothing/gloves/rig/eva
 
-	req_access = list(access_engine_equip)
+	req_access = list(access_mechanicus_command)
 
 
 
@@ -186,7 +187,7 @@
 	helm_type = /obj/item/clothing/head/helmet/space/rig/ce
 	glove_type = /obj/item/clothing/gloves/rig/ce
 
-	req_access = list(access_ce)
+	req_access = list(access_mechanicus_command)
 	max_pressure_protection = FIRESUIT_MAX_PRESSURE
 	min_pressure_protection = 0
 
@@ -253,7 +254,6 @@
 	boot_type = /obj/item/clothing/shoes/magboots/rig/hazmat
 	glove_type = /obj/item/clothing/gloves/rig/hazmat
 
-	req_access = list(access_tox)
 
 /obj/item/clothing/head/helmet/space/rig/hazmat
 	light_overlay = "helmet_light_dual"
@@ -265,6 +265,9 @@
 	allowed = list(
 		/obj/item/device/flashlight,
 		/obj/item/tank,
+		/obj/item/gun,
+		/obj/item/material/twohanded/ravenor,
+		/obj/item/melee,
 		/obj/item/device/suit_cooling_unit,
 		/obj/item/stack/flag,
 		/obj/item/storage/excavation,
@@ -317,7 +320,7 @@
 	boot_type = /obj/item/clothing/shoes/magboots/rig/medical
 	glove_type = /obj/item/clothing/gloves/rig/medical
 
-	req_access = list(access_medical_equip)
+	req_access = list(access_medical_command)
 
 /obj/item/clothing/head/helmet/space/rig/medical
 	light_overlay = "helmet_light_wide"
@@ -385,6 +388,8 @@
 	species_restricted = list(SPECIES_HUMAN,SPECIES_TAU,SPECIES_KROOT, SPECIES_IPC)
 	allowed = list(
 		/obj/item/gun,
+		/obj/item/material/twohanded/ravenor,
+		/obj/item/melee,
 		/obj/item/ammo_magazine,
 		/obj/item/ammo_casing,
 		/obj/item/handcuffs,

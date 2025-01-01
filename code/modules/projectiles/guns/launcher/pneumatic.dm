@@ -9,7 +9,7 @@
 	w_class = ITEM_SIZE_HUGE
 	obj_flags =  OBJ_FLAG_CONDUCTIBLE
 	fire_sound_text = "a loud whoosh of moving air"
-	fire_delay = 20
+	fire_delay = 14
 	fire_sound = 'sound/weapons/tablehit1.ogg'
 
 	var/fire_pressure                                   // Used in fire checks/pressure checks.

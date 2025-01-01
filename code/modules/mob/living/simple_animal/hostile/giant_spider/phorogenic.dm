@@ -8,7 +8,7 @@
 	icon_living = "phoron"
 	icon_dead = "phoron_dead"
 
-	maxHealth = 200
+	maxhealth = 200
 	health = 200
 	taser_kill = FALSE //You will need more than a peashooter to kill the juggernaut.
 

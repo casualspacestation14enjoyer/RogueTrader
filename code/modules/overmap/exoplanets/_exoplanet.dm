@@ -44,7 +44,7 @@ GLOBAL_VAR(planet_repopulation_disabled)
 	var/list/actors = list() //things that appear in engravings on xenoarch finds.
 	var/list/species = list() //list of names to use for simple animals
 
-	var/flora_diversity = 4				// max number of different seeds growing here
+	var/flora_diversity = 6				// max number of different seeds growing here
 	var/has_trees = TRUE				// if large flora should be generated
 	var/list/small_flora_types = list()	// seeds of 'small' flora
 	var/list/big_flora_types = list()	// seeds of tree-tier flora
@@ -54,10 +54,10 @@ GLOBAL_VAR(planet_repopulation_disabled)
 
 	var/list/possible_themes = list(
 		/datum/exoplanet_theme = 45,
-		/datum/exoplanet_theme/mountains = 65,
-		/datum/exoplanet_theme/radiation_bombing = 10,
+		/datum/exoplanet_theme/mountains = 45,
+		/datum/exoplanet_theme/radiation_bombing = 5,
 		/datum/exoplanet_theme/ruined_city = 5,
-		/datum/exoplanet_theme/robotic_guardians = 10
+		/datum/exoplanet_theme/robotic_guardians = 5
 		)
 	var/list/themes = list()
 
@@ -66,7 +66,7 @@ GLOBAL_VAR(planet_repopulation_disabled)
 	//Flags deciding what features to pick
 	var/ruin_tags_whitelist
 	var/ruin_tags_blacklist
-	var/features_budget = 5
+	var/features_budget = 20
 	var/list/possible_features = list()
 	var/list/spawned_features
 
@@ -300,34 +300,48 @@ GLOBAL_VAR(planet_repopulation_disabled)
 		do_spawn(E)
 
 //Tries to generate num landmarks, but avoids repeats.
-/obj/overmap/visitable/sector/exoplanet/proc/generate_landing(num = 1)
+/obj/overmap/visitable/sector/exoplanet/proc/generate_landing(num = 1, override_density = FALSE)
 	var/places = list()
 	var/attempts = 30*num
 	var/new_type = landmark_type
+
 	while(num)
 		attempts--
-		var/turf/T = locate(rand(TRANSITIONEDGE + LANDING_ZONE_RADIUS, maxx - TRANSITIONEDGE - LANDING_ZONE_RADIUS), rand(TRANSITIONEDGE + LANDING_ZONE_RADIUS, maxy - TRANSITIONEDGE - LANDING_ZONE_RADIUS),map_z[length(map_z)])
-		if (!T || (T in places) || T.density) // Don't allow two landmarks on one turf, and don't use a dense turf.
+		var/turf/T = locate(rand(TRANSITIONEDGE + LANDING_ZONE_RADIUS, maxx - TRANSITIONEDGE - LANDING_ZONE_RADIUS),
+							rand(TRANSITIONEDGE + LANDING_ZONE_RADIUS, maxy - TRANSITIONEDGE - LANDING_ZONE_RADIUS),
+							map_z[length(map_z)])
+		if (!T || (T in places)) // Avoid duplicate landmarks
 			continue
-		if (attempts >= 0) // While we have the patience, try to find better spawn points. If out of patience, put them down wherever, so long as there are no repeats.
-			var/valid = TRUE
-			var/list/block_to_check = block(locate(T.x - LANDING_ZONE_RADIUS, T.y - LANDING_ZONE_RADIUS, T.z), locate(T.x + LANDING_ZONE_RADIUS, T.y + LANDING_ZONE_RADIUS, T.z))
-			for (var/turf/check in block_to_check)
-				if (!istype(get_area(check), /area/exoplanet) || check.turf_flags & TURF_FLAG_NORUINS)
+		if (T.density && !override_density) // Allow override for dense turfs
+			continue
+
+		var/list/block_to_check = block(locate(T.x - LANDING_ZONE_RADIUS, T.y - LANDING_ZONE_RADIUS, T.z),
+										locate(T.x + LANDING_ZONE_RADIUS, T.y + LANDING_ZONE_RADIUS, T.z))
+
+		// Check for existing ships or landmarks in the landing zone
+		var/valid = TRUE
+		for (var/turf/check in block_to_check)
+			for (var/obj/landmark/landed_ship in check.contents)
+				if (istype(landed_ship, /obj/shuttle_landmark)) // If a ship or landmark is found
 					valid = FALSE
 					break
-			if (attempts >= 10)
-				if (check_collision(T.loc, block_to_check)) //While we have lots of patience, ensure landability
-					valid = FALSE
-			else //Running out of patience, but would rather not clear ruins, so switch to clearing landmarks and bypass landability check
-				new_type = /obj/shuttle_landmark/automatic/clearing
-
 			if (!valid)
-				continue
+				break
+
+		if (!valid || attempts >= 10 && check_collision(T.loc, block_to_check)) // Skip invalid spots
+			continue
+
+		// Optionally clear objects if density override is enabled
+		if (override_density)
+			for (var/turf/check in block_to_check)
+				for (var/obj/obstacle in check.contents)
+					if (obstacle.density) // Remove dense objects
+						qdel(obstacle)
 
 		num--
 		places += T
 		new new_type(T)
+
 
 /obj/overmap/visitable/sector/exoplanet/get_scan_data(mob/user)
 	. = ..()

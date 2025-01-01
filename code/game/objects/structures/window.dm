@@ -675,6 +675,17 @@
 	dir = 5
 	icon_state = "rwindow_full"
 
+/obj/structure/window/reinforced/medieval
+	icon = 'icons/obj/cs.dmi'
+	icon_state = "windowwood1"
+	dir = 5
+
+/obj/structure/window/reinforced/medieval/damaged
+	icon_state = "windowwood2"
+
+/obj/structure/window/reinforced/medieval/broken
+	icon_state = "windowwood3"
+
 /obj/structure/window/reinforced/tinted
 	name = "tinted window"
 	opacity = 1

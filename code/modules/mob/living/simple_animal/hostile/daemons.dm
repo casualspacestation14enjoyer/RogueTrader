@@ -11,7 +11,7 @@
 	response_help  = "caresses"
 	response_disarm = "shoves"
 	response_harm   = "mauls"
-	maxHealth = 150
+	maxhealth = 150
 	health = 150
 	movement_cooldown = 2
 	natural_weapon = /obj/item/natural_weapon/daemon
@@ -183,7 +183,7 @@
 	response_help  = "caresses"
 	response_disarm = "shoves"
 	response_harm   = "mauls"
-	maxHealth = 200
+	maxhealth = 200
 	health = 200
 	movement_cooldown = 4
 	natural_weapon = /obj/item/natural_weapon/daemon/zygote
@@ -236,7 +236,7 @@
 	response_help  = "splooges"
 	response_disarm = "slams"
 	response_harm   = "eviscerates"
-	maxHealth = 700
+	maxhealth = 700
 	health = 700
 	movement_cooldown = 6 // he fat
 	natural_weapon = /obj/item/natural_weapon/daemon/hulk
@@ -289,7 +289,7 @@
 	response_help  = "splooges"
 	response_disarm = "slams"
 	response_harm   = "eviscerates"
-	maxHealth = 500 // Not a hulk. But so much more deadly.
+	maxhealth = 500 // Not a hulk. But so much more deadly.
 	health = 500
 	movement_cooldown = 2
 	natural_weapon = /obj/item/natural_weapon/daemon/champion
@@ -352,7 +352,7 @@
 	icon_living = "loge"
 	icon_dead = "loge2"
 	see_in_dark = 6
-	maxHealth = 255
+	maxhealth = 255
 	health = 255
 	movement_cooldown = 4
 	move_to_delay = 3
@@ -370,7 +370,7 @@
 	icon_living = "goliath"
 	icon_dead = "goliath_dead"
 	see_in_dark = 7
-	maxHealth = 255
+	maxhealth = 255
 	health = 255
 	movement_cooldown = 4
 	move_to_delay = 2
@@ -436,7 +436,7 @@
 	icon_living = "minion_1"
 	icon_dead = "goliath_dead"
 	see_in_dark = 8
-	maxHealth = 255
+	maxhealth = 255
 	health = 255
 	movement_cooldown = 3
 	move_to_delay = 2
@@ -454,7 +454,7 @@
 	icon_living = "head"
 	icon_dead = "head_dead_2"
 	see_in_dark = 8
-	maxHealth = 70
+	maxhealth = 70
 	health = 70
 	movement_cooldown = 3
 	move_to_delay = 2
@@ -481,7 +481,7 @@
 	attack_cooldown = 3 SECONDS
 	attack_verb = list("mauled", "bitten")
 
-/mob/living/simple_animal/hostile/daemon/headcrab/large/do_special_attack(atom/A)
+/mob/living/simple_animal/hostile/daemon/headcrab/do_special_attack(atom/A)
 	set waitfor = FALSE
 	set_AI_busy(TRUE)
 
@@ -536,7 +536,7 @@
 				visible_message(SPAN_DANGER("\The [victim] knocks the [src] to the ground!"))
 				return
 			victim.reagents.add_reagent(/datum/reagent/zombie, 35) // Ensure infection
-			if (victim.getBruteLoss() > victim.maxHealth * 1.5)
+			if (victim.getBruteLoss() > victim.maxhealth * 1.5)
 				to_chat(src, SPAN_WARNING("You've scraped \the [victim]'s brain down to the bones already!"))
 				if (victim.stat != DEAD)
 					victim.zombify()
@@ -570,7 +570,7 @@
 
 			playsound(loc, 'sound/effects/splat.ogg', 20, 1)
 			new /obj/decal/cleanable/blood/splatter(get_turf(src), victim.species.blood_color)
-			if (victim.getBruteLoss() > victim.maxHealth * 0.75 && prob(50))
+			if (victim.getBruteLoss() > victim.maxhealth * 0.75 && prob(50))
 				gibs(get_turf(src), victim.dna)
 				visible_message(SPAN_DANGER("\The [src] tears out \the [victim]'s brain!"))
 
@@ -591,7 +591,7 @@
 	icon_living = "example"
 	icon_dead = "torso_lying_2"
 	see_in_dark = 8
-	maxHealth = 155
+	maxhealth = 155
 	health = 155
 	movement_cooldown = 3
 	move_to_delay = 2
@@ -622,7 +622,7 @@
 	icon_living = "liz1"
 	icon_dead = "bodylying"
 	health = 315
-	maxHealth = 315
+	maxhealth = 315
 	melee_damage_lower = 25
 	melee_damage_upper = 40
 	attacktext = "bites"
@@ -639,7 +639,7 @@
 	icon_living = "liz2"
 	icon_dead = "torso_lying1"
 	health = 365
-	maxHealth = 365
+	maxhealth = 365
 	melee_damage_lower = 30
 	melee_damage_upper = 45
 	attacktext = "bites"
@@ -656,7 +656,7 @@
 	icon_living = "preview"
 	icon_dead = "torso_lying_2"
 	health = 225
-	maxHealth = 225
+	maxhealth = 225
 	melee_damage_lower = 19
 	melee_damage_upper = 29
 	attacktext = "bites"
@@ -681,7 +681,7 @@
 	icon_living = "preview"
 	icon_dead = "torso_lying_2"
 	health = 315
-	maxHealth = 315
+	maxhealth = 315
 	melee_damage_lower = 19
 	melee_damage_upper = 29
 	attacktext = "bites"
@@ -696,7 +696,7 @@
 	icon_state = "brute-d"
 	icon_living = "brute-d"
 	icon_dead = "brute-d-dead"
-	maxHealth = 1201
+	maxhealth = 1201
 	health = 1201
 	universal_speak = 1
 	speak_emote = list("harks")
@@ -730,7 +730,7 @@
 	icon_state = "plague"
 	icon_living = "plague"
 	icon_dead = "plague_dead"
-	maxHealth = 500
+	maxhealth = 500
 	health = 500
 	speak_emote = list("harks")
 	emote_hear = list("growls")
@@ -759,7 +759,7 @@
 	speak_chance = 75
 	turns_per_move = 25
 	speed = 5
-	maxHealth = 450
+	maxhealth = 450
 	health = 450
 	response_help  = "pats"
 	response_disarm = "kicks aside"
@@ -806,7 +806,7 @@
 	response_disarm = "shoves"
 	response_harm = "hits"
 	speed = 1
-	maxHealth = 320
+	maxhealth = 320
 	health = 320
 	faction = "Demon"
 
@@ -833,7 +833,7 @@
 	response_disarm = "shoves"
 	response_harm = "hits"
 	speed = 1.5
-	maxHealth = 285
+	maxhealth = 285
 	health = 285
 	faction = "Demon"
 
@@ -856,7 +856,7 @@
 	icon_living = "spookyxenos"
 	icon_dead = "spookyxenos"
 	health = 350
-	maxHealth = 350
+	maxhealth = 350
 	melee_damage_lower = 35
 	melee_damage_upper = 45
 	attacktext = "chomped"
@@ -875,7 +875,7 @@
 	icon_living = "tombs3"
 	icon_dead = "tombs3"
 	health = 444
-	maxHealth = 500
+	maxhealth = 500
 	melee_damage_lower = 35
 	melee_damage_upper = 45
 	attacktext = "chomped"
@@ -903,7 +903,7 @@
 	icon_living = "dire_avenger"
 	icon_dead = "dire_avenger" // Gotta add it dies horribly by gibbing due the lack of dead icon state
 	health = 350
-	maxHealth = 350
+	maxhealth = 350
 	melee_damage_lower = 25
 	melee_damage_upper = 45
 	attacktext = "pierces"

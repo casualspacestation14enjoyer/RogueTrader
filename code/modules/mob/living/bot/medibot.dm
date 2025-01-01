@@ -1,10 +1,10 @@
 /mob/living/bot/medbot
 	name = "Medibot"
 	desc = "A little medical robot. He looks somewhat underwhelmed."
-	icon = 'icons/mob/bot/medibot.dmi'
-	icon_state = "medibot0"
-	req_access = list(list(access_medical, access_robotics))
-	botcard_access = list(access_medical, access_morgue, access_surgery, access_chemistry, access_virology)
+	icon = 'icons/mob/robots_drones.dmi'
+	icon_state = "repairbot"
+	req_access = list(access_medical_command, access_mechanicus)
+	botcard_access = list(access_medical, access_medical_command, access_dauntless, access_mechanicus, access_bridge)
 	var/skin = null //Set to "tox", "ointment" or "o2" for the other two firstaid kits.
 
 	//AI vars
@@ -68,7 +68,7 @@
 		target = null
 		return
 
-	icon_state = "medibots"
+	icon_state = "repairbot"
 	visible_message(SPAN_WARNING("[src] is trying to inject [H]!"))
 	if(declare_treatment)
 		var/area/location = get_area(src)
@@ -86,12 +86,10 @@
 
 /mob/living/bot/medbot/update_icons()
 	ClearOverlays()
-	if(skin)
-		AddOverlays(image('icons/mob/bot/medibot_skins.dmi', "medskin_[skin]"))
 	if(busy)
-		icon_state = "medibots"
+		icon_state = "repairbot"
 	else
-		icon_state = "medibot[on]"
+		icon_state = "repairbot"
 
 
 /mob/living/bot/medbot/get_construction_info()

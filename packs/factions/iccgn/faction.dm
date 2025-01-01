@@ -3,11 +3,6 @@
 	name_short = "Tau"
 	email_domain = "navy.gcc"
 	assistant_job = null
-	min_skill = list( // 4 points
-		SKILL_VIGOR = SKILL_BASIC, // 1 point
-		SKILL_GUNS = SKILL_BASIC, // 2 points
-		SKILL_EVA = SKILL_BASIC // 1 point
-	)
 
 	rank_types = list(
 		/datum/mil_rank/iccgn/or1,

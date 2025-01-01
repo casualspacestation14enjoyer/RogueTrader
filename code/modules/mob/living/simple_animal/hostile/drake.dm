@@ -17,7 +17,7 @@
 	bleed_colour = COLOR_VIOLET
 
 	health = 200
-	maxHealth = 200
+	maxhealth = 200
 	natural_weapon = /obj/item/natural_weapon/claws/drake
 	var/obj/item/melee/whip/tail/tailwhip
 	natural_armor = list(

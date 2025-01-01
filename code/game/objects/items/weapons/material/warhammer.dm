@@ -25,7 +25,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	attack_verb = list("chopped", "torn", "cut")
 	applies_material_colour = 0
 	hitsound = "chop"
-	attack_cooldown_modifier = -0.2
+	attack_cooldown_modifier = 0.5
 	base_parry_chance = 35
 	armor_penetration = 4
 
@@ -43,7 +43,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	max_force = 43
 	force_multiplier = 0.32
 	armor_penetration = 3 // Hits for more damage but worse AP. Like a shitty cutro.
-	attack_cooldown_modifier = -0.1
+	attack_cooldown_modifier = 0.6
 
 /obj/item/material/hatchet/machete/unbreakable
 	unbreakable = TRUE
@@ -99,7 +99,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	attack_verb = list("stabbed", "chopped", "cut", "sliced")
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
-	slot_flags = SLOT_BELT|SLOT_BACK
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_HOLSTER
 	w_class = ITEM_SIZE_LARGE
 	max_force = 60
 	force_multiplier = 0.34 // 0.34 = 34 Force damage wielded.
@@ -112,7 +112,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	does_spin = FALSE // Does it spin when thrown?
 	base_parry_chance = 25
 	wielded_parry_bonus = 5
-	attack_cooldown_modifier = 0
+	attack_cooldown_modifier = 0.8
 	melee_accuracy_bonus = 5
 
 /obj/item/material/twohanded/ravenor/sword/cutro
@@ -121,7 +121,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	icon_state = "spatha"
 	item_state = "spatha"
 	w_class = ITEM_SIZE_NORMAL
-	attack_cooldown_modifier = -0.2
+	attack_cooldown_modifier = 0.7
 	max_force = 55
 	force_multiplier = 0.33
 	unwielded_force_divisor = 0.33
@@ -138,14 +138,14 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	max_force = 60
 	force_multiplier = 0.35
 	unwielded_force_divisor = 0.35
-	thrown_force_multiplier = 0.3
+	thrown_force_multiplier = 0.1
 
 /obj/item/material/twohanded/ravenor/sword/broadsword
 	name = "heavy broadsword"
 	desc = "A heavy, iron-forged broadsword, its sheer weight allows it to cleave through flesh and bone with brutal precision."
 	icon_state = "claymore"
 	item_state = "claymore"
-	attack_cooldown_modifier = 0.3
+	attack_cooldown_modifier = 1
 	max_force = 70
 	force_multiplier = 0.41 // Dedicated two hander gets good stats. Balanced by being bad at one-handed fighting.
 	unwielded_force_divisor = 0.36
@@ -159,7 +159,6 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	name = "adamantine broadsword"
 	desc = "A heavy, adamantine-forged broadsword, its sheer weight allows it to cleave through flesh and bone with brutal precision."
 	color = "#848484"
-	attack_cooldown_modifier = 0.4
 	max_force = 80
 	force_multiplier = 0.44 // Dedicated two hander gets good stats. Balanced by being bad at one-handed fighting.
 	unwielded_force_divisor = 0.38
@@ -172,8 +171,8 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	icon_state = "machete_imp"
 	item_state = "salvagedmachete"
 	w_class = ITEM_SIZE_NORMAL
-	slot_flags = SLOT_BELT|SLOT_BACK
-	attack_cooldown_modifier = 0
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_HOLSTER
+	attack_cooldown_modifier = 1
 	max_force = 65
 	force_multiplier = 0.39
 	unwielded_force_divisor = 0.37
@@ -188,7 +187,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	icon_state = "scrapsabre"
 	item_state = "salvagedmachete"
 	w_class = ITEM_SIZE_LARGE
-	attack_cooldown_modifier = 0.7
+	attack_cooldown_modifier = 1.2
 	max_force = 75
 	force_multiplier = 0.44
 	unwielded_force_divisor = 0.39
@@ -221,7 +220,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	throw_speed = 2.3
 	base_parry_chance = 30 // Good parry.
 	wielded_parry_bonus = 5
-	attack_cooldown_modifier = 0.1 // Fast considering damage.
+	attack_cooldown_modifier = 1
 	melee_accuracy_bonus = 7 // Accurate.
 
 /obj/item/material/twohanded/ravenor/sword/commisword/sabre
@@ -247,7 +246,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	throw_speed = 3
 	base_parry_chance = 35
 	wielded_parry_bonus = 5
-	attack_cooldown_modifier = 0
+	attack_cooldown_modifier = 1.4
 	melee_accuracy_bonus = 10
 
 
@@ -260,7 +259,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	hitsound = list('sound/weapons/slash1.ogg','sound/weapons/slash2.ogg','sound/weapons/slash3.ogg')
 	attack_verb = list("bashed", "chopped", "slashed")
 	obj_flags = null // no shock
-	slot_flags = SLOT_BELT|SLOT_BACK
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_HOLSTER
 	w_class = ITEM_SIZE_LARGE
 	max_force = 80
 	force_multiplier = 0.46 // Bad one handed. Stronger than sword two handed.
@@ -273,7 +272,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	does_spin = TRUE
 	base_parry_chance = 15 // Really bad one handed. Equal to a sword when two handed.
 	wielded_parry_bonus = 15
-	attack_cooldown_modifier = 1
+	attack_cooldown_modifier = 1.4
 	melee_accuracy_bonus = 5
 
 
@@ -286,7 +285,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	wielded_item_state = "bone_spear-w"
 	attack_verb = list("pierced", "stabbed", "slashed")
 	obj_flags = null // no shock
-	slot_flags = SLOT_BELT|SLOT_BACK
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_HOLSTER
 	w_class = ITEM_SIZE_LARGE
 	max_force = 60
 	force_multiplier = 0.42
@@ -299,7 +298,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	does_spin = FALSE
 	base_parry_chance = 10
 	wielded_parry_bonus = 20 // Defending eezi
-	attack_cooldown_modifier = 0.7
+	attack_cooldown_modifier = 1.2
 	melee_accuracy_bonus = 7 // Primitive easy to use weapon.
 
 /obj/item/material/twohanded/ravenor/axe/spear/adamantine
@@ -329,7 +328,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	sharp = TRUE
 	base_parry_chance = 5
 	wielded_parry_bonus = 30 // Long reach good defense.
-	attack_cooldown_modifier = 1.2
+	attack_cooldown_modifier = 1.6
 	melee_accuracy_bonus = 7
 
 /obj/item/material/twohanded/ravenor/axe/spear/fuscina/adamantine
@@ -358,7 +357,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	throw_speed = 2
 	base_parry_chance = 10
 	wielded_parry_bonus = 25
-	attack_cooldown_modifier = 1.6
+	attack_cooldown_modifier = 1.8
 	melee_accuracy_bonus = 10
 	does_spin = FALSE // Spear.
 
@@ -386,7 +385,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	throw_speed = 1
 	base_parry_chance = 10 // Not as fancy as a saintie. But simple can be effective.
 	wielded_parry_bonus = 15
-	attack_cooldown_modifier = 1.4
+	attack_cooldown_modifier = 1.6
 	melee_accuracy_bonus = 5
 
 /obj/item/material/twohanded/ravenor/axe/bardiche/adamantine
@@ -401,13 +400,13 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 // CHAINSWORDS
 /obj/item/material/twohanded/ravenor/chainsword
 	name = "locke pattern chainsword"
-	desc = "A basic chainsword constructed in the small scale forges of the Mercy Forgeworld. Cheaped out on quality, at least its still a chainsword!"
+	desc = "A standard pattern chainsword constructed in the holy manufactorums of the Mercy Forgeworld."
 	icon_state = "mercychainsword"
 	item_state = "mercychainsword"
 	attack_verb = list("gored", "chopped", "smashed", "battered")
 	hitsound = 'sound/weapons/chainsword.ogg'
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
-	slot_flags = SLOT_BELT|SLOT_BACK
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_HOLSTER
 	w_class = ITEM_SIZE_HUGE
 	max_force = 100
 	force_multiplier = 0.65
@@ -420,7 +419,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	does_spin = TRUE
 	base_parry_chance = 25
 	wielded_parry_bonus = 5
-	attack_cooldown_modifier = 1.2 // Chainblade.
+	attack_cooldown_modifier = 1.6 // Chainblade.
 	melee_accuracy_bonus = 10 // Chainblades don't miss.
 
 /obj/item/material/twohanded/ravenor/chainsword/guard
@@ -436,7 +435,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	max_force = 90
 	base_parry_chance = 30
 	wielded_parry_bonus = 5
-	attack_cooldown_modifier = 0.9 // Lighter one-handed variant of the Mercy, faster attack, higher accuracy and defense in exchange for damage.
+	attack_cooldown_modifier = 1.4 // Lighter one-handed variant of the Mercy, faster attack, higher accuracy and defense in exchange for damage.
 	melee_accuracy_bonus = 15
 
 /obj/item/material/twohanded/ravenor/chainsword/relic
@@ -476,7 +475,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	throw_speed = 1
 	base_parry_chance = 32
 	wielded_parry_bonus = 5
-	attack_cooldown_modifier = 0.85 // Same design as guard, just higher quality.
+	attack_cooldown_modifier = 1.4 // Same design as guard, just higher quality.
 	melee_accuracy_bonus = 17
 
 /obj/item/material/twohanded/ravenor/chainsword/astartes
@@ -491,7 +490,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	thrown_force_multiplier = 0.62
 	throw_speed = 2
 	melee_accuracy_bonus = 20
-	attack_cooldown_modifier = 0.65
+	attack_cooldown_modifier = 1.4
 	base_parry_chance = 25 // Astartes melee skill is crazy high.
 	wielded_parry_bonus = 5
 	str_requirement = 1 // Does a skill check. Do not set to anything else.
@@ -517,7 +516,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	does_spin = FALSE
 	base_parry_chance = 15
 	wielded_parry_bonus = 20
-	attack_cooldown_modifier = 1.6
+	attack_cooldown_modifier = 1.8
 	melee_accuracy_bonus = 10
 
 /obj/item/material/twohanded/ravenor/axe/thunderhammer/astartes
@@ -530,7 +529,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	throw_speed = 0.5
 	base_parry_chance = 10 // Astartes melee covers this.
 	wielded_parry_bonus = 20
-	attack_cooldown_modifier = 1 // Astartes melee skill is crazy high.
+	attack_cooldown_modifier = 1.4
 	melee_accuracy_bonus = 10
 	str_requirement = 1
 
@@ -556,7 +555,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	does_spin = FALSE // Ork throwing is like shooting a bullet.
 	base_parry_chance = 30
 	wielded_parry_bonus = 0 // Orks don't two hand melee.
-	attack_cooldown_modifier = 0.6
+	attack_cooldown_modifier = 1.4
 	melee_accuracy_bonus = 12 // Too big to miss.
 	str_requirement = 1
 
@@ -578,7 +577,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	thrown_force_multiplier = 0.45
 	throw_speed = 3
 	melee_accuracy_bonus = 10
-	attack_cooldown_modifier = 0.5
+	attack_cooldown_modifier = 1.2
 	base_parry_chance = 25
 
 /obj/item/material/twohanded/ravenor/lashoftorment
@@ -589,7 +588,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	item_state = "lash"
 	hitsound = 'sound/weapons/whip.ogg'
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
-	slot_flags = SLOT_BELT|SLOT_BACK
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_HOLSTER
 	w_class = ITEM_SIZE_LARGE
 	origin_tech = list(TECH_COMBAT = 5)
 	attack_verb = list("flicked", "whipped", "lashed")
@@ -604,7 +603,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	does_spin = TRUE
 	base_parry_chance = 25
 	wielded_parry_bonus = 10
-	attack_cooldown_modifier = 0.7
+	attack_cooldown_modifier = 1.2
 	melee_accuracy_bonus = 15 // Tis a whip.
 
 /obj/item/material/twohanded/ravenor/lashoftorment/New() // Magic
@@ -639,7 +638,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	attack_verb = list("slashed")
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
-	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_POCKET
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_HOLSTER|SLOT_POCKET
 	w_class = ITEM_SIZE_SMALL
 	max_force = 40
 	force_multiplier = 0.22
@@ -652,7 +651,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	does_spin = FALSE
 	base_parry_chance = 20
 	wielded_parry_bonus = 5
-	attack_cooldown_modifier = -0.6
+	attack_cooldown_modifier = 0.5
 	melee_accuracy_bonus = 0 // Difficult to use.
 	lock_picking_level = 4
 
@@ -680,7 +679,23 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	thrown_force_multiplier = 0.18 // Not good at throwing.
 	base_parry_chance = 23
 	wielded_parry_bonus = 5
-	attack_cooldown_modifier = -0.4
+	attack_cooldown_modifier = 0.6
+	melee_accuracy_bonus = 3
+	armor_penetration = 5
+	lock_picking_level = 2
+
+/obj/item/material/twohanded/ravenor/knife/tau
+	name = "tau blade"
+	desc = "A blade built for the mud and blood, designed to punch through the chaos of close-quarters combat."
+	icon = 'icons/obj/weapons/knife.dmi'
+	icon_state = "tacknife"
+	max_force = 45
+	force_multiplier = 0.26
+	unwielded_force_divisor = 0.25 // same stats as trench knife until someone decides how tau knives differ from normal ones...
+	thrown_force_multiplier = 0.18
+	base_parry_chance = 23
+	wielded_parry_bonus = 5
+	attack_cooldown_modifier = 0.5
 	melee_accuracy_bonus = 3
 	armor_penetration = 5
 	lock_picking_level = 2
@@ -696,7 +711,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	thrown_force_multiplier = 0.23 // Now thats a knoife
 	base_parry_chance = 20
 	wielded_parry_bonus = 5
-	attack_cooldown_modifier = -0.4
+	attack_cooldown_modifier = 0.5
 	melee_accuracy_bonus = 5
 	armor_penetration = 5
 	throw_speed = 4
@@ -713,7 +728,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	thrown_force_multiplier = 0.21
 	base_parry_chance = 25
 	wielded_parry_bonus = 5
-	attack_cooldown_modifier = 0
+	attack_cooldown_modifier = 0.7
 	melee_accuracy_bonus = 3
 	armor_penetration = 4
 	throw_speed = 3
@@ -725,14 +740,14 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	icon_state = "catachanfang"
 	item_state = "EB-knife"
 	max_force = 55
-	slot_flags = SLOT_BELT|SLOT_BACK
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_HOLSTER
 	w_class = ITEM_SIZE_NORMAL
 	force_multiplier = 0.32
 	unwielded_force_divisor = 0.3
 	thrown_force_multiplier = 0.3
 	base_parry_chance = 25 // Excellent parry.
 	wielded_parry_bonus = 5
-	attack_cooldown_modifier = 0
+	attack_cooldown_modifier = 0.8
 	melee_accuracy_bonus = 0 // Difficult to use.
 	armor_penetration = 6
 	throw_speed = 3
@@ -749,14 +764,14 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	item_state = "thunder_hammer_old"
 	color = "#292929"
 	max_force = 55
-	slot_flags = SLOT_BELT|SLOT_BACK
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_HOLSTER
 	w_class = ITEM_SIZE_NORMAL
 	force_multiplier = 0.22
 	unwielded_force_divisor = 0.19
 	thrown_force_multiplier = 0.22
 	base_parry_chance = 25
 	wielded_parry_bonus = 5
-	attack_cooldown_modifier = 0.5
+	attack_cooldown_modifier = 1
 	melee_accuracy_bonus = 5
 	throw_speed = 0.5
 	w_class = ITEM_SIZE_HUGE
@@ -826,7 +841,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	edge = 1
 	sharp = 1
 	w_class = ITEM_SIZE_HUGE
-	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_HOLSTER|SLOT_S_STORE
 	atom_flags = 0
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	origin_tech = list(TECH_MAGNET = 6, TECH_COMBAT = 6)
@@ -862,7 +877,7 @@ All weapons should use twohanded/warhammer -- otherwise it will break.
 	throw_speed = 1
 	throw_range = 4
 	sharp = TRUE
-	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE //we have a power sword belt sprite, but im not going to code it in just yet, alright? enough codin' today
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_HOLSTER|SLOT_S_STORE //we have a power sword belt sprite, but im not going to code it in just yet, alright? enough codin' today
 	block_chance = 33
 	sales_price = 0
 	w_class = ITEM_SIZE_HUGE

@@ -2,8 +2,8 @@
 	name = "Dauntless"
 	desc = "A frankensteined imperial corvette-class explorer vessel, broadcasting Imperial codes and the designation \"Dauntless, HSC-4-13-X\"."
 	fore_dir = WEST
-	vessel_mass = 100000
-	burn_delay = 2 SECONDS
+	vessel_mass = 10000
+	burn_delay = 1 SECONDS
 	sector_flags = OVERMAP_SECTOR_KNOWN|OVERMAP_SECTOR_IN_SPACE|OVERMAP_SECTOR_BASE
 	known_ships = list(
 		/obj/overmap/visitable/ship/landable/exploration_shuttle,
@@ -85,11 +85,11 @@
 	name = "Charon"
 	desc = "An SSE-U11 long range shuttle, broadcasting ImperialEC codes and the callsign \"Dauntless-2 Charon\"."
 	shuttle = "Charon"
-	max_speed = 1/(2 SECONDS)
-	burn_delay = 1 SECONDS
-	vessel_mass = 3000
+	max_speed = 1/(1 SECONDS)
+	burn_delay = 0.5 SECONDS
+	vessel_mass = 2000
 	fore_dir = NORTH
-	skill_needed = SKILL_BASIC
+	skill_needed = SKILL_TRAINED
 	vessel_size = SHIP_SIZE_SMALL
 	known_ships = list(
 		/obj/overmap/visitable/ship/torch,
@@ -101,7 +101,7 @@
 	name = "Aquila"
 	desc = "A PM-24 modular transport, broadcasting ImperialEC codes and the callsign \"Dauntless-1 Aquila\"."
 	shuttle = "Aquila"
-	vessel_mass = 10000
+	vessel_mass = 3000
 	max_speed = 1/(1 SECONDS)
 	burn_delay = 0.5 SECONDS //spammable, but expensive
 	fore_dir = NORTH
@@ -117,8 +117,8 @@
 	desc = "An SSE-U3 utility pod, broadcasting ImperialEC codes and the callsign \"Dauntless-3 Guppy\"."
 	shuttle = "Guppy"
 	max_speed = 1/(3 SECONDS)
-	burn_delay = 2 SECONDS
-	vessel_mass = 1800
+	burn_delay = 0.2 SECONDS
+	vessel_mass = 900
 	fore_dir = SOUTH
 	skill_needed = SKILL_BASIC
 	vessel_size = SHIP_SIZE_TINY
@@ -131,14 +131,14 @@
 /obj/machinery/computer/shuttle_control/explore/aquila
 	name = "aquila control console"
 	shuttle_tag = "Aquila"
-	req_access = list(access_aquila_helm)
+	req_access = list(access_restricted)
 
 /obj/machinery/computer/shuttle_control/explore/exploration_shuttle
 	name = "shuttle control console"
 	shuttle_tag = "Charon"
-	req_access = list(access_expedition_shuttle_helm)
+	req_access = list(access_dauntless)
 
 /obj/machinery/computer/shuttle_control/explore/guppy
 	name = "guppy control console"
 	shuttle_tag = "Guppy"
-	req_access = list(access_guppy_helm)
+	req_access = null

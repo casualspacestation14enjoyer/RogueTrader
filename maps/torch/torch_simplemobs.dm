@@ -40,7 +40,7 @@
 		laser = ARMOR_LASER_PRIMAL
 		)
 	speed = 8
-	maxHealth = 100
+	maxhealth = 100
 	health = 100
 	harm_intent_damage = 5
 	natural_weapon = /obj/item/natural_weapon/punch
@@ -111,7 +111,7 @@
 	desc = "A Imperial Navy armsman with armaments. This one seems to be more armed than the rest, sporting a Vesper machine-pistol."
 	icon_state = "fleetteamlead"
 	icon_living = "fleetteamlead"
-	maxHealth = 150
+	maxhealth = 150
 	health = 150
 	casingtype = /obj/item/ammo_casing/pistol
 	projectiletype = /obj/item/projectile/bullet/pistol
@@ -146,7 +146,7 @@
 		laser = ARMOR_LASER_FLAK
 		)
 	speed = 4
-	maxHealth = 200
+	maxhealth = 200
 	health = 200
 	min_gas = null
 	max_gas = null
@@ -219,7 +219,7 @@
 	icon_state = "fleetheavy"
 	icon_living = "fleetheavy"
 	rapid = TRUE
-	maxHealth = 300
+	maxhealth = 300
 	health = 300
 	special_attack_cooldown = 1.5 MINUTES
 	base_attack_cooldown = 0.5 SECONDS

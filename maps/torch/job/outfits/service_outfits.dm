@@ -10,6 +10,8 @@
 	back = /obj/item/storage/backpack/satchel/warfare/heavy
 	id_types = list(/obj/item/card/id/torch/crew)
 	pda_type = /obj/item/modular_computer/pda
+	backpack_contents = list(/obj/item/pen/fancy/quill = 1, /obj/item/material/twohanded/ravenor/knife = 1)
+
 
 /singleton/hierarchy/outfit/job/torch/crew/service/guest
 	name = OUTFIT_JOB_NAME("Noble Guest")
@@ -21,10 +23,10 @@
 	l_pocket = /obj/item/device/flashlight/lantern
 
 /singleton/hierarchy/outfit/job/torch/crew/service/magister
-	name = OUTFIT_JOB_NAME("Chamber Magister")
+	name = OUTFIT_JOB_NAME("Tavern Keeper")
 	l_ear = /obj/item/device/radio/headset/headset_service
 	head = /obj/item/clothing/head/helmet/pilgrimcap/bighat
-	suit = /obj/item/clothing/suit/armor/grim/pilgrim/innapron
+	suit = /obj/item/clothing/suit/armor/grim/pilgrim/magister
 	uniform = /obj/item/clothing/under/service
 	gloves = /obj/item/clothing/gloves/thick/leather
 	suit_store = /obj/item/gun/projectile/shotgun/doublebarrel
@@ -38,7 +40,7 @@
 /singleton/hierarchy/outfit/job/torch/crew/service/janitor
 	name = OUTFIT_JOB_NAME("Chamber Assistant")
 	l_ear = /obj/item/device/radio/headset/headset_service
-	suit = /obj/item/clothing/suit/armor/grim/pilgrim/servant
+	suit = /obj/item/clothing/suit/armor/grim/pilgrim/innapron
 	uniform = /obj/item/clothing/under/rank/chef
 	gloves = /obj/item/clothing/gloves/thick/leather
 	shoes = /obj/item/clothing/shoes/jackboots/pilgrim_boots
@@ -65,7 +67,7 @@
 
 
 /singleton/hierarchy/outfit/job/torch/crew/service/guest/fleet
-	name = OUTFIT_JOB_NAME("Deck Chief - Fleet")
+	name = OUTFIT_JOB_NAME("Deck Boss - Fleet")
 	uniform = /obj/item/clothing/under/solgov/utility/fleet/supply
 	shoes = /obj/item/clothing/shoes/dutyboots
 

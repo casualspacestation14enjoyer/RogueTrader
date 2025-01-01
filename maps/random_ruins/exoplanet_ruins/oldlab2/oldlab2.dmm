@@ -670,7 +670,7 @@
 /area/map_template/oldlab2/recandlockers)
 "dT" = (
 /obj/machinery/smartfridge/secure/medbay{
-	req_access = list(list("ACCESS_CHEMISTRY","ACCESS_MEDICAL_EQUIP"))
+	req_access = list("ACCESS_MEDICAL")
 	},
 /turf/simulated/floor/tiled/white,
 /area/map_template/oldlab2/medical)
@@ -1762,7 +1762,6 @@
 	},
 /obj/structure/closet/secure_closet{
 	name = "Security Equipment Locker";
-	req_access = list("ACCESS_SECURITY")
 	},
 /obj/floor_decal/industrial/outline/grey,
 /obj/item/clothing/accessory/storage/bandolier/safari,
@@ -3250,7 +3249,6 @@
 	dir = 1;
 	name = "north bump";
 	pixel_y = 24;
-	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
 	},
 /obj/machinery/light{
 	dir = 1
@@ -3566,7 +3564,7 @@
 	dir = 1;
 	name = "north bump";
 	pixel_y = 24;
-	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
+	req_access = list("ACCESS_MECHANICUS")
 	},
 /obj/machinery/light{
 	dir = 1
@@ -3622,7 +3620,7 @@
 	dir = 1;
 	name = "north bump";
 	pixel_y = 24;
-	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
+	req_access = list("ACCESS_MECHANICUS")
 	},
 /obj/structure/cable/yellow{
 	d2 = 8;

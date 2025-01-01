@@ -9,7 +9,8 @@
 	screen_shake = 1
 	space_recoil = 0 // Kinda silly to use rifles to  be flying around instead of jetpacks.
 	combustion = 1
-	slowdown_general = 0.1
+	slowdown_general = 0.03
+	slot_flags = SLOT_BELT|SLOT_HOLSTER
 
 	var/caliber = CALIBER_SLUG		//determines which casings will fit
 	var/handle_casings = EJECT_CASINGS	//determines how spent casings should be handled
@@ -56,6 +57,8 @@
 	update_icon()
 
 /obj/item/gun/projectile/consume_next_projectile()
+	if(calibrated == 0) // If not calibrated, adjust jam chance
+		jam_chance = calibration_penalty
 	if(!is_jammed && prob(jam_chance))
 		src.visible_message(SPAN_DANGER("\The [src] jams!"))
 		is_jammed = 1

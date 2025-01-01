@@ -251,13 +251,13 @@
 
 //return 1 if slipped, 0 otherwise
 /mob/proc/handle_spaceslipping()
-	if(prob(skill_fail_chance(SKILL_EVA, slip_chance(10), SKILL_EXPERIENCED)))
+	if(prob(skill_fail_chance(SKILL_EVA, slip_chance(2), SKILL_EXPERIENCED)))
 		to_chat(src, SPAN_WARNING("You slipped!"))
 		step(src,turn(last_move, pick(45,-45)))
 		return 1
 	return 0
 
-/mob/proc/slip_chance(prob_slip = 10)
+/mob/proc/slip_chance(prob_slip = 5)
 	if(stat)
 		return 0
 	if(buckled)

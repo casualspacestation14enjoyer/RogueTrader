@@ -420,19 +420,40 @@
 	color = WOOD_COLOR_RICH
 	pew_material = MATERIAL_MAHOGANY
 
+/obj/structure/bed/chair/stoolw
+	name = "\the bar stool"
+	desc = "An old steel stool."
+	base_icon = "bar_black"
+	icon_state = "bar_black"
+
+/obj/structure/bed/chair/stoolw/wood
+	desc = "An old wood stool."
+	base_icon = "barstool"
+	icon_state = "barstool"
+
+/obj/structure/bed/chair/stoolw/rotate()//Can't rotate it.
+	return
+
 /obj/structure/bed/chair/throne
 	name = "\the rogue throne"
 	desc = "Fit for baron, count, or even duke. Surely fit for your sorry rear end."
-	base_icon = "throne"
-	icon_state = "throne"
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	base_icon = "cave_throne"
+	icon_state = "cave_throne"
 
-/obj/structure/bed/chair/governor_throne
-	name = "planetary Governor Throne"
+/obj/structure/bed/chair/throne/two
+	name = "imperial throne"
 	desc = "An expensive and serious looking chair to use on an office."
 	base_icon = "comm"
 	icon = 'icons/map_project/furniture_and_decor.dmi'
 	icon_state = "comm"
 
+/obj/structure/bed/chair/throne/three
+	name = "imperial throne"
+	desc = "An expensive and serious looking chair to use on an office."
+	base_icon = "chair"
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "chair"
 
 /obj/structure/bed/chair/ancient_throne
 	name = "ancient throne"
@@ -468,3 +489,17 @@
 	base_icon = "comfychair2"
 	icon = 'icons/map_project/furniture_and_decor.dmi'
 	icon_state = "comfychair2"
+
+/obj/structure/bed/chair/cage
+	name = "cage"
+	desc = "A horrible cramped cage."
+	icon = 'icons/obj/furniture.dmi'
+	base_icon = "cage1"
+	icon_state = "cage1"
+
+/obj/structure/bed/chair/altar
+	name = "altar"
+	desc = "A disgusting stone altar."
+	icon = 'icons/obj/furniture.dmi'
+	base_icon = "altar_empty"
+	icon_state = "altar_empty"

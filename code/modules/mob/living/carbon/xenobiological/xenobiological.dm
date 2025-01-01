@@ -5,7 +5,7 @@
 	pass_flags = PASS_FLAG_TABLE
 	speak_emote = list("chirps")
 
-	maxHealth = 150
+	maxhealth = 150
 	health = 150
 	gender = NEUTER
 
@@ -74,7 +74,7 @@
 	return /datum/reagent/slimejelly
 
 /mob/living/carbon/slime/adjustToxLoss(amount)
-	toxloss = clamp(toxloss + amount, 0, maxHealth)
+	toxloss = clamp(toxloss + amount, 0, maxhealth)
 
 /mob/living/carbon/slime/setToxLoss(amount)
 	adjustToxLoss(amount-getToxLoss())
@@ -99,7 +99,7 @@
 
 	var/tally = ..()
 
-	var/health_deficiency = (maxHealth - health)
+	var/health_deficiency = (maxhealth - health)
 	if(health_deficiency >= 30) tally += (health_deficiency / 25)
 
 	if (bodytemperature < 183.222)
@@ -158,7 +158,7 @@
 	. = ..()
 
 	statpanel("Status")
-	stat(null, "Health: [round((health / maxHealth) * 100)]%")
+	stat(null, "Health: [round((health / maxhealth) * 100)]%")
 	stat(null, "Intent: [a_intent]")
 
 	if (client.statpanel == "Status")

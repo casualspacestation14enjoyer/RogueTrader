@@ -3,7 +3,7 @@
 	desc = "A primitive in appearance hovering robot, with some menacing looking blades jutting out from it. It bears no manufacturer markings of any kind. You feel some form of malicious intelligence behind its shell..."
 	icon = 'packs/legion/legion.dmi'
 	icon_state = "hivebot"
-	maxHealth = 15
+	maxhealth = 15
 	bleed_colour = SYNTH_BLOOD_COLOUR
 	faction = "legion"
 

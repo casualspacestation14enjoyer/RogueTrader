@@ -16,7 +16,7 @@
 	response_disarm = "shoves aside"
 	response_harm   = "smacks"
 	stop_automated_movement_when_pulled = FALSE
-	maxHealth = 700
+	maxhealth = 700
 	health = 700
 	melee_damage_lower = 10
 	melee_damage_upper = 25
@@ -87,7 +87,7 @@
 	icon_state = "behemoth"
 	icon_living = "behemoth"
 	icon_dead = "behemoth_DEAD"
-	maxHealth = 1500
+	maxhealth = 1500
 	health = 1500
 	projectiletype = /obj/item/projectile/energy/laser/powerful //He shoots a big fuck you laser.
 	projectilesound = 'sound/weapons/Laser.ogg'
@@ -101,7 +101,7 @@
 	icon_living = "behemoth"
 	icon_dead = "behemoth_DEAD"
 	desc = "The chassis of an ancient and heretekal being known as a Man of Iron. A very pricey artifact of a time long feared."
-	maxHealth = 0
+	maxhealth = 0
 	health = 0
 
 
@@ -327,7 +327,7 @@
 	icon_dead = "minesect_dead"
 	speak_emote = list("beeps", "buzzes", "hisses")
 	health = 100
-	maxHealth = 100
+	maxhealth = 100
 
 /mob/living/simple_animal/hostile/mining_borg/minesect/proc/explode()
 	visible_message("\the [src] looks like it's about to explode!")

@@ -19,6 +19,7 @@
 /area/ship/scrap/crew/cryo
 	name = "Cryo Storage"
 	icon_state = "cryo"
+	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
 
 /area/ship/scrap/crew/dorms1
 	name = "Crew Cabin #1"
@@ -98,6 +99,7 @@
 	name = "Maintenance Compartments"
 	icon_state = "amaint"
 	req_access = list(access_demeter)
+	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
 
 /area/ship/scrap/maintenance/hallway
 	name = "Maintenance Corridors"
@@ -159,11 +161,12 @@
 	name = "Bridge"
 	icon_state = "bridge"
 	req_access = list(access_demeter)
+	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
 
 /area/ship/scrap/command/captain
 	name = "Captain's Quarters"
 	icon_state = "captain"
-	req_access = list(access_demeter_captain)
+	req_access = list(access_demeter)
 
 /area/ship/scrap/comms
 	name = "Communications Relay"

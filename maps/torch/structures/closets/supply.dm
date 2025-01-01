@@ -24,7 +24,7 @@
 
 /obj/structure/closet/secure_closet/decktech
 	name = "deck technician's locker"
-	req_access = list(access_cargo)
+	req_access = list(access_dauntless)
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/cargo/worker
 
 /obj/structure/closet/secure_closet/decktech/WillContain()
@@ -49,8 +49,8 @@
 	)
 
 /obj/structure/closet/secure_closet/deckofficer
-	name = "deck chief's locker"
-	req_access = list(access_qm)
+	name = "deck boss's locker"
+	req_access = list(access_dauntless)
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/cargo/deck_officer
 
 /obj/structure/closet/secure_closet/deckofficer/WillContain()
@@ -79,7 +79,7 @@
 
 /obj/structure/closet/secure_closet/prospector
 	name = "prospector's locker"
-	req_access = list(access_mining)
+	req_access = list(access_dauntless)
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/cargo
 
 /obj/structure/closet/secure_closet/prospector/WillContain()

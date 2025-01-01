@@ -5,7 +5,7 @@
 	real_name = "Cyborg"
 	icon = 'icons/mob/robots.dmi'
 	icon_state = "robot"
-	maxHealth = 300
+	maxhealth = 300
 	health = 300
 
 	mob_bump_flag = ROBOT
@@ -76,7 +76,7 @@
 
 	var/spawn_sound = 'sound/voice/liveagain.ogg'
 	var/pitch_toggle = TRUE
-	var/list/req_access = list(access_robotics)
+	var/list/req_access = list(access_mechanicus)
 	var/ident = 0
 	var/modtype = "Default"
 	var/datum/effect/spark_spread/spark_system //So they can initialize sparks whenever/N

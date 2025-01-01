@@ -4,17 +4,11 @@ var/global/const/access_demeter = "access_demeter" //998
 	desc = "Demeter Crewman"
 	region = ACCESS_REGION_NONE
 
-var/global/const/access_demeter_captain = "access_demeter_CAPTAIN" //999
-/datum/access/demeter_captain
-	id = access_demeter_captain
-	desc = "Demeter Captain"
-	region = ACCESS_REGION_NONE
-
 /obj/item/card/id/demeter
-	access = list(access_demeter, access_demeter_captain)
+	access = list(access_demeter)
 
 /obj/item/card/id/demeter_captain
-	access = list(access_demeter, access_demeter_captain)
+	access = list(access_demeter)
 
 /obj/machinery/door/airlock/autoname/demeter
 

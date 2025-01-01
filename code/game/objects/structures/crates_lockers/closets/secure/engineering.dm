@@ -1,7 +1,7 @@
 /obj/structure/closet/secure_closet/engineering_chief
 	name = "magos explorator's locker"
 	closet_appearance = /singleton/closet_appearance/secure_closet/engineering/ce
-	req_access = list(access_ce)
+	req_access = list(access_mechanicus_command)
 
 /obj/structure/closet/secure_closet/engineering_chief/WillContain()
 	return list(
@@ -26,35 +26,34 @@
 
 /obj/structure/closet/secure_closet/engineering_electrical
 	name = "electrical supplies"
-	req_access = list(access_engine_equip)
+	req_access = list(access_mechanicus_command)
 	closet_appearance = /singleton/closet_appearance/secure_closet/engineering/electrical
 
 /obj/structure/closet/secure_closet/engineering_electrical/WillContain()
 	return list(
-		/obj/item/clothing/gloves/nabber = 2,
-		/obj/item/clothing/gloves/insulated = 3,
-		/obj/item/storage/toolbox/electrical = 3,
+		/obj/item/clothing/gloves/insulated = 2,
+		/obj/item/storage/toolbox/electrical = 2,
 		/obj/item/module/power_control = 3,
-		/obj/item/device/multitool = 3
+		/obj/item/device/multitool = 2
 	)
 
 /obj/structure/closet/secure_closet/engineering_welding
 	name = "welding supplies"
-	req_access = list(access_construction)
+	req_access = list(access_dauntless)
 	closet_appearance = /singleton/closet_appearance/secure_closet/engineering/welding
 
 /obj/structure/closet/secure_closet/engineering_welding/WillContain()
 	return list(
 		/obj/item/clothing/head/welding = 3,
 		/obj/item/weldingtool/largetank = 3,
-		/obj/item/storage/backpack/weldpack = 3,
+		/obj/item/storage/backpack/weldpack = 1,
 		/obj/item/clothing/glasses/welding = 3,
-		/obj/item/welder_tank = 6
+		/obj/item/welder_tank = 2
 	)
 
 /obj/structure/closet/secure_closet/engineering_personal
 	name = "tech priest's locker"
-	req_access = list(access_engine_equip)
+	req_access = list(access_mechanicus_command)
 	closet_appearance = /singleton/closet_appearance/secure_closet/engineering
 
 /obj/structure/closet/secure_closet/engineering_personal/WillContain()
@@ -72,7 +71,7 @@
 
 /obj/structure/closet/secure_closet/atmos_personal
 	name = "technician's locker"
-	req_access = list(access_atmospherics)
+	req_access = list(access_dauntless)
 	closet_appearance = /singleton/closet_appearance/secure_closet/engineering/atmos
 
 /obj/structure/closet/secure_closet/atmos_personal/WillContain()

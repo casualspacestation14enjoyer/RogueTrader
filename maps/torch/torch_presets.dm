@@ -93,13 +93,13 @@ var/global/const/NETWORK_FIFTH_DECK  = "Fifth Deck"
 
 // Substation SMES
 /obj/machinery/power/smes/buildable/preset/torch/substation
-	uncreated_component_parts = list(/obj/item/stock_parts/smes_coil = 1) // Note that it gets one more from construction
+	uncreated_component_parts = list(/obj/item/stock_parts/smes_coil = 2) // Note that it gets one more from construction
 	_input_maxed = TRUE
 	_output_maxed = TRUE
 
 // Substation SMES (charged and with full I/O setting)
 /obj/machinery/power/smes/buildable/preset/torch/substation_full
-	uncreated_component_parts = list(/obj/item/stock_parts/smes_coil = 1)
+	uncreated_component_parts = list(/obj/item/stock_parts/smes_coil = 2)
 	_input_maxed = TRUE
 	_output_maxed = TRUE
 	_input_on = TRUE
@@ -134,7 +134,7 @@ var/global/const/NETWORK_FIFTH_DECK  = "Fifth Deck"
 /obj/machinery/power/smes/buildable/preset/torch/shuttle
 	uncreated_component_parts = list(
 		/obj/item/stock_parts/smes_coil/super_io = 1,
-		/obj/item/stock_parts/smes_coil/super_capacity = 1)
+		/obj/item/stock_parts/smes_coil/super_capacity = 2)
 	_input_maxed = TRUE
 	_output_maxed = TRUE
 	_input_on = TRUE
@@ -154,7 +154,7 @@ var/global/const/NETWORK_FIFTH_DECK  = "Fifth Deck"
 // Bridge Solars SMES. For those low pop rounds.
 /obj/machinery/power/smes/buildable/preset/torch/bridge_solar
 	uncreated_component_parts = list(
-		/obj/item/stock_parts/smes_coil = 1
+		/obj/item/stock_parts/smes_coil = 2
 	)
 	RCon_tag = "Solar - Bridge"
 	_input_maxed = TRUE
@@ -172,7 +172,7 @@ var/global/const/NETWORK_ENGINEERING_OUTPOST = "Engineering Outpost"
 		if(NETWORK_COMMAND)
 			return access_heads
 		if(NETWORK_ENGINE, NETWORK_ENGINEERING_OUTPOST)
-			return access_engine
+			return access_mechanicus
 
 /datum/map/torch/default_internal_channels()
 	return list(

@@ -547,27 +547,13 @@
 
 /obj/item/torch/Process()
 	..()
-/*	//This used to be broken, it's instead being commented out for not really needing to be used at the moment. Warfare doesn't simulate atmos.
-	var/datum/gas_mixture/air = loc.return_air()
-	var/oxy_mole = air.get_gas("oxygen")
-	var/total_mole = air.get_total_moles()
-	var/total_pressure = air.return_pressure()
-	if(oxy_mole && total_mole)
-		var/o2_pressure = (oxy_mole /total_mole )*total_pressure
-		if(o2_pressure <= HAZARD_LOW_PRESSURE)
-			snuff()
-
-	//else if(!oxy_mole)
-	//	snuff()
-*/
 	if(prob(1)) //Needs playtesting. This seems a little high.
 		if(istype(src.loc, /obj/structure/torchwall))
 			return //Please don't put out torches that are on the walls.
 		visible_message("A rush of wind puts out the torch.")
 		snuff()
 
-
-/obj/item/torch/proc/light(mob/user, manually_lit = FALSE)//This doesn't seem to update the icon appropiately, not idea why.
+/obj/item/torch/proc/light(mob/user, var/manually_lit = FALSE)
 	lit = TRUE
 	if(manually_lit && self_lighting == 1)
 		user.visible_message("<span class='notice'>\The [user] rips the lighting sheath off their [src].</span>")
@@ -594,7 +580,7 @@
 
 /obj/item/torch/use_tool(obj/item/W, mob/user, list/click_params)
 	..()
-	if(isflamesource(W))
+	if(isFlameOrHeatSource(W))
 		light()
 
 /obj/structure/torchwall
@@ -610,9 +596,10 @@
 /obj/structure/torchwall/New()
 	..()
 	if(prob(98))
-		lighttorch = new(src)
+		lighttorch = new /obj/item/torch(src)
 		if(prob(75))
-			lighttorch.lit = TRUE
+			lighttorch.light(null, FALSE)
+	lighttorch.update_icon()
 	update_icon()
 
 /obj/structure/torchwall/Destroy()
@@ -625,7 +612,7 @@
 	if(lighttorch)
 		if(lighttorch.lit)
 			icon_state = "torchwall1"
-			set_light(5, 7,"#E38F46")
+			set_light(4, 5,"#E38F46")
 
 		else
 			icon_state = "torchwall0"
@@ -636,53 +623,66 @@
 
 
 /obj/structure/torchwall/proc/insert_torch(obj/item/torch/T)
+	if(!istype(T, /obj/item/torch)) // Ensure only torches can be inserted
+		return
 	T.forceMove(src)
 	lighttorch = T
 	update_icon()
 	playsound(src, 'sound/items/torch_fixture1.ogg', 50, 0, -1)
 
-/obj/structure/torchwall/use_tool(obj/item/tool, mob/user, list/click_params)
-	. = ..()
-	// attempt to insert torch
-	add_fingerprint(user)
-	var/obj/item/torch/W
+/obj/structure/torchwall/attack_hand(mob/living/user)
+	if(lighttorch) // Check if there's a torch in the fixture
+		var/obj/item/torch/T = lighttorch
+		lighttorch = null // Clear the fixture's reference
+		if(user.put_in_active_hand(T)) // Attempt to put the torch into the user's hand
+			to_chat(user, "You take the torch from the fixture.")
+		else
+			to_chat(user, "Your hands are full! The torch drops to the ground.")
+			T.loc = user.loc // Drop the torch at the user's location
+		T.update_icon() // Sync the torch's icon state
+		T.set_light(T.lit ? 4 : 0, T.lit ? 5 : 0, "#E38F46")
+		update_icon()
+		playsound(src, 'sound/items/torch_fixture0.ogg', 50, 0, -1)
+		return TRUE
 
-	if(!lighttorch)
-		to_chat(user, "There is no torch here.")
-		return
-	// create a torch item and put it in the user's hand
-	user.put_in_active_hand(remove_torch())  //puts it in our active hand
-
-	if(lighttorch && !lighttorch.lit)
-		if(isflamesource(W))
-			lighttorch.light()
-			update_icon()
-			return
-
-	if(istype(W, /obj/item/torch))
-		if(lighttorch && lighttorch.lit)
-			if(!W.lit)
-				W.light()
-				update_icon()
-			return
-
-		else if(lighttorch)//To stop you from putting in a torch twice.
-			return
-
-		user.drop_item()
-		insert_torch(W)
-		src.add_fingerprint(user)
-
-	update_icon()
+	to_chat(user, "There is no torch here to take.")
+	return ..()
 
 /obj/structure/torchwall/proc/remove_torch()
-	. = lighttorch
-	lighttorch.dropInto(loc)
-	lighttorch.update_icon()
+	if(!lighttorch) // Ensure there's a torch to remove
+		return
+	var/obj/item/torch/T = lighttorch
 	lighttorch = null
+	T.loc = loc // Drop the torch at the torchwall's location
+	T.update_icon()
 	update_icon()
 	playsound(src, 'sound/items/torch_fixture0.ogg', 50, 0, -1)
+	return T
 
+/obj/structure/torchwall/use_tool(obj/item/tool, mob/user, list/click_params
+	var/obj/item/torch/W
+
+	if(istype(tool, /obj/item/torch)) // If the tool is a torch
+		W = tool
+		if(lighttorch) // Prevent inserting a second torch if one already exists
+			to_chat(user, "There is already a torch in the fixture.")
+			return
+		if(user.unEquip(W)) // Remove the torch from the user's hand or inventory
+			insert_torch(W)
+			to_chat(user, "You place the torch into the fixture.")
+		else
+			to_chat(user, "You can't seem to place the torch.")
+		return
+
+	// Handle lighting the torch if it's unlit and there's a valid flame source
+	if(lighttorch && !lighttorch.lit)
+		if(isFlameOrHeatSource(tool)) // Check if the tool is a valid flame source
+			lighttorch.light()
+			update_icon()
+			to_chat(user, "You light the torch in the fixture.")
+			return
+
+	return ..()
 
 //Pyres
 /obj/item/pyre
@@ -714,7 +714,7 @@
 	if(lit)
 		icon_state = "fireplacestand_f"
 		item_state = "fireplacestand_f"
-		set_light(5, 7, "#E38F46")
+		set_light(5, 6, "#E38F46")
 	else
 		icon_state = "fireplacestand"
 		item_state = "fireplacestand"
@@ -723,15 +723,13 @@
 			overlays += overlay_image(icon, "lighter")
 	update_held_icon()
 
-
-/obj/item/pyre/proc/light(var/mob/user, var/manually_lit = FALSE)//This doesn't seem to update the icon appropiately, not idea why.
+/obj/item/pyre/proc/light(mob/user, var/manually_lit = FALSE)//This doesn't seem to update the icon appropiately, not idea why.
 	lit = TRUE
 	if(manually_lit && self_lighting == 1)
 		user.visible_message("<span class='notice'>\The [user] rips the lighting sheath off their [src].</span>")
 	update_icon()
 	START_PROCESSING(SSprocessing, src)
 	playsound(src, 'sound/items/torch_light.ogg', 50, 0, -1)
-
 
 /obj/item/pyre/proc/snuff()
 	lit = FALSE
@@ -783,7 +781,7 @@
 	overlays = overlays.Cut()
 	if(lit)
 		icon_state = "fire_bl"
-		set_light(5, 7, "#E38F46")
+		set_light(5, 6, "#E38F46")
 	else
 		icon_state = "fire_bl"
 		set_light(0,0)
@@ -838,7 +836,7 @@
 	if(lit)
 		icon_state = "cauldron1"
 		item_state = "cauldron1"
-		set_light(5, 7, "#E38F46")
+		set_light(5, 6, "#E38F46")
 	else
 		icon_state = "cauldron0"
 		item_state = "cauldron0"

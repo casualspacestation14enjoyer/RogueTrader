@@ -22,28 +22,25 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 9
+	skill_points = 12
 	min_skill = list(SKILL_VIGOR = SKILL_EXPERIENCED,
 					SKILL_MEDICAL = SKILL_BASIC,
 					SKILL_PILOT = SKILL_TRAINED,
 					SKILL_DEVICES = SKILL_BASIC,
-					SKILL_COMBAT = SKILL_EXPERIENCED,
-					SKILL_GUNS = SKILL_EXPERIENCED,
+					SKILL_COMBAT = SKILL_MASTER,
+					SKILL_GUNS = SKILL_MASTER,
 					SKILL_MECH = SKILL_TRAINED,
 					SKILL_EVA = SKILL_TRAINED
 				)
-	max_skill = list(	SKILL_VIGOR = SKILL_MASTER,
+
+	max_skill = list(	SKILL_PILOT = SKILL_MASTER,
+						SKILL_COMBAT = SKILL_PRIMARIS,
 						SKILL_GUNS = SKILL_PRIMARIS,
-						SKILL_COMBAT = SKILL_LEGEND)
+						SKILL_VIGOR = SKILL_MASTER)
 
 	access = list(
-		access_security, access_brig, access_armory, access_forensics_lockers,
-		access_maint_tunnels, access_external_airlocks, access_emergency_storage,
-		access_teleporter, access_eva, access_bridge, access_heads, access_aquila,
-		access_hos, access_RC_announce, access_keycard_auth, access_sec_doors,
-		access_solgov_crew, access_gun, access_emergency_armory, access_hangar, access_torch_fax,
-		access_radio_comm, access_radio_sec
-	)
+		access_dauntless, access_restricted, access_restricted_command, access_mechanicus, access_medical,
+		access_medical_command, access_bridge)
 
 	software_on_spawn = list(/datum/computer_file/program/comm,
 							 /datum/computer_file/program/digitalwarrant,
@@ -82,13 +79,13 @@
 			H.fully_replace_character_name("Captain [current_name]")
 			H.species.weaken_mod = 0.71
 			H.species.stun_mod = 0.71
-			H.species.slowdown = -0.3
+			H.species.slowdown = -0.15
 			H.species.silent_steps = TRUE
 		else if(current_title == "Maccabian Sergeant")
 			H.fully_replace_character_name("Sergeant [current_name]")
 			H.species.weaken_mod = 0.73
 			H.species.stun_mod = 0.73
-			H.species.slowdown = -0.3
+			H.species.slowdown = -0.15
 		else if(current_title == "Krieg Captain")
 			H.fully_replace_character_name("Captain [current_name]")
 			H.species.toxins_mod = 0.65
@@ -117,6 +114,8 @@
 	spawn_positions = 1
 	supervisors = "the Captain, Seneschal and Rogue Trader"
 	economic_power = 5
+	department = "Security"
+	department_flag = SEC
 	minimal_player_age = 2
 	ideal_character_age = 35
 	minimum_character_age = list(SPECIES_HUMAN = 27)
@@ -127,12 +126,12 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 12
-	min_skill = list(SKILL_VIGOR = SKILL_TRAINED,
+	skill_points = 16
+	min_skill = list(SKILL_VIGOR = SKILL_EXPERIENCED,
 					SKILL_MEDICAL = SKILL_BASIC,
 					SKILL_DEVICES = SKILL_BASIC,
 					SKILL_COMBAT = SKILL_EXPERIENCED,
-					SKILL_GUNS = SKILL_TRAINED,
+					SKILL_GUNS = SKILL_EXPERIENCED,
 					SKILL_MECH = SKILL_TRAINED,
 					SKILL_FORENSICS = SKILL_EXPERIENCED,
 					SKILL_EVA = SKILL_TRAINED
@@ -142,11 +141,8 @@
 						SKILL_COMBAT = SKILL_LEGEND)
 
 	access = list(
-		access_security, access_brig, access_armory, access_forensics_lockers,
-		access_maint_tunnels, access_external_airlocks, access_emergency_storage,
-		access_eva, access_sec_doors, access_solgov_crew, access_gun, access_torch_fax,
-		access_radio_sec
-	)
+		access_dauntless, access_restricted, access_restricted_command, access_mechanicus, access_medical,
+		access_medical_command, access_bridge)
 
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
 							 /datum/computer_file/program/camera_monitor,
@@ -179,8 +175,10 @@
 
 /datum/job/enforcer
 	title = "Deck Enforcer"
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 3
+	spawn_positions = 3
+	department = "Security"
+	department_flag = SEC
 	supervisors = "Anyone with a fancy title..."
 	economic_power = 4
 	minimal_player_age = 0
@@ -195,12 +193,13 @@
 		/datum/mil_rank/civ/civ
 	)
 	skill_points = 12
-	min_skill = list(SKILL_VIGOR = SKILL_TRAINED,
+	min_skill = list(SKILL_VIGOR = SKILL_EXPERIENCED,
 					SKILL_MEDICAL = SKILL_BASIC,
 					SKILL_DEVICES = SKILL_BASIC,
-					SKILL_COMBAT = SKILL_TRAINED,
-					SKILL_GUNS = SKILL_TRAINED,
-					SKILL_FORENSICS = SKILL_TRAINED,
+					SKILL_COMBAT = SKILL_EXPERIENCED,
+					SKILL_GUNS = SKILL_EXPERIENCED,
+					SKILL_MECH = SKILL_TRAINED,
+					SKILL_FORENSICS = SKILL_EXPERIENCED,
 					SKILL_EVA = SKILL_TRAINED
 				)
 	max_skill = list(	SKILL_VIGOR = SKILL_MASTER,
@@ -208,11 +207,8 @@
 						SKILL_COMBAT = SKILL_MASTER)
 
 	access = list(
-		access_security, access_brig, access_maint_tunnels,
-		access_external_airlocks, access_emergency_storage,
-		access_eva, access_sec_doors, access_solgov_crew,
-		access_radio_sec
-	)
+		access_dauntless, access_restricted, access_mechanicus, access_medical,
+		access_medical_command)
 
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
 							 /datum/computer_file/program/camera_monitor)
@@ -249,6 +245,8 @@
 	minimal_player_age = 1
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	ideal_character_age = 35
+	department = "Security"
+	department_flag = SEC
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/security/cadian
 	alt_titles = list(
 		"Krieg Guardsman" = /singleton/hierarchy/outfit/job/torch/crew/security/krieg,
@@ -262,25 +260,20 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ
 	)
-	skill_points = 10
+	skill_points = 12
 	min_skill = list(SKILL_VIGOR = SKILL_EXPERIENCED,
 					SKILL_MEDICAL = SKILL_BASIC,
-					SKILL_DEVICES = SKILL_BASIC,
-					SKILL_COMBAT = SKILL_TRAINED,
-					SKILL_GUNS = SKILL_EXPERIENCED,
+					SKILL_COMBAT = SKILL_MASTER,
+					SKILL_GUNS = SKILL_MASTER,
+					SKILL_EVA = SKILL_TRAINED
 				)
 	max_skill = list(	SKILL_VIGOR = SKILL_MASTER,
 						SKILL_GUNS = SKILL_LEGEND,
 						SKILL_COMBAT = SKILL_LEGEND)
 
 	access = list(
-		access_security, access_brig, access_armory, access_forensics_lockers,
-		access_maint_tunnels, access_external_airlocks, access_emergency_storage,
-		access_teleporter, access_eva, access_bridge, access_heads, access_aquila,
-		access_hos, access_RC_announce, access_keycard_auth, access_sec_doors,
-		access_solgov_crew, access_gun, access_emergency_armory, access_hangar, access_torch_fax,
-		access_radio_comm, access_radio_sec
-	)
+		access_dauntless, access_restricted, access_mechanicus, access_medical,
+		access_medical_command, access_bridge)
 
 	software_on_spawn = list(/datum/computer_file/program/comm,
 							 /datum/computer_file/program/digitalwarrant,
@@ -319,13 +312,13 @@
 			H.fully_replace_character_name("[current_name]")
 			H.species.weaken_mod = 0.71
 			H.species.stun_mod = 0.71
-			H.species.slowdown = -0.3
+			H.species.slowdown = -0.1
 			H.species.silent_steps = TRUE
 		else if(current_title == "Maccabian Guardsman")
 			H.fully_replace_character_name("[current_name]")
 			H.species.weaken_mod = 0.73
 			H.species.stun_mod = 0.73
-			H.species.slowdown = -0.3
+			H.species.slowdown = -0.1
 		else if(current_title == "Krieg Guardsman")
 			H.fully_replace_character_name("[current_name]")
 			H.species.toxins_mod = 0.65

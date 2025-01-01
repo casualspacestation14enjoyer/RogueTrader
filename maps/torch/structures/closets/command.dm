@@ -28,8 +28,8 @@
 	)
 
 /obj/structure/closet/secure_closet/CO
-	name = "commanding officer's locker"
-	req_access = list(access_captain)
+	name = "rogue trader's locker"
+	req_access = list(access_roguetrader)
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/command/co
 
 /obj/structure/closet/secure_closet/CO/WillContain()
@@ -38,22 +38,13 @@
 		/obj/item/clothing/glasses/sunglasses,
 		/obj/item/device/radio/headset/heads/bridge/alt,
 		/obj/item/storage/belt/general,
-		/obj/item/melee/telebaton,
-		/obj/item/device/flash,
-		/obj/item/device/megaphone,
 		/obj/item/storage/box/ids,
-		/obj/item/material/clipboard,
-		/obj/item/device/holowarrant,
-		/obj/item/folder/blue,
 		/obj/item/material/knife/folding/swiss/officer,
-		/obj/item/storage/backpack/satchel/com,
-		/obj/item/clothing/suit/armor/grim/medium/command,
-		/obj/item/clothing/head/helmet/solgov/command,
 	)
 
 /obj/structure/closet/secure_closet/XO
-	name = "executive officer's locker"
-	req_access = list(access_hop)
+	name = "seneschal's locker"
+	req_access = list(access_roguetrader)
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/command/xo
 
 /obj/structure/closet/secure_closet/XO/WillContain()
@@ -61,8 +52,6 @@
 		/obj/item/clothing/glasses/sunglasses,
 		/obj/item/device/radio/headset/heads/bridge,
 		/obj/item/storage/belt/general,
-		/obj/item/melee/telebaton,
-		/obj/item/device/flash,
 		/obj/item/device/megaphone,
 		/obj/item/storage/box/headset,
 		/obj/item/device/radio/headset/heads/bridge/alt,
@@ -75,27 +64,19 @@
 		/obj/item/material/knife/folding/swiss/officer,
 		/obj/item/storage/backpack/satchel/com,
 		/obj/item/storage/box/imprinting,
-		/obj/item/clothing/suit/armor/grim/medium/command,
-		/obj/item/clothing/head/helmet/solgov/command
 	)
 
 /obj/structure/closet/secure_closet/sea
-	name = "senior enlisted advisor's locker"
-	req_access = list(access_senadv)
+	name = "senior forbidden locker"
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/command
 
 /obj/structure/closet/secure_closet/sea/WillContain()
 	return list(
 		/obj/item/clothing/glasses/sunglasses,
-		/obj/item/clothing/suit/armor/grim/medium/command,
-		/obj/item/clothing/head/helmet/solgov/command,
 		/obj/item/storage/belt/holster/general,
 		/obj/item/device/radio/headset/sea,
 		/obj/item/device/radio/headset/sea/alt,
 		/obj/item/storage/belt/general,
-		/obj/item/melee/telebaton,
-		/obj/item/device/flash,
-		/obj/item/device/megaphone,
 		/obj/item/material/clipboard,
 		/obj/item/device/holowarrant,
 		/obj/item/folder/blue,
@@ -104,8 +85,8 @@
 	)
 
 /obj/structure/closet/secure_closet/bridgeofficer
-	name = "bridge officer's locker"
-	req_access = list(access_bridge, access_keycard_auth)
+	name = "void officer's locker"
+	req_access = list(access_bridge)
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/command/bo
 
 /obj/structure/closet/secure_closet/bridgeofficer/WillContain()
@@ -114,7 +95,6 @@
 		/obj/item/pen,
 		/obj/item/device/tape/random,
 		/obj/item/device/taperecorder,
-		/obj/item/device/flash,
 		/obj/item/device/megaphone,
 		/obj/item/material/clipboard,
 		/obj/item/folder/blue,

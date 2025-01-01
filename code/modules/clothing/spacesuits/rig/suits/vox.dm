@@ -44,7 +44,8 @@
 		/obj/item/ammo_magazine/shotholder,
 		/obj/item/handcuffs,
 		/obj/item/device/radio,
-		/obj/item/melee/baton,
+		/obj/item/material/twohanded/ravenor,
+		/obj/item/melee,
 		/obj/item/gun,
 		/obj/item/pickaxe
 	)

@@ -34,7 +34,7 @@
 	description = "A medium-sized asteroid full of minerals. Old mining facility detected at one of sides, owner - Necromundan."
 	suffixes = list("mining/mining-corporate.dmm")
 	spawn_cost = 1
-	accessibility_weight = 10
+	accessibility_weight = 0
 	generate_mining_by_z = 1
 	area_usage_test_exempted_root_areas = list(/area/mine, /area/outpost)
 	area_usage_test_exempted_areas = list(/area/djstation, /area/shuttle/abadoned_data_capsule)
@@ -138,7 +138,7 @@
 	name = "Data Capsule"
 	shuttle = "Data Capsule"
 	max_speed = 1/(10 SECONDS)
-	burn_delay = 2 SECONDS
+	burn_delay = 1 SECONDS
 	vessel_mass = 250
 	fore_dir = SOUTH
 	vessel_size = SHIP_SIZE_TINY
@@ -152,7 +152,6 @@
 	area_flags = AREA_FLAG_IS_NOT_PERSISTENT
 	sound_env = STANDARD_STATION
 	base_turf = /turf/simulated/floor/asteroid
-	req_access = list(list(access_mining, access_xenoarch))
 
 /area/outpost/mining/hangar
 	name = "Mining Outpost Hangar"

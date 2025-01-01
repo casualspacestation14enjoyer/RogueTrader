@@ -17,212 +17,112 @@
 /obj/shuttle_landmark/nav_slavers_base/nav1,
 /turf/space,
 /area/space)
-"af" = (
-/turf/simulated/mineral,
-/area/mine/unexplored)
 "ag" = (
 /turf/simulated/floor/asteroid,
 /area/mine/explored)
 "ah" = (
-/turf/simulated/wall,
-/area/slavers_base/mort)
+/turf/simulated/floor/asteroid,
+/area/space)
 "ai" = (
 /obj/shuttle_landmark/nav_slavers_base/nav4,
 /turf/space,
 /area/space)
-"aj" = (
-/obj/structure/ore_box{
-	desc = "A heavy box covered with dried blood.";
-	name = "Big dirty box"
-	},
-/turf/simulated/floor/ceiling,
-/area/slavers_base/mort)
-"ak" = (
-/turf/simulated/floor/ceiling,
-/area/slavers_base/mort)
 "al" = (
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/simulated/floor/ceiling,
-/area/slavers_base/mort)
-"am" = (
-/obj/structure/crematorium,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/mort)
-"an" = (
-/obj/decal/cleanable/ash,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/mort)
+/obj/structure/mattress,
+/obj/landmark/corpse/engineer,
+/obj/decal/cleanable/blood/gibs,
+/turf/simulated/floor/warhammer/nf2,
+/area/slavers_base/cells)
 "ao" = (
-/obj/structure/table/standard,
-/obj/item/wirecutters,
+/obj/item/exploration_loot/drugs,
 /turf/simulated/floor/ceiling,
-/area/slavers_base/mort)
-"ap" = (
-/obj/structure/table/standard,
-/obj/landmark/corpse/slavers_base/slave,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/mort)
+/area/slavers_base/maint)
 "aq" = (
-/obj/structure/table/standard,
-/obj/item/paper/spacer{
-	info = "If they'll keep having fun with cargo in such manner, we'll run out of freezers to keep what's left from it.";
-	name = "Note"
-	},
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/simulated/floor/ceiling,
-/area/slavers_base/mort)
-"ar" = (
-/obj/structure/table/standard,
-/obj/item/material/knife/table,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/mort)
-"as" = (
-/obj/structure/table/rack,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/mort)
-"at" = (
+/obj/landmark/corpse/bloodpact,
 /obj/gibspawner/human,
-/turf/simulated/floor/asteroid,
-/area/mine/explored)
-"au" = (
-/obj/structure/table/rack,
-/obj/item/wirecutters,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/mort)
-"av" = (
-/obj/item/shovel,
-/turf/simulated/floor/asteroid,
-/area/mine/explored)
+/turf/simulated/floor/warhammer/ceramic,
+/area/slavers_base/demo)
+"ar" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/mineral{
+	name = "Rubble"
+	},
+/area/slavers_base/maint)
 "aw" = (
-/obj/item/remains/human,
-/turf/simulated/floor/asteroid,
+/turf/unsimulated/mask,
 /area/mine/explored)
 "ax" = (
-/obj/item/remains/human,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/mort)
+/obj/machinery/door/unpowered/inn,
+/turf/simulated/floor/warhammer/plating,
+/area/slavers_base/cells)
 "ay" = (
-/obj/item/bodybag,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/mort)
+/obj/paint/meatstation/lab,
+/obj/paint/meatstation/lab,
+/turf/simulated/wall/r_wall,
+/area/slavers_base/cells)
 "az" = (
-/obj/item/material/knife/table,
+/obj/landmark/corpse/bloodpact,
 /turf/simulated/floor/ceiling,
-/area/slavers_base/mort)
+/area/slavers_base/maint)
 "aA" = (
-/obj/structure/table/rack,
-/obj/item/material/hatchet,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/mort)
+/obj/item/pyre/self_lit/church,
+/turf/simulated/floor/warhammer/plating,
+/area/slavers_base/cells)
 "aB" = (
-/obj/structure/closet/crate/warhammer/freezer,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/mort)
-"aC" = (
-/obj/gibspawner/human,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/mort)
-"aD" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/mort)
-"aE" = (
-/obj/structure/cable{
-	d2 = 2;
-	icon_state = "0-2"
-	},
-/obj/machinery/power/apc{
-	dir = 4;
-	name = "Slaves Mortuary";
-	pixel_x = 24
-	},
-/obj/machinery/atmospherics/unary/vent_pump/on,
-/turf/simulated/floor/ceiling,
+/turf/unsimulated/mask,
 /area/slavers_base/mort)
 "aF" = (
-/obj/machinery/light/small,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/mort)
-"aG" = (
-/obj/machinery/gibber,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/mort)
+/obj/decal/cleanable/dirt,
+/turf/unsimulated/mask,
+/area/slavers_base/cells)
 "aH" = (
-/obj/structure/kitchenspike,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/mort)
+/obj/paint/meatstation/lab,
+/turf/simulated/mineral{
+	name = "Rubble"
+	},
+/area/slavers_base/maint)
 "aI" = (
-/obj/structure/kitchenspike,
-/obj/machinery/light/small,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/mort)
-"aJ" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 5
-	},
-/turf/simulated/floor/ceiling,
-/area/slavers_base/mort)
-"aK" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 10
-	},
-/turf/simulated/floor/ceiling,
-/area/slavers_base/mort)
-"aL" = (
-/obj/machinery/door/airlock{
-	name = "Mortuary backyard"
-	},
-/turf/simulated/floor/ceiling,
-/area/slavers_base/mort)
-"aM" = (
-/turf/simulated/wall,
-/area/slavers_base/cells)
-"aN" = (
-/obj/machinery/door/airlock{
-	name = "Slaves mortuary"
-	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled,
-/area/slavers_base/cells)
-"aO" = (
-/obj/structure/hygiene/toilet{
+/obj/structure/barricade/spike{
 	dir = 4
 	},
 /turf/simulated/floor/ceiling,
+/area/slavers_base/maint)
+"aJ" = (
+/obj/structure/lattice,
+/obj/gibspawner/human,
+/turf/simulated/floor/warhammer/necro1,
+/area/slavers_base/demo)
+"aL" = (
+/obj/structure/closet/crate/warhammer/biohazard,
+/obj/item/card/id/key/grand{
+	access = list("ACCESS_SLAVERCULT");
+	name = "Cursed Key"
+	},
+/turf/simulated/floor/warhammer/splate,
+/area/slavers_base/secwing)
+"aM" = (
+/obj/paint/meatstation/lab,
+/turf/simulated/wall/r_wall,
+/area/slavers_base/cells)
+"aN" = (
+/obj/paint/meatstation/lab,
+/obj/paint/meatstation/lab,
+/turf/simulated/wall,
+/area/slavers_base/powatm)
+"aO" = (
+/obj/structure/mattress,
+/turf/simulated/floor/warhammer/nf2,
 /area/slavers_base/cells)
 "aP" = (
-/turf/simulated/floor/ceiling,
-/area/slavers_base/cells)
-"aQ" = (
-/obj/machinery/light/small/red{
-	dir = 1
-	},
-/turf/simulated/floor/ceiling,
+/obj/structure/grille/warhammer/cell,
+/turf/simulated/floor/warhammer/plating,
 /area/slavers_base/cells)
 "aR" = (
-/obj/structure/mattress/dirty,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/cells)
-"aS" = (
-/obj/structure/mattress/dirty,
-/obj/item/reagent_containers/glass/rag,
-/turf/simulated/floor/ceiling,
+/turf/simulated/floor/warhammer/ceramic,
 /area/slavers_base/cells)
 "aT" = (
 /obj/decal/cleanable/dirt,
@@ -234,39 +134,26 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled,
+/turf/unsimulated/mask,
 /area/slavers_base/cells)
 "aU" = (
-/obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/cult,
 /area/slavers_base/cells)
 "aV" = (
-/obj/random/trash,
-/turf/simulated/floor/ceiling,
+/obj/structure/hivedecor/skulls,
+/turf/simulated/floor/warhammer/ceramic,
 /area/slavers_base/cells)
 "aW" = (
-/obj/item/reagent_containers/glass/rag,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/cells)
-"aX" = (
-/obj/structure/hygiene/shower{
-	dir = 4
-	},
-/turf/simulated/floor/ceiling,
-/area/slavers_base/cells)
-"aY" = (
-/obj/item/reagent_containers/glass/rag,
-/obj/random/trash,
-/turf/simulated/floor/ceiling,
+/turf/simulated/floor/warhammer/plating,
 /area/slavers_base/cells)
 "aZ" = (
-/obj/structure/mattress/dirty,
-/obj/item/reagent_containers/food/drinks/cans/waterbottle,
-/turf/simulated/floor/ceiling,
+/obj/gibspawner/human,
+/obj/item/pyre/self_lit/church,
+/turf/simulated/floor/warhammer/ceramic,
 /area/slavers_base/cells)
 "ba" = (
-/obj/item/remains/human,
-/turf/simulated/floor/ceiling,
+/obj/item/pyre/self_lit/church,
+/turf/simulated/floor/warhammer/fancyfloor/oldcobble,
 /area/slavers_base/cells)
 "bb" = (
 /obj/decal/cleanable/dirt,
@@ -277,70 +164,57 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled,
-/area/slavers_base/cells)
-"bc" = (
-/obj/machinery/flasher{
-	id_tag = "permentryflash";
-	name = "Floor mounted flash"
-	},
-/obj/item/reagent_containers/glass/rag,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/cells)
-"bd" = (
-/obj/structure/mattress/dirty,
-/obj/item/trash/liquidfood,
-/obj/landmark/corpse/slavers_base/slave,
-/turf/simulated/floor/ceiling,
+/turf/unsimulated/mask,
 /area/slavers_base/cells)
 "be" = (
-/obj/machinery/flasher{
-	id_tag = "permentryflash";
-	name = "Floor mounted flash"
-	},
-/turf/simulated/floor/ceiling,
+/obj/structure/table/warhammer/polished_table,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/turf/simulated/floor/warhammer/brick,
 /area/slavers_base/cells)
 "bf" = (
-/obj/item/reagent_containers/food/drinks/cans/waterbottle,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/mob/living/simple_animal/hostile/human/heretic/trooper{
+	icon_state = "traitorguard_chains";
+	health = 200;
+	maxhealth = 200;
+	name = "Warp Touched Cultist"
+	},
 /turf/simulated/floor/ceiling,
-/area/slavers_base/cells)
+/area/slavers_base/maint)
 "bg" = (
-/obj/machinery/flasher{
-	id_tag = "permentryflash";
-	name = "Floor mounted flash"
-	},
-/obj/random/trash,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/cells)
+/obj/paint/meatstation/lab,
+/turf/simulated/wall/r_wall,
+/area/slavers_base/secwing)
 "bh" = (
-/obj/structure/mattress/dirty,
-/obj/machinery/flasher{
-	id_tag = "permentryflash";
-	name = "Floor mounted flash"
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
 	},
-/turf/simulated/floor/ceiling,
-/area/slavers_base/cells)
+/obj/gibspawner/human,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
+/area/slavers_base/dorms)
 "bi" = (
-/obj/structure/reagent_dispensers/watertank,
+/obj/structure/barricade/spike,
 /turf/simulated/floor/ceiling,
-/area/slavers_base/cells)
+/area/slavers_base/maint)
 "bj" = (
-/obj/wallframe_spawn/reinforced,
-/obj/structure/cable/cyan{
-	d2 = 2;
-	icon_state = "0-2"
+/obj/structure/table/warhammer/big_wood_table{
+	dir = 8
 	},
-/turf/simulated/floor/ceiling,
-/area/slavers_base/cells)
+/obj/random/loot/lasbundle,
+/turf/simulated/floor/warhammer/splate,
+/area/slavers_base/dorms)
 "bk" = (
-/obj/machinery/door/window/brigdoor/southright,
-/turf/simulated/floor/ceiling,
+/obj/structure/grille/warhammer/cell,
+/obj/structure/grille/warhammer/cell,
+/turf/simulated/floor/warhammer/plating,
 /area/slavers_base/cells)
 "bl" = (
-/obj/machinery/door/window/brigdoor/southright,
-/obj/random/trash,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/cells)
+/obj/paint/meatstation/lab,
+/turf/simulated/wall/r_wall,
+/area/slavers_base/med)
 "bm" = (
 /obj/decal/cleanable/dirt,
 /obj/structure/cable{
@@ -354,7 +228,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/cells)
 "bn" = (
 /obj/decal/cleanable/dirt,
@@ -369,12 +243,9 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/turf/simulated/floor/tiled,
+/turf/unsimulated/mask,
 /area/slavers_base/cells)
 "bo" = (
-/obj/machinery/door/airlock{
-	name = "Cell block B"
-	},
 /obj/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -387,103 +258,25 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/turf/simulated/floor/tiled,
-/area/slavers_base/cells)
-"bp" = (
-/obj/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 10
-	},
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 8
-	},
-/obj/structure/cable/cyan{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/turf/simulated/floor/tiled,
+/turf/unsimulated/mask,
 /area/slavers_base/cells)
 "bq" = (
-/obj/decal/cleanable/dirt,
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled,
-/area/slavers_base/cells)
-"br" = (
-/obj/decal/cleanable/dirt,
-/obj/structure/cable/cyan{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/turf/simulated/floor/tiled,
+/obj/structure/table/warhammer/pagan,
+/obj/item/material/knife/ritual,
+/obj/item/clothing/suit/armor/berserkerpowerarmor,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/slavers_base/cells)
 "bs" = (
-/obj/machinery/flasher{
-	id_tag = "permentryflash";
-	name = "Floor mounted flash"
-	},
-/obj/decal/cleanable/dirt,
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled,
+/obj/item/trash/warfare_can/rat,
+/turf/simulated/floor/warhammer/brick,
 /area/slavers_base/cells)
 "bt" = (
-/obj/decal/cleanable/dirt,
-/obj/structure/cable/cyan{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/turf/simulated/floor/tiled,
-/area/slavers_base/cells)
+/obj/decal/cleanable/remains,
+/turf/simulated/floor/ceiling,
+/area/slavers_base/maint)
 "bu" = (
-/obj/structure/mattress/dirty,
-/obj/landmark/corpse/slavers_base/slave,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/cells)
-"bv" = (
-/obj/structure/closet/crate/warhammer/freezer/rations,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/cells)
-"bw" = (
-/obj/item/paper/spacer{
-	info = "Tonight, when lights are out. Prepare shivs, pieces of glass, whatever you might find.";
-	name = "Note"
-	},
-/turf/simulated/floor/ceiling,
+/mob/living/simple_animal/hostile/daemon/champion,
+/turf/simulated/floor/warhammer/fancyfloor/oldcobble,
 /area/slavers_base/cells)
 "bx" = (
 /obj/decal/cleanable/dirt,
@@ -492,60 +285,20 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled,
-/area/slavers_base/cells)
-"by" = (
-/obj/wallframe_spawn/reinforced,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/cells)
 "bz" = (
-/obj/structure/closet/crate/warhammer/freezer/rations,
-/obj/decal/cleanable/dirt,
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 1
-	},
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled,
-/area/slavers_base/cells)
-"bA" = (
-/obj/random/trash,
-/obj/decal/cleanable/dirt,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled,
-/area/slavers_base/cells)
-"bB" = (
-/obj/decal/cleanable/dirt,
-/obj/item/remains/human,
-/turf/simulated/floor/tiled,
-/area/slavers_base/cells)
-"bC" = (
-/obj/machinery/light{
-	dir = 4
-	},
-/obj/decal/cleanable/dirt,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled,
-/area/slavers_base/cells)
+/obj/item/remains,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
+/area/slavers_base/dorms)
 "bD" = (
-/obj/random/shoes,
-/turf/simulated/floor/ceiling,
+/obj/item/trash/liquidfood,
+/turf/simulated/floor/warhammer/nf2,
 /area/slavers_base/cells)
 "bE" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/cells)
+/obj/paint/meatstation/lab,
+/turf/unsimulated/mask,
+/area/mine/unexplored)
 "bF" = (
 /obj/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -555,186 +308,62 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled,
+/obj/paint/meatstation/lab,
+/obj/machinery/door/airlock/ancient_ship/maint{
+	name = "Hall of Blood";
+	req_access = list("ACCESS_SLAVERCULT")
+	},
+/turf/simulated/wall/r_wall,
 /area/slavers_base/cells)
 "bG" = (
-/obj/wallframe_spawn/reinforced,
-/obj/structure/cable/cyan,
-/turf/simulated/floor/ceiling,
+/turf/simulated/floor/warhammer/nf2,
 /area/slavers_base/cells)
 "bH" = (
-/obj/machinery/door/window/brigdoor/northright,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/cells)
-"bI" = (
-/obj/random/trash,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/unary/vent_pump/on,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/cells)
-"bJ" = (
-/obj/item/storage/bag/trash,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/cells)
+/obj/structure/lattice,
+/turf/simulated/floor/warhammer/necro1,
+/area/slavers_base/demo)
 "bK" = (
-/obj/wallframe_spawn/reinforced,
-/obj/structure/cable/cyan{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/turf/simulated/floor/ceiling,
+/turf/simulated/floor/warhammer/fancyfloor/oldcobble,
 /area/slavers_base/cells)
 "bL" = (
-/obj/wallframe_spawn/reinforced,
-/obj/structure/cable/cyan{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
+/turf/simulated/mineral{
+	name = "Rubble"
 	},
-/obj/structure/cable/cyan{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/obj/structure/cable/cyan{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/turf/simulated/floor/ceiling,
-/area/slavers_base/cells)
+/area/slavers_base/maint)
 "bM" = (
-/obj/wallframe_spawn/reinforced,
-/obj/structure/cable/cyan{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/turf/simulated/floor/ceiling,
-/area/slavers_base/cells)
-"bN" = (
-/obj/machinery/door/airlock{
-	name = "Den B"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/ceiling,
+/obj/gibspawner/human,
+/turf/simulated/floor/warhammer/fancyfloor/oldcobble,
 /area/slavers_base/cells)
 "bO" = (
-/obj/machinery/light/small/red,
-/turf/simulated/floor/ceiling,
+/turf/simulated/floor/warhammer/brick,
 /area/slavers_base/cells)
 "bP" = (
-/obj/machinery/light/small/red,
-/obj/structure/mattress/dirty,
-/obj/landmark/corpse/slavers_base/slave,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/cells)
-"bQ" = (
-/obj/structure/mattress/dirty,
-/obj/random/junk,
-/turf/simulated/floor/ceiling,
+/obj/gibspawner/human,
+/turf/simulated/floor/warhammer/ceramic,
 /area/slavers_base/cells)
 "bR" = (
-/obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
-	},
 /obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled,
-/area/slavers_base/cells)
+/obj/decal/cleanable/blood,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
+/area/slavers_base/med)
 "bS" = (
-/obj/decal/cleanable/dirt,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
-/obj/structure/cable/cyan{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/turf/simulated/floor/tiled,
-/area/slavers_base/cells)
-"bT" = (
-/obj/decal/cleanable/dirt,
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
-/obj/structure/cable/cyan{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/turf/simulated/floor/tiled,
-/area/slavers_base/cells)
+/obj/item/stack/material/rods,
+/turf/simulated/floor/warhammer/ceramic,
+/area/slavers_base/demo)
 "bU" = (
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled,
-/area/slavers_base/cells)
-"bV" = (
-/obj/random/trash,
-/obj/decal/cleanable/dirt,
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
-/obj/structure/cable/cyan{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/turf/simulated/floor/tiled,
-/area/slavers_base/cells)
+/obj/paint/meatstation/lab,
+/obj/paint/meatstation/lab,
+/obj/paint/meatstation/lab,
+/turf/simulated/wall,
+/area/slavers_base/maint)
 "bW" = (
-/obj/machinery/flasher{
-	id_tag = "permentryflash";
-	name = "Floor mounted flash"
+/obj/structure/table/warhammer/big_wood_table{
+	dir = 4
 	},
-/obj/decal/cleanable/dirt,
-/obj/item/ammo_casing/shotgun/beanbag{
-	pixel_x = -8;
-	pixel_y = -4
-	},
-/obj/item/ammo_casing/shotgun/beanbag{
-	pixel_y = 5;
-	pixel_z = 7
-	},
-/obj/item/ammo_casing/shotgun/beanbag,
-/obj/item/ammo_casing/shotgun/beanbag,
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	dir = 8
-	},
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled,
-/area/slavers_base/cells)
+/obj/random/loot/lightmelee,
+/turf/simulated/floor/warhammer/splate,
+/area/slavers_base/dorms)
 "bX" = (
-/obj/machinery/door/airlock{
-	name = "Dens block"
-	},
 /obj/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -747,7 +376,11 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled,
+/obj/machinery/door/airlock/ancient_ship/maint{
+	name = "Hall of Blood";
+	req_access = list("ACCESS_SLAVERCULT")
+	},
+/turf/space,
 /area/slavers_base/cells)
 "bY" = (
 /obj/decal/cleanable/dirt,
@@ -763,13 +396,12 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 4
 	},
-/obj/landmark/corpse/slavers_base/slaver4,
 /obj/structure/cable/cyan{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/cells)
 "bZ" = (
 /obj/decal/cleanable/dirt,
@@ -784,34 +416,26 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/cells)
 "ca" = (
-/obj/wallframe_spawn/reinforced,
+/obj/decal/cleanable/dirt,
 /obj/structure/cable/cyan{
 	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
+	d2 = 2;
+	icon_state = "1-2"
 	},
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/obj/structure/cable/cyan{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/turf/simulated/floor/ceiling,
+/turf/unsimulated/mask,
 /area/slavers_base/cells)
 "cb" = (
-/obj/machinery/door/airlock{
-	name = "Den A"
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/cells)
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/ship_floor/evil,
+/area/slavers_base/maint)
 "cc" = (
 /obj/decal/cleanable/dirt,
 /obj/decal/cleanable/blood,
@@ -821,69 +445,49 @@
 	icon_state = "0-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/cells)
 "cd" = (
-/obj/structure/hygiene/toilet{
-	dir = 4
-	},
-/obj/item/reagent_containers/food/snacks/liquidfood,
-/turf/simulated/floor/ceiling,
+/obj/item/trash/plate,
+/turf/simulated/floor/warhammer/nf2,
 /area/slavers_base/cells)
 "ce" = (
-/obj/machinery/light/small/red{
-	dir = 1
-	},
-/obj/structure/mattress/dirty,
-/turf/simulated/floor/ceiling,
+/obj/structure/closet/warhammer/metal,
+/turf/simulated/floor/warhammer/brick,
 /area/slavers_base/cells)
 "cf" = (
-/obj/structure/mattress/dirty,
-/obj/random/snack,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/cells)
+/obj/paint/meatstation/lab,
+/obj/structure/sign/warning,
+/turf/simulated/wall,
+/area/slavers_base/maint)
 "cg" = (
-/obj/machinery/light/small/red{
-	dir = 1
-	},
-/obj/random/medical/lite,
-/turf/simulated/floor/ceiling,
+/obj/structure/table/rack/dark,
+/obj/item/trash/tray,
+/turf/simulated/floor/warhammer/brick,
 /area/slavers_base/cells)
 "ch" = (
-/obj/structure/mattress/dirty,
-/obj/item/remains/human,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/cells)
-"ci" = (
-/obj/random/junk,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/cells)
-"cj" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 1
-	},
-/turf/simulated/floor/ceiling,
+/obj/structure/closet/warhammer/iron_c,
+/obj/random/loot/lightmelee,
+/obj/item/reagent_containers/hypospray/autoinjector/mindbreaker,
+/obj/item/reagent_containers/hypospray/autoinjector/pouch_auto/adrenaline,
+/turf/simulated/floor/warhammer/brick,
 /area/slavers_base/cells)
 "ck" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 1
-	},
-/turf/simulated/floor/ceiling,
-/area/slavers_base/cells)
-"cl" = (
 /obj/decal/cleanable/dirt,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/item/device/flashlight,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/cells)
+"cl" = (
+/turf/simulated/floor/ship_floor/evil,
+/area/slavers_base/maint)
 "cm" = (
+/obj/paint/meatstation/lab,
 /turf/simulated/wall,
 /area/slavers_base/hangar)
 "cn" = (
@@ -905,12 +509,9 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/cells)
 "co" = (
-/obj/machinery/door/airlock{
-	name = "Cell block A"
-	},
 /obj/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -928,65 +529,15 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled,
-/area/slavers_base/cells)
-"cp" = (
-/obj/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 10
+/obj/machinery/door/unpowered/inn{
+	req_access = list("ACCESS_SLAVERCULT");
+	name = "slave pens"
 	},
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 8
-	},
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/obj/structure/cable/cyan{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/cells)
 "cq" = (
-/obj/decal/cleanable/dirt,
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/obj/structure/cable/cyan{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/turf/simulated/floor/tiled,
-/area/slavers_base/cells)
-"cr" = (
-/obj/decal/cleanable/dirt,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/obj/structure/cable/cyan{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/turf/simulated/floor/tiled,
+/obj/item/trash/cigbutt/jerichos,
+/turf/simulated/floor/warhammer/brick,
 /area/slavers_base/cells)
 "cs" = (
 /turf/simulated/floor/ceiling,
@@ -1003,10 +554,6 @@
 	},
 /turf/simulated/floor/ceiling,
 /area/slavers_base/hangar)
-"cv" = (
-/obj/landmark/corpse/slavers_base/slave,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/cells)
 "cw" = (
 /obj/decal/cleanable/dirt,
 /obj/item/ammo_casing/shotgun/beanbag,
@@ -1017,16 +564,15 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/cells)
 "cx" = (
-/obj/wallframe_spawn/reinforced,
 /obj/structure/cable/cyan,
-/turf/simulated/floor/tiled,
-/area/slavers_base/cells)
-"cy" = (
-/obj/random/medical/lite,
-/turf/simulated/floor/ceiling,
+/obj/machinery/door/unpowered/inn{
+	req_access = list("ACCESS_SLAVERCULT");
+	name = "slave pens"
+	},
+/turf/simulated/floor/warhammer,
 /area/slavers_base/cells)
 "cz" = (
 /obj/decal/cleanable/dirt,
@@ -1041,7 +587,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/cells)
 "cA" = (
 /obj/decal/cleanable/dirt,
@@ -1059,12 +605,22 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/cells)
 "cB" = (
-/obj/machinery/door/window/brigdoor/northright,
-/obj/item/reagent_containers/glass/rag,
-/turf/simulated/floor/ceiling,
+/obj/decal/cleanable/dirt,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 8
+	},
+/turf/unsimulated/mask,
 /area/slavers_base/cells)
 "cC" = (
 /obj/floor_decal/industrial/warning{
@@ -1087,13 +643,8 @@
 	},
 /turf/simulated/floor/ceiling,
 /area/slavers_base/hangar)
-"cF" = (
-/obj/item/paper,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/cells)
 "cG" = (
-/obj/item/trash/liquidfood,
-/turf/simulated/floor/ceiling,
+/turf/unsimulated/mask,
 /area/slavers_base/cells)
 "cH" = (
 /obj/floor_decal/industrial/warning{
@@ -1108,57 +659,52 @@
 	},
 /turf/simulated/floor/ceiling,
 /area/slavers_base/hangar)
-"cJ" = (
-/obj/item/paper/spacer{
-	info = "Doc who checked us told implants won't explode our heads. Gotta make guys know. Seems I see a silver lining.";
-	name = "Note"
-	},
-/turf/simulated/floor/ceiling,
-/area/slavers_base/cells)
 "cK" = (
-/obj/machinery/light/small/red,
-/obj/item/remains/human,
-/turf/simulated/floor/ceiling,
+/obj/gibspawner/human,
+/turf/simulated/floor/warhammer/plating,
 /area/slavers_base/cells)
 "cL" = (
-/obj/random/snack,
+/obj/item/clothing/mask/gas/security/agent,
 /turf/simulated/floor/ceiling,
-/area/slavers_base/cells)
+/area/slavers_base/maint)
 "cM" = (
-/obj/structure/mattress/dirty,
-/obj/item/reagent_containers/food/drinks/cans/waterbottle,
-/obj/random/junk,
+/obj/structure/barricade/barrels/three,
 /turf/simulated/floor/ceiling,
-/area/slavers_base/cells)
+/area/slavers_base/maint)
 "cN" = (
-/obj/machinery/light/small/red,
-/obj/random/trash,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/cells)
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/barricade/barbed,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
+/area/slavers_base/dorms)
 "cO" = (
-/obj/structure/mattress/dirty,
-/obj/item/reagent_containers/glass/rag,
-/obj/item/reagent_containers/food/drinks/cans/waterbottle,
-/obj/landmark/corpse/slavers_base/slave,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/cells)
+/obj/paint/meatstation/lab,
+/obj/paint/meatstation/lab,
+/turf/simulated/wall,
+/area/slavers_base/secwing)
 "cP" = (
-/obj/structure/hygiene/toilet{
+/obj/paint/meatstation/lab,
+/obj/paint/meatstation/lab,
+/turf/simulated/wall,
+/area/slavers_base/maint)
+"cQ" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/item/trash/liquidfood,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/cells)
-"cQ" = (
-/obj/machinery/light/small/red,
-/obj/structure/mattress/dirty,
-/obj/item/reagent_containers/glass/rag,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/cells)
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/warhammer/splate,
+/area/slavers_base/dorms)
 "cR" = (
+/obj/paint/meatstation/lab,
 /turf/simulated/wall,
 /area/slavers_base/powatm)
 "cS" = (
+/obj/paint/meatstation/lab,
 /turf/simulated/wall,
 /area/slavers_base/secwing)
 "cT" = (
@@ -1168,26 +714,30 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/door/airlock{
-	name = "Slave hold hallway"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled,
+/obj/machinery/door/airlock/ancient_ship/maint{
+	name = "Hall of Blood";
+	req_access = list("ACCESS_SLAVERCULT")
+	},
+/turf/simulated/floor/warhammer,
 /area/slavers_base/hallway)
 "cU" = (
 /obj/decal/cleanable/dirt,
-/obj/machinery/door/airlock{
-	name = "Slave hold hallway"
-	},
 /obj/structure/cable/cyan{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled,
+/obj/machinery/door/airlock/ancient_ship/maint{
+	name = "Hall of Blood";
+	req_access = list("ACCESS_SLAVERCULT")
+	},
+/turf/simulated/floor/warhammer,
 /area/slavers_base/hallway)
 "cV" = (
+/obj/paint/meatstation/lab,
+/obj/paint/meatstation/lab,
 /turf/simulated/wall,
 /area/slavers_base/med)
 "cW" = (
@@ -1223,72 +773,42 @@
 /turf/simulated/floor/ceiling,
 /area/slavers_base/powatm)
 "dd" = (
-/obj/structure/bed,
-/turf/simulated/floor/tiled,
-/area/slavers_base/secwing)
-"de" = (
-/obj/structure/closet,
-/obj/random/snack,
-/obj/random/projectile,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/ceramic,
 /area/slavers_base/secwing)
 "df" = (
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/ceramic,
 /area/slavers_base/secwing)
 "dg" = (
-/obj/structure/bed,
-/obj/random/projectile,
-/turf/simulated/floor/tiled,
+/obj/structure/bed/barrack,
+/obj/structure/bed/barrack1,
+/turf/simulated/floor/warhammer/ceramic,
 /area/slavers_base/secwing)
 "dh" = (
-/obj/structure/closet,
-/obj/random/smokes,
-/obj/random/masks,
-/obj/random/suit,
-/turf/simulated/floor/tiled,
-/area/slavers_base/secwing)
-"di" = (
-/obj/structure/table/rack,
-/obj/item/device/flashlight,
-/obj/random/medical/lite,
-/turf/simulated/floor/tiled,
-/area/slavers_base/secwing)
+/mob/living/simple_animal/hostile/daemon,
+/turf/simulated/floor/ship_floor/evil,
+/area/slavers_base/med)
 "dj" = (
-/obj/structure/table/rack,
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/item/storage/box/handcuffs,
-/turf/simulated/floor/tiled,
-/area/slavers_base/secwing)
-"dk" = (
-/obj/structure/table/rack,
-/obj/item/melee/baton,
-/obj/item/melee/baton,
-/obj/item/melee/baton,
-/obj/random/tool,
-/turf/simulated/floor/tiled,
-/area/slavers_base/secwing)
+/obj/structure/table/warhammer/big_wood_table,
+/obj/random/loot/tech2,
+/turf/simulated/floor/warhammer/splate,
+/area/slavers_base/dorms)
 "dl" = (
-/obj/structure/table/rack,
-/obj/item/device/flash,
-/obj/random/ammo,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/plate,
 /area/slavers_base/secwing)
 "dm" = (
-/obj/structure/table/rack,
-/obj/item/storage/box/ammo/stunshells,
-/obj/item/gun/projectile/shotgun/pump/voxlegis,
-/turf/simulated/floor/tiled,
+/obj/structure/closet/warhammer/iron_c,
+/obj/item/clothing/suit/armor/grim/cult/bloodpact,
+/obj/item/clothing/head/helmet/flak/chaos/bloodpact,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/secwing)
 "dn" = (
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/secwing)
 "do" = (
 /obj/structure/cable{
@@ -1296,10 +816,11 @@
 	icon_state = "0-6"
 	},
 /obj/machinery/power/smes/buildable,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/secwing)
 "dp" = (
-/turf/simulated/floor/tiled,
+/obj/structure/closet/crate/warhammer/freezer/rations,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/secwing)
 "dq" = (
 /obj/structure/cable/cyan{
@@ -1307,16 +828,16 @@
 	icon_state = "0-4"
 	},
 /obj/machinery/power/smes/buildable,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/secwing)
 "dr" = (
-/obj/wallframe_spawn/reinforced,
 /obj/structure/cable/cyan{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled,
+/obj/paint/meatstation/lab,
+/turf/simulated/wall,
 /area/slavers_base/secwing)
 "ds" = (
 /obj/decal/cleanable/dirt,
@@ -1336,7 +857,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/hallway)
 "dt" = (
 /obj/decal/cleanable/dirt,
@@ -1356,12 +877,9 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/hallway)
 "du" = (
-/obj/machinery/door/airlock{
-	name = "Slave processing"
-	},
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
@@ -1373,13 +891,12 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
+/obj/machinery/door/airlock/warhammer{
+	name = "Ancient Airlock"
+	},
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/slavers_base/med)
 "dv" = (
-/obj/machinery/flasher{
-	id_tag = "permentryflash";
-	name = "Floor mounted flash"
-	},
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
@@ -1391,7 +908,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/slavers_base/med)
 "dw" = (
 /obj/decal/cleanable/dirt,
@@ -1404,54 +921,46 @@
 	name = "Medical room";
 	pixel_y = 24
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/mudsteel,
 /area/slavers_base/med)
 "dx" = (
 /obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled,
-/area/slavers_base/med)
-"dy" = (
-/obj/decal/cleanable/dirt,
-/obj/machinery/light{
-	dir = 1
-	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/mudsteel,
 /area/slavers_base/med)
 "dz" = (
 /obj/decal/cleanable/dirt,
-/obj/structure/hygiene/shower{
-	pixel_y = 30
-	},
-/turf/simulated/floor/tiled,
+/obj/decal/cleanable/blood,
+/obj/item/storage/firstaid/surgery,
+/turf/simulated/floor/warhammer/mudsteel,
 /area/slavers_base/med)
 "dA" = (
 /obj/machinery/door/airlock{
 	name = "Storage"
 	},
-/turf/simulated/floor/tiled,
+/obj/machinery/door/airlock/ancient_ship/med,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/slavers_base/med)
 "dB" = (
-/turf/simulated/floor/ceiling,
+/turf/simulated/floor/warhammer/necro1,
 /area/slavers_base/med)
 "dC" = (
-/obj/structure/reagent_dispensers/watertank,
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/ceiling,
+/obj/gibspawner/human,
+/turf/simulated/floor/warhammer/necro1,
 /area/slavers_base/med)
 "dD" = (
-/obj/structure/reagent_dispensers/watertank,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/med)
+/mob/living/simple_animal/hostile/daemon,
+/turf/simulated/floor/warhammer/plating,
+/area/slavers_base/cells)
 "dE" = (
-/obj/structure/closet/crate/warhammer/freezer/rations,
-/obj/item/reagent_containers/food/snacks/liquidfood,
+/obj/machinery/door/airlock/warhammer/glass,
+/obj/structure/barricade/spike,
 /turf/simulated/floor/ceiling,
-/area/slavers_base/med)
+/area/slavers_base/maint)
 "dF" = (
-/obj/structure/closet/crate/warhammer/freezer/rations,
-/turf/simulated/floor/ceiling,
+/turf/simulated/floor/ship_floor/evil,
 /area/slavers_base/med)
 "dG" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/yellow{
@@ -1478,15 +987,19 @@
 /turf/simulated/floor/ceiling,
 /area/slavers_base/powatm)
 "dL" = (
-/turf/simulated/floor/tiled,
-/area/slavers_base/secwing)
+/obj/decal/cleanable/generic,
+/obj/structure/barricade/spike{
+	dir = 4
+	},
+/turf/simulated/floor/ceiling,
+/area/slavers_base/maint)
 "dM" = (
 /obj/structure/cable/green{
 	d1 = 2;
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/factory_floor,
 /area/slavers_base/secwing)
 "dN" = (
 /obj/structure/cable/green{
@@ -1494,7 +1007,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/factory_floor,
 /area/slavers_base/secwing)
 "dO" = (
 /obj/structure/cable/green{
@@ -1503,7 +1016,7 @@
 	icon_state = "4-8"
 	},
 /obj/decal/cleanable/generic,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/factory_floor,
 /area/slavers_base/secwing)
 "dP" = (
 /obj/machinery/power/terminal{
@@ -1517,7 +1030,7 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/factory_floor,
 /area/slavers_base/secwing)
 "dQ" = (
 /obj/structure/cable/green{
@@ -1528,12 +1041,9 @@
 /obj/structure/cable{
 	icon_state = "2-9"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/factory_floor,
 /area/slavers_base/secwing)
 "dR" = (
-/obj/structure/table/steel,
-/obj/item/storage/box/ammo/stunshells,
-/obj/item/melee/baton,
 /obj/machinery/power/terminal{
 	dir = 1
 	},
@@ -1541,16 +1051,16 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/factory_floor,
 /area/slavers_base/secwing)
 "dS" = (
-/obj/wallframe_spawn/reinforced,
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled,
+/obj/paint/meatstation/lab,
+/turf/simulated/wall,
 /area/slavers_base/secwing)
 "dT" = (
 /obj/decal/cleanable/dirt,
@@ -1568,7 +1078,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/hallway)
 "dU" = (
 /obj/decal/cleanable/dirt,
@@ -1578,38 +1088,48 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/hallway)
 "dV" = (
 /obj/decal/cleanable/dirt,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/slavers_base/med)
 "dW" = (
-/obj/decal/cleanable/dirt,
-/obj/random/junk,
-/turf/simulated/floor/tiled,
-/area/slavers_base/med)
+/obj/paint/meatstation/lab,
+/obj/structure/lattice,
+/turf/simulated/wall,
+/area/slavers_base/demo)
 "dX" = (
 /obj/decal/cleanable/dirt,
-/obj/random/medical/lite,
-/turf/simulated/floor/tiled,
+/obj/machinery/optable,
+/obj/gibspawner/generic,
+/turf/simulated/floor/redgrid,
 /area/slavers_base/med)
 "dY" = (
-/obj/structure/bed,
-/obj/item/remains/human,
-/turf/simulated/floor/tiled,
-/area/slavers_base/med)
-"dZ" = (
-/obj/item/reagent_containers/food/snacks/liquidfood,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/med)
+/obj/item/stack/material/rods,
+/turf/simulated/floor/warhammer/necro1,
+/area/slavers_base/demo)
 "ea" = (
-/obj/structure/closet/crate/trashcart,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/med)
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/decal/cleanable/dirt,
+/obj/machinery/door/airlock/warhammer{
+	name = "Ancient Airlock"
+	},
+/turf/simulated/floor/warhammer,
+/area/slavers_base/hallway)
 "eb" = (
 /obj/floor_decal/industrial/warning{
 	dir = 10;
@@ -1643,12 +1163,8 @@
 /turf/simulated/floor/ceiling,
 /area/slavers_base/powatm)
 "eh" = (
-/obj/random/junk,
-/obj/decal/cleanable/generic,
-/turf/simulated/floor/tiled,
-/area/slavers_base/secwing)
-"ei" = (
-/obj/random/junk,
+/obj/structure/bed/barrack,
+/obj/structure/bed/barrack1,
 /turf/simulated/floor/tiled,
 /area/slavers_base/secwing)
 "ej" = (
@@ -1658,113 +1174,78 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/factory_floor,
 /area/slavers_base/secwing)
 "ek" = (
-/mob/living/simple_animal/hostile/abolition_extremist,
-/turf/simulated/floor/tiled,
-/area/slavers_base/secwing)
+/mob/living/simple_animal/hostile/daemon/zygote/worm,
+/turf/simulated/floor/warhammer/ceramic,
+/area/slavers_base/demo)
 "el" = (
-/obj/landmark/corpse/slavers_base/slaver6,
-/obj/decal/cleanable/blood,
-/turf/simulated/floor/tiled,
+/obj/item/clothing/mask/gas/security/bloodpact,
+/turf/simulated/floor/warhammer/factory_floor,
 /area/slavers_base/secwing)
 "em" = (
 /obj/random/junk,
-/obj/decal/cleanable/blood,
-/turf/simulated/floor/tiled,
-/area/slavers_base/secwing)
+/obj/random/loot/raregunslug,
+/obj/item/card/id/key/grand{
+	access = list("ACCESS_SLAVERCULT");
+	name = "Cursed Key"
+	},
+/turf/simulated/floor/ceiling,
+/area/slavers_base/maint)
 "en" = (
-/obj/decal/cleanable/blood,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/factory_floor,
 /area/slavers_base/secwing)
 "eo" = (
 /obj/structure/bed/chair/office/dark{
 	dir = 4
 	},
-/obj/decal/cleanable/blood,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled,
-/area/slavers_base/secwing)
-"ep" = (
-/obj/structure/table/steel,
-/obj/item/device/flash,
-/obj/item/device/radio,
-/obj/item/paper/spacer{
-	info = "If this fuck from A-3 keeps thinking he's better then piece of meat, throw him to hangar and show how little pressure turns diamonds into shit.";
-	name = "Note"
-	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/factory_floor,
 /area/slavers_base/secwing)
 "eq" = (
-/obj/wallframe_spawn/reinforced,
-/turf/simulated/floor/tiled,
-/area/slavers_base/secwing)
+/obj/structure/hivedecor/xenos/barrel/white,
+/turf/simulated/floor/ceiling,
+/area/slavers_base/maint)
 "er" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/hallway)
 "es" = (
 /obj/item/ammo_casing/shotgun/beanbag,
 /obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/hallway)
 "et" = (
-/obj/structure/window/basic{
-	dir = 1
-	},
-/obj/item/clothing/gloves/latex,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/slavers_base/med)
 "eu" = (
-/obj/structure/window/basic{
-	dir = 4
-	},
 /obj/decal/cleanable/dirt,
-/obj/landmark/corpse/slavers_base/slaver5,
 /obj/decal/cleanable/blood,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/mudsteel,
 /area/slavers_base/med)
 "ev" = (
-/obj/structure/window/basic{
-	dir = 1
-	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/mudsteel,
 /area/slavers_base/med)
 "ew" = (
-/obj/structure/window/basic{
-	dir = 4
-	},
 /obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled,
+/obj/item/circular_saw,
+/turf/simulated/floor/warhammer/mudsteel,
 /area/slavers_base/med)
 "ex" = (
 /obj/decal/cleanable/dirt,
-/obj/item/ammo_casing/shotgun/beanbag,
-/turf/simulated/floor/tiled,
-/area/slavers_base/med)
-"ey" = (
-/turf/simulated/floor/tiled,
+/obj/decal/remains,
+/turf/simulated/floor/warhammer/mudsteel,
 /area/slavers_base/med)
 "ez" = (
-/obj/structure/bed,
-/obj/item/handcuffs,
-/turf/simulated/floor/tiled,
-/area/slavers_base/med)
-"eA" = (
-/obj/item/beartrap,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/med)
-"eB" = (
-/obj/item/mop,
-/obj/structure/mopbucket,
-/turf/simulated/floor/ceiling,
+/obj/decal/cleanable/blood/splatter,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/slavers_base/med)
 "eC" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume,
@@ -1831,7 +1312,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/ceramic,
 /area/slavers_base/secwing)
 "eM" = (
 /obj/structure/cable/green{
@@ -1845,7 +1326,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/ceramic,
 /area/slavers_base/secwing)
 "eN" = (
 /obj/structure/cable/green{
@@ -1859,10 +1340,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/machinery/door/airlock{
-	name = "Slave hold hallway"
+/obj/machinery/door/unpowered/shuttle/hatch2{
+	name = "Armory"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/ceramic,
 /area/slavers_base/secwing)
 "eO" = (
 /obj/structure/cable/green{
@@ -1876,125 +1357,73 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/secwing)
 "eP" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/secwing)
 "eQ" = (
-/obj/machinery/computer/modular{
-	name = "Cameras console"
-	},
-/turf/simulated/floor/tiled,
-/area/slavers_base/secwing)
+/obj/machinery/barrier,
+/turf/simulated/floor/ceiling,
+/area/slavers_base/maint)
 "eR" = (
-/obj/machinery/computer/modular{
-	name = "Riot control console"
-	},
 /obj/machinery/power/apc{
 	name = "Slavers security wing";
 	pixel_y = -24
 	},
 /obj/structure/cable,
-/turf/simulated/floor/tiled,
-/area/slavers_base/secwing)
-"eS" = (
-/obj/structure/table/steel,
-/obj/item/handcuffs,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/plate,
 /area/slavers_base/secwing)
 "eT" = (
-/obj/item/gun/projectile/shotgun/pump/voxlegis,
 /obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/hallway)
 "eU" = (
-/obj/machinery/optable,
-/obj/item/scalpel/basic,
-/obj/decal/cleanable/blood,
 /obj/machinery/light,
-/turf/simulated/floor/tiled,
-/area/slavers_base/med)
-"eV" = (
-/obj/structure/window/basic{
-	dir = 4
-	},
-/obj/structure/table/standard,
-/obj/item/implanter,
-/obj/item/implantcase/tracking,
-/obj/item/surgicaldrill,
-/obj/decal/cleanable/blood,
-/turf/simulated/floor/tiled,
+/obj/decal/cleanable/blood/splatter,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/slavers_base/med)
 "eW" = (
-/obj/machinery/optable,
-/obj/decal/cleanable/blood,
-/obj/item/screwdriver,
 /obj/machinery/light,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/slavers_base/med)
 "eX" = (
-/obj/structure/window/basic{
-	dir = 4
+/obj/decal/cleanable/dirt,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
-/obj/structure/table/standard,
-/obj/item/implantpad,
-/obj/item/reagent_containers/pill/spaceacillin,
-/turf/simulated/floor/tiled,
-/area/slavers_base/med)
-"eY" = (
-/obj/structure/table/standard,
-/obj/item/storage/firstaid/empty,
-/obj/item/handcuffs,
-/obj/item/melee/baton,
-/turf/simulated/floor/tiled,
-/area/slavers_base/med)
+/obj/item/trash/tastybread,
+/turf/simulated/floor/warhammer,
+/area/slavers_base/cells)
 "eZ" = (
-/obj/structure/table/standard,
-/obj/item/storage/firstaid/o2,
-/obj/item/folder/white,
-/obj/item/paper/spacer{
-	info = "Seems they don't really look over my shoulder anymore. We have now maybe a dozen of them with inactive implants. Hope they will pick right moment to flip the lid. I'll kill few bastards myself soon as I have a chance.";
-	name = "Note"
-	},
-/obj/item/pen,
-/turf/simulated/floor/tiled,
+/obj/decal/cleanable/blood,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/slavers_base/med)
 "fa" = (
-/obj/structure/table/standard,
-/obj/item/storage/firstaid/regular,
-/obj/item/material/hatchet,
-/turf/simulated/floor/tiled,
-/area/slavers_base/med)
+/obj/decal/cleanable/generic,
+/obj/gibspawner/human,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
+/area/slavers_base/dorms)
 "fb" = (
 /obj/item/roller_bed,
-/turf/simulated/floor/tiled,
-/area/slavers_base/med)
-"fc" = (
-/obj/structure/bed,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
 /area/slavers_base/med)
 "fd" = (
-/obj/structure/table/standard,
-/obj/item/storage/box/handcuffs,
-/obj/item/storage/box/handcuffs,
-/turf/simulated/floor/ceiling,
+/obj/gibspawner/human,
+/turf/simulated/floor/warhammer/necro1,
 /area/slavers_base/med)
 "fe" = (
-/obj/structure/table/standard,
-/obj/item/storage/box/bodybags,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/med)
+/mob/living/simple_animal/hostile/daemon/headcrab/infestor,
+/turf/simulated/floor/warhammer/ceramic,
+/area/slavers_base/demo)
 "ff" = (
-/obj/structure/table/standard,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/med)
-"fg" = (
-/obj/structure/reagent_dispensers/water_cooler,
-/turf/simulated/floor/ceiling,
+/obj/gibspawner/human,
+/turf/simulated/floor/ship_floor/evil,
 /area/slavers_base/med)
 "fh" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/cyan{
@@ -2045,21 +1474,15 @@
 /area/slavers_base/powatm)
 "fn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/door/airlock{
-	name = "Slave hold hallway"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled,
+/obj/machinery/door/unpowered/shuttle/hatch,
+/turf/simulated/floor/warhammer/ceramic,
 /area/slavers_base/secwing)
-"fo" = (
-/obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled,
-/area/slavers_base/hallway)
 "fp" = (
 /obj/machinery/door/airlock/external,
 /obj/machinery/atmospherics/pipe/simple/visible/cyan,
@@ -2105,9 +1528,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/machinery/door/airlock{
-	name = "Power/atmos"
-	},
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
@@ -2133,7 +1553,7 @@
 	icon_state = "0-4"
 	},
 /obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/hallway)
 "fv" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -2148,26 +1568,12 @@
 	icon_state = "4-8"
 	},
 /obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/hallway)
 "fw" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/door/airlock{
-	name = "West hallway"
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled,
-/area/slavers_base/hallway)
+/obj/decal/cleanable/vomit,
+/turf/simulated/floor/ceiling,
+/area/slavers_base/maint)
 "fx" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
@@ -2178,7 +1584,7 @@
 	},
 /obj/decal/cleanable/dirt,
 /obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/hallway)
 "fy" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -2193,12 +1599,9 @@
 	icon_state = "4-8"
 	},
 /obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/hallway)
 "fz" = (
-/obj/machinery/door/airlock{
-	name = "Transit area"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
@@ -2210,7 +1613,8 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled,
+/obj/paint/meatstation/lab,
+/turf/simulated/wall,
 /area/slavers_base/maint)
 "fA" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -2224,7 +1628,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/ceiling,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/maint)
 "fB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -2235,13 +1639,13 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
-/turf/simulated/floor/ceiling,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/maint)
 "fC" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/ceiling,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/maint)
 "fD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -2250,13 +1654,13 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/ceiling,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/maint)
 "fE" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/universal{
 	dir = 4
 	},
-/turf/simulated/floor/ceiling,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/maint)
 "fF" = (
 /obj/machinery/atmospherics/binary/pump{
@@ -2265,19 +1669,19 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/ceiling,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/maint)
 "fG" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
 	dir = 4
 	},
-/turf/simulated/floor/ceiling,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/maint)
 "fH" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
 	dir = 9
 	},
-/turf/simulated/floor/ceiling,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/maint)
 "fI" = (
 /obj/structure/cable{
@@ -2285,9 +1689,10 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/ceiling,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/maint)
 "fJ" = (
+/obj/paint/meatstation/lab,
 /turf/simulated/wall,
 /area/slavers_base/maint)
 "fK" = (
@@ -2334,9 +1739,6 @@
 /turf/simulated/floor/ceiling,
 /area/slavers_base/powatm)
 "fR" = (
-/obj/machinery/door/airlock{
-	name = "Power/atmos"
-	},
 /obj/decal/cleanable/dirt,
 /turf/simulated/floor/ceiling,
 /area/slavers_base/hallway)
@@ -2349,31 +1751,34 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/hallway)
 "fT" = (
 /obj/item/wrench,
 /obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/hallway)
 "fU" = (
 /obj/machinery/light,
 /obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/hallway)
 "fV" = (
-/obj/machinery/door/airlock{
-	name = "West hallway"
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
-/obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled,
-/area/slavers_base/hallway)
+/obj/structure/lattice,
+/obj/landmark/corpse/bloodpact,
+/turf/simulated/floor/warhammer/necro1,
+/area/slavers_base/demo)
 "fW" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/decal/cleanable/dirt,
 /obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/hallway)
 "fX" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -2383,7 +1788,7 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/turf/simulated/floor/ceiling,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/maint)
 "fY" = (
 /obj/structure/cable{
@@ -2395,7 +1800,7 @@
 	icon_state = "0-4"
 	},
 /obj/machinery/power/smes/buildable,
-/turf/simulated/floor/ceiling,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/maint)
 "fZ" = (
 /obj/structure/cable{
@@ -2403,7 +1808,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/ceiling,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/maint)
 "ga" = (
 /obj/structure/cable{
@@ -2411,7 +1816,7 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/ceiling,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/maint)
 "gb" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/black{
@@ -2471,12 +1876,11 @@
 /turf/simulated/floor/ceiling,
 /area/slavers_base/powatm)
 "gi" = (
+/obj/paint/meatstation/lab,
+/obj/paint/meatstation/lab,
 /turf/simulated/wall,
 /area/slavers_base/dorms)
 "gj" = (
-/obj/machinery/door/airlock{
-	name = "Mess"
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -2484,26 +1888,19 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled,
+/obj/machinery/door/unpowered/shuttle/hatch2,
+/turf/simulated/floor/warhammer/darkwood,
 /area/slavers_base/dorms)
 "gk" = (
-/obj/machinery/door/airlock{
-	name = "Southern hallway"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/hallway)
 "gl" = (
-/obj/machinery/door/airlock{
-	name = "Southern hallway"
-	},
-/turf/simulated/floor/tiled,
-/area/slavers_base/hallway)
+/obj/random/loot/lasbundle,
+/turf/simulated/floor/warhammer/ceramic,
+/area/slavers_base/demo)
 "gm" = (
-/obj/machinery/door/airlock{
-	name = "Slave trade area"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable{
@@ -2511,7 +1908,8 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/ceiling,
+/obj/paint/meatstation/lab,
+/turf/simulated/wall,
 /area/slavers_base/maint)
 "gn" = (
 /obj/machinery/atmospherics/binary/pump,
@@ -2559,87 +1957,67 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/darkwood,
 /area/slavers_base/dorms)
 "gt" = (
-/turf/simulated/floor/tiled,
-/area/slavers_base/dorms)
+/obj/decal/cleanable/dirt,
+/obj/structure/table/warhammer/reinf_table,
+/obj/item/weldingtool,
+/obj/item/material/twohanded/ravenor/knife/bowie,
+/turf/simulated/floor/warhammer/mudsteel,
+/area/slavers_base/med)
 "gu" = (
-/obj/machinery/vending/wallmed2{
-	pixel_y = 30
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
-/obj/structure/table/standard,
-/obj/random/cash,
-/turf/simulated/floor/tiled,
-/area/slavers_base/dorms)
-"gv" = (
-/obj/structure/bed,
-/obj/machinery/light{
-	dir = 1
-	},
-/turf/simulated/floor/tiled,
-/area/slavers_base/dorms)
+/turf/simulated/floor/ship_floor/evil,
+/area/slavers_base/maint)
 "gw" = (
-/obj/structure/closet,
-/obj/random/smokes,
-/obj/random/loot,
-/obj/random/contraband,
-/turf/simulated/floor/tiled,
-/area/slavers_base/dorms)
+/obj/decal/cleanable/dirt,
+/obj/item/pickaxe/hammer,
+/turf/simulated/floor/warhammer/mudsteel,
+/area/slavers_base/med)
 "gx" = (
-/obj/structure/table/standard,
-/obj/random/coin,
-/turf/simulated/floor/tiled,
+/obj/paint/meatstation/lab,
+/turf/simulated/wall,
 /area/slavers_base/dorms)
 "gy" = (
-/obj/structure/bed,
-/obj/random/plushie,
-/turf/simulated/floor/tiled,
+/obj/structure/table/warhammer/big_wood_table{
+	dir = 4
+	},
+/obj/item/reagent_containers/food/drinks/bottle/gin,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/dorms)
 "gz" = (
-/obj/structure/closet,
-/obj/random/smokes,
-/obj/random/loot,
-/turf/simulated/floor/tiled,
-/area/slavers_base/dorms)
+/turf/simulated/floor/warhammer/splate,
+/area/slavers_base/secwing)
 "gA" = (
-/obj/structure/table/standard,
-/turf/simulated/floor/tiled,
-/area/slavers_base/dorms)
-"gB" = (
-/obj/structure/closet,
-/obj/random/loot,
-/turf/simulated/floor/tiled,
-/area/slavers_base/dorms)
-"gC" = (
-/obj/structure/table/standard,
-/obj/random/contraband,
-/turf/simulated/floor/tiled,
+/obj/decal/cleanable/blood/splatter,
+/obj/structure/barricade/barbed,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/dorms)
 "gD" = (
-/obj/structure/bed,
-/turf/simulated/floor/tiled,
-/area/slavers_base/dorms)
-"gE" = (
-/obj/structure/closet,
-/obj/random/smokes,
-/obj/random/cash,
-/turf/simulated/floor/tiled,
-/area/slavers_base/dorms)
+/obj/paint/meatstation/lab,
+/turf/simulated/wall,
+/area/slavers_base/med)
 "gF" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/hallway)
 "gG" = (
 /obj/decal/cleanable/dirt,
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/hallway)
 "gH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -2681,13 +2059,9 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/item/storage/toolbox/mechanical,
+/obj/random/loot/randomsupply/tech,
 /turf/simulated/floor/ceiling,
 /area/slavers_base/powatm)
-"gN" = (
-/obj/random/junk,
-/turf/simulated/floor/tiled,
-/area/slavers_base/dorms)
 "gO" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
@@ -2758,14 +2132,14 @@
 /turf/simulated/floor/ceiling,
 /area/slavers_base/maint)
 "gT" = (
-/obj/machinery/door/airlock{
-	name = "Exchange tunnel"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
+	},
+/obj/machinery/door/airlock/warhammer{
+	name = "Ancient Airlock"
 	},
 /turf/simulated/floor/ceiling,
 /area/slavers_base/maint)
@@ -2814,16 +2188,26 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/darkwood,
 /area/slavers_base/dorms)
 "gZ" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on,
-/turf/simulated/floor/tiled,
-/area/slavers_base/dorms)
+/obj/decal/cleanable/dirt,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/paint/meatstation/lab,
+/obj/machinery/door/airlock/ancient_ship/maint{
+	name = "Hall of Blood";
+	req_access = list("ACCESS_SLAVERCULT")
+	},
+/turf/simulated/wall/r_wall,
+/area/slavers_base/cells)
 "ha" = (
-/obj/decal/cleanable/generic,
-/turf/simulated/floor/tiled,
-/area/slavers_base/dorms)
+/obj/item/fluff_items/bonehelm,
+/turf/simulated/floor/warhammer/necro1,
+/area/slavers_base/demo)
 "hb" = (
 /obj/machinery/light{
 	dir = 8
@@ -2831,7 +2215,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/hallway)
 "hc" = (
 /obj/machinery/light{
@@ -2847,6 +2231,7 @@
 /turf/simulated/floor/ceiling,
 /area/slavers_base/maint)
 "hd" = (
+/obj/paint/meatstation/lab,
 /turf/simulated/wall,
 /area/slavers_base/demo)
 "he" = (
@@ -2876,6 +2261,7 @@
 /obj/item/stack/material/phoron{
 	amount = 25
 	},
+/obj/random/loot/tech1,
 /turf/simulated/floor/ceiling,
 /area/slavers_base/powatm)
 "hj" = (
@@ -2883,89 +2269,62 @@
 	dir = 6
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled,
-/area/slavers_base/dorms)
-"hk" = (
-/obj/structure/table/standard,
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 8
-	},
-/turf/simulated/floor/tiled,
+/turf/unsimulated/mask,
 /area/slavers_base/dorms)
 "hl" = (
-/obj/structure/bed,
-/obj/item/device/radio,
-/turf/simulated/floor/tiled,
-/area/slavers_base/dorms)
+/obj/item/trash/warfare_can/sardine,
+/turf/simulated/floor/warhammer/brick,
+/area/slavers_base/cells)
 "hm" = (
-/obj/structure/closet,
-/obj/random/projectile,
-/obj/random/loot,
-/turf/simulated/floor/tiled,
+/obj/item/broken_bottle,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/dorms)
 "hn" = (
-/obj/structure/table/standard,
-/obj/random/loot,
-/turf/simulated/floor/tiled,
-/area/slavers_base/dorms)
-"ho" = (
-/obj/structure/table/standard,
-/obj/random/gloves,
-/turf/simulated/floor/tiled,
-/area/slavers_base/dorms)
+/obj/structure/barricade/barrels/three,
+/obj/structure/barricade/spike,
+/turf/simulated/floor/warhammer,
+/area/slavers_base/hallway)
 "hp" = (
-/obj/structure/closet,
-/obj/random/loot,
-/obj/random/contraband,
-/turf/simulated/floor/tiled,
-/area/slavers_base/dorms)
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/warhammer/ceramic,
+/area/slavers_base/demo)
 "hq" = (
-/obj/structure/closet,
-/obj/random/projectile,
-/obj/random/ammo,
-/turf/simulated/floor/tiled,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/dorms)
-"hr" = (
-/obj/structure/safe,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/demo)
 "hs" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/structure/safe,
-/obj/item/storage/bag/cash,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/demo)
-"ht" = (
-/obj/structure/safe,
-/obj/item/storage/bag/cash,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/demo)
+/obj/structure/mattress,
+/obj/landmark/corpse/doctor,
+/obj/decal/cleanable/blood/gibs,
+/turf/simulated/floor/warhammer/nf2,
+/area/slavers_base/cells)
 "hu" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 6
-	},
-/turf/simulated/floor/tiled,
-/area/slavers_base/demo)
+/obj/structure/closet/warhammer/iron_c,
+/obj/random/loot/randomsupply,
+/turf/simulated/floor/warhammer/splate,
+/area/slavers_base/secwing)
 "hv" = (
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 8
-	},
-/turf/simulated/floor/tiled,
-/area/slavers_base/demo)
+/obj/item/pyre/self_lit/church,
+/turf/simulated/floor/warhammer/brick,
+/area/slavers_base/cells)
 "hw" = (
-/turf/simulated/floor/tiled,
-/area/slavers_base/demo)
+/obj/structure/closet/warhammer/iron_c,
+/obj/random/loot/lootcontraband,
+/turf/simulated/floor/warhammer/splate,
+/area/slavers_base/secwing)
 "hx" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/turf/simulated/floor/tiled,
-/area/slavers_base/demo)
+/obj/random/junk,
+/obj/decal/cleanable/urine,
+/turf/simulated/floor/ceiling,
+/area/slavers_base/maint)
 "hy" = (
 /obj/random/junk,
 /turf/simulated/floor/ceiling,
@@ -2995,126 +2354,56 @@
 "hD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/door/airlock{
-	name = "Slave hold hallway"
-	},
-/turf/simulated/floor/tiled,
+/obj/paint/meatstation/lab,
+/turf/simulated/wall,
 /area/slavers_base/dorms)
 "hE" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	dir = 8
-	},
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/ceiling,
 /area/slavers_base/maint)
 "hF" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
+/obj/structure/closet/warhammer/iron_c,
+/obj/random/loot/gunbundle,
+/obj/random/loot/heavymelee,
+/turf/simulated/floor/warhammer/splate,
+/area/slavers_base/secwing)
+"hG" = (
+/obj/structure/closet/warhammer/iron_c,
+/obj/random/loot/armorinserts,
+/turf/simulated/floor/warhammer/splate,
+/area/slavers_base/secwing)
+"hH" = (
+/obj/decal/cleanable/generic,
+/obj/decal/remains,
 /turf/simulated/floor/ceiling,
 /area/slavers_base/maint)
-"hG" = (
-/obj/machinery/door/airlock{
-	name = "Safe room"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/turf/simulated/floor/ceiling,
-/area/slavers_base/demo)
-"hH" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/turf/simulated/floor/ceiling,
-/area/slavers_base/demo)
-"hI" = (
-/obj/random/coin,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/turf/simulated/floor/ceiling,
-/area/slavers_base/demo)
 "hJ" = (
-/obj/machinery/door/airlock{
-	name = "Cashier room"
+/obj/decal/cleanable/dirt,
+/obj/machinery/door/airlock/warhammer{
+	name = "Ancient Airlock"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/turf/simulated/floor/ceiling,
-/area/slavers_base/demo)
+/turf/simulated/floor/warhammer,
+/area/slavers_base/hallway)
 "hK" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 10
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 9
-	},
-/turf/simulated/floor/tiled,
-/area/slavers_base/demo)
-"hL" = (
-/obj/structure/bed/chair{
-	dir = 4
-	},
-/obj/item/device/radio,
-/turf/simulated/floor/tiled,
-/area/slavers_base/demo)
+/obj/paint/meatstation/lab,
+/mob/living/simple_animal/hostile/daemon/headcrab,
+/turf/simulated/wall,
+/area/slavers_base/secwing)
 "hM" = (
-/obj/structure/table/reinforced,
-/obj/random/coin,
-/obj/machinery/door/blast/regular/open{
-	icon_state = "pdoor0";
-	id_tag = "SC BD"
-	},
-/turf/simulated/floor/tiled,
-/area/slavers_base/demo)
-"hN" = (
-/obj/structure/bed/chair/comfy/beige{
-	dir = 4
-	},
-/turf/simulated/floor/tiled,
-/area/slavers_base/demo)
-"hO" = (
-/obj/structure/table/woodentable,
-/obj/item/device/radio,
-/turf/simulated/floor/tiled,
-/area/slavers_base/demo)
+/obj/machinery/door/unpowered/inn,
+/obj/structure/barricade/boards,
+/turf/simulated/floor/warhammer/plating,
+/area/slavers_base/cells)
 "hP" = (
-/obj/structure/table/woodentable,
-/obj/item/storage/secure/briefcase/money,
-/obj/random/cash,
-/obj/random/cash,
-/obj/random/cash,
-/turf/simulated/floor/tiled,
-/area/slavers_base/demo)
-"hQ" = (
-/obj/structure/bed/chair/comfy/beige{
-	dir = 8
+/turf/simulated/mineral{
+	name = "Rubble"
 	},
-/turf/simulated/floor/tiled,
 /area/slavers_base/demo)
 "hR" = (
 /obj/machinery/power/terminal{
@@ -3138,7 +2427,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/dorms)
 "hT" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -3147,104 +2436,85 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
+/obj/structure/barricade/barbed,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/dorms)
 "hU" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
-/turf/simulated/floor/tiled,
+/obj/structure/barricade/barbed,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/dorms)
 "hV" = (
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/machinery/vending/dinnerware,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/dorms)
 "hW" = (
-/obj/machinery/cooker/oven,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
 	},
-/turf/simulated/floor/tiled,
+/obj/item/stool/bar/padded,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/dorms)
 "hX" = (
-/obj/structure/table/standard,
-/obj/machinery/microwave,
-/turf/simulated/floor/tiled,
+/obj/structure/table/warhammer/big_wood_table,
+/obj/item/reagent_containers/food/drinks/bottle/rum,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/dorms)
 "hY" = (
-/obj/structure/table/standard,
-/obj/random/snack,
-/turf/simulated/floor/tiled,
+/obj/structure/hivedecor/skulls,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/dorms)
 "hZ" = (
-/obj/structure/table/standard,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/dorms)
 "ia" = (
-/obj/structure/table/standard,
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/item/trash/plate,
-/turf/simulated/floor/tiled,
+/obj/item/stool/bar/padded,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/dorms)
 "ib" = (
-/obj/structure/closet/fridge,
-/turf/simulated/floor/tiled,
+/obj/structure/table/warhammer/big_wood_table{
+	dir = 1
+	},
+/obj/item/material/twohanded/ravenor/sword/chopper,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/dorms)
 "ic" = (
-/turf/simulated/floor/tiled,
+/obj/decal/cleanable/blood,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/slavers_base/dorms)
 "id" = (
 /obj/decal/cleanable/dirt,
 /obj/decal/cleanable/generic,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/hallway)
-"ie" = (
-/obj/structure/closet/secure_closet/guncabinet,
-/obj/random/projectile,
-/obj/random/projectile,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/demo)
-"if" = (
-/obj/structure/closet/secure_closet/guncabinet,
-/obj/random/projectile,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/demo)
-"ig" = (
-/obj/random/coin,
-/turf/simulated/floor/ceiling,
-/area/slavers_base/demo)
 "ih" = (
-/turf/simulated/floor/ceiling,
-/area/slavers_base/demo)
+/obj/decal/remains,
+/turf/simulated/floor/warhammer,
+/area/slavers_base/maint)
 "ii" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 1
-	},
-/turf/simulated/floor/tiled,
-/area/slavers_base/demo)
+/obj/random/loot/rigloot,
+/turf/simulated/floor/ceiling,
+/area/slavers_base/powatm)
 "ij" = (
-/obj/structure/table/woodentable,
-/obj/item/storage/bag/cash,
-/turf/simulated/floor/tiled,
-/area/slavers_base/demo)
-"ik" = (
-/obj/structure/table/woodentable,
-/obj/random/cash,
-/turf/simulated/floor/tiled,
-/area/slavers_base/demo)
+/obj/structure/sewers/wallholebig,
+/obj/paint/meatstation/lab,
+/turf/simulated/wall/r_wall,
+/area/slavers_base/cells)
 "il" = (
 /obj/structure/ore_box,
 /turf/simulated/floor/ceiling,
@@ -3367,35 +2637,28 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled,
+/obj/structure/table/warhammer/big_wood_table{
+	dir = 4
+	},
+/obj/item/fluff_items/skull,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/dorms)
 "iv" = (
 /obj/decal/cleanable/generic,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/slavers_base/dorms)
 "iw" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/slavers_base/dorms)
 "ix" = (
-/obj/machinery/vending/snack,
-/turf/simulated/floor/tiled,
-/area/slavers_base/dorms)
-"iy" = (
-/obj/structure/table/woodentable,
-/obj/item/paper/spacer{
-	info = "<center><b> Contract </b></center> <br>This contract describes exchanging of monetary pieces for the right o? the ownership for following examples: <list><*> Human, age 17. Price - 1500 thalers. <*> Human, age 49. Price - 1100 thalers. <*> Kroot, age 28. Good fist fighter. Price - 2400 thalers. <*> Human, age 34. Expirienced medic. Price - 6800 thalers. </list> <b> Overall price: 11800 thalers</b><br><small>Place for signatures</small>";
-	name = "Contract"
+/obj/structure/table/warhammer/big_wood_table{
+	dir = 8
 	},
-/turf/simulated/floor/tiled,
-/area/slavers_base/demo)
-"iz" = (
-/obj/structure/table/woodentable,
-/obj/random/coin,
-/obj/item/pen,
-/turf/simulated/floor/tiled,
-/area/slavers_base/demo)
+/obj/item/reagent_containers/food/drinks/bottle/small/ale,
+/turf/simulated/floor/warhammer/splate,
+/area/slavers_base/dorms)
 "iA" = (
 /obj/machinery/light{
 	dir = 8
@@ -3405,42 +2668,43 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled,
+/obj/item/stool/bar/padded,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/dorms)
 "iB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
-/obj/structure/bed/chair,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/slavers_base/dorms)
 "iC" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/structure/bed/chair,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/slavers_base/dorms)
 "iD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
 	},
-/obj/structure/bed/chair,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/slavers_base/dorms)
 "iE" = (
-/mob/living/simple_animal/hostile/abolition_extremist,
-/turf/simulated/floor/tiled,
+/obj/decal/cleanable/blood/splatter,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/slavers_base/dorms)
 "iF" = (
-/obj/machinery/vending/fitness,
-/turf/simulated/floor/tiled,
+/obj/structure/table/warhammer/big_wood_table{
+	dir = 4
+	},
+/obj/item/reagent_containers/food/drinks/bottle/small/beer,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/dorms)
 "iG" = (
 /obj/random/junk,
 /obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/hallway)
 "iH" = (
 /obj/machinery/light{
@@ -3457,27 +2721,23 @@
 /area/slavers_base/maint)
 "iI" = (
 /obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/ship_floor/evil,
 /area/slavers_base/demo)
 "iJ" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled,
-/area/slavers_base/demo)
+/obj/paint/meatstation/lab,
+/mob/living/simple_animal/hostile/daemon/headcrab,
+/turf/simulated/wall,
+/area/slavers_base/dorms)
 "iK" = (
-/obj/item/clothing/suit/nun,
 /obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/ceramic,
 /area/slavers_base/demo)
 "iL" = (
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/item/clothing/suit/unathi/robe,
 /obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/ship_floor/evil,
 /area/slavers_base/demo)
 "iM" = (
 /obj/structure/cable{
@@ -3493,7 +2753,11 @@
 	icon_state = "0-2";
 	pixel_y = 1
 	},
-/turf/simulated/floor/tiled,
+/obj/structure/table/warhammer/big_wood_table{
+	dir = 8
+	},
+/obj/random/loot/swordmelee,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/dorms)
 "iN" = (
 /obj/structure/cable{
@@ -3501,58 +2765,42 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/dorms)
 "iO" = (
-/obj/structure/table/standard,
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
-	},
-/obj/item/reagent_containers/food/condiment/small/peppermill,
-/obj/item/reagent_containers/food/condiment/small/saltshaker{
-	pixel_x = 3;
-	pixel_y = 10
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
-/turf/simulated/floor/tiled,
-/area/slavers_base/dorms)
-"iP" = (
-/obj/structure/table/standard,
-/obj/random/smokes,
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled,
+/obj/structure/barricade/barbed,
+/obj/landmark/corpse/bloodpact,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/slavers_base/dorms)
 "iQ" = (
-/obj/structure/table/standard,
-/obj/random/drinkbottle,
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled,
+/obj/structure/table/warhammer/rich_table,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/slavers_base/dorms)
 "iR" = (
-/obj/structure/table/standard,
-/obj/item/trash/plate,
-/obj/item/material/kitchen/utensil/fork,
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled,
+/obj/structure/table/warhammer/polished_table,
+/obj/item/reagent_containers/food/drinks/bottle/absinthe,
+/obj/item/reagent_containers/food/drinks/bottle/small/beer,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/slavers_base/dorms)
 "iS" = (
-/obj/structure/table/standard,
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
@@ -3561,34 +2809,28 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
-/turf/simulated/floor/tiled,
+/obj/structure/table/warhammer/polished_table,
+/obj/item/reagent_containers/food/drinks/bottle/brandy,
+/obj/item/reagent_containers/food/drinks/bottle/small/beer,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/slavers_base/dorms)
 "iT" = (
-/obj/random/junk,
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled,
-/area/slavers_base/dorms)
-"iU" = (
-/obj/item/material/kitchen/utensil/fork,
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/slavers_base/dorms)
 "iV" = (
-/obj/machinery/vending/cola,
 /obj/structure/cable{
 	d1 = 2;
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/turf/simulated/floor/tiled,
+/obj/structure/table/warhammer/big_wood_table,
+/obj/landmark/corpse/bloodpact/commando,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/dorms)
 "iW" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -3619,9 +2861,6 @@
 /turf/simulated/floor/ceiling,
 /area/slavers_base/maint)
 "iY" = (
-/obj/machinery/door/airlock{
-	name = "Scene"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
@@ -3633,7 +2872,10 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled,
+/obj/machinery/door/airlock/warhammer{
+	name = "Ancient Airlock"
+	},
+/turf/simulated/floor/warhammer/ceramic,
 /area/slavers_base/demo)
 "iZ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -3648,36 +2890,28 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
 	},
-/turf/simulated/floor/tiled,
-/area/slavers_base/demo)
-"ja" = (
-/obj/item/clothing/shoes/brown,
-/obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/ceramic,
 /area/slavers_base/demo)
 "jb" = (
-/obj/item/clothing/under/bluepyjamas,
 /obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled,
+/obj/item/material/shard,
+/turf/simulated/floor/warhammer/ceramic,
 /area/slavers_base/demo)
 "jc" = (
-/obj/decal/cleanable/generic,
-/turf/simulated/floor/tiled,
-/area/slavers_base/demo)
-"jd" = (
-/obj/machinery/light,
-/turf/simulated/floor/tiled,
-/area/slavers_base/demo)
-"je" = (
-/obj/machinery/door/airlock{
-	name = "Maintenance"
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
 	},
+/turf/simulated/mineral{
+	name = "Rubble"
+	},
+/area/slavers_base/maint)
+"je" = (
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/ceiling,
+/turf/simulated/wall,
 /area/slavers_base/dorms)
 "jf" = (
 /obj/structure/cable{
@@ -3685,42 +2919,45 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/paint/meatstation/lab,
 /turf/simulated/wall,
 /area/slavers_base/dorms)
 "jg" = (
-/obj/structure/table/standard,
-/obj/random/projectile,
-/turf/simulated/floor/tiled,
+/obj/structure/table/warhammer/big_wood_table{
+	dir = 1
+	},
+/obj/item/card/id/key/grand{
+	access = list("ACCESS_SLAVERCULT");
+	name = "Cursed Key"
+	},
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/dorms)
 "jh" = (
-/obj/structure/table/standard,
-/obj/random/drinkbottle,
-/turf/simulated/floor/tiled,
-/area/slavers_base/dorms)
-"ji" = (
-/obj/structure/table/standard,
-/obj/item/trash/plate,
-/obj/random/snack,
-/turf/simulated/floor/tiled,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/item/stool/bar/padded,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/dorms)
 "jj" = (
-/obj/structure/table/standard,
-/obj/item/material/kitchen/utensil/fork,
-/turf/simulated/floor/tiled,
-/area/slavers_base/dorms)
+/obj/item/pyre/self_lit/church,
+/turf/simulated/floor/warhammer/ceramic,
+/area/slavers_base/cells)
 "jk" = (
-/obj/structure/table/standard,
-/obj/random/smokes,
-/turf/simulated/floor/tiled,
-/area/slavers_base/dorms)
+/obj/paint/meatstation/lab,
+/obj/paint/meatstation/lab,
+/turf/simulated/wall,
+/area/slavers_base/demo)
 "jl" = (
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/vending/cigarette,
-/turf/simulated/floor/tiled,
+/obj/item/stool/bar/padded,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/dorms)
 "jm" = (
 /obj/wallframe_spawn/reinforced,
@@ -3736,34 +2973,14 @@
 /turf/simulated/floor/tiled,
 /area/slavers_base/demo)
 "jo" = (
-/obj/machinery/door/airlock{
-	name = "Private office"
-	},
-/turf/simulated/floor/tiled,
-/area/slavers_base/demo)
-"jp" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/ceiling,
-/area/slavers_base/dorms)
-"jq" = (
-/obj/structure/table/standard,
-/obj/item/device/radio,
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/ceiling,
-/area/slavers_base/dorms)
+/obj/structure/closet/warhammer/iron_c,
+/obj/random/loot/lightmelee,
+/obj/item/reagent_containers/hypospray/autoinjector/combatpain,
+/obj/item/reagent_containers/hypospray/autoinjector/inaprovaline,
+/turf/simulated/floor/warhammer/brick,
+/area/slavers_base/cells)
 "jr" = (
-/obj/structure/bed/chair{
-	dir = 1
-	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/slavers_base/dorms)
 "js" = (
 /obj/structure/cable{
@@ -3771,7 +2988,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/dorms)
 "jt" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -3788,23 +3005,25 @@
 	name = "west bump";
 	pixel_x = -24
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/hallway)
 "ju" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
 	},
 /obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/hallway)
 "jv" = (
-/turf/simulated/floor/tiled,
-/area/slavers_base/demo)
+/obj/structure/mattress,
+/obj/decal/cleanable/blood/gibs,
+/turf/simulated/floor/warhammer/nf2,
+/area/slavers_base/cells)
 "jw" = (
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/ceramic,
 /area/slavers_base/demo)
 "jx" = (
 /obj/structure/cable{
@@ -3812,38 +3031,34 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/ceramic,
 /area/slavers_base/demo)
 "jy" = (
-/obj/structure/cable/green,
-/obj/machinery/power/terminal{
-	dir = 4
-	},
-/turf/simulated/floor/ceiling,
+/obj/item/stool/bar/padded,
+/turf/simulated/floor/warhammer/ceramic/blackstone,
 /area/slavers_base/dorms)
 "jz" = (
-/obj/structure/cable,
-/obj/machinery/power/smes/buildable,
+/obj/item/reagent_containers/food/snacks/poo,
 /turf/simulated/floor/ceiling,
-/area/slavers_base/dorms)
+/area/slavers_base/maint)
 "jA" = (
-/obj/decal/cleanable/blood,
-/turf/simulated/floor/tiled,
+/obj/structure/barricade/barbed,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/dorms)
 "jB" = (
 /obj/machinery/light,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/dorms)
 "jC" = (
-/obj/item/paper/spacer{
-	info = "We made over 200 grands for two last weeks. We should stay low-key for month or so, or we'll get our base discovered by fucking marshalls so shut your whining and relax, I'l l get you three crates of booze and some cargo to play with.";
-	name = "Note"
-	},
-/turf/simulated/floor/tiled,
+/obj/item/stool/bar/padded,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/dorms)
 "jD" = (
-/obj/random/snack,
-/turf/simulated/floor/tiled,
+/obj/structure/table/warhammer/big_wood_table{
+	dir = 8
+	},
+/obj/item/fluff_items/skull,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/dorms)
 "jE" = (
 /obj/structure/cable{
@@ -3851,18 +3066,16 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/dorms)
 "jF" = (
-/obj/machinery/door/airlock{
-	name = "Mess"
-	},
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled,
+/obj/machinery/door/unpowered/shuttle/hatch2,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/dorms)
 "jG" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -3873,154 +3086,107 @@
 	icon_state = "1-8"
 	},
 /obj/decal/cleanable/dirt,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/hallway)
 "jH" = (
 /obj/decal/cleanable/dirt,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/hallway)
-"jI" = (
-/obj/structure/table/standard,
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled,
-/area/slavers_base/demo)
-"jJ" = (
-/obj/structure/table/standard,
-/obj/item/device/megaphone,
-/turf/simulated/floor/tiled,
-/area/slavers_base/demo)
 "jK" = (
-/obj/structure/table/standard,
-/obj/item/clothing/mask/smokable/cigarette,
-/turf/simulated/floor/tiled,
-/area/slavers_base/demo)
+/obj/decal/cleanable/generic,
+/obj/item/beartrap{
+	deployed = 1;
+	icon_state = "beartrap1"
+	},
+/turf/simulated/floor/ceiling,
+/area/slavers_base/maint)
 "jL" = (
-/obj/structure/table/standard,
-/turf/simulated/floor/tiled,
-/area/slavers_base/demo)
-"jM" = (
-/obj/structure/table/standard,
-/obj/item/device/scanner/health,
-/turf/simulated/floor/tiled,
+/obj/machinery/door/airlock/warhammer{
+	name = "Ancient Airlock"
+	},
+/turf/simulated/floor/ceiling,
 /area/slavers_base/demo)
 "jN" = (
-/obj/structure/table/standard,
-/obj/random/drinkbottle,
-/turf/simulated/floor/tiled,
+/obj/landmark/corpse/bloodpact/commando,
+/turf/simulated/floor/warhammer/necro1,
 /area/slavers_base/demo)
 "jO" = (
-/obj/structure/table/standard,
-/obj/item/pen,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/ceramic,
 /area/slavers_base/demo)
 "jP" = (
-/obj/machinery/door/airlock{
-	name = "Restroom"
-	},
-/obj/decal/cleanable/blood,
-/turf/simulated/floor/tiled,
-/area/slavers_base/dorms)
+/obj/structure/barricade/barbed,
+/turf/simulated/floor/ceiling,
+/area/slavers_base/maint)
 "jQ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/door/airlock{
-	name = "Southern hallway"
-	},
-/turf/simulated/floor/tiled,
+/obj/structure/barricade/barrels/four,
+/obj/structure/barricade/spike,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/hallway)
 "jR" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/ceramic,
 /area/slavers_base/demo)
 "jS" = (
-/obj/structure/bed/chair{
-	dir = 1
-	},
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled,
+/obj/structure/lattice,
+/turf/simulated/floor/warhammer/necro1,
 /area/slavers_base/demo)
 "jT" = (
-/obj/structure/bed/chair{
-	dir = 1
-	},
-/turf/simulated/floor/tiled,
+/obj/item/material/shard,
+/turf/simulated/floor/warhammer/ceramic,
 /area/slavers_base/demo)
 "jU" = (
-/obj/structure/bed/chair{
-	dir = 1
-	},
-/obj/item/storage/secure/briefcase/money,
-/obj/random/cash,
-/obj/random/cash,
-/obj/random/cash,
-/obj/random/cash,
-/turf/simulated/floor/tiled,
+/obj/gibspawner/human,
+/turf/simulated/floor/warhammer/ceramic,
 /area/slavers_base/demo)
 "jV" = (
-/obj/structure/bed/chair{
-	dir = 4
-	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/necro1,
 /area/slavers_base/demo)
 "jW" = (
-/obj/structure/table/standard,
-/obj/item/clothing/mask/smokable/cigarette/professionals,
-/turf/simulated/floor/tiled,
-/area/slavers_base/demo)
+/obj/decal/cleanable/generic,
+/obj/structure/hivedecor/gun_rack,
+/turf/simulated/floor/ceiling,
+/area/slavers_base/maint)
 "jX" = (
-/obj/structure/hygiene/shower{
-	dir = 4
+/obj/rune/chaos/armor{
+	name = "Sacrifical Rune";
+	color = 000000
 	},
-/turf/simulated/floor/tiled/white,
-/area/slavers_base/dorms)
+/obj/structure/sign/chaos{
+	color = 000000
+	},
+/obj/random/loot/lootartifacts,
+/turf/simulated/floor/cult,
+/area/slavers_base/cells)
 "jY" = (
-/obj/machinery/door/airlock{
-	name = "Shower"
-	},
-/turf/simulated/floor/tiled/white,
-/area/slavers_base/dorms)
+/obj/structure/sign/chaos,
+/turf/unsimulated/mask,
+/area/mine/unexplored)
 "jZ" = (
-/obj/landmark/corpse/slavers_base/slaver3,
-/obj/decal/cleanable/blood,
-/turf/simulated/floor/tiled/white,
+/turf/unsimulated/mask,
 /area/slavers_base/dorms)
 "ka" = (
-/obj/decal/cleanable/blood,
-/turf/simulated/floor/tiled/white,
-/area/slavers_base/dorms)
+/turf/simulated/floor/warhammer,
+/area/slavers_base/maint)
 "kb" = (
-/turf/simulated/floor/tiled/white,
-/area/slavers_base/dorms)
-"kc" = (
-/obj/landmark/corpse/slavers_base/slaver1,
-/obj/decal/cleanable/blood,
-/turf/simulated/floor/tiled/white,
-/area/slavers_base/dorms)
-"kd" = (
-/obj/machinery/door/airlock{
-	name = "Toilet"
-	},
-/turf/simulated/floor/tiled/white,
-/area/slavers_base/dorms)
+/obj/decal/remains,
+/turf/simulated/floor/warhammer/ceramic,
+/area/slavers_base/demo)
 "ke" = (
-/obj/structure/hygiene/toilet{
-	dir = 8
-	},
-/obj/random/junk,
-/turf/simulated/floor/tiled/white,
-/area/slavers_base/dorms)
+/obj/decal/cleanable/dirt,
+/turf/simulated/floor/warhammer/ceramic/surgery2,
+/area/slavers_base/med)
 "kf" = (
+/obj/paint/meatstation/lab,
 /turf/simulated/wall,
 /area/slavers_base/hallway)
 "kg" = (
@@ -4030,7 +3196,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
-/turf/simulated/floor/tiled,
+/obj/machinery/door/blast/regular,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/hallway)
 "kh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -4039,19 +3206,18 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
+/obj/machinery/door/blast/regular,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/hallway)
 "ki" = (
-/obj/machinery/door/airlock{
-	name = "Slave trade area"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
+/obj/paint/meatstation/lab,
+/turf/simulated/wall,
 /area/slavers_base/demo)
 "kj" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -4060,46 +3226,37 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
 	},
-/turf/simulated/floor/tiled,
-/area/slavers_base/demo)
-"kk" = (
-/mob/living/simple_animal/hostile/abolition_extremist,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/ceramic,
 /area/slavers_base/demo)
 "kl" = (
 /obj/decal/cleanable/generic,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/necro1,
 /area/slavers_base/demo)
 "km" = (
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/necro1,
 /area/slavers_base/demo)
-"kn" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/white,
-/area/slavers_base/dorms)
 "ko" = (
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/white,
-/area/slavers_base/dorms)
+/obj/decal/cleanable/dirt,
+/obj/structure/table/warhammer/reinf_table,
+/obj/item/surgicaldrill,
+/obj/decal/cleanable/blood,
+/obj/item/scalpel/basic,
+/turf/simulated/floor/warhammer/mudsteel,
+/area/slavers_base/med)
 "kp" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/hallway)
 "kq" = (
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/hallway)
 "kr" = (
-/obj/machinery/door/airlock{
-	name = "Slave trade area"
-	},
-/turf/simulated/floor/tiled,
+/obj/machinery/door/unpowered/shuttle/hatch2,
+/obj/structure/barricade/barbed,
+/turf/simulated/floor/warhammer/ceramic,
 /area/slavers_base/demo)
 "ks" = (
 /obj/structure/cable{
@@ -4110,7 +3267,7 @@
 	name = "south bump";
 	pixel_y = -24
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/ceramic,
 /area/slavers_base/demo)
 "kt" = (
 /obj/structure/cable{
@@ -4118,7 +3275,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/necro1,
 /area/slavers_base/demo)
 "ku" = (
 /obj/structure/cable{
@@ -4126,52 +3283,27 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/warhammer/necro1,
 /area/slavers_base/demo)
-"kv" = (
-/obj/structure/table/standard,
-/obj/item/storage/box/glass_extras,
-/turf/simulated/floor/tiled,
-/area/slavers_base/demo)
-"kw" = (
-/obj/structure/table/standard,
-/obj/machinery/chemical_dispenser/bar_alc,
-/turf/simulated/floor/tiled,
-/area/slavers_base/demo)
-"kz" = (
-/mob/living/simple_animal/hostile/abolition_extremist,
-/turf/simulated/floor/tiled/white,
-/area/slavers_base/dorms)
 "kA" = (
-/obj/machinery/door/airlock{
-	name = "Customers entry"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled,
-/area/slavers_base/hallway)
-"kB" = (
-/obj/machinery/door/airlock{
-	name = "Customers entry"
-	},
-/turf/simulated/floor/tiled,
-/area/slavers_base/hallway)
+/mob/living/simple_animal/hostile/daemon/zygote,
+/turf/simulated/floor/warhammer/nf2,
+/area/slavers_base/cells)
 "kC" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
 /obj/decal/cleanable/generic,
-/turf/simulated/floor/ceiling,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/maint)
 "kD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
 	},
-/turf/simulated/floor/ceiling,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/maint)
 "kE" = (
-/obj/machinery/door/airlock{
-	name = "Exchange area"
-	},
+/obj/machinery/door/blast/shutters,
 /turf/simulated/floor/ceiling,
 /area/slavers_base/maint)
 "kF" = (
@@ -4181,20 +3313,21 @@
 "kG" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/decal/cleanable/generic,
-/turf/simulated/floor/ceiling,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/maint)
 "kH" = (
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/ceiling,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/maint)
 "kI" = (
 /obj/machinery/atmospherics/pipe/simple/visible/universal,
-/turf/simulated/floor/ceiling,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/maint)
 "kJ" = (
 /obj/wallframe_spawn/reinforced,
+/obj/structure/barricade/spike,
 /turf/simulated/floor/ceiling,
 /area/slavers_base/maint)
 "kK" = (
@@ -4205,7 +3338,7 @@
 /area/slavers_base/maint)
 "kL" = (
 /obj/machinery/atmospherics/binary/pump,
-/turf/simulated/floor/ceiling,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/maint)
 "kM" = (
 /obj/structure/table/standard,
@@ -4214,17 +3347,17 @@
 /area/slavers_base/maint)
 "kN" = (
 /obj/structure/table/standard,
-/obj/random/handgun,
+/obj/random/loot/sidearmbundle,
 /turf/simulated/floor/ceiling,
 /area/slavers_base/maint)
 "kO" = (
 /obj/machinery/door/airlock/external,
-/turf/simulated/floor/ceiling,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/maint)
 "kP" = (
 /obj/machinery/door/airlock/external,
 /obj/machinery/atmospherics/pipe/simple/visible/cyan,
-/turf/simulated/floor/ceiling,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/maint)
 "kQ" = (
 /obj/structure/table/standard,
@@ -4239,7 +3372,7 @@
 /area/slavers_base/maint)
 "kS" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan,
-/turf/simulated/floor/ceiling,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/maint)
 "kT" = (
 /obj/structure/table/standard,
@@ -4251,11 +3384,11 @@
 	dir = 1;
 	id_tag = "solar_port_pump"
 	},
-/turf/simulated/floor/ceiling,
+/turf/simulated/floor/warhammer,
 /area/slavers_base/maint)
 "kW" = (
 /obj/overmap/visitable/sector/slavers_base,
-/turf/space,
+/turf/simulated/floor/asteroid,
 /area/space)
 "kX" = (
 /obj/shuttle_landmark/nav_slavers_base/nav5,
@@ -4265,25 +3398,12 @@
 /obj/shuttle_landmark/nav_slavers_base/nav6,
 /turf/space,
 /area/space)
-"lb" = (
-/obj/structure/hygiene/sink{
-	pixel_y = -20
-	},
-/obj/item/storage/mirror{
-	pixel_y = -35
-	},
-/obj/landmark/corpse/slavers_base/slaver2,
-/obj/decal/cleanable/blood,
-/turf/simulated/floor/tiled/white,
-/area/slavers_base/dorms)
 "mb" = (
-/obj/structure/hygiene/sink{
-	pixel_y = -20
+/obj/structure/table/warhammer/big_wood_table{
+	dir = 1
 	},
-/obj/item/storage/mirror{
-	pixel_y = -35
-	},
-/turf/simulated/floor/tiled/white,
+/obj/item/reagent_containers/food/drinks/bottle/small/hellshenpa,
+/turf/simulated/floor/warhammer/splate,
 /area/slavers_base/dorms)
 
 (1,1,1) = {"
@@ -14492,6 +13612,7 @@ ad
 ad
 ad
 ad
+aN
 cR
 cR
 cR
@@ -14507,8 +13628,7 @@ cR
 cR
 cR
 cR
-cR
-cR
+aN
 ad
 ad
 ad
@@ -14708,7 +13828,7 @@ gL
 gW
 gW
 hz
-da
+ii
 il
 cR
 ad
@@ -15720,7 +14840,7 @@ hh
 da
 da
 iq
-cR
+aN
 ad
 ad
 ad
@@ -15923,7 +15043,7 @@ da
 da
 ir
 cR
-ad
+bE
 ad
 ad
 ad
@@ -16125,7 +15245,7 @@ da
 da
 is
 cR
-ad
+bE
 ad
 ad
 ad
@@ -16327,7 +15447,7 @@ hB
 da
 ir
 cR
-ad
+bE
 ad
 ad
 ad
@@ -16529,7 +15649,7 @@ hC
 hR
 it
 cR
-ad
+bE
 ad
 ad
 ad
@@ -16690,30 +15810,30 @@ ad
 ad
 ad
 ad
-ah
-ah
-ah
-ah
-ah
-ah
+aB
+aB
+aB
+aB
+aB
+aB
+cG
+cG
+cG
+cG
+cG
+cG
 aM
 aM
 aM
 aM
 aM
 aM
-aM
-aM
-aM
-aM
-aM
-aM
-aM
-aM
-aM
-aM
-aM
-aM
+ay
+cG
+cG
+cG
+cG
+cG
 cS
 cS
 cS
@@ -16722,24 +15842,24 @@ cS
 cS
 ft
 fR
-gi
-gi
-gi
-gi
-gi
-gi
-gi
-gi
-gi
-gi
-gi
-gi
-gi
-gi
-gi
-gi
-gi
-gi
+gx
+gx
+gx
+gx
+gx
+gx
+gx
+gx
+gx
+gx
+gx
+jZ
+jZ
+jZ
+jZ
+jZ
+jZ
+jZ
 ad
 ad
 ad
@@ -16892,34 +16012,34 @@ ad
 ad
 ad
 ad
-ah
-aj
-aj
-ak
-ak
-ak
+aB
+aB
+aB
+aB
+aB
+aB
+cG
+cG
+cG
+cG
+cG
+ay
 aM
-aO
-aX
-bi
-aP
-aP
-aP
-aP
+aA
+aU
+aU
+aU
+aA
 aM
-bR
 aM
-aP
-aP
-aP
-aP
-bi
-aX
-aO
+cG
+cG
+cG
+cG
 cS
 dd
-dL
-dL
+dd
+dd
 eL
 fn
 fu
@@ -16929,19 +16049,19 @@ gs
 gs
 gY
 gs
-gs
+gj
 hS
-iu
+hq
 iA
 iu
 je
-jp
-jy
-gi
-jX
-gi
-jX
-gi
+jZ
+jZ
+jZ
+jZ
+jZ
+jZ
+jZ
 ad
 ad
 ad
@@ -17094,56 +16214,56 @@ ad
 ad
 ad
 ad
-ah
-ak
-ak
-aj
-ak
-ak
-aM
-aP
-aP
-aP
-aR
+aB
+aB
+aB
+aB
+aB
+aB
+cG
+cG
+cG
+cG
+ay
+ay
 aV
-aP
-aP
-aM
+aW
 aU
+jX
+aU
+aW
+aV
 aM
-aW
-aZ
-aP
-cv
-ba
-aW
-aP
+aM
+cG
+cG
+cG
 cS
-de
-dL
+dg
+dd
 eh
 eM
-cS
+hK
 fv
-fo
-gi
-gi
-gi
-gi
-gi
-gi
-hT
-ic
-ic
+eT
+gx
+gx
+gx
+gx
+gx
+gx
+cQ
+jr
+jy
 iM
 jf
-jq
-jz
-gi
-jY
-gi
-jY
-gi
+jZ
+jZ
+jZ
+jZ
+jZ
+jZ
+jZ
 ad
 ad
 ad
@@ -17296,56 +16416,56 @@ ad
 ad
 ad
 ad
-ah
-ak
-ak
-ak
-aj
-ak
+aB
+aB
+aB
+aB
+aB
+aB
+cG
+cG
+cG
+cG
 aM
-aP
-aY
-aW
-be
-aP
+aR
 aR
 aW
-bK
 aU
-bK
-aP
-aP
-aP
-be
-aP
-aP
-cJ
+aU
+aU
+aW
+aR
+bP
+aM
+cG
+cG
+cG
 cS
 df
-dL
-dL
+dd
+dd
 eM
 cS
 fv
-fo
-gi
-gt
-gt
-gZ
+eT
+gx
+gx
+jZ
+jZ
 hj
 hD
 hU
 iv
-ic
+jr
 iN
-gi
-gi
-gi
+gx
+gx
+gx
 gi
 jZ
-kn
-kb
-gi
+jZ
+jZ
+jZ
 ad
 ad
 ad
@@ -17498,56 +16618,56 @@ ad
 ad
 ad
 ad
-ah
-al
-aj
-ak
-ak
-aF
+aB
+aB
+aB
+aB
+aB
+aB
+cG
+cG
+cG
+cG
 aM
-aQ
-aP
+aV
 aR
-aP
-aP
-aP
-aP
-bL
-bS
-ca
-aP
-aP
-aP
-ch
-aP
-aP
-bO
+aW
+bK
+bK
+bK
+aW
+aR
+aV
+aM
+cG
+cG
+cG
 cS
 dg
-dL
-ei
+dd
+dg
 eM
 cS
 fv
 fT
-gi
-gu
-gt
-gt
-hk
-gi
+gx
+gx
+jZ
+jZ
+jZ
+gx
 hT
 ic
-ic
-iN
-ic
-ic
+jr
+jh
+bj
+mb
 jA
-jP
-ka
-kb
-lb
-gi
+gx
+jZ
+jZ
+jZ
+jZ
 ad
 ad
 ad
@@ -17700,56 +16820,56 @@ ad
 ad
 ad
 ad
-ah
-ak
-ak
-ax
-ak
-ak
+aB
+aB
+aB
+aB
+aB
+aB
+cG
+cG
+cG
+cG
 aM
-aP
-aP
-ba
-aP
+jj
+bP
 aW
-aP
-aP
-bM
+bK
 bq
-bM
-aP
-aP
-aP
-aP
-aP
-cv
-aP
+bK
+cK
+aR
+jj
+aM
+cG
+cG
+cG
 cS
-dh
-dL
-dL
+dd
+dd
+dd
 eM
 cS
 fv
 fU
-gi
-gv
-gt
-gt
-hl
-gi
+gx
+gx
+jZ
+jZ
+jZ
+gx
 hV
-ic
+jr
 iv
-iN
-ic
-ic
+iT
+jr
+jy
 jB
-gi
-kb
-kb
-mb
-gi
+gx
+jZ
+jZ
+jZ
+jZ
 ad
 ad
 ad
@@ -17902,30 +17022,30 @@ ad
 ad
 ad
 ad
-ah
-ak
-ak
-ak
-ak
 aB
+aB
+aB
+aB
+aB
+aB
+cG
+cG
+cG
+cG
 aM
-aP
-aZ
-aP
 aV
+aR
 aW
-aP
-aP
-aM
-bq
-aM
-aP
+bK
+bK
+bK
+aW
 aR
 aV
-aV
-aP
-cF
-aP
+aM
+cG
+cG
+cG
 cS
 cS
 cS
@@ -17933,25 +17053,25 @@ cS
 eN
 cS
 fv
-fo
-gi
-gw
-gN
-gt
-hm
-gi
+eT
+gx
+gx
+jZ
+jZ
+jZ
+gx
 hW
 iw
 iB
 iO
-jg
 jr
-ic
-gi
-kc
-ko
-kz
-gi
+jr
+hm
+gx
+jZ
+jZ
+jZ
+jZ
 ad
 ad
 ad
@@ -18104,56 +17224,56 @@ ad
 ad
 ad
 ad
-ah
-ak
-an
-an
-ak
-ak
+aB
+aB
+aB
+aB
+aB
+aB
+cG
+cG
+cG
+cG
 aM
-aP
-aP
+aM
 aR
-aP
+dD
+bK
 bu
-aP
-aP
 bK
-bq
-bK
-aP
-aP
-aP
-aP
-aP
-aP
-bf
+aW
+aR
+aM
+aM
+cG
+cG
+cG
 cS
-di
+hG
 dM
 ej
 eO
 cS
 fv
-fo
-gi
+eT
 gx
-gt
-gt
-hn
-gi
+gx
+jZ
+jZ
+jZ
+gx
 hX
-ic
-iC
-iP
-jh
+jr
+bh
+iT
 jr
 ic
-gi
-kd
-gi
-kd
-gi
+jC
+gx
+jZ
+jZ
+jZ
+jZ
 ad
 ad
 ad
@@ -18306,56 +17426,56 @@ ad
 ad
 ad
 ad
-ah
-am
-an
-ak
-ak
 aB
+aB
+aB
+aB
+aB
+aB
+cG
+cG
+cG
+cG
+cG
 aM
-aP
-aP
-aP
-be
-aP
-aP
-aP
-bL
-bT
-ca
-aP
-aP
-aP
-be
-aP
-aR
-aP
+aV
+aW
+bK
+bK
+bK
+aW
+aV
+aM
+cG
+cG
+cG
+cG
 cS
-dj
+dn
 dN
-ek
+en
 eP
 cS
 fv
-fo
-gi
-gy
-gt
-ha
-gD
-gi
-hX
-ic
+eT
+gx
+gx
+jZ
+jZ
+jZ
+gx
+jg
+jy
 iC
 iQ
-ji
 jr
-ic
-gi
-ke
-gi
-ke
-gi
+jr
+bW
+gx
+jZ
+jZ
+jZ
+jZ
 ad
 ad
 ad
@@ -18508,56 +17628,56 @@ ad
 ad
 ad
 ad
-ah
-an
-ak
-ak
 aB
-ak
+aB
+aB
+aB
+aB
+aB
+cG
+cG
+cG
+cG
+cG
 aM
-aP
-aP
-aP
-aP
-aV
+aZ
 aW
-ba
+bK
 bM
-bU
-bM
-ci
-aP
+bK
 aW
-ci
-aP
-aP
-aP
+aZ
+aM
+cG
+cG
+cG
+cG
 cS
-dk
+dm
 dN
-dp
-dp
+en
+aL
 cS
 fv
-fo
-gi
-gz
-gt
-gt
-gz
-gi
+eT
+gx
+gx
+jZ
+jZ
+jZ
+gx
 hY
-ic
+jr
 iC
 iR
-jj
 jr
-ic
-gi
-gi
-gi
-gi
-gi
+jr
+ix
+gx
+jZ
+jZ
+jZ
+jZ
 ad
 ad
 ad
@@ -18710,52 +17830,52 @@ ad
 ad
 ad
 ad
-ah
-ak
-ak
-ay
-aC
-ay
+aB
+aB
+aB
+aB
+aB
+aB
+cG
+cG
+cG
+cG
+cG
 aM
-aR
-aP
-ba
-aR
-aP
-aP
-aP
+aV
+aW
+bK
+bK
+bK
+aW
+aV
 aM
-bq
-aM
-aP
-aP
-aP
-aP
-aP
-aP
-aP
+cG
+cG
+cG
+cG
 cS
 dl
 dO
 el
-dp
+dl
 cS
 fv
-fo
-gi
-gA
-gt
-gt
-ho
-gi
+eT
+gx
+gx
+jZ
+jZ
+jZ
+gx
 hZ
-ic
+jr
 iD
 iS
-jk
 jr
-ic
-gi
+jr
+jC
+gx
 ad
 ad
 ad
@@ -18912,52 +18032,52 @@ ad
 ad
 ad
 ad
-ah
-ao
-ak
-ak
+aB
+aB
+aB
+aB
+aB
+aB
+cG
+cG
+cG
+cG
+cG
 ay
-aG
 aM
-aS
-aP
-aP
-aP
-aV
-aP
-aP
+aW
 bK
-bq
 bK
-aP
-aP
-ch
-aP
-ch
-ch
-aP
+bK
+aW
+aM
+aM
+cG
+cG
+cG
+cG
 cS
-dm
+hF
 dN
-em
+en
 dp
 cS
 fv
 fU
-gi
-gv
-gt
-gN
-gD
-gi
+gx
+gx
+jZ
+jZ
+jZ
+gx
 ia
-ic
-ic
-iN
-ic
-ic
+jr
+jr
+cN
+jr
+bz
 jB
-gi
+gx
 ad
 ad
 ad
@@ -18976,7 +18096,7 @@ ad
 ad
 ad
 ad
-aa
+ah
 aa
 aa
 aa
@@ -19114,52 +18234,52 @@ ad
 ad
 ad
 ad
-ah
-ap
-ak
-az
-ak
-aH
+aB
+aB
+aB
+aB
+aB
+aB
+cG
+cG
+cG
+cG
+cG
+cG
 aM
-aS
-aP
-aP
-aP
-bv
-aP
-aP
-bL
-bV
-ca
-aP
-aP
-aP
-aP
-cy
-aP
-aP
+aM
+bK
+bK
+bK
+aM
+aM
+cG
+cG
+cG
+cG
+cG
 cS
 dn
 dN
 en
-dp
+gz
 cS
 fv
-fo
-gi
-gB
-gt
-gt
-hp
-gi
-ib
-ic
-ic
+eT
+gx
+gx
+jZ
+jZ
+jZ
+gx
+dj
+jr
+jr
 iT
-iv
-ic
+fa
+jr
 jC
-gi
+gx
 ad
 ad
 ad
@@ -19178,8 +18298,8 @@ ad
 ad
 ad
 ad
-aa
-aa
+ah
+ah
 aa
 aa
 aa
@@ -19316,71 +18436,71 @@ ad
 ad
 ad
 ad
-ah
-aq
-ak
-ak
-ak
-aI
+aB
+aB
+aB
+aB
+aB
+aB
+cG
+cG
+cG
+cG
+cG
+cG
+cG
 aM
-aQ
-ba
-aP
-be
-aP
-bD
-aP
 bM
-bq
-bM
-aP
-aV
-aP
-be
-bJ
-aP
-cK
+bK
+bK
+aM
+cG
+cG
+cG
+cG
+cG
+cG
 cS
 do
 dP
 en
-eQ
+hu
 cS
 fv
-fo
-gi
-gC
-gt
-gN
-gA
-gi
+eT
+gx
+gx
+jZ
+jZ
+jZ
+gx
 ib
-ic
+jr
 iE
-iN
-ic
-ic
-ic
-gi
+iT
+jr
+jy
+gy
+gx
 ad
 ad
+fJ
+fJ
+aH
 fJ
 fJ
 fJ
 fJ
 fJ
 fJ
-fJ
-fJ
-fJ
+ad
+ad
+jY
 ad
 ad
 ad
 ad
-ad
-ad
-ad
-aa
+ah
 aa
 aa
 aa
@@ -19518,62 +18638,62 @@ ad
 ad
 ad
 ad
-ah
-ar
-ak
-ak
-aC
-aH
-aM
-aP
-aP
-aP
-aP
-bw
-aP
-aP
-aM
-bq
-aM
-aR
-aP
-aR
-aP
-aP
+aB
+aB
+aB
+aB
+aB
+aB
 cG
-cL
+cG
+cG
+cG
+cG
+cG
+cG
+aM
+ba
+bK
+ba
+aM
+cG
+cG
+cG
+cG
+cG
+cG
 cS
-dp
+dl
 dQ
 eo
 eR
 cS
 fv
-fo
-gi
-gD
-gt
-gt
-gy
-gi
-ic
-ic
-ic
-iU
+eT
+gx
+gx
+jZ
+jZ
+jZ
+gx
+jC
+jr
+jy
+iT
 iv
-ic
+jr
 jD
-gi
+gx
 ad
 ad
-fJ
-gI
-gI
+aH
+ka
+ka
 kH
-gI
+ka
 kO
 kH
-gI
+ka
 kO
 ag
 ag
@@ -19581,9 +18701,9 @@ ag
 ag
 ag
 ag
-aa
-aa
-aa
+ah
+ah
+ah
 aa
 aa
 aa
@@ -19720,52 +18840,52 @@ ad
 ad
 ad
 ad
-ah
-ak
-ak
-ak
-ak
-ak
+aB
+aB
+aB
+aB
+aB
+aB
+cG
+cG
+cG
+cG
+cG
+cG
+cG
 aM
-aP
-aP
-aR
-aP
-aP
-bE
-bI
-bN
-bW
-cb
-cj
-ck
-aP
-aP
-aW
-aP
-bv
+bK
+bK
+bK
+aM
+cG
+cG
+cG
+cG
+cG
+cG
 cS
 dq
 dR
-ep
-eS
+en
+hw
 cS
 fv
-fo
-gi
-gE
-gt
-gt
-hq
-gi
-ic
-ix
+eT
+gx
+gx
+jZ
+jZ
+jZ
+gx
+gA
+hZ
 iF
 iV
 jl
 js
 jE
-gi
+gx
 ad
 ad
 fJ
@@ -19784,8 +18904,8 @@ ag
 ag
 ag
 kW
-aa
-aa
+ah
+ah
 aa
 aa
 aa
@@ -19922,18 +19042,18 @@ ad
 ad
 ad
 ad
-ah
-ak
-ak
-ak
-aD
-aJ
-aM
-aM
-aM
-aM
-aM
-aM
+aB
+aB
+aB
+aB
+aB
+aB
+cG
+cG
+cG
+cG
+cG
+cG
 aM
 aM
 aM
@@ -19946,39 +19066,39 @@ aM
 aM
 aM
 aM
-cS
+bg
 dr
 dS
-eq
-eq
 cS
-fw
-fV
-gi
-gi
-gi
-gi
-gi
-gi
-gi
-gi
-gi
-gi
-gi
-gi
+cS
+cO
+ea
+hJ
+gx
+gx
+gx
+gx
+gx
+gx
+gx
+iJ
+gx
+gx
+gx
+gx
 jF
-gi
+gx
 kf
 kf
 fJ
 fC
-gI
+ka
 fJ
 fJ
 fJ
+aH
 fJ
 fJ
-fJ
 ad
 ad
 ad
@@ -19986,7 +19106,7 @@ ad
 ad
 ad
 ad
-aa
+ah
 aa
 aa
 aa
@@ -20124,30 +19244,30 @@ ad
 ad
 ad
 ad
-ah
-as
-au
-aA
-aE
-aK
-aN
+aB
+aB
+aB
+aB
+aB
+aB
+cG
 aT
 bb
 bb
-bm
+cB
 bb
 bF
-bb
-bb
+ck
+ck
 bY
 cc
-bb
-cl
+ck
+ck
 bm
 cw
 cz
-bb
-bb
+ck
+ck
 cT
 ds
 dT
@@ -20172,9 +19292,9 @@ jG
 jQ
 kg
 kp
-kA
+kp
 kD
-gI
+ih
 fJ
 ad
 ad
@@ -20188,7 +19308,7 @@ ad
 ad
 ad
 ad
-aa
+ah
 aa
 aa
 aa
@@ -20325,20 +19445,20 @@ ad
 ad
 ad
 ad
-af
-ah
-ah
-ah
-ah
-ah
-aL
-aM
-aU
-aU
-aU
+ad
+aB
+aB
+aB
+aB
+aB
+aB
+cG
+aF
+aF
+aF
 bn
-bx
-bx
+ca
+gZ
 bx
 bx
 bZ
@@ -20348,35 +19468,35 @@ bx
 cn
 bx
 cA
-bx
+eX
 bx
 cU
 dt
 dU
 es
 eT
-fo
+eT
 fy
-fo
-gl
+eT
+kq
 gG
-fo
-fo
-fo
-fo
+eT
+eT
+eT
+eT
 id
-fo
+eT
 iG
-fo
-fo
+eT
+eT
 ju
 jH
-gl
+hn
 kh
 kq
-kB
-gI
-gI
+kq
+ka
+ka
 fJ
 ad
 ad
@@ -20391,7 +19511,7 @@ ad
 ad
 ad
 ad
-aa
+ah
 aa
 aa
 aa
@@ -20526,24 +19646,24 @@ ad
 ad
 ad
 ad
-af
-af
-ag
-ag
-ag
-ag
-ag
-ag
-aM
-aM
-aM
-aM
+ad
+ad
+aw
+aw
+aw
+aw
+aw
+aw
+cG
+cG
+cG
+cG
 bo
-by
+cG
 aM
 aM
 aM
-aM
+ay
 aM
 aM
 aM
@@ -20551,18 +19671,18 @@ co
 cx
 aM
 aM
-aM
-cV
+ay
+bl
 du
-cV
-cV
-cV
+gD
+gD
+gD
 cV
 fz
 fJ
 fJ
 fJ
-fJ
+dE
 fJ
 fJ
 fJ
@@ -20578,12 +19698,12 @@ ki
 kr
 hd
 kE
-kE
+ka
 fJ
 fJ
 fJ
 fJ
-fJ
+cP
 ad
 ad
 ad
@@ -20728,59 +19848,59 @@ ad
 ad
 ad
 ad
-af
-af
-ag
-ag
-at
-at
-ag
-ag
+ad
+ad
+aw
+aw
+aw
+aw
+aw
+aw
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+cG
 aM
-aO
-aV
-bj
-bp
-bz
-bG
-aW
-aO
-aM
-cd
-aP
-bj
-cp
-bz
-bG
-aP
-aO
-cV
+bO
+bO
+hv
+bO
+bO
+bO
+bs
+bO
+gD
 dv
 dV
 et
 eU
-cV
+gD
 fA
 fX
 gm
 gH
 gO
 hc
-gH
+gu
 hE
 gH
 gH
 iH
 iW
 hd
-jv
-jv
+dY
+jV
 jR
 kj
 ks
 hd
 gI
-gI
+ka
 kJ
 kM
 kQ
@@ -20930,59 +20050,59 @@ ad
 ad
 ad
 ad
-af
-af
-ag
-at
-ag
-ag
-av
-ag
-aM
-aQ
-bc
-bk
-bq
-aU
-bH
-be
-bO
+ad
+ad
+aw
+aw
+aw
+aw
+aw
+aw
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+cG
 aM
 ce
-be
-bk
-bq
-aU
-cB
-be
 bO
-cV
+bO
+bO
+bO
+bO
+aP
+aP
+gD
 dw
-dx
+ko
 eu
-eV
-cV
+et
+gD
 fB
 fY
-fJ
+cf
 gI
 gP
 gI
 gI
-hF
 gI
 gI
-gI
+cl
+cl
 iX
 hd
-jv
-jv
-jv
-jv
-kt
+jV
+aJ
+jV
+jO
+hp
 hd
 gJ
-gI
+ka
 kJ
 kN
 kR
@@ -21132,63 +20252,63 @@ ad
 ad
 ad
 ad
-af
-ag
-ag
-ag
-ag
-ag
-ag
-ag
+ad
+aw
+aw
+aw
+aw
+aw
+aw
+aw
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+cG
 aM
-aP
-bd
-bj
-br
-bx
-bG
-aR
-aP
-aM
+hl
+bO
+bO
+bO
+bO
 aP
 aP
-bj
-cq
-bx
-bG
-aP
-cM
-cV
-dx
-dx
+jv
+gD
+gw
+dX
 ev
 eW
-cV
+gD
 fC
 fZ
 fJ
-gI
+cl
 gQ
 hd
 hd
-hG
+hd
 hd
 hd
 hd
 iY
 hd
 jw
-jv
-jv
-jv
+bH
+jV
+jV
 kt
 hd
-gI
+ka
 gI
 kJ
 gI
 hf
-kF
+jK
 fJ
 ad
 ad
@@ -21334,64 +20454,64 @@ ad
 ad
 ad
 ad
-af
-ag
-ag
-ag
-at
-ag
-ag
-ag
+ad
+aw
+aw
+aw
+aw
+aw
+aw
+aw
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+cG
 aM
-aM
-aM
-aM
-bs
-aU
-aM
-aM
-aM
-aM
-aM
-aM
-aM
-bs
-aU
-aM
-aM
-aM
-cV
-dy
+aP
+aP
+bO
+bO
+bO
+aP
+bG
+kA
+gD
+eu
 dx
 ew
-eX
-cV
-fC
+et
+gD
+jc
 fZ
 fJ
-gI
+cl
 gR
 hd
-hr
-hH
-ie
+hd
+hd
+hd
 hd
 iI
 iZ
 jm
 jx
-jI
-jS
 jx
+jS
+fV
 ku
 hd
-kE
-kE
-fJ
+ih
 gI
 fJ
+gI
+cP
 fJ
-fJ
+cP
 ad
 ad
 ad
@@ -21536,56 +20656,56 @@ ad
 ad
 ad
 ad
-af
-af
-ag
-ag
-ag
-ag
-ag
-ag
+ad
+ad
+aw
+aw
+aw
+aw
+aw
+aw
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+cG
 aM
 aO
 aP
-bj
-br
-bA
+bO
+bO
+bO
+hM
 bG
-bJ
-aO
-aM
-aO
-ch
-bj
-cq
-bx
 bG
-aP
-aO
-cV
-dz
-dx
-dx
-eY
-cV
+gD
+ke
+et
+ke
+et
+gD
 fD
-fZ
+ar
 fJ
 gJ
 gR
 hd
-hs
-hH
-if
 hd
-iJ
-ja
+hd
+hd
+hd
+iL
+iI
 jn
-jv
-jJ
+bH
+jV
 jT
-kk
-jv
+fe
+jV
 hd
 gI
 gI
@@ -21739,55 +20859,55 @@ ad
 ad
 ad
 ad
-af
-af
-ag
-av
-ag
-ag
-ag
+ad
+ad
+aw
+aw
+aw
+aw
+aw
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+cG
 aM
-aQ
-be
+bG
+aP
 bk
-bq
-aU
-bH
-be
-bP
-aM
-aQ
-be
-bk
-bq
-aU
-bH
-be
-cN
-cV
+bO
+bO
+aP
+jv
+bG
+gD
 dz
-dW
+dx
 ex
 eZ
-cV
-fC
+gD
+jc
 fZ
 fJ
 gI
-gR
+cb
 hd
-hr
-hH
-ig
 hd
-iI
+hd
+hd
+hd
+iK
 jb
 jn
-jv
-jK
-jT
-jv
-jv
+jV
+bH
+jV
+jV
+jV
 hd
 kF
 gI
@@ -21941,58 +21061,58 @@ ad
 ad
 ad
 ad
-af
-af
-ag
-ag
-ag
-ag
-ag
+ad
+ad
+aw
+aw
+aw
+aw
+aw
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+cG
 aM
-aV
-bf
-bj
-br
-bx
 bG
-aV
-aW
-aM
+hs
+aP
+bO
+bO
 aP
 aP
-bj
-cq
-bx
-bG
-ch
-aW
-cV
+cd
+gD
 dx
 dX
 dx
-fa
-cV
+et
+gD
 fC
-fZ
+ar
 fJ
 gI
 gR
 hd
-hr
-hI
-ig
+hd
+hd
+hd
 hd
 iK
 iI
-jn
-jv
-jL
-jT
+hP
+jO
+jV
+jV
 kl
-jv
+kb
 hd
 gI
-kF
+hH
 fJ
 ad
 ad
@@ -22144,57 +21264,57 @@ ad
 ad
 ad
 ad
-af
-ag
-ag
-ag
-ag
-ag
+ad
+aw
+aw
+aw
+aw
+aw
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+cG
 aM
-aM
-aM
-aM
-bs
-bB
-aM
-aM
-aM
-aM
-aM
-aM
-aM
-bs
-aU
-aM
-aM
-aM
-cV
+kA
+bG
+hM
+bO
+bO
+bO
+aP
+aP
+gD
 dx
-dx
-ey
+gt
+ev
 fb
-cV
-fC
-fZ
+gD
+jc
+ar
 fJ
-gI
+cl
 gR
 hd
-ht
-hH
-ih
+hd
+hd
+hd
 hd
 iI
-iI
-jn
-jv
-jM
-jT
-jv
-jv
+iK
+hP
+jO
+jV
+jV
+bH
+gl
 hd
-gI
-gI
+aI
+aI
 fJ
 ad
 ad
@@ -22346,57 +21466,57 @@ ad
 ad
 ad
 ad
-af
-af
-ag
-ag
-ag
-ag
-aM
-aO
-aP
-bj
-br
-bx
+ad
+ad
+aw
+aw
+aw
+aw
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+ij
+bG
 bG
 aP
-aO
-aM
-aO
-aP
-bj
-cq
-bx
-bG
-aP
-aO
-cV
-dx
-dY
+bO
+bO
+bO
+bO
+bO
+gD
+bR
+et
 ez
-fc
-cV
-fC
-fZ
+et
+gD
+jc
+ar
 fJ
 gI
 gR
 hd
 hd
-hJ
 hd
 hd
-iI
+hd
+iK
 iI
 jn
-jv
-jL
-jT
-jv
-jv
+jV
+bH
+bH
+bH
+jV
 hd
-gI
-kF
+cM
+jW
 fJ
 ad
 ad
@@ -22548,57 +21668,57 @@ ad
 ad
 ad
 ad
-af
-af
-ag
-ag
-ag
-ag
+ad
+ad
+aw
+aw
+aw
+aw
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+cG
 aM
-aQ
-bg
+jv
 bk
-bq
-aU
-bH
+aP
+bO
+bO
+bO
 be
 bO
-aM
-aQ
-be
-bk
-bq
-aU
-bH
-be
-bO
-cV
+gD
 dA
-cV
-cV
-cV
+gD
+gD
+gD
 cV
 fD
-fZ
+ar
 fJ
 gK
 gR
 hd
-hu
-hK
-ii
+hd
+hd
+hd
 hd
 iL
 iI
 jn
-jv
+jV
 jN
-jT
-jv
-jv
+jV
+jO
+jV
 hd
-gJ
-gI
+bf
+eq
 fJ
 ad
 ad
@@ -22750,57 +21870,57 @@ ad
 ad
 ad
 ad
-af
-af
-ag
-ag
+ad
+ad
 aw
-ag
+aw
+aw
+aw
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+cG
 aM
-aR
 aP
-bj
-br
-bx
-bG
 aP
-bQ
-aM
-cf
-aP
-bj
+bO
 cq
-bx
-bG
-aP
-cO
-cV
+bO
+bO
+bO
+bO
+gD
 dB
-dB
-eA
+dF
+dF
 fd
-cV
-fC
-fZ
+gD
+jc
+ar
 fJ
-gI
+cl
 gR
 hd
-hv
-hL
-hw
 hd
-iI
-iI
+hd
+hd
+hd
+jb
+iK
 jn
-jv
+bH
 jO
 jU
-jv
-jv
+jO
+ha
 hd
-hy
-gI
+em
+eQ
 fJ
 ad
 ad
@@ -22952,56 +22072,56 @@ ad
 ad
 ad
 ad
-af
-ag
-ag
-ag
-ag
-ag
+ad
+aw
+aw
+aw
+aw
+aw
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+cG
 aM
-aM
-aM
-aM
-bs
-aU
-aM
-aM
-aM
-aM
-aM
-aM
-aM
-bs
-aU
-aM
-aM
-aM
-cV
+bO
+bO
+bO
+bO
+aP
+aP
+ax
+aP
+gD
 dC
 dB
+dF
 dB
-fe
-cV
-fC
-fZ
+gD
+jc
+ar
 fJ
 gI
 gS
 hd
 hd
-hM
 hd
 hd
 hd
-hd
-hd
+iL
+iI
+jk
 jw
-jv
-jv
-jv
-jv
+ek
+bS
+jV
+bH
 hd
-gI
+ao
 gI
 fJ
 ad
@@ -23154,57 +22274,57 @@ ad
 ad
 ad
 ad
-af
-af
+ad
+ad
 aw
-ag
-ag
-ag
+aw
+aw
+aw
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+cG
 aM
-aO
+jo
+bO
+bO
 aP
-bj
-br
-bx
+aP
 bG
-aV
-aO
-aM
-aO
-aP
-bj
-cq
-bx
 bG
-aP
-cP
-cV
-dD
-dB
-dB
+jv
+gD
+dF
+dh
+dF
 ff
-cV
+gD
 fC
-fZ
+ar
 fJ
 gI
-gR
+cb
 hd
-hw
-hw
-hw
-hw
-hw
-hw
 hd
-jv
-jv
-jv
-jv
-jv
 hd
-kF
-gI
+hd
+hd
+iK
+jb
+hd
+jO
+jV
+jV
+jV
+bH
+dW
+dL
+aI
 fJ
 ad
 ad
@@ -23356,53 +22476,53 @@ ad
 ad
 ad
 ad
-af
-af
-af
-ag
-ag
-ag
-aM
-aQ
-bh
-bl
-bq
-aU
-bH
-be
-bO
+ad
+ad
+ad
+aw
+aw
+aw
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+cG
 aM
 cg
-be
-bk
-bq
-aU
-bH
-be
-cQ
-cV
-dE
-dZ
+bO
+bO
+aP
+bG
+kA
+bG
+bG
+gD
+dF
+dF
 dB
 dB
-cV
+gD
 fE
 fZ
 fJ
 gI
-gR
+cb
 hd
-hw
-hN
-hN
-hN
-hw
-jc
 hd
-jv
-jv
+hd
+hd
+hd
+iK
+iI
+hd
 jV
-jV
+bH
+bH
+bH
 jV
 hd
 kF
@@ -23559,55 +22679,55 @@ ad
 ad
 ad
 ad
-af
-af
-af
-ag
-ag
-aM
-aW
-aW
-bj
-bt
-bC
-bG
-aW
-aR
+ad
+ad
+ad
+aw
+aw
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+cG
 aM
 ch
-bf
-bj
-cr
-bC
-bG
+hv
+bO
 aP
-aV
-cV
+al
+bG
+bG
+bD
+gD
 dF
-ea
-eB
-fg
-cV
+fd
+dB
+dF
+gD
 fF
 fZ
 fJ
 gJ
 gR
 hd
-hx
-hO
-ij
-iy
-hw
-jd
 hd
-jv
-jv
-jW
-jN
-jL
 hd
-gI
+hd
+hd
+iI
+iK
+hd
+jV
+jV
+jV
+jV
+jV
+hd
+bL
 gI
 fJ
 ad
@@ -23762,10 +22882,20 @@ ad
 ad
 ad
 ad
-af
-af
-af
-af
+ad
+ad
+ad
+ad
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+ay
 aM
 aM
 aM
@@ -23773,22 +22903,12 @@ aM
 aM
 aM
 aM
-aM
-aM
-aM
-aM
-aM
-aM
-aM
-aM
-aM
-aM
-aM
-cV
-cV
-cV
-cV
-cV
+ay
+gD
+gD
+gD
+gD
+gD
 cV
 fG
 fZ
@@ -23796,21 +22916,21 @@ fJ
 gI
 gR
 hd
-hw
-hP
-ik
-iz
-hw
-hw
 hd
-jv
-jv
-jL
-jv
-jv
+hd
+hd
+hd
+iK
+iI
+hd
+jV
+aq
+jV
+jV
+jV
 hd
 gK
-gI
+fw
 fJ
 ad
 ad
@@ -23998,20 +23118,20 @@ fJ
 gI
 gR
 hd
-hw
-hQ
-hQ
-hQ
-hw
-hw
 hd
-jv
-jv
-jN
-jv
-kv
 hd
-gI
+hd
+hd
+iL
+iI
+hd
+jV
+jV
+jV
+jO
+jO
+hd
+jz
 gI
 fJ
 ad
@@ -24197,23 +23317,23 @@ fq
 fI
 ga
 fJ
-gI
+cl
 gR
 hd
-hw
-hw
-hw
-hw
-hw
-hw
-jo
-jv
-jv
-jv
-km
-kw
 hd
-gI
+hd
+hd
+hd
+jb
+iK
+hd
+jO
+jO
+jV
+km
+jV
+hd
+cL
 gI
 fJ
 ad
@@ -24398,7 +23518,7 @@ fj
 cm
 fJ
 fJ
-fJ
+bU
 fJ
 gT
 hd
@@ -24407,7 +23527,7 @@ hd
 hd
 hd
 hd
-hd
+jL
 hd
 hd
 hd
@@ -24608,9 +23728,9 @@ gI
 gI
 hy
 gI
+jP
 gI
-gI
-gI
+bt
 gI
 gI
 gI
@@ -24807,20 +23927,20 @@ gI
 gV
 hf
 hy
-gI
+fw
 gI
 gI
 gI
 gI
 hf
 gI
-gI
-gI
-hy
-gI
+bi
+jz
+hx
+bL
 hf
 gI
-gI
+az
 fJ
 ad
 ad
