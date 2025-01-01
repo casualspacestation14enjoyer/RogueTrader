@@ -659,7 +659,7 @@
 	playsound(src, 'sound/items/torch_fixture0.ogg', 50, 0, -1)
 	return T
 
-/obj/structure/torchwall/use_tool(obj/item/tool, mob/user, list/click_params
+/obj/structure/torchwall/use_tool(obj/item/tool, mob/user, list/click_params)
 	var/obj/item/torch/W
 
 	if(istype(tool, /obj/item/torch)) // If the tool is a torch
