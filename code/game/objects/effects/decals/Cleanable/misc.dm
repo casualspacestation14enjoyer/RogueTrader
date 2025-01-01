@@ -86,7 +86,7 @@
 	taste_description = "literal shit"
 	strength = 0.5
 
-/datum/reagent/toxin/poo/touch_turf(var/turf/T)
+/datum/reagent/toxin/poo/touch_turf(turf/T)
 	if(!istype(T, /turf/space))
 		new /obj/effect/decal/cleanable/poo(T)
 	qdel(src)
@@ -108,7 +108,7 @@
 		if(piss != src)
 			qdel(piss)
 
-/datum/reagent/toxin/urine/touch_turf(var/turf/T)
+/datum/reagent/toxin/urine/touch_turf(turf/T)
 	if(!istype(T, /turf/space))
 		new /obj/effect/decal/cleanable/urine(T)
 	qdel(src)

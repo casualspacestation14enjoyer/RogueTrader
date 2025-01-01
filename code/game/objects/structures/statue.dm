@@ -567,7 +567,7 @@
 		snuff()
 
 
-/obj/item/torch/proc/light(var/mob/user, var/manually_lit = FALSE)//This doesn't seem to update the icon appropiately, not idea why.
+/obj/item/torch/proc/light(mob/user, manually_lit = FALSE)//This doesn't seem to update the icon appropiately, not idea why.
 	lit = TRUE
 	if(manually_lit && self_lighting == 1)
 		user.visible_message("<span class='notice'>\The [user] rips the lighting sheath off their [src].</span>")
@@ -642,6 +642,7 @@
 	playsound(src, 'sound/items/torch_fixture1.ogg', 50, 0, -1)
 
 /obj/structure/torchwall/use_tool(obj/item/tool, mob/user, list/click_params)
+	. = ..()
 	// attempt to insert torch
 	add_fingerprint(user)
 	var/obj/item/torch/W
